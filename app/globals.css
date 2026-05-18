@@ -462,7 +462,7 @@ a { text-decoration: none; color: inherit; }
 
   /* BANDEAU */
   .home-banner:not(.home-banner-mobile) { display: none !important; }
-  .home-banner-mobile { display: flex !important; height: 200px; }
+  .home-banner-mobile { display: none !important; }
   .home-banner-text { font-size: 26px; }
   .home-banner-content { padding: 0 24px; }
   .home-banner-sub { font-size: 13px; }
