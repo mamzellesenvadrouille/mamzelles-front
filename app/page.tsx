@@ -1,6 +1,9 @@
+'use client';
 import { Clock, Heart, Map, User } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
@@ -17,8 +20,23 @@ export default function Home() {
             <a href="/blog">Notre blog voyages</a>
             <a href="/qui-sommes-nous">Qui sommes-nous ?</a>
           </div>
-          <a href="/formules#formulaire" className="nav-cta">Contact</a>
+          <a href="/formules#formulaire" className="nav-cta nav-cta-desktop">Contact</a>
+          <button className="burger-btn" onClick={() => setMenuOpen(true)} aria-label="Menu">
+            <span className="burger-line" />
+            <span className="burger-line" />
+            <span className="burger-line" />
+          </button>
         </nav>
+        {menuOpen && (
+          <div className="mobile-menu">
+            <button className="mobile-menu-close" onClick={() => setMenuOpen(false)}>✕</button>
+            <a href="/" onClick={() => setMenuOpen(false)}>Accueil</a>
+            <a href="/formules" onClick={() => setMenuOpen(false)}>Nos formules</a>
+            <a href="/blog" onClick={() => setMenuOpen(false)}>Notre blog voyages</a>
+            <a href="/qui-sommes-nous" onClick={() => setMenuOpen(false)}>Qui sommes-nous ?</a>
+            <a href="/formules#formulaire" onClick={() => setMenuOpen(false)} className="mobile-menu-cta">Contact</a>
+          </div>
+        )}
         <img className="hero-bg" src="/home-hero.jpg" alt="" />
         <div className="hero-overlay" />
         <div className="hero-content">
@@ -45,7 +63,7 @@ export default function Home() {
       {/* VOS TRAVEL PLANNERS */}
       <section className="home-planners">
         <div className="home-planners-header">
-          <h2 className="home-h2">Pourquoi voyager <em>avec nous&nbsp;?</em></h2>
+          <h2 className="home-h2">Pourquoi voyager <em>avec nous ?</em></h2>
         </div>
         <div className="home-planners-grid">
           <div className="home-planner-card">

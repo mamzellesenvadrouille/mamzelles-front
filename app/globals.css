@@ -529,3 +529,82 @@ a { text-decoration: none; color: inherit; }
   .blog-section { padding: 40px 24px 60px !important; }
   .blog-grid { grid-template-columns: 1fr !important; }
 }
+
+/* BURGER MENU */
+.burger-btn { display: none; }
+.mobile-menu { display: none; }
+
+@media (max-width: 768px) {
+  /* Hero home moins haut + plus de photo Ã  droite */
+  .hero-home { height: 75vh !important; }
+  .hero-home .hero-bg { object-position: 60% center !important; }
+
+  /* Burger visible, Contact desktop cachÃ© */
+  .nav-cta-desktop { display: none !important; }
+  .burger-btn {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+    z-index: 100;
+  }
+  .burger-line {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    display: block;
+  }
+
+  /* Menu mobile overlay */
+  .mobile-menu {
+    display: flex !important;
+    position: fixed;
+    inset: 0;
+    background: rgba(26,21,12,0.97);
+    z-index: 200;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+  }
+  .mobile-menu a {
+    color: rgba(255,255,255,0.85);
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color .2s;
+  }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-menu-cta {
+    border: 1px solid rgba(255,255,255,0.4) !important;
+    padding: 12px 32px !important;
+    border-radius: 2px !important;
+    margin-top: 8px;
+  }
+  .mobile-menu-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+  }
+
+  /* "avec nous ?" sur nouvelle ligne */
+  .home-planners-header .home-h2 em { display: block; }
+
+  /* Footer mobile */
+  .footer-top .footer-col:first-child { align-self: center !important; text-align: center !important; }
+  .footer-logo-wrap { text-align: center !important; }
+  .footer-top .footer-col:not(:first-child) { align-self: flex-start !important; }
+}
