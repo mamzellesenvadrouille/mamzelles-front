@@ -17,15 +17,15 @@ a { text-decoration: none; color: inherit; }
 
 /* EYEBROWS */
 .eyebrow { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 10px; line-height: 1; }
-.eyebrow-dark { font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; line-height: 1; }
+.eyebrow-dark { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; line-height: 1; }
 .eyebrow-gold { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; line-height: 1; }
 
 /* HERO */
 .hero { position: relative; width: 100%; height: 80vh; min-height: 400px; overflow: hidden; transform: translateZ(0); will-change: auto; }
 .hero-home { height: 90vh; }
-.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; transform: translateZ(0); backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,5,2,0.82) 0%, rgba(10,5,2,0.45) 50%, rgba(10,5,2,0.05) 100%); }
-.hero-home .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.80) 0%, rgba(10,5,2,0.60) 35%, rgba(10,5,2,0.30) 60%, rgba(10,5,2,0.05) 100%); }
+.hero-home .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.72) 0%, rgba(10,5,2,0.58) 25%, rgba(10,5,2,0.38) 48%, rgba(10,5,2,0.15) 68%, rgba(10,5,2,0.0) 88%); }
 .hero-home .hero-bg { object-position: center 70%; }
 .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 20; padding: 26px 52px; display: flex; justify-content: space-between; align-items: center; }
 .logo { display: flex; flex-direction: column; }
@@ -242,10 +242,10 @@ a { text-decoration: none; color: inherit; }
 .home-planners-header { margin-bottom: 40px; }
 .home-planners-cta { display: flex; justify-content: center; margin-top: 40px; }
 .home-planners-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.home-planner-card { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 36px 28px; display: flex; flex-direction: column; gap: 16px; }
-.planner-icon { color: var(--gold); }
-.home-planner-card h3 { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: var(--dark); line-height: 1.4; }
-.home-planner-card p { font-size: 13px; color: #888; line-height: 1.75; font-weight: 300; }
+.home-planner-card { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 36px 28px; display: grid; grid-template-columns: 36px 1fr; grid-template-rows: auto auto; column-gap: 14px; row-gap: 12px; }
+.planner-icon { color: var(--gold); grid-column: 1; grid-row: 1; align-self: center; }
+.home-planner-card h3 { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: var(--dark); line-height: 1.4; grid-column: 2; grid-row: 1; align-self: center; margin: 0; }
+.home-planner-card p { font-size: 13px; color: #888; line-height: 1.75; font-weight: 300; grid-column: 1 / -1; grid-row: 2; margin: 0; }
 .home-banner { position: relative; height: 260px; display: flex; align-items: center; overflow: hidden; }
 .home-banner-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
 .home-banner-overlay { position: absolute; inset: 0; background: rgba(10,5,2,0.35); }
