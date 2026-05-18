@@ -450,7 +450,8 @@ a { text-decoration: none; color: inherit; }
 
   /* VISION */
   .home-vision { grid-template-columns: 1fr !important; padding: 40px 24px !important; gap: 20px; }
-  .home-vision-right { display: none; }
+  .home-vision-right { display: block; }
+  .home-vision-img { width: 100%; margin-left: 0; border-radius: 8px; height: 280px; }
   .home-h2 { font-size: 32px !important; }
   .home-vision-text br { display: none; }
 
