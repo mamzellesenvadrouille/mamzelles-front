@@ -432,3 +432,99 @@ a { text-decoration: none; color: inherit; }
   .blog-grid { grid-template-columns: 1fr; }
   .blog-section { padding: 48px 20px 60px; }
 }
+
+/* ===================== RESPONSIVE MOBILE COMPLET ===================== */
+@media (max-width: 768px) {
+
+  /* NAV */
+  .nav { padding: 16px 20px; }
+  .nav-cta { padding: 8px 14px; font-size: 9px; }
+  .logo-main { font-size: 16px; }
+  .logo-sub { font-size: 7px; }
+
+  /* HERO - toutes pages */
+  .hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
+  .hero-content h1 { font-size: 38px !important; white-space: normal !important; }
+  .qsn-hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
+  .qsn-hero-h1 { font-size: 42px !important; }
+
+  /* VISION */
+  .home-vision { grid-template-columns: 1fr !important; padding: 40px 24px !important; gap: 20px; }
+  .home-vision-right { display: none; }
+  .home-h2 { font-size: 32px !important; }
+  .home-vision-text br { display: none; }
+
+  /* PLANNERS */
+  .home-planners { padding: 32px 24px 40px !important; }
+  .home-planners-grid { grid-template-columns: 1fr !important; gap: 16px; }
+
+  /* BANDEAU */
+  .home-banner { height: 200px; }
+  .home-banner-text { font-size: 26px; }
+  .home-banner-content { padding: 0 24px; }
+  .home-banner-sub { font-size: 13px; }
+
+  /* ABOUT */
+  .home-about { grid-template-columns: 1fr !important; }
+  .home-about-img-wrap { height: 260px; }
+  .home-about-content { padding: 32px 24px !important; }
+  .home-about-h2 { font-size: 30px !important; }
+  .home-about-text br { display: none; }
+
+  /* BLOG HOME */
+  .home-blog { padding: 40px 24px 48px !important; }
+  .home-blog-header { flex-direction: column !important; gap: 12px; align-items: flex-start; }
+  .home-blog-grid { grid-template-columns: 1fr !important; gap: 16px; }
+
+  /* CTA */
+  .home-cta-content { padding: 0 24px !important; }
+  .home-cta-content h2 { font-size: 32px !important; }
+  .home-cta-sub br { display: none; }
+
+  /* FOOTER */
+  .footer-top { display: flex !important; flex-direction: column !important; gap: 20px !important; padding: 0; }
+  .footer-col-sep { display: none !important; }
+
+  /* QUI SOMMES-NOUS */
+  .qsn-histoire { grid-template-columns: 1fr !important; padding: 40px 24px !important; gap: 24px; }
+  .qsn-histoire-photos { height: 260px; }
+  .qsn-histoire-img { width: 100%; left: 0; }
+  .qsn-histoire-img-2 { display: none; }
+  .qsn-histoire-h2 { font-size: 32px !important; }
+  .qsn-histoire-text br { display: none; }
+
+  .qsn-vanlife { flex-direction: column !important; }
+  .qsn-vanlife-img-wrap { width: 100% !important; }
+  .qsn-vanlife-content { position: relative !important; width: 100% !important; padding: 32px 24px !important; background: var(--bg) !important; }
+  .qsn-vanlife-h2 { font-size: 28px !important; }
+
+  .qsn-inspi { grid-template-columns: 1fr !important; padding: 40px 24px !important; }
+  .qsn-inspi-photos { height: 200px !important; padding: 0 !important; }
+  .qsn-inspi-h2 { font-size: 30px !important; }
+
+  .qsn-insta { padding: 40px 0 32px !important; }
+  .qsn-insta-grid { grid-template-columns: repeat(3, 1fr) !important; }
+  .qsn-insta-side { display: none !important; }
+  .qsn-insta-bottom { flex-direction: column !important; }
+
+  .qsn-merci { padding: 60px 24px !important; }
+  .qsn-merci-h2 { font-size: 28px !important; }
+
+  /* FORMULES PAGE */
+  .essentials { padding: 40px 24px !important; }
+  .ess-grid { grid-template-columns: 1fr 1fr !important; }
+  .formulas-left { padding: 40px 24px !important; }
+  .options { padding: 40px 24px !important; }
+  .options-grid { grid-template-columns: 1fr 1fr !important; }
+  .process { padding: 40px 24px !important; }
+  .process-steps { grid-template-columns: 1fr !important; }
+  .contact-section { padding: 40px 24px !important; }
+  .contact-header { grid-template-columns: 1fr !important; }
+  .form-grid { grid-template-columns: 1fr 1fr !important; }
+  .span2 { grid-column: span 2 !important; }
+  .contact-h2 { font-size: 30px !important; }
+
+  /* BLOG PAGE */
+  .blog-section { padding: 40px 24px 60px !important; }
+  .blog-grid { grid-template-columns: 1fr !important; }
+}
