@@ -1,4 +1,5 @@
 import InstagramFeed from './InstagramFeed';
+import Navbar from '../components/Navbar';
 
 export default function QuiSommesNous() {
   return (
@@ -6,19 +7,7 @@ export default function QuiSommesNous() {
 
       {/* HERO */}
       <section className="hero qsn-hero">
-        <nav className="nav">
-          <div className="logo">
-            <span className="logo-main">MamZelles en vadrouille</span>
-            <span className="logo-sub">Créatrices de voyages sur mesure</span>
-          </div>
-          <div className="nav-links">
-            <a href="/">Accueil</a>
-            <a href="/formules">Nos formules</a>
-            <a href="/blog">Notre blog voyages</a>
-            <a href="/qui-sommes-nous" className="nav-active">Qui sommes-nous ?</a>
-          </div>
-          <a href="/formules#formulaire" className="nav-cta">Contact</a>
-        </nav>
+        <Navbar activePage="qui-sommes-nous" />
         <img className="hero-bg" src="/hero-nous.jpg" alt="" loading="eager" />
         <div className="hero-overlay" />
         <div className="qsn-hero-content">
