@@ -1,0 +1,332 @@
+import { Plane, BedDouble, Utensils, MapPin, Map, Compass, Users, User, Calendar, Notebook } from 'lucide-react';
+import ContactForm from '../ContactForm';
+
+export default function Formules() {
+  return (
+    <div style={{ width: '100%', overflowX: 'hidden' }}>
+
+      {/* HERO */}
+      <section className="hero hero-formules">
+        <nav className="nav">
+          <div className="logo">
+            <span className="logo-main">MamZelles en vadrouille</span>
+            <span className="logo-sub">Créatrices de voyages sur mesure</span>
+          </div>
+          <div className="nav-links">
+            <a href="/">Accueil</a>
+            <a href="/formules" className="nav-active">Nos formules</a>
+            <a href="/blog">Notre blog voyages</a>
+            <a href="/qui-sommes-nous">Qui sommes-nous ?</a>
+          </div>
+          <a href="#formulaire" className="nav-cta">Contact</a>
+        </nav>
+        <img className="hero-bg" src="/hero.jpg" alt="" />
+        <div className="hero-overlay" />
+        <div className="hero-content">
+          <h1>Votre voyage,<br /><em>vos envies,</em><br />votre budget.</h1>
+          <div className="hero-rule" />
+          <p className="hero-desc">On crée l&apos;itinéraire qui vous ressemble — devis personnalisé<br />sous 48h, gratuit &amp; sans engagement.</p>
+        </div>
+      </section>
+
+      {/* ESSENTIALS */}
+      <section className="essentials">
+        <p className="section-label">Nos formules</p>
+        <h2 className="ess-title">Ce qui est toujours <em>inclus</em></h2>
+        <div className="ess-grid">
+          <div className="ess-card">
+            <Plane size={34} className="ess-icon" strokeWidth={1.2} />
+            <h3>Transports</h3>
+            <p>Des trajets choisis pour un voyage fluide et serein<br />(avion, train, bus...)</p>
+          </div>
+          <div className="ess-card">
+            <BedDouble size={34} className="ess-icon" strokeWidth={1.2} />
+            <h3>Hébergements</h3>
+            <p>3 adresses choisies<br />avec soin par destination,<br />selon vos envies</p>
+          </div>
+          <div className="ess-card">
+            <Utensils size={34} className="ess-icon" strokeWidth={1.2} />
+            <h3>Restaurants</h3>
+            <p>Les meilleures adresses<br />pour vous régaler</p>
+          </div>
+          <div className="ess-card">
+            <MapPin size={34} className="ess-icon" strokeWidth={1.2} />
+            <h3>Sites & activités</h3>
+            <p>Des expériences authentiques et des pépites locales</p>
+          </div>
+          <div className="ess-card">
+            <Map size={34} className="ess-icon" strokeWidth={1.2} />
+            <h3>Carte Google Maps</h3>
+            <p>Toutes vos adresses<br />géolocalisées,<br />prêtes à explorer</p>
+          </div>
+          <div className="ess-card">
+            <Notebook size={34} className="ess-icon" strokeWidth={1.2} />
+            <h3>Carnet digital</h3>
+            <p>Réservations, infos pratiques, check-list valise, tout est dedans !</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FORMULES */}
+      <section className="formules" id="nos-formules">
+
+        {/* GAUCHE */}
+        <div className="formulas-left">
+          <p className="eyebrow-dark">Nos formules</p>
+          <h2 className="form-h2">Trouvez celle<br />qui vous <em>correspond</em></h2>
+
+          <div className="fcard">
+            <div className="fcard-icon"><Compass size={16} strokeWidth={1.3} /></div>
+            <div className="fcard-info">
+              <div className="fcard-name">L&apos;Escale</div>
+              <div className="fcard-days">2 à 4 jours</div>
+            </div>
+            <div className="fcard-price"><span>À partir de</span><strong>179€</strong></div>
+            <div className="fcard-arrow-wrap">
+              <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 3 restaurants, 3 sites & activités</p></div>
+            </div>
+          </div>
+
+          <div className="fcard fcard-popular">
+            <div className="popular-badge">La plus populaire</div>
+            <div className="fcard-icon"><Compass size={16} strokeWidth={1.3} /></div>
+            <div className="fcard-info">
+              <div className="fcard-name">La Vadrouille</div>
+              <div className="fcard-days">5 à 8 jours</div>
+            </div>
+            <div className="fcard-price"><span>À partir de</span><strong>329€</strong></div>
+            <div className="fcard-arrow-wrap">
+              <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 5 restaurants, 5 sites & activités</p></div>
+            </div>
+          </div>
+
+          <div className="fcard">
+            <div className="fcard-icon"><Compass size={16} strokeWidth={1.3} /></div>
+            <div className="fcard-info">
+              <div className="fcard-name">La Grande Vadrouille</div>
+              <div className="fcard-days">9 à 14 jours</div>
+            </div>
+            <div className="fcard-price"><span>À partir de</span><strong>499€</strong></div>
+            <div className="fcard-arrow-wrap">
+              <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 8 restaurants, 8 sites & activités</p></div>
+            </div>
+          </div>
+
+          <a href="#formulaire" className="btn-gold" style={{ marginTop: '24px', display: 'inline-flex', width: 'auto' }}>Demander un devis gratuit</a>
+        </div>
+
+        {/* DROITE */}
+        <div className="formulas-right">
+          <img src="/desert.jpg" alt="Désert" className="form-right-img" />
+          <div className="form-right-overlay" />
+          <div className="form-right-card">
+            <span className="frcard-badge">Sur-mesure</span>
+            <h2 className="form-right-h2">La formule<br /><em>sur-mesure</em></h2>
+            <div className="frcard-divider" />
+            <div className="frcard-features">
+              <div className="frcard-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Plus de 2 semaines
+              </div>
+              <div className="frcard-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Multi-destinations
+              </div>
+              <div className="frcard-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Suggestions d&apos;adresses sur devis
+              </div>
+            </div>
+            <div className="frcard-divider" />
+            <div className="form-right-price-block">
+              <p className="form-right-price-label">À partir de</p>
+              <p className="form-right-price">549€</p>
+            </div>
+            <a href="#formulaire" className="btn-dark form-right-cta">Demander un devis gratuit</a>
+          </div>
+        </div>
+      </section>
+
+      {/* OPTIONS À LA CARTE */}
+      <section className="options">
+        <div className="options-inner">
+          <div className="options-left">
+            <p className="eyebrow-dark">Options à la carte</p>
+            <h2 className="form-h2">Personnalisez<br /><em>votre voyage</em></h2>
+            <p>Tarif de base : 2 adultes — bébé(s) de moins de 2 ans inclus.</p>
+          </div>
+          <div className="options-grid">
+            <div className="opt-card">
+              <Users size={32} strokeWidth={1.2} className="opt-card-icon" />
+              <div className="opt-card-name">Adulte supplémentaire</div>
+              <div className="opt-card-sub">(12 ans et +)</div>
+              <div className="opt-card-price">+25€</div>
+            </div>
+            <div className="opt-card">
+              <User size={32} strokeWidth={1.2} className="opt-card-icon" />
+              <div className="opt-card-name">Enfant</div>
+              <div className="opt-card-sub">(2 à 11 ans)</div>
+              <div className="opt-card-price">+15€</div>
+            </div>
+            <div className="opt-card">
+              <MapPin size={32} strokeWidth={1.2} className="opt-card-icon" />
+              <div className="opt-card-name">Destination<br />supplémentaire</div>
+              <div className="opt-card-sub">&nbsp;</div>
+              <div className="opt-card-price">+35€</div>
+            </div>
+            <div className="opt-card">
+              <Calendar size={32} strokeWidth={1.2} className="opt-card-icon" />
+              <div className="opt-card-name">Planning détaillé<br />jour par jour</div>
+              <div className="opt-card-sub">&nbsp;</div>
+              <div className="opt-card-price"><em>sur devis</em></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MOSAIC + CALL */}
+      <section className="mosaic-call">
+        <div className="mosaic-col">
+          <img src="/photo1.jpg" alt="" />
+          <img src="/photo2.jpeg" alt="" />
+          <img src="/photo3.jpg" alt="" />
+        </div>
+        <div className="call-col">
+          <p className="eyebrow-dark">Parlons de votre voyage</p>
+          <h2>Réservez un appel<br />découverte <em>gratuit</em></h2>
+          <div className="call-rule" />
+          <p className="call-desc">20 minutes pour échanger sur vos envies et commencer à imaginer votre voyage.</p>
+          <a href="https://calendly.com/contact-mamzellesenvadrouille/appel-decouverte-mamzelles-en-vadrouille" className="btn-dark-full">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6z"/></svg>
+            Réserver mon appel découverte
+          </a>
+        </div>
+      </section>
+
+      {/* COMMENT ÇA SE PASSE */}
+      <section className="process">
+        <div className="process-header">
+          <p className="eyebrow-dark">Comment ça se passe ?</p>
+          <h2>Un accompagnement <em>simple et efficace.</em></h2>
+          <p className="process-subtitle">De votre première prise de contact à votre départ,<br />nous vous guidons à chaque étape pour une expérience fluide et sereine.</p>
+        </div>
+        <div className="process-steps">
+
+          <div className="process-step-wrap">
+            <div className="process-step">
+              <div className="step-circle-wrap">
+                <div className="step-num">01</div>
+                <div className="step-circle">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                </div>
+              </div>
+              <h3>Prise de contact</h3>
+              <p>Via le formulaire ou<br />l&apos;appel découverte.</p>
+            </div>
+            <div className="process-arrow">›</div>
+          </div>
+
+          <div className="process-step-wrap">
+            <div className="process-step">
+              <div className="step-circle-wrap">
+                <div className="step-num">02</div>
+                <div className="step-circle">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+                </div>
+              </div>
+              <h3>Vos liens de réservation,<br />prêts à cliquer</h3>
+              <p>Sous 10 jours ouvrés<br />après validation du devis.</p>
+            </div>
+            <div className="process-arrow">›</div>
+          </div>
+
+          <div className="process-step-wrap">
+            <div className="process-step">
+              <div className="step-circle-wrap">
+                <div className="step-num">03</div>
+                <div className="step-circle">
+                  <Notebook size={26} strokeWidth={1.4} />
+                </div>
+              </div>
+              <h3>Réception de votre<br />carnet & Maps</h3>
+              <p>1 semaine avant le départ.</p>
+            </div>
+            <div className="process-arrow">›</div>
+          </div>
+
+          <div className="process-step-wrap">
+            <div className="process-step">
+              <div className="step-circle-wrap">
+                <div className="step-num">04</div>
+                <div className="step-circle">
+                  <Plane size={26} strokeWidth={1.4} />
+                </div>
+              </div>
+              <h3>Partez l&apos;esprit léger</h3>
+              <p>Et profitez !</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* FORMULAIRE CONTACT */}
+      <ContactForm />
+
+      {/* DISCLAIMER */}
+      <section className="disclaimer">
+        <div className="disclaimer-inner">
+          <div className="disclaimer-icon">i</div>
+          <div className="disclaimer-divider" />
+          <div className="disclaimer-content">
+            <p className="disclaimer-eyebrow">Information importante</p>
+            <p>MamZelles en vadrouille est un service de conseil et de planification de voyage. Nous ne procédons à aucune réservation en votre nom. Les liens fournis vous permettent d&apos;effectuer vos réservations en toute liberté et autonomie.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        <div className="footer-top">
+          <div className="footer-col">
+            <div className="footer-logo-wrap">
+              <span className="footer-logo-main">MamZelles en vadrouille</span>
+              <span className="footer-logo-sub">Créatrices de voyages sur mesure</span>
+            </div>
+          </div>
+          <div className="footer-col-sep" />
+          <div className="footer-col">
+            <a href="https://instagram.com/mamzellesenvadrouille" target="_blank" rel="noopener noreferrer" className="footer-social-item">
+              <div className="footer-social-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div className="footer-social-text">
+                <span className="footer-social-label">Suivez nos aventures</span>
+                <span className="footer-social-value">@mamzellesenvadrouille</span>
+              </div>
+            </a>
+          </div>
+          <div className="footer-col-sep" />
+          <div className="footer-col">
+            <a href="mailto:contact@mamzellesenvadrouille.com" className="footer-social-item">
+              <div className="footer-social-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div className="footer-social-text">
+                <span className="footer-social-label">Écrivez-nous</span>
+                <span className="footer-social-value">contact@mamzellesenvadrouille.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          © 2026 MamZelles en vadrouille — Tous droits réservés
+        </div>
+      </footer>
+
+    </div>
+  );
+}
