@@ -1,4 +1,5 @@
 import { Plane, BedDouble, Utensils, MapPin, Map, Compass, Users, User, Calendar, Notebook } from 'lucide-react';
+import Navbar from '../components/Navbar';
 import ContactForm from '../ContactForm';
 
 export default function Formules() {
@@ -7,19 +8,7 @@ export default function Formules() {
 
       {/* HERO */}
       <section className="hero hero-formules">
-        <nav className="nav">
-          <div className="logo">
-            <span className="logo-main">MamZelles en vadrouille</span>
-            <span className="logo-sub">Créatrices de voyages sur mesure</span>
-          </div>
-          <div className="nav-links">
-            <a href="/">Accueil</a>
-            <a href="/formules" className="nav-active">Nos formules</a>
-            <a href="/blog">Notre blog voyages</a>
-            <a href="/qui-sommes-nous">Qui sommes-nous ?</a>
-          </div>
-          <a href="#formulaire" className="nav-cta">Contact</a>
-        </nav>
+        <Navbar activePage="formules" contactHref="#formulaire" />
         <img className="hero-bg" src="/hero.jpg" alt="" />
         <div className="hero-overlay" />
         <div className="hero-content">

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Navbar from '../components/Navbar';
 
 export const metadata: Metadata = {
   title: 'Notre Blog Voyages | MamZelles en vadrouille',
@@ -112,19 +113,7 @@ export default async function BlogPage() {
 
       {/* NAV */}
       <section className="hero hero-blog">
-        <nav className="nav">
-          <div className="logo">
-            <span className="logo-main">MamZelles en vadrouille</span>
-            <span className="logo-sub">Créatrices de voyages sur mesure</span>
-          </div>
-          <div className="nav-links">
-            <a href="/">Accueil</a>
-            <a href="/formules">Nos formules</a>
-            <a href="/blog" className="nav-active">Notre blog voyages</a>
-            <a href="/qui-sommes-nous">Qui sommes-nous ?</a>
-          </div>
-          <a href="/formules#formulaire" className="nav-cta">Contact</a>
-        </nav>
+        <Navbar activePage="blog" />
         <img className="hero-bg" src="/hero-blog.jpg" alt="" />
         <div className="hero-overlay" />
         <div className="hero-content">
