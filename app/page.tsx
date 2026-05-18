@@ -89,6 +89,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BANDEAU MOBILE - sous la photo */}
+      <section className="home-banner home-banner-mobile">
+        <img src="/bandeau.jpg" alt="" className="home-banner-bg" loading="lazy" />
+        <div className="home-banner-overlay" />
+        <div className="home-banner-content">
+          <p className="home-banner-text">Votre voyage <em>commence ici</em></p>
+          <div className="home-banner-rule" />
+          <p className="home-banner-sub">Chaque itinéraire est imaginé pour vous laisser vivre l&apos;essentiel : découvrir, ressentir, ralentir.</p>
+        </div>
+      </section>
+
       {/* BLOG */}
       <section className="home-blog">
         <div className="home-blog-header">
