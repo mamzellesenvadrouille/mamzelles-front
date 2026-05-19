@@ -721,3 +721,13 @@ a { text-decoration: none; color: inherit; }
 @media only screen and (max-width: 768px) {
   .form-right-h2, .form-right-h2-mobile { font-family: 'Cormorant Garamond', serif !important; font-size: 26px !important; font-style: italic !important; font-weight: 600 !important; line-height: 1.1 !important; }
 }
+
+/* FORCE form-right-h2 mobile - highest specificity */
+@media (max-width: 768px) {
+  html body .form-right-card h2.form-right-h2 {
+    font-size: 26px !important;
+    font-style: italic !important;
+    font-weight: 600 !important;
+    font-family: 'Cormorant Garamond', serif !important;
+  }
+}
