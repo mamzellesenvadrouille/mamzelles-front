@@ -1,169 +1,143 @@
-import type { Metadata } from 'next';
-import Navbar from '../components/Navbar';
+import { Clock, Heart, Map, User } from 'lucide-react';
+import Navbar from './components/Navbar';
 
-export const metadata: Metadata = {
-  title: 'Notre Blog Voyages | MamZelles en vadrouille',
-  description: 'Inspirations, itinéraires et bons plans voyage par MamZelles en vadrouille. Découvrez nos articles sur les Philippines, le Maroc, l\'Espagne et bien plus.',
-};
-
-const articles = [
-  {
-    titre: 'Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus',
-    url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus/',
-    image: 'https://mamzellesenvadrouille.com/wp-content/uploads/2024/01/port-barton.jpg',
-    localImage: null,
-    categorie: 'Philippines',
-  },
-  {
-    titre: 'Palawan : Entre El Nido & Coron, découvrez le joyau des Philippines !',
-    url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines/',
-    image: null,
-    localImage: null,
-    categorie: 'Philippines',
-  },
-  {
-    titre: 'Itinéraire Philippines : 3 semaines pour découvrir la perle de l\'Orient !',
-    url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/',
-    image: null,
-    localImage: '/Philippines.jpg',
-    categorie: 'Philippines',
-  },
-  {
-    titre: 'Dormir dans le désert d\'Agafay, une expérience inoubliable !',
-    url: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/',
-    image: null,
-    localImage: '/Agafay.jpg',
-    categorie: 'Maroc',
-  },
-  {
-    titre: 'Marrakech, tous les secrets pour découvrir la ville rouge & son effervescence !',
-    url: 'https://mamzellesenvadrouille.com/visiter-marrakech/',
-    image: null,
-    localImage: null,
-    categorie: 'Maroc',
-  },
-  {
-    titre: 'Une semaine à Lanzarote, Road trip sur l\'île aux 300 volcans !',
-    url: 'https://mamzellesenvadrouille.com/road-trip-a-lanzarote/',
-    image: null,
-    localImage: null,
-    categorie: 'Espagne',
-  },
-  {
-    titre: '3 jours à Madrid : découvrez les lieux incontournables de la capitale espagnole !',
-    url: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours/',
-    image: null,
-    localImage: '/Madrid.jpg',
-    categorie: 'Espagne',
-  },
-  {
-    titre: 'Visiter Londres en 1 semaine : l\'essentiel par quartier, infos pratiques & bons plans',
-    url: 'https://mamzellesenvadrouille.com/visiter-londres-en-1-semaine/',
-    image: null,
-    localImage: null,
-    categorie: 'Europe',
-  },
-];
-
-async function getWpImages(): Promise<Record<string, string>> {
-  try {
-    const slugs = [
-      'palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-      'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
-      'itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
-      'dormir-dans-le-desert-agafay',
-      'visiter-marrakech',
-      'road-trip-a-lanzarote',
-      'visiter-madrid-en-3-jours',
-      'visiter-londres-en-1-semaine',
-    ];
-    const res = await fetch(
-      `https://mamzellesenvadrouille.com/wp-json/wp/v2/posts?slug=${slugs.join(',')}&_embed&per_page=10`,
-      { next: { revalidate: 3600 } }
-    );
-    if (!res.ok) return {};
-    const posts = await res.json();
-    const map: Record<string, string> = {};
-    for (const post of posts) {
-      const img = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-      if (img) map[post.slug] = img;
-    }
-    return map;
-  } catch {
-    return {};
-  }
-}
-
-export default async function BlogPage() {
-  const wpImages = await getWpImages();
-
-  const slugs = [
-    'palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-    'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
-    'itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
-    'dormir-dans-le-desert-agafay',
-    'visiter-marrakech',
-    'road-trip-a-lanzarote',
-    'visiter-madrid-en-3-jours',
-    'visiter-londres-en-1-semaine',
-  ];
-
+export default function Home() {
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
-      {/* NAV */}
-      <section className="hero hero-blog">
-        <Navbar activePage="blog" />
-        <img className="hero-bg" src="/hero-blog.jpg" alt="" />
+      {/* HERO */}
+      <section className="hero hero-home">
+        <Navbar activePage="accueil" />
+        <img className="hero-bg" src="/home-hero.jpg" alt="" />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>Notre blog<br /><em>voyages</em></h1>
+          <h1>Vous l&apos;imaginez,<br /><em>On le réalise.</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Inspirations, itinéraires & bons plans<br />pour nourrir vos envies d&apos;ailleurs.</p>
+          <p className="hero-desc">Le plus beau voyage,<br />c&apos;est celui qui vous ressemble.</p>
+          <a href="/formules#formulaire" className="btn-gold-outline-hero">Créer mon itinéraire</a>
         </div>
       </section>
 
-      {/* ARTICLES */}
-      <section className="blog-section">
-        <div className="blog-intro">
-          <p className="eyebrow-dark">Nos articles</p>
-          <h2 className="home-h2">Des destinations pour <em>vous inspirer</em></h2>
+      {/* NOTRE VISION */}
+      <section className="home-vision" id="approche">
+        <div className="home-vision-left">
+          <p className="eyebrow-dark">Vos Travel Planners</p>
+          <h2 className="home-h2">Pensé pour vous,<br /><em>créé avec passion.</em></h2>
+          <div className="home-rule" />
+          <p className="home-vision-text">Avant d&apos;être Travel Planners, <br />nous sommes surtout deux voyageuses. <br />Deux regards sensibles à l&apos;équilibre d&apos;un voyage, <br />à la façon dont chacun aime découvrir le monde <br />et à tout ce qui en fait sa richesse. <br />Grâce à nos expériences de terrain et à une préparation <br />pensée avec soin, nous créons des voyages personnalisés, <br />inspirants et mémorables.</p>
         </div>
-        <div className="blog-grid">
-          {articles.map((article, i) => {
-            const slug = slugs[i];
-            const imgSrc = article.localImage || wpImages[slug] || '/home-hero.jpg';
-            return (
-              <a
-                key={i}
-                href={article.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="blog-card"
-              >
-                <div className="blog-card-img-wrap">
-                  <img src={imgSrc} alt="" className="blog-card-img" loading="lazy" />
-                  <span className="blog-card-cat">{article.categorie}</span>
-                </div>
-                <div className="blog-card-body">
-                  <h3 className="blog-card-title">{article.titre}</h3>
-                  <span className="blog-card-read">Lire l&apos;article →</span>
-                </div>
-              </a>
-            );
-          })}
+        <div className="home-vision-right">
+          <img src="/vision.jpg" alt="Voyage sur mesure" className="home-vision-img" loading="lazy" />
         </div>
       </section>
 
-      {/* CTA */}
+      {/* VOS TRAVEL PLANNERS */}
+      <section className="home-planners">
+        <div className="home-planners-header">
+          <h2 className="home-h2">Pourquoi voyager <em>avec nous ?</em></h2>
+        </div>
+        <div className="home-planners-grid">
+          <div className="home-planner-card">
+            <Clock size={32} strokeWidth={1.3} className="planner-icon" />
+            <h3>Un gain de temps précieux</h3>
+            <p>Fini les heures passées à organiser chaque étape du voyage. Nous recherchons et comparons transports, hôtels et activités pour vous.</p>
+          </div>
+          <div className="home-planner-card">
+            <Map size={32} strokeWidth={1.3} className="planner-icon" />
+            <h3>Un itinéraire 100% personnalisé</h3>
+            <p>Chaque voyage est imaginé selon vos envies, votre rythme et votre budget. Aucun itinéraire ne se ressemble.</p>
+          </div>
+          <div className="home-planner-card">
+            <User size={32} strokeWidth={1.3} className="planner-icon" />
+            <h3>Un accompagnement humain</h3>
+            <p>Questions, ajustements, derniers détails… nous restons à vos côtés jusqu&apos;à ce que votre voyage soit prêt.</p>
+          </div>
+          <div className="home-planner-card">
+            <Heart size={32} strokeWidth={1.3} className="planner-icon" />
+            <h3>Un voyage en toute sérénité</h3>
+            <p>Votre carnet de voyage vous attend — informations essentielles, adresses sélectionnées, tout est là. Il ne vous reste plus qu&apos;à partir.</p>
+          </div>
+        </div>
+        <div className="home-planners-cta">
+          <a href="/formules#nos-formules" className="btn-gold-outline-hero">Découvrir nos formules →</a>
+        </div>
+      </section>
+
+
+      {/* BANDEAU PHOTO */}
+      <section className="home-banner">
+        <img src="/bandeau.jpg" alt="" className="home-banner-bg" loading="lazy" />
+        <div className="home-banner-overlay" />
+        <div className="home-banner-content">
+          <p className="home-banner-text">Votre voyage <em>commence ici</em></p>
+          <div className="home-banner-rule" />
+          <p className="home-banner-sub">Chaque itinéraire est imaginé<br />pour vous laisser vivre l&apos;essentiel :<br />découvrir, ressentir, ralentir.</p>
+        </div>
+      </section>
+
+      {/* QUI SOMMES-NOUS */}
+      <section className="home-about">
+        <div className="home-about-img-wrap">
+          <img src="/champ.png" alt="Amélie et Laurie" className="home-about-img" loading="lazy" />
+        </div>
+        <div className="home-about-content">
+          <p className="eyebrow-dark">Qui sommes-nous</p>
+          <h2 className="home-about-h2">Deux voyageuses,<br />Une même <em>vision du voyage.</em></h2>
+          <div className="home-rule" />
+          <p className="home-about-text">Nous, c&rsquo;est Amélie et Laurie — deux amoureuses de la vie et <br />du voyage, installées à Antibes depuis plus de 13 ans. <br /><br />Les voyages nous ont appris à profiter pleinement de l&rsquo;instant <br />présent et à voir la beauté dans les choses simples. <br /><br />Aujourd&rsquo;hui, nous imaginons des voyages inspirés par tout ce que <br />nous aimons vivre nous-mêmes : la spontanéité, les rencontres et <br />tous ces moments qui font les vrais souvenirs.</p>
+          <a href="/qui-sommes-nous" className="home-about-link">Notre histoire →</a>
+        </div>
+      </section>
+
+      {/* BLOG */}
+      <section className="home-blog">
+        <div className="home-blog-header">
+          <div>
+            <p className="eyebrow-dark">Inspirations de voyage</p>
+            <h2 className="home-h2">Des idées pour nourrir <em>vos envies d&apos;ailleurs</em></h2>
+          </div>
+          <a href="https://mamzellesenvadrouille.com/destinations/" target="_blank" rel="noopener noreferrer" className="home-link">Voir tous les articles →</a>
+        </div>
+        <div className="home-blog-grid">
+          <a href="https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
+            <div className="home-blog-img-wrap">
+              <img src="/Madrid.jpg" alt="" className="home-blog-img madrid" loading="lazy" />
+            </div>
+            <div className="home-blog-body">
+              <h3>Madrid en 3 jours : que voir ? Lieux incontournables & bons plans</h3>
+              <span className="home-blog-read">Lire l&apos;article →</span>
+            </div>
+          </a>
+          <a href="https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
+            <div className="home-blog-img-wrap">
+              <img src="/Agafay.jpg" alt="" className="home-blog-img" loading="lazy" />
+            </div>
+            <div className="home-blog-body">
+              <h3>Désert d&apos;Agafay : notre guide pour une nuit près de Marrakech</h3>
+              <span className="home-blog-read">Lire l&apos;article →</span>
+            </div>
+          </a>
+          <a href="https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
+            <div className="home-blog-img-wrap">
+              <img src="/Philippines.jpg" alt="" className="home-blog-img" loading="lazy" />
+            </div>
+            <div className="home-blog-body">
+              <h3>Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient</h3>
+              <span className="home-blog-read">Lire l&apos;article →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      {/* CTA FORMULAIRE */}
       <section className="home-cta">
         <img src="/cta.jpg" alt="" className="home-cta-bg" />
         <div className="home-cta-overlay" />
         <div className="home-cta-content">
           <p className="eyebrow">Votre voyage sur mesure</p>
-          <h2>Ces destinations<br />vous font <em>rêver ?</em></h2>
+          <h2>Prêt·e à créer<br />votre <em>prochain voyage ?</em></h2>
           <p className="home-cta-sub">Dites-nous ce que vous imaginez.<br />On s&apos;occupe du reste.</p>
-          <a href="/formules#formulaire" className="btn-gold-outline-hero">Créer mon voyage</a>
+          <a href="/formules#formulaire" className="btn-gold-outline-hero">Commencer mon projet</a>
         </div>
       </section>
 
@@ -202,10 +176,11 @@ export default async function BlogPage() {
           </div>
         </div>
         <div className="footer-bottom">
-          © 2026 MamZelles en vadrouille — Tous droits réservés
+          © 2026 MamZelles en vadrouille<br className="mobile-br" />Tous droits réservés
         </div>
       </footer>
 
     </div>
   );
 }
+ 
