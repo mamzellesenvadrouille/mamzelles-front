@@ -552,7 +552,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   /* Hero home moins haut + plus de photo Ã  droite */
   .hero-home { height: 75vh !important; }
-  .hero-home .hero-bg { object-position: 60% center !important; }
+  .hero-home .hero-bg { object-position: 55% center !important; }
 
   /* Burger visible, Contact desktop cachÃ© */
   .nav-cta-desktop { display: none !important; }
@@ -677,15 +677,19 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 768px) {
+  /* FORMULES - mosaique et call-col */
+  .call-col { padding: 24px 24px !important; }
+  .mosaic-col { height: 200px !important; }
+
   /* FORMULES - soleil Ã  gauche */
   .hero-formules .hero-bg { object-position: 30% center !important; }
 
   /* FORMULES - eyebrows et titres harmonisÃ©s comme home */
   .section-label { font-size: 10px !important; margin-bottom: 8px !important; }
-  .ess-title { font-size: 32px !important; margin-bottom: 16px !important; }
-  .form-h2 { font-size: 32px !important; }
-  .form-right-h2 { font-size: 28px !important; }
-  .call-col h2 { font-size: 32px !important; }
-  .process h2 { font-size: 32px !important; }
-  .cta-banner-content h2 { font-size: 32px !important; }
+  .ess-title { font-size: 32px !important; margin-top: 10px !important; margin-bottom: 16px !important; }
+  .form-h2 { font-size: 32px !important; margin-top: 10px !important; }
+  .form-right-h2 { font-size: 28px !important; margin-top: 10px !important; }
+  .call-col h2 { font-size: 32px !important; margin-top: 10px !important; }
+  .process h2 { font-size: 32px !important; margin-top: 10px !important; }
+  .cta-banner-content h2 { font-size: 32px !important; margin-top: 10px !important; }
 }
