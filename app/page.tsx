@@ -24,7 +24,7 @@ export default function Home() {
           <p className="eyebrow-dark">Vos Travel Planners</p>
           <h2 className="home-h2">Pensé pour vous,<br /><em>créé avec passion.</em></h2>
           <div className="home-rule" />
-          <p className="home-vision-text">Avant d&apos;être Travel Planners, nous sommes surtout deux voyageuses. Deux regards sensibles à l&apos;équilibre d&apos;un voyage, à la façon dont chacun aime découvrir le monde et à tout ce qui en fait sa richesse. Grâce à nos expériences de terrain et à une préparation pensée avec soin, nous créons des voyages personnalisés, inspirants et mémorables.</p>
+          <p className="home-vision-text">Avant d&apos;être Travel Planners, nous sommes surtout deux voyageuses.<br />Deux regards sensibles à l&apos;équilibre d&apos;un voyage, à la façon dont chacun aime découvrir le monde et à tout ce qui en fait sa richesse.<br />Grâce à nos expériences de terrain et à une préparation pensée avec soin, nous créons des voyages personnalisés, inspirants et mémorables.</p>
         </div>
         <div className="home-vision-right">
           <img src="/vision.jpg" alt="Voyage sur mesure" className="home-vision-img" loading="lazy" />
@@ -84,7 +84,7 @@ export default function Home() {
           <p className="eyebrow-dark">Qui sommes-nous</p>
           <h2 className="home-about-h2">Deux voyageuses,<br />Une même <em>vision du voyage.</em></h2>
           <div className="home-rule" />
-          <p className="home-about-text">Nous, c&rsquo;est Amélie et Laurie — deux amoureuses de la vie et du voyage, installées à Antibes depuis plus de 13 ans. Les voyages nous ont appris à profiter pleinement de l&rsquo;instant présent et à voir la beauté dans les choses simples. Aujourd&rsquo;hui, nous imaginons des voyages inspirés par tout ce que nous aimons vivre nous-mêmes : la spontanéité, les rencontres et tous ces moments qui font les vrais souvenirs.</p>
+          <p className="home-about-text">Nous, c&rsquo;est Amélie et Laurie — deux amoureuses de la vie et du voyage,<br />installées à Antibes depuis plus de 13 ans.<br />Les voyages nous ont appris à profiter pleinement de l&rsquo;instant présent<br />et à voir la beauté dans les choses simples.<br />Aujourd&rsquo;hui, nous imaginons des voyages inspirés par tout ce que nous aimons<br />vivre nous-mêmes : la spontanéité, les rencontres<br />et tous ces moments qui font les vrais souvenirs.</p>
           <a href="/qui-sommes-nous" className="home-about-link">Notre histoire →</a>
         </div>
       </section>
