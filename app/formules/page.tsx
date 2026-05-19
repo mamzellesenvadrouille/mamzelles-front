@@ -14,7 +14,7 @@ export default function Formules() {
         <div className="hero-content">
           <h1>Votre voyage,<br /><em>vos envies,</em><br />votre budget.</h1>
           <div className="hero-rule" />
-          <p className="hero-desc">On crée l&apos;itinéraire qui vous ressemble —<br className="mobile-only-br" /> devis personnalisé sous 48h, gratuit<br className="mobile-only-br" /> &amp; sans engagement.</p>
+          <p className="hero-desc">On crée l&apos;itinéraire qui vous ressemble — devis personnalisé<br />sous 48h, gratuit &amp; sans engagement.</p>
         </div>
       </section>
 
@@ -126,7 +126,7 @@ export default function Formules() {
               </div>
               <div className="frcard-feature">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                Suggestions d&apos;adresses<br className="mobile-only-br" /> sur devis
+                Suggestions d&apos;adresses sur devis
               </div>
             </div>
             <div className="frcard-divider" />
