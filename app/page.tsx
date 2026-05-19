@@ -34,7 +34,7 @@ export default function Home() {
       {/* VOS TRAVEL PLANNERS */}
       <section className="home-planners">
         <div className="home-planners-header">
-          <h2 className="home-h2">Pourquoi voyager <em>avec nous ?</em></h2>
+          <h2 className="home-h2">Pourquoi voyager <em>avec <br className="mobile-only-br" />nous&nbsp;?</em></h2>
         </div>
         <div className="home-planners-grid">
           <div className="home-planner-card">
