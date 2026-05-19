@@ -673,7 +673,7 @@ a { text-decoration: none; color: inherit; }
   /* FORMULES HERO - plus petit que home + soleil Ã  droite */
   .hero-formules { height: 60vh !important; }
   .hero-formules .hero-bg { object-position: 70% center !important; }
-  .hero-formules .hero-content { padding: 0 24px 30px !important; }
+  .hero-formules .hero-content { padding: 0 24px 48px !important; }
 
   /* BLOG + QSN HERO - aussi plus petits */
   .hero-blog { height: 60vh !important; }
