@@ -703,7 +703,7 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 768px) {
   /* FORMULES - cards alignement */
-  .fcard { padding: 12px 16px !important; gap: 12px !important; margin-bottom: 12px !important; align-items: center !important; }
+  .fcard { padding: 12px 16px !important; gap: 12px !important; margin-bottom: 12px !important; align-items: center !important; min-height: 72px !important; }
   .fcard-name { font-size: 26px !important; line-height: 1 !important; }
   .fcard-days { font-size: 10px !important; margin-top: 4px !important; }
   .fcard-info { display: flex !important; flex-direction: column !important; justify-content: center !important; }
