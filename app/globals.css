@@ -542,7 +542,7 @@ a { text-decoration: none; color: inherit; }
   .contact-header { grid-template-columns: 1fr !important; margin-bottom: 16px !important; gap: 28px !important; }
   .contact-header > div { display: flex !important; flex-direction: column !important; gap: 10px !important; }
   .contact-h2 { font-size: 32px !important; margin: 0 !important; line-height: 1.05 !important; }
-  .contact-sub { margin: 0 !important; margin-bottom: 12px !important; }
+  .contact-sub { margin: 0 !important; margin-bottom: 6px !important; }
   .form-grid { grid-template-columns: 1fr 1fr !important; }
   .span2 { grid-column: span 2 !important; }
 
