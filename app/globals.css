@@ -686,7 +686,7 @@ a { text-decoration: none; color: inherit; }
   .mosaic-col { height: 200px !important; }
 
   /* FORMULES - soleil Ã  gauche */
-  .hero-formules .hero-bg { object-position: 37% center !important; }
+  .hero-formules .hero-bg { object-position: 33% center !important; }
 
   /* FORMULES - eyebrows et titres harmonisÃ©s comme home */
   .section-label { font-size: 10px !important; margin-bottom: 8px !important; }
@@ -714,9 +714,8 @@ a { text-decoration: none; color: inherit; }
 
 
 @media (max-width: 768px) {
-  /* Mosaic - first 2 photos show more of left side */
-  .mosaic-col img:nth-child(1) { object-position: 0% center !important; }
-  .mosaic-col img:nth-child(2) { object-position: 0% center !important; }
+  .mosaic-col img:nth-child(1) { object-position: left center !important; object-fit: cover !important; }
+  .mosaic-col img:nth-child(2) { object-position: left center !important; object-fit: cover !important; }
 }
 
 @media only screen and (max-width: 768px) {
