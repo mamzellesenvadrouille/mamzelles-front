@@ -17,7 +17,7 @@ a { text-decoration: none; color: inherit; }
 
 /* EYEBROWS */
 .eyebrow { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 10px; line-height: 1; }
-.eyebrow-dark { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; line-height: 1; }
+.eyebrow-dark { font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; line-height: 1; }
 .eyebrow-gold { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; line-height: 1; }
 
 /* HERO */
@@ -117,7 +117,7 @@ a { text-decoration: none; color: inherit; }
 .form-right-price { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: var(--gold); font-weight: 500; line-height: 1; }
 .form-right-cta { display: inline-flex; justify-content: center; margin-top: auto; }
 
-/* OPTIONS ÃƒÆ’Ã¢â€šÂ¬ LA CARTE */
+/* OPTIONS Ãƒâ‚¬ LA CARTE */
 .options { background: #fff; padding: 56px 52px; border-top: 1px solid var(--line); }
 .options-inner { display: grid; grid-template-columns: 340px 1fr; gap: 60px; align-items: start; }
 .options-left { display: flex; flex-direction: column; }
@@ -234,12 +234,12 @@ a { text-decoration: none; color: inherit; }
 .home-benefits { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
 .home-benefit { display: flex; align-items: center; gap: 14px; font-size: 13px; color: var(--dark); font-weight: 500; }
 .benefit-icon { color: var(--gold); flex-shrink: 0; }
-.home-vision-right { overflow: hidden; position: relative; border-radius: 14px; height: 460px; }
-.home-vision-img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; border-radius: 14px; margin-left: 0; }
+.home-vision-right { overflow: visible; position: relative; border-radius: 14px; }
+.home-vision-img { width: 120%; height: auto; object-fit: cover; object-position: center; display: block; border-radius: 14px; margin-left: -20%; }
 
 /* HOME PLANNERS */
 .home-planners { background: #fff; padding: 32px 160px 50px 160px; border-top: 1px solid var(--line); }
-.home-planners-header { margin-bottom: 24px; }
+.home-planners-header { margin-bottom: 40px; }
 .home-planners-cta { display: flex; justify-content: center; margin-top: 40px; }
 .home-planners-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .home-planner-card { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 36px 28px; display: grid; grid-template-columns: 36px 1fr; grid-template-rows: auto auto; column-gap: 14px; row-gap: 12px; }
@@ -261,7 +261,7 @@ a { text-decoration: none; color: inherit; }
 .home-about-img-wrap { height: 550px; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; background: var(--bg); position: relative; padding: 40px 0 0 0; }
 .home-about-img-wrap::after { content: ''; position: absolute; top: 0; right: 0; width: 30%; height: 100%; background: linear-gradient(to right, transparent, var(--bg)); }
 .home-about-img { width: 105%; height: auto; display: block; transform: translateY(8%); transform-origin: left bottom; margin-left: -2%; }
-.home-about-content { padding: 60px 80px 60px 60px; display: flex; flex-direction: column; justify-content: center; color: var(--dark); }
+.home-about-content { padding: 60px 260px 60px 60px; display: flex; flex-direction: column; justify-content: center; color: var(--dark); }
 .home-about-h2 { font-family: 'Cormorant Garamond', serif; font-size: 46px; line-height: 1.05; font-weight: 400; margin-top: 10px; color: var(--dark); }
 .home-about-h2 em { color: var(--gold); font-style: italic; }
 .home-about-text { font-size: 14px; color: #666; line-height: 1.85; font-weight: 300; margin-bottom: 24px; }
@@ -449,8 +449,8 @@ a { text-decoration: none; color: inherit; }
   .qsn-hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
   .qsn-hero-h1 { font-size: 42px !important; }
 
-  /* VISION */
-  .home-vision { grid-template-columns: 1fr !important; padding: 40px 24px !important; gap: 20px; }
+  .eyebrow-dark { font-size: 10px !important; margin-bottom: 8px !important; }
+  .home-planners-header { margin-bottom: 20px !important; }
   .home-vision-right { display: block; }
   .home-vision-img { width: 100%; margin-left: 0; border-radius: 8px; height: 280px; }
   .home-h2 { font-size: 32px !important; }
@@ -540,11 +540,11 @@ a { text-decoration: none; color: inherit; }
 .mobile-menu { display: none; }
 
 @media (max-width: 768px) {
-  /* Hero home moins haut + plus de photo Ãƒ  droite */
+  /* Hero home moins haut + plus de photo Ã  droite */
   .hero-home { height: 75vh !important; }
   .hero-home .hero-bg { object-position: 60% center !important; }
 
-  /* Burger visible, Contact desktop cachÃƒÂ© */
+  /* Burger visible, Contact desktop cachÃ© */
   .nav-cta-desktop { display: none !important; }
   .burger-btn {
     display: flex !important;
