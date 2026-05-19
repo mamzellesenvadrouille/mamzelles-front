@@ -692,7 +692,7 @@ a { text-decoration: none; color: inherit; }
   .section-label { font-size: 10px !important; margin-bottom: 8px !important; }
   .ess-title { font-size: 32px !important; margin-top: 10px !important; margin-bottom: 16px !important; }
   .form-h2 { font-size: 32px !important; margin-top: 10px !important; }
-  .form-right-h2 { font-family: 'Cormorant Garamond', serif !important; font-size: 32px !important; line-height: 1.05 !important; font-weight: 400 !important; margin-top: 10px !important; color: inherit !important; }
+  .form-right-h2 { font-family: 'Cormorant Garamond', serif !important; font-size: 32px !important; line-height: 1.05 !important; font-weight: 400 !important; margin-top: 10px !important; }
   .form-right-price-block { margin-top: 28px !important; margin-bottom: 28px !important; }
   .frcard-feature { font-size: 13px !important; }
   .call-col h2 { font-size: 32px !important; margin-top: 10px !important; }
