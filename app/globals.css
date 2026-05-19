@@ -527,14 +527,14 @@ a { text-decoration: none; color: inherit; }
   .qsn-merci-h2 { font-size: 28px !important; }
 
   /* FORMULES PAGE */
-  .essentials { padding: 40px 24px !important; }
+  .essentials { padding: 32px 24px !important; }
   .ess-grid { grid-template-columns: 1fr 1fr !important; }
-  .formulas-left { padding: 40px 24px !important; }
-  .options { padding: 40px 24px !important; }
+  .formulas-left { padding: 32px 24px !important; }
+  .options { padding: 32px 24px !important; }
   .options-grid { grid-template-columns: 1fr 1fr !important; }
-  .process { padding: 40px 24px !important; }
+  .process { padding: 32px 24px !important; }
   .process-steps { grid-template-columns: 1fr !important; }
-  .contact-section { padding: 40px 24px !important; }
+  .contact-section { padding: 32px 24px !important; }
   .contact-header { grid-template-columns: 1fr !important; }
   .form-grid { grid-template-columns: 1fr 1fr !important; }
   .span2 { grid-column: span 2 !important; }
@@ -683,8 +683,9 @@ a { text-decoration: none; color: inherit; }
   /* FORMULES - eyebrows et titres harmonisÃ©s comme home */
   .section-label { font-size: 10px !important; margin-bottom: 8px !important; }
   .ess-title { font-size: 32px !important; margin-bottom: 16px !important; }
-  .formulas-h2 { font-size: 32px !important; }
-  .options-title { font-size: 32px !important; }
-  .process-title { font-size: 32px !important; }
+  .form-h2 { font-size: 32px !important; }
+  .form-right-h2 { font-size: 28px !important; }
+  .call-col h2 { font-size: 32px !important; }
+  .process h2 { font-size: 32px !important; }
   .cta-banner-content h2 { font-size: 32px !important; }
 }
