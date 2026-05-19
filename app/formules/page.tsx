@@ -113,7 +113,7 @@ export default function Formules() {
           <div className="form-right-overlay" />
           <div className="form-right-card">
             <span className="frcard-badge">Sur-mesure</span>
-            <h2 className="form-h2">La formule<br /><em>sur-mesure</em></h2>
+            <h2 className="form-right-h2">La formule<br /><em>sur-mesure</em></h2>
             <div className="frcard-divider" />
             <div className="frcard-features">
               <div className="frcard-feature">
