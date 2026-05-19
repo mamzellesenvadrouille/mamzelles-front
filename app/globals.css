@@ -485,7 +485,7 @@ a { text-decoration: none; color: inherit; }
   .home-about-text br { display: none; }
 
   /* BLOG HOME */
-  .home-blog { padding: 40px 24px 48px !important; }
+  .home-blog { padding: 28px 24px 48px !important; }
   .home-blog-header { margin-bottom: 16px !important; }
   .home-blog-header { flex-direction: column !important; gap: 12px; align-items: flex-start; }
   .home-blog-grid { grid-template-columns: 1fr !important; gap: 16px; }
@@ -649,8 +649,8 @@ a { text-decoration: none; color: inherit; }
   .mobile-only-br { display: block !important; }
 
   /* Article Madrid encore plus proche de "Voir tous les articles" */
-  .home-blog-header { margin-bottom: 8px !important; }
-  .home-blog-header .home-h2 { margin-bottom: 12px !important; }
+  .home-blog-header { margin-bottom: 6px !important; }
+  .home-blog-header .home-h2 { margin-bottom: 6px !important; margin-top: 0 !important; }
 
   /* Footer moins imposant */
   /* footer ok */
@@ -659,5 +659,5 @@ a { text-decoration: none; color: inherit; }
 .mobile-only-br { display: none; }
 
 @media (max-width: 768px) {
-  .footer-logo-main { font-size: 17px !important; }
+  .footer-logo-main { font-size: 19px !important; }
 }
