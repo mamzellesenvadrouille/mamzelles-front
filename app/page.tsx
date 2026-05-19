@@ -176,7 +176,7 @@ export default function Home() {
           </div>
         </div>
         <div className="footer-bottom">
-          © 2026 MamZelles en vadrouille — Tous droits réservés
+          © 2026 MamZelles en vadrouille<br className="mobile-br" />Tous droits réservés
         </div>
       </footer>
 

@@ -620,3 +620,32 @@ a { text-decoration: none; color: inherit; }
   .footer-logo-wrap { text-align: center !important; }
   .footer-top .footer-col:not(:first-child) { align-self: flex-start !important; }
 }
+
+/* ===================== CORRECTIONS MOBILE HOME ===================== */
+.mobile-br { display: none; }
+
+@media (max-width: 768px) {
+  /* "Pourquoi voyager avec nous ?" - tout sur une ligne */
+  .home-planners-header .home-h2 em { display: inline !important; }
+
+  /* Vision photo - coupe le haut + dÃ©gradÃ© droite */
+  .home-vision-img { object-position: center 70% !important; }
+  .home-vision-right { position: relative !important; }
+  .home-vision-right::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, var(--bg));
+  }
+
+  /* Madrid photo - moins de ciel */
+  .home-blog-img.madrid { object-position: center 60% !important; }
+
+  /* Footer - nom Ã  gauche, copyright sur 2 lignes */
+  .footer-top .footer-col:first-child { align-self: flex-start !important; text-align: left !important; }
+  .footer-logo-wrap { text-align: left !important; }
+  .mobile-br { display: block; }
+  .footer-bottom { text-align: center; }
+}
