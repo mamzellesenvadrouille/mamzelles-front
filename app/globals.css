@@ -451,7 +451,7 @@ a { text-decoration: none; color: inherit; }
 
   .eyebrow-dark { font-size: 10px !important; margin-bottom: 8px !important; }
   .home-planners-header { margin-bottom: 20px !important; }
-  .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; gap: unset !important; column-gap: 14px !important; row-gap: 14px !important; }
+  .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; gap: unset !important; column-gap: 14px !important; row-gap: 10px !important; }
   .planner-icon { grid-column: 1 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card h3 { grid-column: 2 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card p { grid-column: 1 / -1 !important; grid-row: 2 !important; color: #666 !important; }
@@ -478,7 +478,7 @@ a { text-decoration: none; color: inherit; }
   .home-about-content { padding: 32px 24px 16px !important; order: 1; }
   .home-about-img-wrap::before { display: none !important; }
   .home-about-img-wrap::after { display: none !important; }
-  .home-about-img { width: 100% !important; height: auto !important; transform: none !important; margin-top: -80px !important; margin-left: 0 !important; object-fit: unset !important; display: block !important; }
+  .home-about-img { width: 100% !important; height: auto !important; transform: none !important; margin-top: -130px !important; margin-left: 0 !important; object-fit: unset !important; display: block !important; }
   .home-about-img-wrap { overflow: hidden !important; }
   .home-about-content { padding: 32px 24px !important; order: 1; }
   .home-about-h2 { font-size: 30px !important; }
