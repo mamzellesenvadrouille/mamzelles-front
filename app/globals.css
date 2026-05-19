@@ -629,17 +629,8 @@ a { text-decoration: none; color: inherit; }
   /* "avec nous ?" sur nouvelle ligne */
   .home-planners-header .home-h2 em { display: block !important; }
 
-  /* Vision photo - coupe le haut + dÃ©gradÃ© droite */
+  /* Vision photo - coupe le haut seulement */
   .home-vision-img { object-position: center 70% !important; }
-  .home-vision-right { position: relative !important; }
-  .home-vision-right::after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    width: 25%;
-    height: 100%;
-    background: linear-gradient(to right, transparent, var(--bg));
-  }
 
   /* Madrid photo - moins de ciel */
   .home-blog-img.madrid { object-position: center 60% !important; }
@@ -660,7 +651,7 @@ a { text-decoration: none; color: inherit; }
   .home-blog-header { margin-bottom: 8px !important; }
 
   /* Footer moins imposant */
-  .footer { padding: 24px 20px 16px !important; }
+  .footer { padding: 24px 20px 16px !important; min-height: unset !important; }
   .footer-top { gap: 16px !important; }
 }
 
