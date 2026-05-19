@@ -531,7 +531,7 @@ a { text-decoration: none; color: inherit; }
   .ess-grid { grid-template-columns: 1fr 1fr !important; }
   .ess-card:nth-last-child(-n+2) { border-bottom: none !important; }
   .formulas-left { padding: 32px 24px !important; }
-  .formulas-right { justify-content: center !important; align-items: center !important; min-height: 380px !important; }
+  .formulas-right { justify-content: center !important; align-items: center !important; min-height: 380px !important; padding: 32px 0 !important; }
   .form-right-card { margin: 0 !important; width: 80% !important; min-height: auto !important; }
 
   .options { padding: 32px 24px !important; }
