@@ -191,8 +191,8 @@ export default function Formules() {
       {/* MOSAIC + CALL */}
       <section className="mosaic-call">
         <div className="mosaic-col">
-          <img src="/photo1.jpg" alt="" />
-          <img src="/photo2.jpeg" alt="" />
+          <img src="/photo1.jpg" alt="" className="mosaic-img-1" />
+          <img src="/photo2.jpeg" alt="" className="mosaic-img-2" />
           <img src="/photo3.jpg" alt="" />
         </div>
         <div className="call-col">

@@ -714,8 +714,8 @@ a { text-decoration: none; color: inherit; }
 
 
 @media (max-width: 768px) {
-  .mosaic-col img:nth-child(1) { object-position: 100% center !important; object-fit: cover !important; }
-  .mosaic-col img:nth-child(2) { object-position: 100% center !important; object-fit: cover !important; }
+  .mosaic-img-1 { object-position: left center !important; }
+  .mosaic-img-2 { object-position: left center !important; }
 }
 
 @media only screen and (max-width: 768px) {
