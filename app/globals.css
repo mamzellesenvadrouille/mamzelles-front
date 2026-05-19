@@ -650,3 +650,18 @@ a { text-decoration: none; color: inherit; }
   .mobile-br { display: block; }
   .footer-bottom { text-align: center; }
 }
+
+@media (max-width: 768px) {
+  /* "nous ?" seul Ã  la ligne */
+  .home-planners-header .home-h2 em { display: inline !important; }
+  .mobile-only-br { display: block !important; }
+
+  /* Article Madrid encore plus proche de "Voir tous les articles" */
+  .home-blog-header { margin-bottom: 8px !important; }
+
+  /* Footer moins imposant */
+  .footer { padding: 24px 20px 16px !important; }
+  .footer-top { gap: 16px !important; }
+}
+
+.mobile-only-br { display: none; }
