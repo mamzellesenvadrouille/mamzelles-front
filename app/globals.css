@@ -542,7 +542,7 @@ a { text-decoration: none; color: inherit; }
   .contact-header { grid-template-columns: 1fr !important; }
   .form-grid { grid-template-columns: 1fr 1fr !important; }
   .span2 { grid-column: span 2 !important; }
-  .contact-h2 { font-size: 30px !important; }
+  .contact-h2 { font-size: 32px !important; margin-top: 10px !important; }
 
   /* BLOG PAGE */
   .blog-section { padding: 40px 24px 60px !important; }
