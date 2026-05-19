@@ -691,5 +691,6 @@ a { text-decoration: none; color: inherit; }
   .form-right-h2 { font-size: 28px !important; margin-top: 10px !important; }
   .call-col h2 { font-size: 32px !important; margin-top: 10px !important; }
   .process h2 { font-size: 32px !important; margin-top: 10px !important; }
+  .process-header { display: flex !important; flex-direction: column !important; }
   .cta-banner-content h2 { font-size: 32px !important; margin-top: 10px !important; }
 }
