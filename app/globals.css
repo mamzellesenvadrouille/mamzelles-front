@@ -259,7 +259,7 @@ a { text-decoration: none; color: inherit; }
 /* QUI SOMMES-NOUS */
 .home-about { display: grid; grid-template-columns: 38% 62%; background: var(--bg); border-top: 1px solid var(--line); align-items: center; }
 .home-about-img-wrap { height: 550px; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; background: var(--bg); position: relative; padding: 40px 0 0 0; }
-.home-about-img-wrap::after { content: ''; position: absolute; top: 0; right: 0; width: 45%; height: 100%; background: linear-gradient(to right, transparent 0%, var(--bg) 100%); }
+.home-about-img-wrap::after { content: ''; position: absolute; top: 0; right: 0; width: 25%; height: 100%; background: linear-gradient(to right, transparent 0%, var(--bg) 100%); }
 .home-about-img { width: 105%; height: auto; display: block; transform: translateY(8%); transform-origin: left bottom; margin-left: -2%; }
 .home-about-content { padding: 40px 200px 40px 60px; display: flex; flex-direction: column; justify-content: center; color: var(--dark); }
 .home-about-h2 { font-family: 'Cormorant Garamond', serif; font-size: 46px; line-height: 1.05; font-weight: 400; margin-top: 10px; color: var(--dark); }
