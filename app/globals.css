@@ -675,3 +675,16 @@ a { text-decoration: none; color: inherit; }
   .hero-blog { height: 60vh !important; }
   .qsn-hero { height: 60vh !important; }
 }
+
+@media (max-width: 768px) {
+  /* FORMULES - soleil Ã  gauche */
+  .hero-formules .hero-bg { object-position: 30% center !important; }
+
+  /* FORMULES - eyebrows et titres harmonisÃ©s comme home */
+  .section-label { font-size: 10px !important; margin-bottom: 8px !important; }
+  .ess-title { font-size: 32px !important; margin-bottom: 16px !important; }
+  .formulas-h2 { font-size: 32px !important; }
+  .options-title { font-size: 32px !important; }
+  .process-title { font-size: 32px !important; }
+  .cta-banner-content h2 { font-size: 32px !important; }
+}
