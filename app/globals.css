@@ -664,3 +664,14 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   .footer-logo-main { font-size: 21px !important; }
 }
+
+@media (max-width: 768px) {
+  /* FORMULES HERO - plus petit que home + soleil Ã  droite */
+  .hero-formules { height: 60vh !important; }
+  .hero-formules .hero-bg { object-position: 70% center !important; }
+  .hero-formules .hero-content { padding: 0 24px 30px !important; }
+
+  /* BLOG + QSN HERO - aussi plus petits */
+  .hero-blog { height: 60vh !important; }
+  .qsn-hero { height: 60vh !important; }
+}
