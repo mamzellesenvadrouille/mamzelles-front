@@ -713,10 +713,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 
-@media (max-width: 768px) {
-  .mosaic-img-1 { object-position: left center !important; }
-  .mosaic-img-2 { object-position: left center !important; }
-}
+.mosaic-img-1 { object-position: left center !important; }
+.mosaic-img-2 { object-position: left center !important; }
 
 @media only screen and (max-width: 768px) {
   .form-right-h2, .form-right-h2-mobile { font-family: 'Cormorant Garamond', serif !important; font-size: 26px !important; font-style: italic !important; font-weight: 600 !important; line-height: 1.1 !important; }
