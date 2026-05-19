@@ -451,7 +451,7 @@ a { text-decoration: none; color: inherit; }
 
   .eyebrow-dark { font-size: 10px !important; margin-bottom: 8px !important; }
   .home-planners-header { margin-bottom: 20px !important; }
-  .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; gap: unset !important; column-gap: 14px !important; row-gap: 18px !important; }
+  .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; gap: unset !important; column-gap: 14px !important; row-gap: 14px !important; }
   .planner-icon { grid-column: 1 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card h3 { grid-column: 2 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card p { grid-column: 1 / -1 !important; grid-row: 2 !important; color: #666 !important; }
@@ -650,7 +650,7 @@ a { text-decoration: none; color: inherit; }
 
   /* Article Madrid encore plus proche de "Voir tous les articles" */
   .home-blog-header { margin-bottom: 4px !important; }
-  .home-blog-header .home-h2 { margin-bottom: 6px !important; margin-top: 0 !important; }
+  .home-blog-header .home-h2 { margin-bottom: 6px !important; margin-top: 10px !important; }
   .home-link { margin-bottom: 8px !important; }
 
   /* Footer moins imposant */
