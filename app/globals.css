@@ -738,7 +738,7 @@ a { text-decoration: none; color: inherit; }
   .process-arrow { display: none !important; }
   .process-step-wrap { margin-bottom: 4px !important; }
   .process-step { padding: 10px 12px !important; }
-  .process-step h3 { font-size: 17px !important; margin-bottom: 4px !important; }
-  .process-step p { font-size: 12px !important; }
-  .process-steps { gap: 0 !important; }
+  .process-step h3 { font-size: 20px !important; margin-bottom: 6px !important; }
+  .process-step p { font-size: 13px !important; }
+  .process-steps { gap: 0 !important; margin-top: -16px !important; }
 }
