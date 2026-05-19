@@ -712,29 +712,13 @@ a { text-decoration: none; color: inherit; }
   .fcard-price span { font-size: 8px !important; }
 }
 
-@media (max-width: 768px) {
-  .form-right-h2 {
-    font-family: 'Cormorant Garamond', serif !important;
-    font-size: 26px !important;
-    font-style: italic !important;
-    font-weight: 600 !important;
-    line-height: 1.1 !important;
-    color: var(--dark) !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .form-right-h2-mobile {
-    font-family: 'Cormorant Garamond', serif !important;
-    font-size: 26px !important;
-    font-style: italic !important;
-    font-weight: 600 !important;
-    line-height: 1.1 !important;
-  }
-}
 
 @media (max-width: 768px) {
   /* Mosaic - first 2 photos show more of left side */
   .mosaic-col img:nth-child(1) { object-position: 0% center !important; }
   .mosaic-col img:nth-child(2) { object-position: 0% center !important; }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-right-h2, .form-right-h2-mobile { font-family: 'Cormorant Garamond', serif !important; font-size: 26px !important; font-style: italic !important; font-weight: 600 !important; line-height: 1.1 !important; }
 }
