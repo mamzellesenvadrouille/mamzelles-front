@@ -96,7 +96,7 @@ export default function Home() {
             <p className="eyebrow-dark">Inspirations de voyage</p>
             <h2 className="home-h2">Des idées pour nourrir <em>vos envies d&apos;ailleurs</em></h2>
           </div>
-          <a href="https://mamzellesenvadrouille.com/destinations/" target="_blank" rel="noopener noreferrer" className="home-link">Voir tous les articles →</a>
+          <a href="/blog" className="home-link">Voir tous les articles →</a>
         </div>
         <div className="home-blog-grid">
           <a href="https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
