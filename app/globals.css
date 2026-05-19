@@ -494,6 +494,7 @@ a { text-decoration: none; color: inherit; }
   .home-cta { min-height: 280px !important; }
   .home-cta-content { padding: 0 24px !important; }
   .home-cta-content h2 { font-size: 32px !important; }
+  .home-cta .btn-gold-outline-hero { font-size: 10px !important; padding: 12px 24px !important; letter-spacing: 2px !important; }
   /* .home-cta-sub br kept visible on mobile */
 
   /* FOOTER */
