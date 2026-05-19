@@ -732,3 +732,13 @@ a { text-decoration: none; color: inherit; }
 @media (min-width: 769px) {
   .mosaic-img-2 { object-position: 30% center !important; }
 }
+
+@media (max-width: 768px) {
+  /* Process steps - hide arrows, reduce spacing */
+  .process-arrow { display: none !important; }
+  .process-step-wrap { margin-bottom: 4px !important; }
+  .process-step { padding: 10px 12px !important; }
+  .process-step h3 { font-size: 17px !important; margin-bottom: 4px !important; }
+  .process-step p { font-size: 12px !important; }
+  .process-steps { gap: 0 !important; }
+}
