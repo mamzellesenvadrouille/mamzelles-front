@@ -4,6 +4,18 @@ import ContactForm from '../ContactForm';
 
 export default function Formules() {
   return (
+    <>
+    <style>{`
+      @media (max-width: 768px) {
+        .form-right-h2 {
+          font-family: 'Cormorant Garamond', serif !important;
+          font-size: 26px !important;
+          font-style: italic !important;
+          font-weight: 600 !important;
+          line-height: 1.1 !important;
+        }
+      }
+    `}</style>
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
       {/* HERO */}
@@ -317,5 +329,6 @@ export default function Formules() {
       </footer>
 
     </div>
+    </>
   );
 }
