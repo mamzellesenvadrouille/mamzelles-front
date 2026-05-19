@@ -478,7 +478,8 @@ a { text-decoration: none; color: inherit; }
   .home-about-content { padding: 32px 24px 16px !important; order: 1; }
   .home-about-img-wrap::before { display: none !important; }
   .home-about-img-wrap::after { display: none !important; }
-  .home-about-img { width: 100% !important; height: auto !important; transform: none !important; margin: 0 !important; object-fit: unset !important; display: block !important; }
+  .home-about-img { width: 100% !important; height: auto !important; transform: none !important; margin-top: -80px !important; margin-left: 0 !important; object-fit: unset !important; display: block !important; }
+  .home-about-img-wrap { overflow: hidden !important; }
   .home-about-content { padding: 32px 24px !important; order: 1; }
   .home-about-h2 { font-size: 30px !important; }
   .home-about-text br { display: none; }
@@ -492,7 +493,7 @@ a { text-decoration: none; color: inherit; }
   /* CTA */
   .home-cta-content { padding: 0 24px !important; }
   .home-cta-content h2 { font-size: 32px !important; }
-  .home-cta-sub br { display: none; }
+  /* .home-cta-sub br kept visible on mobile */
 
   /* FOOTER */
   .footer-top { display: flex !important; flex-direction: column !important; gap: 20px !important; padding: 0; }
@@ -625,8 +626,8 @@ a { text-decoration: none; color: inherit; }
 .mobile-br { display: none; }
 
 @media (max-width: 768px) {
-  /* "Pourquoi voyager avec nous ?" - tout sur une ligne */
-  .home-planners-header .home-h2 em { display: inline !important; }
+  /* "avec nous ?" sur nouvelle ligne */
+  .home-planners-header .home-h2 em { display: block !important; }
 
   /* Vision photo - coupe le haut + dÃ©gradÃ© droite */
   .home-vision-img { object-position: center 70% !important; }
