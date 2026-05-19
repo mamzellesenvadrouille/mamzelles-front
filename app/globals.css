@@ -673,7 +673,7 @@ a { text-decoration: none; color: inherit; }
   /* FORMULES HERO - plus petit que home + soleil Ã  droite */
   .hero-formules { height: 60vh !important; }
   .hero-formules .hero-bg { object-position: 70% center !important; }
-  .hero-formules .hero-content { padding: 0 24px 48px !important; }
+  .hero-formules .hero-content { padding: 0 24px 38px !important; }
 
   /* BLOG + QSN HERO - aussi plus petits */
   .hero-blog { height: 60vh !important; }
@@ -692,7 +692,7 @@ a { text-decoration: none; color: inherit; }
   .section-label { font-size: 10px !important; margin-bottom: 8px !important; }
   .ess-title { font-size: 32px !important; margin-top: 10px !important; margin-bottom: 16px !important; }
   .form-h2 { font-size: 32px !important; margin-top: 10px !important; }
-  .form-right-card .form-right-h2 { font-family: 'Cormorant Garamond', serif !important; font-size: 26px !important; font-style: italic !important; font-weight: 600 !important; margin-top: 10px !important; }
+
   .form-right-price-block { margin-top: 28px !important; margin-bottom: 28px !important; }
   .frcard-feature { font-size: 13px !important; }
   .call-col h2 { font-size: 32px !important; margin-top: 10px !important; }
@@ -710,4 +710,15 @@ a { text-decoration: none; color: inherit; }
   .fcard-price { display: flex !important; flex-direction: column !important; align-items: flex-end !important; justify-content: center !important; }
   .fcard-price strong { font-size: 32px !important; line-height: 1 !important; }
   .fcard-price span { font-size: 8px !important; }
+}
+
+@media (max-width: 768px) {
+  .form-right-h2 {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 26px !important;
+    font-style: italic !important;
+    font-weight: 600 !important;
+    line-height: 1.1 !important;
+    color: var(--dark) !important;
+  }
 }
