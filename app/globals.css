@@ -505,13 +505,13 @@ a { text-decoration: none; color: inherit; }
   .footer-col-sep { display: none !important; }
 
   /* QUI SOMMES-NOUS */
-  .qsn-histoire { display: flex !important; flex-direction: column !important; padding: 32px 24px !important; gap: 20px !important; }
+  .qsn-histoire { display: flex !important; flex-direction: column !important; padding: 32px 24px !important; gap: 28px !important; }
   .qsn-histoire-header { display: flex !important; flex-direction: column !important; order: 1 !important; align-self: flex-start !important; width: 100% !important; }
-  .qsn-histoire-photos { order: 2 !important; height: 300px !important; position: relative !important; overflow: visible !important; margin-top: 0 !important; }
+  .qsn-histoire-photos { order: 2 !important; position: relative !important; height: 280px !important; margin-top: 0 !important; overflow: visible !important; }
   .qsn-histoire-left { order: 3 !important; margin-left: 0 !important; max-width: 100% !important; }
   .qsn-histoire-rule { display: none !important; }
-  .qsn-histoire-img { position: absolute !important; width: 80% !important; left: 0 !important; top: 0 !important; height: 260px !important; z-index: 1 !important; }
-  .qsn-histoire-img-2 { display: block !important; position: absolute !important; width: 46% !important; height: 160px !important; bottom: -20px !important; right: 0 !important; z-index: 2 !important; }
+  .qsn-histoire-img { position: absolute !important; width: 80% !important; left: 0 !important; top: 0 !important; height: 250px !important; z-index: 1 !important; display: block !important; }
+  .qsn-histoire-img-2 { position: absolute !important; display: block !important; width: 46% !important; height: 160px !important; top: 80px !important; right: -10px !important; z-index: 2 !important; }
   .qsn-histoire-h2 { font-size: 32px !important; margin-top: 10px !important; }
   .qsn-histoire-text br { display: none; }
 
@@ -534,6 +534,7 @@ a { text-decoration: none; color: inherit; }
   .qsn-insta-bottom { flex-direction: column !important; }
 
   .qsn-merci { padding: 60px 24px !important; }
+  .qsn-merci-card svg { width: 16px !important; height: 16px !important; }
   .qsn-merci-h2 { font-size: 24px !important; }
 
   /* FORMULES PAGE */
