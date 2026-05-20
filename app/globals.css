@@ -504,7 +504,7 @@ a { text-decoration: none; color: inherit; }
   .footer-col-sep { display: none !important; }
 
   /* QUI SOMMES-NOUS */
-  .qsn-histoire { grid-template-columns: 1fr !important; padding: 32px 24px !important; gap: 24px; }
+  .qsn-histoire { grid-template-columns: 1fr !important; padding: 32px 24px !important; gap: 12px !important; }
   .qsn-histoire-left { margin-left: 0 !important; max-width: 100% !important; display: flex !important; flex-direction: column !important; }
   .qsn-histoire-h2 { font-size: 32px !important; margin-top: 10px !important; }
   .qsn-histoire-photos { height: 310px !important; position: relative !important; overflow: visible !important; margin-top: 0 !important; background: transparent !important; }
