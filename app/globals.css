@@ -525,13 +525,16 @@ a { text-decoration: none; color: inherit; }
   .qsn-inspi-photos { height: 200px !important; padding: 0 !important; }
   .qsn-inspi-h2 { font-size: 32px !important; margin-top: 10px !important; }
 
-  .qsn-insta { padding: 40px 0 32px !important; }
+  .qsn-insta { padding: 32px 0 !important; }
+  .qsn-insta-header { padding: 0 24px 24px !important; }
+  .qsn-insta-header .eyebrow-dark { margin-bottom: 8px !important; }
+  .qsn-insta-h2 { font-size: 32px !important; margin-top: 10px !important; }
   .qsn-insta-grid { grid-template-columns: repeat(3, 1fr) !important; }
   .qsn-insta-side { display: none !important; }
   .qsn-insta-bottom { flex-direction: column !important; }
 
   .qsn-merci { padding: 60px 24px !important; }
-  .qsn-merci-h2 { font-size: 28px !important; }
+  .qsn-merci-h2 { font-size: 24px !important; }
 
   /* FORMULES PAGE */
   .essentials { padding: 32px 24px !important; }
