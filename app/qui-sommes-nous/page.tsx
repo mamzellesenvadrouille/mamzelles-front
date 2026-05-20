@@ -19,16 +19,14 @@ export default function QuiSommesNous() {
 
       {/* NOTRE HISTOIRE */}
       <section className="qsn-histoire">
-        <div className="qsn-histoire-header">
-          <p className="eyebrow-dark">Notre histoire</p>
-          <h2 className="qsn-histoire-h2">Une rencontre,<br />une <em>évidence.</em></h2>
-        </div>
         <div className="qsn-histoire-photos">
           <img src="/nous.jpg" alt="Amélie et Laurie" loading="lazy" className="qsn-histoire-img" />
           <img src="/nous-et-aladdin.jpg" alt="Nous et Aladdin" loading="lazy" className="qsn-histoire-img-2" />
         </div>
         <div className="qsn-histoire-left">
-          <div className="home-rule qsn-histoire-rule" />
+          <p className="eyebrow-dark">Notre histoire</p>
+          <h2 className="qsn-histoire-h2">Une rencontre,<br />une <em>évidence.</em></h2>
+          <div className="home-rule" />
           <p className="qsn-histoire-text">Nous nous sommes rencontrées il y a plus de 13 ans dans un foyer d&rsquo;accueil d&rsquo;urgence où nous travaillions toutes les deux comme éducatrices spécialisées. Depuis, nous avançons ensemble dans la vie comme dans les voyages, avec la même vision de l&rsquo;amour, les mêmes valeurs et cette envie profonde de profiter pleinement de chaque instant.</p>
           <p className="qsn-histoire-text">Aujourd&rsquo;hui, nous vivons à Antibes avec notre bébé poilu Aladdin de<br />15 ans, toujours prêt à nous suivre dans nos vadrouilles.</p>
           <p className="qsn-histoire-text">Quelques mois seulement après notre rencontre, nous partions pour Londres pour notre tout premier voyage à deux. Un départ qui a marqué le début d&rsquo;une longue série d&rsquo;aventures, de découvertes et de souvenirs aux quatre coins du monde.</p>
