@@ -10,7 +10,7 @@ const articles = [
   {
     titre: 'Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus',
     url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus/',
-    image: 'https://mamzellesenvadrouille.com/wp-content/uploads/2024/01/port-barton.jpg',
+    image: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/01/port-barton.jpg',
     localImage: null,
     categorie: 'Philippines',
   },
@@ -78,7 +78,7 @@ async function getWpImages(): Promise<Record<string, string>> {
       'visiter-londres-en-1-semaine',
     ];
     const res = await fetch(
-      `https://mamzellesenvadrouille.com/wp-json/wp/v2/posts?slug=${slugs.join(',')}&_embed&per_page=10`,
+      `https://blog.mamzellesenvadrouille.com/wp-json/wp/v2/posts?slug=${slugs.join(',')}&_embed&per_page=10`,
       { next: { revalidate: 3600 } }
     );
     if (!res.ok) return {};
