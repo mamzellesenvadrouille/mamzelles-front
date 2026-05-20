@@ -516,17 +516,18 @@ a { text-decoration: none; color: inherit; }
   .qsn-histoire-photos { height: 260px; }
   .qsn-histoire-img { width: 100%; left: 0; }
   .qsn-histoire-img-2 { display: block !important; width: 48% !important; height: 170px !important; bottom: 10px !important; right: -10px !important; }
-  .qsn-histoire-h2 { font-size: 32px !important; }
+  .qsn-histoire-h2 { font-size: 32px !important; margin-top: 10px !important; }
   .qsn-histoire-text br { display: none; }
 
   .qsn-vanlife { flex-direction: column !important; }
   .qsn-vanlife-img-wrap { width: 100% !important; }
-  .qsn-vanlife-content { position: relative !important; width: 100% !important; padding: 32px 24px !important; background: var(--bg) !important; }
-  .qsn-vanlife-h2 { font-size: 28px !important; }
+  .qsn-vanlife-content { position: relative !important; width: 100% !important; padding: 32px 24px !important; background: var(--bg) !important; display: flex !important; flex-direction: column !important; }
+  .qsn-vanlife-h2 { font-size: 32px !important; margin-top: 10px !important; }
 
-  .qsn-inspi { grid-template-columns: 1fr !important; padding: 40px 24px !important; }
+  .qsn-inspi { grid-template-columns: 1fr !important; padding: 32px 24px 32px !important; }
+  .qsn-inspi-left { display: flex !important; flex-direction: column !important; padding: 0 !important; }
   .qsn-inspi-photos { height: 200px !important; padding: 0 !important; }
-  .qsn-inspi-h2 { font-size: 30px !important; }
+  .qsn-inspi-h2 { font-size: 32px !important; margin-top: 10px !important; }
 
   .qsn-insta { padding: 40px 0 32px !important; }
   .qsn-insta-grid { grid-template-columns: repeat(3, 1fr) !important; }
