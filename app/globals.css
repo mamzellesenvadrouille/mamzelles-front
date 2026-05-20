@@ -506,16 +506,16 @@ a { text-decoration: none; color: inherit; }
 
   /* QUI SOMMES-NOUS */
   .qsn-histoire { display: flex !important; flex-direction: column !important; padding: 32px 24px !important; gap: 20px !important; }
-  .qsn-histoire-header { display: block !important; order: 1; }
+  .qsn-histoire-header { display: block !important; order: 1; text-align: left !important; }
   .qsn-histoire-header { order: 1; }
   .qsn-histoire-photos { order: 2; }
   .qsn-histoire-left { order: 3; margin-left: 0 !important; max-width: 100% !important; }
   .qsn-histoire-rule { display: none !important; }
-  .qsn-histoire-photos { height: 280px !important; margin-top: 0 !important; }
-  .qsn-histoire-img { width: 75% !important; left: 0 !important; height: 260px !important; }
+  .qsn-histoire-photos { height: 310px !important; margin-top: 0 !important; position: relative !important; overflow: hidden !important; }
+  .qsn-histoire-img { width: 82% !important; left: 0 !important; height: 260px !important; }
   .qsn-histoire-photos { height: 260px; }
   .qsn-histoire-img { width: 100%; left: 0; }
-  .qsn-histoire-img-2 { display: block !important; width: 48% !important; height: 170px !important; bottom: 0 !important; right: -10px !important; }
+  .qsn-histoire-img-2 { display: block !important; width: 48% !important; height: 170px !important; bottom: 10px !important; right: -10px !important; }
   .qsn-histoire-h2 { font-size: 32px !important; }
   .qsn-histoire-text br { display: none; }
 
