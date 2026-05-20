@@ -680,6 +680,7 @@ a { text-decoration: none; color: inherit; }
   /* BLOG + QSN HERO - aussi plus petits */
   .hero-blog { height: 60vh !important; }
   .qsn-hero { height: 60vh !important; }
+  .qsn-hero .hero-bg { object-position: 70% center !important; }
 }
 
 @media (max-width: 768px) {
