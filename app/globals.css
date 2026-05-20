@@ -507,9 +507,9 @@ a { text-decoration: none; color: inherit; }
   .qsn-histoire { grid-template-columns: 1fr !important; padding: 32px 24px !important; gap: 24px; }
   .qsn-histoire-left { margin-left: 0 !important; max-width: 100% !important; display: flex !important; flex-direction: column !important; }
   .qsn-histoire-h2 { font-size: 32px !important; margin-top: 10px !important; }
-  .qsn-histoire-photos { height: 310px !important; position: relative !important; overflow: hidden !important; margin-top: 0 !important; }
+  .qsn-histoire-photos { height: 310px !important; position: relative !important; overflow: visible !important; margin-top: 0 !important; background: transparent !important; }
   .qsn-histoire-img { width: 82% !important; left: 0 !important; height: 260px !important; position: absolute !important; top: 0 !important; display: block !important; }
-  .qsn-histoire-img-2 { display: block !important; width: 48% !important; height: 170px !important; bottom: 10px !important; right: -10px !important; position: absolute !important; }
+  .qsn-histoire-img-2 { display: block !important; width: 48% !important; height: 170px !important; bottom: 0 !important; right: 0 !important; position: absolute !important; }
   .qsn-histoire-h2 { font-size: 32px !important; margin-top: 10px !important; }
   .qsn-histoire-text br { display: none; }
 
