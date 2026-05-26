@@ -764,12 +764,12 @@ a { text-decoration: none; color: inherit; }
 @media (min-width: 769px) and (max-width: 1024px) {
 
   /* NAV */
-  .nav { padding: 22px 32px; }
-  .nav-links { display: flex !important; gap: 24px; margin-right: 24px; }
-  .nav-links a { font-size: 11px; letter-spacing: 1.5px; }
-  .logo-main { font-size: 20px; }
-  .logo-sub { font-size: 8px; }
-  .nav-cta { padding: 10px 18px; font-size: 10px; letter-spacing: 1.5px; }
+  .nav { padding: 18px 24px; }
+  .nav-links { display: flex !important; gap: 16px; margin-right: 16px; }
+  .nav-links a { font-size: 9px; letter-spacing: 1px; white-space: nowrap; }
+  .logo-main { font-size: 17px; }
+  .logo-sub { font-size: 7px; letter-spacing: 2px; white-space: nowrap; }
+  .nav-cta { padding: 8px 14px; font-size: 9px; letter-spacing: 1px; white-space: nowrap; }
 
   /* HERO */
   .hero-content { padding: 0 48px 52px; max-width: 560px; }
@@ -784,10 +784,10 @@ a { text-decoration: none; color: inherit; }
   .section-label { font-size: 11px !important; letter-spacing: 3px !important; }
 
   /* VISION "PensÃ© pour vous" - corriger padding et image */
-  .home-vision { padding: 48px 40px !important; grid-template-columns: 55% 45% !important; gap: 40px !important; }
+  .home-vision { padding: 48px 40px !important; grid-template-columns: 45% 55% !important; gap: 40px !important; overflow: hidden !important; }
   .home-vision-text br { display: none !important; }
   .home-vision-text { font-size: 14px; }
-  .home-vision-img { width: 100% !important; margin-left: 0 !important; }
+  .home-vision-img { width: 100% !important; margin-left: 0 !important; height: 420px !important; object-fit: cover !important; object-position: right center !important; border-radius: 14px !important; }
 
   /* HOME PLANNERS */
   .home-planners { padding: 48px 40px !important; }
