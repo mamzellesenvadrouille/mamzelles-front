@@ -850,7 +850,7 @@ a { text-decoration: none; color: inherit; }
   .form-h2 { font-size: 32px !important; }
   .fcard-name { font-size: 22px !important; white-space: nowrap !important; }
   .form-right-card { width: fit-content !important; margin: auto 0 auto 24px !important; padding: 28px !important; min-height: auto !important; }
-  .form-right-cta { font-size: 10px !important; letter-spacing: 2px !important; padding: 10px 22px !important; width: auto !important; align-self: flex-start !important; white-space: nowrap !important; }
+  .form-right-cta { font-size: 10px !important; letter-spacing: 2px !important; padding: 10px 22px !important; width: auto !important; align-self: flex-start !important; white-space: nowrap !important; margin-top: 24px !important; }
   .form-right-h2 { font-size: 26px !important; font-weight: 600 !important; }
 
   /* OPTIONS */
