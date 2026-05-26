@@ -759,19 +759,23 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   .btn-dark-full { margin-top: 14px !important; }
 }
+
 /* ===================== RESPONSIVE TABLETTE (769px - 1024px) ===================== */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-  /* NAV - garder les liens visibles */
-  .nav { padding: 22px 32px; }
-  .nav-links { display: flex !important; gap: 20px; }
-  .nav-links a { font-size: 10px; }
-  .nav-cta { padding: 8px 16px; font-size: 9px; }
+  /* NAV - rÃ©duire tailles pour Ã©viter retour Ã  la ligne */
+  .nav { padding: 18px 24px; }
+  .nav-links { display: flex !important; gap: 16px; margin-right: 16px; }
+  .nav-links a { font-size: 9px; letter-spacing: 1px; }
+  .logo-main { font-size: 17px; }
+  .logo-sub { font-size: 7px; }
+  .nav-cta { padding: 8px 14px; font-size: 9px; letter-spacing: 1px; }
 
   /* HERO */
-  .hero-content { padding: 0 52px 52px; max-width: 580px; }
-  .hero-content h1 { font-size: 58px; }
-  .hero-home .hero-content h1 { font-size: 64px; white-space: normal; }
+  .hero-content { padding: 0 48px 52px; max-width: 560px; }
+  .hero-content h1 { font-size: 56px; }
+  .hero-home .hero-content h1 { font-size: 62px; white-space: normal; }
+  .hero-home .hero-content { padding: 0 40px 40px; }
 
   /* ESSENTIALS - 3 colonnes */
   .essentials { padding: 50px 40px; }
@@ -782,26 +786,26 @@ a { text-decoration: none; color: inherit; }
 
   /* FORMULES - garder 2 colonnes */
   .formules { grid-template-columns: 45% 55%; }
-  .formulas-left { padding: 48px 32px 48px 52px; }
-  .form-h2 { font-size: 36px; }
+  .formulas-left { padding: 48px 32px 48px 48px; }
+  .form-h2 { font-size: 34px; }
   .formulas-right { min-height: 500px; }
   .form-right-card { width: 280px; margin: 40px 0 0 32px; }
 
-  /* OPTIONS - 2 colonnes */
+  /* OPTIONS - 2 colonnes Ã  droite */
   .options { padding: 56px 40px; }
-  .options-inner { grid-template-columns: 280px 1fr; gap: 40px; }
+  .options-inner { grid-template-columns: 260px 1fr; gap: 40px; }
   .options-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* MOSAIC + CALL - garder cÃ´te Ã  cÃ´te */
   .mosaic-call { grid-template-columns: 50% 50%; height: 420px; }
   .mosaic-col { height: 420px; }
   .call-col { padding: 48px 36px; }
-  .call-col h2 { font-size: 36px; }
+  .call-col h2 { font-size: 34px; }
 
-  /* PROCESS - 2 colonnes */
+  /* PROCESS - 4 colonnes comme desktop */
   .process { padding: 60px 40px; }
-  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
-  .process-arrow:nth-child(2) { display: none; }
+  .process-steps { grid-template-columns: repeat(4, 1fr) !important; gap: 0; }
+  .process-arrow { display: flex !important; }
 
   /* CONTACT */
   .contact-section { padding: 56px 40px; }
@@ -811,33 +815,37 @@ a { text-decoration: none; color: inherit; }
   /* HOME - vision 2 colonnes */
   .home-vision { padding: 56px 40px; }
   .home-about { grid-template-columns: 45% 55%; }
+  .home-about-h2 { font-size: 36px; }
 
   /* HOME - planners 2 colonnes */
   .home-planners { padding: 56px 40px; }
   .home-planners-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 24px; }
 
-  /* HOME - blog 2 colonnes */
+  /* HOME - blog 4 articles */
   .home-blog { padding: 56px 40px; }
-  .home-blog-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .home-blog-grid { grid-template-columns: repeat(4, 1fr) !important; }
 
-  /* BLOG PAGE - 2 colonnes */
+  /* BLOG PAGE - 4 colonnes */
   .blog-section { padding: 56px 40px 72px; }
-  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+  .blog-grid { grid-template-columns: repeat(4, 1fr) !important; }
 
-  /* FOOTER */
+  /* FOOTER - logo plus petit */
   .footer { padding: 32px 40px 20px; }
-  .footer-top { grid-template-columns: 1fr auto 1fr; gap: 20px; }
-  .footer-col-sep:last-of-type { display: none; }
+  .footer-top { grid-template-columns: 1fr auto 1fr auto 1fr; gap: 16px; }
+  .footer-logo-main { font-size: 18px !important; }
+  .footer-logo-sub { font-size: 7px; }
+  .footer-logo-wrap { padding-right: 20px; }
+  .footer-social-item { padding: 0 20px; }
 
-  /* QUI SOMMES NOUS */
+  /* QUI SOMMES NOUS - titre plus petit */
   .qsn-histoire { grid-template-columns: 45% 55%; padding: 56px 40px; }
-  .qsn-histoire-h2 { font-size: 36px; }
+  .qsn-histoire-h2 { font-size: 32px !important; }
   .qsn-histoire-photos { height: 400px; }
   .qsn-histoire-img { height: 380px; }
   .qsn-histoire-img-2 { height: 200px; }
 
   .qsn-vanlife-content { padding: 40px 80px 0 300px; }
-  .qsn-vanlife-h2 { font-size: 38px; }
+  .qsn-vanlife-h2 { font-size: 36px; }
 
   .qsn-inspi { grid-template-columns: 40% 60%; }
   .qsn-inspi-left { padding: 40px; }
