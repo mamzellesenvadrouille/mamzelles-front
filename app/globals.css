@@ -837,9 +837,7 @@ a { text-decoration: none; color: inherit; }
   .essentials { padding: 48px 40px !important; }
   .ess-grid { grid-template-columns: repeat(3, 1fr) !important; }
   .ess-title { font-size: 32px !important; margin-bottom: 8px !important; }
-  .ess-card:nth-child(3) { border-right: none !important; }
-  .ess-card:nth-child(4) { border-right: 1px solid var(--line) !important; border-bottom: none !important; }
-  .ess-card:nth-child(6) { border-right: none !important; }
+  .ess-card { border-right: none !important; border-bottom: none !important; }
 
   /* FORMULES */
   .formules { grid-template-columns: 45% 55% !important; }
