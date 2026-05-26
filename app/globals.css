@@ -117,7 +117,7 @@ a { text-decoration: none; color: inherit; }
 .form-right-price { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: var(--gold); font-weight: 500; line-height: 1; }
 .form-right-cta { display: inline-flex; justify-content: center; margin-top: auto; }
 
-/* OPTIONS Ãƒâ‚¬ LA CARTE */
+/* OPTIONS ÃƒÆ’Ã¢â€šÂ¬ LA CARTE */
 .options { background: #fff; padding: 56px 52px; border-top: 1px solid var(--line); }
 .options-inner { display: grid; grid-template-columns: 340px 1fr; gap: 60px; align-items: start; }
 .options-left { display: flex; flex-direction: column; }
@@ -565,11 +565,11 @@ a { text-decoration: none; color: inherit; }
 .mobile-menu { display: none; }
 
 @media (max-width: 768px) {
-  /* Hero home moins haut + plus de photo Ã  droite */
+  /* Hero home moins haut + plus de photo Ãƒ  droite */
   .hero-home { height: 75vh !important; }
   .hero-home .hero-bg { object-position: 55% center !important; }
 
-  /* Burger visible, Contact desktop cachÃ© */
+  /* Burger visible, Contact desktop cachÃƒÂ© */
   .nav-cta-desktop { display: none !important; }
   .burger-btn {
     display: flex !important;
@@ -652,7 +652,7 @@ a { text-decoration: none; color: inherit; }
   /* Madrid photo - moins de ciel */
   .home-blog-img.madrid { object-position: center 60% !important; }
 
-  /* Footer - nom Ã  gauche, copyright sur 2 lignes */
+  /* Footer - nom Ãƒ  gauche, copyright sur 2 lignes */
   .footer-top .footer-col:first-child { align-self: flex-start !important; text-align: left !important; }
   .footer-logo-wrap { text-align: left !important; }
   .mobile-br { display: block; }
@@ -660,7 +660,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 768px) {
-  /* "nous ?" seul Ã  la ligne */
+  /* "nous ?" seul Ãƒ  la ligne */
   .home-planners-header .home-h2 em { display: inline !important; }
   .mobile-only-br { display: block !important; }
 
@@ -681,7 +681,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 768px) {
-  /* FORMULES HERO - plus petit que home + soleil Ã  droite */
+  /* FORMULES HERO - plus petit que home + soleil Ãƒ  droite */
   .hero-formules { height: 60vh !important; }
   .hero-formules .hero-bg { object-position: 70% center !important; }
   .hero-formules .hero-content { padding: 0 24px 38px !important; }
@@ -697,10 +697,10 @@ a { text-decoration: none; color: inherit; }
   .call-col { padding: 32px 24px !important; }
   .mosaic-col { height: 200px !important; }
 
-  /* FORMULES - soleil Ã  gauche */
+  /* FORMULES - soleil Ãƒ  gauche */
   .hero-formules .hero-bg { object-position: 33% center !important; }
 
-  /* FORMULES - eyebrows et titres harmonisÃ©s comme home */
+  /* FORMULES - eyebrows et titres harmonisÃƒÂ©s comme home */
   .section-label { font-size: 10px !important; margin-bottom: 8px !important; }
   .ess-title { font-size: 32px !important; margin-top: 10px !important; margin-bottom: 16px !important; }
   .form-h2 { font-size: 32px !important; margin-top: 10px !important; }
@@ -758,4 +758,95 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 768px) {
   .btn-dark-full { margin-top: 14px !important; }
+}
+/* ===================== RESPONSIVE TABLETTE (769px - 1024px) ===================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* NAV - garder les liens visibles */
+  .nav { padding: 22px 32px; }
+  .nav-links { display: flex !important; gap: 20px; }
+  .nav-links a { font-size: 10px; }
+  .nav-cta { padding: 8px 16px; font-size: 9px; }
+
+  /* HERO */
+  .hero-content { padding: 0 52px 52px; max-width: 580px; }
+  .hero-content h1 { font-size: 58px; }
+  .hero-home .hero-content h1 { font-size: 64px; white-space: normal; }
+
+  /* ESSENTIALS - 3 colonnes */
+  .essentials { padding: 50px 40px; }
+  .ess-grid { grid-template-columns: repeat(3, 1fr); }
+  .ess-card:nth-child(3) { border-right: none; }
+  .ess-card:nth-child(4) { border-right: 1px solid var(--line); border-bottom: none; }
+  .ess-card:nth-child(6) { border-right: none; }
+
+  /* FORMULES - garder 2 colonnes */
+  .formules { grid-template-columns: 45% 55%; }
+  .formulas-left { padding: 48px 32px 48px 52px; }
+  .form-h2 { font-size: 36px; }
+  .formulas-right { min-height: 500px; }
+  .form-right-card { width: 280px; margin: 40px 0 0 32px; }
+
+  /* OPTIONS - 2 colonnes */
+  .options { padding: 56px 40px; }
+  .options-inner { grid-template-columns: 280px 1fr; gap: 40px; }
+  .options-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* MOSAIC + CALL - garder cÃ´te Ã  cÃ´te */
+  .mosaic-call { grid-template-columns: 50% 50%; height: 420px; }
+  .mosaic-col { height: 420px; }
+  .call-col { padding: 48px 36px; }
+  .call-col h2 { font-size: 36px; }
+
+  /* PROCESS - 2 colonnes */
+  .process { padding: 60px 40px; }
+  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .process-arrow:nth-child(2) { display: none; }
+
+  /* CONTACT */
+  .contact-section { padding: 56px 40px; }
+  .contact-header { grid-template-columns: 1fr 1fr; }
+  .form-grid { grid-template-columns: repeat(4, 1fr); }
+
+  /* HOME - vision 2 colonnes */
+  .home-vision { padding: 56px 40px; }
+  .home-about { grid-template-columns: 45% 55%; }
+
+  /* HOME - planners 2 colonnes */
+  .home-planners { padding: 56px 40px; }
+  .home-planners-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 24px; }
+
+  /* HOME - blog 2 colonnes */
+  .home-blog { padding: 56px 40px; }
+  .home-blog-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+  /* BLOG PAGE - 2 colonnes */
+  .blog-section { padding: 56px 40px 72px; }
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* FOOTER */
+  .footer { padding: 32px 40px 20px; }
+  .footer-top { grid-template-columns: 1fr auto 1fr; gap: 20px; }
+  .footer-col-sep:last-of-type { display: none; }
+
+  /* QUI SOMMES NOUS */
+  .qsn-histoire { grid-template-columns: 45% 55%; padding: 56px 40px; }
+  .qsn-histoire-h2 { font-size: 36px; }
+  .qsn-histoire-photos { height: 400px; }
+  .qsn-histoire-img { height: 380px; }
+  .qsn-histoire-img-2 { height: 200px; }
+
+  .qsn-vanlife-content { padding: 40px 80px 0 300px; }
+  .qsn-vanlife-h2 { font-size: 38px; }
+
+  .qsn-inspi { grid-template-columns: 40% 60%; }
+  .qsn-inspi-left { padding: 40px; }
+  .qsn-inspi-photos { height: 320px; }
+  .qsn-inspi-h2 { font-size: 36px; }
+
+  .qsn-insta-grid { grid-template-columns: repeat(4, 1fr) !important; }
+  .qsn-insta-side { display: none !important; }
+
+  /* DISCLAIMER */
+  .disclaimer { padding: 20px 40px; }
 }
