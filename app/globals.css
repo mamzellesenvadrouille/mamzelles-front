@@ -834,7 +834,7 @@ a { text-decoration: none; color: inherit; }
   .home-cta-content h2 { font-size: 38px !important; }
 
   /* ESSENTIALS - 3 colonnes */
-  .essentials { padding: 48px 40px !important; }
+  .essentials { padding: 48px 40px 24px !important; }
   .ess-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 0 24px !important; }
   .ess-card { padding: 40px 20px !important; }
   .ess-title { font-size: 32px !important; margin-bottom: 8px !important; }
