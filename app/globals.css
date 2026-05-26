@@ -826,6 +826,7 @@ a { text-decoration: none; color: inherit; }
   .home-blog-img-wrap { height: 180px !important; }
 
   /* CTA */
+  .home-cta { min-height: 280px !important; }
   .home-cta-content h2 { font-size: 38px !important; }
 
   /* ESSENTIALS - 3 colonnes */
