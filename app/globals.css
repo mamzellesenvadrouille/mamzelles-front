@@ -849,8 +849,8 @@ a { text-decoration: none; color: inherit; }
   .formulas-left { padding: 48px 24px 48px 40px !important; }
   .form-h2 { font-size: 32px !important; }
   .fcard-name { font-size: 22px !important; white-space: nowrap !important; }
-  .form-right-card { width: 290px !important; margin: 40px 0 0 24px !important; }
-  .form-right-cta { font-size: 10px !important; letter-spacing: 2px !important; padding: 10px 22px !important; width: auto !important; align-self: flex-start !important; }
+  .form-right-card { width: 270px !important; margin: 40px 0 0 24px !important; }
+  .form-right-cta { font-size: 10px !important; letter-spacing: 1.5px !important; padding: 10px 14px !important; width: auto !important; align-self: flex-start !important; white-space: nowrap !important; }
   .form-right-h2 { font-size: 26px !important; font-weight: 600 !important; }
 
   /* OPTIONS */
