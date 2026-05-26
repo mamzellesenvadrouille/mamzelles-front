@@ -848,6 +848,7 @@ a { text-decoration: none; color: inherit; }
   .form-h2 { font-size: 32px !important; }
   .fcard-name { font-size: 22px !important; white-space: nowrap !important; }
   .form-right-card { width: 280px !important; margin: 40px 0 0 32px !important; }
+  .form-right-cta { font-size: 9px !important; letter-spacing: 1.5px !important; padding: 12px 16px !important; white-space: nowrap !important; }
   .form-right-h2 { font-size: 32px !important; }
 
   /* OPTIONS */
