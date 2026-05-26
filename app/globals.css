@@ -453,7 +453,7 @@ a { text-decoration: none; color: inherit; }
 
   .eyebrow-dark { font-size: 10px !important; margin-bottom: 8px !important; }
   .home-planners-header { margin-bottom: 20px !important; }
-  .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; gap: unset !important; column-gap: 14px !important; row-gap: 10px !important; }
+  .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; gap: unset !important; column-gap: 20px !important; row-gap: 10px !important; }
   .planner-icon { grid-column: 1 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card h3 { grid-column: 2 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card p { grid-column: 1 / -1 !important; grid-row: 2 !important; color: #666 !important; }
@@ -796,7 +796,7 @@ a { text-decoration: none; color: inherit; }
   .home-planners-header { margin-bottom: 40px !important; margin-top: -16px !important; }
   .home-planners .home-h2 { margin-top: 0 !important; padding-top: 0 !important; }
   .home-planners-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 24px; }
-  .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; gap: unset !important; column-gap: 14px !important; row-gap: 10px !important; }
+  .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; gap: unset !important; column-gap: 20px !important; row-gap: 10px !important; }
   .planner-icon { grid-column: 1 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card h3 { grid-column: 2 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card p { grid-column: 1 / -1 !important; grid-row: 2 !important; }
