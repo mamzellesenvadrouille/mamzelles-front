@@ -766,7 +766,7 @@ a { text-decoration: none; color: inherit; }
   /* NAV */
   .nav { padding: 18px 24px; }
   .nav-links { display: flex !important; gap: 16px; margin-right: 16px; }
-  .nav-links a { font-size: 9px; letter-spacing: 1px; white-space: nowrap; }
+  .nav-links a { font-size: 10px; letter-spacing: 0.5px; white-space: nowrap; }
   .logo-main { font-size: 17px; }
   .logo-sub { font-size: 7px; letter-spacing: 2px; white-space: nowrap; }
   .nav-cta { padding: 8px 14px; font-size: 9px; letter-spacing: 1px; white-space: nowrap; }
@@ -787,7 +787,8 @@ a { text-decoration: none; color: inherit; }
   .home-vision { padding: 48px 40px !important; grid-template-columns: 45% 55% !important; gap: 40px !important; overflow: hidden !important; }
   .home-vision-text br { display: none !important; }
   .home-vision-text { font-size: 14px; }
-  .home-vision-img { width: 100% !important; margin-left: 0 !important; height: 280px !important; object-fit: cover !important; object-position: right center !important; border-radius: 14px !important; }
+  .home-vision-right { padding-right: 40px !important; }
+  .home-vision-img { width: 100% !important; margin-left: 0 !important; height: 380px !important; object-fit: cover !important; object-position: right center !important; border-radius: 14px !important; }
 
   /* HOME PLANNERS */
   .home-planners { padding: 48px 40px !important; }
