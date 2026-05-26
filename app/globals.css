@@ -837,7 +837,7 @@ a { text-decoration: none; color: inherit; }
   .essentials { padding: 48px 40px 8px !important; }
   .ess-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 0 24px !important; }
   .ess-card { padding: 40px 20px !important; }
-  .ess-title { font-size: 32px !important; margin-bottom: 8px !important; }
+  .ess-title { font-size: 32px !important; margin-bottom: 0px !important; }
   .ess-card { border-right: none !important; border-bottom: none !important; }
   .ess-card:nth-child(1), .ess-card:nth-child(2), .ess-card:nth-child(3) { border-bottom: 1px solid var(--line) !important; padding-bottom: 32px !important; }
   .ess-card:nth-child(4), .ess-card:nth-child(5), .ess-card:nth-child(6) { padding-top: 32px !important; }
