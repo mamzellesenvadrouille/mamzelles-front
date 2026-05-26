@@ -38,7 +38,7 @@ export default function Formules() {
           <div className="ess-card">
             <Plane size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Transports</h3>
-            <p>Des trajets choisis pour un voyage<br />fluide et serein (avion, train, bus...)</p>
+            <p>Des trajets choisis<br />pour un voyage fluide et<br />serein (avion, train, bus...)</p>
           </div>
           <div className="ess-card">
             <BedDouble size={34} className="ess-icon" strokeWidth={1.2} />
