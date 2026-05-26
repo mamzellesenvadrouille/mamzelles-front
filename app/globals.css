@@ -665,6 +665,7 @@ a { text-decoration: none; color: inherit; }
   /* "nous ?" seul ÃƒÆ’Ã†â€™  la ligne */
   .home-planners-header .home-h2 em { display: inline !important; }
   .mobile-only-br { display: block !important; }
+  .hero-desc .mobile-only-br { display: none !important; }
 
   /* Article Madrid encore plus proche de "Voir tous les articles" */
   .home-blog-header { margin-bottom: 4px !important; }
@@ -851,6 +852,7 @@ a { text-decoration: none; color: inherit; }
   .form-right-price-block { margin-top: 24px !important; margin-bottom: 8px !important; }
   .form-right-cta { font-size: 10px !important; letter-spacing: 2px !important; padding: 10px 22px !important; width: auto !important; align-self: flex-start !important; white-space: nowrap !important; margin-top: 8px !important; }
   .mobile-only-br { display: block !important; }
+  .hero-desc .mobile-only-br { display: none !important; }
 
   /* OPTIONS */
   .options { padding: 48px 40px !important; }
