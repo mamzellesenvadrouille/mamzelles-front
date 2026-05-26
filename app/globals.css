@@ -812,8 +812,9 @@ a { text-decoration: none; color: inherit; }
   .home-about-content { padding: 40px 20px 40px 48px !important; }
   .home-about-h2 { font-size: 34px !important; }
   .home-about-text br { display: none !important; }
-  .home-about-img-wrap { height: 100% !important; overflow: hidden !important; border-right: none !important; box-shadow: inset -60px 0 40px var(--bg) !important; }
+  .home-about-img-wrap { height: 100% !important; overflow: hidden !important; border-right: none !important; position: relative !important; }
   .home-about-img-wrap::before { display: none !important; }
+  .home-about-img { position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: left bottom !important; transform: none !important; margin: 0 !important; }
 
   .home-about-img { object-fit: cover !important; object-position: left bottom !important; width: 100% !important; height: 130% !important; transform: none !important; margin-top: -30% !important; margin-left: 0 !important; }
 
