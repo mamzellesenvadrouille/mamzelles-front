@@ -117,7 +117,7 @@ a { text-decoration: none; color: inherit; }
 .form-right-price { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: var(--gold); font-weight: 500; line-height: 1; }
 .form-right-cta { display: inline-flex; justify-content: center; margin-top: auto; }
 
-/* OPTIONS ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ LA CARTE */
+/* OPTIONS ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ LA CARTE */
 .options { background: #fff; padding: 56px 52px; border-top: 1px solid var(--line); }
 .options-inner { display: grid; grid-template-columns: 340px 1fr; gap: 60px; align-items: start; }
 .options-left { display: flex; flex-direction: column; }
@@ -567,11 +567,11 @@ a { text-decoration: none; color: inherit; }
 .mobile-menu { display: none; }
 
 @media (max-width: 768px) {
-  /* Hero home moins haut + plus de photo ÃƒÆ’  droite */
+  /* Hero home moins haut + plus de photo ÃƒÆ’Ã†â€™  droite */
   .hero-home { height: 75vh !important; }
   .hero-home .hero-bg { object-position: 55% center !important; }
 
-  /* Burger visible, Contact desktop cachÃƒÆ’Ã‚Â© */
+  /* Burger visible, Contact desktop cachÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© */
   .nav-cta-desktop { display: none !important; }
   .burger-btn {
     display: flex !important;
@@ -654,7 +654,7 @@ a { text-decoration: none; color: inherit; }
   /* Madrid photo - moins de ciel */
   .home-blog-img.madrid { object-position: center 60% !important; }
 
-  /* Footer - nom ÃƒÆ’  gauche, copyright sur 2 lignes */
+  /* Footer - nom ÃƒÆ’Ã†â€™  gauche, copyright sur 2 lignes */
   .footer-top .footer-col:first-child { align-self: flex-start !important; text-align: left !important; }
   .footer-logo-wrap { text-align: left !important; }
   .mobile-br { display: block; }
@@ -662,7 +662,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 768px) {
-  /* "nous ?" seul ÃƒÆ’  la ligne */
+  /* "nous ?" seul ÃƒÆ’Ã†â€™  la ligne */
   .home-planners-header .home-h2 em { display: inline !important; }
   .mobile-only-br { display: block !important; }
 
@@ -684,7 +684,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 768px) {
-  /* FORMULES HERO - plus petit que home + soleil ÃƒÆ’  droite */
+  /* FORMULES HERO - plus petit que home + soleil ÃƒÆ’Ã†â€™  droite */
   .hero-formules { height: 60vh !important; }
   .hero-formules .hero-bg { object-position: 70% center !important; }
   .hero-formules .hero-content { padding: 0 24px 38px !important; }
@@ -700,10 +700,10 @@ a { text-decoration: none; color: inherit; }
   .call-col { padding: 32px 24px !important; }
   .mosaic-col { height: 200px !important; }
 
-  /* FORMULES - soleil ÃƒÆ’  gauche */
+  /* FORMULES - soleil ÃƒÆ’Ã†â€™  gauche */
   .hero-formules .hero-bg { object-position: 33% center !important; }
 
-  /* FORMULES - eyebrows et titres harmonisÃƒÆ’Ã‚Â©s comme home */
+  /* FORMULES - eyebrows et titres harmonisÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s comme home */
   .section-label { font-size: 10px !important; margin-bottom: 8px !important; }
   .ess-title { font-size: 32px !important; margin-top: 10px !important; margin-bottom: 16px !important; }
   .form-h2 { font-size: 32px !important; margin-top: 10px !important; }
@@ -763,7 +763,7 @@ a { text-decoration: none; color: inherit; }
   .btn-dark-full { margin-top: 14px !important; }
 }
 
-/* ===================== RESPONSIVE TABLETTE (769px - 1024px) ===================== */ /* v3 */ /* v2 */
+/* ===================== RESPONSIVE TABLETTE (769px - 1024px) ===================== */
 @media (min-width: 769px) and (max-width: 1024px) {
 
   /* NAV */
@@ -788,7 +788,7 @@ a { text-decoration: none; color: inherit; }
   .home-h2 { font-size: 34px !important; }
   .section-label { font-size: 11px !important; letter-spacing: 3px !important; }
 
-  /* VISION "PensÃƒÂ© pour vous" */
+  /* VISION "PensÃƒÆ’Ã‚Â© pour vous" */
   .home-vision { padding: 40px 40px !important; grid-template-columns: 45% 55% !important; gap: 40px !important; overflow: hidden !important; }
   .home-vision-text br { display: none !important; }
   .vision-grace { display: block !important; margin-top: 16px !important; }
