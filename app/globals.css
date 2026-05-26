@@ -843,8 +843,8 @@ a { text-decoration: none; color: inherit; }
   .ess-card:nth-child(4), .ess-card:nth-child(5), .ess-card:nth-child(6) { padding-top: 32px !important; }
 
   /* FORMULES */
-  .formules { grid-template-columns: 45% 55% !important; }
-  .formulas-left { padding: 48px 32px 48px 48px !important; }
+  .formules { grid-template-columns: 54% 46% !important; }
+  .formulas-left { padding: 48px 24px 48px 40px !important; }
   .form-h2 { font-size: 32px !important; }
   .fcard-name { font-size: 22px !important; white-space: nowrap !important; }
   .form-right-card { width: 280px !important; margin: 40px 0 0 32px !important; }
