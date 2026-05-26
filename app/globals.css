@@ -763,7 +763,7 @@ a { text-decoration: none; color: inherit; }
   .btn-dark-full { margin-top: 14px !important; }
 }
 
-/* ===================== RESPONSIVE TABLETTE (769px - 1024px) ===================== */ /* v2 */ /* v2 */
+/* ===================== RESPONSIVE TABLETTE (769px - 1024px) ===================== */ /* v3 */ /* v2 */
 @media (min-width: 769px) and (max-width: 1024px) {
 
   /* NAV */
