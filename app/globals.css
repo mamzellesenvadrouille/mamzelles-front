@@ -835,8 +835,8 @@ a { text-decoration: none; color: inherit; }
 
   /* ESSENTIALS - 3 colonnes */
   .essentials { padding: 48px 40px !important; }
-  .ess-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 0 !important; }
-  .ess-card { padding: 40px 20px !important; display: flex !important; flex-direction: column !important; align-items: center !important; gap: 16px !important; }
+  .ess-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 0 24px !important; }
+  .ess-card { padding: 40px 20px !important; }
   .ess-title { font-size: 32px !important; margin-bottom: 8px !important; }
   .ess-card { border-right: none !important; border-bottom: none !important; }
   .ess-card:nth-child(1), .ess-card:nth-child(2), .ess-card:nth-child(3) { border-bottom: 1px solid var(--line) !important; padding-bottom: 32px !important; }
