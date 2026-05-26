@@ -789,7 +789,7 @@ a { text-decoration: none; color: inherit; }
   .vision-grace { display: block !important; margin-top: 16px !important; }
   .home-vision-text { font-size: 14px; }
   .home-vision-right { padding-right: 40px !important; }
-  .home-vision-img { width: 100% !important; margin-left: 0 !important; height: 380px !important; object-fit: cover !important; object-position: right 20% !important; border-radius: 14px !important; }
+  .home-vision-img { width: 100% !important; margin-left: 0 !important; height: 320px !important; object-fit: cover !important; object-position: right 30% !important; border-radius: 14px !important; }
 
   /* HOME PLANNERS */
   .home-planners { padding: 48px 40px !important; }
