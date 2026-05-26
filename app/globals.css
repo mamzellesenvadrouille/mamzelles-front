@@ -787,7 +787,7 @@ a { text-decoration: none; color: inherit; }
   .home-vision { padding: 48px 40px !important; grid-template-columns: 45% 55% !important; gap: 40px !important; overflow: hidden !important; }
   .home-vision-text br { display: none !important; }
   .home-vision-text { font-size: 14px; }
-  .home-vision-img { width: 100% !important; margin-left: 0 !important; height: 420px !important; object-fit: cover !important; object-position: right center !important; border-radius: 14px !important; }
+  .home-vision-img { width: 100% !important; margin-left: 0 !important; height: 280px !important; object-fit: cover !important; object-position: right center !important; border-radius: 14px !important; }
 
   /* HOME PLANNERS */
   .home-planners { padding: 48px 40px !important; }
