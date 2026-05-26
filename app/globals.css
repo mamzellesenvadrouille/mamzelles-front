@@ -445,6 +445,7 @@ a { text-decoration: none; color: inherit; }
 
   /* HERO - toutes pages */
   .hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
+  .hide-mobile-br { display: none !important; }
   .hero-content h1 { font-size: 38px !important; white-space: normal !important; }
   .qsn-hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
   .qsn-hero-sub br { display: none !important; }
@@ -676,6 +677,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .mobile-only-br { display: none; }
+.hide-mobile-br { display: block; }
 
 @media (max-width: 768px) {
   .footer-logo-main { font-size: 21px !important; }
