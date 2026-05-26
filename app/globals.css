@@ -799,7 +799,7 @@ a { text-decoration: none; color: inherit; }
   .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; gap: unset !important; column-gap: 26px !important; row-gap: 10px !important; }
   .planner-icon { grid-column: 1 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card h3 { grid-column: 2 !important; grid-row: 1 !important; align-self: center !important; }
-  .home-planner-card p { grid-column: 1 / -1 !important; grid-row: 2 !important; }
+  .home-planner-card p { grid-column: 1 / -1 !important; grid-row: 2 !important; margin-top: 8px !important; }
 
   /* BANDEAU */
   .home-banner { height: 220px; }
@@ -899,7 +899,7 @@ a { text-decoration: none; color: inherit; }
   .home-planner-card { display: grid !important; grid-template-columns: 36px 1fr !important; grid-template-rows: auto auto !important; column-gap: 14px !important; row-gap: 10px !important; gap: unset !important; }
   .planner-icon { grid-column: 1 !important; grid-row: 1 !important; align-self: center !important; }
   .home-planner-card h3 { grid-column: 2 !important; grid-row: 1 !important; align-self: center !important; }
-  .home-planner-card p { grid-column: 1 / -1 !important; grid-row: 2 !important; }
+  .home-planner-card p { grid-column: 1 / -1 !important; grid-row: 2 !important; margin-top: 8px !important; }
   /* DISCLAIMER */
   .disclaimer { padding: 20px 40px !important; }
 }
