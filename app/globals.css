@@ -811,7 +811,7 @@ a { text-decoration: none; color: inherit; }
   .home-about-content { padding: 40px 40px 40px 48px !important; }
   .home-about-h2 { font-size: 34px !important; }
   .home-about-text br { display: none !important; }
-  .home-about-img-wrap { height: 480px !important; overflow: hidden !important; }
+  .home-about-img-wrap { height: 480px !important; overflow: hidden !important; border-right: none !important; }
   .home-about-img-wrap::before { display: none !important; }
   .home-about-img { object-fit: cover !important; object-position: left bottom !important; width: 100% !important; height: 130% !important; transform: none !important; margin-top: -30% !important; margin-left: 0 !important; }
 
