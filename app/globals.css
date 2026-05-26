@@ -709,7 +709,7 @@ a { text-decoration: none; color: inherit; }
   .ess-title { font-size: 32px !important; margin-top: 10px !important; margin-bottom: 16px !important; }
   .form-h2 { font-size: 32px !important; margin-top: 10px !important; }
 
-  .form-right-price-block { margin-top: 4px !important; margin-bottom: 12px !important; }
+  .form-right-price-block { margin-top: -20px !important; margin-bottom: 12px !important; }
   .frcard-feature { font-size: 13px !important; }
   .call-col h2 { font-size: 32px !important; margin-top: 10px !important; }
   .process h2 { font-size: 32px !important; margin-top: 10px !important; }
