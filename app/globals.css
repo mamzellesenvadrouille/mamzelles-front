@@ -817,7 +817,8 @@ a { text-decoration: none; color: inherit; }
 
   /* BLOG HOME - 4 articles */
   .home-blog { padding: 48px 40px !important; }
-  .home-blog-grid { grid-template-columns: repeat(4, 1fr) !important; }
+  .home-blog-header { flex-direction: column !important; align-items: flex-start !important; gap: 8px !important; margin-bottom: 24px !important; }
+  .home-blog-grid { grid-template-columns: repeat(3, 1fr) !important; }
   .home-blog-img-wrap { height: 180px !important; }
 
   /* CTA */
