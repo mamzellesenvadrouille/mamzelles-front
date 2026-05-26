@@ -812,7 +812,7 @@ a { text-decoration: none; color: inherit; }
   .home-about-h2 { font-size: 34px !important; }
   .home-about-text br { display: none !important; }
   .home-about-img-wrap { height: 480px !important; overflow: hidden !important; }
-  .home-about-img { object-fit: cover !important; object-position: left bottom !important; width: 100% !important; height: 120% !important; transform: none !important; margin-top: -20% !important; margin-left: 0 !important; }
+  .home-about-img { object-fit: cover !important; object-position: left bottom !important; width: 100% !important; height: 140% !important; transform: none !important; margin-top: -40% !important; margin-left: 0 !important; }
 
   /* BLOG HOME - 4 articles */
   .home-blog { padding: 48px 40px !important; }
