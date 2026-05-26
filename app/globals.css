@@ -807,7 +807,7 @@ a { text-decoration: none; color: inherit; }
   .home-banner-content { padding: 0 40px; }
 
   /* QUI SOMMES-NOUS home */
-  .home-about { grid-template-columns: 40% 60% !important; }
+  .home-about { grid-template-columns: 45% 55% !important; }
   .home-about-content { padding: 40px 40px 40px 48px !important; }
   .home-about-h2 { font-size: 34px !important; }
   .home-about-text br { display: none !important; }
