@@ -809,7 +809,7 @@ a { text-decoration: none; color: inherit; }
 
   /* QUI SOMMES-NOUS home */
   .home-about { grid-template-columns: 40% 60% !important; column-gap: 0 !important; overflow: hidden !important; align-items: stretch !important; }
-  .home-about-content { padding: 40px 20px 40px 48px !important; }
+  .home-about-content { padding: 40px 60px 40px 48px !important; }
   .home-about-h2 { font-size: 34px !important; }
   .home-about-text br { display: none !important; }
   .home-about-img-wrap { height: 100% !important; overflow: hidden !important; border-right: none !important; position: relative !important; padding: 0 !important; display: block !important; }
