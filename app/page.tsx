@@ -24,7 +24,7 @@ export default function Home() {
           <p className="eyebrow-dark">Vos Travel Planners</p>
           <h2 className="home-h2">Pensé pour vous,<br /><em>créé avec passion.</em></h2>
           <div className="home-rule" />
-          <p className="home-vision-text">Avant d&apos;être Travel Planners, <br />nous sommes surtout deux voyageuses. <br />Deux regards sensibles à l&apos;équilibre d&apos;un voyage, <br />à la façon dont chacun aime découvrir le monde <br />et à tout ce qui en fait sa richesse. <br />Grâce à nos expériences de terrain et à une préparation <br />pensée avec soin, nous créons des voyages personnalisés, <br />inspirants et mémorables.</p>
+          <p className="home-vision-text">Avant d&apos;être Travel Planners, <br />nous sommes surtout deux voyageuses. <br />Deux regards sensibles à l&apos;équilibre d&apos;un voyage, <br />à la façon dont chacun aime découvrir le monde <br />et à tout ce qui en fait sa richesse. <br /><span className="vision-grace">Grâce à nos expériences de terrain et à une préparation <br />pensée avec soin, nous créons des voyages personnalisés, <br />inspirants et mémorables.</span></p>
         </div>
         <div className="home-vision-right">
           <img src="/vision.jpg" alt="Voyage sur mesure" className="home-vision-img" loading="lazy" />
