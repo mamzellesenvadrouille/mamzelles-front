@@ -494,7 +494,7 @@ a { text-decoration: none; color: inherit; }
   .home-blog-grid { grid-template-columns: 1fr !important; gap: 16px; }
 
   /* CTA */
-  .home-cta { min-height: 280px !important; }
+  .home-cta { min-height: 340px !important; }
   .home-cta-content { padding: 0 24px !important; }
   .home-cta-content h2 { font-size: 32px !important; }
   .home-cta .btn-gold-outline-hero { font-size: 10px !important; padding: 9px 22px !important; letter-spacing: 2px !important; }
@@ -826,7 +826,7 @@ a { text-decoration: none; color: inherit; }
   .home-blog-img-wrap { height: 180px !important; }
 
   /* CTA */
-  .home-cta { min-height: 280px !important; }
+  .home-cta { min-height: 340px !important; }
   .home-cta-content h2 { font-size: 38px !important; }
 
   /* ESSENTIALS - 3 colonnes */
