@@ -846,6 +846,7 @@ a { text-decoration: none; color: inherit; }
   .formules { grid-template-columns: 45% 55% !important; }
   .formulas-left { padding: 48px 32px 48px 48px !important; }
   .form-h2 { font-size: 32px !important; }
+  .fcard-name { font-size: 22px !important; white-space: nowrap !important; }
   .form-right-card { width: 280px !important; margin: 40px 0 0 32px !important; }
   .form-right-h2 { font-size: 32px !important; }
 
