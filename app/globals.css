@@ -773,7 +773,9 @@ a { text-decoration: none; color: inherit; }
   .nav-cta { padding: 9px 16px; font-size: 10px; letter-spacing: 1px; white-space: nowrap; }
 
   /* HERO */
-  .hero-content { padding: 0 48px 52px; max-width: 560px; }
+  .hero-content { padding: 0 48px 52px 40px; max-width: 560px; }
+  .hero-formules .hero-content { padding: 0 48px 38px 40px !important; }
+  .hero-blog .hero-content { padding: 0 48px 38px 40px !important; }
   .hero-content h1 { font-size: 56px; }
   .hero-home .hero-content h1 { font-size: 62px; white-space: normal; }
   .hero-home .hero-content { padding: 0 40px 40px; }
