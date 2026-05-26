@@ -817,7 +817,7 @@ a { text-decoration: none; color: inherit; }
 
   /* BLOG HOME - 4 articles */
   .home-blog { padding: 40px 40px !important; }
-  .home-blog-header { flex-direction: column !important; align-items: flex-start !important; gap: 0 !important; margin-bottom: 16px !important; }
+  .home-blog-header { flex-direction: column !important; align-items: flex-start !important; gap: 0 !important; margin-bottom: 12px !important; }
   .home-blog-header .eyebrow-dark { margin-bottom: 0 !important; margin-top: 0 !important; }
   .home-blog-header .home-h2 { margin-top: 24px !important; }
   .home-blog-grid { grid-template-columns: repeat(3, 1fr) !important; }
