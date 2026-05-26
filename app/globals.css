@@ -785,7 +785,7 @@ a { text-decoration: none; color: inherit; }
   .section-label { font-size: 11px !important; letter-spacing: 3px !important; }
 
   /* VISION "PensÃ© pour vous" - corriger padding et image */
-  .home-vision { padding: 48px 40px !important; grid-template-columns: 45% 55% !important; gap: 40px !important; overflow: hidden !important; }
+  .home-vision { padding: 40px 40px !important; grid-template-columns: 45% 55% !important; gap: 40px !important; overflow: hidden !important; }
   .home-vision-text br { display: none !important; }
   .vision-grace { display: block !important; margin-top: 16px !important; }
   .home-vision-text { font-size: 14px; }
@@ -793,7 +793,7 @@ a { text-decoration: none; color: inherit; }
   .home-vision-img { width: 100% !important; margin-left: 0 !important; height: 320px !important; object-fit: cover !important; object-position: right 30% !important; border-radius: 14px !important; }
 
   /* HOME PLANNERS */
-  .home-planners { padding: 48px 40px !important; padding-top: 48px !important; }
+  .home-planners { padding: 48px 40px !important; }
   .home-planners-header { margin-bottom: 40px !important; margin-top: -16px !important; }
   .home-planners .home-h2 { margin-top: 0 !important; padding-top: 0 !important; }
   .home-planners-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 24px; }
