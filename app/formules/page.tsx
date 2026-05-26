@@ -38,7 +38,7 @@ export default function Formules() {
           <div className="ess-card">
             <Plane size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Transports</h3>
-            <p>Des trajets choisis pour un voyage fluide et serein<br />(avion, train, bus...)</p>
+            <p>Des trajets choisis<br />pour un voyage fluide<br />et serein (avion, train, bus...)</p>
           </div>
           <div className="ess-card">
             <BedDouble size={34} className="ess-icon" strokeWidth={1.2} />
@@ -53,7 +53,7 @@ export default function Formules() {
           <div className="ess-card">
             <MapPin size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Sites & activités</h3>
-            <p>Des expériences authentiques et des pépites locales</p>
+            <p>Des expériences authentiques<br />et des pépites locales</p>
           </div>
           <div className="ess-card">
             <Map size={34} className="ess-icon" strokeWidth={1.2} />
@@ -63,7 +63,7 @@ export default function Formules() {
           <div className="ess-card">
             <Notebook size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Carnet digital</h3>
-            <p>Réservations, infos pratiques, check-list valise, tout est dedans !</p>
+            <p>Réservations, infos pratiques,<br />check-list valise,<br />tout est dedans !</p>
           </div>
         </div>
       </section>
