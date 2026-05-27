@@ -325,6 +325,10 @@ a { text-decoration: none; color: inherit; }
 .qsn-vanlife-text { font-size: 14px; color: #666; line-height: 1.85; font-weight: 300; margin-bottom: 14px; }
 
 /* RESPONSIVE */
+.mobile-only-br { display: none; }
+.desktop-br { display: block; }
+.hide-mobile-br { display: block; }
+
 @media (max-width: 1024px) {
   .nav { padding: 22px 30px; }
   .nav-links { display: none; }
@@ -678,9 +682,6 @@ a { text-decoration: none; color: inherit; }
   /* footer ok */
 }
 
-.mobile-only-br { display: none; }
-.desktop-br { display: block; }
-.hide-mobile-br { display: block; }
 
 @media (max-width: 768px) {
   .footer-logo-main { font-size: 21px !important; }
