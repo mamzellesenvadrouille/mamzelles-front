@@ -26,7 +26,7 @@ export default function Formules() {
         <div className="hero-content">
           <h1>Votre voyage,<br /><em>vos envies,</em><br />votre budget.</h1>
           <div className="hero-rule" />
-          <p className="hero-desc">On crée l&apos;itinéraire qui vous ressemble — devis personnalisé<br className="hide-mobile-br" /> sous 48h,<span className="formules-m-br"></span> gratuit &amp; sans engagement.</p>
+          <p className="hero-desc">On crée l&apos;itinéraire qui vous ressemble —<span className="formules-m-br"></span> devis personnalisé<br className="hide-mobile-br" /> sous 48h,<span className="formules-m-br"></span> gratuit &amp; sans engagement.</p>
         </div>
       </section>
 
