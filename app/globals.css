@@ -781,6 +781,7 @@ a { text-decoration: none; color: inherit; }
   .hero-content { padding: 0 48px 52px 40px; max-width: 560px; }
   .hero-formules .hero-content { padding: 0 48px 20px 40px !important; }
   .hero-blog .hero-content { padding: 0 48px 38px 40px !important; }
+  .qsn-hero-content { padding: 0 48px 60px 40px !important; }
   .hero-content h1 { font-size: 56px; }
   .qsn-hero-h1 { font-size: 56px !important; }
   .hero-home .hero-content h1 { font-size: 62px; white-space: normal; }
