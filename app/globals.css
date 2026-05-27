@@ -296,7 +296,7 @@ a { text-decoration: none; color: inherit; }
 .qsn-hero { height: 80vh; }
 .qsn-hero .hero-bg { object-position: center 77%; }
 .qsn-hero-content { position: absolute; bottom: 0; left: 0; z-index: 5; padding: 0 80px 60px; max-width: 700px; color: #fff; }
-.qsn-hero-h1 { font-family: 'Cormorant Garamond', serif; font-size: 72px; line-height: .97; font-weight: 600; margin-bottom: 18px; }
+.qsn-hero-h1 { font-family: 'Cormorant Garamond', serif; font-size: 68px; line-height: .97; font-weight: 600; margin-bottom: 18px; }
 .qsn-hero-h1 em { color: var(--gold); font-style: italic; }
 .qsn-hero-sub { font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.8; font-weight: 300; margin-top: 16px; }
 
@@ -450,7 +450,7 @@ a { text-decoration: none; color: inherit; }
   .qsn-hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
   .qsn-hero-sub br { display: none !important; }
   .qsn-hero-sub { margin-bottom: 24px !important; }
-  .qsn-hero-h1 { font-size: 42px !important; }
+  .qsn-hero-h1 { font-size: 38px !important; }
 
   .eyebrow-dark { font-size: 10px !important; margin-bottom: 8px !important; }
   .home-planners-header { margin-bottom: 20px !important; }
@@ -780,6 +780,7 @@ a { text-decoration: none; color: inherit; }
   .hero-formules .hero-content { padding: 0 48px 20px 40px !important; }
   .hero-blog .hero-content { padding: 0 48px 38px 40px !important; }
   .hero-content h1 { font-size: 56px; }
+  .qsn-hero-h1 { font-size: 56px !important; }
   .hero-home .hero-content h1 { font-size: 62px; white-space: normal; }
   .hero-home .hero-content { padding: 0 40px 40px; }
 
