@@ -871,6 +871,7 @@ a { text-decoration: none; color: inherit; }
   .hero-desc .mobile-only-br { display: none !important; }
   .qsn-m-br { display: block; height: 0; }
   .qsn-dt-br { display: none !important; }
+  .tablet-br { display: block !important; height: 0; }
 
   /* OPTIONS */
   .options { padding: 48px 40px !important; }
