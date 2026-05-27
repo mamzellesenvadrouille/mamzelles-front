@@ -1,4 +1,4 @@
-import InstagramFeed from './InstagramFeed';
+aimport InstagramFeed from './InstagramFeed';
 import Navbar from '../components/Navbar';
 
 export default function QuiSommesNous() {
@@ -13,7 +13,7 @@ export default function QuiSommesNous() {
         <div className="qsn-hero-content">
           <h1 className="qsn-hero-h1">Le voyage<br />comme une façon<br /><em>de vivre.</em></h1>
           <div className="hero-rule" />
-          <p className="qsn-hero-sub">MamZelles en vadrouille, c&apos;est avant tout une histoire de vie, de voyages et de moments<br className="mobile-only-br" /> partagés depuis plus de 13 ans.</p>
+          <p className="qsn-hero-sub">MamZelles en vadrouille, c&apos;est avant tout<br className="mobile-only-br" />une histoire de vie,<br className="desktop-br" />de voyages et de moments<br className="mobile-only-br" />partagés depuis plus de 13 ans.</p>
         </div>
       </section>
 
