@@ -301,10 +301,8 @@ a { text-decoration: none; color: inherit; }
 .qsn-hero-sub { font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.8; font-weight: 300; margin-top: 16px; }
 
 /* QSN NOTRE HISTOIRE */
-.qsn-histoire { display: grid; grid-template-columns: 1fr 1fr; background: var(--bg); border-top: 1px solid var(--line); padding: 50px 80px 84px 100px; gap: 10px; }
-.qsn-histoire-header { grid-column: 2; grid-row: 1; }
-.qsn-histoire-photos { grid-column: 1; grid-row: 1 / 3; }
-.qsn-histoire-left { grid-column: 2; grid-row: 2; margin-left: -40px; max-width: 480px; display: flex; flex-direction: column; }
+.qsn-histoire { display: grid; grid-template-columns: 1fr 1fr; background: var(--bg); border-top: 1px solid var(--line); padding: 50px 80px 84px 100px; align-items: center; gap: 10px; }
+.qsn-histoire-left { margin-left: -40px; max-width: 480px; display: flex; flex-direction: column; }
 
 .qsn-histoire-left .eyebrow-dark { margin-bottom: 0; }
 .qsn-histoire-h2 { font-family: 'Cormorant Garamond', serif; font-size: 46px; line-height: 1.05; font-weight: 400; margin-top: 20px; color: var(--dark); }
@@ -519,10 +517,7 @@ a { text-decoration: none; color: inherit; }
 
   /* QUI SOMMES-NOUS */
   .qsn-histoire { grid-template-columns: 1fr !important; padding: 32px 24px !important; gap: 12px !important; }
-  .qsn-histoire-photos { order: 1 !important; }
-  .qsn-histoire-header { order: 2 !important; }
-  .qsn-histoire-left { order: 3 !important; margin-left: 0 !important; max-width: 100% !important; display: flex !important; flex-direction: column !important; }
-  .qsn-histoire .home-rule { display: block !important; }
+  .qsn-histoire-left { margin-left: 0 !important; max-width: 100% !important; display: flex !important; flex-direction: column !important; }
   .qsn-histoire-h2 { font-size: 32px !important; margin-top: 10px !important; }
   .qsn-histoire-photos { height: 310px !important; position: relative !important; overflow: visible !important; margin-top: 0 !important; background: transparent !important; }
   .qsn-histoire-img { width: 82% !important; left: 0 !important; height: 260px !important; position: absolute !important; top: 0 !important; display: block !important; }
@@ -915,10 +910,8 @@ a { text-decoration: none; color: inherit; }
   .footer-social-item { padding: 0 16px !important; }
 
   /* QUI SOMMES NOUS page */
-  .qsn-histoire { grid-template-columns: 55% 45% !important; grid-template-areas: 'header header' 'photos body' !important; padding: 48px 10px 48px 40px !important; gap: 0 !important; }
-  .qsn-histoire-header { grid-area: header !important; padding-bottom: 16px !important; }
-  .qsn-histoire-left { grid-area: body !important; margin-left: -30px !important; max-width: 100% !important; }
-  .qsn-histoire .home-rule { display: none !important; }
+  .qsn-histoire { grid-template-columns: 55% 45% !important; padding: 48px 10px 48px 40px !important; gap: 0 !important; }
+  .qsn-histoire-left { margin-left: -30px !important; max-width: 100% !important; }
   .qsn-histoire-h2 { font-size: 32px !important; margin-top: 8px !important; }
   .qsn-histoire-text br { display: none !important; }
   .qsn-histoire-photos { height: 380px !important; margin-top: 0 !important; }
