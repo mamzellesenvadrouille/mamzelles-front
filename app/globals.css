@@ -328,6 +328,8 @@ a { text-decoration: none; color: inherit; }
 .mobile-only-br { display: none; }
 .desktop-br { display: block; }
 .hide-mobile-br { display: block; }
+.qsn-m-br { display: inline; }
+.qsn-dt-br { display: inline; }
 
 @media (max-width: 1024px) {
   .nav { padding: 22px 30px; }
@@ -671,6 +673,8 @@ a { text-decoration: none; color: inherit; }
   .mobile-only-br { display: inline !important; }
   .desktop-br { display: none !important; }
   .hero-desc .mobile-only-br { display: none !important; }
+  .qsn-m-br { display: block; height: 0; }
+  .qsn-dt-br { display: none; }
 
   /* Article Madrid encore plus proche de "Voir tous les articles" */
   .home-blog-header { margin-bottom: 4px !important; }
@@ -859,6 +863,8 @@ a { text-decoration: none; color: inherit; }
   .mobile-only-br { display: inline !important; }
   .desktop-br { display: none !important; }
   .hero-desc .mobile-only-br { display: none !important; }
+  .qsn-m-br { display: block; height: 0; }
+  .qsn-dt-br { display: none; }
 
   /* OPTIONS */
   .options { padding: 48px 40px !important; }
