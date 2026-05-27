@@ -1,4 +1,4 @@
-aimport InstagramFeed from './InstagramFeed';
+import InstagramFeed from './InstagramFeed';
 import Navbar from '../components/Navbar';
 
 export default function QuiSommesNous() {
