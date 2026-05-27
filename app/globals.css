@@ -909,7 +909,7 @@ a { text-decoration: none; color: inherit; }
   .footer-social-item { padding: 0 16px !important; }
 
   /* QUI SOMMES NOUS page */
-  .qsn-histoire { grid-template-columns: 55% 45% !important; padding: 48px 40px !important; gap: 0px !important; }
+  .qsn-histoire { grid-template-columns: 55% 45% !important; padding: 48px 40px !important; gap: 2px !important; }
   .qsn-histoire-left { margin-left: 0 !important; max-width: 100% !important; }
   .qsn-histoire-h2 { font-size: 32px !important; margin-top: 8px !important; }
   .qsn-histoire-text br { display: none !important; }
