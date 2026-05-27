@@ -326,6 +326,7 @@ a { text-decoration: none; color: inherit; }
 
 /* RESPONSIVE */
 .mobile-only-br { display: none; }
+.tablet-br { display: none; }
 .formules-m-br { display: inline; }
 .desktop-br { display: block; }
 .hide-mobile-br { display: block; }
