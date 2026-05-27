@@ -910,7 +910,7 @@ a { text-decoration: none; color: inherit; }
 
   /* QUI SOMMES NOUS page */
   .qsn-histoire { grid-template-columns: 55% 45% !important; padding: 48px 40px !important; gap: 0 !important; }
-  .qsn-histoire-left { margin-left: -22px !important; max-width: 100% !important; }
+  .qsn-histoire-left { margin-left: -30px !important; max-width: 100% !important; }
   .qsn-histoire-h2 { font-size: 32px !important; margin-top: 8px !important; }
   .qsn-histoire-text br { display: none !important; }
   .qsn-histoire-photos { height: 380px !important; margin-top: 0 !important; }
