@@ -862,7 +862,7 @@ a { text-decoration: none; color: inherit; }
   .form-right-h2 { font-size: 26px !important; font-weight: 600 !important; }
   .form-right-card { width: fit-content !important; margin: 60px 0 0 24px !important; padding: 28px 28px 40px 28px !important; min-height: auto !important; align-self: flex-start !important; }
   .form-right-price-block { margin-top: 34px !important; margin-bottom: 8px !important; }
-  .form-right-cta { font-size: 10px !important; letter-spacing: 2px !important; padding: 10px 22px !important; width: auto !important; align-self: flex-start !important; white-space: nowrap !important; margin-top: 20px !important; }
+  .form-right-cta { font-size: 10px !important; letter-spacing: 2px !important; padding: 10px 22px !important; width: auto !important; align-self: flex-start !important; white-space: nowrap !important; margin-top: 19px !important; }
   .mobile-only-br { display: inline !important; }
   .desktop-br { display: none !important; }
   .hero-desc .mobile-only-br { display: none !important; }
