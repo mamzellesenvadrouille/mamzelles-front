@@ -522,7 +522,7 @@ a { text-decoration: none; color: inherit; }
   .qsn-histoire-photos { height: 310px !important; position: relative !important; overflow: visible !important; margin-top: 0 !important; background: transparent !important; }
   .qsn-histoire-img { width: 82% !important; left: 0 !important; height: 260px !important; position: absolute !important; top: 0 !important; display: block !important; }
   .qsn-histoire-img-2 { display: block !important; width: 48% !important; height: 170px !important; bottom: 0 !important; right: 0 !important; position: absolute !important; }
-  .qsn-histoire-h2 { font-size: 32px !important; margin-top: 10px !important; }
+  .qsn-histoire-h2 { font-size: 34px !important; margin-top: 10px !important; }
   .qsn-histoire-text br { display: none; }
 
   .qsn-vanlife { flex-direction: column !important; }
@@ -913,7 +913,7 @@ a { text-decoration: none; color: inherit; }
   .qsn-histoire { grid-template-columns: 48% 52% !important; padding: 48px 10px 48px 40px !important; gap: 0 !important; }
   .qsn-histoire-left { margin-left: -30px !important; max-width: 100% !important; }
   .qsn-histoire-photos { margin-left: 20px !important; }
-  .qsn-histoire-h2 { font-size: 32px !important; margin-top: 10px !important; }
+  .qsn-histoire-h2 { font-size: 34px !important; margin-top: 10px !important; }
   .qsn-histoire-text br { display: none !important; }
   .qsn-histoire-photos { height: 380px !important; margin-top: 0 !important; }
   .qsn-histoire-img { height: 360px !important; top: -20px !important; }
