@@ -447,7 +447,7 @@ a { text-decoration: none; color: inherit; }
   .hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
   .hide-mobile-br { display: none !important; }
   .hero-content h1 { font-size: 38px !important; white-space: normal !important; }
-  .qsn-hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
+  .qsn-hero-content { padding: 0 24px 60px !important; max-width: 100% !important; }
   .qsn-hero-sub br { display: none !important; }
   .qsn-hero-sub { margin-bottom: 24px !important; }
   .qsn-hero-h1 { font-size: 38px !important; }
