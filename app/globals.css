@@ -794,6 +794,9 @@ a { text-decoration: none; color: inherit; }
 
   /* UNIFORMISATION titres et eyebrows */
   .eyebrow-dark { font-size: 11px !important; letter-spacing: 3px !important; margin-bottom: 12px !important; margin-top: 0 !important; }
+  .form-h2 { margin-top: 20px !important; }
+  .mosaic-call h2 { margin-top: 20px !important; }
+  .process h2 { margin-top: 20px !important; }
   .eyebrow-gold { font-size: 10px !important; letter-spacing: 3px !important; }
   .home-h2 { font-size: 34px !important; }
   .section-label { font-size: 11px !important; letter-spacing: 3px !important; }
