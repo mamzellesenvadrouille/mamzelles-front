@@ -453,7 +453,6 @@ a { text-decoration: none; color: inherit; }
   /* HERO - toutes pages */
   .hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
   .formules-m-br { display: block; height: 0; }
-  .hero-formules .hero-content { padding: 0 24px 52px !important; }
   .hide-mobile-br { display: none !important; }
   .hero-content h1 { font-size: 38px !important; white-space: normal !important; }
   .qsn-hero-content { padding: 0 24px 60px !important; max-width: 100% !important; }
@@ -698,7 +697,7 @@ a { text-decoration: none; color: inherit; }
   /* FORMULES HERO - plus petit que home + soleil ÃƒÆ’Ã†â€™  droite */
   .hero-formules { height: 60vh !important; }
   .hero-formules .hero-bg { object-position: 70% center !important; }
-  .hero-formules .hero-content { padding: 0 24px 38px !important; }
+  .hero-formules .hero-content { padding: 0 24px 52px !important; }
 
   /* BLOG + QSN HERO - aussi plus petits */
   .hero-blog { height: 60vh !important; }
