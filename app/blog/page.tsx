@@ -10,7 +10,7 @@ const articles = [
   {
     titre: 'Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus',
     url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus/',
-    image: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/01/port-barton.jpg',
+    image: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/01/port-barton.webp',
     localImage: null,
     categorie: 'Philippines',
   },
@@ -25,14 +25,14 @@ const articles = [
     titre: 'Itinéraire Philippines : 3 semaines pour découvrir la perle de l\'Orient !',
     url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/',
     image: null,
-    localImage: '/Philippines.jpg',
+    localImage: '/Philippines.webp',
     categorie: 'Philippines',
   },
   {
     titre: 'Dormir dans le désert d\'Agafay, une expérience inoubliable !',
     url: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/',
     image: null,
-    localImage: '/Agafay.jpg',
+    localImage: '/Agafay.webp',
     categorie: 'Maroc',
   },
   {
@@ -53,7 +53,7 @@ const articles = [
     titre: '3 jours à Madrid : découvrez les lieux incontournables de la capitale espagnole !',
     url: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours/',
     image: null,
-    localImage: '/Madrid.jpg',
+    localImage: '/Madrid.webp',
     categorie: 'Espagne',
   },
   {
@@ -132,7 +132,7 @@ export default async function BlogPage() {
         <div className="blog-grid">
           {articles.map((article, i) => {
             const slug = slugs[i];
-            const imgSrc = article.localImage || wpImages[slug] || '/home-hero.jpg';
+            const imgSrc = article.localImage || wpImages[slug] || '/home-hero.webp';
             return (
               <a
                 key={i}
