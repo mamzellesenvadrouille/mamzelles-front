@@ -51,7 +51,7 @@ export default function ContactForm() {
 
   return (
     <section className="contact-section" id="formulaire">
-      <img src="/cta.jpg" alt="" className="contact-bg" />
+      <img src="/cta.webp" alt="" className="contact-bg" />
       <div className="contact-overlay" />
       <div className="contact-inner">
         <div className="contact-header">

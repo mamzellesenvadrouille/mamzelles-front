@@ -114,7 +114,7 @@ export default async function BlogPage() {
       {/* NAV */}
       <section className="hero hero-blog">
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/hero-blog.jpg" alt="" />
+        <img className="hero-bg" src="/hero-blog.webp" alt="" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Notre blog<br /><em>voyages</em></h1>
@@ -157,7 +157,7 @@ export default async function BlogPage() {
 
       {/* CTA */}
       <section className="home-cta">
-        <img src="/cta.jpg" alt="" className="home-cta-bg" />
+        <img src="/cta.webp" alt="" className="home-cta-bg" />
         <div className="home-cta-overlay" />
         <div className="home-cta-content">
           <p className="eyebrow">Votre voyage sur mesure</p>

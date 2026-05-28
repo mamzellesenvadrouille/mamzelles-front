@@ -21,7 +21,7 @@ export default function Formules() {
       {/* HERO */}
       <section className="hero hero-formules">
         <Navbar activePage="formules" contactHref="#formulaire" />
-        <img className="hero-bg" src="/hero.jpg" alt="" />
+        <img className="hero-bg" src="/hero.webp" alt="" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Votre voyage,<br /><em>vos envies,</em><br />votre budget.</h1>
@@ -121,7 +121,7 @@ export default function Formules() {
 
         {/* DROITE */}
         <div className="formulas-right">
-          <img src="/desert.jpg" alt="Désert" className="form-right-img" />
+          <img src="/desert.webp" alt="Désert" className="form-right-img" />
           <div className="form-right-overlay" />
           <div className="form-right-card">
             <span className="frcard-badge">Sur-mesure</span>
@@ -191,9 +191,9 @@ export default function Formules() {
       {/* MOSAIC + CALL */}
       <section className="mosaic-call">
         <div className="mosaic-col">
-          <img src="/photo1.jpg" alt="" className="mosaic-img-1" />
-          <img src="/photo2.jpeg" alt="" className="mosaic-img-2" />
-          <img src="/photo3.jpg" alt="" />
+          <img src="/photo1.webp" alt="" className="mosaic-img-1" />
+          <img src="/photo2.webp" alt="" className="mosaic-img-2" />
+          <img src="/photo3.webp" alt="" />
         </div>
         <div className="call-col">
           <p className="eyebrow-dark">Parlons de votre voyage</p>

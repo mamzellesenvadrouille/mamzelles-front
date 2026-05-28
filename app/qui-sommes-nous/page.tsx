@@ -8,7 +8,7 @@ export default function QuiSommesNous() {
       {/* HERO */}
       <section className="hero qsn-hero">
         <Navbar activePage="qui-sommes-nous" />
-        <img className="hero-bg" src="/hero-nous.jpg" alt="" loading="eager" />
+        <img className="hero-bg" src="/hero-nous.webp" alt="" loading="eager" />
         <div className="hero-overlay" />
         <div className="qsn-hero-content">
           <h1 className="qsn-hero-h1">Le voyage<br />comme une façon<br /><em>de vivre.</em></h1>
@@ -20,8 +20,8 @@ export default function QuiSommesNous() {
       {/* NOTRE HISTOIRE */}
       <section className="qsn-histoire">
         <div className="qsn-histoire-photos">
-          <img src="/nous.jpg" alt="Amélie et Laurie" loading="lazy" className="qsn-histoire-img" />
-          <img src="/nous-et-aladdin.jpg" alt="Nous et Aladdin" loading="lazy" className="qsn-histoire-img-2" />
+          <img src="/nous.webp" alt="Amélie et Laurie" loading="lazy" className="qsn-histoire-img" />
+          <img src="/nous-et-aladdin.webp" alt="Nous et Aladdin" loading="lazy" className="qsn-histoire-img-2" />
         </div>
         <div className="qsn-histoire-left">
           <p className="eyebrow-dark">Notre histoire</p>
@@ -38,7 +38,7 @@ export default function QuiSommesNous() {
       {/* VANLIFE */}
       <section className="qsn-vanlife">
         <div className="qsn-vanlife-img-wrap">
-          <img src="/Elisabeth.jpg" alt="Notre vanlife en France et Espagne" loading="lazy" className="qsn-vanlife-img" />
+          <img src="/Elisabeth.webp" alt="Notre vanlife en France et Espagne" loading="lazy" className="qsn-vanlife-img" />
         </div>
         <div className="qsn-vanlife-content">
           <div className="qsn-vanlife-eyebrow">
@@ -61,9 +61,9 @@ export default function QuiSommesNous() {
           <p className="qsn-inspi-text">C&rsquo;est cette vision du voyage que nous mettons au cœur de chaque itinéraire que nous créons pour vous.</p>
         </div>
         <div className="qsn-inspi-photos">
-          <img src="/inspi-1.jpg" alt="Inspiration voyage" className="qsn-inspi-img" />
-          <img src="/inspi-2.jpg" alt="Inspiration voyage" className="qsn-inspi-img" />
-          <img src="/inspi-3.jpg" alt="Inspiration voyage" className="qsn-inspi-img" />
+          <img src="/inspi-1.webp" alt="Inspiration voyage" className="qsn-inspi-img" />
+          <img src="/inspi-2.webp" alt="Inspiration voyage" className="qsn-inspi-img" />
+          <img src="/inspi-3.webp" alt="Inspiration voyage" className="qsn-inspi-img" />
         </div>
       </section>
 
@@ -71,7 +71,7 @@ export default function QuiSommesNous() {
 
       {/* MERCI */}
       <section className="qsn-merci">
-        <img src="/sunset-qui-sommes-nous.PNG" alt="" className="qsn-merci-bg" />
+        <img src="/sunset-qui-sommes-nous.webp" alt="" className="qsn-merci-bg" />
         <div className="qsn-merci-overlay" />
         <div className="qsn-merci-card">
           <h2 className="qsn-merci-h2">On a hâte de voyager <em>avec vous</em></h2>

@@ -8,7 +8,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero hero-home">
         <Navbar activePage="accueil" />
-        <img className="hero-bg" src="/home-hero.jpg" alt="" />
+        <img className="hero-bg" src="/home-hero.webp" alt="" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Vous l&apos;imaginez,<br /><em>On le réalise.</em></h1>
@@ -27,7 +27,7 @@ export default function Home() {
           <p className="home-vision-text">Avant d&apos;être Travel Planners, <br />nous sommes surtout deux voyageuses. <br />Deux regards sensibles à l&apos;équilibre d&apos;un voyage, <br />à la façon dont chacun aime découvrir le monde <br />et à tout ce qui en fait sa richesse. <br /><span className="vision-grace">Grâce à nos expériences de terrain et à une préparation <br />pensée avec soin, nous créons des voyages personnalisés, <br />inspirants et mémorables.</span></p>
         </div>
         <div className="home-vision-right">
-          <img src="/vision.jpg" alt="Voyage sur mesure" className="home-vision-img" loading="lazy" />
+          <img src="/vision.webp" alt="Voyage sur mesure" className="home-vision-img" loading="lazy" />
         </div>
       </section>
 
@@ -66,7 +66,7 @@ export default function Home() {
 
       {/* BANDEAU PHOTO */}
       <section className="home-banner">
-        <img src="/bandeau.jpg" alt="" className="home-banner-bg" loading="lazy" />
+        <img src="/bandeau.webp" alt="" className="home-banner-bg" loading="lazy" />
         <div className="home-banner-overlay" />
         <div className="home-banner-content">
           <p className="home-banner-text">Votre voyage <em>commence ici</em></p>
@@ -101,7 +101,7 @@ export default function Home() {
         <div className="home-blog-grid">
           <a href="https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
             <div className="home-blog-img-wrap">
-              <img src="/Madrid.jpg" alt="" className="home-blog-img madrid" loading="lazy" />
+              <img src="/Madrid.webp" alt="" className="home-blog-img madrid" loading="lazy" />
             </div>
             <div className="home-blog-body">
               <h3>Madrid en 3 jours : que voir ? Lieux incontournables & bons plans</h3>
@@ -110,7 +110,7 @@ export default function Home() {
           </a>
           <a href="https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
             <div className="home-blog-img-wrap">
-              <img src="/Agafay.jpg" alt="" className="home-blog-img" loading="lazy" />
+              <img src="/Agafay.webp" alt="" className="home-blog-img" loading="lazy" />
             </div>
             <div className="home-blog-body">
               <h3>Désert d&apos;Agafay : notre guide pour une nuit près de Marrakech</h3>
@@ -119,7 +119,7 @@ export default function Home() {
           </a>
           <a href="https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
             <div className="home-blog-img-wrap">
-              <img src="/Philippines.jpg" alt="" className="home-blog-img" loading="lazy" />
+              <img src="/Philippines.webp" alt="" className="home-blog-img" loading="lazy" />
             </div>
             <div className="home-blog-body">
               <h3>Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient</h3>
@@ -131,7 +131,7 @@ export default function Home() {
 
       {/* CTA FORMULAIRE */}
       <section className="home-cta">
-        <img src="/cta.jpg" alt="" className="home-cta-bg" />
+        <img src="/cta.webp" alt="" className="home-cta-bg" />
         <div className="home-cta-overlay" />
         <div className="home-cta-content">
           <p className="eyebrow">Votre voyage sur mesure</p>
