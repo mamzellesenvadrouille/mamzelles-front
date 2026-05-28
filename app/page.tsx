@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: "Voyages 100% personnalisés. Devis gratuit sous 48h.",
     url: 'https://www.mamzellesenvadrouille.com',
     siteName: 'MamZelles en vadrouille',
-    images: [{ url: 'https://www.mamzellesenvadrouille.com/home-hero.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.mamzellesenvadrouille.com/og-home.png', width: 1200, height: 630 }],
     locale: 'fr_FR',
     type: 'website',
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MamZelles en vadrouille | Travel Planners sur mesure',
     description: 'Voyages 100% personnalisés. Devis gratuit sous 48h.',
-    images: ['https://www.mamzellesenvadrouille.com/home-hero.webp'],
+    images: ['https://www.mamzellesenvadrouille.com/og-home.png'],
   },
 };
 
