@@ -29,7 +29,7 @@ export default function QuiSommesNous() {
       {/* HERO */}
       <section className="hero qsn-hero">
         <Navbar activePage="qui-sommes-nous" />
-        <img className="hero-bg" src="/hero-nous.webp" alt="" loading="eager" />
+        <img className="hero-bg" src="/hero-nous.webp" alt="Amélie et Laurie, travel planners MamZelles en vadrouille" loading="eager" />
         <div className="hero-overlay" />
         <div className="qsn-hero-content">
           <h1 className="qsn-hero-h1">Le voyage<br />comme une façon<br /><em>de vivre.</em></h1>

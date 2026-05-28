@@ -129,7 +129,7 @@ export default async function BlogPage() {
       {/* NAV */}
       <section className="hero hero-blog">
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/hero-blog.webp" alt="" />
+        <img className="hero-bg" src="/hero-blog.webp" alt="Blog voyages MamZelles en vadrouille" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Notre blog<br /><em>voyages</em></h1>
@@ -157,7 +157,7 @@ export default async function BlogPage() {
                 className="blog-card"
               >
                 <div className="blog-card-img-wrap">
-                  <img src={imgSrc} alt="" className="blog-card-img" loading="lazy" />
+                  <img src={imgSrc} alt={article.titre} className="blog-card-img" loading="lazy" />
                   <span className="blog-card-cat">{article.categorie}</span>
                 </div>
                 <div className="blog-card-body">

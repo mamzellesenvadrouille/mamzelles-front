@@ -29,7 +29,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero hero-home">
         <Navbar activePage="accueil" />
-        <img className="hero-bg" src="/home-hero.webp" alt="" />
+        <img className="hero-bg" src="/home-hero.webp" alt="Coucher de soleil sur la mer aux Philippines" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Vous l&apos;imaginez,<br /><em>On le réalise.</em></h1>
@@ -121,7 +121,7 @@ export default function Home() {
         <div className="home-blog-grid">
           <a href="https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
             <div className="home-blog-img-wrap">
-              <img src="/Madrid.webp" alt="" className="home-blog-img madrid" loading="lazy" />
+              <img src="/Madrid.webp" alt="Madrid, vue sur la Gran Vía" className="home-blog-img madrid" loading="lazy" />
             </div>
             <div className="home-blog-body">
               <h3>Madrid en 3 jours : que voir ? Lieux incontournables & bons plans</h3>
@@ -130,7 +130,7 @@ export default function Home() {
           </a>
           <a href="https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
             <div className="home-blog-img-wrap">
-              <img src="/Agafay.webp" alt="" className="home-blog-img" loading="lazy" />
+              <img src="/Agafay.webp" alt="Désert d'Agafay au coucher du soleil près de Marrakech" className="home-blog-img" loading="lazy" />
             </div>
             <div className="home-blog-body">
               <h3>Désert d&apos;Agafay : notre guide pour une nuit près de Marrakech</h3>
@@ -139,7 +139,7 @@ export default function Home() {
           </a>
           <a href="https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
             <div className="home-blog-img-wrap">
-              <img src="/Philippines.webp" alt="" className="home-blog-img" loading="lazy" />
+              <img src="/Philippines.webp" alt="Paysage tropical aux Philippines, mer turquoise" className="home-blog-img" loading="lazy" />
             </div>
             <div className="home-blog-body">
               <h3>Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient</h3>
