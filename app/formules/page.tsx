@@ -5,10 +5,10 @@ import ContactForm from '../ContactForm';
 
 export const metadata: Metadata = {
   title: 'Nos Formules | MamZelles en vadrouille',
-  description: 'Découvrez nos formules de voyage sur mesure : L'Escale, La Vadrouille, La Grande Vadrouille. Devis gratuit, itinéraire personnalisé, carnet digital inclus.',
+  description: "Découvrez nos formules de voyage sur mesure : L'Escale, La Vadrouille, La Grande Vadrouille. Devis gratuit, itinéraire personnalisé, carnet digital inclus.",
   openGraph: {
     title: 'Nos Formules de voyage sur mesure | MamZelles en vadrouille',
-    description: 'Découvrez nos formules de voyage sur mesure. Devis gratuit sous 48h, itinéraire personnalisé, carnet digital inclus.',
+    description: "Découvrez nos formules de voyage sur mesure. Devis gratuit sous 48h, itinéraire personnalisé, carnet digital inclus.",
     url: 'https://www.mamzellesenvadrouille.com/formules',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://www.mamzellesenvadrouille.com/hero.webp', width: 1200, height: 630 }],

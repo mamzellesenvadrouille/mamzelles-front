@@ -1,81 +1,163 @@
-import InstagramFeed from './InstagramFeed';
-import Navbar from '../components/Navbar';
+import type { Metadata } from 'next';
+import { Clock, Heart, Map, User } from 'lucide-react';
+import Navbar from './components/Navbar';
 
-export default function QuiSommesNous() {
+export const metadata: Metadata = {
+  title: 'MamZelles en vadrouille | Travel Planners sur mesure',
+  description: "Amélie et Laurie créent des voyages 100% personnalisés selon vos envies, votre rythme et votre budget. Devis gratuit sous 48h.",
+  openGraph: {
+    title: 'MamZelles en vadrouille | Travel Planners sur mesure',
+    description: "Voyages 100% personnalisés. Devis gratuit sous 48h.",
+    url: 'https://www.mamzellesenvadrouille.com',
+    siteName: 'MamZelles en vadrouille',
+    images: [{ url: 'https://www.mamzellesenvadrouille.com/home-hero.webp', width: 1200, height: 630 }],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MamZelles en vadrouille | Travel Planners sur mesure',
+    description: 'Voyages 100% personnalisés. Devis gratuit sous 48h.',
+    images: ['https://www.mamzellesenvadrouille.com/home-hero.webp'],
+  },
+};
+
+export default function Home() {
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
       {/* HERO */}
-      <section className="hero qsn-hero">
-        <Navbar activePage="qui-sommes-nous" />
-        <img className="hero-bg" src="/hero-nous.webp" alt="" loading="eager" />
+      <section className="hero hero-home">
+        <Navbar activePage="accueil" />
+        <img className="hero-bg" src="/home-hero.webp" alt="" />
         <div className="hero-overlay" />
-        <div className="qsn-hero-content">
-          <h1 className="qsn-hero-h1">Le voyage<br />comme une façon<br /><em>de vivre.</em></h1>
+        <div className="hero-content">
+          <h1>Vous l&apos;imaginez,<br /><em>On le réalise.</em></h1>
           <div className="hero-rule" />
-          <p className="qsn-hero-sub">MamZelles en vadrouille, c&apos;est avant tout<span className="qsn-m-br"></span>une histoire de vie,<span className="qsn-dt-br"></span> de voyages et de moments<span className="qsn-m-br"></span>partagés depuis plus de 13 ans.</p>
+          <p className="hero-desc">Le plus beau voyage,<br />c&apos;est celui qui vous ressemble.</p>
+          <a href="/formules#formulaire" className="btn-gold-outline-hero">Créer mon itinéraire</a>
         </div>
       </section>
 
-      {/* NOTRE HISTOIRE */}
-      <section className="qsn-histoire">
-        <div className="qsn-histoire-photos">
-          <img src="/nous.webp" alt="Amélie et Laurie" loading="lazy" className="qsn-histoire-img" />
-          <img src="/nous-et-aladdin.webp" alt="Nous et Aladdin" loading="lazy" className="qsn-histoire-img-2" />
-        </div>
-        <div className="qsn-histoire-left">
-          <p className="eyebrow-dark">Notre histoire</p>
-          <h2 className="qsn-histoire-h2">Une rencontre,<br />une <em>évidence.</em></h2>
+      {/* NOTRE VISION */}
+      <section className="home-vision" id="approche">
+        <div className="home-vision-left">
+          <p className="eyebrow-dark">Vos Travel Planners</p>
+          <h2 className="home-h2">Pensé pour vous,<br /><em>créé avec passion.</em></h2>
           <div className="home-rule" />
-          <p className="qsn-histoire-text">Nous nous sommes rencontrées il y a plus de 13 ans dans un foyer d&rsquo;accueil d&rsquo;urgence où nous travaillions toutes les deux comme éducatrices spécialisées. Depuis, nous avançons ensemble dans la vie comme dans les voyages, avec la même vision de l&rsquo;amour, les mêmes valeurs et cette envie profonde de profiter pleinement de chaque instant.</p>
-          <p className="qsn-histoire-text">Aujourd&rsquo;hui, nous vivons à Antibes avec notre bébé poilu Aladdin de<br />15 ans, toujours prêt à nous suivre dans nos vadrouilles.</p>
-          <p className="qsn-histoire-text">Quelques mois seulement après notre rencontre, nous partions pour Londres pour notre tout premier voyage à deux. Un départ qui a marqué le début d&rsquo;une longue série d&rsquo;aventures, de découvertes et de souvenirs aux quatre coins du monde.</p>
-          <p className="qsn-histoire-text">Au fil des années, les voyages sont devenus une véritable partie de notre équilibre. Ils nourrissent cette envie constante d&rsquo;explorer, de s&rsquo;émerveiller et d&rsquo;apprécier les moments les plus simples.</p>
-
+          <p className="home-vision-text">Avant d&apos;être Travel Planners, <br />nous sommes surtout deux voyageuses. <br />Deux regards sensibles à l&apos;équilibre d&apos;un voyage, <br />à la façon dont chacun aime découvrir le monde <br />et à tout ce qui en fait sa richesse. <br /><span className="vision-grace">Grâce à nos expériences de terrain et à une préparation <br />pensée avec soin, nous créons des voyages personnalisés, <br />inspirants et mémorables.</span></p>
+        </div>
+        <div className="home-vision-right">
+          <img src="/vision.webp" alt="Voyage sur mesure" className="home-vision-img" loading="lazy" />
         </div>
       </section>
 
-      {/* VANLIFE */}
-      <section className="qsn-vanlife">
-        <div className="qsn-vanlife-img-wrap">
-          <img src="/Elisabeth.webp" alt="Notre vanlife en France et Espagne" loading="lazy" className="qsn-vanlife-img" />
+      {/* VOS TRAVEL PLANNERS */}
+      <section className="home-planners">
+        <div className="home-planners-header">
+          <h2 className="home-h2">Pourquoi voyager <em>avec <br className="mobile-only-br" />nous&nbsp;?</em></h2>
         </div>
-        <div className="qsn-vanlife-content">
-          <div className="qsn-vanlife-eyebrow">
-            <span className="eyebrow-dark">Le voyage autrement</span>
+        <div className="home-planners-grid">
+          <div className="home-planner-card">
+            <Clock size={32} strokeWidth={1.3} className="planner-icon" />
+            <h3>Un gain de temps précieux</h3>
+            <p>Fini les heures passées à organiser chaque étape du voyage. Nous recherchons et comparons transports, hôtels et activités pour vous.</p>
           </div>
-          <h2 className="qsn-vanlife-h2">La vanlife, entre liberté<br /><em>et simplicité.</em></h2>
-          <p className="qsn-vanlife-text">Il y a 3 ans, nous avons aménagé un fourgon pour partir autrement. Avec notre chien Aladdin, nous avons parcouru les routes de France et d&rsquo;Espagne, portées par le goût de l&rsquo;évasion, des découvertes et de la liberté.</p>
-          <p className="qsn-vanlife-text">Pas d&rsquo;itinéraire figé, très peu de plans. Juste le plaisir de ralentir, de vivre dehors, de suivre notre rythme et de nous laisser porter au fil des rencontres et des paysages.</p>
-          <p className="qsn-vanlife-text">La vanlife nous a appris à apprécier la simplicité, l&rsquo;instant présent et ces petits moments qui rendent un voyage inoubliable.</p>
+          <div className="home-planner-card">
+            <Map size={32} strokeWidth={1.3} className="planner-icon" />
+            <h3>Un itinéraire 100% personnalisé</h3>
+            <p>Chaque voyage est imaginé selon vos envies, votre rythme et votre budget. Aucun itinéraire ne se ressemble.</p>
+          </div>
+          <div className="home-planner-card">
+            <User size={32} strokeWidth={1.3} className="planner-icon" />
+            <h3>Un accompagnement humain</h3>
+            <p>Questions, ajustements, derniers détails… nous restons à vos côtés jusqu&apos;à ce que votre voyage soit prêt.</p>
+          </div>
+          <div className="home-planner-card">
+            <Heart size={32} strokeWidth={1.3} className="planner-icon" />
+            <h3>Un voyage en toute sérénité</h3>
+            <p>Votre carnet de voyage vous attend — informations essentielles, adresses sélectionnées, tout est là. Il ne vous reste plus qu&apos;à partir.</p>
+          </div>
+        </div>
+        <div className="home-planners-cta">
+          <a href="/formules#nos-formules" className="btn-gold-outline-hero">Découvrir nos formules →</a>
         </div>
       </section>
 
-      {/* INSPIRATIONS */}
-      <section className="qsn-inspi">
-        <div className="qsn-inspi-left">
-          <p className="eyebrow-dark">Ce qui nous anime</p>
-          <h2 className="qsn-inspi-h2">Notre vision <em>du voyage</em></h2>
-          <p className="qsn-inspi-text">Nous aimons les voyages vrais, ceux qui laissent une trace. Prendre le temps, sortir des sentiers battus, rencontrer, se laisser surprendre et profiter de chaque instant.</p>
-          <p className="qsn-inspi-text">Pour nous, voyager ne se résume pas à découvrir de nouveaux lieux, mais à s&rsquo;imprégner de l&rsquo;atmosphère d&rsquo;un endroit, toujours avec respect pour ses cultures, sa nature et ses habitants.</p>
-          <p className="qsn-inspi-text">C&rsquo;est cette vision du voyage que nous mettons au cœur de chaque itinéraire que nous créons pour vous.</p>
-        </div>
-        <div className="qsn-inspi-photos">
-          <img src="/inspi-1.webp" alt="Inspiration voyage" className="qsn-inspi-img" />
-          <img src="/inspi-2.webp" alt="Inspiration voyage" className="qsn-inspi-img" />
-          <img src="/inspi-3.webp" alt="Inspiration voyage" className="qsn-inspi-img" />
+      {/* BANDEAU PHOTO */}
+      <section className="home-banner">
+        <img src="/bandeau.webp" alt="" className="home-banner-bg" loading="lazy" />
+        <div className="home-banner-overlay" />
+        <div className="home-banner-content">
+          <p className="home-banner-text">Votre voyage <em>commence ici</em></p>
+          <div className="home-banner-rule" />
+          <p className="home-banner-sub">Chaque itinéraire est imaginé<br />pour vous laisser vivre l&apos;essentiel :<br />découvrir, ressentir, ralentir.</p>
         </div>
       </section>
 
-      <InstagramFeed />
+      {/* QUI SOMMES-NOUS */}
+      <section className="home-about">
+        <div className="home-about-img-wrap">
+          <img src="/champ.webp" alt="Amélie et Laurie" className="home-about-img" loading="lazy" />
+        </div>
+        <div className="home-about-content">
+          <p className="eyebrow-dark">Qui sommes-nous</p>
+          <h2 className="home-about-h2">Deux voyageuses,<br />Une même <em>vision du voyage.</em></h2>
+          <div className="home-rule" />
+          <p className="home-about-text">Nous, c&rsquo;est Amélie et Laurie — deux amoureuses de la vie et <br />du voyage, installées à Antibes depuis plus de 13 ans. <br /><br />Les voyages nous ont appris à profiter pleinement de l&rsquo;instant <br />présent et à voir la beauté dans les choses simples. <br /><br />Aujourd&rsquo;hui, nous imaginons des voyages inspirés par tout ce que <br />nous aimons vivre nous-mêmes : la spontanéité, les rencontres et <br />tous ces moments qui font les vrais souvenirs.</p>
+          <a href="/qui-sommes-nous" className="home-about-link">Notre histoire →</a>
+        </div>
+      </section>
 
-      {/* MERCI */}
-      <section className="qsn-merci">
-        <img src="/sunset-qui-sommes-nous.webp" alt="" className="qsn-merci-bg" />
-        <div className="qsn-merci-overlay" />
-        <div className="qsn-merci-card">
-          <h2 className="qsn-merci-h2">On a hâte de voyager <em>avec vous</em></h2>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      {/* BLOG */}
+      <section className="home-blog">
+        <div className="home-blog-header">
+          <div>
+            <p className="eyebrow-dark">Inspirations de voyage</p>
+            <h2 className="home-h2">Des idées pour nourrir <em>vos envies d&apos;ailleurs</em></h2>
+          </div>
+          <a href="/blog" className="home-link">Voir tous les articles →</a>
+        </div>
+        <div className="home-blog-grid">
+          <a href="https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
+            <div className="home-blog-img-wrap">
+              <img src="/Madrid.webp" alt="" className="home-blog-img madrid" loading="lazy" />
+            </div>
+            <div className="home-blog-body">
+              <h3>Madrid en 3 jours : que voir ? Lieux incontournables & bons plans</h3>
+              <span className="home-blog-read">Lire l&apos;article →</span>
+            </div>
+          </a>
+          <a href="https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
+            <div className="home-blog-img-wrap">
+              <img src="/Agafay.webp" alt="" className="home-blog-img" loading="lazy" />
+            </div>
+            <div className="home-blog-body">
+              <h3>Désert d&apos;Agafay : notre guide pour une nuit près de Marrakech</h3>
+              <span className="home-blog-read">Lire l&apos;article →</span>
+            </div>
+          </a>
+          <a href="https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
+            <div className="home-blog-img-wrap">
+              <img src="/Philippines.webp" alt="" className="home-blog-img" loading="lazy" />
+            </div>
+            <div className="home-blog-body">
+              <h3>Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient</h3>
+              <span className="home-blog-read">Lire l&apos;article →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      {/* CTA FORMULAIRE */}
+      <section className="home-cta">
+        <img src="/cta.webp" alt="" className="home-cta-bg" />
+        <div className="home-cta-overlay" />
+        <div className="home-cta-content">
+          <p className="eyebrow">Votre voyage sur mesure</p>
+          <h2>Prêt·e à créer<br />votre <em>prochain voyage ?</em></h2>
+          <p className="home-cta-sub">Dites-nous ce que vous imaginez.<br />On s&apos;occupe du reste.</p>
+          <a href="/formules#formulaire" className="btn-gold-outline-hero">Commencer mon projet</a>
         </div>
       </section>
 
@@ -114,7 +196,7 @@ export default function QuiSommesNous() {
           </div>
         </div>
         <div className="footer-bottom">
-          © 2026 MamZelles en vadrouille — Tous droits réservés
+          © 2026 MamZelles en vadrouille<br className="mobile-br" />Tous droits réservés
         </div>
       </footer>
 
