@@ -78,7 +78,7 @@ export default function Home() {
       {/* QUI SOMMES-NOUS */}
       <section className="home-about">
         <div className="home-about-img-wrap">
-          <img src="/champ.png" alt="Amélie et Laurie" className="home-about-img" loading="lazy" />
+          <img src="/champ.webp" alt="Amélie et Laurie" className="home-about-img" loading="lazy" />
         </div>
         <div className="home-about-content">
           <p className="eyebrow-dark">Qui sommes-nous</p>
