@@ -1,6 +1,27 @@
+import type { Metadata } from 'next';
 import { Plane, BedDouble, Utensils, MapPin, Map, Compass, Users, User, Calendar, Notebook } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import ContactForm from '../ContactForm';
+
+export const metadata: Metadata = {
+  title: 'Nos Formules | MamZelles en vadrouille',
+  description: 'Découvrez nos formules de voyage sur mesure : L'Escale, La Vadrouille, La Grande Vadrouille. Devis gratuit, itinéraire personnalisé, carnet digital inclus.',
+  openGraph: {
+    title: 'Nos Formules de voyage sur mesure | MamZelles en vadrouille',
+    description: 'Découvrez nos formules de voyage sur mesure. Devis gratuit sous 48h, itinéraire personnalisé, carnet digital inclus.',
+    url: 'https://www.mamzellesenvadrouille.com/formules',
+    siteName: 'MamZelles en vadrouille',
+    images: [{ url: 'https://www.mamzellesenvadrouille.com/hero.webp', width: 1200, height: 630 }],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nos Formules | MamZelles en vadrouille',
+    description: 'Voyage sur mesure, devis gratuit sous 48h.',
+    images: ['https://www.mamzellesenvadrouille.com/hero.webp'],
+  },
+};
 
 export default function Formules() {
   return (
