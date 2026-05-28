@@ -456,6 +456,7 @@ a { text-decoration: none; color: inherit; }
   /* HERO - toutes pages */
   .hero-content { padding: 0 24px 36px !important; max-width: 100% !important; }
   .hero-blog .hero-bg { object-position: 35% 50% !important; }
+  .hero-blog .hero-content { padding: 0 24px 21px !important; }
   .formules-m-br { display: block; height: 0; }
   .hide-mobile-br { display: none !important; }
   .hero-content h1 { font-size: 38px !important; white-space: normal !important; }
