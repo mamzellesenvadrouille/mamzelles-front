@@ -10,15 +10,15 @@ const articles = [
   {
     titre: 'Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus',
     url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus/',
-    image: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/01/port-barton.webp',
-    localImage: null,
+    image: null,
+    localImage: '/Puerto-Princesa-Port-Barton.webp',
     categorie: 'Philippines',
   },
   {
     titre: 'Palawan : Entre El Nido & Coron, découvrez le joyau des Philippines !',
     url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines/',
     image: null,
-    localImage: null,
+    localImage: '/El-Nido-Coron.webp',
     categorie: 'Philippines',
   },
   {
@@ -39,14 +39,14 @@ const articles = [
     titre: 'Marrakech, tous les secrets pour découvrir la ville rouge & son effervescence !',
     url: 'https://mamzellesenvadrouille.com/visiter-marrakech/',
     image: null,
-    localImage: null,
+    localImage: '/Marrakech.webp',
     categorie: 'Maroc',
   },
   {
     titre: 'Une semaine à Lanzarote, Road trip sur l\'île aux 300 volcans !',
     url: 'https://mamzellesenvadrouille.com/road-trip-a-lanzarote/',
     image: null,
-    localImage: null,
+    localImage: '/Lanzarote.webp',
     categorie: 'Espagne',
   },
   {
@@ -60,7 +60,7 @@ const articles = [
     titre: 'Visiter Londres en 1 semaine : l\'essentiel par quartier, infos pratiques & bons plans',
     url: 'https://mamzellesenvadrouille.com/visiter-londres-en-1-semaine/',
     image: null,
-    localImage: null,
+    localImage: '/Londres.webp',
     categorie: 'Europe',
   },
 ];
