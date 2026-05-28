@@ -125,6 +125,7 @@ a { text-decoration: none; color: inherit; }
 .options-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .opt-card { border: 1px solid var(--line); border-radius: 8px; padding: 28px 20px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; transition: .25s; }
 .opt-card:hover { border-color: var(--gold); }
+
 .opt-card-icon { color: var(--gold); margin-bottom: 4px; }
 .opt-card-name { font-size: 13px; font-weight: 600; color: var(--dark); line-height: 1.4; }
 .opt-card-sub { font-size: 13px; color: var(--muted); font-weight: 300; }
@@ -562,6 +563,7 @@ a { text-decoration: none; color: inherit; }
 
   .options { padding: 32px 24px !important; }
   .options-grid { grid-template-columns: 1fr 1fr !important; }
+  .opt-card:hover { border-color: var(--line) !important; }
   .process { padding: 32px 24px !important; }
   .process-steps { grid-template-columns: 1fr !important; }
   .contact-section { padding: 32px 24px !important; }
@@ -885,6 +887,7 @@ a { text-decoration: none; color: inherit; }
 
   /* OPTIONS */
   .options { padding: 48px 40px !important; }
+  .opt-card:hover { border-color: var(--line) !important; }
   .options-inner { grid-template-columns: 240px 1fr !important; gap: 40px !important; }
   .options-grid { grid-template-columns: repeat(2, 1fr) !important; }
 
