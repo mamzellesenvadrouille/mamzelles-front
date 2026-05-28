@@ -39,7 +39,7 @@ a { text-decoration: none; color: inherit; }
 .nav-cta:hover { background: #fff; color: var(--dark); }
 .hero-content { position: absolute; bottom: 0; left: 0; z-index: 5; padding: 0 80px 60px; max-width: 700px; color: #fff; }
 .hero-home .hero-content { padding: 0 52px 40px; max-width: 580px; }
-.hero-blog .hero-content { padding: 0 80px 20px; }
+.hero-blog .hero-content { padding: 0 80px 10px; }
 .hero-formules .hero-content { padding: 0 80px 24px; }
 .hero-content h1 { font-family: 'Cormorant Garamond', serif; font-size: 68px; line-height: .97; font-weight: 600; margin-bottom: 18px; }
 .hero-home .hero-content h1 { font-size: 76px; white-space: nowrap; }
