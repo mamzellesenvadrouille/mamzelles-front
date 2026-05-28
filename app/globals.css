@@ -583,7 +583,7 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 768px) {
   /* Hero home moins haut + plus de photo ÃƒÆ’Ã†â€™  droite */
-  .hero-home { height: 75vh !important; }
+  .hero-home { height: 75svh !important; }
   .hero-home .hero-bg { object-position: 55% center !important; }
 
   /* Burger visible, Contact desktop cachÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© */
@@ -702,13 +702,13 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 768px) {
   /* FORMULES HERO - plus petit que home + soleil ÃƒÆ’Ã†â€™  droite */
-  .hero-formules { height: 60vh !important; }
+  .hero-formules { height: 60svh !important; }
   .hero-formules .hero-bg { object-position: 70% center !important; }
   .hero-formules .hero-content { padding: 0 24px 42px !important; }
 
   /* BLOG + QSN HERO - aussi plus petits */
-  .hero-blog { height: 60vh !important; }
-  .qsn-hero { height: 60vh !important; }
+  .hero-blog { height: 60svh !important; }
+  .qsn-hero { height: 60svh !important; }
   .qsn-hero .hero-bg { object-position: 75% center !important; }
 }
 
