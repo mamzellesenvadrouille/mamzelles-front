@@ -518,29 +518,29 @@ a { text-decoration: none; color: inherit; }
   /* QUI SOMMES-NOUS */
   .qsn-histoire { grid-template-columns: 1fr !important; padding: 32px 24px !important; gap: 12px !important; }
   .qsn-histoire-left { margin-left: 0 !important; max-width: 100% !important; display: flex !important; flex-direction: column !important; }
-  .qsn-histoire-h2 { font-size: 32px !important; margin-top: 0px !important; }
+  .qsn-histoire-h2 { font-size: 32px !important; margin-top: 5px !important; }
   .qsn-histoire-photos { height: 310px !important; position: relative !important; overflow: visible !important; margin-top: 0 !important; background: transparent !important; }
   .qsn-histoire-img { width: 82% !important; left: 0 !important; height: 260px !important; position: absolute !important; top: 0 !important; display: block !important; }
   .qsn-histoire-img-2 { display: block !important; width: 48% !important; height: 170px !important; bottom: 0 !important; right: 0 !important; position: absolute !important; }
-  .qsn-histoire-h2 { font-size: 34px !important; margin-top: 0px !important; }
+  .qsn-histoire-h2 { font-size: 34px !important; margin-top: 5px !important; }
   .qsn-histoire-text br { display: none; }
 
   .qsn-vanlife { flex-direction: column !important; }
   .qsn-vanlife-img-wrap { width: 100% !important; }
   .qsn-vanlife-content { position: relative !important; width: 100% !important; padding: 32px 24px !important; background: var(--bg) !important; display: flex !important; flex-direction: column !important; }
-  .qsn-vanlife-h2 { font-size: 32px !important; margin-top: 0px !important; }
+  .qsn-vanlife-h2 { font-size: 32px !important; margin-top: 5px !important; }
 
   .qsn-inspi { grid-template-columns: 1fr !important; padding: 32px 24px 32px !important; }
   .qsn-inspi-left { display: flex !important; flex-direction: column !important; padding: 0 !important; }
   .qsn-inspi-photos { height: 200px !important; padding: 0 !important; }
   .qsn-inspi-img:last-child { object-position: 30% center !important; }
   .qsn-inspi-img:first-child { object-position: 45% center !important; }
-  .qsn-inspi-h2 { font-size: 32px !important; margin-top: 0px !important; }
+  .qsn-inspi-h2 { font-size: 32px !important; margin-top: 5px !important; }
 
   .qsn-insta { padding: 32px 0 !important; }
   .qsn-insta-header { padding: 0 24px 24px !important; }
   .qsn-insta-header .eyebrow-dark { margin-bottom: 8px !important; }
-  .qsn-insta-h2 { font-size: 32px !important; margin-top: 0px !important; }
+  .qsn-insta-h2 { font-size: 32px !important; margin-top: 5px !important; }
   .qsn-insta-grid { grid-template-columns: repeat(3, 1fr) !important; }
   .qsn-insta-side { display: none !important; }
   .qsn-insta-bottom { flex-direction: column !important; }
@@ -685,7 +685,7 @@ a { text-decoration: none; color: inherit; }
   /* Article Madrid encore plus proche de "Voir tous les articles" */
   .home-blog-header { margin-bottom: 4px !important; }
   .home-blog-header > div { display: flex !important; flex-direction: column !important; }
-  .home-blog-header .home-h2 { margin-bottom: 6px !important; margin-top: 0px !important; }
+  .home-blog-header .home-h2 { margin-bottom: 6px !important; margin-top: 5px !important; }
   .home-link { margin-bottom: 8px !important; }
 
   /* Footer moins imposant */
@@ -719,15 +719,15 @@ a { text-decoration: none; color: inherit; }
 
   /* FORMULES - eyebrows et titres harmonisÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s comme home */
   .section-label { font-size: 10px !important; margin-bottom: 8px !important; }
-  .ess-title { font-size: 32px !important; margin-top: 0px !important; margin-bottom: 16px !important; }
-  .form-h2 { font-size: 32px !important; margin-top: 0px !important; }
+  .ess-title { font-size: 32px !important; margin-top: 5px !important; margin-bottom: 16px !important; }
+  .form-h2 { font-size: 32px !important; margin-top: 5px !important; }
 
   .form-right-price-block { margin-top: 28px !important; margin-bottom: 28px !important; }
   .frcard-feature { font-size: 13px !important; }
-  .call-col h2 { font-size: 32px !important; margin-top: 0px !important; }
-  .process h2 { font-size: 32px !important; margin-top: 0px !important; }
+  .call-col h2 { font-size: 32px !important; margin-top: 5px !important; }
+  .process h2 { font-size: 32px !important; margin-top: 5px !important; }
   .process-header { display: flex !important; flex-direction: column !important; }
-  .cta-banner-content h2 { font-size: 32px !important; margin-top: 0px !important; }
+  .cta-banner-content h2 { font-size: 32px !important; margin-top: 5px !important; }
 }
 
 @media (max-width: 768px) {
@@ -915,7 +915,7 @@ a { text-decoration: none; color: inherit; }
   .qsn-histoire { grid-template-columns: 48% 52% !important; padding: 48px 10px 48px 40px !important; gap: 0 !important; }
   .qsn-histoire-left { margin-left: -30px !important; max-width: 100% !important; }
   .qsn-histoire-photos { margin-left: 20px !important; }
-  .qsn-histoire-h2 { font-size: 34px !important; margin-top: 0px !important; }
+  .qsn-histoire-h2 { font-size: 34px !important; margin-top: 5px !important; }
   .qsn-histoire-text br { display: none !important; }
   .qsn-histoire-photos { height: 380px !important; margin-top: 0 !important; }
   .qsn-histoire-img { height: 360px !important; top: -20px !important; }
@@ -925,14 +925,14 @@ a { text-decoration: none; color: inherit; }
   .qsn-vanlife-img-wrap { width: 100% !important; }
   .qsn-vanlife-img { height: 400px !important; object-fit: cover !important; }
   .qsn-vanlife-content { position: relative !important; width: 100% !important; padding: 40px 60px 40px 40px !important; background: var(--bg) !important; height: auto !important; }
-  .qsn-vanlife-h2 { font-size: 34px !important; margin-top: 0px !important; }
+  .qsn-vanlife-h2 { font-size: 34px !important; margin-top: 5px !important; }
 
   .qsn-inspi-left { padding: 10px 16px 20px 40px !important; }
-  .qsn-inspi-photos { height: 300px !important; padding: 0 10px 0 0 !important; margin-top: 0px !important; gap: 5px !important; }
+  .qsn-inspi-photos { height: 300px !important; padding: 0 10px 0 0 !important; margin-top: 5px !important; gap: 5px !important; }
   .qsn-inspi { grid-template-columns: 50% 50% !important; padding-bottom: 20px !important; }
   .qsn-inspi-img:last-child { object-position: 30% center !important; }
   .qsn-inspi-img:first-child { object-position: 45% center !important; }
-  .qsn-inspi-h2 { font-size: 34px !important; margin-top: 0px !important; }
+  .qsn-inspi-h2 { font-size: 34px !important; margin-top: 5px !important; }
 
   .qsn-insta-grid { grid-template-columns: repeat(4, 1fr) !important; }
   .qsn-insta-side { display: none !important; }
