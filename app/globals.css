@@ -935,7 +935,7 @@ a { text-decoration: none; color: inherit; }
   .qsn-inspi-h2 { font-size: 34px !important; margin-top: 10px !important; }
 
 
-  .qsn-insta-grid { grid-template-columns: repeat(4, 1fr) !important; overflow: hidden !important; max-height: 280px !important; }
+  .qsn-insta-grid { grid-template-columns: repeat(4, 1fr) !important; grid-template-rows: 1fr !important; overflow: hidden !important; }
   .qsn-insta-side { display: none !important; }
   .qsn-insta-h2 { font-size: 34px !important; margin-top: 15px !important; }
 
