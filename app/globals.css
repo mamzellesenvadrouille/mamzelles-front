@@ -928,7 +928,7 @@ a { text-decoration: none; color: inherit; }
   .qsn-vanlife-h2 { font-size: 34px !important; margin-top: 10px !important; }
 
   .qsn-inspi-left { padding: 10px 16px 40px 40px !important; }
-  .qsn-inspi-photos { height: 300px !important; padding: 0 10px 0 0 !important; margin-top: 20px !important; gap: 5px !important; }
+  .qsn-inspi-photos { height: 300px !important; padding: 0 10px 0 0 !important; margin-top: 10px !important; gap: 5px !important; }
   .qsn-inspi { grid-template-columns: 50% 50% !important; }
   .qsn-inspi-img:last-child { object-position: 30% center !important; }
   .qsn-inspi-img:first-child { object-position: 45% center !important; }
