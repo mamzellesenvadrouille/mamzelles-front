@@ -177,7 +177,7 @@ export default function Formules() {
         <div className="options-inner">
           <div className="options-left">
             <p className="eyebrow-dark">Options à la carte</p>
-            <h2 className="form-h2">Personnalisez<br /><em>votre voyage</em></h2>
+            <h2 className="form-h2">Personnalisez <br /><em>votre voyage</em></h2>
             <p>Tarif de base : 2 adultes — bébé(s) de moins de 2 ans inclus.</p>
           </div>
           <div className="options-grid">
