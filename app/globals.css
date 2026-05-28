@@ -681,6 +681,7 @@ a { text-decoration: none; color: inherit; }
   .home-planners-header .home-h2 em { display: inline !important; }
   .mobile-only-br { display: inline !important; }
   .desktop-br { display: none !important; }
+  .home-planners-header .mobile-only-br { display: none !important; }
   .hero-desc .mobile-only-br { display: none !important; }
   .qsn-m-br { display: block; height: 0; }
   .qsn-dt-br { display: none !important; }
@@ -874,6 +875,7 @@ a { text-decoration: none; color: inherit; }
   .form-right-cta { font-size: 10px !important; letter-spacing: 2px !important; padding: 10px 22px !important; width: auto !important; align-self: flex-start !important; white-space: nowrap !important; margin-top: 23px !important; }
   .mobile-only-br { display: inline !important; }
   .desktop-br { display: none !important; }
+  .home-planners-header .mobile-only-br { display: none !important; }
   .hero-desc .mobile-only-br { display: none !important; }
   .qsn-m-br { display: block; height: 0; }
   .qsn-dt-br { display: none !important; }
