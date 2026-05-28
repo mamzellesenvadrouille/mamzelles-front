@@ -71,7 +71,7 @@ export default function Home() {
           <div className="home-planner-card">
             <User size={32} strokeWidth={1.3} className="planner-icon" />
             <h3>Un accompagnement humain</h3>
-            <p>Questions, ajustements, derniers détails… nous restons à vos côtés jusqu&apos;à ce que votre voyage soit prêt.</p>
+            <p>Questions, ajustements, derniers détails…<br className="mobile-only-br" /> nous restons à vos côtés jusqu&apos;à ce que votre voyage soit prêt.</p>
           </div>
           <div className="home-planner-card">
             <Heart size={32} strokeWidth={1.3} className="planner-icon" />
