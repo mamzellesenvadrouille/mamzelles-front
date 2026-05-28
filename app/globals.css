@@ -902,7 +902,7 @@ a { text-decoration: none; color: inherit; }
 
   /* BLOG PAGE - 4 colonnes */
   .blog-section { padding: 48px 40px 64px !important; }
-  .blog-grid { grid-template-columns: repeat(4, 1fr) !important; }
+  .blog-grid { grid-template-columns: repeat(3, 1fr) !important; }
 
   /* FOOTER */
   .footer { padding: 28px 40px 16px !important; }
