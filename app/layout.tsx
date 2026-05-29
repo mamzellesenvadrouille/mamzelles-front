@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "MamZelles en vadrouille",
   description: "Votre travel planner sur-mesure",
+  alternates: {
+    canonical: "https://mamzellesenvadrouille.com",
+  },
 };
 
 export default function RootLayout({
