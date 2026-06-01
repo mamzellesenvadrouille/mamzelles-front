@@ -34,24 +34,15 @@ export default function MadridPage() {
       {/* HERO */}
       <section className="hero">
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid-1140x912.jpeg" alt="Madrid, vue sur la Gran Vía" />
+        <img className="hero-bg" src="/Madrid.webp" alt="Madrid, vue sur la Gran Vía" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <p className="eyebrow">Espagne · Europe</p>
-          <h1 className="hero-article-h1">3 jours à Madrid<br /><em>Lieux incontournables & bons plans</em></h1>
+          <h1>3 jours à Madrid<br /><em>Que voir ? Lieux incontournables & bons plans</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Vous voulez visiter Madrid en 3 jours ? Vous trouverez ici notre itinéraire et tous nos conseils pour découvrir les quartiers et les visites incontournables de la capitale espagnole !</p>
+          <p className="hero-desc">Notre itinéraire complet pour découvrir les quartiers et les visites incontournables de la capitale espagnole.</p>
         </div>
       </section>
-
-      {/* BARRE DE CONFIANCE */}
-      <div className="article-trust-bar">
-        <span>📅 Mis à jour en mai 2026</span>
-        <span className="trust-sep">·</span>
-        <span>⏱ Lecture : 12 min</span>
-        <span className="trust-sep">·</span>
-        <span>📍 Itinéraire testé sur place</span>
-      </div>
 
       {/* BLOC COUP DE COEUR */}
       <div className="article-coup-de-coeur">
