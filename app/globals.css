@@ -1659,8 +1659,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .article-cdcr-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
   gap: 0;
 }
 
@@ -1672,6 +1671,7 @@ a { text-decoration: none; color: inherit; }
   padding: 0 32px;
   border-left: 1px solid var(--line);
   min-height: 70px;
+  flex: 1;
 }
 
 .article-cdcr-item:first-child {
