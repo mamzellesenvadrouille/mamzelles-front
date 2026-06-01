@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Navbar from '../../components/Navbar';
+sed -i '' "s|../components/Navbar|../components/Navbar|g" app/visiter-madrid-en-3-jours/page.tsx
 
 export const metadata: Metadata = {
   title: '3 jours à Madrid : que voir ? Lieux incontournables & bons plans | MamZelles en vadrouille',
