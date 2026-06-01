@@ -1632,6 +1632,7 @@ a { text-decoration: none; color: inherit; }
 .article-coup-de-coeur {
   background: var(--dark);
   padding: 40px 52px;
+  margin-top: 40px;
 }
 
 .article-cdcr-header {
