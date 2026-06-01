@@ -21,7 +21,7 @@ a { text-decoration: none; color: inherit; }
 .eyebrow-gold { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; line-height: 1; }
 
 /* HERO */
-.hero { position: relative; width: 100%; height: 68vh; min-height: 400px; overflow: hidden; transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); isolation: isolate; contain: paint; }
+.hero { position: relative; width: 100%; height: 62vh; min-height: 400px; overflow: hidden; transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); isolation: isolate; contain: paint; }
 .hero-home { height: 90vh; }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; transform: translateZ(0); backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,5,2,0.82) 0%, rgba(10,5,2,0.45) 50%, rgba(10,5,2,0.05) 100%); }
@@ -37,7 +37,7 @@ a { text-decoration: none; color: inherit; }
 .nav-active { color: #fff !important; border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
 .nav-cta { border: 1px solid rgba(255,255,255,0.5); padding: 10px 22px; border-radius: 2px; color: #fff; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; transition: .3s; }
 .nav-cta:hover { background: #fff; color: var(--dark); }
-.hero-content { position: absolute; top: 50%; left: 0; transform: translateY(-30%); z-index: 5; padding: 0 80px; max-width: 700px; color: #fff; }
+.hero-content { position: absolute; top: 50%; left: 0; transform: translateY(-20%); z-index: 5; padding: 0 80px; max-width: 700px; color: #fff; }
 .hero-home .hero-content { padding: 0 52px 40px; max-width: 580px; }
 .hero-blog .hero-content { padding: 0 80px 20px; }
 .hero-formules .hero-content { padding: 0 80px 24px; }
@@ -1631,7 +1631,7 @@ a { text-decoration: none; color: inherit; }
    =========================== */
 .article-coup-de-coeur {
   background: #f0e8df;
-  padding: 20px 52px;
+  padding: 16px 52px;
   margin-top: 8px;
 }
 
@@ -1688,7 +1688,7 @@ a { text-decoration: none; color: inherit; }
 
 .article-cdcr-value {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--dark);
   font-style: italic;
