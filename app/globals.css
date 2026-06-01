@@ -37,7 +37,7 @@ a { text-decoration: none; color: inherit; }
 .nav-active { color: #fff !important; border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
 .nav-cta { border: 1px solid rgba(255,255,255,0.5); padding: 10px 22px; border-radius: 2px; color: #fff; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; transition: .3s; }
 .nav-cta:hover { background: #fff; color: var(--dark); }
-.hero-content { position: absolute; top: 50%; left: 0; transform: translateY(-20%); z-index: 5; padding: 0 80px; max-width: 700px; color: #fff; }
+.hero-content { position: absolute; top: 50%; left: 0; transform: translateY(-40%); z-index: 5; padding: 0 80px; max-width: 700px; color: #fff; }
 .hero-home .hero-content { padding: 0 52px 40px; max-width: 580px; }
 .hero-blog .hero-content { padding: 0 80px 20px; }
 .hero-formules .hero-content { padding: 0 80px 24px; }
@@ -1675,8 +1675,12 @@ a { text-decoration: none; color: inherit; }
 }
 
 .article-cdcr-item:first-child {
-  padding-left: 0;
   border-left: 1px solid transparent;
+  padding-left: 0;
+}
+
+.article-cdcr-item:last-child {
+  padding-right: 0;
 }
 
 .article-cdcr-label {
