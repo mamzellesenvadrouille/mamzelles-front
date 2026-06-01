@@ -21,7 +21,7 @@ a { text-decoration: none; color: inherit; }
 .eyebrow-gold { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; line-height: 1; }
 
 /* HERO */
-.hero { position: relative; width: 100%; height: 80vh; min-height: 400px; overflow: hidden; transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); isolation: isolate; contain: paint; }
+.hero { position: relative; width: 100%; height: 68vh; min-height: 400px; overflow: hidden; transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); isolation: isolate; contain: paint; }
 .hero-home { height: 90vh; }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; transform: translateZ(0); backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,5,2,0.82) 0%, rgba(10,5,2,0.45) 50%, rgba(10,5,2,0.05) 100%); }
@@ -43,9 +43,9 @@ a { text-decoration: none; color: inherit; }
 .hero-formules .hero-content { padding: 0 80px 24px; }
 .hero-content h1 { font-family: 'Cormorant Garamond', serif; font-size: 68px; line-height: .97; font-weight: 600; margin-bottom: 18px; }
 .hero-home .hero-content h1 { font-size: 76px; white-space: nowrap; }
-.hero-content h1 em { color: var(--gold); font-style: italic; font-weight: 300; }
+.hero-content h1 em { color: var(--gold); font-style: italic; font-weight: 300; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
 .hero-rule { width: 50px; height: 1px; background: var(--gold); margin-bottom: 18px; }
-.hero-desc { font-size: 15px; line-height: 1.85; color: rgba(255,255,255,0.75); margin-bottom: 30px; font-weight: 300; }
+.hero-desc { font-size: 16px; line-height: 1.85; color: rgba(255,255,255,0.85); margin-bottom: 30px; font-weight: 300; }
 
 /* ESSENTIALS */
 .essentials { background: #fff; padding: 56px 52px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; }
@@ -1632,7 +1632,7 @@ a { text-decoration: none; color: inherit; }
 .article-coup-de-coeur {
   background: var(--dark);
   padding: 40px 52px;
-  margin-top: 40px;
+  margin-top: 8px;
 }
 
 .article-cdcr-header {
