@@ -1865,18 +1865,14 @@ a { text-decoration: none; color: inherit; }
 /* ===========================
    HERO ARTICLE H1
    =========================== */
-.hero-article-h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 58px !important;
-  line-height: 1.05 !important;
-  font-weight: 600;
-  margin-bottom: 18px;
+.hero .hero-content h1 em {
+  font-size: 0.65em;
+  display: block;
+  line-height: 1.2;
 }
-.hero-article-h1 em {
-  font-size: 48px;
-  color: var(--gold);
-  font-style: italic;
-  font-weight: 300;
+
+.hero-article .hero-bg {
+  object-position: center 30%;
 }
 
 /* ===========================
