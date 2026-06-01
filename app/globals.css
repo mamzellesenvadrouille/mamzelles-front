@@ -37,7 +37,7 @@ a { text-decoration: none; color: inherit; }
 .nav-active { color: #fff !important; border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
 .nav-cta { border: 1px solid rgba(255,255,255,0.5); padding: 10px 22px; border-radius: 2px; color: #fff; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; transition: .3s; }
 .nav-cta:hover { background: #fff; color: var(--dark); }
-.hero-content { position: absolute; bottom: 0; left: 0; z-index: 5; padding: 0 80px 80px; max-width: 700px; color: #fff; }
+.hero-content { position: absolute; bottom: 0; left: 0; z-index: 5; padding: 0 80px 100px; max-width: 700px; color: #fff; }
 .hero-home .hero-content { padding: 0 52px 40px; max-width: 580px; }
 .hero-blog .hero-content { padding: 0 80px 20px; }
 .hero-formules .hero-content { padding: 0 80px 24px; }
@@ -1630,7 +1630,7 @@ a { text-decoration: none; color: inherit; }
    BLOC COUP DE COEUR
    =========================== */
 .article-coup-de-coeur {
-  background: #241b18;
+  background: #f0e8df;
   padding: 28px 52px;
   margin-top: 8px;
 }
@@ -1651,7 +1651,7 @@ a { text-decoration: none; color: inherit; }
   font-family: 'Cormorant Garamond', serif;
   font-size: 24px;
   font-weight: 500;
-  color: rgba(255,255,255,0.5);
+  color: var(--muted);
   margin: 0;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1669,7 +1669,7 @@ a { text-decoration: none; color: inherit; }
   flex-direction: column;
   gap: 10px;
   padding: 0 32px;
-  border-left: 1px solid rgba(255,255,255,0.1);
+  border-left: 1px solid var(--line);
 }
 
 .article-cdcr-item:first-child {
@@ -1681,14 +1681,14 @@ a { text-decoration: none; color: inherit; }
   font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
+  color: var(--muted);
 }
 
 .article-cdcr-value {
   font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
   font-weight: 500;
-  color: var(--gold);
+  color: var(--dark);
   font-style: italic;
   line-height: 1.3;
 }
