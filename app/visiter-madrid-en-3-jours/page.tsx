@@ -3,13 +3,13 @@ import Navbar from '../components/Navbar';
 
 export const metadata: Metadata = {
   title: '3 jours à Madrid : que voir ? Lieux incontournables & bons plans | MamZelles en vadrouille',
-  description: 'Retrouvez notre itinéraire pour visiter Madrid en 3 jours. Quartiers incontournables, bonnes adresses et tous nos conseils de travel planners.',
+  description: 'Retrouvez nos itinéraires pour visiter Madrid en 3 jours. Plongez-vous dans l\'ambiance espagnole avec le top de nos visites incontournables !',
   alternates: {
     canonical: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours',
   },
   openGraph: {
     title: '3 jours à Madrid : que voir ? Lieux incontournables & bons plans',
-    description: 'Retrouvez notre itinéraire pour visiter Madrid en 3 jours. Quartiers incontournables, bonnes adresses et tous nos conseils.',
+    description: 'Retrouvez nos itinéraires pour visiter Madrid en 3 jours. Plongez-vous dans l\'ambiance espagnole avec le top de nos visites incontournables !',
     url: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid.jpeg', width: 1920, height: 1536 }],
@@ -21,10 +21,10 @@ export const metadata: Metadata = {
 const comments = [
   { author: 'Solange Faure', date: 'il y a 2 ans', text: "Bonsoir, je m'inspire complètement de votre superbe compte rendu sur Madrid avec des photos qui font rêver. Merci beaucoup. Et bon voyage à vous pour d'autres destinations", reply: "Coucou ! On découvre seulement aujourd'hui votre petit message qui nous fait énormément plaisir ! 🥰 Heureuses de savoir que notre article ait pu vous inspirer pour votre séjour à Madrid. Merci beaucoup à vous aussi pour votre retour ! 😊" },
   { author: 'Toubeau', date: 'il y a 1 an', text: "Bonjour, je vais bientôt à Madrid. J'ai établi mon planning en prenant vos infos. Un grand merci", reply: "Trop contentes d'avoir contribué à votre organisation ! 🤗 Cette ville est incroyable, on a tellement aimé ! Bons préparatifs et bon voyage. ✈️😊" },
-  { author: 'Nathalie', date: 'il y a 7 mois', text: "Hola ! Je vais à Madrid demain, avec mon fils, pour fêter ses 18 ans ! Visite du stade de foot du Real (qui n'est pas dans votre récap !!), mais c'est le passage obligé pour mon garçon !! Pour le reste, j'ai pris plein de notes sur vos déambulations ! Ça m'a donné envie ! Gracias", reply: "Bonjour, Merci pour votre retour ! 🤗 Joyeux anniversaire à votre garçon ! 🎉 On vous souhaite un magnifique séjour dans cette ville incroyable ! 🤩" },
-  { author: 'Celas', date: 'il y a 5 mois', text: "Bonjour, et merci pour vos partages 😊 avez-vous des adresses de logements à me conseiller pour Madrid svp ? Belle journée. Valérie", reply: "Bonjour, Non malheureusement, nous n'avons pas de logement à recommander. En espérant que vous avez trouvé votre bonheur ! 🤗 Belles fêtes de fin d'année et bon séjour à Madrid ! ☀️" },
-  { author: 'Gaudefroy', date: 'il y a 5 mois', text: "Nous partons dans 2 jours à Madrid et pour 2 jours, merci pour vos infos précieuses, j'ai tout noté !", reply: "Top ! Merci pour ce retour qui fait super plaisir ! 🤗" },
-  { author: 'Derieux', date: 'il y a 3 mois', text: "Bonjour, merci à vous pour cette belle rétrospective et conseils d'un petit voyage de 3 jours à Madrid. Nous partons aussi pour 3 jours et super boulot de votre road book qui nous donne bien envie ! Belle continuation professionnelle et surtout votre vie personnelle avec de beaux voyages !", reply: "Bonjour, Olala… On découvre seulement votre message aujourd'hui ! 🙈 Votre retour sur notre article nous fait énormément plaisir ! 🤗 On vous souhaite également une belle continuation et on espère que vous en avez aussi pris plein les yeux à Madrid ! ☀️" },
+  { author: 'Nathalie', date: 'il y a 7 mois', text: "hola ! je vais à Madrid demain, avec mon fils, pour fêter ses 18 ans! visite du stade de foot du real (qui n'est pas dans votre récap !!), mais c'est le passage obligé pour mon garçon !! pour le reste, j'ai pris plein de notes sur vos déambulations! ça m'a donné envie! gracias", reply: "Bonjour, Merci pour votre retour ! 🤗 Joyeux anniversaire à votre garçon ! 🎉 On vous souhaite un magnifique séjour dans cette ville incroyable ! 🤩" },
+  { author: 'Celas', date: 'il y a 5 mois', text: "Bonjour, et merci pour vos partages 😊 avez-vous des adresses de logements à me conseiller pour Madrid svp ? Belle journée. Valerie", reply: "Bonjour, Non malheureusement, nous n'avons pas de logement à recommander. En espérant que vous avez trouvé votre bonheur ! 🤗 Belles fêtes de fin d'année et bon séjour à Madrid ! ☀️" },
+  { author: 'gaudefroy', date: 'il y a 5 mois', text: "nous partons dans 2 jours à Madrid et pour 2 jours , merci pour vos infos précieuses, j'ai tout noté !", reply: "Top ! Merci pour ce retour qui fait super plaisir ! 🤗🤗" },
+  { author: 'Derieux', date: 'il y a 3 mois', text: "Bonjour, merci à vous pour cette belle rétrospective et conseils d'un petit voyage de 3 jours à Madrid. Nous partons aussi pour 3 jours et super boulot de votre road book qui nous donne bien envie! Belle continuation professionnelle ( nous exerçons les mêmes métiers que vous) et surtout votre vie personnelle avec de beaux voyages!", reply: "Bonjour, Olala… On découvre seulement votre message aujourd'hui ! 🙈 Votre retour sur notre article nous fait énormément plaisir ! 🤗 On vous souhaite également une belle continuation et on espère que vous en avez aussi pris plein les yeux à Madrid ! ☀️" },
 ];
 
 export default function MadridPage() {
@@ -34,110 +34,87 @@ export default function MadridPage() {
       {/* HERO */}
       <section className="hero">
         <Navbar activePage="blog" />
-        <img
-          className="hero-bg"
-          src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid-1140x912.jpeg"
-          alt="Madrid, vue sur la Gran Vía au coucher du soleil"
-        />
+        <img className="hero-bg" src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid-1140x912.jpeg" alt="Madrid, vue sur la Gran Vía" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <p className="eyebrow">Espagne · Europe</p>
-          <h1>Madrid en 3 jours<br /><em>L&apos;itinéraire idéal pour découvrir la capitale espagnole</em></h1>
+          <h1>3 jours à Madrid<br /><em>Lieux incontournables & bons plans</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Entre quartiers animés, rooftops confidentiels et grands classiques madrilènes, voici notre itinéraire complet pour visiter Madrid en 3 jours.</p>
+          <p className="hero-desc">Vous voulez visiter Madrid en 3 jours ? Vous trouverez ici notre itinéraire et tous nos conseils pour découvrir les quartiers et les visites incontournables de la capitale espagnole !</p>
         </div>
       </section>
 
-      {/* ARTICLE BODY */}
       <div className="article-layout">
-
-        {/* CONTENU PRINCIPAL */}
         <main className="article-main">
 
           {/* EN BREF */}
           <div className="article-bref">
             <h2 className="article-bref-title">En bref</h2>
             <div className="article-bref-grid">
-              <div className="article-bref-item">
-                <span className="article-bref-icon">🗓</span>
-                <div>
-                  <span className="article-bref-label">Durée idéale</span>
-                  <span className="article-bref-value">3 jours</span>
-                </div>
-              </div>
-              <div className="article-bref-item">
-                <span className="article-bref-icon">☀️</span>
-                <div>
-                  <span className="article-bref-label">Meilleure période</span>
-                  <span className="article-bref-value">Mars à juin, sept. à nov.</span>
-                </div>
-              </div>
-              <div className="article-bref-item">
-                <span className="article-bref-icon">💶</span>
-                <div>
-                  <span className="article-bref-label">Budget moyen</span>
-                  <span className="article-bref-value">€€</span>
-                </div>
-              </div>
-              <div className="article-bref-item">
-                <span className="article-bref-icon">📍</span>
-                <div>
-                  <span className="article-bref-label">Niveau</span>
-                  <span className="article-bref-value">Facile</span>
-                </div>
-              </div>
-              <div className="article-bref-item">
-                <span className="article-bref-icon">👥</span>
-                <div>
-                  <span className="article-bref-label">Type de voyage</span>
-                  <span className="article-bref-value">Couple, amis, solo</span>
-                </div>
-              </div>
+              <div className="article-bref-item"><span className="article-bref-icon">🗓</span><div><span className="article-bref-label">Durée idéale</span><span className="article-bref-value">3 jours</span></div></div>
+              <div className="article-bref-item"><span className="article-bref-icon">☀️</span><div><span className="article-bref-label">Meilleure période</span><span className="article-bref-value">Mars à juin, sept. à nov.</span></div></div>
+              <div className="article-bref-item"><span className="article-bref-icon">💶</span><div><span className="article-bref-label">Budget moyen</span><span className="article-bref-value">€€</span></div></div>
+              <div className="article-bref-item"><span className="article-bref-icon">📍</span><div><span className="article-bref-label">Niveau</span><span className="article-bref-value">Facile</span></div></div>
+              <div className="article-bref-item"><span className="article-bref-icon">👥</span><div><span className="article-bref-label">Type de voyage</span><span className="article-bref-value">Couple, amis, solo</span></div></div>
             </div>
           </div>
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title">Dans cet article</h2>
+            <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
             <ol className="article-toc-list">
-              <li><a href="#intro">Pourquoi visiter Madrid ?</a></li>
+              <li><a href="#que-faire">3 jours à Madrid, que faire ?</a></li>
               <li><a href="#jour1">Jour 1 — El Centro</a></li>
-              <li><a href="#jour2">Jour 2 — Malasaña, Salamanca & El Retiro</a></li>
-              <li><a href="#jour3">Jour 3 — Lavapiès, Atocha & Barrio de las Letras</a></li>
-              <li><a href="#pratique">Informations pratiques</a></li>
+              <li><a href="#jour2">Jour 2 — Malasaña, Salamanca, El Retiro</a></li>
+              <li><a href="#jour3">Jour 3 — Lavapiès / Rastro, Atocha, Barrio de las Letras / Huertas</a></li>
+              <li><a href="#pratique">Tout savoir pour organiser votre voyage</a></li>
             </ol>
           </nav>
 
           {/* INTRO */}
-          <section id="intro" className="article-section">
-            <p className="article-intro"><strong>Vous voulez visiter Madrid en 3 jours ? Quel excellent choix !</strong> Vous trouverez ici notre itinéraire et tous nos conseils pour découvrir les quartiers et les visites incontournables de la capitale espagnole !</p>
-            <p>Pourquoi Madrid ? Nous avions envie de nous évader dans un endroit animé, à l&apos;ambiance chaleureuse, notamment à l&apos;approche des fêtes de Noël. Notre choix s&apos;est immédiatement porté sur Madrid ! Nous avions donc un long week-end de 3 jours pour découvrir la capitale espagnole…</p>
-            <p>Depuis ce séjour, Madrid est clairement devenue l&apos;une de nos villes coup de cœur en Europe ! Une véritable pépite où histoire et modernité forment le parfait équilibre.</p>
-            <div className="article-highlight">
-              <p>Madrid est la capitale espagnole, mais aussi le centre politique, économique et culturel d&apos;Espagne. Elle est la plus grande ville du pays : en comparaison, Madrid est <strong>5 fois plus grande que Paris</strong> ! Si nous devions la décrire en 3 mots : <em>authentique, effervescente et tolérante.</em></p>
-            </div>
+          <section id="que-faire" className="article-section">
+            <p className="article-intro"><strong>Vous voulez visiter Madrid en 3 jours ? Quel excellent choix ! Vous trouverez ici notre itinéraire et tous nos conseils pour découvrir les quartiers et les visites incontournables de la capitale espagnole !</strong></p>
+            <p>Pourquoi Madrid ? Nous avions envie de nous évader dans un endroit animé, à l&apos;ambiance chaleureuse, notamment à l&apos;approche des fêtes de Noël. Il fallait aussi que l&apos;on tienne compte des restrictions liées au Covid pour s&apos;y rendre.</p>
+            <p>Notre choix s&apos;est immédiatement porté sur Madrid ! Nous avions donc un long week-end de 3 jours pour découvrir la capitale espagnole…</p>
+            <p>Depuis ce séjour, Madrid est clairement devenue l&apos;une de nos villes coup de coeur en Europe ! Une véritable pépite où histoire et modernité forment le parfait équilibre.</p>
+
+            <h3>Avant de commencer...</h3>
+            <p>Madrid est la capitale espagnole, mais aussi le centre politique, économique et culturel d&apos;Espagne. Elle est la plus grande ville du pays : en comparaison, Madrid est 5 fois plus grande que Paris !</p>
+            <p>Potentiellement, Madrid peut plaire à tout le monde, tant pour l&apos;architecture de ses bâtiments historiques, que pour sa culture, sa gastronomie, sa vie nocturne, ses multiples lieux où faire du shopping, et son soleil toute l&apos;année ! Chacun y trouve son compte !</p>
+            <p>Si nous devions décrire Madrid en 3 mots, on la qualifierait d&apos;authentique, effervescente et tolérante. En ce qui nous concerne, on s&apos;y sentait trop bien ! Prévoir un séjour de 3 jours à Madrid est parfait pour vous imprégner de la « Vida Loca » !</p>
+
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2229-scaled-1024x768.jpeg" alt="Palais de Cristal Madrid" className="article-img-full" loading="lazy" />
+
+            <p>À Madrid, chaque barrio (notez quartier en espagnol !) a sa propre identité, son histoire, et ils sont nombreux ! Autant de quartiers qui montrent la diversité culturelle de cette ville que nous avons tant aimée.</p>
+            <p>Allez, c&apos;est parti ! Voici notre itinéraire pour découvrir Madrid en 3 jours en fonction des quartiers.</p>
           </section>
 
           {/* JOUR 1 */}
           <section id="jour1" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 1</span>
-              <h2>El Centro</h2>
-              <p className="article-day-desc">Le cœur historique de Madrid, entre incontournables et ruelles pleines de charme.</p>
+              <h2>⧐ El Centro</h2>
             </div>
+            <p>Comme son nom le laisse entendre, il s&apos;agit là du centre historique de Madrid. C&apos;est dans ce barrio que vous trouverez les <strong>attractions principales</strong> de la capitale.</p>
 
             <h3>Le Palais Royal</h3>
-            <p>Tout d&apos;abord, découvrez le <strong>Palais Royal</strong> de Madrid. Il fait partie des plus grands palais d&apos;Europe, mais aussi des plus beaux ! Bien qu&apos;il ne soit plus habité par la famille royale, il reste un lieu symbolique du pouvoir qu&apos;il est possible de visiter. Nous vous conseillons d&apos;acheter vos <a href="https://tickets.patrimonionacional.es/fr-FR/venta-de-entradas" target="_blank" rel="noopener noreferrer" className="article-link">billets à l&apos;avance</a>.</p>
-            <p>Notez qu&apos;il est possible de voir la relève de la garde du Palais Royal chaque mercredi et samedi à 11h. C&apos;est apparemment un spectacle unique à ne pas manquer !</p>
+            <p>Tout d&apos;abord, découvrez le <strong>Palais Royal</strong> de Madrid. Il fait partie des plus grands palais d&apos;Europe, mais aussi des plus beaux !</p>
+            <p>Bien qu&apos;il ne soit plus habité par la famille royale, il reste un lieu symbolique du pouvoir qu&apos;il est possible de visiter. Pour cela, nous vous conseillons d&apos;acheter vos <a href="https://tickets.patrimonionacional.es/fr-FR/venta-de-entradas" target="_blank" rel="noopener noreferrer" className="article-link">billets</a> à l&apos;avance.</p>
+            <p>Notez qu&apos;il est possible de voir la relève de la garde du Palais Royal de Madrid. Cela se passe tous les mercredis et samedis à 11h. Il est aussi possible d&apos;assister à la relève solennelle de la garde les premiers mercredis du mois à 12h (sauf en janvier, août et septembre). C&apos;est apparemment un spectacle unique à ne pas manquer !</p>
 
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2446-scaled-1024x768.jpeg" alt="Palais Royal Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2456-scaled-768x1024.jpeg" alt="Palais Royal Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1690_jpg-scaled-768x1024.jpeg" alt="Palais Royal Madrid" loading="lazy" />
+            </div>
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2451-scaled-1024x768.jpeg" alt="Palais Royal Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1677-scaled-1024x768.jpeg" alt="Palais Royal Madrid" loading="lazy" />
             </div>
 
             <h3>La Cathédrale de la Almudena</h3>
-            <p>Non loin de là, vous trouverez la <strong>Cathédrale de la Almudena</strong>. Son dôme est accessible aux visiteurs de 10h à 12h (7€ via le musée). Depuis la cúpula, vous aurez une vue exceptionnelle sur la ville, notamment sur les jardins de Campo del Moro.</p>
+            <p>Non loin de là, vous trouverez la <strong>Cathédrale de la Almudena</strong>. Son dôme est accessible aux visiteurs, mais attention, seulement de 10H à 12H. Pour cela, vous devrez passer par le musée et débourser 7€.</p>
+            <p>L&apos;entrée s&apos;effectue par la porte principale de la cathédrale, face au Palais Royal. Depuis la « cúpula », vous aurez une vue exceptionnelle sur la ville, notamment sur les jardins de Campo del Moro.</p>
 
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1699_jpg-scaled-768x1024.jpeg" alt="Cathédrale de la Almudena Madrid" loading="lazy" />
@@ -145,7 +122,9 @@ export default function MadridPage() {
             </div>
 
             <h3>Le Mercado de San Miguel</h3>
-            <p>Empruntez la <strong>Calle Mayor</strong> pour vous diriger vers la Plaza San Miguel. Ce marché atypique, haut lieu de la vie madrilène, est un incontournable ! Avec son architecture en métal et verre, le <strong>Mercado de San Miguel</strong> est un endroit très prisé par les amateurs de gastronomie espagnole et de tapas. Un gros coup de cœur pour nous ! Ouvert tous les jours de 10h à minuit.</p>
+            <p>Empruntez ensuite la <strong>Calle Mayor</strong> située en face de la cathédrale, pour vous diriger vers la <strong>Plaza San Miguel</strong> et son fameux mercado. Ce marché atypique, haut lieu de la vie madrilène, est un incontournable lors d&apos;un séjour à Madrid !</p>
+            <p>Avec son architecture incroyable, composée d&apos;une structure en métal et tout en verre, le <strong>Mercado de San Miguel</strong> est un endroit très prisé par les amateurs de gastronomie espagnole, notamment de tapas.</p>
+            <p>Un gros coup de coeur pour nous ! Vous pourrez vous y rendre chaque jour de 10H à minuit pour y goûter des spécialités terre, mer ou veggie façon espagnole ! C&apos;est également le lieu idéal pour déguster de bons vins ou boire une bière.</p>
 
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1760-scaled-1024x768.jpeg" alt="Mercado San Miguel Madrid" loading="lazy" />
@@ -153,58 +132,118 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1782_jpg-scaled-768x1024.jpeg" alt="Mercado San Miguel Madrid" loading="lazy" />
             </div>
 
-            <h3>La Plaza Mayor & Puerta del Sol</h3>
-            <p>Continuez vers la <strong>Plaza Mayor</strong>, cette fameuse place rectangulaire où les Madrilènes aiment se retrouver. Lieu piéton très fréquenté, vous trouverez sous les arcades de nombreux commerces traditionnels. Le dimanche s&apos;y tient le marché des billets et pièces de collection, de 9h à 14h.</p>
-            <p>Idéalement située, la <strong>Plaza de la Puerta del Sol</strong> permet de relier différents points d&apos;intérêts. C&apos;est la place principale de Madrid, toujours très animée. De là, empruntez la <strong>Calle de Preciados</strong> ou la <strong>Calle de la Montora</strong> pour rejoindre la Gran Vía.</p>
+            <h3>La Plaza Mayor</h3>
+            <p>Continuez ensuite votre vadrouille en direction de la <strong>Plaza Mayor</strong>, cette fameuse place rectangulaire où les Madrilènes apprécient se retrouver pour y boire un café.</p>
+            <p>Ce lieu piéton est également très fréquenté par les touristes. Vous trouverez sous les arcades de nombreux commerces traditionnels.</p>
+            <p>Le dimanche, s&apos;y trouve le marché des billets et des pièces de collection, le « Mercado de monedas y sellos ». Il est ouvert de 9h à 14h. C&apos;est un marché unique au monde qui plait énormément aux collectionneurs.</p>
 
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1898-scaled-695x1024.jpeg" alt="Plaza Mayor Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1905-scaled-1024x768.jpeg" alt="Plaza Mayor Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1911-scaled-1024x768.jpeg" alt="Plaza Mayor Madrid" loading="lazy" />
+            </div>
+
+            <h3>La Plaza de la Puerta del Sol</h3>
+            <p>En continuant votre chemin, tout près de cette place, vous arriverez à la <strong>Plaza de la Puerta Del Sol</strong>. Très animée, c&apos;est la place principale de Madrid, et notamment la plus centrale. Cet endroit étant piéton, il y a toujours beaucoup de monde de jour comme de nuit. C&apos;est sur cette place que se déroulent la plupart des évènements, manifestations et rassemblements.</p>
+            <p>Idéalement située, la Plaza de la Puerta Del Sol permet de relier différents points d&apos;intérêts.</p>
+            <p>Si vous aimez le shopping, vous trouverez de quoi faire par ici ! De nombreuses enseignes nationales et internationales se situent sur les artères qui partent de cette place. En tout cas, nous vous conseillons d&apos;emprunter la <strong>Calle de Preciados</strong>, ou la <strong>Calle de la Montora</strong>, pour rejoindre <strong>Gran Via</strong>.</p>
+
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2330-scaled-768x1024.jpeg" alt="Puerta del Sol Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1926-scaled-1024x768.jpeg" alt="Puerta del Sol Madrid" loading="lazy" />
             </div>
 
-            <h3>Gran Vía & le Rooftop du Riu</h3>
-            <p><strong>Gran Vía</strong> est l&apos;une des principales avenues de Madrid, surnommée le « Broadway Madrilène ». Boutiques, restaurants, hôtels, cinémas et théâtres s&apos;y succèdent sans fin, de la <strong>Place d&apos;Espagne</strong> à l&apos;emblématique <strong>Edificio Metropolis</strong>.</p>
+            <h3>Gran Via</h3>
+            <p><strong>Gran Via</strong> est une grande avenue, l&apos;une des principales de Madrid, et sûrement la plus connue. Peu importe l&apos;heure à laquelle nous y sommes passées, il y avait toujours foule et beaucoup d&apos;animations. Vous y trouverez essentiellement des boutiques, des restaurants, des hôtels, des cinémas et des théâtres.</p>
+            <p>Cette artère a d&apos;ailleurs le surnom du « Broadway Madrilène ».</p>
+            <p>Notre hôtel étant situé à 5Mn à pied, nous avons parcouru Gran Via en long, en long, en large et en travers, de la <strong>Place d&apos;Espagne</strong> à l&apos;emblématique <strong>Edificio Metropolis</strong>.</p>
+
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1665-scaled-1024x768.jpeg" alt="Gran Via Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1851-scaled-768x1024.jpeg" alt="Gran Via Madrid" loading="lazy" />
+            </div>
+
             <div className="article-highlight">
-              <p><strong>Bon à savoir !</strong> Sur la Plaza España se trouve l&apos;hôtel <strong>Riu</strong>. Son rooftop au 27ème étage offre une vue à 360° sur la ville. Entrée 5€ de 10h à 17h, 10€ de 17h à 1h. Le soir, c&apos;est magique — et il y a une passerelle en verre au sol, 117m plus bas. Sensations garanties !</p>
+              <p><strong>Bon à savoir !</strong> Sur la Plaza España se trouve un grand hôtel, le <strong>Riu</strong>, tel un building. Si vous souhaitez admirer une vue époustouflante à 360° sur la ville tout en sirotant un petit cocktail, c&apos;est ici qu&apos;il faut vous rendre !</p>
+              <p>L&apos;entrée est payante : 5€ de 10H à 17H, et 10€ de 17H à 01H. Nous avons choisi d&apos;y aller le soir pour observer la ville scintillant de toutes ses lumières.</p>
+              <p>Quel spectacle ! Sur ce rooftop au 27ème étage, nous avions la sensation d&apos;être sur le toit de la capitale.</p>
+              <p>Pour le prix, vous pourrez vivre une expérience très sympa… Il y a une passerelle en verre sur ce rooftop ! Du coup, vous verrez ce qu&apos;il se passe sous vos pieds, 117M plus bas. C&apos;est impressionnant. Sensations garanties !</p>
             </div>
 
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1665-scaled-1024x768.jpeg" alt="Gran Via Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1668_jpg-scaled-768x1024.jpeg" alt="Hôtel Riu Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2364-scaled-1024x768.jpeg" alt="Vue depuis le Riu Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2361-scaled-768x1024.jpeg" alt="Rooftop Riu Madrid" loading="lazy" />
             </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2371-scaled-768x1024.jpeg" alt="Vue Riu Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2350-scaled-768x1024.jpeg" alt="Cocktail Riu Madrid" loading="lazy" />
+            </div>
 
-            <h3>L&apos;Edificio Metropolis & le Circulo de Bellas Artes</h3>
-            <p>En bas de l&apos;avenue, l&apos;<strong>Edificio Metropolis</strong> et sa magnifique coupole sont les bâtiments les plus photographiés de Madrid. Nous vous conseillons de monter au rooftop du <strong>Circulo de Bellas Artes</strong> en face (4€) pour une vue exceptionnelle : la banque d&apos;Espagne, la Plaza de Cibeles et le Metropolis avec son dôme en ardoise.</p>
+            <p>De la Place d&apos;Espagne, remontez la Gran Via. Vous passerez alors par la <strong>Plaza del Callao</strong>. Faisant l&apos;angle de la rue, vous tomberez sur le célèbre <strong>Edificio Carrion</strong> et son mythique panneau publicitaire Schweppes. Vous ne pourrez pas le louper !</p>
+            <p>Vous avez suivi la série « Les Demoiselles du Téléphone » ? Le bâtiment, qui a servi pour le décor se trouve un peu plus haut sur Gran Via.</p>
+            <p>L&apos;<strong>Edificio Telefónica</strong> est très imposant, vous le reconnaitrez facilement.</p>
+            <p>Juste en face de celui-ci se trouve un McDonald&apos;s… Rien d&apos;incroyable, mais il fait partie des plus beaux restaurants de la marque dans le monde.</p>
 
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2051-scaled-768x1024.jpeg" alt="Edificio Metropolis Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2053-scaled-1024x768.jpeg" alt="Vue depuis le Circulo de Bellas Artes Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2341-scaled-768x1024.jpeg" alt="Edificio Carrion Schweppes Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2102-scaled-768x1024.jpeg" alt="Edificio Telefónica Madrid" loading="lazy" />
             </div>
+
+            <h3>L&apos;Edificio Metropolis & le Circulo de Bellas Artes</h3>
+            <p>Lorsque vous arriverez au bas de l&apos;avenue, vous tomberez sur le célèbre <strong>Edificio Metropolis</strong> et sa magnifique coupole. Levez les yeux pour admirer l&apos;architecture de ce bâtiment, dessiné par des Français. Il est l&apos;édifice le plus photographié de Madrid.</p>
+            <p>Nous vous conseillons de monter en haut du <strong>Circulo de Bellas Artes</strong>, un centre culturel situé juste en face. Moyennant 4€, vous pourrez profiter de son rooftop, l&apos; « Azotea ».</p>
+            <p>Dans la partie lounge, où de confortables « beds » sont installés, vous pourrez lézarder au soleil.</p>
+            <p>La partie bar / restaurant bénéficie d&apos;une grande terrasse où la vue sur la ville est exceptionnelle ! De là-haut, entre autres, vous verrez d&apos;un côté la banque d&apos;Espagne, la Plaza de Cibeles et son palais, et de l&apos;autre, le Metropolis avec son dôme en ardoise et sa statue ailée.</p>
+
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2051-scaled-768x1024.jpeg" alt="Edificio Metropolis Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2055-scaled-768x1024.jpeg" alt="Vue Metropolis Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2053-scaled-1024x768.jpeg" alt="Vue Metropolis Madrid" loading="lazy" />
+            </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2074_jpg-scaled-768x1024.jpeg" alt="Nous à Madrid" className="article-img-center" loading="lazy" />
           </section>
 
           {/* JOUR 2 */}
           <section id="jour2" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 2</span>
-              <h2>Malasaña, Salamanca & El Retiro</h2>
-              <p className="article-day-desc">Des quartiers élégants, une ambiance bohème et une parenthèse de verdure au parc du Retiro.</p>
+              <h2>⧐ Malasaña, ⧐ Salamanca, ⧐ El Retiro</h2>
             </div>
 
             <h3>📍 Malasaña</h3>
-            <p>C&apos;est le premier quartier que nous avons découvert, car c&apos;est ici que nous avons posé nos valises. Décrit comme <strong>branché, alternatif</strong>, avec une <strong>identité forte</strong> et une <strong>atmosphère prégnante</strong> — c&apos;est exactement ce que nous avons trouvé ! Un surprenant quartier où l&apos;on se laisse facilement porter à la mode madrilène.</p>
-            <p>Ses rues pavées, ses façades colorées, son street-art, ses boutiques rétros et vintages vous charmeront. Malasaña fait partie des barrios préférés des Madrilènes. C&apos;est THE PLACE TO BE pour les virées nocturnes. L&apos;esprit de la <em>Movida</em> est bien présent — c&apos;est ici, dans les années 1980, qu&apos;est née la révolution sociale et culturelle.</p>
+            <p>Il est le 1er quartier que nous avons découvert car c&apos;est ici que nous avons décidé de poser nos valises pour ces 3 jours.</p>
+            <p>Au moment où nous cherchions un hôtel, notre choix s&apos;est rapidement porté sur ce quartier car il est décrit comme <strong>branché</strong>, <strong>alternatif</strong>, avec une <strong>identité forte</strong>, et une <strong>atmosphère prégnante</strong>.</p>
+            <p>C&apos;est exactement ce que nous avons découvert ! Un surprenant quartier où l&apos;on se laisse facilement porter à la mode madrilène !</p>
+            <p>Nous avons donc logé à l&apos;<a href="https://www.booking.com/hotel/es/hostal-pizarro.fr.html" target="_blank" rel="noopener noreferrer" className="article-link">Hostal Goyal Pizzaro</a>. Cet établissement, situé à proximité du métro et des lieux incontournables à visiter, est installé dans un bâtiment de style Art nouveau. La chambre spacieuse et très propre, donnant sur la ville, fait de cet hôtel une adresse de qualité.</p>
 
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1652_jpg-scaled-768x1024.jpeg" alt="Malasaña Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1655_jpg-scaled-768x1024.jpeg" alt="Malasaña Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2535-scaled-768x1024.jpeg" alt="Malasaña Madrid" loading="lazy" />
+            </div>
+
+            <p>On en est certaine, vous apprécierez l&apos;ambiance de <strong>Malasaña</strong>. Ses rues pavées, ses façades colorées, son street-art, ses boutiques rétros et vintages où l&apos;on peut acheter des fringues au kilo vous charmeront.</p>
+            <p>Malasaña fait partie des barrios préférés des Madrilènes. C&apos;est THE PLACE TO BE pour les virées nocturnes.</p>
+            <p>Vous y trouverez de nombreux restaurants, bars alternatifs, bars à tapas et clubs.</p>
+            <p>L&apos;esprit de la « <strong>Movida</strong> » ( = Vida Loca) est bien présent dans ce quartier. En effet, c&apos;est ici, dans les années 1980, qu&apos;est née la révolution sociale et culturelle.</p>
+
+            <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2554-scaled-1024x768.jpeg" alt="Street-art Malasaña Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1660_jpg-scaled-768x1024.jpeg" alt="Street-art Malasaña Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2566-scaled-768x1024.jpeg" alt="Façade Malasaña Madrid" loading="lazy" />
+            </div>
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2546-scaled-768x1024.jpeg" alt="Façades Malasaña Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2556-scaled-1024x768.jpeg" alt="Friperie Malasaña Madrid" loading="lazy" />
             </div>
 
             <h3>📍 Salamanca</h3>
-            <p>Autre style de quartier, autre ambiance ! Le barrio de <strong>Salamanca</strong> est le quartier chic de Madrid. Sur les grands boulevards, des restaurants gastronomiques et des bars sélects, dans les petites rues, des boutiques de luxe et de créateurs. Concrètement, nous avons trouvé Salamanca sympa pour s&apos;y balader, sans grand intérêt si vous n&apos;y venez pas dans un but précis.</p>
-            <p>Pour les fans de <em>La Casa de Papel</em> : la façade utilisée pour représenter la banque d&apos;Espagne est en réalité le <strong>Consejo Superior de Investigaciones Científicas</strong>, Calle de Serrano, n°115.</p>
+            <p>Autre style de quartier, autre ambiance ! Le barrio de <strong>Salamanca</strong> est le quartier chic de Madrid. Sur les grands boulevards, des restaurants gastronomiques et des bars un peu sélects, dans les petites rues, des boutiques de luxe et de créateurs… L&apos;ambiance qui règne dans ce quartier est relativement calme.</p>
+            <p>Pour les connaisseurs de la série, il est à noter que la façade utilisée dans « La Casa de Papel » pour représenter la banque d&apos;Espagne est située un peu plus au nord.</p>
+            <p>Il faudra remonter la <strong>Calle de Serrano</strong> jusqu&apos;au N°115.</p>
+            <p>Ne pouvant pas bloquer la circulation dans le secteur stratégique de la Banque d&apos;Espagne pendant le temps du tournage, le bâtiment utilisé comme décor est en fait celui du « <strong>Consejo Superior de Investigaciones Científicas</strong> ».</p>
+            <p>Concrètement, nous avons trouvé Salamanca sympa pour s&apos;y balader, mais sans grand intérêt si vous n&apos;y venez pas dans un but précis.</p>
 
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2443-scaled-768x1024.jpeg" alt="Salamanca Madrid" loading="lazy" />
@@ -212,13 +251,39 @@ export default function MadridPage() {
             </div>
 
             <h3>📍 El Retiro</h3>
-            <p>Le magnifique <strong>Parque del Retiro</strong> est le poumon de la capitale, un oasis végétal au cœur de Madrid. Nous vous conseillons de faire un <strong>petit tour de barque</strong> sur le lac pour admirer de près le Monument à Alfonso XII (6€ pour 45 minutes).</p>
-            <p>En vous baladant, vous découvrirez fontaines, grandes allées bordées d&apos;arbres et artistes de rue. Terminez par le magnifique <strong>Palacio de Cristal</strong>, une serre en verre et métal, particulièrement impressionnante au coucher du soleil.</p>
+            <p>Depuis le « Circulo de Belles Artes », direction la <strong>Plaza de Cibeles</strong> en passant par la banque d&apos;Espagne. Sur cette place se dressent d&apos;imposants bâtiments, tel que le <strong>Palacio de Comunicaciones</strong>. Celui-ci fait désormais office d&apos;Hôtel de ville, et accueille un centre culturel. Il possède également un rooftop qui offre un beau panorama sur la ville.</p>
+            <p>Si vous avez envie de visiter de jolis musées, c&apos;est dans ce quartier que vous trouverez votre bonheur ! Que ce soit le <strong>musée du Prado</strong>, le <strong>musée Thyssen-Bornemisza</strong> ou le <strong>Centro de Arte Reina Sofia</strong>, tous se trouvent également à proximité du <strong>Parque del Retiro</strong>.</p>
+
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2116-scaled-1024x768.jpeg" alt="Banque d'Espagne Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2062-scaled-1024x768.jpeg" alt="Vue banque d'Espagne Madrid" loading="lazy" />
+            </div>
+
+            <p>Ce magnifique <strong>Parque del Retiro</strong> est clairement le poumon de la capitale, un oasis végétal au coeur de Madrid. Du côté de l&apos;entrée principale se trouve l&apos;imposante <strong>Puerta de Alcalà</strong>. Nous vous conseillons d&apos;emprunter le sentier pour entrer dans le parc pour profiter du calme qui règne dans cet endroit.</p>
+            <p>Nous sommes rapidement tombées sur le lac, où nous n&apos;avons pas su résister à la tentation de faire un <strong>petit tour de barque</strong>, histoire de se mettre dans l&apos;ambiance de ce lieu…</p>
+            <p>Ainsi, nous avons pu admirer de près le <strong>Monument à Alfonso XII</strong>. C&apos;était une chouette expérience ! Nous avons déboursé 6€ pour 3/4 d&apos;heure de navigation.</p>
+            <p>En vous baladant à travers le parc, vous découvrirez de nombreuses fontaines et de grandes allées bordées d&apos;arbres, où des artistes de rue, des musiciens et peintres s&apos;installent la journée.</p>
 
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2121-scaled-1024x768.jpeg" alt="Parque del Retiro Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2121-scaled-1024x768.jpeg" alt="El Retiro Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2207-scaled-1024x768.jpeg" alt="Retiro Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2187-scaled-768x1024.jpeg" alt="Barque El Retiro Madrid" loading="lazy" />
+            </div>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2174_jpg-scaled-768x1024.jpeg" alt="Barque El Retiro Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2211_jpg-scaled-768x1024.jpeg" alt="Fontaine El Retiro Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2223-scaled-1024x768.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" />
+            </div>
+
+            <p>Nous finissons par arriver au magnifique <strong>Palacio de Cristal</strong>, constitué de verre et de métal. Auparavant, cette serre servait à mettre à l&apos;abris des plantes exotiques en hiver. Aujourd&apos;hui, elle est utilisée comme centre d&apos;exposition.</p>
+            <p>Nous vous conseillons de vous y rendre en fin de journée…</p>
+            <p>Cette structure de verre devient impressionnante lorsque la lumière du coucher de soleil la traverse.</p>
+            <p>Terminez votre balade dans la roseraie, située également dans le Parque del Retiro. Malheureusement, ce n&apos;était pas la meilleure période pour y découvrir les rosiers en fleur !</p>
+
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2214-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2247-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2253-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" />
             </div>
           </section>
 
@@ -226,78 +291,104 @@ export default function MadridPage() {
           <section id="jour3" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 3</span>
-              <h2>Lavapiès, Atocha & Barrio de las Letras</h2>
-              <p className="article-day-desc">L&apos;âme authentique de Madrid, entre street art, culture et adresses locales.</p>
+              <h2>⧐ Lavapiès / Rastro, ⧐ Atocha, ⧐ Barrio de Las Letras / Huertas</h2>
             </div>
 
-            <h3>📍 Lavapiès & El Rastro</h3>
-            <p>Voici les quartiers multiculturels de Madrid, rassemblant le plus grand nombre de communautés. Des quartiers populaires devenus branchés, où la culture est très présente. On y découvre notamment la <strong>Tabacalera</strong>, une ancienne usine à tabac transformée en centre culturel, et de nombreuses œuvres de street-art.</p>
-            <p>Ne manquez en aucun cas le <strong>marché El Rastro</strong>, chaque dimanche et jour férié de 8h30 à 15h. C&apos;est une institution à Madrid, considéré comme l&apos;un des <strong>plus grands marchés aux puces d&apos;Europe</strong> ! Antiquités, fripes vintage, artisanat… c&apos;est le paradis des chineurs.</p>
+            <h3>📍 Lavapiès / El Rastro</h3>
+            <p>Voici les quartiers multiculturels de Madrid qui rassemblent le plus grand nombre de communautés. Vous souhaitez goûter différents plats du monde ? C&apos;est ici qu&apos;il faut vous rendre !</p>
+            <p>Il s&apos;agit à la base de quartiers populaires. Suite à leur évolution, ils sont aujourd&apos;hui des endroits branchés, la culture y étant très présente.</p>
+            <p>On découvre par exemple à Lavapiès la <strong>Tabacalera</strong>, une ancienne usine à tabac transformée en centre culturel où sont proposées au public de nombreuses expositions et activités. Lavapiès est également connu dans le monde pour son street-art.</p>
+
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2421-scaled-768x1024.jpeg" alt="Lavapiès Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1857-scaled-768x1024.jpeg" alt="Lavapiès Madrid" loading="lazy" />
+            </div>
+
+            <p>Vous ne devrez louper en aucun cas le <strong>marché El Rastro</strong> qui a lieu chaque dimanche et jour férié, de 8H30 à 15H. Il est une institution à Madrid et est considéré comme l&apos;<strong>un des plus grands marchés aux puces d&apos;Europe</strong> !</p>
+            <p>Dans la rue principale, vous trouverez sur les stands essentiellement des articles neufs et des produits typiques de marché (produits locaux, sacs, vêtements, bijoux, souvenirs, etc.).</p>
+            <p>C&apos;est aussi le paradis des brocanteurs… En effet, dans les petites boutiques qui longent le marché, ou encore dans celles des petites rues perpendiculaires, vous trouverez toutes sortes d&apos;objets à chiner.</p>
+            <p>Dans ce coin, se trouve également tout un secteur dédié aux antiquités, où vous pourrez notamment dégoter des tableaux anciens, et un autre dédié aux fripes (vêtements vintages).</p>
 
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2421-scaled-768x1024.jpeg" alt="Lavapiès Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1870-scaled-768x1024.jpeg" alt="El Rastro Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1887-scaled-705x1024.jpeg" alt="El Rastro Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1879-scaled-1024x768.jpeg" alt="El Rastro Madrid" loading="lazy" />
             </div>
 
             <h3>📍 Atocha</h3>
-            <p>La <strong>gare d&apos;Atocha</strong> est la plus importante de la capitale. Inaugurée en 1851, son ancien hall principal abrite un <strong>jardin tropical de 4 000 m²</strong> avec plus de 400 espèces de plantes du monde entier. La structure métallique et le toit en verre créent un effet de serre spectaculaire. Nous vous conseillons vivement d&apos;y faire un petit tour !</p>
-            <p>Si vous avez la chance d&apos;être à Madrid le 2ème week-end du mois, ne manquez pas le <strong>Mercado de Motores</strong> dans l&apos;ancienne gare de Delicias : artisans, créateurs, brocanteurs, wagons du XIXème siècle et food trucks. Un endroit original et de toute beauté !</p>
+            <p>C&apos;est le quartier administratif de Madrid, mais il est surtout connu pour sa majestueuse gare !</p>
+            <p>En effet, la <strong>gare d&apos;Atocha</strong> est la plus importante de la capitale et propose aux voyageurs des trajets en train dans toute l&apos;Espagne mais aussi à l&apos;international. Inaugurée en 1851, cette oeuvre architecturale a, au fur et à mesure du temps, été rénovée et agrandie.</p>
+            <p>L&apos;ancien hall principal de la gare abrite un <strong>jardin tropical</strong>. Il faut dire que l&apos;endroit s&apos;y prête bien, la structure métallique et le toit en verre faisant office de serre. Le jardin de 4000M2 recense plus de 400 espèces de plantes différentes provenant des quatre coins du monde.</p>
+            <p>Nous vous conseillons vivement d&apos;y faire un petit tour. Vous trouverez sur place de nombreux cafés et restaurants. On se croirait dans un petit village nature !</p>
 
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1986-scaled-1024x768.jpeg" alt="Gare Atocha Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2002-scaled-768x1024.jpeg" alt="Jardin tropical Atocha Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2002-scaled-768x1024.jpeg" alt="Atocha Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2006-scaled-1024x768.jpeg" alt="Atocha Madrid" loading="lazy" />
+            </div>
+
+            <p>Si par hasard vous avez la chance d&apos;être à Madrid le 2ème week-end du mois, vous ne pourrez pas louper le <strong>Mercado de Motores</strong>.</p>
+            <p>Situé dans l&apos;ancienne <strong>gare de Delicias</strong>, le marché accueille de nombreux artisans, créateurs, designers et brocanteurs. Du rétro, du vintage, de l&apos;artisanat, des objets d&apos;occasion, tout y est !</p>
+            <p>Vous apprécierez déambuler sur les quais et admirer les wagons et locomotives du XIXème siècle. Nous avons trouvé cet endroit plutôt original et de toute beauté !</p>
+            <p>À l&apos;extérieur, notamment le long de la gare, quelques stands de brocanteurs ainsi que des food trucks vous feront de l&apos;oeil. Ces derniers sont peu nombreux mais tous sont alléchants. En choisir un pour manger sur le pouce ne sera pas chose facile !</p>
+
+            <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1954-scaled-1024x768.jpeg" alt="Mercado de Motores Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1959-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1962-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" />
             </div>
 
             <h3>📍 Barrio de las Letras / Huertas</h3>
-            <p>En face du musée Thyssen-Bornemisza se trouve le <strong>quartier des Letras</strong>, qui tient son nom de son passé littéraire : de nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol. Des citations gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong> en témoignent encore.</p>
-            <p>Ces quartiers font partie des plus anciens et des plus animés le soir. La <strong>Plaza Santa Ana</strong>, bordée de cafés et restaurants, est le lieu idéal pour une petite pause bien méritée.</p>
+            <p>En face du <strong>musée Thyssen-Bornemisza</strong> se trouve le quartier des Lettres. Il tient son nom de son passé littéraire. De nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol.</p>
+            <p>Vous pourrez d&apos;ailleurs découvrir des citations extraites d&apos;ouvrages gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong>.</p>
+            <p>Ces quartiers font partie des plus anciens de Madrid et des plus animés le soir. La Plaza Santa Ana, bordée de cafés et de restaurants, est le lieu idéal pour faire une petite pause.</p>
 
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2299-scaled-768x1024.jpeg" alt="Barrio de las Letras Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2322_jpg-scaled-768x1024.jpeg" alt="Calle Huertas Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2322_jpg-scaled-768x1024.jpeg" alt="Huertas Madrid" loading="lazy" />
             </div>
           </section>
 
           {/* INFOS PRATIQUES */}
           <section id="pratique" className="article-section">
-            <h2 className="article-section-h2">Tout savoir pour organiser votre voyage</h2>
+            <h2 className="article-section-h2">3 jours à Madrid, tout savoir pour organiser votre voyage</h2>
 
-            <div className="article-pratique-grid">
-              <div className="article-pratique-card">
-                <h3>✈️ Arriver en avion</h3>
-                <p>De nombreuses compagnies desservent Madrid à moindre coût depuis la plupart des aéroports français. Nous avons voyagé avec <strong>Iberia</strong> depuis Nice en vol direct (136€ pour deux). Nous vous conseillons d&apos;acheter directement sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site officiel</a> plutôt que via un comparateur.</p>
-              </div>
-              <div className="article-pratique-card">
-                <h3>🚇 Aéroport ↔ Centre-ville</h3>
-                <p>Vous atterrirez à l&apos;aéroport <strong>Adolfo Suárez Madrid-Barajas</strong>. Plusieurs options :</p>
-                <ul className="article-list">
-                  <li><strong>Métro ligne 8</strong> → station Nuevos Ministerios (4,50€, 15-25 min)</li>
-                  <li><strong>Bus Exprés Aeropuerto</strong> → Puerta de Atocha (5€, 40 min, 24h/24)</li>
-                  <li><strong>Taxi</strong> → environ 33€ pour le centre</li>
-                  <li><strong>Uber</strong> → Parking P1 (T1) / Parking express (T2) / Parking P4 Module D étage 4 (T4)</li>
-                </ul>
-              </div>
-              <div className="article-pratique-card">
-                <h3>🗺 Se déplacer à Madrid</h3>
-                <p>L&apos;idéal à Madrid c&apos;est de <strong>marcher</strong> — il fait beau souvent et c&apos;est le meilleur moyen de découvrir. Pour les transports, le réseau de <strong>métro</strong> compte 12 lignes (6h05 à 1h30), les <strong>bus</strong> circulent de 6h30 à 23h30.</p>
-                <p style={{marginTop: '10px'}}>Pour 3 jours, nous conseillons :</p>
-                <ul className="article-list">
-                  <li>Carte Multi (2,50€) + 10 trajets Metrobús à 12,20€</li>
-                  <li>Ou carte métro 48h à 14,20€ si vous l&apos;utilisez fréquemment</li>
-                </ul>
-              </div>
-              <div className="article-pratique-card">
-                <h3>📅 Quand partir ?</h3>
-                <p>Madrid peut se visiter <strong>toute l&apos;année</strong> grâce à son ensoleillement important. Les mois de <strong>mai, juin et septembre</strong> restent les plus agréables : températures douces, peu de pluie et les parcs explosent de couleurs. Évitez juillet et août : chaleur et foule au rendez-vous !</p>
-              </div>
-            </div>
+            <h3>✓ Arriver en avion</h3>
+            <p>Il est désormais facile de trouver des vols directs à destination de Madrid à moindre coût. De <strong>nombreuses compagnies</strong> desservent maintenant la capitale espagnole. Les départs se font depuis la plupart des aéroports.</p>
+            <p>Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136€ pour deux.</p>
+            <p>Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>. Le tarif y était plus avantageux que si on les avait achetés avec un comparateur de vols (plateforme de réservation).</p>
+            <p>Nous avons été en tout cas ravies de voyager avec cette compagnie. Aucun retard sur les vols aller et retour, personnel très sympa, … Un petit en-cas sucré ou salé est offert pendant la traversée.</p>
+
+            <h3>✓ Aéroport ↔ Centre ville</h3>
+            <p>Quelque soit la compagnie que vous choisirez, vous atterrirez à l&apos;<strong>aéroport Adolfo Suárez Madrid-Barajas</strong>. De là, vous pouvez prendre directement <strong>le métro ligne 8</strong> pour rejoindre le centre ville. Celui-ci dessert la station Nuevos Ministerios, où passent les lignes 6 et 10. Le tarif du trajet est de 4€50 et dure entre 15 et 25Mn. Vous pouvez acheter les tickets aux guichets automatiques à la station de l&apos;aéroport.</p>
+            <p>Vous avez aussi la possibilité de prendre le <strong>bus Exprés Aeropuerto</strong>. Il circule 24H/24 entre la gare ferroviaire Puerta de Atocha et l&apos;aéroport. Attention, de 23H55 à 5H35, le départ du bus Exprés s&apos;effectue de la Plaza de Cibeles, et non à la gare. Le tarif est de 5€ pour 40Mn de trajet.</p>
+            <p>Vous pouvez aussi avoir recours au <strong>taxi</strong>. Ce n&apos;est pas le moyen de transport que nous recommandons étant donné que ceux cités ci-dessus ne coutent vraiment pas chers. Cependant, si vous êtes très chargé ou à plusieurs, cela peut être intéressant. Il faut compter environ 33€ pour rejoindre le centre-ville.</p>
+            <p>Enfin, si vous souhaitez prendre un <strong>Uber</strong>, il est important de savoir qu&apos;ils ne se mélangent plus avec les taxis et ont leur propre zone : Parking P1 pour le T1 / Parking express pour le T2 / Parking P4. Module D. Étage 4 pour le T4.</p>
+
+            <h3>✓ Comment se déplacer à Madrid ?</h3>
+            <p>L&apos;idéal avec cette capitale c&apos;est qu&apos;il fait beau très souvent, et qu&apos;il est de ce fait très agréable de déambuler à pied dans les rues de Madrid. Pour nous, c&apos;est le meilleur moyen de découvrir, d&apos;appréhender un endroit. Vous pouvez toutefois utiliser le <strong>métro</strong> ou le <strong>bus</strong> pour vous déplacer !</p>
+            <p>Le réseau de <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">métro</a> compte 12 lignes desservant le centre. Les rames circulent entre 6H05 et 01H30.</p>
+            <p>Les <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">bus</a> circulent entre 06H30 et 23H30.</p>
+            <p>Pour faire une visite complète de la ville sans trop d&apos;efforts, vous pouvez opter pour un <a href="https://www.getyourguide.fr/s?partner_id=ITDQ2DL&utm_medium=online_publisher&utm_source=amoureuxdumonde%40gmail.com&placement=content-top&cmp=Madrid&q=Madrid&et=1251&lc=46" target="_blank" rel="noopener noreferrer" className="article-link">tour en bus panoramique</a>, ceux avec le toit décapotable. Vous aurez le choix entre 2 circuits avec des arrêts aux principaux lieux d&apos;intérêt de Madrid.</p>
+            <p>Pour les plus téméraires et les plus actifs, vous avez la possibilité de louer des vélos ou des trottinettes électriques pour visiter la capitale. Des bornes sont installées un peu partout en ville.</p>
+            <p><strong>Pour votre séjour de 3 jours</strong>, nous vous conseillons :</p>
+            <ul className="article-list">
+              <li>soit d&apos;acheter la carte rechargeable Multi (2€50) + 10 trajets Metrobús à 12€20 (valable sur le réseau de métro en zone A et sur tout le réseau de bus). La carte est en vente dans toutes les stations de métro, ainsi qu&apos;à l&apos;aéroport ;</li>
+              <li>soit de prendre une carte de métro pour 48H à 14€20 (-50% pour les enfants de moins de 11 ans) si vous pensez utiliser fréquemment le métro pour vous déplacer.</li>
+            </ul>
+
+            <h3>✓ Quand partir ?</h3>
+            <p>Madrid est marquée par un climat méditerranéen plutôt sec, avec des été chauds et des hivers assez frais. Son ensoleillement étant important même durant les mois d&apos;hiver, la capitale espagnole peut se visiter ainsi <strong>toute l&apos;année</strong> !</p>
+            <p>Les mois de mai, juin et septembre restent tout de même les mois les plus agréables.</p>
+            <p>Les températures y sont très douces, les pluies inexistantes, et surtout, les nombreux parcs de la ville explosent de mille couleurs.</p>
+            <p>Nous vous conseillons en tout cas d&apos;éviter les mois de juillet et d&apos;août qui peuvent être très chauds. Hormis la chaleur, vous éviterez également la foule.</p>
           </section>
 
           {/* CONCLUSION */}
           <div className="article-conclusion">
-            <p>Nous espérons que notre article sur Madrid vous aura plu et qu&apos;il vous inspirera pour votre prochain voyage ! Si vous avez des questions ou souhaitez partager un retour d&apos;expérience, n&apos;hésitez pas à nous laisser un commentaire ou à nous contacter sur <a href="https://www.instagram.com/mamzellesenvadrouille/" target="_blank" rel="noopener noreferrer" className="article-link">Instagram</a>.</p>
+            <p><em>Nous espérons que notre article sur Madrid vous aura plu et qu&apos;il vous inspirera pour votre prochain voyage !</em></p>
+            <p><em>Si vous avez des questions, ou que vous souhaitez nous partager un retour d&apos;expérience, n&apos;hésitez pas à nous laisser un commentaire, à nous contacter via le <a href="/formules#formulaire" className="article-link">formulaire de contact</a> ou sur notre compte <a href="https://www.instagram.com/mamzellesenvadrouille/" target="_blank" rel="noopener noreferrer" className="article-link">Instagram</a>.</em></p>
+            <p><em>Nous nous ferons un plaisir de vous lire et de vous répondre !</em></p>
           </div>
 
           {/* COMMENTAIRES */}
@@ -307,7 +398,7 @@ export default function MadridPage() {
               {comments.map((c, i) => (
                 <div key={i} className="article-comment">
                   <div className="article-comment-header">
-                    <div className="article-comment-avatar">{c.author[0]}</div>
+                    <div className="article-comment-avatar">{c.author[0].toUpperCase()}</div>
                     <div>
                       <span className="article-comment-author">{c.author}</span>
                       <span className="article-comment-date">{c.date}</span>
@@ -335,18 +426,15 @@ export default function MadridPage() {
 
         {/* SIDEBAR */}
         <aside className="article-sidebar">
-
-          {/* À PROPOS */}
           <div className="sidebar-card">
             <div className="sidebar-about-img-wrap">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/11/Mamzellesenvadrouille-logo-270x270.png" alt="MamZelles en vadrouille" className="sidebar-about-img" />
             </div>
             <h3 className="sidebar-about-title">À propos de nous</h3>
-            <p className="sidebar-about-text">Nous, c&apos;est Amélie & Laurie, deux amoureuses de la vie et du voyage. Nous partageons ici nos aventures à travers le monde.</p>
+            <p className="sidebar-about-text">Nous, c&apos;est Amélie &amp; Laurie, deux amoureuses de la vie et du voyage. Nous partageons ici nos aventures à travers le monde.</p>
             <a href="/qui-sommes-nous" className="sidebar-link">Notre histoire →</a>
           </div>
 
-          {/* CTA VOYAGE SUR MESURE */}
           <div className="sidebar-card sidebar-cta">
             <p className="eyebrow-gold">Voyage sur mesure</p>
             <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage <em>sur mesure ?</em></h3>
@@ -354,7 +442,6 @@ export default function MadridPage() {
             <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
           </div>
 
-          {/* ARTICLES RÉCENTS */}
           <div className="sidebar-card">
             <h3 className="sidebar-card-title">Articles récents</h3>
             <div className="sidebar-articles">
@@ -373,7 +460,6 @@ export default function MadridPage() {
             </div>
             <a href="/blog" className="sidebar-link" style={{marginTop: '12px', display: 'inline-block'}}>Voir tous les articles →</a>
           </div>
-
         </aside>
       </div>
 
@@ -412,7 +498,7 @@ export default function MadridPage() {
           </div>
         </div>
         <div className="footer-bottom">
-          © 2026 MamZelles en vadrouille<br className="mobile-br" />Tous droits réservés
+          © 2026 MamZelles en vadrouille — Tous droits réservés
         </div>
       </footer>
 

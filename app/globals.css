@@ -1586,3 +1586,21 @@ a { text-decoration: none; color: inherit; }
     font-size: 28px;
   }
 }
+
+/* ARTICLE IMAGES */
+.article-img-full {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 24px 0;
+}
+
+.article-img-center {
+  width: 50%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 24px auto;
+  display: block;
+}

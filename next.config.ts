@@ -4,6 +4,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Nouvelles URLs
+      { source: '/visiter-madrid-en-3-jours', destination: 'https://blog.mamzellesenvadrouille.com/visiter-madrid-en-3-jours', permanent: false },
+      { source: '/visiter-madrid-en-3-jours/', destination: 'https://blog.mamzellesenvadrouille.com/visiter-madrid-en-3-jours/', permanent: false },
       { source: '/dormir-dans-le-desert-agafay', destination: 'https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay', permanent: true },
       { source: '/dormir-dans-le-desert-agafay/', destination: 'https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/', permanent: true },
       { source: '/visiter-marrakech', destination: 'https://blog.mamzellesenvadrouille.com/visiter-marrakech', permanent: true },
@@ -24,8 +26,8 @@ const nextConfig: NextConfig = {
       { source: '/formulaire-de-contact', destination: '/formules#formulaire', permanent: true },
       { source: '/formulaire-de-contact/', destination: '/formules#formulaire', permanent: true },
       // Anciennes URLs signalées par Google
-      { source: '/madrid-en-3-jours', destination: '/visiter-madrid-en-3-jours', permanent: true },
-      { source: '/madrid-en-3-jours/', destination: '/visiter-madrid-en-3-jours/', permanent: true },
+      { source: '/madrid-en-3-jours', destination: 'https://blog.mamzellesenvadrouille.com/visiter-madrid-en-3-jours', permanent: true },
+      { source: '/madrid-en-3-jours/', destination: 'https://blog.mamzellesenvadrouille.com/visiter-madrid-en-3-jours/', permanent: true },
       { source: '/que-voir-a-marrakech', destination: 'https://blog.mamzellesenvadrouille.com/visiter-marrakech', permanent: true },
       { source: '/que-voir-a-marrakech/', destination: 'https://blog.mamzellesenvadrouille.com/visiter-marrakech/', permanent: true },
       { source: '/partir-une-semaine-a-londres', destination: 'https://blog.mamzellesenvadrouille.com/visiter-londres-en-1-semaine', permanent: true },
