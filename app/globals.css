@@ -1604,3 +1604,261 @@ a { text-decoration: none; color: inherit; }
   margin: 24px auto;
   display: block;
 }
+
+/* ===========================
+   BARRE DE CONFIANCE
+   =========================== */
+.article-trust-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: var(--dark);
+  color: rgba(255,255,255,0.7);
+  padding: 12px 52px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.trust-sep {
+  color: var(--gold);
+  font-size: 16px;
+}
+
+/* ===========================
+   BLOC COUP DE COEUR
+   =========================== */
+.article-coup-de-coeur {
+  background: var(--bg);
+  border-top: 3px solid var(--gold);
+  padding: 40px 52px;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-cdcr-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.article-cdcr-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.article-cdcr-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 0;
+}
+
+.article-cdcr-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+}
+
+.article-cdcr-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 16px;
+  border-left: 2px solid var(--gold);
+}
+
+.article-cdcr-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.article-cdcr-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+  font-style: italic;
+}
+
+/* ===========================
+   COMPOSANTS Ã‰DITORIAUX
+   =========================== */
+
+/* Notre avis */
+.article-avis {
+  display: flex;
+  gap: 16px;
+  background: #fdf8f3;
+  border: 1px solid #e8d5be;
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin: 32px 0;
+}
+
+.article-avis-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.article-avis strong {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.article-avis p {
+  font-size: 14px !important;
+  color: #555 !important;
+  line-height: 1.8 !important;
+  margin-bottom: 0 !important;
+  font-style: italic;
+}
+
+/* Bon Ã  savoir */
+.article-tip {
+  display: flex;
+  gap: 16px;
+  background: #f5f9ff;
+  border: 1px solid #c8d8ee;
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin: 32px 0;
+}
+
+.article-tip-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.article-tip strong {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5a7fa8;
+  margin-bottom: 10px;
+}
+
+.article-tip p {
+  font-size: 14px !important;
+  color: #555 !important;
+  line-height: 1.8 !important;
+  margin-bottom: 8px !important;
+}
+
+.article-tip p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Ã€ ne surtout pas manquer */
+.article-must {
+  display: flex;
+  gap: 16px;
+  background: #fdf4ee;
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin: 32px 0;
+}
+
+.article-must-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.article-must strong {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.article-must p {
+  font-size: 14px !important;
+  color: #555 !important;
+  line-height: 1.8 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ===========================
+   CTA VOYAGE SUR MESURE
+   =========================== */
+.article-cta-block {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 0;
+  background: var(--dark);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 48px 0;
+}
+
+.article-cta-content {
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-cta-content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.article-cta-content p {
+  font-size: 14px !important;
+  color: rgba(255,255,255,0.65) !important;
+  line-height: 1.8 !important;
+  margin-bottom: 8px !important;
+  font-weight: 300 !important;
+}
+
+.article-cta-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.article-cta-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+/* ===========================
+   RESPONSIVE NOUVEAUX COMPOSANTS
+   =========================== */
+@media (max-width: 1024px) {
+  .article-coup-de-coeur { padding: 32px 30px; }
+  .article-cdcr-grid { grid-template-columns: repeat(2, 1fr); }
+  .article-trust-bar { padding: 12px 30px; font-size: 11px; gap: 12px; }
+  .article-cta-block { grid-template-columns: 1fr; }
+  .article-cta-img-wrap { height: 180px; }
+}
+
+@media (max-width: 768px) {
+  .article-coup-de-coeur { padding: 24px 20px; }
+  .article-cdcr-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .article-trust-bar { flex-wrap: wrap; gap: 8px; padding: 12px 20px; }
+  .trust-sep { display: none; }
+  .article-cta-content { padding: 28px 24px; }
+  .article-cta-content h2 { font-size: 24px; }
+}
