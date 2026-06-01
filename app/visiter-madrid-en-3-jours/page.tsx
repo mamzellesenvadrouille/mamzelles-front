@@ -32,9 +32,9 @@ export default function MadridPage() {
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
       {/* HERO */}
-      <section className="hero hero-article">
+      <section className="hero">
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/Madrid.webp" alt="Madrid, vue sur la Gran Vía" />
+        <img className="hero-bg" src="/Madrid.webp" alt="Madrid, vue sur la Gran Vía" style={{objectPosition: 'center 60%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <p className="eyebrow">Espagne · Europe</p>
