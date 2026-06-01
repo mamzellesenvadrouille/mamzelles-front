@@ -52,9 +52,9 @@ export default function MadridPage() {
         </div>
         <div className="article-cdcr-grid">
           <div className="article-cdcr-item"><span className="article-cdcr-label">Notre quartier préféré</span><span className="article-cdcr-value">→ Malasaña</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre meilleur souvenir</span><span className="article-cdcr-value">→ Le rooftop du Riu</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre meilleur souvenir</span><span className="article-cdcr-value">→ Le Riu la nuit</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">L&apos;adresse où on retournerait</span><span className="article-cdcr-value">→ Mercado de San Miguel</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">Le lieu qui nous a surpris</span><span className="article-cdcr-value">→ Le Palacio de Cristal</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Le lieu qui nous a surpris</span><span className="article-cdcr-value">→ Palacio de Cristal au coucher du soleil</span></div>
         </div>
       </div>
 
