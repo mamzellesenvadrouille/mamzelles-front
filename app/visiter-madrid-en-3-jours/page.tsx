@@ -413,13 +413,14 @@ export default function MadridPage() {
             <a href="/qui-sommes-nous" className="sidebar-link">Notre histoire →</a>
           </div>
           <div className="sidebar-card sidebar-cta">
-            <div className="sidebar-cta-bg"><img src="/home-hero.webp" alt="" /></div>
-            <div className="sidebar-cta-overlay" />
             <div className="sidebar-cta-body">
-            <p className="eyebrow-gold">Voyage sur mesure</p>
-            <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage <em>sur mesure ?</em></h3>
-            <p className="sidebar-cta-text">Nous créons des itinéraires personnalisés, pensés selon vos envies, votre rythme et votre budget.</p>
-            <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
+              <p className="eyebrow-gold">Voyage sur mesure</p>
+              <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage <em>sur mesure ?</em></h3>
+              <p className="sidebar-cta-text">Nous créons des itinéraires personnalisés, pensés selon vos envies, votre rythme et votre budget.</p>
+              <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
+            </div>
+            <div className="sidebar-cta-img">
+              <img src="/home-hero.webp" alt="Voyage sur mesure" />
             </div>
           </div>
           <div className="sidebar-card">
