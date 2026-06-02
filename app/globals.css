@@ -1865,6 +1865,10 @@ a { text-decoration: none; color: inherit; }
 /* ===========================
    HERO ARTICLE (ne pas modifier)
    =========================== */
+.hero-article {
+  height: 70vh;
+}
+
 .hero-article .hero-content {
   bottom: 0;
   top: auto;
