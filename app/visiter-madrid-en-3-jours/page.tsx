@@ -104,15 +104,15 @@ export default function MadridPage() {
             <p>Tout d&apos;abord, découvrez le <strong>Palais Royal</strong> de Madrid. Il fait partie des plus grands palais d&apos;Europe, mais aussi des plus beaux !</p>
             <p>Bien qu&apos;il ne soit plus habité par la famille royale, il reste un lieu symbolique du pouvoir qu&apos;il est possible de visiter. Pour cela, nous vous conseillons d&apos;acheter vos <a href="https://tickets.patrimonionacional.es/fr-FR/venta-de-entradas" target="_blank" rel="noopener noreferrer" className="article-link">billets</a> à l&apos;avance.</p>
             <p>Notez qu&apos;il est possible de voir la relève de la garde du Palais Royal de Madrid. Cela se passe tous les mercredis et samedis à 11h. Il est aussi possible d&apos;assister à la relève solennelle de la garde les premiers mercredis du mois à 12h (sauf en janvier, août et septembre). C&apos;est apparemment un spectacle unique à ne pas manquer !</p>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2446-scaled-1024x768.jpeg" alt="Palais Royal Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2456-scaled-768x1024.jpeg" alt="Palais Royal Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1690_jpg-scaled-768x1024.jpeg" alt="Palais Royal Madrid" loading="lazy" />
             </div>
             <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1690_jpg-scaled-768x1024.jpeg" alt="Palais Royal Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2451-scaled-1024x768.jpeg" alt="Palais Royal Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1677-scaled-1024x768.jpeg" alt="Palais Royal Madrid" loading="lazy" />
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1677-scaled-1024x768.jpeg" alt="Palais Royal Madrid" className="article-img-full" loading="lazy" />
             <h3>La Cathédrale de la Almudena</h3>
             <p>Non loin de là, vous trouverez la <strong>Cathédrale de la Almudena</strong>. Son dôme est accessible aux visiteurs, mais attention, seulement de 10H à 12H. Pour cela, vous devrez passer par le musée et débourser 7€.</p>
             <p>L&apos;entrée s&apos;effectue par la porte principale de la cathédrale, face au Palais Royal. Depuis la « cúpula », vous aurez une vue exceptionnelle sur la ville, notamment sur les jardins de Campo del Moro.</p>
