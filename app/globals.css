@@ -2040,7 +2040,7 @@ a { text-decoration: none; color: inherit; }
   .article-pratique-grid { grid-template-columns: 1fr; }
   .article-coup-de-coeur { padding: 16px 30px; }
   .article-cdcr-grid { flex-wrap: wrap; }
-  .article-cdcr-item { flex: 0 0 50%; }
+  .article-cdcr-item { flex: 1 1 0; }
   .article-newsletter { padding: 28px 24px; }
   .article-newsletter-inner { grid-template-columns: 1fr; gap: 24px; }
   .article-cta-block { grid-template-columns: 1fr; }
