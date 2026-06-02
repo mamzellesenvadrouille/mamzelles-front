@@ -29,6 +29,7 @@ const comments = [
 
 export default function MadridPage() {
   return (
+    <>
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
       {/* HERO */}
@@ -457,5 +458,6 @@ export default function MadridPage() {
       </footer>
 
     </div>
+    </>
   );
 }
