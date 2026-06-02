@@ -1866,10 +1866,10 @@ a { text-decoration: none; color: inherit; }
    HERO ARTICLE (ne pas modifier)
    =========================== */
 .hero-article .hero-content {
-  top: 50%;
-  bottom: auto;
-  transform: translateY(-30%);
-  padding: 0 80px;
+  bottom: 0;
+  top: auto;
+  transform: none;
+  padding: 0 80px 20px;
 }
 
 /* ===========================
