@@ -160,14 +160,14 @@ export default function MadridPage() {
               <span className="article-tip-icon">💡</span>
               <div><strong>Bon à savoir</strong><p>Sur la Plaza España se trouve un grand hôtel, le <strong>Riu</strong>. Son rooftop au 27ème étage offre une vue époustouflante à 360° sur la ville. Entrée : 5€ de 10H à 17H, et 10€ de 17H à 01H. Il y a une passerelle en verre — vous verrez ce qu&apos;il se passe sous vos pieds, 117M plus bas. Sensations garanties !</p></div>
             </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1668_jpg-scaled-768x1024.jpeg" alt="Hôtel Riu Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2364-scaled-1024x768.jpeg" alt="Vue depuis le Riu Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2361-scaled-768x1024.jpeg" alt="Rooftop Riu Madrid" loading="lazy" />
-            </div>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2371-scaled-768x1024.jpeg" alt="Vue Riu Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2350-scaled-768x1024.jpeg" alt="Cocktail Riu Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1668_jpg-scaled-768x1024.jpeg" alt="Hôtel Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2364-scaled-1024x768.jpeg" alt="Vue depuis le Riu Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2361-scaled-768x1024.jpeg" alt="Rooftop Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2371-scaled-768x1024.jpeg" alt="Vue Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2350-scaled-768x1024.jpeg" alt="Cocktail Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <p>De la Place d&apos;Espagne, remontez la Gran Via. Vous passerez alors par la <strong>Plaza del Callao</strong> et le célèbre <strong>Edificio Carrion</strong> avec son mythique panneau publicitaire Schweppes. L&apos;<strong>Edificio Telefónica</strong> est très imposant, vous le reconnaitrez facilement.</p>
             <div className="article-gallery-2">
