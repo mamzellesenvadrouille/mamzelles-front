@@ -388,7 +388,7 @@ export default function MadridPage() {
               </div>
               <div className="sidebar-bref-item">
                 <div className="sidebar-bref-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a2.5 2.5 0 00-5 0c0 1.5 1 2 2.5 2.5s2.5 1 2.5 2.5a2.5 2.5 0 01-5 0"/><line x1="12" y1="7" x2="12" y2="8.5"/><line x1="12" y1="15.5" x2="12" y2="17"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 8.5A6 6 0 1 0 17 15.5"/><line x1="5" y1="11" x2="14" y2="11"/><line x1="5" y1="13.5" x2="14" y2="13.5"/></svg>
                 </div>
                 <div><span className="sidebar-bref-label">Budget moyen</span><span className="sidebar-bref-value">€€</span></div>
               </div>
