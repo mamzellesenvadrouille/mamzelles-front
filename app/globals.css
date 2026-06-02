@@ -1941,6 +1941,10 @@ a { text-decoration: none; color: inherit; }
 .article-cdcr-grid { display: flex; gap: 0; width: 100%; }
 .article-cdcr-item { display: flex; flex-direction: column; justify-content: flex-start; gap: 8px; padding: 0 16px; border-left: 1px solid var(--line); flex: 1 1 0; min-width: 0; }
 .article-cdcr-item:first-child { border-left: 1px solid transparent; padding-left: 0; padding-right: 16px; }
+.article-cdcr-item:nth-child(1) { flex: 0.8 1 0; }
+.article-cdcr-item:nth-child(2) { flex: 1 1 0; }
+.article-cdcr-item:nth-child(3) { flex: 1.3 1 0; }
+.article-cdcr-item:nth-child(4) { flex: 1.3 1 0; }
 .article-cdcr-item:last-child { padding-right: 0; padding-left: 16px; }
 .article-cdcr-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
 .article-cdcr-value { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 500; color: var(--dark); font-style: italic; line-height: 1.3; }
