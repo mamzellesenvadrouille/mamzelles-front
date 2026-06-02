@@ -63,17 +63,6 @@ export default function MadridPage() {
       <div className="article-layout">
         <main className="article-main">
 
-          {/* EN BREF */}
-          <div className="article-bref">
-            <h2 className="article-bref-title">En bref</h2>
-            <div className="article-bref-grid">
-              <div className="article-bref-item"><span className="article-bref-icon">🗓</span><div><span className="article-bref-label">Durée idéale</span><span className="article-bref-value">3 jours</span></div></div>
-              <div className="article-bref-item"><span className="article-bref-icon">☀️</span><div><span className="article-bref-label">Meilleure période</span><span className="article-bref-value">Mars à juin, sept. à nov.</span></div></div>
-              <div className="article-bref-item"><span className="article-bref-icon">💶</span><div><span className="article-bref-label">Budget moyen</span><span className="article-bref-value">€€</span></div></div>
-              <div className="article-bref-item"><span className="article-bref-icon">📍</span><div><span className="article-bref-label">Niveau</span><span className="article-bref-value">Facile</span></div></div>
-              <div className="article-bref-item"><span className="article-bref-icon">👥</span><div><span className="article-bref-label">Type de voyage</span><span className="article-bref-value">Couple, amis, solo</span></div></div>
-            </div>
-          </div>
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
@@ -377,6 +366,44 @@ export default function MadridPage() {
 
         {/* SIDEBAR */}
         <aside className="article-sidebar">
+
+          {/* EN BREF SIDEBAR */}
+          <div className="sidebar-bref">
+            <h3 className="sidebar-bref-title">En bref</h3>
+            <div className="sidebar-bref-rule" />
+            <div className="sidebar-bref-items">
+              <div className="sidebar-bref-item">
+                <div className="sidebar-bref-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <div><span className="sidebar-bref-label">Durée idéale</span><span className="sidebar-bref-value">3 jours</span></div>
+              </div>
+              <div className="sidebar-bref-item">
+                <div className="sidebar-bref-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </div>
+                <div><span className="sidebar-bref-label">Meilleure période</span><span className="sidebar-bref-value">Mars à juin, sept. à nov.</span></div>
+              </div>
+              <div className="sidebar-bref-item">
+                <div className="sidebar-bref-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div><span className="sidebar-bref-label">Budget moyen</span><span className="sidebar-bref-value">€€</span></div>
+              </div>
+              <div className="sidebar-bref-item">
+                <div className="sidebar-bref-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 17l4-8 4 4 4-6 4 10"/></svg>
+                </div>
+                <div><span className="sidebar-bref-label">Niveau</span><span className="sidebar-bref-value">Facile</span></div>
+              </div>
+              <div className="sidebar-bref-item">
+                <div className="sidebar-bref-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+                <div><span className="sidebar-bref-label">Type de voyage</span><span className="sidebar-bref-value">Couple, amis, solo</span></div>
+              </div>
+            </div>
+          </div>
           <div className="sidebar-card">
             <div className="sidebar-about-img-wrap">
               <img src="/nous.webp" alt="Amélie et Laurie" className="sidebar-about-img" />
@@ -386,10 +413,14 @@ export default function MadridPage() {
             <a href="/qui-sommes-nous" className="sidebar-link">Notre histoire →</a>
           </div>
           <div className="sidebar-card sidebar-cta">
+            <div className="sidebar-cta-bg"><img src="/home-hero.webp" alt="" /></div>
+            <div className="sidebar-cta-overlay" />
+            <div className="sidebar-cta-body">
             <p className="eyebrow-gold">Voyage sur mesure</p>
             <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage <em>sur mesure ?</em></h3>
             <p className="sidebar-cta-text">Nous créons des itinéraires personnalisés, pensés selon vos envies, votre rythme et votre budget.</p>
             <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
+            </div>
           </div>
           <div className="sidebar-card">
             <h3 className="sidebar-card-title">Articles récents</h3>
