@@ -1625,83 +1625,13 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 10px;
 }
 
-.article-avis p {
-  font-size: 14px !important;
-  color: #555 !important;
-  line-height: 1.8 !important;
-  margin-bottom: 0 !important;
-  font-style: italic;
-}
+
 
 /* Bon Ãƒ  savoir */
-.article-tip {
-  display: flex;
-  gap: 16px;
-  background: #f5f9ff;
-  border: 1px solid #c8d8ee;
-  border-radius: 8px;
-  padding: 22px 24px;
-  margin: 32px 0;
-}
 
-.article-tip-icon {
-  font-size: 22px;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.article-tip strong {
-  display: block;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #5a7fa8;
-  margin-bottom: 10px;
-}
-
-.article-tip p {
-  font-size: 14px !important;
-  color: #555 !important;
-  line-height: 1.8 !important;
-  margin-bottom: 8px !important;
-}
-
-.article-tip p:last-child {
-  margin-bottom: 0 !important;
-}
 
 /* Ãƒâ‚¬ ne surtout pas manquer */
-.article-must {
-  display: flex;
-  gap: 16px;
-  background: #fdf4ee;
-  border: 1px solid var(--gold);
-  border-radius: 8px;
-  padding: 22px 24px;
-  margin: 32px 0;
-}
 
-.article-must-icon {
-  font-size: 22px;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.article-must strong {
-  display: block;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 10px;
-}
-
-.article-must p {
-  font-size: 14px !important;
-  color: #555 !important;
-  line-height: 1.8 !important;
-  margin-bottom: 0 !important;
-}
 
 /* ===========================
    CTA VOYAGE SUR MESURE
@@ -2086,3 +2016,9 @@ a { text-decoration: none; color: inherit; }
 .sidebar-cta-reassurance { font-size: 11px !important; color: var(--muted) !important; text-align: center; margin-top: 8px !important; font-weight: 300; letter-spacing: 0.5px; }
 
 /* GALERIE RATIO ADAPTATIF */
+
+
+/* Fix strong inline dans les blocs encarts */
+.article-tip div strong + p strong,
+.article-avis div strong + p strong,
+.article-must div strong + p strong { display: inline; }
