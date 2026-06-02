@@ -38,7 +38,7 @@ export default function MadridPage() {
         <img className="hero-bg" src="/Madrid.webp" alt="Madrid, vue sur la Gran Vía" style={{objectPosition: 'center 0%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>3 jours à Madrid<br /><em>Lieux incontournables<br />et bons plans</em></h1>
+          <h1>3 jours à Madrid<br /><em>Les lieux incontournables<br />et nos bons plans</em></h1>
           <div className="hero-rule" />
           <p className="hero-desc">Notre itinéraire complet pour découvrir les quartiers et les visites incontournables de la capitale espagnole.</p>
         </div>
