@@ -1780,7 +1780,7 @@ a { text-decoration: none; color: inherit; }
   bottom: 0;
   top: auto;
   transform: none;
-  padding: 0 80px 0;
+  padding: 0 80px 10px;
 }
 
 .hero-article .hero-content h1 em {
