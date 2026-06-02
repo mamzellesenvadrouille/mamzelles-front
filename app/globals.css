@@ -1989,7 +1989,7 @@ a { text-decoration: none; color: inherit; }
 .article-cdcr-icon { font-size: 24px; flex-shrink: 0; }
 .article-cdcr-header h2 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 500; color: var(--muted); margin: 0; letter-spacing: 2px; text-transform: uppercase; font-style: normal; }
 .article-cdcr-grid { display: flex; gap: 0; }
-.article-cdcr-item { display: flex; flex-direction: column; justify-content: flex-start; gap: 8px; padding: 0 8px; border-left: 1px solid var(--line); min-height: 70px; flex: 1; }
+.article-cdcr-item { display: flex; flex-direction: column; justify-content: flex-start; gap: 8px; padding: 0 8px; border-left: 1px solid var(--line); min-height: 70px; flex: 1; min-width: 0; width: 25%; }
 .article-cdcr-item:first-child { border-left: 1px solid transparent; padding-left: 0; padding-right: 16px; }
 .article-cdcr-item:last-child { padding-right: 0; padding-left: 16px; }
 .article-cdcr-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
