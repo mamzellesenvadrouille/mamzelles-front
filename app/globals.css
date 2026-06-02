@@ -1788,6 +1788,7 @@ a { text-decoration: none; color: inherit; }
   display: block;
   line-height: 1.2;
   white-space: nowrap;
+  margin-top: 10px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
