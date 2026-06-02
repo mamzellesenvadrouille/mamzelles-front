@@ -388,7 +388,7 @@ export default function MadridPage() {
               </div>
               <div className="sidebar-bref-item">
                 <div className="sidebar-bref-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93V18c0-.55-.45-1-1-1s-1 .45-1 1v1.93C7.06 19.44 4.56 16.94 4.07 13H6c.55 0 1-.45 1-1s-.45-1-1-1H4.07C4.56 7.06 7.06 4.56 11 4.07V6c0 .55.45 1 1 1s1-.45 1-1V4.07c3.94.49 6.44 2.99 6.93 6.93H18c-.55 0-1 .45-1 1s.45 1 1 1h1.93c-.49 3.94-2.99 6.44-6.93 6.93z"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12a2 2 0 100-4 2 2 0 000 4z"/><path d="M6 12h.01M18 12h.01"/></svg>
                 </div>
                 <div><span className="sidebar-bref-label">Budget moyen</span><span className="sidebar-bref-value">€€</span></div>
               </div>
@@ -418,9 +418,10 @@ export default function MadridPage() {
             <img src="/home-hero.webp" alt="" className="sidebar-cta-bg-img" />
             <div className="sidebar-cta-gradient" />
             <div className="sidebar-cta-body">
-              <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage<br /><em>sur mesure ?</em></h3>
-              <p className="sidebar-cta-text">Nous créons des itinéraires personnalisés,<br />pensés selon vos envies, votre rythme<br />et votre budget.</p>
-              <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
+              <h3 className="sidebar-cta-title">Votre voyage<br /><em>sur mesure</em><br />vous attend</h3>
+              <p className="sidebar-cta-text">Itinéraire 100% personnalisé,<br />pensé selon vos envies et votre budget.</p>
+              <a href="/formules#formulaire" className="btn-gold">Créer mon voyage →</a>
+              <p className="sidebar-cta-reassurance">✓ Réponse sous 48h · Sans engagement</p>
             </div>
           </div>
           <div className="sidebar-card-white">
