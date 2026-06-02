@@ -48,7 +48,6 @@ export default function MadridPage() {
 
       {/* BLOC COUP DE COEUR */}
       <div className="article-coup-de-coeur">
-        <div className="article-cdcr-inner">
           <div className="article-cdcr-header">
           <span className="article-cdcr-icon">❤️</span>
           <h2>Pourquoi nous avons adoré Madrid</h2>
@@ -58,7 +57,6 @@ export default function MadridPage() {
           <div className="article-cdcr-item"><span className="article-cdcr-label">L&apos;adresse où on retournerait</span><span className="article-cdcr-value">→ Le Mercado de San Miguel</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">Le lieu qui nous a surpris</span><span className="article-cdcr-value">→ Le Palacio de Cristal au coucher du soleil</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">Notre meilleur souvenir</span><span className="article-cdcr-value">→ Le panorama depuis le Riu la nuit</span></div>
-        </div>
         </div>
       </div>
 
