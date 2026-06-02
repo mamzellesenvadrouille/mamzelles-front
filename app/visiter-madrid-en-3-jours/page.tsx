@@ -114,7 +114,7 @@ export default function MadridPage() {
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1677-scaled-1024x768.jpeg" alt="Palais Royal Madrid" className="article-img-full" loading="lazy" style={{objectPosition: 'center bottom'}} />
             <h3>La Cathédrale de la Almudena</h3>
-            <p>Non loin de là, vous trouverez la <strong>Cathédrale de la Almudena</strong>. Son dôme est accessible aux visiteurs, mais attention, seulement de 10H à 12H. Pour cela, vous devrez passer par le musée et débourser 7€.</p>
+            <p>Non loin de là, vous trouverez la <strong>Cathédrale de la Almudena</strong>. Son dôme est accessible aux visiteurs, mais attention, seulement de 10h à 12h. Pour cela, vous devrez passer par le musée et débourser 7€.</p>
             <p>L&apos;entrée s&apos;effectue par la porte principale de la cathédrale, face au Palais Royal. Depuis la « cúpula », vous aurez une vue exceptionnelle sur la ville, notamment sur les jardins de Campo del Moro.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1699_jpg-scaled-768x1024.jpeg" alt="Cathédrale de la Almudena Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -123,7 +123,7 @@ export default function MadridPage() {
             <h3>Le Mercado de San Miguel</h3>
             <p>Empruntez ensuite la <strong>Calle Mayor</strong> située en face de la cathédrale, pour vous diriger vers la <strong>Plaza San Miguel</strong> et son fameux mercado. Ce marché atypique, haut lieu de la vie madrilène, est un incontournable lors d&apos;un séjour à Madrid !</p>
             <p>Avec son architecture incroyable, composée d&apos;une structure en métal et tout en verre, le <strong>Mercado de San Miguel</strong> est un endroit très prisé par les amateurs de gastronomie espagnole, notamment de tapas.</p>
-            <p>Un gros coup de coeur pour nous ! Vous pourrez vous y rendre chaque jour de 10H à minuit pour y goûter des spécialités terre, mer ou veggie façon espagnole ! C&apos;est également le lieu idéal pour déguster de bons vins ou boire une bière.</p>
+            <p>Un gros coup de coeur pour nous ! Vous pourrez vous y rendre chaque jour de 10h à minuit pour y goûter des spécialités terre, mer ou veggie façon espagnole ! C&apos;est également le lieu idéal pour déguster de bons vins ou boire une bière.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1760-scaled-1024x768.jpeg" alt="Mercado San Miguel Madrid" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1742-scaled-768x1024.jpeg" alt="Mercado San Miguel Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -131,7 +131,7 @@ export default function MadridPage() {
             </div>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne surtout pas manquer</strong><p>Le Mercado de San Miguel est ouvert tous les jours de 10H à minuit. Allez-y en fin d&apos;après-midi pour y grignoter des tapas et vous mêler aux Madrilènes qui s&apos;y retrouvent après le travail.</p></div>
+              <div><strong>À ne surtout pas manquer</strong><p>Le Mercado de San Miguel est ouvert tous les jours de 10h à minuit. Allez-y en fin d&apos;après-midi pour y grignoter des tapas et vous mêler aux Madrilènes qui s&apos;y retrouvent après le travail.</p></div>
             </div>
             <h3>La Plaza Mayor</h3>
             <p>Continuez ensuite votre vadrouille en direction de la <strong>Plaza Mayor</strong>, cette fameuse place rectangulaire où les Madrilènes apprécient se retrouver pour y boire un café.</p>
@@ -158,7 +158,7 @@ export default function MadridPage() {
             </div>
             <div className="article-tip">
               <span className="article-tip-icon">💡</span>
-              <div><strong>Bon à savoir</strong><p>Sur la Plaza España se trouve un grand hôtel, le <strong>Riu</strong>. Son rooftop au 27ème étage offre une vue époustouflante à 360° sur la ville. Entrée : 5€ de 10H à 17H, et 10€ de 17H à 01H. Il y a une passerelle en verre — vous verrez ce qu&apos;il se passe sous vos pieds, 117M plus bas. Sensations garanties !</p></div>
+              <div><strong>Bon à savoir</strong><p>Sur la Plaza España se trouve un grand hôtel, le <strong>Riu</strong>. Son rooftop au 27ème étage offre une vue époustouflante à 360° sur la ville. Entrée : 5€ de 10h à 17h, et 10€ de 17h à 01h. Il y a une passerelle en verre — vous verrez ce qu&apos;il se passe sous vos pieds, 117M plus bas. Sensations garanties !</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1668_jpg-scaled-768x1024.jpeg" alt="Hôtel Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -263,7 +263,7 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2421-scaled-768x1024.jpeg" alt="Lavapiès Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1857-scaled-768x1024.jpeg" alt="Lavapiès Madrid" loading="lazy" />
             </div>
-            <p>Vous ne devrez louper en aucun cas le <strong>marché El Rastro</strong> qui a lieu chaque dimanche et jour férié, de 8H30 à 15H. Il est une institution à Madrid et est considéré comme l&apos;<strong>un des plus grands marchés aux puces d&apos;Europe</strong> ! Dans la rue principale, articles neufs et produits typiques, et dans les petites rues, le paradis des brocanteurs — antiquités, fripes vintages…</p>
+            <p>Vous ne devrez louper en aucun cas le <strong>marché El Rastro</strong> qui a lieu chaque dimanche et jour férié, de 8h30 à 15h. Il est une institution à Madrid et est considéré comme l&apos;<strong>un des plus grands marchés aux puces d&apos;Europe</strong> ! Dans la rue principale, articles neufs et produits typiques, et dans les petites rues, le paradis des brocanteurs — antiquités, fripes vintages…</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À ne surtout pas manquer</strong><p>El Rastro n&apos;a lieu que le dimanche et les jours fériés de 8h30 à 15h. Organisez votre séjour pour que votre 3ème jour tombe un dimanche — vous ne le regretterez pas !</p></div>
@@ -304,10 +304,10 @@ export default function MadridPage() {
             <h3>✓ Arriver en avion</h3>
             <p>Il est désormais facile de trouver des vols directs à destination de Madrid à moindre coût. De <strong>nombreuses compagnies</strong> desservent maintenant la capitale espagnole. Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136€ pour deux. Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>.</p>
             <h3>✓ Aéroport ↔ Centre ville</h3>
-            <p>Vous atterrirez à l&apos;<strong>aéroport Adolfo Suárez Madrid-Barajas</strong>. De là, vous pouvez prendre le <strong>métro ligne 8</strong> (4€50, 15-25 min), le <strong>bus Exprés Aeropuerto</strong> (5€, 40 min, 24H/24), le <strong>taxi</strong> (environ 33€) ou <strong>Uber</strong>.</p>
+            <p>Vous atterrirez à l&apos;<strong>aéroport Adolfo Suárez Madrid-Barajas</strong>. De là, vous pouvez prendre le <strong>métro ligne 8</strong> (4€50, 15-25 min), le <strong>bus Exprés Aeropuerto</strong> (5€, 40 min, 24h/24), le <strong>taxi</strong> (environ 33€) ou <strong>Uber</strong>.</p>
             <h3>✓ Comment se déplacer à Madrid ?</h3>
-            <p>L&apos;idéal c&apos;est de se déplacer à pied — il fait beau très souvent et c&apos;est le meilleur moyen de découvrir la ville. Le réseau de <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">métro</a> compte 12 lignes (6H05-01H30), les <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">bus</a> circulent de 06H30 à 23H30.</p>
-            <p><strong>Pour 3 jours</strong>, nous vous conseillons soit la carte Multi (2€50) + 10 trajets Metrobús à 12€20, soit une carte métro 48H à 14€20.</p>
+            <p>L&apos;idéal c&apos;est de se déplacer à pied — il fait beau très souvent et c&apos;est le meilleur moyen de découvrir la ville. Le réseau de <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">métro</a> compte 12 lignes (6h05-01h30), les <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">bus</a> circulent de 06h30 à 23h30.</p>
+            <p><strong>Pour 3 jours</strong>, nous vous conseillons soit la carte Multi (2€50) + 10 trajets Metrobús à 12€20, soit une carte métro 48h à 14€20.</p>
             <h3>✓ Quand partir ?</h3>
             <p>Madrid peut se visiter <strong>toute l&apos;année</strong> grâce à son ensoleillement important. Les mois de <strong>mai, juin et septembre</strong> sont les plus agréables. Évitez juillet et août : chaleur et foule au rendez-vous !</p>
           </section>
@@ -402,7 +402,7 @@ export default function MadridPage() {
               </div>
               <div className="sidebar-bref-item">
                 <div className="sidebar-bref-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4h5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
                 </div>
                 <div><span className="sidebar-bref-label">Type de voyage</span><span className="sidebar-bref-value">Couple, amis, solo</span></div>
               </div>
@@ -473,7 +473,7 @@ export default function MadridPage() {
           <div className="footer-col">
             <a href="mailto:contact@mamzellesenvadrouille.com" className="footer-social-item">
               <div className="footer-social-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div className="footer-social-text">
                 <span className="footer-social-label">Écrivez-nous</span>
