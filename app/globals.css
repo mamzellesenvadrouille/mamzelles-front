@@ -1823,7 +1823,7 @@ a { text-decoration: none; color: inherit; }
   bottom: 0;
   top: auto;
   transform: none;
-  padding: 0 80px 10px;
+  padding: 0 80px 40px;
 }
 
 .hero-article .hero-content h1 em {
