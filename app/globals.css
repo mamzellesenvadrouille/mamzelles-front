@@ -1919,9 +1919,9 @@ a { text-decoration: none; color: inherit; }
 .article-tip strong { display: block; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #5a7fa8; margin-bottom: 10px; }
 .article-tip p { font-size: 14px !important; color: #555 !important; line-height: 1.8 !important; margin-bottom: 8px !important; }
 .article-tip p:last-child { margin-bottom: 0 !important; }
-.article-must { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 22px 24px; margin: 32px 0; }
+.article-must { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 32px 0; }
 .article-must-icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; color: var(--gold); }
-.article-must strong { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.article-must strong { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
 .article-must p { font-size: 13px !important; color: #555 !important; line-height: 1.9 !important; margin-bottom: 0 !important; }
 
 /* CTA ARTICLE */
