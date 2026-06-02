@@ -1917,6 +1917,7 @@ a { text-decoration: none; color: inherit; }
 .article-tip { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 32px 0; }
 .article-tip-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
 .article-tip strong { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.article-tip strong:first-child { margin-bottom: 8px; }
 .article-tip p { font-size: 13px !important; color: #555 !important; line-height: 1.9 !important; margin-bottom: 6px !important; }
 .article-tip p:last-child { margin-bottom: 0 !important; }
 .article-must { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 32px 0; }
