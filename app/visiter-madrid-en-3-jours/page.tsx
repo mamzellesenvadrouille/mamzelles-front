@@ -43,6 +43,8 @@ export default function MadridPage() {
         </div>
       </section>
 
+    </div>
+
       {/* BLOC COUP DE COEUR */}
       <div className="article-coup-de-coeur">
         <div className="article-cdcr-inner">
@@ -59,7 +61,7 @@ export default function MadridPage() {
         </div>
       </div>
 
-      <div className="article-layout">
+      <div style={{ width: '100%', overflowX: 'hidden' }}>
         <main className="article-main">
 
           {/* EN BREF */}
@@ -409,6 +411,8 @@ export default function MadridPage() {
             <a href="/blog" className="sidebar-link" style={{marginTop: '12px', display: 'inline-block'}}>Voir tous les articles →</a>
           </div>
         </aside>
+      </div>
+
       </div>
 
       <ScrollToTop />
