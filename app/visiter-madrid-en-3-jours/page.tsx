@@ -171,18 +171,20 @@ export default function MadridPage() {
             </div>
             <p>De la Place d&apos;Espagne, remontez la Gran Via. Vous passerez alors par la <strong>Plaza del Callao</strong> et le célèbre <strong>Edificio Carrion</strong> avec son mythique panneau publicitaire Schweppes. L&apos;<strong>Edificio Telefónica</strong> est très imposant, vous le reconnaitrez facilement.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2341-scaled-768x1024.jpeg" alt="Edificio Carrion Schweppes Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2102-scaled-768x1024.jpeg" alt="Edificio Telefónica Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2341-scaled-768x1024.jpeg" alt="Edificio Carrion Schweppes Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2102-scaled-768x1024.jpeg" alt="Edificio Telefónica Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <h3>L&apos;Edificio Metropolis & le Circulo de Bellas Artes</h3>
             <p>Lorsque vous arriverez au bas de l&apos;avenue, vous tomberez sur le célèbre <strong>Edificio Metropolis</strong> et sa magnifique coupole. Il est l&apos;édifice le plus photographié de Madrid.</p>
             <p>Nous vous conseillons de monter en haut du <strong>Circulo de Bellas Artes</strong>, un centre culturel situé juste en face. Moyennant 4€, vous pourrez profiter de son rooftop avec une vue exceptionnelle sur la ville.</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2051-scaled-768x1024.jpeg" alt="Edificio Metropolis Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2055-scaled-768x1024.jpeg" alt="Vue Metropolis Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2053-scaled-1024x768.jpeg" alt="Vue Metropolis Madrid" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2051-scaled-768x1024.jpeg" alt="Edificio Metropolis Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2055-scaled-768x1024.jpeg" alt="Vue Metropolis Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2074_jpg-scaled-768x1024.jpeg" alt="Nous à Madrid" className="article-img-center" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2053-scaled-1024x768.jpeg" alt="Vue Metropolis Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2074_jpg-scaled-768x1024.jpeg" alt="Nous à Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
             <div className="article-avis">
               <span className="article-avis-icon">❤️</span>
               <div><strong>L&apos;avis des MamZelles</strong><p>El Centro est dense, mais chaque rue réserve une surprise. Notre conseil : ne vous fixez pas un programme trop rigide pour cette journée. Accordez-vous une pause tapas au Mercado de San Miguel en milieu d&apos;après-midi plutôt qu&apos;à l&apos;heure du déjeuner — vous éviterez la foule et profiterez d&apos;une atmosphère bien plus authentique.</p></div>
