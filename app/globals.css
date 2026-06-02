@@ -2105,3 +2105,13 @@ a { text-decoration: none; color: inherit; }
 .sidebar-cta-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: var(--dark) !important; line-height: 1.2; margin: 0 0 8px; }
 .sidebar-cta-title em { color: var(--gold); font-style: italic; }
 .sidebar-cta-text { font-size: 13px; color: #555 !important; line-height: 1.7; font-weight: 300; margin-bottom: 8px; }
+
+/* SIDEBAR VARIÃ‰TÃ‰ VISUELLE */
+.sidebar-card-white {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}

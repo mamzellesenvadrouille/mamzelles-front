@@ -404,7 +404,7 @@ export default function MadridPage() {
               </div>
             </div>
           </div>
-          <div className="sidebar-card">
+          <div className="sidebar-card-white">
             <div className="sidebar-about-img-wrap">
               <img src="/nous.webp" alt="Amélie et Laurie" className="sidebar-about-img" />
             </div>
@@ -421,7 +421,7 @@ export default function MadridPage() {
               <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
             </div>
           </div>
-          <div className="sidebar-card">
+          <div className="sidebar-card-white">
             <h3 className="sidebar-card-title">Articles récents</h3>
             <div className="sidebar-articles">
               <a href="/visiter-marrakech" className="sidebar-article">
