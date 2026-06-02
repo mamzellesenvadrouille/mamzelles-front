@@ -388,7 +388,7 @@ export default function MadridPage() {
               </div>
               <div className="sidebar-bref-item">
                 <div className="sidebar-bref-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12a2 2 0 100-4 2 2 0 000 4z"/><path d="M6 12h.01M18 12h.01"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a2.5 2.5 0 00-5 0c0 1.5 1 2 2.5 2.5s2.5 1 2.5 2.5a2.5 2.5 0 01-5 0"/><line x1="12" y1="7" x2="12" y2="8.5"/><line x1="12" y1="15.5" x2="12" y2="17"/></svg>
                 </div>
                 <div><span className="sidebar-bref-label">Budget moyen</span><span className="sidebar-bref-value">€€</span></div>
               </div>
@@ -418,10 +418,9 @@ export default function MadridPage() {
             <img src="/home-hero.webp" alt="" className="sidebar-cta-bg-img" />
             <div className="sidebar-cta-gradient" />
             <div className="sidebar-cta-body">
-              <h3 className="sidebar-cta-title">Votre voyage<br /><em>sur mesure</em><br />vous attend</h3>
-              <p className="sidebar-cta-text">Itinéraire 100% personnalisé,<br />pensé selon vos envies et votre budget.</p>
-              <a href="/formules#formulaire" className="btn-gold">Créer mon voyage →</a>
-              <p className="sidebar-cta-reassurance">✓ Réponse sous 48h · Sans engagement</p>
+              <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage<br /><em>sur mesure ?</em></h3>
+              <p className="sidebar-cta-text">Nous créons des itinéraires personnalisés,<br />pensés selon vos envies, votre rythme<br />et votre budget.</p>
+              <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
             </div>
           </div>
           <div className="sidebar-card-white">
