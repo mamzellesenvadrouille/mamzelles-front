@@ -153,8 +153,8 @@ export default function MadridPage() {
             <p><strong>Gran Via</strong> est une grande avenue, l&apos;une des principales de Madrid, et sûrement la plus connue. Peu importe l&apos;heure à laquelle nous y sommes passées, il y avait toujours foule et beaucoup d&apos;animations. Vous y trouverez essentiellement des boutiques, des restaurants, des hôtels, des cinémas et des théâtres. Cette artère a d&apos;ailleurs le surnom du « Broadway Madrilène ».</p>
             <p>Notre hôtel étant situé à 5Mn à pied, nous avons parcouru Gran Via en long, en large et en travers, de la <strong>Place d&apos;Espagne</strong> à l&apos;emblématique <strong>Edificio Metropolis</strong>.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1665-scaled-1024x768.jpeg" alt="Gran Via Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1851-scaled-768x1024.jpeg" alt="Gran Via Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1665-scaled-1024x768.jpeg" alt="Gran Via Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1851-scaled-768x1024.jpeg" alt="Gran Via Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <div className="article-tip">
               <span className="article-tip-icon">💡</span>
