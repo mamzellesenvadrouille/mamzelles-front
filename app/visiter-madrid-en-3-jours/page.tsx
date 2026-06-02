@@ -62,7 +62,7 @@ export default function MadridPage() {
         </div>
       </div>
 
-      <div style={{ width: '100%', overflowX: 'hidden' }}>
+      <div className="article-layout">
         <main className="article-main">
 
           {/* EN BREF */}
@@ -414,6 +414,8 @@ export default function MadridPage() {
         </aside>
       </div>
 
+      </div>
+
       <ScrollToTop />
 
       {/* FOOTER */}
@@ -455,7 +457,6 @@ export default function MadridPage() {
         </div>
       </footer>
 
-    </div>
     </>
   );
 }
