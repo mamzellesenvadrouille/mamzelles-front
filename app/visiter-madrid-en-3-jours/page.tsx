@@ -414,7 +414,7 @@ export default function MadridPage() {
           </div>
           <div className="sidebar-card sidebar-cta">
             <div className="sidebar-cta-body">
-              <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage <em>sur mesure ?</em></h3>
+              <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage<br /><em>sur mesure ?</em></h3>
               <p className="sidebar-cta-text">Nous créons des itinéraires personnalisés, pensés selon vos envies, votre rythme et votre budget.</p>
               <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
             </div>
