@@ -2100,7 +2100,7 @@ a { text-decoration: none; color: inherit; }
 /* SIDEBAR CTA FOND PHOTO + DÃ‰GRADÃ‰ */
 .sidebar-cta { padding: 0 !important; overflow: hidden; position: relative; min-height: 500px; background: var(--bg) !important; border-color: var(--line) !important; }
 .sidebar-cta-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; z-index: 0; }
-.sidebar-cta-gradient { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(248,244,239,1) 0%, rgba(248,244,239,0.95) 40%, rgba(248,244,239,0.6) 65%, rgba(248,244,239,0) 100%); z-index: 1; }
+.sidebar-cta-gradient { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(248,244,239,1) 0%, rgba(248,244,239,0.95) 35%, rgba(248,244,239,0.4) 55%, rgba(248,244,239,0) 70%); z-index: 1; }
 .sidebar-cta-body { position: relative; z-index: 2; padding: 24px; display: flex; flex-direction: column; gap: 10px; }
 .sidebar-cta-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: var(--dark) !important; line-height: 1.2; margin: 0 0 8px; }
 .sidebar-cta-title em { color: var(--gold); font-style: italic; }
