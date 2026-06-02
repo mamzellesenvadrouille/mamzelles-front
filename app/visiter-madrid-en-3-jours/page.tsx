@@ -84,11 +84,11 @@ export default function MadridPage() {
             <p>Pourquoi Madrid ? Nous avions envie de nous évader dans un endroit animé, à l&apos;ambiance chaleureuse, notamment à l&apos;approche des fêtes de Noël. Il fallait aussi que l&apos;on tienne compte des restrictions liées au Covid pour s&apos;y rendre.</p>
             <p>Notre choix s&apos;est immédiatement porté sur Madrid ! Nous avions donc un long week-end de 3 jours pour découvrir la capitale espagnole…</p>
             <p>Depuis ce séjour, Madrid est clairement devenue l&apos;une de nos villes coup de coeur en Europe ! Une véritable pépite où histoire et modernité forment le parfait équilibre.</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2229-scaled-1024x768.jpeg" alt="Palais de Cristal Madrid" className="article-img-full" loading="lazy" />
             <h3>Avant de commencer...</h3>
             <p>Madrid est la capitale espagnole, mais aussi le centre politique, économique et culturel d&apos;Espagne. Elle est la plus grande ville du pays : en comparaison, Madrid est 5 fois plus grande que Paris !</p>
             <p>Potentiellement, Madrid peut plaire à tout le monde, tant pour l&apos;architecture de ses bâtiments historiques, que pour sa culture, sa gastronomie, sa vie nocturne, ses multiples lieux où faire du shopping, et son soleil toute l&apos;année ! Chacun y trouve son compte !</p>
             <p>Si nous devions décrire Madrid en 3 mots, on la qualifierait d&apos;authentique, effervescente et tolérante. En ce qui nous concerne, on s&apos;y sentait trop bien ! Prévoir un séjour de 3 jours à Madrid est parfait pour vous imprégner de la « Vida Loca » !</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2229-scaled-1024x768.jpeg" alt="Palais de Cristal Madrid" className="article-img-full" loading="lazy" />
             <p>À Madrid, chaque barrio (notez quartier en espagnol !) a sa propre identité, son histoire, et ils sont nombreux ! Autant de quartiers qui montrent la diversité culturelle de cette ville que nous avons tant aimée.</p>
             <p>Allez, c&apos;est parti ! Voici notre itinéraire pour découvrir Madrid en 3 jours en fonction des quartiers.</p>
           </section>
@@ -411,7 +411,7 @@ export default function MadridPage() {
               <img src="/nous.webp" alt="Amélie et Laurie" className="sidebar-about-img" />
             </div>
             <h3 className="sidebar-about-title">À propos de nous</h3>
-            <p className="sidebar-about-text">Nous, c&apos;est Amélie &amp; Laurie, deux amoureuses de la vie et du voyage. Nous partageons ici nos aventures à travers le monde.</p>
+            <p className="sidebar-about-text">Nous, c&apos;est Amélie &amp; Laurie, deux amoureuses de la vie et du voyage. Nous partageons ici nos aventures à travers<br />le monde.</p>
             <a href="/qui-sommes-nous" className="sidebar-link">Notre histoire →</a>
           </div>
           <div className="sidebar-card sidebar-cta">
