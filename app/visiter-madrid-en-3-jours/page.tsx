@@ -414,8 +414,6 @@ export default function MadridPage() {
         </aside>
       </div>
 
-      </div>
-
       <ScrollToTop />
 
       {/* FOOTER */}
