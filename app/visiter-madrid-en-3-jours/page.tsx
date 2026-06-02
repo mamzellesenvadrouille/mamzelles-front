@@ -130,7 +130,7 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1782_jpg-scaled-768x1024.jpeg" alt="Mercado San Miguel Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <div className="article-must">
-              <span className="article-must-icon">⭐</span>
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À ne surtout pas manquer</strong><p>Le Mercado de San Miguel est ouvert tous les jours de 10H à minuit. Allez-y en fin d&apos;après-midi pour y grignoter des tapas et vous mêler aux Madrilènes qui s&apos;y retrouvent après le travail.</p></div>
             </div>
             <h3>La Plaza Mayor</h3>
@@ -263,7 +263,7 @@ export default function MadridPage() {
             </div>
             <p>Vous ne devrez louper en aucun cas le <strong>marché El Rastro</strong> qui a lieu chaque dimanche et jour férié, de 8H30 à 15H. Il est une institution à Madrid et est considéré comme l&apos;<strong>un des plus grands marchés aux puces d&apos;Europe</strong> ! Dans la rue principale, articles neufs et produits typiques, et dans les petites rues, le paradis des brocanteurs — antiquités, fripes vintages…</p>
             <div className="article-must">
-              <span className="article-must-icon">⭐</span>
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À ne surtout pas manquer</strong><p>El Rastro n&apos;a lieu que le dimanche et les jours fériés de 8h30 à 15h. Organisez votre séjour pour que votre 3ème jour tombe un dimanche — vous ne le regretterez pas !</p></div>
             </div>
             <div className="article-gallery-3">
