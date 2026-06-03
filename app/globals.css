@@ -2217,7 +2217,12 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== ANCIENS COMMENTAIRES ===== */
 .article-comment-thread {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+.article-comment-thread:last-child {
+  border-bottom: none;
 }
 .article-comments-list {
   display: flex;
@@ -2226,38 +2231,37 @@ a { text-decoration: none; color: inherit; }
 }
 .article-comment {
   display: flex;
-  gap: 16px;
-  padding: 0;
+  gap: 14px;
   background: none;
+  padding: 0;
 }
 .article-comment-reply {
   display: flex;
-  gap: 16px;
-  margin-left: 54px;
+  gap: 14px;
+  margin-left: 20px;
   margin-top: 16px;
-  padding-left: 20px;
-  border-left: 2px solid var(--gold);
+  padding-left: 16px;
+  border-left: 2px solid #e8d8c8;
   background: none;
   border-top: none;
 }
 .article-comment-avatar {
-  width: 38px;
-  height: 38px;
-  min-width: 38px;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
   border-radius: 50%;
-  background: var(--bg);
-  border: 1px solid var(--line);
+  background: #f0e8df;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--muted);
 }
 .article-comment-avatar-us {
   background: var(--gold);
-  border-color: var(--gold);
   color: #fff;
 }
 .article-comment-body { flex: 1; }
