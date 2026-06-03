@@ -1730,6 +1730,7 @@ a { text-decoration: none; color: inherit; }
 .article-section-h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--dark); margin-bottom: 32px; line-height: 1.1; }
 .article-section h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: var(--dark); margin: 32px 0 12px; }
 .article-section p { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 14px; }
+.article-section ul { padding-left: 20px; margin-bottom: 14px; }
 .article-section li { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 6px; }
 .article-intro { font-size: 16px !important; color: var(--dark) !important; font-weight: 400 !important; margin-bottom: 20px !important; }
 .article-link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; transition: color .2s; }
