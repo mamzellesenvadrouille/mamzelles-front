@@ -958,7 +958,7 @@ a { text-decoration: none; color: inherit; }
 
 .article-layout {
   display: grid;
-  grid-template-columns: 1fr 260px;
+  grid-template-columns: 1fr 270px;
   gap: 48px;
   max-width: 1200px;
   margin: 0 auto;
@@ -1635,7 +1635,7 @@ a { text-decoration: none; color: inherit; }
 /* ===========================
    ARTICLE LAYOUT
    =========================== */
-.article-layout { display: grid; grid-template-columns: 1fr 260px; gap: 48px; max-width: 1200px; margin: 0 auto; padding: 56px 52px; align-items: start; }
+.article-layout { display: grid; grid-template-columns: 1fr 270px; gap: 48px; max-width: 1200px; margin: 0 auto; padding: 56px 52px; align-items: start; }
 .article-main { min-width: 0; }
 
 /* EN BREF */
