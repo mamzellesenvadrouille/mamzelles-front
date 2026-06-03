@@ -1824,7 +1824,7 @@ a { text-decoration: none; color: inherit; }
 .article-avis-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
 .article-avis strong { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
 .article-avis p { font-size: 13px !important; color: #555 !important; line-height: 1.9 !important; margin-bottom: 0 !important; }
-.article-tip { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 32px 0; }
+.article-tip { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 32px 0 28px; }
 .article-tip-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
 .article-tip strong { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
 .article-tip strong:first-child { margin-bottom: 8px; }
@@ -2037,7 +2037,7 @@ a { text-decoration: none; color: inherit; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin: 20px 0 44px;
+  margin: 20px 0 28px;
 }
 .article-transport-item {
   display: flex;
@@ -2087,7 +2087,7 @@ a { text-decoration: none; color: inherit; }
   border-left: 3px solid var(--gold);
   border-radius: 4px;
   padding: 14px 18px;
-  margin: 20px 0 44px;
+  margin: 20px 0 28px;
 }
 .article-conseil p {
   font-family: 'Inter', sans-serif;
