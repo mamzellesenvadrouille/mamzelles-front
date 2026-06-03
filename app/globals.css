@@ -1998,23 +1998,11 @@ a { text-decoration: none; color: inherit; }
 .article-tip div strong + p strong,
 .article-avis div strong + p strong,
 .article-must div strong + p strong { display: inline; }
-/* ===== COMMENTAIRES ARTICLE ===== */
-.article-comments { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--line); }
-.article-comments-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: var(--dark); margin-bottom: 32px; }
-.article-comments-list { display: flex; flex-direction: column; gap: 0; }
-.article-comment { display: flex; gap: 16px; padding: 24px 0; border-bottom: 1px solid var(--line); }
-.article-comment-reply { margin-left: 48px; padding: 20px 0 20px 24px; border-left: 2px solid var(--gold); border-bottom: none; }
-.article-comment-avatar { width: 40px; height: 40px; min-width: 40px; border-radius: 50%; background: var(--bg); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 600; color: var(--muted); }
-.article-comment-avatar-us { background: var(--gold); border-color: var(--gold); color: #fff; }
-.article-comment-body { flex: 1; }
-.article-comment-meta { display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px; }
-.article-comment-author { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: var(--dark); }
-.article-comment-author-us { color: var(--gold); }
-.article-comment-date { font-family: 'Inter', sans-serif; font-size: 12px; color: var(--muted); }
-.article-comment-text { font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.7; color: var(--dark); margin: 0; }
-.article-comments-new { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--line); }
-.article-comments-new-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--dark); margin-bottom: 20px; }
-
-@media (max-width: 768px) {
-  .article-comment-reply { margin-left: 16px; }
+/* ===== SIDEBAR STICKY ===== */
+.sidebar-sticky {
+  position: sticky;
+  top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }

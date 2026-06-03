@@ -320,18 +320,7 @@ export default function MadridPage() {
             <p>Madrid peut se visiter <strong>toute l&apos;année</strong> grâce à son ensoleillement important. Les mois de <strong>mars à juin et de septembre à novembre</strong> sont les plus agréables. Évitez juillet et août : chaleur et foule au rendez-vous !</p>
           </section>
 
-          {/* CTA VOYAGE SUR MESURE */}
-          <div className="article-cta-block">
-            <div className="article-cta-content">
-              <p className="eyebrow-gold">Travel Planners sur mesure</p>
-              <h2>Vous préparez un séjour à Madrid ?</h2>
-              <p>Cet itinéraire est celui que nous avons testé lors de notre propre voyage, mais chaque voyageur a ses envies, son budget et son rythme. Nous créons des itinéraires entièrement personnalisés pour vous faire gagner du temps et vivre un voyage qui vous ressemble vraiment.</p>
-              <a href="/formules#formulaire" className="btn-gold">Créer mon voyage sur mesure</a>
-            </div>
-            <div className="article-cta-img-wrap">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2364-scaled-1024x768.jpeg" alt="Vue sur Madrid depuis le rooftop" />
-            </div>
-          </div>
+
 
           {/* CONCLUSION */}
           <div className="article-conclusion">
@@ -358,6 +347,7 @@ export default function MadridPage() {
 
         {/* SIDEBAR */}
         <aside className="article-sidebar">
+          <div className="sidebar-sticky">
 
           {/* EN BREF SIDEBAR */}
           <div className="sidebar-bref">
@@ -430,6 +420,7 @@ export default function MadridPage() {
               </a>
             </div>
             <a href="/blog" className="sidebar-link" style={{marginTop: '12px', display: 'inline-block'}}>Voir tous les articles →</a>
+          </div>
           </div>
         </aside>
       </div>
