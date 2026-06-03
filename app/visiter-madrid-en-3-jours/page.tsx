@@ -346,7 +346,7 @@ export default function MadridPage() {
             <div className="article-transport-grid">
               <div className="article-transport-item">
                 <div className="article-transport-icon">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--gold)"><rect x="5" y="0" width="7" height="7" rx="1" transform="rotate(45 5 5)"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
                 </div>
                 <div>
                   <strong>Métro ligne 8</strong>
@@ -355,7 +355,7 @@ export default function MadridPage() {
               </div>
               <div className="article-transport-item">
                 <div className="article-transport-icon">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--gold)"><rect x="5" y="0" width="7" height="7" rx="1" transform="rotate(45 5 5)"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
                 </div>
                 <div>
                   <strong>Bus Exprés Aeropuerto</strong>
@@ -364,7 +364,7 @@ export default function MadridPage() {
               </div>
               <div className="article-transport-item">
                 <div className="article-transport-icon">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--gold)"><rect x="5" y="0" width="7" height="7" rx="1" transform="rotate(45 5 5)"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
                 </div>
                 <div>
                   <strong>Taxi</strong>
@@ -373,7 +373,7 @@ export default function MadridPage() {
               </div>
               <div className="article-transport-item">
                 <div className="article-transport-icon">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--gold)"><rect x="5" y="0" width="7" height="7" rx="1" transform="rotate(45 5 5)"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
                 </div>
                 <div>
                   <strong>Uber</strong>
