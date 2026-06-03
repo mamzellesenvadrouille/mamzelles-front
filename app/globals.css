@@ -1998,11 +1998,3 @@ a { text-decoration: none; color: inherit; }
 .article-tip div strong + p strong,
 .article-avis div strong + p strong,
 .article-must div strong + p strong { display: inline; }
-/* ===== SIDEBAR STICKY ===== */
-.sidebar-sticky {
-  position: sticky;
-  top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}

@@ -322,12 +322,7 @@ export default function MadridPage() {
 
 
 
-          {/* CONCLUSION */}
-          <div className="article-conclusion">
-            <p><em>Nous espérons que notre article sur Madrid vous aura plu et qu&apos;il vous inspirera pour votre prochain voyage !</em></p>
-            <p><em>Si vous avez des questions, ou que vous souhaitez nous partager un retour d&apos;expérience, n&apos;hésitez pas à nous laisser un commentaire, à nous contacter via le <a href="/formules#formulaire" className="article-link">formulaire de contact</a> ou sur notre compte <a href="https://www.instagram.com/mamzellesenvadrouille/" target="_blank" rel="noopener noreferrer" className="article-link">Instagram</a>.</em></p>
-            <p><em>Nous nous ferons un plaisir de vous lire et de vous répondre !</em></p>
-          </div>
+
 
           {/* NEWSLETTER */}
           <NewsletterForm />
@@ -347,7 +342,6 @@ export default function MadridPage() {
 
         {/* SIDEBAR */}
         <aside className="article-sidebar">
-          <div className="sidebar-sticky">
 
           {/* EN BREF SIDEBAR */}
           <div className="sidebar-bref">
@@ -420,7 +414,6 @@ export default function MadridPage() {
               </a>
             </div>
             <a href="/blog" className="sidebar-link" style={{marginTop: '12px', display: 'inline-block'}}>Voir tous les articles →</a>
-          </div>
           </div>
         </aside>
       </div>
