@@ -279,6 +279,9 @@ export default function MadridPage() {
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1879-scaled-1024x768.jpeg" alt="El Rastro Madrid" className="article-img-full" loading="lazy" />
             <h3>📍 Atocha</h3>
+            <p>C&apos;est le quartier administratif de Madrid, mais il est surtout connu pour sa majestueuse gare ! En effet, la gare d&apos;Atocha est la plus importante de la capitale et propose aux voyageurs des trajets en train dans toute l&apos;Espagne mais aussi à l&apos;international. Inaugurée en 1851, cette oeuvre architecturale a, au fur et à mesure du temps, été rénovée et agrandie.</p>
+            <p>L&apos;ancien hall principal de la gare abrite un jardin tropical. Il faut dire que l&apos;endroit s&apos;y prête bien, la structure métallique et le toit en verre faisant office de serre. Le jardin de 4000M2 recense plus de 400 espèces de plantes différentes provenant des quatre coins du monde.</p>
+            <p>Nous vous conseillons vivement d&apos;y faire un petit tour. Vous trouverez sur place de nombreux cafés et restaurants. On se croirait dans un petit village nature !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1986-scaled-1024x768.jpeg" alt="Gare Atocha Madrid" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2002-scaled-768x1024.jpeg" alt="Atocha Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
