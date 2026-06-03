@@ -51,7 +51,7 @@ export default function MadridPage() {
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M17 8.5A6 6 0 1 0 17 15.5"/><line x1="5" y1="11" x2="14" y2="11"/><line x1="5" y1="13.5" x2="14" y2="13.5"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M16 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/><path d="M2 10h4M18 10h4"/></svg>
           <span>€€</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
@@ -61,7 +61,7 @@ export default function MadridPage() {
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4h5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           <span>Couple, amis, solo</span>
         </div>
       </div>
