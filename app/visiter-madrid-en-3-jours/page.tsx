@@ -342,18 +342,52 @@ export default function MadridPage() {
             <p>Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136€ pour deux. Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>. Le tarif y était plus avantageux que si on les avait achetés avec un comparateur de vols.</p>
             <p>Nous avons été en tout cas ravies de voyager avec cette compagnie. Aucun retard sur les vols aller et retour, personnel très sympa… Un petit en-cas sucré ou salé est offert pendant la traversée.</p>
             <h3>✓ Aéroport ↔︎ Centre ville</h3>
-            <p>Quelque soit la compagnie que vous choisirez, vous atterrirez à l&apos;<strong>aéroport Adolfo Suárez Madrid-Barajas</strong>. De là, vous pouvez prendre directement le <strong>métro ligne 8</strong> pour rejoindre le centre ville. Celui-ci dessert la station Nuevos Ministerios, où passent les lignes 6 et 10. Le tarif du trajet est de <strong>4€50</strong> et dure entre 15 et 25 min. Vous pouvez acheter les tickets aux guichets automatiques à la station de l&apos;aéroport.</p>
-            <p>Vous avez aussi la possibilité de prendre le <strong>bus Exprés Aeropuerto</strong>. Il circule 24h/24 entre la gare ferroviaire Puerta de Atocha et l&apos;aéroport. Attention, de 23h55 à 5h35, le départ s&apos;effectue de la Plaza de Cibeles, et non à la gare. Le tarif est de <strong>5€</strong> pour 40 min de trajet.</p>
-            <p>Vous pouvez aussi avoir recours au <strong>taxi</strong>. Ce n&apos;est pas le moyen de transport que nous recommandons étant donné que ceux cités ci-dessus ne coûtent vraiment pas chers. Cependant, si vous êtes très chargé·e·s ou à plusieurs, cela peut être intéressant. Il faut compter environ <strong>33€</strong> pour rejoindre le centre-ville.</p>
-            <p>Enfin, si vous souhaitez prendre un <strong>Uber</strong>, il est important de savoir qu&apos;ils ne se mélangent plus avec les taxis et ont leur propre zone : Parking P1 pour le T1 / Parking express pour le T2 / Parking P4, Module D, Étage 4 pour le T4.</p>
+            <p>Quelque soit la compagnie que vous choisirez, vous atterrirez à l&apos;<strong>aéroport Adolfo Suárez Madrid-Barajas</strong>. Plusieurs options s&apos;offrent à vous pour rejoindre le centre :</p>
+            <div className="article-transport-grid">
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+                </div>
+                <div>
+                  <strong>Métro ligne 8</strong>
+                  <span>4€50 · 15-25 min · Dessert Nuevos Ministerios (lignes 6 et 10). Tickets aux guichets automatiques à la station de l&apos;aéroport.</span>
+                </div>
+              </div>
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="7" width="20" height="12" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+                </div>
+                <div>
+                  <strong>Bus Exprés Aeropuerto</strong>
+                  <span>5€ · 40 min · 24h/24. Attention : de 23h55 à 5h35, départ depuis la Plaza de Cibeles (et non la gare Puerta de Atocha).</span>
+                </div>
+              </div>
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/><circle cx="12" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>
+                </div>
+                <div>
+                  <strong>Taxi</strong>
+                  <span>~33€ · Option pratique si vous êtes en groupe ou très chargé·e·s. Pas notre recommandation en solo.</span>
+                </div>
+              </div>
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                </div>
+                <div>
+                  <strong>Uber</strong>
+                  <span>Zone dédiée séparée des taxis : Parking P1 (T1) · Parking express (T2) · Parking P4, Module D, Étage 4 (T4).</span>
+                </div>
+              </div>
+            </div>
             <h3>✓ Comment se déplacer à Madrid ?</h3>
-            <p>L&apos;idéal avec cette capitale c&apos;est qu&apos;il fait beau très souvent, et qu&apos;il est de ce fait très agréable de déambuler à pied dans les rues de Madrid. Pour nous, c&apos;est le meilleur moyen de découvrir, d&apos;appréhender un endroit. Vous pouvez toutefois utiliser le <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">métro</a> ou le <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">bus</a> pour vous déplacer !</p>
-            <p>Le réseau de métro compte <strong>12 lignes</strong> desservant le centre. Les rames circulent entre 6h05 et 01h30. Les bus circulent entre 06h30 et 23h30.</p>
-            <p>Pour faire une visite complète de la ville sans trop d&apos;efforts, vous pouvez opter pour un <strong>tour en bus panoramique</strong> (toit décapotable). Vous aurez le choix entre 2 circuits avec des arrêts aux principaux lieux d&apos;intérêt. Pour les plus actifs, des <strong>vélos et trottinettes électriques</strong> sont disponibles en libre-service un peu partout en ville.</p>
-            <p><strong>Pour votre séjour de 3 jours</strong>, nous vous conseillons :</p>
+            <p>L&apos;idéal avec cette capitale c&apos;est qu&apos;il fait beau très souvent — déambuler à pied dans les rues est le meilleur moyen de découvrir Madrid. Vous pouvez toutefois utiliser le <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">métro</a> ou le <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">bus</a>.</p>
+            <p>Le réseau de <strong>métro</strong> compte 12 lignes desservant le centre (6h05–01h30). Les <strong>bus</strong> circulent de 06h30 à 23h30. Pour une visite sans effort, le <strong>bus panoramique</strong> (toit décapotable) propose 2 circuits avec arrêts aux principaux sites. Les plus actifs peuvent louer <strong>vélos ou trottinettes électriques</strong> en libre-service partout en ville.</p>
+            <p><strong>Notre conseil pour 3 jours :</strong></p>
             <ul>
-              <li>soit d&apos;acheter la carte rechargeable <strong>Multi (2€50) + 10 trajets Metrobús à 12€20</strong> (valable sur le réseau métro zone A et tout le réseau bus) — en vente dans toutes les stations et à l&apos;aéroport ;</li>
-              <li>soit une <strong>carte métro 48h à 14€20</strong> (-50% pour les enfants de moins de 11 ans) si vous pensez utiliser fréquemment le métro.</li>
+              <li>La carte rechargeable <strong>Multi (2€50) + 10 trajets Metrobús à 12€20</strong> — valable métro zone A et tout le réseau bus, en vente dans toutes les stations et à l&apos;aéroport ;</li>
+              <li>Ou une <strong>carte métro 48h à 14€20</strong> (-50% enfants de moins de 11 ans) si vous utilisez fréquemment le métro.</li>
             </ul>
             <h3>✓ Quand partir ?</h3>
             <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
