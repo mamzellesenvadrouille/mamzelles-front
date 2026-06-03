@@ -309,7 +309,10 @@ export default function MadridPage() {
 
           {/* INFOS PRATIQUES */}
           <section id="pratique" className="article-section">
-            <h2 className="article-section-h2">3 jours à Madrid, tout savoir pour organiser votre voyage</h2>
+            <div className="article-day-header">
+              <span className="article-day-badge">Infos pratiques</span>
+              <h2 className="article-section-h2">3 jours à Madrid, tout savoir pour organiser votre voyage</h2>
+            </div>
             <h3>✓ Où dormir ?</h3>
             <p>Nous avons logé à l&apos;<a href="https://www.booking.com/hotel/es/hostal-pizarro.fr.html" target="_blank" rel="noopener noreferrer" className="article-link">Hostal Goyal Pizzaro</a> dans le quartier de Malasaña. Idéalement situé, propre et spacieux, c&apos;est une adresse que nous recommandons sans hésiter. Pour les budgets plus élevés, le quartier de Salamanca offre de belles options hôtelières. Dans tous les cas, privilégiez un logement dans Malasaña ou El Centro pour être à pied de tout.</p>
             <h3>✓ Quel budget prévoir ?</h3>
