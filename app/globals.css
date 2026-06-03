@@ -2273,7 +2273,11 @@ a { text-decoration: none; color: inherit; }
   font-weight: 600;
   color: var(--dark);
 }
-.article-comment-author-us { color: var(--gold); }
+.article-comment-author-us { color: var(--gold); font-size: 12px; }
+.article-comment-reply .article-comment-text {
+  font-size: 13px;
+  color: #777;
+}
 .article-comment-date {
   font-family: 'Inter', sans-serif;
   font-size: 11px;
