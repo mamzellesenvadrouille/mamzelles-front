@@ -2079,63 +2079,20 @@ a { text-decoration: none; color: inherit; }
   .article-transport-grid { grid-template-columns: 1fr; }
 }
 
-/* ===== INFO BOX Ã‰DITORIALE ===== */
-.article-info-box {
+/* ===== ENCART CONSEIL ===== */
+.article-conseil {
   background: var(--bg);
-  border: 1px solid var(--gold);
-  border-left: 4px solid var(--gold);
-  border-radius: 8px;
-  padding: 24px 28px;
-  margin: 24px 0;
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 14px 18px;
+  margin: 20px 0;
 }
-.article-info-box-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--gold);
-  margin: 0 0 10px;
-}
-.article-info-box-main {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--dark);
-  margin: 0 0 10px;
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.article-info-box-price {
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--gold);
-}
-.article-info-box-desc {
+.article-conseil p {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   line-height: 1.7;
   color: var(--dark);
-  margin: 0 0 14px;
-}
-.article-info-box-alt {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--dark);
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
-  margin: 0 0 8px;
-}
-.article-info-box-note {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  color: var(--muted);
   margin: 0;
-  font-style: italic;
 }
 
 /* ===== LISTE Ã‰DITORIALE TRANSPORT ===== */

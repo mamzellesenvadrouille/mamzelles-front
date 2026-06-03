@@ -382,34 +382,15 @@ export default function MadridPage() {
               </div>
             </div>
             <h3>✓ Comment se déplacer à Madrid ?</h3>
-            <ul className="article-transport-list">
-              <li>
-                <span className="article-transport-list-dot" />
-                <div><strong>À pied</strong> — Notre préféré. Il fait beau très souvent à Madrid, et déambuler dans ses rues est le meilleur moyen de s&apos;imprégner de son ambiance unique.</div>
-              </li>
-              <li>
-                <span className="article-transport-list-dot" />
-                <div><strong>Métro</strong> — 12 lignes desservant le centre, de 6h05 à 01h30. <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">Plan du réseau →</a></div>
-              </li>
-              <li>
-                <span className="article-transport-list-dot" />
-                <div><strong>Bus</strong> — Réseau dense, de 06h30 à 23h30. <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">Planifier son trajet →</a></div>
-              </li>
-              <li>
-                <span className="article-transport-list-dot" />
-                <div><strong>Bus panoramique</strong> — Toit décapotable, 2 circuits avec arrêts aux principaux sites. Parfait pour une première découverte sans effort.</div>
-              </li>
-              <li>
-                <span className="article-transport-list-dot" />
-                <div><strong>Vélos &amp; trottinettes électriques</strong> — Location en libre-service, bornes partout en ville. Pour les plus actifs !</div>
-              </li>
+            <ul>
+              <li><strong>À pied</strong> — Notre préféré. Il fait beau très souvent à Madrid, et déambuler dans ses rues est le meilleur moyen de s&apos;imprégner de son ambiance unique.</li>
+              <li><strong>Métro</strong> — 12 lignes desservant le centre, de 6h05 à 01h30. <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">Plan du réseau →</a></li>
+              <li><strong>Bus</strong> — Réseau dense, de 06h30 à 23h30. <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">Planifier son trajet →</a></li>
+              <li><strong>Bus panoramique</strong> — Toit décapotable, 2 circuits avec arrêts aux principaux sites. Parfait pour une première découverte sans effort.</li>
+              <li><strong>Vélos &amp; trottinettes électriques</strong> — Location en libre-service, bornes partout en ville. Pour les plus actifs !</li>
             </ul>
-            <div className="article-info-box">
-              <p className="article-info-box-label">💡 Notre conseil pour 3 jours</p>
-              <p className="article-info-box-main">Carte Multi + 10 trajets Metrobús <span className="article-info-box-price">14,70 €</span></p>
-              <p className="article-info-box-desc">C&apos;est selon nous l&apos;option la plus pratique pour un séjour de 3 jours : valable sur le métro zone A et sur tout le réseau de bus. Achat possible dans toutes les stations et à l&apos;aéroport.</p>
-              <p className="article-info-box-alt"><strong>Alternative :</strong> Carte métro 48h à 14,20 €, intéressante si vous utilisez très fréquemment le métro.</p>
-              <p className="article-info-box-note">Note : -50 % pour les enfants de moins de 11 ans.</p>
+            <div className="article-conseil">
+              <p>💡 <strong>Notre conseil transport</strong> — Optez pour la carte Multi (2€50) + 10 trajets Metrobús (12€20), valable métro zone A et tout le réseau bus. En alternative, la carte métro 48h à 14€20 si vous privilégiez le métro. Dans les deux cas, -50 % pour les enfants de moins de 11 ans.</p>
             </div>
             <h3>✓ Quand partir ?</h3>
             <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
