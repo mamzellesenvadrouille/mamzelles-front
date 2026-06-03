@@ -208,6 +208,8 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2535-scaled-768x1024.jpeg" alt="Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2554-scaled-1024x768.jpeg" alt="Street-art Malasaña Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
+            <p>On en est certaine, vous apprécierez l&apos;ambiance de Malasaña. Ses rues pavées, ses façades colorées, son street-art, ses boutiques rétros et vintages où l&apos;on peut acheter des fringues au kilo vous charmeront.</p>
+            <p>Malasaña fait partie des barrios préférés des Madrilènes. C&apos;est THE PLACE TO BE pour les virées nocturnes. Vous y trouverez de nombreux restaurants, bars alternatifs, bars à tapas et clubs. L&apos;esprit de la « Movida » (= Vida Loca) est bien présent dans ce quartier. En effet, c&apos;est ici, dans les années 1980, qu&apos;est née la révolution sociale et culturelle.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1660_jpg-scaled-768x1024.jpeg" alt="Street-art Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2566-scaled-768x1024.jpeg" alt="Façade Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
