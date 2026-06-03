@@ -1599,31 +1599,7 @@ a { text-decoration: none; color: inherit; }
    COMPOSANTS Ãƒâ€°DITORIAUX
    =========================== */
 
-/* Notre avis */
-.article-avis {
-  display: flex;
-  gap: 16px;
-  background: #fdf8f3;
-  border: 1px solid #e8d5be;
-  border-radius: 8px;
-  padding: 22px 24px;
-  margin: 32px 0;
-}
 
-.article-avis-icon {
-  font-size: 22px;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.article-avis strong {
-  display: block;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 10px;
-}
 
 
 

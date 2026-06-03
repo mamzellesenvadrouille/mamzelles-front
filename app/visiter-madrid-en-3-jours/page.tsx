@@ -158,7 +158,7 @@ export default function MadridPage() {
             </div>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Sur la Plaza España se trouve un grand hôtel, le <strong>Riu</strong>. Son rooftop au 27ème étage offre une vue époustouflante à 360° sur la ville. Entrée : 5€ de 10h à 17h, et 10€ de 17h à 01h. Il y a une passerelle en verre — vous verrez ce qu&apos;il se passe sous vos pieds, 117M plus bas. Sensations garanties !</p></div>
+              <div><strong>Bon à savoir</strong><p>Sur la Plaza España se trouve un grand hôtel, le <a href="https://www.riu360rooftopbar.com/en/" target="_blank" rel="noopener noreferrer" className="article-link">Riu</a>. Son rooftop au 27ème étage offre une vue époustouflante à 360° sur la ville. Entrée : 5€ de 11h à 17h (lun-ven), et 10€ de 17h à 01h. Le week-end et jours fériés : 10€ toute la journée. Il y a une passerelle en verre — vous verrez ce qu&apos;il se passe sous vos pieds, 117M plus bas. Sensations garanties !</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1668_jpg-scaled-768x1024.jpeg" alt="Hôtel Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
