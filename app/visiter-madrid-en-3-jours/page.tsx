@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
+import ScrollToTop from '../components/ScrollToTop';
 import DisqusComments from '../components/DisqusComments';
 import NewsletterForm from '../components/NewsletterForm';
 
