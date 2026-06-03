@@ -1780,7 +1780,7 @@ a { text-decoration: none; color: inherit; }
 .article-comment-reply { margin-top: 16px; padding: 16px 20px; background: #fff; border-radius: 6px; border-left: 3px solid var(--gold); }
 
 /* SIDEBAR */
-.article-sidebar { display: flex; flex-direction: column; gap: 24px; position: sticky; bottom: 24px; align-self: end; }
+.article-sidebar { display: flex; flex-direction: column; gap: 24px; position: sticky; bottom: 24px; align-self: flex-end; }
 .sidebar-card { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; }
 .sidebar-card-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--dark); margin-bottom: 16px; }
 .sidebar-about-img-wrap { display: flex; justify-content: center; margin-bottom: 16px; }
@@ -1999,41 +1999,3 @@ a { text-decoration: none; color: inherit; }
 .article-tip div strong + p strong,
 .article-avis div strong + p strong,
 .article-must div strong + p strong { display: inline; }
-/* ===== BARRE FIXE CTA ===== */
-.article-sticky-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background: var(--dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding: 14px 24px;
-  border-top: 1px solid var(--gold);
-}
-.article-sticky-bar-text {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  color: #fff;
-  margin: 0;
-}
-.article-sticky-bar-text em {
-  color: var(--gold);
-  font-style: italic;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
-}
-.article-sticky-bar-btn {
-  white-space: nowrap;
-}
-@media (max-width: 768px) {
-  .article-sticky-bar {
-    flex-direction: column;
-    gap: 10px;
-    padding: 12px 20px;
-  }
-  .article-sticky-bar-text { font-size: 14px; text-align: center; }
-}

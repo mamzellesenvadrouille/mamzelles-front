@@ -419,11 +419,6 @@ export default function MadridPage() {
       </div>
 
 
-      {/* BARRE FIXE CTA */}
-      <div className="article-sticky-bar">
-        <p className="article-sticky-bar-text">Vous rêvez d&apos;un voyage <em>sur mesure ?</em></p>
-        <a href="/formules#formulaire" className="btn-gold article-sticky-bar-btn">Créer mon voyage</a>
-      </div>
       <ScrollToTop />
 
       {/* FOOTER */}
