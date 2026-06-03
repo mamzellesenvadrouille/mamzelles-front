@@ -2218,11 +2218,7 @@ a { text-decoration: none; color: inherit; }
 /* ===== ANCIENS COMMENTAIRES ===== */
 .article-comment-thread {
   margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--line);
-}
-.article-comment-thread:last-child {
-  border-bottom: none;
+  padding-bottom: 0;
 }
 .article-comments-list {
   display: flex;
