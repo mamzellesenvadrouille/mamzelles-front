@@ -2234,12 +2234,13 @@ a { text-decoration: none; color: inherit; }
 .article-comment-reply {
   display: flex;
   gap: 12px;
-  margin-left: 16px;
+  margin-left: 10%;
   margin-top: 10px;
   padding-left: 14px;
   border-left: 1px solid rgba(200, 170, 140, 0.5);
   background: none;
   border-top: none;
+  max-width: 90%;
 }
 .article-comment-avatar {
   width: 28px;
@@ -2280,8 +2281,8 @@ a { text-decoration: none; color: inherit; }
 }
 .article-comment-date {
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  color: var(--muted);
+  font-size: 10px;
+  color: #bbb;
 }
 .article-comment-text {
   font-family: 'Inter', sans-serif;
