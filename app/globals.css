@@ -2217,11 +2217,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== ANCIENS COMMENTAIRES ===== */
 .article-comment-thread {
-  background: var(--bg);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 }
 .article-comments-list {
   display: flex;
@@ -2231,14 +2227,18 @@ a { text-decoration: none; color: inherit; }
 .article-comment {
   display: flex;
   gap: 16px;
+  padding: 0;
+  background: none;
 }
 .article-comment-reply {
   display: flex;
   gap: 16px;
-  margin-left: 32px;
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
+  margin-left: 54px;
+  margin-top: 16px;
+  padding-left: 20px;
+  border-left: 2px solid var(--gold);
+  background: none;
+  border-top: none;
 }
 .article-comment-avatar {
   width: 38px;
