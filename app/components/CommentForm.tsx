@@ -59,7 +59,6 @@ export default function CommentForm({ articleTitle, articleUrl }: CommentFormPro
                 onChange={e => setEmail(e.target.value)}
                 placeholder="votre@email.com"
               />
-              <span className="comment-form-hint">Votre email ne sera pas publié.</span>
             </div>
           </div>
           <div className="comment-form-field">
