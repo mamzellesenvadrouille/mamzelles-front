@@ -2000,3 +2000,32 @@ a { text-decoration: none; color: inherit; }
 .article-tip div strong + p strong,
 .article-avis div strong + p strong,
 .article-must div strong + p strong { display: inline; }
+/* ===== BANDEAU EN BREF ===== */
+.article-bref-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding: 16px 40px;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.article-bref-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--dark);
+}
+.article-bref-bar-sep {
+  color: var(--gold);
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .article-bref-bar { padding: 14px 20px; gap: 10px 16px; }
+  .article-bref-bar-sep { display: none; }
+  .article-bref-bar-item { font-size: 12px; }
+}

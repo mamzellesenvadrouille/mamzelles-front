@@ -38,6 +38,34 @@ export default function MadridPage() {
 
     </div>
 
+      {/* BANDEAU EN BREF */}
+      <div className="article-bref-bar">
+        <div className="article-bref-bar-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>3 jours</span>
+        </div>
+        <span className="article-bref-bar-sep">•</span>
+        <div className="article-bref-bar-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <span>Mars à juin, sept. à nov.</span>
+        </div>
+        <span className="article-bref-bar-sep">•</span>
+        <div className="article-bref-bar-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M17 8.5A6 6 0 1 0 17 15.5"/><line x1="5" y1="11" x2="14" y2="11"/><line x1="5" y1="13.5" x2="14" y2="13.5"/></svg>
+          <span>€€</span>
+        </div>
+        <span className="article-bref-bar-sep">•</span>
+        <div className="article-bref-bar-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span>Facile</span>
+        </div>
+        <span className="article-bref-bar-sep">•</span>
+        <div className="article-bref-bar-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4h5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <span>Couple, amis, solo</span>
+        </div>
+      </div>
+
       {/* BLOC COUP DE COEUR */}
       <div className="article-coup-de-coeur">
           <div className="article-cdcr-header">
@@ -343,43 +371,7 @@ export default function MadridPage() {
         {/* SIDEBAR */}
         <aside className="article-sidebar">
 
-          {/* EN BREF SIDEBAR */}
-          <div className="sidebar-bref">
-            <h3 className="sidebar-bref-title">En bref</h3>
-            <div className="sidebar-bref-rule" />
-            <div className="sidebar-bref-items">
-              <div className="sidebar-bref-item">
-                <div className="sidebar-bref-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                </div>
-                <div><span className="sidebar-bref-label">Durée idéale</span><span className="sidebar-bref-value">3 jours</span></div>
-              </div>
-              <div className="sidebar-bref-item">
-                <div className="sidebar-bref-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-                </div>
-                <div><span className="sidebar-bref-label">Meilleure période</span><span className="sidebar-bref-value">Mars à juin, sept. à nov.</span></div>
-              </div>
-              <div className="sidebar-bref-item">
-                <div className="sidebar-bref-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 8.5A6 6 0 1 0 17 15.5"/><line x1="5" y1="11" x2="14" y2="11"/><line x1="5" y1="13.5" x2="14" y2="13.5"/></svg>
-                </div>
-                <div><span className="sidebar-bref-label">Budget moyen</span><span className="sidebar-bref-value">€€</span></div>
-              </div>
-              <div className="sidebar-bref-item">
-                <div className="sidebar-bref-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                </div>
-                <div><span className="sidebar-bref-label">Niveau</span><span className="sidebar-bref-value">Facile</span></div>
-              </div>
-              <div className="sidebar-bref-item">
-                <div className="sidebar-bref-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4h5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-                </div>
-                <div><span className="sidebar-bref-label">Type de voyage</span><span className="sidebar-bref-value">Couple, amis, solo</span></div>
-              </div>
-            </div>
-          </div>
+
           <div className="sidebar-card-white">
             <div className="sidebar-about-img-wrap">
               <img src="/nous.webp" alt="Amélie et Laurie" className="sidebar-about-img" />
