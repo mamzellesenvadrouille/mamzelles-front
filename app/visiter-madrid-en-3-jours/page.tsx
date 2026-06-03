@@ -61,7 +61,7 @@ export default function MadridPage() {
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="3"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg>
           <span>Couple, amis, solo</span>
         </div>
       </div>
@@ -404,8 +404,6 @@ export default function MadridPage() {
 
 
           {/* NEWSLETTER */}
-          <NewsletterForm />
-
           {/* COMMENTAIRES */}
           <section className="article-comments">
             <h2 className="article-comments-title">Commentaires</h2>
@@ -559,6 +557,26 @@ export default function MadridPage() {
 
           </section>
 
+          <NewsletterForm />
+
+          <div className="article-sidebar-articles">
+            <h3 className="sidebar-card-title">Articles récents</h3>
+            <div className="sidebar-articles">
+              <a href="/visiter-marrakech" className="sidebar-article">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Marrakech-75x75.jpeg" alt="Marrakech" />
+                <span>Marrakech : tous les secrets pour découvrir la ville rouge</span>
+              </a>
+              <a href="/visiter-londres-en-1-semaine" className="sidebar-article">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres-75x75.jpg" alt="Londres" />
+                <span>Visiter Londres en 1 semaine : l&apos;essentiel par quartier</span>
+              </a>
+              <a href="/road-trip-a-lanzarote" className="sidebar-article">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote-75x75.jpeg" alt="Lanzarote" />
+                <span>Road trip à Lanzarote : l&apos;île aux 300 volcans</span>
+              </a>
+            </div>
+            <a href="/blog" className="sidebar-link" style={{marginTop: '12px', display: 'inline-block'}}>Voir tous les articles →</a>
+          </div>
 
         </main>
 
@@ -582,24 +600,6 @@ export default function MadridPage() {
               <p className="sidebar-cta-text">Nous créons des itinéraires personnalisés, pensés selon vos envies, votre rythme et votre budget.</p>
               <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
             </div>
-          </div>
-          <div className="sidebar-card-white">
-            <h3 className="sidebar-card-title">Articles récents</h3>
-            <div className="sidebar-articles">
-              <a href="/visiter-marrakech" className="sidebar-article">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Marrakech-75x75.jpeg" alt="Marrakech" />
-                <span>Marrakech : tous les secrets pour découvrir la ville rouge</span>
-              </a>
-              <a href="/visiter-londres-en-1-semaine" className="sidebar-article">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres-75x75.jpg" alt="Londres" />
-                <span>Visiter Londres en 1 semaine : l&apos;essentiel par quartier</span>
-              </a>
-              <a href="/road-trip-a-lanzarote" className="sidebar-article">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote-75x75.jpeg" alt="Lanzarote" />
-                <span>Road trip à Lanzarote : l&apos;île aux 300 volcans</span>
-              </a>
-            </div>
-            <a href="/blog" className="sidebar-link" style={{marginTop: '12px', display: 'inline-block'}}>Voir tous les articles →</a>
           </div>
         </aside>
       </div>
