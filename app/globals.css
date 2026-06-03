@@ -1775,7 +1775,7 @@ a { text-decoration: none; color: inherit; }
 .article-conclusion p { font-size: 15px; line-height: 1.85; color: #555; margin-bottom: 0; }
 
 /* COMMENTAIRES */
-.article-comments { margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--line); }
+.article-comments { margin-top: 24px; padding-top: 0; }
 .article-comments-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--dark); margin-bottom: 32px; }
 .article-comment-thread {
   display: flex;
@@ -2142,8 +2142,8 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== FORMULAIRE COMMENTAIRE ===== */
 .comment-form {
-  margin-top: 32px;
-  padding-top: 32px;
+  margin-top: 16px;
+  padding-top: 16px;
 }
 .comment-form-title {
   font-family: 'Cormorant Garamond', serif;
