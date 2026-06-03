@@ -388,15 +388,6 @@ export default function MadridPage() {
             <p className="sidebar-about-text">Nous, c&apos;est Amélie &amp; Laurie, deux amoureuses de la vie et du voyage. Nous partageons ici nos aventures à travers<br />le monde.</p>
             <a href="/qui-sommes-nous" className="sidebar-link">Notre histoire →</a>
           </div>
-          <div className="sidebar-card sidebar-cta">
-            <img src="/home-hero.webp" alt="" className="sidebar-cta-bg-img" />
-            <div className="sidebar-cta-gradient" />
-            <div className="sidebar-cta-body">
-              <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage<br /><em>sur mesure ?</em></h3>
-              <p className="sidebar-cta-text">Nous créons des itinéraires personnalisés,<br />pensés selon vos envies, votre rythme<br />et votre budget.</p>
-              <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
-            </div>
-          </div>
           <div className="sidebar-card-white">
             <h3 className="sidebar-card-title">Articles récents</h3>
             <div className="sidebar-articles">
@@ -414,6 +405,15 @@ export default function MadridPage() {
               </a>
             </div>
             <a href="/blog" className="sidebar-link" style={{marginTop: '12px', display: 'inline-block'}}>Voir tous les articles →</a>
+          </div>
+          <div className="sidebar-card sidebar-cta sidebar-cta-sticky">
+            <img src="/home-hero.webp" alt="" className="sidebar-cta-bg-img" />
+            <div className="sidebar-cta-gradient" />
+            <div className="sidebar-cta-body">
+              <h3 className="sidebar-cta-title">Vous rêvez d&apos;un voyage<br /><em>sur mesure ?</em></h3>
+              <p className="sidebar-cta-text">Nous créons des itinéraires personnalisés,<br />pensés selon vos envies, votre rythme<br />et votre budget.</p>
+              <a href="/formules#formulaire" className="btn-gold">Créer mon voyage</a>
+            </div>
           </div>
         </aside>
       </div>
