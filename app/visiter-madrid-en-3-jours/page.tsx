@@ -292,12 +292,12 @@ export default function MadridPage() {
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
               <div><strong>L&apos;avis des MamZelles</strong><p>La gare d&apos;Atocha est souvent négligée par les touristes qui la traversent sans s&apos;y arrêter. C&apos;est une erreur ! Le jardin tropical intégré dans l&apos;ancienne verrière est un des endroits les plus insolites et apaisants de Madrid. Prévoyez 30 minutes minimum pour vous y promener et y prendre un café. C&apos;est gratuit et totalement inattendu.</p></div>
             </div>
-            <p>Si vous avez la chance d&apos;être à Madrid le 2ème week-end du mois, ne manquez pas le <strong>Mercado de Motores</strong> dans l&apos;ancienne gare de Delicias — artisans, créateurs, brocanteurs, wagons du XIXème siècle et food trucks.</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1954-scaled-1024x768.jpeg" alt="Mercado de Motores Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1959-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1962-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" />
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1954-scaled-1024x768.jpeg" alt="Mercado de Motores Madrid" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1959-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1962-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
+
             <h3>📍 Barrio de las Letras / Huertas</h3>
             <p>En face du <strong>musée Thyssen-Bornemisza</strong> se trouve le quartier des Lettres. Il tient son nom de son passé littéraire — de nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol. Des citations gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong> en témoignent encore. La Plaza Santa Ana, bordée de cafés et de restaurants, est le lieu idéal pour une petite pause.</p>
             <div className="article-gallery-2">
