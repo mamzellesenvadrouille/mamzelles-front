@@ -310,6 +310,10 @@ export default function MadridPage() {
           {/* INFOS PRATIQUES */}
           <section id="pratique" className="article-section">
             <h2 className="article-section-h2">3 jours à Madrid, tout savoir pour organiser votre voyage</h2>
+            <h3>✓ Où dormir ?</h3>
+            <p>Nous avons logé à l&apos;<a href="https://www.booking.com/hotel/es/hostal-pizarro.fr.html" target="_blank" rel="noopener noreferrer" className="article-link">Hostal Goyal Pizzaro</a> dans le quartier de Malasaña. Idéalement situé, propre et spacieux, c&apos;est une adresse que nous recommandons sans hésiter. Pour les budgets plus élevés, le quartier de Salamanca offre de belles options hôtelières. Dans tous les cas, privilégiez un logement dans Malasaña ou El Centro pour être à pied de tout.</p>
+            <h3>✓ Quel budget prévoir ?</h3>
+            <p>Madrid est une capitale accessible. Comptez environ <strong>80 à 120€ par personne et par jour</strong> en incluant l&apos;hébergement, les repas et les activités. Les tapas permettent de manger bien et pas cher — une bière + 2 tapas tourne autour de 4 à 6€ dans les bars du centre. Les musées nationaux (Prado, Reina Sofia) sont gratuits certains soirs.</p>
             <h3>✓ Arriver en avion</h3>
             <p>Il est désormais facile de trouver des vols directs à destination de Madrid à moindre coût. De <strong>nombreuses compagnies</strong> desservent maintenant la capitale espagnole. Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136€ pour deux. Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>.</p>
             <h3>✓ Aéroport ↔ Centre ville</h3>
@@ -318,7 +322,7 @@ export default function MadridPage() {
             <p>L&apos;idéal c&apos;est de se déplacer à pied — il fait beau très souvent et c&apos;est le meilleur moyen de découvrir la ville. Le réseau de <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">métro</a> compte 12 lignes (6h05-01h30), les <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">bus</a> circulent de 06h30 à 23h30.</p>
             <p><strong>Pour 3 jours</strong>, nous vous conseillons soit la carte Multi (2€50) + 10 trajets Metrobús à 12€20, soit une carte métro 48h à 14€20.</p>
             <h3>✓ Quand partir ?</h3>
-            <p>Madrid peut se visiter <strong>toute l&apos;année</strong> grâce à son ensoleillement important. Les mois de <strong>mai, juin et septembre</strong> sont les plus agréables. Évitez juillet et août : chaleur et foule au rendez-vous !</p>
+            <p>Madrid peut se visiter <strong>toute l&apos;année</strong> grâce à son ensoleillement important. Les mois de <strong>mars à juin et de septembre à novembre</strong> sont les plus agréables. Évitez juillet et août : chaleur et foule au rendez-vous !</p>
           </section>
 
           {/* CTA VOYAGE SUR MESURE */}
