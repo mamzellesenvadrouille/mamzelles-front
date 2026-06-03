@@ -2078,3 +2078,31 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   .article-transport-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== INFO BOX ===== */
+.article-info-box {
+  background: var(--bg);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 20px 0;
+}
+.article-info-box strong {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+.article-info-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.article-info-box li {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--dark);
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
