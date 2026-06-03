@@ -346,7 +346,11 @@ export default function MadridPage() {
           {/* COMMENTAIRES */}
           <section className="article-comments">
             <h2 className="article-comments-title">Commentaires</h2>
-            <DisqusComments />
+            <DisqusComments
+              url="https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours"
+              identifier="visiter-madrid-en-3-jours"
+              title="3 jours à Madrid : les incontournables de la capitale espagnole"
+            />
           </section>
 
 

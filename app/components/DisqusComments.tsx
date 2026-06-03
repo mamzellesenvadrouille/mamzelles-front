@@ -1,15 +1,21 @@
 'use client';
 import { DiscussionEmbed } from 'disqus-react';
 
-export default function DisqusComments() {
+interface DisqusCommentsProps {
+  url: string;
+  identifier: string;
+  title: string;
+}
+
+export default function DisqusComments({ url, identifier, title }: DisqusCommentsProps) {
   return (
     <div className="article-disqus">
       <DiscussionEmbed
         shortname="mamzellesenvadrouille"
         config={{
-          url: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours',
-          identifier: 'visiter-madrid-en-3-jours',
-          title: '3 jours à Madrid : les incontournables de la capitale espagnole',
+          url,
+          identifier,
+          title,
           language: 'fr_FR',
         }}
       />
