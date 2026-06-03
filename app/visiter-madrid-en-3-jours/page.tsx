@@ -222,31 +222,33 @@ export default function MadridPage() {
             <p>Autre style de quartier, autre ambiance ! Le barrio de <strong>Salamanca</strong> est le quartier chic de Madrid. Sur les grands boulevards, des restaurants gastronomiques et des bars un peu sélects, dans les petites rues, des boutiques de luxe et de créateurs.</p>
             <p>Pour les fans de « La Casa de Papel » : la façade utilisée pour représenter la banque d&apos;Espagne est en réalité le <strong>Consejo Superior de Investigaciones Científicas</strong>, Calle de Serrano, N°115.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2443-scaled-768x1024.jpeg" alt="Salamanca Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2431-scaled-1024x768.jpeg" alt="Salamanca Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2443-scaled-768x1024.jpeg" alt="Salamanca Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2431-scaled-1024x768.jpeg" alt="Salamanca Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <h3>📍 El Retiro</h3>
             <p>Depuis le « Circulo de Belles Artes », direction la <strong>Plaza de Cibeles</strong>. Sur cette place se dressent d&apos;imposants bâtiments, tel que le <strong>Palacio de Comunicaciones</strong>. Si vous avez envie de visiter de jolis musées, c&apos;est dans ce quartier que vous trouverez votre bonheur ! Le <strong>musée du Prado</strong>, le <strong>musée Thyssen-Bornemisza</strong> et le <strong>Centro de Arte Reina Sofia</strong> se trouvent à proximité du <strong>Parque del Retiro</strong>.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2116-scaled-1024x768.jpeg" alt="Banque d'Espagne Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2062-scaled-1024x768.jpeg" alt="Vue banque d'Espagne Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2116-scaled-1024x768.jpeg" alt="Banque d'Espagne Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2062-scaled-1024x768.jpeg" alt="Vue banque d'Espagne Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Ce magnifique <strong>Parque del Retiro</strong> est clairement le poumon de la capitale. Nous sommes rapidement tombées sur le lac, où nous n&apos;avons pas su résister à la tentation de faire un <strong>petit tour de barque</strong> pour admirer de près le <strong>Monument à Alfonso XII</strong>. C&apos;était une chouette expérience ! Nous avons déboursé 6€ pour 3/4 d&apos;heure de navigation.</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2121-scaled-1024x768.jpeg" alt="El Retiro Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2207-scaled-1024x768.jpeg" alt="Retiro Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2187-scaled-768x1024.jpeg" alt="Barque El Retiro Madrid" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2121-scaled-1024x768.jpeg" alt="El Retiro Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2207-scaled-1024x768.jpeg" alt="Retiro Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2174_jpg-scaled-768x1024.jpeg" alt="Barque El Retiro Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2211_jpg-scaled-768x1024.jpeg" alt="Fontaine El Retiro Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2223-scaled-1024x768.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2187-scaled-768x1024.jpeg" alt="Barque El Retiro Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2174_jpg-scaled-768x1024.jpeg" alt="Barque El Retiro Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p>Nous finissons par arriver au magnifique <strong>Palacio de Cristal</strong>, constitué de verre et de métal. Nous vous conseillons de vous y rendre en fin de journée… Cette structure de verre devient impressionnante lorsque la lumière du coucher de soleil la traverse.</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2211_jpg-scaled-768x1024.jpeg" alt="Fontaine El Retiro Madrid" className="article-img-full" loading="lazy" />
+            <p>Nous finissons par arriver au magnifique <strong>Palacio de Cristal</strong>, constitué de verre et de métal. Auparavant, cette serre servait à mettre à l&apos;abri des plantes exotiques en hiver. Aujourd&apos;hui, elle est utilisée comme centre d&apos;exposition.</p>
+            <p>Nous vous conseillons de vous y rendre en fin de journée… Cette structure de verre devient impressionnante lorsque la lumière du coucher de soleil la traverse.</p>
+            <p>Terminez votre balade dans la roseraie, située également dans le Parque del Retiro. Malheureusement, ce n&apos;était pas la meilleure période pour y découvrir les rosiers en fleur !</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2223-scaled-1024x768.jpeg" alt="Palacio de Cristal Madrid" className="article-img-full" loading="lazy" />
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2214-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2247-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2253-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2214-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2247-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2253-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
