@@ -2130,7 +2130,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== ANCIENS COMMENTAIRES ===== */
 .article-comment-thread {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   padding-bottom: 0;
 }
 .article-comments-list {
