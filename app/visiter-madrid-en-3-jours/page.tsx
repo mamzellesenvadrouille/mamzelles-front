@@ -346,7 +346,7 @@ export default function MadridPage() {
             <div className="article-transport-grid">
               <div className="article-transport-item">
                 <div className="article-transport-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--gold)"><rect x="5" y="0" width="7" height="7" rx="1" transform="rotate(45 5 5)"/></svg>
                 </div>
                 <div>
                   <strong>Métro ligne 8</strong>
@@ -355,7 +355,7 @@ export default function MadridPage() {
               </div>
               <div className="article-transport-item">
                 <div className="article-transport-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="7" width="20" height="12" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--gold)"><rect x="5" y="0" width="7" height="7" rx="1" transform="rotate(45 5 5)"/></svg>
                 </div>
                 <div>
                   <strong>Bus Exprés Aeropuerto</strong>
@@ -364,7 +364,7 @@ export default function MadridPage() {
               </div>
               <div className="article-transport-item">
                 <div className="article-transport-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/><circle cx="12" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--gold)"><rect x="5" y="0" width="7" height="7" rx="1" transform="rotate(45 5 5)"/></svg>
                 </div>
                 <div>
                   <strong>Taxi</strong>
@@ -373,7 +373,7 @@ export default function MadridPage() {
               </div>
               <div className="article-transport-item">
                 <div className="article-transport-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--gold)"><rect x="5" y="0" width="7" height="7" rx="1" transform="rotate(45 5 5)"/></svg>
                 </div>
                 <div>
                   <strong>Uber</strong>
@@ -382,53 +382,28 @@ export default function MadridPage() {
               </div>
             </div>
             <h3>✓ Comment se déplacer à Madrid ?</h3>
-            <div className="article-transport-grid">
-              <div className="article-transport-item">
-                <div className="article-transport-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="5" r="2"/><path d="M12 7v8"/><path d="M9 19l3-4 3 4"/></svg>
-                </div>
-                <div>
-                  <strong>À pied ⭐ Notre préféré</strong>
-                  <span>Il fait beau très souvent à Madrid — c&apos;est le meilleur moyen de découvrir la ville, de s&apos;imprégner de l&apos;ambiance et de ne rien manquer.</span>
-                </div>
-              </div>
-              <div className="article-transport-item">
-                <div className="article-transport-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
-                </div>
-                <div>
-                  <strong>Métro</strong>
-                  <span>12 lignes desservant le centre. Circulation de 6h05 à 01h30. <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">Plan du métro →</a></span>
-                </div>
-              </div>
-              <div className="article-transport-item">
-                <div className="article-transport-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="7" width="20" height="12" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-                </div>
-                <div>
-                  <strong>Bus</strong>
-                  <span>Circulation de 06h30 à 23h30. <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">Planifier son trajet →</a></span>
-                </div>
-              </div>
-              <div className="article-transport-item">
-                <div className="article-transport-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-                </div>
-                <div>
-                  <strong>Bus panoramique</strong>
-                  <span>Toit décapotable, 2 circuits avec arrêts aux principaux sites. Idéal pour une vue d&apos;ensemble sans effort.</span>
-                </div>
-              </div>
-              <div className="article-transport-item">
-                <div className="article-transport-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M9 19H7V9l4-5h5l4 5v10h-2"/><line x1="12" y1="4" x2="12" y2="19"/></svg>
-                </div>
-                <div>
-                  <strong>Vélos &amp; trottinettes</strong>
-                  <span>Location en libre-service, bornes un peu partout en ville. Pour les plus actifs !</span>
-                </div>
-              </div>
-            </div>
+            <ul className="article-transport-list">
+              <li>
+                <span className="article-transport-list-dot" />
+                <div><strong>À pied</strong> — Notre préféré. Il fait beau très souvent à Madrid, et déambuler dans ses rues est le meilleur moyen de s&apos;imprégner de son ambiance unique.</div>
+              </li>
+              <li>
+                <span className="article-transport-list-dot" />
+                <div><strong>Métro</strong> — 12 lignes desservant le centre, de 6h05 à 01h30. <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">Plan du réseau →</a></div>
+              </li>
+              <li>
+                <span className="article-transport-list-dot" />
+                <div><strong>Bus</strong> — Réseau dense, de 06h30 à 23h30. <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">Planifier son trajet →</a></div>
+              </li>
+              <li>
+                <span className="article-transport-list-dot" />
+                <div><strong>Bus panoramique</strong> — Toit décapotable, 2 circuits avec arrêts aux principaux sites. Parfait pour une première découverte sans effort.</div>
+              </li>
+              <li>
+                <span className="article-transport-list-dot" />
+                <div><strong>Vélos &amp; trottinettes électriques</strong> — Location en libre-service, bornes partout en ville. Pour les plus actifs !</div>
+              </li>
+            </ul>
             <div className="article-info-box">
               <strong>💡 Notre conseil pour 3 jours</strong>
               <ul>

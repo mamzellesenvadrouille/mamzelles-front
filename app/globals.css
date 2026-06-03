@@ -2106,3 +2106,34 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.6;
   margin-bottom: 6px;
 }
+
+/* ===== LISTE Ã‰DITORIALE TRANSPORT ===== */
+.article-transport-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.article-transport-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--dark);
+}
+.article-transport-list-dot {
+  min-width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-top: 8px;
+  display: inline-block;
+}
+.article-transport-list strong {
+  font-weight: 600;
+  color: var(--dark);
+}
