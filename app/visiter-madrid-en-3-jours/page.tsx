@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
-import ScrollToTop from '../components/ScrollToTop';
+import DisqusComments from '../components/DisqusComments';
 import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
@@ -17,15 +17,6 @@ export const metadata: Metadata = {
     type: 'article',
   },
 };
-
-const comments = [
-  { author: 'Solange Faure', date: 'il y a 2 ans', text: "Bonsoir, je m'inspire complètement de votre superbe compte rendu sur Madrid avec des photos qui font rêver. Merci beaucoup. Et bon voyage à vous pour d'autres destinations", reply: "Coucou ! On découvre seulement aujourd'hui votre petit message qui nous fait énormément plaisir ! 🥰 Heureuses de savoir que notre article ait pu vous inspirer pour votre séjour à Madrid. Merci beaucoup à vous aussi pour votre retour ! 😊" },
-  { author: 'Toubeau', date: 'il y a 1 an', text: "Bonjour, je vais bientôt à Madrid. J'ai établi mon planning en prenant vos infos. Un grand merci", reply: "Trop contentes d'avoir contribué à votre organisation ! 🤗 Cette ville est incroyable, on a tellement aimé ! Bons préparatifs et bon voyage. ✈️😊" },
-  { author: 'Nathalie', date: 'il y a 7 mois', text: "hola ! je vais à Madrid demain, avec mon fils, pour fêter ses 18 ans! visite du stade de foot du real (qui n'est pas dans votre récap !!), mais c'est le passage obligé pour mon garçon !! pour le reste, j'ai pris plein de notes sur vos déambulations! ça m'a donné envie! gracias", reply: "Bonjour, Merci pour votre retour ! 🤗 Joyeux anniversaire à votre garçon ! 🎉 On vous souhaite un magnifique séjour dans cette ville incroyable ! 🤩" },
-  { author: 'Celas', date: 'il y a 5 mois', text: "Bonjour, et merci pour vos partages 😊 avez-vous des adresses de logements à me conseiller pour Madrid svp ? Belle journée. Valerie", reply: "Bonjour, Non malheureusement, nous n'avons pas de logement à recommander. En espérant que vous avez trouvé votre bonheur ! 🤗 Belles fêtes de fin d'année et bon séjour à Madrid ! ☀️" },
-  { author: 'gaudefroy', date: 'il y a 5 mois', text: "nous partons dans 2 jours à Madrid et pour 2 jours , merci pour vos infos précieuses, j'ai tout noté !", reply: "Top ! Merci pour ce retour qui fait super plaisir ! 🤗🤗" },
-  { author: 'Derieux', date: 'il y a 3 mois', text: "Bonjour, merci à vous pour cette belle rétrospective et conseils d'un petit voyage de 3 jours à Madrid. Nous partons aussi pour 3 jours et super boulot de votre road book qui nous donne bien envie! Belle continuation professionnelle ( nous exerçons les mêmes métiers que vous) et surtout votre vie personnelle avec de beaux voyages!", reply: "Bonjour, Olala… On découvre seulement votre message aujourd'hui ! 🙈 Votre retour sur notre article nous fait énormément plaisir ! 🤗 On vous souhaite également une belle continuation et on espère que vous en avez aussi pris plein les yeux à Madrid ! ☀️" },
-];
 
 export default function MadridPage() {
   return (
@@ -353,33 +344,8 @@ export default function MadridPage() {
 
           {/* COMMENTAIRES */}
           <section className="article-comments">
-            <h2 className="article-comments-title">{comments.length} commentaires</h2>
-            <div className="article-comments-list">
-              {comments.map((c, i) => (
-                <div key={i} className="article-comment">
-                  <div className="article-comment-header">
-                    <div className="article-comment-avatar">{c.author[0].toUpperCase()}</div>
-                    <div>
-                      <span className="article-comment-author">{c.author}</span>
-                      <span className="article-comment-date">{c.date}</span>
-                    </div>
-                  </div>
-                  <p className="article-comment-text">{c.text}</p>
-                  {c.reply && (
-                    <div className="article-comment-reply">
-                      <div className="article-comment-header">
-                        <div className="article-comment-avatar reply-avatar">M</div>
-                        <div>
-                          <span className="article-comment-author">MamZelles en vadrouille</span>
-                          <span className="article-comment-date">Auteur</span>
-                        </div>
-                      </div>
-                      <p className="article-comment-text">{c.reply}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+            <h2 className="article-comments-title">Commentaires</h2>
+            <DisqusComments />
           </section>
 
         </main>
