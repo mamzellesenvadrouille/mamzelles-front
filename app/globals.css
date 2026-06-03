@@ -2127,3 +2127,9 @@ a { text-decoration: none; color: inherit; }
   font-weight: 600;
   color: var(--dark);
 }
+
+/* ===== MASQUER REACTIONS DISQUS ===== */
+.article-disqus iframe[src*="disqus"] {
+  margin-top: -180px;
+  clip-path: inset(180px 0 0 0);
+}
