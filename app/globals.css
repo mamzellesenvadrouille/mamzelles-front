@@ -2217,7 +2217,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== ANCIENS COMMENTAIRES ===== */
 .article-comment-thread {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   padding-bottom: 0;
 }
 .article-comments-list {
@@ -2227,24 +2227,24 @@ a { text-decoration: none; color: inherit; }
 }
 .article-comment {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   background: none;
   padding: 0;
 }
 .article-comment-reply {
   display: flex;
-  gap: 14px;
-  margin-left: 20px;
-  margin-top: 16px;
-  padding-left: 16px;
-  border-left: 2px solid #e8d8c8;
+  gap: 12px;
+  margin-left: 16px;
+  margin-top: 10px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(200, 170, 140, 0.5);
   background: none;
   border-top: none;
 }
 .article-comment-avatar {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
   border-radius: 50%;
   background: #f0e8df;
   border: none;
@@ -2252,7 +2252,7 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   justify-content: center;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--muted);
 }
@@ -2265,7 +2265,7 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: baseline;
   gap: 10px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .article-comment-author {
   font-family: 'Inter', sans-serif;
@@ -2276,7 +2276,7 @@ a { text-decoration: none; color: inherit; }
 .article-comment-author-us { color: var(--gold); }
 .article-comment-date {
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--muted);
 }
 .article-comment-text {
@@ -2288,5 +2288,5 @@ a { text-decoration: none; color: inherit; }
 }
 @media (max-width: 768px) {
   .comment-form-row { grid-template-columns: 1fr; }
-  .article-comment-reply { margin-left: 20px; }
+  .article-comment-reply { margin-left: 12px; }
 }
