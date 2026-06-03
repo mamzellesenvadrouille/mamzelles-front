@@ -22,10 +22,10 @@ export const metadata: Metadata = {
 export default function MadridPage() {
   return (
     <>
-    <div style={{ width: '100%', overflowX: 'hidden' }}>
+    <div style={{ width: '100%' }}>
 
       {/* HERO */}
-      <section className="hero hero-article">
+      <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
         <img className="hero-bg" src="/Madrid.webp" alt="Madrid, vue sur la Gran Vía" style={{objectPosition: 'center 0%'}} />
         <div className="hero-overlay" />
