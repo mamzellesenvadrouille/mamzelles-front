@@ -1107,7 +1107,7 @@ a { text-decoration: none; color: inherit; }
   font-size: 24px;
   font-weight: 600;
   color: var(--dark);
-  margin: 32px 0 12px;
+  margin: 32px 0 16px;
 }
 
 .article-section p {
@@ -1728,7 +1728,7 @@ a { text-decoration: none; color: inherit; }
 .article-section { margin-bottom: 64px; padding-bottom: 48px; border-bottom: 1px solid var(--line); }
 .article-section:last-of-type { border-bottom: none; }
 .article-section-h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--dark); margin-bottom: 32px; line-height: 1.1; }
-.article-section h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: var(--dark); margin: 32px 0 12px; }
+.article-section h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
 .article-section p { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 14px; }
 .article-section ul { padding-left: 20px; margin-bottom: 14px; }
 .article-section li { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 6px; }
@@ -1738,7 +1738,7 @@ a { text-decoration: none; color: inherit; }
 
 /* DAY HEADER */
 .article-day-header { margin-bottom: 32px; }
-.article-day-badge { display: inline-block; background: var(--gold); color: #fff; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 12px; }
+.article-day-badge { display: inline-block; background: var(--gold); color: #fff; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 20px; }
 .article-day-header h2 { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 500; color: var(--dark); line-height: 1.1; margin-bottom: 10px; }
 .article-day-desc { font-size: 15px !important; color: var(--muted) !important; font-style: italic; margin-bottom: 0 !important; }
 
