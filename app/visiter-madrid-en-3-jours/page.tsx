@@ -389,8 +389,12 @@ export default function MadridPage() {
               <li><strong>Bus panoramique</strong> — Toit décapotable, 2 circuits avec arrêts aux principaux sites. Parfait pour une première découverte sans effort.</li>
               <li><strong>Vélos &amp; trottinettes électriques</strong> — Location en libre-service, bornes partout en ville. Pour les plus actifs !</li>
             </ul>
-            <div className="article-conseil">
-              <p>💡 <strong>Notre conseil transport</strong> — Optez pour la carte Multi (2€50) + 10 trajets Metrobús (12€20), valable métro zone A et tout le réseau bus. En alternative, la carte métro 48h à 14€20 si vous privilégiez le métro. Dans les deux cas, -50 % pour les enfants de moins de 11 ans.</p>
+            <div className="article-avis">
+              <div className="article-avis-icon">💡</div>
+              <div>
+                <strong>Notre conseil transport</strong>
+                <p>Optez pour la carte Multi (2€50) + 10 trajets Metrobús (12€20), valable métro zone A et tout le réseau bus. En alternative, la carte métro 48h à 14€20 si vous privilégiez le métro. Dans les deux cas, -50 % pour les enfants de moins de 11 ans.</p>
+              </div>
             </div>
             <h3>✓ Quand partir ?</h3>
             <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
