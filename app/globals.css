@@ -2056,8 +2056,8 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== FORMULAIRE COMMENTAIRE ===== */
 .comment-form {
-  margin-top: 32px;
-  padding-top: 32px;
+  margin-top: 16px;
+  padding-top: 0;
 }
 .comment-form-title {
   font-family: 'Cormorant Garamond', serif;
@@ -2130,7 +2130,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== ANCIENS COMMENTAIRES ===== */
 .article-comment-thread {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   padding-bottom: 0;
 }
 .article-comments-list {
