@@ -1291,6 +1291,11 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 32px;
 }
 
+.article-comment-thread {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
 .article-comments-list {
   display: flex;
   flex-direction: column;
@@ -1772,6 +1777,11 @@ a { text-decoration: none; color: inherit; }
 /* COMMENTAIRES */
 .article-comments { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--line); }
 .article-comments-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--dark); margin-bottom: 32px; }
+.article-comment-thread {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
 .article-comments-list { display: flex; flex-direction: column; gap: 24px; }
 .article-comment { padding: 20px 24px; background: var(--bg); border-radius: 8px; border: 1px solid var(--line); }
 .article-comment-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
@@ -2206,6 +2216,11 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ===== ANCIENS COMMENTAIRES ===== */
+.article-comment-thread {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
 .article-comments-list {
   display: flex;
   flex-direction: column;
@@ -2214,13 +2229,21 @@ a { text-decoration: none; color: inherit; }
 .article-comment {
   display: flex;
   gap: 16px;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--line);
+  padding: 16px;
+  background: var(--bg);
+  border-radius: 8px;
+  border: 1px solid var(--line);
 }
 .article-comment-reply {
   margin-left: 48px;
+  border-left: 3px solid var(--gold);
   border-bottom: none;
-  padding: 4px 0 0;
+  border-top: none;
+  border-right: none;
+  border-radius: 0 8px 8px 0;
+  padding: 16px;
+  background: var(--bg);
+  margin-top: -8px;
 }
 .article-comment-avatar {
   width: 38px;
