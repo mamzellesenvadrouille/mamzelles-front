@@ -405,11 +405,11 @@ export default function MadridPage() {
               </li>
             </ul>
             <div className="article-info-box">
-              <strong>💡 Notre conseil pour 3 jours</strong>
-              <ul>
-                <li>La carte rechargeable <strong>Multi (2€50) + 10 trajets Metrobús à 12€20</strong> — valable métro zone A et tout le réseau bus, en vente dans toutes les stations et à l&apos;aéroport ;</li>
-                <li>Ou une <strong>carte métro 48h à 14€20</strong> (-50% enfants de moins de 11 ans) si vous utilisez fréquemment le métro.</li>
-              </ul>
+              <p className="article-info-box-label">💡 Notre conseil pour 3 jours</p>
+              <p className="article-info-box-main">Carte Multi + 10 trajets Metrobús <span className="article-info-box-price">14,70 €</span></p>
+              <p className="article-info-box-desc">C&apos;est selon nous l&apos;option la plus pratique pour un séjour de 3 jours : valable sur le métro zone A et sur tout le réseau de bus. Achat possible dans toutes les stations et à l&apos;aéroport.</p>
+              <p className="article-info-box-alt"><strong>Alternative :</strong> Carte métro 48h à 14,20 €, intéressante si vous utilisez très fréquemment le métro.</p>
+              <p className="article-info-box-note">Note : -50 % pour les enfants de moins de 11 ans.</p>
             </div>
             <h3>✓ Quand partir ?</h3>
             <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
