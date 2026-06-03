@@ -2037,7 +2037,7 @@ a { text-decoration: none; color: inherit; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin: 20px 0 28px;
+  margin: 20px 0 44px;
 }
 .article-transport-item {
   display: flex;
@@ -2087,7 +2087,7 @@ a { text-decoration: none; color: inherit; }
   border-left: 3px solid var(--gold);
   border-radius: 4px;
   padding: 14px 18px;
-  margin: 20px 0;
+  margin: 20px 0 44px;
 }
 .article-conseil p {
   font-family: 'Inter', sans-serif;
