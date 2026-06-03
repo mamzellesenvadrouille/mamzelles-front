@@ -13,7 +13,7 @@ export default function CommentForm({ articleTitle, articleUrl }: CommentFormPro
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   async function handleSubmit() {
-    if (!name.trim() || !email.trim() || !message.trim()) return;
+    if (!name.trim() || !message.trim()) return;
     setStatus('loading');
     try {
       const res = await fetch('/api/commentaire', {
@@ -52,7 +52,7 @@ export default function CommentForm({ articleTitle, articleUrl }: CommentFormPro
               />
             </div>
             <div className="comment-form-field">
-              <label>Email <span>*</span></label>
+              <label>Email <span className="comment-form-optional">(facultatif)</span></label>
               <input
                 type="email"
                 value={email}
@@ -77,7 +77,7 @@ export default function CommentForm({ articleTitle, articleUrl }: CommentFormPro
           <button
             className="btn-gold comment-form-submit"
             onClick={handleSubmit}
-            disabled={status === 'loading' || !name.trim() || !email.trim() || !message.trim()}
+            disabled={status === 'loading' || !name.trim() || !message.trim()}
           >
             {status === 'loading' ? 'Envoi en cours...' : 'Envoyer mon commentaire'}
           </button>

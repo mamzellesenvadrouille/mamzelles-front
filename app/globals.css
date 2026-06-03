@@ -8,7 +8,7 @@ a { text-decoration: none; color: inherit; }
 :root { --gold: #c8956c; --gold2: #b8834f; --bg: #f8f4ef; --dark: #1a1512; --line: #e8e0d6; --muted: #888; }
 
 /* BOUTONS */
-.btn-gold { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: #fff; padding: 10px 22px; border-radius: 2px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; transition: .3s; align-self: flex-start; margin-top: auto; }
+.btn-gold { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: #fff; padding: 10px 22px; border-radius: 2px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; transition: .3s; align-self: flex-start; margin-top: auto; border: none; outline: none; cursor: pointer; }
 .btn-gold:hover { background: var(--gold2); transform: translateY(-1px); }
 .btn-dark { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #fff; padding: 10px 22px; border-radius: 2px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; transition: .3s; }
 .btn-dark:hover { opacity: .85; }
