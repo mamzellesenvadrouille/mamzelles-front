@@ -564,7 +564,7 @@ export default function MadridPage() {
             <div className="article-related-grid">
               <a href="/visiter-marrakech" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="/Marrakech.webp" alt="Marrakech" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Marrakech-Blog.jpg" alt="Marrakech" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Maroc</span>
@@ -573,7 +573,7 @@ export default function MadridPage() {
               </a>
               <a href="/visiter-londres-en-1-semaine" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="/Londres.webp" alt="Londres" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres.jpg" alt="Londres" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Angleterre</span>
@@ -582,7 +582,7 @@ export default function MadridPage() {
               </a>
               <a href="/road-trip-a-lanzarote" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="/Lanzarote.webp" alt="Lanzarote" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote.jpeg" alt="Lanzarote" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Espagne</span>
