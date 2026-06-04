@@ -2130,13 +2130,13 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== ANCIENS COMMENTAIRES ===== */
 .article-comment-thread {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding-bottom: 0;
 }
 .article-comments-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 .article-comment {
   display: flex;
