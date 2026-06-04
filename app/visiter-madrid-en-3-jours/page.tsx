@@ -559,23 +559,38 @@ export default function MadridPage() {
 
           <NewsletterForm />
 
-          <div className="article-sidebar-articles">
-            <h3 className="sidebar-card-title">Articles récents</h3>
-            <div className="sidebar-articles">
-              <a href="/visiter-marrakech" className="sidebar-article">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Marrakech-75x75.jpeg" alt="Marrakech" />
-                <span>Marrakech : tous les secrets pour découvrir la ville rouge</span>
+          <div className="article-related">
+            <h3 className="article-related-title">À lire aussi</h3>
+            <div className="article-related-grid">
+              <a href="/visiter-marrakech" className="article-related-card">
+                <div className="article-related-img-wrap">
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Marrakech-scaled.jpeg" alt="Marrakech" className="article-related-img" />
+                </div>
+                <div className="article-related-body">
+                  <span className="article-related-cat">Maroc</span>
+                  <p className="article-related-title-card">Marrakech : tous les secrets pour découvrir la ville rouge</p>
+                </div>
               </a>
-              <a href="/visiter-londres-en-1-semaine" className="sidebar-article">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres-75x75.jpg" alt="Londres" />
-                <span>Visiter Londres en 1 semaine : l&apos;essentiel par quartier</span>
+              <a href="/visiter-londres-en-1-semaine" className="article-related-card">
+                <div className="article-related-img-wrap">
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres-scaled.jpg" alt="Londres" className="article-related-img" />
+                </div>
+                <div className="article-related-body">
+                  <span className="article-related-cat">Angleterre</span>
+                  <p className="article-related-title-card">Visiter Londres en 1 semaine : l&apos;essentiel par quartier</p>
+                </div>
               </a>
-              <a href="/road-trip-a-lanzarote" className="sidebar-article">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote-75x75.jpeg" alt="Lanzarote" />
-                <span>Road trip à Lanzarote : l&apos;île aux 300 volcans</span>
+              <a href="/road-trip-a-lanzarote" className="article-related-card">
+                <div className="article-related-img-wrap">
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote-scaled.jpeg" alt="Lanzarote" className="article-related-img" />
+                </div>
+                <div className="article-related-body">
+                  <span className="article-related-cat">Espagne</span>
+                  <p className="article-related-title-card">Road trip à Lanzarote : l&apos;île aux 300 volcans</p>
+                </div>
               </a>
             </div>
-            <a href="/blog" className="sidebar-link" style={{marginTop: '12px', display: 'inline-block'}}>Voir tous les articles →</a>
+            <a href="/blog" className="article-related-link">Voir tous nos articles →</a>
           </div>
 
         </main>
