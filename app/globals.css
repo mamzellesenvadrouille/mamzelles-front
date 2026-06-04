@@ -1278,7 +1278,7 @@ a { text-decoration: none; color: inherit; }
    =========================== */
 
 .article-comments {
-  margin-top: 12px;
+  margin-top: 0;
   padding-top: 0;
 }
 
@@ -2056,7 +2056,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== FORMULAIRE COMMENTAIRE ===== */
 .comment-form {
-  margin-top: 4px;
+  margin-top: 0;
   padding-top: 0;
 }
 .comment-form-title {
