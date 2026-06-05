@@ -1,22 +1,39 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function POST(req: Request) {
+export async function POST(request: NextRequest) {
   try {
-    const { email } = await req.json();
-    if (!email) return NextResponse.json({ error: 'Email requis' }, { status: 400 });
+    const { email } = await request.json();
 
-    const res = await fetch('https://api.resend.com/audiences/93ec6f5c-aa8c-45a6-bb02-b69812654487/contacts', {
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return NextResponse.json({ error: 'Email invalide' }, { status: 400 });
+    }
+
+    const res = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
         'Content-Type': 'application/json',
+        'api-key': process.env.BREVO_API_KEY!,
       },
-      body: JSON.stringify({ email, unsubscribed: false }),
+      body: JSON.stringify({
+        email,
+        listIds: [2],
+        updateEnabled: true,
+      }),
     });
 
-    if (!res.ok) return NextResponse.json({ error: 'Erreur Resend' }, { status: 500 });
-    return NextResponse.json({ success: true });
-  } catch {
+    if (res.ok || res.status === 204) {
+      return NextResponse.json({ success: true });
+    }
+
+    const data = await res.json();
+    // Contact déjà existant = pas une erreur
+    if (data.code === 'duplicate_parameter') {
+      return NextResponse.json({ success: true });
+    }
+
+    return NextResponse.json({ error: 'Erreur Brevo' }, { status: 500 });
+
+  } catch (error) {
     return NextResponse.json({ error: 'Erreur serveur' }, { status: 500 });
   }
 }
