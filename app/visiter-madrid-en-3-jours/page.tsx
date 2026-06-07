@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
+import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
