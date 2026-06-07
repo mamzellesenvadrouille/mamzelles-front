@@ -1824,7 +1824,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 768px) {
-  .article-layout { padding: 28px 20px; grid-template-columns: 1fr !important; }
+  html { overflow-x: hidden !important; }
+  .article-layout { padding: 28px 20px; grid-template-columns: 1fr !important; overflow-x: hidden; }
   .article-main { order: 1; overflow-x: hidden; }
   .article-sidebar { order: 2; position: static !important; }
   .article-coup-de-coeur { padding: 16px 24px !important; width: 100% !important; left: auto !important; transform: none !important; position: relative !important; }
