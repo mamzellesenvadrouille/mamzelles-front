@@ -52,7 +52,7 @@ export default function MadridPage() {
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M16 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/><path d="M2 10h4M18 10h4"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v2m0 8v2m-3-7h4a2 2 0 0 1 0 4H9"/><path d="M9 9h3a2 2 0 0 1 0 4"/></svg>
           <span>€€</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
