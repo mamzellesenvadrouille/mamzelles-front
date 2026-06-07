@@ -1801,6 +1801,7 @@ a { text-decoration: none; color: inherit; }
   .article-layout { grid-template-columns: 1fr; padding: 40px 30px; gap: 40px; }
   .hero-article .hero-desc { font-size: 14px !important; }
   .hero-article .hero-content { max-width: 65% !important; }
+  .hero-article .hero-content h1 em { white-space: normal !important; }
   .article-sidebar { position: static; }
   .article-bref-grid { grid-template-columns: repeat(3, 1fr); }
   .article-pratique-grid { grid-template-columns: 1fr; }
