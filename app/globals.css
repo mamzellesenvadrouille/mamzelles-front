@@ -971,6 +971,7 @@ a { text-decoration: none; color: inherit; }
   padding: 56px 52px;
   align-items: start;
 }
+.article-sidebar-col { display: flex; flex-direction: column; height: 100%; }
 
 .article-main {
   min-width: 0;
