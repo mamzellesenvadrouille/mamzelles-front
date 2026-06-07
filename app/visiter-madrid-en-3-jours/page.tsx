@@ -507,8 +507,8 @@ export default function MadridPage() {
             <div className="sidebar-about-img-wrap">
               <img src="/nous.webp" alt="Amélie et Laurie" className="sidebar-about-img" />
             </div>
-            <h3 className="sidebar-about-title">À propos de nous</h3>
-            <p className="sidebar-about-text">Nous, c&apos;est Amélie &amp; Laurie, deux amoureuses de la vie et du voyage. Nous partageons ici nos aventures à travers<br />le monde.</p>
+            <h3 className="sidebar-about-title">À propos <em className="sidebar-about-em">de nous</em></h3>
+            <p className="sidebar-about-text">Nous, c&apos;est Amélie &amp; Laurie, deux amoureuses de la vie et du voyage. Nous partageons ici nos aventures à travers le monde.</p>
             <a href="/qui-sommes-nous" className="sidebar-link">Notre histoire →</a>
           </div>
           <div className="sidebar-card sidebar-cta">
