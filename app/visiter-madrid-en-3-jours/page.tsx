@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function MadridPage() {
   return (
     <>
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '100%', overflowX: 'hidden' }}>
 
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>

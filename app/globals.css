@@ -1827,7 +1827,7 @@ a { text-decoration: none; color: inherit; }
   .article-layout { padding: 28px 20px; grid-template-columns: 1fr !important; }
   .article-main { order: 1; }
   .article-sidebar { order: 2; position: static !important; }
-  .article-coup-de-coeur { padding: 16px 20px !important; }
+  .article-coup-de-coeur { padding: 16px 24px !important; }
   .article-bref-grid { grid-template-columns: repeat(2, 1fr); }
   .article-gallery-3 { grid-template-columns: 1fr; }
   .article-gallery-3 img { height: 220px; }
