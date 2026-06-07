@@ -1799,12 +1799,13 @@ a { text-decoration: none; color: inherit; }
 /* RESPONSIVE ARTICLE */
 @media (max-width: 1024px) {
   .article-layout { grid-template-columns: 1fr; padding: 40px 30px; gap: 40px; }
+  .hero-desc { font-size: 14px !important; }
   .article-sidebar { position: static; }
   .article-bref-grid { grid-template-columns: repeat(3, 1fr); }
   .article-pratique-grid { grid-template-columns: 1fr; }
-  .article-coup-de-coeur { padding: 16px 20px !important; overflow: hidden; }
+  .article-coup-de-coeur { padding: 24px 40px !important; overflow: hidden; }
   .article-cdcr-grid { flex-wrap: wrap; }
-  .article-cdcr-item { flex: 1 1 0; }
+  .article-cdcr-item { flex: 1 1 40%; min-width: 0; }
   .article-newsletter { padding: 28px 24px; }
   .article-newsletter-inner { grid-template-columns: 1fr; gap: 24px; }
   .article-cta-block { grid-template-columns: 1fr; }
