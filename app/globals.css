@@ -1800,6 +1800,8 @@ a { text-decoration: none; color: inherit; }
 /* RESPONSIVE ARTICLE */
 @media (max-width: 1024px) {
   .article-layout { grid-template-columns: 1fr; padding: 40px 30px; gap: 40px; }
+  .hero-article .hero-content { max-width: 60% !important; }
+  .hero-article .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.85) 0%, rgba(10,5,2,0.6) 50%, rgba(10,5,2,0.3) 100%) !important; }
   .article-sidebar { position: static; }
   .article-bref-grid { grid-template-columns: repeat(3, 1fr); }
   .article-pratique-grid { grid-template-columns: 1fr; }
