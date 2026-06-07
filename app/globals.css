@@ -1805,7 +1805,7 @@ a { text-decoration: none; color: inherit; }
   .article-pratique-grid { grid-template-columns: 1fr; }
   .article-coup-de-coeur { padding: 24px 40px !important; overflow: hidden; }
   .article-cdcr-grid { flex-wrap: wrap; gap: 16px; }
-  .article-cdcr-item { flex: 1 1 0; }
+  .article-cdcr-item { flex: 1 1 0 !important; min-width: 0; }
   .article-newsletter { padding: 28px 24px; }
   .article-newsletter-inner { grid-template-columns: 1fr; gap: 24px; }
   .article-cta-block { grid-template-columns: 1fr; }
