@@ -1305,8 +1305,8 @@ a { text-decoration: none; color: inherit; }
   flex-direction: column;
   gap: 24px;
   position: sticky;
-  top: 24px;
-  align-self: flex-start;
+  bottom: 24px;
+  align-self: flex-end;
 }
 
 .sidebar-card {
@@ -1799,8 +1799,8 @@ a { text-decoration: none; color: inherit; }
 
 /* RESPONSIVE ARTICLE */
 @media (max-width: 1024px) {
-  .article-layout { grid-template-columns: 1fr 220px; padding: 40px 24px; gap: 24px; }
-  .article-sidebar { position: sticky; bottom: 24px; align-self: flex-end; }
+  .article-layout { grid-template-columns: 1fr; padding: 40px 30px; gap: 40px; }
+  .article-sidebar { position: static; }
   .article-bref-grid { grid-template-columns: repeat(3, 1fr); }
   .article-pratique-grid { grid-template-columns: 1fr; }
   .article-coup-de-coeur { padding: 24px 40px !important; overflow: hidden; }
