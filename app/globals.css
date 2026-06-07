@@ -1677,7 +1677,6 @@ a { text-decoration: none; color: inherit; }
 .article-comments-list-old { display: none; }
 
 /* SIDEBAR */
-.article-sidebar { display: flex; flex-direction: column; gap: 24px; position: sticky; bottom: 24px; align-self: flex-end; }
 .sidebar-card { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; }
 .sidebar-card-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--dark); margin-bottom: 16px; }
 .sidebar-about-img-wrap { display: flex; justify-content: center; margin-bottom: 16px; }
