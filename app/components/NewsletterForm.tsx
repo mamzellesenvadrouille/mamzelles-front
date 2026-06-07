@@ -1,18 +1,22 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import Script from 'next/script';
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle'|'loading'|'success'|'error'>('idle');
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const [turnstileToken, setTurnstileToken] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!turnstileToken) return;
     setStatus('loading');
     try {
       const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, turnstileToken }),
       });
       if (res.ok) { setStatus('success'); setEmail(''); }
       else setStatus('error');
@@ -20,27 +24,45 @@ export default function NewsletterForm() {
   };
 
   return (
-    <div className="article-newsletter">
-      <img src="/home-hero.webp" alt="" className="article-newsletter-bg" />
-      <div className="article-newsletter-overlay" />
-      <div className="article-newsletter-inner">
-        <div className="article-newsletter-text">
-          <span className="eyebrow-gold">Carnets de voyage</span>
-          <h3>Recevez nos prochains itinéraires</h3>
-          <p>À chaque nouvel article publié, nos itinéraires, bonnes adresses et coups de cœur directement<br className="desktop-only" /> dans votre boîte mail.</p>
+    <>
+      <Script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        strategy="lazyOnload"
+      />
+      <div className="article-newsletter">
+        <img src="/home-hero.webp" alt="" className="article-newsletter-bg" />
+        <div className="article-newsletter-overlay" />
+        <div className="article-newsletter-inner">
+          <div className="article-newsletter-text">
+            <span className="eyebrow-gold">Carnets de voyage</span>
+            <h3>Recevez nos prochains itinéraires</h3>
+            <p>À chaque nouvel article publié, nos itinéraires, bonnes adresses et coups de cœur directement<br className="desktop-only" /> dans votre boîte mail.</p>
+          </div>
+          <form className="article-newsletter-form" onSubmit={handleSubmit}>
+            {status === 'success' ? (
+              <p className="newsletter-success">✓ Merci ! Vous êtes inscrit·e.</p>
+            ) : (
+              <>
+                <input type="email" placeholder="Votre adresse email" value={email} onChange={e => setEmail(e.target.value)} required className="newsletter-input" />
+                <div
+                  ref={turnstileRef}
+                  className="cf-turnstile"
+                  data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+                  data-callback="onTurnstileSuccess"
+                  data-theme="dark"
+                />
+                <Script id="turnstile-callback" strategy="lazyOnload">{`
+                  function onTurnstileSuccess(token) {
+                    window.__turnstileToken = token;
+                  }
+                `}</Script>
+                <button type="submit" className="btn-gold" onClick={() => setTurnstileToken((window as any).__turnstileToken || '')} disabled={status === 'loading'}>{status === 'loading' ? '...' : "Je m'abonne"}</button>
+                {status === 'error' && <p className="newsletter-error">Une erreur est survenue, réessayez.</p>}
+              </>
+            )}
+          </form>
         </div>
-        <form className="article-newsletter-form" onSubmit={handleSubmit}>
-          {status === 'success' ? (
-            <p className="newsletter-success">✓ Merci ! Vous êtes inscrit·e.</p>
-          ) : (
-            <>
-              <input type="email" placeholder="Votre adresse email" value={email} onChange={e => setEmail(e.target.value)} required className="newsletter-input" />
-              <button type="submit" className="btn-gold" disabled={status === 'loading'}>{status === 'loading' ? '...' : "Je m'abonne"}</button>
-              {status === 'error' && <p className="newsletter-error">Une erreur est survenue, réessayez.</p>}
-            </>
-          )}
-        </form>
       </div>
-    </div>
+    </>
   );
 }
