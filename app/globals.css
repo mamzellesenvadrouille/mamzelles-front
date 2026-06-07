@@ -461,7 +461,7 @@ a { text-decoration: none; color: inherit; }
   .hero-blog .hero-content { padding: 0 24px 20px !important; }
   .formules-m-br { display: block; height: 0; }
   .hide-mobile-br { display: none !important; }
-  .hero-content h1 { font-size: 38px !important; white-space: normal !important; overflow-wrap: break-word !important; word-break: break-word !important; }
+  .hero-content h1 { font-size: 38px !important; overflow-wrap: break-word !important; word-break: break-word !important; }
   .hero-article .hero-overlay { background: linear-gradient(to bottom, rgba(10,5,2,0.45) 0%, rgba(10,5,2,0.75) 100%) !important; }
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 60vh !important; min-height: 320px !important; }
