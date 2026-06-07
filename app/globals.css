@@ -1284,6 +1284,15 @@ a { text-decoration: none; color: inherit; }
 }
 
 
+.article-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: sticky;
+  bottom: 24px;
+  align-self: flex-end;
+}
+
 .sidebar-card {
   background: var(--bg);
   border: 1px solid var(--line);
