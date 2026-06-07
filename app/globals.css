@@ -1841,7 +1841,7 @@ a { text-decoration: none; color: inherit; }
   .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }
   .article-cdcr-item:last-child { padding-left: 0 !important; }
   .scroll-top-btn { bottom: 20px; right: 20px; }
-  .hero-article .hero-content { padding: 0 24px 40px !important; }
+  .hero-article .hero-content { padding: 0 24px 10px !important; }
 }
 
 
