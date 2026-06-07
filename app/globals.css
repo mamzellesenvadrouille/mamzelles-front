@@ -1800,8 +1800,6 @@ a { text-decoration: none; color: inherit; }
 /* RESPONSIVE ARTICLE */
 @media (max-width: 1024px) {
   .article-layout { grid-template-columns: 1fr; padding: 40px 30px; gap: 40px; }
-  .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; }
-  .hero-article .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.85) 0%, rgba(10,5,2,0.6) 50%, rgba(10,5,2,0.3) 100%) !important; }
   .article-sidebar { position: static; }
   .article-bref-grid { grid-template-columns: repeat(3, 1fr); }
   .article-pratique-grid { grid-template-columns: 1fr; }
@@ -1814,6 +1812,11 @@ a { text-decoration: none; color: inherit; }
   .article-newsletter-inner { grid-template-columns: 1fr; gap: 24px; }
   .article-cta-block { grid-template-columns: 1fr; }
   .article-cta-img-wrap { height: 180px; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; padding-bottom: 80px !important; }
+  .hero-article .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.85) 0%, rgba(10,5,2,0.6) 50%, rgba(10,5,2,0.3) 100%) !important; }
 }
 
 @media (max-width: 768px) {
