@@ -1831,9 +1831,9 @@ a { text-decoration: none; color: inherit; }
   .article-coup-de-coeur { padding: 16px 24px !important; width: 100% !important; left: auto !important; transform: none !important; position: relative !important; }
   .article-bref-grid { grid-template-columns: repeat(2, 1fr); }
   .article-gallery-3 { grid-template-columns: 1fr; }
-  .article-gallery-3 img { height: 220px; }
+  .article-gallery-3 img { height: auto; aspect-ratio: unset; object-fit: cover; width: 100%; }
   .article-gallery-2 { grid-template-columns: 1fr; }
-  .article-gallery-2 img { height: 220px; }
+  .article-gallery-2 img { height: auto; aspect-ratio: unset; object-fit: cover; width: 100%; }
   .article-day-header h2 { font-size: 28px; }
   .article-section-h2 { font-size: 28px; }
   .article-cdcr-grid { flex-direction: column; }
