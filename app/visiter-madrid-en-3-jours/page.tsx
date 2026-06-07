@@ -33,7 +33,7 @@ export default function MadridPage() {
         <div className="hero-content">
           <h1>3 jours à Madrid<br /><em>Les incontournables de la capitale espagnole</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Notre itinéraire détaillé pour découvrir Madrid en 3 jours, entre quartiers emblématiques, monuments incontournables et adresses que nous avons adorées.</p>
+          <p className="hero-desc">Notre itinéraire détaillé pour découvrir Madrid en 3 jours,<br className="hide-mobile-br" />entre quartiers emblématiques, monuments incontournables<br className="hide-mobile-br" />et adresses que nous avons adorées.</p>
         </div>
       </section>
 
