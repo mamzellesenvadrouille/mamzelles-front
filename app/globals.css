@@ -466,7 +466,8 @@ a { text-decoration: none; color: inherit; }
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 60vh !important; min-height: 320px !important; }
   .blog-card-img.madrid { object-position: center 25% !important; }
-  .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 0.52em !important; }
+  .hero-article .hero-content { padding: 0 24px 36px !important; }
+  .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 0.52em !important; white-space: normal !important; }
   .qsn-hero-content { padding: 0 24px 50px !important; max-width: 100% !important; }
   .qsn-hero-sub br { display: none !important; }
   .qsn-hero-sub { margin-bottom: 24px !important; }
