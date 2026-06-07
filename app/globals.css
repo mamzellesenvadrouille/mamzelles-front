@@ -1711,7 +1711,7 @@ a { text-decoration: none; color: inherit; }
 .sidebar-card { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; }
 .sidebar-card-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--dark); margin-bottom: 16px; }
 .sidebar-about-img-wrap { display: flex; justify-content: center; margin-bottom: 16px; }
-.sidebar-about-img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); }
+.sidebar-about-img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); }
 .sidebar-about-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: var(--dark); margin-bottom: 6px; text-align: center; }
 .sidebar-about-title::after { content: ''; display: block; width: 30px; height: 2px; background: var(--gold); margin: 8px auto 10px; }
 .sidebar-about-em { color: var(--gold); font-style: italic; }
