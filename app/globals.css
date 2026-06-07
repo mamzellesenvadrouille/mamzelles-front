@@ -1291,6 +1291,7 @@ a { text-decoration: none; color: inherit; }
   position: sticky;
   top: 24px;
   align-self: flex-start;
+  will-change: transform;
 }
 
 .sidebar-card {
