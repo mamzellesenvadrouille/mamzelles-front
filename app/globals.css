@@ -1825,6 +1825,7 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 768px) {
   .article-layout { padding: 28px 20px; }
+  .article-sidebar { display: none !important; }
   .article-bref-grid { grid-template-columns: repeat(2, 1fr); }
   .article-gallery-3 { grid-template-columns: 1fr; }
   .article-gallery-3 img { height: 220px; }
