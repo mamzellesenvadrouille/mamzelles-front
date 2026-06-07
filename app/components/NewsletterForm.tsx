@@ -50,6 +50,7 @@ export default function NewsletterForm() {
                   data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
                   data-callback="onTurnstileSuccess"
                   data-theme="dark"
+                  data-size="invisible"
                 />
                 <Script id="turnstile-callback" strategy="lazyOnload">{`
                   function onTurnstileSuccess(token) {
