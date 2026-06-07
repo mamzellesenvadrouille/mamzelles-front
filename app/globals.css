@@ -462,6 +462,7 @@ a { text-decoration: none; color: inherit; }
   .formules-m-br { display: block; height: 0; }
   .hide-mobile-br { display: none !important; }
   .hero-content h1 { font-size: 38px !important; white-space: normal !important; }
+  .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .qsn-hero-content { padding: 0 24px 50px !important; max-width: 100% !important; }
   .qsn-hero-sub br { display: none !important; }
   .qsn-hero-sub { margin-bottom: 24px !important; }
@@ -1816,8 +1817,9 @@ a { text-decoration: none; color: inherit; }
   .article-day-header h2 { font-size: 28px; }
   .article-section-h2 { font-size: 28px; }
   .article-cdcr-grid { flex-direction: column; }
-  .article-cdcr-item { flex: 1; border-left: none; border-top: 1px solid var(--line); padding: 12px 0 0; }
-  .article-cdcr-item:first-child { border-top: none; padding-top: 0; }
+  .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; }
+  .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }
+  .article-cdcr-item:last-child { padding-left: 0 !important; }
   .scroll-top-btn { bottom: 20px; right: 20px; }
   .hero-article .hero-content { padding: 0 24px; }
 }
