@@ -57,7 +57,7 @@ export default function CommentsList({ comments, initialCount = 3 }: CommentsLis
           className="comments-show-more"
           onClick={() => setShowAll(true)}
         >
-          Voir les {remaining} commentaire{remaining > 1 ? 's' : ''} suivant{remaining > 1 ? 's' : ''} →
+          Voir les commentaires suivants →
         </button>
       )}
     </div>
