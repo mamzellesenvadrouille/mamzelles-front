@@ -1799,7 +1799,7 @@ a { text-decoration: none; color: inherit; }
 
 /* RESPONSIVE ARTICLE */
 @media (max-width: 1024px) {
-  .article-layout { grid-template-columns: 1fr; padding: 40px 30px; gap: 40px; }
+  .article-layout { grid-template-columns: 1fr 240px; padding: 40px 30px; gap: 32px; }
   .article-sidebar { position: static; }
   .article-bref-grid { grid-template-columns: repeat(3, 1fr); }
   .article-pratique-grid { grid-template-columns: 1fr; }
