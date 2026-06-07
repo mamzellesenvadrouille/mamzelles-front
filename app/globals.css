@@ -1798,9 +1798,8 @@ a { text-decoration: none; color: inherit; }
 .scroll-top-btn:hover { background: var(--gold); transform: translateY(-2px); }
 
 /* RESPONSIVE ARTICLE */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .article-layout { grid-template-columns: 1fr; padding: 40px 30px; gap: 40px; }
-  .hero-article .hero-desc { font-size: 14px !important; }
   .article-sidebar { position: static; }
   .article-bref-grid { grid-template-columns: repeat(3, 1fr); }
   .article-pratique-grid { grid-template-columns: 1fr; }
