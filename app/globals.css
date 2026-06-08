@@ -1811,7 +1811,7 @@ a { text-decoration: none; color: inherit; }
   .desktop-only { display: none !important; }
   .article-newsletter-inner { grid-template-columns: 1fr 1fr; }
   .newsletter-input { max-width: 380px !important; }
-  .article-newsletter .btn-gold { padding: 12px 28px !important; font-size: 10px !important; letter-spacing: 2px !important; }
+  .article-newsletter .btn-gold { padding: 10px 22px !important; font-size: 10px !important; letter-spacing: 2px !important; }
   .article-sidebar { position: sticky; bottom: 24px; align-self: flex-end; }
   .hero-article .hero-desc { font-size: 14px !important; }
   .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; }
