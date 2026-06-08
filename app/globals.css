@@ -1802,6 +1802,10 @@ a { text-decoration: none; color: inherit; }
 /* RESPONSIVE ARTICLE */
 @media (min-width: 769px) and (max-width: 1024px) {
   .article-layout { grid-template-columns: 1fr 200px; padding: 40px 30px; gap: 24px; }
+  .sidebar-about-title { font-size: 20px !important; }
+  .sidebar-cta-body { padding: 20px !important; }
+  .sidebar-card-white { padding: 16px !important; }
+  .btn-gold { padding: 8px 14px !important; font-size: 9px !important; letter-spacing: 1.5px !important; }
   .article-sidebar { position: sticky; bottom: 24px; align-self: flex-end; }
   .hero-article .hero-desc { font-size: 14px !important; }
   .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; }
