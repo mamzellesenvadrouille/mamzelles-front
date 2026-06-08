@@ -1808,6 +1808,8 @@ a { text-decoration: none; color: inherit; }
   .sidebar-card-white { padding: 16px !important; }
   .btn-gold { padding: 8px 14px !important; font-size: 9px !important; letter-spacing: 1.5px !important; }
   .tablet-only { display: inline !important; }
+  .desktop-only { display: none !important; }
+  .article-newsletter-inner { grid-template-columns: 1fr 1fr; }
   .article-sidebar { position: sticky; bottom: 24px; align-self: flex-end; }
   .hero-article .hero-desc { font-size: 14px !important; }
   .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; }
