@@ -191,14 +191,14 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2371-scaled-768x1024.jpeg" alt="Vue Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2350-scaled-768x1024.jpeg" alt="Cocktail Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p>De la Place d&apos;Espagne, remontez la Gran Via. Vous passerez alors par la <strong>Plaza del Callao</strong> et le célèbre <strong>Edificio Carrion</strong> avec son mythique panneau publicitaire Schweppes. L&apos;<strong>Edificio Telefónica</strong> est très imposant, vous le reconnaitrez facilement.</p>
+            <p>De la Place d&apos;Espagne, remontez la Gran Via. Vous passerez alors par la <strong>Plaza del Callao</strong> et le célèbre <strong>Edificio Carrion</strong> avec son mythique panneau publicitaire Schweppes. Vous avez suivi la série « Les Demoiselles du Téléphone » ? Le bâtiment qui a servi pour le décor se trouve un peu plus haut sur Gran Via. L&apos;<strong>Edificio Telefónica</strong> est très imposant, vous le reconnaitrez facilement. Juste en face de celui-ci se trouve un McDonald&apos;s… Rien d&apos;incroyable, mais il fait partie des plus beaux restaurants de la marque dans le monde.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2341-scaled-768x1024.jpeg" alt="Edificio Carrion Schweppes Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2102-scaled-768x1024.jpeg" alt="Edificio Telefónica Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <h3>L&apos;Edificio Metropolis & le Circulo de Bellas Artes</h3>
-            <p>Lorsque vous arriverez au bas de l&apos;avenue, vous tomberez sur le célèbre <strong>Edificio Metropolis</strong> et sa magnifique coupole. Il est l&apos;édifice le plus photographié de Madrid.</p>
-            <p>Nous vous conseillons de monter en haut du <strong>Circulo de Bellas Artes</strong>, un centre culturel situé juste en face. Moyennant 4€, vous pourrez profiter de son rooftop avec une vue exceptionnelle sur la ville.</p>
+            <p>Lorsque vous arriverez au bas de l&apos;avenue, vous tomberez sur le célèbre <strong>Edificio Metropolis</strong> et sa magnifique coupole. Levez les yeux pour admirer l&apos;architecture de ce bâtiment, dessiné par des Français. Il est l&apos;édifice le plus photographié de Madrid.</p>
+            <p>Nous vous conseillons de monter en haut du <strong>Circulo de Bellas Artes</strong>, un centre culturel situé juste en face. Moyennant 4€, vous pourrez profiter de son rooftop avec une vue exceptionnelle sur la ville. Dans la partie lounge, où de confortables « beds » sont installés, vous pourrez lézarder au soleil. De là-haut, entre autres, vous verrez d&apos;un côté la banque d&apos;Espagne, la Plaza de Cibeles et son palais, et de l&apos;autre, le Metropolis avec son dôme en ardoise et sa statue ailée.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2051-scaled-768x1024.jpeg" alt="Edificio Metropolis Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2055-scaled-768x1024.jpeg" alt="Vue Metropolis Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -221,6 +221,7 @@ export default function MadridPage() {
             </div>
             <h3>📍 Malasaña</h3>
             <p>Il est le 1er quartier que nous avons découvert car c&apos;est ici que nous avons décidé de poser nos valises pour ces 3 jours. Au moment où nous cherchions un hôtel, notre choix s&apos;est rapidement porté sur ce quartier car il est décrit comme <strong>branché</strong>, <strong>alternatif</strong>, avec une <strong>identité forte</strong>, et une <strong>atmosphère prégnante</strong>.</p>
+            <p>C&apos;est exactement ce que nous avons découvert ! Un surprenant quartier où l&apos;on se laisse facilement porter à la mode madrilène !</p>
             <p>Nous avons donc logé à l&apos;<a href="https://www.booking.com/hotel/es/hostal-pizarro.fr.html" target="_blank" rel="noopener noreferrer" className="article-link">Hostal Goyal Pizzaro</a>. Cet établissement, situé à proximité du métro et des lieux incontournables à visiter, est installé dans un bâtiment de style Art nouveau. La chambre spacieuse et très propre, donnant sur la ville, fait de cet hôtel une adresse de qualité.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1652_jpg-scaled-768x1024.jpeg" alt="Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -242,7 +243,8 @@ export default function MadridPage() {
             </div>
             <h3>📍 Salamanca</h3>
             <p>Autre style de quartier, autre ambiance ! Le barrio de <strong>Salamanca</strong> est le quartier chic de Madrid. Sur les grands boulevards, des restaurants gastronomiques et des bars un peu sélects, dans les petites rues, des boutiques de luxe et de créateurs.</p>
-            <p>Pour les fans de « La Casa de Papel » : la façade utilisée pour représenter la banque d&apos;Espagne est en réalité le <strong>Consejo Superior de Investigaciones Científicas</strong>, Calle de Serrano, N°115.</p>
+            <p>Pour les fans de « La Casa de Papel » : la façade utilisée pour représenter la banque d&apos;Espagne est en réalité le <strong>Consejo Superior de Investigaciones Científicas</strong>, Calle de Serrano, N°115. Ne pouvant pas bloquer la circulation dans le secteur stratégique de la Banque d&apos;Espagne pendant le temps du tournage, le bâtiment utilisé comme décor est en fait celui du « Consejo Superior de Investigaciones Científicas ».</p>
+            <p>Concrètement, nous avons trouvé Salamanca sympa pour s&apos;y balader, mais sans grand intérêt si vous n&apos;y venez pas dans un but précis.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2443-scaled-768x1024.jpeg" alt="Salamanca Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2431-scaled-1024x768.jpeg" alt="Salamanca Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -253,7 +255,8 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2116-scaled-1024x768.jpeg" alt="Banque d'Espagne Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2062-scaled-1024x768.jpeg" alt="Vue banque d'Espagne Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <p>Ce magnifique <strong>Parque del Retiro</strong> est clairement le poumon de la capitale. Nous sommes rapidement tombées sur le lac, où nous n&apos;avons pas su résister à la tentation de faire un <strong>petit tour de barque</strong> pour admirer de près le <strong>Monument à Alfonso XII</strong>. C&apos;était une chouette expérience ! Nous avons déboursé 6€ pour 3/4 d&apos;heure de navigation.</p>
+            <p>Ce magnifique <strong>Parque del Retiro</strong> est clairement le poumon de la capitale, un oasis végétal au coeur de Madrid. Du côté de l&apos;entrée principale se trouve l&apos;imposante <strong>Puerta de Alcalà</strong>. Nous vous conseillons d&apos;emprunter le sentier pour entrer dans le parc pour profiter du calme qui règne dans cet endroit. Nous sommes rapidement tombées sur le lac, où nous n&apos;avons pas su résister à la tentation de faire un <strong>petit tour de barque</strong> pour admirer de près le <strong>Monument à Alfonso XII</strong>. C&apos;était une chouette expérience ! Nous avons déboursé 6€ pour 3/4 d&apos;heure de navigation.</p>
+            <p>En vous baladant à travers le parc, vous découvrirez de nombreuses fontaines et de grandes allées bordées d&apos;arbres, où des artistes de rue, des musiciens et peintres s&apos;installent la journée.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2121-scaled-1024x768.jpeg" alt="El Retiro Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2207-scaled-1024x768.jpeg" alt="Retiro Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -321,7 +324,7 @@ export default function MadridPage() {
             </div>
 
             <h3>📍 Barrio de las Letras / Huertas</h3>
-            <p>En face du <strong>musée Thyssen-Bornemisza</strong> se trouve le quartier des Lettres. Il tient son nom de son passé littéraire — de nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol. Des citations gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong> en témoignent encore. La Plaza Santa Ana, bordée de cafés et de restaurants, est le lieu idéal pour une petite pause.</p>
+            <p>En face du <strong>musée Thyssen-Bornemisza</strong> se trouve le quartier des Lettres. Il tient son nom de son passé littéraire — de nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol. Des citations gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong> en témoignent encore. Ces quartiers font partie des plus anciens de Madrid et des plus animés le soir. La Plaza Santa Ana, bordée de cafés et de restaurants, est le lieu idéal pour une petite pause.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2299-scaled-768x1024.jpeg" alt="Barrio de las Letras Madrid" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2322_jpg-scaled-768x1024.jpeg" alt="Huertas Madrid" loading="lazy" />
