@@ -2329,7 +2329,7 @@ a { text-decoration: none; color: inherit; }
   .article-related-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 /* ===== NAV DROPDOWN BLOG ===== */
-.nav-blog-wrap { position: relative; }
+.nav-blog-wrap { position: relative; display: flex; align-items: center; }
 .nav-dropdown {
   position: absolute;
   top: 100%;
