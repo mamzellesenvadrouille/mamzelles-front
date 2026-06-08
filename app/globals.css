@@ -1801,7 +1801,7 @@ a { text-decoration: none; color: inherit; }
 
 /* RESPONSIVE ARTICLE */
 @media (min-width: 769px) and (max-width: 1024px) {
-  .article-layout { grid-template-columns: 1fr 240px; padding: 40px 30px; gap: 24px; }
+  .article-layout { grid-template-columns: 1fr 200px; padding: 40px 30px; gap: 24px; }
   .article-sidebar { position: sticky; bottom: 24px; align-self: flex-end; }
   .hero-article .hero-desc { font-size: 14px !important; }
   .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; }
