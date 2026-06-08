@@ -36,7 +36,7 @@ export default function NewsletterForm() {
           <div className="article-newsletter-text">
             <span className="eyebrow-gold">Carnets de voyage</span>
             <h3>Recevez nos prochains itinéraires</h3>
-            <p>À chaque nouvel article publié, nos itinéraires, bonnes adresses et coups de cœur directement<br className="desktop-only" /> dans votre boîte mail.</p>
+            <p>À chaque nouvel article publié, nos itinéraires,<br className="tablet-only" /> bonnes adresses et coups de cœur<br className="tablet-only" /> directement<br className="desktop-only" /> dans votre boîte mail.</p>
           </div>
           <form className="article-newsletter-form" onSubmit={handleSubmit}>
             {status === 'success' ? (

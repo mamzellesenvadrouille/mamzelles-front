@@ -1779,6 +1779,7 @@ a { text-decoration: none; color: inherit; }
 /* NEWSLETTER */
 .article-newsletter { position: relative; border-radius: 8px; padding: 36px 40px; margin: 48px 0 16px; overflow: hidden; }
 .desktop-only { display: inline; }
+.tablet-only { display: none; }
 .comments-show-more { display: block; width: 100%; margin: 8px 0 32px; background: none; border: 1px solid #c8956c; color: #c8956c; font-family: 'Inter', sans-serif; font-size: 13px; letter-spacing: 1px; padding: 10px 24px; cursor: pointer; border-radius: 2px; transition: background .2s, color .2s; }
 .comments-show-more:hover { background: #c8956c; color: #fff; }
 @media (max-width: 768px) { .desktop-only { display: none; } }
@@ -1806,6 +1807,7 @@ a { text-decoration: none; color: inherit; }
   .sidebar-cta-body { padding: 20px !important; }
   .sidebar-card-white { padding: 16px !important; }
   .btn-gold { padding: 8px 14px !important; font-size: 9px !important; letter-spacing: 1.5px !important; }
+  .tablet-only { display: inline !important; }
   .article-sidebar { position: sticky; bottom: 24px; align-self: flex-end; }
   .hero-article .hero-desc { font-size: 14px !important; }
   .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; }
