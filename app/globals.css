@@ -1837,7 +1837,7 @@ a { text-decoration: none; color: inherit; }
   .article-day-header h2 { font-size: 28px; }
   .article-section-h2 { font-size: 28px; }
   .article-cdcr-grid { flex-direction: column; }
-  .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; gap: 3px; }
+  .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; gap: 2px; }
   .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }
   .article-cdcr-item:last-child { padding-left: 0 !important; }
   .scroll-top-btn { bottom: 20px; right: 20px; }
