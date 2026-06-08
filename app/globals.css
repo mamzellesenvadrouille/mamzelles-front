@@ -798,6 +798,8 @@ a { text-decoration: none; color: inherit; }
   .nav { padding: 18px 24px; }
   .nav-links { display: flex !important; gap: 16px; margin-right: 16px; }
   .nav-links a { font-size: 11px; letter-spacing: 0.5px; white-space: nowrap; }
+  .nav-dropdown-inner { min-width: 240px; padding: 16px 18px; }
+  .nav-dropdown-grid { gap: 12px 16px; }
   .logo-main { font-size: 20px; }
   .logo-sub { font-size: 8px; letter-spacing: 2px; white-space: nowrap; }
   .nav-cta { padding: 9px 16px; font-size: 10px; letter-spacing: 1px; white-space: nowrap; }
@@ -1837,7 +1839,7 @@ a { text-decoration: none; color: inherit; }
   .article-day-header h2 { font-size: 28px; }
   .article-section-h2 { font-size: 28px; }
   .article-cdcr-grid { flex-direction: column; }
-  .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; gap: 2px; }
+  .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; }
   .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }
   .article-cdcr-item:last-child { padding-left: 0 !important; }
   .scroll-top-btn { bottom: 20px; right: 20px; }
@@ -2326,3 +2328,113 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   .article-related-grid { grid-template-columns: 1fr; gap: 16px; }
 }
+/* ===== NAV DROPDOWN BLOG ===== */
+.nav-blog-wrap { position: relative; }
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+  z-index: 100;
+}
+.nav-blog-wrap:hover .nav-dropdown { opacity: 1; pointer-events: all; }
+.nav-dropdown-inner {
+  background: rgba(26,21,12,0.97);
+  border-top: 2px solid var(--gold);
+  padding: 20px 24px 20px;
+  min-width: 280px;
+}
+.nav-dropdown-all {
+  display: block;
+  color: rgba(255,255,255,0.5);
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: color .2s;
+}
+.nav-dropdown-all:hover { color: var(--gold); }
+.nav-dropdown-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; }
+.nav-dropdown-group { display: flex; flex-direction: column; gap: 5px; }
+.nav-dropdown-pays {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.nav-dropdown-link {
+  color: rgba(255,255,255,0.75);
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: .5px;
+  transition: color .2s;
+}
+.nav-dropdown-link:hover { color: #fff; }
+
+/* ===== MOBILE BLOG ACCORDÃ‰ON ===== */
+.mobile-blog-wrap { display: flex; flex-direction: column; align-items: center; gap: 0; }
+.mobile-blog-toggle {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.85);
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mobile-blog-arrow {
+  display: inline-block;
+  transition: transform .25s;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--gold);
+}
+.mobile-blog-arrow.open { transform: rotate(90deg); }
+.mobile-blog-submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  width: 100%;
+}
+.mobile-blog-submenu > a {
+  color: rgba(255,255,255,0.5) !important;
+  font-size: 10px !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 8px;
+}
+.mobile-blog-group { display: flex; flex-direction: column; align-items: center; gap: 4px; margin-bottom: 10px; }
+.mobile-blog-pays {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 2px;
+}
+.mobile-blog-lien {
+  color: rgba(255,255,255,0.75) !important;
+  font-size: 14px !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 300 !important;
+  transition: color .2s;
+}
+.mobile-blog-lien:hover { color: #fff !important; }
