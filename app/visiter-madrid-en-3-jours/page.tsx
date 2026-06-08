@@ -191,7 +191,8 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2371-scaled-768x1024.jpeg" alt="Vue Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2350-scaled-768x1024.jpeg" alt="Cocktail Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p>De la Place d&apos;Espagne, remontez la Gran Via. Vous passerez alors par la <strong>Plaza del Callao</strong> et le célèbre <strong>Edificio Carrion</strong> avec son mythique panneau publicitaire Schweppes. Vous avez suivi la série « Les Demoiselles du Téléphone » ? Le bâtiment qui a servi pour le décor se trouve un peu plus haut sur Gran Via. L&apos;<strong>Edificio Telefónica</strong> est très imposant, vous le reconnaitrez facilement. Juste en face de celui-ci se trouve un McDonald&apos;s… Rien d&apos;incroyable, mais il fait partie des plus beaux restaurants de la marque dans le monde.</p>
+            <p>De la Place d&apos;Espagne, remontez la Gran Via. Vous passerez alors par la <strong>Plaza del Callao</strong> et le célèbre <strong>Edificio Carrion</strong> avec son mythique panneau publicitaire Schweppes. L&apos;<strong>Edificio Telefónica</strong> est très imposant, vous le reconnaitrez facilement. Juste en face de celui-ci se trouve un McDonald&apos;s… Rien d&apos;incroyable, mais il fait partie des plus beaux restaurants de la marque dans le monde.</p>
+            <p>Vous avez suivi la série « Les Demoiselles du Téléphone » ? Le bâtiment qui a servi pour le décor se trouve un peu plus haut sur Gran Via.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2341-scaled-768x1024.jpeg" alt="Edificio Carrion Schweppes Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2102-scaled-768x1024.jpeg" alt="Edificio Telefónica Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -277,7 +278,7 @@ export default function MadridPage() {
             </div>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
-              <div><strong>L&apos;avis des MamZelles</strong><p>Si on devait choisir un seul quartier pour dormir à Madrid, ce serait Malasaña sans hésitation. L&apos;ambiance y est unique, les prix plus raisonnables que dans le centre, et tout est accessible à pied. Le Parque del Retiro mérite vraiment qu&apos;on lui consacre une demi-journée entière — c&apos;est là qu&apos;on a vraiment senti l&apos;âme madrilène.</p></div>
+              <div><strong>L&apos;avis des MamZelles</strong><p>Si on devait choisir un seul quartier pour dormir à Madrid, ce serait Malasaña sans hésitation. L&apos;ambiance y est unique, les prix plus raisonnables que dans le centre, et tout est accessible à pied. C&apos;est là qu&apos;on a vraiment senti l&apos;âme madrilène !</p></div>
             </div>
           </section>
 
