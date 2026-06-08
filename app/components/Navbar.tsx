@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 
 interface NavbarProps {
   activePage?: 'accueil' | 'formules' | 'blog' | 'qui-sommes-nous';
@@ -30,7 +31,7 @@ export default function Navbar({ activePage, contactHref = '/formules#formulaire
         </button>
       </nav>
 
-      {menuOpen && (
+      {menuOpen && createPortal(
         <div className="mobile-menu">
           <button className="mobile-menu-close" onClick={() => setMenuOpen(false)}>✕</button>
           <a href="/" onClick={() => setMenuOpen(false)}>Accueil</a>
@@ -38,7 +39,8 @@ export default function Navbar({ activePage, contactHref = '/formules#formulaire
           <a href="/blog" onClick={() => setMenuOpen(false)}>Notre blog voyages</a>
           <a href="/qui-sommes-nous" onClick={() => setMenuOpen(false)}>Qui sommes-nous ?</a>
           <a href={contactHref} onClick={() => setMenuOpen(false)} className="mobile-menu-cta">Contact</a>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
