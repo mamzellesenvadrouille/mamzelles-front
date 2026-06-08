@@ -152,7 +152,7 @@ export default function MadridPage() {
             </div>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne surtout pas manquer</strong><p>Le Mercado de San Miguel est ouvert tous les jours de 10h à minuit. Allez-y en fin d&apos;après-midi pour y grignoter des tapas et vous mêler aux Madrilènes qui s&apos;y retrouvent après le travail.</p></div>
+              <div><strong>À ne surtout pas manquer</strong><p>Le Mercado de San Miguel est ouvert tous les jours de 10h à minuit. Le meilleur moment ? En fin d&apos;après-midi, à l&apos;heure de l&apos;apéro, quand les Madrilènes s&apos;y retrouvent après le travail — c&apos;est là que Madrid se révèle vraiment !</p></div>
             </div>
             <h3>La Plaza Mayor</h3>
             <p>Continuez ensuite votre vadrouille en direction de la <strong>Plaza Mayor</strong>, cette fameuse place rectangulaire où les Madrilènes apprécient se retrouver pour y boire un café.</p>
@@ -180,7 +180,7 @@ export default function MadridPage() {
             </div>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Sur la Plaza España se trouve un grand hôtel, le <a href="https://www.riu360rooftopbar.com/en/" target="_blank" rel="noopener noreferrer" className="article-link">Riu</a>, tel un building. Si vous souhaitez admirer une vue époustouflante à 360° sur la ville tout en sirotant un petit cocktail, c&apos;est ici qu&apos;il faut vous rendre ! L&apos;entrée est payante : 5€ de 11h à 17h (lun-ven) et 10€ de 17h à 01h. Le week-end et jours fériés : 10€ toute la journée. Il y a une passerelle en verre — vous verrez ce qu&apos;il se passe sous vos pieds, 117M plus bas. Sensations garanties !</p></div>
+              <div><strong>Bon à savoir</strong><p>Sur la Plaza España se trouve un grand hôtel, le <a href="https://www.riu360rooftopbar.com/en/" target="_blank" rel="noopener noreferrer" className="article-link">Riu</a>, tel un building. Si vous souhaitez admirer une vue époustouflante à 360° sur la ville tout en sirotant un petit cocktail, c&apos;est ici qu&apos;il faut vous rendre !</p><p>L&apos;entrée est payante : 5€ de 10h à 17h, et 10€ de 17h à 01h. Nous avons choisi d&apos;y aller le soir pour observer la ville scintillant de toutes ses lumières.</p><p>Quel spectacle ! Sur ce rooftop au 27ème étage, nous avions la sensation d&apos;être sur le toit de la capitale. Pour le prix, vous pourrez vivre une expérience très sympa… Il y a une passerelle en verre sur ce rooftop ! Du coup, vous verrez ce qu&apos;il se passe sous vos pieds, 117M plus bas. C&apos;est impressionnant. Sensations garanties !</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1668_jpg-scaled-768x1024.jpeg" alt="Hôtel Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -211,7 +211,7 @@ export default function MadridPage() {
             </div>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
-              <div><strong>L&apos;avis des MamZelles</strong><p>El Centro est dense, mais chaque rue réserve une surprise. Notre conseil : ne vous fixez pas un programme trop rigide pour cette journée. Accordez-vous une pause tapas au Mercado de San Miguel en milieu d&apos;après-midi plutôt qu&apos;à l&apos;heure du déjeuner — vous éviterez la foule et profiterez d&apos;une atmosphère bien plus authentique.</p></div>
+              <div><strong>L&apos;avis des MamZelles</strong><p>El Centro est dense, mais chaque rue réserve une surprise. Notre conseil : ne vous fixez pas un programme trop rigide pour cette journée — laissez-vous porter par l&apos;ambiance et les découvertes au fil des ruelles.</p></div>
             </div>
           </section>
 
@@ -279,7 +279,7 @@ export default function MadridPage() {
             </div>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
-              <div><strong>L&apos;avis des MamZelles</strong><p>Si on devait choisir un seul quartier pour dormir à Madrid, ce serait Malasaña sans hésitation. L&apos;ambiance y est unique, les prix plus raisonnables que dans le centre, et tout est accessible à pied. C&apos;est là qu&apos;on a vraiment senti l&apos;âme madrilène !</p></div>
+              <div><strong>L&apos;avis des MamZelles</strong><p>Malasaña, c&apos;est le quartier qu&apos;on n&apos;attendait pas et qui nous a totalement conquises. Ses rues la nuit, ses bars, son énergie… C&apos;est là qu&apos;on a vraiment senti l&apos;âme madrilène !</p></div>
             </div>
           </section>
 
