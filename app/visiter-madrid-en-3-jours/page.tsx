@@ -166,7 +166,7 @@ export default function MadridPage() {
             <h3>La Plaza de la Puerta del Sol</h3>
             <p>En continuant votre chemin, tout près de cette place, vous arriverez à la <strong>Plaza de la Puerta Del Sol</strong>. Très animée, c&apos;est la place principale de Madrid, et notamment la plus centrale. Cet endroit étant piéton, il y a toujours beaucoup de monde de jour comme de nuit. C&apos;est sur cette place que se déroulent la plupart des évènements, manifestations et rassemblements.</p>
             <p>Idéalement située, la Plaza de la Puerta Del Sol permet de relier différents points d&apos;intérêts.</p>
-            <p>Si vous aimez le shopping, vous trouverez de quoi faire par ici ! De nombreuses enseignes nationales et internationales se situent sur les artères qui partent de cette place. En tout cas, nous vous conseillons d&apos;emprunter la <strong>Calle de Preciados</strong>, ou la <strong>Calle de la Montora</strong>, pour rejoindre <strong>Gran Via</strong>.</p>
+            <p>Si vous aimez le shopping, vous trouverez de quoi faire par ici ! De nombreuses enseignes nationales et internationales se situent sur les artères qui partent de cette place. En tout cas, nous vous conseillons d&apos;emprunter la <strong>Calle de Preciados</strong>, ou la <strong>Calle de la Montera</strong>, pour rejoindre <strong>Gran Via</strong>.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2330-scaled-768x1024.jpeg" alt="Puerta del Sol Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1926-scaled-1024x768.jpeg" alt="Puerta del Sol Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -198,7 +198,7 @@ export default function MadridPage() {
             </div>
             <h3>L&apos;Edificio Metropolis & le Circulo de Bellas Artes</h3>
             <p>Lorsque vous arriverez au bas de l&apos;avenue, vous tomberez sur le célèbre <strong>Edificio Metropolis</strong> et sa magnifique coupole. Levez les yeux pour admirer l&apos;architecture de ce bâtiment, dessiné par des Français. Il est l&apos;édifice le plus photographié de Madrid.</p>
-            <p>Nous vous conseillons de monter en haut du <strong>Circulo de Bellas Artes</strong>, un centre culturel situé juste en face. Moyennant 4€, vous pourrez profiter de son rooftop avec une vue exceptionnelle sur la ville. Dans la partie lounge, où de confortables « beds » sont installés, vous pourrez lézarder au soleil. De là-haut, entre autres, vous verrez d&apos;un côté la banque d&apos;Espagne, la Plaza de Cibeles et son palais, et de l&apos;autre, le Metropolis avec son dôme en ardoise et sa statue ailée.</p>
+            <p>Nous vous conseillons de monter en haut du <strong>Circulo de Bellas Artes</strong>, un centre culturel situé juste en face. Moyennant 6€, vous pourrez profiter de son rooftop avec une vue exceptionnelle sur la ville. Dans la partie lounge, où de confortables « beds » sont installés, vous pourrez lézarder au soleil. De là-haut, entre autres, vous verrez d&apos;un côté la banque d&apos;Espagne, la Plaza de Cibeles et son palais, et de l&apos;autre, le Metropolis avec son dôme en ardoise et sa statue ailée.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2051-scaled-768x1024.jpeg" alt="Edificio Metropolis Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2055-scaled-768x1024.jpeg" alt="Vue Metropolis Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -363,7 +363,7 @@ export default function MadridPage() {
                 </div>
                 <div>
                   <strong>Bus Exprés Aeropuerto</strong>
-                  <span>5€ · 40 min · 24h/24. Attention : de 23h55 à 5h35, départ depuis la Plaza de Cibeles (et non la gare Puerta de Atocha).</span>
+                  <span>5,10€ · 40 min · 24h/24. Attention : de 23h55 à 5h35, départ depuis la Plaza de Cibeles (et non la gare Puerta de Atocha).</span>
                 </div>
               </div>
               <div className="article-transport-item">
@@ -395,7 +395,7 @@ export default function MadridPage() {
             </ul>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Notre conseil transport</strong><p>Optez pour la carte Multi (2€50) + 10 trajets Metrobús (12€20), valable métro zone A et tout le réseau bus. La carte est en vente dans toutes les stations de métro, ainsi qu&apos;à l&apos;aéroport. En alternative, la carte métro 48h à 14€20 si vous privilégiez le métro. Dans les deux cas, -50 % pour les enfants de moins de 11 ans.</p></div>
+              <div><strong>Notre conseil transport</strong><p>Optez pour la carte Multi (2€50) + 10 trajets Metrobús (7,30€), valable métro zone A et tout le réseau bus. La carte est en vente dans toutes les stations de métro, ainsi qu&apos;à l&apos;aéroport. En alternative, la carte métro 48h à 14€20 si vous privilégiez le métro. Dans les deux cas, -50 % pour les enfants de moins de 11 ans.</p></div>
             </div>
             <h3>✓ Quand partir ?</h3>
             <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
