@@ -2346,8 +2346,9 @@ a { text-decoration: none; color: inherit; }
   background: rgba(26,21,12,0.97);
   border-top: 2px solid var(--gold);
   padding: 20px 28px 20px;
-  min-width: 420px;
+  width: max-content;
 }
+
 .nav-dropdown-all {
   display: block;
   color: rgba(255,255,255,0.5);
@@ -2376,6 +2377,7 @@ a { text-decoration: none; color: inherit; }
   font-weight: 300;
   letter-spacing: .5px;
   transition: color .2s;
+  white-space: nowrap;
 }
 .nav-dropdown-link:hover { color: #fff; }
 
