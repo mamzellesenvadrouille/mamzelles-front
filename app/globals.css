@@ -2345,8 +2345,8 @@ a { text-decoration: none; color: inherit; }
 .nav-dropdown-inner {
   background: rgba(26,21,12,0.97);
   border-top: 2px solid var(--gold);
-  padding: 20px 24px 20px;
-  min-width: 280px;
+  padding: 20px 28px 20px;
+  min-width: 420px;
 }
 .nav-dropdown-all {
   display: block;
@@ -2399,7 +2399,7 @@ a { text-decoration: none; color: inherit; }
   display: inline-block;
   transition: transform .25s;
   font-style: normal;
-  font-size: 20px;
+  font-size: 28px;
   color: var(--gold);
 }
 .mobile-blog-arrow.open { transform: rotate(90deg); }
