@@ -1780,6 +1780,7 @@ a { text-decoration: none; color: inherit; }
 .article-newsletter { position: relative; border-radius: 8px; padding: 36px 40px; margin: 48px 0 16px; overflow: hidden; }
 .desktop-only { display: inline; }
 .tablet-only { display: none; }
+.mobile-only { display: none; }
 .comments-show-more { display: block; width: 100%; margin: 8px 0 32px; background: none; border: 1px solid #c8956c; color: #c8956c; font-family: 'Inter', sans-serif; font-size: 13px; letter-spacing: 1px; padding: 10px 24px; cursor: pointer; border-radius: 2px; transition: background .2s, color .2s; }
 .comments-show-more:hover { background: #c8956c; color: #fff; }
 @media (max-width: 768px) { .desktop-only { display: none; } }
@@ -1837,6 +1838,7 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 768px) {
   html { overflow-x: hidden !important; }
+  .mobile-only { display: inline !important; }
   .article-layout { padding: 28px 20px; grid-template-columns: 1fr !important; overflow-x: hidden; }
   .article-main { order: 1; overflow-x: hidden; }
   .article-sidebar { order: 2; position: static !important; }
