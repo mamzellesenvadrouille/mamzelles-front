@@ -163,16 +163,10 @@ export default function PhilippinesPage() {
             </div>
             <p><strong>Banaue</strong> est une petite ville de montagne située dans la <strong>région d&apos;Ifugao,</strong> au Nord de l&apos;île de Luzon. Cette dernière est la plus grande île des Philippines. 380 kilomètres séparent Banaue de Manille. C&apos;est le point de départ pour découvrir les plus belles rizières en terrasse du pays.</p>
             <p><strong>Inscrites sur la liste du patrimoine mondial à l&apos;UNESCO</strong> en 1995, les rizières en terrasse du Nord des Philippines sont communément considérées comme la 8ème Merveille du monde.</p>
-            <div className="article-gallery-2">
+                        <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0388-768x1024.jpeg" alt="I survived Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1145-1024x768.jpg" alt="Rizières en terrasses Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1288-1024x768.jpg" alt="Wonder of the World Batad" className="article-img-full" loading="lazy" />
-
-            {/* JOUR 1 BANAUE */}
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 1</span>
-              <h3>De Manille à Banaue</h3>
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1288-1024x768.jpg" alt="Wonder of the World Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <h4>⧐ Comment se rendre à Banaue ?</h4>
             <p><strong>Pour nous rendre à Banaue, nous avons choisi l&apos;option bus au départ de Manille.</strong> Vous avez également la possibilité de vous y rendre en transport privé, mais le tarif ne sera pas le même ! Nous avions réservé le transfert plusieurs semaines avant. Le trajet aller-retour nous est revenu à <strong>1800 Php (30€)</strong> par personne.</p>
@@ -188,8 +182,9 @@ export default function PhilippinesPage() {
             <p>Durant ces pauses qui dégourdissent les jambes et qui réchauffent aussi, vous trouverez également de quoi grignoter (biscuits, chips, boissons chaudes et fraîches…).</p>
             <p><strong>Il est environ 8h30 quand nous arrivons à Banaue</strong> sous la pluie (en même temps, c&apos;est le Nord !). Tellement contentes d&apos;être arrivées, rien ne peut nous démoraliser. On va faire la danse du soleil !</p>
             <p>À peine débarquées à la gare routière, nous devons payer une taxe de <strong>50 Php (0,85€)</strong> par personne. Un tuk-tuk nous attend pour nous emmener à l&apos;hôtel, le <strong><a href="https://www.booking.com/hotel/ph/bogah-homestay-banaue3.fr.html" target="_blank" rel="noopener noreferrer" className="article-link">Bogah Homestay</a></strong>.</p>
-            <div className="article-gallery-2">
+                        <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0940-1024x768.jpg" alt="City Banaue" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0991-768x1024.jpg" alt="Ville Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0953-1024x768.jpg" alt="Banaue Tour Map" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <div className="article-gallery-2">
@@ -237,19 +232,19 @@ export default function PhilippinesPage() {
             <p>On se pose la question quand même… De quoi vivent les habitants de Batad ? Du tourisme of course !</p>
             <p>Notre guide est un jeune homme du village. En même temps, qui de mieux placé pour nous faire découvrir cet endroit ? Il connaît les lieux comme sa poche. Certains habitants du village accueillent les gens de passage pour la nuit, d&apos;autres tiennent des restaurants. Les femmes vendent des objets en bois sculpté et des pochettes cousues main. <strong>Pendant notre visite, nous avons donc acheté des petits souvenirs pour contribuer à l&apos;économie du village.</strong></p>
             <p>Cependant, on nous explique que l&apos;exode rural est un danger qui menace ce magnifique paysage. Si les jeunes quittent le village, qui va prendre le relai pour entretenir les rizières et les faire perdurer ? Vivre ici, coupé du monde, n&apos;emballe pas tous les jeunes de la région. Une dame nous explique qu&apos;à l&apos;âge de 8 ans elle aidait ses parents et travaillait tous les jours dans les cultures. Aujourd&apos;hui, elle a des enfants qui ne veulent pas apprendre ce métier et l&apos;aider dans ces tâches : « ils préfèrent regarder des vidéos sur Tik-Tok ! ».</p>
-            <div className="article-gallery-2">
+                        <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0380-1024x768.jpg" alt="Merveille du monde Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1115-768x1024.jpg" alt="Batad vu du ciel" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1287-1024x768.jpeg" alt="Rice terrace Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1287-1024x768.jpeg" alt="Rice terrace Batad" className="article-img-full" loading="lazy" />
             <p>Nous continuons notre balade en mode funambule sur des murets d&apos;une vingtaine de centimètres de large, pas plus. Absorbées par le paysage, on a failli finir dans la boue à plusieurs reprises ! Et oui, en plus d&apos;être étroits, ils sont glissants par endroits. <strong>Mieux vaut ne pas avoir le vertige</strong> non plus… On se retrouve parfois avec la rizière d&apos;un côté (avec la boue et plein d&apos;escargots, beurk !), et le vide de 2 mètres de l&apos;autre côté.</p>
             <p>Nous traversons les rizières et empruntons des « escaliers » qui relient des terrasses entre elles. Là aussi <strong>c&apos;est plutôt sportif.</strong> Alors qu&apos;on galère un peu sur certains passages, notre guide est quant à lui très à l&apos;aise en tongs !</p>
             <p><strong>Nous arrivons de l&apos;autre côté de la vallée, au niveau d&apos;une grosse maison en béton et au toit bleu.</strong> Elle semble en construction. De là aussi, la vue sur l&apos;amphithéâtre est saisissante.</p>
-            <div className="article-gallery-2">
+            <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1298-1024x768.jpg" alt="Trek Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1294-1-1024x768.jpg" alt="Randonnée Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1217_jpg-768x1024.jpg" alt="Love Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1217_jpg-768x1024.jpg" alt="Love Batad" className="article-img-full" loading="lazy" />
             <h4>⧐ Tappiyah Falls</h4>
             <p>On traverse la maison et de l&apos;autre côté, c&apos;est un tout autre paysage. On se croirait transporté dans la jungle. Il paraît qu&apos;au bout du chemin, <strong>une incroyable cascade</strong> nous attend…</p>
             <p><strong>Mais ça se mérite !</strong> À partir d&apos;ici, <strong>il faut compter une bonne vingtaine de minutes de marche</strong> pour y accéder. De marche oui, mais de marches d&apos;escalier surtout !</p>
@@ -302,25 +297,10 @@ export default function PhilippinesPage() {
             </div>
             <p>Après ce moment de détente, il est temps de faire demi-tour car nous avons notre bus pour Manille en fin d&apos;après-midi. Pour le retour, nous empruntons un autre chemin, bien plus court mais tout aussi joli.</p>
             <p>Pour info, <strong>si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique.</strong> Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie (si on peut appeler ça comme ça !) avant d&apos;entrer dans le village.</p>
-            <div className="article-gallery-2">
+                        <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1509-1-768x1024.jpg" alt="Hapao Batad Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1528-768x1024.jpg" alt="Hapao View Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1540_jpg-1-768x1024.jpg" alt="Enfant Hapao Batad" className="article-img-full" loading="lazy" />
-            <h4>⧐ Retour en bus à Manille</h4>
-            <p>Nous retournons à l&apos;hôtel en van. Nous récupérons nos bagages et grignotons avant de rejoindre la gare routière. C&apos;est ainsi que s&apos;achève cette parenthèse magique dans cet endroit aux paysages incroyables.</p>
-            <p><strong>17h30, nous reprenons le bus direction Manille.</strong></p>
-            <p>La clim, toujours la clim ! Nous avions anticipé et pris avec nous tout ce que nous avions de plus chaud à se mettre sur le dos pour le trajet.</p>
-            <p><strong>Arrivée à Manille prévue vers 3h du matin…</strong> L&apos;horaire est un peu pourri mais pas le choix.</p>
-            <p>Un peu comme à l&apos;aller, <strong>le trajet nous semble interminable.</strong> Mais à la différence, nous sommes parties de jour. Notre chauffeur de bus, alias « Schumi », prend beaucoup de risques au niveau de sa conduite sur les routes de montagne. Il roule vite, même sans visibilité dans les virages !</p>
-            <p><strong>Ce qui est fou, c&apos;est que même la nuit, il y a beaucoup de circulation.</strong> Arrivées vers 2h du matin aux abords de Manille, nous nous retrouvons dans des bouchons !</p>
-            <p>Nous avons un vol à 10h pour une autre destination. Histoire de dormir un peu, nous prenons une chambre au <strong><a href="http://siayantravellersinn.com" target="_blank" rel="noopener noreferrer" className="article-link">Siayan Travellers Inn</a></strong>, non loin de l&apos;aéroport et de notre terminal.</p>
-          </section>
-
-          {/* BOHOL */}
-          <section id="bohol" className="article-section">
-            <div className="article-day-header">
-              <h2>📍 BOHOL &amp; ses petits plus uniques !</h2>
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1540_jpg-1-768x1024.jpg" alt="Enfant Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <p>Bohol est une province des Philippines située dans la <strong>région des Visayas Centrales.</strong> Cette île est très grande en comparaison à la dernière sur laquelle on a posé le pied. 71 km² de superficie à Coron, contre près de 5 000 km² à Bohol. Elle est considérée comme la <strong>10ème plus grande île de l&apos;archipel des Philippines.</strong></p>
             <p>Cette île paradisiaque abrite des paysages splendides, une végétation luxuriante, des plages de rêves, des spots de plongée incroyables et quelques plus que l&apos;on ne peut découvrir qu&apos;ici. Impossible pour nous de tout voir car nous ne passons que 2 nuits sur cette île. Nous avons souhaité nous rendre à Bohol pour ces quelques plus qui rendent cette île unique et magique…</p>
@@ -383,24 +363,10 @@ export default function PhilippinesPage() {
             <p>Arrivées au niveau du complexe, il y a un <strong>grand parking pour stationner</strong> sans difficulté. L&apos;entrée est de <strong>50 Php (0,80€)</strong> par personne. Une fois réglée, <strong>nous montons dans un van qui nous emmène sur les hauteurs.</strong></p>
             <p><strong>Selon l&apos;heure à laquelle on s&apos;y rend, il peut y avoir beaucoup de monde,</strong> mais c&apos;est quand même à voir ! L&apos;endroit est clairement pensé pour accueillir les touristes. <strong>Sur place, vous trouverez une boutique de souvenirs et un grand restaurant.</strong> Nous empruntons l&apos;escalier pour monter jusqu&apos;au point de vue. Il y a un panneau qui explique l&apos;histoire de ces mystérieuses collines.</p>
             <p>En bref, <strong>leur formation date d&apos;il y a environ 2 millions d&apos;années.</strong> Ces collines sont composées de sable et de calcaire provenant de l&apos;accumulation de couches successives de corail et de coquillages au fond de la mer. Ce sont les mouvements des plaques tectoniques qui ont sorti ce paysage de l&apos;eau. Ensuite, c&apos;est l&apos;érosion et la dissolution dues à la pluie qui ont terminé de façonner tout cela. Avec cette formation géologique peu commune, ces collines rendent le paysage vraiment spécial !</p>
-            <div className="article-gallery-2">
+                        <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1744-768x1024.jpg" alt="Chocolate Hills Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1807-1024x768.jpg" alt="I love Chocolate Hills Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_4780-768x1024.jpg" alt="Chocolate Hills Bohol" className="article-img-full" loading="lazy" />
-            <p>Tout autour de nous, étendues sur 50 km², se dressent <strong>près de 1 780 collines,</strong> mesurant entre 30 et 60 mètres de hauteur. La vue du ciel doit être incroyable mais malheureusement il y a un <strong>panneau interdisant de faire voler son drone à partir de 8h du matin.</strong></p>
-            <p>Sachez que vous avez également la <strong>possibilité de louer un quad ou un buggy pour vous balader sur un circuit entre les collines.</strong></p>
-            <p>Nous reprenons la route et nous nous arrêtons un peu plus loin dans un petit resto appelé <strong><a href="https://www.instagram.com/basakbistrobatuan/" target="_blank" rel="noopener noreferrer" className="article-link">Basak Bistro Batuan</a></strong>. L&apos;endroit n&apos;est pas vraiment touristique mais c&apos;est aussi ça que l&apos;on recherche. En tout cas, on a super bien mangé. C&apos;est là-bas qu&apos;on a découvert que roter après avoir mangé n&apos;est pas du tout mal vu, bien au contraire… Et c&apos;est plutôt surprenant la première fois, surtout quand ce sont nos voisins de table qui s&apos;en donnent à cœur joie !</p>
-            <h4>⧐ Les stars de Bohol, les tarsiers</h4>
-            <p>C&apos;est reparti, direction le troisième spot. On tenait absolument à les voir… <strong>Ce sont les plus petits singes au monde. Ils mesurent en moyenne 15 cm et pèsent moins de 100 g.</strong> Ce sont les tarsiers !</p>
-            <p>Vous avez deux possibilités pour observer ces petits primates : au <strong>Centre de conservation des tarsiers ou bien au Sanctuaire de Corella.</strong></p>
-            <p>Après quelques recherches, sans hésitation, <strong>notre choix s&apos;est porté sur le sanctuaire de Corella.</strong> C&apos;est une fondation officielle qui œuvre pour la protection du tarsier où les petits primates sont en quasi-liberté.</p>
-            <p>Le tarsier est un animal très anxieux et il peut facilement se retrouver en détresse s&apos;il est enfermé.</p>
-            <p>Pour <strong>50 Php (0,80€)</strong> par personne et un guide rien que pour nous, nous accédons à la zone d&apos;observation. <strong>Ici, il n&apos;y a que 6 tarsiers.</strong> Le guide nous aide à les trouver dans cette petite jungle, et nous apporte quelques informations pour davantage les connaître.</p>
-            <p>Ce petit animal chasse la nuit et dort le jour. De ce fait, dans un silence complet, il faut trouver les branches sur lesquelles ils sont accrochés pour la sieste.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1860_jpg-1024x768.jpg" alt="Tarsier Sanctuary Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1854-768x1024.jpg" alt="Tarsier Sanctuary Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_4780-768x1024.jpg" alt="Chocolate Hills Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <p>Ils sont tellement mignons ! Des petites boules de poils avec de gros yeux globuleux. On dirait des petits Guizmo (le gentil Gremlins). On peut donc s&apos;en approcher sans faire de bruit, mais on ne peut bien sûr pas les toucher. Et pour les photos, c&apos;est sans flash ! Le guide nous explique qu&apos;<strong>ils sont très sensibles à la lumière ainsi qu&apos;au bruit, et qu&apos;avec un pic de stress, le tarsier peut se suicider.</strong> Comme on n&apos;a aucune envie d&apos;être responsable d&apos;un suicide de tarsier, on respecte les règles !</p>
             <p>On ne croirait pas comme ça, à le voir en totale inertie sur sa branche, mais ce petit singe de 15 cm est capable de faire des bonds de 4 mètres !</p>
@@ -573,11 +539,9 @@ export default function PhilippinesPage() {
             <p><strong>Les 48 îles et îlots qui composent Siargao valent le détour. </strong>Des plages de sable blanc, une mer cristalline, des paysages paradisiaques, et tout cela dans une ambiance détendue avec des locaux accueillants et souriants.</p>
             <p>Nous sommes tellement contentes d&apos;être là, et en même temps, la fin de ce merveilleux voyage approche.</p>
             <p>Il est bon de savoir que <strong>la meilleure période pour visiter Siargao est de mars à juin. </strong></p>
-            <div className="article-gallery-2">
+                        <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2440-768x1024.jpg" alt="Surf Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2461-copie-768x1024.jpg" alt="Surf Spots Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2436-2-768x1024.jpg" alt="Siargao Beach Coconuts" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <div className="article-day-header">
@@ -611,15 +575,13 @@ export default function PhilippinesPage() {
             <p>Si vous voulez prendre un court de surf c&apos;est ici qu&apos;il faut venir. <strong>Ce qui est sympa, c&apos;est ce long ponton qui s&apos;avance sur la mer. </strong>On peut s&apos;approcher des vagues et observer les surfeurs au plus près.</p>
             <p>Sur la gauche du ponton, il y a quelques bars. Cabanes en bois, transats, cocktails, vue sur l&apos;océan… que demander de plus ?</p>
             <p>Mais au fait, c&apos;est quoi la Cloud 9 ? C&apos;est le nom qui est donné à LA vague de ce spot. Siargao est dans le <strong>Top 10 des meilleurs endroits où surfer dans le monde. <strong>Chaque année, en </strong>septembre, a lieu ici le festival du surf. </strong></p>
-            <div className="article-gallery-2">
+                        <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2418-1024x768.jpg" alt="Cloud 9 BoardWalk Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2397-1024x768.jpg" alt="Siargao Beach Cloud 9" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2414-2-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2401-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2401-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2416-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Avec tout ça, il est plus que l&apos;heure d&apos;aller déjeuner. C&apos;est fou ce que le temps passe vite en vacances !</p>
