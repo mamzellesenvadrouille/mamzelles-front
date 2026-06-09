@@ -218,7 +218,7 @@ export default async function BlogPage() {
           </div>
         </div>
         <div className="footer-bottom">
-          © 2026 MamZelles en vadrouille — Tous droits réservés
+          © 2026 MamZelles en vadrouille — Tous droits réservés · <a href="/confidentialite" style={{ color: 'rgba(255,255,255,0.4)', fontSize: '11px', textDecoration: 'none' }}>Politique de confidentialité</a>
         </div>
       </footer>
 
