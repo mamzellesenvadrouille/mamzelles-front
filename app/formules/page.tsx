@@ -4,22 +4,23 @@ import Navbar from '../components/Navbar';
 import ContactForm from '../ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Nos Formules | MamZelles en vadrouille',
-  description: "Découvrez nos formules de voyage sur mesure : L'Escale, La Vadrouille, La Grande Vadrouille. Devis gratuit, itinéraire personnalisé, carnet digital inclus.",
+  title: 'Travel Planner Voyage sur Mesure | Itinéraire Personnalisé | MamZelles en vadrouille',
+  description: "Amélie & Laurie, Travel Planners passionnées, créent votre itinéraire de voyage 100% sur mesure selon vos envies, votre rythme et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
+  alternates: { canonical: 'https://mamzellesenvadrouille.com/formules' },
   openGraph: {
-    title: 'Nos Formules de voyage sur mesure | MamZelles en vadrouille',
-    description: "Découvrez nos formules de voyage sur mesure. Devis gratuit sous 48h, itinéraire personnalisé, carnet digital inclus.",
-    url: 'https://www.mamzellesenvadrouille.com/formules',
+    title: 'Travel Planner Voyage sur Mesure | MamZelles en vadrouille',
+    description: "Itinéraire de voyage 100% personnalisé selon vos envies et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
+    url: 'https://mamzellesenvadrouille.com/formules',
     siteName: 'MamZelles en vadrouille',
-    images: [{ url: 'https://www.mamzellesenvadrouille.com/hero.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://mamzellesenvadrouille.com/og-home.png', width: 1200, height: 630 }],
     locale: 'fr_FR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nos Formules | MamZelles en vadrouille',
-    description: 'Voyage sur mesure, devis gratuit sous 48h.',
-    images: ['https://www.mamzellesenvadrouille.com/hero.webp'],
+    title: 'Travel Planner Voyage sur Mesure | MamZelles en vadrouille',
+    description: 'Itinéraire personnalisé, devis gratuit sous 48h, carnet digital inclus.',
+    images: ['https://mamzellesenvadrouille.com/og-home.png'],
   },
 };
 
