@@ -197,7 +197,7 @@ export default function Home() {
           </div>
         </div>
         <div className="footer-bottom">
-          © 2026 MamZelles en vadrouille<br className="mobile-br" />Tous droits réservés · <a href="/confidentialite" style={{ color: 'rgba(255,255,255,0.4)', fontSize: '11px', textDecoration: 'none' }}>Politique de confidentialité</a>
+          © 2026 MamZelles en vadrouille<br className="mobile-br" />Tous droits réservés · <a href="/confidentialite" style={{ color: 'rgba(26,21,18,0.5)', fontSize: '12px', textDecoration: 'underline' }}>Politique de confidentialité</a>
         </div>
       </footer>
 
