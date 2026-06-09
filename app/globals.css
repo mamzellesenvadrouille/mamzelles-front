@@ -2467,11 +2467,16 @@ a { text-decoration: none; color: inherit; }
   font-size: 36px !important;
   line-height: 1.2 !important;
 }
+.hero-confidentialite .hero-bg {
+  object-position: center 60%;
+}
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero-confidentialite { height: 220px; min-height: 220px; max-height: 220px; }
   .hero-confidentialite h1 { font-size: 30px !important; }
+  .hero-confidentialite .hero-bg { object-position: center 50%; }
 }
 @media (max-width: 768px) {
   .hero-confidentialite { height: 200px; min-height: 200px; max-height: 200px; }
   .hero-confidentialite h1 { font-size: 24px !important; }
+  .hero-confidentialite .hero-bg { object-position: center 50%; }
 }
