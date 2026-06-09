@@ -3,22 +3,23 @@ import InstagramFeed from './InstagramFeed';
 import Navbar from '../components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Qui sommes-nous | MamZelles en vadrouille',
-  description: "Amélie et Laurie, deux voyageuses passionnées installées à Antibes. Découvrez notre histoire, nos valeurs et notre vision du voyage sur mesure.",
+  title: 'Amélie & Laurie, Travel Planners passionnées | MamZelles en vadrouille',
+  description: "Découvrez l'histoire d'Amélie & Laurie, deux travel planners passionnées installées à Antibes. Vanlife, voyages aux quatre coins du monde et voyages sur mesure créés avec le cœur.",
+  alternates: { canonical: 'https://mamzellesenvadrouille.com/qui-sommes-nous' },
   openGraph: {
-    title: 'Qui sommes-nous | MamZelles en vadrouille',
-    description: "Deux voyageuses passionnées, une même vision du voyage sur mesure.",
-    url: 'https://www.mamzellesenvadrouille.com/qui-sommes-nous',
+    title: 'Amélie & Laurie, Travel Planners passionnées | MamZelles en vadrouille',
+    description: "L'histoire de deux travel planners passionnées. Vanlife, voyages et itinéraires sur mesure créés avec le cœur.",
+    url: 'https://mamzellesenvadrouille.com/qui-sommes-nous',
     siteName: 'MamZelles en vadrouille',
-    images: [{ url: 'https://www.mamzellesenvadrouille.com/hero-nous.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://mamzellesenvadrouille.com/hero-nous.webp', width: 1200, height: 630 }],
     locale: 'fr_FR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Qui sommes-nous | MamZelles en vadrouille',
-    description: 'Deux voyageuses passionnées, une même vision du voyage sur mesure.',
-    images: ['https://www.mamzellesenvadrouille.com/hero-nous.webp'],
+    title: 'Amélie & Laurie, Travel Planners passionnées | MamZelles en vadrouille',
+    description: "L'histoire de deux travel planners passionnées. Vanlife, voyages et itinéraires sur mesure.",
+    images: ['https://mamzellesenvadrouille.com/hero-nous.webp'],
   },
 };
 
