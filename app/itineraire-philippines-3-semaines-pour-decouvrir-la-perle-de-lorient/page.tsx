@@ -889,7 +889,7 @@ export default function PhilippinesPage() {
           <NewsletterForm />
 
           <section className="article-comments-section">
-            <CommentsList articleSlug="itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" initialComments={[
+            <CommentsList comments={[
               {
                 id: '21',
                 author: 'Mimi des iles',
