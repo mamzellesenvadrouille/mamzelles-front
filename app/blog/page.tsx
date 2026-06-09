@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Notre Blog Voyages | MamZelles en vadrouille',
-  description: "Inspirations, itinéraires et bons plans voyage par MamZelles en vadrouille. Découvrez nos articles sur les Philippines, le Maroc, l'Espagne et bien plus.",
+  title: 'Blog Voyage | Itinéraires, Bons Plans & Inspirations | MamZelles en vadrouille',
+  description: "Itinéraires détaillés, bons plans et coups de cœur voyage par deux Travel Planners passionnées. Philippines, Maroc, Espagne, Angleterre… Trouvez votre prochaine destination !",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/blog' },
   openGraph: {
-    title: 'Notre Blog Voyages | MamZelles en vadrouille',
-    description: 'Inspirations, itinéraires et bons plans voyage. Philippines, Maroc, Espagne et bien plus.',
+    title: 'Blog Voyage | Itinéraires & Inspirations | MamZelles en vadrouille',
+    description: "Itinéraires détaillés, bons plans et coups de cœur voyage. Philippines, Maroc, Espagne, Angleterre et bien plus.",
     url: 'https://mamzellesenvadrouille.com/blog',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/hero-blog.webp', width: 1200, height: 630 }],
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Notre Blog Voyages | MamZelles en vadrouille',
-    description: 'Inspirations, itinéraires et bons plans voyage.',
+    title: 'Blog Voyage | Itinéraires & Inspirations | MamZelles en vadrouille',
+    description: 'Itinéraires détaillés, bons plans et coups de cœur voyage. Philippines, Maroc, Espagne et plus.',
     images: ['https://mamzellesenvadrouille.com/hero-blog.webp'],
   },
 };
