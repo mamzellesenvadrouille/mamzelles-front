@@ -11,8 +11,7 @@ const nextConfig: NextConfig = {
       { source: '/road-trip-a-lanzarote/', destination: 'https://blog.mamzellesenvadrouille.com/road-trip-a-lanzarote/', permanent: true },
       { source: '/visiter-londres-en-1-semaine', destination: 'https://blog.mamzellesenvadrouille.com/visiter-londres-en-1-semaine', permanent: true },
       { source: '/visiter-londres-en-1-semaine/', destination: 'https://blog.mamzellesenvadrouille.com/visiter-londres-en-1-semaine/', permanent: true },
-      { source: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient', destination: 'https://blog.mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient', permanent: true },
-      { source: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/', destination: 'https://blog.mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/', permanent: true },
+
       { source: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines', destination: 'https://blog.mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines', permanent: true },
       { source: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines/', destination: 'https://blog.mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines/', permanent: true },
       { source: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus', destination: 'https://blog.mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus', permanent: true },
