@@ -3,12 +3,12 @@ import { Clock, Heart, Map, User } from 'lucide-react';
 import Navbar from './components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'MamZelles en vadrouille | Travel Planners sur mesure',
-  description: "Amélie et Laurie créent des voyages 100% personnalisés selon vos envies, votre rythme et votre budget. Devis gratuit sous 48h.",
+  title: 'MamZelles en vadrouille | Travel Planners – Voyage sur Mesure & Itinéraire Personnalisé',
+  description: "Votre voyage rêvé, pensé et organisé sur mesure par Amélie & Laurie, Travel Planners passionnées. Itinéraire personnalisé, carnet digital, devis gratuit sous 48h. Partez l'esprit libre.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com' },
   openGraph: {
-    title: 'MamZelles en vadrouille | Travel Planners sur mesure',
-    description: "Voyages 100% personnalisés. Devis gratuit sous 48h.",
+    title: 'MamZelles en vadrouille | Travel Planners – Voyage sur Mesure',
+    description: "Votre voyage rêvé, pensé et organisé sur mesure. Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.",
     url: 'https://mamzellesenvadrouille.com',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/og-home.png', width: 1200, height: 630 }],
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MamZelles en vadrouille | Travel Planners sur mesure',
-    description: 'Voyages 100% personnalisés. Devis gratuit sous 48h.',
+    title: 'MamZelles en vadrouille | Travel Planners – Voyage sur Mesure',
+    description: 'Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.',
     images: ['https://mamzellesenvadrouille.com/og-home.png'],
   },
 };
