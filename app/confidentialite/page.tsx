@@ -11,13 +11,13 @@ export default function Confidentialite() {
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
-      <section className="hero hero-home" style={{ minHeight: 'clamp(160px, 30vh, 280px)' }}>
+      <section className="hero hero-confidentialite">
         <Navbar />
         <img className="hero-bg" src="/home-hero.webp" alt="Politique de confidentialité MamZelles en vadrouille" />
         <div className="hero-overlay" />
-        <div className="hero-content" style={{ paddingBottom: '48px' }}>
-          <p className="eyebrow" style={{ marginBottom: '12px' }}>Informations légales</p>
-          <h1>Politique de <em>confidentialité</em></h1>
+        <div className="hero-content" style={{ paddingBottom: '32px' }}>
+          <p className="eyebrow" style={{ marginBottom: '8px', fontSize: '10px' }}>Informations légales</p>
+          <h1 style={{ fontSize: 'clamp(22px, 2.5vw, 36px)', lineHeight: '1.2' }}>Politique de <em>confidentialité</em></h1>
         </div>
       </section>
 
