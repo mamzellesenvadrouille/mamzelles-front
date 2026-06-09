@@ -17,8 +17,6 @@ const nextConfig: NextConfig = {
       { source: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines/', destination: 'https://blog.mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines/', permanent: true },
       { source: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus', destination: 'https://blog.mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus', permanent: true },
       { source: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus/', destination: 'https://blog.mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus/', permanent: true },
-      { source: '/travel-planner-voyage-sur-mesure', destination: 'https://blog.mamzellesenvadrouille.com/travel-planner-voyage-sur-mesure', permanent: true },
-      { source: '/travel-planner-voyage-sur-mesure/', destination: 'https://blog.mamzellesenvadrouille.com/travel-planner-voyage-sur-mesure/', permanent: true },
       { source: '/destinations/:path*', destination: 'https://blog.mamzellesenvadrouille.com/destinations/:path*', permanent: true },
       { source: '/formulaire-de-contact', destination: '/formules#formulaire', permanent: true },
       { source: '/formulaire-de-contact/', destination: '/formules#formulaire', permanent: true },
