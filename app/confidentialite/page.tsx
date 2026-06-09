@@ -11,8 +11,9 @@ export default function Confidentialite() {
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
-      <section className="hero hero-small" style={{ minHeight: '220px' }}>
+      <section className="hero hero-home" style={{ minHeight: '220px' }}>
         <Navbar />
+        <img className="hero-bg" src="/home-hero.webp" alt="Politique de confidentialité MamZelles en vadrouille" />
         <div className="hero-overlay" />
         <div className="hero-content" style={{ paddingBottom: '40px' }}>
           <h1 style={{ fontSize: 'clamp(28px, 4vw, 48px)' }}>Politique de <em>confidentialité</em></h1>
@@ -104,7 +105,7 @@ export default function Confidentialite() {
           </div>
         </div>
         <div className="footer-bottom">
-          © 2026 MamZelles en vadrouille — Tous droits réservés
+          © 2026 MamZelles en vadrouille — Tous droits réservés · <a href="/confidentialite" style={{ color: 'rgba(26,21,18,0.5)', fontSize: '12px', textDecoration: 'underline' }}>Politique de confidentialité</a>
         </div>
       </footer>
 
