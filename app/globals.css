@@ -2468,7 +2468,7 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.2 !important;
 }
 .hero-confidentialite .hero-bg {
-  object-position: center 40%;
+  object-position: center 70%;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero-confidentialite { height: 220px; min-height: 220px; max-height: 220px; }
