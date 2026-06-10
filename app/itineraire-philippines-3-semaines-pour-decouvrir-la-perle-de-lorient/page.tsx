@@ -179,7 +179,7 @@ export default function PhilippinesPage() {
             <p>Si comme nous, vous souhaitez aller à Banaue en bus, vous devrez passer l&apos;épreuve du bus climatisé ! Ce n&apos;est pas un mythe, il y fait vraiment froid. <strong>Prévoyez de quoi vous couvrir.</strong></p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Nos conseils pour le bus Manille → Banaue</strong><p>Emportez impérativement un plaid ou une veste épaisse — la clim est poussée à fond toute la nuit. Prévoyez aussi un masque de nuit et des bouchons d&apos;oreilles pour espérer dormir. Aux 3 pauses sur la route, profitez-en pour vous dégourdir les jambes et acheter quelque chose de chaud à boire. Et réservez vos billets plusieurs semaines à l&apos;avance, surtout en haute saison !</p></div>
+              <div><p>Si comme nous, vous souhaitez aller à Banaue en bus, vous devrez passer l&apos;épreuve du bus climatisé ! Ce n&apos;est pas un mythe, il y fait vraiment froid. <strong>Prévoyez de quoi vous couvrir.</strong></p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_5522-768x1024.jpeg" alt="Bus Manille Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -227,19 +227,16 @@ export default function PhilippinesPage() {
             <p><strong>Après une quinzaine de minutes de marche, nous arrivons par le haut du village.</strong> C&apos;est la seule voie d&apos;accès. La vue sur les rizières en terrasses et le village en contrebas est juste impressionnante. Un amphithéâtre végétal, avec pour scène le village. Nous sommes là, au milieu des montagnes, devant ce qui est considéré comme la 8ème Merveille du monde, et on comprend pourquoi !</p>
             <p>Nous sommes clairement émues et bouche bée face à la magie et la beauté de ce paysage. À cet instant, on se sent hors du temps. Il se dégage ici une énergie particulière.</p>
             <p>Cela fait seulement 10 ans qu&apos;il y a de l&apos;électricité à Batad, mais <strong>il n&apos;y a toujours aucun réseau téléphonique et internet.</strong></p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1327-768x1024.jpg" alt="Enfants Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1319-768x1024.jpg" alt="Batad Trek" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
             <p>Nous suivons notre guide à travers les rizières en terrasse. Il nous apprend plein de choses, notamment que toutes <strong>ces terrasses ont été façonnées par la main de l&apos;Homme il y a plus de 2 000 ans</strong> et qu&apos;elles se transmettent de génération en génération.</p>
             <p>Le riz, qui est cultivé ici par les familles, est seulement pour leur consommation. Ils n&apos;en produisent pas suffisamment pour le commercialiser.<br />
             Alors que dans le reste du pays le riz est cultivé et récolté 2 fois par an, ici à Batad, c&apos;est seulement une fois dans l&apos;année, soit en février. <strong>Le meilleur moment pour venir voir les rizières en terrasse à Batad est donc au mois de mai.</strong> C&apos;est juste avant la récolte, quand tout est bien vert.</p>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><p><strong>Le meilleur moment pour venir voir les rizières en terrasse à Batad est donc au mois de mai.</strong> C&apos;est juste avant la récolte, quand tout est bien vert.</p></div>
+            </div>
             <p>On se pose la question quand même… De quoi vivent les habitants de Batad ? Du tourisme of course !</p>
             <p>Notre guide est un jeune homme du village. En même temps, qui de mieux placé pour nous faire découvrir cet endroit ? Il connaît les lieux comme sa poche. Certains habitants du village accueillent les gens de passage pour la nuit, d&apos;autres tiennent des restaurants. Les femmes vendent des objets en bois sculpté et des pochettes cousues main. <strong>Pendant notre visite, nous avons donc acheté des petits souvenirs pour contribuer à l&apos;économie du village.</strong></p>
-                        <div className="article-must">
-              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>La meilleure période pour visiter Batad</strong><p>Venez de préférence <strong>en mai</strong>, juste avant la récolte : les rizières sont d&apos;un vert éclatant et le spectacle est à son apogée. Le <strong>guide est obligatoire</strong> à Batad — et c&apos;est tant mieux, car les habitants font de passionnants ambassadeurs de leur patrimoine. Prévoyez des chaussures à bonne adhérence : les murets des rizières sont étroits et glissants !</p></div>
-            </div>
+            
             <p>Cependant, on nous explique que l&apos;exode rural est un danger qui menace ce magnifique paysage. Si les jeunes quittent le village, qui va prendre le relai pour entretenir les rizières et les faire perdurer ? Vivre ici, coupé du monde, n&apos;emballe pas tous les jeunes de la région. Une dame nous explique qu&apos;à l&apos;âge de 8 ans elle aidait ses parents et travaillait tous les jours dans les cultures. Aujourd&apos;hui, elle a des enfants qui ne veulent pas apprendre ce métier et l&apos;aider dans ces tâches : « ils préfèrent regarder des vidéos sur Tik-Tok ! ».</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0380-1024x768.jpg" alt="Merveille du monde Batad" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
@@ -261,18 +258,11 @@ export default function PhilippinesPage() {
             Si les escaliers du village sont par endroits un peu sportifs, celui-là nous a littéralement tétanisé les cuisses !</p>
             <p>Après l&apos;effort, le réconfort. Arrivées au niveau de la cascade, notre guide nous laisse. Il nous dit de prendre notre temps, qu&apos;il nous attend plus loin. Ni une ni deux, on enlève les chaussures pour traverser et rejoindre la zone de cailloux face à la cascade. Bon, elle est super fraîche (14 degrés) mais ça fait du bien aux jambes.</p>
             <p>Nous passons un moment à contempler <strong>cette spectaculaire chute de 45 mètres de haut.</strong> Le vacarme assourdissant des trombes d&apos;eaux est impressionnant. Quelques courageux se baignent. Plusieurs cairns se dressent devant la cascade… Du coup, on n&apos;a pas pu s&apos;empêcher de mettre notre petite pierre à l&apos;édifice !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1238_jpg-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1257-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
             <p>Après avoir bien profité de ce moment, nous retrouvons notre guide pour rebrousser chemin.<br />
             C&apos;est parti pour remonter les <strong>700 marches, et la pente est assez raide !</strong> Ce sont les mollets qui en prennent un coup… Mais franchement, aucun regret. Nous sommes tellement heureuses de l&apos;avoir fait. <strong>« I survived Batad ! »,</strong> comme on dit ici.</p>
             <p>Il faut encore retraverser les rizières en terrasse et grimper quelques escaliers pour rejoindre le restaurant où nous allons manger dans le village.</p>
             <p><strong>Notre guide nous a réservé une table dans un petit restaurant</strong> qui ne paye pas de mine, mais avec une vue panoramique incroyable ! Cet endroit restera gravé à jamais dans nos mémoires. On scrute ce paysage comme pour ne pas en rater une miette. Et pour couronner le tout, on nous sert l&apos;un des meilleurs poulet curry qu&apos;on ait mangé aux Philippines !</p>
-                        <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
-              <div><strong>L&apos;avis des MamZelles</strong><p>Batad, c&apos;est l&apos;un des moments les plus forts de notre voyage aux Philippines. On ne s&apos;attendait pas à être aussi émues face à ces rizières. Entre la beauté du paysage, les rencontres avec les habitants et le défi physique des 700 marches de Tappiyah Falls, cette journée restera gravée à jamais. Ne venez pas à Batad si vous êtes en mauvaise condition physique — c&apos;est sportif ! Mais si vous en avez la possibilité, <strong>ne passez pas à côté.</strong></p></div>
-            </div>
+            
             <p>Il est temps pour nous de quitter cette merveille du monde et de retrouver notre chauffeur. Notre guide nous accompagne pour rejoindre la route. Le retour n&apos;est pas très long, mais ça monte encore et encore ! D&apos;autant qu&apos;après la pause déjeuner, on a un peu les jambes coupées.</p>
             <p><strong>Sur le chemin du retour,</strong> notre chauffeur nous arrête au bord de la route, au niveau d&apos;un <strong>point de vue qui surplombe un petit village appelé Bangaan Village.</strong> Cet endroit est également très joli… Il nous fait penser à Batad, mais en plus petit et moins impressionnant.</p>
             <p>Retour à l&apos;hôtel, fin de journée tranquille pour nous. Au programme, repos, apéro, repas et dodo. Il faut être en forme pour le lendemain. Il est prévu qu&apos;on découvre un autre spot très sympa de la région !</p>
@@ -303,26 +293,19 @@ export default function PhilippinesPage() {
             <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !<br />
             Une légère odeur de soufre se dégage de cet endroit. N&apos;oublions pas que les Philippines sont sur des terres volcaniques.</p>
             <p>Pour l&apos;anecdote, <strong>si vous portez des bijoux en « toc », enlevez-les.</strong> Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. <strong>Pour les bijoux en or et argent, ils noircissent mais se nettoient.</strong></p>
-            <p>En sortant de l&apos;eau, nous avons sur la peau comme une pellicule grasse, et on sent un peu l&apos;œuf pourri ! Heureusement, il y a des douches sur place pour se rincer.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1470-769x1024.jpg" alt="Hot Springs Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2477-1024x768.jpg" alt="Sources eau chaude Hapao Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Après ce moment de détente, il est temps de faire demi-tour car nous avons notre bus pour Manille en fin d&apos;après-midi. Pour le retour, nous empruntons un autre chemin, bien plus court mais tout aussi joli.</p>
-                        <div className="article-tip">
+            <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Nos conseils pour visiter Hapao</strong><p>Apportez votre repas — il n&apos;y a aucun restaurant sur place. Choisissez la <strong>version longue de la visite</strong> avec votre guide local : elle vous emmène jusqu&apos;au village et offre une immersion bien plus authentique. Et si vous enchaînez avec les Hot springs, pensez à ne pas porter de bijoux fantaisie : le soufre les noircit irrémédiablement !</p></div>
+              <div><p><strong>Si vous portez des bijoux en « toc », enlevez-les avant d&apos;entrer dans les Hot springs.</strong> Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. Pour les bijoux en or et argent, ils noircissent mais se nettoient.</p></div>
             </div>
+            <p>En sortant de l&apos;eau, nous avons sur la peau comme une pellicule grasse, et on sent un peu l&apos;œuf pourri ! Heureusement, il y a des douches sur place pour se rincer.</p>
+            <p>Après ce moment de détente, il est temps de faire demi-tour car nous avons notre bus pour Manille en fin d&apos;après-midi. Pour le retour, nous empruntons un autre chemin, bien plus court mais tout aussi joli.</p>
+            
             <p>Pour info, <strong>si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique.</strong> Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie (si on peut appeler ça comme ça !) avant d&apos;entrer dans le village.</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1509-1-768x1024.jpg" alt="Hapao Batad Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1528-768x1024.jpg" alt="Hapao View Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1540_jpg-1-768x1024.jpg" alt="Enfant Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><p><strong>Si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique.</strong> Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie avant d&apos;entrer dans le village.</p></div>
             </div>
-                        <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
-              <div><strong>L&apos;avis des MamZelles</strong><p>Hapao, c&apos;est la parenthèse apaisante après l&apos;intensité de Batad. Les rizières aux couleurs incroyables, la rencontre avec notre guide du village et la détente dans les Hot springs en font une journée parfaite. Un conseil : combinés sur 2 jours, Batad et Hapao forment un duo imbattable. On ne garderait pas l&apos;un sans l&apos;autre !</p></div>
-            </div>
+            
             <h4>⧐ Retour en bus à Manille</h4>
             <p>Nous retournons à l&apos;hôtel en van. Nous récupérons nos bagages et grignotons avant de rejoindre la gare routière. C&apos;est ainsi que s&apos;achève cette parenthèse magique dans cet endroit aux paysages incroyables.</p>
             <p><strong>17h30, nous reprenons le bus direction Manille.</strong></p>
