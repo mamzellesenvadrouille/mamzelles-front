@@ -1738,19 +1738,9 @@ p + .article-img-full {
   letter-spacing: 2px;
   margin: 28px 0 10px;
 }
-.article-philippines .article-section h4::before {
-  content: 'â§';
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
-  margin-right: 8px;
-  color: var(--gold);
-}
 .article-philippines .article-section h3 + h4 {
   margin-top: 16px;
 }
-.article-philippines .article-gallery-2 { margin: 28px 0; }
-.article-philippines .article-gallery-3 { margin: 28px 0; }
-.article-philippines .article-img-full { margin: 28px 0; }
 .article-img-center { width: 50%; height: 320px; object-fit: cover; border-radius: 6px; margin: 24px auto; display: block; }
 
 /* PRATIQUE */

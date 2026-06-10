@@ -172,7 +172,7 @@ export default function PhilippinesPage() {
               <span className="article-day-badge">Jour 1</span>
               <h3>De Manille à Banaue</h3>
             </div>
-            <h4>Comment se rendre à Banaue ?</h4>
+            <h4>⧐ Comment se rendre à Banaue ?</h4>
             <p><strong>Pour nous rendre à Banaue, nous avons choisi l&apos;option bus au départ de Manille.</strong> Vous avez également la possibilité de vous y rendre en transport privé, mais le tarif ne sera pas le même ! Nous avions réservé le transfert plusieurs semaines avant. Le trajet aller-retour nous est revenu à <strong>1800 Php (30€)</strong> par personne.</p>
             <p>Nous devons nous rendre à la gare routière de la compagnie <strong><a href="https://12go.com/en/operator/ohayami-trans" target="_blank" rel="noopener noreferrer" className="article-link">Ohayami Trans</a></strong> à Manille pour 22h30, ce qui nous laisse le temps d&apos;aller manger un bout et de faire un petit tour dans le secteur.</p>
             <p>Nous sommes dans un quartier populaire, assez pauvre pour ne pas dire ghetto. Nous traversons quelques rues… C&apos;est la première fois qu&apos;on a le <strong>sentiment de ne pas être en sécurité,</strong> mais ce n&apos;est que notre ressenti. Après avoir mangé, nous retournons à la gare routière. Nous récupérons nos billets et c&apos;est parti pour un grand périple.</p>
@@ -196,7 +196,7 @@ export default function PhilippinesPage() {
             C&apos;est à ce moment-là qu&apos;un membre du personnel se joint à nous et nous présente tout ce qu&apos;il y a à voir, à faire dans le coin.</p>
             <p>Nous organisons directement avec lui nos deux prochaines journées… <strong>Jour 1, trek à Batad, et Jour 2, visite d&apos;Hapao et de ses Hot springs.</strong><br />
             Pour deux personnes et les excursions des deux jours, nous payons <strong>10 800 Php (173€)</strong>, transport privé et guide compris.</p>
-            <h4>La ville de Banaue</h4>
+            <h4>⧐ La ville de Banaue</h4>
             <p>Pour cette première demi-journée, nous partons donc vadrouiller dans la ville de <strong>Banaue</strong>. Cette ville construite à flanc de montagne n&apos;a pas un charme fou et nous paraît très pauvre. Nous empruntons le <strong>pont suspendu pour rejoindre le haut du centre-ville</strong>. L&apos;endroit n&apos;est pas vraiment touristique.</p>
             <p>Après avoir exploré le centre, <strong>nous montons vers le village.</strong> Ça grimpe pas mal mais c&apos;est une bonne mise en jambes pour ce qui nous attend le lendemain. Nous passons plusieurs petites maisons et croisons quelques habitants. Ici, c&apos;est un peu la débrouille. Les gens vivent de rien et avec rien. La plupart des maisons que l&apos;on croise en chemin sont constituées de trois murs en parpaings et d&apos;un bout de tôle en guise de toit.</p>
             <p><strong>Après avoir marché une bonne trentaine de minutes</strong> et longé des rizières en terrasse, on arrive à notre objectif, <strong>une petite cascade.</strong> D&apos;ici le panorama est incroyable ! Quelques photos avec des locaux surgis de nulle part, et il est temps de redescendre avant qu&apos;il ne fasse nuit.</p>
@@ -219,7 +219,7 @@ export default function PhilippinesPage() {
             <p>Après une bonne nuit et un petit-déjeuner copieux, <strong>notre van est là</strong> pour nous emmener à Batad. On est trop excitées, on a trop hâte de découvrir ces paysages.</p>
             <p><strong>Après une petite demi-heure de route, nous arrivons.</strong> Notre guide pour la journée nous attend (obligatoire). C&apos;est en fait un habitant du village.</p>
             <p>Nous avons choisi de venir <strong>découvrir ce village à la journée</strong> mais sachez qu&apos;il y a la <strong>possibilité de faire un trek sur plusieurs jours.</strong> En gros, vous partez de Banaue pour rejoindre Batad à pied, en passant par des sentiers, des forêts, des rizières… De ce qu&apos;on nous en a dit, c&apos;est assez fatiguant mais c&apos;est une belle expérience à vivre.</p>
-            <h4>Batad, la 8ème Merveille du monde</h4>
+            <h4>⧐ Batad, la 8ème Merveille du monde</h4>
             <p><strong>Après une quinzaine de minutes de marche, nous arrivons par le haut du village.</strong> C&apos;est la seule voie d&apos;accès. La vue sur les rizières en terrasses et le village en contrebas est juste impressionnante. Un amphithéâtre végétal, avec pour scène le village. Nous sommes là, au milieu des montagnes, devant ce qui est considéré comme la 8ème Merveille du monde, et on comprend pourquoi !</p>
             <p>Nous sommes clairement émues et bouche bée face à la magie et la beauté de ce paysage. À cet instant, on se sent hors du temps. Il se dégage ici une énergie particulière.</p>
             <p>Cela fait seulement 10 ans qu&apos;il y a de l&apos;électricité à Batad, mais <strong>il n&apos;y a toujours aucun réseau téléphonique et internet.</strong></p>
@@ -246,7 +246,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1294-1-1024x768.jpg" alt="Randonnée Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1217_jpg-768x1024.jpg" alt="Love Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <h4>Tappiyah Falls</h4>
+            <h4>⧐ Tappiyah Falls</h4>
             <p>On traverse la maison et de l&apos;autre côté, c&apos;est un tout autre paysage. On se croirait transporté dans la jungle. Il paraît qu&apos;au bout du chemin, <strong>une incroyable cascade</strong> nous attend…</p>
             <p><strong>Mais ça se mérite !</strong> À partir d&apos;ici, <strong>il faut compter une bonne vingtaine de minutes de marche</strong> pour y accéder. De marche oui, mais de marches d&apos;escalier surtout !</p>
             <p>En effet, pour accéder à cette cascade, c&apos;est <strong>plus de 700 marches étroites, bancales et glissantes à descendre</strong> (qu&apos;il faudra bien évidemment remonter !).<br />
@@ -271,7 +271,7 @@ export default function PhilippinesPage() {
               <span className="article-day-badge">Jour 3</span>
               <h3>Le village d&apos;Hapao, ses rizières &amp; les Hot springs</h3>
             </div>
-            <h4>Hapao &amp; ses rizières</h4>
+            <h4>⧐ Hapao &amp; ses rizières</h4>
             <p>Nous avons prévu aujourd&apos;hui de découvrir le village d&apos;<strong>Hapao qui se situe à environ 45 minutes en van de notre hôtel.</strong> Après avoir avalé de merveilleux pancakes au chocolat avec un petit café, c&apos;est partiiii pour de nouvelles aventures ! On ne vous le cache pas, ça tire un peu dans les jambes à cause du trek de la veille, mais rien ne nous empêchera de profiter au maximum de chaque moment.</p>
             <p>En route pour Hapao, notre chauffeur nous arrête à différents points de vue. On en prend plein les yeux, les paysages sont extraordinaires !</p>
             <p>Arrivées sur place, nous rencontrons <strong>notre guide qui est en fait une femme du village.</strong></p>
@@ -287,7 +287,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1425-1024x768.jpg" alt="Rice terrace Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1516-768x1024.jpg" alt="Rice Terrace Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <h4>Les Hot springs d&apos;Hapao</h4>
+            <h4>⧐ Les Hot springs d&apos;Hapao</h4>
             <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !<br />
             Une légère odeur de soufre se dégage de cet endroit. N&apos;oublions pas que les Philippines sont sur des terres volcaniques.</p>
             <p>Pour l&apos;anecdote, <strong>si vous portez des bijoux en « toc », enlevez-les.</strong> Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. <strong>Pour les bijoux en or et argent, ils noircissent mais se nettoient.</strong></p>
@@ -303,7 +303,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1528-768x1024.jpg" alt="Hapao View Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1540_jpg-1-768x1024.jpg" alt="Enfant Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <h4>Retour en bus à Manille</h4>
+            <h4>⧐ Retour en bus à Manille</h4>
             <p>Nous retournons à l&apos;hôtel en van. Nous récupérons nos bagages et grignotons avant de rejoindre la gare routière. C&apos;est ainsi que s&apos;achève cette parenthèse magique dans cet endroit aux paysages incroyables.</p>
             <p><strong>17h30, nous reprenons le bus direction Manille.</strong></p>
             <p>La clim, toujours la clim ! Nous avions anticipé et pris avec nous tout ce que nous avions de plus chaud à se mettre sur le dos pour le trajet.</p>
@@ -319,7 +319,7 @@ export default function PhilippinesPage() {
             </div>
             <p>Bohol est une province des Philippines située dans la <strong>région des Visayas Centrales.</strong> Cette île est très grande en comparaison à la dernière sur laquelle on a posé le pied. 71 km² de superficie à Coron, contre près de 5 000 km² à Bohol. Elle est considérée comme la <strong>10ème plus grande île de l&apos;archipel des Philippines.</strong></p>
             <p>Cette île paradisiaque abrite des paysages splendides, une végétation luxuriante, des plages de rêves, des spots de plongée incroyables et quelques plus que l&apos;on ne peut découvrir qu&apos;ici. Impossible pour nous de tout voir car nous ne passons que 2 nuits sur cette île. Nous avons souhaité nous rendre à Bohol pour ces quelques plus qui rendent cette île unique et magique…</p>
-            <h4>Comment se rendre à Bohol ?</h4>
+            <h4>⧐ Comment se rendre à Bohol ?</h4>
             <p><strong>Si comme nous vous venez de Manille, alors le plus simple est de prendre l&apos;avion.</strong> Il faut prévoir 1h30 de vol pour parcourir les 900 km qui séparent ces 2 villes. Pour vous donner une idée, si vous aviez envie de faire ce trajet en voiture et en ferry, il faut compter 25h selon Google Maps.</p>
             <p><strong>Si vous venez de Cebu (Cebu City et Talood), de Negros (Dumaguete) ou Siquijor, vous pouvez prendre le ferry.</strong></p>
 
@@ -342,7 +342,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1914-1-768x1024.jpg" alt="Room Water to Forest Ecolodge Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1930_jpg-768x1024.jpg" alt="Water to Forest Ecolodge Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <h4>Sortie lucioles sur la rivière Loboc</h4>
+            <h4>⧐ Sortie lucioles sur la rivière Loboc</h4>
             <p>L&apos;île de Bohol renferme de multiples secrets, dont l&apos;un se révèle seulement une fois la nuit tombée.</p>
             <p>Ce soir nous allons à la <strong>rencontre des lucioles sur la Loboc River. La meilleure période pour les observer est entre décembre et janvier,</strong> la moins bonne entre juin et août.</p>
             <p>Vous avez <strong>plusieurs possibilités pour aller voir ces petits vers luisants : en bateau, en canoë / paddle, par un organisme d&apos;excursion ou via un hôtel.</strong> Nous avons choisi de le faire via l&apos;hôtel <strong><a href="https://www.booking.com/hotel/ph/loboc-river-resort.fr.html" target="_blank" rel="noopener noreferrer" className="article-link">Loboc River Resort</a></strong>, un grand complexe hôtelier qui se situe un peu plus haut le long de la rivière. Nous prenons un tuk-tuk et y arrivons seulement en 5 minutes. La grande terrasse du restaurant de cet hôtel offre une vue imprenable sur la rivière.</p>
@@ -371,7 +371,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1830-1024x768.jpg" alt="Scooter Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1706-768x1024.jpg" alt="Bilar Man-Made Forest Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <h4>Les Chocolate Hills</h4>
+            <h4>⧐ Les Chocolate Hills</h4>
             <p>Nous continuons notre road trip vers le <strong>Nord de l&apos;île,</strong> direction le deuxième spot. Non loin de la ville de Carmen, c&apos;est l&apos;endroit le plus visité de Bohol… Les Chocolate Hills ou les Collines de chocolat portent bien leur nom.</p>
             <p>Enfin, tout dépend en réalité de la période où on les voit. <strong>Durant la période la plus sèche (de février à juillet), elles sont effectivement de couleur brune, sinon elles sont vertes.</strong></p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_4782-1024x768.jpg" alt="Chocolate Hills Bohol" className="article-img-full" loading="lazy" />
@@ -386,7 +386,7 @@ export default function PhilippinesPage() {
             <p>Tout autour de nous, étendues sur 50 km², se dressent <strong>près de 1 780 collines,</strong> mesurant entre 30 et 60 mètres de hauteur. La vue du ciel doit être incroyable mais malheureusement il y a un <strong>panneau interdisant de faire voler son drone à partir de 8h du matin.</strong></p>
             <p>Sachez que vous avez également la <strong>possibilité de louer un quad ou un buggy pour vous balader sur un circuit entre les collines.</strong></p>
             <p>Nous reprenons la route et nous nous arrêtons un peu plus loin dans un petit resto appelé <strong><a href="https://www.instagram.com/basakbistrobatuan/" target="_blank" rel="noopener noreferrer" className="article-link">Basak Bistro Batuan</a></strong>. L&apos;endroit n&apos;est pas vraiment touristique mais c&apos;est aussi ça que l&apos;on recherche. En tout cas, on a super bien mangé. C&apos;est là-bas qu&apos;on a découvert que roter après avoir mangé n&apos;est pas du tout mal vu, bien au contraire… Et c&apos;est plutôt surprenant la première fois, surtout quand ce sont nos voisins de table qui s&apos;en donnent à cœur joie !</p>
-            <h4>Les stars de Bohol : les tarsiers</h4>
+            <h4>⧐ Les stars de Bohol : les tarsiers</h4>
             <p>C&apos;est reparti, direction le troisième spot. On tenait absolument à les voir… <strong>Ce sont les plus petits singes au monde. Ils mesurent en moyenne 15 cm et pèsent moins de 100 g.</strong> Ce sont les tarsiers !</p>
             <p>Vous avez deux possibilités pour observer ces petits primates : au <strong>Centre de conservation des tarsiers ou bien au Sanctuaire de Corella.</strong></p>
             <p>Après quelques recherches, sans hésitation, <strong>notre choix s&apos;est porté sur le sanctuaire de Corella.</strong> C&apos;est une fondation officielle qui œuvre pour la protection du tarsier où les petits primates sont en quasi-liberté.</p>
@@ -398,7 +398,7 @@ export default function PhilippinesPage() {
             <p>Autres caractéristiques plutôt particulières, proportionnellement, les yeux du tarsier sont 150 fois plus grands que ceux de l&apos;humain. Il est également capable de tourner sa tête à presque 360°.</p>
             <p><strong>Notre visite a duré une bonne vingtaine de minutes.</strong> À la sortie du sanctuaire, passage obligé par la boutique de souvenirs et par un petit musée où sont exposés des squelettes de tarsiers (on préfère largement les voir vivants !).</p>
             <p><strong>On reprend la route vers le Sud</strong> et on finit la boucle en passant par Baclayon church.</p>
-            <h4>L&apos;église de corail de Baclayon</h4>
+            <h4>⧐ L&apos;église de corail de Baclayon</h4>
             <p>Bon, on n&apos;a pas spécialement pour habitude de visiter les églises durant nos voyages, mais là, on était plutôt intriguées de visiter celle-ci.</p>
             <p>L&apos;église de Baclayon est considérée comme la <strong>plus ancienne église catholique des Philippines.</strong> La construction de cet imposant édifice a duré 10 ans. Les travaux ont été finis en 1727.</p>
             <div className="article-gallery-2">
@@ -431,7 +431,7 @@ export default function PhilippinesPage() {
             <div className="article-day-header">
               <h2>📍 Siquijor — L&apos;île mystique aux magnifiques cascades</h2>
             </div>
-            <h4>Siquijor, « The Magic Island »</h4>
+            <h4>⧐ Siquijor, « The Magic Island »</h4>
             <p>Siquijor est une île faisant partie de la <strong>région des Visayas centrales.</strong> Mais savez-vous pourquoi les philippins ne se rendent pas à Siquijor ? À cause des sorcières !</p>
             <p>Au programme, de belles plages, une multitude de cascades, mais surtout une atmosphère vraiment spéciale. Siquijor est un endroit où l&apos;on se sent bien. C&apos;est une île qui est encore bien préservée du tourisme. <strong>Elle est aussi très peu visitée par les locaux.</strong></p>
             <p>Siquijor est aussi appelée <strong>« The Magic Island ». Cela vient du fait qu&apos;il y a depuis toujours de fortes croyances sur l&apos;existence de sorcières sur l&apos;île. </strong>Pour les habitants de Siquijor, leur présence ne fait aucun doute.</p>
@@ -471,7 +471,7 @@ export default function PhilippinesPage() {
             <p>On se réveille d&apos;une bonne et longue nuit de sommeil. Et ce matin, il ne pleut plus ! Bon, ce n&apos;est pas grand soleil non plus, mais ça se tient.</p>
             <p>On a hâte de découvrir cette île. Pour ça, <strong>on s&apos;est organisées un petit circuit entre plages et cascades. </strong>Après la journée de perdue hier, on est motivées pour voir un maximum de spots aujourd&apos;hui.</p>
             <p>P&apos;tit dej&apos; avalé et let&apos;s go ! <strong>Nous louons un scooter à l&apos;hôtel </strong>pour <strong>450 Php (7€30)</strong> la journée. L&apos;avantage de le louer directement à l&apos;hôtel est qu&apos;on ne vous impose pas un horaire maximum pour le retour. La seule chose est de rendre le scooter avec le même niveau de carburant que quand vous le prenez. Pour avoir une idée, nous avons payé <strong>200 Php (3€20)</strong> <strong>le plein de carburant. </strong></p>
-            <h4>Tubod Beach</h4>
+            <h4>⧐ Tubod Beach</h4>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2030-1024x768.jpg" alt="Tubod Beach Siquijor" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2036-1024x768.jpg" alt="Tubod Beach Siquijor" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -480,7 +480,7 @@ export default function PhilippinesPage() {
             <p>C&apos;est une jolie plage, mais le principal intérêt ici se trouve sous l&apos;eau. <strong>Sur la gauche, se trouve donc la réserve marine.</strong> Il y aurait tout un tas de divers poissons et coraux à observer.</p>
             <p>On ne s&apos;est pas jetées à l&apos;eau (frileuses que nous sommes !) mais <strong>il paraît que ça vaut vraiment le coup. </strong></p>
             <p>La plage est gratuite mais si vous souhaitez nager dans la zone du sanctuaire, il faut payer <strong>20 Php (0€32)</strong> par personne. Pour <strong>50 Php (0€80)</strong>, vous avez la possibilité de louer du matériel de snorkeling.</p>
-            <h4>Lugnason Falls</h4>
+            <h4>⧐ Lugnason Falls</h4>
             <p>Nous reprenons la route direction Lugnason Falls, à 3,5 km. Pour accéder à la cascade, <strong>il suffit de suivre le chemin. Il y a quelques marches à descendre. </strong>Dans l&apos;idée, rien de compliqué, mais avec la pluie qui est tombée, le sol est gorgé d&apos;eau et c&apos;est super glissant. Le site est sympa et en plus il n&apos;y a personne. On découvre une <strong>belle cascade avec un gros débit d&apos;eau et un bassin pour se baigner.</strong></p>
             <p>On ne vous le cache pas, on est quand même un peu déçues. La couleur de l&apos;eau est loin d&apos;être identique à celle des photos Google. En même temps, pas étonnant avec tout ce qui est tombé la veille. L&apos;eau est marron, ce qui donne tout de suite un peu moins envie de s&apos;y baigner.</p>
             <div className="article-gallery-2">
@@ -489,7 +489,7 @@ export default function PhilippinesPage() {
             </div>
             <p>Puis direction Lazy pour le prochain spot. Nous roulons une petite trentaine de minutes.</p>
             <p>On l&apos;a déjà dit, mais on le redit, <strong>utiliser un scooter aux Philippines est la meilleure solution pour découvrir des endroits encore préservés du tourisme, rencontrer des locaux, traverser des villages, mais surtout pour ressentir un sentiment de liberté totale !</strong></p>
-            <h4>Lagaan Falls</h4>
+            <h4>⧐ Lagaan Falls</h4>
             <p>Arrivées à Lagaan falls, un parking nous attend. Nous payons <strong>10 Php (0€16)</strong> pour laisser le scooter. Une taxe de <strong>50 Php (0€80)</strong> par personne est demandée pour accéder au site.</p>
             <p>On nous propose d&apos;être accompagnées par un guide (payant). <strong>Ce n&apos;est pas obligatoire et surtout pas nécessaire.</strong></p>
             <div className="article-gallery-2">
@@ -498,7 +498,7 @@ export default function PhilippinesPage() {
             </div>
             <p><strong>Nous suivons donc le chemin balisé </strong>qui descend jusqu&apos;à la cascade. L&apos;endroit est très sympa. <strong>Il y a plusieurs zones pour se baigner. </strong></p>
             <p>Si comme Laurie, l&apos;envie vous prend de vous jeter à l&apos;eau, vous pouvez le faire à l&apos;aide d&apos;une corde. Vous aurez l&apos;impression d&apos;être Tarzan le temps d&apos;un saut. Les locaux sont là pour vous encourager.</p>
-            <h4>Cambugahay Falls</h4>
+            <h4>⧐ Cambugahay Falls</h4>
             <p>Nous continuons notre circuit pour aller à Cambugahay Falls. En moins de 15 minutes nous y sommes.</p>
             <p>Au vu du nombre de scooters et de tuk-tuks stationnés au bord de la route, on se doute qu&apos;il y a du monde sur place. En même temps, cet endroit est l&apos;un des plus convoités de l&apos;île. Il faut payer une taxe de <strong>20 Php (0€32)</strong> par personne pour accéder au site. <strong>On prend l&apos;escalier avec ses nombreuses marches</strong> qui descend jusqu&apos;à la rivière. <strong>La cascade est constituée de 3 niveaux.</strong></p>
             <p><strong>Il ne faut pas hésiter à remonter la rivière sur la gauche. </strong>N&apos;oubliez pas de <strong>vous équiper de chaussures d&apos;eau</strong> pour visiter ce lieu. Même s&apos;ils sont un peu sommaires, <strong>plusieurs passages sont aménagés pour traverser la rivière. </strong>C&apos;est vrai que cet endroit est très beau, mais là aussi, à cause de la pluie, l&apos;eau n&apos;est pas du tout turquoise. On ne va pas se plaindre, on est quand même sur un spot incroyable !</p>
@@ -510,7 +510,7 @@ export default function PhilippinesPage() {
             <p><strong>C&apos;est en fait une séance photos touristique,</strong> et c&apos;est tout un programme ! On nous fait monter sur le radeau, qui est en réalité attaché à l&apos;avant et à l&apos;arrière par des cordes. Le radeau est tiré par une personne jusqu&apos;à la cascade. Pendant ce temps, on nous mitraille de photos et de vidéos faites avec notre téléphone qu&apos;on a confié avant de monter sur le radeau.</p>
             <p>On découvre par la même occasion <strong>l&apos;effet drone, une spécialité ici !</strong> Les philippins adorent faire ça. Ils ont une manière de filmer bien à eux. Ils courent, tournent, se baissent, sautent… Et c&apos;est vrai que le résultat est plutôt pas mal !</p>
             <p>Après avoir bien profité de l&apos;endroit, il faut maintenant remonter l&apos;escalier. Arrivées en haut, des vendeurs de bouteilles d&apos;eau fraîche nous attendent. Ça tombe à pic, on était desséchées après cette remontada !</p>
-            <h4>Salagdoong Beach</h4>
+            <h4>⧐ Salagdoong Beach</h4>
             <p>Notre avant dernier spot de la journée est Salagdoong Beach. Une jolie petite plage, une mer magnifique mais <strong>la baignade y est interdite. </strong></p>
             <p>On n&apos;a pas vraiment compris pourquoi à vrai dire. Apparemment, pour cause de réhabilitation de la plage, mais pour autant, pas de travaux en vue.</p>
             <div className="article-gallery-2">
@@ -523,7 +523,7 @@ export default function PhilippinesPage() {
             </div>
             <p>Tant pis, on profite quand même du moment et on cherche <strong>un endroit pour manger. On suit le chemin sur la gauche qui longe l&apos;hôtel. </strong>Au bout, le restaurant du <strong><a href="https://www.booking.com/hotel/ph/jelly-sea-resort.fr.html?aid=356980&amp;label=gog235jc-1FCAsotAFCEGplbGx5LXNlYS1yZXNvcnRIDVgDaE2IAQGYAQ24AQfIAQzYAQHoAQH4AQKIAgGoAgO4At3znrgGwAIB0gIkOTIxMjk3YzYtNWQxZi00NTQxLWJlNzktNWNkZGVlYjNlNTM02AIF4AIB&amp;sid=25689103515261a10f95ba7b9dc4b06e&amp;dest_id=-2453627;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1728559590;srpvid=0ef9506fd5f902f6;type=total;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Jelly Sea Resort</a></strong> nous attend... Petites tables, hamacs, on s&apos;y installe pour manger. Tout les plats sont préparés à la minute. Une bonne bière fraîche en apéro et on profite du paysage.</p>
             <p>Une fois le repas englouti, nous retournons sur nos pas pour <strong>visiter la petite presqu&apos;île.</strong> C&apos;est en fait un gros rocher auquel on accède par un escalier. On peut s&apos;y balader. <strong>Il y a plusieurs plateformes et plongeoirs, d&apos;où il est interdit de sauter, qui offrent de beaux points de vue. </strong></p>
-            <h4>Paliton Beach</h4>
+            <h4>⧐ Paliton Beach</h4>
             <p>Pour finir cette journée en beauté, nous nous rendons à Paliton Beach. <strong>Coucher de soleil, apéro les pieds dans le sable, le paradis ! Sur la plage, il y a des cabanes où on peut acheter des cocktails et des bières.</strong> Ici l&apos;ambiance est plutôt festive et décontractée. Il y a beaucoup de monde, locaux et touristes. Le sunset est fou, la lumière est incroyable. Il y a quelques nuages mais cela rend le coucher de soleil encore plus magique.</p>
             <p>Voilà voilà, encore une journée qui se termine. On a plein de belles images dans la tête. Cette nuit sera malheureusement la dernière que nous passerons sur cette île magnifique qui regorge de spots incroyables.</p>
             <div className="article-gallery-2">
@@ -549,7 +549,7 @@ export default function PhilippinesPage() {
             <p>Nous amarrons au port de Cebu. Entre Siquijor et Cebu (port), c&apos;est deux mondes, deux ambiances !</p>
             <p><strong>À la sortie du port, les locaux sont un peu oppressants et insistants.</strong> Il y a beaucoup de monde, de bruit, de voitures, de pollution. Nous décidons de nous éloigner de cet endroit et arrêtons un taxi un peu plus loin.</p>
             <p>Pour <strong>500 Php (8€)</strong>, il nous conduit à notre hôtel situé à mi-chemin entre le port et l&apos;aéroport. Pour notre nuit de transit, l&apos;hôtel <strong><a href="https://www.booking.com/hotel/ph/lapu-lapu-cottages-com.fr.html?aid=356980&amp;label=gog235jc-1FCAsotAFCFmxhcHUtbGFwdS1jb3R0YWdlcy1jb21IDVgDaE2IAQGYAQ24AQfIAQzYAQHoAQH4AQKIAgGoAgO4AqT6nrgGwAIB0gIkOGFlYzM3ZGQtOGVlOC00MDFiLThhNTYtMDhlMTk0NWMyNGY52AIF4AIB&amp;sid=25689103515261a10f95ba7b9dc4b06e&amp;dest_id=-2435281;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1728560425;srpvid=52405212e75209fe;type=total;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Lapu-Lapu Cottages</a></strong> est top.</p>
-            <h4>Réveil à Cebu, direction Siargao !</h4>
+            <h4>⧐ Réveil à Cebu, direction Siargao !</h4>
             <p>Nous avons booké un taxi la veille avec la réception de l&apos;hôtel. Il passe nous récupérer à 3h30.</p>
             <p>Autant vous dire que la nuit a été courte ! Nous payons <strong>300 Php (4€80)</strong> pour aller de hôtel à l&apos;aéroport.</p>
           </section>
@@ -593,7 +593,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2380-768x1024.jpg" alt="Siargao Beach Inn" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9616-1024x768.jpg" alt="Siargao Beach Inn" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h4>La Cloud 9</h4>
+            <h4>⧐ La Cloud 9</h4>
             <p>Pour nous rendre un peu plus loin, nous prenons finalement un tuk-tuk. Nous arrivons à un endroit bien connu de Siargao, <strong>la Cloud 9. </strong></p>
             <p><strong>C&apos;est un espace dédié au surf. </strong>On a la sensation de rentrer dans un petit village. <strong>À l&apos;entrée, sur la droite, se trouve le stand pour acheter les tickets d&apos;accès.</strong> Il faut compter <strong>100 Php (1€60)</strong> par personne.</p>
             <p><strong>Le ticket est valable toute la journée.</strong> Vous pouvez donc sortir et entrer dans la zone autant de fois que vous le souhaitez.  Si vous revenez le lendemain, alors il faudra racheter un ticket d&apos;accès. S&apos;en suivent plusieurs stands de souvenirs en tous genres.</p>
@@ -626,12 +626,12 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2531_jpg-767x1024.jpg" alt="Ville tuk-tuk Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2530-1-1024x768.jpg" alt="Siargao City" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h4>Island hopping à Siargao</h4>
+            <h4>⧐ Island hopping à Siargao</h4>
             <p>Nous repassons par la cloud 9 pour admirer le spectacle. En repartant, nous tombons sur <strong>un organisme qui propose des Island hoppings.</strong></p>
             <p>On nous informe que le tarif est de <strong>1500 Php (24€20)</strong><strong> par personne</strong>, repas compris, <strong>pour faire le tour de 3 îles.</strong> Vu le temps incertain prévu pour les prochains jours, on préfère ne rien réserver.</p>
             <p>Pour partir en excursion, on nous indique qu&apos;il y a aussi <strong>la possibilité de nous rendre directement sur le quai le matin même, et de nous joindre à un groupe qui n&apos;est pas complet ou de le faire en bateau privé.</strong></p>
             <p>Alors Carpe Diem, on verra bien demain !</p>
-            <h4>Où faire la fête ? Harana Surf Resort</h4>
+            <h4>⧐ Où faire la fête ? Harana Surf Resort</h4>
             <p>En attendant, nous avons trouvé l&apos;endroit où nous allons manger le soir (on a l&apos;impression qu&apos;on ne fait que ça !).</p>
             <p>Non loin de la Cloud 9, se trouve le <a href="https://199501.my.canva.site/celebrate-with-bayani?fbclid=PAZXh0bgNhZW0CMTEAAaZuixogPVoRkT_endCaRVCCLnCmsHHTPgRhTGCKqK0C710RXM-EwQajBYI_aem_9fLA8IrFajoYSfKnNZFvtQ" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Harana Surf Resort</strong></a>. Cet endroit n&apos;est pas facile à repérer car il n&apos;est pas situé sur la route principale. Il faut s&apos;engouffrer dans une petite rue, le Harana se trouve tout au bout.</p>
             <p>Encore un restaurant avec une déco incroyable et une atmosphère trop agréable. La cuisine est délicieuse et copieuse. Le personnel est vraiment sympa et le service rapide.</p>
@@ -653,7 +653,7 @@ export default function PhilippinesPage() {
             <p><strong>Via l&apos;Office du Tourisme, nous prenons un bateau privé</strong> pour <strong>2000 Php (32€)</strong> par personne, sans le repas. Certes, c&apos;est un peu plus cher qu&apos;avec les organismes, mais c&apos;est plutôt sympa de partir en amoureuses avec 2 locaux, trop contents de nous faire découvrir leurs îles.</p>
             <p>De plus, <strong>ils nous proposent d&apos;en visiter 4, contrairement aux organismes qui n&apos;en proposent que 3. </strong></p>
             <p>Par contre, si on avait su, <strong>on aurait prévu les boules Quies !</strong> Le bruit du moteur de la bangka est juste assourdissant. Ça fait le même effet que lorsqu&apos;on sort d&apos;un concert où la musique était trop forte. Quand le moteur du bateau s&apos;arrête, on a les oreilles qui sifflent encore un bon moment.</p>
-            <h4>Casulian Island</h4>
+            <h4>⧐ Casulian Island</h4>
             <p>Direction Casulian Island, et plus précisément <strong>Corregidor Beach.</strong> Cette île ne fait normalement pas partie de l&apos;Island hopping.</p>
             <p>C&apos;est la plus éloignée et nous mettons environ <strong>une heure pour la rejoindre. </strong></p>
             <div className="article-gallery-2">
@@ -662,7 +662,7 @@ export default function PhilippinesPage() {
             </div>
             <p>Notre capitaine nous informe que nous avons une petite heure sur place et nous propose <strong>une randonnée de 30 minutes avec un guide (donc payante) jusqu&apos;au point le plus haut de l&apos;île. </strong>Nous préférons profiter de la plage et du soleil.</p>
             <p>Cette île isolée est tout de même assez grande. On y trouve un village et des hôtels, mais la plage sur laquelle nous avons débarqué est quasi-déserte. C&apos;est tellement apaisant.</p>
-            <h4>Naked Island</h4>
+            <h4>⧐ Naked Island</h4>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2694-1024x768.jpg" alt="Naked Beach Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0421-1024x768.jpg" alt="Naked Beach Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -671,7 +671,7 @@ export default function PhilippinesPage() {
             <p>L&apos;île Naked, comme son nom l&apos;indique, est nue. Il n&apos;y a rien. Pas de construction, pas de végétation. <strong>Il s&apos;agit littéralement d&apos;un banc de sable blanc et fin au milieu de la mer.</strong></p>
             <p>C&apos;est impressionnant !</p>
             <p>On se trouve chanceuses d&apos;avoir posé les pieds sur ce petit bout de sable perdu au beau milieu de l&apos;océan, parce qu&apos;on sait d&apos;avance qu&apos;un jour il disparaîtra…</p>
-            <h4>Daku Island</h4>
+            <h4>⧐ Daku Island</h4>
             <p>Notre 3ème spot est Daku Island. <strong>Daku est la plus grande des 4 îles que nous visitons aujourd&apos;hui.</strong> « Daku » est un mot local qui signifie « grand ».</p>
             <p><strong>C&apos;est ici que nous allons manger.</strong> Notre capitaine nous accompagne jusqu&apos;à des petites cabanes juste au-dessus de la plage.</p>
             <div className="article-gallery-2">
@@ -686,7 +686,7 @@ export default function PhilippinesPage() {
             <p>Dans les cabanes autour de nous, un groupe de touristes et une famille de philippins sont installés. Une dame vient nous demander ce que l&apos;on souhaite manger.</p>
             <p>Pour <strong>600 Php (9€66)</strong> pour deux, on nous servira un 1/2 poulet pané (fraîchement tué), accompagné de riz et d&apos;une sauce aux notes sucrées. L&apos;un des meilleurs poulets de notre vie, simple mais tellement bon !</p>
             <p>Après avoir bien mangé, baladé et digéré, nous reprenons la mer.</p>
-            <h4>Guyam Island</h4>
+            <h4>⧐ Guyam Island</h4>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1194-1024x768.jpg" alt="Guyam Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0431-1024x768.jpg" alt="Guyam Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -697,7 +697,7 @@ export default function PhilippinesPage() {
             <p><strong>Le seul point négatif est qu&apos;il y a énormément de monde </strong>puisque tous les Island hoppings se rejoignent ici en fin de journée.</p>
             <p>Retour au quai vers 16h avec tous ces paysages en tête, heureuses de cette journée.</p>
             <p>On reprend le scooter en direction de l&apos;hôtel, histoire de prendre une bonne douche avant de repartir... On a un rendez-vous de prévu !</p>
-            <h4>Où se faire tatouer ? Rad Tattoo</h4>
+            <h4>⧐ Où se faire tatouer ? Rad Tattoo</h4>
             <p>Et oui, histoire de marquer ce moment et de graver ce voyage à jamais, nous allons nous faire tatouer.</p>
             <p>Si cela fait aussi parti de vos projets ou que l&apos;envie vous prend, nous vous conseillons vivement le salon <strong><a href="https://www.facebook.com/radtattoosiargao?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="article-link">RAD Tattoo &amp; Cafe Siargao</a></strong>.</p>
             <p>Leur local est clean, ils sont très pros (les règles d&apos;hygiène sont respectées) et très sympas.</p>
@@ -705,7 +705,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2932-1024x768.jpg" alt="RAD Tattoo Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2901-1024x768.jpg" alt="Cloud 9 night Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h4>Où faire la fête ? Mad Monkey</h4>
+            <h4>⧐ Où faire la fête ? Mad Monkey</h4>
             <p>Pour finir la soirée, on avait envie de manger dans un endroit dont on a beaucoup entendu parler depuis notre arrivée à Siargao, le <strong><a href="https://madmonkeyhostels.com/siargao/?gad_source=1&amp;gclid=CjwKCAjw9p24BhB_EiwA8ID5BudZOMCPRfV6kuaaGEaA0BHYM3KeRxN5b6ayqV6XyHRbUgC6gS6eGhoCjlQQAvD_BwE" target="_blank" rel="noopener noreferrer" className="article-link">Mad Monkey</a></strong>. Située tout au Nord de Général Luna, c&apos;est une auberge de jeunesse exclusivement réservée aux adultes.</p>
             <p>Si vous cherchez une ambiance chaleureuse et conviviale, dans un décor incroyable, que ce soit pour boire un verre ou manger avec du bon son, vous êtes au bon endroit !</p>
             <p>On découvre rapidement le concept. Ici, toutes les heures, les barmans sonnent la cloche et payent leur tournée de shooters à toutes les personnes présentes. Alors forcément, le soir venu, sous couvert de l&apos;alcool, tout le monde s&apos;aime et tout le monde parle avec tout le monde. Franchement, on y a passé un très bon moment !</p>
@@ -721,14 +721,14 @@ export default function PhilippinesPage() {
             <p>C&apos;est le cœur lourd que nous entamons cette dernière demi-journée à Siargao. Notre avons notre vol pour Manille en début d&apos;après-midi. Il nous reste peu de temps ici, mais suffisamment pour pouvoir en profiter à fond. Nous chevauchons notre scooter et c&apos;est parti.</p>
             <p>En dehors des Island hoppings et du surf, il y a aussi de <strong>nombreuses activités et lieux à découvrir sur l&apos;île. </strong></p>
             <p>On le redit, mais <strong>il se dégage vraiment à Siargao une atmosphère unique, autant par son côté relaxant et survolté à la fois, que par sa beauté sauvage et son authenticité.</strong> Siargao est un vrai coup de cœur pour nous et vous charmera à coup sûr. Rien que de se balader en scooter à travers cette île est un réel plaisir. Les paysages sont juste magnifiques.</p>
-            <h4>Coconut tree view &amp; la Palm road</h4>
+            <h4>⧐ Coconut tree view &amp; la Palm road</h4>
             <p>Facile à trouver, le premier spot est sur la route principale qui monte <strong>vers le Nord de l&apos;île. Au bord de la chaussée, il offre un beau point de vue</strong> sur une immense forêt de cocotiers.</p>
             <p>Juste un peu plus loin, en poursuivant notre chemin en scooter, on tombe sur <strong>la fameuse route bordée de coconuts.</strong> Elle est surnommée la Palm road. On n&apos;a pas pu s&apos;empêcher de faire voler le drone. On se sent tellement petites au milieu de cette étendue de cocotiers.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2874-1-1024x768.jpg" alt="Coconut tree view Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0440-768x1024.jpg" alt="Coconuts road Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <h4>Maasin Bridge River</h4>
+            <h4>⧐ Maasin Bridge River</h4>
             <p>Ici, <strong>une petite rivière enchantée traverse la jungle.</strong> C&apos;est un endroit tellement apaisant et relaxant. Comme il a plu récemment, l&apos;eau n&apos;est malheureusement pas si belle qu&apos;espérée.</p>
             <p>Pour entrer dans la zone, il faut payer <strong>20 Php (0€32)</strong> par personne. On accède alors à un plongeoir en bois duquel on peut sauter dans la rivière.</p>
             <p>Si vous souhaitez faire une <strong>balade sur la rivière en bateau,</strong> le tarif est de <strong>250 Php (4€05)</strong> par personne. <strong>Des locaux vous emmèneront jusqu&apos;à une lagune secrète.</strong> Vous avez également la possibilité de faire la <strong>balade en kayak.</strong> Pour 2 personnes, il faut compter <strong>550 Php (8€90)</strong>, guide compris.</p>
@@ -737,7 +737,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1122-768x1024.jpg" alt="Maasin Bridge River Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3064-768x1024.jpg" alt="Maasin Bridge River Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <h4>Magpopongko tidal pools</h4>
+            <h4>⧐ Magpopongko tidal pools</h4>
             <p>Malgré le monde, il n&apos;y a <strong>aucun problème pour le stationnement.</strong> Le long de la route qui mène à la plage s&apos;enchaînent plusieurs grands parkings. Nous avons payé <strong>10 Php (0€16)</strong> pour y laisser le scooter.</p>
             <p>Pour accéder au site, il faut débourser <strong>50 Php (0€80)</strong> par personne. L&apos;endroit est très fréquenté. On y trouve des boutiques de souvenirs, des bars et des restaurants. <strong>Une fois sur la plage, partez sur la gauche. </strong></p>
             <p><strong>Au niveau des rochers, il y a un chemin pour accéder aux piscines naturelles. Vous avez aussi la possibilité de passer directement par l&apos;eau. </strong></p>
@@ -749,7 +749,7 @@ export default function PhilippinesPage() {
             <p>Il y a plusieurs piscines. N&apos;hésitez pas à <strong>continuer sur la gauche en marchant dans l&apos;eau pour découvrir de beaux spots et surtout vous isoler de la foule. </strong></p>
             <p>En ce qui nous concerne, on a peu de temps pour vraiment explorer l&apos;endroit. Nous prenons donc le chemin de terre à la queue leu leu et restons du coup vers l&apos;entrée.</p>
             <p>On fait trempette 5 minutes, sauf qu&apos;il y a énormément de monde, quitte à se faire bousculer. On préfère donc prendre du recul et envoyer le drone. La vue d&apos;en haut est incroyable. Et surprise, on découvre que les piscines forment un cœur !</p>
-            <h4>Pacifico Beach</h4>
+            <h4>⧐ Pacifico Beach</h4>
             <p>Nous continuons notre petit road trip vers le Nord de Siargao, direction Pacifico Beach. Nous sommes à environ 1h de route de Général Luna.</p>
             <p><strong>Cette plage déserte de sable blanc est juste wahooo ! </strong>Elle tient son nom de son emplacement car elle se situe face à l&apos;océan Pacifique.</p>
             <p>L&apos;eau est translucide. Au bord, il y a un peu de rochers et de corail. Ce n&apos;est pas vraiment un endroit pour venir se prélasser tranquillement dans l&apos;eau. C&apos;est même l&apos;<strong>un des plus gros spots de surf de l&apos;île.</strong> Les vagues sont impressionnantes !</p>
@@ -773,16 +773,16 @@ export default function PhilippinesPage() {
             <div className="article-day-header">
               <h3>Transports</h3>
             </div>
-            <h4>Billets d&apos;avion internationaux</h4>
+            <h4>⧐ Billets d&apos;avion internationaux</h4>
             <p>Pour nos vols internationaux aller / retour (Paris - Djeda, Djeda - Manille), nous avons payé <strong>465€</strong> par personne.</p>
             <p>Nous avons voyagé avec la compagnie Saudia Airlines.</p>
             <p>Les tarifs peuvent bien évidemment fluctuer en fonction de la saison et de la compagnie aérienne.</p>
-            <h4>Déplacements aux Philippines</h4>
+            <h4>⧐ Déplacements aux Philippines</h4>
             <p>Pour se déplacer dans le pays, nous sommes obligés d&apos;emprunter <strong>l&apos;<strong>a</strong>vion, le bus ou le ferry.</strong></p>
             <p><strong>Pour les vols internes,</strong> il faut compter <strong>entre 30€ et 100€</strong> par vol selon les destinations. Et comme nous vous l&apos;avons déjà largement conseillé, <strong>plus vous les réservez tôt, mieux c&apos;est ! </strong></p>
             <p>Pour nous rendre à Banaue, nous avons pris <strong>le bus</strong> qui nous a coûté <strong>30€</strong> aller - retour par personne.</p>
             <p>Sur notre itinéraire, nous avons également pris <strong>le ferry.</strong> Les trajets en ferry entre les îles sont fréquents et peu coûteux. Comptez <strong>entre 10€ et 30€</strong> par traversée.</p>
-            <h4>Transports locaux</h4>
+            <h4>⧐ Transports locaux</h4>
             <p>Qui dit transport local, dit <strong>tuk-tuks ou jeepneys ! </strong>Pour un trajet court, le tarif est généralement compris <strong>entre 1€ et 5€</strong>.</p>
             <p>Si vous souhaitez prendre <strong>un taxi, n&apos;hésitez pas à demander la plaquette des tarifs au chauffeur,</strong> sinon c&apos;est un peu à la tête du client !</p>
             <p>En ce qui concerne les trajets <strong>en van (aéroport - hôtel), les prix sont fixes et très corrects.</strong></p>
@@ -798,13 +798,13 @@ export default function PhilippinesPage() {
             <div className="article-day-header">
               <h3>Repas &amp; Activités</h3>
             </div>
-            <h4>Les repas</h4>
+            <h4>⧐ Les repas</h4>
             <p>Si vous avez envie de <strong>manger local,</strong> il faut compter en moyenne <strong>entre 2€ et 5€</strong> par repas.</p>
             <p>Pour un <strong>restaurant de milieu de gamme,</strong> comptez davantage <strong>entre 5€ et 15 €</strong> par repas.</p>
-            <h4>Les Island hoppings</h4>
+            <h4>⧐ Les Island hoppings</h4>
             <p>Qui dit Philippines, dit îles, dit excursions en bateau, snorkeling, plongées et visites de sites naturels !</p>
             <p>Pour un <strong>Island hopping</strong>, comptez <strong>entre 20€ et 35€</strong> le tour par personne, repas compris.</p>
-            <h4>Dépenses diverses</h4>
+            <h4>⧐ Dépenses diverses</h4>
             <p>Et oui, ça fait toujours partie du voyage ! Souvenirs, shopping, pourboires, frais bancaires, etc.</p>
             <p>Prévoyez un budget de <strong>100€ à 150€</strong>.</p>
             <div className="article-day-header">
