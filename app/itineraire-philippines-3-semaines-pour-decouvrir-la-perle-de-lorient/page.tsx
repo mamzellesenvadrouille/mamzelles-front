@@ -163,11 +163,11 @@ export default function PhilippinesPage() {
             </div>
             <p><strong>Banaue</strong> est une petite ville de montagne située dans la <strong>région d&apos;Ifugao,</strong> au Nord de l&apos;île de Luzon. Cette dernière est la plus grande île des Philippines. 380 kilomètres séparent Banaue de Manille. C&apos;est le point de départ pour découvrir les plus belles rizières en terrasse du pays.</p>
             <p><strong>Inscrites sur la liste du patrimoine mondial à l&apos;UNESCO</strong> en 1995, les rizières en terrasse du Nord des Philippines sont communément considérées comme la 8ème Merveille du monde.</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0388-768x1024.jpeg" alt="I survived Batad" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0388-768x1024.jpeg" alt="I survived Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1145-1024x768.jpg" alt="Rizières en terrasses Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1288-1024x768.jpg" alt="Wonder of the World Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1288-1024x768.jpg" alt="Wonder of the World Batad" className="article-img-full" loading="lazy" />
             <div className="article-day-header">
               <span className="article-day-badge">Jour 1</span>
               <h3>De Manille à Banaue</h3>
@@ -191,10 +191,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0991-768x1024.jpg" alt="Ville Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0953-1024x768.jpg" alt="Banaue Tour Map" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0991-768x1024.jpg" alt="Ville Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1076-1024x768.jpg" alt="Homestay Banaue View" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
+
             <p>Nous arrivons à l&apos;heure du petit déjeuner, parfait après ce long trajet en bus ! Nous nous installons à la terrasse de l&apos;hôtel pour déguster leur incroyable pancake au coulis de chocolat et prendre un café.<br />
             C&apos;est à ce moment-là qu&apos;un membre du personnel se joint à nous et nous présente tout ce qu&apos;il y a à voir, à faire dans le coin.</p>
             <p>Nous organisons directement avec lui nos deux prochaines journées… <strong>Jour 1, trek à Batad, et Jour 2, visite d&apos;Hapao et de ses Hot springs.</strong><br />
@@ -244,11 +241,11 @@ export default function PhilippinesPage() {
             <p>Nous continuons notre balade en mode funambule sur des murets d&apos;une vingtaine de centimètres de large, pas plus. Absorbées par le paysage, on a failli finir dans la boue à plusieurs reprises ! Et oui, en plus d&apos;être étroits, ils sont glissants par endroits. <strong>Mieux vaut ne pas avoir le vertige</strong> non plus… On se retrouve parfois avec la rizière d&apos;un côté (avec la boue et plein d&apos;escargots, beurk !), et le vide de 2 mètres de l&apos;autre côté.</p>
             <p>Nous traversons les rizières et empruntons des « escaliers » qui relient des terrasses entre elles. Là aussi <strong>c&apos;est plutôt sportif.</strong> Alors qu&apos;on galère un peu sur certains passages, notre guide est quant à lui très à l&apos;aise en tongs !</p>
             <p><strong>Nous arrivons de l&apos;autre côté de la vallée, au niveau d&apos;une grosse maison en béton et au toit bleu.</strong> Elle semble en construction. De là aussi, la vue sur l&apos;amphithéâtre est saisissante.</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1298-1024x768.jpg" alt="Trek Batad" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1298-1024x768.jpg" alt="Trek Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1294-1-1024x768.jpg" alt="Randonnée Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1217_jpg-768x1024.jpg" alt="Love Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1217_jpg-768x1024.jpg" alt="Love Batad" className="article-img-full" loading="lazy" />
             <h4>Tappiyah Falls</h4>
             <p>On traverse la maison et de l&apos;autre côté, c&apos;est un tout autre paysage. On se croirait transporté dans la jungle. Il paraît qu&apos;au bout du chemin, <strong>une incroyable cascade</strong> nous attend…</p>
             <p><strong>Mais ça se mérite !</strong> À partir d&apos;ici, <strong>il faut compter une bonne vingtaine de minutes de marche</strong> pour y accéder. De marche oui, mais de marches d&apos;escalier surtout !</p>
