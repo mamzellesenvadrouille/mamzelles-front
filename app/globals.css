@@ -1120,12 +1120,16 @@ a { text-decoration: none; color: inherit; }
 
 .article-section h4 {
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--gold);
   text-transform: uppercase;
-  letter-spacing: 2.5px;
-  margin: 32px 0 12px;
+  letter-spacing: 2px;
+  margin: 28px 0 10px;
+}
+
+.article-section h3 + h4 {
+  margin-top: 16px;
 }
 
 .article-section p {
@@ -1704,6 +1708,35 @@ a { text-decoration: none; color: inherit; }
 .article-gallery-2 img { width: 100%; height: auto; display: block; transition: transform .4s; min-width: 0; }
 .article-gallery-2 img:hover { transform: scale(1.03); }
 .article-img-full { width: 100%; height: auto; display: block; margin: 8px 0; }
+
+.article-gallery-2 + p,
+.article-gallery-3 + p,
+.article-img-full + p {
+  margin-top: 24px;
+}
+
+/* ===== OVERRIDES PHILIPPINES UNIQUEMENT ===== */
+.article-philippines .article-day-header {
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+.article-philippines .article-day-badge {
+  margin-bottom: 8px;
+}
+.article-philippines .article-section h3 {
+  margin: 8px 0 14px;
+}
+.article-philippines .article-section h4 {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin: 28px 0 10px;
+}
+.article-philippines .article-section h3 + h4 {
+  margin-top: 16px;
+}
+.article-philippines .article-gallery-2 { margin: 28px 0; }
+.article-philippines .article-gallery-3 { margin: 28px 0; }
+.article-philippines .article-img-full { margin: 28px 0; }
 .article-img-center { width: 50%; height: 320px; object-fit: cover; border-radius: 6px; margin: 24px auto; display: block; }
 
 /* PRATIQUE */

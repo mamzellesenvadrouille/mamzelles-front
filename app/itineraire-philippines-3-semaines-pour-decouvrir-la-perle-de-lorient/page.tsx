@@ -83,7 +83,7 @@ export default function PhilippinesPage() {
         </div>
       </div>
 
-      <div className="article-layout">
+      <div className="article-layout article-philippines">
         <main className="article-main">
 
           {/* SOMMAIRE */}
