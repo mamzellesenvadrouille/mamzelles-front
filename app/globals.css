@@ -2450,12 +2450,12 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 8px;
 }
 .article-philippines .article-section h3 {
-  font-size: 30px;
+  font-size: 32px;
   margin: 8px 0 6px;
 }
 .article-philippines .article-section h4 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   font-style: italic;
   color: var(--gold);
@@ -2471,9 +2471,9 @@ a { text-decoration: none; color: inherit; }
 .article-philippines .article-img-full + h4 {
   margin-top: 16px;
 }
-.article-philippines .article-gallery-2 { margin: 24px 0; }
-.article-philippines .article-gallery-3 { margin: 24px 0; }
-.article-philippines .article-img-full { margin: 24px 0; }
+.article-philippines .article-gallery-2 { margin: 24px 0 8px; }
+.article-philippines .article-gallery-3 { margin: 24px 0 8px; }
+.article-philippines .article-img-full { margin: 24px 0 8px; }
 
 /* Philippines - corrections photos et blocs */
 .article-philippines .article-gallery-2 + .article-gallery-2,
@@ -2481,6 +2481,9 @@ a { text-decoration: none; color: inherit; }
 .article-philippines .article-gallery-3 + .article-gallery-2,
 .article-philippines .article-gallery-3 + .article-gallery-3,
 .article-philippines .article-gallery-2 + .article-img-full,
-.article-philippines .article-img-full + .article-gallery-2 {
-  margin-top: 8px;
+.article-philippines .article-img-full + .article-gallery-2,
+.article-philippines .article-gallery-3 + .article-img-full,
+.article-philippines .article-img-full + .article-gallery-3 {
+  margin-top: 0;
+}
 }
