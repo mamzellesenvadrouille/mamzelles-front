@@ -179,7 +179,7 @@ export default function PhilippinesPage() {
             <p>Si comme nous, vous souhaitez aller à Banaue en bus, vous devrez passer l&apos;épreuve du bus climatisé ! Ce n&apos;est pas un mythe, il y fait vraiment froid. <strong>Prévoyez de quoi vous couvrir.</strong></p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><p>Si comme nous, vous souhaitez aller à Banaue en bus, vous devrez passer l&apos;épreuve du bus climatisé ! Ce n&apos;est pas un mythe, il y fait vraiment froid. <strong>Prévoyez de quoi vous couvrir.</strong></p></div>
+              <div><strong>Bon à savoir</strong><p>Si comme nous, vous souhaitez aller à Banaue en bus, vous devrez passer l&apos;épreuve du bus climatisé ! Ce n&apos;est pas un mythe, il y fait vraiment froid. Prévoyez de quoi vous couvrir.</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_5522-768x1024.jpeg" alt="Bus Manille Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -236,7 +236,7 @@ export default function PhilippinesPage() {
             Alors que dans le reste du pays le riz est cultivé et récolté 2 fois par an, ici à Batad, c&apos;est seulement une fois dans l&apos;année, soit en février. <strong>Le meilleur moment pour venir voir les rizières en terrasse à Batad est donc au mois de mai.</strong> C&apos;est juste avant la récolte, quand tout est bien vert.</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><p><strong>Le meilleur moment pour venir voir les rizières en terrasse à Batad est donc au mois de mai.</strong> C&apos;est juste avant la récolte, quand tout est bien vert.</p></div>
+              <div><strong>À ne pas manquer</strong><p>Le meilleur moment pour venir voir les rizières en terrasse à Batad est donc au mois de mai. C&apos;est juste avant la récolte, quand tout est bien vert.</p></div>
             </div>
             <p>On se pose la question quand même… De quoi vivent les habitants de Batad ? Du tourisme of course !</p>
             <p>Notre guide est un jeune homme du village. En même temps, qui de mieux placé pour nous faire découvrir cet endroit ? Il connaît les lieux comme sa poche. Certains habitants du village accueillent les gens de passage pour la nuit, d&apos;autres tiennent des restaurants. Les femmes vendent des objets en bois sculpté et des pochettes cousues main. <strong>Pendant notre visite, nous avons donc acheté des petits souvenirs pour contribuer à l&apos;économie du village.</strong></p>
@@ -258,13 +258,12 @@ export default function PhilippinesPage() {
             <h4>⧐ Tappiyah Falls</h4>
             <p>On traverse la maison et de l&apos;autre côté, c&apos;est un tout autre paysage. On se croirait transporté dans la jungle. Il paraît qu&apos;au bout du chemin, <strong>une incroyable cascade</strong> nous attend…</p>
             <p><strong>Mais ça se mérite !</strong> À partir d&apos;ici, <strong>il faut compter une bonne vingtaine de minutes de marche</strong> pour y accéder. De marche oui, mais de marches d&apos;escalier surtout !</p>
-            <p>En effet, pour accéder à cette cascade, c&apos;est <strong>plus de 700 marches étroites, bancales et glissantes à descendre</strong> (qu&apos;il faudra bien évidemment remonter !).
+            <p>En effet, pour accéder à cette cascade, c&apos;est <strong>plus de 700 marches étroites, bancales et glissantes à descendre</strong> (qu&apos;il faudra bien évidemment remonter !).</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1238_jpg-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1257-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <br />
-            Si les escaliers du village sont par endroits un peu sportifs, celui-là nous a littéralement tétanisé les cuisses !</p>
+            <p>Si les escaliers du village sont par endroits un peu sportifs, celui-là nous a littéralement tétanisé les cuisses !</p>
             <p>Après l&apos;effort, le réconfort. Arrivées au niveau de la cascade, notre guide nous laisse. Il nous dit de prendre notre temps, qu&apos;il nous attend plus loin. Ni une ni deux, on enlève les chaussures pour traverser et rejoindre la zone de cailloux face à la cascade. Bon, elle est super fraîche (14 degrés) mais ça fait du bien aux jambes.</p>
             <p>Nous passons un moment à contempler <strong>cette spectaculaire chute de 45 mètres de haut.</strong> Le vacarme assourdissant des trombes d&apos;eaux est impressionnant. Quelques courageux se baignent. Plusieurs cairns se dressent devant la cascade… Du coup, on n&apos;a pas pu s&apos;empêcher de mettre notre petite pierre à l&apos;édifice !</p>
             <p>Après avoir bien profité de ce moment, nous retrouvons notre guide pour rebrousser chemin.<br />
@@ -304,7 +303,7 @@ export default function PhilippinesPage() {
             <p>Pour l&apos;anecdote, <strong>si vous portez des bijoux en « toc », enlevez-les.</strong> Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. <strong>Pour les bijoux en or et argent, ils noircissent mais se nettoient.</strong></p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><p><strong>Si vous portez des bijoux en « toc », enlevez-les avant d&apos;entrer dans les Hot springs.</strong> Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. Pour les bijoux en or et argent, ils noircissent mais se nettoient.</p></div>
+              <div><strong>Conseil</strong><p>Si vous portez des bijoux en « toc », enlevez-les avant d&apos;entrer dans les Hot springs. Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. Pour les bijoux en or et argent, ils noircissent mais se nettoient.</p></div>
             </div>
             <p>En sortant de l&apos;eau, nous avons sur la peau comme une pellicule grasse, et on sent un peu l&apos;œuf pourri ! Heureusement, il y a des douches sur place pour se rincer.</p>
             <div className="article-gallery-2">
@@ -316,7 +315,7 @@ export default function PhilippinesPage() {
             <p>Pour info, <strong>si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique.</strong> Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie (si on peut appeler ça comme ça !) avant d&apos;entrer dans le village.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><p><strong>Si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique.</strong> Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie avant d&apos;entrer dans le village.</p></div>
+              <div><strong>Conseil</strong><p>Si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique. Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie avant d&apos;entrer dans le village.</p></div>
             </div>
             
             <div className="article-gallery-3">

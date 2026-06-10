@@ -2454,17 +2454,33 @@ a { text-decoration: none; color: inherit; }
   margin: 8px 0 6px;
 }
 .article-philippines .article-section h4 {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
   font-weight: 600;
+  font-style: italic;
   color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 36px 0 18px;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 28px 0 12px;
 }
 .article-philippines .article-section h3 + h4 {
   margin-top: 4px;
 }
+.article-philippines .article-gallery-2 + h4,
+.article-philippines .article-gallery-3 + h4,
+.article-philippines .article-img-full + h4 {
+  margin-top: 16px;
+}
 .article-philippines .article-gallery-2 { margin: 24px 0; }
 .article-philippines .article-gallery-3 { margin: 24px 0; }
 .article-philippines .article-img-full { margin: 24px 0; }
+
+/* Philippines - corrections photos et blocs */
+.article-philippines .article-gallery-2 + .article-gallery-2,
+.article-philippines .article-gallery-2 + .article-gallery-3,
+.article-philippines .article-gallery-3 + .article-gallery-2,
+.article-philippines .article-gallery-3 + .article-gallery-3,
+.article-philippines .article-gallery-2 + .article-img-full,
+.article-philippines .article-img-full + .article-gallery-2 {
+  margin-top: 6px;
+}
