@@ -2451,7 +2451,7 @@ a { text-decoration: none; color: inherit; }
 }
 .article-philippines .article-section h3 {
   font-size: 30px;
-  margin: 8px 0 14px;
+  margin: 8px 0 20px;
 }
 .article-philippines .article-section h4 {
   font-size: 15px;
@@ -2459,5 +2459,8 @@ a { text-decoration: none; color: inherit; }
   margin: 28px 0 18px;
 }
 .article-philippines .article-section h3 + h4 {
-  margin-top: 8px;
+  margin-top: 6px;
 }
+.article-philippines .article-gallery-2 { margin: 28px 0; }
+.article-philippines .article-gallery-3 { margin: 28px 0; }
+.article-philippines .article-img-full { margin: 28px 0; }
