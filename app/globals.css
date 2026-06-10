@@ -2469,6 +2469,9 @@ a { text-decoration: none; color: inherit; }
 .article-philippines .article-day-header + h4 {
   margin-top: 2px !important;
 }
+.article-philippines .article-day-header:has(+ h4) {
+  margin-bottom: 0;
+}
 .article-philippines .article-gallery-2 + h4,
 .article-philippines .article-gallery-3 + h4,
 .article-philippines .article-img-full + h4 {
