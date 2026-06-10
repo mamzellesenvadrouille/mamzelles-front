@@ -176,7 +176,7 @@ export default function PhilippinesPage() {
             <p><strong>Pour nous rendre à Banaue, nous avons choisi l&apos;option bus au départ de Manille.</strong> Vous avez également la possibilité de vous y rendre en transport privé, mais le tarif ne sera pas le même ! Nous avions réservé le transfert plusieurs semaines avant. Le trajet aller-retour nous est revenu à <strong>1800 Php (30€)</strong> par personne.</p>
             <p>Nous devons nous rendre à la gare routière de la compagnie <strong><a href="https://12go.com/en/operator/ohayami-trans" target="_blank" rel="noopener noreferrer" className="article-link">Ohayami Trans</a></strong> à Manille pour 22h30, ce qui nous laisse le temps d&apos;aller manger un bout et de faire un petit tour dans le secteur.</p>
             <p>Nous sommes dans un quartier populaire, assez pauvre pour ne pas dire ghetto. Nous traversons quelques rues… C&apos;est la première fois qu&apos;on a le <strong>sentiment de ne pas être en sécurité,</strong> mais ce n&apos;est que notre ressenti. Après avoir mangé, nous retournons à la gare routière. Nous récupérons nos billets et c&apos;est parti pour un grand périple.</p>
-            <p>Si comme nous, vous souhaitez aller à Banaue en bus, vous devrez passer l&apos;épreuve du bus climatisé ! Ce n&apos;est pas un mythe, il y fait vraiment froid. <strong>Prévoyez de quoi vous couvrir.</strong></p>
+            
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Si comme nous, vous souhaitez aller à Banaue en bus, vous devrez passer l&apos;épreuve du bus climatisé ! Ce n&apos;est pas un mythe, il y fait vraiment froid. Prévoyez de quoi vous couvrir.</p></div>
@@ -232,8 +232,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1319-768x1024.jpg" alt="Batad Trek" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <p>Nous suivons notre guide à travers les rizières en terrasse. Il nous apprend plein de choses, notamment que toutes <strong>ces terrasses ont été façonnées par la main de l&apos;Homme il y a plus de 2 000 ans</strong> et qu&apos;elles se transmettent de génération en génération.</p>
-            <p>Le riz, qui est cultivé ici par les familles, est seulement pour leur consommation. Ils n&apos;en produisent pas suffisamment pour le commercialiser.<br />
-            Alors que dans le reste du pays le riz est cultivé et récolté 2 fois par an, ici à Batad, c&apos;est seulement une fois dans l&apos;année, soit en février. <strong>Le meilleur moment pour venir voir les rizières en terrasse à Batad est donc au mois de mai.</strong> C&apos;est juste avant la récolte, quand tout est bien vert.</p>
+            <p>Le riz, qui est cultivé ici par les familles, est seulement pour leur consommation. Ils n&apos;en produisent pas suffisamment pour le commercialiser.</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À ne pas manquer</strong><p>Le meilleur moment pour venir voir les rizières en terrasse à Batad est donc au mois de mai. C&apos;est juste avant la récolte, quand tout est bien vert.</p></div>
@@ -300,7 +299,7 @@ export default function PhilippinesPage() {
             <h4>⧐ Les Hot springs d&apos;Hapao</h4>
             <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !<br />
             Une légère odeur de soufre se dégage de cet endroit. N&apos;oublions pas que les Philippines sont sur des terres volcaniques.</p>
-            <p>Pour l&apos;anecdote, <strong>si vous portez des bijoux en « toc », enlevez-les.</strong> Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. <strong>Pour les bijoux en or et argent, ils noircissent mais se nettoient.</strong></p>
+            
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Conseil</strong><p>Si vous portez des bijoux en « toc », enlevez-les avant d&apos;entrer dans les Hot springs. Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. Pour les bijoux en or et argent, ils noircissent mais se nettoient.</p></div>
@@ -312,7 +311,7 @@ export default function PhilippinesPage() {
             </div>
             <p>Après ce moment de détente, il est temps de faire demi-tour car nous avons notre bus pour Manille en fin d&apos;après-midi. Pour le retour, nous empruntons un autre chemin, bien plus court mais tout aussi joli.</p>
             
-            <p>Pour info, <strong>si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique.</strong> Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie (si on peut appeler ça comme ça !) avant d&apos;entrer dans le village.</p>
+            
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Conseil</strong><p>Si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique. Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie avant d&apos;entrer dans le village.</p></div>

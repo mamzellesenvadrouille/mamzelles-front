@@ -2464,10 +2464,10 @@ a { text-decoration: none; color: inherit; }
   margin: 28px 0 12px;
 }
 .article-philippines .article-section h3 + h4 {
-  margin-top: 2px;
+  margin-top: 2px !important;
 }
 .article-philippines .article-day-header + h4 {
-  margin-top: 2px;
+  margin-top: 2px !important;
 }
 .article-philippines .article-gallery-2 + h4,
 .article-philippines .article-gallery-3 + h4,
