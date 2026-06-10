@@ -1715,6 +1715,12 @@ a { text-decoration: none; color: inherit; }
   margin-top: 24px;
 }
 
+p + .article-gallery-2,
+p + .article-gallery-3,
+p + .article-img-full {
+  margin-top: 24px;
+}
+
 /* ===== OVERRIDES PHILIPPINES UNIQUEMENT ===== */
 .article-philippines .article-day-header {
   margin-top: 48px;
