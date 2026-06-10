@@ -2451,11 +2451,11 @@ a { text-decoration: none; color: inherit; }
 }
 .article-philippines .article-section h3 {
   font-size: 32px;
-  margin: 8px 0 6px;
+  margin: 8px 0 0;
 }
 .article-philippines .article-section h4 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   font-style: italic;
   color: var(--gold);
@@ -2471,11 +2471,29 @@ a { text-decoration: none; color: inherit; }
 .article-philippines .article-img-full + h4 {
   margin-top: 16px;
 }
-.article-philippines .article-gallery-2 { margin: 24px 0; }
-.article-philippines .article-gallery-3 { margin: 24px 0; }
-.article-philippines .article-img-full { margin: 24px 0; }
+.article-philippines .article-gallery-2 { margin: 0; }
+.article-philippines .article-gallery-3 { margin: 0; }
+.article-philippines .article-img-full { margin: 0; }
 
-/* Philippines - corrections photos et blocs */
+/* Espace 24px quand texte/titre avant ou aprÃ¨s une photo */
+.article-philippines p + .article-gallery-2,
+.article-philippines p + .article-gallery-3,
+.article-philippines p + .article-img-full,
+.article-philippines h3 + .article-gallery-2,
+.article-philippines h3 + .article-gallery-3,
+.article-philippines h3 + .article-img-full,
+.article-philippines h4 + .article-gallery-2,
+.article-philippines h4 + .article-gallery-3,
+.article-philippines h4 + .article-img-full { margin-top: 24px; }
+
+.article-philippines .article-gallery-2 + p,
+.article-philippines .article-gallery-3 + p,
+.article-philippines .article-img-full + p,
+.article-philippines .article-gallery-2 + h4,
+.article-philippines .article-gallery-3 + h4,
+.article-philippines .article-img-full + h4 { margin-top: 24px; }
+
+/* 8px entre lignes de photos consÃ©cutives */
 .article-philippines .article-gallery-2 + .article-gallery-2,
 .article-philippines .article-gallery-2 + .article-gallery-3,
 .article-philippines .article-gallery-3 + .article-gallery-2,
@@ -2483,6 +2501,4 @@ a { text-decoration: none; color: inherit; }
 .article-philippines .article-gallery-2 + .article-img-full,
 .article-philippines .article-img-full + .article-gallery-2,
 .article-philippines .article-gallery-3 + .article-img-full,
-.article-philippines .article-img-full + .article-gallery-3 {
-  margin-top: 8px;
-}
+.article-philippines .article-img-full + .article-gallery-3 { margin-top: 8px; }
