@@ -227,6 +227,10 @@ export default function PhilippinesPage() {
             <p><strong>Après une quinzaine de minutes de marche, nous arrivons par le haut du village.</strong> C&apos;est la seule voie d&apos;accès. La vue sur les rizières en terrasses et le village en contrebas est juste impressionnante. Un amphithéâtre végétal, avec pour scène le village. Nous sommes là, au milieu des montagnes, devant ce qui est considéré comme la 8ème Merveille du monde, et on comprend pourquoi !</p>
             <p>Nous sommes clairement émues et bouche bée face à la magie et la beauté de ce paysage. À cet instant, on se sent hors du temps. Il se dégage ici une énergie particulière.</p>
             <p>Cela fait seulement 10 ans qu&apos;il y a de l&apos;électricité à Batad, mais <strong>il n&apos;y a toujours aucun réseau téléphonique et internet.</strong></p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1327-768x1024.jpg" alt="Enfants Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1319-768x1024.jpg" alt="Batad Trek" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
             <p>Nous suivons notre guide à travers les rizières en terrasse. Il nous apprend plein de choses, notamment que toutes <strong>ces terrasses ont été façonnées par la main de l&apos;Homme il y a plus de 2 000 ans</strong> et qu&apos;elles se transmettent de génération en génération.</p>
             <p>Le riz, qui est cultivé ici par les familles, est seulement pour leur consommation. Ils n&apos;en produisent pas suffisamment pour le commercialiser.<br />
             Alors que dans le reste du pays le riz est cultivé et récolté 2 fois par an, ici à Batad, c&apos;est seulement une fois dans l&apos;année, soit en février. <strong>Le meilleur moment pour venir voir les rizières en terrasse à Batad est donc au mois de mai.</strong> C&apos;est juste avant la récolte, quand tout est bien vert.</p>
@@ -254,7 +258,12 @@ export default function PhilippinesPage() {
             <h4>⧐ Tappiyah Falls</h4>
             <p>On traverse la maison et de l&apos;autre côté, c&apos;est un tout autre paysage. On se croirait transporté dans la jungle. Il paraît qu&apos;au bout du chemin, <strong>une incroyable cascade</strong> nous attend…</p>
             <p><strong>Mais ça se mérite !</strong> À partir d&apos;ici, <strong>il faut compter une bonne vingtaine de minutes de marche</strong> pour y accéder. De marche oui, mais de marches d&apos;escalier surtout !</p>
-            <p>En effet, pour accéder à cette cascade, c&apos;est <strong>plus de 700 marches étroites, bancales et glissantes à descendre</strong> (qu&apos;il faudra bien évidemment remonter !).<br />
+            <p>En effet, pour accéder à cette cascade, c&apos;est <strong>plus de 700 marches étroites, bancales et glissantes à descendre</strong> (qu&apos;il faudra bien évidemment remonter !).
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1238_jpg-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1257-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <br />
             Si les escaliers du village sont par endroits un peu sportifs, celui-là nous a littéralement tétanisé les cuisses !</p>
             <p>Après l&apos;effort, le réconfort. Arrivées au niveau de la cascade, notre guide nous laisse. Il nous dit de prendre notre temps, qu&apos;il nous attend plus loin. Ni une ni deux, on enlève les chaussures pour traverser et rejoindre la zone de cailloux face à la cascade. Bon, elle est super fraîche (14 degrés) mais ça fait du bien aux jambes.</p>
             <p>Nous passons un moment à contempler <strong>cette spectaculaire chute de 45 mètres de haut.</strong> Le vacarme assourdissant des trombes d&apos;eaux est impressionnant. Quelques courageux se baignent. Plusieurs cairns se dressent devant la cascade… Du coup, on n&apos;a pas pu s&apos;empêcher de mettre notre petite pierre à l&apos;édifice !</p>
@@ -298,6 +307,10 @@ export default function PhilippinesPage() {
               <div><p><strong>Si vous portez des bijoux en « toc », enlevez-les avant d&apos;entrer dans les Hot springs.</strong> Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. Pour les bijoux en or et argent, ils noircissent mais se nettoient.</p></div>
             </div>
             <p>En sortant de l&apos;eau, nous avons sur la peau comme une pellicule grasse, et on sent un peu l&apos;œuf pourri ! Heureusement, il y a des douches sur place pour se rincer.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1470-769x1024.jpg" alt="Hot Springs Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2477-1024x768.jpg" alt="Sources eau chaude Hapao Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
             <p>Après ce moment de détente, il est temps de faire demi-tour car nous avons notre bus pour Manille en fin d&apos;après-midi. Pour le retour, nous empruntons un autre chemin, bien plus court mais tout aussi joli.</p>
             
             <p>Pour info, <strong>si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique.</strong> Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie (si on peut appeler ça comme ça !) avant d&apos;entrer dans le village.</p>
@@ -306,6 +319,11 @@ export default function PhilippinesPage() {
               <div><p><strong>Si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique.</strong> Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie avant d&apos;entrer dans le village.</p></div>
             </div>
             
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1509-1-768x1024.jpg" alt="Hapao Batad Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1528-768x1024.jpg" alt="Hapao View Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1540_jpg-1-768x1024.jpg" alt="Enfant Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
             <h4>⧐ Retour en bus à Manille</h4>
             <p>Nous retournons à l&apos;hôtel en van. Nous récupérons nos bagages et grignotons avant de rejoindre la gare routière. C&apos;est ainsi que s&apos;achève cette parenthèse magique dans cet endroit aux paysages incroyables.</p>
             <p><strong>17h30, nous reprenons le bus direction Manille.</strong></p>
@@ -396,6 +414,10 @@ export default function PhilippinesPage() {
             <p>Le tarsier est un animal très anxieux et il peut facilement se retrouver en détresse s&apos;il est enfermé.</p>
             <p>Pour <strong>50 Php (0,80€)</strong> par personne et un guide rien que pour nous, nous accédons à la zone d&apos;observation. <strong>Ici, il n&apos;y a que 6 tarsiers.</strong> Le guide nous aide à les trouver dans cette petite jungle, et nous apporte quelques informations pour davantage les connaître.</p>
             <p>Ce petit animal chasse la nuit et dort le jour. De ce fait, dans un silence complet, il faut trouver les branches sur lesquelles ils sont accrochés pour la sieste.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1860_jpg-1024x768.jpg" alt="Tarsier Sanctuary Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1854-768x1024.jpg" alt="Tarsier Sanctuary Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
             <p>Ils sont tellement mignons ! Des petites boules de poils avec de gros yeux globuleux. On dirait des petits Guizmo (le gentil Gremlins). On peut donc s&apos;en approcher sans faire de bruit, mais on ne peut bien sûr pas les toucher. Et pour les photos, c&apos;est sans flash ! Le guide nous explique qu&apos;<strong>ils sont très sensibles à la lumière ainsi qu&apos;au bruit, et qu&apos;avec un pic de stress, le tarsier peut se suicider.</strong> Comme on n&apos;a aucune envie d&apos;être responsable d&apos;un suicide de tarsier, on respecte les règles !</p>
             <p>On ne croirait pas comme ça, à le voir en totale inertie sur sa branche, mais ce petit singe de 15 cm est capable de faire des bonds de 4 mètres !</p>
             <p>Autres caractéristiques plutôt particulières, proportionnellement, les yeux du tarsier sont 150 fois plus grands que ceux de l&apos;humain. Il est également capable de tourner sa tête à presque 360°.</p>
