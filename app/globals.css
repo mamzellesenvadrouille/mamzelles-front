@@ -2464,16 +2464,16 @@ a { text-decoration: none; color: inherit; }
   margin: 28px 0 12px;
 }
 .article-philippines .article-section h3 + h4 {
-  margin-top: 4px;
+  margin-top: 2px;
 }
 .article-philippines .article-gallery-2 + h4,
 .article-philippines .article-gallery-3 + h4,
 .article-philippines .article-img-full + h4 {
   margin-top: 16px;
 }
-.article-philippines .article-gallery-2 { margin: 24px 0 8px; }
-.article-philippines .article-gallery-3 { margin: 24px 0 8px; }
-.article-philippines .article-img-full { margin: 24px 0 8px; }
+.article-philippines .article-gallery-2 { margin: 24px 0; }
+.article-philippines .article-gallery-3 { margin: 24px 0; }
+.article-philippines .article-img-full { margin: 24px 0; }
 
 /* Philippines - corrections photos et blocs */
 .article-philippines .article-gallery-2 + .article-gallery-2,
@@ -2484,5 +2484,5 @@ a { text-decoration: none; color: inherit; }
 .article-philippines .article-img-full + .article-gallery-2,
 .article-philippines .article-gallery-3 + .article-img-full,
 .article-philippines .article-img-full + .article-gallery-3 {
-  margin-top: 0;
+  margin-top: 8px;
 }
