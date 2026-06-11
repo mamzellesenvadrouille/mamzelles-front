@@ -619,12 +619,12 @@ export default function PhilippinesPage() {
             <p>Si vous voulez prendre un court de surf c&apos;est ici qu&apos;il faut venir. <strong>Ce qui est sympa, c&apos;est ce long ponton qui s&apos;avance sur la mer. </strong>On peut s&apos;approcher des vagues et observer les surfeurs au plus près.</p>
             <p>Sur la gauche du ponton, il y a quelques bars. Cabanes en bois, transats, cocktails, vue sur l&apos;océan… que demander de plus ?</p>
             <p>Mais au fait, c&apos;est quoi la Cloud 9 ? C&apos;est le nom qui est donné à LA vague de ce spot. Siargao est dans le <strong>Top 10 des meilleurs endroits où surfer dans le monde. <strong>Chaque année, en </strong>septembre, a lieu ici le festival du surf. </strong></p>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2418-1024x768.jpg" alt="Cloud 9 BoardWalk Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2397-1024x768.jpg" alt="Siargao Beach Cloud 9" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2414-2-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <div className="article-gallery-2">
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2414-2-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2401-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2416-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
