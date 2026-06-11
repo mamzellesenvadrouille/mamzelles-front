@@ -586,7 +586,10 @@ export default function PhilippinesPage() {
             <p>Nous avions tellement hâte de découvrir Siargao comme on nous l&apos;a décrite, avec son ambiance particulière, à la cool et détente. Welcome to Siargao, <strong>la capitale du surf aux Philippines !</strong> Si cette île est connue pour être un haut lieu du surf où les amateurs de grosses vagues du monde entier se réunissent chaque année, ce n&apos;est pas seulement pour cela qu&apos;elle nous a attirée…</p>
             <p><strong>Les 48 îles et îlots qui composent Siargao valent le détour. </strong>Des plages de sable blanc, une mer cristalline, des paysages paradisiaques, et tout cela dans une ambiance détendue avec des locaux accueillants et souriants.</p>
             <p>Nous sommes tellement contentes d&apos;être là, et en même temps, la fin de ce merveilleux voyage approche.</p>
-            <p>Il est bon de savoir que <strong>la meilleure période pour visiter Siargao est de mars à juin. </strong></p>
+             <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>La meilleure période pour visiter Siargao est de mars à juin.</p></div>
+            </div>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2440-768x1024.jpg" alt="Surf Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2461-copie-768x1024.jpg" alt="Surf Spots Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -664,8 +667,10 @@ export default function PhilippinesPage() {
             </div>
             <p>Réveil face à l&apos;océan après une nuit incroyable, et surprise, il fait beau ! Notre danse a fonctionné ! P&apos;tit dej&apos;, préparation du sac de plage, location d&apos;un scooter à l&apos;hôtel et c&apos;est parti.</p>
             <p>Comme on nous l&apos;a conseillé la veille, nous nous rendons directement sur le quai.</p>
-            <p><strong>Via l&apos;Office du Tourisme, nous prenons un bateau privé</strong> pour <strong>2000 Php (32€)</strong> par personne, sans le repas. Certes, c&apos;est un peu plus cher qu&apos;avec les organismes, mais c&apos;est plutôt sympa de partir en amoureuses avec 2 locaux, trop contents de nous faire découvrir leurs îles.</p>
-            <p>De plus, <strong>ils nous proposent d&apos;en visiter 4, contrairement aux organismes qui n&apos;en proposent que 3. </strong></p>
+                        <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Le conseil des mamzelles</strong><p>Via l&apos;Office du Tourisme, nous avons pris un bateau privé pour 2000 Php (32€) par personne, sans le repas. Certes un peu plus cher qu&apos;avec les organismes, mais ils nous ont proposé 4 îles au lieu de 3 !</p></div>
+            </div>
             <p>Par contre, si on avait su, <strong>on aurait prévu les boules Quies !</strong> Le bruit du moteur de la bangka est juste assourdissant. Ça fait le même effet que lorsqu&apos;on sort d&apos;un concert où la musique était trop forte. Quand le moteur du bateau s&apos;arrête, on a les oreilles qui sifflent encore un bon moment.</p>
             <h4>⧐ Casulian Island</h4>
             <p>Direction Casulian Island, et plus précisément <strong>Corregidor Beach.</strong> Cette île ne fait normalement pas partie de l&apos;Island hopping.</p>
@@ -751,7 +756,10 @@ export default function PhilippinesPage() {
             <p>Malgré le monde, il n&apos;y a <strong>aucun problème pour le stationnement.</strong> Le long de la route qui mène à la plage s&apos;enchaînent plusieurs grands parkings. Nous avons payé <strong>10 Php (0€16)</strong> pour y laisser le scooter.</p>
             <p>Pour accéder au site, il faut débourser <strong>50 Php (0€80)</strong> par personne. L&apos;endroit est très fréquenté. On y trouve des boutiques de souvenirs, des bars et des restaurants. <strong>Une fois sur la plage, partez sur la gauche. </strong></p>
             <p><strong>Au niveau des rochers, il y a un chemin pour accéder aux piscines naturelles. Vous avez aussi la possibilité de passer directement par l&apos;eau. </strong></p>
-            <p>Nous vous conseillons vivement de <strong>venir une bonne heure avant la marrée basse</strong> pour pouvoir profiter pleinement des lieux. Renseignez-vous sur les horaires des marées.</p>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Le conseil des mamzelles</strong><p>Venez une bonne heure avant la marée basse pour pouvoir profiter pleinement des lieux. Renseignez-vous sur les horaires des marées.</p></div>
+            </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9730-3-1024x768.jpg" alt="Magpopongko Piscines naturelles Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/DJI_0477-1-769x1024.jpg" alt="Magpopongko Tidal pools Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
