@@ -223,7 +223,7 @@ export default function PhilippinesPage() {
             <p><strong>Après une petite demi-heure de route, nous arrivons.</strong> Notre guide pour la journée nous attend (obligatoire). C&apos;est en fait un habitant du village.</p>
             <p>Nous avons choisi de venir <strong>découvrir ce village à la journée</strong> mais sachez qu&apos;il y a la <strong>possibilité de faire un trek sur plusieurs jours.</strong> En gros, vous partez de Banaue pour rejoindre Batad à pied, en passant par des sentiers, des forêts, des rizières… De ce qu&apos;on nous en a dit, c&apos;est assez fatiguant mais c&apos;est une belle expérience à vivre.</p>
             <h4>⧐ Batad, la 8ème Merveille du monde</h4>
-            <p><strong>Après une quinzaine de minutes de marche, nous arrivons par le haut du village.</strong> C&apos;est la seule voie d&apos;accès. La vue sur les rizières en terrasses et le village en contrebas est juste impressionnante. Un amphithéâtre végétal, avec pour scène le village. Nous sommes là, au milieu des montagnes, devant ce qui est considéré comme la 8ème Merveille du monde, et on comprend pourquoi !</p>
+            <p><strong>Une quinzaine de minutes de marche plus tard, nous arrivons par le haut du village.</strong> C&apos;est la seule voie d&apos;accès. La vue sur les rizières en terrasses et le village en contrebas est juste impressionnante. Un amphithéâtre végétal, avec pour scène le village. Nous sommes là, au milieu des montagnes, devant ce qui est considéré comme la 8ème Merveille du monde, et on comprend pourquoi !</p>
             <p>Nous sommes clairement émues et bouche bée face à la magie et la beauté de ce paysage. À cet instant, on se sent hors du temps. Il se dégage ici une énergie particulière.</p>
             <p>Cela fait seulement 10 ans qu&apos;il y a de l&apos;électricité à Batad, mais <strong>il n&apos;y a toujours aucun réseau téléphonique et internet.</strong></p>
             <div className="article-gallery-2">
@@ -264,7 +264,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1238_jpg-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1257-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p>Après avoir bien profité de ce moment, nous retrouvons notre guide pour rebrousser chemin.<br />
+            <p>Nous profitons pleinement de ce moment avant de retrouver notre guide pour rebrousser chemin.<br />
             C&apos;est parti pour remonter les <strong>700 marches, et la pente est assez raide !</strong> Ce sont les mollets qui en prennent un coup… Mais franchement, aucun regret. Nous sommes tellement heureuses de l&apos;avoir fait. <strong>« I survived Batad ! »,</strong> comme on dit ici.</p>
             <p>Il faut encore retraverser les rizières en terrasse et grimper quelques escaliers pour rejoindre le restaurant où nous allons manger dans le village.</p>
             <p><strong>Notre guide nous a réservé une table dans un petit restaurant</strong> qui ne paye pas de mine, mais avec une vue panoramique incroyable ! Cet endroit restera gravé à jamais dans nos mémoires. On scrute ce paysage comme pour ne pas en rater une miette. Et pour couronner le tout, on nous sert l&apos;un des meilleurs poulet curry qu&apos;on ait mangé aux Philippines !</p>
@@ -296,14 +296,13 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1516-768x1024.jpg" alt="Rice Terrace Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <h4>⧐ Les Hot springs d&apos;Hapao</h4>
-            <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !<br />
-            Une légère odeur de soufre se dégage de cet endroit. N&apos;oublions pas que les Philippines sont sur des terres volcaniques.</p>
+            <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !</p>
             
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Si vous portez des bijoux en « toc », enlevez-les avant d&apos;entrer dans les Hot springs. Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. Pour les bijoux en or et argent, ils noircissent mais se nettoient.</p></div>
             </div>
-            <p>En sortant de l&apos;eau, nous avons sur la peau comme une pellicule grasse, et on sent un peu l&apos;œuf pourri ! Heureusement, il y a des douches sur place pour se rincer.</p>
+            <p>Une légère odeur de soufre se dégage de cet endroit. N&apos;oublions pas que les Philippines sont sur des terres volcaniques.<br />En sortant de l&apos;eau, nous avons sur la peau comme une pellicule grasse, et on sent un peu l&apos;œuf pourri ! Heureusement, il y a des douches sur place pour se rincer.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1470-769x1024.jpg" alt="Hot Springs Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2477-1024x768.jpg" alt="Sources eau chaude Hapao Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -432,7 +431,7 @@ export default function PhilippinesPage() {
             <p><strong>L&apos;entrée se fait par le côté.</strong> Comme on a débarqué là-bas en short et en débardeur, <strong>la dame de l&apos;accueil nous couvre les jambes et les bras avec des foulards avant de pénétrer dans les lieux.</strong></p>
             <p>Nous payons <strong>150 Php (2,40€)</strong> par personne pour pouvoir accéder à l&apos;église et au petit musée attenant. Ce dernier a pris place dans ce qui était à l&apos;époque le couvent. Bien que ce musée ne semble pas très bien entretenu, on y trouve de nombreuses reliques et autres artefacts religieux datant du 16ème siècle.</p>
             <p>L&apos;église est quant à elle plutôt jolie. Elle possède de belles fresques au plafond. L&apos;autel est relativement imposant.</p>
-            <p>Après avoir rapidement fait le tour, nous nous dirigeons vers la sortie pour rendre les foulards qui nous avaient gracieusement été prêtés. Une fois dehors, les portes principales de l&apos;église s&apos;ouvrent… <strong>C&apos;est l&apos;heure de la messe, du coup, c&apos;est gratuit</strong> (sauf pour le musée) ! Donc petit conseil, <strong>renseignez-vous sur l&apos;heure des messes pour ne pas avoir à payer l&apos;entrée.</strong></p>
+            <p>Le tour rapidement effectué, nous nous dirigeons vers la sortie pour rendre les foulards qui nous avaient gracieusement été prêtés. Une fois dehors, les portes principales de l&apos;église s&apos;ouvrent… <strong>C&apos;est l&apos;heure de la messe, du coup, c&apos;est gratuit</strong> (sauf pour le musée) ! Donc petit conseil, <strong>renseignez-vous sur l&apos;heure des messes pour ne pas avoir à payer l&apos;entrée.</strong></p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_1897-768x1024.jpg" alt="Coconuts Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_1891-1024x768.jpg" alt="Loboc River Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
