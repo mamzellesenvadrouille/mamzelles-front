@@ -775,8 +775,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3032-1024x768.jpg" alt="Pacifico Beach Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3042-1-768x1024.jpg" alt="Pacifico Beach Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p>Nous n&apos;avons malheureusement plus le temps d&apos;aller plus loin, il faut rebrousser chemin et rentrer à l&apos;hôtel.</p>
-            <p>Un van nous y attend pour nous conduire à l&apos;aéroport, direction Manille.</p>
+            <p>Nous n&apos;avons malheureusement plus le temps d&apos;aller plus loin, il faut rebrousser chemin et rentrer à l&apos;hôtel. Un van nous y attend pour nous conduire à l&apos;aéroport, direction Manille.</p>
             <p>Au revoir les Philippines, on reviendra, c&apos;est sûr... !!</p>
           </section>
 
