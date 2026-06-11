@@ -545,8 +545,7 @@ export default function PhilippinesPage() {
             <p>On découvre par la même occasion <strong>l&apos;effet drone, une spécialité ici !</strong> Les philippins adorent faire ça. Ils ont une manière de filmer bien à eux. Ils courent, tournent, se baissent, sautent… Et c&apos;est vrai que le résultat est plutôt pas mal !</p>
             <p>Après avoir bien profité de l&apos;endroit, il faut maintenant remonter l&apos;escalier. Arrivées en haut, des vendeurs de bouteilles d&apos;eau fraîche nous attendent. Ça tombe à pic, on était desséchées après cette remontada !</p>
             <h4>⧐ Salagdoong Beach</h4>
-            <p>Notre avant dernier spot de la journée est Salagdoong Beach. Une jolie petite plage, une mer magnifique mais <strong>la baignade y est interdite. </strong></p>
-            <p>On n&apos;a pas vraiment compris pourquoi à vrai dire. Apparemment, pour cause de réhabilitation de la plage, mais pour autant, pas de travaux en vue.</p>
+            <p>Notre avant dernier spot de la journée est Salagdoong Beach. Une jolie petite plage, une mer magnifique mais <strong>la baignade y est interdite.</strong> On n&apos;a pas vraiment compris pourquoi à vrai dire. Apparemment, pour cause de réhabilitation de la plage, mais pour autant, pas de travaux en vue.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0409-768x1024.jpg" alt="Salagdoong Beach Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2183-768x1024.jpg" alt="Salagdoong Beach Siquijor Plongeoir" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
