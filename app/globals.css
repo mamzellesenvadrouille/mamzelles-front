@@ -2498,17 +2498,30 @@ a { text-decoration: none; color: inherit; }
 /* â”€â”€ Section pratique â”€â”€ */
 .pratique-list {
   list-style: none;
-  margin: 0 0 24px;
+  margin: 0 0 32px;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+}
+
+.pratique-label {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--gold);
+  padding: 5px 12px;
+  border-radius: 2px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 20px;
 }
 
 .pratique-item {
-  display: flex;
-  gap: 16px;
-  padding: 14px 0;
-  border-bottom: 0.5px solid var(--line);
+  display: grid;
+  grid-template-columns: 2px 1fr;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 0.5px solid rgba(200,149,108,0.2);
+  align-items: start;
 }
 
 .pratique-item:last-child {
@@ -2516,17 +2529,17 @@ a { text-decoration: none; color: inherit; }
 }
 
 .pratique-dash {
-  color: var(--gold);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
-  flex-shrink: 0;
-  line-height: 1.7;
+  width: 2px;
+  background: var(--gold);
+  align-self: stretch;
+  min-height: 24px;
+  opacity: 0.5;
 }
 
 .pratique-item p {
   font-size: 14px !important;
   color: #555 !important;
-  line-height: 1.8 !important;
+  line-height: 1.9 !important;
   margin: 0 !important;
 }
 
