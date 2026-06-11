@@ -2495,3 +2495,47 @@ a { text-decoration: none; color: inherit; }
 .article-philippines .article-img-full + .article-gallery-2,
 .article-philippines .article-gallery-3 + .article-img-full,
 .article-philippines .article-img-full + .article-gallery-3 { margin-top: 8px; }
+/* â”€â”€ Section pratique â”€â”€ */
+.pratique-list {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pratique-item {
+  display: flex;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 0.5px solid var(--line);
+}
+
+.pratique-item:last-child {
+  border-bottom: none;
+}
+
+.pratique-dash {
+  color: var(--gold);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  flex-shrink: 0;
+  line-height: 1.7;
+}
+
+.pratique-item p {
+  font-size: 14px !important;
+  color: #555 !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+}
+
+.pratique-item p strong {
+  color: var(--dark) !important;
+  font-weight: 600 !important;
+}
+
+.pratique-item a {
+  color: var(--gold) !important;
+  text-decoration: underline !important;
+}
