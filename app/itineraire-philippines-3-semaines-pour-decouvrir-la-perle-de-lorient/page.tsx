@@ -460,8 +460,7 @@ export default function PhilippinesPage() {
             <h4>⧐ Siquijor, « The Magic Island »</h4>
             <p>Siquijor est une île faisant partie de la <strong>région des Visayas centrales.</strong> Mais savez-vous pourquoi les philippins ne se rendent pas à Siquijor ? À cause des sorcières !</p>
             <p>Au programme, de belles plages, une multitude de cascades, mais surtout une atmosphère vraiment spéciale. Siquijor est un endroit où l&apos;on se sent bien. C&apos;est une île qui est encore bien préservée du tourisme. <strong>Elle est aussi très peu visitée par les locaux.</strong></p>
-            <p>Siquijor est aussi appelée <strong>« The Magic Island ». Cela vient du fait qu&apos;il y a depuis toujours de fortes croyances sur l&apos;existence de sorcières sur l&apos;île. </strong>Pour les habitants de Siquijor, leur présence ne fait aucun doute.</p>
-            <p>Pour le reste des philippins, cette croyance leur fait suffisamment peur pour éviter de passer leurs vacances sur cette île.</p>
+            <p>Siquijor est aussi appelée <strong>« The Magic Island ». Cela vient du fait qu&apos;il y a depuis toujours de fortes croyances sur l&apos;existence de sorcières sur l&apos;île. </strong>Pour les habitants de Siquijor, leur présence ne fait aucun doute. Pour le reste des philippins, cette croyance leur fait suffisamment peur pour éviter de passer leurs vacances sur cette île.</p>
             <p>Selon les habitants de l&apos;île, les sorcières vivent parmi eux. Des locaux qu&apos;on a rencontré nous ont confié que certains peuvent les voir, d&apos;autres non, et qu&apos;il y a des gentilles sorcières, d&apos;autres maléfiques.</p>
             <p>Sur l&apos;île, il y a également <strong>beaucoup de guérisseurs qui pratiquent des rites vaudou,</strong> notamment pour guérir les habitants d&apos;une maladie ou malédiction. Une fois par an, <strong>en mars généralement, ils organisent le Healing Festival</strong> où ils proposent leurs services de guérison.</p>
             <div className="article-day-header">
@@ -503,9 +502,11 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2036-1024x768.jpg" alt="Tubod Beach Siquijor" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p><strong>L&apos;accès à cette plage n&apos;est pas vraiment bien indiqué. Nous garons le scooter en contre-bas de la route et empruntons un petit chemin qui descend jusqu&apos;à la plage.</strong></p>
-            <p>C&apos;est une jolie plage, mais le principal intérêt ici se trouve sous l&apos;eau. <strong>Sur la gauche, se trouve donc la réserve marine.</strong> Il y aurait tout un tas de divers poissons et coraux à observer.</p>
-            <p>On ne s&apos;est pas jetées à l&apos;eau (frileuses que nous sommes !) mais <strong>il paraît que ça vaut vraiment le coup. </strong></p>
-            <p>La plage est gratuite mais si vous souhaitez nager dans la zone du sanctuaire, il faut payer <strong>20 Php (0€32)</strong> par personne. Pour <strong>50 Php (0€80)</strong>, vous avez la possibilité de louer du matériel de snorkeling.</p>
+            <p>C&apos;est une jolie plage, mais le principal intérêt ici se trouve sous l&apos;eau. <strong>Sur la gauche, se trouve donc la réserve marine.</strong> Il y aurait tout un tas de divers poissons et coraux à observer. On ne s&apos;est pas jetées à l&apos;eau (frileuses que nous sommes !) mais <strong>il paraît que ça vaut vraiment le coup.</strong></p>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>La plage est gratuite. Pour nager dans la zone du sanctuaire marin : <strong>20 Php (0€32)</strong> par personne. Location de matériel de snorkeling : <strong>50 Php (0€80)</strong>.</p></div>
+            </div>
             <h4>⧐ Lugnason Falls</h4>
             <p>Nous reprenons la route direction Lugnason Falls, à 3,5 km. Pour accéder à la cascade, <strong>il suffit de suivre le chemin. Il y a quelques marches à descendre. </strong>Dans l&apos;idée, rien de compliqué, mais avec la pluie qui est tombée, le sol est gorgé d&apos;eau et c&apos;est super glissant. Le site est sympa et en plus il n&apos;y a personne. On découvre une <strong>belle cascade avec un gros débit d&apos;eau et un bassin pour se baigner.</strong></p>
             <p>On ne vous le cache pas, on est quand même un peu déçues. La couleur de l&apos;eau est loin d&apos;être identique à celle des photos Google. En même temps, pas étonnant avec tout ce qui est tombé la veille. L&apos;eau est marron, ce qui donne tout de suite un peu moins envie de s&apos;y baigner.</p>
@@ -514,7 +515,10 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2053-768x1024.jpg" alt="Lugnason Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <p>Puis direction Lazy pour le prochain spot. Nous roulons une petite trentaine de minutes.</p>
-            <p>On l&apos;a déjà dit, mais on le redit, <strong>utiliser un scooter aux Philippines est la meilleure solution pour découvrir des endroits encore préservés du tourisme, rencontrer des locaux, traverser des villages, mais surtout pour ressentir un sentiment de liberté totale !</strong></p>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
+              <div><strong>Le conseil des MamZelles</strong><p>Utiliser un scooter est la meilleure solution pour découvrir des endroits encore préservés du tourisme, rencontrer des locaux, traverser des villages, et surtout ressentir un sentiment de liberté totale !</p></div>
+            </div>
             <h4>⧐ Lagaan Falls</h4>
             <p>Arrivées à Lagaan falls, un parking nous attend. Nous payons <strong>10 Php (0€16)</strong> pour laisser le scooter. Une taxe de <strong>50 Php (0€80)</strong> par personne est demandée pour accéder au site.</p>
             <p>On nous propose d&apos;être accompagnées par un guide (payant). <strong>Ce n&apos;est pas obligatoire et surtout pas nécessaire.</strong></p>
@@ -526,13 +530,16 @@ export default function PhilippinesPage() {
             <p>Si comme Laurie, l&apos;envie vous prend de vous jeter à l&apos;eau, vous pouvez le faire à l&apos;aide d&apos;une corde. Vous aurez l&apos;impression d&apos;être Tarzan le temps d&apos;un saut. Les locaux sont là pour vous encourager.</p>
             <h4>⧐ Cambugahay Falls</h4>
             <p>Nous continuons notre circuit pour aller à Cambugahay Falls. En moins de 15 minutes nous y sommes.</p>
-            <p>Au vu du nombre de scooters et de tuk-tuks stationnés au bord de la route, on se doute qu&apos;il y a du monde sur place. En même temps, cet endroit est l&apos;un des plus convoités de l&apos;île. Il faut payer une taxe de <strong>20 Php (0€32)</strong> par personne pour accéder au site. <strong>On prend l&apos;escalier avec ses nombreuses marches</strong> qui descend jusqu&apos;à la rivière. <strong>La cascade est constituée de 3 niveaux.</strong></p>
-            <p><strong>Il ne faut pas hésiter à remonter la rivière sur la gauche. </strong>N&apos;oubliez pas de <strong>vous équiper de chaussures d&apos;eau</strong> pour visiter ce lieu. Même s&apos;ils sont un peu sommaires, <strong>plusieurs passages sont aménagés pour traverser la rivière. </strong>C&apos;est vrai que cet endroit est très beau, mais là aussi, à cause de la pluie, l&apos;eau n&apos;est pas du tout turquoise. On ne va pas se plaindre, on est quand même sur un spot incroyable !</p>
+            <p>Au vu du nombre de scooters et de tuk-tuks stationnés au bord de la route, on se doute qu&apos;il y a du monde sur place. En même temps, cet endroit est l&apos;un des plus convoités de l&apos;île. Il faut payer une taxe de <strong>20 Php (0€32)</strong> par personne pour accéder au site.</p>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À ne pas manquer</strong><p>Prévoyez des chaussures d&apos;eau ! Remontez la rivière sur la gauche pour découvrir les 3 niveaux de la cascade. Au 2ème palier, laissez-vous tenter par l&apos;expérience radeau pour <strong>50 Php (0€80)</strong>.</p></div>
+            </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2113-768x1024.jpg" alt="Cambugahay Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2110-768x1024.jpg" alt="Cambugahay Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p><strong>Au 2ème palier, on découvre un bassin</strong> géré par des philippins, où se trouvent un radeau et des cordes pour se jeter à l&apos;eau. <strong>On se laisse tenter par l&apos; « expérience »</strong> qui nous coûtera <strong>50 Php (0€80)</strong>.</p>
+            <p><strong>Au 2ème palier, on découvre un bassin</strong> géré par des philippins, où se trouvent un radeau et des cordes pour se jeter à l&apos;eau.</p>
             <p><strong>C&apos;est en fait une séance photos touristique,</strong> et c&apos;est tout un programme ! On nous fait monter sur le radeau, qui est en réalité attaché à l&apos;avant et à l&apos;arrière par des cordes. Le radeau est tiré par une personne jusqu&apos;à la cascade. Pendant ce temps, on nous mitraille de photos et de vidéos faites avec notre téléphone qu&apos;on a confié avant de monter sur le radeau.</p>
             <p>On découvre par la même occasion <strong>l&apos;effet drone, une spécialité ici !</strong> Les philippins adorent faire ça. Ils ont une manière de filmer bien à eux. Ils courent, tournent, se baissent, sautent… Et c&apos;est vrai que le résultat est plutôt pas mal !</p>
             <p>Après avoir bien profité de l&apos;endroit, il faut maintenant remonter l&apos;escalier. Arrivées en haut, des vendeurs de bouteilles d&apos;eau fraîche nous attendent. Ça tombe à pic, on était desséchées après cette remontada !</p>
