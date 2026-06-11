@@ -298,8 +298,8 @@ export default function PhilippinesPage() {
             <h4>⧐ Les Hot springs d&apos;Hapao</h4>
             <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !</p>
             
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Si vous portez des bijoux en « toc », enlevez-les avant d&apos;entrer dans les Hot springs. Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. Pour les bijoux en or et argent, ils noircissent mais se nettoient.</p></div>
             </div>
             <p>Une légère odeur de soufre se dégage de cet endroit. N&apos;oublions pas que les Philippines sont sur des terres volcaniques.<br />En sortant de l&apos;eau, nous avons sur la peau comme une pellicule grasse, et on sent un peu l&apos;œuf pourri ! Heureusement, il y a des douches sur place pour se rincer.</p>
@@ -310,8 +310,8 @@ export default function PhilippinesPage() {
             <p>Après ce moment de détente, il est temps de faire demi-tour car nous avons notre bus pour Manille en fin d&apos;après-midi. Pour le retour, nous empruntons un autre chemin, bien plus court mais tout aussi joli.</p>
             
             
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique. Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie avant d&apos;entrer dans le village.</p></div>
             </div>
             
@@ -412,8 +412,8 @@ export default function PhilippinesPage() {
             <p>Après quelques recherches, sans hésitation, <strong>notre choix s&apos;est porté sur le sanctuaire de Corella.</strong> C&apos;est une fondation officielle qui œuvre pour la protection du tarsier où les petits primates sont en quasi-liberté. Le tarsier est un animal très anxieux et il peut facilement se retrouver en détresse s&apos;il est enfermé.</p>
             <p>Pour <strong>50 Php (0,80€)</strong> par personne et un guide rien que pour nous, nous accédons à la zone d&apos;observation. <strong>Ici, il n&apos;y a que 6 tarsiers.</strong> Le guide nous aide à les trouver dans cette petite jungle, et nous apporte quelques informations pour davantage les connaître.</p>
             <p>Ce petit animal chasse la nuit et dort le jour. De ce fait, dans un silence complet, il faut trouver les branches sur lesquelles ils sont accrochés pour la sieste.</p>
-            <div className="article-must">
-              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Le tarsier est extrêmement sensible au bruit et à la lumière. Un pic de stress peut lui être fatal. Pas de flash, silence complet — c&apos;est la règle absolue du sanctuaire.</p></div>
             </div>
             <div className="article-gallery-2">
@@ -505,7 +505,7 @@ export default function PhilippinesPage() {
             <p>C&apos;est une jolie plage, mais le principal intérêt ici se trouve sous l&apos;eau. <strong>Sur la gauche, se trouve donc la réserve marine.</strong> Il y aurait tout un tas de divers poissons et coraux à observer. On ne s&apos;est pas jetées à l&apos;eau (frileuses que nous sommes !) mais <strong>il paraît que ça vaut vraiment le coup.</strong></p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>La plage est gratuite. Pour nager dans la zone du sanctuaire marin : <strong>20 Php (0€32)</strong> par personne. Location de matériel de snorkeling : <strong>50 Php (0€80)</strong>.</p></div>
+              <div><strong>Bon à savoir</strong><p>La plage est gratuite. Pour nager dans la zone du sanctuaire marin : 20 Php (0€32) par personne. Location de matériel de snorkeling : 50 Php (0€80).</p></div>
             </div>
             <h4>⧐ Lugnason Falls</h4>
             <p>Nous reprenons la route direction Lugnason Falls, à 3,5 km. Pour accéder à la cascade, <strong>il suffit de suivre le chemin. Il y a quelques marches à descendre. </strong>Dans l&apos;idée, rien de compliqué, mais avec la pluie qui est tombée, le sol est gorgé d&apos;eau et c&apos;est super glissant. Le site est sympa et en plus il n&apos;y a personne. On découvre une <strong>belle cascade avec un gros débit d&apos;eau et un bassin pour se baigner.</strong></p>
@@ -533,7 +533,7 @@ export default function PhilippinesPage() {
             <p>Au vu du nombre de scooters et de tuk-tuks stationnés au bord de la route, on se doute qu&apos;il y a du monde sur place. En même temps, cet endroit est l&apos;un des plus convoités de l&apos;île. Il faut payer une taxe de <strong>20 Php (0€32)</strong> par personne pour accéder au site.</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>Prévoyez des chaussures d&apos;eau ! Remontez la rivière sur la gauche pour découvrir les 3 niveaux de la cascade. Au 2ème palier, laissez-vous tenter par l&apos;expérience radeau pour <strong>50 Php (0€80)</strong>.</p></div>
+              <div><strong>À ne pas manquer</strong><p>Prévoyez des chaussures d&apos;eau ! Remontez la rivière sur la gauche pour découvrir les 3 niveaux de la cascade. Au 2ème palier, laissez-vous tenter par l&apos;expérience radeau pour 50 Php (0€80).</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2113-768x1024.jpg" alt="Cambugahay Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
