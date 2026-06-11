@@ -583,8 +583,7 @@ export default function PhilippinesPage() {
               <h2>📍 Siargao — L&apos;île des surfeurs</h2>
             </div>
             <p>L&apos;île de Siargao se trouve <strong>au Nord de la province de Surigao, </strong>tout à l&apos;Est des Philippines. L&apos;un de ses nombreux charmes est qu&apos;elle est encore épargnée du tourisme de masse. Pour tout vous dire, <strong>on a eu un réel coup de cœur pour cette île !</strong></p>
-            <p>Nous avions tellement hâte de découvrir Siargao comme on nous l&apos;a décrite, avec son ambiance particulière, à la cool et détente. Welcome to Siargao, <strong>la capitale du surf aux Philippines !</strong></p>
-            <p>Si cette île est connue pour être un haut lieu du surf où les amateurs de grosses vagues du monde entier se réunissent chaque année, ce n&apos;est pas seulement pour cela qu&apos;elle nous a attirée…</p>
+            <p>Nous avions tellement hâte de découvrir Siargao comme on nous l&apos;a décrite, avec son ambiance particulière, à la cool et détente. Welcome to Siargao, <strong>la capitale du surf aux Philippines !</strong> Si cette île est connue pour être un haut lieu du surf où les amateurs de grosses vagues du monde entier se réunissent chaque année, ce n&apos;est pas seulement pour cela qu&apos;elle nous a attirée…</p>
             <p><strong>Les 48 îles et îlots qui composent Siargao valent le détour. </strong>Des plages de sable blanc, une mer cristalline, des paysages paradisiaques, et tout cela dans une ambiance détendue avec des locaux accueillants et souriants.</p>
             <p>Nous sommes tellement contentes d&apos;être là, et en même temps, la fin de ce merveilleux voyage approche.</p>
             <p>Il est bon de savoir que <strong>la meilleure période pour visiter Siargao est de mars à juin. </strong></p>
@@ -601,17 +600,13 @@ export default function PhilippinesPage() {
             <p>Il est 8h30 environ quand nous atterrissons à Siargao. Bien que le temps soit couvert, vue du ciel, la première aperçue de l&apos;île est incroyable avec ses cocotiers à perte de vue.</p>
             <p>On arrive dans un tout petit aéroport à peine plus grand que notre appartement. Nous attendons nos sacs devant le seul et unique tapis. <strong>En sortant de l&apos;aéroport, nous devons régler la taxe de l&apos;île,</strong> soit <strong>20 Php (0€32)</strong> par personne et par passage (à l&apos;arrivée et au départ).</p>
             <p>Nous n&apos;avions pas organisé notre trajet jusqu&apos;à l&apos;hôtel car on nous avait informées qu&apos;il y avait plusieurs possibilités une fois sur place (bus, taxi, van touristique…).</p>
-            <p>En effet, <strong>sur le parking de aéroport, plusieurs vans attendent les touristes.</strong> On nous demande où se situe notre hébergement. Nous sommes alors dispatchés et regroupés dans les vans en fonction de la localisation des hôtels.</p>
-            <p><strong>Pour nous, c&apos;est direction Général Luna. </strong>Pour le transfert, nous payons <strong>300 Php (4€85)</strong> par personne.</p>
+            <p>En effet, <strong>sur le parking de aéroport, plusieurs vans attendent les touristes.</strong> On nous demande où se situe notre hébergement. Nous sommes alors dispatchés et regroupés dans les vans en fonction de la localisation des hôtels. <strong>Pour nous, c&apos;est direction Général Luna.</strong> Pour le transfert, nous payons <strong>300 Php (4€85)</strong> par personne.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2355-768x1024.jpg" alt="Coconuts Forest Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2519-1-1024x768.jpg" alt="Siargao City" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Nous arrivons à l&apos;hôtel, le <strong><a href="https://www.agoda.com/fr-fr/siargao-inn-beach-resort/hotel/siargao-islands-ph.html?cid=1844104&amp;ds=JrVzFqiocvtJwsOz" target="_blank" rel="noopener noreferrer" className="article-link">Siargao Beach Inn</a></strong> situé sur la route principale de Général Luna. <strong>Son emplacement sur la plage est vraiment top</strong> et notre chambre à l&apos;étage d&apos;un bungalow offre une vue incroyable sur l&apos;océan.</p>
-            <p>Il est 10h du matin, nos bagages sont posés et on a qu&apos;une envie, aller découvrir cette île.</p>
-            <p>Malheureusement, le temps n&apos;est pas avec nous. II pleut toujours. En même temps on le savait, ce n&apos;est pas la meilleure période pour venir visiter Siargao.</p>
-            <p>Mais tant pis pour la météo, il nous en faut plus pour nous empêcher d&apos;aller vadrouiller.</p>
-            <p>Nous partons de l&apos;hôtel à pied, histoire d&apos;explorer un peu les alentours.</p>
+            <p>Il est 10h du matin, nos bagages sont posés et on a qu&apos;une envie, aller découvrir cette île. Malheureusement, le temps n&apos;est pas avec nous. II pleut toujours. En même temps on le savait, ce n&apos;est pas la meilleure période pour venir visiter Siargao. Mais tant pis pour la météo, il nous en faut plus pour nous empêcher d&apos;aller vadrouiller. Nous partons de l&apos;hôtel à pied, histoire d&apos;explorer un peu les alentours.</p>
             <p><strong>Les stigmates du super-typhon survenu en 2021 sont encore bien présents. </strong>En effet, en décembre 2021, des vents de 195 km/h et des rafales atteignant les 270km/h se sont abattus sur l&apos;île de Siargao, faisant s&apos;envoler les toits des maisons et bâtiments, arrachant des poteaux électriques, déracinant des arbres et privant des villes entières d&apos;électricité.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2380-768x1024.jpg" alt="Siargao Beach Inn" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -634,8 +629,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2416-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Avec tout ça, il est plus que l&apos;heure d&apos;aller déjeuner. C&apos;est fou ce que le temps passe vite en vacances !</p>
-            <p>Une fois sorties de la zone, nous tombons par hasard sur un petit bar restaurant Éco Shop, le <strong><a href="https://www.instagram.com/goodies.siargao/?hl=fr" target="_blank" rel="noopener noreferrer" className="article-link">Goodies</a></strong>. On peut y acheter des vêtements et divers articles sympas. Il y a également un espace de coworking.</p>
-            <p>On a adoré l&apos;ambiance de cet endroit. Niveau restau, tout est frais, préparé à la minute. Si vous aimez manger healthy, c&apos;est à dire sain et léger, tout en étant rassasié, c&apos;est ici que vous devez venir.</p>
+            <p>Une fois sorties de la zone, nous tombons par hasard sur un petit bar restaurant Éco Shop, le <strong><a href="https://www.instagram.com/goodies.siargao/?hl=fr" target="_blank" rel="noopener noreferrer" className="article-link">Goodies</a></strong>. On peut y acheter des vêtements et divers articles sympas. Il y a également un espace de coworking. On a adoré l&apos;ambiance de cet endroit. Niveau restau, tout est frais, préparé à la minute. Si vous aimez manger healthy, c&apos;est à dire sain et léger, tout en étant rassasié, c&apos;est ici que vous devez venir.</p>
             <p>Notre retour à l&apos;hôtel se fait sous une pluie battante. Bilan de la journée : mouillées et fatiguées !</p>
             <div className="article-day-header">
               <span className="article-day-badge">Jour 2</span>
