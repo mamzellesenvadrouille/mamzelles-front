@@ -637,11 +637,9 @@ export default function PhilippinesPage() {
             </div>
             <p>C&apos;est un peu déprimées que nous nous réveillons ce matin. Depuis notre lit king size, on observe l&apos;océan déchaîné et la pluie qui ne cesse de tomber.</p>
             <p>Après avoir chillé toute la matinée et repéré notre spot pour manger le midi, c&apos;est parti pour un tour sous la pluie, direction le <strong><a href="https://www.bravosiargao.com/dining/bravo-restaurant.html" target="_blank" rel="noopener noreferrer" className="article-link">Bravo Beach Resort</a></strong>. Ici, c&apos;est un peu le paradis du skateur et du surfeur. Dès qu&apos;on entre dans l&apos;enceinte de l&apos;établissement, on est dans l&apos;ambiance avec un skate bowl à disposition.</p>
-            <p>Le restaurant se trouve tout au fond, face à l&apos;océan. L&apos;ambiance y est décontractée.</p>
-            <p>Confortablement installées dans nos petits canapés, on trinque avec une savoureuse Caïpirina. Le restaurant sert essentiellement des plats espagnols mais vous y trouverez de tout.</p>
-            <p>Pour nous, qui dit Espagne, dit tapas ! Nous ne regrettons pas notre choix, les croquetas (entre autres) sont à tomber par terre. Le rapport qualité / prix est correct.</p>
+            <p>Le restaurant se trouve tout au fond, face à l&apos;océan. L&apos;ambiance y est décontractée. Confortablement installées dans nos petits canapés, on trinque avec une savoureuse Caïpirina. Le restaurant sert essentiellement des plats espagnols mais vous y trouverez de tout. Pour nous, qui dit Espagne, dit tapas ! Nous ne regrettons pas notre choix, les croquetas (entre autres) sont à tomber par terre. Le rapport qualité / prix est correct.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2531_jpg-767x1024.jpg" alt="Ville tuk-tuk Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2531_jpg-767x1024.jpg" alt="Ville tuk-tuk Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2530-1-1024x768.jpg" alt="Siargao City" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <h4>⧐ Island hopping à Siargao</h4>
@@ -652,15 +650,13 @@ export default function PhilippinesPage() {
             <h4>⧐ Où faire la fête ? Harana Surf Resort</h4>
             <p>En attendant, nous avons trouvé l&apos;endroit où nous allons manger le soir (on a l&apos;impression qu&apos;on ne fait que ça !).</p>
             <p>Non loin de la Cloud 9, se trouve le <a href="https://199501.my.canva.site/celebrate-with-bayani?fbclid=PAZXh0bgNhZW0CMTEAAaZuixogPVoRkT_endCaRVCCLnCmsHHTPgRhTGCKqK0C710RXM-EwQajBYI_aem_9fLA8IrFajoYSfKnNZFvtQ" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Harana Surf Resort</strong></a>. Cet endroit n&apos;est pas facile à repérer car il n&apos;est pas situé sur la route principale. Il faut s&apos;engouffrer dans une petite rue, le Harana se trouve tout au bout.</p>
-            <p>Encore un restaurant avec une déco incroyable et une atmosphère trop agréable. La cuisine est délicieuse et copieuse. Le personnel est vraiment sympa et le service rapide.</p>
-            <p>C&apos;est seulement plus tard dans la soirée qu&apos;on comprend pourquoi le service était si rapide... Nous sommes samedi et en quelques heures, le restaurant s&apos;est transformé en piste de danse !</p>
+            <p>Encore un restaurant avec une déco incroyable et une atmosphère trop agréable. La cuisine est délicieuse et copieuse. Le personnel est vraiment sympa et le service rapide. C&apos;est seulement plus tard dans la soirée qu&apos;on comprend pourquoi le service était si rapide... Nous sommes samedi et en quelques heures, le restaurant s&apos;est transformé en piste de danse !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2537-768x1024.jpg" alt="Harana Surf Resort Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9644-1024x768.jpg" alt="Harana Surf Resort Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>En effet, à partir de 22h, les tables sont mises de côté pour ne laisser place qu&apos;à celle du DJ.</p>
-            <p>Les gens arrivent par dizaines, des groupes d&apos;amis, des touristes, des philippins, des surfeurs... Tous viennent faire la fête et passer un bon moment.</p>
-            <p>C&apos;est vraiment ce soir que nous nous rendons compte que Siargao n&apos;est pas seulement l&apos;île des surfeurs, mais aussi l&apos;île des fêtards.</p>
+            <p>Les gens arrivent par dizaines, des groupes d&apos;amis, des touristes, des philippins, des surfeurs... Tous viennent faire la fête et passer un bon moment. C&apos;est vraiment ce soir que nous nous rendons compte que Siargao n&apos;est pas seulement l&apos;île des surfeurs, mais aussi l&apos;île des fêtards.</p>
             <p>Après cette belle soirée, retour à l&apos;hôtel. On va croiser les doigts pour la météo du lendemain et faire la danse du soleil !</p>
             <div className="article-day-header">
               <span className="article-day-badge">Jour 3</span>
