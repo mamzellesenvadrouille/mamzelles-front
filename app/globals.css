@@ -2507,7 +2507,7 @@ a { text-decoration: none; color: inherit; }
   font-size: 10px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #fff;
+  color: #fff !important;
   background: var(--gold);
   padding: 5px 12px;
   border-radius: 2px;
@@ -2520,12 +2520,7 @@ a { text-decoration: none; color: inherit; }
   grid-template-columns: 2px 1fr;
   gap: 20px;
   padding: 16px 0;
-  border-bottom: 0.5px solid rgba(200,149,108,0.2);
   align-items: start;
-}
-
-.pratique-item:last-child {
-  border-bottom: none;
 }
 
 .pratique-dash {
