@@ -667,8 +667,8 @@ export default function PhilippinesPage() {
             </div>
             <p>Réveil face à l&apos;océan après une nuit incroyable, et surprise, il fait beau ! Notre danse a fonctionné ! P&apos;tit dej&apos;, préparation du sac de plage, location d&apos;un scooter à l&apos;hôtel et c&apos;est parti.</p>
             <p>Comme on nous l&apos;a conseillé la veille, nous nous rendons directement sur le quai.</p>
-                        <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                        <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des mamzelles</strong><p>Via l&apos;Office du Tourisme, nous avons pris un bateau privé pour 2000 Php (32€) par personne, sans le repas. Certes un peu plus cher qu&apos;avec les organismes, mais ils nous ont proposé 4 îles au lieu de 3 !</p></div>
             </div>
             <p>Par contre, si on avait su, <strong>on aurait prévu les boules Quies !</strong> Le bruit du moteur de la bangka est juste assourdissant. Ça fait le même effet que lorsqu&apos;on sort d&apos;un concert où la musique était trop forte. Quand le moteur du bateau s&apos;arrête, on a les oreilles qui sifflent encore un bon moment.</p>
@@ -756,8 +756,8 @@ export default function PhilippinesPage() {
             <p>Malgré le monde, il n&apos;y a <strong>aucun problème pour le stationnement.</strong> Le long de la route qui mène à la plage s&apos;enchaînent plusieurs grands parkings. Nous avons payé <strong>10 Php (0€16)</strong> pour y laisser le scooter.</p>
             <p>Pour accéder au site, il faut débourser <strong>50 Php (0€80)</strong> par personne. L&apos;endroit est très fréquenté. On y trouve des boutiques de souvenirs, des bars et des restaurants. <strong>Une fois sur la plage, partez sur la gauche. </strong></p>
             <p><strong>Au niveau des rochers, il y a un chemin pour accéder aux piscines naturelles. Vous avez aussi la possibilité de passer directement par l&apos;eau. </strong></p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des mamzelles</strong><p>Venez une bonne heure avant la marée basse pour pouvoir profiter pleinement des lieux. Renseignez-vous sur les horaires des marées.</p></div>
             </div>
             <div className="article-gallery-2">
