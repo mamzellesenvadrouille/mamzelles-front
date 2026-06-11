@@ -647,7 +647,7 @@ export default function PhilippinesPage() {
             <p>On nous informe que le tarif est de <strong>1500 Php (24€20)</strong><strong> par personne</strong>, repas compris, <strong>pour faire le tour de 3 îles.</strong> Vu le temps incertain prévu pour les prochains jours, on préfère ne rien réserver.</p>
             <p>Pour partir en excursion, on nous indique qu&apos;il y a aussi <strong>la possibilité de nous rendre directement sur le quai le matin même, et de nous joindre à un groupe qui n&apos;est pas complet ou de le faire en bateau privé.</strong></p>
             <p>Alors Carpe Diem, on verra bien demain !</p>
-            <h4>⧐ Où faire la fête ?</h4>
+            <h4>⧐ Où faire la fête ? Harana Surf Resort</h4>
             <p>En attendant, nous avons trouvé l&apos;endroit où nous allons manger le soir (on a l&apos;impression qu&apos;on ne fait que ça !).</p>
             <p>Non loin de la Cloud 9, se trouve le <a href="https://199501.my.canva.site/celebrate-with-bayani?fbclid=PAZXh0bgNhZW0CMTEAAaZuixogPVoRkT_endCaRVCCLnCmsHHTPgRhTGCKqK0C710RXM-EwQajBYI_aem_9fLA8IrFajoYSfKnNZFvtQ" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Harana Surf Resort</strong></a>. Cet endroit n&apos;est pas facile à repérer car il n&apos;est pas situé sur la route principale. Il faut s&apos;engouffrer dans une petite rue, le Harana se trouve tout au bout.</p>
             <p>Encore un restaurant avec une déco incroyable et une atmosphère trop agréable. La cuisine est délicieuse et copieuse. Le personnel est vraiment sympa et le service rapide. C&apos;est seulement plus tard dans la soirée qu&apos;on comprend pourquoi le service était si rapide... Nous sommes samedi et en quelques heures, le restaurant s&apos;est transformé en piste de danse !</p>
@@ -682,8 +682,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0421-1024x768.jpg" alt="Naked Beach Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Nous reprenons la bangka direction Naked Island.</p>
-            <p>L&apos;île Naked, comme son nom l&apos;indique, est nue. Il n&apos;y a rien. Pas de construction, pas de végétation. <strong>Il s&apos;agit littéralement d&apos;un banc de sable blanc et fin au milieu de la mer.</strong></p>
-            <p>C&apos;est impressionnant !</p>
+            <p>L&apos;île Naked, comme son nom l&apos;indique, est nue. Il n&apos;y a rien. Pas de construction, pas de végétation. <strong>Il s&apos;agit littéralement d&apos;un banc de sable blanc et fin au milieu de la mer.</strong> C&apos;est impressionnant !</p>
             <p>On se trouve chanceuses d&apos;avoir posé les pieds sur ce petit bout de sable perdu au beau milieu de l&apos;océan, parce qu&apos;on sait d&apos;avance qu&apos;un jour il disparaîtra…</p>
             <h4>⧐ Daku Island</h4>
             <p>Notre 3ème spot est Daku Island. <strong>Daku est la plus grande des 4 îles que nous visitons aujourd&apos;hui.</strong> « Daku » est un mot local qui signifie « grand ».</p>
@@ -697,8 +696,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1594-1024x768.jpg" alt="Daku Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Le paysage est magnifique. <strong>Encore une île paradisiaque !</strong> La longue étendue de sable blanc poudreux et les coconuts qui se balancent forment un décor idyllique de carte postale pour ceux qui veulent se détendre.</p>
-            <p>Dans les cabanes autour de nous, un groupe de touristes et une famille de philippins sont installés. Une dame vient nous demander ce que l&apos;on souhaite manger.</p>
-            <p>Pour <strong>600 Php (9€66)</strong> pour deux, on nous servira un 1/2 poulet pané (fraîchement tué), accompagné de riz et d&apos;une sauce aux notes sucrées. L&apos;un des meilleurs poulets de notre vie, simple mais tellement bon !</p>
+            <p>Dans les cabanes autour de nous, un groupe de touristes et une famille de philippins sont installés. Une dame vient nous demander ce que l&apos;on souhaite manger. Pour <strong>600 Php (9€66)</strong> pour deux, on nous servira un 1/2 poulet pané (fraîchement tué), accompagné de riz et d&apos;une sauce aux notes sucrées. L&apos;un des meilleurs poulets de notre vie, simple mais tellement bon !</p>
             <p>Après avoir bien mangé, baladé et digéré, nous reprenons la mer.</p>
             <h4>⧐ Guyam Island</h4>
             <div className="article-gallery-2">
@@ -706,15 +704,13 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0431-1024x768.jpg" alt="Guyam Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Nous arrivons sur la dernière île de notre tour, Guyam Island. Une taxe de <strong>40 Php (0€64)</strong> par personne est à payer à l&apos;arrivée.</p>
-            <p>C&apos;est une petite île pleine de charme. <strong>Ses eaux peu profondes couleur émeraude sont idéales pour patauger.</strong> Ses quelques arbres et son sable blanc poudreux font de cet endroit un petit paradis.</p>
-            <p>Cette île est toute petite, on peut faire le tour à pied. Il n&apos;y a pas d&apos;habitation, juste <strong>quelques cabanes qui vendent des boissons et de la nourriture.</strong></p>
+            <p>C&apos;est une petite île pleine de charme. <strong>Ses eaux peu profondes couleur émeraude sont idéales pour patauger.</strong> Ses quelques arbres et son sable blanc poudreux font de cet endroit un petit paradis. Cette île est toute petite, on peut faire le tour à pied. Il n&apos;y a pas d&apos;habitation, juste quelques cabanes qui vendent des boissons et de la nourriture.</p>
             <p><strong>Le seul point négatif est qu&apos;il y a énormément de monde </strong>puisque tous les Island hoppings se rejoignent ici en fin de journée.</p>
             <p>Retour au quai vers 16h avec tous ces paysages en tête, heureuses de cette journée.</p>
             <p>On reprend le scooter en direction de l&apos;hôtel, histoire de prendre une bonne douche avant de repartir... On a un rendez-vous de prévu !</p>
             <h4>⧐ Où se faire tatouer ? Rad Tattoo</h4>
             <p>Et oui, histoire de marquer ce moment et de graver ce voyage à jamais, nous allons nous faire tatouer.</p>
-            <p>Si cela fait aussi parti de vos projets ou que l&apos;envie vous prend, nous vous conseillons vivement le salon <strong><a href="https://www.facebook.com/radtattoosiargao?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="article-link">RAD Tattoo &amp; Cafe Siargao</a></strong>.</p>
-            <p>Leur local est clean, ils sont très pros (les règles d&apos;hygiène sont respectées) et très sympas.</p>
+            <p>Si cela fait aussi parti de vos projets ou que l&apos;envie vous prend, nous vous conseillons vivement le salon <strong><a href="https://www.facebook.com/radtattoosiargao?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="article-link">RAD Tattoo &amp; Cafe Siargao</a></strong>. Leur local est clean, ils sont très pros (les règles d&apos;hygiène sont respectées) et très sympas.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2932-1024x768.jpg" alt="RAD Tattoo Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2901-1024x768.jpg" alt="Cloud 9 night Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
