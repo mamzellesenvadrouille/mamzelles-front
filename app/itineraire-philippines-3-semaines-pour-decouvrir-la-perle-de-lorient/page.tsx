@@ -535,6 +535,7 @@ export default function PhilippinesPage() {
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À ne pas manquer</strong><p>Prévoyez des chaussures d&apos;eau ! Remontez la rivière sur la gauche pour découvrir les 3 niveaux de la cascade. Au 2ème palier, laissez-vous tenter par l&apos;expérience radeau pour 50 Php (0€80).</p></div>
             </div>
+            <p>Même s&apos;ils sont un peu sommaires, plusieurs passages sont aménagés pour traverser la rivière. C&apos;est vrai que cet endroit est très beau, mais là aussi, à cause de la pluie, l&apos;eau n&apos;est pas du tout turquoise. On ne va pas se plaindre, on est quand même sur un spot incroyable !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2113-768x1024.jpg" alt="Cambugahay Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2110-768x1024.jpg" alt="Cambugahay Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -583,8 +584,7 @@ export default function PhilippinesPage() {
             <p><strong>À la sortie du port, les locaux sont un peu oppressants et insistants.</strong> Il y a beaucoup de monde, de bruit, de voitures, de pollution. Nous décidons de nous éloigner de cet endroit et arrêtons un taxi un peu plus loin.</p>
             <p>Pour <strong>500 Php (8€)</strong>, il nous conduit à notre hôtel situé à mi-chemin entre le port et l&apos;aéroport. Pour notre nuit de transit, l&apos;hôtel <strong><a href="https://www.booking.com/hotel/ph/lapu-lapu-cottages-com.fr.html?aid=356980&amp;label=gog235jc-1FCAsotAFCFmxhcHUtbGFwdS1jb3R0YWdlcy1jb21IDVgDaE2IAQGYAQ24AQfIAQzYAQHoAQH4AQKIAgGoAgO4AqT6nrgGwAIB0gIkOGFlYzM3ZGQtOGVlOC00MDFiLThhNTYtMDhlMTk0NWMyNGY52AIF4AIB&amp;sid=25689103515261a10f95ba7b9dc4b06e&amp;dest_id=-2435281;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1728560425;srpvid=52405212e75209fe;type=total;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Lapu-Lapu Cottages</a></strong> est top.</p>
             <h4>⧐ Réveil à Cebu, direction Siargao !</h4>
-            <p>Nous avons booké un taxi la veille avec la réception de l&apos;hôtel. Il passe nous récupérer à 3h30.</p>
-            <p>Autant vous dire que la nuit a été courte ! Nous payons <strong>300 Php (4€80)</strong> pour aller de hôtel à l&apos;aéroport.</p>
+            <p>Nous avons booké un taxi la veille avec la réception de l&apos;hôtel. Il passe nous récupérer à 3h30. Autant vous dire que la nuit a été courte ! Nous payons <strong>300 Php (4€80)</strong> pour aller de hôtel à l&apos;aéroport.</p>
           </section>
 
           <section id="siargao" className="article-section">
