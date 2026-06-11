@@ -794,19 +794,19 @@ export default function PhilippinesPage() {
             {/* 4 cartes */}
             <div className="article-pratique-grid" style={{marginBottom: '32px'}}>
               <div className="article-pratique-card">
-                <h3>✈️ Vols internationaux</h3>
+                <h3 style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-plane" aria-hidden="true" style={{fontSize:"22px",color:"var(--gold)",flexShrink:0}}></i>Vols internationaux</h3>
                 <p>Pour nos vols internationaux aller / retour (Paris - Djeda, Djeda - Manille), nous avons payé <strong>465€</strong> par personne avec Saudia Airlines. Les tarifs peuvent bien évidemment fluctuer en fonction de la saison et de la compagnie aérienne.</p>
               </div>
               <div className="article-pratique-card">
-                <h3>🚌 Transports sur place</h3>
-                <p><strong>Vols internes :</strong> entre 30€ et 100€ par vol — plus vous les réservez tôt, mieux c&apos;est ! <br /><strong>Bus</strong> (Manille → Banaue) : 30€ aller-retour par personne.<br /><strong>Ferry</strong> entre les îles : entre 10€ et 30€ par traversée.<br /><strong>Tuk-tuks / jeepneys :</strong> entre 1€ et 5€. Pour les taxis, demandez la plaquette des tarifs. Les apps <strong>Grab</strong> (Manille, Cebu) et <strong>Backride</strong> (Palawan) sont moins chères que le taxi.</p>
+                <h3 style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-bus" aria-hidden="true" style={{fontSize:"22px",color:"var(--gold)",flexShrink:0}}></i>Transports sur place</h3>
+                <p style={{marginTop: '12px'}}><strong>Vols internes :</strong> entre 30€ et 100€ par vol — plus vous les réservez tôt, mieux c&apos;est ! <br /><strong>Bus</strong> (Manille → Banaue) : 30€ aller-retour par personne.<br /><strong>Ferry</strong> entre les îles : entre 10€ et 30€ par traversée.<br /><strong>Tuk-tuks / jeepneys :</strong> entre 1€ et 5€. Pour les taxis, demandez la plaquette des tarifs. <br /><strong>Grab</strong> (Manille, Cebu) et <strong>Backride</strong> (Palawan) sont moins chères que le taxi.</p>
               </div>
               <div className="article-pratique-card">
-                <h3>🏨 Hébergements</h3>
+                <h3 style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-bed" aria-hidden="true" style={{fontSize:"22px",color:"var(--gold)",flexShrink:0}}></i>Hébergements</h3>
                 <p>Les hôtels-resorts bling bling, c&apos;est pas trop notre truc ! L&apos;idéal pour nous : un minimum de confort et d&apos;intimité. Nous avons opté pour du <strong>milieu de gamme</strong> durant tout notre séjour.<br /><br /><strong>Auberges / guest houses :</strong> 5€ à 15€ / nuit<br /><strong>Milieu de gamme :</strong> 15€ à 60€ / nuit<br /><strong>Resorts de luxe :</strong> 80€ à 150€ / nuit</p>
               </div>
               <div className="article-pratique-card">
-                <h3>🍽️ Repas &amp; Activités</h3>
+                <h3 style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-tools-kitchen-2" aria-hidden="true" style={{fontSize:"22px",color:"var(--gold)",flexShrink:0}}></i>Repas &amp; Activités</h3>
                 <p>Qui dit Philippines, dit îles, dit excursions en bateau, snorkeling, plongées et visites de sites naturels !<br /><br /><strong>Restaurant local :</strong> 2€ à 5€ / repas<br /><strong>Restaurant milieu de gamme :</strong> 5€ à 15€ / repas<br /><strong>Island hopping :</strong> 20€ à 35€ / pers., repas compris<br /><strong>Dépenses diverses</strong> (souvenirs, shopping, pourboires...) : 100€ à 150€</p>
               </div>
             </div>
