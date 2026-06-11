@@ -783,62 +783,66 @@ export default function PhilippinesPage() {
             <div className="article-day-header">
               <h2>Quel budget pour 3 semaines aux Philippines ?</h2>
             </div>
-            <p>C&apos;est bien beau de partir au bout du monde pour des vacances au paradis, mais <strong>quel budget faut-il prévoir ? </strong></p>
-            <p>Pas de secret entre nous, on vous dit tout !</p>
-            <p>Pour notre voyage de 3 semaines aux Philippines, <strong>nous avons dépensé un total de 1880€ par personne. </strong></p>
-            <p>On vous détaille tout ça…</p>
-            <div className="article-day-header">
-              <h3>Transports</h3>
+            <p>C&apos;est bien beau de partir au bout du monde pour des vacances au paradis, mais <strong>quel budget faut-il prévoir ? </strong> Pas de secret entre nous, on vous dit tout !</p>
+
+            {/* Chiffre clé */}
+            <div style={{textAlign: 'center', margin: '36px 0 32px', padding: '32px 24px', background: '#fdf4ee', borderRadius: '12px', border: '1px solid var(--gold)'}}>
+              <p style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '56px', fontWeight: 600, color: 'var(--gold)', lineHeight: 1, margin: '0 0 8px'}}>1 880 €</p>
+              <p style={{fontSize: '12px', letterSpacing: '2px', textTransform: 'uppercase', color: '#8a847e', margin: 0}}>notre budget total par personne — 3 semaines</p>
             </div>
-            <h4>⧐ Billets d&apos;avion internationaux</h4>
-            <p>Pour nos vols internationaux aller / retour (Paris - Djeda, Djeda - Manille), nous avons payé <strong>465€</strong> par personne.</p>
-            <p>Nous avons voyagé avec la compagnie Saudia Airlines.</p>
-            <p>Les tarifs peuvent bien évidemment fluctuer en fonction de la saison et de la compagnie aérienne.</p>
-            <h4>⧐ Déplacements aux Philippines</h4>
-            <p>Pour se déplacer dans le pays, nous sommes obligés d&apos;emprunter <strong>l&apos;<strong>a</strong>vion, le bus ou le ferry.</strong></p>
-            <p><strong>Pour les vols internes,</strong> il faut compter <strong>entre 30€ et 100€</strong> par vol selon les destinations. Et comme nous vous l&apos;avons déjà largement conseillé, <strong>plus vous les réservez tôt, mieux c&apos;est ! </strong></p>
-            <p>Pour nous rendre à Banaue, nous avons pris <strong>le bus</strong> qui nous a coûté <strong>30€</strong> aller - retour par personne.</p>
-            <p>Sur notre itinéraire, nous avons également pris <strong>le ferry.</strong> Les trajets en ferry entre les îles sont fréquents et peu coûteux. Comptez <strong>entre 10€ et 30€</strong> par traversée.</p>
-            <h4>⧐ Transports locaux</h4>
-            <p>Qui dit transport local, dit <strong>tuk-tuks ou jeepneys ! </strong>Pour un trajet court, le tarif est généralement compris <strong>entre 1€ et 5€</strong>.</p>
-            <p>Si vous souhaitez prendre <strong>un taxi, n&apos;hésitez pas à demander la plaquette des tarifs au chauffeur,</strong> sinon c&apos;est un peu à la tête du client !</p>
-            <p>En ce qui concerne les trajets <strong>en van (aéroport - hôtel), les prix sont fixes et très corrects.</strong></p>
-            <p>Enfin, il existe des applications équivalentes à Uber, elles s&apos;appellent <strong>Grab ou Backride. Le prix d&apos;une course est moins cher que celui en taxi. </strong>Grab fonctionne à Manille et à Cebu, Backride à Palawan.</p>
-            <div className="article-day-header">
-              <h3>Hébergements</h3>
+
+            {/* 4 cartes */}
+            <div className="article-pratique-grid" style={{marginBottom: '32px'}}>
+              <div className="article-pratique-card">
+                <h3>✈️ Vols internationaux</h3>
+                <p>Pour nos vols internationaux aller / retour (Paris - Djeda, Djeda - Manille), nous avons payé <strong>465€</strong> par personne avec Saudia Airlines. Les tarifs peuvent bien évidemment fluctuer en fonction de la saison et de la compagnie aérienne.</p>
+              </div>
+              <div className="article-pratique-card">
+                <h3>🚌 Transports sur place</h3>
+                <p><strong>Vols internes :</strong> entre 30€ et 100€ par vol — plus vous les réservez tôt, mieux c&apos;est ! <br /><strong>Bus</strong> (Manille → Banaue) : 30€ aller-retour par personne.<br /><strong>Ferry</strong> entre les îles : entre 10€ et 30€ par traversée.<br /><strong>Tuk-tuks / jeepneys :</strong> entre 1€ et 5€. Pour les taxis, demandez la plaquette des tarifs. Les apps <strong>Grab</strong> (Manille, Cebu) et <strong>Backride</strong> (Palawan) sont moins chères que le taxi.</p>
+              </div>
+              <div className="article-pratique-card">
+                <h3>🏨 Hébergements</h3>
+                <p>Les hôtels-resorts bling bling, c&apos;est pas trop notre truc ! L&apos;idéal pour nous : un minimum de confort et d&apos;intimité. Nous avons opté pour du <strong>milieu de gamme</strong> durant tout notre séjour.<br /><br /><strong>Auberges / guest houses :</strong> 5€ à 15€ / nuit<br /><strong>Milieu de gamme :</strong> 15€ à 60€ / nuit<br /><strong>Resorts de luxe :</strong> 80€ à 150€ / nuit</p>
+              </div>
+              <div className="article-pratique-card">
+                <h3>🍽️ Repas &amp; Activités</h3>
+                <p>Qui dit Philippines, dit îles, dit excursions en bateau, snorkeling, plongées et visites de sites naturels !<br /><br /><strong>Restaurant local :</strong> 2€ à 5€ / repas<br /><strong>Restaurant milieu de gamme :</strong> 5€ à 15€ / repas<br /><strong>Island hopping :</strong> 20€ à 35€ / pers., repas compris<br /><strong>Dépenses diverses</strong> (souvenirs, shopping, pourboires...) : 100€ à 150€</p>
+              </div>
             </div>
-            <p>Les hôtels-resorts bling bling, c&apos;est pas trop notre truc ! On n&apos;est pas trop fans non plus des auberges de jeunesse et des guest houses, où on se retrouve généralement à dormir à plusieurs dans des dortoirs.</p>
-            <p>L&apos;idéal pour nous est d&apos;avoir un minimum de confort et d&apos;intimité dans le logement qu&apos;on choisit.</p>
-            <p>Du coup, nous avons opté pour des hôtels de <strong>milieu de gamme</strong> durant tout notre séjour. Comptez <strong>entre 15€ et 60€</strong> par nuit.</p>
-            <p>Pour les jeunes ou les budgets serrés, vous trouverez de nombreuses <strong>auberges de jeunesse et guest houses. </strong>Comptez <strong>entre 5€ et 15€</strong> par nuit.</p>
-            <p>En ce qui concerne les hôtels ou <strong>resorts de luxe,</strong> comptez plutôt <strong>entre 80€ et 150€</strong> par nuit.</p>
-            <div className="article-day-header">
-              <h3>Repas &amp; Activités</h3>
+
+            {/* Tableau 3 niveaux */}
+            <div className="article-day-header"><h3>Budget estimé pour 3 semaines</h3></div>
+            <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', margin: '8px 0 32px'}}>
+              <div style={{textAlign: 'center', padding: '24px 16px', background: 'var(--bg)', border: '1px solid var(--line)', borderRadius: '8px'}}>
+                <p style={{fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#8a847e', margin: '0 0 12px'}}>Économique</p>
+                <p style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '28px', fontWeight: 600, color: 'var(--dark)', margin: '0 0 4px'}}>1 200€ – 1 500€</p>
+                <p style={{fontSize: '12px', color: '#8a847e', margin: 0}}>par personne</p>
+              </div>
+              <div style={{textAlign: 'center', padding: '24px 16px', background: '#fdf4ee', border: '1px solid var(--gold)', borderRadius: '8px'}}>
+                <p style={{fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', margin: '0 0 12px'}}>Moyen</p>
+                <p style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '28px', fontWeight: 600, color: 'var(--dark)', margin: '0 0 4px'}}>1 600€ – 2 200€</p>
+                <p style={{fontSize: '12px', color: '#8a847e', margin: 0}}>par personne</p>
+              </div>
+              <div style={{textAlign: 'center', padding: '24px 16px', background: 'var(--bg)', border: '1px solid var(--line)', borderRadius: '8px'}}>
+                <p style={{fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#8a847e', margin: '0 0 12px'}}>Confortable</p>
+                <p style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '28px', fontWeight: 600, color: 'var(--dark)', margin: '0 0 4px'}}>2 400€ – 3 000€</p>
+                <p style={{fontSize: '12px', color: '#8a847e', margin: 0}}>par personne</p>
+              </div>
             </div>
-            <h4>⧐ Les repas</h4>
-            <p>Si vous avez envie de <strong>manger local,</strong> il faut compter en moyenne <strong>entre 2€ et 5€</strong> par repas.</p>
-            <p>Pour un <strong>restaurant de milieu de gamme,</strong> comptez davantage <strong>entre 5€ et 15 €</strong> par repas.</p>
-            <h4>⧐ Les Island hoppings</h4>
-            <p>Qui dit Philippines, dit îles, dit excursions en bateau, snorkeling, plongées et visites de sites naturels !</p>
-            <p>Pour un <strong>Island hopping</strong>, comptez <strong>entre 20€ et 35€</strong> le tour par personne, repas compris.</p>
-            <h4>⧐ Dépenses diverses</h4>
-            <p>Et oui, ça fait toujours partie du voyage ! Souvenirs, shopping, pourboires, frais bancaires, etc.</p>
-            <p>Prévoyez un budget de <strong>100€ à 150€</strong>.</p>
-            <div className="article-day-header">
-              <h3>Budget estimé pour 3 semaines</h3>
-            </div>
-            <p><strong>Budget économique :</strong> <strong>1200€ à 1500€</strong> par personne.</p>
-            <p><strong>Budget moyen :</strong> <strong>1600€ à 2200€</strong> par personne.</p>
-            <p><strong>Budget confortable :</strong> <strong>2400€ à 3000€</strong> par personne.</p>
             <p>Ce budget peut varier selon la saison, le type d&apos;activités et votre style de voyage.</p>
-            <div className="article-day-header">
-              <h3>Conseils pour optimiser votre budget</h3>
+
+            {/* Conseils */}
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Nos conseils pour optimiser votre budget</strong>
+                <p>⋙ <strong>Choisir la bonne saison pour partir.</strong> Les Philippines ont une saison touristique (novembre à avril) où les prix sont plus élevés. Si vous voulez économiser, partir en basse saison (mai à octobre) peut permettre de trouver des hébergements et des activités à des prix plus attractifs, même si la météo peut être moins stable à cause de la mousson.</p>
+                <p>⋙ <strong>Planifier les vols internes à l&apos;avance,</strong> les tarifs augmentent à l&apos;approche des dates.</p>
+                <p>⋙ <strong>Privilégier les ferrys</strong> lorsque les distances le permettent (entre Cebu, Bohol et Siquijor par exemple).</p>
+                <p>⋙ <strong>Les auberges de jeunesse ou les guest houses</strong> peuvent être de bonnes alternatives aux hôtels. Pour un séjour plus long, vous pouvez négocier directement avec les propriétaires d&apos;hébergements pour des prix dégressifs. C&apos;est une pratique courante aux Philippines.</p>
+                <p>⋙ <strong>Manger local.</strong> Le coût de la nourriture dans les restaurants locaux ou les marchés est vraiment bas comparé aux restaurants touristiques.</p>
+              </div>
             </div>
-            <p>⋙ <strong>Choisir la bonne saison pour partir.</strong> Les Philippines ont une saison touristique (novembre à avril) où les prix sont plus élevés. Si vous voulez économiser, partir en basse saison (mai à octobre) peut permettre de trouver des hébergements et des activités à des prix plus attractifs, même si la météo peut être moins stable à cause de la mousson.</p>
-            <p>⋙ <strong>Planifier les vols internes à l&apos;avance, </strong>les tarifs augmentent à l&apos;approche des dates.</p>
-            <p>⋙ <strong>Privilégier les ferrys</strong> lorsque les distances le permettent (entre Cebu, Bohol et Siquijor par exemple).</p>
-            <p>⋙ <strong>Les auberges de jeunesse ou les guest houses</strong> peuvent être de bonnes alternatives aux hôtels. Pour un séjour plus long, vous pouvez négocier directement avec les propriétaires d&apos;hébergements pour des prix dégressifs. C&apos;est une pratique courante aux Philippines.</p>
-            <p>⋙ <strong>Manger local.</strong> Le coût de la nourriture dans les restaurants locaux ou les marchés est vraiment bas comparé aux restaurants touristiques.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3668-768x1024.jpg" alt="Island Hopping Kayangan Lake Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9967-1-1024x768.jpg" alt="Tapiutan Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
