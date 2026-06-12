@@ -651,18 +651,11 @@
 
 .pratique-label-dot { width: 4px; height: 4px; border-radius: 50%; background: #fff; display: inline-block; flex-shrink: 0; }
 
-.pratique-list { display: flex;
-  flex-direction: column;
-  gap: 8px; }
-
 .pratique-item { display: grid;
   grid-template-columns: 6px 1fr;
   gap: 12px;
   align-items: start;
-  background: #fff;
-  border: 0.5px solid #ece4da;
-  border-radius: 8px;
-  padding: 14px 16px; }
+  padding: 8px 0; }
 
 .pratique-dash { width: 6px;
   height: 6px;
