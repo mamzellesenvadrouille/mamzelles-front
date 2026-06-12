@@ -79,8 +79,8 @@ export default function PhilippinesPage() {
         <div className="article-cdcr-grid">
           <div className="article-cdcr-item"><span className="article-cdcr-label">Notre île coup de cœur</span><span className="article-cdcr-value">→ Palawan</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">Le moment le plus émouvant</span><span className="article-cdcr-value">→ Les rizières de Batad, la 8ème merveille du monde</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">La surprise de taille</span><span className="article-cdcr-value">→ Les lucioles sur la rivière Loboc à Bohol</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre meilleur souvenir</span><span className="article-cdcr-value">→ Le poulet curry avec vue panoramique à Batad</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">À découvrir sans hésiter</span><span className="article-cdcr-value">→ Les cascades de Siquijor</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">L&apos;énergie qu&apos;on a adorée</span><span className="article-cdcr-value">→ L&apos;ambiance surf de Siargao</span></div>
         </div>
       </div>
 
