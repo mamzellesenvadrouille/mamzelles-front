@@ -1,5 +1,5 @@
 /* ============================================
-   PHILIPPINES — Styles spécifiques à l'article
+   PHILIPPINES â€” Styles spÃ©cifiques Ã  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -635,15 +635,17 @@
   padding: 0; }
 
 .pratique-label { display: inline-block;
-  font-size: 10px;
-  letter-spacing: 2.5px;
+  font-size: 9px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff !important;
-  background: var(--gold);
-  padding: 5px 12px;
+  background: #d9a878;
+  padding: 4px 10px;
   border-radius: 2px;
   font-family: "Inter", sans-serif;
-  margin-bottom: 20px; }
+  margin: 36px 0 20px; }
+
+.pratique-label:first-of-type { margin-top: 0; }
 
 .pratique-item { display: grid;
   grid-template-columns: 2px 1fr;
