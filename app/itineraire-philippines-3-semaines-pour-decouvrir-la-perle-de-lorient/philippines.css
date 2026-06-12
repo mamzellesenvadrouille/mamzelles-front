@@ -12,6 +12,7 @@
   .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 0.6em !important; white-space: normal !important; }
   .mobile-hero-break { display: inline; }
   .tablet-only-br { display: none; }
+  .article-philippines .article-section h3 { line-height: 1.1 !important; }
   .article-philippines .article-section h4 { line-height: 1.1 !important; }
   .article-budget-grid { grid-template-columns: 1fr !important; }
   .budget-price { white-space: nowrap !important; font-size: 26px !important; }
