@@ -633,7 +633,11 @@
   margin: 0 0 32px;
   padding: 0; }
 
-.pratique-label { display: inline-block;
+.article-comments-title { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin-bottom: 24px; }
+
+.pratique-label { display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -645,6 +649,8 @@
   margin: 24px 0 20px; }
 
 .pratique-label:first-of-type { margin-top: 0; }
+
+.pratique-label-dot { width: 4px; height: 4px; border-radius: 50%; background: #fff; display: inline-block; flex-shrink: 0; }
 
 .pratique-item { display: grid;
   grid-template-columns: 2px 1fr;
