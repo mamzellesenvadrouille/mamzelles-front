@@ -1,5 +1,5 @@
 /* ============================================
-   PHILIPPINES â€” Styles spÃ©cifiques Ã  l'article
+   PHILIPPINES Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -592,7 +592,6 @@
 
 .article-philippines .article-day-header + h4 { margin-top: 2px !important; }
 
-.article-philippines .article-day-header:has(+ h4) { margin-bottom: 0; }
 
 .article-philippines .article-gallery-2 + h4,
 .article-philippines .article-gallery-3 + h4,
@@ -635,22 +634,22 @@
   padding: 0; }
 
 .pratique-label { display: inline-block;
-  font-size: 9px;
-  letter-spacing: 2px;
+  font-size: 8px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #fff !important;
   background: #d9a878;
-  padding: 4px 10px;
+  padding: 3px 9px;
   border-radius: 2px;
   font-family: "Inter", sans-serif;
-  margin: 36px 0 20px; }
+  margin: 24px 0 20px; }
 
 .pratique-label:first-of-type { margin-top: 0; }
 
 .pratique-item { display: grid;
   grid-template-columns: 2px 1fr;
   gap: 20px;
-  padding: 16px 0;
+  padding: 10px 0;
   align-items: start; }
 
 .pratique-dash { width: 2px;
