@@ -633,7 +633,7 @@
   margin: 0 0 32px;
   padding: 0; }
 
-.article-comments-title { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin-bottom: 24px; }
+.article-comments-title { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin-bottom: 36px; }
 
 .pratique-label { display: inline-flex;
   align-items: center;

@@ -301,7 +301,7 @@
 
 .article-img-full { width: 100%; height: auto; display: block; margin: 8px 0; }
 
-.article-comments-title { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin-bottom: 24px; }
+.article-comments-title { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin-bottom: 36px; }
 
 .article-sidebar { display: flex; flex-direction: column; gap: 24px; position: sticky; bottom: 24px; align-self: flex-end; }
 
