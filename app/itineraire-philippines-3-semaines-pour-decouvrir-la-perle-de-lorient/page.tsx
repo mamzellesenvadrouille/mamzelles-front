@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import './philippines.css';
 import Navbar from '../components/Navbar';
 import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
