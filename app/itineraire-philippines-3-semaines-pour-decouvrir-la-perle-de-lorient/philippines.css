@@ -15,10 +15,12 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero-article .hero-bg { object-position: center 70% !important; }
   .tablet-only-br { display: inline; }
+  .mobile-hero-break { display: none; }
 }
 
 @media (min-width: 1025px) {
   .tablet-only-br { display: none; }
+  .mobile-hero-break { display: none; }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
