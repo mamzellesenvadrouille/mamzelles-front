@@ -1,5 +1,5 @@
 /* ============================================
-   MADRID — Styles spécifiques à l'article
+   MADRID â€” Styles spÃ©cifiques Ã  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -267,7 +267,7 @@
 
 .article-section-h2 { font-family: "Cormorant Garamond", serif; font-size: 36px; font-weight: 500; color: var(--dark); margin-bottom: 32px; line-height: 1.1; }
 
-.article-section h3 { font-family: "Cormorant Garamond", serif; font-size: 24px; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
+.article-section h3 { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
 
 .article-section p { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 14px; }
 
@@ -403,6 +403,7 @@
   .article-cdcr-grid { flex-wrap: wrap; gap: 16px; }
   .article-cdcr-item { flex: 1 1 0 !important; min-width: 0; }
   .sidebar-cta-title { font-size: 23px !important; }
+  .sidebar-cta .btn-gold { padding: 8px 18px !important; font-size: 9px !important; }
 }
 
 @media (max-width: 768px) {
@@ -420,6 +421,7 @@
   .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; }
   .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }
   .article-cdcr-item:last-child { padding-left: 0 !important; }
+  .article-cdcr-item { display: flex; flex-direction: column; gap: 2px; }
   .hero-article .hero-content { padding: 0 24px 10px !important; }
   .sidebar-cta-title { font-size: 30px !important; }
 }

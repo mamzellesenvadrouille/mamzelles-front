@@ -1808,6 +1808,7 @@ a { text-decoration: none; color: inherit; }
   .article-cta-block { grid-template-columns: 1fr; }
   .article-cta-img-wrap { height: 180px; }
   .sidebar-cta-title { font-size: 23px !important; }
+  .sidebar-cta .btn-gold { padding: 8px 18px !important; font-size: 9px !important; }
 }
 
 @media (max-width: 1024px) {
@@ -1835,6 +1836,7 @@ a { text-decoration: none; color: inherit; }
   .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; }
   .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }
   .article-cdcr-item:last-child { padding-left: 0 !important; }
+  .article-cdcr-item { display: flex; flex-direction: column; gap: 2px; }
   .scroll-top-btn { bottom: 20px; right: 20px; }
   .hero-article .hero-content { padding: 0 24px 10px !important; }
   .sidebar-cta-title { font-size: 30px !important; }
@@ -2495,7 +2497,7 @@ a { text-decoration: none; color: inherit; }
 .article-philippines .article-img-full + .article-gallery-2,
 .article-philippines .article-gallery-3 + .article-img-full,
 .article-philippines .article-img-full + .article-gallery-3 { margin-top: 8px; }
-/* â”€â”€ Section pratique â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Section pratique Ã¢â€â‚¬Ã¢â€â‚¬ */
 .pratique-list {
   list-style: none;
   margin: 0 0 32px;
