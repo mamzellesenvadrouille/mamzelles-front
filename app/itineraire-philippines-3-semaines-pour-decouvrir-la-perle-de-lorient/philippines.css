@@ -652,17 +652,16 @@
 
 .pratique-label-dot { width: 4px; height: 4px; border-radius: 50%; background: #fff; display: inline-block; flex-shrink: 0; }
 
-.pratique-item { display: grid;
-  grid-template-columns: 2px 1fr;
-  gap: 20px;
-  padding: 10px 0;
-  align-items: start; }
+.pratique-list { display: flex;
+  flex-direction: column;
+  gap: 8px; }
 
-.pratique-dash { width: 2px;
-  background: var(--gold);
-  align-self: stretch;
-  min-height: 24px;
-  opacity: 0.5; }
+.pratique-item { background: #fff;
+  border: 0.5px solid #ece4da;
+  border-radius: 8px;
+  padding: 14px 16px; }
+
+.pratique-dash { display: none; }
 
 .pratique-item p { font-size: 14px !important;
   color: #555 !important;
