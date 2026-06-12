@@ -403,7 +403,7 @@ a { text-decoration: none; color: inherit; }
   
 .footer-contact { justify-content: flex-start; }
 
-}}
+}
 @media (max-width: 768px) {
 
   
@@ -433,7 +433,7 @@ a { text-decoration: none; color: inherit; }
   
 .cta-banner-content h2 { font-size: 40px; }
 
-}}
+}
 
 /* QSN INSPIRATIONS */
 .qsn-inspi { display: grid; grid-template-columns: 38% 62%; border-top: 1px solid var(--line); background: var(--bg); align-items: center; padding: 34px 0; }
@@ -506,7 +506,7 @@ a { text-decoration: none; color: inherit; }
   
 .blog-grid { grid-template-columns: repeat(2, 1fr); }
 
-}}
+}
 @media (max-width: 640px) {
 
   
@@ -515,7 +515,7 @@ a { text-decoration: none; color: inherit; }
   
 .blog-section { padding: 48px 20px 60px; }
 
-}}
+}
 
 /* ===================== RESPONSIVE MOBILE COMPLET ===================== */
 @media (max-width: 768px) {
@@ -869,7 +869,7 @@ a { text-decoration: none; color: inherit; }
   
 .blog-grid { grid-template-columns: 1fr !important; }
 
-}}
+}
 
 /* BURGER MENU */
 .burger-btn { display: none; }
@@ -977,7 +977,7 @@ a { text-decoration: none; color: inherit; }
   
 .footer-top .footer-col:not(:first-child) { align-self: flex-start !important; }
 
-}}
+}
 
 /* ===================== CORRECTIONS MOBILE HOME ===================== */
 .mobile-br { display: none; }
@@ -1014,7 +1014,7 @@ a { text-decoration: none; color: inherit; }
   
 .footer-bottom { text-align: center; }
 
-}}
+}
 
 @media (max-width: 768px) {
 
@@ -1060,14 +1060,14 @@ a { text-decoration: none; color: inherit; }
   
 /* footer ok */
 
-}}
+}
 
 @media (max-width: 768px) {
 
   
 .footer-logo-main { font-size: 21px !important; }
 
-}}
+}
 
 @media (max-width: 768px) {
 
@@ -1092,7 +1092,7 @@ a { text-decoration: none; color: inherit; }
   
 .qsn-hero .hero-bg { object-position: 75% center !important; }
 
-}}
+}
 
 @media (max-width: 768px) {
 
@@ -1138,7 +1138,7 @@ a { text-decoration: none; color: inherit; }
   
 .cta-banner-content h2 { font-size: 32px !important; margin-top: 10px !important; }
 
-}}
+}
 
 @media (max-width: 768px) {
 
@@ -1166,14 +1166,14 @@ a { text-decoration: none; color: inherit; }
   
 .fcard-price span { font-size: 8px !important; }
 
-}}
+}
 
 @media only screen and (max-width: 768px) {
 
   
 .form-right-h2, .form-right-h2-mobile { font-family: "Cormorant Garamond", serif !important; font-size: 26px !important; font-style: italic !important; font-weight: 600 !important; line-height: 1.1 !important; }
 
-}}
+}
 
 /* FORCE form-right-h2 mobile - highest specificity */
 @media (max-width: 768px) {
@@ -1186,14 +1186,14 @@ html body .form-right-card h2.form-right-h2 {
     font-family: "Cormorant Garamond", serif !important;
   }
 
-}}
+}
 
 @media (min-width: 769px) {
 
   
 .mosaic-img-2 { object-position: 30% center !important; }
 
-}}
+}
 
 @media (max-width: 768px) {
 
@@ -1221,14 +1221,14 @@ html body .form-right-card h2.form-right-h2 {
   
 .process-steps { grid-template-columns: 1fr !important; gap: 0 !important; margin-top: -16px !important; }
 
-}}
+}
 
 @media (max-width: 768px) {
 
   
 .btn-dark-full { margin-top: 14px !important; }
 
-}}
+}
 
 /* ===================== RESPONSIVE TABLETTE (769px - 1024px) ===================== */ /* v5 */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1666,7 +1666,9 @@ html body .form-right-card h2.form-right-h2 {
   
 .disclaimer { padding: 20px 40px !important; }
 
-}}/* ===========================
+}
+
+/* ===========================
    ARTICLE LAYOUT
    =========================== */
 
@@ -1875,7 +1877,7 @@ html body .form-right-card h2.form-right-h2 {
 
   
 
-}}
+}
 
 @media (max-width: 768px) {
 
@@ -1898,7 +1900,7 @@ html body .form-right-card h2.form-right-h2 {
 
   
 
-}}
+}
 
 /* ARTICLE IMAGES */
 
@@ -2006,7 +2008,7 @@ html body .form-right-card h2.form-right-h2 {
   
 .article-cta-img-wrap { height: 180px; }
 
-}}
+}
 
 @media (max-width: 768px) {
 
@@ -2026,7 +2028,7 @@ html body .form-right-card h2.form-right-h2 {
   
 .article-cta-content h2 { font-size: 24px; }
 
-}}
+}
 /* ===========================
    HERO ARTICLE (ne pas modifier)
    =========================== */
@@ -2082,12 +2084,12 @@ html body .form-right-card h2.form-right-h2 {
 
   
 
-}}
+}
 @media (max-width: 768px) {
 
   
 
-}}
+}
 
 .sidebar-articles { display: flex; flex-direction: column; gap: 14px; }
 .sidebar-article { display: flex; align-items: center; gap: 12px; transition: opacity .2s; }
@@ -2116,7 +2118,7 @@ html body .form-right-card h2.form-right-h2 {
  
 .desktop-only { display: none; }
  
-}}
+}
 .article-newsletter-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .article-newsletter-overlay { position: absolute; inset: 0; background: rgba(26, 21, 18, 0.78); }
 .article-newsletter-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
@@ -2174,7 +2176,7 @@ html body .form-right-card h2.form-right-h2 {
 
   
 
-}}
+}
 
 @media (max-width: 1024px) {
 
@@ -2192,7 +2194,7 @@ html body .form-right-card h2.form-right-h2 {
   
 .article-cta-img-wrap { height: 180px; }
 
-}}
+}
 
 @media (max-width: 768px) {
 
@@ -2239,7 +2241,7 @@ html { overflow-x: hidden !important; }
 
   
 
-}}
+}
 
 /* SIDEBAR EN BREF */
 .sidebar-bref {
@@ -2319,7 +2321,7 @@ html { overflow-x: hidden !important; }
 
   
 
-}}
+}
 
 .sidebar-cta-reassurance { font-size: 11px !important; color: var(--muted) !important; text-align: center; margin-top: 8px !important; font-weight: 300; letter-spacing: 0.5px; }
 
@@ -2337,7 +2339,7 @@ html { overflow-x: hidden !important; }
 
   
 
-}}
+}
 
 /* ===== BLOCS TRANSPORT ===== */
 
@@ -2345,7 +2347,7 @@ html { overflow-x: hidden !important; }
 
   
 
-}}
+}
 
 /* ===== ENCART CONSEIL ===== */
 .article-conseil {
@@ -2552,7 +2554,7 @@ html { overflow-x: hidden !important; }
   
 .article-comment-reply { margin-left: 12px; }
 
-}}
+}
 
 .article-sidebar-articles {
   margin-top: 32px;
@@ -2564,7 +2566,7 @@ html { overflow-x: hidden !important; }
 
   
 
-}}
+}
 /* ===== NAV DROPDOWN BLOG ===== */
 .nav-blog-wrap { position: relative; display: flex; align-items: center; }
 .nav-dropdown {
