@@ -267,7 +267,7 @@
 
 .article-section-h2 { font-family: "Cormorant Garamond", serif; font-size: 36px; font-weight: 500; color: var(--dark); margin-bottom: 32px; line-height: 1.1; }
 
-.article-section h3 { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
+.article-section h3 { font-family: "Cormorant Garamond", serif; font-size: 26px !important; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
 
 .article-section p { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 14px; }
 
