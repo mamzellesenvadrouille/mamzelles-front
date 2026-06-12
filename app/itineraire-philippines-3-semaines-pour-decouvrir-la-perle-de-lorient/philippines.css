@@ -635,15 +635,14 @@
 
 .article-comments-title { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin-bottom: 36px; }
 
-.pratique-label { display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 8px;
+.pratique-label { display: inline-block;
+  font-size: 7px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  font-style: italic;
   color: #fff !important;
   background: #d9a878;
-  padding: 3px 9px;
+  padding: 2px 8px;
   border-radius: 2px;
   font-family: "Inter", sans-serif;
   margin: 24px 0 20px; }
@@ -656,12 +655,21 @@
   flex-direction: column;
   gap: 8px; }
 
-.pratique-item { background: #fff;
+.pratique-item { display: grid;
+  grid-template-columns: 6px 1fr;
+  gap: 12px;
+  align-items: start;
+  background: #fff;
   border: 0.5px solid #ece4da;
   border-radius: 8px;
   padding: 14px 16px; }
 
-.pratique-dash { display: none; }
+.pratique-dash { width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-top: 6px;
+  display: block; }
 
 .pratique-item p { font-size: 14px !important;
   color: #555 !important;
