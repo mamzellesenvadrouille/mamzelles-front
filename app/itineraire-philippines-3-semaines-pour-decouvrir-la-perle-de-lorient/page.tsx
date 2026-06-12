@@ -903,7 +903,7 @@ export default function PhilippinesPage() {
               </li>
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
-                <p>Prévoir des chaussons pour marcher dans l&apos;eau ou des tongs qui tiennent aux pieds.</p>
+                <p>Prévoir des chaussures pour marcher dans l&apos;eau ou des tongs qui tiennent aux pieds.</p>
               </li>
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
