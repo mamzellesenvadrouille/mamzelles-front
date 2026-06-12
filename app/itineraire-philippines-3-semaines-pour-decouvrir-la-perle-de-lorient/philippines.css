@@ -13,7 +13,8 @@
   .mobile-hero-break { display: inline; }
   .tablet-only-br { display: none; }
   .article-philippines .article-section h4 { line-height: 1.1 !important; }
-  .budget-price { white-space: normal !important; }
+  .article-budget-grid { grid-template-columns: 1fr !important; }
+  .budget-price { white-space: nowrap !important; font-size: 26px !important; }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
