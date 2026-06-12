@@ -935,7 +935,7 @@ export default function PhilippinesPage() {
               </li>
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
-                <p><strong>Les Philippines ont 7 heures d&apos;avance sur l&apos;heure française.</strong> Les effets du décalage peuvent être compliqués à gérer les premiers jours...</p>
+                <p><strong>Les Philippines ont 6 à 7 heures d&apos;avance sur l&apos;heure française</strong> (selon l&apos;heure d&apos;été ou d&apos;hiver en France). Les effets du décalage peuvent être compliqués à gérer les premiers jours...</p>
               </li>
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
