@@ -229,7 +229,6 @@
   .article-cdcr-item:nth-child(2) { flex: 1.05 1 0; }
   .article-cdcr-item:nth-child(3) { flex: 1.15 1 0; }
   .article-cdcr-item:nth-child(4) { flex: 1.4 1 0; }
-  .article-philippines .article-day-header-tight { margin-bottom: 8px !important; }
 }
 
 @media (max-width: 768px) {
@@ -597,6 +596,8 @@
 .article-philippines .article-section h3 + h4 { margin-top: 2px !important; }
 
 .article-philippines .article-day-header + h4 { margin-top: 2px !important; }
+
+.article-philippines .article-day-header-tight { margin-bottom: 8px !important; }
 
 
 .article-philippines .article-gallery-2 + h4,
