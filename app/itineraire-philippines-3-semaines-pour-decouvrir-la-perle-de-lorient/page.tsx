@@ -816,17 +816,17 @@ export default function PhilippinesPage() {
             <div className="article-day-header"><h3>Budget estimé pour 3 semaines</h3></div>
             <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', margin: '8px 0 32px'}}>
               <div style={{textAlign: 'center', padding: '24px 16px', background: 'var(--bg)', border: '1px solid var(--line)', borderRadius: '8px'}}>
-                <p style={{fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', color: '#8a847e', margin: '0 0 12px'}}>Économique</p>
+                <p style={{fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#8a847e', margin: '0 0 12px'}}>Économique</p>
                 <p className="budget-price" style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '28px', fontWeight: 600, color: 'var(--dark)', margin: '0 0 4px'}}>1 200€ – 1 500€</p>
                 <p style={{fontSize: '12px', color: '#8a847e', margin: 0}}>par personne</p>
               </div>
               <div style={{textAlign: 'center', padding: '24px 16px', background: '#fdf4ee', border: '1px solid var(--gold)', borderRadius: '8px'}}>
-                <p style={{fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', margin: '0 0 12px'}}>Moyen</p>
+                <p style={{fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', color: 'var(--gold)', margin: '0 0 12px'}}>Moyen</p>
                 <p className="budget-price" style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '28px', fontWeight: 600, color: 'var(--dark)', margin: '0 0 4px'}}>1 600€ – 2 200€</p>
                 <p style={{fontSize: '12px', color: '#8a847e', margin: 0}}>par personne</p>
               </div>
               <div style={{textAlign: 'center', padding: '24px 16px', background: 'var(--bg)', border: '1px solid var(--line)', borderRadius: '8px'}}>
-                <p style={{fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', color: '#8a847e', margin: '0 0 12px'}}>Confortable</p>
+                <p style={{fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#8a847e', margin: '0 0 12px'}}>Confortable</p>
                 <p className="budget-price" style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '28px', fontWeight: 600, color: 'var(--dark)', margin: '0 0 4px'}}>2 400€ – 3 000€</p>
                 <p style={{fontSize: '12px', color: '#8a847e', margin: 0}}>par personne</p>
               </div>
