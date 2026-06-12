@@ -1030,11 +1030,20 @@ export default function PhilippinesPage() {
               </a>
               <a href="/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Puerto-Princesa-Port-Barton-1024x819.jpg" alt="Palawan Port Barton" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/Blog-Port-Barton-1536x1229.jpg.webp" alt="Palawan Port Barton" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
                   <p className="article-related-title-card">Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus</p>
+                </div>
+              </a>
+              <a href="/road-trip-a-lanzarote" className="article-related-card">
+                <div className="article-related-img-wrap">
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote.jpeg" alt="Lanzarote" className="article-related-img" />
+                </div>
+                <div className="article-related-body">
+                  <span className="article-related-cat">Espagne</span>
+                  <p className="article-related-title-card">Road trip à Lanzarote : l&apos;île aux 300 volcans</p>
                 </div>
               </a>
             </div>
