@@ -9,6 +9,16 @@
   .hero-article { height: 45vh !important; min-height: 280px !important; }
   .hero-article .hero-content { padding: 0 24px 36px !important; }
   .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 0.52em !important; white-space: normal !important; }
+  .tablet-only-br { display: none; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .article-philippines .hero-bg { object-position: center 65% !important; }
+  .tablet-only-br { display: inline; }
+}
+
+@media (min-width: 1025px) {
+  .tablet-only-br { display: none; }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
