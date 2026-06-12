@@ -166,7 +166,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1145-1024x768.jpg" alt="Rizières en terrasses Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1288-1024x768.jpg" alt="Wonder of the World Batad" className="article-img-full" loading="lazy" />
-            <div className="article-day-header">
+            <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
               <h3>De Manille à Banaue</h3>
             </div>
@@ -269,7 +269,7 @@ export default function PhilippinesPage() {
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1329-1024x768.jpg" alt="Rizières en terrasses Bangaan Village" className="article-img-full" loading="lazy" />
 
             {/* JOUR 3 HAPAO */}
-            <div className="article-day-header">
+            <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 3</span>
               <h3>Le village d&apos;Hapao, ses rizières &amp; les Hot springs</h3>
             </div>
