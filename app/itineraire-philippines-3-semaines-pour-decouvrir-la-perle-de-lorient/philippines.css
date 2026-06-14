@@ -675,10 +675,9 @@
   text-transform: uppercase;
   font-style: italic;
   color: #c8956c !important;
-  background: #fdf4ee;
-  border: 1px solid #c8956c;
-  padding: 2px 8px;
-  border-radius: 2px;
+  background: none;
+  border-bottom: 2px solid #c8956c;
+  padding: 2px 0;
   font-family: "Inter", sans-serif;
   margin: 24px 0 20px; }
 
