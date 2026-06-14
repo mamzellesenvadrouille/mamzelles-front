@@ -15,9 +15,11 @@ export const metadata: Metadata = {
     description: 'Notre itinéraire détaillé de 3 semaines aux Philippines : Palawan, Banaue, Bohol, Siquijor, Siargao...',
     url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
     siteName: 'MamZelles en vadrouille',
-    images: [{ url: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines.jpg', width: 1920, height: 1536 }],
+    images: [{ url: 'https://mamzellesenvadrouille.com/Philippines.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
+    publishedTime: '2024-09-01T00:00:00.000Z',
+    authors: ['MamZelles en vadrouille'],
   },
 };
 
