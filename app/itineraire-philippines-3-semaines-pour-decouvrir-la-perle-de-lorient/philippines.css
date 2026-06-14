@@ -674,8 +674,9 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-style: italic;
-  color: #1a1512 !important;
-  background: #f5e6d8;
+  color: #c8956c !important;
+  background: #fdf4ee;
+  border: 1px solid #c8956c;
   padding: 2px 8px;
   border-radius: 2px;
   font-family: "Inter", sans-serif;
