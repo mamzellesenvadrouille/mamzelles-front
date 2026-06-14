@@ -855,7 +855,7 @@ export default function PhilippinesPage() {
               <h2>Tout savoir pour organiser votre voyage</h2>
             </div>
 
-            <p className="pratique-label">Formalités</p>
+            <p className="pratique-label">⧐ Formalités</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
@@ -871,7 +871,7 @@ export default function PhilippinesPage() {
               </li>
             </ul>
 
-            <p className="pratique-label">Santé</p>
+            <p className="pratique-label">⧐ Santé</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
@@ -895,7 +895,7 @@ export default function PhilippinesPage() {
               </li>
             </ul>
 
-            <p className="pratique-label">Loisirs</p>
+            <p className="pratique-label">⧐ Loisirs</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
@@ -911,7 +911,7 @@ export default function PhilippinesPage() {
               </li>
             </ul>
 
-            <p className="pratique-label">Météo</p>
+            <p className="pratique-label">⧐ Météo</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
@@ -927,7 +927,7 @@ export default function PhilippinesPage() {
               </li>
             </ul>
 
-            <p className="pratique-label">Infos pratiques</p>
+            <p className="pratique-label">⧐ Infos pratiques</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
