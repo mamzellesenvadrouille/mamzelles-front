@@ -14,7 +14,7 @@
   .tablet-only-br { display: none; }
   .article-philippines .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
   .article-day-header h2 { font-size: 32px !important; }
-  .article-philippines .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; margin-top: 5px !important; }
+  .article-philippines .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; }
   .article-philippines .article-section h3 + h4 { margin-top: 5px !important; }
   .article-philippines .article-day-header.article-day-header-tight + h4 { margin-top: 5px !important; }
   .article-philippines .article-section h3.budget-h3 { font-size: 18px !important; }
@@ -621,7 +621,7 @@
   margin: 28px 0 12px; }
 
 @media (max-width: 768px) {
-  .article-philippines .article-section h4 { margin-top: 10px !important; }
+  .article-philippines h4.h4-after-h3 { margin-top: 8px !important; }
 }
 
 .article-philippines .article-section h3.budget-h3 { font-size: 24px !important; }
