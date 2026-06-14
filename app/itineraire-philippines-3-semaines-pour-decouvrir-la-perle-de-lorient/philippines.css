@@ -15,11 +15,8 @@
   .article-philippines .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
   .article-day-header h2 { font-size: 32px !important; }
   .article-philippines .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; }
-  .article-philippines .article-section h3 + h4 { margin-top: 5px !important; }
-  .article-philippines .article-day-header.article-day-header-tight + h4 { margin-top: 5px !important; }
   .article-philippines .article-section h3.budget-h3 { font-size: 18px !important; }
   .article-philippines .article-section h3.budget-h3 i { font-size: 20px !important; }
-  .article-philippines .article-day-header + h4 { margin-top: 5px !important; }
   .article-budget-grid { grid-template-columns: 1fr !important; }
   .budget-price { white-space: nowrap !important; font-size: 26px !important; }
 }
