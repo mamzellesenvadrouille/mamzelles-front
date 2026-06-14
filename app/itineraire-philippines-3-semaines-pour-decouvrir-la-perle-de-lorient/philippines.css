@@ -232,7 +232,9 @@
   .article-gallery-3 img { height: 220px; }
   .article-gallery-2 { grid-template-columns: 1fr; }
   .article-gallery-2 img { height: 220px; }
-  .article-day-header h2 { font-size: 28px; }
+  .article-day-header h2 { font-size: 34px; }
+  .article-philippines .article-section h3 { font-size: 28px !important; }
+  .article-philippines .article-section h4 { font-size: 24px !important; }
 }
 
 .article-coup-de-coeur { background: var(--bg);
@@ -452,7 +454,6 @@
   .article-gallery-3 img { height: auto; aspect-ratio: unset; object-fit: cover; width: 100%; }
   .article-gallery-2 { grid-template-columns: 1fr; }
   .article-gallery-2 img { height: auto; aspect-ratio: unset; object-fit: cover; width: 100%; }
-  .article-day-header h2 { font-size: 28px; }
   .article-cdcr-grid { flex-direction: column; }
   .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; }
   .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }
