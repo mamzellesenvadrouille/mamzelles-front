@@ -620,6 +620,10 @@
   letter-spacing: 0;
   margin: 28px 0 12px; }
 
+@media (max-width: 768px) {
+  .article-philippines .article-section h4 { margin-top: 10px !important; }
+}
+
 .article-philippines .article-section h3.budget-h3 { font-size: 24px !important; }
 .article-philippines .article-section h3.budget-h3 i { font-size: 26px !important; }
 
