@@ -147,7 +147,7 @@ export default function PhilippinesPage() {
             <p>Palawan est une <strong>véritable perle tropicale</strong> réputée pour ses paysages à couper le souffle. Entre plages de sable blanc, eaux cristallines et formations rocheuses majestueuses, cette île incarne la définition même de l&apos;évasion, où chaque recoin révèle une beauté sauvage et intacte.</p>
             <p>Notre voyage commence donc à Palawan. Nous avons passé quelques jours à El Nido, puis à Coron. Il y a tellement de choses à vous raconter que <strong>nous y avons consacré un article.</strong></p>
             <p>Des lagons d&apos;El Nido, aux récifs préservés de Coron, préparez-vous à plonger dans ce décor de rêve, où l&apos;évasion devient réalité !</p>
-            <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines"><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan Blog" className="article-img-full" loading="lazy" /></a>
+            <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" style={{display:"block"}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan Blog" className="article-img-full" loading="lazy" /></a>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À lire aussi</strong><p><a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-link">⋙ PALAWAN : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</a></p></div>
@@ -855,7 +855,7 @@ export default function PhilippinesPage() {
               <h2>Tout savoir pour organiser votre voyage</h2>
             </div>
 
-            <p className="pratique-label">⧐ Formalités</p>
+            <p className="pratique-label">Formalités</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
@@ -871,7 +871,7 @@ export default function PhilippinesPage() {
               </li>
             </ul>
 
-            <p className="pratique-label">⧐ Santé</p>
+            <p className="pratique-label">Santé</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
@@ -895,7 +895,7 @@ export default function PhilippinesPage() {
               </li>
             </ul>
 
-            <p className="pratique-label">⧐ Loisirs</p>
+            <p className="pratique-label">Loisirs</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
@@ -911,7 +911,7 @@ export default function PhilippinesPage() {
               </li>
             </ul>
 
-            <p className="pratique-label">⧐ Météo</p>
+            <p className="pratique-label">Météo</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
@@ -927,7 +927,7 @@ export default function PhilippinesPage() {
               </li>
             </ul>
 
-            <p className="pratique-label">⧐ Infos pratiques</p>
+            <p className="pratique-label">Infos pratiques</p>
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
