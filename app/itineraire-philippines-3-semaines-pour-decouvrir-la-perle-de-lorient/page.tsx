@@ -147,7 +147,7 @@ export default function PhilippinesPage() {
             <p>Palawan est une <strong>véritable perle tropicale</strong> réputée pour ses paysages à couper le souffle. Entre plages de sable blanc, eaux cristallines et formations rocheuses majestueuses, cette île incarne la définition même de l&apos;évasion, où chaque recoin révèle une beauté sauvage et intacte.</p>
             <p>Notre voyage commence donc à Palawan. Nous avons passé quelques jours à El Nido, puis à Coron. Il y a tellement de choses à vous raconter que <strong>nous y avons consacré un article.</strong></p>
             <p>Des lagons d&apos;El Nido, aux récifs préservés de Coron, préparez-vous à plonger dans ce décor de rêve, où l&apos;évasion devient réalité !</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan Blog" className="article-img-full" loading="lazy" />
+            <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines"><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan Blog" className="article-img-full" loading="lazy" /></a>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À lire aussi</strong><p><a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-link">⋙ PALAWAN : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</a></p></div>
@@ -170,7 +170,7 @@ export default function PhilippinesPage() {
               <span className="article-day-badge">Jour 1</span>
               <h3>De Manille à Banaue</h3>
             </div>
-            <h4 className="h4-after-h3">⧐ Comment se rendre à Banaue ?</h4>
+            <h4>⧐ Comment se rendre à Banaue ?</h4>
             <p><strong>Pour nous rendre à Banaue, nous avons choisi l&apos;option bus au départ de Manille.</strong> Vous avez également la possibilité de vous y rendre en transport privé, mais le tarif ne sera pas le même ! Nous avions réservé le transfert plusieurs semaines avant. Le trajet aller-retour nous est revenu à <strong>1800 Php (30€)</strong> par personne.</p>
             <p>Nous devons nous rendre à la gare routière de la compagnie <strong><a href="https://12go.com/en/operator/ohayami-trans" target="_blank" rel="noopener noreferrer" className="article-link">Ohayami Trans</a></strong> à Manille pour 22h30, ce qui nous laisse le temps d&apos;aller manger un bout et de faire un petit tour dans le secteur.</p>
             <p>Nous sommes dans un quartier populaire, assez pauvre pour ne pas dire ghetto. Nous traversons quelques rues… C&apos;est la première fois qu&apos;on a le <strong>sentiment de ne pas être en sécurité,</strong> mais ce n&apos;est que notre ressenti. Après avoir mangé, nous retournons à la gare routière. Nous récupérons nos billets et c&apos;est parti pour un grand périple.</p>
@@ -288,7 +288,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1425-1024x768.jpg" alt="Rice terrace Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1516-768x1024.jpg" alt="Rice Terrace Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <h4 className="h4-after-h3">⧐ Les Hot springs d&apos;Hapao</h4>
+            <h4>⧐ Les Hot springs d&apos;Hapao</h4>
             <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !</p>
             
             <div className="article-avis">
