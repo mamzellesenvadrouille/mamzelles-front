@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import './madrid.css';
 import Navbar from '../components/Navbar';
 import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
@@ -58,13 +57,13 @@ export default function MadridPage() {
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-          <span>Facile</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M14.8 9a2 2 0 0 0-2-1.5h-1.6a2 2 0 0 0 0 4h1.6a2 2 0 0 1 0 4H11a2 2 0 0 1-2-1.5"/><line x1="12" y1="6" x2="12" y2="18"/></svg>
+          <span>Euro (€)</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="3"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg>
-          <span>Couple, amis, solo</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Espagnol &amp; Anglais</span>
         </div>
       </div>
 
