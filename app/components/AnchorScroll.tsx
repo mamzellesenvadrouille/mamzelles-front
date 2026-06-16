@@ -11,9 +11,9 @@ export default function AnchorScroll() {
       if (el) el.scrollIntoView({ behavior: 'smooth' });
     };
     if (document.readyState === 'complete') {
-      setTimeout(tryScroll, 100);
+      setTimeout(tryScroll, 800);
     } else {
-      window.addEventListener('load', () => setTimeout(tryScroll, 100), { once: true });
+      window.addEventListener('load', () => setTimeout(tryScroll, 800), { once: true });
     }
   }, []);
   return null;
