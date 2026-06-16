@@ -1,5 +1,5 @@
 /* ============================================
-   PHILIPPINES Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
+   PHILIPPINES ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Styles spÃƒÆ’Ã‚Â©cifiques ÃƒÆ’  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -8,7 +8,6 @@
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 45vh !important; min-height: 280px !important; }
   .hero-article .hero-content { padding: 0 24px 36px !important; }
-  .hero-article .hero-content h1 { font-size: 32px !important; }
   .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 0.6em !important; white-space: normal !important; }
   .mobile-hero-break { display: inline; }
   .tablet-only-br { display: none; }
