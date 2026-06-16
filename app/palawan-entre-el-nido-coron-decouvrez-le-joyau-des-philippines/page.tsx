@@ -31,7 +31,7 @@ export default function PalawanElNidoCoronPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/El-Nido-Coron.webp" alt="Palawan : lagons turquoise d'El Nido et îles de Coron" style={{objectPosition: 'center 77%'}} />
+        <img className="hero-bg" src="/El-Nido-Coron.webp" alt="Palawan : lagons turquoise d'El Nido et îles de Coron" style={{objectPosition: 'center 78%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Palawan<br /><em>Entre El Nido &amp; Coron, le joyau des Philippines</em></h1>
