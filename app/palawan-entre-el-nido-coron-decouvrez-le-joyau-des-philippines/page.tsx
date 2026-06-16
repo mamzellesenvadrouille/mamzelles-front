@@ -526,7 +526,7 @@ export default function PalawanElNidoCoronPage() {
               </a>
               <a href="/visiter-madrid-en-3-jours" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="/madrid.webp" alt="Madrid" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid-1536x1229.jpeg.webp" alt="Madrid" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Espagne</span>
