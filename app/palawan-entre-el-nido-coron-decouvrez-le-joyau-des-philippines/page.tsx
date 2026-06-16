@@ -31,7 +31,7 @@ export default function PalawanElNidoCoronPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/El-Nido-Coron.webp" alt="Palawan : lagons turquoise d'El Nido et îles de Coron" style={{objectPosition: 'center 70%'}} />
+        <img className="hero-bg" src="/El-Nido-Coron.webp" alt="Palawan : lagons turquoise d'El Nido et îles de Coron" style={{objectPosition: 'center 80%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Palawan<br /><em>Entre El Nido &amp; Coron, le joyau des Philippines</em></h1>
@@ -151,10 +151,6 @@ export default function PalawanElNidoCoronPage() {
             <p>Au programme, balade dans la ville et découverte de <strong>la plage principale. Cette dernière est plutôt jolie mais déconseillée à la baignade</strong> à cause de l’huile provenant des bateaux qui pollue ce petit coin de paradis.</p>
             <p>Après avoir fait un peu le tour du centre ville, nous décidons de louer un scooter pour vadrouiller tranquillement dans les alentours.</p>
             <p>Louer un scooter à El Nido nous revient <strong>500 Php (8€50)</strong> la journée. Pour info, le litre d’essence est à environ <strong>1€20</strong>. <strong>Si vous êtes à l’aise pour conduire un 2 roues, alors n’hésitez pas, c’est vraiment l’idéal.</strong> Sinon, vous pouvez toujours vous déplacer en tuk-tuk.</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>À El Nido, le scooter est le moyen le plus pratique et économique de vadrouiller dans les alentours : comptez <strong>500 Php (8€50)</strong> la journée et <strong>~1€20</strong> le litre d'essence. Si vous n'êtes pas à l'aise à 2 roues, le tuk-tuk reste une bonne option.</p></div>
-            </div>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9679_jpg-1024x768.jpg" alt="El Nido City Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9671_jpg-1-1024x768.jpg" alt="El Nido Beach Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -189,16 +185,16 @@ export default function PalawanElNidoCoronPage() {
             <p>Maintenant, il faut faire un choix... Nous avons qu’une journée devant nous et nous souhaitons voir le maximum d’endroits !</p>
             <h4>⧐ Quel Island hopping choisir ?</h4>
             <p>Vous avez la possibilité d’embarquer à bord d’une <strong>bangka, c’est le bateau traditionnel. Il n’est pas très rapide et peut transporter jusqu’à 25 personnes. </strong>Pour les excursions, <strong>les bateaux partent généralement à 9h</strong> et vous emmèneront faire le tour que vous aurez choisi. Selon le tour A, B, C ou D, comptez entre <strong>1200 Php (21,50€)</strong> et <strong>1600 Php (27€)</strong> par personne, repas compris.</p>
-            <p>Si comme nous, vous n’avez qu’une journée et que vous voulez éviter la foule et les embouteillages de bateaux, <strong>le meilleur choix est le speed boat.</strong></p>
-            <p>Comme son nom l’indique, <strong>il est plus rapide et combine 2 tours en un.</strong> Il y a d’autres avantages à choisir le speed boat… Le premier est que les speed boats ne suivent pas les bangkas, donc on ne se retrouve pas tous au même endroit, au même moment. Le deuxième est que nous sommes <strong>seulement 8 sur le bateau,</strong> c’est quand même plus agréable que de se retrouver à 25 ! Le tour n’est pas vraiment défini. Le capitaine fera en fonction de la météo, du vent, du monde et du temps. Il est donc possible que pendant votre tour, vous fassiez par exemple un peu du A, un peu du C et un peu du D.</p>
+            <p>Si comme nous, vous n'avez qu'une journée et que vous voulez éviter la foule et les embouteillages de bateaux, <strong>le meilleur choix est le speed boat.</strong> Les speed boats ne suivent pas les bangkas, donc on ne se retrouve pas tous au même endroit, au même moment. Et surtout, on est <strong>seulement 8 sur le bateau,</strong> c'est quand même plus agréable que de se retrouver à 25 ! Le tour n'est pas vraiment défini, le capitaine s'adapte en fonction de la météo, du vent et du monde.</p>
+
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Si vous n'avez qu'une journée d'island hopping à El Nido, on vous recommande le <strong>speed boat</strong> : plus rapide, il combine deux tours, vous n'êtes que 8 à bord et vous évitez la foule des bangkas. Pensez à emporter un <strong>sac waterproof, des chaussures d'eau et de la crème solaire</strong> !</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>Pensez à prendre un sac waterproof, des chaussures d'eau et de la crème solaire. Et si vous hésitez entre bangka et speed boat : on vous recommande clairement le speed boat !</p></div>
             </div>
             <h4>⧐ Island hopping avec « La Pêcheuse »</h4>
             <p>Nous avons choisis <strong><a href="https://www.lapecheuse.com/el-nido-tours" target="_blank" rel="noopener noreferrer" className="article-link">« La Pêcheuse »</a></strong>. Nous les avons contactés via WhatsApp pour réserver notre place sur le bateau : +63 961 180 2992. Un acompte vous est demandé, le reste étant à payer avant d’embarquer. Sachez qu’il y a également une taxe d’éco-tourisme de <strong>200 Php (3€20)</strong> par personne à payer.</p>
             <p>Comptez <strong>3000 Php (51€)</strong> par personne, repas compris pour la journée d'Island hopping.</p>
-            <p><strong>Le départ se fait depuis la plage de Corong Corong,</strong> en face de l'agence. Ils nous donnent <strong>RDV à 9h</strong> pour un départ à 9h30. N’oubliez pas de prendre <strong>un sac waterproof, des chaussures d’eau et de la crème solaire.</strong></p>
+            <p><strong>Le départ se fait depuis la plage de Corong Corong,</strong> en face de l'agence. Ils nous donnent <strong>RDV à 9h</strong> pour un départ à 9h30.</p>
             <p>À nous l’archipel de Bacuit !</p>
             <h4>⧐ Matinloc Island</h4>
             <p>Notre 1er stop se fait sur Matinloc Island. Notre speed boat nous débarque à <strong>Palilo Beach.</strong> Pas d’autre bateau, nous sommes seuls sur cette petite plage paradisiaque.</p>
@@ -210,10 +206,10 @@ export default function PalawanElNidoCoronPage() {
             <h4>⧐ Secret Beach</h4>
             <p>Après une trentaine de minutes, nous repartons direction la Secret Beach. Comme son nom l’indique, elle est secrètement cachée derrière des falaises de calcaire. <strong>Pour y accéder, il faut nager et passer par un petit passage, comme par une grotte.</strong></p>
             <p>Une anecdote sur ce moment… Rapidement après avoir sauté à l’eau, <strong>nous ressentons des picotements désagréables partout sur le corps. </strong>Plutôt flippant quand on ne s’y attend pas !</p>
-            <p>Il s’agit en fait de <strong>plancton urticant,</strong> invisible à l’œil. Rien de méchant, ça gratte un peu, ça peut éventuellement faire apparaître des petits boutons. Pour autant, tant qu’on n’y est pas allergique, ces symptômes disparaissent rapidement.</p>
+            <p>Il s'agit en fait de <strong>plancton urticant,</strong> invisible à l'œil.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>À la Secret Beach (et parfois ailleurs), vous pouvez croiser du <strong>plancton urticant</strong>, invisible à l'œil. Ça picote sur le coup et peut laisser quelques petits boutons, mais sauf allergie, ça disparaît vite. Pas de panique !</p></div>
+              <div><strong>Bon à savoir</strong><p>À la Secret Beach (et parfois ailleurs), vous pouvez croiser du plancton urticant, invisible à l'œil. Ça picote sur le coup et peut laisser quelques petits boutons, mais sauf allergie, ça disparaît vite. Pas de panique !</p></div>
             </div>
             <p>Arrivées à la Secret Beach, nous découvrons une petite plage enclavée dans les falaises. L’endroit est très joli, mais pour le coup, il y a <strong>énormément de monde sur ce spot. </strong></p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2670-1-1024x768.jpg" alt="Secret Beach Island Hopping El Nido Palawan" className="article-img-full" loading="lazy" />
@@ -322,10 +318,10 @@ export default function PalawanElNidoCoronPage() {
             <p>Pour cette 1ère journée d’excursion, nous avons choisi le <strong>Beach Escapade Tour.</strong> De tous les tours, c’est le seul qui propose les plages qu’on avait repérées. Clairement, <strong>3 spots de rêve ! </strong>Partir découvrir des plages paradisiaques en mode farniente, voilà le planning de la journée… Trois plages dans la journée cela paraît peu, mais en réalité,<strong> il y a pas mal de route (de miles) pour se rendre d'une île à l'autre. </strong>Nous avons payé <strong>1500 Php (25€)</strong> par personne, repas compris.</p>
             <p>Petit déjeuner avalé, nous attendons <strong>le van qui passe nous récupérer entre 8h et 8h30.</strong></p>
             <p>Direction le port. Le van s’arrête en route pour récupérer d’autres personnes. Arrivés sur place, nous sommes répartis sur les bateaux. <strong>Nous sommes une dizaine sur le nôtre. </strong>Des philippins vendent des bouteilles d’eau, des masques, des tubas, de la crème solaire…</p>
-            <p>D'ailleurs, petite anecdote par rapport à la crème solaire. Nous avons croisé un couple qui a acheté un tube à l'une de ces personnes. Ils se sont tartinés toute la journée, et ont fini brûlé comme jamais ! <strong>Faites attention si vous devez acheter des produits cosmétiques,</strong> on ne sait pas vraiment ce qu'ils contiennent...</p>
+            <p>D'ailleurs, petite anecdote : nous avons croisé un couple qui a acheté une crème solaire à l'une de ces personnes. Ils se sont tartinés toute la journée… et ont fini brûlé comme jamais !</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Méfiez-vous des cosmétiques (crème solaire notamment) vendus à la sauvette sur les bateaux ou les plages : on ne sait pas toujours ce qu'ils contiennent. Achetez votre protection solaire avant de partir et ré-appliquez <strong>très régulièrement</strong>, on brûle vite ici !</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>Méfiez-vous des cosmétiques vendus à la sauvette sur les bateaux ou les plages : on ne sait pas toujours ce qu'ils contiennent. Achetez votre protection solaire avant de partir et ré-appliquez très régulièrement, on brûle vite ici !</p></div>
             </div>
             <h4>⧐ Bulalacao Island</h4>
             <p><strong>Nous quittons le port vers 9h30, direction Coco Beach</strong> à Bulalacao Island. Après <strong>1h30 de traversée,</strong> nous arrivons aux abords de ce spot.</p>
@@ -340,11 +336,11 @@ export default function PalawanElNidoCoronPage() {
             </div>
             <p><strong>La plage est assez grande et il n’y a personne.</strong> L’endroit est tout de même aménagé pour accueillir les gens de passage. Il y a un espace avec des hamacs et des sortes de cabanes en bois pour s’installer à l’ombre. Nous laissons nos affaires et partons vadrouiller sur la plage.</p>
             <p>L’eau est magnifique, plus belle qu’à El Nido… Mais ce n’est que notre avis !</p>
-            <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>L'avis des MamZelles</strong><p>À Coco Beach (Bulalacao), on a trouvé l'eau encore plus belle qu'à El Nido… On vous laisse juge ! Pour nous, c'était le petit coup de cœur de la journée, avec un vrai air de Maldives.</p></div>
-            </div>
-            <p>C’est ici que nous allons déjeuner. Alors, pendant que nous profitons de l’instant, l’équipage s’active à tout préparer.</p>
+
+
+
+
+
             <p><strong>Un déjeuner au top </strong>avec viande, poisson, légumes, pâtes, riz et fruits. Après le repas, nous passons encore un peu de temps sur cette plage avant de mettre le cap sur une petite île inhabitée...</p>
             <h4>⧐ Ditaytayan Island</h4>
             <div className="article-gallery-2">
@@ -366,10 +362,10 @@ export default function PalawanElNidoCoronPage() {
             </div>
             <p>Il est malheureusement temps de rejoindre Busuanga Island, le port de Coron. Nous avons passé une journée inoubliable. Il y avait <strong>comme un petit air des Maldives ou de la Polynésie</strong> dans cette journée.</p>
             <p>Demain sera encore une journée bien remplie. On ne va pas veiller bien tard, on est déjà KO.</p>
-            <p>Le soir, nous mangeons au <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g729733-d2646532-Reviews-Santino_s_Grill-Coron_Busuanga_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Santino's Grill</a></strong>, un joli restaurant tout en bois et bambou, à seulement 2 minutes à pied de l'hôtel. Leur spécialité est la viande. On y a très bien mangé, les plats étaient copieux, et le rapport qualité / prix imbattable ! Surtout, réservez si vous souhaitez y dîner.</p>
+            <p>Le soir, nous mangeons au <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g729733-d2646532-Reviews-Santino_s_Grill-Coron_Busuanga_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Santino's Grill</a></strong>, un joli restaurant tout en bois et bambou, à seulement 2 minutes à pied de l'hôtel. Leur spécialité est la viande. On y a très bien mangé, les plats étaient copieux, et le rapport qualité / prix imbattable !</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>À Coron City comme à El Nido, les bonnes adresses se remplissent vite : pensez à <strong>réserver</strong> si vous voulez dîner au Santino's Grill ou au Sip Sunset Lounge &amp; Bar. Ça vous évitera la déception une fois sur place.</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>À Coron City comme à El Nido, les bonnes adresses se remplissent vite : pensez à réserver si vous voulez dîner au Santino's Grill ou au Sip Sunset Lounge &amp; Bar. Ça vous évitera la déception une fois sur place.</p></div>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 3</span>
@@ -387,12 +383,12 @@ export default function PalawanElNidoCoronPage() {
             </div>
             <p><strong>L’interêt principal de ce lieu n’est pas le lac mais plutôt le point de vue sur la baie.</strong> Pour le rejoindre, nous empruntons un escalier aménagé à la queue leu-leu…</p>
             <p>Une fois au sommet, il y a <strong>une longue file d’attente pour accéder au spot.</strong> On décide du coup d’y revenir plus tard.</p>
-            <p><strong>De l’autre côté se trouve le lac.</strong> Nous continuons le chemin qui descend pour le rejoindre.<strong> Ici aussi, </strong>i<strong>l y a énormément de monde. </strong>Cependant, l’eau est très belle. On se laisse tenter par un petit plouf dans le lac. <strong>Le gilet de sauvetage est obligatoire </strong>car il y a déjà eu de nombreux accidents.</p>
+            <p><strong>De l'autre côté se trouve le lac.</strong> Nous continuons le chemin qui descend pour le rejoindre. L'eau est très belle. On se laisse tenter par un petit plouf dans le lac.</p>
             <p>Pourtant, il n’y a rien de dangereux à partir du moment où vous savez nager. Nous rebroussons chemin et allons faire la queue pour la photo.</p>
-            <p>On vous avoue qu’à ce moment précis, on se dit : « vraiment, on est en train de faire la queue pour une photo là ??! ». Pas le choix, c’est un cul-de-sac. Un panneau nous indique la consigne : <strong>3 photos maximum par personne...</strong> Bref, malgré cette situation un peu particulière, on n’a pas de regret pour l’attente, la vue sur la baie est canon !</p>
+            <p>On vous avoue qu'à ce moment précis, on se dit : « vraiment, on est en train de faire la queue pour une photo là ??! ».</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Au Kayangan Lake, le <strong>gilet de sauvetage est obligatoire</strong> pour la baignade, et l'accès au point de vue est très fréquenté : un panneau limite même à <strong>3 photos par personne</strong> au spot le plus prisé. Un peu de patience… la vue les vaut largement !</p></div>
+              <div><strong>Bon à savoir</strong><p>Au Kayangan Lake, le gilet de sauvetage est obligatoire pour la baignade. Et oui, il y a de la queue au point de vue — un panneau limite même à 3 photos par personne. Patience… la vue en vaut clairement la peine !</p></div>
             </div>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0607_jpg-1024x768.jpg" alt="Kayangan Lake Island Hopping Coron Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -422,13 +418,13 @@ export default function PalawanElNidoCoronPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0580-1024x768.jpg" alt="Coco Beach View Palawan Coron" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/GPTempDownload-10-768x1024.jpg" alt="Twin Lagoon Love Coron Palawan" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p>Une fois de l’autre côté, on se retrouve entre d'immenses montagnes et falaises. À ce moment-là, on se sent toutes petites !</p>
+            <p>Une fois de l'autre côté, on se retrouve entre d'immenses montagnes et falaises. C'est grandiose !</p>
             <p>N’hésitez pas à <strong>nager un peu plus loin sur la gauche jusqu’à avoir pied. </strong>C’est là que l’eau est la plus belle.</p>
             <p><strong>Ce lagon a la particularité de mélanger des courants d'eau chaude et d’eau froide,</strong> et clairement cela se ressent.</p>
-            <p>Bref, ce spot est vraiment merveilleux. On en a pris plein les yeux ! Et par chance, ce jour-là, il n’y avait vraiment pas grand monde.</p>
+            <p>Bref, ce spot est vraiment merveilleux.</p>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>L'avis des MamZelles</strong><p>Le <strong>Twin Lagoon</strong> a été notre plus grosse claque visuelle du séjour : les falaises, l'eau qui mêle courants chauds et froids, le décor irréel… On en a pris plein les yeux. À ne rater sous aucun prétexte !</p></div>
+              <div><strong>L'avis des MamZelles</strong><p>Le Twin Lagoon a été notre plus grosse claque visuelle du séjour : les falaises, l'eau qui mêle courants chauds et froids, le décor irréel… À ne rater sous aucun prétexte !</p></div>
             </div>
             <h4>⧐ Malwawey reef</h4>
             <p>Après un superbe moment passé au Twin lagoon, c’est parti pour Malwawey reef, aussi appelé la Isla de Coral. <strong>L’île de corail immergée se trouve au niveau d’une toute petite île,</strong> non loin de Coron Island.</p>
@@ -459,12 +455,12 @@ export default function PalawanElNidoCoronPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0797-768x1024.jpg" alt="Maquinit Hotspring Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0815_jpg-1024x768.jpg" alt="Maquinit Hotspring Coron" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <p>L’entrée est de <strong>250 Php (3€96)</strong> par personne. L’endroit est propre et bien entretenu. Il y a un grand bassin et un plus petit. L’eau, composée de 30% d’eau salée et 70% d’eau douce, est naturellement à une <strong>température d’environ 45 degrés. Il est déconseillé de rester plus de 7 ou 8 minutes dans l’eau,</strong> le corps complètement immergé.</p>
+            <p>L'entrée est de <strong>250 Php (3€96)</strong> par personne. L'endroit est propre et bien entretenu. Il y a un grand bassin et un plus petit. L'eau, composée de 30% d'eau salée et 70% d'eau douce, est naturellement très chaude.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>La source d'eau chaude de <strong>Maquinit</strong> avoisine les <strong>45 °C</strong> : il est déconseillé d'y rester immergé plus de <strong>7 à 8 minutes</strong>. En plein soleil et par forte chaleur, c'est franchement plus agréable en fin de journée.</p></div>
+              <div><strong>Bon à savoir</strong><p>La source d'eau chaude de Maquinit avoisine les 45 °C : il est déconseillé d'y rester immergé plus de 7 à 8 minutes. En plein soleil et par forte chaleur, c'est franchement plus agréable en fin de journée.</p></div>
             </div>
-            <p>Nous ne nous sommes pas baignées entièrement, mais nous pouvons vous confirmer qu’elle est vraiment très chaude ! En plein soleil, avec la température qu’il fait, ce n'est même pas vraiment agréable... <strong>C’est certainement plus appréciable en fin de journée. </strong></p>
+            <p>Nous ne nous sommes pas baignées entièrement, mais nous pouvons vous confirmer qu'elle est vraiment très chaude !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0819-1-1024x768.jpg" alt="Maquinit Hotspring Coron" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0809-768x1024.jpg" alt="Maquinit Hotspring Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
