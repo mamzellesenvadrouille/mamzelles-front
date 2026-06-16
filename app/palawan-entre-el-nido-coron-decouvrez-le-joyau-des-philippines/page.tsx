@@ -31,7 +31,7 @@ export default function PalawanElNidoCoronPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/El-Nido-Coron.webp" alt="Palawan : lagons turquoise d'El Nido et îles de Coron" style={{objectPosition: 'center 40%'}} />
+        <img className="hero-bg" src="/El-Nido-Coron.webp" alt="Palawan : lagons turquoise d'El Nido et îles de Coron" style={{objectPosition: 'center 70%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Palawan<br /><em>Entre El Nido &amp; Coron, le joyau des Philippines</em></h1>
@@ -76,7 +76,7 @@ export default function PalawanElNidoCoronPage() {
           <span className="article-cdcr-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="#c8956c" stroke="#c8956c" strokeWidth="1"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
           </span>
-          <h2>Ce qui a rendu ce voyage inoubliable</h2>
+          <h2>Pourquoi nous avons adoré Palawan</h2>
         </div>
         <div className="article-cdcr-grid">
           <div className="article-cdcr-item"><span className="article-cdcr-label">Notre île coup de cœur</span><span className="article-cdcr-value">→ Coron &amp; ses lagons</span></div>
