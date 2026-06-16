@@ -113,7 +113,7 @@ export default function PalawanPortBartonPage() {
             <p>Après un premier voyage à travers les Philippines, nous avons choisi, pour notre deuxième séjour, de consacrer un mois entier à Palawan, cette île incroyable de la mer de Sulu, dans le Sud-ouest du pays.</p>
             <p>Très allongée, l'île s’étend sur 450 km de long et a une largeur moyenne de 50 km.</p>
             <p>De Puerto Princesa et son célèbre island hopping, à Sabang et sa rivière souterraine, en passant par San Vicente et Port Barton, pour finir en beauté sur la magnifique Modessa Island, nous vous racontons tout, étape par étape !</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2026/06/69A5C79B-F820-4495-B9CA-87A3BEDC2A70-1.jpg" alt="Camping Palawan Port Barton" className="article-img-full" loading="lazy" />
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2026/06/Port-barton.jpg" alt="Camping Palawan Port Barton" className="article-img-full" loading="lazy" />
             <p>Après un long voyage depuis Nice, en passant par Londres et Beijing (Chine), nous arrivons à Manille vers 22h. Nous avions presque oublié cette sensation quand on sort de l’avion… Chaleur + humidité, pas de doute, nous sommes bien aux Philippines. Récupération des sacs à dos et c’est parti !</p>
             <div className="article-day-header article-day-header-tight">
               <h3>Comment se rendre à Palawan ?</h3>
