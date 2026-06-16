@@ -441,6 +441,9 @@
   .article-cdcr-item { flex: 1 1 0 !important; min-width: 0; }
   .sidebar-cta-title { font-size: 23px !important; }
   .sidebar-cta .btn-gold { padding: 8px 18px !important; font-size: 9px !important; }
+  .article-bref-bar { flex-wrap: wrap; gap: 0; padding: 14px 24px; }
+  .article-bref-bar-item { flex: 1 1 50%; justify-content: center; padding: 8px 0; }
+  .article-bref-bar-sep { display: none; }
 }
 
 @media (max-width: 1024px) {

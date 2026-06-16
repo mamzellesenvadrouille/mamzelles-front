@@ -36,7 +36,7 @@ export default function PalawanElNidoCoronPage() {
         <div className="hero-content">
           <h1>Palawan<br /><em>Entre El Nido &amp; Coron, le joyau des Philippines</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">De ses lagons turquoise à El Nido<br className="mobile-hero-break" /> aux récifs spectaculaires de Coron, plongez<br className="tablet-only-br" /> dans le joyau des Philippines.</p>
+          <p className="hero-desc">De ses lagons turquoise à El Nido<br className="mobile-hero-break" /> aux récifs spectaculaires de Coron, plongez dans le joyau des Philippines.</p>
         </div>
       </section>
 
