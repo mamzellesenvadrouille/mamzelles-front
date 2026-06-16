@@ -31,12 +31,12 @@ export default function PalawanPortBartonPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/Puerto-Princesa-Port-Barton.webp" alt="Palawan : Puerto Princesa, Port Barton et Modessa Island" style={{objectPosition: 'center 65%'}} />
+        <img className="hero-bg" src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2026/06/69A5C79B-F820-4495-B9CA-87A3BEDC2A70.jpg" alt="Palawan : Puerto Princesa, Port Barton et Modessa Island" style={{objectPosition: 'center 65%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Palawan<br /><em>De Puerto Princesa à Port Barton</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Un mois sur l&apos;île de tous les superlatifs,<br className="mobile-hero-break" /> de Puerto Princesa à Modessa Island,<br className="mobile-hero-break" /> loin des sentiers battus.</p>
+          <p className="hero-desc">Un mois sur l&apos;île de tous les superlatifs,<br className="mobile-hero-break" /> de Puerto Princesa<br className="desktop-tablet-br" /> à Modessa Island, loin des sentiers battus.</p>
         </div>
       </section>
 
