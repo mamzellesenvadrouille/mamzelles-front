@@ -206,7 +206,7 @@ export default function PalawanElNidoCoronPage() {
             <h4>⧐ Secret Beach</h4>
             <p>Après une trentaine de minutes, nous repartons direction la Secret Beach. Comme son nom l’indique, elle est secrètement cachée derrière des falaises de calcaire. <strong>Pour y accéder, il faut nager et passer par un petit passage, comme par une grotte.</strong></p>
             <p>Une anecdote sur ce moment… Rapidement après avoir sauté à l’eau, <strong>nous ressentons des picotements désagréables partout sur le corps. </strong>Plutôt flippant quand on ne s’y attend pas !</p>
-            <p>Il s'agit en fait de <strong>plancton urticant,</strong> invisible à l'œil.</p>
+
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>À la Secret Beach (et parfois ailleurs), vous pouvez croiser du plancton urticant, invisible à l'œil. Ça picote sur le coup et peut laisser quelques petits boutons, mais sauf allergie, ça disparaît vite. Pas de panique !</p></div>
@@ -388,7 +388,7 @@ export default function PalawanElNidoCoronPage() {
             <p>On vous avoue qu'à ce moment précis, on se dit : « vraiment, on est en train de faire la queue pour une photo là ??! ».</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Au Kayangan Lake, le gilet de sauvetage est obligatoire pour la baignade. Et oui, il y a de la queue au point de vue — un panneau limite même à 3 photos par personne. Patience… la vue en vaut clairement la peine !</p></div>
+              <div><strong>Bon à savoir</strong><p>On ne vous cache pas qu’il y a de la queue au point de vue — un panneau limite même à 3 photos par personne. Patience… la vue en vaut clairement la peine !</p></div>
             </div>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0607_jpg-1024x768.jpg" alt="Kayangan Lake Island Hopping Coron Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -421,10 +421,10 @@ export default function PalawanElNidoCoronPage() {
             <p>Une fois de l'autre côté, on se retrouve entre d'immenses montagnes et falaises. C'est grandiose !</p>
             <p>N’hésitez pas à <strong>nager un peu plus loin sur la gauche jusqu’à avoir pied. </strong>C’est là que l’eau est la plus belle.</p>
             <p><strong>Ce lagon a la particularité de mélanger des courants d'eau chaude et d’eau froide,</strong> et clairement cela se ressent.</p>
-            <p>Bref, ce spot est vraiment merveilleux.</p>
-            <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>L'avis des MamZelles</strong><p>Le Twin Lagoon a été notre plus grosse claque visuelle du séjour : les falaises, l'eau qui mêle courants chauds et froids, le décor irréel… À ne rater sous aucun prétexte !</p></div>
+
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À ne pas manquer</strong><p>Le Twin Lagoon a été notre plus grosse claque visuelle du séjour : les falaises, l'eau qui mêle courants chauds et froids, le décor irréel… À ne rater sous aucun prétexte !</p></div>
             </div>
             <h4>⧐ Malwawey reef</h4>
             <p>Après un superbe moment passé au Twin lagoon, c’est parti pour Malwawey reef, aussi appelé la Isla de Coral. <strong>L’île de corail immergée se trouve au niveau d’une toute petite île,</strong> non loin de Coron Island.</p>
