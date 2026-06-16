@@ -191,8 +191,8 @@ export default function PalawanElNidoCoronPage() {
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Si vous hésitez entre bangka et speed boat : on vous recommande clairement le speed boat ! Pensez aussi à prendre un sac waterproof, des chaussures d'eau et de la crème solaire.</p></div>
             </div>
-            <h4>⧐ Island hopping avec « La Pêcheuse »</h4>
-            <p>Nous avons choisi <strong><a href="https://www.lapecheuse.com/el-nido-tours" target="_blank" rel="noopener noreferrer" className="article-link">« La Pêcheuse »</a></strong>. Nous les avons contactés via WhatsApp pour réserver notre place sur le bateau : +63 961 180 2992. Un acompte vous est demandé, le reste étant à payer avant d’embarquer. Sachez qu’il y a également une taxe d’éco-tourisme de <strong>200 Php (3€20)</strong> par personne à payer.</p>
+            <h4>⧐ Island hopping avec La Pêcheuse</h4>
+            <p>Nous avons choisi <strong><a href="https://www.lapecheuse.com/el-nido-tours" target="_blank" rel="noopener noreferrer" className="article-link">La Pêcheuse</a></strong>. Nous les avons contactés via WhatsApp pour réserver notre place sur le bateau : +63 961 180 2992. Un acompte vous est demandé, le reste étant à payer avant d’embarquer. Sachez qu’il y a également une taxe d’éco-tourisme de <strong>200 Php (3€20)</strong> par personne à payer.</p>
             <p>Comptez <strong>3000 Php (51€)</strong> par personne, repas compris pour la journée d'Island hopping.</p>
             <p><strong>Le départ se fait depuis la plage de Corong Corong,</strong> en face de l'agence. Ils nous donnent <strong>RDV à 9h</strong> pour un départ à 9h30.</p>
             <p>À nous l’archipel de Bacuit !</p>
