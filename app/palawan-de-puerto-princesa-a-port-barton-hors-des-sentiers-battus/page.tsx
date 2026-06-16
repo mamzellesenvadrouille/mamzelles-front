@@ -36,7 +36,7 @@ export default function PalawanPortBartonPage() {
         <div className="hero-content">
           <h1>Palawan<br /><em>De Puerto Princesa à Port Barton</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Un mois sur l&apos;île de tous les superlatifs,<br className="mobile-hero-break" /> de Puerto Princesa<br className="desktop-tablet-br" /> à Modessa Island,<br className="mobile-hero-break" /> loin des sentiers battus.</p>
+          <p className="hero-desc">Un Palawan secret, loin des foules et des clichés.</p>
         </div>
       </section>
 
