@@ -82,7 +82,7 @@ export default function PalawanElNidoCoronPage() {
           <div className="article-cdcr-item"><span className="article-cdcr-label">Notre île coup de cœur</span><span className="article-cdcr-value">→ Coron &amp; ses lagons</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">Le spot le plus incroyable</span><span className="article-cdcr-value">→ Le Twin Lagoon</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">Le moment le plus magique</span><span className="article-cdcr-value">→ Le sunset à Corong Corong</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">À tester sans hésiter</span><span className="article-cdcr-value">→ L&apos;island hopping en speed boat</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">À tester<br className="tablet-only-br" />sans hésiter</span><span className="article-cdcr-value">→ L&apos;island hopping en speed boat</span></div>
         </div>
       </div>
 
