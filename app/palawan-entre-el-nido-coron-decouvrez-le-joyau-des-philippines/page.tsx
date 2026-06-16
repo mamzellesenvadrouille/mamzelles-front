@@ -192,7 +192,7 @@ export default function PalawanElNidoCoronPage() {
               <div><strong>Le conseil des MamZelles</strong><p>Si vous hésitez entre bangka et speed boat : on vous recommande clairement le speed boat ! Pensez aussi à prendre un sac waterproof, des chaussures d'eau et de la crème solaire.</p></div>
             </div>
             <h4>⧐ Island hopping avec « La Pêcheuse »</h4>
-            <p>Nous avons choisis <strong><a href="https://www.lapecheuse.com/el-nido-tours" target="_blank" rel="noopener noreferrer" className="article-link">« La Pêcheuse »</a></strong>. Nous les avons contactés via WhatsApp pour réserver notre place sur le bateau : +63 961 180 2992. Un acompte vous est demandé, le reste étant à payer avant d’embarquer. Sachez qu’il y a également une taxe d’éco-tourisme de <strong>200 Php (3€20)</strong> par personne à payer.</p>
+            <p>Nous avons choisi <strong><a href="https://www.lapecheuse.com/el-nido-tours" target="_blank" rel="noopener noreferrer" className="article-link">« La Pêcheuse »</a></strong>. Nous les avons contactés via WhatsApp pour réserver notre place sur le bateau : +63 961 180 2992. Un acompte vous est demandé, le reste étant à payer avant d’embarquer. Sachez qu’il y a également une taxe d’éco-tourisme de <strong>200 Php (3€20)</strong> par personne à payer.</p>
             <p>Comptez <strong>3000 Php (51€)</strong> par personne, repas compris pour la journée d'Island hopping.</p>
             <p><strong>Le départ se fait depuis la plage de Corong Corong,</strong> en face de l'agence. Ils nous donnent <strong>RDV à 9h</strong> pour un départ à 9h30.</p>
             <p>À nous l’archipel de Bacuit !</p>
@@ -228,8 +228,8 @@ export default function PalawanElNidoCoronPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0053-2-1024x768.jpg" alt="Tapiutan Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Le repas est copieux et il y en a pour tous les goûts : poisson, crevettes, moules, poulet, porc, riz, nouilles, légumes marinés, crudités et fruits. Un jerrican d’eau filtrée est à disposition.</p>
-            <p>Dernière l’une des cabanes, on découvre une baignoire dans laquelle il y des bébés tortues !</p>
-            <p>Les œufs ont été trouvés sur la plage et mis en sécurité. Les bébés tortues seront relâchés à leur 3 mois.</p>
+            <p>Derrière l’une des cabanes, on découvre une baignoire dans laquelle il y des bébés tortues !</p>
+            <p>Les œufs ont été trouvés sur la plage et mis en sécurité. Les bébés tortues seront relâchés à leurs 3 mois.</p>
             <p>Après un moment très agréable et apaisant passé sur cette plage, nous reprenons la mer, direction le 4ème spot.</p>
             <h4>⧐ Cadlao Island</h4>
             <p>Nous arrivons sur l’île de Cadlao, au <strong>Cadlao Lagoon</strong> plus exactement. <strong>Le bateau s’approche au maximum mais ne peut pas entrer dans le lagon.</strong> Pas de problème, tout est prévu pour les touristes !</p>
@@ -243,7 +243,7 @@ export default function PalawanElNidoCoronPage() {
             <p>Un autre homme sorti de nulle part s’avance en canoë et propose des boissons fraîches. Franchement, avec la chaleur qu’il fait, ça tombe à pic !</p>
             <h4>⧐ Serenity Beach</h4>
             <p>Notre prochain stop, non loin du lagon, est Serenity Beach. Le nom parle de lui-même. C’est le genre d’endroit paradisiaque auquel on pense quand on s’imagine perdu au bout du monde.</p>
-            <p>Il y deux cabanes en bois sur la plage, permettant à ceux qui veulent vivre l’expérience Robinson de s’y abriter si besoin.</p>
+            <p>Il y a deux cabanes en bois sur la plage, permettant à ceux qui veulent vivre l’expérience Robinson de s’y abriter si besoin.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0147-1024x768.jpg" alt="Serenity Beach Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_0124-1024x768.jpg" alt="Serenity Beach Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -257,7 +257,7 @@ export default function PalawanElNidoCoronPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2625-1-1024x768.jpg" alt="Papaya Beach Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0188_jpg-768x1024.jpg" alt="Papaya Beach Island Hopping El Nido Palawan" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p>Dernière la plage, on croit comprendre qu’il y a un genre de campement avec des tentes.</p>
+            <p>Derrière la plage, on croit comprendre qu’il y a un genre de campement avec des tentes.</p>
             <p>Dommage que les gens ne prennent pas plus soin de l’endroit et qu’il y ait autant de détritus en plastique.</p>
             <h4>⧐ Lapus lapus Beach</h4>
             <p>Dernier arrêt de la journée à Lapus Lapus Beach. Une belle plage, mais ce qui a retenu notre attention ce sont les bébés chiens qui étaient là. Tellement mignons…Petite pause câlins et grosses pensées pour notre gros chien d'amour Aladdin.</p>
@@ -381,7 +381,7 @@ export default function PalawanElNidoCoronPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0634-1024x768.jpg" alt="Kayangan Lake Bangka Island Hopping Coron Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3858-768x1024.jpg" alt="Kayangan Lake Island Hopping Coron Palawan" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p><strong>L’interêt principal de ce lieu n’est pas le lac mais plutôt le point de vue sur la baie.</strong> Pour le rejoindre, nous empruntons un escalier aménagé à la queue leu-leu…</p>
+            <p><strong>L’intérêt principal de ce lieu n’est pas le lac mais plutôt le point de vue sur la baie.</strong> Pour le rejoindre, nous empruntons un escalier aménagé à la queue leu-leu…</p>
             <p>Une fois au sommet, il y a <strong>une longue file d’attente pour accéder au spot.</strong> On décide du coup d’y revenir plus tard.</p>
             <p><strong>De l'autre côté se trouve le lac.</strong> Nous continuons le chemin qui descend pour le rejoindre. L'eau est très belle. On se laisse tenter par un petit plouf dans le lac.</p>
             <p>Pourtant, il n’y a rien de dangereux à partir du moment où vous savez nager. Nous rebroussons chemin et allons faire la queue pour la photo.</p>
@@ -398,7 +398,7 @@ export default function PalawanElNidoCoronPage() {
             <h4>⧐ Vivian Beach</h4>
             <p>Une petite plage paradisiaque. Oui, encore une ! Désolées pour les répétitions, mais il n’y a pas d’autre mot ! <strong>Le bateau jette l'ancre à plusieurs mètres du bord. </strong></p>
             <p><strong>Pour rejoindre la plage, on se jette à l’eau.</strong> Clairement, on se croirait dans une piscine avec des poissons. Des petits poissons certes, mais avec des petites dents ! Vous vous êtes déjà fait mordre par un poisson ? On vous raconte notre anecdote...</p>
-            <p>Nous sommes entrain de nager pour rejoindre la plage. En chemin, Amélie se retrouve face à un poisson qui lui fonce dessus et lui chope le mollet… Bon, il ne lui a pas arraché la jambe non plus, on vous rassure ! Sa bouche devait faire un bon centimètre de diamètre. Ok c’était pas un requin, mais ça surprend ! Ce qui nous rassure, c’est qu’elle n’est pas la seule à s’être fait mordre en rejoignant le bord. Un peut flippant sur le coup quand même !</p>
+            <p>Nous sommes en train de nager pour rejoindre la plage. En chemin, Amélie se retrouve face à un poisson qui lui fonce dessus et lui chope le mollet… Bon, il ne lui a pas arraché la jambe non plus, on vous rassure ! Sa bouche devait faire un bon centimètre de diamètre. Ok c’était pas un requin, mais ça surprend ! Ce qui nous rassure, c’est qu’elle n’est pas la seule à s’être fait mordre en rejoignant le bord. Un peu flippant sur le coup quand même !</p>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0654-768x1024.jpg" alt="Vivian Beach Island Hopping Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0700-768x1024.jpg" alt="Poisson Food Island Hopping Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />

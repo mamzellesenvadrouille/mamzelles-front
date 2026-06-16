@@ -606,7 +606,7 @@ export default function PhilippinesPage() {
             <p>Il est 8h30 environ quand nous atterrissons à Siargao. Bien que le temps soit couvert, vue du ciel, la première aperçue de l&apos;île est incroyable avec ses cocotiers à perte de vue.</p>
             <p>On arrive dans un tout petit aéroport à peine plus grand que notre appartement. Nous attendons nos sacs devant le seul et unique tapis. <strong>En sortant de l&apos;aéroport, nous devons régler la taxe de l&apos;île,</strong> soit <strong>20 Php (0€32)</strong> par personne et par passage (à l&apos;arrivée et au départ).</p>
             <p>Nous n&apos;avions pas organisé notre trajet jusqu&apos;à l&apos;hôtel car on nous avait informées qu&apos;il y avait plusieurs possibilités une fois sur place (bus, taxi, van touristique…).</p>
-            <p>En effet, <strong>sur le parking de aéroport, plusieurs vans attendent les touristes.</strong> On nous demande où se situe notre hébergement. Nous sommes alors dispatchés et regroupés dans les vans en fonction de la localisation des hôtels. <strong>Pour nous, c&apos;est direction Général Luna.</strong> Pour le transfert, nous payons <strong>300 Php (4€85)</strong> par personne.</p>
+            <p>En effet, <strong>sur le parking de l'aéroport, plusieurs vans attendent les touristes.</strong> On nous demande où se situe notre hébergement. Nous sommes alors dispatchés et regroupés dans les vans en fonction de la localisation des hôtels. <strong>Pour nous, c&apos;est direction Général Luna.</strong> Pour le transfert, nous payons <strong>300 Php (4€85)</strong> par personne.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2355-768x1024.jpg" alt="Coconuts Forest Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2519-1-1024x768.jpg" alt="Siargao City" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -718,7 +718,7 @@ export default function PhilippinesPage() {
             <p>On reprend le scooter en direction de l&apos;hôtel, histoire de prendre une bonne douche avant de repartir... On a un rendez-vous de prévu !</p>
             <h4>⧐ Où se faire tatouer ? Rad Tattoo</h4>
             <p>Et oui, histoire de marquer ce moment et de graver ce voyage à jamais, nous allons nous faire tatouer.</p>
-            <p>Si cela fait aussi parti de vos projets ou que l&apos;envie vous prend, nous vous conseillons vivement le salon <strong><a href="https://www.facebook.com/radtattoosiargao?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="article-link">RAD Tattoo &amp; Cafe Siargao</a></strong>. Leur local est clean, ils sont très pros (les règles d&apos;hygiène sont respectées) et très sympas.</p>
+            <p>Si cela fait aussi partie de vos projets ou que l&apos;envie vous prend, nous vous conseillons vivement le salon <strong><a href="https://www.facebook.com/radtattoosiargao?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="article-link">RAD Tattoo &amp; Cafe Siargao</a></strong>. Leur local est clean, ils sont très pros (les règles d&apos;hygiène sont respectées) et très sympas.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2932-1024x768.jpg" alt="RAD Tattoo Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2901-1024x768.jpg" alt="Cloud 9 night Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -736,7 +736,7 @@ export default function PhilippinesPage() {
               <span className="article-day-badge">Jour 4</span>
               <h3>Direction le Nord de Siargao avant le grand retour</h3>
             </div>
-            <p>C&apos;est le cœur lourd que nous entamons cette dernière demi-journée à Siargao. Notre avons notre vol pour Manille en début d&apos;après-midi. Il nous reste peu de temps ici, mais suffisamment pour pouvoir en profiter à fond. Nous chevauchons notre scooter et c&apos;est parti.</p>
+            <p>C&apos;est le cœur lourd que nous entamons cette dernière demi-journée à Siargao. Nous avons notre vol pour Manille en début d&apos;après-midi. Il nous reste peu de temps ici, mais suffisamment pour pouvoir en profiter à fond. Nous chevauchons notre scooter et c&apos;est parti.</p>
             <p>En dehors des Island hoppings et du surf, il y a aussi de <strong>nombreuses activités et lieux à découvrir sur l&apos;île. </strong></p>
             <p>On le redit, mais <strong>il se dégage vraiment à Siargao une atmosphère unique, autant par son côté relaxant et survolté à la fois, que par sa beauté sauvage et son authenticité.</strong> Siargao est un vrai coup de cœur pour nous et vous charmera à coup sûr. Rien que de se balader en scooter à travers cette île est un réel plaisir. Les paysages sont juste magnifiques.</p>
             <h4>⧐ Coconut tree view &amp; la Palm road</h4>
@@ -877,7 +877,7 @@ export default function PhilippinesPage() {
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
-                <p><strong>Il n&apos;y a pas de vaccin obligatoire pour se rendre aux Philippines,</strong> mais certains sont tout de même recommandés : tétanos diphtérie poliomyélite (DTP), hépatites A et B, coqueluche, typhoïde et rage.</p>
+                <p><strong>Il n&apos;y a pas de vaccin obligatoire pour se rendre aux Philippines,</strong> mais certains sont tout de même recommandés : tétanos, diphtérie, poliomyélite (DTP), hépatites A et B, coqueluche, typhoïde et rage.</p>
               </li>
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
