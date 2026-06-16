@@ -524,13 +524,13 @@ export default function PalawanElNidoCoronPage() {
                   <p className="article-related-title-card">Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus</p>
                 </div>
               </a>
-              <a href="/road-trip-a-lanzarote" className="article-related-card">
+              <a href="/visiter-madrid-en-3-jours" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote.jpeg" alt="Lanzarote" className="article-related-img" />
+                  <img src="/madrid.webp" alt="Madrid" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Road trip à Lanzarote : l&apos;île aux 300 volcans</p>
+                  <p className="article-related-title-card">Visiter Madrid en 3 jours : notre guide complet !</p>
                 </div>
               </a>
             </div>
