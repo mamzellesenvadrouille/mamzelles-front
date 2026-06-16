@@ -114,15 +114,17 @@ export default function PalawanPortBartonPage() {
             <p>Très allongée, l'île s’étend sur 450 km de long et a une largeur moyenne de 50 km.</p>
             <p>De Puerto Princesa et son célèbre island hopping, à Sabang et sa rivière souterraine, en passant par San Vicente et Port Barton, pour finir en beauté sur la magnifique Modessa Island, nous vous racontons tout, étape par étape !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2026/06/69A5C79B-F820-4495-B9CA-87A3BEDC2A70.jpg" alt="Camping Palawan Port Barton" className="article-img-full" loading="lazy" />
-            <p>Après un long voyage depuis Nice, en passant par Londres et Beijing (Chine), nous arrivons à Manille vers 22h. Nous avions presque oublié cette sensation quand on sort de l’avion…</p>
-            <p>Chaleur + humidité, pas de doute, nous sommes bien aux Philippines. Récupération des sacs à dos et c’est parti !</p>
+            <p>Après un long voyage depuis Nice, en passant par Londres et Beijing (Chine), nous arrivons à Manille vers 22h. Nous avions presque oublié cette sensation quand on sort de l’avion… Chaleur + humidité, pas de doute, nous sommes bien aux Philippines. Récupération des sacs à dos et c’est parti !</p>
             <div className="article-day-header article-day-header-tight">
               <h3>Comment se rendre à Palawan ?</h3>
             </div>
             <p>Ne manquez pas notre autre article sur Palawan. Vous y trouverez des infos pratiques, notamment sur les aéroports et les transports à privilégier pour rejoindre facilement l’archipel.</p>
             <p>Partez ensuite à la découverte des merveilles d’El Nido et Coron, deux lieux exceptionnels aux panoramas à couper le souffle.</p>
             <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan Blog" className="article-img-full" loading="lazy" /></a>
-            <p><strong><a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-link">⋙ PALAWAN : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</a></strong></p>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À LIRE AUSSI</strong><p><a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-link">⋙ PALAWAN : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</a></p></div>
+            </div>
           </section>
 
           <section id="manille" className="article-section">
