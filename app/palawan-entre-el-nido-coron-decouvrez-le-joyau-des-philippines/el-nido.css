@@ -1,5 +1,5 @@
 /* ============================================
-   PHILIPPINES Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
+   PHILIPPINES ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Styles spÃƒÆ’Ã‚Â©cifiques ÃƒÆ’  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -421,7 +421,7 @@
 
 .article-tip p:last-child { margin-bottom: 0 !important; }
 
-.article-must { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 28px 0; }
+.article-must { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 28px 0 16px; }
 
 .article-must-icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; color: var(--gold); }
 
