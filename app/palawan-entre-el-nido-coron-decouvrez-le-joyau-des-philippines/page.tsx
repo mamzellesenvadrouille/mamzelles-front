@@ -151,8 +151,8 @@ export default function PalawanElNidoCoronPage() {
             <p>Au programme, balade dans la ville et découverte de <strong>la plage principale. Cette dernière est plutôt jolie mais déconseillée à la baignade</strong> à cause de l’huile provenant des bateaux qui pollue ce petit coin de paradis.</p>
             <p>Après avoir fait un peu le tour du centre ville, nous décidons de louer un scooter pour vadrouiller tranquillement dans les alentours.</p>
             <p>Louer un scooter à El Nido nous revient <strong>500 Php (8€50)</strong> la journée. Pour info, le litre d’essence est à environ <strong>1€20</strong>. <strong>Si vous êtes à l’aise pour conduire un 2 roues, alors n’hésitez pas, c’est vraiment l’idéal.</strong> Sinon, vous pouvez toujours vous déplacer en tuk-tuk.</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9679_jpg-1024x768.jpg" alt="El Nido City Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9679_jpg-1024x768.jpg" alt="El Nido City Palawan" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9671_jpg-1-1024x768.jpg" alt="El Nido Beach Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9676-1024x768.jpg" alt="El Nido Beach Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
@@ -218,12 +218,12 @@ export default function PalawanElNidoCoronPage() {
             <p>Une belle et longue plage, deux cabanes et un habitant qui confectionne un filet de pêche. Nous nous arrêtons environ 1h30 car c’est là que nous allons manger.</p>
             <p>Pas de bateau à l’horizon, nous avons la plage rien que pour nous.</p>
             <p>Pour la petite histoire, c’est sur cette plage qu’a été tournée l’émission Survivor America en 2012. Sur certains troncs d’arbres, tout à droite de la plage, on peut y voir des prénoms gravés, recouverts aujourd’hui de mousse végétale.</p>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9967-1-1024x768.jpg" alt="Tapiutan Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_20230203_130656_658-1-768x1024.jpeg" alt="Tapiutan Love Island Hopping El Nido Palawan Philippines" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2576-1024x768.jpg" alt="Tapiutan Island Love El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <div className="article-gallery-2">
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2576-1024x768.jpg" alt="Tapiutan Island Love El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2573-1-768x1024.jpg" alt="Tapiutan Island Hopping Survivor El Nido Palawan" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0053-2-1024x768.jpg" alt="Tapiutan Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
@@ -355,8 +355,8 @@ export default function PalawanElNidoCoronPage() {
             <p><strong>C’est la plus petite île de la journée, mais c’est celle où l’on croise le plus de monde ! </strong>En effet, cette très jolie plage attire autant les touristes que les familles philippines.</p>
             <p>Entre baignades et snorkeling dans une mer bleue transparente, dégustation de cocos et farniente dans le sable blanc poudreux, il faut dire qu'il y a tout pour y passer la journée. <strong>On a même nagé avec des tortues !</strong></p>
             <p>Après 1h passée sur place, il est temps de quitter ce petit paradis. Dans ce genre d’endroit, le temps passe malheureusement beaucoup trop vite !</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9813-1-1024x768.jpg" alt="Malcapuya Beach Island Hopping Coron Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9813-1-1024x768.jpg" alt="Malcapuya Beach Island Hopping Coron Palawan" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9812-1024x768.jpg" alt="Malcapuya Beach Island Hopping Coron" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0519-768x1024.jpg" alt="Coconuts Malcapuya Island Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
@@ -390,11 +390,11 @@ export default function PalawanElNidoCoronPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Si vous voulez la photo au point de vue, faites-la en arrivant — au retour, le temps peut être compté ! Un panneau limite d’ailleurs à 3 photos par personne. Patience en tout cas… la vue en vaut clairement la peine !</p></div>
             </div>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0607_jpg-1024x768.jpg" alt="Kayangan Lake Island Hopping Coron Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0613-2-768x1024.jpg" alt="Kayangan Lake Island Hopping Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0621-1024x768.jpg" alt="Kayangan Lake View Island Hopping Coron Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0621-1024x768.jpg" alt="Kayangan Lake View Island Hopping Coron Palawan" className="article-img-full" loading="lazy" />
             <h4>⧐ Vivian Beach</h4>
             <p>Une petite plage paradisiaque. Oui, encore une ! Désolées pour les répétitions, mais il n’y a pas d’autre mot ! <strong>Le bateau jette l'ancre à plusieurs mètres du bord. </strong></p>
             <p><strong>Pour rejoindre la plage, on se jette à l’eau.</strong> Clairement, on se croirait dans une piscine avec des poissons. Des petits poissons certes, mais avec des petites dents ! Vous vous êtes déjà fait mordre par un poisson ? On vous raconte notre anecdote...</p>
@@ -435,8 +435,8 @@ export default function PalawanElNidoCoronPage() {
             <h4>⧐ Cyc Beach</h4>
             <p>Nous terminons cet Ultimate Highlights Tour par la Cyc Beach. Une belle plage (encore une oui !) <strong>sur une petite île près de Coron Island.</strong> Cette île est gratuite, du coup <strong>elle attire beaucoup de familles philippines.</strong> De plus, l’eau est peu profonde, c’est parfait pour les enfants. Donc vous l’aurez compris, nous sommes loin d’être seules.</p>
             <p>Ici aussi c’est un <strong>bon spot pour nager au milieu des poissons, </strong>alors certains se laissent tenter par du snorkeling pour terminer cette journée. Pour nous, assez de nage pour aujourd’hui, on profite de la plage et on s’aventure dans la mangrove.</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3152-1024x768.jpg" alt="Cyc Beach Mangrove Coron" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3152-1024x768.jpg" alt="Cyc Beach Mangrove Coron" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0744-1024x768.jpg" alt="Cyc Beach Coron" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3694-768x1024.jpeg" alt="Cyc Beach Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
