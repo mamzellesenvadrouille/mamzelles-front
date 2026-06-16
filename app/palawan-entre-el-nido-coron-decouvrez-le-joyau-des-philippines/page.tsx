@@ -34,7 +34,7 @@ export default function PalawanElNidoCoronPage() {
         <img className="hero-bg" src="/El-Nido-Coron.webp" alt="Palawan : lagons turquoise d'El Nido et îles de Coron" style={{objectPosition: 'center 78%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>Palawan<br /><em>Entre El Nido &amp; Coron, le joyau des Philippines</em></h1>
+          <h1>Palawan<br /><em>El Nido &amp; Coron, le joyau des Philippines</em></h1>
           <div className="hero-rule" />
           <p className="hero-desc">De ses lagons turquoise à El Nido<br className="mobile-hero-break" /> aux récifs spectaculaires de Coron, plongez dans le joyau des Philippines.</p>
         </div>
@@ -82,7 +82,7 @@ export default function PalawanElNidoCoronPage() {
           <div className="article-cdcr-item"><span className="article-cdcr-label">Notre île coup de cœur</span><span className="article-cdcr-value">→ Coron &amp; ses lagons</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">Le spot le plus incroyable</span><span className="article-cdcr-value">→ Le Twin Lagoon</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">Le moment le plus magique</span><span className="article-cdcr-value">→ Le sunset à Corong Corong</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">À tester<br className="tablet-only-br" />sans hésiter</span><span className="article-cdcr-value">→ L&apos;island hopping en speed boat</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">À tester<br className="tablet-only-br" /> sans hésiter</span><span className="article-cdcr-value">→ L&apos;island hopping en speed boat</span></div>
         </div>
       </div>
 
