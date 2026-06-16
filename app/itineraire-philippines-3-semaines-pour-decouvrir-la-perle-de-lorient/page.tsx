@@ -36,7 +36,7 @@ export default function PhilippinesPage() {
         <div className="hero-content">
           <h1>Itinéraire Philippines<br /><em>3 semaines pour découvrir la perle de l&apos;Orient</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Notre itinéraire détaillé pour explorer les Philippines<br className="mobile-hero-break" /> en 3 semaines, entre îles de rêve, rizières en terrasse, cascades<br className="tablet-only-br" /> et rencontres inoubliables.</p>
+          <p className="hero-desc">Notre itinéraire détaillé pour explorer les Philippines<br className="mobile-hero-break" /><br className="tablet-only-br" /> en 3 semaines,<br className="desktop-only-br" /> entre îles de rêve, rizières en terrasse,<br className="tablet-only-br" /> cascades et rencontres inoubliables.</p>
         </div>
       </section>
 

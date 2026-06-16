@@ -8,9 +8,11 @@
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 45vh !important; min-height: 280px !important; }
   .hero-article .hero-content { padding: 0 24px 36px !important; }
-  .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 19px !important; white-space: normal !important; }
+  .hero-article .hero-content h1 { font-size: 32px !important; }
+  .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 0.6em !important; white-space: normal !important; }
   .mobile-hero-break { display: inline; }
   .tablet-only-br { display: none; }
+  .desktop-only-br { display: none; }
   .article-philippines .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
   .article-day-header h2 { font-size: 32px !important; }
   .article-philippines .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; }
@@ -24,11 +26,13 @@
   .hero-article .hero-bg { object-position: center 70% !important; }
   .tablet-only-br { display: inline; }
   .mobile-hero-break { display: none; }
+  .desktop-only-br { display: none; }
 }
 
 @media (min-width: 1025px) {
   .tablet-only-br { display: none; }
   .mobile-hero-break { display: none; }
+  .desktop-only-br { display: inline; }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
