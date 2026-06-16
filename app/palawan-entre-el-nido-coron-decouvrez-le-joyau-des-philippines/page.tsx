@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines' },
   openGraph: {
     title: "Palawan : Entre El Nido & Coron, découvrez le joyau des Philippines !",
-    description: 'De ses lagons turquoise à El Nido aux récifs spectaculaires de Coron, plongez dans le joyau des Philippines.',
+    description: 'De ses lagons turquoise à El Nido aux récifs spectaculaires de Coron,<br className="mobile-hero-break" /> plongez dans le joyau des Philippines.',
     url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/El-Nido-Coron.webp', width: 1920, height: 1080 }],
@@ -36,7 +36,7 @@ export default function PalawanElNidoCoronPage() {
         <div className="hero-content">
           <h1>Palawan<br /><em>El Nido &amp; Coron, le joyau des Philippines</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">De ses lagons turquoise à El Nido<br className="mobile-hero-break" /> aux récifs spectaculaires de Coron, plongez dans le joyau des Philippines.</p>
+          <p className="hero-desc">De ses lagons turquoise à El Nido<br className="mobile-hero-break" /> aux récifs spectaculaires de Coron,<br className="mobile-hero-break" /> plongez dans le joyau des Philippines.</p>
         </div>
       </section>
 
