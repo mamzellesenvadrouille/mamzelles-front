@@ -31,12 +31,12 @@ export default function PalawanPortBartonPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2026/06/69A5C79B-F820-4495-B9CA-87A3BEDC2A70.jpg" alt="Palawan : Puerto Princesa, Port Barton et Modessa Island" style={{objectPosition: 'center 65%'}} />
+        <img className="hero-bg" src="/Puerto-Princesa-Port-Barton.webp" alt="Palawan : Puerto Princesa, Port Barton et Modessa Island" style={{objectPosition: 'center 65%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Palawan<br /><em>De Puerto Princesa à Port Barton</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Un mois sur l&apos;île de tous les superlatifs,<br className="mobile-hero-break" /> de Puerto Princesa<br className="desktop-tablet-br" /> à Modessa Island, loin des sentiers battus.</p>
+          <p className="hero-desc">Un mois sur l&apos;île de tous les superlatifs,<br className="mobile-hero-break" /> de Puerto Princesa<br className="desktop-tablet-br" /> à Modessa Island,<br className="mobile-hero-break" /> loin des sentiers battus.</p>
         </div>
       </section>
 
@@ -111,7 +111,7 @@ export default function PalawanPortBartonPage() {
             <p>Après un premier voyage à travers les Philippines, nous avons choisi, pour notre deuxième séjour, de consacrer un mois entier à Palawan, cette île incroyable de la mer de Sulu, dans le Sud-ouest du pays.</p>
             <p>Très allongée, l'île s’étend sur 450 km de long et a une largeur moyenne de 50 km.</p>
             <p>De Puerto Princesa et son célèbre island hopping, à Sabang et sa rivière souterraine, en passant par San Vicente et Port Barton, pour finir en beauté sur la magnifique Modessa Island, nous vous racontons tout, étape par étape !</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_8189-2-1024x768.jpg" alt="Camping Palawan Port Barton" className="article-img-full" loading="lazy" />
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2026/06/69A5C79B-F820-4495-B9CA-87A3BEDC2A70.jpg" alt="Camping Palawan Port Barton" className="article-img-full" loading="lazy" />
             <p>Après un long voyage depuis Nice, en passant par Londres et Beijing (Chine), nous arrivons à Manille vers 22h. Nous avions presque oublié cette sensation quand on sort de l’avion…</p>
             <p>Chaleur + humidité, pas de doute, nous sommes bien aux Philippines. Récupération des sacs à dos et c’est parti !</p>
             <div className="article-day-header article-day-header-tight">
