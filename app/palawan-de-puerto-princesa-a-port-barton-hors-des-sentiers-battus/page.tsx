@@ -80,9 +80,9 @@ export default function PalawanPortBartonPage() {
         </div>
         <div className="article-cdcr-grid">
           <div className="article-cdcr-item"><span className="article-cdcr-label">Notre étape coup de cœur</span><span className="article-cdcr-value">→ Modessa Island</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">Le spot le plus incroyable</span><span className="article-cdcr-value">→ White Beach à Port Barton</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Le spot le plus incroyable</span><span className="article-cdcr-value">→ Le viewpoint de San Vicente</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">Le moment le plus magique</span><span className="article-cdcr-value">→ Le sunset à Port Barton</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">À tester<br className="tablet-only-br" /> sans hésiter</span><span className="article-cdcr-value">→ L&apos;island hopping privé</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">À tester<br className="tablet-only-br" /> sans hésiter</span><span className="article-cdcr-value">→ Le kayak jusqu&apos;à Coconut Beach</span></div>
         </div>
       </div>
 
