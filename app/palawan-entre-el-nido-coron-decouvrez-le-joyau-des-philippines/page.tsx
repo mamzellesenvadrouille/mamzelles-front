@@ -189,7 +189,7 @@ export default function PalawanElNidoCoronPage() {
 
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Pensez à prendre un sac waterproof, des chaussures d'eau et de la crème solaire. Et si vous hésitez entre bangka et speed boat : on vous recommande clairement le speed boat !</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>Si vous hésitez entre bangka et speed boat : on vous recommande clairement le speed boat ! Pensez aussi à prendre un sac waterproof, des chaussures d'eau et de la crème solaire.</p></div>
             </div>
             <h4>⧐ Island hopping avec « La Pêcheuse »</h4>
             <p>Nous avons choisis <strong><a href="https://www.lapecheuse.com/el-nido-tours" target="_blank" rel="noopener noreferrer" className="article-link">« La Pêcheuse »</a></strong>. Nous les avons contactés via WhatsApp pour réserver notre place sur le bateau : +63 961 180 2992. Un acompte vous est demandé, le reste étant à payer avant d’embarquer. Sachez qu’il y a également une taxe d’éco-tourisme de <strong>200 Php (3€20)</strong> par personne à payer.</p>
