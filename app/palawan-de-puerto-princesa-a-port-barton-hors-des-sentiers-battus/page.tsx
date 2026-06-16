@@ -129,7 +129,7 @@ export default function PalawanPortBartonPage() {
 
           <section id="manille" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Arrivée à MANILLE</h2>
+              <h2>📍 Arrivée à Manille</h2>
             </div>
             <p>Nous avons pris un hôtel à 10 minutes de l’aéroport car notre prochain vol est le lendemain vers 13h. Pour 30€ la nuit, petit-déjeuner compris, l'<strong><a href="https://www.booking.com/hotel/ph/achievers-airport.fr.html?aid=318615&amp;label=New_French_FR_FR_21427170145-Q3I4aklQ%2AijetxxC7ZKyaAS217274679050%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=3063370&amp;dest_type=hotel&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1741629047&amp;srpvid=befc7d78f49100c5&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Achievers Airport Hotel</a></strong> est top. Si, comme nous, vous êtes juste de passage pour une nuit à Manille, nous vous recommandons vivement cet hôtel. Il est possible de vous arranger avec eux pour organiser les transferts aéroport &lt;—&gt; hôtel, qui sont gratuits.</p>
             <p>Demain, c'est donc direction Puerto Princesa, la capitale de Palawan. 300,000 habitants sur 2,381 km², c’est l’une des plus grandes villes des Philippines en termes de superficie.</p>
@@ -138,7 +138,7 @@ export default function PalawanPortBartonPage() {
 
           <section id="puerto-princesa" className="article-section">
             <div className="article-day-header">
-              <h2>📍 PUERTO PRINCESA, la porte d'entrée de Palawan</h2>
+              <h2>📍 Puerto Princesa, la porte d'entrée de Palawan</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -283,7 +283,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
 
           <section id="sabang" className="article-section">
             <div className="article-day-header">
-              <h2>📍 SABANG &amp; sa rivière souterraine</h2>
+              <h2>📍 Sabang &amp; sa rivière souterraine</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -386,7 +386,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
 
           <section id="port-barton" className="article-section">
             <div className="article-day-header">
-              <h2>📍 PORT BARTON, un paradis encore préservé</h2>
+              <h2>📍 Port Barton, un paradis encore préservé</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -578,7 +578,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
 
           <section id="san-vicente" className="article-section">
             <div className="article-day-header">
-              <h2>📍 SAN VICENTE &amp; ses secrets encore bien gardés</h2>
+              <h2>📍 San Vicente &amp; ses secrets encore bien gardés</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -758,7 +758,7 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
 
           <section id="retour-port-barton" className="article-section">
             <div className="article-day-header">
-              <h2>📍 De retour à PORT BARTON</h2>
+              <h2>📍 De retour à Port Barton</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -848,7 +848,7 @@ Via le site <a href="https://www.agoda.com/fr-fr/?site_id=1922882&amp;tag=7e7df9
 
           <section id="roxas" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Welcome to ROXAS !</h2>
+              <h2>📍 Welcome to Roxas !</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <h3>Roxas, une petite ville surprenante !</h3>
@@ -877,7 +877,7 @@ Via le site <a href="https://www.agoda.com/fr-fr/?site_id=1922882&amp;tag=7e7df9
 
           <section id="modessa" className="article-section">
             <div className="article-day-header">
-              <h2>📍 MODESSA ISLAND ou le paradis sur Terre !</h2>
+              <h2>📍 Modessa Island ou le paradis sur Terre !</h2>
             </div>
             <p>Réveil matinal, on est tellement excitées ! Direction le point de rendez-vous.</p>
             <p>Il est quasiment midi quand on embarque sur une petite bangka, qui nous conduit à une autre bien plus grande. Du coup, en pleine mer, changement de bateau en mode Filipino style !</p>
@@ -964,7 +964,7 @@ Via le site <a href="https://www.agoda.com/fr-fr/?site_id=1922882&amp;tag=7e7df9
 
           <section id="au-revoir" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Bye bye PALAWAN. Ce n'est qu'un au revoir...</h2>
+              <h2>📍 Bye bye Palawan. Ce n'est qu'un au revoir...</h2>
             </div>
             <p>Après un bon dernier petit-déjeuner, il est temps de quitter ce petit paradis perdu. Retour à Roxas en bangka et direction la <strong>terminal station</strong> en tuk-tuk pour prendre un van public.</p>
             <p>Ce matin, on a le cœur lourd… On sent particulièrement arriver la fin de notre voyage.</p>
@@ -1010,7 +1010,7 @@ Via le site <a href="https://www.agoda.com/fr-fr/?site_id=1922882&amp;tag=7e7df9
 
           <section id="itineraire" className="article-section">
             <div className="article-day-header">
-              <h2>➾ AUTRE ITINÉRAIRE DE 3 SEMAINES AUX PHILIPPINES</h2>
+              <h2>➾ Autre itinéraire de 3 semaines aux Philippines</h2>
             </div>
             <p>Si vous souhaitez découvrir un autre <strong>itinéraire de 3 semaines</strong> à travers les Philippines et trouver toutes les infos pour préparer votre voyage (formalités, santé, météo, etc.), <strong>n'hésitez pas à lire cet article</strong>, on vous partage tout !</p>
             <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Les Philippines Blog" className="article-img-full" loading="lazy" /></a>
