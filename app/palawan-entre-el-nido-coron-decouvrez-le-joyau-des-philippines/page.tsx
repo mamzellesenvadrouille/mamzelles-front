@@ -479,7 +479,7 @@ export default function PalawanElNidoCoronPage() {
 
           <section id="itineraire" className="article-section">
             <div className="article-day-header">
-              <h2>➾ Itinéraire de 3 semaines aux Philippines</h2>
+              <h2>Itinéraire de 3 semaines aux Philippines</h2>
             </div>
             <p>Si vous souhaitez découvrir notre <strong>itinéraire complet de 3 semaines</strong> à travers les Philippines et suivre toutes nos aventures, <strong>n&apos;hésitez pas à lire notre article…</strong> On vous partage tout !</p>
             <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Les Philippines Blog" className="article-img-full" loading="lazy" /></a>
@@ -487,9 +487,9 @@ export default function PalawanElNidoCoronPage() {
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À lire aussi</strong><p><a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-link">⋙ Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient !</a></p></div>
             </div>
-            <p><em><strong>Nous espérons que notre article sur Palawan vous aura plu et qu&apos;il vous inspirera pour votre prochain voyage !</strong></em></p>
-            <p><em><strong>Si vous avez des questions ou que vous souhaitez nous partager un retour d&apos;expérience, n&apos;hésitez pas à nous laisser un commentaire, à nous contacter via le <a href="/formulaire-de-contact" className="article-link">formulaire de contact</a> ou notre compte <a href="https://www.instagram.com/mamzellesenvadrouille/" target="_blank" rel="noopener noreferrer" className="article-link">Instagram</a>.</strong></em></p>
-            <p><em><strong>Nous nous ferons un plaisir de vous lire et de vous répondre !</strong></em></p>
+
+
+
           </section>
 
           <section className="article-comments-section">
