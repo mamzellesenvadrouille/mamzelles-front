@@ -388,7 +388,7 @@ export default function PalawanElNidoCoronPage() {
             <p>On vous avoue qu'à ce moment précis, on se dit : « vraiment, on est en train de faire la queue pour une photo là ??! ».</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>On ne vous cache pas qu’il y a de la queue au point de vue — un panneau limite même à 3 photos par personne. Patience… la vue en vaut clairement la peine !</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>Si vous voulez la photo au point de vue, faites-la en arrivant — au retour, le temps peut être compté ! Un panneau limite d’ailleurs à 3 photos par personne. Patience en tout cas… la vue en vaut clairement la peine !</p></div>
             </div>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0607_jpg-1024x768.jpg" alt="Kayangan Lake Island Hopping Coron Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
