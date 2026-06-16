@@ -95,7 +95,7 @@ export default function PalawanElNidoCoronPage() {
             <ol className="article-toc-list">
               <li><a href="#el-nido">📍 El Nido &amp; l&apos;archipel de Bacuit</a></li>
               <li><a href="#coron">📍 Coron &amp; les îles Calamian</a></li>
-              <li><a href="#itineraire">➾ Notre itinéraire de 3 semaines aux Philippines</a></li>
+              <li><a href="#itineraire">Notre itinéraire de 3 semaines aux Philippines</a></li>
             </ol>
           </nav>
 
