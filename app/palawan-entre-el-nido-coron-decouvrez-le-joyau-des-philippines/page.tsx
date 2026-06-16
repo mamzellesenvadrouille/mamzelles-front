@@ -187,8 +187,8 @@ export default function PalawanElNidoCoronPage() {
             <p>Vous avez la possibilité d’embarquer à bord d’une <strong>bangka, c’est le bateau traditionnel. Il n’est pas très rapide et peut transporter jusqu’à 25 personnes. </strong>Pour les excursions, <strong>les bateaux partent généralement à 9h</strong> et vous emmèneront faire le tour que vous aurez choisi. Selon le tour A, B, C ou D, comptez entre <strong>1200 Php (21,50€)</strong> et <strong>1600 Php (27€)</strong> par personne, repas compris.</p>
             <p>Si comme nous, vous n'avez qu'une journée et que vous voulez éviter la foule et les embouteillages de bateaux, <strong>le meilleur choix est le speed boat.</strong> Les speed boats ne suivent pas les bangkas, donc on ne se retrouve pas tous au même endroit, au même moment. Et surtout, on est <strong>seulement 8 sur le bateau,</strong> c'est quand même plus agréable que de se retrouver à 25 ! Le tour n'est pas vraiment défini, le capitaine s'adapte en fonction de la météo, du vent et du monde.</p>
 
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Si vous hésitez entre bangka et speed boat : on vous recommande clairement le speed boat ! Pensez aussi à prendre un sac waterproof, des chaussures d'eau et de la crème solaire.</p></div>
             </div>
             <h4>⧐ Island hopping avec « La Pêcheuse »</h4>
@@ -319,8 +319,8 @@ export default function PalawanElNidoCoronPage() {
             <p>Petit déjeuner avalé, nous attendons <strong>le van qui passe nous récupérer entre 8h et 8h30.</strong></p>
             <p>Direction le port. Le van s’arrête en route pour récupérer d’autres personnes. Arrivés sur place, nous sommes répartis sur les bateaux. <strong>Nous sommes une dizaine sur le nôtre. </strong>Des philippins vendent des bouteilles d’eau, des masques, des tubas, de la crème solaire…</p>
             <p>D'ailleurs, petite anecdote : nous avons croisé un couple qui a acheté une crème solaire à l'une de ces personnes. Ils se sont tartinés toute la journée… et ont fini brûlé comme jamais !</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Méfiez-vous des cosmétiques vendus à la sauvette sur les bateaux ou les plages : on ne sait pas toujours ce qu'ils contiennent. Achetez votre protection solaire avant de partir et ré-appliquez très régulièrement, on brûle vite ici !</p></div>
             </div>
             <h4>⧐ Bulalacao Island</h4>
@@ -363,8 +363,8 @@ export default function PalawanElNidoCoronPage() {
             <p>Il est malheureusement temps de rejoindre Busuanga Island, le port de Coron. Nous avons passé une journée inoubliable. Il y avait <strong>comme un petit air des Maldives ou de la Polynésie</strong> dans cette journée.</p>
             <p>Demain sera encore une journée bien remplie. On ne va pas veiller bien tard, on est déjà KO.</p>
             <p>Le soir, nous mangeons au <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g729733-d2646532-Reviews-Santino_s_Grill-Coron_Busuanga_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Santino's Grill</a></strong>, un joli restaurant tout en bois et bambou, à seulement 2 minutes à pied de l'hôtel. Leur spécialité est la viande. On y a très bien mangé, les plats étaient copieux, et le rapport qualité / prix imbattable !</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>À Coron City comme à El Nido, les bonnes adresses se remplissent vite : pensez à réserver si vous voulez dîner au Santino's Grill ou au Sip Sunset Lounge &amp; Bar. Ça vous évitera la déception une fois sur place.</p></div>
             </div>
             <div className="article-day-header article-day-header-tight">
@@ -386,8 +386,8 @@ export default function PalawanElNidoCoronPage() {
             <p><strong>De l'autre côté se trouve le lac.</strong> Nous continuons le chemin qui descend pour le rejoindre. L'eau est très belle. On se laisse tenter par un petit plouf dans le lac.</p>
             <p>Pourtant, il n’y a rien de dangereux à partir du moment où vous savez nager. Nous rebroussons chemin et allons faire la queue pour la photo.</p>
             <p>On vous avoue qu'à ce moment précis, on se dit : « vraiment, on est en train de faire la queue pour une photo là ??! ».</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Si vous voulez la photo au point de vue, faites-la en arrivant — au retour, le temps peut être compté ! Un panneau limite d’ailleurs à 3 photos par personne. Patience en tout cas… la vue en vaut clairement la peine !</p></div>
             </div>
             <div className="article-gallery-2">
