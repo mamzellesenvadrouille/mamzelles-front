@@ -613,6 +613,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             
             
             
+            
             <div className="pb-resto-section">
               <h3 className="pb-resto-title">Où manger à Port Barton ?</h3>
             <div className="pb-resto-tier">
@@ -621,10 +622,6 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-tier-label">Budget</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://www.google.com/maps/place/?q=place_id:ChIJvX6uVf7WtTMRh6WRU6srGF0" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
-                <span className="pb-resto-card-name">Ausan Restaurant</span>
-                <span className="pb-resto-card-desc">Sur la plage, cuisine philippine fraîche et plats copieux dans un cadre paradisiaque</span>
-              </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJx7Q4GwDFtTMRBGi-5f6Gzgw" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Canteen Chariz John</span>
                 <span className="pb-resto-card-desc">Grill philippin, poissons et poulet frais sur braise — simple, local et savoureux</span>
@@ -641,6 +638,10 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJvX6uVf7WtTMRh6WRU6srGF0" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Ausan Restaurant</span>
+                <span className="pb-resto-card-desc">Sur la plage, cuisine philippine fraîche et plats copieux dans un cadre paradisiaque</span>
+              </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Kusinero del Barrio</span>
                 <span className="pb-resto-card-desc">Saveurs philippines maison dans un cadre décontracté</span>
