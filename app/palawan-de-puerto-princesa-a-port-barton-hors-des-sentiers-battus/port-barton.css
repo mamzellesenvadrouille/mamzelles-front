@@ -245,11 +245,21 @@
 .article-coup-de-coeur { background: var(--bg);
   border-top: 3px solid var(--gold);
   padding: 40px 52px;
-  border-bottom: 1px solid var(--line); }
+  border-bottom: 1px solid var(--line);
+  width: calc(100vw - 17px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
 
 @media (max-width: 768px) {
-  .article-coup-de-coeur { padding: 24px 20px; }
+  .article-coup-de-coeur { padding: 24px 20px; width: 100% !important; left: auto !important; transform: none !important; }
   .article-cdcr-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .article-coup-de-coeur { padding: 24px 40px; width: calc(100vw - 17px) !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; }
+  .article-cdcr-item { flex: 1 1 0 !important; }
+  .article-cdcr-value { white-space: normal !important; }
 }
 
 .hero-article { height: 70vh; }
@@ -713,7 +723,7 @@
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
 /* ============================================
-   BLOCS OÃƒÆ’Ã¢â€žÂ¢ MANGER ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Port Barton
+   BLOCS OÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ MANGER ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Port Barton
    ============================================ */
 
 .pb-resto-section {
