@@ -193,7 +193,7 @@ export default function PalawanPortBartonPage() {
 C’est parti, nous sommes 8 sur le bateau.</p>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Réservez vos îles via votre hôtel, c'est souvent moins cher qu'en agence, et le matériel (masque, tuba, chaussures d'eau) se loue pour quelques pesos avant le départ.</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>Réservez votre island hopping via votre hôtel, c'est souvent moins cher qu'en agence, et le matériel (masque, tuba, chaussures d'eau) se loue pour quelques pesos avant le départ.</p></div>
             </div>
             <h4>⧐ Starfish Island</h4>
             <p>Une petite île sympa où on peut observer des étoiles de mer. Il y a une zone délimitée pour les voir. En réalité, on n’en a pas vu une seule dans la zone indiquée... Mais surprise quand on a repris le bateau, on remarque qu’il y en avait des dizaines juste en dessous !</p>
@@ -252,7 +252,11 @@ C’est parti, nous sommes 8 sur le bateau.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0349-768x1024.jpg" alt="Tuk-tuk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Direction donc le centre commercial SM City Puerto Princesa, sous 35 degrés. Une fois à l’intérieur, c’est le choc thermique, il fait tellement froid ! Mais pourquoi les Philippins mettent-ils toujours les clim’ aussi fortes ?!! Quoi qu’il en soit, impossible de trouver des vêtements chauds malgré un nombre conséquent de boutiques. On décide alors de rebrousser chemin car on avait repéré en route quelques magasins qui, pour autant, ne payaient pas de mine.</p>
-            <p>Ce sont en fait des friperies, et c’est là finalement qu’on trouvera notre bonheur. On se refait une tenue complète pour même pas 10€ chacune ! Mission accomplie, youhou ! Ces friperies sont une belle découverte, on peut y trouver de vrais trésors. La plupart des Philippins achètent leurs vêtements dans ce genre de boutique, bien plus accessibles que celles dans les centres commerciaux.</p>
+                        <p>Ce sont en fait des friperies — et c’est là qu’on trouvera finalement notre bonheur. Mission accomplie, youhou !</p>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Puerto Princesa regorge de friperies où l’on peut faire de vraies affaires : une tenue complète pour moins de 10€ ! Vêtements chauds pour survivre aux clims glaciales des vans, ou belles fringues d’été… on peut y trouver de vrais trésors. La plupart des Philippins y achètent leurs vêtements, bien plus accessibles que dans les centres commerciaux.</p></div>
+            </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 4</span>
               <h3>Voyage = Relax</h3>
