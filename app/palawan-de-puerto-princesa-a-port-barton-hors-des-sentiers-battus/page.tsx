@@ -301,7 +301,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Kinabuchs Grill and Bar</span>
-                <span className="pb-resto-card-desc">Le classique incontournable : spécialités philippines et grande carte animée</span>
+                <span className="pb-resto-card-desc">Le classique de Puerto Princesa : spécialités philippines, crocodile au menu et ambiance de terrasse</span>
               </a>
               </div>
             </div>
