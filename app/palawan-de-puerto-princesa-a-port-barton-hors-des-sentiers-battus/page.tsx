@@ -791,10 +791,8 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1686-768x1024.jpg" alt="Surf San Vicente Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1684-768x1024.jpg" alt="The Turtle Beach &amp; Restaurant San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>On est trop bien. On profite de ce petit coin de paradis jusqu’en fin d’après-midi. Au vu de l’état de la route, on fait en sorte de rentrer avant la nuit, c’est bien plus prudent. Retour à l’hôtel vers 18h, le soleil est quasi-couché.</p>
-            
-            
-            <p>Ici, toutes les soirées se ressemblent mais sont uniques à la fois !</p>
+            <p>On est trop bien. On profite de ce petit coin de paradis jusqu’en fin d’après-midi. Au vu de l’état de la route, on fait en sorte de rentrer avant la nuit, c’est bien plus prudent.</p>
+            <p>Retour à l’hôtel vers 18h, le soleil est quasi-couché. Ici, toutes les soirées se ressemblent mais sont uniques à la fois !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1712-768x1024.jpg" alt="Sunset coconuts San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2781-768x1024.jpg" alt="Sunset San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
