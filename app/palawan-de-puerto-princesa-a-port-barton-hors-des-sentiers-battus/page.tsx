@@ -475,8 +475,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0867-768x1024.jpg" alt="Village Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Ce matin, on a pris le temps. Les gens sont tellement sympas et ouverts aux rencontres, à la discussion. On a envie de parler avec tout le monde !</p>
-            <p>On est allées manger au <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d25345984-Reviews-Flow_Pool_Club-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Flow Bar</strong></a> le midi, un restaurant-bar piscine. Leurs burgers et leurs pizzas sont incroyables !</p>
-            <p>Pour info, ici vous avez la possibilité de commander un verre et de profiter de la piscine toute la journée si vous le souhaitez.</p>
+            <p>On est allées manger au <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d25345984-Reviews-Flow_Pool_Club-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Flow Bar</strong></a> le midi, un restaurant-bar piscine. Leurs burgers et leurs pizzas sont incroyables ! Pour info, vous avez la possibilité de commander un verre et de profiter de la piscine toute la journée si vous le souhaitez.</p>
             <p>Fin de journée sur la plage et coucher de soleil au <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d12553878-Reviews-Happy_Bar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Happy Bar</strong></a>, clairement le meilleur spot de la plage pour le sunset. L’endroit est vraiment agréable et les cocktails y sont très bons !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0925-768x1024.jpg" alt="Port Barton Puerto Princesa Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -491,10 +490,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             <h4>⧐ Comment se rendre aux célèbres plages de Port Barton ?</h4>
             <p>Pour rejoindre ces plages de rêve, il y a donc plusieurs solutions : par la route (davantage une piste ou un chemin de terre d’ailleurs !) en scooter et en tuk-tuk, ou par la mer, en bangka et en kayak.</p>
             <p>Apparemment en kayak, avec de bons bras et peu de vent, il ne faut que 10 minutes pour accéder à Coconut Beach depuis la plage de Port Barton. Une idée qu’on garde en tête pour une prochaine fois, d'autant que notre hôtel a un kayak et qu’il est prêté gratuitement.</p>
-            <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Beaucoup d'hôtels à Port Barton prêtent gratuitement des kayaks : par mer calme, Coconut Beach est à une dizaine de minutes de pagaie depuis la plage du village. Une jolie alternative au tuk-tuk pour les bons bras !</p></div>
-            </div>
+            
             <p>À la base, nous voulions y aller en scooter, mais un couple qu’on a rencontré la veille nous a dit que c’était quand même assez galère, voire dangereux d’y aller en 2 roues.</p>
             <p>Comme il a plu ce matin, le chemin est encore plus « casse-gueule » que d’habitude ! Vu qu’on ne veut pas mourir à Port Barton, on choisit sans hésiter l’option tuk-tuk, et on a bien fait !</p>
             <p>On fait clairement du tuk-tuk en mode 4x4, le chemin est vraiment chaotique. On met entre 15 et 20 minutes pour rejoindre White Beach, la plage la plus éloignée. On payera 600 Php (9€60) Aller-Retour, notre chauffeur nous attendra à Coconut Beach.</p>
@@ -519,7 +515,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             <h4>⧐ Une fin de journée comme on les aime !</h4>
             <p>De retour à l'hôtel. Au programme, petite douche rapide avant de ressortir dîner.</p>
             <p>On avait repéré un petit restaurant qui ne paye pas de mine à première vue, mais toujours plein à craquer ! C’est le <a href="https://g.co/kgs/EYCKtmJ" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Star Apple Canteen</strong></a>. En devanture, un étal de viandes et de poissons frais nous fait saliver. Pour 250 Php (4€), accompagnement compris (riz et salade composée), on choisit son poisson, son morceau de poulet ou de porc (ribs) qu’ils grillent directement.</p>
-            <p>Un buffet avec des plats locaux, comme du poulet curry, du poulet adobo, et bien d'autres spécialités, est aussi proposé. Comptez seulement 120 Php (1€92) en moyenne par assiette. Un vrai coup de cœur ce petit restaurant ! On le recommande fortement pour son incroyable rapport qualité-prix.</p>
+            <p>Un buffet avec des plats locaux, comme du poulet curry, du poulet adobo, et bien d'autres spécialités, est aussi proposé. Comptez seulement 150 Php (2€40) en moyenne par assiette. Un vrai coup de cœur ce petit restaurant ! On le recommande fortement pour son incroyable rapport qualité-prix.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1085-768x1024.jpg" alt="Star Apple Canteen Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1090-768x1024.jpg" alt="Star Apple Canteen Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
