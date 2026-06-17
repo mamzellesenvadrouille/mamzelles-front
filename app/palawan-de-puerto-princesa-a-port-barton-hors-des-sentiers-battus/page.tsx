@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './port-barton.css';
 import Navbar from '../components/Navbar';
-import AnchorScroll from '../components/AnchorScroll';
 import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
 import CommentsList from '../components/CommentsList';
@@ -32,7 +31,6 @@ export default function PalawanPortBartonPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <AnchorScroll />
         <img className="hero-bg" src="/Puerto-Princesa-Port-Barton.webp" alt="Palawan : Puerto Princesa, Port Barton et Modessa Island" style={{objectPosition: 'center 65%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">

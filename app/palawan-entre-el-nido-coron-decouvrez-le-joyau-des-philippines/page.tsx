@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './el-nido.css';
 import Navbar from '../components/Navbar';
-import AnchorScroll from '../components/AnchorScroll';
 import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
 import CommentsList from '../components/CommentsList';
@@ -32,7 +31,6 @@ export default function PalawanElNidoCoronPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <AnchorScroll />
         <img className="hero-bg" src="/El-Nido-Coron.webp" alt="Palawan : lagons turquoise d'El Nido et îles de Coron" style={{objectPosition: 'center 78%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">

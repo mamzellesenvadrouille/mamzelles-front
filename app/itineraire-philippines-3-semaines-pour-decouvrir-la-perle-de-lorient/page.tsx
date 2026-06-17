@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './philippines.css';
 import Navbar from '../components/Navbar';
-import AnchorScroll from '../components/AnchorScroll';
 import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
 import CommentsList from '../components/CommentsList';
@@ -32,7 +31,6 @@ export default function PhilippinesPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <AnchorScroll />
         <img className="hero-bg" src="/Philippines.webp" alt="Philippines, îles paradisiaques aux eaux turquoise" style={{objectPosition: 'center 40%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
