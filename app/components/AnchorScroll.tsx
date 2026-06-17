@@ -9,7 +9,7 @@ export default function AnchorScroll() {
     setTimeout(() => {
       const el = document.querySelector(hash);
       if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }, 2000);
+    }, 300);
   }, []);
   return null;
 }
