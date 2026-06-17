@@ -635,11 +635,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <div className="pb-resto-grid">
               <a href="https://www.tripadvisor.fr/Restaurant_Review-g1215773-d13065559-Reviews-Ausan_Beach_Cottages_Restaurant-Port_Barton_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Ausan Restaurant</span>
-                <span className="pb-resto-card-desc">Sur la plage, cuisine philippine fraîche dans un cadre paradisiaque</span>
-              </a>
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g1215773-d12771437-Reviews-El_Busero_Inn-Port_Barton_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
-                <span className="pb-resto-card-name">El Busero Inn</span>
-                <span className="pb-resto-card-desc">Adresse conviviale au cœur du village, plats locaux généreux</span>
+                <span className="pb-resto-card-desc">Sur la plage, cuisine philippine fraîche et plats copieux dans un cadre paradisiaque</span>
               </a>
               <a href="https://www.facebook.com/KusineroDelBarrioPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Kusinero del Barrio</span>
@@ -647,7 +643,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJywaWWgDFtTMRFMd9PPpud1M" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Bus Café</span>
-                <span className="pb-resto-card-desc">Café-bar-karaoké unique en son genre, excellents cocktails et cuisine soignée — l’adresse la plus animée du village</span>
+                <span className="pb-resto-card-desc">Café-bar-karaoké unique en son genre, excellents cocktails et cuisine soignée</span>
               </a>
               </div>
             </div>
@@ -659,19 +655,19 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <div className="pb-resto-grid">
               <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d25345984-Reviews-Flow_Pool_Club-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Flow Bar</span>
-                <span className="pb-resto-card-desc">Restaurant-bar avec piscine, burgers et pizzas bluffants</span>
+                <span className="pb-resto-card-desc">Restaurant-bar avec piscine, pizzas et burgers délicieux — idéal pour une après-midi chill avec un verre</span>
               </a>
               <a href="https://www.facebook.com/HappyBarPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Happy Bar</span>
-                <span className="pb-resto-card-desc">Le meilleur spot sunset de la plage, cocktails soignés et couchers de soleil magiques</span>
+                <span className="pb-resto-card-desc">Bar de plage avec cocktails soignés et couchers de soleil, ambiance décontractée</span>
               </a>
               <a href="https://www.facebook.com/JungleBarPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Jungle Bar</span>
-                <span className="pb-resto-card-desc">Bar de plage dans la végétation, ambiance chill</span>
+                <span className="pb-resto-card-desc">Bar-resto niché dans la jungle à 20 min de tuk-tuk, vue imprenable sur la baie et cocktails maison</span>
               </a>
               <a href="https://www.facebook.com/MojitoBarPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mojito Bar</span>
-                <span className="pb-resto-card-desc">Spécialiste du mojito revisité, terrasse en bord de mer</span>
+                <span className="pb-resto-card-desc">Bar-resto dans la jungle, ambiance tropicale, mojitos excellents et cuisine soignée — à 5 min en tuk-tuk</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Marguerita Sunset Bar</span>
