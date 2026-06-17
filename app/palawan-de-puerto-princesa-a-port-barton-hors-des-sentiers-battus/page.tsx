@@ -651,7 +651,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <div className="pb-resto-grid">
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mai Tai</span>
-                <span className="pb-resto-card-desc">Bar de plage incontournable, happy hour au coucher du soleil — ambiance magique</span>
+                <span className="pb-resto-card-desc">Bar de plage avec jeux, excellents cocktails et beau spot sunset</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Marguerita Sunset Bar</span>
@@ -667,7 +667,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Beach Club</span>
-                <span className="pb-resto-card-desc"><span style={{color:"#c8956c"}}>♥</span> La plus belle table de Port Barton — cuisine raffinée et couchers de soleil inoubliables</span>
+                <span className="pb-resto-card-desc"><span style={{color:"#c8956c"}}>♥</span> Cuisine raffinée en bord de plage, cocktails remarquables et couchers de soleil inoubliables</span>
               </a>
               
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJywaWWgDFtTMRFMd9PPpud1M" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
