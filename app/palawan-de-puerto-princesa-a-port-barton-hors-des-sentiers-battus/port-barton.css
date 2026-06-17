@@ -1,5 +1,5 @@
 /* ============================================
-   PORT BARTON â€” Styles spÃ©cifiques Ã  l'article
+   PORT BARTON Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -363,7 +363,7 @@
 
 .sidebar-cta-text { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.7; font-weight: 300; margin-bottom: 20px; }
 
-.article-coup-de-coeur { background: #e8ddd3; padding: 12px 0 12px 80px; margin-top: 8px; width: 100vw; position: relative; left: 50%; transform: translateX(-50%); }
+.article-coup-de-coeur { background: #e8ddd3; padding: 12px 0 12px 80px; margin-top: 8px; width: calc(100vw - 17px); position: relative; left: 50%; transform: translateX(-50%); }
 
 .article-cdcr-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
 
@@ -390,11 +390,8 @@
   .budget-price { font-size: 22px !important; white-space: nowrap !important; }
   .article-coup-de-coeur { padding: 32px 30px; }
   .article-cdcr-grid { grid-template-columns: repeat(2, 1fr); }
-  .article-cdcr-value { white-space: nowrap !important; }
-  .article-cdcr-item:nth-child(1) { flex: 0.7 1 0 !important; }
-  .article-cdcr-item:nth-child(2) { flex: 1 1 0 !important; }
-  .article-cdcr-item:nth-child(3) { flex: 1.1 1 0 !important; }
-  .article-cdcr-item:nth-child(4) { flex: 1.3 1 0 !important; }
+  .article-cdcr-item { flex: 1 1 0 !important; }
+  .article-cdcr-value { white-space: normal !important; }
 }
 
 .article-cdcr-item:last-child { padding-right: 0; padding-left: 16px; }
