@@ -274,11 +274,9 @@ La chambre est très spacieuse. On a deux immenses lits rien que pour nous, c’
 On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir et de se prélasser au bord de l’eau.</p>
             <p>Après ce moment détente, on se prépare pour aller manger. On a repéré un petit restaurant méditerranéen à seulement 3 minutes à pied qui nous tente bien, le <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d16655425-Reviews-Bersian_Restaurant-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Bersian Restaurant</a></strong>. Effectivement, on s’est régalées.</p>
             <p>Il est temps d’aller se coucher. Demain, nous partons vers une nouvelle destination, on a trop hâte !</p>
-            <div className="article-day-header article-day-header-tight">
-              <h3>Où manger à Puerto Princesa ?</h3>
-            </div>
-
+            
             <div className="pb-resto-section">
+              <h3 className="pb-resto-title">Où manger à Puerto Princesa ?</h3>
             <div className="pb-resto-tier">
               <div className="pb-resto-tier-header">
                 <span className="pb-resto-tier-badge">€</span>
@@ -287,7 +285,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
               <div className="pb-resto-grid">
               <a href="https://share.google/hmh5oiAXeQ6PdgLXx" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Kobe's</span>
-                <span className="pb-resto-card-desc">Cuisine philippine familiale, portions généreuses — un sans-faute</span>
+                <span className="pb-resto-card-desc">Cuisine philippine familiale, portions généreuses</span>
               </a>
               <a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d16655425-Reviews-Bersian_Restaurant-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Bersian Restaurant</span>
@@ -307,7 +305,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
               </a>
               <a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d10693528-Reviews-Artisans-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Artisans</span>
-                <span className="pb-resto-card-desc">Plats frais et savoureux dans un cadre soigné — notre coup de cœur</span>
+                <span className="pb-resto-card-desc">Plats frais et savoureux dans un cadre soigné</span>
               </a>
               </div>
             </div>
@@ -407,11 +405,9 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0817-1-1024x768.jpg" alt="Beach Sabang Puerto Princesa" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0794-768x1024.jpg" alt="Buffle Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <div className="article-day-header article-day-header-tight">
-              <h3>Où manger à Sabang ?</h3>
-            </div>
-
+            
             <div className="pb-resto-section">
+              <h3 className="pb-resto-title">Où manger à Sabang ?</h3>
             <div className="pb-resto-tier">
               <div className="pb-resto-tier-header">
                 <span className="pb-resto-tier-badge">€</span>
@@ -615,11 +611,9 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1244-768x1024.jpg" alt="Exotic Island Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1114-768x1024.jpg" alt="Bangka Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <div className="article-day-header article-day-header-tight">
-              <h3>Où manger à Port Barton ?</h3>
-            </div>
-
+            
             <div className="pb-resto-section">
+              <h3 className="pb-resto-title">Où manger à Port Barton ?</h3>
             <div className="pb-resto-tier">
               <div className="pb-resto-tier-header">
                 <span className="pb-resto-tier-badge">€</span>
@@ -847,11 +841,9 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1552_jpg-768x1024.jpg" alt="Surf San Vicente Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1533-768x1024.jpg" alt="San Vicente Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <div className="article-day-header article-day-header-tight">
-              <h3>Où manger à San Vicente ?</h3>
-            </div>
-
+            
             <div className="pb-resto-section">
+              <h3 className="pb-resto-title">Où manger à San Vicente ?</h3>
             <div className="pb-resto-tier">
               <div className="pb-resto-tier-header">
                 <span className="pb-resto-tier-badge">€€</span>
