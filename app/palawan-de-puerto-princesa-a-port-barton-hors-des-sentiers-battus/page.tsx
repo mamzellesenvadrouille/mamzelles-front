@@ -680,7 +680,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Beach Club</span>
-                <span className="pb-resto-card-desc"><span style={{color:"#c8956c"}}>♥</span> Cuisine raffinée en bord de plage, cocktails remarquables et couchers de soleil inoubliables</span>
+                <span className="pb-resto-card-desc"><span style={{color:"#c8956c"}}>♥</span> Cuisine raffinée en bord de plage, cocktails remarquables — spot parfait pour le sunset</span>
               </a>
               </div>
             </div>
