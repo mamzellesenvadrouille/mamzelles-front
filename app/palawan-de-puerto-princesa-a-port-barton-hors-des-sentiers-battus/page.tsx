@@ -747,15 +747,16 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             <p>La descente est quand même beaucoup plus facile. De retour en bas, on fait un petit tour dans le village.</p>
             <p>On croise pas mal d’enfants du quartier, intrigués par notre présence, et très curieux de savoir ce qu’on fait par ici. On prend le temps d’échanger avec la petite bande. Entre chants, danses et parties de basket, on passe un super moment !</p>
             <h4>⧐ La vie locale à San Vicente</h4>
-            <p>On retourne à l’hôtel par la plage. On passe près des étals où sèche la pêche du jour au soleil. Aux Philippines, il est très commun d’acheter des sacs de poissons séchés.</p>
-            <p>Avec des techniques traditionnelles restées intactes, les locaux vivent et se nourrissent toujours de leur pêche.</p>
+            <p>On retourne à l’hôtel par la plage. On passe près des étals où sèche la pêche du jour au soleil. Aux Philippines, il est très commun d’acheter des sacs de poissons séchés. Avec des techniques traditionnelles restées intactes, les locaux vivent et se nourrissent toujours de leur pêche.</p>
+            <p>De retour à notre petite cabane sur la plage, on a à peine le temps de prendre une douche que le soleil commence déjà à se coucher...</p>
+            
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_PortBarton1-768x1024.jpg" alt="Poissons séchés San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1540-768x1024.jpg" alt="San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>De retour à notre petite cabane sur la plage, on a à peine le temps de prendre une douche que le soleil commence déjà à se coucher...</p>
-            <p>Il n’y a pas de restaurant à proximité, du coup on dîne à l’hôtel le soir.</p>
-            <p>Tous les plats sont préparés minute. Il y a souvent beaucoup d’attente pour être servies, mais c’est toujours délicieux !</p>
+            
+            <p>Il n’y a pas de restaurant à proximité, du coup on dîne à l’hôtel le soir. Tous les plats sont préparés minute. Il y a souvent beaucoup d’attente pour être servies, mais c’est toujours délicieux !</p>
+            
             <p>Après avoir observé un long moment les étoiles, on part se coucher. Demain, de nouvelles aventures nous attendent.</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 3</span>
@@ -790,9 +791,9 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1686-768x1024.jpg" alt="Surf San Vicente Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1684-768x1024.jpg" alt="The Turtle Beach &amp; Restaurant San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>On est trop bien. On profite de ce petit coin de paradis jusqu’en fin d’après-midi.</p>
-            <p>Au vu de l’état de la route, on fait en sorte de rentrer avant la nuit, c’est bien plus prudent.</p>
-            <p>Retour à l’hôtel vers 18h, le soleil est quasi-couché.</p>
+            <p>On est trop bien. On profite de ce petit coin de paradis jusqu’en fin d’après-midi. Au vu de l’état de la route, on fait en sorte de rentrer avant la nuit, c’est bien plus prudent. Retour à l’hôtel vers 18h, le soleil est quasi-couché.</p>
+            
+            
             <p>Ici, toutes les soirées se ressemblent mais sont uniques à la fois !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1712-768x1024.jpg" alt="Sunset coconuts San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -804,7 +805,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             </div>
             <p>Aujourd'hui, direction la <strong>Long Beach</strong> en scooter, avec pour objectif d’aller manger au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k" target="_blank" rel="noopener noreferrer" className="article-link">Club Agutaya</a></strong>.</p>
             <p>Mais surprise en arrivant, le restaurant est privatisé par l’équipe de production du <em>Survivor</em> Suédois. L'émission est actuellement en tournage sur la plage, à quelques centaines de mètres de là. On nous invite donc à revenir le lendemain.</p>
-            <p>On décide alors de continuer notre chemin. On tombe par hasard sur <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y?aid=356980&amp;label=gog235jc-1FCAsotAFCLHRoZS1lbGl6YWJldGgtcmVzb3J0LWFuZC12aWxsYXMtc2FuLXZpY2VudGUxSA1YA2hNiAEBmAENuAEHyAEN2AEB6AEB-AECiAIBqAIDuAKBkOW-BsACAdICJDlmYzUxMDEyLThiNTctNGIxZi1iNzcxLTg4NDNiNWNiYjRiMtgCBeACAQ&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742292998&amp;srpvid=0ef94841e3e10689&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">The Hotel Elizabeth</a></strong>. Pensées pour notre fourgon aménagé qui porte le même nom, on décide de s’y arrêter.</p>
+            <p>On décide alors de continuer notre chemin. On tombe par hasard sur <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y" target="_blank" rel="noopener noreferrer" className="article-link">The Hotel Elizabeth</a></strong>. Pensées pour notre fourgon aménagé qui porte le même nom, on décide de s’y arrêter.</p>
             <p>L'hôtel (davantage un complexe) est immense et en plein travaux. On nous accueille comme des princesses. On a même droit à un petit tour en voiturette. On nous installe au restaurant de la plage. Excepté le temps pluvieux, le cadre est parfait. Nous sommes les seules sur cette immense plage… enfin presque !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1047-1-768x1024.jpg" alt="The Hotel Elizabeth Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
