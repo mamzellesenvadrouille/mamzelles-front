@@ -1043,10 +1043,10 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             </div>
             <p>Une fois installées, nous partons explorer l’île. Il ne faut pas plus de 20 minutes pour faire tranquillement le tour. Les stigmates du typhon Odette sont encore visibles, notamment l'ancien club de plongée, partiellement détruit par la tempête.</p>
             <p>L’île est entourée d'une plage de sable blanc et bordée d’une mer limpide. On se sent tellement bien ici. On se sent comme seules au monde. C’est la déconnexion totale !</p>
-            <p>D’ailleurs, il n’y a pas d’électricité la journée. Elle fonctionne uniquement de 18h à 7h. Le Wi-Fi et le réseau cellulaire sont limités, autant vous dire qu’on profite pleinement de l'expérience insulaire.</p>
+            
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Sur Modessa Island, l'électricité ne fonctionne que de 18h à 7h : pensez à charger téléphones, appareils photo et batteries externes pendant la nuit. Et profitez-en pour décrocher complètement le reste de la journée !</p></div>
+              <div><strong>Bon à savoir</strong><p>Sur Modessa Island, l’électricité ne fonctionne que de 18h à 7h : pensez à charger téléphones, appareils photo et batteries externes pendant la nuit. Le Wi-Fi et le réseau cellulaire sont également limités — parfait pour profiter pleinement de l’expérience insulaire !</p></div>
             </div>
             <p>Pour la petite anecdote, sachez que s’il y a beaucoup de vent ou que le ciel est très couvert, il n’y a tout simplement pas de réseau dans de nombreux endroits du pays ! Les Philippins nous l’ont souvent répété, et ça s’est avéré chaque fois.</p>
             <div className="article-day-header article-day-header-tight">
