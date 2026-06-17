@@ -144,11 +144,12 @@ export default function PalawanPortBartonPage() {
               <span className="article-day-badge">Jour 1</span>
               <h3>De Manille à Puerto Princesa</h3>
             </div>
+            <p>Après un vol rapide d’1h30, nous arrivons à Puerto Princesa.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0328-768x1024.jpg" alt="Aéroport Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0330_jpg-768x1024.jpg" alt="Tuk-tuk Palawan Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Après un vol rapide d’1h30, nous arrivons à Puerto Princesa. Pour le transfert aéroport / hôtel, nous utilisons l’application <strong>RIDE</strong> qui est l’équivalent de <strong>GRAB</strong> à Manille et à Cebu. Du coup, pas de surprise, le prix est juste et fixe.</p>
+            
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Pour vos trajets en ville, téléchargez l'appli RIDE (l'équivalent local de GRAB) : les prix sont fixes et affichés à l'avance, fini les négociations à rallonge. On l'a utilisée partout à Puerto Princesa.</p></div>
@@ -159,8 +160,7 @@ export default function PalawanPortBartonPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0587-768x1024.jpg" alt="Puerto Pension Inn Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0358-768x1024.jpg" alt="Kinabuch Grill &amp; Bar Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Une fois installées, nous partons découvrir les alentours. Par hasard, en nous baladant, à plus ou moins 25 minutes à pied de notre hôtel, nous tombons sur <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d2155226-Reviews-Kinabuch_Grill_Bar-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Kinabuchs Grill and Bar</a></strong>. On se laisse tenter… Ils proposent une grande carte, le choix est difficile. Ici, vous pouvez goûter tout un tas de spécialités philippines. Amélie a testé le Beef Tagalog, de la viande de bœuf marinée dans une sauce incroyable aux oignons.</p>
-            <p>Ce sera Gambas pour Laurie. Les accompagnements sont à prendre à part. En se faisant plaisir (apéro compris), nous payons 20€ pour 2.</p>
+            <p>Une fois installées, nous partons découvrir les alentours. Par hasard, en nous baladant, à plus ou moins 25 minutes à pied de notre hôtel, nous tombons sur <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d2155226-Reviews-Kinabuch_Grill_Bar-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Kinabuchs Grill and Bar</a></strong>. On se laisse tenter… Ils proposent une grande carte, le choix est difficile. Ici, vous pouvez goûter tout un tas de spécialités philippines. Amélie a testé le Beef Tagalog, de la viande de bœuf marinée dans une sauce incroyable aux oignons. Ce sera Gambas pour Laurie. Les accompagnements sont à prendre à part. En se faisant plaisir (apéro compris), nous payons 20€ pour 2.</p>
             <p>Après s’être clairement remplies, on retourne à l'hôtel. On ne s’est pas encore remises du voyage, du coup, niveau fatigue, on est KO ! Alors, c'est dodo tôt pour nous ce soir.</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 2</span>
