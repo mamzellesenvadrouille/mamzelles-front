@@ -159,7 +159,7 @@ export default function PalawanPortBartonPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0587-768x1024.jpg" alt="Puerto Pension Inn Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0358-768x1024.jpg" alt="Kinabuch Grill &amp; Bar Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Une fois installées, nous partons découvrir les alentours. Par hasard, en nous baladant, à plus ou moins 25 minutes à pied de notre hôtel, nous tombons sur <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d2155226-Reviews-Kinabuch_Grill_Bar-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Kinabuchs Grill and Bar</a></strong>. On se laisse tenter… Ils proposent une grande carte, le choix est difficile. Ici, vous pouvez goûter tout un tas de spécialités philippines. Amélie a testé le Beef Tagalog, de la viande de bœuf marinée dans une sauce incroyable aux oignons. Ce sera Gambas pour Laurie. Les accompagnements sont à prendre à part. En se faisant plaisir (apéro compris), nous payons 20€ pour 2.</p>
+            <p>Une fois installées, nous partons découvrir les alentours. Par hasard, en nous baladant, à plus ou moins 25 minutes à pied de notre hôtel, nous tombons sur <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY" target="_blank" rel="noopener noreferrer" className="article-link">Kinabuchs Grill and Bar</a></strong>. On se laisse tenter… Ils proposent une grande carte, le choix est difficile. Ici, vous pouvez goûter tout un tas de spécialités philippines. Amélie a testé le Beef Tagalog, de la viande de bœuf marinée dans une sauce incroyable aux oignons. Ce sera Gambas pour Laurie. Les accompagnements sont à prendre à part. En se faisant plaisir (apéro compris), nous payons 20€ pour 2.</p>
             <p>Après s’être clairement remplies, on retourne à l'hôtel. On ne s’est pas encore remises du voyage, du coup, niveau fatigue, on est KO ! Alors, c'est dodo tôt pour nous ce soir.</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 2</span>
@@ -181,7 +181,7 @@ export default function PalawanPortBartonPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3256-768x1024.jpg" alt="Rue BM Beach Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Après ce moment agréable, loin du tumulte de la ville, nous retournons dans le centre-ville.</p>
-            <p>Pour le dîner, nous mangeons aux <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d10693528-Reviews-Artisans-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Artisans</a></strong>, une bonne adresse où l’on mange de bons plats frais et savoureux.</p>
+            <p>Pour le dîner, nous mangeons aux <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJR1rkzeZjtTMRLCOn0T2aPBQ" target="_blank" rel="noopener noreferrer" className="article-link">Artisans</a></strong>, une bonne adresse où l’on mange de bons plats frais et savoureux.</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 3</span>
               <h3>Island hopping à Puerto Princesa</h3>
@@ -228,7 +228,7 @@ C’est parti, nous sommes 8 sur le bateau.</p>
             <p>Cet Island hopping est bien moins fréquenté que ceux du Nord de Palawan (Coron &amp; El Nido), ce qui est plutôt agréable. Le fait qu’il y ait beaucoup moins de monde fait que nous avions les spots rien que pour nous ! Par contre, on ne vous le cache pas, même si c’était très sympa et très joli, c’est tout de même bien moins impressionnant que les Island hoppings de Coron et El Nido.</p>
             <h4>⧐ Baywalk, la promenade nocturne incontournable</h4>
             <p>Pour la soirée, petite balade et repas sur la <strong>Baywalk</strong> qui se situe à 3 minutes à pied de notre hôtel. Sur place, on découvre un petit marché, une grande promenade et plusieurs restaurants. L’endroit est très familial. Comme la plupart des enfants ici, il est possible de louer des petits vélos, des voiturettes, des tuk-tuks à pédales…</p>
-            <p>Pour le restaurant, notre choix (enfin celui de Laurie) s’est fait en fonction des poissons frais exposés sur les étals. On dînera donc au <strong><a href="https://share.google/hmh5oiAXeQ6PdgLXx" target="_blank" rel="noopener noreferrer" className="article-link">Kobe's</a></strong>. On vous le recommande vivement, on a tellement bien mangé !</p>
+            <p>Pour le restaurant, notre choix (enfin celui de Laurie) s’est fait en fonction des poissons frais exposés sur les étals. On dînera donc au <strong>Kobe's</strong>. On vous le recommande vivement, on a tellement bien mangé !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0530-1024x768.jpg" alt="Baywalk Puerto Princessa" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4929-768x1024.jpg" alt="Bike Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -271,7 +271,7 @@ C’est parti, nous sommes 8 sur le bateau.</p>
             <p>Avec son design contemporain et toutes ses œuvres d’art locales, le <strong><a href="https://www.booking.com/hotel/ph/canvas-boutique.fr.html?aid=318615&amp;label=New_French_FR_FR_21427176745-lf4RzVY0_AMET1LMhdKl_AS634186710868%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55639435822%3Atidsa-303472602395%3Alp9054964%3Ali%3Adec%3Adm%3Aag21427176745%3Acmp339479545&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=1531023&amp;dest_type=hotel&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1741710706&amp;srpvid=d503743715120611&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Canvas Boutique Hôtel</a></strong> est canon en tout cas.
 La chambre est très spacieuse. On a deux immenses lits rien que pour nous, c’est tout confort !
 On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir et de se prélasser au bord de l’eau.</p>
-            <p>Après ce moment détente, on se prépare pour aller manger. On a repéré un petit restaurant méditerranéen à seulement 3 minutes à pied qui nous tente bien, le <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d16655425-Reviews-Bersian_Restaurant-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Bersian Restaurant</a></strong>. Effectivement, on s’est régalées.</p>
+            <p>Après ce moment détente, on se prépare pour aller manger. On a repéré un petit restaurant méditerranéen à seulement 3 minutes à pied qui nous tente bien, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" rel="noopener noreferrer" className="article-link">Bersian Restaurant</a></strong>. Effectivement, on s’est régalées.</p>
             <p>Il est temps d’aller se coucher. Demain, nous partons vers une nouvelle destination, on a trop hâte !</p>
             
             <div className="pb-resto-section">
@@ -282,11 +282,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
                 <span className="pb-resto-tier-label">Budget</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://share.google/hmh5oiAXeQ6PdgLXx" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
-                <span className="pb-resto-card-name">Kobe's</span>
-                <span className="pb-resto-card-desc">Cuisine philippine familiale, portions généreuses</span>
-              </a>
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d16655425-Reviews-Bersian_Restaurant-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Bersian Restaurant</span>
                 <span className="pb-resto-card-desc">Petite adresse de rue, plats locaux savoureux à prix mini</span>
               </a>
@@ -298,11 +294,11 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d2155226-Reviews-Kinabuch_Grill_Bar-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Kinabuchs Grill and Bar</span>
                 <span className="pb-resto-card-desc">Le classique incontournable : spécialités philippines et grande carte animée</span>
               </a>
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d10693528-Reviews-Artisans-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJR1rkzeZjtTMRLCOn0T2aPBQ" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Artisans</span>
                 <span className="pb-resto-card-desc">Plats frais et savoureux dans un cadre soigné</span>
               </a>
@@ -413,7 +409,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
                 <span className="pb-resto-tier-label">Budget</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g3330116-d13730836-Reviews-La_Casa_in_Sabang-Sabang_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJkQWxQWORtTMRId-Qn5y1Yec" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">La Casa In Sabang</span>
                 <span className="pb-resto-card-desc">Adresse simple et authentique, parfaite après la rivière souterraine</span>
               </a>
@@ -425,7 +421,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://share.google/8kswns2x748VNNwXm" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJ7bLvQRmRtTMRGFxji_8Ngpo" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Red Turtle Restaurant</span>
                 <span className="pb-resto-card-desc">Vue sur la mer, cuisine philippine soignée — la meilleure adresse du village</span>
               </a>
@@ -475,7 +471,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0867-768x1024.jpg" alt="Village Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Ce matin, on a pris le temps. Les gens sont tellement sympas et ouverts aux rencontres, à la discussion. On a envie de parler avec tout le monde !</p>
-            <p>On est allées manger au <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d25345984-Reviews-Flow_Pool_Club-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Flow Bar</strong></a> le midi, un restaurant-bar piscine. Leurs burgers et leurs pizzas sont incroyables ! Pour info, vous avez la possibilité de commander un verre et de profiter de la piscine toute la journée si vous le souhaitez.</p>
+            <p>On est allées manger au <a href="https://www.google.com/maps/place/?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Flow Bar</strong></a> le midi, un restaurant-bar piscine. Leurs burgers et leurs pizzas sont incroyables ! Pour info, vous avez la possibilité de commander un verre et de profiter de la piscine toute la journée si vous le souhaitez.</p>
             <p>Fin de journée sur la plage et coucher de soleil au <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d12553878-Reviews-Happy_Bar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Happy Bar</strong></a>, clairement le meilleur spot de la plage pour le sunset. L’endroit est vraiment agréable et les cocktails y sont très bons !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0925-768x1024.jpg" alt="Port Barton Puerto Princesa Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -617,7 +613,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-tier-label">Budget</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://www.facebook.com/StarAppleCanteenPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJYas4sEbFtTMRdlVfkkXG06s" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Star Apple Canteen</span>
                 <span className="pb-resto-card-desc">Étal de poissons et viandes frais : on choisit sa pièce, riz inclus — inoubliable</span>
               </a>
@@ -633,11 +629,11 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g1215773-d13065559-Reviews-Ausan_Beach_Cottages_Restaurant-Port_Barton_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJvX6uVf7WtTMRh6WRU6srGF0" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Ausan Restaurant</span>
                 <span className="pb-resto-card-desc">Sur la plage, cuisine philippine fraîche et plats copieux dans un cadre paradisiaque</span>
               </a>
-              <a href="https://www.facebook.com/KusineroDelBarrioPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Kusinero del Barrio</span>
                 <span className="pb-resto-card-desc">Saveurs philippines maison dans un cadre décontracté</span>
               </a>
@@ -653,19 +649,19 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-tier-label">Bars & restos de plage</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d25345984-Reviews-Flow_Pool_Club-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Flow Bar</span>
                 <span className="pb-resto-card-desc">Restaurant-bar avec piscine, pizzas et burgers délicieux — idéal pour une après-midi chill avec un verre</span>
               </a>
-              <a href="https://www.facebook.com/HappyBarPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Happy Bar</span>
                 <span className="pb-resto-card-desc">Bar de plage avec cocktails soignés et couchers de soleil, ambiance décontractée</span>
               </a>
-              <a href="https://www.facebook.com/JungleBarPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5zlib7vEtTMRS9KJ2L8ZFCc" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Jungle Bar</span>
                 <span className="pb-resto-card-desc">Bar-resto niché dans la jungle à 20 min de tuk-tuk, vue imprenable sur la baie et cocktails maison</span>
               </a>
-              <a href="https://www.facebook.com/MojitoBarPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJ1TtGrtfEtTMRFfbhGIiYYBI" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mojito Bar</span>
                 <span className="pb-resto-card-desc">Bar-resto dans la jungle, ambiance tropicale, mojitos excellents et cuisine soignée — à 5 min en tuk-tuk</span>
               </a>
@@ -802,7 +798,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             </div>
             <p>Aujourd'hui, direction la <strong>Long Beach</strong> en scooter, avec pour objectif d’aller manger au <strong><a href="https://www.booking.com/hotel/ph/club-agutaya.fr.html?aid=318615&amp;label=New_French_FR_FR_21427169905-YP8jtirKV%2AkzSzTpDnHYDwS640938627539%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742292888&amp;srpvid=b7054809eb8d041e&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Club Agutaya</a></strong>.</p>
             <p>Mais surprise en arrivant, le restaurant est privatisé par l’équipe de production du <em>Survivor</em> Suédois. L'émission est actuellement en tournage sur la plage, à quelques centaines de mètres de là. On nous invite donc à revenir le lendemain.</p>
-            <p>On décide alors de continuer notre chemin. On tombe par hasard sur <strong><a href="https://www.booking.com/hotel/ph/the-elizabeth-resort-and-villas-san-vicente1.fr.html?aid=356980&amp;label=gog235jc-1FCAsotAFCLHRoZS1lbGl6YWJldGgtcmVzb3J0LWFuZC12aWxsYXMtc2FuLXZpY2VudGUxSA1YA2hNiAEBmAENuAEHyAEN2AEB6AEB-AECiAIBqAIDuAKBkOW-BsACAdICJDlmYzUxMDEyLThiNTctNGIxZi1iNzcxLTg4NDNiNWNiYjRiMtgCBeACAQ&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742292998&amp;srpvid=0ef94841e3e10689&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">The Hotel Elizabeth</a></strong>. Pensées pour notre fourgon aménagé qui porte le même nom, on décide de s’y arrêter.</p>
+            <p>On décide alors de continuer notre chemin. On tombe par hasard sur <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y?aid=356980&amp;label=gog235jc-1FCAsotAFCLHRoZS1lbGl6YWJldGgtcmVzb3J0LWFuZC12aWxsYXMtc2FuLXZpY2VudGUxSA1YA2hNiAEBmAENuAEHyAEN2AEB6AEB-AECiAIBqAIDuAKBkOW-BsACAdICJDlmYzUxMDEyLThiNTctNGIxZi1iNzcxLTg4NDNiNWNiYjRiMtgCBeACAQ&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742292998&amp;srpvid=0ef94841e3e10689&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">The Hotel Elizabeth</a></strong>. Pensées pour notre fourgon aménagé qui porte le même nom, on décide de s’y arrêter.</p>
             <p>L'hôtel (davantage un complexe) est immense et en plein travaux. On nous accueille comme des princesses. On a même droit à un petit tour en voiturette. On nous installe au restaurant de la plage. Excepté le temps pluvieux, le cadre est parfait. Nous sommes les seules sur cette immense plage… enfin presque !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1047-1-768x1024.jpg" alt="The Hotel Elizabeth Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -863,11 +859,11 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g8659127-d23227804-Reviews-Mango_Bar-San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJh7S17jXXtTMRw5HVNmKhPMk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mango Bar</span>
                 <span className="pb-resto-card-desc">Au port, crabes frais et poulet frit — simple et délicieux face à la mer</span>
               </a>
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g8659127-d13652880-Reviews-The_Turtle_Beach_Resort_Restaurant-San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJg2drqix5tjMRyRfCIANEurI" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Turtle Beach Restaurant</span>
                 <span className="pb-resto-card-desc">Tables en bois sur la plage, ambiance surf — spot du festival SanVicSurf</span>
               </a>
@@ -879,11 +875,11 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
                 <span className="pb-resto-tier-label">Gastronomique</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://www.booking.com/hotel/ph/the-elizabeth-resort-and-villas-san-vicente1.fr.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Hotel Elizabeth</span>
                 <span className="pb-resto-card-desc">Complexe impressionnant, service attentionné, cuisine soignée</span>
               </a>
-              <a href="https://www.tripadvisor.fr/Restaurant_Review-g8659127-d15678901-Reviews-Club_Agutaya-San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Club Agutaya</span>
                 <span className="pb-resto-card-desc">La table gastronomique de San Vicente — parfois privatisée, réservez à l'avance</span>
               </a>
@@ -1118,7 +1114,7 @@ Via le site <a href="https://www.agoda.com/fr-fr/?site_id=1922882&amp;tag=7e7df9
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1100-1-768x1024.jpg" alt="Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1102-1-768x1024.jpg" alt="Market Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Pour cette dernière soirée, on n’a pas pu s’empêcher de retourner sur la <strong>Baywalk</strong> et plus précisément d’aller manger au <strong><a href="https://share.google/hmh5oiAXeQ6PdgLXx" target="_blank" rel="noopener noreferrer" className="article-link">Kobe’s</a></strong>. On avait déjà testé ce petit resto lors de notre 1er passage à Puerto Princesa, en début de séjour, et on avait été conquises ! Sans aucun doute, ce sera un poisson grillé pour Laurie et un Beef Tagalog pour Amélie.</p>
+            <p>Pour cette dernière soirée, on n’a pas pu s’empêcher de retourner sur la <strong>Baywalk</strong> et plus précisément d’aller manger au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" rel="noopener noreferrer" className="article-link">Kobe’s</a></strong>. On avait déjà testé ce petit resto lors de notre 1er passage à Puerto Princesa, en début de séjour, et on avait été conquises ! Sans aucun doute, ce sera un poisson grillé pour Laurie et un Beef Tagalog pour Amélie.</p>
             <p>Après un repas très copieux, histoire de digérer un peu, on fait un petit tour au marché. On en profite pour acheter quelques souvenirs avant de se remettre en chemin, direction l’hôtel. Demain matin, on pourra prendre le temps, notre avion pour Manille décolle seulement à 13h30.</p>
             <div className="article-day-header article-day-header-tight">
               <h3>En route pour Manille</h3>
