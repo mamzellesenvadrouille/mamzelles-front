@@ -268,7 +268,7 @@ C’est parti, nous sommes 8 sur le bateau.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0609-768x1024.jpg" alt="Canvas Boutique Hotel Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0641-1-768x1024.jpg" alt="Canvas Boutique Hotel Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Avec son design contemporain et toutes ses œuvres d’art locales, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJ73SI9OhjtTMRYXrgxfkk_Uw" target="_blank" rel="noopener noreferrer" className="article-link">Canvas Boutique Hôtel</a></strong> est canon en tout cas.
+            <p>Avec son design contemporain et toutes ses œuvres d’art locales, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJ73SI9OhjtTMRYXrgxfkk_Uw" target="_blank" rel="noopener noreferrer" className="article-link">Canvas Boutique Hotel</a></strong> est canon en tout cas.
 La chambre est très spacieuse. On a deux immenses lits rien que pour nous, c’est tout confort !
 On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir et de se prélasser au bord de l’eau.</p>
             <p>Après ce moment détente, on se prépare pour aller manger. On a repéré un petit restaurant méditerranéen à seulement 3 minutes à pied qui nous tente bien, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" rel="noopener noreferrer" className="article-link">Bersian Restaurant</a></strong>. Effectivement, on s’est régalées.</p>
@@ -324,7 +324,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
             <p>On a prévu d’aller à Sabang aujourd’hui, à environ 1h30 de Puerto Princesa. Il y a plusieurs possibilités pour s’y rendre, dont le taxi (organisé par l’hôtel pour 1,500 Php / pers.) et le van privé (au même tarif).</p>
             <p>Pour notre part, nous avons suivi la recommandation de notre futur hôte de passer par une compagnie de transport public, <strong>Bloomfiel Transport Van</strong>.</p>
             <p>Il y a plusieurs départs dans la journée : 10h, 14h et 16h. Nous prendrons celui de 14h. Le point de RDV de la société de transport se trouvant à 10 minutes  de notre hôtel, on utilise une fois de plus l’application <strong>RIDE</strong> pour nous y rendre.</p>
-            <p>Arrivées à Bloomfiel, nous avons l’agréable surprise de payer seulement 300 Php (4€80) par personne.</p>
+            <p>Arrivées à Bloomfield, nous avons l’agréable surprise de payer seulement 300 Php (4€80) par personne.</p>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4932-768x1024.jpg" alt="Bloomfield Transport Van Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4930-768x1024.jpg" alt="Contact Bloomfield Transport Van Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -478,7 +478,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             </div>
             <p>Ce matin, on a pris le temps. Les gens sont tellement sympas et ouverts aux rencontres, à la discussion. On a envie de parler avec tout le monde !</p>
             <p>On est allées manger au <a href="https://www.google.com/maps/place/?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Flow Bar</strong></a> le midi, un restaurant-bar piscine. Leurs burgers et leurs pizzas sont incroyables ! Pour info, vous avez la possibilité de commander un verre et de profiter de la piscine toute la journée si vous le souhaitez.</p>
-            <p>Fin de journée sur la plage et coucher de soleil au <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mai Tai</strong></a>, clairement le meilleur spot de la plage pour le sunset. L’endroit est vraiment agréable et les cocktails y sont très bons !</p>
+            <p>Fin de journée sur la plage et coucher de soleil au <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mai Tai</strong></a>. L’endroit est vraiment agréable et les cocktails y sont très bons !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0925-768x1024.jpg" alt="Port Barton Puerto Princesa Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0946-1024x768.jpg" alt="Sunset Port Barton Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -559,7 +559,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1180-768x1024.jpg" alt="Cochon White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1185-768x1024.jpg" alt="Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Pour finir la journée en beauté, nous retrouvons une locale au <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mai Tai</strong></a>, notre bar de plage préféré, avec qui le courant est tout de suite bien passé. Elle nous présente à plein de gens de son entourage, locaux et expatriés.</p>
+            <p>Pour finir la journée en beauté, nous retrouvons une locale au <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mai Tai</strong></a>, avec qui le courant est tout de suite bien passé. Elle nous présente à plein de gens de son entourage, locaux et expatriés.</p>
             <p>On se sent Port Bartonaises le temps d’une soirée... Un moment magique de partage qu’on sera loin d’oublier !</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 6</span>
@@ -932,7 +932,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             <p>La journée est déjà presque terminée, mais on a encore un petit truc à faire… Nous avons rendez-vous au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJ2epK4CvFtTMRXOXaZW-5OOo" target="_blank" rel="noopener noreferrer" className="article-link">Rebel Art Tattoo Kollectiv</a></strong>. Et oui, impossible de résister à l’idée de se faire tatouer en souvenir de ce merveilleux voyage !</p>
             <p>Le salon est très propre, l’ambiance très sympa et les tatoueurs très pros. Pendant que nous nous faisions tatouer, on a même eu droit à un petit concert privé de Skinny, le super assistant qui fait tout pour nous mettre à l’aise.</p>
             <p>Nos tatouages sont canons, on est ravies du résultat. En plus, le tarif défie toute concurrence. Clairement, on vous recommande cette adresse à 100 %.</p>
-            <p>Repas du soir à <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw" target="_blank" rel="noopener noreferrer" className="article-link">Kusinero del Barrio</a></strong>. L’un de nos restaurants préférés à Port Barton.</p>
+            <p>Repas du soir à <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw" target="_blank" rel="noopener noreferrer" className="article-link">Kusinero del Barrio</a></strong>, l’un de nos restaurants préférés à Port Barton.</p>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3793-768x1024.jpg" alt="Rebel Art Tattoo Kollectiv Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3794-768x1024.jpg" alt="Rebel Art Tattoo Kollectiv Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -1119,7 +1119,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1100-1-768x1024.jpg" alt="Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1102-1-768x1024.jpg" alt="Market Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Pour cette dernière soirée, on n’a pas pu s’empêcher de retourner sur la <strong>Baywalk</strong> et plus précisément d’aller manger au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" rel="noopener noreferrer" className="article-link">Kobe’s</a></strong>. On avait déjà testé ce petit resto lors de notre 1er passage à Puerto Princesa, en début de séjour, et on avait été conquises ! Sans aucun doute, ce sera un poisson grillé pour Laurie et un Beef Tagalog pour Amélie.</p>
+            <p>Pour cette dernière soirée, on n’a pas pu s’empêcher de retourner sur la <strong>Baywalk</strong> et plus précisément d’aller manger au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" rel="noopener noreferrer" className="article-link">Kobe’s</a></strong>. On avait déjà testé ce petit resto lors de notre 1er passage à Puerto Princesa, en début de séjour, et on avait bien mangé ! Sans aucun doute, ce sera un poisson grillé pour Laurie et un Beef Tagalog pour Amélie.</p>
             <p>Après un repas très copieux, histoire de digérer un peu, on fait un petit tour au marché. On en profite pour acheter quelques souvenirs avant de se remettre en chemin, direction l’hôtel. Demain matin, on pourra prendre le temps, notre avion pour Manille décolle seulement à 13h30.</p>
             <div className="article-day-header article-day-header-tight">
               <h3>En route pour Manille</h3>
@@ -1146,15 +1146,15 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
 
           <section id="itineraire" className="article-section">
             <div className="article-day-header">
-              <h2>➾ Autre itinéraire de 3 semaines aux Philippines</h2>
+              <h2>Autre itinéraire de 3 semaines aux Philippines</h2>
             </div>
             <p>Si vous souhaitez découvrir un autre <strong>itinéraire de 3 semaines</strong> à travers les Philippines et trouver toutes les infos pour préparer votre voyage (formalités, santé, météo, etc.), <strong>n'hésitez pas à lire cet article</strong>, on vous partage tout !</p>
             <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Les Philippines Blog" className="article-img-full" loading="lazy" /></a>
-            <p><strong><a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-link">⋙ ITINÉRAIRE PHILIPPINES : 3 semaines pour découvrir la perle de l'Orient !</a></strong></p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Frise-Mamzelles-1024x173.jpg" alt="Monuments du monde" className="article-img-full" loading="lazy" />
-            <p><em><strong>Nous espérons que notre article sur PALAWAN vous aura plu et qu'il vous inspirera pour votre prochain voyage !</strong></em></p>
-            <p><em><strong>Si vous avez des questions, ou que vous souhaitez nous partager un retour d'expérience, n'hésitez pas à nous la</strong><strong>isser un commentaire, à nous contacter via le </strong><strong><a href="/formulaire-de-contact" className="article-link">formulaire de contact</a> ou notre compte <a href="https://www.instagram.com/mamzellesenvadrouille/" target="_blank" rel="noopener noreferrer" className="article-link">Instagram</a>.</strong></em></p>
-            <p><em><strong>Nous nous ferons un plaisir de vous lire et de vous répondre !</strong></em></p>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À LIRE AUSSI</strong><p><a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-link">⋙ ITINÉRAIRE PHILIPPINES : 3 semaines pour découvrir la perle de l'Orient !</a></p></div>
+            </div>
+            
           </section>
 
           <section className="article-comments-section">
