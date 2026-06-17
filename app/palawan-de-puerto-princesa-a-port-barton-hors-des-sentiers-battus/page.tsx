@@ -664,11 +664,11 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5zlib7vEtTMRS9KJ2L8ZFCc" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Jungle Bar</span>
-                <span className="pb-resto-card-desc">Dans la jungle à 20 min de tuk-tuk, vue sur la baie et cocktails maison</span>
+                <span className="pb-resto-card-desc">Bar-resto franco-philippin dans la jungle, cuisine maison et vue imprenable sur la baie</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mai Tai</span>
-                <span className="pb-resto-card-desc">Bar de plage avec jeux, excellents cocktails et beau spot sunset</span>
+                <span className="pb-resto-card-desc">Bar de plage avec jeux, cocktails au sunset et bons petits plats</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Marguerita Sunset Bar</span>
