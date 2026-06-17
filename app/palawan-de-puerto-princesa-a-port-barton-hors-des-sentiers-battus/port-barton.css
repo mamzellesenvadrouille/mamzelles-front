@@ -729,7 +729,7 @@
 
 .pb-resto-title {
   font-family: 'Cormorant Garamond', serif !important;
-  font-size: 22px !important;
+  font-size: 26px !important;
   font-weight: 600 !important;
   color: #1a1512 !important;
   margin: 0 0 20px !important;
@@ -750,12 +750,12 @@
 
 .pb-resto-tier-badge {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #fff;
   background: #c8956c;
   border-radius: 6px;
-  padding: 4px 14px;
+  padding: 5px 16px;
   white-space: nowrap;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -790,7 +790,7 @@
 
 .pb-resto-card-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #1a1512;
   line-height: 1.2;
@@ -800,7 +800,7 @@
 .pb-resto-card:hover .pb-resto-card-name { color: #c8956c; }
 
 .pb-resto-card-desc {
-  font-size: 12px;
+  font-size: 13px;
   color: rgba(26,21,18,0.50);
   line-height: 1.5;
 }
