@@ -542,8 +542,10 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             </div>
             <p>Aujourd'hui, on relève le défi !
 Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White Beach à la rame !</p>
-            <p>On nous avait promis 10 minutes de trajet, en réalité, il nous en a bien fallu 30 malgré tous nos efforts ! Surtout que, selon la marée, le temps de traversée peut être plus ou moins long.</p>
-            <p>D'ailleurs, il est bon de savoir que si la marée est basse, il faut alors passer plus au large car il y a vraiment peu de fond à certains endroits.</p>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>On nous avait promis 10 minutes en kayak jusqu’à Coconut Beach, mais prévoyez plutôt 20 à 30 minutes selon la marée et le vent. Par marée basse, pensez à passer plus au large : le fond est très peu profond à certains endroits.</p></div>
+            </div>
             <p>En tout cas, défi relevé ! On est trop fières de nous ! Les paysages qu'on aperçoit en chemin sont canons. Le temps de traversée est très vite passé finalement. Bon, il faudra rentrer après, et ça, c'est une autre histoire !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1153_jpg-3-768x1024.jpg" alt="Kayak White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
