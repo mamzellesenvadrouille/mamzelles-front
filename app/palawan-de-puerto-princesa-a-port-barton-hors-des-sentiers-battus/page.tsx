@@ -738,8 +738,8 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <div><strong>Bon à savoir</strong><p>Pourquoi « 100 Steps » ? Parce qu'en réalité il y en a bien plus ! Montez tôt le matin ou en fin de journée quand il fait plus frais, et prévoyez de l'eau pour l'ascension. Le nom restera toujours un mystère en tout cas…</p></div>
             </div>
             <p>Le chemin grimpe pas mal pour arriver au point de vue. À environ un tiers du chemin, on rejoint une petite maisonnette. On doit payer ici un droit de passage de 20 Php (0€32) par personne si on veut pouvoir continuer notre ascension.</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1482-1024x768.jpg" alt="One hundred steps San Vicente Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1482-1024x768.jpg" alt="One hundred steps San Vicente Port Barton" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1505-768x1024.jpg" alt="Mamzelles en vadrouille San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1484_jpg-768x1024.jpg" alt="One hundred steps San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
