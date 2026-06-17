@@ -868,27 +868,27 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
               <div className="pb-resto-grid">
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJh7S17jXXtTMRw5HVNmKhPMk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mango Bar</span>
-                <span className="pb-resto-card-desc">Au port, crabes frais et poulet frit — simple et délicieux face à la mer</span>
+                <span className="pb-resto-card-desc">Bar de pêcheurs décontracté au port — fruits de mer frais et belle carte variée</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJg2drqix5tjMRyRfCIANEurI" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Turtle Beach Restaurant</span>
-                <span className="pb-resto-card-desc">Tables en bois sur la plage, ambiance surf — spot du festival SanVicSurf</span>
+                <span className="pb-resto-card-desc">Tables en bois sur la plage, ambiance surf et cuisine familiale</span>
               </a>
               </div>
             </div>
             <div className="pb-resto-tier">
               <div className="pb-resto-tier-header">
-                <span className="pb-resto-tier-badge">€€€€</span>
+                <span className="pb-resto-tier-badge">€€€</span>
                 <span className="pb-resto-tier-label">Gastronomique</span>
               </div>
               <div className="pb-resto-grid">
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Club Agutaya</span>
-                <span className="pb-resto-card-desc">La table gastronomique de San Vicente — parfois privatisée, réservez à l'avance</span>
+                <span className="pb-resto-card-desc">Grande carte et dîner en bord de mer sur Long Beach — parfois privatisé, réservez à l'avance</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Hotel Elizabeth</span>
-                <span className="pb-resto-card-desc">Complexe impressionnant, service aux petits soins, cuisine gastronomique</span>
+                <span className="pb-resto-card-desc">Cuisine soignée dans un cadre resort avec vue mer</span>
               </a>
               </div>
             </div>
