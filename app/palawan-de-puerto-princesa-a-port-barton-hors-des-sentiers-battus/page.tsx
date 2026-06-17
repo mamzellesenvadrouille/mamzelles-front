@@ -193,7 +193,7 @@ export default function PalawanPortBartonPage() {
 C’est parti, nous sommes 8 sur le bateau.</p>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Réservez vos îles via votre hôtel, c'est souvent moins cher qu'en agence, et le matériel (masque, tuba, chaussures d'eau) se loue pour quelques pesos avant le départ. Et la crème solaire haute protection : on l'applique et on la ré-applique, on brûle vraiment vite ici !</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>Réservez vos îles via votre hôtel, c'est souvent moins cher qu'en agence, et le matériel (masque, tuba, chaussures d'eau) se loue pour quelques pesos avant le départ.</p></div>
             </div>
             <h4>⧐ Starfish Island</h4>
             <p>Une petite île sympa où on peut observer des étoiles de mer. Il y a une zone délimitée pour les voir. En réalité, on n’en a pas vu une seule dans la zone indiquée... Mais surprise quand on a repris le bateau, on remarque qu’il y en avait des dizaines juste en dessous !</p>
