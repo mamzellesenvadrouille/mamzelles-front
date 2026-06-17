@@ -732,10 +732,10 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             <p>Après une nuit bercée par le bruit des vagues, on se réveille en douceur. Malgré tout, on est au taquet pour cette 1ère journée ! Le petit-déjeuner est servi face à la mer, le bonheur.</p>
             <p>Le défi de la journée, le One hundred steps, un point de vue qu’on peut rejoindre à pied depuis notre hôtel...</p>
             <h4>⧐ Le 100 Steps, une randonnée qui vaut la peine !</h4>
-            <p>Pourquoi on l'appelle le 100 Steps ? Ça, c’est une bonne question… ! Parce qu’en réalité, c’est à bien plus de 100 pas ! Lol. Un petit conseil, y monter tôt le matin ou en fin de journée, quand il fait le plus frais. Et surtout, n’oubliez pas de prendre de l’eau.</p>
+            
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Le « 100 Steps » de San Vicente en compte bien plus que 100 ! Montez-y tôt le matin ou en fin de journée, quand il fait plus frais, et emportez de l'eau : la vue au sommet récompense largement l'effort.</p></div>
+              <div><strong>Bon à savoir</strong><p>Pourquoi « 100 Steps » ? Parce qu'en réalité il y en a bien plus ! Montez tôt le matin ou en fin de journée quand il fait plus frais, et prévoyez de l'eau pour l'ascension. Le nom restera toujours un mystère en tout cas…</p></div>
             </div>
             <p>Le chemin grimpe pas mal pour arriver au point de vue. À environ un tiers du chemin, on rejoint une petite maisonnette. On doit payer ici un droit de passage de 20 Php (0€32) par personne si on veut pouvoir continuer notre ascension.</p>
             <div className="article-gallery-3">
