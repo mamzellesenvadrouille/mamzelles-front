@@ -119,6 +119,7 @@ export default function PalawanPortBartonPage() {
               <h3>Comment se rendre à Palawan ?</h3>
             </div>
             <p>Ne manquez pas notre autre article sur Palawan. Vous y trouverez des infos pratiques, notamment sur les aéroports et les transports à privilégier pour rejoindre facilement l’archipel.</p>
+            <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan El Nido Coron" className="article-img-full" loading="lazy" /></a>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À LIRE AUSSI</strong><p><a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-link">⊹ PALAWAN : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</a></p></div>
@@ -364,14 +365,10 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
               <h3>La rivière souterraine de Sabang</h3>
             </div>
             <p>Réveil à 6h30. On a rendez-vous avec notre guide pour notre excursion (réservée via notre hôtel) à 7h50 sur le quai.</p>
-            <p>Le départ est à 8h et c’est le premier de la journée. Du coup, on devrait être à peu près seules sur ce lieu incroyable…</p>
-            <p>Nous sommes 8 en tout cas à embarquer sur le bateau. Direction l'Underground River !</p>
+            <p>Le départ est à 8h et c'est le premier de la journée. Du coup, on devrait être à peu près seules sur ce lieu incroyable… Nous sommes 8 en tout cas à embarquer sur le bateau. Direction l'Underground River !</p>
             <h4>⧐ Un grand Wahooo !</h4>
             <p>On fait 15 minutes de bangka environ avant de débarquer sur une magnifique plage. De là, on récupère des casques et un audio-guide en français.</p>
-            <div className="article-must">
-              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>La rivière souterraine de Puerto Princesa (Underground River), classée à l'UNESCO, est l'une des plus longues rivières navigables souterraines au monde. Récupérez l'audio-guide en français au départ : les explications valent vraiment le détour.</p></div>
-            </div>
+            
             <p>On nous fait ensuite embarquer dans un autre bateau, bien plus petit et sans moteur, un paddle boat comme ils l’appellent. C’est partiii !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0784-2-768x1024.jpg" alt="Plage Underground River Sabang" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
