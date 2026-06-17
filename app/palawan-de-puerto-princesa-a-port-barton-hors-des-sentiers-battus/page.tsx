@@ -472,7 +472,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             </div>
             <p>Ce matin, on a pris le temps. Les gens sont tellement sympas et ouverts aux rencontres, à la discussion. On a envie de parler avec tout le monde !</p>
             <p>On est allées manger au <a href="https://www.google.com/maps/place/?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Flow Bar</strong></a> le midi, un restaurant-bar piscine. Leurs burgers et leurs pizzas sont incroyables ! Pour info, vous avez la possibilité de commander un verre et de profiter de la piscine toute la journée si vous le souhaitez.</p>
-            <p>Fin de journée sur la plage et coucher de soleil au <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d12553878-Reviews-Happy_Bar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Happy Bar</strong></a>, clairement le meilleur spot de la plage pour le sunset. L’endroit est vraiment agréable et les cocktails y sont très bons !</p>
+            <p>Fin de journée sur la plage et coucher de soleil au <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mai Tai</strong></a>, clairement le meilleur spot de la plage pour le sunset. L’endroit est vraiment agréable et les cocktails y sont très bons !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0925-768x1024.jpg" alt="Port Barton Puerto Princesa Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0946-1024x768.jpg" alt="Sunset Port Barton Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -553,7 +553,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1180-768x1024.jpg" alt="Cochon White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1185-768x1024.jpg" alt="Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Pour finir la journée en beauté, nous retrouvons une locale au <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d12553878-Reviews-Happy_Bar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Happy Bar</strong></a>, notre bar de plage préféré, avec qui le courant est tout de suite bien passé. Elle nous présente à plein de gens de son entourage, locaux et expatriés.</p>
+            <p>Pour finir la journée en beauté, nous retrouvons une locale au <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mai Tai</strong></a>, notre bar de plage préféré, avec qui le courant est tout de suite bien passé. Elle nous présente à plein de gens de son entourage, locaux et expatriés.</p>
             <p>On se sent Port Bartonaises le temps d’une soirée... Un moment magique de partage qu’on sera loin d’oublier !</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 6</span>
@@ -651,31 +651,28 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <div className="pb-resto-grid">
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Flow Bar</span>
-                <span className="pb-resto-card-desc">Restaurant-bar avec piscine, pizzas et burgers délicieux — idéal pour une après-midi chill avec un verre</span>
+                <span className="pb-resto-card-desc">Restaurant-bar avec piscine, pizzas et burgers délicieux — idéal pour une après-midi chill</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
-                <span className="pb-resto-card-name">Happy Bar</span>
-                <span className="pb-resto-card-desc">Bar de plage avec cocktails soignés et couchers de soleil, ambiance décontractée</span>
+                <span className="pb-resto-card-name">Mai Tai</span>
+                <span className="pb-resto-card-desc">Bar de plage avec cocktails soignés, bons sunsets et happy hour — ambiance chill</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5zlib7vEtTMRS9KJ2L8ZFCc" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Jungle Bar</span>
-                <span className="pb-resto-card-desc">Bar-resto niché dans la jungle à 20 min de tuk-tuk, vue imprenable sur la baie et cocktails maison</span>
+                <span className="pb-resto-card-desc">Dans la jungle à 20 min de tuk-tuk, vue sur la baie et cocktails maison</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJ1TtGrtfEtTMRFfbhGIiYYBI" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mojito Bar</span>
-                <span className="pb-resto-card-desc">Bar-resto dans la jungle, ambiance tropicale, mojitos excellents et cuisine soignée — à 5 min en tuk-tuk</span>
+                <span className="pb-resto-card-desc">Dans la jungle à 5 min en tuk-tuk, mojitos excellents et cuisine soignée</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Marguerita Sunset Bar</span>
-                <span className="pb-resto-card-desc">Cuisine philippine et italienne en bord de mer, musique live et couchers de soleil inoubliables</span>
+                <span className="pb-resto-card-desc"><span style={{color:"#c8956c"}}>♥</span> Cuisine philippine et italienne, musique live et couchers de soleil inoubliables</span>
               </a>
-              <a href="https://www.google.com/maps/place/?q=place_id:ChIJMTUzAKzFtTMRMSmEt5bgqPk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
-                <span className="pb-resto-card-name">Besaga</span>
-                <span className="pb-resto-card-desc">BBQ sur la plage, poissons frais grillés et ambiance familiale — une adresse qui ne déçoit jamais</span>
-              </a>
+              
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Beach Club</span>
-                <span className="pb-resto-card-desc">Cocktails soignés et cuisine beachfront dans un cadre élégant — parfait pour une soirée en amoureux</span>
+                <span className="pb-resto-card-desc"><span style={{color:"#c8956c"}}>♥</span> Cocktails soignés et cuisine beachfront dans un cadre élégant</span>
               </a>
               </div>
             </div>
@@ -692,7 +689,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             <p>C'est le cœur rempli d'émotion que nous quittons Port Barton, ainsi que toutes les personnes formidables que nous y avons rencontrées.</p>
             <p>Mais ce n'est pas un adieu définitif, car nous reviendrons dans quelques jours... Port Barton, ce n'est qu'un au revoir ! En attendant, cap sur San Vicente !</p>
             <h4>⧐ Comment se rendre à San Vicente ?</h4>
-            <p>Réveil matinal pour prendre le <strong>taxi-boat</strong> (☎️ +63 998 497 9135). Rendez-vous donné à 8h30 près du <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d12553878-Reviews-Happy_Bar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Happy Bar</a></strong>, mais, fidèle au rythme local, le taxi-boat n'arrivera qu'à 9h15. Le temps pour le capitaine de finaliser des documents administratifs avec les gardes-côtes, nous levons l'ancre vers 9h30.</p>
+            <p>Réveil matinal pour prendre le <strong>taxi-boat</strong> (☎️ +63 998 497 9135). Rendez-vous donné à 8h30 près du <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="article-link">Mai Tai</a></strong>, mais, fidèle au rythme local, le taxi-boat n'arrivera qu'à 9h15. Le temps pour le capitaine de finaliser des documents administratifs avec les gardes-côtes, nous levons l'ancre vers 9h30.</p>
             <p>Le trajet dure environ 45 minutes, pour un tarif de 400 Php (6€40) par personne. Il est aussi possible de rejoindre San Vicente en van, mais cela prend près de 2h. Par la mer, c'est donc bien plus rapide, et on trouve que le voyage en bangka est bien plus agréable qu’en van.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1864_jpg-768x1024.jpg" alt="Taxi-boat Port Barton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -897,7 +894,7 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
             </div>
             <p>Pour notre nouveau séjour, nous allons cette fois-ci à <strong><a href="https://www.booking.com/hotel/ph/ausan-beach-front-cottages.fr.html?aid=318615&amp;label=New_English_EN_FR_21457884505-T0t%2AedlXm_oGkIMqMNUhEAS217291026622%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742573592&amp;srpvid=0ef972081cae0326&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Ausan Beach Cottages and Restaurant</a></strong>. L’hôtel est sur la plage. Et ça tombe bien, le taxi-boat nous débarque juste devant ! En réalité, on serait bien retournées à l’<strong><a href="https://www.booking.com/hotel/ph/casa-bienvenida-port-barton.fr.html?aid=318615&amp;label=New_French_FR_FR_21427169905-YP8jtirKV%2AkzSzTpDnHYDwS640938627539%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742573641&amp;srpvid=14f87222c6c6061a&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Acuarius</a></strong>, mais il était complet à cette période.
 Via le site <a href="https://www.agoda.com/fr-fr/?site_id=1922882&amp;tag=7e7df9ad-ccac-41a9-b16d-8006125a5554&amp;gad_source=1&amp;gbraid=0AAAAAD-GdVkL7Hfb-pOORVfc970QWry4o&amp;gclid=CjwKCAjwnPS-BhBxEiwAZjMF0kS03_0qoOEd6c7v9JkLlK3JOa1BfUhrjr1VM76ewIl9H1H4UY09xxoCBoAQAvD_BwE&amp;ds=jB6VzvZgMGBHTJSk" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Agoda</strong></a> (très utilisé pour les réservations d’hôtels aux Philippines), nous avons payé 10,320 Php (170€) pour 5 nuits, petits-déjeuners compris.</p>
-            <p>Nous nous installons dans notre joli cottage et partons au <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d12553878-Reviews-Happy_Bar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Happy Bar</a></strong>, notre bar de plage favori, pour l'apéro sunset.</p>
+            <p>Nous nous installons dans notre joli cottage et partons au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="article-link">Mai Tai</a></strong>, notre bar de plage favori, pour l'apéro sunset.</p>
             <p>On dînera ensuite au <a href="https://g.co/kgs/3sWQdDG" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Star Apple Canteen</strong></a>. C’est qu’on commence à avoir nos petites habitudes ici ! Bref, une fin de journée comme on les aime.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1907-768x1024.jpg" alt="Sunset Port Barton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
