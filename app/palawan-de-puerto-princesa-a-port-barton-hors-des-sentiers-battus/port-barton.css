@@ -1,5 +1,5 @@
 /* ============================================
-   PORT BARTON Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
+   PORT BARTON â€” Styles spÃ©cifiques Ã  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -607,6 +607,13 @@
 .article-portbarton .article-day-header { margin-top: 48px;
   margin-bottom: 24px; }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .article-portbarton .article-day-header { margin-bottom: 12px !important; }
+}
+@media (max-width: 768px) {
+  .article-portbarton .article-day-header { margin-bottom: 12px !important; }
+}
+
 .article-portbarton .article-day-badge { margin-bottom: 8px; }
 
 .article-portbarton .article-section h3 { font-size: 32px;
@@ -713,7 +720,7 @@
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
 /* ============================================
-   BLOCS OÃƒâ„¢ MANGER Ã¢â‚¬â€ Port Barton
+   BLOCS OÃƒÆ’Ã¢â€žÂ¢ MANGER ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Port Barton
    ============================================ */
 
 .pb-resto-section {
