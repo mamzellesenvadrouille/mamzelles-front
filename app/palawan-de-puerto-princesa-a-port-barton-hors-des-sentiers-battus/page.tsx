@@ -621,6 +621,10 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-card-name">Star Apple Canteen</span>
                 <span className="pb-resto-card-desc">Étal de poissons et viandes frais : on choisit sa pièce, riz inclus — inoubliable</span>
               </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJx7Q4GwDFtTMRBGi-5f6Gzgw" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Canteen Chariz John</span>
+                <span className="pb-resto-card-desc">Grill philippin, poissons et poulet frais sur braise — simple, local et savoureux</span>
+              </a>
               </div>
             </div>
             <div className="pb-resto-tier">
@@ -640,6 +644,10 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <a href="https://www.facebook.com/KusineroDelBarrioPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Kusinero del Barrio</span>
                 <span className="pb-resto-card-desc">Saveurs philippines maison dans un cadre décontracté</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJywaWWgDFtTMRFMd9PPpud1M" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Bus Café</span>
+                <span className="pb-resto-card-desc">Café-bar-karaoké unique en son genre, excellents cocktails et cuisine soignée — l’adresse la plus animée du village</span>
               </a>
               </div>
             </div>
@@ -664,6 +672,18 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <a href="https://www.facebook.com/MojitoBarPortBarton" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mojito Bar</span>
                 <span className="pb-resto-card-desc">Spécialiste du mojito revisité, terrasse en bord de mer</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Marguerita Sunset Bar</span>
+                <span className="pb-resto-card-desc">Cuisine philippine et italienne en bord de mer, musique live et couchers de soleil inoubliables</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJMTUzAKzFtTMRMSmEt5bgqPk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Besaga</span>
+                <span className="pb-resto-card-desc">BBQ sur la plage, poissons frais grillés et ambiance familiale — une adresse qui ne déçoit jamais</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Beach Club</span>
+                <span className="pb-resto-card-desc">Cocktails soignés et cuisine beachfront dans un cadre élégant — parfait pour une soirée en amoureux</span>
               </a>
               </div>
             </div>
