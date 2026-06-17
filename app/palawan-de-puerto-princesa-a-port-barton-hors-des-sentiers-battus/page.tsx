@@ -366,9 +366,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
             <p>Le départ est à 8h et c’est le premier de la journée. Du coup, on devrait être à peu près seules sur ce lieu incroyable…</p>
             <p>Nous sommes 8 en tout cas à embarquer sur le bateau. Direction l'Underground River !</p>
             <h4>⧐ Un grand Wahooo !</h4>
-            <p>On fait 15 minutes de bangka environ avant de débarquer sur une magnifique plage. De là, on récupère des casques et un audio-guide en français.</p>
-            
-            <p>On nous fait ensuite embarquer dans un autre bateau, bien plus petit et sans moteur, un paddle boat comme ils l’appellent. C’est partiii !</p>
+            <p>On fait 15 minutes de bangka environ avant de débarquer sur une magnifique plage. On nous fait ensuite embarquer dans un autre bateau, bien plus petit et sans moteur, un paddle boat comme ils l’appellent. C’est partiii !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0784-2-768x1024.jpg" alt="Plage Underground River Sabang" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0709-768x1024.jpg" alt="Plage Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -388,7 +386,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             </div>
                         <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>La rivière souterraine de Puerto Princesa (Underground River), classée à l’UNESCO, est l’une des plus longues rivières navigables souterraines au monde. Récupérez l’audio-guide en français au départ : les explications valent vraiment le détour.</p></div>
+              <div><strong>À ne pas manquer</strong><p>La rivière souterraine de Puerto Princesa, classée à l’UNESCO, est l’une des plus longues rivières navigables souterraines au monde et considérée comme la 7ème merveille naturelle du monde. Récupérez l’audio-guide en français au départ : les explications valent vraiment le détour.</p></div>
             </div>
 <h4>⧐ De retour sur la terre ferme...</h4>
             <p>Un petit restaurant sur la plage nous fait de l’œil. On s’y installe pour boire un verre et manger. Après ça, rien de mieux pour digérer qu’une petite balade sur la plage...</p>
