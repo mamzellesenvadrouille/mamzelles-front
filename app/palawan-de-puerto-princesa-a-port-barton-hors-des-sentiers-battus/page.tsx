@@ -871,7 +871,7 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
                 <span className="pb-resto-card-desc">Bar de pêcheurs décontracté au port — fruits de mer frais et belle carte variée</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJg2drqix5tjMRyRfCIANEurI" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
-                <span className="pb-resto-card-name">The Turtle Beach Restaurant</span>
+                <span className="pb-resto-card-name">The Turtle Beach</span>
                 <span className="pb-resto-card-desc">Tables en bois sur la plage, ambiance surf et cuisine familiale</span>
               </a>
               </div>
@@ -884,7 +884,7 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
               <div className="pb-resto-grid">
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Club Agutaya</span>
-                <span className="pb-resto-card-desc">Grande carte et dîner en bord de mer sur Long Beach — parfois privatisé, réservez à l'avance</span>
+                <span className="pb-resto-card-desc">Grande carte et dîner en bord de mer sur Long Beach</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Hotel Elizabeth</span>
@@ -932,7 +932,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             <p>La journée est déjà presque terminée, mais on a encore un petit truc à faire… Nous avons rendez-vous au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJ2epK4CvFtTMRXOXaZW-5OOo" target="_blank" rel="noopener noreferrer" className="article-link">Rebel Art Tattoo Kollectiv</a></strong>. Et oui, impossible de résister à l’idée de se faire tatouer en souvenir de ce merveilleux voyage !</p>
             <p>Le salon est très propre, l’ambiance très sympa et les tatoueurs très pros. Pendant que nous nous faisions tatouer, on a même eu droit à un petit concert privé de Skinny, le super assistant qui fait tout pour nous mettre à l’aise.</p>
             <p>Nos tatouages sont canons, on est ravies du résultat. En plus, le tarif défie toute concurrence. Clairement, on vous recommande cette adresse à 100 %.</p>
-            <p>Repas du soir à <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw" target="_blank" rel="noopener noreferrer" className="article-link">Kusinero del Barrio</a></strong>. Incontestablement, l’un de nos restaurants préférés à Port Barton.</p>
+            <p>Repas du soir à <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw" target="_blank" rel="noopener noreferrer" className="article-link">Kusinero del Barrio</a></strong>. L’un de nos restaurants préférés à Port Barton.</p>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3793-768x1024.jpg" alt="Rebel Art Tattoo Kollectiv Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3794-768x1024.jpg" alt="Rebel Art Tattoo Kollectiv Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
