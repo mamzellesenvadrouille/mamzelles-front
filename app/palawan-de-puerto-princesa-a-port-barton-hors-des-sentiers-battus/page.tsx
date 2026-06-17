@@ -277,13 +277,41 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
             <div className="article-day-header article-day-header-tight">
               <h3>⪢ Où manger à Puerto Princesa ?</h3>
             </div>
-            <ul>
-              <li><strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d2155226-Reviews-Kinabuch_Grill_Bar-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Kinabuchs Grill and Bar</a>  </strong>€€</li>
-              <li><strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d10693528-Reviews-Artisans-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Artisans</a>  </strong>€€</li>
-              <li><strong><a href="https://share.google/hmh5oiAXeQ6PdgLXx" target="_blank" rel="noopener noreferrer" className="article-link">Kobe's</a>  </strong>€</li>
-              <li><strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d16655425-Reviews-Bersian_Restaurant-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Bersian Restaurant</a>  </strong>€</li>
-            </ul>
-          </section>
+
+            <div className="pb-resto-section">
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€</span>
+                <span className="pb-resto-tier-label">Budget</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://share.google/hmh5oiAXeQ6PdgLXx" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Kobe's</span>
+                <span className="pb-resto-card-desc">Cuisine philippine familiale, portions généreuses — un sans-faute</span>
+              </a>
+              <a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d16655425-Reviews-Bersian_Restaurant-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Bersian Restaurant</span>
+                <span className="pb-resto-card-desc">Petite adresse de rue, plats locaux savoureux à prix mini</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d2155226-Reviews-Kinabuch_Grill_Bar-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Kinabuchs Grill and Bar</span>
+                <span className="pb-resto-card-desc">Le classique incontournable : spécialités philippines et grande carte animée</span>
+              </a>
+              <a href="https://www.tripadvisor.fr/Restaurant_Review-g294257-d10693528-Reviews-Artisans-Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Artisans</span>
+                <span className="pb-resto-card-desc">Plats frais et savoureux dans un cadre soigné — notre coup de cœur</span>
+              </a>
+              </div>
+            </div>
+            </div>          </section>
 
           <section id="sabang" className="article-section">
             <div className="article-day-header">
@@ -382,11 +410,33 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             <div className="article-day-header article-day-header-tight">
               <h3>⪢ Où manger à Sabang ?</h3>
             </div>
-            <ul>
-              <li><strong><a href="https://share.google/8kswns2x748VNNwXm" target="_blank" rel="noopener noreferrer" className="article-link">Red Turtle Restaurant</a></strong>  €€</li>
-              <li><strong><a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2720799-d32978784-Reviews-La_Casa_In_Sabang-Sabang_Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaro.html" target="_blank" rel="noopener noreferrer" className="article-link">La Casa In Sabang</a></strong>  €</li>
-            </ul>
-          </section>
+
+            <div className="pb-resto-section">
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€</span>
+                <span className="pb-resto-tier-label">Budget</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2720799-d32978784-Reviews-La_Casa_In_Sabang-Sabang_Puerto_Princesa_Palawan_Island_Palawan_Province_Mimaro.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">La Casa In Sabang</span>
+                <span className="pb-resto-card-desc">Adresse simple et authentique, parfaite après la rivière souterraine</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://share.google/8kswns2x748VNNwXm" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Red Turtle Restaurant</span>
+                <span className="pb-resto-card-desc">Vue sur la mer, cuisine philippine soignée — la meilleure adresse du village</span>
+              </a>
+              </div>
+            </div>
+            </div>          </section>
 
           <section id="port-barton" className="article-section">
             <div className="article-day-header">
@@ -568,17 +618,65 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             <div className="article-day-header article-day-header-tight">
               <h3>⪢ Où manger à Port Barton ?</h3>
             </div>
-            <ul>
-              <li><a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d25345984-Reviews-Flow_Pool_Club-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Flow Bar</strong></a>  €€€</li>
-              <li><a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d12553878-Reviews-Happy_Bar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Happy Bar</strong></a>  €€€</li>
-              <li><a href="https://www.booking.com/hotel/ph/barton-jungle-cottages.fr.html?aid=318615&amp;label=New_French_FR_FR_21427169905-YP8jtirKV%2AkzSzTpDnHYDwS640938627539%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2412760&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742579121&amp;srpvid=5cb77cd657e8000a&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Jungle Bar</strong></a>  €€€</li>
-              <li><strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d13163383-Reviews-Mojitos_RestoBar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaro.html" target="_blank" rel="noopener noreferrer" className="article-link">Mojito Bar</a></strong>  €€€</li>
-              <li><strong><a href="https://www.booking.com/hotel/ph/ausan-beach-front-cottages.fr.html?aid=318615&amp;label=New_English_EN_FR_21457884505-T0t%2AedlXm_oGkIMqMNUhEAS217291026622%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742573592&amp;srpvid=0ef972081cae0326&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Ausan Restaurant</a></strong>  €€</li>
-              <li><strong><a href="https://g.co/kgs/fuwyWjU" target="_blank" rel="noopener noreferrer" className="article-link">El Busero Inn</a> </strong> €€</li>
-              <li><strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d9746403-Reviews-Kusinero_Del_Barrio_Restobar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Prov.html" target="_blank" rel="noopener noreferrer" className="article-link">Kusinero del Barrio</a></strong>  €€</li>
-              <li><a href="https://g.co/kgs/EYCKtmJ" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Star Apple Canteen</strong></a>  €</li>
-            </ul>
-          </section>
+
+            <div className="pb-resto-section">
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€</span>
+                <span className="pb-resto-tier-label">Budget</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://g.co/kgs/EYCKtmJ" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Star Apple Canteen</span>
+                <span className="pb-resto-card-desc">Étal de poissons et viandes frais : on choisit sa pièce, riz inclus — inoubliable</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.booking.com/hotel/ph/ausan-beach-front-cottages.fr.html?aid=318615&amp;label=New_English_EN_FR_21457884505-T0t%2AedlXm_oGkIMqMNUhEAS217291026622%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742573592&amp;srpvid=0ef972081cae0326&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Ausan Restaurant</span>
+                <span className="pb-resto-card-desc">Sur la plage, cuisine philippine fraîche dans un cadre paradisiaque</span>
+              </a>
+              <a href="https://g.co/kgs/fuwyWjU" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">El Busero Inn</span>
+                <span className="pb-resto-card-desc">Adresse conviviale au cœur du village, plats locaux généreux</span>
+              </a>
+              <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d9746403-Reviews-Kusinero_Del_Barrio_Restobar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Prov.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Kusinero del Barrio</span>
+                <span className="pb-resto-card-desc">Saveurs philippines maison dans un cadre décontracté</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€€</span>
+                <span className="pb-resto-tier-label">Bars & restos de plage</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d25345984-Reviews-Flow_Pool_Club-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Flow Bar</span>
+                <span className="pb-resto-card-desc">Restaurant-bar avec piscine, burgers et pizzas bluffants — la piscine offerte avec un verre</span>
+              </a>
+              <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d12553878-Reviews-Happy_Bar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Happy Bar</span>
+                <span className="pb-resto-card-desc">Le meilleur spot sunset de la plage, cocktails soignés et couchers de soleil magiques</span>
+              </a>
+              <a href="https://www.booking.com/hotel/ph/barton-jungle-cottages.fr.html?aid=318615&amp;label=New_French_FR_FR_21427169905-YP8jtirKV%2AkzSzTpDnHYDwS640938627539%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2412760&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742579121&amp;srpvid=5cb77cd657e8000a&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Jungle Bar</span>
+                <span className="pb-resto-card-desc">Bar de plage dans la végétation, ambiance chill et cocktails colorés</span>
+              </a>
+              <a href="https://www.tripadvisor.fr/Restaurant_Review-g1370797-d13163383-Reviews-Mojitos_RestoBar-Port_Barton_San_Vicente_Palawan_Island_Palawan_Province_Mimaro.html" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Mojito Bar</span>
+                <span className="pb-resto-card-desc">Spécialiste du mojito revisité, terrasse en bord de mer idéale pour l'apéro</span>
+              </a>
+              </div>
+            </div>
+            </div>          </section>
 
           <section id="san-vicente" className="article-section">
             <div className="article-day-header">
@@ -752,13 +850,41 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
             <div className="article-day-header article-day-header-tight">
               <h3>⪢ Où manger à San Vicente ?</h3>
             </div>
-            <ul>
-              <li><strong><a href="https://www.booking.com/hotel/ph/the-elizabeth-resort-and-villas-san-vicente1.fr.html?aid=356980&amp;label=gog235jc-1FCAsotAFCLHRoZS1lbGl6YWJldGgtcmVzb3J0LWFuZC12aWxsYXMtc2FuLXZpY2VudGUxSA1YA2hNiAEBmAENuAEHyAEN2AEB6AEB-AECiAIBqAIDuAKBkOW-BsACAdICJDlmYzUxMDEyLThiNTctNGIxZi1iNzcxLTg4NDNiNWNiYjRiMtgCBeACAQ&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742292998&amp;srpvid=0ef94841e3e10689&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">The Hotel Elizabeth</a>  </strong>€€€€</li>
-              <li><strong><a href="https://www.booking.com/hotel/ph/club-agutaya.fr.html?aid=318615&amp;label=New_French_FR_FR_21427169905-YP8jtirKV%2AkzSzTpDnHYDwS640938627539%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742292888&amp;srpvid=b7054809eb8d041e&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Club Agutaya</a>  </strong>€€€€</li>
-              <li><a href="https://g.co/kgs/3UahUhR" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mango Bar</strong></a>  €€</li>
-              <li><strong><a href="https://g.co/kgs/KMF4hyB" target="_blank" rel="noopener noreferrer" className="article-link">The Turtle Beach Restaurant</a>  </strong>€€</li>
-            </ul>
-          </section>
+
+            <div className="pb-resto-section">
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://g.co/kgs/3UahUhR" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Mango Bar</span>
+                <span className="pb-resto-card-desc">Au port, crabes frais et poulet frit — simple et délicieux face à la mer</span>
+              </a>
+              <a href="https://g.co/kgs/KMF4hyB" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Turtle Beach Restaurant</span>
+                <span className="pb-resto-card-desc">Tables en bois sur la plage, ambiance surf — spot du festival SanVicSurf</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€€€</span>
+                <span className="pb-resto-tier-label">Gastronomique</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.booking.com/hotel/ph/the-elizabeth-resort-and-villas-san-vicente1.fr.html?aid=356980&amp;label=gog235jc-1FCAsotAFCLHRoZS1lbGl6YWJldGgtcmVzb3J0LWFuZC12aWxsYXMtc2FuLXZpY2VudGUxSA1YA2hNiAEBmAENuAEHyAEN2AEB6AEB-AECiAIBqAIDuAKBkOW-BsACAdICJDlmYzUxMDEyLThiNTctNGIxZi1iNzcxLTg4NDNiNWNiYjRiMtgCBeACAQ&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742292998&amp;srpvid=0ef94841e3e10689&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Hotel Elizabeth</span>
+                <span className="pb-resto-card-desc">Complexe impressionnant, service attentionné, cuisine soignée</span>
+              </a>
+              <a href="https://www.booking.com/hotel/ph/club-agutaya.fr.html?aid=318615&amp;label=New_French_FR_FR_21427169905-YP8jtirKV%2AkzSzTpDnHYDwS640938627539%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2452200&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1742292888&amp;srpvid=b7054809eb8d041e&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Club Agutaya</span>
+                <span className="pb-resto-card-desc">La table gastronomique de San Vicente — parfois privatisée, réservez à l'avance</span>
+              </a>
+              </div>
+            </div>
+            </div>          </section>
 
           <section id="retour-port-barton" className="article-section">
             <div className="article-day-header">

@@ -715,3 +715,87 @@
 
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
+/* ============================================
+   BLOCS OÃ™ MANGER â€” Port Barton
+   ============================================ */
+
+.pb-resto-section { margin: 28px 0; }
+
+.pb-resto-tier { margin-bottom: 20px; }
+
+.pb-resto-tier-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(200,149,108,0.25);
+}
+
+.pb-resto-tier-badge {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #c8956c;
+  letter-spacing: 0.04em;
+  background: rgba(200,149,108,0.10);
+  border: 1px solid rgba(200,149,108,0.30);
+  border-radius: 4px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+
+.pb-resto-tier-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  color: rgba(26,21,18,0.45);
+}
+
+.pb-resto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.pb-resto-card {
+  background: #fff;
+  border: 1px solid rgba(200,149,108,0.18);
+  border-radius: 8px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: box-shadow 0.18s, border-color 0.18s;
+}
+
+.pb-resto-card:hover {
+  box-shadow: 0 4px 16px rgba(200,149,108,0.14);
+  border-color: rgba(200,149,108,0.45);
+}
+
+.pb-resto-card-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1512;
+  line-height: 1.2;
+}
+
+.pb-resto-card-desc {
+  font-size: 12px;
+  color: rgba(26,21,18,0.55);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .pb-resto-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .pb-resto-card { padding: 10px 12px; }
+  .pb-resto-card-name { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .pb-resto-grid { grid-template-columns: 1fr; }
+}
