@@ -1052,11 +1052,10 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             <div className="article-day-header article-day-header-tight">
               <h3>Que faire à Modessa Island ?</h3>
             </div>
-            <p>Alors, qu’est-ce qu’on va faire ici pendant 2 jours ?!!</p>
-            <p>Bah, pas grand-chose en fait... et c’est ça qui est bon !</p>
+            <p>Alors, qu’est-ce qu’on va faire ici pendant 2 jours ?!! Bah, pas grand-chose en fait... et c’est ça qui est bon !</p>
             <h4>⧐ Farniente</h4>
-            <p>La plage face aux hébergements est paradisiaque et parfaite pour se détendre, bouquiner ou faire bronzette.</p>
-            <p>C’est l’endroit idéal pour prendre le temps de prendre le temps.</p>
+            <p>La plage face aux hébergements est paradisiaque et parfaite pour se détendre, bouquiner ou faire bronzette. C’est l’endroit idéal pour prendre le temps de prendre le temps.</p>
+            
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2317-768x1024.jpg" alt="Farniente Modessa Island" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2422-768x1024.jpg" alt="Farniente Modessa Island" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -1071,15 +1070,13 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             </div>
             <h4>⧐ Balades</h4>
             <p>Au rythme des marées, des bancs de sable apparaissent et disparaissent. Bien entendu, on s’est amusées à les rejoindre.</p>
-            <p>On a assisté à une scène surprenante : deux chiens de l’île nageaient, se déplaçant dans l’eau avant de s’immobiliser comme s’ils attendaient quelque chose.</p>
-            <p>Plus tard, le gérant nous a expliqué qu’ils partaient faire leurs courses, pêchant leurs poissons qu’ils ramenaient ensuite pour qu’on les leur cuisine. Incroyable, non ?!!</p>
+            <p>On a assisté à une scène surprenante : deux chiens de l’île nageaient, se déplaçant dans l’eau avant de s’immobiliser comme s’ils attendaient quelque chose. Plus tard, le gérant nous a expliqué qu’ils partaient faire leurs courses, pêchant leurs poissons qu’ils ramenaient ensuite pour qu’on les leur cuisine. Incroyable, non ?!!</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2241-1024x768.jpg" alt="Modessa Island plage" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/VID_20241208_141612_00_116_2025-08-11_10-44-44_capture-decran-1-768x1024.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <h4>⧐ Activités</h4>
-            <p>Un terrain de basket-ball ainsi qu’un filet de beach-volley sont à disposition.</p>
-            <p>Il y a également un billard près du restaurant.</p>
+            <p>Un terrain de basket-ball ainsi qu’un filet de beach-volley sont à disposition. Il y a également un billard près du restaurant.</p>
             <h4>⧐ Restauration</h4>
             <p>Au niveau de la restauration, tout est préparé à la minute avec des produits frais. Comme chaque séjour ici est en pension complète, on nous propose pour chaque repas de choisir entre deux plats, toujours accompagnés d'une salade. En dessert, on a droit à des fruits frais, of course.</p>
             <p>Pour le petit-déjeuner, c’est œufs (sous toutes ses formes !) ou pancakes, servis avec des fruits.</p>
@@ -1087,14 +1084,14 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             <div className="article-day-header article-day-header-tight">
               <h3>Comment se rendre à Modessa Island ?</h3>
             </div>
-            <p>Si vous souhaitez venir dans ce paradis perdu, vous pouvez contacter directement MARCO (☎️ +63 912 045 9971), le responsable de l’île, qui se fera un plaisir de vous organiser cette expérience unique !</p>
+            <p>Si vous souhaitez venir dans ce paradis perdu, vous pouvez contacter directement MARCO (<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8956c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{display:"inline",verticalAlign:"middle",marginRight:"3px"}}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+63 912 045 9971), le responsable de l’île, qui se fera un plaisir de vous organiser cette expérience unique !</p>
             <p>Pour ce séjour de 2 nuits, nous avons payé 5,500 Php (90 €) par personne. Les transferts en bateau Roxas &lt;-&gt; Modessa, ainsi que tous les repas, sont compris.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2236-1-1024x768.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2255-768x1024.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Modessa Island est une destination idéale pour ceux qui recherchent une escapade paisible, loin de l'agitation touristique.</p>
-            <p>C’est l’endroit parfait pour se reconnecter avec la nature dans un cadre idyllique.</p>
+            <p>Modessa Island est une destination idéale pour ceux qui recherchent une escapade paisible, loin de l'agitation touristique. C’est l’endroit parfait pour se reconnecter avec la nature dans un cadre idyllique.</p>
+            
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À ne pas manquer</strong><p>Modessa Island, c'est notre paradis sur Terre de ce voyage : une île privée minuscule, du sable blanc, une mer limpide et zéro réseau. Deux nuits dans un bungalow les pieds dans l'eau, on en rêve encore.</p></div>
