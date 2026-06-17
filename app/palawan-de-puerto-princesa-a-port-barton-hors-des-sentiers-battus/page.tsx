@@ -274,6 +274,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
             <p>Après ce moment détente, on se prépare pour aller manger. On a repéré un petit restaurant méditerranéen à seulement 3 minutes à pied qui nous tente bien, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" rel="noopener noreferrer" className="article-link">Bersian Restaurant</a></strong>. Effectivement, on s’est régalées.</p>
             <p>Il est temps d’aller se coucher. Demain, nous partons vers une nouvelle destination, on a trop hâte !</p>
             
+            
             <div className="pb-resto-section">
               <h3 className="pb-resto-title">Où manger à Puerto Princesa ?</h3>
             <div className="pb-resto-tier">
@@ -296,6 +297,23 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
               <div className="pb-resto-grid">
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJR1rkzeZjtTMRLCOn0T2aPBQ" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Artisans</span>
+                <span className="pb-resto-card-desc">Cuisine variée et généreuse dans un cadre artistique soigné — du burger au tacos, tout est bon</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Kinabuchs Grill and Bar</span>
+                <span className="pb-resto-card-desc">Le classique incontournable : spécialités philippines et grande carte animée</span>
+              </a>
+              </div>
+            </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJR1rkzeZjtTMRLCOn0T2aPBQ" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Artisans</span>
                 <span className="pb-resto-card-desc">Plats frais et savoureux, cadre soigné — notre adresse coup de cœur</span>
               </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
@@ -304,7 +322,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
               </a>
               </div>
             </div>
-            </div>          </section>
+          </section>
 
           <section id="sabang" className="article-section">
             <div className="article-day-header">
@@ -401,6 +419,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0794-768x1024.jpg" alt="Buffle Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             
+            
             <div className="pb-resto-section">
               <h3 className="pb-resto-title">Où manger à Sabang ?</h3>
             <div className="pb-resto-tier">
@@ -427,7 +446,20 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
               </a>
               </div>
             </div>
-            </div>          </section>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJ7bLvQRmRtTMRGFxji_8Ngpo" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Red Turtle Restaurant</span>
+                <span className="pb-resto-card-desc">Vue sur la mer, meilleure cuisine du village — une valeur sûre</span>
+              </a>
+              </div>
+            </div>
+          </section>
 
           <section id="port-barton" className="article-section">
             <div className="article-day-header">
@@ -605,6 +637,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1114-768x1024.jpg" alt="Bangka Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             
+            
             <div className="pb-resto-section">
               <h3 className="pb-resto-title">Où manger à Port Barton ?</h3>
             <div className="pb-resto-tier">
@@ -621,7 +654,60 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-card-name">Canteen Chariz John</span>
                 <span className="pb-resto-card-desc">Grill philippin, poissons et poulet frais sur braise — simple, local et savoureux</span>
               </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJYas4sEbFtTMRdlVfkkXG06s" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Star Apple Canteen</span>
+                <span className="pb-resto-card-desc">Étal de poissons et viandes frais : on choisit sa pièce, riz inclus — inoubliable</span>
+              </a>
               </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Kusinero del Barrio</span>
+                <span className="pb-resto-card-desc">Saveurs philippines maison dans un cadre décontracté</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJywaWWgDFtTMRFMd9PPpud1M" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Bus Café</span>
+                <span className="pb-resto-card-desc">Café-bar-karaoké unique, ambiance festive et cuisine généreuse</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€€</span>
+                <span className="pb-resto-tier-label">Bars & restos de plage</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Flow Bar</span>
+                <span className="pb-resto-card-desc">Restaurant-bar avec piscine, pizzas et burgers délicieux — idéal pour une après-midi chill</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5zlib7vEtTMRS9KJ2L8ZFCc" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Jungle Bar</span>
+                <span className="pb-resto-card-desc">Dans la jungle à 20 min de tuk-tuk, vue sur la baie et cocktails maison</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Mai Tai</span>
+                <span className="pb-resto-card-desc">Bar de plage avec jeux, excellents cocktails et beau spot sunset</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Marguerita Sunset Bar</span>
+                <span className="pb-resto-card-desc"><span style={{color:"#c8956c"}}>♥</span> Cuisine philippine et italienne, musique live et couchers de soleil inoubliables</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJ1TtGrtfEtTMRFfbhGIiYYBI" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Mojito Bar</span>
+                <span className="pb-resto-card-desc">Dans la jungle à 5 min en tuk-tuk, mojitos divins et cuisine de caractère</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Beach Club</span>
+                <span className="pb-resto-card-desc"><span style={{color:"#c8956c"}}>♥</span> Cuisine raffinée en bord de plage, cocktails remarquables et couchers de soleil inoubliables</span>
+              </a>
+              </div>
+            </div>
             </div>
             <div className="pb-resto-tier">
               <div className="pb-resto-tier-header">
@@ -676,7 +762,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               </a>
               </div>
             </div>
-            </div>          </section>
+          </section>
 
           <section id="san-vicente" className="article-section">
             <div className="article-day-header">
@@ -848,6 +934,7 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1533-768x1024.jpg" alt="San Vicente Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             
+            
             <div className="pb-resto-section">
               <h3 className="pb-resto-title">Où manger à San Vicente ?</h3>
             <div className="pb-resto-tier">
@@ -856,15 +943,32 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://www.google.com/maps/place/?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
-                <span className="pb-resto-card-name">Club Agutaya</span>
-                <span className="pb-resto-card-desc">La table gastronomique de San Vicente — parfois privatisée, réservez à l'avance</span>
-              </a>
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJh7S17jXXtTMRw5HVNmKhPMk" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mango Bar</span>
                 <span className="pb-resto-card-desc">Au port, crabes frais et poulet frit — simple et délicieux face à la mer</span>
               </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJg2drqix5tjMRyRfCIANEurI" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Turtle Beach Restaurant</span>
+                <span className="pb-resto-card-desc">Tables en bois sur la plage, ambiance surf — spot du festival SanVicSurf</span>
+              </a>
               </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€€€</span>
+                <span className="pb-resto-tier-label">Gastronomique</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">Club Agutaya</span>
+                <span className="pb-resto-card-desc">La table gastronomique de San Vicente — parfois privatisée, réservez à l'avance</span>
+              </a>
+              <a href="https://www.google.com/maps/place/?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Hotel Elizabeth</span>
+                <span className="pb-resto-card-desc">Complexe impressionnant, service aux petits soins, cuisine gastronomique</span>
+              </a>
+              </div>
+            </div>
             </div>
             <div className="pb-resto-tier">
               <div className="pb-resto-tier-header">
@@ -882,7 +986,7 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
               </a>
               </div>
             </div>
-            </div>          </section>
+          </section>
 
           <section id="retour-port-barton" className="article-section">
             <div className="article-day-header">
