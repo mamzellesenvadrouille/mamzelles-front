@@ -10,7 +10,10 @@ export default function ScrollToTop() {
   }, []);
   if (!visible) return null;
   return (
-    <button className="scroll-top-btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Retour en haut">
+    <button className="scroll-top-btn" onClick={() => {
+      window.history.replaceState(null, '', window.location.pathname);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }} aria-label="Retour en haut">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="18 15 12 9 6 15"/></svg>
     </button>
   );
