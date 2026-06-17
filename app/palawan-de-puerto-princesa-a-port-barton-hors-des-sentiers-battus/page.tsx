@@ -121,10 +121,7 @@ export default function PalawanPortBartonPage() {
             <p>Ne manquez pas notre autre article sur Palawan. Vous y trouverez des infos pratiques, notamment sur les aéroports et les transports à privilégier pour rejoindre facilement l’archipel.</p>
             <p>Partez ensuite à la découverte des merveilles d’El Nido et Coron, deux lieux exceptionnels aux panoramas à couper le souffle.</p>
             <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan Blog" className="article-img-full" loading="lazy" /></a>
-            <div className="article-must">
-              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À LIRE AUSSI</strong><p><a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-link">⋙ PALAWAN : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</a></p></div>
-            </div>
+            
           </section>
 
           <section id="manille" className="article-section">
@@ -369,17 +366,14 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
             <p>Le départ est à 8h et c’est le premier de la journée. Du coup, on devrait être à peu près seules sur ce lieu incroyable…</p>
             <p>Nous sommes 8 en tout cas à embarquer sur le bateau. Direction l'Underground River !</p>
             <h4>⧐ Un grand Wahooo !</h4>
-            <p>On fait 15 minutes de bangka environ avant de débarquer sur une magnifique plage. De là, on récupère des casques et un audio-guide en français. Trop cool pour pouvoir bien comprendre les explications.</p>
-            <div className="article-must">
-              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>La rivière souterraine de Puerto Princesa (Underground River), classée à l'UNESCO, est l'une des plus longues rivières navigables souterraines au monde. Récupérez l'audio-guide en français au départ : les explications valent vraiment le détour.</p></div>
-            </div>
+            <p>On fait 15 minutes de bangka environ avant de débarquer sur une magnifique plage. De là, on récupère des casques et un audio-guide en français.</p>
+            
             <p>On nous fait ensuite embarquer dans un autre bateau, bien plus petit et sans moteur, un paddle boat comme ils l’appellent. C’est partiii !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0784-2-768x1024.jpg" alt="Plage Underground River Sabang" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0709-768x1024.jpg" alt="Plage Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Cette rivière souterraine est l’une des merveilles naturelles les plus impressionnantes du pays et est considérée comme la 7ème merveille naturelle du monde. Elle fait partie du patrimoine mondial de l’Unesco depuis 1999. On y observe des stalactites et stalagmites aux formes spectaculaires.</p>
+            
             <p>Nous avons seulement parcouru 2 km en paddle boat dans la grotte, mais elle regorge en fait de coins encore inexplorés. Avec ses centaines de milliers de chauves-souris, c’est clairement la maison de Batman ! Lol.</p>
             <p>Le nombre de visiteurs est limité chaque jour afin de préserver l'écosystème de ce merveilleux endroit. Donc mieux vaut ne pas arriver trop tard, au risque de ne pas pouvoir y accéder.</p>
             <p>La visite a duré environ 45 minutes. Bien que les avis soient mitigés sur l’Underground River, on est vraiment contentes de l’avoir fait et on vous le recommande vivement. C’est clairement impressionnant !
@@ -392,7 +386,11 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0736-768x1024.jpg" alt="Stalactites Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0740-768x1024.jpg" alt="Stalactites Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <h4>⧐ De retour sur la terre ferme...</h4>
+                        <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À ne pas manquer</strong><p>La rivière souterraine de Puerto Princesa (Underground River), classée à l’UNESCO, est l’une des plus longues rivières navigables souterraines au monde. Récupérez l’audio-guide en français au départ : les explications valent vraiment le détour.</p></div>
+            </div>
+<h4>⧐ De retour sur la terre ferme...</h4>
             <p>Un petit restaurant sur la plage nous fait de l’œil. On s’y installe pour boire un verre et manger. Après ça, rien de mieux pour digérer qu’une petite balade sur la plage...</p>
             <p>On tombe sur plusieurs stands de massage. Avec les lits à l’ombre des cocotiers et face à la mer, Laurie se laisse tenter. Le cadre est idyllique. En même temps, une heure de massage intégral à l’huile essentielle pour 500 Php (8€), comment résister ?</p>
             <p>Pendant ce temps, Amélie qui n’aime pas plus se faire masser que ça, part explorer la plage.</p>
