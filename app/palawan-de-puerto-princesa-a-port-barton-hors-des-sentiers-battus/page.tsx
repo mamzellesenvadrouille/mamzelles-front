@@ -285,7 +285,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
               <div className="pb-resto-grid">
               <a href="https://www.google.com/maps/place/?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" rel="noopener noreferrer" className="pb-resto-card">
                 <span className="pb-resto-card-name">Bersian Restaurant</span>
-                <span className="pb-resto-card-desc">Cuisine méditerranéenne au cœur de Puerto Princesa — kebab, pizza et baklava à tester</span>
+                <span className="pb-resto-card-desc">Spécialiste du shawarma à Puerto Princesa — cuisine méditerranéenne authentique et généreuse</span>
               </a>
               </div>
             </div>
