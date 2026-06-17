@@ -376,6 +376,10 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
             
             <p>Nous avons seulement parcouru 2 km en paddle boat dans la grotte, mais elle regorge en fait de coins encore inexplorés. Avec ses centaines de milliers de chauves-souris, c’est clairement la maison de Batman ! Lol.</p>
             <p>Le nombre de visiteurs est limité chaque jour afin de préserver l'écosystème de ce merveilleux endroit. Donc mieux vaut ne pas arriver trop tard, au risque de ne pas pouvoir y accéder.</p>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
+              <div><strong>Le conseil des MamZelles</strong><p>La route vers les points de vue de San Vicente est vraiment chaotique : gros nids de poule, beaucoup de sable, dévers... Ne faites surtout pas l’impasse sur le casque et restez très prudents !</p></div>
+            </div>
             <p>La visite a duré environ 45 minutes. Bien que les avis soient mitigés sur l’Underground River, on est vraiment contentes de l’avoir fait et on vous le recommande vivement. C’est clairement impressionnant !
 Nous sommes de retour au port de Sabang vers 11h.</p>
             <div className="article-gallery-2">
@@ -546,7 +550,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
 Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White Beach à la rame !</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>On nous avait promis 10 minutes en kayak jusqu’à Coconut Beach, mais prévoyez plutôt 20 à 30 minutes selon la marée et le vent. Par marée basse, pensez à passer plus au large : le fond est très peu profond à certains endroits.</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>On nous avait promis 10 minutes en kayak jusqu’à Coconut Beach, mais prévoyez plutôt 20 à 30 minutes selon la marée et le vent. Par marée basse, pensez à passer plus au large : le fond est très peu profond à certains endroits.</p></div>
             </div>
             <p>En tout cas, défi relevé ! On est trop fières de nous ! Les paysages qu'on aperçoit en chemin sont canons. Le temps de traversée est très vite passé finalement. Bon, il faudra rentrer après, et ça, c'est une autre histoire !</p>
             <div className="article-gallery-2">
@@ -766,7 +770,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             <p>Programme du jour : location d’un scooter à l’hôtel pour 500 Php (8 €) la journée et direction les points de vue de San Vicente ! De ce qu'on en a vu sur Google Maps, ça a l’air plutôt pas mal...</p>
             <h4>⧐ Comment s'y rendre ?</h4>
             <p>Après avoir fait le plein pour 250 Php (4€10), il nous faut 50 minutes pour rejoindre notre 1er spot. On ne vous le cache pas, on a traversé des portions de route vraiment très mauvaises.</p>
-            <p>De gros nids de poule, beaucoup de sable, mieux vaut être très prudent, et ne pas faire l’impasse sur le casque !</p>
+            
             <h4>⧐ SanVic Viewpoint</h4>
             <p>Pour accéder au site, il faut débourser 25 Php (0€40) par personne. D’ici, la vue sur la <strong>Long Beach</strong>, que nous avons longée pour venir jusqu’ici, est canon !</p>
             <p>Sachez que cette plage, avec ses 14 km, est la plus longue des Philippines et la 2ème plus longue d’Asie.</p>
