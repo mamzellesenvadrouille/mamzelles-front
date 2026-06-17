@@ -1,5 +1,5 @@
 /* ============================================
-   MADRID â€” Styles spÃ©cifiques Ã  l'article
+   MADRID ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Styles spÃƒÆ’Ã‚Â©cifiques ÃƒÆ’  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -476,11 +476,7 @@
   padding: 16px 40px;
   background: var(--bg);
   border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  width: calc(100vw - 17px);
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); }
+  border-bottom: 1px solid var(--line); }
 
 .article-bref-bar-item { display: flex;
   align-items: center;
