@@ -255,7 +255,7 @@ C’est parti, nous sommes 8 sur le bateau.</p>
                         <p>Ce sont en fait des friperies — et c’est là qu’on trouvera finalement notre bonheur. Mission accomplie, youhou !</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Puerto Princesa regorge de friperies où l’on peut faire de vraies affaires : une tenue complète pour moins de 10€ ! Vêtements chauds pour survivre aux clims glaciales des vans, ou belles fringues d’été… on peut y trouver de vrais trésors. La plupart des Philippins y achètent leurs vêtements, bien plus accessibles que dans les centres commerciaux.</p></div>
+              <div><strong>Bon à savoir</strong><p>Puerto Princesa regorge de friperies où l’on peut faire de vraies affaires : Vêtements chauds pour survivre aux clims glaciales des vans, ou belles fringues d’été… on peut y trouver de vrais trésors. La plupart des Philippins y achètent leurs vêtements, bien plus accessibles que dans les centres commerciaux.</p></div>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 4</span>
