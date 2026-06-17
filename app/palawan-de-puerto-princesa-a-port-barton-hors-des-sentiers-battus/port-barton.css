@@ -14,7 +14,6 @@
   .desktop-tablet-br { display: none; }
   .article-portbarton .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
   .article-day-header h2 { font-size: 32px !important; }
-  .article-portbarton .article-day-header-tight { margin-top: 16px !important; }
   .article-portbarton .article-day-header { margin-bottom: 12px !important; }
   .article-portbarton .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; }
   .article-portbarton .article-section h3.budget-h3 { font-size: 18px !important; }
@@ -442,7 +441,6 @@
   .article-cdcr-grid { flex-wrap: nowrap !important; gap: 0 !important; }
   .article-cdcr-item { flex: 1 1 0 !important; }
   .article-portbarton .article-day-header { margin-bottom: 12px !important; }
-  .article-portbarton .article-day-header-tight { margin-top: 16px !important; }
   .sidebar-cta-title { font-size: 23px !important; }
   .sidebar-cta .btn-gold { padding: 8px 18px !important; font-size: 9px !important; }
 }
@@ -606,7 +604,7 @@
   .article-related-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 
-.article-portbarton .article-day-header { margin-top: 48px;
+.article-portbarton .article-day-header { margin-top: 30px;
   margin-bottom: 24px; }
 
 .article-portbarton .article-day-badge { margin-bottom: 8px; }
