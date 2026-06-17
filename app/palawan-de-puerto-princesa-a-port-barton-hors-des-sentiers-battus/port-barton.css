@@ -14,7 +14,6 @@
   .desktop-tablet-br { display: none; }
   .article-portbarton .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
   .article-day-header h2 { font-size: 32px !important; }
-  .article-portbarton .article-day-header { margin-bottom: 12px !important; }
   .article-portbarton .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; }
   .article-portbarton .article-section h3.budget-h3 { font-size: 18px !important; }
   .article-portbarton .article-section h3.budget-h3 i { font-size: 20px !important; }
@@ -248,7 +247,7 @@
   border-bottom: 1px solid var(--line); }
 
 @media (max-width: 768px) {
-  .article-coup-de-coeur { padding: 24px 20px; width: 100% !important; left: auto !important; transform: none !important; }
+  .article-coup-de-coeur { padding: 24px 20px; }
   .article-cdcr-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
 }
 
@@ -364,7 +363,7 @@
 
 .sidebar-cta-text { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.7; font-weight: 300; margin-bottom: 20px; }
 
-.article-coup-de-coeur { background: #e8ddd3; padding: 12px 0 12px 80px; margin-top: 8px; width: calc(100vw - 17px); position: relative; left: 50%; transform: translateX(-50%); }
+.article-coup-de-coeur { background: #e8ddd3; padding: 12px 0 12px 80px; margin-top: 8px; width: 100vw; position: relative; left: 50%; transform: translateX(-50%); }
 
 .article-cdcr-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
 
@@ -391,9 +390,11 @@
   .budget-price { font-size: 22px !important; white-space: nowrap !important; }
   .article-coup-de-coeur { padding: 32px 30px; }
   .article-cdcr-grid { grid-template-columns: repeat(2, 1fr); }
-  .article-cdcr-item { flex: 1 1 0 !important; }
-  .article-cdcr-value { white-space: normal !important; }
-  .article-portbarton .article-day-header { margin-bottom: 12px !important; }
+  .article-cdcr-value { white-space: nowrap !important; }
+  .article-cdcr-item:nth-child(1) { flex: 0.7 1 0 !important; }
+  .article-cdcr-item:nth-child(2) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(3) { flex: 1.1 1 0 !important; }
+  .article-cdcr-item:nth-child(4) { flex: 1.3 1 0 !important; }
 }
 
 .article-cdcr-item:last-child { padding-right: 0; padding-left: 16px; }
@@ -437,10 +438,12 @@
   .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; }
   .hero-article .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.85) 0%, rgba(10,5,2,0.6) 50%, rgba(10,5,2,0.3) 100%) !important; }
   .article-pratique-grid { grid-template-columns: 1fr; }
-  .article-coup-de-coeur { padding: 24px 40px !important; }
+  .article-coup-de-coeur { padding: 24px 40px !important; overflow: hidden; }
   .article-cdcr-grid { flex-wrap: nowrap !important; gap: 0 !important; }
-  .article-cdcr-item { flex: 1 1 0 !important; }
-  .article-portbarton .article-day-header { margin-bottom: 12px !important; }
+  .article-cdcr-item:nth-child(1) { flex: 20 1 0 !important; }
+  .article-cdcr-item:nth-child(2) { flex: 20 1 0 !important; }
+  .article-cdcr-item:nth-child(3) { flex: 30 1 0 !important; }
+  .article-cdcr-item:nth-child(4) { flex: 30 1 0 !important; }
   .sidebar-cta-title { font-size: 23px !important; }
   .sidebar-cta .btn-gold { padding: 8px 18px !important; font-size: 9px !important; }
 }
@@ -604,7 +607,7 @@
   .article-related-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 
-.article-portbarton .article-day-header { margin-top: 30px;
+.article-portbarton .article-day-header { margin-top: 48px;
   margin-bottom: 24px; }
 
 .article-portbarton .article-day-badge { margin-bottom: 8px; }
@@ -713,7 +716,7 @@
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
 /* ============================================
-   BLOCS OÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ MANGER ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Port Barton
+   BLOCS OÃƒâ„¢ MANGER Ã¢â‚¬â€ Port Barton
    ============================================ */
 
 .pb-resto-section {
