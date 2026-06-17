@@ -228,7 +228,7 @@ C’est parti, nous sommes 8 sur le bateau.</p>
             <p>Cet Island hopping est bien moins fréquenté que ceux du Nord de Palawan (Coron &amp; El Nido), ce qui est plutôt agréable. Le fait qu’il y ait beaucoup moins de monde fait que nous avions les spots rien que pour nous ! Par contre, on ne vous le cache pas, même si c’était très sympa et très joli, c’est tout de même bien moins impressionnant que les Island hoppings de Coron et El Nido.</p>
             <h4>⧐ Baywalk, la promenade nocturne incontournable</h4>
             <p>Pour la soirée, petite balade et repas sur la <strong>Baywalk</strong> qui se situe à 3 minutes à pied de notre hôtel. Sur place, on découvre un petit marché, une grande promenade et plusieurs restaurants. L’endroit est très familial. Comme la plupart des enfants ici, il est possible de louer des petits vélos, des voiturettes, des tuk-tuks à pédales…</p>
-            <p>Pour le restaurant, notre choix (enfin celui de Laurie) s’est fait en fonction des poissons frais exposés sur les étals. On dînera donc au <strong>Kobe's</strong>. On vous le recommande vivement, on a tellement bien mangé !</p>
+            <p>Pour le restaurant, notre choix (enfin celui de Laurie) s’est fait en fonction des poissons frais exposés sur les étals. On dînera donc au <strong>Kobe's</strong>.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0530-1024x768.jpg" alt="Baywalk Puerto Princessa" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4929-768x1024.jpg" alt="Bike Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
