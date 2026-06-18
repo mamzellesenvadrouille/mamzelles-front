@@ -387,6 +387,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .article-portbarton .article-section h3 { line-height: 1.1; }
+  .article-portbarton .article-section h4 { line-height: 1.1 !important; }
   .budget-price { font-size: 22px !important; white-space: nowrap !important; }
   .article-coup-de-coeur { padding: 32px 30px; }
   .article-cdcr-grid { grid-template-columns: repeat(2, 1fr); }
