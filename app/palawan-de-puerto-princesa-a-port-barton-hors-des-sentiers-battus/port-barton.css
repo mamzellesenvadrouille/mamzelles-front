@@ -7,7 +7,7 @@
   .hero-article .hero-overlay { background: linear-gradient(to bottom, rgba(10,5,2,0.45) 0%, rgba(10,5,2,0.75) 100%) !important; }
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 45vh !important; min-height: 280px !important; }
-  .hero-article .hero-content { padding: 0 24px 36px !important; bottom: -18px !important; }
+  .hero-article .hero-content { padding: 0 24px 36px !important; bottom: -14px !important; }
   .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 22px !important; white-space: normal !important; }
   .mobile-hero-break { display: inline; }
   .tablet-only-br { display: none; }
