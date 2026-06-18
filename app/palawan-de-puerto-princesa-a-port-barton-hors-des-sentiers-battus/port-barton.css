@@ -632,6 +632,14 @@
 
 .article-portbarton .article-day-header-tight { margin-bottom: 8px !important; }
 
+.article-portbarton p + .article-day-header-tight,
+.article-portbarton .article-tip + .article-day-header-tight,
+.article-portbarton .article-avis + .article-day-header-tight,
+.article-portbarton .article-must + .article-day-header-tight,
+.article-portbarton .article-gallery-2 + .article-day-header-tight,
+.article-portbarton .article-gallery-3 + .article-day-header-tight,
+.article-portbarton .article-img-full + .article-day-header-tight { margin-top: 40px; }
+
 
 .article-portbarton .article-gallery-2 + h4,
 .article-portbarton .article-gallery-3 + h4,
