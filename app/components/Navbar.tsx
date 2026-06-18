@@ -33,7 +33,7 @@ const destinations = [
     liens: [
       { label: 'Itinéraire Philippines', href: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient' },
       { label: 'Palawan – El Nido & Coron', href: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines' },
-      { label: 'Palawan – Port Barton', href: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus' },
+      { label: 'Palawan – De Puerto à Port Barton', href: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus' },
     ]
   },
 ];
