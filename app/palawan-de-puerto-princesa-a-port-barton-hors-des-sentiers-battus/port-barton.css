@@ -466,7 +466,7 @@
   .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }
   .article-cdcr-item:last-child { padding-left: 0 !important; }
   .article-cdcr-item { display: flex; flex-direction: column; gap: 2px; }
-  .hero-article .hero-content { padding: 20px 24px 10px !important; }
+  .hero-article .hero-content { padding: 0 24px 36px !important; bottom: 20% !important; }
   .sidebar-cta-title { font-size: 30px !important; }
 }
 
