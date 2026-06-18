@@ -390,7 +390,6 @@
   .budget-price { font-size: 22px !important; white-space: nowrap !important; }
   .article-coup-de-coeur { padding: 32px 30px; }
   .article-cdcr-grid { grid-template-columns: repeat(2, 1fr); }
-  .article-cdcr-value { white-space: nowrap !important; }
   .article-cdcr-item:nth-child(1) { flex: 1 1 0 !important; }
   .article-cdcr-item:nth-child(2) { flex: 1 1 0 !important; }
   .article-cdcr-item:nth-child(3) { flex: 1 1 0 !important; }
@@ -440,10 +439,10 @@
   .article-pratique-grid { grid-template-columns: 1fr; }
   .article-coup-de-coeur { padding: 24px 40px !important; overflow: hidden; }
   .article-cdcr-grid { flex-wrap: nowrap !important; gap: 0 !important; }
-  .article-cdcr-item:nth-child(1) { flex: 20 1 0 !important; }
-  .article-cdcr-item:nth-child(2) { flex: 20 1 0 !important; }
-  .article-cdcr-item:nth-child(3) { flex: 30 1 0 !important; }
-  .article-cdcr-item:nth-child(4) { flex: 30 1 0 !important; }
+  .article-cdcr-item:nth-child(1) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(2) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(3) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(4) { flex: 1 1 0 !important; }
   .sidebar-cta-title { font-size: 23px !important; }
   .sidebar-cta .btn-gold { padding: 8px 18px !important; font-size: 9px !important; }
 }
