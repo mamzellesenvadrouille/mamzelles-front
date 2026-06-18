@@ -282,7 +282,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
                 <span className="pb-resto-tier-label">Budget</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://maps.google.com/maps?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJfQAWwkBjtTMR5OWg6iaA4y8" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Bersian Restaurant</span>
                 <span className="pb-resto-card-desc">Spécialiste du shawarma à Puerto Princesa — cuisine méditerranéenne authentique et généreuse</span>
               </a>
@@ -294,11 +294,11 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://maps.google.com/maps?q=place_id:ChIJR1rkzeZjtTMRLCOn0T2aPBQ" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJR1rkzeZjtTMRLCOn0T2aPBQ'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJR1rkzeZjtTMRLCOn0T2aPBQ'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJR1rkzeZjtTMRLCOn0T2aPBQ', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJR1rkzeZjtTMRLCOn0T2aPBQ" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Artisans</span>
                 <span className="pb-resto-card-desc">Cuisine variée et généreuse dans un cadre artistique soigné — du burger au tacos, tout est bon</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJKW3jKuFjtTMRTnlMhoPpyzY" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Kinabuchs Grill and Bar</span>
                 <span className="pb-resto-card-desc">Le classique de Puerto Princesa : spécialités philippines, crocodile au menu et ambiance de terrasse</span>
               </a>
@@ -416,7 +416,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
                 <span className="pb-resto-tier-label">Budget</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://maps.google.com/maps?q=place_id:ChIJkQWxQWORtTMRId-Qn5y1Yec" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJkQWxQWORtTMRId-Qn5y1Yec'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJkQWxQWORtTMRId-Qn5y1Yec'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJkQWxQWORtTMRId-Qn5y1Yec', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJkQWxQWORtTMRId-Qn5y1Yec" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">La Casa In Sabang</span>
                 <span className="pb-resto-card-desc">Adresse simple et authentique, parfaite après la rivière souterraine</span>
               </a>
@@ -428,7 +428,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://maps.google.com/maps?q=place_id:ChIJ7bLvQRmRtTMRGFxji_8Ngpo" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJ7bLvQRmRtTMRGFxji_8Ngpo'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJ7bLvQRmRtTMRGFxji_8Ngpo'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJ7bLvQRmRtTMRGFxji_8Ngpo', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJ7bLvQRmRtTMRGFxji_8Ngpo" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Red Turtle Restaurant</span>
                 <span className="pb-resto-card-desc">Vue sur la mer, meilleure cuisine du village — une valeur sûre</span>
               </a>
@@ -624,11 +624,11 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-tier-label">Budget</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://maps.google.com/maps?q=place_id:ChIJx7Q4GwDFtTMRBGi-5f6Gzgw" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJx7Q4GwDFtTMRBGi-5f6Gzgw'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJx7Q4GwDFtTMRBGi-5f6Gzgw'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJx7Q4GwDFtTMRBGi-5f6Gzgw', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJx7Q4GwDFtTMRBGi-5f6Gzgw" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Canteen Chariz John</span>
                 <span className="pb-resto-card-desc">Grill philippin, poissons et poulet frais sur braise — simple, local et savoureux</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJYas4sEbFtTMRdlVfkkXG06s" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJYas4sEbFtTMRdlVfkkXG06s'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJYas4sEbFtTMRdlVfkkXG06s'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJYas4sEbFtTMRdlVfkkXG06s', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJYas4sEbFtTMRdlVfkkXG06s" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Star Apple Canteen</span>
                 <span className="pb-resto-card-desc">Étal de poissons et viandes frais : on choisit sa pièce, riz inclus — inoubliable</span>
               </a>
@@ -640,15 +640,15 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://maps.google.com/maps?q=place_id:ChIJvX6uVf7WtTMRh6WRU6srGF0" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJvX6uVf7WtTMRh6WRU6srGF0'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJvX6uVf7WtTMRh6WRU6srGF0'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJvX6uVf7WtTMRh6WRU6srGF0', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJvX6uVf7WtTMRh6WRU6srGF0" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Ausan Restaurant</span>
                 <span className="pb-resto-card-desc">Sur la plage, cuisine philippine fraîche et plats copieux dans un cadre paradisiaque</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJKwFJctPEtTMR__RL1YxXisw" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Kusinero del Barrio</span>
                 <span className="pb-resto-card-desc">Saveurs philippines maison dans un cadre décontracté</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJywaWWgDFtTMRFMd9PPpud1M" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJywaWWgDFtTMRFMd9PPpud1M'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJywaWWgDFtTMRFMd9PPpud1M'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJywaWWgDFtTMRFMd9PPpud1M', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJywaWWgDFtTMRFMd9PPpud1M" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Bus Café</span>
                 <span className="pb-resto-card-desc">Café-bar-karaoké unique, ambiance festive et cuisine généreuse</span>
               </a>
@@ -660,27 +660,27 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
                 <span className="pb-resto-tier-label">Bars & restos de plage</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://maps.google.com/maps?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJoXIQr7fFtTMR13irWqld-OU" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Flow Bar</span>
                 <span className="pb-resto-card-desc">Restaurant-bar avec piscine, pizzas et burgers délicieux — idéal pour une après-midi chill</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJ5zlib7vEtTMRS9KJ2L8ZFCc" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJ5zlib7vEtTMRS9KJ2L8ZFCc'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJ5zlib7vEtTMRS9KJ2L8ZFCc'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJ5zlib7vEtTMRS9KJ2L8ZFCc', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJ5zlib7vEtTMRS9KJ2L8ZFCc" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Jungle Bar</span>
                 <span className="pb-resto-card-desc">Bar-resto franco-philippin dans la jungle, cuisine maison et vue imprenable sur la baie</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJMRbvbNPEtTMRbQVLDQeWwj0" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mai Tai</span>
                 <span className="pb-resto-card-desc">Bar de plage avec jeux, cocktails au sunset et bons petits plats</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJa7HLbNPEtTMR3ZESyODV1xA" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Marguerita Sunset Bar</span>
                 <span className="pb-resto-card-desc"><svg width="16" height="16" viewBox="0 0 24 24" fill="#c8956c" stroke="none" style={{display:"inline",verticalAlign:"middle",marginRight:"4px"}}><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg> Cuisine philippine et italienne, musique live et couchers de soleil inoubliables</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJ1TtGrtfEtTMRFfbhGIiYYBI" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJ1TtGrtfEtTMRFfbhGIiYYBI'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJ1TtGrtfEtTMRFfbhGIiYYBI'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJ1TtGrtfEtTMRFfbhGIiYYBI', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJ1TtGrtfEtTMRFfbhGIiYYBI" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mojito Bar</span>
                 <span className="pb-resto-card-desc">Dans la jungle à 5 min en tuk-tuk, mojitos divins et mini-burgers à tomber</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJ20FOe3bFtTMRrBNQrcdZjDk" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Beach Club</span>
                 <span className="pb-resto-card-desc"><svg width="16" height="16" viewBox="0 0 24 24" fill="#c8956c" stroke="none" style={{display:"inline",verticalAlign:"middle",marginRight:"4px"}}><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg> Cuisine raffinée en bord de plage, cocktails remarquables — spot parfait pour le sunset</span>
               </a>
@@ -868,11 +868,11 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
                 <span className="pb-resto-tier-label">Rapport qualité-prix</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://maps.google.com/maps?q=place_id:ChIJh7S17jXXtTMRw5HVNmKhPMk" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJh7S17jXXtTMRw5HVNmKhPMk'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJh7S17jXXtTMRw5HVNmKhPMk'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJh7S17jXXtTMRw5HVNmKhPMk', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJh7S17jXXtTMRw5HVNmKhPMk" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Mango Bar</span>
                 <span className="pb-resto-card-desc">Bar de pêcheurs décontracté au port — fruits de mer frais et belle carte variée</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJg2drqix5tjMRyRfCIANEurI" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJg2drqix5tjMRyRfCIANEurI'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJg2drqix5tjMRyRfCIANEurI'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJg2drqix5tjMRyRfCIANEurI', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJg2drqix5tjMRyRfCIANEurI" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Turtle Beach</span>
                 <span className="pb-resto-card-desc">Tables en bois sur la plage, ambiance surf et cuisine familiale</span>
               </a>
@@ -884,11 +884,11 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
                 <span className="pb-resto-tier-label">Gastronomique</span>
               </div>
               <div className="pb-resto-grid">
-              <a href="https://maps.google.com/maps?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJB3tH_R_WtTMRLtgAG_9Jk8k" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">Club Agutaya</span>
                 <span className="pb-resto-card-desc">Grande carte et dîner en bord de mer sur Long Beach</span>
               </a>
-              <a href="https://maps.google.com/maps?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y" target="_blank" className="pb-resto-card" onClick={(e) => { e.preventDefault(); const ua = navigator.userAgent.toLowerCase(); if (/iphone|ipad|ipod/.test(ua)) { window.location.href = 'maps://maps.google.com/maps?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y'; } else if (/android/.test(ua)) { window.location.href = 'geo:0,0?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y'; } else { window.open('https://maps.google.com/maps?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y', '_blank'); } }}>
+              <a href="https://maps.google.com/maps?q=place_id:ChIJLSAHXJh5tjMRWd9JI1U9g8Y" target="_blank" className="pb-resto-card">
                 <span className="pb-resto-card-name">The Hotel Elizabeth</span>
                 <span className="pb-resto-card-desc">Cuisine soignée dans un cadre resort avec vue mer</span>
               </a>
