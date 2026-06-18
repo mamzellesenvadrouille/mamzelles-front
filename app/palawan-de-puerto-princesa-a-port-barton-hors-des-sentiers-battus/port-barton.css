@@ -818,8 +818,8 @@
   .pb-resto-section { padding: 20px 16px 14px; }
   .pb-resto-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
   .pb-resto-card { padding: 10px 12px; }
-  .pb-resto-card-name { font-size: 16px; }
-  .pb-resto-title { font-size: 16px !important; }
+  .pb-resto-card-name { font-size: 14px; }
+  .pb-resto-title { font-size: 18px !important; }
 }
 
 @media (max-width: 480px) {
