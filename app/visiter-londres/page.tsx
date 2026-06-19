@@ -131,8 +131,10 @@ export default function VisiterLondresPage() {
             </div>
             <p>Juste en face du palais se trouve le <strong>St. James’s Park</strong>, considéré comme l’un des plus beaux parcs de la capitale. Il offre une bouffée d’air frais et une atmosphère sereine au coeur de la ville. Dans ce parc, nous aimons déambuler dans les allées et observer les nombreux écureuils, pélicans, canards, et oiseaux qui y vivent.</p>
             <p>De l’autre côté de St. James’s Park, se dresse le <strong>Whitehall Palace</strong>. Ici, vous pouvez assister à la <strong>Horse Guards Parade</strong>, traduisez la relève de la garde à cheval. Moins spectaculaire que la relève de la garde à Buckingham Palace, nous trouvons que la relève des Horse Guards est plus ludique pour les enfants, notamment par la présence des chevaux. La cérémonie dure 30Mn et a lieu à <strong>11H du lundi au samedi</strong>, et à <strong>10H le dimanche</strong>.</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9618-scaled-696x1024.jpeg" alt="Horse Guard Londres" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9896-scaled-1024x768.jpeg" alt="St. James’s Park Londres" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9618-scaled-696x1024.jpeg" alt="Horse Guard Londres" loading="lazy" style={{flex: '0.68', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9896-scaled-1024x768.jpeg" alt="St. James’s Park Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
             <p>C’est à Westminster, au bord de la Tamise, que se dresse la tour d’horloge la plus célèbre au monde, <strong>Big Ben</strong> ! Elle domine le <strong>Palace of Westminster</strong>, là où siège le parlement.</p>
             <p>A quelques minutes à pied, vous trouverez la somptueuse <strong>Abbaye de Westminster</strong>. Cela fait plus de 700 ans qu’elle accueille les plus grands monarques, que ce soit pour des couronnements, des mariages ou des funérailles.</p>
             <p>Si vous souhaitez visiter l’Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, vous devrez payer 20£ (23€50) l’entrée par personne.</p>
