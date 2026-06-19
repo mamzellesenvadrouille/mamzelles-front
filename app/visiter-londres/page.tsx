@@ -522,11 +522,11 @@ export default function VisiterLondresPage() {
                       <>
                         <p>De nombreux aéroports sont implantés dans la capitale anglaise.</p>
                         <p>Pour notre part, nous connaissons ceux d’<strong>Heathrow</strong> et de <strong>Gatwick</strong> dans lesquels nous avons déjà atterri.</p>
-                        <p>•<em> HEATHROW</em></p>
+                        <h5>Heathrow</h5>
                         <p>Cet aéroport est le plus central. Nous vous le conseillons si votre logement est situé dans le coeur de Londres. Il s’agit de l’aéroport le plus fréquenté du monde ! Si vous prenez un vol depuis celui-ci, n’hésitez pas à venir bien à l’avance, il est immense !</p>
                         <p>Pour rejoindre le centre de Londres depuis Heathrow, vous pouvez prendre la <strong>Picadilly Line</strong> (ligne bleue foncée de métro). Dans ce cas, vous mettrez plus ou moins 1H et vous payerez le tarif du trajet de métro en fonction de la zone (1 à 5) où vous vous rendrez et de l’heure de la journée.</p>
                         <p>Autrement, vous pouvez prendre le <strong>Heathrow Express</strong> avec lequel vous mettrez 15Mn pour vous rendre à la gare de Paddington. Le tarif pour un aller simple est de 22£ (26€). La station de métro est directement située dans l’aéroport.</p>
-                        <p>• <em>GATWICK</em></p>
+                        <h5>Gatwick</h5>
                         <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30Mn depuis l’aéroport. Le tarif pour un aller simple est de 19£90 (23€50).</p>
                         <p>Le Gatwick Express est la solution la plus rapide, mais quelque peu onéreuse pour se rendre au coeur de la ville. Pour autant, il est également possible de prendre le <strong>Southern Railway</strong> (train).</p>
                         <p>Ce train alternatif arrive en gare de Victoria, London Bidge ou encore City Thameslink (à côté de la cathédrale St. Paul). Le tarif des billets oscille entre 11£ (13€) et 15£ (17€50).</p>
