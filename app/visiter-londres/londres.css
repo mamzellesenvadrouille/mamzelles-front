@@ -321,6 +321,10 @@
 
 .article-img-full { width: 100%; height: auto; display: block; margin: 8px 0; }
 
+/* Recadrage ponctuel pour une image prÃ©cise demandÃ©e en effet "pano"
+   (coupe le bas de la photo) â€” usage ciblÃ©, ne touche pas aux galeries. */
+.article-img-pano { max-height: 480px; object-fit: cover; object-position: top; }
+
 .article-pratique-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 
 .article-pratique-card { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 24px; }

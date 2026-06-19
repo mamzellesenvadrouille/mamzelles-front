@@ -209,12 +209,14 @@ export default function VisiterLondresPage() {
             <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur !</p>
             <p>Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
             <p>Pour les plus téméraires, et moyennant 10£60 (12€50), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42M du sol. Sensations garanties !</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3214-scaled-768x1024.jpeg" alt="Tower Bridge 2" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3214-scaled-768x1024.jpeg" alt="Tower Bridge 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9962-scaled-1024x768.jpeg" alt="Tower Bridge nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3207-scaled-1024x768.jpeg" alt="La City 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3268-scaled-768x1024.jpeg" alt="La City" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3207-scaled-1024x768.jpeg" alt="La City 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3268-scaled-768x1024.jpeg" alt="La City" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <p>Attention... <strong>Bon plan à savoir !</strong> Si vous prenez l’ascenseur jusqu’au 6ème étage du centre commercial <strong>One New Change</strong>, vous découvrirez une immense terrasse sur le toit qui vous offrira une vue imprenable sur la <strong>Cathédrale St. Paul</strong> et sur la ville.</p>
             <p><strong>L’accès est gratuit !</strong></p>
             <p>N’hésitez pas à vous y rendre en fin de journée pour admirer le coucher de soleil de ce point de vue.</p>
@@ -270,10 +272,12 @@ export default function VisiterLondresPage() {
             <p>À l’origine, il s’agissait de quartiers assez pauvres et marginalisés où vivaient principalement des personnes issues de l’immigration et des ouvriers.</p>
             <p>Aujourd’hui, ce sont des quartiers multiculturels et incontournables pour la jeunesse, la vie y est moins chère qu’au coeur de Londres.</p>
             <p><strong>Ces trois quartiers</strong> « hipsters » et « bobos » regorgent de marchés (dont certains sont couverts), de boutiques de créateurs, de friperies, de vinyles, de galeries d’art et de Coffee shop. L’East End, où le street art s’est imposé, est vivant, fascinant, et surtout très différent du reste de Londres.</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3253-scaled-1024x768.jpeg" alt="Spitalfields" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3727-768x1024.jpeg" alt="Graff 1" className="article-img-full" loading="lazy" />
-            <div className="article-gallery-3">
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3253-scaled-1024x768.jpeg" alt="Spitalfields" className="article-img-full article-img-pano" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3727-768x1024.jpeg" alt="Graff 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3243-scaled-1024x768.jpeg" alt="Graff 3 Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0193-scaled-1024x768.jpeg" alt="Rough Trade" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0195-scaled-1024x768.jpeg" alt="Vinyles" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
@@ -282,11 +286,11 @@ export default function VisiterLondresPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Si vous aimez ce genre d’ambiance décalée, nous vous conseillons de visiter ces quartiers <strong>le dimanche</strong>.</p></div>
             </div>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3237-1-scaled-1024x768.jpeg" alt="Old Spitalfields" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3238-scaled-1024x768.jpeg" alt="Old Spitalfields 1" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4319-scaled-1024x686.jpeg" alt="Graff 2" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4319-scaled-1024x686.jpeg" alt="Graff 2" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4304-scaled-1024x686.jpeg" alt="Graff 4" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0189-scaled-1024x768.jpeg" alt="Brick Lane" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
