@@ -1,6 +1,6 @@
 /* ============================================
-   VISITER LONDRES — Styles spécifiques à l’article
-   Calqué sur port-barton.css (scopé .article-londres)
+   VISITER LONDRES â€” Styles spÃ©cifiques Ã  lâ€™article
+   CalquÃ© sur port-barton.css (scopÃ© .article-londres)
    ============================================ */
 
 @media (max-width: 768px) {
@@ -724,7 +724,7 @@
 
 
 /* ============================================
-   BLOC « INFORMATIONS PRATIQUES » (spécifique Londres)
+   BLOC Â« INFORMATIONS PRATIQUES Â» (spÃ©cifique Londres)
    ============================================ */
 .article-londres .article-pratique {
   display: flex;
@@ -776,9 +776,124 @@
   margin: 16px 0;
 }
 
-/* --- Pratique : mobile (placé APRÈS le desktop, comme convenu) --- */
+/* --- Pratique : mobile (placÃ© APRÃˆS le desktop, comme convenu) --- */
 @media (max-width: 768px) {
   .article-londres .article-pratique-block { padding: 18px 18px !important; }
   .article-londres .article-pratique-title { font-size: 22px !important; }
   .article-londres .article-pratique-block h4 { font-size: 14px !important; }
+}
+
+/* ============================================
+   BLOC Â« POUR S'Y RENDRE Â» â€” liserÃ© gauche sobre
+   (cohÃ©rent avec article-tip / article-avis)
+   ============================================ */
+.article-londres .article-rendre {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin: 18px 0;
+}
+
+.article-londres .article-rendre-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.article-londres .article-rendre-label svg {
+  flex-shrink: 0;
+}
+
+.article-londres .article-rendre-label span {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--dark);
+}
+
+.article-londres .article-rendre p {
+  font-size: 14px !important;
+  line-height: 1.6;
+  color: var(--dark);
+  margin: 0 0 8px !important;
+}
+
+.article-londres .article-rendre p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* ============================================
+   BLOC Â« POUR MANGER Â» â€” carte avec nom en exergue
+   ============================================ */
+.article-londres .article-resto {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 18px 0;
+}
+
+.article-londres .article-resto-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.article-londres .article-resto-label svg {
+  flex-shrink: 0;
+}
+
+.article-londres .article-resto-label span {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.article-londres .article-resto-item {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-londres .article-resto-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.article-londres .article-resto-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 0 0 4px !important;
+}
+
+.article-londres .article-resto-name .article-resto-meta {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gold);
+  margin-left: 6px;
+}
+
+.article-londres .article-resto-item p {
+  font-size: 13.5px !important;
+  line-height: 1.6;
+  color: var(--dark);
+  margin: 0 !important;
+}
+
+/* --- Rendre / Resto : mobile --- */
+@media (max-width: 768px) {
+  .article-londres .article-rendre,
+  .article-londres .article-resto { padding: 16px 18px !important; }
+  .article-londres .article-resto-label span { font-size: 17px !important; }
 }

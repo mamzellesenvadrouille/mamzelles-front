@@ -150,9 +150,11 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4114-scaled-1024x686.jpeg" alt="Baker Street Londres" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9902-scaled-1024x768.jpeg" alt="Westminster nuit Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h3>Ⓜ️ - Pour s’y rendre...</h3>
-            <p>C’est parti pour une virée dans le quartier de Westminster ? Prenez le métro jusqu’à la station <strong>Westminster</strong>.</p>
-            <p>Empruntez ensuite la <strong>Circle Line</strong> (ligne jaune), la <strong>District Line</strong> (ligne verte) ou la <strong>Jubilee Line</strong> (ligne grise).</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>C’est parti pour une virée dans le quartier de Westminster ? Prenez le métro jusqu’à la station <strong>Westminster</strong>.</p>
+              <p>Empruntez ensuite la <strong>Circle Line</strong> (ligne jaune), la <strong>District Line</strong> (ligne verte) ou la <strong>Jubilee Line</strong> (ligne grise).</p>
+            </div>
           </section>
 
           <section id="jour-2-southwark" className="article-section">
@@ -185,17 +187,24 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9862-scaled-1024x576.jpeg" alt="Leake Street Graffiti 2" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9849-scaled-1024x768.jpeg" alt="Leake Street Graffiti 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h4>🍔 - Pour manger...</h4>
-            <p><em><strong>Borough Market</strong></em> : À 5 Mn à pied du <strong>Shard</strong>, se trouve un endroit incontournable, <strong>Borough Market</strong>. C’est THE place to be pour la pause déjeuner. Il s’agit du plus ancien et du plus célèbre marché alimentaire de Londres. Borough Market a une particularité, une partie du marché est surplombée par un pont emprunté par des trains.</p>
-            <p>Ce bruit peut-être surprenant (voire inquiétant !) la 1ère fois qu’on l’entend... Dans ce lieu très fréquenté les <strong>jours de marché</strong> (jeudis, vendredis et samedis), vous pouvez trouver des produits frais et locaux, mais également une multitude de stands de street-food des quatre coins du monde. Chacun y trouve son bonheur !</p>
+            <div className="article-resto">
+              <div className="article-resto-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg><span>Pour manger</span></div>
+              <div className="article-resto-item">
+                <p className="article-resto-name">Borough Market</p>
+                <p>À 5 Mn à pied du <strong>Shard</strong>, se trouve un endroit incontournable, <strong>Borough Market</strong>. C’est THE place to be pour la pause déjeuner. Il s’agit du plus ancien et du plus célèbre marché alimentaire de Londres. Borough Market a une particularité, une partie du marché est surplombée par un pont emprunté par des trains.</p>
+                <p>Ce bruit peut-être surprenant (voire inquiétant !) la 1ère fois qu’on l’entend... Dans ce lieu très fréquenté les <strong>jours de marché</strong> (jeudis, vendredis et samedis), vous pouvez trouver des produits frais et locaux, mais également une multitude de stands de street-food des quatre coins du monde. Chacun y trouve son bonheur !</p>
+              </div>
+            </div>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3171-scaled-1024x768.jpeg" alt="Borough Market 1" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3158-scaled-1024x768.jpeg" alt="Borough Market 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_2947-scaled-1024x768.jpeg" alt="Borough Market 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h4>Ⓜ️ - Pour s’y rendre...</h4>
-            <p>Afin d’organiser au mieux votre visite dans ces quartiers que nous affectionnons beaucoup, envisagez de vous rendre à South Bank pour commencer.</p>
-            <p>Pour cela, arrêtez-vous en métro à la station <strong>Waterloo</strong> en empruntant la <strong>Bakerloo Line</strong> (ligne marron), la <strong>Jubilee Line</strong> (ligne grise), la <strong>Northern Line</strong> (ligne noire) ou la <strong>Waterloo &amp; City Line</strong> (ligne verte claire).</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>Afin d’organiser au mieux votre visite dans ces quartiers que nous affectionnons beaucoup, envisagez de vous rendre à South Bank pour commencer.</p>
+              <p>Pour cela, arrêtez-vous en métro à la station <strong>Waterloo</strong> en empruntant la <strong>Bakerloo Line</strong> (ligne marron), la <strong>Jubilee Line</strong> (ligne grise), la <strong>Northern Line</strong> (ligne noire) ou la <strong>Waterloo &amp; City Line</strong> (ligne verte claire).</p>
+            </div>
             <h3>📍 La City</h3>
             <p>La City est l’un des quartiers les plus anciens de la capitale où se côtoient des édifices historiques majestueux, tels que le <strong>Tower Bridge</strong> et d’immenses grattes-ciel. En effet, il est à la fois le centre historique et le plus gros quartier des affaires de la ville. Le contraste des paysages est ici incroyable !</p>
             <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur !</p>
@@ -213,12 +222,19 @@ export default function VisiterLondresPage() {
             <p><strong>L’accès est gratuit !</strong></p>
             <p>N’hésitez pas à vous y rendre en fin de journée pour admirer le coucher de soleil de ce point de vue.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4022-scaled-1024x686.jpeg" alt="Vue de St. Paul" className="article-img-full" loading="lazy" />
-            <h4>🍔 - Pour manger...</h4>
-            <p><em><strong>Le Relais de Venise, l’Entrecôte</strong></em> : ce restaurant au style parisien propose un menu unique composé d’une salade croquante aux noix, et d’un contre-filet accompagné de sa succulente sauce secrète et de frites fraîches.</p>
-            <p>Leurs desserts faits maison sont juste à tomber ! Le concept est vraiment top ! Menu à 26£ (30€) / personne. Le restaurant ne prend pas de réservation.</p>
-            <h4>Ⓜ️ - Pour s’y rendre...</h4>
-            <p>Si vous souhaitez commencer votre journée en visitant le quartier de La City, vous pouvez vous arrêter dans ce cas en métro à la station <strong>Monument</strong>, qui est assez centrale.</p>
-            <p>Utilisez alors la <strong>Circle Line</strong> (ligne jaune) ou la <strong>District Line</strong> (ligne verte).</p>
+            <div className="article-resto">
+              <div className="article-resto-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg><span>Pour manger</span></div>
+              <div className="article-resto-item">
+                <p className="article-resto-name">Le Relais de Venise, l’Entrecôte</p>
+                <p>ce restaurant au style parisien propose un menu unique composé d’une salade croquante aux noix, et d’un contre-filet accompagné de sa succulente sauce secrète et de frites fraîches.</p>
+                <p>Leurs desserts faits maison sont juste à tomber ! Le concept est vraiment top ! Menu à 26£ (30€) / personne. Le restaurant ne prend pas de réservation.</p>
+              </div>
+            </div>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>Si vous souhaitez commencer votre journée en visitant le quartier de La City, vous pouvez vous arrêter dans ce cas en métro à la station <strong>Monument</strong>, qui est assez centrale.</p>
+              <p>Utilisez alors la <strong>Circle Line</strong> (ligne jaune) ou la <strong>District Line</strong> (ligne verte).</p>
+            </div>
           </section>
 
           <section id="jour-3-notting" className="article-section">
@@ -241,9 +257,11 @@ export default function VisiterLondresPage() {
             </div>
             <p>Le <strong>vendredi</strong> et le <strong>samedi</strong>, rendez-vous à la célèbre brocante de <strong>Portobello</strong>, devenue l’attraction phare de ce quartier. On y trouve vraiment de tout. Ce marché typique se présente comme le plus grand marché d’antiquités du monde, où plus de 1000 vendeurs se rassemblent.</p>
             <p>Vous trouverez aussi à Notting Hill, notamment à <strong>Ledbury Road</strong> et <strong>Westbourne Grove</strong>, de nombreuses boutiques chics, de décoration, d’objets vintages et insolites.</p>
-            <h4>Ⓜ️ - Pour s’y rendre...</h4>
-            <p>Le meilleur moyen pour visiter ce quartier est de vous arrêter en métro à la station <strong>Notting Hill Gate</strong>.</p>
-            <p>Pour cela, empruntez la <strong>Circle Line</strong> (ligne jaune), la <strong>District Line</strong> (ligne verte) ou la <strong>Central Line</strong> (ligne rouge).</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>Le meilleur moyen pour visiter ce quartier est de vous arrêter en métro à la station <strong>Notting Hill Gate</strong>.</p>
+              <p>Pour cela, empruntez la <strong>Circle Line</strong> (ligne jaune), la <strong>District Line</strong> (ligne verte) ou la <strong>Central Line</strong> (ligne rouge).</p>
+            </div>
           </section>
 
           <section id="jour-4-brick" className="article-section">
@@ -278,12 +296,19 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4304-scaled-1024x686.jpeg" alt="Graff 4" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0189-scaled-1024x768.jpeg" alt="Brick Lane" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h4>🍔 - Pour manger...</h4>
-            <p><em><strong>Old Spitalfields Market</strong></em> : Vous y trouverez un marché de type artisanal (assez branché), mais surtout une ribambelle de stands de nourriture de tous pays.</p>
-            <p>Avec une cuisine authentique et variée, le plus difficile ici sera de choisir le stand qui vous tentera le plus !</p>
-            <h4>Ⓜ️ - Pour s’y rendre...</h4>
-            <p>Si vous envisagez de déjeuner au Old Spitalfields Market, commencez alors par visiter <strong>Spitalfields</strong>. Pour cela, rendez-vous en métro à la station <strong>Liverpool Street</strong>. Elle est l’une des plus grande du centre de Londres</p>
-            <p>Elle est desservie par la majorité des métros : la <strong>Central Line</strong> (ligne rouge),la <strong>Circle Line</strong> (ligne jaune), la <strong>Hammersmith &amp; City Line</strong> (ligne rose clair), la <strong>London Overground</strong> (ligne orange), et la <strong>Metropolitan Ligne</strong> (ligne rosé foncé).</p>
+            <div className="article-resto">
+              <div className="article-resto-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg><span>Pour manger</span></div>
+              <div className="article-resto-item">
+                <p className="article-resto-name">Old Spitalfields Market</p>
+                <p>Vous y trouverez un marché de type artisanal (assez branché), mais surtout une ribambelle de stands de nourriture de tous pays.</p>
+                <p>Avec une cuisine authentique et variée, le plus difficile ici sera de choisir le stand qui vous tentera le plus !</p>
+              </div>
+            </div>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>Si vous envisagez de déjeuner au Old Spitalfields Market, commencez alors par visiter <strong>Spitalfields</strong>. Pour cela, rendez-vous en métro à la station <strong>Liverpool Street</strong>. Elle est l’une des plus grande du centre de Londres</p>
+              <p>Elle est desservie par la majorité des métros : la <strong>Central Line</strong> (ligne rouge),la <strong>Circle Line</strong> (ligne jaune), la <strong>Hammersmith &amp; City Line</strong> (ligne rose clair), la <strong>London Overground</strong> (ligne orange), et la <strong>Metropolitan Ligne</strong> (ligne rosé foncé).</p>
+            </div>
           </section>
 
           <section id="jour-5-covent" className="article-section">
@@ -314,9 +339,11 @@ export default function VisiterLondresPage() {
             <p>On trouve ce musée très impressionnant et splendide, tant par son architecture (ses colonnes et son toit de verre sont sublimes et immenses), que par les oeuvres qu’on peut y voir.</p>
             <p>En effet, le British Museum abrite plus de 8 millions d’objets précieux venus du monde entier !</p>
             <p>Si vous souhaitez avoir le temps de visiter le musée dans son intégralité, mieux vaut prévoir une journée complète. Dans ce cas, sachez qu’il y a un restaurant sur place si nécessaire.</p>
-            <h4>Ⓜ️ - Pour s’y rendre...</h4>
-            <p>Vous ne pourrez pas vous tromper puisque la station de métro porte le même nom que le quartier.</p>
-            <p>Ainsi, il faudra vous arrêter à la station <strong>Covent Garden</strong> en empruntant la <strong>Picadilly Line</strong> (ligne bleue foncée).</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>Vous ne pourrez pas vous tromper puisque la station de métro porte le même nom que le quartier.</p>
+              <p>Ainsi, il faudra vous arrêter à la station <strong>Covent Garden</strong> en empruntant la <strong>Picadilly Line</strong> (ligne bleue foncée).</p>
+            </div>
             <h3>📍 Soho, Chinatown &amp; Piccadilly</h3>
             <p>En continuant votre chemin, vous vous retrouverez à <strong>Soho</strong> avec son charme bohème et sa diversité. Ce petit quartier est connu aujourd’hui pour être le quartier gay de Londres.</p>
             <p>Situé près de <strong>Leicester Square</strong>, n’hésitez pas à faire un petit détour par <strong>Chinatown</strong>, où de grandes arches chinoises marquent le début du quartier. Cet incroyable quartier chinois en plein coeur de Londres est surprenant, tant par sa décoration traditionnelle, que par le nombre de boutiques et de restaurants asiatiques que l’on y trouve.</p>
@@ -334,9 +361,11 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3612-1-1024x520.jpeg" alt="Regent Street" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3491-scaled-1024x768.jpeg" alt="Regent Street 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h4>Ⓜ️ - Pour s’y rendre...</h4>
-            <p>Ces trois quartiers se trouvent à proximité les uns des autres. Nous vous conseillons de commencer par découvrir <strong>Soho</strong>.</p>
-            <p>Pour cela, nous vous suggérons de vous arrêter en métro à la station <strong>Tottenham Court Road</strong> en empruntant la <strong>Northern Line</strong> (ligne noire) ou la <strong>Central Line</strong> (ligne rouge).</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>Ces trois quartiers se trouvent à proximité les uns des autres. Nous vous conseillons de commencer par découvrir <strong>Soho</strong>.</p>
+              <p>Pour cela, nous vous suggérons de vous arrêter en métro à la station <strong>Tottenham Court Road</strong> en empruntant la <strong>Northern Line</strong> (ligne noire) ou la <strong>Central Line</strong> (ligne rouge).</p>
+            </div>
           </section>
 
           <section id="jour-6-camden" className="article-section">
@@ -372,14 +401,21 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9340-scaled-715x1024.jpg" alt="Regent’s Park Londres" loading="lazy" style={{flex: '0.698', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" loading="lazy" style={{flex: '1.313', minWidth: 0}} />
             </div>
-            <h4>🍔 - Pour manger...</h4>
-            <p><em><strong>Haché Burgers Camden</strong></em> : Si vous n’avez pas envie de manger sur le pouce, ce restaurant réputé à l’ambiance cosy vous fera saliver les papilles avec sa carte de burgers faits maison !</p>
-            <p>Pour la petite anecdote, c’était le restaurant préféré d’Amy Winehouse qui y avait sa table attitrée !</p>
-            <h4>Ⓜ️🚢 - Pour s’y rendre...</h4>
-            <p>Deux possibilités s’offrent à vous :</p>
-            <p>• <strong>En métro</strong> : prendre la <strong>Northern Line</strong> (ligne noire) et s’arrêter à la station <strong>Camden Town</strong>.</p>
-            <p>• <strong>En péniche</strong> : cette jolie balade reposante vous permet de découvrir Londres d’une façon atypique, d’un angle différent.</p>
-            <p>Commencez la croisière au niveau de Little Venice (en métro, prendre la <strong>Bakerloo Line</strong> --&gt; ligne marron, et s’arrêter à la station <strong>Warwick Avenue</strong>). Vous traverserez Regent’s Park, apercevrez le London Zoo, et longerez de magnifiques demeures aux façades victoriennes, avant d’arriver à Camden Town. Le tarif pour cette <a href="https://www.getyourguide.fr/londres-l57/londres-regent-s-canal-waterbus-little-venice-camden-lock-t390028/" target="_blank" rel="noopener noreferrer" className="article-link">balade en péniche</a> de 45Mn est de 12£ (14€) par personne.</p>
+            <div className="article-resto">
+              <div className="article-resto-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg><span>Pour manger</span></div>
+              <div className="article-resto-item">
+                <p className="article-resto-name">Haché Burgers Camden</p>
+                <p>Si vous n’avez pas envie de manger sur le pouce, ce restaurant réputé à l’ambiance cosy vous fera saliver les papilles avec sa carte de burgers faits maison !</p>
+                <p>Pour la petite anecdote, c’était le restaurant préféré d’Amy Winehouse qui y avait sa table attitrée !</p>
+              </div>
+            </div>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>Deux possibilités s’offrent à vous :</p>
+              <p>• <strong>En métro</strong> : prendre la <strong>Northern Line</strong> (ligne noire) et s’arrêter à la station <strong>Camden Town</strong>.</p>
+              <p>• <strong>En péniche</strong> : cette jolie balade reposante vous permet de découvrir Londres d’une façon atypique, d’un angle différent.</p>
+              <p>Commencez la croisière au niveau de Little Venice (en métro, prendre la <strong>Bakerloo Line</strong> --&gt; ligne marron, et s’arrêter à la station <strong>Warwick Avenue</strong>). Vous traverserez Regent’s Park, apercevrez le London Zoo, et longerez de magnifiques demeures aux façades victoriennes, avant d’arriver à Camden Town. Le tarif pour cette <a href="https://www.getyourguide.fr/londres-l57/londres-regent-s-canal-waterbus-little-venice-camden-lock-t390028/" target="_blank" rel="noopener noreferrer" className="article-link">balade en péniche</a> de 45Mn est de 12£ (14€) par personne.</p>
+            </div>
             <h3>📍 Stratford</h3>
             <p>Nous avons été très agréablement surprises par ce <strong>nouveau quartier</strong> que nous ne connaissions pas et que nous avons découvert lors de notre dernier séjour.</p>
             <p>Il est idéalement situé puisque tous les lieux incontournables à visiter de la capitale sont à plus ou moins 30Mn de métro.</p>
@@ -400,10 +436,12 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0007-scaled-1024x764.jpeg" alt="Stratford Londres 2" loading="lazy" style={{flex: '1.34', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9545-scaled-1024x768.jpeg" alt="Stratford Londres nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h4>Ⓜ️ - Pour s’y rendre...</h4>
-            <p>Vous souhaitez visiter Stratford ?</p>
-            <p>Alors, allez en métro jusqu’à la station <strong>Stratford</strong> en empruntant la <strong>Central Line</strong> (ligne rouge), la <strong>Jubilee Line</strong> (ligne grise), la <strong>London Overground</strong> (ligne orange).</p>
-            <p>Vous pouvez également utiliser le <strong>train DLR</strong> pour vous y rendre.</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>Vous souhaitez visiter Stratford ?</p>
+              <p>Alors, allez en métro jusqu’à la station <strong>Stratford</strong> en empruntant la <strong>Central Line</strong> (ligne rouge), la <strong>Jubilee Line</strong> (ligne grise), la <strong>London Overground</strong> (ligne orange).</p>
+              <p>Vous pouvez également utiliser le <strong>train DLR</strong> pour vous y rendre.</p>
+            </div>
           </section>
 
           <section id="jour-7-brighton" className="article-section">
@@ -440,10 +478,12 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3190-1024x576.jpeg" alt="Tour British Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3206-scaled-768x1024.jpeg" alt="Tour British Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <h4>Ⓜ️🚍 - Pour s’y rendre...</h4>
-            <p>Nous vous proposons deux solutions pour vous rendre à Brighton, vous pouvez emprunter soit le <strong>train</strong>, soit le <strong>bus</strong> au départ de Londres :</p>
-            <p>• <strong>En train</strong> : Il y en a régulièrement toutes les demi-heures. Les trains partent de la station <strong>Victoria</strong> et arrivent à la <strong>gare de Brighton</strong> dans le centre ville. Le prix des billets aller-retour commence à 25£ (30€) pour les voyages en classe économique. Sachez que si vous anticipez votre venue et réservez vos billets à l’avance, vous pouvez <a href="https://www.southernrailway.com" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> vos billets au tarif de 10£ (12€) l’aller-retour.</p>
-            <p><strong>• </strong><strong>En bus</strong> : Il part de la <strong>gare routière Victoria</strong> et le trajet dure environ 2H. Si vous réservez quelques jours à l’avance, vous pouvez trouver des billets aller-retour à seulement 5£ (6€) ! Autrement, le tarif pour un aller simple est à 8£ (9€50). Les bus arrivent à la <strong>gare routière de Brighton</strong>, située dans le centre ville également. N’hésitez pas à anticiper pour <a href="https://www.nationalexpress.com/en" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> votre ticket.</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
+              <p>Nous vous proposons deux solutions pour vous rendre à Brighton, vous pouvez emprunter soit le <strong>train</strong>, soit le <strong>bus</strong> au départ de Londres :</p>
+              <p>• <strong>En train</strong> : Il y en a régulièrement toutes les demi-heures. Les trains partent de la station <strong>Victoria</strong> et arrivent à la <strong>gare de Brighton</strong> dans le centre ville. Le prix des billets aller-retour commence à 25£ (30€) pour les voyages en classe économique. Sachez que si vous anticipez votre venue et réservez vos billets à l’avance, vous pouvez <a href="https://www.southernrailway.com" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> vos billets au tarif de 10£ (12€) l’aller-retour.</p>
+              <p><strong>• </strong><strong>En bus</strong> : Il part de la <strong>gare routière Victoria</strong> et le trajet dure environ 2H. Si vous réservez quelques jours à l’avance, vous pouvez trouver des billets aller-retour à seulement 5£ (6€) ! Autrement, le tarif pour un aller simple est à 8£ (9€50). Les bus arrivent à la <strong>gare routière de Brighton</strong>, située dans le centre ville également. N’hésitez pas à anticiper pour <a href="https://www.nationalexpress.com/en" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> votre ticket.</p>
+            </div>
           </section>
 
           {/* INFORMATIONS PRATIQUES */}
