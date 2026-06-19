@@ -309,13 +309,13 @@
 
 .article-gallery-3 { display: flex; align-items: flex-start; gap: 8px; margin: 8px 0; }
 
-.article-gallery-3 img { width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block; transition: transform .4s; min-width: 0; }
+.article-gallery-3 img { width: 100%; height: auto; display: block; transition: transform .4s; min-width: 0; }
 
 .article-gallery-3 img:hover { transform: scale(1.03); }
 
 .article-gallery-2 { display: flex; align-items: flex-start; gap: 8px; margin: 8px 0; }
 
-.article-gallery-2 img { width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block; transition: transform .4s; min-width: 0; }
+.article-gallery-2 img { width: 100%; height: auto; display: block; transition: transform .4s; min-width: 0; }
 
 .article-gallery-2 img:hover { transform: scale(1.03); }
 
