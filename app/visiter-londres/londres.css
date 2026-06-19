@@ -780,11 +780,137 @@
   margin: 16px 0;
 }
 
+.article-londres .article-pratique-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-londres .article-pratique-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--dark);
+}
+
+.article-londres .article-pratique-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* --- Sous-cartes premium pour les blocs pratiques Ã  plusieurs sous-thÃ¨mes
+   (ex: "Comment s'y rendre", "Comment se dÃ©placer") : chaque sous-thÃ¨me
+   devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
+   de texte. Aucune perte de contenu, juste une meilleure structure. --- */
+.article-londres .article-pratique-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+
+.article-londres .article-pratique-nav a {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--dark);
+  text-decoration: none !important;
+  transition: border-color .2s, color .2s;
+}
+
+.article-londres .article-pratique-nav a:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.article-londres .article-pratique-sub {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 0 0 14px;
+}
+
+.article-londres .article-pratique-sub:last-child {
+  margin-bottom: 0;
+}
+
+.article-londres .article-pratique-sub-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.article-londres .article-pratique-sub-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.article-londres .article-pratique-sub-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: #fff;
+}
+
+.article-londres .article-pratique-sub-head h4 {
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 19px !important;
+  font-weight: 600 !important;
+  color: var(--dark) !important;
+  margin: 0 !important;
+}
+
+.article-londres .article-pratique-sub p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+.article-londres .article-pratique-sub p:last-child {
+  margin-bottom: 0;
+}
+
+.article-londres .article-pratique-sub .article-gallery-2,
+.article-londres .article-pratique-sub .article-gallery-3 {
+  margin: 12px 0;
+}
+
+.article-londres .article-pratique-sub .article-tip,
+.article-londres .article-pratique-sub .article-avis {
+  margin: 12px 0;
+}
+
 /* --- Pratique : mobile (placÃ© APRÃˆS le desktop, comme convenu) --- */
 @media (max-width: 768px) {
   .article-londres .article-pratique-block { padding: 18px 18px !important; }
   .article-londres .article-pratique-title { font-size: 22px !important; }
   .article-londres .article-pratique-block h4 { font-size: 14px !important; }
+  .article-londres .article-pratique-sub { padding: 16px 18px !important; }
+  .article-londres .article-pratique-sub-head h4 { font-size: 17px !important; }
+  .article-londres .article-pratique-sub-icon { width: 30px !important; height: 30px !important; }
+  .article-londres .article-pratique-sub-icon svg { width: 15px !important; height: 15px !important; }
+  .article-londres .article-pratique-nav a { font-size: 12px !important; padding: 5px 12px !important; }
 }
 
 /* ============================================
