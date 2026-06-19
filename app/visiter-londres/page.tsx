@@ -113,7 +113,6 @@ export default function VisiterLondresPage() {
           <p><strong>Nous vous proposons aussi notre itinéraire de 7 jours à travers la ville que vous pourrez adapter au gré de vos envies !</strong></p>
           <p><strong>C’est partiiiiiii !</strong></p>
           <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3206-1-scaled-1024x768.jpeg" alt="Tower Bridge" className="article-img-full" loading="lazy" />
-          <div className="article-day-header"><h2>Les quartiers à ne pas louper</h2></div>
           </section>
 
           {/* JOURS */}
@@ -140,8 +139,8 @@ export default function VisiterLondresPage() {
             <p>Pour autant, il existe un <strong>bon plan pour la visiter gratuitement</strong> ! Il suffit de se présenter lors des cérémonies religieuses. Celles-ci ont lieu tous les jours, sont ouvertes à tous, et aucune participation financière n’est demandée !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3752-1-scaled-1024x686.jpeg" alt="Big Ben Londres 1" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3675-scaled-685x1024.jpeg" alt="Big Ben Londres 2" loading="lazy" style={{flex: '0.669', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9605-scaled-1024x800.jpeg" alt="Westminster Londres" loading="lazy" style={{flex: '1.28', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3675-scaled-685x1024.jpeg" alt="Big Ben Londres 2" loading="lazy" style={{flex: '0.669', minWidth: 0}} />
             </div>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3734-scaled-1024x686.jpeg" alt="Charing Cross" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
