@@ -181,11 +181,11 @@ export default function VisiterLondresPage() {
             </div>
             <p>Si vous aimez le Street Art, vous ne pourrez pas quitter ce quartier sans passer à proximité de la station de train de <strong>Waterloo</strong>. Derrière la gare, vous découvrirez un magnifique tunnel de 300M de long, appelé le <strong>Leake Street Graffiti</strong>.</p>
             <p>Pas très bien indiqué et même un peu caché à l’abri de la foule, les graffitis y sont autorisés par la municipalité de la ville de Londres. Banksy, le célèbre artiste inconnu, y a organisé en 2008 un événement en invitant des graffeurs du monde entier pour transformer le tunnel en galerie d’art. Cet endroit est une vraie pépite à découvrir !</p>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9868-scaled-1024x768.jpeg" alt="Leake Street Graffiti" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9862-scaled-1024x576.jpeg" alt="Leake Street Graffiti 2" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9849-scaled-1024x768.jpeg" alt="Leake Street Graffiti 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9849-scaled-1024x768.jpeg" alt="Leake Street Graffiti 3" className="article-img-full" loading="lazy" />
             <div className="article-resto">
               <div className="article-resto-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg><span>Pour manger</span></div>
               <div className="article-resto-item">
@@ -194,11 +194,11 @@ export default function VisiterLondresPage() {
                 <p>Ce bruit peut-être surprenant (voire inquiétant !) la 1ère fois qu’on l’entend... Dans ce lieu très fréquenté les <strong>jours de marché</strong> (jeudis, vendredis et samedis), vous pouvez trouver des produits frais et locaux, mais également une multitude de stands de street-food des quatre coins du monde. Chacun y trouve son bonheur !</p>
               </div>
             </div>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3171-scaled-1024x768.jpeg" alt="Borough Market 1" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3158-scaled-1024x768.jpeg" alt="Borough Market 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_2947-scaled-1024x768.jpeg" alt="Borough Market 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_2947-scaled-1024x768.jpeg" alt="Borough Market 3" className="article-img-full" loading="lazy" />
             <div className="article-rendre">
               <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
               <p>Afin d’organiser au mieux votre visite dans ces quartiers que nous affectionnons beaucoup, envisagez de vous rendre à South Bank pour commencer.</p>
@@ -475,8 +475,10 @@ export default function VisiterLondresPage() {
             <p>S’élevant à 138M, elle est la plus haute tour du monde de ce type.</p>
             <p>Si vous souhaitez faire cette attraction, sachez qu’elle vous coûtera 16£50 (19€50) par personne. Pour avoir tenté l’expérience, nous avons adoré... Le panorama était à couper le souffle !</p>
             <p>Nous vous conseillons de <a href="https://britishairwaysi360.com" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> votre venue pour éviter la file d’attente.</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3190-1024x576.jpeg" alt="Tour British Londres" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3206-scaled-768x1024.jpeg" alt="Tour British Londres 2" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3190-1024x576.jpeg" alt="Tour British Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3206-scaled-768x1024.jpeg" alt="Tour British Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg><span>Pour s’y rendre</span></div>
               <p>Nous vous proposons deux solutions pour vous rendre à Brighton, vous pouvez emprunter soit le <strong>train</strong>, soit le <strong>bus</strong> au départ de Londres :</p>
