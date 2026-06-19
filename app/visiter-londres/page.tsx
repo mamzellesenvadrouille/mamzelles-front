@@ -496,12 +496,12 @@ export default function VisiterLondresPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_E2975-1024x487.jpeg" alt="Look right" className="article-img-full" loading="lazy" />
               </div>
               <div className="article-pratique-block">
-                <h3 className="article-pratique-title">✓ Quelles sont les formalités pour entrer en Angleterre ?</h3>
+                <h3 className="article-pratique-title">Quelles sont les formalités pour entrer en Angleterre ?</h3>
                 <p>Pour vous rendre en Angleterre, vous devez impérativement avoir un <strong>passeport en cours de validité</strong>. Aussi, il doit être valable 6 mois après la sortie prévue du pays.</p>
                 <p>En effet, depuis le Brexit, et exactement depuis le 1er octobre 2021, le pays étant passé hors de l’Union Européenne, <strong>la carte d’identité ne suffit plus.</strong></p>
               </div>
               <div className="article-pratique-block">
-                <h3 className="article-pratique-title">✓ Et si vous voyagez avec votre chien ?</h3>
+                <h3 className="article-pratique-title">Et si vous voyagez avec votre chien ?</h3>
                 <ul className="article-pratique-list">
                   <li>Votre chien doit avoir une <strong>puce électronique</strong>.</li>
                   <li>Il doit avoir un <strong>passeport européen</strong>. Pour notre part, nous l’avons fait faire chez notre vétérinaire. Il nous est revenu à 15€ + le tarif de la consultation habituel.</li>
@@ -510,7 +510,8 @@ export default function VisiterLondresPage() {
                   <li>Bonne nouvelle ! Il n’y a <strong>plus de quarantaine</strong> obligatoire pour votre chien lors de son arrivée sur le territoire britannique.</li>
                 </ul></div>
               <div className="article-pratique-block">
-                <h3 className="article-pratique-title">✓ Comment s’y rendre depuis la France ?</h3>
+                <h3 className="article-pratique-title">Comment s’y rendre depuis la France ?</h3>
+                <p className="article-pratique-subtitle">4 façons de rejoindre Londres — cliquez sur une étiquette pour découvrir le détail</p>
                 <div className="article-gallery-2">
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0013_Original-1-scaled-1024x768.jpg" alt="Avion Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/65592404317__DFD30C21-27CB-484C-8D16-F19678D98D7A-scaled-1024x768.jpg" alt="Shuttle Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -580,7 +581,7 @@ export default function VisiterLondresPage() {
               </div>
               
               <div className="article-pratique-block">
-                <h3 className="article-pratique-title">✓ Où se loger ?</h3>
+                <h3 className="article-pratique-title">Où se loger ?</h3>
                 <p>De façon générale, les hébergements sont chers à Londres mais plusieurs possibilités s’offrent à vous : les B’n’B (Bed and Breakfast), les <strong>auberges de jeunesse</strong>, les <strong>hôtels</strong>, les <strong>résidences hôtelières</strong> et les <strong>locations d’appartement</strong>.</p>
                 <p>Cette fois-ci, nous avons opté pour un appart’hôtel de la chaîne des résidences hôtelières <strong>Adagio</strong>. Le logement est situé dans l’<strong>Est de Londres</strong>, à <strong>Stratford</strong>, et plus précisément dans le village olympique (cf. Jour 6 - Stratford).</p>
                 <p>Pour loger à l’appart’hôtel <a href="https://www.adagio-city.com/fr/hotel-9721-aparthotel-adagio-london-stratford.shtml" target="_blank" rel="noopener noreferrer" className="article-link">Adagio Stratford</a>, Il faut compter 110€ la nuit pour un studio récent et très bien équipé au 12ème étage (avec une vue incroyable sur la ville !).</p>
@@ -598,7 +599,8 @@ export default function VisiterLondresPage() {
                 </div>
               </div>
               <div className="article-pratique-block">
-                <h3 className="article-pratique-title">✓ Comment se déplacer dans la capitale ?</h3>
+                <h3 className="article-pratique-title">Comment se déplacer dans la capitale ?</h3>
+                <p className="article-pratique-subtitle">6 moyens de transport — cliquez sur une étiquette pour découvrir le détail</p>
                 <p>Comme vous l’aurez compris tout au long de cet article, il existe donc différents moyens de transports pour se déplacer au centre de Londres et dans sa périphérie.</p>
                 <p>le <strong>métro</strong>, le <strong>train DLR</strong> (pour se rendre dans l’Est), les <strong>tramways du sud de Londres</strong>, les <strong>trains Overground et National Rail</strong> de la ville, le <strong>téléphérique de Thames</strong>, le <strong>Uber Boat</strong>, le <strong>bus rouge</strong> (mythique avec son étage !) et le <strong>taxi</strong> (majoritairement noir, il fait partie du décor de la capitale !).</p>
                 <div className="article-gallery-2">
@@ -703,7 +705,8 @@ export default function VisiterLondresPage() {
               </div>
               
               <div className="article-pratique-block">
-                <h3 className="article-pratique-title">✓ Pour en savoir plus... !</h3>
+                <h3 className="article-pratique-title">Pour en savoir plus... !</h3>
+                <p className="article-pratique-subtitle">4 derniers conseils — cliquez sur une étiquette pour découvrir le détail</p>
                 <PratiqueOnglets onglets={[
                   {
                     id: 'quand-partir',
@@ -766,10 +769,7 @@ export default function VisiterLondresPage() {
                     ),
                   },
                 ]} />
-                <p><em><strong>Nous espérons que notre article sur Londres vous aura plu et qu’il vous inspirera pour votre prochain voyage !</strong></em></p>
-                <p><em><strong>Si vous avez des questions, ou que vous souhaitez nous partager un retour d’expérience, n’hésitez pas à nous la</strong><strong>isser un commentaire, à nous contacter via le </strong><strong><a href="/formules#formulaire" className="article-link">formulaire de contact</a> ou sur notre compte <a href="https://www.instagram.com/mamzellesenvadrouille/" target="_blank" rel="noopener noreferrer" className="article-link">Instagram</a>.</strong></em></p>
-                <p><em><strong>Nous nous ferons un plaisir de vous lire et de vous répondre !</strong></em></p>
-              </div>
+                              </div>
             </div>
           </section>
 

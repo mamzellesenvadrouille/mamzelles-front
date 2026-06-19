@@ -746,11 +746,18 @@
 
 .article-londres .article-pratique-title {
   font-family: "Cormorant Garamond", serif;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.2;
   color: var(--dark);
-  margin: 0 0 14px !important;
+  margin: 0 0 4px !important;
+}
+
+.article-londres .article-pratique-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #a89a86;
+  margin: 0 0 16px !important;
 }
 
 .article-londres .article-pratique-block h4 {
@@ -823,13 +830,13 @@
   align-items: center;
   gap: 6px;
   background: #fff;
-  border: 1px solid var(--line);
+  border: 1.5px dashed #c8956c99;
   border-radius: 20px;
-  padding: 7px 16px 7px 10px;
+  padding: 6.5px 16px 6.5px 10px;
   font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 500;
-  color: var(--dark);
+  color: var(--gold);
   cursor: pointer;
   transition: background .2s, border-color .2s, color .2s;
 }
@@ -841,6 +848,7 @@
 }
 
 .article-londres .article-pratique-nav-btn:hover {
+  border-style: solid;
   border-color: var(--gold);
   color: var(--gold);
 }
@@ -848,6 +856,7 @@
 .article-londres .article-pratique-nav-btn-actif,
 .article-londres .article-pratique-nav-btn-actif:hover {
   background: var(--gold);
+  border-style: solid;
   border-color: var(--gold);
   color: #fff;
 }
