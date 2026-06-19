@@ -318,11 +318,11 @@ export default function VisiterLondresPage() {
             <h3>📍 Covent Garden</h3>
             <p>En ébullition ! C’est comme cela que nous qualifierons ce quartier très animé. C’est l’unique endroit à Londres où les spectacles de rue sont autorisés. Il est donc fréquent de croiser des artistes de rue (jongleurs, cracheurs de feu, musiciens, etc.), ce qui apporte une atmosphère particulière à ce lieu.</p>
             <p><strong>Covent Garden</strong> est surtout connu pour son sublime <strong>marché couvert</strong>, telle une immense serre en plein coeur de Londres, ses stands de bijoux, de vêtements, d’objets d’artisanat, et ses boutiques de mode.</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9628-scaled-1024x768.jpeg" alt="Covent Garden Londres" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9628-scaled-1024x768.jpeg" alt="Covent Garden Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3066-scaled-1024x768.jpeg" alt="Covent Garden 2 Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9649-scaled-674x1024.jpeg" alt="Covent Garden Love Londres" loading="lazy" style={{flex: '0.658', minWidth: 0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9649-scaled-674x1024.jpeg" alt="Covent Garden Love Londres" className="article-img-full" loading="lazy" />
             <p>Déambulez dans les petites rues, quitte à vous perdre un peu... C’est comme cela que nous avons découvert <strong>Neal’s Yard</strong>, une très jolie petite place piétonne aux façades colorées.</p>
             <p>Vous pourrez prendre le temps de faire une agréable petite pause à la terrasse d’un café pour profiter de ce havre de paix, de ce lieu dépaysant, qui donne l’impression d’avoir découvert un endroit secret.</p>
             <p>Non loin de là se trouve <strong>Trafalgar Square</strong>, la place la plus réputée de la capitale. Celle-ci est très importante dans la vie londonienne puisqu’elle accueille régulièrement de nombreuses manifestations et autres évènements. Cette place est également bien connue pour être un espace convivial, social et de liberté d’expression.</p>
@@ -330,8 +330,10 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9664_jpg-scaled-768x1024.jpg" alt="Neal’s Yard Londres 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9657-scaled-745x1024.jpeg" alt="Neal’s Yard 1 Londres" loading="lazy" style={{flex: '0.728', minWidth: 0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3064-scaled-1024x768.jpeg" alt="Covent Garden Londres" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3089-scaled-768x1024.jpeg" alt="British Museum Londres" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3064-scaled-1024x768.jpeg" alt="Covent Garden Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3089-scaled-768x1024.jpeg" alt="British Museum Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <p>Enfin, à <strong>Covent Garden</strong>, vous pourrez visiter le <strong>British Museum</strong>, considéré comme l’un des endroits incontournables à visiter à Londres. Et la bonne nouvelle c’est que <strong>l’entrée est gratuite</strong> !</p>
             <p>On trouve ce musée très impressionnant et splendide, tant par son architecture (ses colonnes et son toit de verre sont sublimes et immenses), que par les oeuvres qu’on peut y voir.</p>
             <p>En effet, le British Museum abrite plus de 8 millions d’objets précieux venus du monde entier !</p>
@@ -346,8 +348,10 @@ export default function VisiterLondresPage() {
             <p>Situé près de <strong>Leicester Square</strong>, n’hésitez pas à faire un petit détour par <strong>Chinatown</strong>, où de grandes arches chinoises marquent le début du quartier. Cet incroyable quartier chinois en plein coeur de Londres est surprenant, tant par sa décoration traditionnelle, que par le nombre de boutiques et de restaurants asiatiques que l’on y trouve.</p>
             <p>Pour autant, ne vous attendez pas à un endroit immense, vous seriez déçus ! Chinatown se résume à une grande avenue, mais juste ce qu’il faut pour nous plonger dans l’ambiance.</p>
             <p>À 5Mn à pied, vous arriverez facilement à <strong>Piccadilly Circus</strong>. Cette place est mondialement connue pour ses panneaux publicitaires géants et lumineux. Elle est d’ailleurs souvent comparée à une version miniature de Times Square à New York. Piccadilly Circus est un endroit toujours très fréquenté et animé.</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9681-scaled-751x1024.jpeg" alt="Chinatown" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3488-scaled-1024x768.jpeg" alt="Picadilly Circus" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9681-scaled-751x1024.jpeg" alt="Chinatown" loading="lazy" style={{flex: '0.733', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3488-scaled-1024x768.jpeg" alt="Picadilly Circus" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
             <p>Si vous êtes fan de shopping, partez en direction de <strong>Regent Street</strong>. Cette grande artère qui part de Piccadilly Circus est réputée pour ses boutiques de luxe à renommée internationale et ses restaurants gastronomiques.</p>
             <p>Terminez vos emplettes à <strong>Oxford Street</strong> qui traverse Regent Street.</p>
             <p>Longue d’environ 2,5Km, elle est bordée par 300 magasins, ce qui en fait l’avenue commerçante la plus longue d’Europe !</p>
@@ -382,16 +386,20 @@ export default function VisiterLondresPage() {
             </div>
             <p>Camden Town est notamment connu pour ses cinq différents marchés, communément appelés <strong>Camden Market</strong>. N’hésitez pas à vous y perdre. C’est le meilleur moyen de découvrir cet endroit populaire et son ambiance ! A la mode londonienne, laissez-vous tenter par les stands de street-food.</p>
             <p>On y trouve également le plus grand marché aux puces de la ville. Du vintage, des vêtements et accessoires neufs (parfois décalés), de l’artisanat, etc..., il y en a pour tous les goûts !</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9449-scaled-769x1024.jpeg" alt="Camden Lock Londres" className="article-img-full" loading="lazy" />
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9449-scaled-769x1024.jpeg" alt="Camden Lock Londres" loading="lazy" style={{flex: '0.751', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9463-scaled-1024x768.jpeg" alt="Camden Market Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3916-scaled-1024x686.jpeg" alt="Camden Street Londres" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9488-scaled-1024x812.jpeg" alt="Camden Street 2 Londres" loading="lazy" style={{flex: '1.261', minWidth: 0}} />
             </div>
             <p>Après le bain de foule, si vous souhaitez vous mettre au vert, dirigez-vous vers <strong>Regent’s Park</strong>, l’un des plus beaux parcs de Londres.</p>
             <p>Vous découvrirez un havre de paix à 15 / 20Mn à pied de Camden Town.</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9340-scaled-715x1024.jpg" alt="Regent’s Park Londres" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9340-scaled-715x1024.jpg" alt="Regent’s Park Londres" loading="lazy" style={{flex: '0.698', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" loading="lazy" style={{flex: '1.313', minWidth: 0}} />
+            </div>
             <div className="article-resto">
               <div className="article-resto-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg><span>Pour manger</span></div>
               <div className="article-resto-item">
@@ -444,23 +452,25 @@ export default function VisiterLondresPage() {
             <p>À la mode depuis le 18ème siècle, c’est la station la plus branchée du pays. La ville est également connue pour son ouverture d’esprit.</p>
             <p>En effet, elle est la <strong>capitale LGBT</strong> d’Angleterre. Très animée, les bars, restaurants et boîtes de nuit ne manquent pas !</p>
             <p>Le bord de mer, qui longe la grande plage de galets, est très agréable pour s’y promener. De nombreuses familles s’y retrouvent pour y passer leurs week-ends.</p>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3175-scaled-1024x768.jpeg" alt="Brighton plage" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3162-scaled-768x1024.jpeg" alt="Brighton Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3070-scaled-1024x768.jpeg" alt="Brighton plage 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3152-scaled-1024x768.jpeg" alt="Brighton plage Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3162-scaled-768x1024.jpeg" alt="Brighton Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3156-scaled-768x1024.jpeg" alt="Brighton Street Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3059-scaled-1024x768.jpeg" alt="Brighton Street 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3059-scaled-1024x768.jpeg" alt="Brighton Street 3" className="article-img-full" loading="lazy" />
             <p>Nous en sommes certaines, vous apprécierez vous balader dans ses ruelles chics et bohèmes qui regorgent de petites boutiques et de magasins en tout genre.</p>
             <p>Vous ne pourrez pas louper le <strong>Brighton Pier</strong>. Ce fameux ponton, aménagé en complexe de loisirs (casino, jeux d’arcade, manèges et restaurants), permet de passer un moment agréable en famille ou entre amis.</p>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3090-1024x576.jpeg" alt="Brighton Pier Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3149-scaled-1024x768.jpeg" alt="Brighton Pier Londres 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3143-scaled-1024x768.jpeg" alt="Brighton Pier Londres 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3143-scaled-1024x768.jpeg" alt="Brighton Pier Londres 3" className="article-img-full" loading="lazy" />
             <p>Non loin de là, si vous avez envie de prendre de la hauteur et d’admirer le paysage à 360°, embarquez dans la tour d’observation <strong>British Airways i360</strong>.</p>
             <p>S’élevant à 138M, elle est la plus haute tour du monde de ce type.</p>
             <p>Si vous souhaitez faire cette attraction, sachez qu’elle vous coûtera 16£50 (19€50) par personne. Pour avoir tenté l’expérience, nous avons adoré... Le panorama était à couper le souffle !</p>
