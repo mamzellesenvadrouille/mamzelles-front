@@ -818,22 +818,42 @@
   margin: 0 0 20px;
 }
 
-.article-londres .article-pratique-nav a {
+.article-londres .article-pratique-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 20px;
-  padding: 6px 14px;
+  padding: 7px 16px 7px 10px;
   font-family: "Inter", sans-serif;
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--dark);
-  text-decoration: none !important;
-  transition: border-color .2s, color .2s;
+  cursor: pointer;
+  transition: background .2s, border-color .2s, color .2s;
 }
 
-.article-londres .article-pratique-nav a:hover {
+.article-londres .article-pratique-nav-icon {
+  display: inline-flex;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.article-londres .article-pratique-nav-btn:hover {
   border-color: var(--gold);
   color: var(--gold);
+}
+
+.article-londres .article-pratique-nav-btn-actif,
+.article-londres .article-pratique-nav-btn-actif:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+}
+
+.article-londres .article-pratique-sub[hidden] {
+  display: none;
 }
 
 .article-londres .article-pratique-sub {
@@ -841,11 +861,13 @@
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 20px 24px;
-  margin: 0 0 14px;
+  margin: 0;
+  animation: article-pratique-fade .25s ease;
 }
 
-.article-londres .article-pratique-sub:last-child {
-  margin-bottom: 0;
+@keyframes article-pratique-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .article-londres .article-pratique-sub-head {
@@ -909,7 +931,7 @@
   .article-londres .article-pratique-sub-head h4 { font-size: 17px !important; }
   .article-londres .article-pratique-sub-icon { width: 30px !important; height: 30px !important; }
   .article-londres .article-pratique-sub-icon svg { width: 15px !important; height: 15px !important; }
-  .article-londres .article-pratique-nav a { font-size: 12px !important; padding: 5px 12px !important; }
+  .article-londres .article-pratique-nav-btn { font-size: 12px !important; padding: 6px 12px 6px 8px !important; }
 }
 
 /* ============================================

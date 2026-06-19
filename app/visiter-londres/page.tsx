@@ -5,6 +5,7 @@ import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
 import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
+import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
   title: "Visiter Londres en 1 semaine : l’essentiel par quartier, infos pratiques & bons plans | MamZelles en vadrouille",
@@ -514,61 +515,70 @@ export default function VisiterLondresPage() {
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0013_Original-1-scaled-1024x768.jpg" alt="Avion Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/65592404317__DFD30C21-27CB-484C-8D16-F19678D98D7A-scaled-1024x768.jpg" alt="Shuttle Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 </div>
-                <nav className="article-pratique-nav">
-                  <a href="#londres-avion">✈️ En avion</a>
-                  <a href="#londres-eurostar">🚇 Eurostar</a>
-                  <a href="#londres-shuttle">🚇 Shuttle</a>
-                  <a href="#londres-ferry">🚢 Ferry</a>
-                </nav>
-                <div id="londres-avion" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.5v-1l-8.5-5V5a1.5 1.5 0 00-3 0v5.5L2 15.5v1l8.5-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></span>
-                    <h4>En avion</h4>
-                  </div>
-                  <p>De nombreux aéroports sont implantés dans la capitale anglaise.</p>
-                  <p>Pour notre part, nous connaissons ceux d’<strong>Heathrow</strong> et de <strong>Gatwick</strong> dans lesquels nous avons déjà atterri.</p>
-                  <p>•<em> HEATHROW</em></p>
-                  <p>Cet aéroport est le plus central. Nous vous le conseillons si votre logement est situé dans le coeur de Londres. Il s’agit de l’aéroport le plus fréquenté du monde ! Si vous prenez un vol depuis celui-ci, n’hésitez pas à venir bien à l’avance, il est immense !</p>
-                  <p>Pour rejoindre le centre de Londres depuis Heathrow, vous pouvez prendre la <strong>Picadilly Line</strong> (ligne bleue foncée de métro). Dans ce cas, vous mettrez plus ou moins 1H et vous payerez le tarif du trajet de métro en fonction de la zone (1 à 5) où vous vous rendrez et de l’heure de la journée.</p>
-                  <p>Autrement, vous pouvez prendre le <strong>Heathrow Express</strong> avec lequel vous mettrez 15Mn pour vous rendre à la gare de Paddington. Le tarif pour un aller simple est de 22£ (26€). La station de métro est directement située dans l’aéroport.</p>
-                  <p>• <em>GATWICK</em></p>
-                  <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30Mn depuis l’aéroport. Le tarif pour un aller simple est de 19£90 (23€50).</p>
-                  <p>Le Gatwick Express est la solution la plus rapide, mais quelque peu onéreuse pour se rendre au coeur de la ville. Pour autant, il est également possible de prendre le <strong>Southern Railway</strong> (train).</p>
-                  <p>Ce train alternatif arrive en gare de Victoria, London Bidge ou encore City Thameslink (à côté de la cathédrale St. Paul). Le tarif des billets oscille entre 11£ (13€) et 15£ (17€50).</p>
-                </div>
-                <div id="londres-eurostar" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="6" width="18" height="11" rx="3"/><path d="M3 11h18M7 17l-2 3M17 17l2 3"/></svg></span>
-                    <h4>En Eurostar</h4>
-                  </div>
-                  <p>C’est le "TGV" anglais. Il relie la France (de Paris ou de Lille) au Royaume-Uni, à la <strong>gare St. Pancras</strong>, située dans le centre de Londres. Les trains Eurostar traversent le tunnel sous la manche.</p>
-                  <p>Nous l’avons pris à 2 reprises. Le voyage est très rapide puisqu’il faut compter par exemple 1h30 pour rejoindre Lille à la capitale. Les wagons sont très confortables.</p>
-                  <p>Si jamais vous avez un petit creux ou une petite soif durant le trajet, vous trouverez une voiture-bar dans l’Eurostar... Trop top !</p>
-                  <p>Le tarif pour un aller simple est en moyenne compris entre 60€ et 90€ en fonction de la période de l’année et des horaires choisis. Si vous souhaitez réserver, c’est <a href="https://www.eurostar.com/fr-fr" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
-                </div>
-                <div id="londres-shuttle" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="8" width="20" height="9" rx="2"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg></span>
-                    <h4>En Shuttle</h4>
-                  </div>
-                  <p>Le Shuttle est un train pour véhicules à moteur. Vous ne pourrez pas embarquer si vous êtes à pied par exemple.</p>
-                  <p>Ce moyen de transport se prend à <strong>Calais</strong> et arrive à <strong>Folkestone</strong>, situé à plus ou moins 1H30 en voiture du centre de Londres. Tout comme l’Eurostar, il passe sous la Manche.</p>
-                  <p>Lors de notre dernier séjour, c’est l’option que nous avons choisie pour nous rendre en Angleterre. D’autant plus qu’avec le Ferry, ce sont les deux uniques solutions pour débarquer avec son animal de compagnie (sans qu’il soit mis en soute, ce qu’on veut absolument éviter !).</p>
-                  <p>Nous avons bien aimé le concept de rester dans sa voiture, qui elle-même est dans le train. Bon, ça fait une sensation étrange au départ, mais on s’y habitue rapidement.</p>
-                  <p>Pendant la traversée qui dure 30Mn, vous avez le droit de sortir de votre véhicule. Et incroyable, on avait du réseau sur nos téléphones portables, bien qu’on ait des opérateurs différents ! Bref, on était à notre aise pour voyager, et Aladdin aussi !</p>
-                  <p>Pour un aller simple, le prix dépend non pas du nombre de passagers, mais du modèle du véhicule qui embarque, de la présence d’animaux, de la période de l’année et des horaires choisis. Plus vous voyagerez tôt ou tard dans la journée, moins les billets seront chers. Il faut compter en moyenne <strong>140€ pour un billet aller</strong> avec une voiture de type citadine et un chien. Pour réserver, c’est <a href="https://www.eurotunnel.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
-                </div>
-                <div id="londres-ferry" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 17l1.5-5h15L21 17M5 12V8h14v4M9 8V5h6v3"/><path d="M2 20c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 4.5 0 3-1 4.5 0"/></svg></span>
-                    <h4>En ferry</h4>
-                  </div>
-                  <p>C’est le seul moyen de transport que nous n’ayons jamais pris pour nous rendre à Londres.</p>
-                  <p>Le Ferry relie <strong>Calais</strong> à <strong>Douvres</strong> en 1H30. Comme pour le Shuttle, vous ne pourrez pas voyager à bord si vous ne possédez pas de véhicule motorisé. Si vous faites la traversée avec votre animal, il devra rester dans votre véhicule.</p>
-                  <p>En moyenne, le tarif pour <strong>un aller simple est de 70€</strong>, quelque soit le nombre de passagers avec une voiture. Et <strong>bon à savoir</strong>, le <strong>repas est inclus</strong> dans le prix !</p>
-                  <p>Si vous êtes intéressé par ce moyen de transport, cliquez <a href="https://www.dfds.com/fr-fr/ferries-passagers" target="_blank" rel="noopener noreferrer" className="article-link">ici</a> pour réserver.</p>
-                </div>
+                <PratiqueOnglets onglets={[
+                  {
+                    id: 'avion',
+                    label: 'En avion',
+                    icon: '✈️',
+                    content: (
+                      <>
+                        <p>De nombreux aéroports sont implantés dans la capitale anglaise.</p>
+                        <p>Pour notre part, nous connaissons ceux d’<strong>Heathrow</strong> et de <strong>Gatwick</strong> dans lesquels nous avons déjà atterri.</p>
+                        <p>•<em> HEATHROW</em></p>
+                        <p>Cet aéroport est le plus central. Nous vous le conseillons si votre logement est situé dans le coeur de Londres. Il s’agit de l’aéroport le plus fréquenté du monde ! Si vous prenez un vol depuis celui-ci, n’hésitez pas à venir bien à l’avance, il est immense !</p>
+                        <p>Pour rejoindre le centre de Londres depuis Heathrow, vous pouvez prendre la <strong>Picadilly Line</strong> (ligne bleue foncée de métro). Dans ce cas, vous mettrez plus ou moins 1H et vous payerez le tarif du trajet de métro en fonction de la zone (1 à 5) où vous vous rendrez et de l’heure de la journée.</p>
+                        <p>Autrement, vous pouvez prendre le <strong>Heathrow Express</strong> avec lequel vous mettrez 15Mn pour vous rendre à la gare de Paddington. Le tarif pour un aller simple est de 22£ (26€). La station de métro est directement située dans l’aéroport.</p>
+                        <p>• <em>GATWICK</em></p>
+                        <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30Mn depuis l’aéroport. Le tarif pour un aller simple est de 19£90 (23€50).</p>
+                        <p>Le Gatwick Express est la solution la plus rapide, mais quelque peu onéreuse pour se rendre au coeur de la ville. Pour autant, il est également possible de prendre le <strong>Southern Railway</strong> (train).</p>
+                        <p>Ce train alternatif arrive en gare de Victoria, London Bidge ou encore City Thameslink (à côté de la cathédrale St. Paul). Le tarif des billets oscille entre 11£ (13€) et 15£ (17€50).</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'eurostar',
+                    label: 'Eurostar',
+                    icon: '🚇',
+                    content: (
+                      <>
+                        <p>C’est le "TGV" anglais. Il relie la France (de Paris ou de Lille) au Royaume-Uni, à la <strong>gare St. Pancras</strong>, située dans le centre de Londres. Les trains Eurostar traversent le tunnel sous la manche.</p>
+                        <p>Nous l’avons pris à 2 reprises. Le voyage est très rapide puisqu’il faut compter par exemple 1h30 pour rejoindre Lille à la capitale. Les wagons sont très confortables.</p>
+                        <p>Si jamais vous avez un petit creux ou une petite soif durant le trajet, vous trouverez une voiture-bar dans l’Eurostar... Trop top !</p>
+                        <p>Le tarif pour un aller simple est en moyenne compris entre 60€ et 90€ en fonction de la période de l’année et des horaires choisis. Si vous souhaitez réserver, c’est <a href="https://www.eurostar.com/fr-fr" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'shuttle',
+                    label: 'Shuttle',
+                    icon: '🚇',
+                    content: (
+                      <>
+                        <p>Le Shuttle est un train pour véhicules à moteur. Vous ne pourrez pas embarquer si vous êtes à pied par exemple.</p>
+                        <p>Ce moyen de transport se prend à <strong>Calais</strong> et arrive à <strong>Folkestone</strong>, situé à plus ou moins 1H30 en voiture du centre de Londres. Tout comme l’Eurostar, il passe sous la Manche.</p>
+                        <p>Lors de notre dernier séjour, c’est l’option que nous avons choisie pour nous rendre en Angleterre. D’autant plus qu’avec le Ferry, ce sont les deux uniques solutions pour débarquer avec son animal de compagnie (sans qu’il soit mis en soute, ce qu’on veut absolument éviter !).</p>
+                        <p>Nous avons bien aimé le concept de rester dans sa voiture, qui elle-même est dans le train. Bon, ça fait une sensation étrange au départ, mais on s’y habitue rapidement.</p>
+                        <p>Pendant la traversée qui dure 30Mn, vous avez le droit de sortir de votre véhicule. Et incroyable, on avait du réseau sur nos téléphones portables, bien qu’on ait des opérateurs différents ! Bref, on était à notre aise pour voyager, et Aladdin aussi !</p>
+                        <p>Pour un aller simple, le prix dépend non pas du nombre de passagers, mais du modèle du véhicule qui embarque, de la présence d’animaux, de la période de l’année et des horaires choisis. Plus vous voyagerez tôt ou tard dans la journée, moins les billets seront chers. Il faut compter en moyenne <strong>140€ pour un billet aller</strong> avec une voiture de type citadine et un chien. Pour réserver, c’est <a href="https://www.eurotunnel.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'ferry',
+                    label: 'Ferry',
+                    icon: '🚢',
+                    content: (
+                      <>
+                        <p>C’est le seul moyen de transport que nous n’ayons jamais pris pour nous rendre à Londres.</p>
+                        <p>Le Ferry relie <strong>Calais</strong> à <strong>Douvres</strong> en 1H30. Comme pour le Shuttle, vous ne pourrez pas voyager à bord si vous ne possédez pas de véhicule motorisé. Si vous faites la traversée avec votre animal, il devra rester dans votre véhicule.</p>
+                        <p>En moyenne, le tarif pour <strong>un aller simple est de 70€</strong>, quelque soit le nombre de passagers avec une voiture. Et <strong>bon à savoir</strong>, le <strong>repas est inclus</strong> dans le prix !</p>
+                        <p>Si vous êtes intéressé par ce moyen de transport, cliquez <a href="https://www.dfds.com/fr-fr/ferries-passagers" target="_blank" rel="noopener noreferrer" className="article-link">ici</a> pour réserver.</p>
+                      </>
+                    ),
+                  },
+                ]} />
               </div>
+              
               <div className="article-pratique-block">
                 <h3 className="article-pratique-title">✓ Où se loger ?</h3>
                 <p>De façon générale, les hébergements sont chers à Londres mais plusieurs possibilités s’offrent à vous : les B’n’B (Bed and Breakfast), les <strong>auberges de jeunesse</strong>, les <strong>hôtels</strong>, les <strong>résidences hôtelières</strong> et les <strong>locations d’appartement</strong>.</p>
@@ -595,145 +605,167 @@ export default function VisiterLondresPage() {
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3371-scaled-1024x768.jpeg" alt="Tube Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3744-scaled-1024x576.jpeg" alt="Téléphérique Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
                 </div>
-                <nav className="article-pratique-nav">
-                  <a href="#londres-metro">Ⓜ️ Métro</a>
-                  <a href="#londres-uberboat">🚢 Uber Boat</a>
-                  <a href="#londres-telepherique">🚡 Téléphérique</a>
-                  <a href="#londres-bus">🚍 Bus</a>
-                  <a href="#londres-oyster">🎫 Oyster Card</a>
-                  <a href="#londres-taxi">🚖 Taxi</a>
-                </nav>
-                <div id="londres-metro" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="3" width="16" height="14" rx="2"/><circle cx="8.5" cy="20.5" r="1.5"/><circle cx="15.5" cy="20.5" r="1.5"/></svg></span>
-                    <h4>Le métro ou les trains</h4>
-                  </div>
-                  <p>Que ce soit avec le "London Underground" (ou le fameux Tube !), et ses 11 lignes de métro aux couleurs bien distinctes, les tramways ou les trains, le réseau ferroviaire londonien dessert la majorité des quartiers.</p>
-                  <p>Nous trouvons qu’il s’agit là de la meilleure façon pour se déplacer rapidement à Londres.</p>
-                  <p>Sur place, nous utilisons l’application "<strong>TUBE MAP</strong>" (disponible sur toutes les plateformes de téléchargement) pour nous aider à définir quels sont les métros / trains à prendre pour se rendre d’un point A à un point B.</p>
-                </div>
-                <div id="londres-uberboat" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 17l1.5-5h15L21 17M5 12V8h14v4M9 8V5h6v3"/><path d="M2 20c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 4.5 0 3-1 4.5 0"/></svg></span>
-                    <h4>Le Uber Boat</h4>
-                  </div>
-                  <p>C’est la première fois que nous prenions ce moyen de transport à Londres. En effet, le Uber Boat est très récent puisqu’il a été mis en place en août 2021.</p>
-                  <p>Il s’agit là d’un nouveau moyen pour découvrir la ville d’un autre angle et voguer sur la Tamise.</p>
-                  <p>Pour prendre le bateau, on trouve plusieurs embarcadères entre <strong>Bankside Pier</strong> et <strong>Greenwich</strong> avec des arrêts aux endroits stratégiques pour visiter la capitale.</p>
-                  <div className="article-tip">
-                    <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                    <div><strong>Bon à savoir</strong><p>Nous vous conseillons de faire cette balade au moment du coucher du soleil, au moment où les couleurs sur la ville sont à couper le souffle !</p></div>
-                  </div>
-                </div>
-                <div id="londres-telepherique" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19V9l6-5 6 5v10M6 19h12M9 19v-6h6v6"/></svg></span>
-                    <h4>Le téléphérique de Thames (Emirates Air Line)</h4>
-                  </div>
-                  <p>C’est parti pour un voyage dans les airs entre <strong>Greenwich Peninsula</strong> et les <strong>Royal Docks</strong> ! L’Emirates Air Line est une télécabine franchissant la Tamise à Londres.</p>
-                  <p>Nous avons beaucoup aimé cette expérience de 10Mn où l’on a une vue imprenable sur la ville !</p>
-                  <p>Nous avons pris le téléphérique de nuit. Le paysage était canon avec toutes les lumières de la ville et de ses buildings ! Cependant, nous pensons que le « voyage » aurait été encore plus sympa de jour.</p>
-                  <div className="article-avis">
-                    <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                    <div><strong>Le conseil des MamZelles</strong><p><strong>Petite astuce !</strong> Nous vous conseillons de prendre le <strong>Uber Boat</strong> à <strong>Westminster Pier</strong> et de voguer jusqu’à <strong>North Greenwich</strong>. De là, vous pourrez prendre le téléphérique.</p></div>
-                  </div>
-                  <p>Autrement, vous pourrez vous y rendre en <strong>train DLR</strong> (arrêt à la station Royal Victoria) ou en métro avec la <strong>Jubilee Line</strong> - ligne grise (arrêt à la station North Greenwich).</p>
-                </div>
-                <div id="londres-bus" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="12" x2="21" y2="12"/><circle cx="7.5" cy="18.5" r="1.2"/><circle cx="16.5" cy="18.5" r="1.2"/></svg></span>
-                    <h4>Le bus à étage</h4>
-                  </div>
-                  <p>Les célèbres bus rouges sont pratiques et peu coûteux. Ils permettent de voir de nombreuses attractions en route.</p>
-                  <p>Il faut absolument profiter de son séjour à Londres pour s’asseoir à l’avant et en haut de l’un de ces fameux bus... Traverser le pont de <strong>Westminster</strong>, voir le <strong>London Eye</strong> et <strong>Big Ben</strong> confortablement installé dans un bus, c’est juste magique !</p>
-                  <div className="article-tip">
-                    <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                    <div><strong>Bon à savoir</strong><p>Après avoir payé 1£50 (1£75) un aller simple avec l’Oyster Card ou en Cardless (voir ci-dessous pour en savoir plus), vous pouvez effectuer un deuxième trajet gratuit dans l’heure en bus ou en tramway.</p></div>
-                  </div>
-                  <p>Attention, sur place on ne peut pas payer un ticket de bus en espèces !</p>
-                </div>
-                <div id="londres-oyster" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><circle cx="7" cy="14.5" r="1.2"/></svg></span>
-                    <h4>La Oyster Card</h4>
-                  </div>
-                  <p>Il existe 2 façons de régler le <strong>métro</strong>, les <strong>trains</strong>, le <strong>tramway</strong>, le <strong>téléphérique</strong>, le <strong>bus</strong> et le <strong>Uber Boat</strong> : soit avec le Cardless (carte de crédit sans contact), soit avec l’<strong>Oyster Card</strong>.</p>
-                  <p>Cette dernière est une carte rechargeable que l’on peut acheter sur <strong>internet</strong> ou directement <strong>aux guichets</strong> de toutes les stations de métro du réseau public londonien. L’Oyster Card est vendue à 5£ (5€90), mais il est possible de se la faire rembourser au niveau des guichets une fois le séjour terminé. Cependant, s’il reste du crédit sur la carte, il sera perdu.</p>
-                  <p>Sur <a href="https://www.visitbritainshop.com/fr/fr/visitor-oyster-card-london?utm_source=visitlondon&amp;utm_medium=affiliate&amp;utm_campaign=affiliate" target="_blank" rel="noopener noreferrer" className="article-link">leur site</a>, vous pouvez évaluer le montant de crédit nécessaire à votre séjour car les prix varient en fonction des heures de la journée et des zones (1 à 5) dans lesquelles vous voyagez, et bénéficier de tarifs très avantageux si vous souscrivez à des formules pour créditer la carte.</p>
-                  <p>Pour vous faire une idée concrète du budget à y consacrer, vous pourrez également y consulter un tableau avec tous les prix des voyages, ainsi qu’une carte des zones tarifaires.</p>
-                  <p>En effet, il faut savoir que les frais de déplacement à Londres sont coûteux et ont une grosse place dans le budget des vacances !</p>
-                  <div className="article-tip">
-                    <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                    <div><strong>Bon à savoir</strong><p>L’Oyster Card est utilisable pour se déplacer depuis les <strong>aéroports d’Heathrow et Gatwick</strong> au centre de Londres, notamment sur les lignes Express. Elle permet de bénéficier de bonnes réductions sur le tarif des trajets.</p></div>
-                  </div>
-                  <p>Bien entendu, elle est aussi utilisable pour payer le métro entre <strong>Heathrow et la gare Victoria</strong> (ligne bleue foncée).</p>
-                </div>
-                <div id="londres-taxi" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 17h14M5 17a2 2 0 002 2h0a2 2 0 002-2M5 17a2 2 0 01-2-2v-2l2-5h12l2 5v2a2 2 0 01-2 2m0 0a2 2 0 002 2h0a2 2 0 002-2"/></svg></span>
-                    <h4>Le taxi</h4>
-                  </div>
-                  <p>Nous nous sommes pris au jeu de héler un taxi dans la rue comme dans un remake de film ! Nous avons fait une courte distance vraiment pour le fun de monter dans l’un de ces mythiques taxis...</p>
-                  <p>En vrai, le londonien se déplace rarement en taxi, encore moins depuis l’existence de l’application Uber qu’il préfère, car la course est très chère.</p>
-                  <p>Les prix sont fixes et chaque «taximan» utilise un compteur.</p>
-                  <p><strong>Pour avoir une idée</strong>, s’offrir 1 Km de course en taxi à Londres s’élève à 3£ (3€50). Le tarif peut descendre jusqu’à 2£ (2€29) et augmenter jusqu’à 4£ (4€58) selon la période de la journée et le quartier.</p>
-                </div>
+                <PratiqueOnglets onglets={[
+                  {
+                    id: 'metro',
+                    label: 'Métro',
+                    icon: 'Ⓜ️',
+                    content: (
+                      <>
+                        <p>Que ce soit avec le "London Underground" (ou le fameux Tube !), et ses 11 lignes de métro aux couleurs bien distinctes, les tramways ou les trains, le réseau ferroviaire londonien dessert la majorité des quartiers.</p>
+                        <p>Nous trouvons qu’il s’agit là de la meilleure façon pour se déplacer rapidement à Londres.</p>
+                        <p>Sur place, nous utilisons l’application "<strong>TUBE MAP</strong>" (disponible sur toutes les plateformes de téléchargement) pour nous aider à définir quels sont les métros / trains à prendre pour se rendre d’un point A à un point B.</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'uberboat',
+                    label: 'Uber Boat',
+                    icon: '🚢',
+                    content: (
+                      <>
+                        <p>C’est la première fois que nous prenions ce moyen de transport à Londres. En effet, le Uber Boat est très récent puisqu’il a été mis en place en août 2021.</p>
+                        <p>Il s’agit là d’un nouveau moyen pour découvrir la ville d’un autre angle et voguer sur la Tamise.</p>
+                        <p>Pour prendre le bateau, on trouve plusieurs embarcadères entre <strong>Bankside Pier</strong> et <strong>Greenwich</strong> avec des arrêts aux endroits stratégiques pour visiter la capitale.</p>
+                        <div className="article-tip">
+                          <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                          <div><strong>Bon à savoir</strong><p>Nous vous conseillons de faire cette balade au moment du coucher du soleil, au moment où les couleurs sur la ville sont à couper le souffle !</p></div>
+                        </div>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'telepherique',
+                    label: 'Téléphérique',
+                    icon: '🚡',
+                    content: (
+                      <>
+                        <p>C’est parti pour un voyage dans les airs entre <strong>Greenwich Peninsula</strong> et les <strong>Royal Docks</strong> ! L’Emirates Air Line est une télécabine franchissant la Tamise à Londres.</p>
+                        <p>Nous avons beaucoup aimé cette expérience de 10Mn où l’on a une vue imprenable sur la ville !</p>
+                        <p>Nous avons pris le téléphérique de nuit. Le paysage était canon avec toutes les lumières de la ville et de ses buildings ! Cependant, nous pensons que le « voyage » aurait été encore plus sympa de jour.</p>
+                        <div className="article-avis">
+                          <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
+                          <div><strong>Le conseil des MamZelles</strong><p><strong>Petite astuce !</strong> Nous vous conseillons de prendre le <strong>Uber Boat</strong> à <strong>Westminster Pier</strong> et de voguer jusqu’à <strong>North Greenwich</strong>. De là, vous pourrez prendre le téléphérique.</p></div>
+                        </div>
+                        <p>Autrement, vous pourrez vous y rendre en <strong>train DLR</strong> (arrêt à la station Royal Victoria) ou en métro avec la <strong>Jubilee Line</strong> - ligne grise (arrêt à la station North Greenwich).</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'bus',
+                    label: 'Bus',
+                    icon: '🚍',
+                    content: (
+                      <>
+                        <p>Les célèbres bus rouges sont pratiques et peu coûteux. Ils permettent de voir de nombreuses attractions en route.</p>
+                        <p>Il faut absolument profiter de son séjour à Londres pour s’asseoir à l’avant et en haut de l’un de ces fameux bus... Traverser le pont de <strong>Westminster</strong>, voir le <strong>London Eye</strong> et <strong>Big Ben</strong> confortablement installé dans un bus, c’est juste magique !</p>
+                        <div className="article-tip">
+                          <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                          <div><strong>Bon à savoir</strong><p>Après avoir payé 1£50 (1£75) un aller simple avec l’Oyster Card ou en Cardless (voir ci-dessous pour en savoir plus), vous pouvez effectuer un deuxième trajet gratuit dans l’heure en bus ou en tramway.</p></div>
+                        </div>
+                        <p>Attention, sur place on ne peut pas payer un ticket de bus en espèces !</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'oyster',
+                    label: 'Oyster Card',
+                    icon: '🎫',
+                    content: (
+                      <>
+                        <p>Il existe 2 façons de régler le <strong>métro</strong>, les <strong>trains</strong>, le <strong>tramway</strong>, le <strong>téléphérique</strong>, le <strong>bus</strong> et le <strong>Uber Boat</strong> : soit avec le Cardless (carte de crédit sans contact), soit avec l’<strong>Oyster Card</strong>.</p>
+                        <p>Cette dernière est une carte rechargeable que l’on peut acheter sur <strong>internet</strong> ou directement <strong>aux guichets</strong> de toutes les stations de métro du réseau public londonien. L’Oyster Card est vendue à 5£ (5€90), mais il est possible de se la faire rembourser au niveau des guichets une fois le séjour terminé. Cependant, s’il reste du crédit sur la carte, il sera perdu.</p>
+                        <p>Sur <a href="https://www.visitbritainshop.com/fr/fr/visitor-oyster-card-london?utm_source=visitlondon&amp;utm_medium=affiliate&amp;utm_campaign=affiliate" target="_blank" rel="noopener noreferrer" className="article-link">leur site</a>, vous pouvez évaluer le montant de crédit nécessaire à votre séjour car les prix varient en fonction des heures de la journée et des zones (1 à 5) dans lesquelles vous voyagez, et bénéficier de tarifs très avantageux si vous souscrivez à des formules pour créditer la carte.</p>
+                        <p>Pour vous faire une idée concrète du budget à y consacrer, vous pourrez également y consulter un tableau avec tous les prix des voyages, ainsi qu’une carte des zones tarifaires.</p>
+                        <p>En effet, il faut savoir que les frais de déplacement à Londres sont coûteux et ont une grosse place dans le budget des vacances !</p>
+                        <div className="article-tip">
+                          <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                          <div><strong>Bon à savoir</strong><p>L’Oyster Card est utilisable pour se déplacer depuis les <strong>aéroports d’Heathrow et Gatwick</strong> au centre de Londres, notamment sur les lignes Express. Elle permet de bénéficier de bonnes réductions sur le tarif des trajets.</p></div>
+                        </div>
+                        <p>Bien entendu, elle est aussi utilisable pour payer le métro entre <strong>Heathrow et la gare Victoria</strong> (ligne bleue foncée).</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'taxi',
+                    label: 'Taxi',
+                    icon: '🚖',
+                    content: (
+                      <>
+                        <p>Nous nous sommes pris au jeu de héler un taxi dans la rue comme dans un remake de film ! Nous avons fait une courte distance vraiment pour le fun de monter dans l’un de ces mythiques taxis...</p>
+                        <p>En vrai, le londonien se déplace rarement en taxi, encore moins depuis l’existence de l’application Uber qu’il préfère, car la course est très chère.</p>
+                        <p>Les prix sont fixes et chaque «taximan» utilise un compteur.</p>
+                        <p><strong>Pour avoir une idée</strong>, s’offrir 1 Km de course en taxi à Londres s’élève à 3£ (3€50). Le tarif peut descendre jusqu’à 2£ (2€29) et augmenter jusqu’à 4£ (4€58) selon la période de la journée et le quartier.</p>
+                      </>
+                    ),
+                  },
+                ]} />
               </div>
               
               <div className="article-pratique-block">
                 <h3 className="article-pratique-title">✓ Pour en savoir plus... !</h3>
-                <nav className="article-pratique-nav">
-                  <a href="#londres-quand-partir">📅 Quand partir</a>
-                  <a href="#londres-argent">💷 Argent</a>
-                  <a href="#londres-prises">🔌 Prises</a>
-                  <a href="#londres-savoir-vivre">🤝 Savoir-vivre</a>
-                </nav>
-                <div id="londres-quand-partir" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
-                    <h4>Quand partir ?</h4>
-                  </div>
-                  <p>Cela dépend de vos envies, puisque pour nous, Londres se découvre à toutes les périodes de l’année !</p>
-                  <p>Vous verrez ci-dessous que chaque saison a ses avantages et ses inconvénients...</p>
-                  <p><strong>En hiver</strong> (déc-fév) : Les journées sont courtes et froides. Il pleut souvent et il arrive même qu’il neige ! Les musées et les sites touristiques sont moins bondés que le reste de l’année, ainsi, les prix des visites sont plus intéressants.</p>
-                  <p><strong>Au printemps</strong> (mars-mai) : Le temps est frais et humide. Les foules commencent à affluer dans la capitale. Les parcs, de plus en plus fréquentés par les londoniens, sortent de l’hiver et les arbres fleurissent.</p>
-                  <p><strong>En été</strong> (juin-août) : Le temps est doux à chaud. Les journées sont longues et ensoleillées. Les vacances scolaires et la saison touristique coïncident, de ce fait, les attractions sont souvent bondées.</p>
-                  <p><strong>En automne</strong> (sept-nov) : Notre préférée ! Cette belle saison est parfois fraîche, mais elle reste ensoleillée. Après l’été et la rentrée scolaire, Londres est plus paisible. Il y fait bon vivre... Les parcs sont habillés de couleurs orangées et sont juste splendides !</p>
-                </div>
-                <div id="londres-argent" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9"/><path d="M14.8 9a2 2 0 00-2-1.5h-1.6a2 2 0 000 4h1.6a2 2 0 010 4H11a2 2 0 01-2-1.5"/><line x1="12" y1="6" x2="12" y2="18"/></svg></span>
-                    <h4>Argent</h4>
-                  </div>
-                  <p><strong>DAB</strong> : La monnaie du Royaume-Uni est la livre sterling (£). On trouve de partout dans la ville des distributeurs de billets acceptant les Visa, MasterCard, Cirrus ou Maestro, et American Express. Il est essentiel de savoir que les retraits d’espèces avec une carte étrangère entraînent souvent des frais.</p>
-                  <p><strong>Cartes de crédit</strong> : Quasiment tous les restaurants, bars, boutiques, (et même certains taxis !), acceptent les cartes de crédit.</p>
-                  <p><strong>Change</strong> : Si vous souhaitez changez des euros en livres, nous vous conseillons de vous rendre dans les bureaux de poste, ils ne prélèvent aucune commission.</p>
-                  <p><strong>Pourboire</strong> : Au restaurant, le service est souvent inclus dans l’addition. Si ce n’est pas le cas, il est d’usage de laisser un pourboire de 10% (sauf si vous n’êtes pas satisfait !). En tout cas, inutile de laisser des « tips » quand on prend une bière ou un verre de vin dans un pub...</p>
-                  <div className="article-tip">
-                    <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                    <div><strong>Bon à savoir</strong><p>Pour éviter les frais relatifs aux retraits ou aux achats, nous utilisons la carte <a href="https://clients.boursorama.com" target="_blank" rel="noopener noreferrer" className="article-link">Boursorama</a> Ultim pour tous nos voyages à l’étranger (y compris hors UE).</p></div>
-                  </div>
-                  <p>En entrant le code parrainage AMTR2375, vous pourrez bénéficier d’un crédit offert de 130€ pour toute ouverture de compte.</p>
-                </div>
-                <div id="londres-prises" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L4.5 13.5H11L9 22l8.5-11.5H11L13 2z"/></svg></span>
-                    <h4>Prises &amp; adaptateurs</h4>
-                  </div>
-                  <p>Vous aurez besoin d’un adapteur pour brancher vos appareils électroniques sur les prises anglaises. Vous n’aurez aucun problème pour en acheter si nécessaire, les adaptateurs sont en vente partout.</p>
-                  <p>Il est d’ailleurs bon de savoir que les hôtels en sont souvent équipés.</p>
-                </div>
-                <div id="londres-savoir-vivre" className="article-pratique-sub">
-                  <div className="article-pratique-sub-head">
-                    <span className="article-pratique-sub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 8.5a3 3 0 11-6 0 3 3 0 016 0zM10.5 14.5h-1a4 4 0 00-4 4v.5h13v-.5a4 4 0 00-4-4h-1"/><path d="M3 8.5a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0zM2 16.5v-.5a3 3 0 013-3"/></svg></span>
-                    <h4>Savoir vivre</h4>
-                  </div>
-                  <p>Pour finir, il est grandement conseillé de respecter <strong>certains paramètres</strong> pour vivre à la mode londonienne pendant votre séjour (et vous éviter certains accidents !) :</p>
-                  <p>• Se tenir sur la droite dans les escalators, et monter ou descendre sur la gauche ;</p>
-                  <p>•  Laisser descendre les passagers du métro avant de monter ;</p>
-                  <p>•  Regarder à droite avant de traverser ;</p>
-                  <p>•  Attendre que les voitures s’arrêtent aux passages piétons.</p>
-                </div>
+                <PratiqueOnglets onglets={[
+                  {
+                    id: 'quand-partir',
+                    label: 'Quand partir',
+                    icon: '📅',
+                    content: (
+                      <>
+                        <p>Cela dépend de vos envies, puisque pour nous, Londres se découvre à toutes les périodes de l’année !</p>
+                        <p>Vous verrez ci-dessous que chaque saison a ses avantages et ses inconvénients...</p>
+                        <p><strong>En hiver</strong> (déc-fév) : Les journées sont courtes et froides. Il pleut souvent et il arrive même qu’il neige ! Les musées et les sites touristiques sont moins bondés que le reste de l’année, ainsi, les prix des visites sont plus intéressants.</p>
+                        <p><strong>Au printemps</strong> (mars-mai) : Le temps est frais et humide. Les foules commencent à affluer dans la capitale. Les parcs, de plus en plus fréquentés par les londoniens, sortent de l’hiver et les arbres fleurissent.</p>
+                        <p><strong>En été</strong> (juin-août) : Le temps est doux à chaud. Les journées sont longues et ensoleillées. Les vacances scolaires et la saison touristique coïncident, de ce fait, les attractions sont souvent bondées.</p>
+                        <p><strong>En automne</strong> (sept-nov) : Notre préférée ! Cette belle saison est parfois fraîche, mais elle reste ensoleillée. Après l’été et la rentrée scolaire, Londres est plus paisible. Il y fait bon vivre... Les parcs sont habillés de couleurs orangées et sont juste splendides !</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'argent',
+                    label: 'Argent',
+                    icon: '💷',
+                    content: (
+                      <>
+                        <p><strong>DAB</strong> : La monnaie du Royaume-Uni est la livre sterling (£). On trouve de partout dans la ville des distributeurs de billets acceptant les Visa, MasterCard, Cirrus ou Maestro, et American Express. Il est essentiel de savoir que les retraits d’espèces avec une carte étrangère entraînent souvent des frais.</p>
+                        <p><strong>Cartes de crédit</strong> : Quasiment tous les restaurants, bars, boutiques, (et même certains taxis !), acceptent les cartes de crédit.</p>
+                        <p><strong>Change</strong> : Si vous souhaitez changez des euros en livres, nous vous conseillons de vous rendre dans les bureaux de poste, ils ne prélèvent aucune commission.</p>
+                        <p><strong>Pourboire</strong> : Au restaurant, le service est souvent inclus dans l’addition. Si ce n’est pas le cas, il est d’usage de laisser un pourboire de 10% (sauf si vous n’êtes pas satisfait !). En tout cas, inutile de laisser des « tips » quand on prend une bière ou un verre de vin dans un pub...</p>
+                        <div className="article-tip">
+                          <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                          <div><strong>Bon à savoir</strong><p>Pour éviter les frais relatifs aux retraits ou aux achats, nous utilisons la carte <a href="https://clients.boursorama.com" target="_blank" rel="noopener noreferrer" className="article-link">Boursorama</a> Ultim pour tous nos voyages à l’étranger (y compris hors UE).</p></div>
+                        </div>
+                        <p>En entrant le code parrainage AMTR2375, vous pourrez bénéficier d’un crédit offert de 130€ pour toute ouverture de compte.</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'prises',
+                    label: 'Prises',
+                    icon: '🔌',
+                    content: (
+                      <>
+                        <p>Vous aurez besoin d’un adapteur pour brancher vos appareils électroniques sur les prises anglaises. Vous n’aurez aucun problème pour en acheter si nécessaire, les adaptateurs sont en vente partout.</p>
+                        <p>Il est d’ailleurs bon de savoir que les hôtels en sont souvent équipés.</p>
+                      </>
+                    ),
+                  },
+                  {
+                    id: 'savoir-vivre',
+                    label: 'Savoir-vivre',
+                    icon: '🤝',
+                    content: (
+                      <>
+                        <p>Pour finir, il est grandement conseillé de respecter <strong>certains paramètres</strong> pour vivre à la mode londonienne pendant votre séjour (et vous éviter certains accidents !) :</p>
+                        <ul className="article-pratique-list">
+                          <li>Se tenir sur la droite dans les escalators, et monter ou descendre sur la gauche.</li>
+                          <li>Laisser descendre les passagers du métro avant de monter.</li>
+                          <li>Regarder à droite avant de traverser.</li>
+                          <li>Attendre que les voitures s’arrêtent aux passages piétons.</li>
+                        </ul>
+                      </>
+                    ),
+                  },
+                ]} />
                 <p><em><strong>Nous espérons que notre article sur Londres vous aura plu et qu’il vous inspirera pour votre prochain voyage !</strong></em></p>
                 <p><em><strong>Si vous avez des questions, ou que vous souhaitez nous partager un retour d’expérience, n’hésitez pas à nous la</strong><strong>isser un commentaire, à nous contacter via le </strong><strong><a href="/formules#formulaire" className="article-link">formulaire de contact</a> ou sur notre compte <a href="https://www.instagram.com/mamzellesenvadrouille/" target="_blank" rel="noopener noreferrer" className="article-link">Instagram</a>.</strong></em></p>
                 <p><em><strong>Nous nous ferons un plaisir de vous lire et de vous répondre !</strong></em></p>
