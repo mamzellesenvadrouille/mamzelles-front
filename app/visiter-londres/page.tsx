@@ -126,45 +126,29 @@ export default function VisiterLondresPage() {
             <p>On y trouve de nombreux palais royaux, notamment <strong>Buckingham Palace</strong>, la résidence officielle de la famille royale.</p>
             <p>A cet endroit, vous pouvez observer l’échange entre l’ancienne et la nouvelle garde à partir de 10H45. Prévoyez d’arriver bien à l’avance, il y a toujours un monde incroyable pour assister à ce spectacle ! La <strong>cérémonie est gratuite</strong> et se déroule les <strong>lundi, mercredi, vendredi et dimanche</strong> selon les conditions météorologiques.</p>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3030-scaled-e1637517864887-1024x666.jpeg" alt="Buckingham Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3040-scaled-768x1024.jpeg" alt="Buckingham Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3041-scaled-768x1024.jpeg" alt="Buckingham Londres 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3030-scaled-e1637517864887-1024x666.jpeg" alt="Buckingham Londres" loading="lazy" style={{flex: '1.538', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3040-scaled-768x1024.jpeg" alt="Buckingham Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3041-scaled-768x1024.jpeg" alt="Buckingham Londres 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Juste en face du palais se trouve le <strong>St. James’s Park</strong>, considéré comme l’un des plus beaux parcs de la capitale. Il offre une bouffée d’air frais et une atmosphère sereine au coeur de la ville. Dans ce parc, nous aimons déambuler dans les allées et observer les nombreux écureuils, pélicans, canards, et oiseaux qui y vivent.</p>
             <p>De l’autre côté de St. James’s Park, se dresse le <strong>Whitehall Palace</strong>. Ici, vous pouvez assister à la <strong>Horse Guards Parade</strong>, traduisez la relève de la garde à cheval. Moins spectaculaire que la relève de la garde à Buckingham Palace, nous trouvons que la relève des Horse Guards est plus ludique pour les enfants, notamment par la présence des chevaux. La cérémonie dure 30Mn et a lieu à <strong>11H du lundi au samedi</strong>, et à <strong>10H le dimanche</strong>.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9618-scaled-696x1024.jpeg" alt="Horse Guard Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9896-scaled-1024x768.jpeg" alt="St. James’s Park Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9618-scaled-696x1024.jpeg" alt="Horse Guard Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9896-scaled-1024x768.jpeg" alt="St. James’s Park Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9618-scaled-696x1024.jpeg" alt="Horse Guard Londres" loading="lazy" style={{flex: '0.68', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9896-scaled-1024x768.jpeg" alt="St. James’s Park Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>C’est à Westminster, au bord de la Tamise, que se dresse la tour d’horloge la plus célèbre au monde, <strong>Big Ben</strong> ! Elle domine le <strong>Palace of Westminster</strong>, là où siège le parlement.</p>
             <p>A quelques minutes à pied, vous trouverez la somptueuse <strong>Abbaye de Westminster</strong>. Cela fait plus de 700 ans qu’elle accueille les plus grands monarques, que ce soit pour des couronnements, des mariages ou des funérailles.</p>
             <p>Si vous souhaitez visiter l’Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, vous devrez payer 20£ (23€50) l’entrée par personne.</p>
             <p>Pour autant, il existe un <strong>bon plan pour la visiter gratuitement</strong> ! Il suffit de se présenter lors des cérémonies religieuses. Celles-ci ont lieu tous les jours, sont ouvertes à tous, et aucune participation financière n’est demandée !</p>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3752-1-scaled-1024x686.jpeg" alt="Big Ben Londres 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3734-scaled-1024x686.jpeg" alt="Charing Cross" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3675-scaled-685x1024.jpeg" alt="Big Ben Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3752-1-scaled-1024x686.jpeg" alt="Big Ben Londres 1" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3734-scaled-1024x686.jpeg" alt="Charing Cross" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3675-scaled-685x1024.jpeg" alt="Big Ben Londres 2" loading="lazy" style={{flex: '0.669', minWidth: 0}} />
             </div>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3734-scaled-1024x686.jpeg" alt="Charing Cross" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3675-scaled-685x1024.jpeg" alt="Big Ben Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9605-scaled-1024x800.jpeg" alt="Westminster Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4114-scaled-1024x686.jpeg" alt="Baker Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9605-scaled-1024x800.jpeg" alt="Westminster Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4114-scaled-1024x686.jpeg" alt="Baker Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9902-scaled-1024x768.jpeg" alt="Westminster nuit Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9605-scaled-1024x800.jpeg" alt="Westminster Londres" loading="lazy" style={{flex: '1.28', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4114-scaled-1024x686.jpeg" alt="Baker Street Londres" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9902-scaled-1024x768.jpeg" alt="Westminster nuit Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <h3>Ⓜ️ - Pour s’y rendre...</h3>
             <p>C’est parti pour une virée dans le quartier de Westminster ? Prenez le métro jusqu’à la station <strong>Westminster</strong>.</p>
@@ -182,48 +166,32 @@ export default function VisiterLondresPage() {
             <p>Puis, découvrez le <strong>Millenium Bridge</strong>, un pont piéton en acier, qui parait être suspendu au dessus du fleuve. Il relie le quartier de Southwark à La City.</p>
             <p>La <strong>Cathédrale St. Paul</strong> d’un côté, le <strong>Tate Museum</strong> de l’autre, profitez de ce sublime paysage pour faire de magnifiques clichés !</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3723-scaled-1024x686.jpeg" alt="Vue du London Eye" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3138-scaled-1024x768.jpeg" alt="The Anchor Bankside" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3723-scaled-1024x686.jpeg" alt="Vue du London Eye" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3138-scaled-1024x768.jpeg" alt="The Anchor Bankside" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3723-scaled-1024x686.jpeg" alt="Vue du London Eye" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3138-scaled-1024x768.jpeg" alt="The Anchor Bankside" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Amateur d’art ? Le célèbre <strong>Tate Museum</strong>, plus connu sous le nom de Tate Modern, est le musée d’art moderne le plus visité au monde. Plus de 7000 oeuvres y sont exposées, représentant différents mouvements comme le surréalisme, l’expressionnisme, l’abstrait, le pop art, etc...</p>
             <p>Et <strong>la visite est gratuite</strong> !</p>
             <p>Enfin, dans ce quartier, le <strong>SHARD</strong> (= l’Éclat de verre en français), impressionnant avec ses 87 étages, ne passera pas inaperçu... La nuit, il éclaire le ciel ! Magique ! Deux étages (au 68ème et au 69ème), ainsi que la terrasse (au 72ème), sont réservés au public et offrent une des plus belles vues sur la capitale britannique.</p>
             <p>Nous vous conseillons vivement de réserver vos <a href="https://www.visitbritainshop.com/fr/fr/view-shard" target="_blank" rel="noopener noreferrer" className="article-link">billets</a>.</p>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3554-1024x520.jpeg" alt="Millenium Bridge" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3537-1024x520.jpeg" alt="The Shard" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3603-1024x520.jpeg" alt="London Eye Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3537-1024x520.jpeg" alt="The Shard" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3603-1024x520.jpeg" alt="London Eye Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3554-1024x520.jpeg" alt="Millenium Bridge" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3537-1024x520.jpeg" alt="The Shard" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3603-1024x520.jpeg" alt="London Eye Londres" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
             </div>
             <p>Si vous aimez le Street Art, vous ne pourrez pas quitter ce quartier sans passer à proximité de la station de train de <strong>Waterloo</strong>. Derrière la gare, vous découvrirez un magnifique tunnel de 300M de long, appelé le <strong>Leake Street Graffiti</strong>.</p>
             <p>Pas très bien indiqué et même un peu caché à l’abri de la foule, les graffitis y sont autorisés par la municipalité de la ville de Londres. Banksy, le célèbre artiste inconnu, y a organisé en 2008 un événement en invitant des graffeurs du monde entier pour transformer le tunnel en galerie d’art. Cet endroit est une vraie pépite à découvrir !</p>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9868-scaled-1024x768.jpeg" alt="Leake Street Graffiti" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9862-scaled-1024x576.jpeg" alt="Leake Street Graffiti 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9868-scaled-1024x768.jpeg" alt="Leake Street Graffiti" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9862-scaled-1024x576.jpeg" alt="Leake Street Graffiti 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9849-scaled-1024x768.jpeg" alt="Leake Street Graffiti 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9868-scaled-1024x768.jpeg" alt="Leake Street Graffiti" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9862-scaled-1024x576.jpeg" alt="Leake Street Graffiti 2" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9849-scaled-1024x768.jpeg" alt="Leake Street Graffiti 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <h4>🍔 - Pour manger...</h4>
             <p><em><strong>Borough Market</strong></em> : À 5 Mn à pied du <strong>Shard</strong>, se trouve un endroit incontournable, <strong>Borough Market</strong>. C’est THE place to be pour la pause déjeuner. Il s’agit du plus ancien et du plus célèbre marché alimentaire de Londres. Borough Market a une particularité, une partie du marché est surplombée par un pont emprunté par des trains.</p>
             <p>Ce bruit peut-être surprenant (voire inquiétant !) la 1ère fois qu’on l’entend... Dans ce lieu très fréquenté les <strong>jours de marché</strong> (jeudis, vendredis et samedis), vous pouvez trouver des produits frais et locaux, mais également une multitude de stands de street-food des quatre coins du monde. Chacun y trouve son bonheur !</p>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3171-scaled-1024x768.jpeg" alt="Borough Market 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3158-scaled-1024x768.jpeg" alt="Borough Market 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3171-scaled-1024x768.jpeg" alt="Borough Market 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3158-scaled-1024x768.jpeg" alt="Borough Market 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_2947-scaled-1024x768.jpeg" alt="Borough Market 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3171-scaled-1024x768.jpeg" alt="Borough Market 1" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3158-scaled-1024x768.jpeg" alt="Borough Market 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_2947-scaled-1024x768.jpeg" alt="Borough Market 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <h4>Ⓜ️ - Pour s’y rendre...</h4>
             <p>Afin d’organiser au mieux votre visite dans ces quartiers que nous affectionnons beaucoup, envisagez de vous rendre à South Bank pour commencer.</p>
@@ -233,18 +201,12 @@ export default function VisiterLondresPage() {
             <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur !</p>
             <p>Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
             <p>Pour les plus téméraires, et moyennant 10£60 (12€50), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42M du sol. Sensations garanties !</p>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3214-scaled-768x1024.jpeg" alt="Tower Bridge 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9962-scaled-1024x768.jpeg" alt="Tower Bridge nuit" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3207-scaled-1024x768.jpeg" alt="La City 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3268-scaled-768x1024.jpeg" alt="La City" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3214-scaled-768x1024.jpeg" alt="Tower Bridge 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9962-scaled-1024x768.jpeg" alt="Tower Bridge nuit" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9962-scaled-1024x768.jpeg" alt="Tower Bridge nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3207-scaled-1024x768.jpeg" alt="La City 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3207-scaled-1024x768.jpeg" alt="La City 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3268-scaled-768x1024.jpeg" alt="La City" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Attention... <strong>Bon plan à savoir !</strong> Si vous prenez l’ascenseur jusqu’au 6ème étage du centre commercial <strong>One New Change</strong>, vous découvrirez une immense terrasse sur le toit qui vous offrira une vue imprenable sur la <strong>Cathédrale St. Paul</strong> et sur la ville.</p>
@@ -269,15 +231,13 @@ export default function VisiterLondresPage() {
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Pour découvrir <strong>Notting Hill</strong>, nous vous conseillons de sortir des avenues principales, de vous montrer curieux pour arpenter ses rues à la recherche des plus belles <em>mews </em>(= nom anglais donné aux petites rues pavées, souvent étroites, situées dans le centre et l’ouest de Londres) et des petits détails qui rendent ce quartier si beau !</p></div>
             </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3051-scaled-1024x768.jpeg" alt="Notting Hill Gate" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4207-1-scaled-1024x686.jpeg" alt="Porto Bello" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3054-scaled-1024x768.jpeg" alt="Notting Hill 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3051-scaled-1024x768.jpeg" alt="Notting Hill Gate" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4207-1-scaled-1024x686.jpeg" alt="Porto Bello" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
             </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4207-1-scaled-1024x686.jpeg" alt="Porto Bello" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3054-scaled-1024x768.jpeg" alt="Notting Hill 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3058-scaled-1024x768.jpeg" alt="Notting Hill 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3054-scaled-1024x768.jpeg" alt="Notting Hill 1" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3058-scaled-1024x768.jpeg" alt="Notting Hill 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Le <strong>vendredi</strong> et le <strong>samedi</strong>, rendez-vous à la célèbre brocante de <strong>Portobello</strong>, devenue l’attraction phare de ce quartier. On y trouve vraiment de tout. Ce marché typique se présente comme le plus grand marché d’antiquités du monde, où plus de 1000 vendeurs se rassemblent.</p>
             <p>Vous trouverez aussi à Notting Hill, notamment à <strong>Ledbury Road</strong> et <strong>Westbourne Grove</strong>, de nombreuses boutiques chics, de décoration, d’objets vintages et insolites.</p>
@@ -296,19 +256,13 @@ export default function VisiterLondresPage() {
             <p>Aujourd’hui, ce sont des quartiers multiculturels et incontournables pour la jeunesse, la vie y est moins chère qu’au coeur de Londres.</p>
             <p><strong>Ces trois quartiers</strong> « hipsters » et « bobos » regorgent de marchés (dont certains sont couverts), de boutiques de créateurs, de friperies, de vinyles, de galeries d’art et de Coffee shop. L’East End, où le street art s’est imposé, est vivant, fascinant, et surtout très différent du reste de Londres.</p>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3253-scaled-1024x768.jpeg" alt="Spitalfields" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3253-scaled-1024x768.jpeg" alt="Spitalfields" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3727-768x1024.jpeg" alt="Graff 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3243-scaled-1024x768.jpeg" alt="Graff 3 Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3243-scaled-1024x768.jpeg" alt="Graff 3 Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0193-scaled-1024x768.jpeg" alt="Rough Trade" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0195-scaled-1024x768.jpeg" alt="Vinyles" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3727-768x1024.jpeg" alt="Graff 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3243-scaled-1024x768.jpeg" alt="Graff 3 Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0193-scaled-1024x768.jpeg" alt="Rough Trade" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0195-scaled-1024x768.jpeg" alt="Vinyles" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0193-scaled-1024x768.jpeg" alt="Rough Trade" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0195-scaled-1024x768.jpeg" alt="Vinyles" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>N’hésitez pas à vous rendre au <strong>marché vintage de Brick Lane</strong>, au <strong>marché aux fleurs de Columbia Road</strong>, dans les <strong>rues de Shoreditch</strong> pour son street-art, et au <strong>Old Spitalfields Market</strong>, ces endroits valent le coup d’oeil !</p>
             <div className="article-tip">
@@ -316,19 +270,13 @@ export default function VisiterLondresPage() {
               <div><strong>Bon à savoir</strong><p>Si vous aimez ce genre d’ambiance décalée, nous vous conseillons de visiter ces quartiers <strong>le dimanche</strong>.</p></div>
             </div>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3237-1-scaled-1024x768.jpeg" alt="Old Spitalfields" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3238-scaled-1024x768.jpeg" alt="Old Spitalfields 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3237-1-scaled-1024x768.jpeg" alt="Old Spitalfields" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3237-1-scaled-1024x768.jpeg" alt="Old Spitalfields" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3238-scaled-1024x768.jpeg" alt="Old Spitalfields 1" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4319-scaled-1024x686.jpeg" alt="Graff 2" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
             </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3238-scaled-1024x768.jpeg" alt="Old Spitalfields 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4319-scaled-1024x686.jpeg" alt="Graff 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4304-scaled-1024x686.jpeg" alt="Graff 4" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0189-scaled-1024x768.jpeg" alt="Brick Lane" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4304-scaled-1024x686.jpeg" alt="Graff 4" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0189-scaled-1024x768.jpeg" alt="Brick Lane" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4304-scaled-1024x686.jpeg" alt="Graff 4" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0189-scaled-1024x768.jpeg" alt="Brick Lane" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <h4>🍔 - Pour manger...</h4>
             <p><em><strong>Old Spitalfields Market</strong></em> : Vous y trouverez un marché de type artisanal (assez branché), mais surtout une ribambelle de stands de nourriture de tous pays.</p>
@@ -347,29 +295,19 @@ export default function VisiterLondresPage() {
             <p>En ébullition ! C’est comme cela que nous qualifierons ce quartier très animé. C’est l’unique endroit à Londres où les spectacles de rue sont autorisés. Il est donc fréquent de croiser des artistes de rue (jongleurs, cracheurs de feu, musiciens, etc.), ce qui apporte une atmosphère particulière à ce lieu.</p>
             <p><strong>Covent Garden</strong> est surtout connu pour son sublime <strong>marché couvert</strong>, telle une immense serre en plein coeur de Londres, ses stands de bijoux, de vêtements, d’objets d’artisanat, et ses boutiques de mode.</p>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9628-scaled-1024x768.jpeg" alt="Covent Garden Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3066-scaled-1024x768.jpeg" alt="Covent Garden 2 Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9649-scaled-674x1024.jpeg" alt="Covent Garden Love Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3066-scaled-1024x768.jpeg" alt="Covent Garden 2 Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9649-scaled-674x1024.jpeg" alt="Covent Garden Love Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9628-scaled-1024x768.jpeg" alt="Covent Garden Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3066-scaled-1024x768.jpeg" alt="Covent Garden 2 Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9649-scaled-674x1024.jpeg" alt="Covent Garden Love Londres" loading="lazy" style={{flex: '0.658', minWidth: 0}} />
             </div>
             <p>Déambulez dans les petites rues, quitte à vous perdre un peu... C’est comme cela que nous avons découvert <strong>Neal’s Yard</strong>, une très jolie petite place piétonne aux façades colorées.</p>
             <p>Vous pourrez prendre le temps de faire une agréable petite pause à la terrasse d’un café pour profiter de ce havre de paix, de ce lieu dépaysant, qui donne l’impression d’avoir découvert un endroit secret.</p>
             <p>Non loin de là se trouve <strong>Trafalgar Square</strong>, la place la plus réputée de la capitale. Celle-ci est très importante dans la vie londonienne puisqu’elle accueille régulièrement de nombreuses manifestations et autres évènements. Cette place est également bien connue pour être un espace convivial, social et de liberté d’expression.</p>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9664_jpg-scaled-768x1024.jpg" alt="Neal’s Yard Londres 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9657-scaled-745x1024.jpeg" alt="Neal’s Yard 1 Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9664_jpg-scaled-768x1024.jpg" alt="Neal’s Yard Londres 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9657-scaled-745x1024.jpeg" alt="Neal’s Yard 1 Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3064-scaled-1024x768.jpeg" alt="Covent Garden Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3089-scaled-768x1024.jpeg" alt="British Museum Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9657-scaled-745x1024.jpeg" alt="Neal’s Yard 1 Londres" loading="lazy" style={{flex: '0.728', minWidth: 0}} />
             </div>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3064-scaled-1024x768.jpeg" alt="Covent Garden Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3064-scaled-1024x768.jpeg" alt="Covent Garden Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3089-scaled-768x1024.jpeg" alt="British Museum Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Enfin, à <strong>Covent Garden</strong>, vous pourrez visiter le <strong>British Museum</strong>, considéré comme l’un des endroits incontournables à visiter à Londres. Et la bonne nouvelle c’est que <strong>l’entrée est gratuite</strong> !</p>
@@ -385,24 +323,16 @@ export default function VisiterLondresPage() {
             <p>Pour autant, ne vous attendez pas à un endroit immense, vous seriez déçus ! Chinatown se résume à une grande avenue, mais juste ce qu’il faut pour nous plonger dans l’ambiance.</p>
             <p>À 5Mn à pied, vous arriverez facilement à <strong>Piccadilly Circus</strong>. Cette place est mondialement connue pour ses panneaux publicitaires géants et lumineux. Elle est d’ailleurs souvent comparée à une version miniature de Times Square à New York. Piccadilly Circus est un endroit toujours très fréquenté et animé.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9681-scaled-751x1024.jpeg" alt="Chinatown" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3488-scaled-1024x768.jpeg" alt="Picadilly Circus" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9681-scaled-751x1024.jpeg" alt="Chinatown" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3488-scaled-1024x768.jpeg" alt="Picadilly Circus" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9681-scaled-751x1024.jpeg" alt="Chinatown" loading="lazy" style={{flex: '0.733', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3488-scaled-1024x768.jpeg" alt="Picadilly Circus" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Si vous êtes fan de shopping, partez en direction de <strong>Regent Street</strong>. Cette grande artère qui part de Piccadilly Circus est réputée pour ses boutiques de luxe à renommée internationale et ses restaurants gastronomiques.</p>
             <p>Terminez vos emplettes à <strong>Oxford Street</strong> qui traverse Regent Street.</p>
             <p>Longue d’environ 2,5Km, elle est bordée par 300 magasins, ce qui en fait l’avenue commerçante la plus longue d’Europe !</p>
             <p>Si vous n’aimez pas trop la foule, alors fuyez, et éloignez vous des grandes avenues pour trouver des petites rues et des adresses shopping beaucoup plus authentiques.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3612-1-1024x520.jpeg" alt="Regent Street" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3491-scaled-1024x768.jpeg" alt="Regent Street 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3612-1-1024x520.jpeg" alt="Regent Street" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3491-scaled-1024x768.jpeg" alt="Regent Street 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3612-1-1024x520.jpeg" alt="Regent Street" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3491-scaled-1024x768.jpeg" alt="Regent Street 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <h4>Ⓜ️ - Pour s’y rendre...</h4>
             <p>Ces trois quartiers se trouvent à proximité les uns des autres. Nous vous conseillons de commencer par découvrir <strong>Soho</strong>.</p>
@@ -418,41 +348,29 @@ export default function VisiterLondresPage() {
             <p>Vous voilà dans le quartier le plus connu pour sa culture underground et alternative.</p>
             <p>En effet, il n’est pas peu fréquent de croiser des punks à crête verte ou des gothiques chaussés de New Rocks ! C’est un quartier original, dont l’excentricité est une norme.</p>
             <p>Dès la sortie de métro, vous débarquerez dans « un autre monde » ! Vous déboucherez tout d’abord sur <strong>Camden High Street</strong>, une rue commerçante populaire qui regorge de boutiques et de pubs aux enseignes colorées, plus extravagantes les unes que les autres. C’est notamment l’occasion d’y acheter un petit souvenir de la capitale, les prix, n’étant pas affichés, sont donc facilement négociables.</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9384-scaled-1024x768.jpeg" alt="Camden Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9395-scaled-1024x768.jpeg" alt="Camden 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9473-1-scaled-1024x807.jpeg" alt="Camden Market 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9384-scaled-1024x768.jpeg" alt="Camden Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9395-scaled-1024x768.jpeg" alt="Camden 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9395-scaled-1024x768.jpeg" alt="Camden 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9473-1-scaled-1024x807.jpeg" alt="Camden Market 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9429-scaled-1024x768.jpeg" alt="Camden Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9473-1-scaled-1024x807.jpeg" alt="Camden Market 2" loading="lazy" style={{flex: '1.269', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9429-scaled-1024x768.jpeg" alt="Camden Londres 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Camden Town est notamment connu pour ses cinq différents marchés, communément appelés <strong>Camden Market</strong>. N’hésitez pas à vous y perdre. C’est le meilleur moyen de découvrir cet endroit populaire et son ambiance ! A la mode londonienne, laissez-vous tenter par les stands de street-food.</p>
             <p>On y trouve également le plus grand marché aux puces de la ville. Du vintage, des vêtements et accessoires neufs (parfois décalés), de l’artisanat, etc..., il y en a pour tous les goûts !</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9449-scaled-769x1024.jpeg" alt="Camden Lock Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9463-scaled-1024x768.jpeg" alt="Camden Market Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3916-scaled-1024x686.jpeg" alt="Camden Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9488-scaled-1024x812.jpeg" alt="Camden Street 2 Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9449-scaled-769x1024.jpeg" alt="Camden Lock Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9463-scaled-1024x768.jpeg" alt="Camden Market Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9449-scaled-769x1024.jpeg" alt="Camden Lock Londres" loading="lazy" style={{flex: '0.751', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9463-scaled-1024x768.jpeg" alt="Camden Market Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3916-scaled-1024x686.jpeg" alt="Camden Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9488-scaled-1024x812.jpeg" alt="Camden Street 2 Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3916-scaled-1024x686.jpeg" alt="Camden Street Londres" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9488-scaled-1024x812.jpeg" alt="Camden Street 2 Londres" loading="lazy" style={{flex: '1.261', minWidth: 0}} />
             </div>
             <p>Après le bain de foule, si vous souhaitez vous mettre au vert, dirigez-vous vers <strong>Regent’s Park</strong>, l’un des plus beaux parcs de Londres.</p>
             <p>Vous découvrirez un havre de paix à 15 / 20Mn à pied de Camden Town.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9340-scaled-715x1024.jpg" alt="Regent’s Park Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9340-scaled-715x1024.jpg" alt="Regent’s Park Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9340-scaled-715x1024.jpg" alt="Regent’s Park Londres" loading="lazy" style={{flex: '0.698', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" loading="lazy" style={{flex: '1.313', minWidth: 0}} />
             </div>
             <h4>🍔 - Pour manger...</h4>
             <p><em><strong>Haché Burgers Camden</strong></em> : Si vous n’avez pas envie de manger sur le pouce, ce restaurant réputé à l’ambiance cosy vous fera saliver les papilles avec sa carte de burgers faits maison !</p>
@@ -474,21 +392,13 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9788-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9788-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
             <p>Aujourd’hui, le quartier continue de se développer et les londoniens ont bien investi les lieux. Le village olympique a été reconverti en logements, hôtels et espaces de travail pour les entreprises.</p>
             <p>Vous trouverez de nombreux parcs fleuris et très bien entretenus, les anglais adorent ça ! Du coup, c’était l’endroit rêvé pour nous avec Aladdin !</p>
             <p>Dans le coin, vous pouvez également vous balader le long de <strong>rives aménagées</strong>, où des péniches à la décoration bohème ou rétro sont amarrées et de <strong>nombreux bars et restaurants</strong> typiquement anglais sont implantés.</p>
             <p>On vous conseille d’y faire un tour. Cet endroit est apaisant et ressourçant à côté de l’effervescence connue du coeur de la ville !</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0007-scaled-1024x764.jpeg" alt="Stratford Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9545-scaled-1024x768.jpeg" alt="Stratford Londres nuit" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0007-scaled-1024x764.jpeg" alt="Stratford Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9545-scaled-1024x768.jpeg" alt="Stratford Londres nuit" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0007-scaled-1024x764.jpeg" alt="Stratford Londres 2" loading="lazy" style={{flex: '1.34', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9545-scaled-1024x768.jpeg" alt="Stratford Londres nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <h4>Ⓜ️ - Pour s’y rendre...</h4>
             <p>Vous souhaitez visiter Stratford ?</p>
@@ -506,44 +416,28 @@ export default function VisiterLondresPage() {
             <p>En effet, elle est la <strong>capitale LGBT</strong> d’Angleterre. Très animée, les bars, restaurants et boîtes de nuit ne manquent pas !</p>
             <p>Le bord de mer, qui longe la grande plage de galets, est très agréable pour s’y promener. De nombreuses familles s’y retrouvent pour y passer leurs week-ends.</p>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3175-scaled-1024x768.jpeg" alt="Brighton plage" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3070-scaled-1024x768.jpeg" alt="Brighton plage 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3152-scaled-1024x768.jpeg" alt="Brighton plage Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3175-scaled-1024x768.jpeg" alt="Brighton plage" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3070-scaled-1024x768.jpeg" alt="Brighton plage 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3152-scaled-1024x768.jpeg" alt="Brighton plage Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3070-scaled-1024x768.jpeg" alt="Brighton plage 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3152-scaled-1024x768.jpeg" alt="Brighton plage Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3162-scaled-768x1024.jpeg" alt="Brighton Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3156-scaled-768x1024.jpeg" alt="Brighton Street Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3162-scaled-768x1024.jpeg" alt="Brighton Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3156-scaled-768x1024.jpeg" alt="Brighton Street Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3059-scaled-1024x768.jpeg" alt="Brighton Street 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3059-scaled-1024x768.jpeg" alt="Brighton Street 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Nous en sommes certaines, vous apprécierez vous balader dans ses ruelles chics et bohèmes qui regorgent de petites boutiques et de magasins en tout genre.</p>
             <p>Vous ne pourrez pas louper le <strong>Brighton Pier</strong>. Ce fameux ponton, aménagé en complexe de loisirs (casino, jeux d’arcade, manèges et restaurants), permet de passer un moment agréable en famille ou entre amis.</p>
             <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3090-1024x576.jpeg" alt="Brighton Pier Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3149-scaled-1024x768.jpeg" alt="Brighton Pier Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3090-1024x576.jpeg" alt="Brighton Pier Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3149-scaled-1024x768.jpeg" alt="Brighton Pier Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3143-scaled-1024x768.jpeg" alt="Brighton Pier Londres 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3090-1024x576.jpeg" alt="Brighton Pier Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3149-scaled-1024x768.jpeg" alt="Brighton Pier Londres 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3143-scaled-1024x768.jpeg" alt="Brighton Pier Londres 3" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Non loin de là, si vous avez envie de prendre de la hauteur et d’admirer le paysage à 360°, embarquez dans la tour d’observation <strong>British Airways i360</strong>.</p>
             <p>S’élevant à 138M, elle est la plus haute tour du monde de ce type.</p>
             <p>Si vous souhaitez faire cette attraction, sachez qu’elle vous coûtera 16£50 (19€50) par personne. Pour avoir tenté l’expérience, nous avons adoré... Le panorama était à couper le souffle !</p>
             <p>Nous vous conseillons de <a href="https://britishairwaysi360.com" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> votre venue pour éviter la file d’attente.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3190-1024x576.jpeg" alt="Tour British Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3206-scaled-768x1024.jpeg" alt="Tour British Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3190-1024x576.jpeg" alt="Tour British Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3190-1024x576.jpeg" alt="Tour British Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3206-scaled-768x1024.jpeg" alt="Tour British Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <h4>Ⓜ️🚍 - Pour s’y rendre...</h4>
@@ -575,12 +469,8 @@ export default function VisiterLondresPage() {
               <div className="article-pratique-block">
                 <h3 className="article-pratique-title">✓ Comment s’y rendre depuis la France ?</h3>
                 <div className="article-gallery-2">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0013_Original-1-scaled-1024x768.jpg" alt="Avion Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/65592404317__DFD30C21-27CB-484C-8D16-F19678D98D7A-scaled-1024x768.jpg" alt="Shuttle Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                </div>
-                <div className="article-gallery-2">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0013_Original-1-scaled-1024x768.jpg" alt="Avion Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/65592404317__DFD30C21-27CB-484C-8D16-F19678D98D7A-scaled-1024x768.jpg" alt="Shuttle Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0013_Original-1-scaled-1024x768.jpg" alt="Avion Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/65592404317__DFD30C21-27CB-484C-8D16-F19678D98D7A-scaled-1024x768.jpg" alt="Shuttle Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 </div>
                 <h4>✈️ - En avion</h4>
                 <p>De nombreux aéroports sont implantés dans la capitale anglaise.</p>
@@ -625,12 +515,8 @@ export default function VisiterLondresPage() {
                   <div><strong>Bon à savoir</strong><p>Nous vous recommandons grandement de cibler des hébergements à proximité des stations de métro.</p></div>
                 </div>
                 <div className="article-gallery-2">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9297-scaled-1024x768.jpeg" alt="Stratford Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9284-scaled-1024x768.jpeg" alt="Stratford Street Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                </div>
-                <div className="article-gallery-2">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9297-scaled-1024x768.jpeg" alt="Stratford Street Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9284-scaled-1024x768.jpeg" alt="Stratford Street Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9297-scaled-1024x768.jpeg" alt="Stratford Street Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9284-scaled-1024x768.jpeg" alt="Stratford Street Londres 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 </div>
               </div>
               <div className="article-pratique-block">
@@ -638,12 +524,8 @@ export default function VisiterLondresPage() {
                 <p>Comme vous l’aurez compris tout au long de cet article, il existe donc différents moyens de transports pour se déplacer au centre de Londres et dans sa périphérie.</p>
                 <p>le <strong>métro</strong>, le <strong>train DLR</strong> (pour se rendre dans l’Est), les <strong>tramways du sud de Londres</strong>, les <strong>trains Overground et National Rail</strong> de la ville, le <strong>téléphérique de Thames</strong>, le <strong>Uber Boat</strong>, le <strong>bus rouge</strong> (mythique avec son étage !) et le <strong>taxi</strong> (majoritairement noir, il fait partie du décor de la capitale !).</p>
                 <div className="article-gallery-2">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3371-scaled-1024x768.jpeg" alt="Tube Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3744-scaled-1024x576.jpeg" alt="Téléphérique Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                </div>
-                <div className="article-gallery-2">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3371-scaled-1024x768.jpeg" alt="Tube Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3744-scaled-1024x576.jpeg" alt="Téléphérique Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3371-scaled-1024x768.jpeg" alt="Tube Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3744-scaled-1024x576.jpeg" alt="Téléphérique Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
                 </div>
                 <h4>Ⓜ️ - Le métro ou les trains</h4>
                 <p>Que ce soit avec le "London Underground" (ou le fameux Tube !), et ses 11 lignes de métro aux couleurs bien distinctes, les tramways ou les trains, le réseau ferroviaire londonien dessert la majorité des quartiers.</p>
