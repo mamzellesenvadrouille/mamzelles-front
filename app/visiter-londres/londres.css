@@ -740,7 +740,6 @@
 .article-londres .article-pratique-block {
   background: var(--bg);
   border: 1px solid var(--line);
-  border-left: 3px solid var(--gold);
   border-radius: 8px;
   padding: 24px 28px;
 }
