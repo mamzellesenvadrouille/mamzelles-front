@@ -31,7 +31,7 @@ export default function VisiterLondresPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/Londres.webp" alt="Visiter Londres en une semaine" style={{objectPosition: 'center 44%'}} />
+        <img className="hero-bg" src="/Londres.webp" alt="Visiter Londres en une semaine" style={{objectPosition: 'center 43%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Londres<br /><em>L’essentiel en une semaine</em></h1>
@@ -124,7 +124,7 @@ export default function VisiterLondresPage() {
             </div>
             <p>Situé au bord de la Tamise, le quartier de Westminster est dynamique, marqué par l’histoire du pays. Il est considéré comme le coeur politique et culturel de Londres.</p>
             <p>On y trouve de nombreux palais royaux, notamment <strong>Buckingham Palace</strong>, la résidence officielle de la famille royale.</p>
-            <p>A cet endroit, vous pouvez observer l’échange entre l’ancienne et la nouvelle garde à partir de 10H45. Prévoyez d’arriver bien à l’avance, il y a toujours un monde incroyable pour assister à ce spectacle ! La <strong>cérémonie est gratuite</strong> et se déroule les <strong>lundi, mercredi, vendredi et dimanche</strong> selon les conditions météorologiques.</p>
+            <p>À cet endroit, vous pouvez observer l’échange entre l’ancienne et la nouvelle garde à partir de 10H45. Prévoyez d’arriver bien à l’avance, il y a toujours un monde incroyable pour assister à ce spectacle ! La <strong>cérémonie est gratuite</strong> et se déroule les <strong>lundi, mercredi, vendredi et dimanche</strong> selon les conditions météorologiques.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3030-scaled-e1637517864887-1024x666.jpeg" alt="Buckingham Londres" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3040-scaled-768x1024.jpeg" alt="Buckingham Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -137,7 +137,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9896-scaled-1024x768.jpeg" alt="St. James’s Park Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>C’est à Westminster, au bord de la Tamise, que se dresse la tour d’horloge la plus célèbre au monde, <strong>Big Ben</strong> ! Elle domine le <strong>Palace of Westminster</strong>, là où siège le parlement.</p>
-            <p>A quelques minutes à pied, vous trouverez la somptueuse <strong>Abbaye de Westminster</strong>. Cela fait plus de 700 ans qu’elle accueille les plus grands monarques, que ce soit pour des couronnements, des mariages ou des funérailles.</p>
+            <p>À quelques minutes à pied, vous trouverez la somptueuse <strong>Abbaye de Westminster</strong>. Cela fait plus de 700 ans qu’elle accueille les plus grands monarques, que ce soit pour des couronnements, des mariages ou des funérailles.</p>
             <p>Si vous souhaitez visiter l’Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, vous devrez payer 20£ (23€50) l’entrée par personne.</p>
             <p>Pour autant, il existe un <strong>bon plan pour la visiter gratuitement</strong> ! Il suffit de se présenter lors des cérémonies religieuses. Celles-ci ont lieu tous les jours, sont ouvertes à tous, et aucune participation financière n’est demandée !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3752-1-scaled-1024x686.jpeg" alt="Big Ben Londres 1" className="article-img-full" loading="lazy" />
@@ -171,9 +171,9 @@ export default function VisiterLondresPage() {
               <h2>Southwark &amp; South Bank, La City</h2>
             </div>
             <h3>📍 Southwark &amp; South Bank</h3>
-            <p>Modernes et historiques à la fois, ils font partie des quartiers incontournables de Londres. Situés sur les bords de la Tamise, ils offrent une multitudes d’attractions.</p>
+            <p>Modernes et historiques à la fois, ils font partie des quartiers incontournables de Londres. Situés sur les bords de la Tamise, ils offrent une multitude d’attractions.</p>
             <p>Commencez par prendre de la hauteur en montant dans le <strong>London Eye</strong> à 135 m ! Vous profiterez d’une vue panoramique à couper le souffle sur la ville. Pour réserver vos tickets, c’est <a href="https://www.londoneye.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
-            <p>Puis, découvrez le <strong>Millenium Bridge</strong>, un pont piéton en acier, qui parait être suspendu au dessus du fleuve. Il relie le quartier de Southwark à La City.</p>
+            <p>Puis, découvrez le <strong>Millenium Bridge</strong>, un pont piéton en acier, qui parait être suspendu au-dessus du fleuve. Il relie le quartier de Southwark à La City.</p>
             <p>La <strong>Cathédrale St. Paul</strong> d’un côté, le <strong>Tate Museum</strong> de l’autre, profitez de ce sublime paysage pour faire de magnifiques clichés !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3723-scaled-1024x686.jpeg" alt="Vue du London Eye" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
@@ -205,7 +205,7 @@ export default function VisiterLondresPage() {
                   <p className="article-resto-name">Borough Market</p>
                   <p className="article-resto-sub">Marché alimentaire · à 5 min du Shard</p>
                   <p>À 5 minutes à pied du <strong>Shard</strong>, se trouve un endroit incontournable, <strong>Borough Market</strong>. C’est THE place to be pour la pause déjeuner. Il s’agit du plus ancien et du plus célèbre marché alimentaire de Londres. Borough Market a une particularité, une partie du marché est surplombée par un pont emprunté par des trains.</p>
-                  <p>Ce bruit peut-être surprenant (voire inquiétant !) la 1ère fois qu’on l’entend... Dans ce lieu très fréquenté les <strong>jours de marché</strong>, vous pouvez trouver des produits frais et locaux, mais également une multitude de stands de street-food des quatre coins du monde. Chacun y trouve son bonheur !</p>
+                  <p>Ce bruit peut être surprenant (voire inquiétant !) la 1ère fois qu’on l’entend... Dans ce lieu très fréquenté les <strong>jours de marché</strong>, vous pouvez trouver des produits frais et locaux, mais également une multitude de stands de street-food des quatre coins du monde. Chacun y trouve son bonheur !</p>
                 </div>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function VisiterLondresPage() {
               </div>
             </div>
             <h3>📍 La City</h3>
-            <p>La City est l’un des quartiers les plus anciens de la capitale où se côtoient des édifices historiques majestueux, tels que le <strong>Tower Bridge</strong> et d’immenses grattes-ciel. En effet, il est à la fois le centre historique et le plus gros quartier des affaires de la ville. Le contraste des paysages est ici incroyable !</p>
+            <p>La City est l’un des quartiers les plus anciens de la capitale où se côtoient des édifices historiques majestueux, tels que le <strong>Tower Bridge</strong> et d’immenses gratte-ciel. En effet, il est à la fois le centre historique et le plus gros quartier des affaires de la ville. Le contraste des paysages est ici incroyable !</p>
             <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur !</p>
             <p>Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
             <p>Pour les plus téméraires, et moyennant 10£60 (12€50), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42 m du sol. Sensations garanties !</p>
@@ -425,8 +425,8 @@ export default function VisiterLondresPage() {
             </div>
             <p>Si vous êtes fan de shopping, partez en direction de <strong>Regent Street</strong>. Cette grande artère qui part de Piccadilly Circus est réputée pour ses boutiques de luxe à renommée internationale et ses restaurants gastronomiques.</p>
             <p>Terminez vos emplettes à <strong>Oxford Street</strong> qui traverse Regent Street.</p>
-            <p>Longue d’environ 2,5Km, elle est bordée par 300 magasins, ce qui en fait l’avenue commerçante la plus longue d’Europe !</p>
-            <p>Si vous n’aimez pas trop la foule, alors fuyez, et éloignez vous des grandes avenues pour trouver des petites rues et des adresses shopping beaucoup plus authentiques.</p>
+            <p>Longue d’environ 2,5 km, elle est bordée par 300 magasins, ce qui en fait l’avenue commerçante la plus longue d’Europe !</p>
+            <p>Si vous n’aimez pas trop la foule, alors fuyez, et éloignez-vous des grandes avenues pour trouver des petites rues et des adresses shopping beaucoup plus authentiques.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3612-1-1024x520.jpeg" alt="Regent Street" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3491-scaled-1024x768.jpeg" alt="Regent Street 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -463,8 +463,8 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9473-1-scaled-1024x807.jpeg" alt="Camden Market 2" loading="lazy" style={{flex: '1.269', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9429-scaled-1024x768.jpeg" alt="Camden Londres 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <p>Camden Town est notamment connu pour ses cinq différents marchés, communément appelés <strong>Camden Market</strong>. N’hésitez pas à vous y perdre. C’est le meilleur moyen de découvrir cet endroit populaire et son ambiance ! A la mode londonienne, laissez-vous tenter par les stands de street-food.</p>
-            <p>On y trouve également le plus grand marché aux puces de la ville. Du vintage, des vêtements et accessoires neufs (parfois décalés), de l’artisanat, etc..., il y en a pour tous les goûts !</p>
+            <p>Camden Town est notamment connu pour ses cinq différents marchés, communément appelés <strong>Camden Market</strong>. N’hésitez pas à vous y perdre. C’est le meilleur moyen de découvrir cet endroit populaire et son ambiance ! À la mode londonienne, laissez-vous tenter par les stands de street-food.</p>
+            <p>On y trouve également le plus grand marché aux puces de la ville. Du vintage, des vêtements et accessoires neufs (parfois décalés), de l’artisanat, etc., il y en a pour tous les goûts !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9449-scaled-769x1024.jpeg" alt="Camden Lock Londres" loading="lazy" style={{flex: '0.751', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9463-scaled-1024x768.jpeg" alt="Camden Market Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -530,7 +530,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Aujourd’hui, le quartier continue de se développer et les londoniens ont bien investi les lieux. Le village olympique a été reconverti en logements, hôtels et espaces de travail pour les entreprises.</p>
-            <p>Vous trouverez de nombreux parcs fleuris et très bien entretenus, les anglais adorent ça ! Du coup, c’était l’endroit rêvé pour nous avec Aladdin !</p>
+            <p>Vous trouverez de nombreux parcs fleuris et très bien entretenus, les Anglais adorent ça ! Du coup, c’était l’endroit rêvé pour nous avec Aladdin !</p>
             <p>Dans le coin, vous pouvez également vous balader le long de <strong>rives aménagées</strong>, où des péniches à la décoration bohème ou rétro sont amarrées et de <strong>nombreux bars et restaurants</strong> typiquement anglais sont implantés.</p>
             <p>On vous conseille d’y faire un tour. Cet endroit est apaisant et ressourçant à côté de l’effervescence connue du coeur de la ville !</p>
             <div className="article-gallery-2">
@@ -648,7 +648,7 @@ export default function VisiterLondresPage() {
                         <h5>Gatwick</h5>
                         <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30 minutes depuis l’aéroport. Le tarif pour un aller simple est de 19£90 (23€50).</p>
                         <p>Le Gatwick Express est la solution la plus rapide, mais quelque peu onéreuse pour se rendre au coeur de la ville. Pour autant, il est également possible de prendre le <strong>Southern Railway</strong> (train).</p>
-                        <p>Ce train alternatif arrive en gare de Victoria, London Bidge ou encore City Thameslink (à côté de la cathédrale St. Paul). Le tarif des billets oscille entre 11£ (13€) et 15£ (17€50).</p>
+                        <p>Ce train alternatif arrive en gare de Victoria, London Bridge ou encore City Thameslink (à côté de la cathédrale St. Paul). Le tarif des billets oscille entre 11£ (13€) et 15£ (17€50).</p>
                       </>
                     ),
                   },
@@ -658,7 +658,7 @@ export default function VisiterLondresPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M21 13c0 -3.87 -3.37 -7 -10 -7h-8"/><path d="M3 15h16a2 2 0 0 0 2 -2"/><path d="M3 6v5h17.5"/><path d="M3 11v4"/><path d="M8 11v-5"/><path d="M13 11v-4.5"/><path d="M3 19h18"/></svg>,
                     content: (
                       <>
-                        <p>C’est le "TGV" anglais. Il relie la France (de Paris ou de Lille) au Royaume-Uni, à la <strong>gare St. Pancras</strong>, située dans le centre de Londres. Les trains Eurostar traversent le tunnel sous la manche.</p>
+                        <p>C’est le "TGV" anglais. Il relie la France (de Paris ou de Lille) au Royaume-Uni, à la <strong>gare St. Pancras</strong>, située dans le centre de Londres. Les trains Eurostar traversent le tunnel sous la Manche.</p>
                         <p>Nous l’avons pris à 2 reprises. Le voyage est très rapide puisqu’il faut compter par exemple 1h30 pour rejoindre Lille à la capitale. Les wagons sont très confortables.</p>
                         <p>Si jamais vous avez un petit creux ou une petite soif durant le trajet, vous trouverez une voiture-bar dans l’Eurostar... Trop top !</p>
                         <p>Le tarif pour un aller simple est en moyenne compris entre 60€ et 90€ en fonction de la période de l’année et des horaires choisis. Si vous souhaitez réserver, c’est <a href="https://www.eurostar.com/fr-fr" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
@@ -688,7 +688,7 @@ export default function VisiterLondresPage() {
                       <>
                         <p>C’est le seul moyen de transport que nous n’ayons jamais pris pour nous rendre à Londres.</p>
                         <p>Le Ferry relie <strong>Calais</strong> à <strong>Douvres</strong> en 1H30. Comme pour le Shuttle, vous ne pourrez pas voyager à bord si vous ne possédez pas de véhicule motorisé. Si vous faites la traversée avec votre animal, il devra rester dans votre véhicule.</p>
-                        <p>En moyenne, le tarif pour <strong>un aller simple est de 70€</strong>, quelque soit le nombre de passagers avec une voiture. Et <strong>bon à savoir</strong>, le <strong>repas est inclus</strong> dans le prix !</p>
+                        <p>En moyenne, le tarif pour <strong>un aller simple est de 70€</strong>, quel que soit le nombre de passagers avec une voiture. Et <strong>bon à savoir</strong>, le <strong>repas est inclus</strong> dans le prix !</p>
                         <p>Si vous êtes intéressé par ce moyen de transport, cliquez <a href="https://www.dfds.com/fr-fr/ferries-passagers" target="_blank" rel="noopener noreferrer" className="article-link">ici</a> pour réserver.</p>
                       </>
                     ),
@@ -700,7 +700,7 @@ export default function VisiterLondresPage() {
                 <h3 className="article-pratique-title">Où se loger ?</h3>
                 <p>De façon générale, les hébergements sont chers à Londres mais plusieurs possibilités s’offrent à vous : les B’n’B (Bed and Breakfast), les <strong>auberges de jeunesse</strong>, les <strong>hôtels</strong>, les <strong>résidences hôtelières</strong> et les <strong>locations d’appartement</strong>.</p>
                 <p>Cette fois-ci, nous avons opté pour un appart’hôtel de la chaîne des résidences hôtelières <strong>Adagio</strong>. Le logement est situé dans l’<strong>Est de Londres</strong>, à <strong>Stratford</strong>, et plus précisément dans le village olympique (cf. Jour 6 - Stratford).</p>
-                <p>Pour loger à l’appart’hôtel <a href="https://www.adagio-city.com/fr/hotel-9721-aparthotel-adagio-london-stratford.shtml" target="_blank" rel="noopener noreferrer" className="article-link">Adagio Stratford</a>, Il faut compter 110€ la nuit pour un studio récent et très bien équipé au 12ème étage (avec une vue incroyable sur la ville !).</p>
+                <p>Pour loger à l’appart’hôtel <a href="https://www.adagio-city.com/fr/hotel-9721-aparthotel-adagio-london-stratford.shtml" target="_blank" rel="noopener noreferrer" className="article-link">Adagio Stratford</a>, il faut compter 110€ la nuit pour un studio récent et très bien équipé au 12ème étage (avec une vue incroyable sur la ville !).</p>
                 <div className="article-avis">
                   <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
                   <div><strong>Le conseil des MamZelles</strong><p>Quel que soit le type d’hébergement que vous choisirez, nous vous conseillons de réserver à l’avance, non seulement pour obtenir de meilleurs tarifs, mais surtout pour prendre le temps de bien définir le quartier dans lequel vous souhaitez passer votre séjour.</p></div>
@@ -717,7 +717,7 @@ export default function VisiterLondresPage() {
               <div className="article-pratique-block">
                 <h3 className="article-pratique-title">Comment se déplacer dans la capitale ?</h3>
                 <p>Comme vous l’aurez compris tout au long de cet article, il existe donc différents moyens de transports pour se déplacer au centre de Londres et dans sa périphérie.</p>
-                <p>le <strong>métro</strong>, le <strong>train DLR</strong> (pour se rendre dans l’Est), les <strong>tramways du sud de Londres</strong>, les <strong>trains Overground et National Rail</strong> de la ville, le <strong>téléphérique de Thames</strong>, le <strong>Uber Boat</strong>, le <strong>bus rouge</strong> (mythique avec son étage !) et le <strong>taxi</strong> (majoritairement noir, il fait partie du décor de la capitale !).</p>
+                <p>le <strong>métro</strong>, le <strong>train DLR</strong> (pour se rendre dans l’Est), les <strong>tramways du sud de Londres</strong>, les <strong>trains Overground et National Rail</strong> de la ville, le <strong>téléphérique de la Tamise</strong>, le <strong>Uber Boat</strong>, le <strong>bus rouge</strong> (mythique avec son étage !) et le <strong>taxi</strong> (majoritairement noir, il fait partie du décor de la capitale !).</p>
                 <div className="article-gallery-2">
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3371-scaled-1024x768.jpeg" alt="Tube Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3744-scaled-1024x576.jpeg" alt="Téléphérique Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
@@ -741,7 +741,7 @@ export default function VisiterLondresPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1"/><path d="M4 18l-1 -5h18l-2 4"/><path d="M5 13v-6h8l4 6"/><path d="M7 7v-4h-1"/></svg>,
                     content: (
                       <>
-                        <p>C’est la première fois que nous prenions ce moyen de transport à Londres. En effet, le Uber Boat est très récent puisqu’il a été mis en place en août 2021.</p>
+                        <p>C’est la première fois que nous prenions ce moyen de transport à Londres. En effet, l’Uber Boat est très récent puisqu’il a été mis en place en août 2021.</p>
                         <p>Il s’agit là d’un nouveau moyen pour découvrir la ville d’un autre angle et voguer sur la Tamise.</p>
                         <p>Pour prendre le bateau, on trouve plusieurs embarcadères entre <strong>Bankside Pier</strong> et <strong>Greenwich</strong> avec des arrêts aux endroits stratégiques pour visiter la capitale.</p>
                         <div className="article-tip">
@@ -811,8 +811,8 @@ export default function VisiterLondresPage() {
                       <>
                         <p>Nous nous sommes pris au jeu de héler un taxi dans la rue comme dans un remake de film ! Nous avons fait une courte distance vraiment pour le fun de monter dans l’un de ces mythiques taxis...</p>
                         <p>En vrai, le londonien se déplace rarement en taxi, encore moins depuis l’existence de l’application Uber qu’il préfère, car la course est très chère.</p>
-                        <p>Les prix sont fixes et chaque «taximan» utilise un compteur.</p>
-                        <p><strong>Pour avoir une idée</strong>, s’offrir 1 Km de course en taxi à Londres s’élève à 3£ (3€50). Le tarif peut descendre jusqu’à 2£ (2€29) et augmenter jusqu’à 4£ (4€58) selon la période de la journée et le quartier.</p>
+                        <p>Les prix sont fixes et chaque « taximan » utilise un compteur.</p>
+                        <p><strong>Pour avoir une idée</strong>, s’offrir 1 km de course en taxi à Londres s’élève à 3£ (3€50). Le tarif peut descendre jusqu’à 2£ (2€29) et augmenter jusqu’à 4£ (4€58) selon la période de la journée et le quartier.</p>
                       </>
                     ),
                   },
@@ -831,7 +831,7 @@ export default function VisiterLondresPage() {
                         <p>Cela dépend de vos envies, puisque pour nous, Londres se découvre à toutes les périodes de l’année !</p>
                         <p>Vous verrez ci-dessous que chaque saison a ses avantages et ses inconvénients...</p>
                         <p><strong>En hiver</strong> (déc-fév) : Les journées sont courtes et froides. Il pleut souvent et il arrive même qu’il neige ! Les musées et les sites touristiques sont moins bondés que le reste de l’année, ainsi, les prix des visites sont plus intéressants.</p>
-                        <p><strong>Au printemps</strong> (mars-mai) : Le temps est frais et humide. Les foules commencent à affluer dans la capitale. Les parcs, de plus en plus fréquentés par les londoniens, sortent de l’hiver et les arbres fleurissent.</p>
+                        <p><strong>Au printemps</strong> (mars-mai) : Le temps est frais et humide. Les foules commencent à affluer dans la capitale. Les parcs, de plus en plus fréquentés par les Londoniens, sortent de l’hiver et les arbres fleurissent.</p>
                         <p><strong>En été</strong> (juin-août) : Le temps est doux à chaud. Les journées sont longues et ensoleillées. Les vacances scolaires et la saison touristique coïncident, de ce fait, les attractions sont souvent bondées.</p>
                         <p><strong>En automne</strong> (sept-nov) : Notre préférée ! Cette belle saison est parfois fraîche, mais elle reste ensoleillée. Après l’été et la rentrée scolaire, Londres est plus paisible. Il y fait bon vivre... Les parcs sont habillés de couleurs orangées et sont juste splendides !</p>
                       </>
@@ -845,7 +845,7 @@ export default function VisiterLondresPage() {
                       <>
                         <p><strong>DAB</strong> : La monnaie du Royaume-Uni est la livre sterling (£). On trouve de partout dans la ville des distributeurs de billets acceptant les Visa, MasterCard, Cirrus ou Maestro, et American Express. Il est essentiel de savoir que les retraits d’espèces avec une carte étrangère entraînent souvent des frais.</p>
                         <p><strong>Cartes de crédit</strong> : Quasiment tous les restaurants, bars, boutiques, (et même certains taxis !), acceptent les cartes de crédit.</p>
-                        <p><strong>Change</strong> : Si vous souhaitez changez des euros en livres, nous vous conseillons de vous rendre dans les bureaux de poste, ils ne prélèvent aucune commission.</p>
+                        <p><strong>Change</strong> : Si vous souhaitez changer des euros en livres, nous vous conseillons de vous rendre dans les bureaux de poste, ils ne prélèvent aucune commission.</p>
                         <p><strong>Pourboire</strong> : Au restaurant, le service est souvent inclus dans l’addition. Si ce n’est pas le cas, il est d’usage de laisser un pourboire de 10% (sauf si vous n’êtes pas satisfait !). En tout cas, inutile de laisser des « tips » quand on prend une bière ou un verre de vin dans un pub...</p>
                         <div className="article-tip">
                           <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
