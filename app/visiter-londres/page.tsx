@@ -56,7 +56,7 @@ export default function VisiterLondresPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>120-150€/j/pers.</span>
+          <span>120-150 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -99,7 +99,7 @@ export default function VisiterLondresPage() {
               <li><a href="#jour-4-brick">📍 Jour 4 — Brick Lane, Shoreditch &amp; Spitafields</a></li>
               <li><a href="#jour-5-covent">📍 Jour 5 — Covent Garden, Soho, Chinatown &amp; Piccadilly</a></li>
               <li><a href="#jour-6-camden">📍 Jour 6 — Camden Town, Stratford</a></li>
-              <li><a href="#jour-7-brighton">📍 Jour 7 — Brighton, à 1H de train de Londres</a></li>
+              <li><a href="#jour-7-brighton">📍 Jour 7 — Brighton, à 1 h de train de Londres</a></li>
               <li><a href="#pratique">📍 Informations pratiques</a></li>
             </ol>
           </nav>
@@ -124,21 +124,21 @@ export default function VisiterLondresPage() {
             </div>
             <p>Situé au bord de la Tamise, le quartier de Westminster est dynamique, marqué par l’histoire du pays. Il est considéré comme le coeur politique et culturel de Londres.</p>
             <p>On y trouve de nombreux palais royaux, notamment <strong>Buckingham Palace</strong>, la résidence officielle de la famille royale.</p>
-            <p>À cet endroit, vous pouvez observer l’échange entre l’ancienne et la nouvelle garde à partir de 10H45. Prévoyez d’arriver bien à l’avance, il y a toujours un monde incroyable pour assister à ce spectacle ! La <strong>cérémonie est gratuite</strong> et se déroule les <strong>lundi, mercredi, vendredi et dimanche</strong> selon les conditions météorologiques.</p>
+            <p>À cet endroit, vous pouvez observer l’échange entre l’ancienne et la nouvelle garde à partir de 10 h 45. Prévoyez d’arriver bien à l’avance, il y a toujours un monde incroyable pour assister à ce spectacle ! La <strong>cérémonie est gratuite</strong> et se déroule les <strong>lundi, mercredi, vendredi et dimanche</strong> selon les conditions météorologiques.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3030-scaled-e1637517864887-1024x666.jpeg" alt="Buckingham Londres" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3040-scaled-768x1024.jpeg" alt="Buckingham Londres 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3041-scaled-768x1024.jpeg" alt="Buckingham Londres 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Juste en face du palais se trouve le <strong>St. James’s Park</strong>, considéré comme l’un des plus beaux parcs de la capitale. Il offre une bouffée d’air frais et une atmosphère sereine au coeur de la ville. Dans ce parc, nous aimons déambuler dans les allées et observer les nombreux écureuils, pélicans, canards, et oiseaux qui y vivent.</p>
-            <p>De l’autre côté de St. James’s Park, se dresse le <strong>Whitehall Palace</strong>. Ici, vous pouvez assister à la <strong>Horse Guards Parade</strong>, traduisez la relève de la garde à cheval. Moins spectaculaire que la relève de la garde à Buckingham Palace, nous trouvons que la relève des Horse Guards est plus ludique pour les enfants, notamment par la présence des chevaux. La cérémonie dure 30 minutes et a lieu à <strong>11H du lundi au samedi</strong>, et à <strong>10H le dimanche</strong>.</p>
+            <p>De l’autre côté de St. James’s Park, se dresse le <strong>Whitehall Palace</strong>. Ici, vous pouvez assister à la <strong>Horse Guards Parade</strong>, traduisez la relève de la garde à cheval. Moins spectaculaire que la relève de la garde à Buckingham Palace, nous trouvons que la relève des Horse Guards est plus ludique pour les enfants, notamment par la présence des chevaux. La cérémonie dure 30 minutes et a lieu à <strong>11 h du lundi au samedi</strong>, et à <strong>10 h le dimanche</strong>.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9618-scaled-696x1024.jpeg" alt="Horse Guard Londres" loading="lazy" style={{flex: '0.68', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9896-scaled-1024x768.jpeg" alt="St. James’s Park Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>C’est à Westminster, au bord de la Tamise, que se dresse la tour d’horloge la plus célèbre au monde, <strong>Big Ben</strong> ! Elle domine le <strong>Palace of Westminster</strong>, là où siège le parlement.</p>
             <p>À quelques minutes à pied, vous trouverez la somptueuse <strong>Abbaye de Westminster</strong>. Cela fait plus de 700 ans qu’elle accueille les plus grands monarques, que ce soit pour des couronnements, des mariages ou des funérailles.</p>
-            <p>Si vous souhaitez visiter l’Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, vous devrez payer 20£ (23€50) l’entrée par personne.</p>
+            <p>Si vous souhaitez visiter l’Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, vous devrez payer £20 (23,50 €) l’entrée par personne.</p>
             <p>Pour autant, il existe un <strong>bon plan pour la visiter gratuitement</strong> ! Il suffit de se présenter lors des cérémonies religieuses. Celles-ci ont lieu tous les jours, sont ouvertes à tous, et aucune participation financière n’est demandée !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3752-1-scaled-1024x686.jpeg" alt="Big Ben Londres 1" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
@@ -231,7 +231,7 @@ export default function VisiterLondresPage() {
             <p>La City est l’un des quartiers les plus anciens de la capitale où se côtoient des édifices historiques majestueux, tels que le <strong>Tower Bridge</strong> et d’immenses gratte-ciel. En effet, il est à la fois le centre historique et le plus gros quartier des affaires de la ville. Le contraste des paysages est ici incroyable !</p>
             <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur !</p>
             <p>Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
-            <p>Pour les plus téméraires, et moyennant 10£60 (12€50), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42 m du sol. Sensations garanties !</p>
+            <p>Pour les plus téméraires, et moyennant £10.60 (12,50 €), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42 m du sol. Sensations garanties !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3214-scaled-768x1024.jpeg" alt="Tower Bridge 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9962-scaled-1024x768.jpeg" alt="Tower Bridge nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -248,7 +248,7 @@ export default function VisiterLondresPage() {
               <div className="article-resto-item">
                 <div className="article-resto-head">
                   <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Notre adresse coup de cœur</span>
-                  <span className="article-resto-tag">26£ / pers</span>
+                  <span className="article-resto-tag">£26 / pers</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Le Relais de Venise, l’Entrecôte</p>
@@ -513,7 +513,7 @@ export default function VisiterLondresPage() {
                 </div>
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot article-rendre-stop-alt" />
-                  <div><span className="article-rendre-stop-title">Balade en péniche, 45 minutes</span><p>Cette jolie balade reposante vous permet de découvrir Londres d’une façon atypique. Vous traverserez Regent’s Park, apercevrez le London Zoo, et longerez de magnifiques demeures aux façades victoriennes, avant d’arriver à Camden Town. Le tarif pour cette <a href="https://www.getyourguide.fr/londres-l57/londres-regent-s-canal-waterbus-little-venice-camden-lock-t390028/" target="_blank" rel="noopener noreferrer" className="article-link">balade en péniche</a> est de 12£ (14€) par personne.</p></div>
+                  <div><span className="article-rendre-stop-title">Balade en péniche, 45 minutes</span><p>Cette jolie balade reposante vous permet de découvrir Londres d’une façon atypique. Vous traverserez Regent’s Park, apercevrez le London Zoo, et longerez de magnifiques demeures aux façades victoriennes, avant d’arriver à Camden Town. Le tarif pour cette <a href="https://www.getyourguide.fr/londres-l57/londres-regent-s-canal-waterbus-little-venice-camden-lock-t390028/" target="_blank" rel="noopener noreferrer" className="article-link">balade en péniche</a> est de £12 (14 €) par personne.</p></div>
                 </div>
               </div>
             </div>
@@ -555,9 +555,9 @@ export default function VisiterLondresPage() {
           <section id="jour-7-brighton" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 7</span>
-              <h2>Brighton, à 1H de train de Londres</h2>
+              <h2>Brighton, à 1 h de train de Londres</h2>
             </div>
-            <p>Envie d’une escapade loin de l’agitation de la capitale ? Et de plus, en <strong>bord de mer</strong> ? Rejoignez alors <strong>Brighton</strong>, à seulement <strong>1H en train</strong> de Londres. Cette station balnéaire, située au sud-est de l’Angleterre, vous permettra de respirer au grand air !</p>
+            <p>Envie d’une escapade loin de l’agitation de la capitale ? Et de plus, en <strong>bord de mer</strong> ? Rejoignez alors <strong>Brighton</strong>, à seulement <strong>1 h en train</strong> de Londres. Cette station balnéaire, située au sud-est de l’Angleterre, vous permettra de respirer au grand air !</p>
             <p>À la mode depuis le 18ème siècle, c’est la station la plus branchée du pays. La ville est également connue pour son ouverture d’esprit.</p>
             <p>En effet, elle est la <strong>capitale LGBT</strong> d’Angleterre. Très animée, les bars, restaurants et boîtes de nuit ne manquent pas !</p>
             <p>Le bord de mer, qui longe la grande plage de galets, est très agréable pour s’y promener. De nombreuses familles s’y retrouvent pour y passer leurs week-ends.</p>
@@ -582,7 +582,7 @@ export default function VisiterLondresPage() {
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3143-scaled-1024x768.jpeg" alt="Brighton Pier Londres 3" className="article-img-full" loading="lazy" />
             <p>Non loin de là, si vous avez envie de prendre de la hauteur et d’admirer le paysage à 360°, embarquez dans la tour d’observation <strong>British Airways i360</strong>.</p>
             <p>S’élevant à 138 m, elle est la plus haute tour du monde de ce type.</p>
-            <p>Si vous souhaitez faire cette attraction, sachez qu’elle vous coûtera 16£50 (19€50) par personne. Pour avoir tenté l’expérience, nous avons adoré... Le panorama était à couper le souffle !</p>
+            <p>Si vous souhaitez faire cette attraction, sachez qu’elle vous coûtera £16.50 (19,50 €) par personne. Pour avoir tenté l’expérience, nous avons adoré... Le panorama était à couper le souffle !</p>
             <p>Nous vous conseillons de <a href="https://britishairwaysi360.com" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> votre venue pour éviter la file d’attente.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3190-1024x576.jpeg" alt="Tour British Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
@@ -594,14 +594,14 @@ export default function VisiterLondresPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">En train, depuis Victoria</span><p>Réguliers toutes les demi-heures, arrivée en gare de Brighton centre. Aller-retour dès 25£ (30€), ou 10£ (12€) en réservant à l’avance sur <a href="https://www.southernrailway.com" target="_blank" rel="noopener noreferrer" className="article-link">Southern Railway</a>.</p></div>
+                  <div><span className="article-rendre-stop-title">En train, depuis Victoria</span><p>Réguliers toutes les demi-heures, arrivée en gare de Brighton centre. Aller-retour dès £25 (30 €), ou £10 (12 €) en réservant à l’avance sur <a href="https://www.southernrailway.com" target="_blank" rel="noopener noreferrer" className="article-link">Southern Railway</a>.</p></div>
                 </div>
               </div>
               <div className="article-rendre-or">ou</div>
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot article-rendre-stop-alt" />
-                  <div><span className="article-rendre-stop-title">En bus, depuis la gare routière Victoria</span><p>Trajet d’environ 2H. Aller-retour dès 5£ (6€) en réservant à l’avance, sinon 8£ (9€50) l’aller simple, à réserver sur <a href="https://www.nationalexpress.com/en" target="_blank" rel="noopener noreferrer" className="article-link">National Express</a>.</p></div>
+                  <div><span className="article-rendre-stop-title">En bus, depuis la gare routière Victoria</span><p>Trajet d’environ 2 h. Aller-retour dès £5 (6 €) en réservant à l’avance, sinon £8 (9,50 €) l’aller simple, à réserver sur <a href="https://www.nationalexpress.com/en" target="_blank" rel="noopener noreferrer" className="article-link">National Express</a>.</p></div>
                 </div>
               </div>
             </div>
@@ -621,7 +621,7 @@ export default function VisiterLondresPage() {
                 <h3 className="article-pratique-title">Et si vous voyagez avec votre chien ?</h3>
                 <ul className="article-pratique-list">
                   <li>Votre chien doit avoir une <strong>puce électronique</strong>.</li>
-                  <li>Il doit avoir un <strong>passeport européen</strong>. Pour notre part, nous l’avons fait faire chez notre vétérinaire. Il nous est revenu à 15€ + le tarif de la consultation habituel.</li>
+                  <li>Il doit avoir un <strong>passeport européen</strong>. Pour notre part, nous l’avons fait faire chez notre vétérinaire. Il nous est revenu à 15 € + le tarif de la consultation habituel.</li>
                   <li>Votre animal doit être vacciné avec un <strong>vaccin antirabique</strong> (= contre la rage) qui est à prévoir au moins 21 jours avant le voyage. Les informations du vaccin reçu seront reportées dans son passeport.</li>
                   <li>Enfin, votre toutou doit être <strong>vermifugé</strong> contre l’échinococcose. Le traitement doit être administré par un vétérinaire au moins 1 jour, et pas plus de 5 jours, avant la date d’arrivée en Grande-Bretagne. La date et l’heure de l’administration du vermifuge devront être également mentionnées dans le passeport.</li>
                   <li>Bonne nouvelle ! Il n’y a <strong>plus de quarantaine</strong> obligatoire pour votre chien lors de son arrivée sur le territoire britannique.</li>
@@ -643,12 +643,12 @@ export default function VisiterLondresPage() {
                         <p>Pour notre part, nous connaissons ceux d’<strong>Heathrow</strong> et de <strong>Gatwick</strong> dans lesquels nous avons déjà atterri.</p>
                         <h5>Heathrow</h5>
                         <p>Cet aéroport est le plus central. Nous vous le conseillons si votre logement est situé dans le coeur de Londres. Il s’agit de l’aéroport le plus fréquenté du monde ! Si vous prenez un vol depuis celui-ci, n’hésitez pas à venir bien à l’avance, il est immense !</p>
-                        <p>Pour rejoindre le centre de Londres depuis Heathrow, vous pouvez prendre la <strong>Picadilly Line</strong> (ligne bleue foncée de métro). Dans ce cas, vous mettrez plus ou moins 1H et vous payerez le tarif du trajet de métro en fonction de la zone (1 à 5) où vous vous rendrez et de l’heure de la journée.</p>
-                        <p>Autrement, vous pouvez prendre le <strong>Heathrow Express</strong> avec lequel vous mettrez 15 minutes pour vous rendre à la gare de Paddington. Le tarif pour un aller simple est de 22£ (26€). La station de métro est directement située dans l’aéroport.</p>
+                        <p>Pour rejoindre le centre de Londres depuis Heathrow, vous pouvez prendre la <strong>Picadilly Line</strong> (ligne bleue foncée de métro). Dans ce cas, vous mettrez plus ou moins 1 h et vous payerez le tarif du trajet de métro en fonction de la zone (1 à 5) où vous vous rendrez et de l’heure de la journée.</p>
+                        <p>Autrement, vous pouvez prendre le <strong>Heathrow Express</strong> avec lequel vous mettrez 15 minutes pour vous rendre à la gare de Paddington. Le tarif pour un aller simple est de £22 (26 €). La station de métro est directement située dans l’aéroport.</p>
                         <h5>Gatwick</h5>
-                        <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30 minutes depuis l’aéroport. Le tarif pour un aller simple est de 19£90 (23€50).</p>
+                        <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30 minutes depuis l’aéroport. Le tarif pour un aller simple est de £19.90 (23,50 €).</p>
                         <p>Le Gatwick Express est la solution la plus rapide, mais quelque peu onéreuse pour se rendre au coeur de la ville. Pour autant, il est également possible de prendre le <strong>Southern Railway</strong> (train).</p>
-                        <p>Ce train alternatif arrive en gare de Victoria, London Bridge ou encore City Thameslink (à côté de la cathédrale St. Paul). Le tarif des billets oscille entre 11£ (13€) et 15£ (17€50).</p>
+                        <p>Ce train alternatif arrive en gare de Victoria, London Bridge ou encore City Thameslink (à côté de la cathédrale St. Paul). Le tarif des billets oscille entre £11 (13 €) et £15 (17,50 €).</p>
                       </>
                     ),
                   },
@@ -659,9 +659,9 @@ export default function VisiterLondresPage() {
                     content: (
                       <>
                         <p>C’est le "TGV" anglais. Il relie la France (de Paris ou de Lille) au Royaume-Uni, à la <strong>gare St. Pancras</strong>, située dans le centre de Londres. Les trains Eurostar traversent le tunnel sous la Manche.</p>
-                        <p>Nous l’avons pris à 2 reprises. Le voyage est très rapide puisqu’il faut compter par exemple 1h30 pour rejoindre Lille à la capitale. Les wagons sont très confortables.</p>
+                        <p>Nous l’avons pris à 2 reprises. Le voyage est très rapide puisqu’il faut compter par exemple 1 h 30 pour rejoindre Lille à la capitale. Les wagons sont très confortables.</p>
                         <p>Si jamais vous avez un petit creux ou une petite soif durant le trajet, vous trouverez une voiture-bar dans l’Eurostar... Trop top !</p>
-                        <p>Le tarif pour un aller simple est en moyenne compris entre 60€ et 90€ en fonction de la période de l’année et des horaires choisis. Si vous souhaitez réserver, c’est <a href="https://www.eurostar.com/fr-fr" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
+                        <p>Le tarif pour un aller simple est en moyenne compris entre 60 € et 90 € en fonction de la période de l’année et des horaires choisis. Si vous souhaitez réserver, c’est <a href="https://www.eurostar.com/fr-fr" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
                       </>
                     ),
                   },
@@ -672,11 +672,11 @@ export default function VisiterLondresPage() {
                     content: (
                       <>
                         <p>Le Shuttle est un train pour véhicules à moteur. Vous ne pourrez pas embarquer si vous êtes à pied par exemple.</p>
-                        <p>Ce moyen de transport se prend à <strong>Calais</strong> et arrive à <strong>Folkestone</strong>, situé à plus ou moins 1H30 en voiture du centre de Londres. Tout comme l’Eurostar, il passe sous la Manche.</p>
+                        <p>Ce moyen de transport se prend à <strong>Calais</strong> et arrive à <strong>Folkestone</strong>, situé à plus ou moins 1 h 30 en voiture du centre de Londres. Tout comme l’Eurostar, il passe sous la Manche.</p>
                         <p>Lors de notre dernier séjour, c’est l’option que nous avons choisie pour nous rendre en Angleterre. D’autant plus qu’avec le Ferry, ce sont les deux uniques solutions pour débarquer avec son animal de compagnie (sans qu’il soit mis en soute, ce qu’on veut absolument éviter !).</p>
                         <p>Nous avons bien aimé le concept de rester dans sa voiture, qui elle-même est dans le train. Bon, ça fait une sensation étrange au départ, mais on s’y habitue rapidement.</p>
                         <p>Pendant la traversée qui dure 30 minutes, vous avez le droit de sortir de votre véhicule. Et incroyable, on avait du réseau sur nos téléphones portables, bien qu’on ait des opérateurs différents ! Bref, on était à notre aise pour voyager, et Aladdin aussi !</p>
-                        <p>Pour un aller simple, le prix dépend non pas du nombre de passagers, mais du modèle du véhicule qui embarque, de la présence d’animaux, de la période de l’année et des horaires choisis. Plus vous voyagerez tôt ou tard dans la journée, moins les billets seront chers. Il faut compter en moyenne <strong>140€ pour un billet aller</strong> avec une voiture de type citadine et un chien. Pour réserver, c’est <a href="https://www.eurotunnel.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
+                        <p>Pour un aller simple, le prix dépend non pas du nombre de passagers, mais du modèle du véhicule qui embarque, de la présence d’animaux, de la période de l’année et des horaires choisis. Plus vous voyagerez tôt ou tard dans la journée, moins les billets seront chers. Il faut compter en moyenne <strong>140 € pour un billet aller</strong> avec une voiture de type citadine et un chien. Pour réserver, c’est <a href="https://www.eurotunnel.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
                       </>
                     ),
                   },
@@ -687,8 +687,8 @@ export default function VisiterLondresPage() {
                     content: (
                       <>
                         <p>C’est le seul moyen de transport que nous n’ayons jamais pris pour nous rendre à Londres.</p>
-                        <p>Le Ferry relie <strong>Calais</strong> à <strong>Douvres</strong> en 1H30. Comme pour le Shuttle, vous ne pourrez pas voyager à bord si vous ne possédez pas de véhicule motorisé. Si vous faites la traversée avec votre animal, il devra rester dans votre véhicule.</p>
-                        <p>En moyenne, le tarif pour <strong>un aller simple est de 70€</strong>, quel que soit le nombre de passagers avec une voiture. Et <strong>bon à savoir</strong>, le <strong>repas est inclus</strong> dans le prix !</p>
+                        <p>Le Ferry relie <strong>Calais</strong> à <strong>Douvres</strong> en 1 h 30. Comme pour le Shuttle, vous ne pourrez pas voyager à bord si vous ne possédez pas de véhicule motorisé. Si vous faites la traversée avec votre animal, il devra rester dans votre véhicule.</p>
+                        <p>En moyenne, le tarif pour <strong>un aller simple est de 70 €</strong>, quel que soit le nombre de passagers avec une voiture. Et <strong>bon à savoir</strong>, le <strong>repas est inclus</strong> dans le prix !</p>
                         <p>Si vous êtes intéressé par ce moyen de transport, cliquez <a href="https://www.dfds.com/fr-fr/ferries-passagers" target="_blank" rel="noopener noreferrer" className="article-link">ici</a> pour réserver.</p>
                       </>
                     ),
@@ -700,7 +700,7 @@ export default function VisiterLondresPage() {
                 <h3 className="article-pratique-title">Où se loger ?</h3>
                 <p>De façon générale, les hébergements sont chers à Londres mais plusieurs possibilités s’offrent à vous : les B’n’B (Bed and Breakfast), les <strong>auberges de jeunesse</strong>, les <strong>hôtels</strong>, les <strong>résidences hôtelières</strong> et les <strong>locations d’appartement</strong>.</p>
                 <p>Cette fois-ci, nous avons opté pour un appart’hôtel de la chaîne des résidences hôtelières <strong>Adagio</strong>. Le logement est situé dans l’<strong>Est de Londres</strong>, à <strong>Stratford</strong>, et plus précisément dans le village olympique (cf. Jour 6 - Stratford).</p>
-                <p>Pour loger à l’appart’hôtel <a href="https://www.adagio-city.com/fr/hotel-9721-aparthotel-adagio-london-stratford.shtml" target="_blank" rel="noopener noreferrer" className="article-link">Adagio Stratford</a>, il faut compter 110€ la nuit pour un studio récent et très bien équipé au 12ème étage (avec une vue incroyable sur la ville !).</p>
+                <p>Pour loger à l’appart’hôtel <a href="https://www.adagio-city.com/fr/hotel-9721-aparthotel-adagio-london-stratford.shtml" target="_blank" rel="noopener noreferrer" className="article-link">Adagio Stratford</a>, il faut compter 110 € la nuit pour un studio récent et très bien équipé au 12ème étage (avec une vue incroyable sur la ville !).</p>
                 <div className="article-avis">
                   <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
                   <div><strong>Le conseil des MamZelles</strong><p>Quel que soit le type d’hébergement que vous choisirez, nous vous conseillons de réserver à l’avance, non seulement pour obtenir de meilleurs tarifs, mais surtout pour prendre le temps de bien définir le quartier dans lequel vous souhaitez passer votre séjour.</p></div>
@@ -778,7 +778,7 @@ export default function VisiterLondresPage() {
                         <p>Il faut absolument profiter de son séjour à Londres pour s’asseoir à l’avant et en haut de l’un de ces fameux bus... Traverser le pont de <strong>Westminster</strong>, voir le <strong>London Eye</strong> et <strong>Big Ben</strong> confortablement installé dans un bus, c’est juste magique !</p>
                         <div className="article-tip">
                           <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                          <div><strong>Bon à savoir</strong><p>Après avoir payé 1£50 (1£75) un aller simple avec l’Oyster Card ou en Cardless (voir ci-dessous pour en savoir plus), vous pouvez effectuer un deuxième trajet gratuit dans l’heure en bus ou en tramway.</p></div>
+                          <div><strong>Bon à savoir</strong><p>Après avoir payé £1.50 (£1.75) un aller simple avec l’Oyster Card ou en Cardless (voir ci-dessous pour en savoir plus), vous pouvez effectuer un deuxième trajet gratuit dans l’heure en bus ou en tramway.</p></div>
                         </div>
                         <p>Attention, sur place on ne peut pas payer un ticket de bus en espèces !</p>
                       </>
@@ -791,7 +791,7 @@ export default function VisiterLondresPage() {
                     content: (
                       <>
                         <p>Il existe 2 façons de régler le <strong>métro</strong>, les <strong>trains</strong>, le <strong>tramway</strong>, le <strong>téléphérique</strong>, le <strong>bus</strong> et le <strong>Uber Boat</strong> : soit avec le Cardless (carte de crédit sans contact), soit avec l’<strong>Oyster Card</strong>.</p>
-                        <p>Cette dernière est une carte rechargeable que l’on peut acheter sur <strong>internet</strong> ou directement <strong>aux guichets</strong> de toutes les stations de métro du réseau public londonien. L’Oyster Card est vendue à 5£ (5€90), mais il est possible de se la faire rembourser au niveau des guichets une fois le séjour terminé. Cependant, s’il reste du crédit sur la carte, il sera perdu.</p>
+                        <p>Cette dernière est une carte rechargeable que l’on peut acheter sur <strong>internet</strong> ou directement <strong>aux guichets</strong> de toutes les stations de métro du réseau public londonien. L’Oyster Card est vendue à £5 (5,90 €), mais il est possible de se la faire rembourser au niveau des guichets une fois le séjour terminé. Cependant, s’il reste du crédit sur la carte, il sera perdu.</p>
                         <p>Sur <a href="https://www.visitbritainshop.com/fr/fr/visitor-oyster-card-london?utm_source=visitlondon&amp;utm_medium=affiliate&amp;utm_campaign=affiliate" target="_blank" rel="noopener noreferrer" className="article-link">leur site</a>, vous pouvez évaluer le montant de crédit nécessaire à votre séjour car les prix varient en fonction des heures de la journée et des zones (1 à 5) dans lesquelles vous voyagez, et bénéficier de tarifs très avantageux si vous souscrivez à des formules pour créditer la carte.</p>
                         <p>Pour vous faire une idée concrète du budget à y consacrer, vous pourrez également y consulter un tableau avec tous les prix des voyages, ainsi qu’une carte des zones tarifaires.</p>
                         <p>En effet, il faut savoir que les frais de déplacement à Londres sont coûteux et ont une grosse place dans le budget des vacances !</p>
@@ -812,7 +812,7 @@ export default function VisiterLondresPage() {
                         <p>Nous nous sommes pris au jeu de héler un taxi dans la rue comme dans un remake de film ! Nous avons fait une courte distance vraiment pour le fun de monter dans l’un de ces mythiques taxis...</p>
                         <p>En vrai, le londonien se déplace rarement en taxi, encore moins depuis l’existence de l’application Uber qu’il préfère, car la course est très chère.</p>
                         <p>Les prix sont fixes et chaque « taximan » utilise un compteur.</p>
-                        <p><strong>Pour avoir une idée</strong>, s’offrir 1 km de course en taxi à Londres s’élève à 3£ (3€50). Le tarif peut descendre jusqu’à 2£ (2€29) et augmenter jusqu’à 4£ (4€58) selon la période de la journée et le quartier.</p>
+                        <p><strong>Pour avoir une idée</strong>, s’offrir 1 km de course en taxi à Londres s’élève à £3 (3,50 €). Le tarif peut descendre jusqu’à £2 (2,29 €) et augmenter jusqu’à £4 (4,58 €) selon la période de la journée et le quartier.</p>
                       </>
                     ),
                   },
@@ -851,7 +851,7 @@ export default function VisiterLondresPage() {
                           <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
                           <div><strong>Bon à savoir</strong><p>Pour éviter les frais relatifs aux retraits ou aux achats, nous utilisons la carte <a href="https://clients.boursorama.com" target="_blank" rel="noopener noreferrer" className="article-link">Boursorama</a> Ultim pour tous nos voyages à l’étranger (y compris hors UE).</p></div>
                         </div>
-                        <p>En entrant le code parrainage AMTR2375, vous pourrez bénéficier d’un crédit offert de 130€ pour toute ouverture de compte.</p>
+                        <p>En entrant le code parrainage AMTR2375, vous pourrez bénéficier d’un crédit offert de 130 € pour toute ouverture de compte.</p>
                       </>
                     ),
                   },
