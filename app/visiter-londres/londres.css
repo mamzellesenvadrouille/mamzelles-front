@@ -844,13 +844,13 @@
 .article-londres .article-pratique-nav-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 7px 16px 7px 10px;
+  border-radius: 24px;
+  padding: 11px 22px 11px 14px;
   font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--dark);
   cursor: pointer;
@@ -859,8 +859,15 @@
 
 .article-londres .article-pratique-nav-icon {
   display: inline-flex;
-  font-size: 15px;
-  line-height: 1;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.article-londres .article-pratique-nav-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--gold);
+  transition: stroke .2s;
 }
 
 .article-londres .article-pratique-nav-btn:hover {
@@ -875,6 +882,11 @@
   border-style: solid;
   border-color: var(--gold);
   color: #fff;
+}
+
+.article-londres .article-pratique-nav-btn-actif .article-pratique-nav-icon svg,
+.article-londres .article-pratique-nav-btn-actif:hover .article-pratique-nav-icon svg {
+  stroke: #fff;
 }
 
 .article-londres .article-pratique-sub[hidden] {
@@ -956,7 +968,8 @@
   .article-londres .article-pratique-sub-head h4 { font-size: 17px !important; }
   .article-londres .article-pratique-sub-icon { width: 30px !important; height: 30px !important; }
   .article-londres .article-pratique-sub-icon svg { width: 15px !important; height: 15px !important; }
-  .article-londres .article-pratique-nav-btn { font-size: 12px !important; padding: 6px 12px 6px 8px !important; }
+  .article-londres .article-pratique-nav-btn { font-size: 13px !important; padding: 8px 16px 8px 10px !important; }
+  .article-londres .article-pratique-nav-icon svg { width: 15px !important; height: 15px !important; }
 }
 
 /* ============================================
