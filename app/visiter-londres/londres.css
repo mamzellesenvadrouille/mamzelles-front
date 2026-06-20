@@ -839,20 +839,20 @@
 .article-londres .article-pratique-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   margin: 0 0 20px;
 }
 
 .article-londres .article-pratique-nav-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 9px 16px 9px 11px;
+  border-radius: 22px;
+  padding: 10px 19px 10px 13px;
   font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--dark);
   cursor: pointer;
@@ -866,8 +866,8 @@
 }
 
 .article-londres .article-pratique-nav-icon svg {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   stroke: var(--gold);
   transition: stroke .2s;
 }
@@ -876,8 +876,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: var(--gold);
   color: #fff;
