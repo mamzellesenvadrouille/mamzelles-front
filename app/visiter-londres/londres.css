@@ -997,57 +997,101 @@
 }
 
 /* ============================================
-   BLOC Â« POUR S'Y RENDRE Â» â€” liserÃ© gauche sobre
-   (cohÃ©rent avec article-tip / article-avis)
+   BLOC Â« POUR S'Y RENDRE Â» â€” mÃ©daillon plein + Ã©tiquettes par mode
    ============================================ */
 .article-londres .article-rendre {
-  background: #fff;
+  background: var(--bg);
   border: 1px solid var(--line);
-  border-left: 3px solid var(--gold);
-  border-radius: 6px;
-  padding: 18px 22px;
+  border-radius: 10px;
+  padding: 22px 24px;
   margin: 18px 0;
 }
 
 .article-londres .article-rendre-label {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
+  gap: 10px;
+  margin-bottom: 14px;
 }
 
-.article-londres .article-rendre-label svg {
+.article-londres .article-rendre-label .article-rendre-icon-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
 
+.article-londres .article-rendre-label .article-rendre-icon-wrap svg {
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
+}
+
 .article-londres .article-rendre-label span {
-  font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 21px;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
   color: var(--dark);
 }
 
-.article-londres .article-rendre p {
+.article-londres .article-rendre-mode {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-londres .article-rendre-mode:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.article-londres .article-rendre-mode:first-child {
+  padding-top: 0;
+}
+
+.article-londres .article-rendre-tag {
+  background: #fff;
+  color: var(--gold);
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 3px 9px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.article-londres .article-rendre-mode p {
   font-size: 14px !important;
   line-height: 1.6;
   color: var(--dark);
-  margin: 0 0 8px !important;
+  margin: 0 !important;
 }
 
-.article-londres .article-rendre p:last-child {
-  margin-bottom: 0 !important;
+.article-londres .article-rendre p.article-rendre-intro {
+  font-size: 14px !important;
+  line-height: 1.6;
+  color: var(--dark);
+  margin: 0 0 12px !important;
 }
 
 /* ============================================
-   BLOC Â« POUR MANGER Â» â€” carte avec nom en exergue
+   BLOC Â« POUR MANGER Â» â€” mÃ©daillon plein + sous-carte resto
    ============================================ */
 .article-londres .article-resto {
   background: var(--bg);
   border: 1px solid var(--line);
   border-radius: 10px;
-  padding: 20px 24px;
+  padding: 22px 24px;
   margin: 18px 0;
 }
 
@@ -1055,38 +1099,51 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
-.article-londres .article-resto-label svg {
+.article-londres .article-resto-label .article-resto-icon-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+}
+
+.article-londres .article-resto-label .article-resto-icon-wrap svg {
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
 }
 
 .article-londres .article-resto-label span {
   font-family: "Cormorant Garamond", serif;
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 600;
   color: var(--dark);
 }
 
 .article-londres .article-resto-item {
-  padding-bottom: 12px;
-  margin-bottom: 12px;
-  border-bottom: 1px solid var(--line);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
 }
 
 .article-londres .article-resto-item:last-child {
-  padding-bottom: 0;
   margin-bottom: 0;
-  border-bottom: none;
 }
 
 .article-londres .article-resto-name {
   font-family: "Cormorant Garamond", serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--dark);
-  margin: 0 0 4px !important;
+  margin: 0 0 8px !important;
 }
 
 .article-londres .article-resto-name .article-resto-meta {
@@ -1100,13 +1157,20 @@
 .article-londres .article-resto-item p {
   font-size: 13.5px !important;
   line-height: 1.6;
-  color: var(--dark);
-  margin: 0 !important;
+  color: #4a4540;
+  margin: 0 0 8px !important;
+}
+
+.article-londres .article-resto-item p:last-child {
+  margin-bottom: 0 !important;
 }
 
 /* --- Rendre / Resto : mobile --- */
 @media (max-width: 768px) {
   .article-londres .article-rendre,
   .article-londres .article-resto { padding: 16px 18px !important; }
-  .article-londres .article-resto-label span { font-size: 17px !important; }
+  .article-londres .article-rendre-label span,
+  .article-londres .article-resto-label span { font-size: 19px !important; }
+  .article-londres .article-rendre-label .article-rendre-icon-wrap,
+  .article-londres .article-resto-label .article-resto-icon-wrap { width: 28px !important; height: 28px !important; }
 }
