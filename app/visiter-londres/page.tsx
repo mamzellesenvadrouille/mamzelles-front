@@ -178,7 +178,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3138-scaled-1024x768.jpeg" alt="The Anchor Bankside" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Amateur d’art ? Le célèbre <strong>Tate Museum</strong>, plus connu sous le nom de Tate Modern, est le musée d’art moderne le plus visité au monde. Plus de 7000 oeuvres y sont exposées, représentant différents mouvements comme le surréalisme, l’expressionnisme, l’abstrait, le pop art, etc... Et <strong>la visite est gratuite</strong> !</p>
-            <p>Enfin, dans ce quartier, le <strong>SHARD</strong> (= l’Éclat de verre en français), impressionnant avec ses 87 étages, ne passera pas inaperçu... La nuit, il éclaire le ciel ! Magique ! Deux étages (au 68ème et au 69ème), ainsi que la terrasse (au 72ème), sont réservés au public et offrent une des plus belles vues sur la capitale britannique. Nous vous conseillons vivement de réserver vos <a href="https://www.visitbritainshop.com/fr/fr/view-shard" target="_blank" rel="noopener noreferrer" className="article-link">billets</a>.</p>
+            <p>Enfin, dans ce quartier, le <strong>SHARD</strong> (= l’Éclat de verre en français), impressionnant avec ses 87 étages, ne passera pas inaperçu... La nuit, il éclaire le ciel ! Magique ! Deux étages (au 68ème et au 69ème), ainsi que la terrasse (au 72ème), sont réservés au public et offrent une des plus belles vues sur la capitale britannique. Nous vous conseillons vivement de réserver vos <a href="https://www.theviewfromtheshard.com" target="_blank" rel="noopener noreferrer" className="article-link">billets</a>.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3603-1024x520.jpeg" alt="London Eye Londres" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3554-1024x520.jpeg" alt="Millenium Bridge" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
@@ -198,7 +198,7 @@ export default function VisiterLondresPage() {
                   <span className="article-resto-tag">Jeu · Ven · Sam</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Borough Market</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJD2bPdVcDdkgRuUSgnOXnKDE" target="_blank" className="article-resto-link-desktop">Borough Market</a><a href="https://maps.app.goo.gl/QV7yE3qoSKqPkbmCA" target="_blank" className="article-resto-link-mobile">Borough Market</a></p>
                   <p className="article-resto-sub">Marché alimentaire · à 5 min du Shard</p>
                   <p>À 5 minutes à pied du <strong>Shard</strong>, se trouve un endroit incontournable, <strong>Borough Market</strong>. C’est THE place to be pour la pause déjeuner. Il s’agit du plus ancien et du plus célèbre marché alimentaire de Londres. Borough Market a une particularité, une partie du marché est surplombée par un pont emprunté par des trains.</p>
                   <p>Ce bruit peut être surprenant (voire inquiétant !) la 1ère fois qu’on l’entend... Dans ce lieu très fréquenté les <strong>jours de marché</strong>, vous pouvez trouver des produits frais et locaux, mais également une multitude de stands de street-food des quatre coins du monde. Chacun y trouve son bonheur !</p>
@@ -247,7 +247,7 @@ export default function VisiterLondresPage() {
                   <span className="article-resto-tag">£26 / pers</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Le Relais de Venise, l’Entrecôte</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJCU4G1awcdkgRmCqXP2a29ZI" target="_blank" className="article-resto-link-desktop">Le Relais de Venise, l’Entrecôte</a><a href="https://maps.app.goo.gl/XrmPV56UDg9kDrjg8" target="_blank" className="article-resto-link-mobile">Le Relais de Venise, l’Entrecôte</a></p>
                   <p className="article-resto-sub">Style parisien · La City</p>
                   <p>Ce restaurant au style parisien propose un menu unique composé d’une salade croquante aux noix, et d’un contre-filet accompagné de sa succulente <strong>sauce secrète</strong> et de frites fraîches.</p>
                   <p>Leurs desserts faits maison sont juste à tomber ! Le concept est vraiment top !</p>
@@ -346,7 +346,7 @@ export default function VisiterLondresPage() {
                   <span className="article-resto-tag">Street-food</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Old Spitalfields Market</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJh6-3GrQcdkgRvNQCJqs-8qI" target="_blank" className="article-resto-link-desktop">Old Spitalfields Market</a><a href="https://maps.app.goo.gl/D85tJExCCyKZTSUP7" target="_blank" className="article-resto-link-mobile">Old Spitalfields Market</a></p>
                   <p className="article-resto-sub">Marché couvert · Spitalfields</p>
                   <p>Vous y trouverez un marché de type artisanal (assez branché), mais surtout une ribambelle de stands de nourriture de tous pays.</p>
                   <p>Avec une cuisine authentique et variée, le plus difficile ici sera de choisir le stand qui vous tentera le plus !</p>
@@ -477,13 +477,9 @@ export default function VisiterLondresPage() {
                   <span className="article-resto-tag">Ambiance cosy</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Haché Burgers Camden</p>
-                  <p className="article-resto-sub">Burgers faits maison · Camden</p>
-                  <p>Si vous n’avez pas envie de manger sur le pouce, ce restaurant réputé à l’ambiance cosy vous fera saliver les papilles avec sa carte de burgers faits maison !</p>
-                  <div className="article-resto-note">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg>
-                    C’était le restaurant préféré d’Amy Winehouse, qui y avait sa table attitrée !
-                  </div>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJU0_M_eMadkgRVOGDDv1SSjQ" target="_blank" className="article-resto-link-desktop">Honest Burgers Camden</a><a href="https://maps.app.goo.gl/ZqL6cRaRTcrGH2JWA" target="_blank" className="article-resto-link-mobile">Honest Burgers Camden</a></p>
+                  <p className="article-resto-sub">Burgers faits maison · Camden Lock</p>
+                  <p>Si vous n’avez pas envie de manger sur le pouce, ce restaurant à l’ambiance cosy et conviviale, en plein cœur du marché de Camden Lock, vous fera saliver les papilles avec sa carte de burgers faits maison !</p>
                 </div>
               </div>
             </div>
@@ -777,7 +773,7 @@ export default function VisiterLondresPage() {
                       <>
                         <p>Il existe 2 façons de régler le <strong>métro</strong>, les <strong>trains</strong>, le <strong>tramway</strong>, le <strong>téléphérique</strong>, le <strong>bus</strong> et le <strong>Uber Boat</strong> : soit avec le Cardless (carte de crédit sans contact), soit avec l’<strong>Oyster Card</strong>.</p>
                         <p>Cette dernière est une carte rechargeable que l’on peut acheter sur <strong>internet</strong> ou directement <strong>aux guichets</strong> de toutes les stations de métro du réseau public londonien. L’Oyster Card est vendue à £5 (5,90 €), mais il est possible de se la faire rembourser au niveau des guichets une fois le séjour terminé. Cependant, s’il reste du crédit sur la carte, il sera perdu.</p>
-                        <p>Sur <a href="https://www.visitbritainshop.com/fr/fr/visitor-oyster-card-london?utm_source=visitlondon&amp;utm_medium=affiliate&amp;utm_campaign=affiliate" target="_blank" rel="noopener noreferrer" className="article-link">leur site</a>, vous pouvez évaluer le montant de crédit nécessaire à votre séjour car les prix varient en fonction des heures de la journée et des zones (1 à 5) dans lesquelles vous voyagez, et bénéficier de tarifs très avantageux si vous souscrivez à des formules pour créditer la carte.</p>
+                        <p>Sur <a href="https://tfl.gov.uk/fares/find-fares/visiting-london-fares" target="_blank" rel="noopener noreferrer" className="article-link">leur site</a>, vous pouvez évaluer le montant de crédit nécessaire à votre séjour car les prix varient en fonction des heures de la journée et des zones (1 à 5) dans lesquelles vous voyagez, et bénéficier de tarifs très avantageux si vous souscrivez à des formules pour créditer la carte.</p>
                         <p>Pour vous faire une idée concrète du budget à y consacrer, vous pourrez également y consulter un tableau avec tous les prix des voyages, ainsi qu’une carte des zones tarifaires.</p>
                         <p>En effet, il faut savoir que les frais de déplacement à Londres sont coûteux et ont une grosse place dans le budget des vacances !</p>
                         <div className="article-tip">

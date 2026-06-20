@@ -13,6 +13,7 @@
   .tablet-only-br { display: none; }
   .desktop-tablet-br { display: none; }
   .desktop-only-br { display: none; }
+  .article-resto-link-desktop { display: none; }
   .article-londres .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
   .article-day-header h2 { font-size: 32px !important; }
   .article-londres .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; }
@@ -20,6 +21,10 @@
   .article-londres .article-section h3.budget-h3 i { font-size: 20px !important; }
   .article-budget-grid { grid-template-columns: 1fr !important; }
   .budget-price { white-space: nowrap !important; font-size: 26px !important; }
+}
+
+@media (min-width: 769px) {
+  .article-resto-link-mobile { display: none; }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1074,6 +1079,15 @@
   font-weight: 700 !important;
   color: var(--dark);
   margin: 0 0 4px !important;
+}
+
+.article-londres .article-resto-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.article-londres .article-resto-name a:hover {
+  color: var(--gold);
 }
 
 .article-londres .article-resto-sub {
