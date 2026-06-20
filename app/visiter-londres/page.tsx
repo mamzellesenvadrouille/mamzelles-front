@@ -517,7 +517,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'avion',
                     label: 'En avion',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M22 16.5v-1l-8.5-5V5a1.5 1.5 0 00-3 0v5.5L2 15.5v1l8.5-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3l4 7"/></svg>,
                     content: (
                       <>
                         <p>De nombreux aéroports sont implantés dans la capitale anglaise.</p>
@@ -536,7 +536,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'eurostar',
                     label: 'Eurostar',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="6" width="18" height="11" rx="3"/><path d="M3 11h18M7 17l-2 3M17 17l2 3"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M21 13c0 -3.87 -3.37 -7 -10 -7h-8"/><path d="M3 15h16a2 2 0 0 0 2 -2"/><path d="M3 6v5h17.5"/><path d="M3 11v4"/><path d="M8 11v-5"/><path d="M13 11v-4.5"/><path d="M3 19h18"/></svg>,
                     content: (
                       <>
                         <p>C’est le "TGV" anglais. Il relie la France (de Paris ou de Lille) au Royaume-Uni, à la <strong>gare St. Pancras</strong>, située dans le centre de Londres. Les trains Eurostar traversent le tunnel sous la manche.</p>
@@ -549,7 +549,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'shuttle',
                     label: 'Shuttle',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="2" y="8" width="20" height="9" rx="2"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"/></svg>,
                     content: (
                       <>
                         <p>Le Shuttle est un train pour véhicules à moteur. Vous ne pourrez pas embarquer si vous êtes à pied par exemple.</p>
@@ -564,7 +564,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'ferry',
                     label: 'Ferry',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 17l1.5-5h15L21 17M5 12V8h14v4M9 8V5h6v3"/><path d="M2 20c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 4.5 0 3-1 4.5 0"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1"/><path d="M4 18l-1 -5h18l-2 4"/><path d="M5 13v-6h8l4 6"/><path d="M7 7v-4h-1"/></svg>,
                     content: (
                       <>
                         <p>C’est le seul moyen de transport que nous n’ayons jamais pris pour nous rendre à Londres.</p>
@@ -607,7 +607,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'metro',
                     label: 'Métro',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="4" y="3" width="16" height="14" rx="2"/><circle cx="8.5" cy="20.5" r="1.5"/><circle cx="15.5" cy="20.5" r="1.5"/></svg>,
+                    icon: <span className="article-pratique-nav-badge">M</span>,
                     content: (
                       <>
                         <p>Que ce soit avec le "London Underground" (ou le fameux Tube !), et ses 11 lignes de métro aux couleurs bien distinctes, les tramways ou les trains, le réseau ferroviaire londonien dessert la majorité des quartiers.</p>
@@ -619,7 +619,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'uberboat',
                     label: 'Uber Boat',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 17l1.5-5h15L21 17M5 12V8h14v4M9 8V5h6v3"/><path d="M2 20c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 4.5 0 3-1 4.5 0"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1"/><path d="M4 18l-1 -5h18l-2 4"/><path d="M5 13v-6h8l4 6"/><path d="M7 7v-4h-1"/></svg>,
                     content: (
                       <>
                         <p>C’est la première fois que nous prenions ce moyen de transport à Londres. En effet, le Uber Boat est très récent puisqu’il a été mis en place en août 2021.</p>
@@ -635,7 +635,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'telepherique',
                     label: 'Téléphérique',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M6 19V9l6-5 6 5v10M6 19h12M9 19v-6h6v6"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 5l16 -2"/><path d="M12 4v10"/><path d="M6.894 8h10.306c2.45 3 2.45 9 -.2 12h-10.106c-2.544 -3 -2.544 -9 0 -12"/><path d="M5 14h14"/></svg>,
                     content: (
                       <>
                         <p>C’est parti pour un voyage dans les airs entre <strong>Greenwich Peninsula</strong> et les <strong>Royal Docks</strong> ! L’Emirates Air Line est une télécabine franchissant la Tamise à Londres.</p>
@@ -652,7 +652,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'bus',
                     label: 'Bus',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="12" x2="21" y2="12"/><circle cx="7.5" cy="18.5" r="1.2"/><circle cx="16.5" cy="18.5" r="1.2"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M16 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M4 17h-2v-11a1 1 0 0 1 1 -1h14a5 7 0 0 1 5 7v5h-2m-4 0h-8"/><path d="M16 5l1.5 7l4.5 0"/><path d="M2 10l15 0"/><path d="M7 5l0 5"/><path d="M12 5l0 5"/></svg>,
                     content: (
                       <>
                         <p>Les célèbres bus rouges sont pratiques et peu coûteux. Ils permettent de voir de nombreuses attractions en route.</p>
@@ -668,7 +668,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'oyster',
                     label: 'Oyster Card',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><circle cx="7" cy="14.5" r="1.2"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M15 5l0 2"/><path d="M15 11l0 2"/><path d="M15 17l0 2"/><path d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2"/></svg>,
                     content: (
                       <>
                         <p>Il existe 2 façons de régler le <strong>métro</strong>, les <strong>trains</strong>, le <strong>tramway</strong>, le <strong>téléphérique</strong>, le <strong>bus</strong> et le <strong>Uber Boat</strong> : soit avec le Cardless (carte de crédit sans contact), soit avec l’<strong>Oyster Card</strong>.</p>
@@ -687,7 +687,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'taxi',
                     label: 'Taxi',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M5 17h14M5 17a2 2 0 002 2h0a2 2 0 002-2M5 17a2 2 0 01-2-2v-2l2-5h12l2 5v2a2 2 0 01-2 2m0 0a2 2 0 002 2h0a2 2 0 002-2"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"/></svg>,
                     content: (
                       <>
                         <p>Nous nous sommes pris au jeu de héler un taxi dans la rue comme dans un remake de film ! Nous avons fait une courte distance vraiment pour le fun de monter dans l’un de ces mythiques taxis...</p>
@@ -706,7 +706,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'quand-partir',
                     label: 'Quand partir',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M11 15h1"/><path d="M12 15v3"/></svg>,
                     content: (
                       <>
                         <p>Cela dépend de vos envies, puisque pour nous, Londres se découvre à toutes les périodes de l’année !</p>
@@ -721,7 +721,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'argent',
                     label: 'Argent',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="12" cy="12" r="9"/><path d="M14.8 9a2 2 0 00-2-1.5h-1.6a2 2 0 000 4h1.6a2 2 0 010 4H11a2 2 0 01-2-1.5"/><line x1="12" y1="6" x2="12" y2="18"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M15 9a2 2 0 1 0 -4 0v5a2 2 0 0 1 -2 2h6"/><path d="M9 12h4"/></svg>,
                     content: (
                       <>
                         <p><strong>DAB</strong> : La monnaie du Royaume-Uni est la livre sterling (£). On trouve de partout dans la ville des distributeurs de billets acceptant les Visa, MasterCard, Cirrus ou Maestro, et American Express. Il est essentiel de savoir que les retraits d’espèces avec une carte étrangère entraînent souvent des frais.</p>
@@ -739,7 +739,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'prises',
                     label: 'Prises',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M13 2L4.5 13.5H11L9 22l8.5-11.5H11L13 2z"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M7 12l5 5l-1.5 1.5a3.536 3.536 0 1 1 -5 -5l1.5 -1.5"/><path d="M17 12l-5 -5l1.5 -1.5a3.536 3.536 0 1 1 5 5l-1.5 1.5"/><path d="M3 21l2.5 -2.5"/><path d="M18.5 5.5l2.5 -2.5"/><path d="M10 11l-2 2"/><path d="M13 14l-2 2"/></svg>,
                     content: (
                       <>
                         <p>Vous aurez besoin d’un adapteur pour brancher vos appareils électroniques sur les prises anglaises. Vous n’aurez aucun problème pour en acheter si nécessaire, les adaptateurs sont en vente partout.</p>
@@ -750,7 +750,7 @@ export default function VisiterLondresPage() {
                   {
                     id: 'savoir-vivre',
                     label: 'Savoir-vivre',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M17 8.5a3 3 0 11-6 0 3 3 0 016 0zM10.5 14.5h-1a4 4 0 00-4 4v.5h13v-.5a4 4 0 00-4-4h-1"/><path d="M3 8.5a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0zM2 16.5v-.5a3 3 0 013-3"/></svg>,
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"/></svg>,
                     content: (
                       <>
                         <p>Pour finir, il est grandement conseillé de respecter <strong>certains paramètres</strong> pour vivre à la mode londonienne pendant votre séjour (et vous éviter certains accidents !) :</p>
