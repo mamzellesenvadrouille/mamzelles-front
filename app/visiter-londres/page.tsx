@@ -828,14 +828,13 @@ export default function VisiterLondresPage() {
                     content: (
                       <>
                         <p><strong>DAB</strong> : La monnaie du Royaume-Uni est la livre sterling (£). On trouve de partout dans la ville des distributeurs de billets acceptant les Visa, MasterCard, Cirrus ou Maestro, et American Express. Il est essentiel de savoir que les retraits d’espèces avec une carte étrangère entraînent souvent des frais.</p>
-                        <p><strong>Cartes de crédit</strong> : Quasiment tous les restaurants, bars, boutiques, (et même certains taxis !), acceptent les cartes de crédit.</p>
+                        <p><strong>Cartes de crédit</strong> : Boutiques, taxis... acceptent les cartes de crédit.</p>
                         <p><strong>Change</strong> : Si vous souhaitez changer des euros en livres, nous vous conseillons de vous rendre dans les bureaux de poste, ils ne prélèvent aucune commission.</p>
                         <p><strong>Pourboire</strong> : Au restaurant, le service est souvent inclus dans l’addition. Si ce n’est pas le cas, il est d’usage de laisser un pourboire de 10% (sauf si vous n’êtes pas satisfait !). En tout cas, inutile de laisser des « tips » quand on prend une bière ou un verre de vin dans un pub...</p>
                         <div className="article-tip">
                           <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                          <div><strong>Bon à savoir</strong><p>Pour éviter les frais relatifs aux retraits ou aux achats, nous utilisons la carte <a href="https://clients.boursorama.com" target="_blank" rel="noopener noreferrer" className="article-link">Boursorama</a> Ultim pour tous nos voyages à l’étranger (y compris hors UE).</p></div>
+                          <div><strong>Bon à savoir</strong><p>Pour éviter les frais relatifs aux retraits ou aux achats, nous utilisons la carte <a href="https://clients.boursorama.com" target="_blank" rel="noopener noreferrer" className="article-link">Boursorama</a> Ultim pour tous nos voyages à l’étranger (y compris hors UE). En entrant le code parrainage AMTR2375, vous pourrez bénéficier d’un crédit offert de 130 € pour toute ouverture de compte.</p></div>
                         </div>
-                        <p>En entrant le code parrainage AMTR2375, vous pourrez bénéficier d’un crédit offert de 130 € pour toute ouverture de compte.</p>
                       </>
                     ),
                   },
