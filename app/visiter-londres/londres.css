@@ -1061,8 +1061,8 @@
 
 .article-londres .article-resto-name {
   font-family: "Cormorant Garamond", serif;
-  font-size: 26px !important;
-  font-weight: 600;
+  font-size: 30px !important;
+  font-weight: 700 !important;
   color: var(--dark);
   margin: 0 0 4px !important;
 }
