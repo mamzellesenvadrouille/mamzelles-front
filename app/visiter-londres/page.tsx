@@ -131,7 +131,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3041-scaled-768x1024.jpeg" alt="Buckingham Londres 3" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Juste en face du palais se trouve le <strong>St. James’s Park</strong>, considéré comme l’un des plus beaux parcs de la capitale. Il offre une bouffée d’air frais et une atmosphère sereine au coeur de la ville. Dans ce parc, nous aimons déambuler dans les allées et observer les nombreux écureuils, pélicans, canards, et oiseaux qui y vivent.</p>
-            <p>De l’autre côté de St. James’s Park, se dresse le <strong>Whitehall Palace</strong>. Ici, vous pouvez assister à la <strong>Horse Guards Parade</strong>, traduisez la relève de la garde à cheval. Moins spectaculaire que la relève de la garde à Buckingham Palace, nous trouvons que la relève des Horse Guards est plus ludique pour les enfants, notamment par la présence des chevaux. La cérémonie dure 30Mn et a lieu à <strong>11H du lundi au samedi</strong>, et à <strong>10H le dimanche</strong>.</p>
+            <p>De l’autre côté de St. James’s Park, se dresse le <strong>Whitehall Palace</strong>. Ici, vous pouvez assister à la <strong>Horse Guards Parade</strong>, traduisez la relève de la garde à cheval. Moins spectaculaire que la relève de la garde à Buckingham Palace, nous trouvons que la relève des Horse Guards est plus ludique pour les enfants, notamment par la présence des chevaux. La cérémonie dure 30 minutes et a lieu à <strong>11H du lundi au samedi</strong>, et à <strong>10H le dimanche</strong>.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9618-scaled-696x1024.jpeg" alt="Horse Guard Londres" loading="lazy" style={{flex: '0.68', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9896-scaled-1024x768.jpeg" alt="St. James’s Park Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -172,7 +172,7 @@ export default function VisiterLondresPage() {
             </div>
             <h3>📍 Southwark &amp; South Bank</h3>
             <p>Modernes et historiques à la fois, ils font partie des quartiers incontournables de Londres. Situés sur les bords de la Tamise, ils offrent une multitudes d’attractions.</p>
-            <p>Commencez par prendre de la hauteur en montant dans le <strong>London Eye</strong> à 135M ! Vous profiterez d’une vue panoramique à couper le souffle sur la ville. Pour réserver vos tickets, c’est <a href="https://www.londoneye.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
+            <p>Commencez par prendre de la hauteur en montant dans le <strong>London Eye</strong> à 135 m ! Vous profiterez d’une vue panoramique à couper le souffle sur la ville. Pour réserver vos tickets, c’est <a href="https://www.londoneye.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
             <p>Puis, découvrez le <strong>Millenium Bridge</strong>, un pont piéton en acier, qui parait être suspendu au dessus du fleuve. Il relie le quartier de Southwark à La City.</p>
             <p>La <strong>Cathédrale St. Paul</strong> d’un côté, le <strong>Tate Museum</strong> de l’autre, profitez de ce sublime paysage pour faire de magnifiques clichés !</p>
             <div className="article-gallery-2">
@@ -188,7 +188,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3554-1024x520.jpeg" alt="Millenium Bridge" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3537-1024x520.jpeg" alt="The Shard" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
             </div>
-            <p>Si vous aimez le Street Art, vous ne pourrez pas quitter ce quartier sans passer à proximité de la station de train de <strong>Waterloo</strong>. Derrière la gare, vous découvrirez un magnifique tunnel de 300M de long, appelé le <strong>Leake Street Graffiti</strong>.</p>
+            <p>Si vous aimez le Street Art, vous ne pourrez pas quitter ce quartier sans passer à proximité de la station de train de <strong>Waterloo</strong>. Derrière la gare, vous découvrirez un magnifique tunnel de 300 m de long, appelé le <strong>Leake Street Graffiti</strong>.</p>
             <p>Pas très bien indiqué et même un peu caché à l’abri de la foule, les graffitis y sont autorisés par la municipalité de la ville de Londres. Banksy, le célèbre artiste inconnu, y a organisé en 2008 un événement en invitant des graffeurs du monde entier pour transformer le tunnel en galerie d’art. Cet endroit est une vraie pépite à découvrir !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9868-scaled-1024x768.jpeg" alt="Leake Street Graffiti" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -204,7 +204,7 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name">Borough Market</p>
                   <p className="article-resto-sub">Marché alimentaire · à 5 min du Shard</p>
-                  <p>À 5 Mn à pied du <strong>Shard</strong>, se trouve un endroit incontournable, <strong>Borough Market</strong>. C’est THE place to be pour la pause déjeuner. Il s’agit du plus ancien et du plus célèbre marché alimentaire de Londres. Borough Market a une particularité, une partie du marché est surplombée par un pont emprunté par des trains.</p>
+                  <p>À 5 minutes à pied du <strong>Shard</strong>, se trouve un endroit incontournable, <strong>Borough Market</strong>. C’est THE place to be pour la pause déjeuner. Il s’agit du plus ancien et du plus célèbre marché alimentaire de Londres. Borough Market a une particularité, une partie du marché est surplombée par un pont emprunté par des trains.</p>
                   <p>Ce bruit peut-être surprenant (voire inquiétant !) la 1ère fois qu’on l’entend... Dans ce lieu très fréquenté les <strong>jours de marché</strong>, vous pouvez trouver des produits frais et locaux, mais également une multitude de stands de street-food des quatre coins du monde. Chacun y trouve son bonheur !</p>
                 </div>
               </div>
@@ -231,7 +231,7 @@ export default function VisiterLondresPage() {
             <p>La City est l’un des quartiers les plus anciens de la capitale où se côtoient des édifices historiques majestueux, tels que le <strong>Tower Bridge</strong> et d’immenses grattes-ciel. En effet, il est à la fois le centre historique et le plus gros quartier des affaires de la ville. Le contraste des paysages est ici incroyable !</p>
             <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur !</p>
             <p>Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
-            <p>Pour les plus téméraires, et moyennant 10£60 (12€50), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42M du sol. Sensations garanties !</p>
+            <p>Pour les plus téméraires, et moyennant 10£60 (12€50), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42 m du sol. Sensations garanties !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3214-scaled-768x1024.jpeg" alt="Tower Bridge 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9962-scaled-1024x768.jpeg" alt="Tower Bridge nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -418,7 +418,7 @@ export default function VisiterLondresPage() {
             <p>En continuant votre chemin, vous vous retrouverez à <strong>Soho</strong> avec son charme bohème et sa diversité. Ce petit quartier est connu aujourd’hui pour être le quartier gay de Londres.</p>
             <p>Situé près de <strong>Leicester Square</strong>, n’hésitez pas à faire un petit détour par <strong>Chinatown</strong>, où de grandes arches chinoises marquent le début du quartier. Cet incroyable quartier chinois en plein coeur de Londres est surprenant, tant par sa décoration traditionnelle, que par le nombre de boutiques et de restaurants asiatiques que l’on y trouve.</p>
             <p>Pour autant, ne vous attendez pas à un endroit immense, vous seriez déçus ! Chinatown se résume à une grande avenue, mais juste ce qu’il faut pour nous plonger dans l’ambiance.</p>
-            <p>À 5Mn à pied, vous arriverez facilement à <strong>Piccadilly Circus</strong>. Cette place est mondialement connue pour ses panneaux publicitaires géants et lumineux. Elle est d’ailleurs souvent comparée à une version miniature de Times Square à New York. Piccadilly Circus est un endroit toujours très fréquenté et animé.</p>
+            <p>À 5 minutes à pied, vous arriverez facilement à <strong>Piccadilly Circus</strong>. Cette place est mondialement connue pour ses panneaux publicitaires géants et lumineux. Elle est d’ailleurs souvent comparée à une version miniature de Times Square à New York. Piccadilly Circus est un endroit toujours très fréquenté et animé.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9681-scaled-751x1024.jpeg" alt="Chinatown" loading="lazy" style={{flex: '0.733', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3488-scaled-1024x768.jpeg" alt="Picadilly Circus" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -474,7 +474,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9488-scaled-1024x812.jpeg" alt="Camden Street 2 Londres" loading="lazy" style={{flex: '1.261', minWidth: 0}} />
             </div>
             <p>Après le bain de foule, si vous souhaitez vous mettre au vert, dirigez-vous vers <strong>Regent’s Park</strong>, l’un des plus beaux parcs de Londres.</p>
-            <p>Vous découvrirez un havre de paix à 15 / 20Mn à pied de Camden Town.</p>
+            <p>Vous découvrirez un havre de paix à 15 à 20 minutes à pied de Camden Town.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9340-scaled-715x1024.jpg" alt="Regent’s Park Londres" loading="lazy" style={{flex: '0.698', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" loading="lazy" style={{flex: '1.313', minWidth: 0}} />
@@ -513,18 +513,18 @@ export default function VisiterLondresPage() {
                 </div>
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot article-rendre-stop-alt" />
-                  <div><span className="article-rendre-stop-title">Balade en péniche, 45Mn</span><p>Cette jolie balade reposante vous permet de découvrir Londres d’une façon atypique. Vous traverserez Regent’s Park, apercevrez le London Zoo, et longerez de magnifiques demeures aux façades victoriennes, avant d’arriver à Camden Town. Le tarif pour cette <a href="https://www.getyourguide.fr/londres-l57/londres-regent-s-canal-waterbus-little-venice-camden-lock-t390028/" target="_blank" rel="noopener noreferrer" className="article-link">balade en péniche</a> est de 12£ (14€) par personne.</p></div>
+                  <div><span className="article-rendre-stop-title">Balade en péniche, 45 minutes</span><p>Cette jolie balade reposante vous permet de découvrir Londres d’une façon atypique. Vous traverserez Regent’s Park, apercevrez le London Zoo, et longerez de magnifiques demeures aux façades victoriennes, avant d’arriver à Camden Town. Le tarif pour cette <a href="https://www.getyourguide.fr/londres-l57/londres-regent-s-canal-waterbus-little-venice-camden-lock-t390028/" target="_blank" rel="noopener noreferrer" className="article-link">balade en péniche</a> est de 12£ (14€) par personne.</p></div>
                 </div>
               </div>
             </div>
             <h3>📍 Stratford</h3>
             <p>Nous avons été très agréablement surprises par ce <strong>nouveau quartier</strong> que nous ne connaissions pas et que nous avons découvert lors de notre dernier séjour.</p>
-            <p>Il est idéalement situé puisque tous les lieux incontournables à visiter de la capitale sont à plus ou moins 30Mn de métro.</p>
+            <p>Il est idéalement situé puisque tous les lieux incontournables à visiter de la capitale sont à plus ou moins 30 minutes de métro.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9510-scaled-1024x768.jpeg" alt="Stratford Londres" className="article-img-full" loading="lazy" />
             <p>Notamment connu pour son centre commercial le plus grand d’Europe (<strong>Westfield</strong>), ce quartier de l’est de Londres est également célèbre depuis 2012 grâce aux Jeux Olympiques d’été qui s’y sont déroulés.</p>
             <p>En effet, le quartier réaménagé pour l’occasion accueillait le village olympique mais aussi diverses infrastructures : stades, piscine, vélodrome, le parc olympique Queen Elizabeth et l’<strong>ArcelorMittal Orbit</strong> (emblème des J.O 2012).</p>
-            <p>Cette dernière, une étrange tour métallique de 115M, vous offrira une vue imprenable sur l’ensemble du parc.</p>
-            <p>Depuis 2016, une attraction a été ajoutée à la tour. Il s’agit d’un toboggan long de 178M, le plus long du monde ! Une <a href="https://arcelormittalorbit.com" target="_blank" rel="noopener noreferrer" className="article-link">activité</a> bien sympathique à faire en famille ou entre amis.</p>
+            <p>Cette dernière, une étrange tour métallique de 115 m, vous offrira une vue imprenable sur l’ensemble du parc.</p>
+            <p>Depuis 2016, une attraction a été ajoutée à la tour. Il s’agit d’un toboggan long de 178 m, le plus long du monde ! Une <a href="https://arcelormittalorbit.com" target="_blank" rel="noopener noreferrer" className="article-link">activité</a> bien sympathique à faire en famille ou entre amis.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9788-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -581,7 +581,7 @@ export default function VisiterLondresPage() {
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3143-scaled-1024x768.jpeg" alt="Brighton Pier Londres 3" className="article-img-full" loading="lazy" />
             <p>Non loin de là, si vous avez envie de prendre de la hauteur et d’admirer le paysage à 360°, embarquez dans la tour d’observation <strong>British Airways i360</strong>.</p>
-            <p>S’élevant à 138M, elle est la plus haute tour du monde de ce type.</p>
+            <p>S’élevant à 138 m, elle est la plus haute tour du monde de ce type.</p>
             <p>Si vous souhaitez faire cette attraction, sachez qu’elle vous coûtera 16£50 (19€50) par personne. Pour avoir tenté l’expérience, nous avons adoré... Le panorama était à couper le souffle !</p>
             <p>Nous vous conseillons de <a href="https://britishairwaysi360.com" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> votre venue pour éviter la file d’attente.</p>
             <div className="article-gallery-2">
@@ -644,9 +644,9 @@ export default function VisiterLondresPage() {
                         <h5>Heathrow</h5>
                         <p>Cet aéroport est le plus central. Nous vous le conseillons si votre logement est situé dans le coeur de Londres. Il s’agit de l’aéroport le plus fréquenté du monde ! Si vous prenez un vol depuis celui-ci, n’hésitez pas à venir bien à l’avance, il est immense !</p>
                         <p>Pour rejoindre le centre de Londres depuis Heathrow, vous pouvez prendre la <strong>Picadilly Line</strong> (ligne bleue foncée de métro). Dans ce cas, vous mettrez plus ou moins 1H et vous payerez le tarif du trajet de métro en fonction de la zone (1 à 5) où vous vous rendrez et de l’heure de la journée.</p>
-                        <p>Autrement, vous pouvez prendre le <strong>Heathrow Express</strong> avec lequel vous mettrez 15Mn pour vous rendre à la gare de Paddington. Le tarif pour un aller simple est de 22£ (26€). La station de métro est directement située dans l’aéroport.</p>
+                        <p>Autrement, vous pouvez prendre le <strong>Heathrow Express</strong> avec lequel vous mettrez 15 minutes pour vous rendre à la gare de Paddington. Le tarif pour un aller simple est de 22£ (26€). La station de métro est directement située dans l’aéroport.</p>
                         <h5>Gatwick</h5>
-                        <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30Mn depuis l’aéroport. Le tarif pour un aller simple est de 19£90 (23€50).</p>
+                        <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30 minutes depuis l’aéroport. Le tarif pour un aller simple est de 19£90 (23€50).</p>
                         <p>Le Gatwick Express est la solution la plus rapide, mais quelque peu onéreuse pour se rendre au coeur de la ville. Pour autant, il est également possible de prendre le <strong>Southern Railway</strong> (train).</p>
                         <p>Ce train alternatif arrive en gare de Victoria, London Bidge ou encore City Thameslink (à côté de la cathédrale St. Paul). Le tarif des billets oscille entre 11£ (13€) et 15£ (17€50).</p>
                       </>
@@ -675,7 +675,7 @@ export default function VisiterLondresPage() {
                         <p>Ce moyen de transport se prend à <strong>Calais</strong> et arrive à <strong>Folkestone</strong>, situé à plus ou moins 1H30 en voiture du centre de Londres. Tout comme l’Eurostar, il passe sous la Manche.</p>
                         <p>Lors de notre dernier séjour, c’est l’option que nous avons choisie pour nous rendre en Angleterre. D’autant plus qu’avec le Ferry, ce sont les deux uniques solutions pour débarquer avec son animal de compagnie (sans qu’il soit mis en soute, ce qu’on veut absolument éviter !).</p>
                         <p>Nous avons bien aimé le concept de rester dans sa voiture, qui elle-même est dans le train. Bon, ça fait une sensation étrange au départ, mais on s’y habitue rapidement.</p>
-                        <p>Pendant la traversée qui dure 30Mn, vous avez le droit de sortir de votre véhicule. Et incroyable, on avait du réseau sur nos téléphones portables, bien qu’on ait des opérateurs différents ! Bref, on était à notre aise pour voyager, et Aladdin aussi !</p>
+                        <p>Pendant la traversée qui dure 30 minutes, vous avez le droit de sortir de votre véhicule. Et incroyable, on avait du réseau sur nos téléphones portables, bien qu’on ait des opérateurs différents ! Bref, on était à notre aise pour voyager, et Aladdin aussi !</p>
                         <p>Pour un aller simple, le prix dépend non pas du nombre de passagers, mais du modèle du véhicule qui embarque, de la présence d’animaux, de la période de l’année et des horaires choisis. Plus vous voyagerez tôt ou tard dans la journée, moins les billets seront chers. Il faut compter en moyenne <strong>140€ pour un billet aller</strong> avec une voiture de type citadine et un chien. Pour réserver, c’est <a href="https://www.eurotunnel.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
                       </>
                     ),
@@ -758,7 +758,7 @@ export default function VisiterLondresPage() {
                     content: (
                       <>
                         <p>C’est parti pour un voyage dans les airs entre <strong>Greenwich Peninsula</strong> et les <strong>Royal Docks</strong> ! L’Emirates Air Line est une télécabine franchissant la Tamise à Londres.</p>
-                        <p>Nous avons beaucoup aimé cette expérience de 10Mn où l’on a une vue imprenable sur la ville !</p>
+                        <p>Nous avons beaucoup aimé cette expérience de 10 minutes où l’on a une vue imprenable sur la ville !</p>
                         <p>Nous avons pris le téléphérique de nuit. Le paysage était canon avec toutes les lumières de la ville et de ses buildings ! Cependant, nous pensons que le « voyage » aurait été encore plus sympa de jour.</p>
                         <div className="article-avis">
                           <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
