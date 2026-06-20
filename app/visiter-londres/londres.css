@@ -1061,9 +1061,9 @@
 
 .article-londres .article-resto-name {
   font-family: "Cormorant Garamond", serif;
-  font-size: 30px !important;
+  font-size: 48px !important;
   font-weight: 700 !important;
-  color: var(--dark);
+  color: red !important;
   margin: 0 0 4px !important;
 }
 
@@ -1242,7 +1242,7 @@
   .article-londres .article-rendre { padding: 16px 18px !important; }
   .article-londres .article-resto-body { padding: 16px 18px !important; }
   .article-londres .article-resto-head { padding: 11px 16px !important; }
-  .article-londres .article-resto-name { font-size: 22px !important; }
+  .article-londres .article-resto-name { font-size: 40px !important; color: red !important; }
   .article-londres .article-rendre-label span { font-size: 19px !important; }
   .article-londres .article-rendre-label .article-rendre-icon-wrap { width: 28px !important; height: 28px !important; }
   .article-londres .article-rendre-timeline { padding: 14px 16px 14px 14px !important; }
