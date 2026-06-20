@@ -136,7 +136,7 @@ export default function VisiterLondresPage() {
             </div>
             <p>C’est à Westminster, au bord de la Tamise, que se dresse la tour d’horloge la plus célèbre au monde, <strong>Big Ben</strong> ! Elle domine le <strong>Palace of Westminster</strong>, là où siège le parlement.</p>
             <p>À quelques minutes à pied, vous trouverez la somptueuse <strong>Abbaye de Westminster</strong>. Cela fait plus de 700 ans qu’elle accueille les plus grands monarques, que ce soit pour des couronnements, des mariages ou des funérailles.</p>
-            <p>Si vous souhaitez visiter l’Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, vous devrez payer £20 (23,50 €) l’entrée par personne.</p>
+            <p>Si vous souhaitez visiter l’Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, vous devrez payer £31 (36,50 €) l’entrée par personne en réservant en ligne.</p>
             <p>Pour autant, il existe un <strong>bon plan pour la visiter gratuitement</strong> ! Il suffit de se présenter lors des cérémonies religieuses. Celles-ci ont lieu tous les jours, sont ouvertes à tous, et aucune participation financière n’est demandée !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3752-1-scaled-1024x686.jpeg" alt="Big Ben Londres 1" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
@@ -226,7 +226,7 @@ export default function VisiterLondresPage() {
             <h3>📍 La City</h3>
             <p>La City est l’un des quartiers les plus anciens de la capitale où se côtoient des édifices historiques majestueux, tels que le <strong>Tower Bridge</strong> et d’immenses gratte-ciel. En effet, il est à la fois le centre historique et le plus gros quartier des affaires de la ville. Le contraste des paysages est ici incroyable !</p>
             <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur ! Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
-            <p>Pour les plus téméraires, et moyennant £10.60 (12,50 €), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42 m du sol. Sensations garanties !</p>
+            <p>Pour les plus téméraires, et moyennant £13.40 (15,80 €), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42 m du sol. Sensations garanties !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3214-scaled-768x1024.jpeg" alt="Tower Bridge 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9962-scaled-1024x768.jpeg" alt="Tower Bridge nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -567,7 +567,7 @@ export default function VisiterLondresPage() {
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3143-scaled-1024x768.jpeg" alt="Brighton Pier Londres 3" className="article-img-full" loading="lazy" />
             <p>Non loin de là, si vous avez envie de prendre de la hauteur et d’admirer le paysage à 360°, embarquez dans la tour d’observation <strong>British Airways i360</strong>. S’élevant à 138 m, elle est la plus haute tour du monde de ce type.</p>
-            <p>Si vous souhaitez faire cette attraction, sachez qu’elle vous coûtera £16.50 (19,50 €) par personne. Pour avoir tenté l’expérience, nous avons adoré... Le panorama était à couper le souffle !</p>
+            <p>Si vous souhaitez faire cette attraction, sachez qu’elle vous coûtera environ £19 (22,50 €) par personne. Pour avoir tenté l’expérience, nous avons adoré... Le panorama était à couper le souffle !</p>
             <p>Nous vous conseillons de <a href="https://britishairwaysi360.com" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> votre venue pour éviter la file d’attente.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3190-1024x576.jpeg" alt="Tour British Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
@@ -629,9 +629,9 @@ export default function VisiterLondresPage() {
                         <h5>Heathrow</h5>
                         <p>Cet aéroport est le plus central. Nous vous le conseillons si votre logement est situé dans le coeur de Londres. Il s’agit de l’aéroport le plus fréquenté du monde ! Si vous prenez un vol depuis celui-ci, n’hésitez pas à venir bien à l’avance, il est immense !</p>
                         <p>Pour rejoindre le centre de Londres depuis Heathrow, vous pouvez prendre la <strong>Picadilly Line</strong> (ligne bleue foncée de métro). Dans ce cas, vous mettrez plus ou moins 1 h et vous payerez le tarif du trajet de métro en fonction de la zone (1 à 5) où vous vous rendrez et de l’heure de la journée.</p>
-                        <p>Autrement, vous pouvez prendre le <strong>Heathrow Express</strong> avec lequel vous mettrez 15 minutes pour vous rendre à la gare de Paddington. Le tarif pour un aller simple est de £22 (26 €). La station de métro est directement située dans l’aéroport.</p>
+                        <p>Autrement, vous pouvez prendre le <strong>Heathrow Express</strong> avec lequel vous mettrez 15 minutes pour vous rendre à la gare de Paddington. Le tarif pour un aller simple est de £26 (30,50 €) le jour même, mais vous pouvez le faire descendre à £10 (11,80 €) en réservant au moins 30 jours à l’avance. La station de métro est directement située dans l’aéroport.</p>
                         <h5>Gatwick</h5>
-                        <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30 minutes depuis l’aéroport. Le tarif pour un aller simple est de £19.90 (23,50 €).</p>
+                        <p>Situé à 48 km au sud du centre de Londres, il faut prendre le <strong>Gatwick Express</strong> pour se rendre à la gare Victoria en 30 minutes depuis l’aéroport. Le tarif pour un aller simple est de £24 (28,30 €).</p>
                         <p>Le Gatwick Express est la solution la plus rapide, mais quelque peu onéreuse pour se rendre au coeur de la ville. Pour autant, il est également possible de prendre le <strong>Southern Railway</strong> (train).</p>
                         <p>Ce train alternatif arrive en gare de Victoria, London Bridge ou encore City Thameslink (à côté de la cathédrale St. Paul). Le tarif des billets oscille entre £11 (13 €) et £15 (17,50 €).</p>
                       </>
@@ -772,7 +772,7 @@ export default function VisiterLondresPage() {
                     content: (
                       <>
                         <p>Il existe 2 façons de régler le <strong>métro</strong>, les <strong>trains</strong>, le <strong>tramway</strong>, le <strong>téléphérique</strong>, le <strong>bus</strong> et le <strong>Uber Boat</strong> : soit avec le Cardless (carte de crédit sans contact), soit avec l’<strong>Oyster Card</strong>.</p>
-                        <p>Cette dernière est une carte rechargeable que l’on peut acheter sur <strong>internet</strong> ou directement <strong>aux guichets</strong> de toutes les stations de métro du réseau public londonien. L’Oyster Card est vendue à £5 (5,90 €), mais il est possible de se la faire rembourser au niveau des guichets une fois le séjour terminé. Cependant, s’il reste du crédit sur la carte, il sera perdu.</p>
+                        <p>Cette dernière est une carte rechargeable que l’on peut acheter sur <strong>internet</strong> ou directement <strong>aux guichets</strong> de toutes les stations de métro du réseau public londonien. L’Oyster Card est vendue £10.50 (12,40 €), un montant non remboursable depuis 2022. S’il reste du crédit sur la carte à la fin de votre séjour, vous pouvez en revanche le récupérer aux guichets, à hauteur de £10 maximum.</p>
                         <p>Sur <a href="https://tfl.gov.uk/fares/find-fares/visiting-london-fares" target="_blank" rel="noopener noreferrer" className="article-link">leur site</a>, vous pouvez évaluer le montant de crédit nécessaire à votre séjour car les prix varient en fonction des heures de la journée et des zones (1 à 5) dans lesquelles vous voyagez, et bénéficier de tarifs très avantageux si vous souscrivez à des formules pour créditer la carte.</p>
                         <p>Pour vous faire une idée concrète du budget à y consacrer, vous pourrez également y consulter un tableau avec tous les prix des voyages, ainsi qu’une carte des zones tarifaires.</p>
                         <p>En effet, il faut savoir que les frais de déplacement à Londres sont coûteux et ont une grosse place dans le budget des vacances !</p>
