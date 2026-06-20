@@ -110,9 +110,7 @@ export default function VisiterLondresPage() {
           <p>Quand on pense à Londres, on imagine les bus à deux étages et les cabines téléphoniques rouges, les taxis noirs, la Reine et son palais (Buckingham Palace), Big Ben, la Tamise, etc.</p>
           <p>Parce que nous aimons profondément cette ville, nous l’avons visitée à plusieurs reprises. Pourtant, nous avons l’impression de la redécouvrir à chaque séjour.</p>
           <p>Cette fois-ci, après avoir traversé la France en voiture avec notre chien Aladdin, nous nous y sommes rendues via l’Eurotunnel, au départ de Calais. C’était une chouette expérience !</p>
-          <p><strong>Dans notre article, vous trouverez les réponses aux questions que vous vous posez pour votre séjour d’une semaine à Londres :  Quels sont les lieux incontournables à ne pas louper en fonction des quartiers ? Les bons plans pour organiser au mieux votre voyage ? Comment s’y rendre (avec ou sans son animal) ? ...</strong></p>
-          <p><strong>Nous vous proposons aussi notre itinéraire de 7 jours à travers la ville que vous pourrez adapter au gré de vos envies !</strong></p>
-          <p><strong>C’est partiiiiiii !</strong></p>
+          <p><strong>Nous vous proposons aussi notre itinéraire de 7 jours à travers la ville que vous pourrez adapter au gré de vos envies... C’est partiiiiiii !</strong></p>
           <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3206-1-scaled-1024x768.jpeg" alt="Tower Bridge" className="article-img-full" loading="lazy" />
           </section>
 
@@ -179,10 +177,8 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3723-scaled-1024x686.jpeg" alt="Vue du London Eye" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3138-scaled-1024x768.jpeg" alt="The Anchor Bankside" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <p>Amateur d’art ? Le célèbre <strong>Tate Museum</strong>, plus connu sous le nom de Tate Modern, est le musée d’art moderne le plus visité au monde. Plus de 7000 oeuvres y sont exposées, représentant différents mouvements comme le surréalisme, l’expressionnisme, l’abstrait, le pop art, etc...</p>
-            <p>Et <strong>la visite est gratuite</strong> !</p>
-            <p>Enfin, dans ce quartier, le <strong>SHARD</strong> (= l’Éclat de verre en français), impressionnant avec ses 87 étages, ne passera pas inaperçu... La nuit, il éclaire le ciel ! Magique ! Deux étages (au 68ème et au 69ème), ainsi que la terrasse (au 72ème), sont réservés au public et offrent une des plus belles vues sur la capitale britannique.</p>
-            <p>Nous vous conseillons vivement de réserver vos <a href="https://www.visitbritainshop.com/fr/fr/view-shard" target="_blank" rel="noopener noreferrer" className="article-link">billets</a>.</p>
+            <p>Amateur d’art ? Le célèbre <strong>Tate Museum</strong>, plus connu sous le nom de Tate Modern, est le musée d’art moderne le plus visité au monde. Plus de 7000 oeuvres y sont exposées, représentant différents mouvements comme le surréalisme, l’expressionnisme, l’abstrait, le pop art, etc... Et <strong>la visite est gratuite</strong> !</p>
+            <p>Enfin, dans ce quartier, le <strong>SHARD</strong> (= l’Éclat de verre en français), impressionnant avec ses 87 étages, ne passera pas inaperçu... La nuit, il éclaire le ciel ! Magique ! Deux étages (au 68ème et au 69ème), ainsi que la terrasse (au 72ème), sont réservés au public et offrent une des plus belles vues sur la capitale britannique. Nous vous conseillons vivement de réserver vos <a href="https://www.visitbritainshop.com/fr/fr/view-shard" target="_blank" rel="noopener noreferrer" className="article-link">billets</a>.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3603-1024x520.jpeg" alt="London Eye Londres" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3554-1024x520.jpeg" alt="Millenium Bridge" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
@@ -229,8 +225,7 @@ export default function VisiterLondresPage() {
             </div>
             <h3>📍 La City</h3>
             <p>La City est l’un des quartiers les plus anciens de la capitale où se côtoient des édifices historiques majestueux, tels que le <strong>Tower Bridge</strong> et d’immenses gratte-ciel. En effet, il est à la fois le centre historique et le plus gros quartier des affaires de la ville. Le contraste des paysages est ici incroyable !</p>
-            <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur !</p>
-            <p>Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
+            <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur ! Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
             <p>Pour les plus téméraires, et moyennant £10.60 (12,50 €), vous pouvez emprunter la passerelle en verre (<a href="https://tower-bridge.london-tickets.co.uk/?gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG3-z0toNEg-DnTQvWNgGe_mDB2vKGnVEvDHJvlXvws6DG-NYo5DUgaAuEvEALw_wcB" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42 m du sol. Sensations garanties !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3214-scaled-768x1024.jpeg" alt="Tower Bridge 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -240,9 +235,10 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3207-scaled-1024x768.jpeg" alt="La City 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3268-scaled-768x1024.jpeg" alt="La City" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Attention... <strong>Bon plan à savoir !</strong> Si vous prenez l’ascenseur jusqu’au 6ème étage du centre commercial <strong>One New Change</strong>, vous découvrirez une immense terrasse sur le toit qui vous offrira une vue imprenable sur la <strong>Cathédrale St. Paul</strong> et sur la ville.</p>
-            <p><strong>L’accès est gratuit !</strong></p>
-            <p>N’hésitez pas à vous y rendre en fin de journée pour admirer le coucher de soleil de ce point de vue.</p>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À ne pas manquer</strong><p>Si vous prenez l’ascenseur jusqu’au 6ème étage du centre commercial <strong>One New Change</strong>, vous découvrirez une immense terrasse sur le toit qui vous offrira une vue imprenable sur la <strong>Cathédrale St. Paul</strong> et sur la ville. L’accès est gratuit ! N’hésitez pas à vous y rendre en fin de journée pour admirer le coucher de soleil de ce point de vue.</p></div>
+            </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4022-scaled-1024x686.jpeg" alt="Vue de St. Paul" className="article-img-full" loading="lazy" />
             <div className="article-resto">
               <div className="article-resto-item">
@@ -318,8 +314,7 @@ export default function VisiterLondresPage() {
               <h2>Brick Lane, Shoreditch &amp; Spitafields</h2>
             </div>
             <p>Découvrez l’<strong>East End</strong> avec ses quartiers branchés et alternatifs, facilement reconnaissables par leur architecture industrielle, leurs bâtiments et cheminées en briques rouges.</p>
-            <p>À l’origine, il s’agissait de quartiers assez pauvres et marginalisés où vivaient principalement des personnes issues de l’immigration et des ouvriers.</p>
-            <p>Aujourd’hui, ce sont des quartiers multiculturels et incontournables pour la jeunesse, la vie y est moins chère qu’au coeur de Londres.</p>
+            <p>À l’origine, il s’agissait de quartiers assez pauvres et marginalisés où vivaient principalement des personnes issues de l’immigration et des ouvriers. Aujourd’hui, ce sont des quartiers multiculturels et incontournables pour la jeunesse, la vie y est moins chère qu’au coeur de Londres.</p>
             <p><strong>Ces trois quartiers</strong> « hipsters » et « bobos » regorgent de marchés (dont certains sont couverts), de boutiques de créateurs, de friperies, de vinyles, de galeries d’art et de Coffee shop. L’East End, où le street art s’est imposé, est vivant, fascinant, et surtout très différent du reste de Londres.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3253-scaled-1024x768.jpeg" alt="Spitalfields" className="article-img-full article-img-pano" loading="lazy" />
             <div className="article-gallery-2">
@@ -398,8 +393,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3089-scaled-768x1024.jpeg" alt="British Museum Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Enfin, à <strong>Covent Garden</strong>, vous pourrez visiter le <strong>British Museum</strong>, considéré comme l’un des endroits incontournables à visiter à Londres. Et la bonne nouvelle c’est que <strong>l’entrée est gratuite</strong> !</p>
-            <p>On trouve ce musée très impressionnant et splendide, tant par son architecture (ses colonnes et son toit de verre sont sublimes et immenses), que par les oeuvres qu’on peut y voir.</p>
-            <p>En effet, le British Museum abrite plus de 8 millions d’objets précieux venus du monde entier !</p>
+            <p>On trouve ce musée très impressionnant et splendide, tant par son architecture (ses colonnes et son toit de verre sont sublimes et immenses), que par les oeuvres qu’on peut y voir. En effet, le British Museum abrite plus de 8 millions d’objets précieux venus du monde entier !</p>
             <p>Si vous souhaitez avoir le temps de visiter le musée dans son intégralité, mieux vaut prévoir une journée complète. Dans ce cas, sachez qu’il y a un restaurant sur place si nécessaire.</p>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
@@ -416,16 +410,14 @@ export default function VisiterLondresPage() {
             </div>
             <h3>📍 Soho, Chinatown &amp; Piccadilly</h3>
             <p>En continuant votre chemin, vous vous retrouverez à <strong>Soho</strong> avec son charme bohème et sa diversité. Ce petit quartier est connu aujourd’hui pour être le quartier gay de Londres.</p>
-            <p>Situé près de <strong>Leicester Square</strong>, n’hésitez pas à faire un petit détour par <strong>Chinatown</strong>, où de grandes arches chinoises marquent le début du quartier. Cet incroyable quartier chinois en plein coeur de Londres est surprenant, tant par sa décoration traditionnelle, que par le nombre de boutiques et de restaurants asiatiques que l’on y trouve.</p>
-            <p>Pour autant, ne vous attendez pas à un endroit immense, vous seriez déçus ! Chinatown se résume à une grande avenue, mais juste ce qu’il faut pour nous plonger dans l’ambiance.</p>
+            <p>Situé près de <strong>Leicester Square</strong>, n’hésitez pas à faire un petit détour par <strong>Chinatown</strong>, où de grandes arches chinoises marquent le début du quartier. Cet incroyable quartier chinois en plein coeur de Londres est surprenant, tant par sa décoration traditionnelle, que par le nombre de boutiques et de restaurants asiatiques que l’on y trouve. Pour autant, ne vous attendez pas à un endroit immense, vous seriez déçus ! Chinatown se résume à une grande avenue, mais juste ce qu’il faut pour nous plonger dans l’ambiance.</p>
             <p>À 5 minutes à pied, vous arriverez facilement à <strong>Piccadilly Circus</strong>. Cette place est mondialement connue pour ses panneaux publicitaires géants et lumineux. Elle est d’ailleurs souvent comparée à une version miniature de Times Square à New York. Piccadilly Circus est un endroit toujours très fréquenté et animé.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9681-scaled-751x1024.jpeg" alt="Chinatown" loading="lazy" style={{flex: '0.733', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3488-scaled-1024x768.jpeg" alt="Picadilly Circus" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Si vous êtes fan de shopping, partez en direction de <strong>Regent Street</strong>. Cette grande artère qui part de Piccadilly Circus est réputée pour ses boutiques de luxe à renommée internationale et ses restaurants gastronomiques.</p>
-            <p>Terminez vos emplettes à <strong>Oxford Street</strong> qui traverse Regent Street.</p>
-            <p>Longue d’environ 2,5 km, elle est bordée par 300 magasins, ce qui en fait l’avenue commerçante la plus longue d’Europe !</p>
+            <p>Terminez vos emplettes à <strong>Oxford Street</strong> qui traverse Regent Street. Longue d’environ 2,5 km, elle est bordée par 300 magasins, ce qui en fait l’avenue commerçante la plus longue d’Europe !</p>
             <p>Si vous n’aimez pas trop la foule, alors fuyez, et éloignez-vous des grandes avenues pour trouver des petites rues et des adresses shopping beaucoup plus authentiques.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3612-1-1024x520.jpeg" alt="Regent Street" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
@@ -473,8 +465,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3916-scaled-1024x686.jpeg" alt="Camden Street Londres" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9488-scaled-1024x812.jpeg" alt="Camden Street 2 Londres" loading="lazy" style={{flex: '1.261', minWidth: 0}} />
             </div>
-            <p>Après le bain de foule, si vous souhaitez vous mettre au vert, dirigez-vous vers <strong>Regent’s Park</strong>, l’un des plus beaux parcs de Londres.</p>
-            <p>Vous découvrirez un havre de paix à 15 à 20 minutes à pied de Camden Town.</p>
+            <p>Après le bain de foule, si vous souhaitez vous mettre au vert, dirigez-vous vers <strong>Regent’s Park</strong>, l’un des plus beaux parcs de Londres. Vous découvrirez un havre de paix à 15 à 20 minutes à pied de Camden Town.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9340-scaled-715x1024.jpg" alt="Regent’s Park Londres" loading="lazy" style={{flex: '0.698', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" loading="lazy" style={{flex: '1.313', minWidth: 0}} />
@@ -519,7 +510,6 @@ export default function VisiterLondresPage() {
             </div>
             <h3>📍 Stratford</h3>
             <p>Nous avons été très agréablement surprises par ce <strong>nouveau quartier</strong> que nous ne connaissions pas et que nous avons découvert lors de notre dernier séjour.</p>
-            <p>Il est idéalement situé puisque tous les lieux incontournables à visiter de la capitale sont à plus ou moins 30 minutes de métro.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9510-scaled-1024x768.jpeg" alt="Stratford Londres" className="article-img-full" loading="lazy" />
             <p>Notamment connu pour son centre commercial le plus grand d’Europe (<strong>Westfield</strong>), ce quartier de l’est de Londres est également célèbre depuis 2012 grâce aux Jeux Olympiques d’été qui s’y sont déroulés.</p>
             <p>En effet, le quartier réaménagé pour l’occasion accueillait le village olympique mais aussi diverses infrastructures : stades, piscine, vélodrome, le parc olympique Queen Elizabeth et l’<strong>ArcelorMittal Orbit</strong> (emblème des J.O 2012).</p>
@@ -580,8 +570,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3149-scaled-1024x768.jpeg" alt="Brighton Pier Londres 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3143-scaled-1024x768.jpeg" alt="Brighton Pier Londres 3" className="article-img-full" loading="lazy" />
-            <p>Non loin de là, si vous avez envie de prendre de la hauteur et d’admirer le paysage à 360°, embarquez dans la tour d’observation <strong>British Airways i360</strong>.</p>
-            <p>S’élevant à 138 m, elle est la plus haute tour du monde de ce type.</p>
+            <p>Non loin de là, si vous avez envie de prendre de la hauteur et d’admirer le paysage à 360°, embarquez dans la tour d’observation <strong>British Airways i360</strong>. S’élevant à 138 m, elle est la plus haute tour du monde de ce type.</p>
             <p>Si vous souhaitez faire cette attraction, sachez qu’elle vous coûtera £16.50 (19,50 €) par personne. Pour avoir tenté l’expérience, nous avons adoré... Le panorama était à couper le souffle !</p>
             <p>Nous vous conseillons de <a href="https://britishairwaysi360.com" target="_blank" rel="noopener noreferrer" className="article-link">réserver</a> votre venue pour éviter la file d’attente.</p>
             <div className="article-gallery-2">
