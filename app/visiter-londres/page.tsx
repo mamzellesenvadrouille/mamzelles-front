@@ -31,12 +31,12 @@ export default function VisiterLondresPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/Londres.webp" alt="Visiter Londres en une semaine" style={{objectPosition: 'center 42%'}} />
+        <img className="hero-bg" src="/Londres.webp" alt="Visiter Londres en une semaine" style={{objectPosition: 'center 44%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Londres<br /><em>L’essentiel en une semaine</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Sept jours, quartier par quartier, pour tomber sous le charme de la capitale britannique.</p>
+          <p className="hero-desc">Sept jours, quartier par quartier, pour tomber sous le charme<br className="desktop-only-br" /> de la capitale britannique.</p>
         </div>
       </section>
 

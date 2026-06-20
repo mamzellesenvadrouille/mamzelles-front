@@ -12,6 +12,7 @@
   .mobile-hero-break { display: inline; }
   .tablet-only-br { display: none; }
   .desktop-tablet-br { display: none; }
+  .desktop-only-br { display: none; }
   .article-londres .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
   .article-day-header h2 { font-size: 32px !important; }
   .article-londres .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; }
@@ -26,12 +27,14 @@
   .tablet-only-br { display: inline; }
   .mobile-hero-break { display: none; }
   .desktop-tablet-br { display: inline; }
+  .desktop-only-br { display: none; }
 }
 
 @media (min-width: 1025px) {
   .tablet-only-br { display: none; }
   .mobile-hero-break { display: none; }
   .desktop-tablet-br { display: inline; }
+  .desktop-only-br { display: inline; }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
