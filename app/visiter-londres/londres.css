@@ -996,13 +996,119 @@
   .article-londres .article-pratique-nav-icon svg { width: 15px !important; height: 15px !important; }
 }
 
+
 /* ============================================
-   BLOC Â« POUR S'Y RENDRE Â» â€” mÃ©daillon plein + Ã©tiquettes par mode
+   BLOC Â« POUR MANGER Â» â€” fiche carnet de voyage
+   (en-tÃªte sombre + tampon prix + carte resto)
+   ============================================ */
+.article-londres .article-resto {
+  margin: 24px 0;
+}
+
+.article-londres .article-resto-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.article-londres .article-resto-item:last-child {
+  margin-bottom: 0;
+}
+
+.article-londres .article-resto-head {
+  background: var(--dark);
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.article-londres .article-resto-head-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.article-londres .article-resto-head-label svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--gold);
+  flex-shrink: 0;
+}
+
+.article-londres .article-resto-tag {
+  background: var(--gold);
+  color: var(--dark);
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 11px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.article-londres .article-resto-body {
+  padding: 20px 22px;
+}
+
+.article-londres .article-resto-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 0 0 4px !important;
+}
+
+.article-londres .article-resto-sub {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+
+.article-londres .article-resto-body p {
+  font-size: 14px !important;
+  line-height: 1.65;
+  color: #3a342e;
+  margin: 0 0 12px !important;
+}
+
+.article-londres .article-resto-body p:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+.article-londres .article-resto-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--gold);
+  margin-top: 14px;
+}
+
+.article-londres .article-resto-note svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--gold);
+  flex-shrink: 0;
+}
+
+/* ============================================
+   BLOC Â« POUR S'Y RENDRE Â» â€” timeline itinÃ©raire
    ============================================ */
 .article-londres .article-rendre {
   background: var(--bg);
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 22px 24px;
   margin: 18px 0;
 }
@@ -1038,139 +1144,106 @@
   color: var(--dark);
 }
 
-.article-londres .article-rendre-mode {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.article-londres .article-rendre-mode:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.article-londres .article-rendre-mode:first-child {
-  padding-top: 0;
-}
-
-.article-londres .article-rendre-tag {
-  background: #fff;
-  color: var(--gold);
-  font-family: "Inter", sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  padding: 3px 9px;
-  border-radius: 4px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.article-londres .article-rendre-mode p {
-  font-size: 14px !important;
-  line-height: 1.6;
-  color: var(--dark);
-  margin: 0 !important;
-}
-
 .article-londres .article-rendre p.article-rendre-intro {
   font-size: 14px !important;
   line-height: 1.6;
   color: var(--dark);
-  margin: 0 0 12px !important;
+  margin: 0 0 16px !important;
 }
 
-/* ============================================
-   BLOC Â« POUR MANGER Â» â€” mÃ©daillon plein + sous-carte resto
-   ============================================ */
-.article-londres .article-resto {
-  background: var(--bg);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 22px 24px;
-  margin: 18px 0;
+.article-londres .article-rendre-timeline {
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px 20px 18px 18px;
+  position: relative;
 }
 
-.article-londres .article-resto-label {
+.article-londres .article-rendre-stop {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+  padding-bottom: 18px;
 }
 
-.article-londres .article-resto-label .article-resto-icon-wrap {
-  width: 32px;
-  height: 32px;
+.article-londres .article-rendre-stop:last-child {
+  padding-bottom: 0;
+}
+
+.article-londres .article-rendre-stop:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 22px;
+  bottom: -4px;
+  width: 2px;
+  background: var(--line);
+}
+
+.article-londres .article-rendre-dot {
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: var(--gold);
+  border: 2px solid var(--gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.article-londres .article-rendre-stop-alt .article-rendre-dot {
+  background: #fff;
+}
+
+.article-londres .article-rendre-stop-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.article-londres .article-rendre-stop p {
+  font-size: 13px !important;
+  line-height: 1.55;
+  color: #6b6258;
+  margin: 0 !important;
+}
+
+.article-londres .article-rendre-stop p strong {
+  color: var(--dark);
+}
+
+/* deuxiÃ¨me mode de transport dans le mÃªme bloc : nouvelle timeline sÃ©parÃ©e */
+.article-londres .article-rendre-or {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.article-londres .article-resto-label .article-resto-icon-wrap svg {
-  width: 16px;
-  height: 16px;
-  stroke: #fff;
-}
-
-.article-londres .article-resto-label span {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 21px;
-  font-weight: 600;
-  color: var(--dark);
-}
-
-.article-londres .article-resto-item {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 16px 18px;
-  margin-bottom: 10px;
-}
-
-.article-londres .article-resto-item:last-child {
-  margin-bottom: 0;
-}
-
-.article-londres .article-resto-name {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--dark);
-  margin: 0 0 8px !important;
-}
-
-.article-londres .article-resto-name .article-resto-meta {
+  gap: 12px;
+  margin: 18px 0;
   font-family: "Inter", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--gold);
-  margin-left: 6px;
 }
 
-.article-londres .article-resto-item p {
-  font-size: 13.5px !important;
-  line-height: 1.6;
-  color: #4a4540;
-  margin: 0 0 8px !important;
-}
-
-.article-londres .article-resto-item p:last-child {
-  margin-bottom: 0 !important;
+.article-londres .article-rendre-or::before,
+.article-londres .article-rendre-or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
 }
 
 /* --- Rendre / Resto : mobile --- */
 @media (max-width: 768px) {
-  .article-londres .article-rendre,
-  .article-londres .article-resto { padding: 16px 18px !important; }
-  .article-londres .article-rendre-label span,
-  .article-londres .article-resto-label span { font-size: 19px !important; }
-  .article-londres .article-rendre-label .article-rendre-icon-wrap,
-  .article-londres .article-resto-label .article-resto-icon-wrap { width: 28px !important; height: 28px !important; }
+  .article-londres .article-rendre { padding: 16px 18px !important; }
+  .article-londres .article-resto-body { padding: 16px 18px !important; }
+  .article-londres .article-resto-head { padding: 11px 16px !important; }
+  .article-londres .article-resto-name { font-size: 19px !important; }
+  .article-londres .article-rendre-label span { font-size: 19px !important; }
+  .article-londres .article-rendre-label .article-rendre-icon-wrap { width: 28px !important; height: 28px !important; }
+  .article-londres .article-rendre-timeline { padding: 14px 16px 14px 14px !important; }
 }
