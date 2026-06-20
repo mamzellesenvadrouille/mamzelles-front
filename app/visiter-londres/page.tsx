@@ -237,7 +237,7 @@ export default function VisiterLondresPage() {
             </div>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>Si vous prenez l’ascenseur jusqu’au 6ème étage du centre commercial <strong>One New Change</strong>, vous découvrirez une immense terrasse sur le toit qui vous offrira une vue imprenable sur la <strong>Cathédrale St. Paul</strong> et sur la ville. L’accès est gratuit ! N’hésitez pas à vous y rendre en fin de journée pour admirer le coucher de soleil de ce point de vue.</p></div>
+              <div><strong>À ne pas manquer</strong><p>Si vous prenez l’ascenseur jusqu’au 6ème étage du centre commercial One New Change, vous découvrirez une immense terrasse sur le toit qui vous offrira une vue imprenable sur la Cathédrale St. Paul et sur la ville. L’accès est gratuit ! N’hésitez pas à vous y rendre en fin de journée pour admirer le coucher de soleil de ce point de vue.</p></div>
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4022-scaled-1024x686.jpeg" alt="Vue de St. Paul" className="article-img-full" loading="lazy" />
             <div className="article-resto">
@@ -281,7 +281,7 @@ export default function VisiterLondresPage() {
             <p>Rendu célèbre par le film « Coup de foudre à Notting Hill », <strong>ce quartier dans l’ouest</strong> est un incontournable lors d’un séjour à Londres ! Aisé et huppé, il est réputé pour ses rues de maisons victoriennes, plus colorées les unes que les autres.</p>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Pour découvrir <strong>Notting Hill</strong>, nous vous conseillons de sortir des avenues principales, de vous montrer curieux pour arpenter ses rues à la recherche des plus belles <em>mews </em>(= nom anglais donné aux petites rues pavées, souvent étroites, situées dans le centre et l’ouest de Londres) et des petits détails qui rendent ce quartier si beau !</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>Pour découvrir Notting Hill, nous vous conseillons de sortir des avenues principales, de vous montrer curieux pour arpenter ses rues à la recherche des plus belles <em>mews </em>(= nom anglais donné aux petites rues pavées, souvent étroites, situées dans le centre et l’ouest de Londres) et des petits détails qui rendent ce quartier si beau !</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3051-scaled-1024x768.jpeg" alt="Notting Hill Gate" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -328,7 +328,7 @@ export default function VisiterLondresPage() {
             <p>N’hésitez pas à vous rendre au <strong>marché vintage de Brick Lane</strong>, au <strong>marché aux fleurs de Columbia Road</strong>, dans les <strong>rues de Shoreditch</strong> pour son street-art, et au <strong>Old Spitalfields Market</strong>, ces endroits valent le coup d’oeil !</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Si vous aimez ce genre d’ambiance décalée, nous vous conseillons de visiter ces quartiers <strong>le dimanche</strong>.</p></div>
+              <div><strong>Bon à savoir</strong><p>Si vous aimez ce genre d’ambiance décalée, nous vous conseillons de visiter ces quartiers le dimanche.</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3237-1-scaled-1024x768.jpeg" alt="Old Spitalfields" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -692,11 +692,7 @@ export default function VisiterLondresPage() {
                 <p>Pour loger à l’appart’hôtel <a href="https://www.adagio-city.com/fr/hotel-9721-aparthotel-adagio-london-stratford.shtml" target="_blank" rel="noopener noreferrer" className="article-link">Adagio Stratford</a>, il faut compter 110 € la nuit pour un studio récent et très bien équipé au 12ème étage (avec une vue incroyable sur la ville !).</p>
                 <div className="article-avis">
                   <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                  <div><strong>Le conseil des MamZelles</strong><p>Quel que soit le type d’hébergement que vous choisirez, nous vous conseillons de réserver à l’avance, non seulement pour obtenir de meilleurs tarifs, mais surtout pour prendre le temps de bien définir le quartier dans lequel vous souhaitez passer votre séjour.</p></div>
-                </div>
-                <div className="article-tip">
-                  <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                  <div><strong>Bon à savoir</strong><p>Nous vous recommandons grandement de cibler des hébergements à proximité des stations de métro.</p></div>
+                  <div><strong>Le conseil des MamZelles</strong><p>Quel que soit le type d’hébergement que vous choisirez, nous vous conseillons de réserver à l’avance, non seulement pour obtenir de meilleurs tarifs, mais surtout pour prendre le temps de bien définir le quartier dans lequel vous souhaitez passer votre séjour. Nous vous recommandons grandement de cibler des hébergements à proximité des stations de métro.</p></div>
                 </div>
                 <div className="article-gallery-2">
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9297-scaled-1024x768.jpeg" alt="Stratford Street Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -706,7 +702,7 @@ export default function VisiterLondresPage() {
               <div className="article-pratique-block">
                 <h3 className="article-pratique-title">Comment se déplacer dans la capitale ?</h3>
                 <p>Comme vous l’aurez compris tout au long de cet article, il existe donc différents moyens de transports pour se déplacer au centre de Londres et dans sa périphérie.</p>
-                <p>le <strong>métro</strong>, le <strong>train DLR</strong> (pour se rendre dans l’Est), les <strong>tramways du sud de Londres</strong>, les <strong>trains Overground et National Rail</strong> de la ville, le <strong>téléphérique de la Tamise</strong>, le <strong>Uber Boat</strong>, le <strong>bus rouge</strong> (mythique avec son étage !) et le <strong>taxi</strong> (majoritairement noir, il fait partie du décor de la capitale !).</p>
+                <p>Le <strong>métro</strong>, le <strong>train DLR</strong> (pour se rendre dans l’Est), les <strong>tramways du sud de Londres</strong>, les <strong>trains Overground et National Rail</strong> de la ville, le <strong>téléphérique de la Tamise</strong>, le <strong>Uber Boat</strong>, le <strong>bus rouge</strong> (mythique avec son étage !) et le <strong>taxi</strong> (majoritairement noir, il fait partie du décor de la capitale !).</p>
                 <div className="article-gallery-2">
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3371-scaled-1024x768.jpeg" alt="Tube Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3744-scaled-1024x576.jpeg" alt="Téléphérique Londres" loading="lazy" style={{flex: '1.778', minWidth: 0}} />
@@ -730,8 +726,8 @@ export default function VisiterLondresPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1"/><path d="M4 18l-1 -5h18l-2 4"/><path d="M5 13v-6h8l4 6"/><path d="M7 7v-4h-1"/></svg>,
                     content: (
                       <>
-                        <p>C’est la première fois que nous prenions ce moyen de transport à Londres. En effet, l’Uber Boat est très récent puisqu’il a été mis en place en août 2021.</p>
-                        <p>Il s’agit là d’un nouveau moyen pour découvrir la ville d’un autre angle et voguer sur la Tamise.</p>
+                        <p>C’est la première fois que nous prenions ce moyen de transport à Londres. En effet, l’Uber Boat est récent puisqu’il a été mis en place en août 2021.</p>
+                        <p>C’est un moyen agréable et original pour découvrir la ville d’un autre angle et voguer sur la Tamise.</p>
                         <p>Pour prendre le bateau, on trouve plusieurs embarcadères entre <strong>Bankside Pier</strong> et <strong>Greenwich</strong> avec des arrêts aux endroits stratégiques pour visiter la capitale.</p>
                         <div className="article-tip">
                           <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
@@ -751,7 +747,7 @@ export default function VisiterLondresPage() {
                         <p>Nous avons pris le téléphérique de nuit. Le paysage était canon avec toutes les lumières de la ville et de ses buildings ! Cependant, nous pensons que le « voyage » aurait été encore plus sympa de jour.</p>
                         <div className="article-avis">
                           <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                          <div><strong>Le conseil des MamZelles</strong><p><strong>Petite astuce !</strong> Nous vous conseillons de prendre le <strong>Uber Boat</strong> à <strong>Westminster Pier</strong> et de voguer jusqu’à <strong>North Greenwich</strong>. De là, vous pourrez prendre le téléphérique.</p></div>
+                          <div><strong>Le conseil des MamZelles</strong><p>Nous vous conseillons de prendre le Uber Boat à Westminster Pier et de voguer jusqu’à North Greenwich. De là, vous pourrez prendre le téléphérique.</p></div>
                         </div>
                         <p>Autrement, vous pourrez vous y rendre en <strong>train DLR</strong> (arrêt à la station Royal Victoria) ou en métro avec la <strong>Jubilee Line</strong> - ligne grise (arrêt à la station North Greenwich).</p>
                       </>
@@ -786,9 +782,8 @@ export default function VisiterLondresPage() {
                         <p>En effet, il faut savoir que les frais de déplacement à Londres sont coûteux et ont une grosse place dans le budget des vacances !</p>
                         <div className="article-tip">
                           <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                          <div><strong>Bon à savoir</strong><p>L’Oyster Card est utilisable pour se déplacer depuis les <strong>aéroports d’Heathrow et Gatwick</strong> au centre de Londres, notamment sur les lignes Express. Elle permet de bénéficier de bonnes réductions sur le tarif des trajets.</p></div>
+                          <div><strong>Bon à savoir</strong><p>L’Oyster Card est utilisable pour se déplacer depuis les aéroports d’Heathrow et Gatwick au centre de Londres, notamment sur les lignes Express. Elle permet de bénéficier de bonnes réductions sur le tarif des trajets.</p></div>
                         </div>
-                        <p>Bien entendu, elle est aussi utilisable pour payer le métro entre <strong>Heathrow et la gare Victoria</strong> (ligne bleue foncée).</p>
                       </>
                     ),
                   },
