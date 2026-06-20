@@ -825,7 +825,7 @@
 .article-londres .article-pratique-list li {
   position: relative;
   padding-left: 22px;
-  font-size: 14px;
+  font-size: 15px !important;
   line-height: 1.6;
   color: var(--dark);
 }
