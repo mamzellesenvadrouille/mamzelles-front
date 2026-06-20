@@ -1032,7 +1032,7 @@
   gap: 8px;
   color: #fff;
   font-family: "Cormorant Garamond", serif;
-  font-size: 17px;
+  font-size: 17px !important;
   font-style: italic;
 }
 
@@ -1047,7 +1047,7 @@
   background: var(--gold);
   color: var(--dark);
   font-family: "Inter", sans-serif;
-  font-size: 11px;
+  font-size: 11px !important;
   font-weight: 700;
   padding: 4px 11px;
   border-radius: 20px;
@@ -1061,7 +1061,7 @@
 
 .article-londres .article-resto-name {
   font-family: "Cormorant Garamond", serif;
-  font-size: 22px;
+  font-size: 22px !important;
   font-weight: 600;
   color: var(--dark);
   margin: 0 0 4px !important;
@@ -1069,10 +1069,10 @@
 
 .article-londres .article-resto-sub {
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 12px !important;
   font-style: italic;
   color: var(--gold);
-  margin-bottom: 14px;
+  margin-bottom: 14px !important;
 }
 
 .article-londres .article-resto-body p {
@@ -1090,7 +1090,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 12.5px;
+  font-size: 12.5px !important;
   color: var(--gold);
   margin-top: 14px;
 }
@@ -1139,7 +1139,7 @@
 
 .article-londres .article-rendre-label span {
   font-family: "Cormorant Garamond", serif;
-  font-size: 21px;
+  font-size: 21px !important;
   font-weight: 600;
   color: var(--dark);
 }
@@ -1197,7 +1197,7 @@
 }
 
 .article-londres .article-rendre-stop-title {
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: 600;
   color: var(--dark);
   display: block;
