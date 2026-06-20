@@ -11,7 +11,6 @@ const nextConfig: NextConfig = {
       { source: '/road-trip-a-lanzarote/', destination: 'https://blog.mamzellesenvadrouille.com/road-trip-a-lanzarote/', permanent: true },
       { source: '/visiter-londres-en-1-semaine', destination: '/visiter-londres', permanent: true },
       { source: '/visiter-londres-en-1-semaine/', destination: '/visiter-londres/', permanent: true },
-      { source: '/destinations/:path*', destination: 'https://blog.mamzellesenvadrouille.com/destinations/:path*', permanent: true },
       { source: '/formulaire-de-contact', destination: '/formules#formulaire', permanent: true },
       { source: '/formulaire-de-contact/', destination: '/formules#formulaire', permanent: true },
       { source: '/madrid-en-3-jours', destination: '/visiter-madrid-en-3-jours', permanent: true },
