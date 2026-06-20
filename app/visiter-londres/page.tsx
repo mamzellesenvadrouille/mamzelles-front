@@ -688,7 +688,7 @@ export default function VisiterLondresPage() {
                 <p>Pour loger à l’appart’hôtel <a href="https://www.adagio-city.com/fr/hotel-9721-aparthotel-adagio-london-stratford.shtml" target="_blank" rel="noopener noreferrer" className="article-link">Adagio Stratford</a>, il faut compter 110 € la nuit pour un studio récent et très bien équipé au 12ème étage (avec une vue incroyable sur la ville !).</p>
                 <div className="article-avis">
                   <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                  <div><strong>Le conseil des MamZelles</strong><p>Quel que soit le type d’hébergement que vous choisirez, nous vous conseillons de réserver à l’avance, non seulement pour obtenir de meilleurs tarifs, mais surtout pour prendre le temps de bien définir le quartier dans lequel vous souhaitez passer votre séjour. Nous vous recommandons grandement de cibler des hébergements à proximité des stations de métro.</p></div>
+                  <div><strong>Le conseil des MamZelles</strong><p>Quel que soit le type d’hébergement choisi, réservez à l’avance — vous obtiendrez de meilleurs tarifs et aurez le temps de bien choisir votre quartier. Notre conseil : privilégiez un logement proche d’une station de métro, ça change vraiment la vie sur place !</p></div>
                 </div>
                 <div className="article-gallery-2">
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9297-scaled-1024x768.jpeg" alt="Stratford Street Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
