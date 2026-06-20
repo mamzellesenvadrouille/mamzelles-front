@@ -839,18 +839,18 @@
 .article-londres .article-pratique-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin: 0 0 20px;
 }
 
 .article-londres .article-pratique-nav-btn {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 22px;
-  padding: 10px 19px 10px 13px;
+  padding: 9px 16px 9px 12px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
