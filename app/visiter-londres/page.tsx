@@ -768,14 +768,25 @@ export default function VisiterLondresPage() {
             </div>
           </section>
 
-          {/* A LIRE AUSSI (etoile) */}
-          <div className="article-must">
-            <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-            <div><strong>À LIRE AUSSI</strong><p><a href="/visiter-madrid-en-3-jours" className="article-link">⋙ VISITER MADRID EN 3 JOURS : notre guide complet !</a></p></div>
-          </div>
-
           <section className="article-comments-section">
-            <CommentsList comments={[]} />
+            <h2 className="article-comments-title">Commentaires</h2>
+
+            <CommentsList comments={[
+              {
+                id: '4',
+                author: 'Fabien',
+                date: '16 janv. 2023',
+                text: "Salut les filles, \nJuste pour vous dire que je suis un fan de Londres (et que j ai réussi à transmettre le virus à ma petite famille) et que nous nous partons souvent en weekend londonnien from Biarritz, je trouve votre visite guidée de Londres au top!!  Félicitations pour votre site web 👍 Take Care girls & keep travelling 👌🌎 Fabien.",
+                reply: { author: 'MamZelles en vadrouille', date: '27 janv. 2023', text: "Hey coucou !\nOn comprend carrément cette fièvre pour Londres ! On est aussi tellement fan de cette incroyable ville...\nUn grand merci pour votre retour sur notre blog et notre article, ça nous fait tellement plaisir ! 🥰\nOn vous souhaite encore plein de séjours londoniens, mais aussi tout plein d'autres voyages ! \nBelle journée et à bientôt,\nAmélie & Laurie\n😙😙" }
+              },
+              {
+                id: '41',
+                author: 'le dent longue',
+                date: '30 oct. 2025',
+                text: "Salut les filles,\nMerci pour toutes ces infos. Je pense que je vais lâchement... copier le parcours !!\nOn en reparlera bientôt",
+                reply: { author: 'MamZelles en vadrouille', date: '7 nov. 2025', text: "Coucou !\nHaha, C'est fait pour ça en même temps ! 😉👌🏼\nHâte que vous nous racontiez votre petit séjour... Bons préparatifs en attendant ! 🤗" }
+              },
+            ]} />
             <CommentForm
               articleTitle={"Visiter Londres en 1 semaine : l’essentiel par quartier"}
               articleUrl="https://mamzellesenvadrouille.com/visiter-londres"
