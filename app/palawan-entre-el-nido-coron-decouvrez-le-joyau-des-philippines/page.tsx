@@ -9,11 +9,11 @@ import NewsletterForm from '../components/NewsletterForm';
 export const metadata: Metadata = {
   title: "Palawan : Coron et El Nido, le joyau des Philippines",
   description: "Découvrez Palawan, de ses lagons turquoise à El Nido aux récifs spectaculaires de Coron. Préparez votre voyage de rêve aux Philippines !",
-  alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines' },
+  alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines' },
   openGraph: {
     title: "Palawan : Coron et El Nido, le joyau des Philippines",
     description: 'De ses lagons turquoise à El Nido aux récifs spectaculaires de Coron, plongez dans le joyau des Philippines.',
-    url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
+    url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/El-Nido-Coron.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
@@ -47,7 +47,7 @@ export default function PalawanElNidoCoronPage() {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
+      '@id': 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines',
     },
   };
 
@@ -132,10 +132,10 @@ export default function PalawanElNidoCoronPage() {
 
           {/* INTRO */}
           <section className="article-section">
-            <p className="article-intro">Située à l’Ouest des philippines, l’île de Palawan est souvent considérée comme l’une des plus belles destinations touristiques du pays mais également l’<strong>une des plus belles îles au monde.</strong></p>
+            <p className="article-intro">Située à l’Ouest des Philippines, l’île de Palawan est souvent considérée comme l’une des plus belles destinations touristiques du pays mais également l’<strong>une des plus belles îles au monde.</strong></p>
             <p>En effet, de par ses paysages à couper le souffle, ses plages de sable blanc, et ses eaux cristallines, cette île paradisiaque séduit les voyageurs du monde entier.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0239-4-1024x768.jpg" alt="Corong Coron Sip Sunset Lounge &amp; Bar El Nido Palawan" className="article-img-full" loading="lazy" />
-            <p>L’île de Palawan s’étend sur environ 450 kilomètres du Nord au Sud, de Coron a Balabac. Coron se situe à l’extrémité Nord de l’archipel, tandis que Balabac se trouve à l’extrémité Sud, non loin de la frontière maritime avec la Malaisie. Cette longueur impressionnante fait de Palawan l'<strong>une des plus grandes îles des Philippines</strong> (la 5ème pour être précises), ce qui offre une grande diversité de paysages.</p>
+            <p>L’île de Palawan s’étend sur environ 450 kilomètres du Nord au Sud, de Coron à Balabac. Coron se situe à l’extrémité Nord de l’archipel, tandis que Balabac se trouve à l’extrémité Sud, non loin de la frontière maritime avec la Malaisie. Cette longueur impressionnante fait de Palawan l'<strong>une des plus grandes îles des Philippines</strong> (la 5ème pour être précises), ce qui offre une grande diversité de paysages.</p>
             <p>Entre ses lagons turquoises, ses récifs coralliens spectaculaires et sa faune unique, <strong>Palawan offre une expérience incroyable que vous soyez amateurs de nature ou d’aventure. </strong>Si vous êtes à la recherche de moments de détente sur des plages isolées ou d’explorations marines dans des spots de plongée renommés, <strong>Palawan est une destination incontournable pour tous les amoureux de l’évasion.</strong></p>
           </section>
 
@@ -143,9 +143,9 @@ export default function PalawanElNidoCoronPage() {
             <div className="article-day-header">
               <h2>📍 El Nido &amp; l'archipel de Bacuit</h2>
             </div>
-            <p>Cette ville tient son nom de sa localisation. Située tout au Nord de l’île de Palawan et encerclée par la jungle, son accès était compliqué jusqu’à l’ouverture de l’aéroport d’El Nido, appelé aussi l’<strong>aéroport de Lio.</strong> À ce jour, <strong>il faut 1h15 pour relier El nido à Manille. </strong></p>
+            <p>Cette ville tient son nom de sa localisation. Située tout au Nord de l’île de Palawan et encerclée par la jungle, son accès était compliqué jusqu’à l’ouverture de l’aéroport d’El Nido, appelé aussi l’<strong>aéroport de Lio.</strong> À ce jour, <strong>il faut 1h15 pour relier El Nido à Manille. </strong></p>
             <p><strong>Puerto Princesa, la capitale de Palawan,</strong> se trouve à 230 km plus au Sud. Vu l’état des routes et des limitations de vitesse, <strong>il faut tout de même compter 5 à 6 h de voiture / van pour relier ces 2 villes.</strong> Vous pouvez rajouter 2 h si vous faites le trajet en bus.</p>
-            <p>Si El nido est devenue l’une des destinations la plus populaire et touristique des Philippines, c’est avant tout grâce à la présence de l’<strong>archipel de Bacuit, considéré comme l’une des plus belles baies au monde. </strong></p>
+            <p>Si El Nido est devenue l’une des destinations la plus populaire et touristique des Philippines, c’est avant tout grâce à la présence de l’<strong>archipel de Bacuit, considéré comme l’une des plus belles baies au monde. </strong></p>
             <p>Situés juste en face d’El Nido, ce sont <strong>45 îles et îlots qui constituent la réserve naturelle de l’archipel de Bacuit. </strong>Des îles bordées de sable blanc et à la végétation luxuriante, des falaises de calcaire aux formes surréalistes qui semblent flotter sur l’eau, une mer transparente aux couleurs tantôt émeraude tantôt turquoise... Rien que ça ! Ça fait rêver, non ?</p>
             <h4>⧐ Se rendre à Palawan en avion</h4>
             <p>Pour vous rendre à El Nido, Palawan dispose de quatre aéroports principaux :</p>
@@ -312,7 +312,7 @@ export default function PalawanElNidoCoronPage() {
               <h2>📍 Coron &amp; les îles Calamian</h2>
             </div>
             <p>Coron fait partie de la province de Palawan. <strong>Elle est la plus grande des îles Calamian.</strong></p>
-            <p>Avant tout, pour éviter toute confusion, <strong>Coron est en fait le nom d’une ville de l’île de Busuanga. Coron Island est une petite ile située juste en face. </strong>C’est l’une des îles que l’on visite lors des excursions. Il n’y a pas d’habitation, pas de restaurant. Les seuls habitants sont quelques locaux de tribus ancestrales qui dorment sur place pour préserver leur coin de paradis.</p>
+            <p>Avant tout, pour éviter toute confusion, <strong>Coron est en fait le nom d’une ville de l’île de Busuanga. Coron Island est une petite île située juste en face. </strong>C’est l’une des îles que l’on visite lors des excursions. Il n’y a pas d’habitation, pas de restaurant. Les seuls habitants sont quelques locaux de tribus ancestrales qui dorment sur place pour préserver leur coin de paradis.</p>
             <p>Donc quand on dit :  « Hey, je vais à Coron ! », alors on fait référence à la ville de Coron située sur l’île de Busuanga. Mais en réalité, nous venons tous à Coron pour découvrir les îles aux alentours, et il y en a 98 en tout !</p>
             <p><strong>Les îles autour de Coron sont l’une des destinations les plus prisées des Philippines. </strong>L’endroit est réputé pour la plongée et le snorkeling dans le monde entier, notamment pour les épaves de la 2ème guerre mondiale qui y sont immergées. Mais c’est aussi ses lagons aux couleurs incroyables, ses lacs et ses îles paradisiaques qui attirent le monde.</p>
             <p><strong>La quasi totalité des hébergements se trouvent à Coron City sur Busuanga Island.</strong> C’est finalement ce qu'il y a de plus pratique, car les départs pour les excursions se font du port de Coron.</p>
@@ -337,7 +337,7 @@ export default function PalawanElNidoCoronPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_0860-768x1024.jpg" alt="Coron City Busuanga Palawan" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <p>Nous arrivons à l’<strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJOeqtRyocujMRJCirJGdi51g" target="_blank" className="article-link article-resto-link-desktop">Acacia Garden Inn</a><a href="https://maps.app.goo.gl/16mQ61vZVP7ZDpaC9" target="_blank" className="article-link article-resto-link-mobile">Acacia Garden Inn</a></strong>. C’est ici que nous allons rester 3 nuits. Comme dans chaque hôtel, vous avez la possibilité de booker directement avec eux les différents Island hoppings à des prix très corrects. Le transport de l’hôtel au port est compris dans le tarif.</p>
-            <p>Sac déposés, excursions réservées, on part à la recherche d’un endroit sympa où manger… On tombe sur le restaurant d'un hôtel, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJEw1dNMEdujMRiwZeRj2qPFw" target="_blank" className="article-link article-resto-link-desktop">Full Lotus</a><a href="https://maps.app.goo.gl/fbkCADFgbrKEWfuDA" target="_blank" className="article-link article-resto-link-mobile">Full Lotus</a></strong>, qui nous fait de l'oeil. Pour notre 1er dîner à Coron City, on a donc trouvé l’endroit idéal, et à seulement 5 minutes à pied de notre hébergement !</p>
+            <p>Sacs déposés, excursions réservées, on part à la recherche d’un endroit sympa où manger… On tombe sur le restaurant d'un hôtel, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJEw1dNMEdujMRiwZeRj2qPFw" target="_blank" className="article-link article-resto-link-desktop">Full Lotus</a><a href="https://maps.app.goo.gl/fbkCADFgbrKEWfuDA" target="_blank" className="article-link article-resto-link-mobile">Full Lotus</a></strong>, qui nous fait de l'oeil. Pour notre 1er dîner à Coron City, on a donc trouvé l’endroit idéal, et à seulement 5 minutes à pied de notre hébergement !</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 2</span>
               <h3>Island hopping sur les îles Calamian</h3>
@@ -348,7 +348,7 @@ export default function PalawanElNidoCoronPage() {
             <h4>⧐ Beach Escapade Tour</h4>
             <p>Pour cette 1ère journée d’excursion, nous avons choisi le <strong>Beach Escapade Tour.</strong> De tous les tours, c’est le seul qui propose les plages qu’on avait repérées. Clairement, <strong>3 spots de rêve ! </strong>Partir découvrir des plages paradisiaques en mode farniente, voilà le planning de la journée… Trois plages dans la journée cela paraît peu, mais en réalité,<strong> il y a pas mal de route (de miles) pour se rendre d'une île à l'autre. </strong>Nous avons payé <strong>1500 Php (25 €)</strong> par personne, repas compris.</p>
             <p>Petit déjeuner avalé, nous attendons <strong>le van qui passe nous récupérer entre 8 h et 8 h 30.</strong></p>
-            <p>Direction le port. Le van s’arrête en route pour récupérer d’autres personnes. Arrivés sur place, nous sommes répartis sur les bateaux. <strong>Nous sommes une dizaine sur le nôtre. </strong>Des philippins vendent des bouteilles d’eau, des masques, des tubas, de la crème solaire…</p>
+            <p>Direction le port. Le van s’arrête en route pour récupérer d’autres personnes. Arrivés sur place, nous sommes répartis sur les bateaux. <strong>Nous sommes une dizaine sur le nôtre. </strong>Des Philippins vendent des bouteilles d’eau, des masques, des tubas, de la crème solaire…</p>
             <p>D'ailleurs, petite anecdote : nous avons croisé un couple qui a acheté une crème solaire à l'une de ces personnes. Ils se sont tartinés toute la journée… et ont fini brûlé comme jamais !</p>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
@@ -383,7 +383,7 @@ export default function PalawanElNidoCoronPage() {
             <p>Si on doit vraiment faire les difficiles, la petite ombre au tableau, ce sont les quelques nuages qui couvrent partiellement le ciel. Les couleurs sont déjà magnifiques, mais sous un ciel immaculé, ça doit être encore plus incroyable ! Il y a également un peu trop de vent… On laisse tomber l’idée de faire voler le drone.</p>
             <h4>⧐ Malcapuya Island</h4>
             <p>Pour le 3ème et dernier spot de la journée, direction Malcapuya Island. Une fois débarquées, <strong>on doit traverser l’île pour rejoindre la plage. </strong>En réalité, il y a 3 minutes seulement de marche.</p>
-            <p><strong>C’est la plus petite île de la journée, mais c’est celle où l’on croise le plus de monde ! </strong>En effet, cette très jolie plage attire autant les touristes que les familles philippines.</p>
+            <p><strong>C’est la plus petite île de la journée, mais c’est celle où l’on croise le plus de monde ! </strong>En effet, cette très jolie plage attire autant les touristes que les familles Philippines.</p>
             <p>Entre baignades et snorkeling dans une mer bleue transparente, dégustation de cocos et farniente dans le sable blanc poudreux, il faut dire qu'il y a tout pour y passer la journée. <strong>On a même nagé avec des tortues !</strong></p>
             <p>Après 1 h passée sur place, il est temps de quitter ce petit paradis. Dans ce genre d’endroit, le temps passe malheureusement beaucoup trop vite !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9813-1-1024x768.jpg" alt="Malcapuya Beach Island Hopping Coron Palawan" className="article-img-full" loading="lazy" />
@@ -464,7 +464,7 @@ export default function PalawanElNidoCoronPage() {
             <p>Vous aurez la possibilité de <strong>rejoindre le prochain spot à la nage,</strong> le Skeleton Wreck. Il s’agit d’<strong>une épave d’un bateau japonais long de 25 mètres.</strong> Ce dernier a été touché par une frappe aérienne américaine lors de la seconde guerre mondiale. Ce navire <strong>repose à 5 mètres de profondeur,</strong> non loin d’une petite plage, ce qui le rend facilement accessible.</p>
             <p>Cependant, ne vous attendez pas à trouver un bateau de 25 mètres posé au fond de l’eau... <strong>En réalité, il ne reste plus grand chose,</strong> et l’eau ici est assez trouble. Pour les vrais fans de plongée et d’épaves, vous risquez d’être un peu déçus car vous ne verrez pas grand chose. Le Skeleton, soit le squelette, porte bien son nom en tout cas !</p>
             <h4>⧐ Cyc Beach</h4>
-            <p>Nous terminons cet Ultimate Highlights Tour par la Cyc Beach. Une belle plage (encore une oui !) <strong>sur une petite île près de Coron Island.</strong> Cette île est gratuite, du coup <strong>elle attire beaucoup de familles philippines.</strong> De plus, l’eau est peu profonde, c’est parfait pour les enfants. Donc vous l’aurez compris, nous sommes loin d’être seules.</p>
+            <p>Nous terminons cet Ultimate Highlights Tour par la Cyc Beach. Une belle plage (encore une oui !) <strong>sur une petite île près de Coron Island.</strong> Cette île est gratuite, du coup <strong>elle attire beaucoup de familles Philippines.</strong> De plus, l’eau est peu profonde, c’est parfait pour les enfants. Donc vous l’aurez compris, nous sommes loin d’être seules.</p>
             <p>Ici aussi c’est un <strong>bon spot pour nager au milieu des poissons, </strong>alors certains se laissent tenter par du snorkeling pour terminer cette journée. Pour nous, assez de nage pour aujourd’hui, on profite de la plage et on s’aventure dans la mangrove.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3152-1024x768.jpg" alt="Cyc Beach Mangrove Coron" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
@@ -513,10 +513,10 @@ export default function PalawanElNidoCoronPage() {
               <h2>Itinéraire de 3 semaines aux Philippines</h2>
             </div>
             <p>Si vous souhaitez découvrir notre <strong>itinéraire complet de 3 semaines</strong> à travers les Philippines et suivre toutes nos aventures, <strong>n&apos;hésitez pas à lire notre article…</strong> On vous partage tout !</p>
-            <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Les Philippines Blog" className="article-img-full" loading="lazy" /></a>
+            <a href="/itineraire-Philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Les Philippines Blog" className="article-img-full" loading="lazy" /></a>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À lire aussi</strong><p><a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-link">⋙ Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient !</a></p></div>
+              <div><strong>À lire aussi</strong><p><a href="/itineraire-Philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-link">⋙ Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient !</a></p></div>
             </div>
 
 
@@ -527,7 +527,7 @@ export default function PalawanElNidoCoronPage() {
             <CommentsList comments={[]} />
             <CommentForm
               articleTitle={"Palawan : Entre El Nido & Coron, découvrez le joyau des Philippines !"}
-              articleUrl="https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines"
+              articleUrl="https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines"
             />
           </section>
 
@@ -537,7 +537,7 @@ export default function PalawanElNidoCoronPage() {
           <div className="article-related">
             <h3 className="article-related-title">À lire aussi</h3>
             <div className="article-related-grid">
-              <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-related-card">
+              <a href="/itineraire-Philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-related-card">
                 <div className="article-related-img-wrap">
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Itinéraire Philippines 3 semaines" className="article-related-img" />
                 </div>
@@ -561,7 +561,7 @@ export default function PalawanElNidoCoronPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Visiter Madrid en 3 jours : notre guide complet !</p>
+                  <p className="article-related-title-card">Visiter Madrid en 3 jours : itinéraire et bons plans</p>
                 </div>
               </a>
             </div>
