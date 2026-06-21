@@ -1058,7 +1058,7 @@ export default function PhilippinesPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Palawan : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</p>
+                  <p className="article-related-title-card">Palawan : Coron et El Nido, le joyau des Philippines</p>
                 </div>
               </a>
               <a href="/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus" className="article-related-card">

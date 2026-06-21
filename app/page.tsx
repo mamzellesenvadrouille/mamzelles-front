@@ -147,7 +147,7 @@ export default function Home() {
               <img src="/Madrid.webp" alt="Madrid, vue sur la Gran Vía" className="home-blog-img madrid" loading="lazy" />
             </div>
             <div className="home-blog-body">
-              <h3>Madrid en 3 jours : que voir ? Lieux incontournables & bons plans</h3>
+              <h3>Visiter Madrid en 3 jours : itinéraire et bons plans</h3>
               <span className="home-blog-read">Lire l&apos;article →</span>
             </div>
           </a>

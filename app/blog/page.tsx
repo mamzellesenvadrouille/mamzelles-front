@@ -24,21 +24,21 @@ export const metadata: Metadata = {
 
 const articles = [
   {
-    titre: 'Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus',
+    titre: 'Palawan : de Puerto Princesa à Port Barton',
     url: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
     image: null,
     localImage: '/Puerto-Princesa-Port-Barton.webp',
     categorie: 'Philippines',
   },
   {
-    titre: 'Palawan : Entre El Nido & Coron, découvrez le joyau des Philippines !',
+    titre: 'Palawan : Coron et El Nido, le joyau des Philippines',
     url: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
     image: null,
     localImage: '/El-Nido-Coron.webp',
     categorie: 'Philippines',
   },
   {
-    titre: "Itinéraire Philippines : 3 semaines pour découvrir la perle de l'Orient !",
+    titre: "Voyage aux Philippines : itinéraire de 3 semaines",
     url: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
     image: null,
     localImage: '/Philippines.webp',
@@ -66,14 +66,14 @@ const articles = [
     categorie: 'Espagne',
   },
   {
-    titre: '3 jours à Madrid : découvrez les lieux incontournables de la capitale espagnole !',
+    titre: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
     url: '/visiter-madrid-en-3-jours',
     image: null,
     localImage: '/Madrid.webp',
     categorie: 'Espagne',
   },
   {
-    titre: "Visiter Londres en 1 semaine : l'essentiel par quartier, infos pratiques & bons plans",
+    titre: "Visiter Londres : que faire en 7 jours par quartier",
     url: '/visiter-londres',
     image: null,
     localImage: '/Londres.webp',

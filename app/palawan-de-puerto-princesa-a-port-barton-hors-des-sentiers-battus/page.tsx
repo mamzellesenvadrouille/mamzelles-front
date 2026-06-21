@@ -1210,7 +1210,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Palawan : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</p>
+                  <p className="article-related-title-card">Palawan : Coron et El Nido, le joyau des Philippines</p>
                 </div>
               </a>
               <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-related-card">
@@ -1228,7 +1228,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Visiter Madrid en 3 jours : notre guide complet !</p>
+                  <p className="article-related-title-card">Visiter Madrid en 3 jours : itinéraire et bons plans</p>
                 </div>
               </a>
             </div>
