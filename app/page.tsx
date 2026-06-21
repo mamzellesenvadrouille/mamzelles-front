@@ -3,11 +3,11 @@ import { Clock, Heart, Map, User } from 'lucide-react';
 import Navbar from './components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'MamZelles en vadrouille | Travel Planners – Voyage sur Mesure & Itinéraire Personnalisé',
-  description: "Votre voyage rêvé, pensé et organisé sur mesure par Amélie & Laurie, Travel Planners passionnées. Itinéraire personnalisé, carnet digital, devis gratuit sous 48h. Partez l'esprit libre.",
+  title: 'MamZelles en vadrouille | Voyage sur mesure',
+  description: "Votre voyage rêvé, pensé et organisé sur mesure par Amélie et Laurie. Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com' },
   openGraph: {
-    title: 'MamZelles en vadrouille | Travel Planners – Voyage sur Mesure',
+    title: 'MamZelles en vadrouille | Voyage sur mesure',
     description: "Votre voyage rêvé, pensé et organisé sur mesure. Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.",
     url: 'https://mamzellesenvadrouille.com',
     siteName: 'MamZelles en vadrouille',
@@ -17,15 +17,37 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MamZelles en vadrouille | Travel Planners – Voyage sur Mesure',
+    title: 'MamZelles en vadrouille | Voyage sur mesure',
     description: 'Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.',
     images: ['https://mamzellesenvadrouille.com/og-home.png'],
   },
 };
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TravelAgency',
+    name: 'MamZelles en vadrouille',
+    description: "Votre voyage rêvé, pensé et organisé sur mesure par Amélie et Laurie. Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.",
+    url: 'https://mamzellesenvadrouille.com',
+    image: 'https://mamzellesenvadrouille.com/og-home.png',
+    areaServed: 'FR',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Antibes',
+      addressCountry: 'FR',
+    },
+    sameAs: [
+      'https://instagram.com/mamzellesenvadrouille',
+    ],
+  };
+
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* HERO */}
       <section className="hero hero-home">
@@ -120,7 +142,7 @@ export default function Home() {
           <a href="/blog" className="home-link">Voir tous les articles →</a>
         </div>
         <div className="home-blog-grid">
-          <a href="https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
+          <a href="/visiter-madrid-en-3-jours" className="home-blog-card">
             <div className="home-blog-img-wrap">
               <img src="/Madrid.webp" alt="Madrid, vue sur la Gran Vía" className="home-blog-img madrid" loading="lazy" />
             </div>
@@ -129,7 +151,7 @@ export default function Home() {
               <span className="home-blog-read">Lire l&apos;article →</span>
             </div>
           </a>
-          <a href="https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
+          <a href="https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
             <div className="home-blog-img-wrap">
               <img src="/Agafay.webp" alt="Désert d'Agafay au coucher du soleil près de Marrakech" className="home-blog-img" loading="lazy" />
             </div>
@@ -138,7 +160,7 @@ export default function Home() {
               <span className="home-blog-read">Lire l&apos;article →</span>
             </div>
           </a>
-          <a href="https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/" target="_blank" rel="noopener noreferrer" className="home-blog-card">
+          <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="home-blog-card">
             <div className="home-blog-img-wrap">
               <img src="/Philippines.webp" alt="Paysage tropical aux Philippines, mer turquoise" className="home-blog-img" loading="lazy" />
             </div>

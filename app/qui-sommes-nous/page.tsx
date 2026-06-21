@@ -3,11 +3,11 @@ import InstagramFeed from './InstagramFeed';
 import Navbar from '../components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Amélie & Laurie, Travel Planners passionnées | MamZelles en vadrouille',
-  description: "Découvrez l'histoire d'Amélie & Laurie, deux travel planners passionnées installées à Antibes. Vanlife, voyages aux quatre coins du monde et voyages sur mesure créés avec le cœur.",
+  title: 'Amélie & Laurie | MamZelles en vadrouille',
+  description: "Découvrez l'histoire d'Amélie et Laurie, deux passionnées de voyage installées à Antibes. Vanlife, aventures et voyages sur mesure créés avec le cœur.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/qui-sommes-nous' },
   openGraph: {
-    title: 'Amélie & Laurie, Travel Planners passionnées | MamZelles en vadrouille',
+    title: 'Amélie & Laurie | MamZelles en vadrouille',
     description: "L'histoire de deux travel planners passionnées. Vanlife, voyages et itinéraires sur mesure créés avec le cœur.",
     url: 'https://mamzellesenvadrouille.com/qui-sommes-nous',
     siteName: 'MamZelles en vadrouille',
@@ -24,8 +24,26 @@ export const metadata: Metadata = {
 };
 
 export default function QuiSommesNous() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'Amélie & Laurie | MamZelles en vadrouille',
+    description: "Découvrez l'histoire d'Amélie et Laurie, deux passionnées de voyage installées à Antibes. Vanlife, aventures et voyages sur mesure créés avec le cœur.",
+    url: 'https://mamzellesenvadrouille.com/qui-sommes-nous',
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      url: 'https://mamzellesenvadrouille.com',
+      foundingLocation: 'Antibes, France',
+    },
+  };
+
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* HERO */}
       <section className="hero qsn-hero">

@@ -4,12 +4,12 @@ import Navbar from '../components/Navbar';
 import ContactForm from '../ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Travel Planner Voyage sur Mesure | Itinéraire Personnalisé | MamZelles en vadrouille',
-  description: "Amélie & Laurie, Travel Planners passionnées, créent votre itinéraire de voyage 100% sur mesure selon vos envies, votre rythme et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
+  title: 'Nos formules | Voyage sur mesure - MamZelles en vadrouille',
+  description: "Itinéraire de voyage 100% sur mesure selon vos envies, votre rythme et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/formules' },
   openGraph: {
-    title: 'Travel Planner Voyage sur Mesure | MamZelles en vadrouille',
-    description: "Itinéraire de voyage 100% personnalisé selon vos envies et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
+    title: 'Nos formules | Voyage sur mesure - MamZelles en vadrouille',
+    description: "Itinéraire de voyage 100% sur mesure selon vos envies et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
     url: 'https://mamzellesenvadrouille.com/formules',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/og-home.png', width: 1200, height: 630 }],
@@ -18,15 +18,63 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Travel Planner Voyage sur Mesure | MamZelles en vadrouille',
+    title: 'Nos formules | Voyage sur mesure - MamZelles en vadrouille',
     description: 'Itinéraire personnalisé, devis gratuit sous 48h, carnet digital inclus.',
     images: ['https://mamzellesenvadrouille.com/og-home.png'],
   },
 };
 
 export default function Formules() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Voyage sur mesure - MamZelles en vadrouille',
+    description: "Itinéraire de voyage 100% sur mesure selon vos envies, votre rythme et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
+    provider: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      url: 'https://mamzellesenvadrouille.com',
+    },
+    areaServed: 'FR',
+    url: 'https://mamzellesenvadrouille.com/formules',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Nos formules',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          name: "L'Escale",
+          priceCurrency: 'EUR',
+          price: '179',
+        },
+        {
+          '@type': 'Offer',
+          name: 'La Vadrouille',
+          priceCurrency: 'EUR',
+          price: '329',
+        },
+        {
+          '@type': 'Offer',
+          name: 'La Grande Vadrouille',
+          priceCurrency: 'EUR',
+          price: '499',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Sur-mesure',
+          priceCurrency: 'EUR',
+          price: '549',
+        },
+      ],
+    },
+  };
+
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
     <style>{`
       @media (max-width: 768px) {
         .form-right-h2 {
@@ -222,7 +270,7 @@ export default function Formules() {
           <h2>Réservez un appel<br />découverte <em>gratuit</em></h2>
           <div className="call-rule" />
           <p className="call-desc">20 minutes pour échanger sur vos envies et commencer à imaginer votre voyage.</p>
-          <a href="https://calendly.com/contact-mamzellesenvadrouille/appel-decouverte-mamzelles-en-vadrouille" className="btn-dark-full">
+          <a href="https://calendly.com/contact-mamzellesenvadrouille/appel-decouverte-mamzelles-en-vadrouille" target="_blank" rel="noopener noreferrer" className="btn-dark-full">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6z"/></svg>
             Réserver mon appel découverte
           </a>

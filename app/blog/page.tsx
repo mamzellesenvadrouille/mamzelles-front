@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Blog Voyage | Itinéraires, Bons Plans & Inspirations | MamZelles en vadrouille',
-  description: "Itinéraires détaillés, bons plans et coups de cœur voyage par deux Travel Planners passionnées. Philippines, Maroc, Espagne, Angleterre… Trouvez votre prochaine destination !",
+  title: 'Blog Voyage | Itinéraires et Bons Plans',
+  description: "Itinéraires détaillés, bons plans et coups de cœur voyage. Philippines, Maroc, Espagne, Angleterre… Trouvez votre prochaine destination !",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/blog' },
   openGraph: {
-    title: 'Blog Voyage | Itinéraires & Inspirations | MamZelles en vadrouille',
+    title: 'Blog Voyage | Itinéraires et Bons Plans',
     description: "Itinéraires détaillés, bons plans et coups de cœur voyage. Philippines, Maroc, Espagne, Angleterre et bien plus.",
     url: 'https://mamzellesenvadrouille.com/blog',
     siteName: 'MamZelles en vadrouille',
@@ -25,56 +25,56 @@ export const metadata: Metadata = {
 const articles = [
   {
     titre: 'Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus',
-    url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus/',
+    url: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
     image: null,
     localImage: '/Puerto-Princesa-Port-Barton.webp',
     categorie: 'Philippines',
   },
   {
     titre: 'Palawan : Entre El Nido & Coron, découvrez le joyau des Philippines !',
-    url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines/',
+    url: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
     image: null,
     localImage: '/El-Nido-Coron.webp',
     categorie: 'Philippines',
   },
   {
     titre: "Itinéraire Philippines : 3 semaines pour découvrir la perle de l'Orient !",
-    url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient/',
+    url: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
     image: null,
     localImage: '/Philippines.webp',
     categorie: 'Philippines',
   },
   {
     titre: "Dormir dans le désert d'Agafay, une expérience inoubliable !",
-    url: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/',
+    url: 'https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/',
     image: null,
     localImage: '/Agafay.webp',
     categorie: 'Maroc',
   },
   {
     titre: 'Marrakech, tous les secrets pour découvrir la ville rouge & son effervescence !',
-    url: 'https://mamzellesenvadrouille.com/visiter-marrakech/',
+    url: 'https://blog.mamzellesenvadrouille.com/visiter-marrakech/',
     image: null,
     localImage: '/Marrakech.webp',
     categorie: 'Maroc',
   },
   {
     titre: "Une semaine à Lanzarote, Road trip sur l'île aux 300 volcans !",
-    url: 'https://mamzellesenvadrouille.com/road-trip-a-lanzarote/',
+    url: 'https://blog.mamzellesenvadrouille.com/road-trip-a-lanzarote/',
     image: null,
     localImage: '/Lanzarote.webp',
     categorie: 'Espagne',
   },
   {
     titre: '3 jours à Madrid : découvrez les lieux incontournables de la capitale espagnole !',
-    url: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours/',
+    url: '/visiter-madrid-en-3-jours',
     image: null,
     localImage: '/Madrid.webp',
     categorie: 'Espagne',
   },
   {
     titre: "Visiter Londres en 1 semaine : l'essentiel par quartier, infos pratiques & bons plans",
-    url: 'https://mamzellesenvadrouille.com/visiter-londres-en-1-semaine/',
+    url: '/visiter-londres',
     image: null,
     localImage: '/Londres.webp',
     categorie: 'Europe',
@@ -124,8 +124,25 @@ export default async function BlogPage() {
     'visiter-londres-en-1-semaine',
   ];
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Blog Voyage | Itinéraires et Bons Plans',
+    description: "Itinéraires détaillés, bons plans et coups de cœur voyage. Philippines, Maroc, Espagne, Angleterre… Trouvez votre prochaine destination !",
+    url: 'https://mamzellesenvadrouille.com/blog',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'MamZelles en vadrouille',
+      url: 'https://mamzellesenvadrouille.com',
+    },
+  };
+
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* NAV */}
       <section className="hero hero-blog">
@@ -149,12 +166,12 @@ export default async function BlogPage() {
           {articles.map((article, i) => {
             const slug = slugs[i];
             const imgSrc = article.localImage || wpImages[slug] || '/home-hero.webp';
+            const isExternal = article.url.startsWith('http');
             return (
               <a
                 key={i}
                 href={article.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="blog-card"
               >
                 <div className="blog-card-img-wrap">
