@@ -964,7 +964,7 @@ export default function PhilippinesPage() {
             <ul className="pratique-list">
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
-                <p><strong>En arrivant à l&apos;aéroport de Manille, nous avons acheté une puce Globe.</strong> Pour 80 Go de connexion internet sur 30 jours, nous avons payé <strong>1500 Php (24 €)</strong>. Les appels ne sont pas inclus. Sinon, vous trouverez du Wifi un peu partout mais <strong>le réseau n&apos;est vraiment pas top aux Philippines.</strong></p>
+                <p><strong>En arrivant à l&apos;aéroport de Manille, nous avons acheté une puce Globe.</strong> Pour 80 Go de connexion internet sur 30 jours, comptez <strong>1750 Php (29,80 €)</strong>. Les appels ne sont pas inclus. Sinon, vous trouverez du Wifi un peu partout mais <strong>le réseau n&apos;est vraiment pas top aux Philippines.</strong></p>
               </li>
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
