@@ -36,7 +36,7 @@ export default function VisiterLondresPage() {
         <div className="hero-content">
           <h1>Londres<br /><em>L’essentiel en une semaine</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Sept jours, quartier par quartier, pour tomber sous le charme<br className="desktop-only-br" /> de la capitale britannique.</p>
+          <p className="hero-desc">Sept jours, quartier par quartier, pour tomber<br className="desktop-only-br" /> sous le charme de la capitale britannique.</p>
         </div>
       </section>
 
