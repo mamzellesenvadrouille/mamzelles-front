@@ -165,7 +165,7 @@ export default function Home() {
               <img src="/Philippines.webp" alt="Paysage tropical aux Philippines, mer turquoise" className="home-blog-img" loading="lazy" />
             </div>
             <div className="home-blog-body">
-              <h3>Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient</h3>
+              <h3>Voyage aux Philippines : itinéraire de 3 semaines</h3>
               <span className="home-blog-read">Lire l&apos;article →</span>
             </div>
           </a>

@@ -1219,7 +1219,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient !</p>
+                  <p className="article-related-title-card">Voyage aux Philippines : itinéraire de 3 semaines</p>
                 </div>
               </a>
               <a href="/visiter-madrid-en-3-jours" className="article-related-card">

@@ -543,7 +543,7 @@ export default function PalawanElNidoCoronPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient !</p>
+                  <p className="article-related-title-card">Voyage aux Philippines : itinéraire de 3 semaines</p>
                 </div>
               </a>
               <a href="/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus" className="article-related-card">
@@ -552,7 +552,7 @@ export default function PalawanElNidoCoronPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus</p>
+                  <p className="article-related-title-card">Palawan : de Puerto Princesa à Port Barton</p>
                 </div>
               </a>
               <a href="/visiter-madrid-en-3-jours" className="article-related-card">
