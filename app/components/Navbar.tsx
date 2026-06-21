@@ -18,7 +18,7 @@ const destinations = [
   {
     pays: 'Angleterre',
     liens: [
-      { label: 'Londres', href: 'https://blog.mamzellesenvadrouille.com/visiter-londres-en-1-semaine/' },
+      { label: 'Londres', href: '/visiter-londres' },
     ]
   },
   {

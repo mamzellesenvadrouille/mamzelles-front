@@ -8,12 +8,12 @@ import NewsletterForm from '../components/NewsletterForm';
 import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
-  title: "Visiter Londres en 1 semaine : l’essentiel par quartier, infos pratiques & bons plans | MamZelles en vadrouille",
-  description: "Notre itinéraire de 7 jours à Londres quartier par quartier : Westminster, la City, Notting Hill, Camden, Brighton… plus toutes les infos pratiques (formalités, transports, Oyster Card, où se loger).",
+  title: "Visiter Londres : que faire en 7 jours par quartier",
+  description: "Notre itinéraire complet pour visiter Londres en 7 jours, quartier par quartier : que faire, où manger et nos meilleurs bons plans pratiques.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-londres' },
   openGraph: {
-    title: "Visiter Londres en 1 semaine : l’essentiel par quartier",
-    description: "Notre itinéraire de 7 jours à Londres, quartier par quartier, avec toutes nos infos pratiques et bons plans.",
+    title: "Visiter Londres : que faire en 7 jours par quartier",
+    description: "Notre itinéraire complet pour visiter Londres en 7 jours, quartier par quartier, avec tous nos bons plans pratiques.",
     url: 'https://mamzellesenvadrouille.com/visiter-londres',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/Londres.webp', width: 1920, height: 1080 }],
@@ -24,8 +24,39 @@ export const metadata: Metadata = {
 };
 
 export default function VisiterLondresPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: 'Visiter Londres : que faire en 7 jours par quartier',
+    description: "Notre itinéraire complet pour visiter Londres en 7 jours, quartier par quartier : que faire, où manger et nos meilleurs bons plans pratiques.",
+    image: 'https://mamzellesenvadrouille.com/Londres.webp',
+    datePublished: '2021-10-19',
+    dateModified: '2026-06-21',
+    author: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      url: 'https://mamzellesenvadrouille.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://mamzellesenvadrouille.com/icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://mamzellesenvadrouille.com/visiter-londres',
+    },
+  };
+
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
       {/* HERO */}
@@ -96,7 +127,7 @@ export default function VisiterLondresPage() {
               <li><a href="#jour-1-westminster">📍 Jour 1 — Westminster</a></li>
               <li><a href="#jour-2-southwark">📍 Jour 2 — Southwark &amp; South Bank, La City</a></li>
               <li><a href="#jour-3-notting">📍 Jour 3 — Notting Hill</a></li>
-              <li><a href="#jour-4-brick">📍 Jour 4 — Brick Lane, Shoreditch &amp; Spitafields</a></li>
+              <li><a href="#jour-4-brick">📍 Jour 4 — Brick Lane, Shoreditch &amp; Spitalfields</a></li>
               <li><a href="#jour-5-covent">📍 Jour 5 — Covent Garden, Soho, Chinatown &amp; Piccadilly</a></li>
               <li><a href="#jour-6-camden">📍 Jour 6 — Camden Town, Stratford</a></li>
               <li><a href="#jour-7-brighton">📍 Jour 7 — Brighton, à 1 h de train de Londres</a></li>
@@ -311,7 +342,7 @@ export default function VisiterLondresPage() {
           <section id="jour-4-brick" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 4</span>
-              <h2>Brick Lane, Shoreditch &amp; Spitafields</h2>
+              <h2>Brick Lane, Shoreditch &amp; Spitalfields</h2>
             </div>
             <p>Découvrez l’<strong>East End</strong> avec ses quartiers branchés et alternatifs, facilement reconnaissables par leur architecture industrielle, leurs bâtiments et cheminées en briques rouges.</p>
             <p>À l’origine, il s’agissait de quartiers assez pauvres et marginalisés où vivaient principalement des personnes issues de l’immigration et des ouvriers. Aujourd’hui, ce sont des quartiers multiculturels et incontournables pour la jeunesse, la vie y est moins chère qu’au coeur de Londres.</p>
