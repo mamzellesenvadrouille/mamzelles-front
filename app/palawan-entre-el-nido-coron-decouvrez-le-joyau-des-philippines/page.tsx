@@ -7,12 +7,12 @@ import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
-  title: "Palawan : El Nido & Coron, découvrez le joyau des Philippines ! | MamZelles en vadrouille",
+  title: "Palawan : Coron et El Nido, le joyau des Philippines",
   description: "Découvrez Palawan, de ses lagons turquoise à El Nido aux récifs spectaculaires de Coron. Préparez votre voyage de rêve aux Philippines !",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines' },
   openGraph: {
-    title: "Palawan : Entre El Nido & Coron, découvrez le joyau des Philippines !",
-    description: 'De ses lagons turquoise à El Nido aux récifs spectaculaires de Coron,<br className="mobile-hero-break" /> plongez dans le joyau des Philippines.',
+    title: "Palawan : Coron et El Nido, le joyau des Philippines",
+    description: 'De ses lagons turquoise à El Nido aux récifs spectaculaires de Coron, plongez dans le joyau des Philippines.',
     url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/El-Nido-Coron.webp', width: 1920, height: 1080 }],
@@ -24,8 +24,39 @@ export const metadata: Metadata = {
 };
 
 export default function PalawanElNidoCoronPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: "Palawan : Coron et El Nido, le joyau des Philippines",
+    description: "Découvrez Palawan, de ses lagons turquoise à El Nido aux récifs spectaculaires de Coron. Préparez votre voyage de rêve aux Philippines !",
+    image: 'https://mamzellesenvadrouille.com/El-Nido-Coron.webp',
+    datePublished: '2024-10-17',
+    dateModified: '2026-06-21',
+    author: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      url: 'https://mamzellesenvadrouille.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://mamzellesenvadrouille.com/icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
+    },
+  };
+
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
       {/* HERO */}
@@ -56,7 +87,7 @@ export default function PalawanElNidoCoronPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>60-80€/j/pers.</span>
+          <span>60-80 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -113,7 +144,7 @@ export default function PalawanElNidoCoronPage() {
               <h2>📍 El Nido &amp; l'archipel de Bacuit</h2>
             </div>
             <p>Cette ville tient son nom de sa localisation. Située tout au Nord de l’île de Palawan et encerclée par la jungle, son accès était compliqué jusqu’à l’ouverture de l’aéroport d’El Nido, appelé aussi l’<strong>aéroport de Lio.</strong> À ce jour, <strong>il faut 1h15 pour relier El nido à Manille. </strong></p>
-            <p><strong>Puerto Princesa, la capitale de Palawan,</strong> se trouve à 230 km plus au Sud. Vu l’état des routes et des limitations de vitesse, <strong>il faut tout de même compter 5 à 6h de voiture / van pour relier ces 2 villes.</strong> Vous pouvez rajouter 2h si vous faites le trajet en bus.</p>
+            <p><strong>Puerto Princesa, la capitale de Palawan,</strong> se trouve à 230 km plus au Sud. Vu l’état des routes et des limitations de vitesse, <strong>il faut tout de même compter 5 à 6 h de voiture / van pour relier ces 2 villes.</strong> Vous pouvez rajouter 2 h si vous faites le trajet en bus.</p>
             <p>Si El nido est devenue l’une des destinations la plus populaire et touristique des Philippines, c’est avant tout grâce à la présence de l’<strong>archipel de Bacuit, considéré comme l’une des plus belles baies au monde. </strong></p>
             <p>Situés juste en face d’El Nido, ce sont <strong>45 îles et îlots qui constituent la réserve naturelle de l’archipel de Bacuit. </strong>Des îles bordées de sable blanc et à la végétation luxuriante, des falaises de calcaire aux formes surréalistes qui semblent flotter sur l’eau, une mer transparente aux couleurs tantôt émeraude tantôt turquoise... Rien que ça ! Ça fait rêver, non ?</p>
             <h4>⧐ Se rendre à Palawan en avion</h4>
@@ -132,15 +163,15 @@ export default function PalawanElNidoCoronPage() {
             </div>
             <p>Nous arrivons en début de soirée à El Nido. Nous sommes clairement déphasées mais surexcitées ! Notre première mission est de rejoindre notre hôtel qui se situe dans le centre ville.</p>
             <p><strong>À la sortie de l’aéroport, sur un petit parking, une multitude de tuk-tuks nous attendent. </strong>Accrochée à un arbre, une pancarte affiche les tarifs selon la zone où vous vous rendez.</p>
-            <p>Notre hébergement, situé dans le centre ville d’El Nido, se trouve à environ 15 minutes de tuk-tuk. On paiera <strong>300 Php (4€80)</strong> pour la course.</p>
-            <p>Notre hôtel, le <strong><a href="https://www.booking.com/hotel/ph/bulskamp-inn.fr.html" target="_blank" rel="noopener noreferrer" className="article-link">Bulskamp Inn</a></strong>, est un petit havre de paix au milieu de l’agitation du centre ville. Des petites lumières colorées, des hamacs, un bassin avec des gros poissons, un petit coin lounge… On s’y sent bien instantanément.</p>
+            <p>Notre hébergement, situé dans le centre ville d’El Nido, se trouve à environ 15 minutes de tuk-tuk. On paiera <strong>300 Php (4,80 €)</strong> pour la course.</p>
+            <p>Notre hôtel, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJz3AoghVVtjMRCPdQrQ4IGnI" target="_blank" className="article-link article-resto-link-desktop">Bulskamp Inn</a><a href="https://maps.app.goo.gl/o9wtFzQaiFfD3szE7" target="_blank" className="article-link article-resto-link-mobile">Bulskamp Inn</a></strong>, est un petit havre de paix au milieu de l’agitation du centre ville. Des petites lumières colorées, des hamacs, un bassin avec des gros poissons, un petit coin lounge… On s’y sent bien instantanément.</p>
             <p>Nous montons découvrir notre chambre en prenant soin de se déchausser comme il est indiqué. Bien que le lit nous fasse des appels de phares (si on se pose maintenant, on est foutues !), nous posons les sacs et nous partons directement faire un tour dans le centre pour manger un morceau.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_0288_jpg-1024x768.jpg" alt="Tarifs tuk-tuks Lio aéroport El Nido" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9649-768x1024.jpg" alt="Hôtel El Nido Bulskamp Inn" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <p>À peine sorties de l’hôtel, nous nous rendons rapidement compte, qu’effectivement, <strong>El Nido est très touristique ! </strong>Le centre ville est rempli d’auberges de jeunesses, de bars, de restaurants, d’agences de voyages, de touristes de toutes nationalités et de jeunes imbibés, cocktails à la main.</p>
-            <p>On vous avoue que là, avec les heures de vols dans les pattes et le jet lag, on n’est pas trop dans l’ambiance. Après un petit tour, nous tombons sur le <strong><a href="https://www.tripadvisor.com/Restaurant_Review-g294256-d24929319-Reviews-Wilnags_Resto-El_Nido_Palawan_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Wilnag's Resto</a></strong>, sympa pour grignoter un peu.</p>
+            <p>On vous avoue que là, avec les heures de vols dans les pattes et le jet lag, on n’est pas trop dans l’ambiance. Après un petit tour, nous tombons sur le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJG0YlpC9VtjMRcEXtqF5CSwk" target="_blank" className="article-link article-resto-link-desktop">Wilnag's Resto</a><a href="https://maps.app.goo.gl/RL3Eg6eyn1xsazbX9" target="_blank" className="article-link article-resto-link-mobile">Wilnag's Resto</a></strong>, sympa pour grignoter un peu.</p>
             <p>Il est temps de rentrer se doucher et se coucher, histoire d’être en forme pour demain, notre vraie première journée !</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 2</span>
@@ -150,7 +181,7 @@ export default function PalawanElNidoCoronPage() {
             <p>Après une bonne nuit de sommeil et un bon p'tit dej’ à l’hôtel, nous partons découvrir El Nido de jour.</p>
             <p>Au programme, balade dans la ville et découverte de <strong>la plage principale. Cette dernière est plutôt jolie mais déconseillée à la baignade</strong> à cause de l’huile provenant des bateaux qui pollue ce petit coin de paradis.</p>
             <p>Après avoir fait un peu le tour du centre ville, nous décidons de louer un scooter pour vadrouiller tranquillement dans les alentours.</p>
-            <p>Louer un scooter à El Nido nous revient <strong>500 Php (8€50)</strong> la journée. Pour info, le litre d’essence est à environ <strong>1€20</strong>. <strong>Si vous êtes à l’aise pour conduire un 2 roues, alors n’hésitez pas, c’est vraiment l’idéal.</strong> Sinon, vous pouvez toujours vous déplacer en tuk-tuk.</p>
+            <p>Louer un scooter à El Nido nous revient <strong>500 Php (8,50 €)</strong> la journée. Pour info, le litre d’essence est à environ <strong>1,20 €</strong>. <strong>Si vous êtes à l’aise pour conduire un 2 roues, alors n’hésitez pas, c’est vraiment l’idéal.</strong> Sinon, vous pouvez toujours vous déplacer en tuk-tuk.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9679_jpg-1024x768.jpg" alt="El Nido City Palawan" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9671_jpg-1-1024x768.jpg" alt="El Nido Beach Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -169,7 +200,7 @@ export default function PalawanElNidoCoronPage() {
             <p>Après avoir profité de la plage et d’une baignade dans une eau à 28 degrés, nous reprenons le scooter.</p>
             <h4>⧐ Corong Corong Beach</h4>
             <p>Nous revenons un peu sur nos pas pour nous rendre à Corong Corong Beach. C'est apparemment <strong>le meilleur spot pour assister aux couchers de soleil,</strong> cette plage étant orientée plein Ouest. Là aussi, si vous voulez vous poser tranquillement pour admirer le spectacle, vous avez le choix…</p>
-            <p>Nous nous installons au <strong><a href="https://www.instagram.com/sip_sunset_lounge_elnido/" target="_blank" rel="noopener noreferrer" className="article-link">Sip Sunset Lounge &amp; Bar</a></strong>. Cet endroit est tout simplement incroyable !</p>
+            <p>Nous nous installons au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJ54oOpLJVtjMRRxBoct3AOSM" target="_blank" className="article-link article-resto-link-desktop">Sip Sunset Lounge &amp; Bar</a><a href="https://maps.app.goo.gl/Pfs4jgoXEmQcRxgW6" target="_blank" className="article-link article-resto-link-mobile">Sip Sunset Lounge &amp; Bar</a></strong>. Cet endroit est tout simplement incroyable !</p>
             <p>Le patron, un français, fait tout pour qu’on s’y sente bien. La déco est jolie, la musique sympa et les cocktails parfaits ! Que demander de plus ? Vous pouvez également manger sur place mais pensez à réserver car l’endroit est très prisé. Le petit plus, la balançoire les pieds dans l’eau pour faire de belles photos du sunset. On ne nous avait pas menti, le coucher de soleil était incroyable !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9827_jpg-768x1024.jpg" alt="Corong Coron Sip Sunset Lounge &amp; Bar El Nido" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -184,7 +215,7 @@ export default function PalawanElNidoCoronPage() {
             <p><strong>Les agences proposent 4 circuits, A, B, C et D,</strong> avec chacun leur parcours et points d’intérêts. <strong>Les tours les plus prisés sont généralement le A et le C. </strong></p>
             <p>Maintenant, il faut faire un choix... Nous avons qu’une journée devant nous et nous souhaitons voir le maximum d’endroits !</p>
             <h4>⧐ Quel Island hopping choisir ?</h4>
-            <p>Vous avez la possibilité d’embarquer à bord d’une <strong>bangka, c’est le bateau traditionnel. Il n’est pas très rapide et peut transporter jusqu’à 25 personnes. </strong>Pour les excursions, <strong>les bateaux partent généralement à 9h</strong> et vous emmèneront faire le tour que vous aurez choisi. Selon le tour A, B, C ou D, comptez entre <strong>1200 Php (21,50€)</strong> et <strong>1600 Php (27€)</strong> par personne, repas compris.</p>
+            <p>Vous avez la possibilité d’embarquer à bord d’une <strong>bangka, c’est le bateau traditionnel. Il n’est pas très rapide et peut transporter jusqu’à 25 personnes. </strong>Pour les excursions, <strong>les bateaux partent généralement à 9 h</strong> et vous emmèneront faire le tour que vous aurez choisi. Selon le tour A, B, C ou D, comptez entre <strong>1200 Php (21,50 €)</strong> et <strong>1600 Php (27 €)</strong> par personne, repas compris.</p>
             <p>Si comme nous, vous n'avez qu'une journée et que vous voulez éviter la foule et les embouteillages de bateaux, <strong>le meilleur choix est le speed boat.</strong> Les speed boats ne suivent pas les bangkas, donc on ne se retrouve pas tous au même endroit, au même moment. Et surtout, on est <strong>seulement 8 sur le bateau,</strong> c'est quand même plus agréable que de se retrouver à 25 ! Le tour n'est pas vraiment défini, le capitaine s'adapte en fonction de la météo, du vent et du monde.</p>
 
             <div className="article-avis">
@@ -192,9 +223,9 @@ export default function PalawanElNidoCoronPage() {
               <div><strong>Le conseil des MamZelles</strong><p>Si vous hésitez entre bangka et speed boat : on vous recommande clairement le speed boat ! Pensez aussi à prendre un sac waterproof, des chaussures d'eau et de la crème solaire.</p></div>
             </div>
             <h4>⧐ Island hopping avec La Pêcheuse</h4>
-            <p>Nous avons choisi <strong><a href="https://www.lapecheuse.com/el-nido-tours" target="_blank" rel="noopener noreferrer" className="article-link">La Pêcheuse</a></strong>. Nous les avons contactés via WhatsApp pour réserver notre place sur le bateau : +63 961 180 2992. Un acompte vous est demandé, le reste étant à payer avant d’embarquer. Sachez qu’il y a également une taxe d’éco-tourisme de <strong>200 Php (3€20)</strong> par personne à payer.</p>
-            <p>Comptez <strong>3000 Php (51€)</strong> par personne, repas compris pour la journée d'Island hopping.</p>
-            <p><strong>Le départ se fait depuis la plage de Corong Corong,</strong> en face de l'agence. Ils nous donnent <strong>RDV à 9h</strong> pour un départ à 9h30.</p>
+            <p>Nous avons choisi <strong><a href="https://www.lapecheuse.com/el-nido-tours" target="_blank" rel="noopener noreferrer" className="article-link">La Pêcheuse</a></strong>. Nous les avons contactés via WhatsApp pour réserver notre place sur le bateau : +63 961 180 2992. Un acompte vous est demandé, le reste étant à payer avant d’embarquer. Sachez qu’il y a également une taxe d’éco-tourisme de <strong>400 Php (6,80 €)</strong> par personne à payer, valable 10 jours.</p>
+            <p>Comptez <strong>3000 Php (51 €)</strong> par personne, repas compris pour la journée d'Island hopping.</p>
+            <p><strong>Le départ se fait depuis la plage de Corong Corong,</strong> en face de l'agence. Ils nous donnent <strong>RDV à 9 h</strong> pour un départ à 9 h 30.</p>
             <p>À nous l’archipel de Bacuit !</p>
             <h4>⧐ Matinloc Island</h4>
             <p>Notre 1er stop se fait sur Matinloc Island. Notre speed boat nous débarque à <strong>Palilo Beach.</strong> Pas d’autre bateau, nous sommes seuls sur cette petite plage paradisiaque.</p>
@@ -215,7 +246,7 @@ export default function PalawanElNidoCoronPage() {
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2670-1-1024x768.jpg" alt="Secret Beach Island Hopping El Nido Palawan" className="article-img-full" loading="lazy" />
             <h4>⧐ Tapiutan Island</h4>
             <p>Nous mettons ensuite le cap vers le Nord de Tapiutan Island. <strong>C'est l’île la plus éloignée de l’archipel. </strong>Pas de nom pour cette plage, mais c’est <strong>celle qui se situe sous Lad-Ay,</strong> au niveau de la baie.</p>
-            <p>Une belle et longue plage, deux cabanes et un habitant qui confectionne un filet de pêche. Nous nous arrêtons environ 1h30 car c’est là que nous allons manger.</p>
+            <p>Une belle et longue plage, deux cabanes et un habitant qui confectionne un filet de pêche. Nous nous arrêtons environ 1 h 30 car c’est là que nous allons manger.</p>
             <p>Pas de bateau à l’horizon, nous avons la plage rien que pour nous.</p>
             <p>Pour la petite histoire, c’est sur cette plage qu’a été tournée l’émission Survivor America en 2012. Sur certains troncs d’arbres, tout à droite de la plage, on peut y voir des prénoms gravés, recouverts aujourd’hui de mousse végétale.</p>
             <div className="article-gallery-2">
@@ -233,7 +264,7 @@ export default function PalawanElNidoCoronPage() {
             <p>Après un moment très agréable et apaisant passé sur cette plage, nous reprenons la mer, direction le 4ème spot.</p>
             <h4>⧐ Cadlao Island</h4>
             <p>Nous arrivons sur l’île de Cadlao, au <strong>Cadlao Lagoon</strong> plus exactement. <strong>Le bateau s’approche au maximum mais ne peut pas entrer dans le lagon.</strong> Pas de problème, tout est prévu pour les touristes !</p>
-            <p>Un homme arrive en canoë et nous propose d’en louer un pour <strong>300 Php (5,15€)</strong>. Bon, c’était pas vraiment prévu, mais on y est, du coup on se laisse tenter.</p>
+            <p>Un homme arrive en canoë et nous propose d’en louer un pour <strong>300 Php (5,15 €)</strong>. Bon, c’était pas vraiment prévu, mais on y est, du coup on se laisse tenter.</p>
             <p>Alors c’est parti, petite balade digestive en canoë ! Nous entrons dans la baie. Le lagon est magnifique. Plus on s’enfonce, plus l’eau est turquoise. La balade est plutôt agréable, surtout pour Laurie qui, comme à son habitude dans ces moments-là, a toujours les mains trop occupées pour pagayer !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0087-1024x768.jpg" alt="Cadlao Lagoon Canoë Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -261,7 +292,7 @@ export default function PalawanElNidoCoronPage() {
             <p>Dommage que les gens ne prennent pas plus soin de l’endroit et qu’il y ait autant de détritus en plastique.</p>
             <h4>⧐ Lapus lapus Beach</h4>
             <p>Dernier arrêt de la journée à Lapus Lapus Beach. Une belle plage, mais ce qui a retenu notre attention ce sont les bébés chiens qui étaient là. Tellement mignons…Petite pause câlins et grosses pensées pour notre gros chien d'amour Aladdin.</p>
-            <p><strong>17h30, nous rejoignons le rivage.</strong> Parfait timing pour assister au magnifique coucher de soleil sur plage de Corong Corong et clôturer cette belle journée !</p>
+            <p><strong>17 h 30, nous rejoignons le rivage.</strong> Parfait timing pour assister au magnifique coucher de soleil sur plage de Corong Corong et clôturer cette belle journée !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2654-1024x768.jpg" alt="Lapus Lapus Beach El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0210-1-1024x768.jpg" alt="Dogs Lapus Lapus Beach Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -272,7 +303,7 @@ export default function PalawanElNidoCoronPage() {
             </div>
             <p>Après une bonne nuit de repos, nous avons pris le temps de savourer un copieux petit déjeuner occidental à l’hôtel. Il nous reste plus que quelques heures avant le départ pour une nouvelle destination. Nous préparons nos sacs à dos et libérons notre chambre. <strong>Généralement, les hôtels nous permettent de garder nos bagages.</strong></p>
             <p>Nous en profitons donc pour aller faire un dernier petit tour dans El Nido. On en aura profité jusqu’au bout !</p>
-            <p>On chope un tuk-tuk et <strong>direction l’aéroport. Nous arrivons 2h avant comme recommandé,</strong> ce qui nous laisse le temps de grignoter un bout avant de prendre l’avion. Honnêtement, 2h avant c’est large !</p>
+            <p>On chope un tuk-tuk et <strong>direction l’aéroport. Nous arrivons 2 h avant comme recommandé,</strong> ce qui nous laisse le temps de grignoter un bout avant de prendre l’avion. Honnêtement, 2 h avant c’est large !</p>
             <p>Pour info, <strong>les briquets sont interdits en soute et dans les bagages à main. Si vous le gardez sur vous, ça peut passer…</strong> Pas très logique, mais bon !</p>
           </section>
 
@@ -291,32 +322,32 @@ export default function PalawanElNidoCoronPage() {
             </div>
             <h4>⧐ Se rendre à Coron depuis El Nido</h4>
             <p>Si comme nous, vous venez d’El Nido, vous avez <strong>deux</strong> possibilités pour v<strong>ous rendre à Coron.</strong></p>
-            <p><strong>En ferry, il faut compter 4h à 6h</strong> selon l’état de la mer et vous serez débarqués au port de Coron City.</p>
+            <p><strong>En ferry, il faut compter 4 h à 6 h</strong> selon l’état de la mer et vous serez débarqués au port de Coron City.</p>
             <p><strong>En avion, le trajet dure 40 minutes maximum </strong>et la vue par le hublot est superbe ! Il paraît que si la mer est calme, la traversée en bateau est sympa, mais on a choisi l’option la plus rapide pour avoir le plus de temps possible sur place.</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
               <h3>Arrivée à Coron City</h3>
             </div>
-            <p>Nous sommes arrivées à l’aéroport en fin d’après midi. Pour sortir, il y a une taxe à payer de <strong>250 Php (3€98)</strong> par personne.</p>
+            <p>Nous sommes arrivées à l’aéroport en fin d’après midi. Pour sortir, il y a une taxe à payer de <strong>250 Php (3,98 €)</strong> par personne.</p>
             <p><strong>L’aéroport se trouve à une trentaine de minutes du centre ville. </strong>Pour s'y rendre, il nous faut prendre un van. Pas le choix, il n’y a que ça. Les transporteurs viennent à notre rencontre pour nous demander le nom de notre logement.</p>
-            <p><strong>Nous sommes répartis dans les vans en fonction de notre destination. </strong>Les prix sont fixes et corrects : <strong>250 Php (3€98)</strong> par personne pour rejoindre le centre ville.</p>
+            <p><strong>Nous sommes répartis dans les vans en fonction de notre destination. </strong>Les prix sont fixes et corrects : <strong>250 Php (3,98 €)</strong> par personne pour rejoindre le centre ville.</p>
             <p>On ne va pas vous mentir, en voyant le paysage défiler sur le trajet en direction de l’hôtel, on ne s’est pas dit :  « wouah, cette île est magnifique ! ». Non, mais nous le savions... <strong>Il n’y a pas grand chose à faire sur l’île. </strong>Si nous sommes là, c’est clairement pour les Island hoppings.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_0861-2-1024x768.jpg" alt="Aéroport Coron Busuanga" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_0860-768x1024.jpg" alt="Coron City Busuanga Palawan" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p>Nous arrivons à l’<strong><a href="https://www.booking.com/hotel/ph/acacia-garden-inn.fr.html?aid=318615&amp;label=New_French_FR_FR_21427169905-YP8jtirKV%2AkzSzTpDnHYDwS640938627539%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=bd72daa3ed8ce8298c9cde0c2d682f49&amp;dest_id=-2422567;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1728989671;srpvid=38bf4cb0e54f010d;type=total;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" className="article-link">Acacia Garden Inn</a></strong>. C’est ici que nous allons rester 3 nuits. Comme dans chaque hôtel, vous avez la possibilité de booker directement avec eux les différents Island hoppings à des prix très corrects. Le transport de l’hôtel au port est compris dans le tarif.</p>
-            <p>Sac déposés, excursions réservées, on part à la recherche d’un endroit sympa où manger… On tombe sur le restaurant d'un hôtel, le <strong><a href="https://www.tripadvisor.com.ph/Restaurant_Review-g729733-d16959274-Reviews-Full_Lotus-Coron_Busuanga_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Full Lotus</a></strong>, qui nous fait de l'oeil. Pour notre 1er dîner à Coron City, on a donc trouvé l’endroit idéal, et à seulement 5 minutes à pied de notre hébergement !</p>
+            <p>Nous arrivons à l’<strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJOeqtRyocujMRJCirJGdi51g" target="_blank" className="article-link article-resto-link-desktop">Acacia Garden Inn</a><a href="https://maps.app.goo.gl/16mQ61vZVP7ZDpaC9" target="_blank" className="article-link article-resto-link-mobile">Acacia Garden Inn</a></strong>. C’est ici que nous allons rester 3 nuits. Comme dans chaque hôtel, vous avez la possibilité de booker directement avec eux les différents Island hoppings à des prix très corrects. Le transport de l’hôtel au port est compris dans le tarif.</p>
+            <p>Sac déposés, excursions réservées, on part à la recherche d’un endroit sympa où manger… On tombe sur le restaurant d'un hôtel, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJEw1dNMEdujMRiwZeRj2qPFw" target="_blank" className="article-link article-resto-link-desktop">Full Lotus</a><a href="https://maps.app.goo.gl/fbkCADFgbrKEWfuDA" target="_blank" className="article-link article-resto-link-mobile">Full Lotus</a></strong>, qui nous fait de l'oeil. Pour notre 1er dîner à Coron City, on a donc trouvé l’endroit idéal, et à seulement 5 minutes à pied de notre hébergement !</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 2</span>
               <h3>Island hopping sur les îles Calamian</h3>
             </div>
-            <p><strong>Comme à El Nido, ici aussi l’Island hopping est l’attraction phare. </strong>Les agences proposent <strong>6 tours différents.</strong> Certains spots peuvent se retrouver sur plusieurs tours. Le plus simple est de repérer les endroits que vous souhaitez voir et de choisir le tour en fonction. Les tarifs varient entre <strong>900 Php (15€)</strong> et <strong>1600 Php (27€)</strong> par personne selon le tour.</p>
+            <p><strong>Comme à El Nido, ici aussi l’Island hopping est l’attraction phare. </strong>Les agences proposent <strong>6 tours différents.</strong> Certains spots peuvent se retrouver sur plusieurs tours. Le plus simple est de repérer les endroits que vous souhaitez voir et de choisir le tour en fonction. Les tarifs varient entre <strong>900 Php (15 €)</strong> et <strong>1600 Php (27 €)</strong> par personne selon le tour.</p>
             <p><strong>Pas de speed boat à Coron, c’est bangka pour tout le monde. </strong>Les plus grandes peuvent embarquer une bonne quinzaine de personnes.</p>
-            <p>Vous avez également la possibilité de le faire en tour privé. Comptez en moyenne <strong>3000 Php (50€)</strong> en plus par personne.</p>
+            <p>Vous avez également la possibilité de le faire en tour privé. Comptez en moyenne <strong>3000 Php (50 €)</strong> en plus par personne.</p>
             <h4>⧐ Beach Escapade Tour</h4>
-            <p>Pour cette 1ère journée d’excursion, nous avons choisi le <strong>Beach Escapade Tour.</strong> De tous les tours, c’est le seul qui propose les plages qu’on avait repérées. Clairement, <strong>3 spots de rêve ! </strong>Partir découvrir des plages paradisiaques en mode farniente, voilà le planning de la journée… Trois plages dans la journée cela paraît peu, mais en réalité,<strong> il y a pas mal de route (de miles) pour se rendre d'une île à l'autre. </strong>Nous avons payé <strong>1500 Php (25€)</strong> par personne, repas compris.</p>
-            <p>Petit déjeuner avalé, nous attendons <strong>le van qui passe nous récupérer entre 8h et 8h30.</strong></p>
+            <p>Pour cette 1ère journée d’excursion, nous avons choisi le <strong>Beach Escapade Tour.</strong> De tous les tours, c’est le seul qui propose les plages qu’on avait repérées. Clairement, <strong>3 spots de rêve ! </strong>Partir découvrir des plages paradisiaques en mode farniente, voilà le planning de la journée… Trois plages dans la journée cela paraît peu, mais en réalité,<strong> il y a pas mal de route (de miles) pour se rendre d'une île à l'autre. </strong>Nous avons payé <strong>1500 Php (25 €)</strong> par personne, repas compris.</p>
+            <p>Petit déjeuner avalé, nous attendons <strong>le van qui passe nous récupérer entre 8 h et 8 h 30.</strong></p>
             <p>Direction le port. Le van s’arrête en route pour récupérer d’autres personnes. Arrivés sur place, nous sommes répartis sur les bateaux. <strong>Nous sommes une dizaine sur le nôtre. </strong>Des philippins vendent des bouteilles d’eau, des masques, des tubas, de la crème solaire…</p>
             <p>D'ailleurs, petite anecdote : nous avons croisé un couple qui a acheté une crème solaire à l'une de ces personnes. Ils se sont tartinés toute la journée… et ont fini brûlé comme jamais !</p>
             <div className="article-avis">
@@ -324,7 +355,7 @@ export default function PalawanElNidoCoronPage() {
               <div><strong>Le conseil des MamZelles</strong><p>Méfiez-vous des cosmétiques vendus à la sauvette sur les bateaux ou les plages : on ne sait pas toujours ce qu'ils contiennent. Achetez votre protection solaire avant de partir et ré-appliquez très régulièrement, on brûle vite ici !</p></div>
             </div>
             <h4>⧐ Bulalacao Island</h4>
-            <p><strong>Nous quittons le port vers 9h30, direction Coco Beach</strong> à Bulalacao Island. Après <strong>1h30 de traversée,</strong> nous arrivons aux abords de ce spot.</p>
+            <p><strong>Nous quittons le port vers 9 h 30, direction Coco Beach</strong> à Bulalacao Island. Après <strong>1 h 30 de traversée,</strong> nous arrivons aux abords de ce spot.</p>
             <p>La balade est plutôt sympa, et on a de la chance, la mer est calme. Quand on arrive, c’est un gros « wahooo » ! On ne nous a pas menti, c’est vraiment paradisiaque !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0374-1024x768.jpg" alt="Coco Beach Bulalacao Island Coron Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -354,7 +385,7 @@ export default function PalawanElNidoCoronPage() {
             <p>Pour le 3ème et dernier spot de la journée, direction Malcapuya Island. Une fois débarquées, <strong>on doit traverser l’île pour rejoindre la plage. </strong>En réalité, il y a 3 minutes seulement de marche.</p>
             <p><strong>C’est la plus petite île de la journée, mais c’est celle où l’on croise le plus de monde ! </strong>En effet, cette très jolie plage attire autant les touristes que les familles philippines.</p>
             <p>Entre baignades et snorkeling dans une mer bleue transparente, dégustation de cocos et farniente dans le sable blanc poudreux, il faut dire qu'il y a tout pour y passer la journée. <strong>On a même nagé avec des tortues !</strong></p>
-            <p>Après 1h passée sur place, il est temps de quitter ce petit paradis. Dans ce genre d’endroit, le temps passe malheureusement beaucoup trop vite !</p>
+            <p>Après 1 h passée sur place, il est temps de quitter ce petit paradis. Dans ce genre d’endroit, le temps passe malheureusement beaucoup trop vite !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9813-1-1024x768.jpg" alt="Malcapuya Beach Island Hopping Coron Palawan" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9812-1024x768.jpg" alt="Malcapuya Beach Island Hopping Coron" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -362,7 +393,7 @@ export default function PalawanElNidoCoronPage() {
             </div>
             <p>Il est malheureusement temps de rejoindre Busuanga Island, le port de Coron. Nous avons passé une journée inoubliable. Il y avait <strong>comme un petit air des Maldives ou de la Polynésie</strong> dans cette journée.</p>
             <p>Demain sera encore une journée bien remplie. On ne va pas veiller bien tard, on est déjà KO.</p>
-            <p>Le soir, nous mangeons au <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g729733-d2646532-Reviews-Santino_s_Grill-Coron_Busuanga_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Santino's Grill</a></strong>, un joli restaurant tout en bois et bambou, à seulement 2 minutes à pied de l'hôtel. Leur spécialité est la viande. On y a très bien mangé, les plats étaient copieux, et le rapport qualité / prix imbattable !</p>
+            <p>Le soir, nous mangeons au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJy0YY4zEcujMRdaHOEjMHWCQ" target="_blank" className="article-link article-resto-link-desktop">Santino's Grill</a><a href="https://maps.app.goo.gl/AmgKimmJNgzVeWqB9" target="_blank" className="article-link article-resto-link-mobile">Santino's Grill</a></strong>, un joli restaurant tout en bois et bambou, à seulement 2 minutes à pied de l'hôtel. Leur spécialité est la viande. On y a très bien mangé, les plats étaient copieux, et le rapport qualité / prix imbattable !</p>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>À Coron City comme à El Nido, les bonnes adresses se remplissent vite : pensez à réserver si vous voulez dîner au Santino's Grill ou au Sip Sunset Lounge &amp; Bar. Ça vous évitera la déception une fois sur place.</p></div>
@@ -372,7 +403,7 @@ export default function PalawanElNidoCoronPage() {
               <h3>Nouvelle journée, nouvel Island hopping !</h3>
             </div>
             <p>Pour notre 2ème journée d’excursion, nous avons choisi de faire le <strong>Ultimate Highlights Tour</strong> car il est assez varié et complet. Il comprend surtout les spots que nous souhaitons voir.</p>
-            <p>Comme hier, tout est organisé. P'tit dej’ fini, le van vient nous récupérer à l’hôtel. <strong>Le départ du port de Coron se fait vers 9h. </strong>Il faut compter <strong>1500 Php (25€)</strong> par personne pour ce tour.</p>
+            <p>Comme hier, tout est organisé. P'tit dej’ fini, le van vient nous récupérer à l’hôtel. <strong>Le départ du port de Coron se fait vers 9 h. </strong>Il faut compter <strong>1500 Php (25 €)</strong> par personne pour ce tour.</p>
             <h4>⧐ Kayangan Lake</h4>
             <p>Notre 1ère destination de la journée se trouve sur la fameuse <strong>Coron Island.</strong> Ici, nous retrouvons les impressionnantes falaises semblables à celles de l’archipel de Bacuit.</p>
             <p>On commence par le Kayangan Lake, l’<strong>un des spots incontournables de Coron. </strong></p>
@@ -441,7 +472,7 @@ export default function PalawanElNidoCoronPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3694-768x1024.jpeg" alt="Cyc Beach Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <p>Voilà, encore une journée de rêve qui s’achève. On est vraiment KO ce soir ! En même temps, c’était <strong>sportif comme journée</strong> pour des sportives du dimanche comme nous !</p>
-            <p>Ce soir, nous irons encore manger au <strong><a href="https://www.tripadvisor.fr/Restaurant_Review-g729733-d2646532-Reviews-Santino_s_Grill-Coron_Busuanga_Island_Palawan_Province_Mimaropa.html" target="_blank" rel="noopener noreferrer" className="article-link">Santino’s Grill</a></strong> tout près de l’hôtel, et au dodo ! De toute façon, il n’y a rien d’autre à faire dans le coin…</p>
+            <p>Ce soir, nous irons encore manger au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJy0YY4zEcujMRdaHOEjMHWCQ" target="_blank" className="article-link article-resto-link-desktop">Santino’s Grill</a><a href="https://maps.app.goo.gl/AmgKimmJNgzVeWqB9" target="_blank" className="article-link article-resto-link-mobile">Santino’s Grill</a></strong> tout près de l’hôtel, et au dodo ! De toute façon, il n’y a rien d’autre à faire dans le coin…</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 4</span>
               <h3>Dernière matinée à Coron City</h3>
@@ -455,7 +486,7 @@ export default function PalawanElNidoCoronPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0797-768x1024.jpg" alt="Maquinit Hotspring Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0815_jpg-1024x768.jpg" alt="Maquinit Hotspring Coron" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <p>L'entrée est de <strong>250 Php (3€96)</strong> par personne. L'endroit est propre et bien entretenu. Il y a un grand bassin et un plus petit. L'eau, composée de 30% d'eau salée et 70% d'eau douce, est naturellement très chaude.</p>
+            <p>L'entrée est de <strong>250 Php (3,96 €)</strong> par personne. L'endroit est propre et bien entretenu. Il y a un grand bassin et un plus petit. L'eau, composée de 30% d'eau salée et 70% d'eau douce, est naturellement très chaude.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>La source d'eau chaude de Maquinit avoisine les 45 °C : il est déconseillé d'y rester immergé plus de 7 à 8 minutes. En plein soleil et par forte chaleur, c'est franchement plus agréable en fin de journée.</p></div>
@@ -466,7 +497,7 @@ export default function PalawanElNidoCoronPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0809-768x1024.jpg" alt="Maquinit Hotspring Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <h4>⧐ Direction l'aéroport de Manille</h4>
-            <p>Bon bah voilà, le temps passe beaucoup trop vite, et le van passe nous récupérer à l’hôtel dans 1h pour l’aéroport !</p>
+            <p>Bon bah voilà, le temps passe beaucoup trop vite, et le van passe nous récupérer à l’hôtel dans 1 h pour l’aéroport !</p>
             <p>Qui dit pas le temps, dit fast-food... C’est l’occasion de tester le McDo philippin. Oui, on l’avoue, on aime bien la malbouffe de temps en temps.</p>
             <p>Mais alors là, grosse surprise ! Des menus avec du riz et des spaghettis... sacrilège un peu quand même !</p>
             <p>Repas avalé, retour à l’hôtel pile à l’heure du rdv.</p>
