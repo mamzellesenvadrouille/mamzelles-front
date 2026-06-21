@@ -1,5 +1,5 @@
 /* ============================================
-   MADRID â€” Styles spÃ©cifiques Ã  l'article
+   MADRID Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -601,4 +601,14 @@
 
 @media (max-width: 768px) {
   .article-related-grid { grid-template-columns: 1fr; gap: 16px; }
+}
+.article-resto-link-mobile { display: none; }
+
+@media (max-width: 768px) {
+  .article-resto-link-desktop { display: none; }
+  .article-resto-link-mobile { display: inline; }
+}
+
+@media (min-width: 769px) {
+  .article-resto-link-desktop { display: inline; }
 }
