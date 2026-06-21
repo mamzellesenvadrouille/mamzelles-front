@@ -1067,7 +1067,7 @@ export default function PhilippinesPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus</p>
+                  <p className="article-related-title-card">Palawan : de Puerto Princesa à Port Barton</p>
                 </div>
               </a>
               <a href="/road-trip-a-lanzarote" className="article-related-card">

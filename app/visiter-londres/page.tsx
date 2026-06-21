@@ -935,7 +935,7 @@ export default function VisiterLondresPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Visiter Madrid en 3 jours : notre guide complet !</p>
+                  <p className="article-related-title-card">Visiter Madrid en 3 jours : itinéraire et bons plans</p>
                 </div>
               </a>
               <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-related-card">
@@ -944,7 +944,7 @@ export default function VisiterLondresPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Palawan : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</p>
+                  <p className="article-related-title-card">Palawan : Coron et El Nido, le joyau des Philippines</p>
                 </div>
               </a>
               <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-related-card">
@@ -953,7 +953,7 @@ export default function VisiterLondresPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Itinéraire Philippines : 3 semaines pour découvrir la perle de l’Orient !</p>
+                  <p className="article-related-title-card">Voyage aux Philippines : itinéraire de 3 semaines</p>
                 </div>
               </a>
             </div>
