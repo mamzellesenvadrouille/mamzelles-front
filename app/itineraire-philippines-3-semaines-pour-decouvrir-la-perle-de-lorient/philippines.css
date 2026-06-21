@@ -1,5 +1,5 @@
 /* ============================================
-   PHILIPPINES â€” Styles spÃ©cifiques Ã  l'article
+   PHILIPPINES Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -710,3 +710,13 @@
 
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
+.article-resto-link-mobile { display: none; }
+
+@media (max-width: 768px) {
+  .article-resto-link-desktop { display: none; }
+  .article-resto-link-mobile { display: inline; }
+}
+
+@media (min-width: 769px) {
+  .article-resto-link-desktop { display: inline; }
+}
