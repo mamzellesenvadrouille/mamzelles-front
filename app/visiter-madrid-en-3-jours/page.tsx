@@ -390,7 +390,7 @@ export default function MadridPage() {
             <p>Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136 € pour deux. Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>. Le tarif y était plus avantageux que si on les avait achetés avec un comparateur de vols.</p>
             <p>Nous avons été en tout cas ravies de voyager avec cette compagnie. Aucun retard sur les vols aller et retour, personnel très sympa… Un petit en-cas sucré ou salé est offert pendant la traversée.</p>
             <h3>✓ Aéroport ↔︎ Centre ville</h3>
-            <p>Quelque soit la compagnie que vous choisirez, vous atterrirez à l&apos;<strong>aéroport Adolfo Suárez Madrid-Barajas</strong>. Plusieurs options s&apos;offrent à vous pour rejoindre le centre :</p>
+            <p>Quelle que soit la compagnie que vous choisirez, vous atterrirez à l&apos;<strong>aéroport Adolfo Suárez Madrid-Barajas</strong>. Plusieurs options s&apos;offrent à vous pour rejoindre le centre :</p>
             <div className="article-transport-grid">
               <div className="article-transport-item">
                 <div className="article-transport-icon">
@@ -528,7 +528,7 @@ export default function MadridPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Angleterre</span>
-                  <p className="article-related-title-card">Visiter Londres en 1 semaine : l&apos;essentiel par quartier</p>
+                  <p className="article-related-title-card">Visiter Londres : que faire en 7 jours par quartier</p>
                 </div>
               </a>
               <a href="/road-trip-a-lanzarote" className="article-related-card">
