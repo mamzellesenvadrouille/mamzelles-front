@@ -526,7 +526,7 @@ export default function PalawanElNidoCoronPage() {
           <section className="article-comments-section">
             <CommentsList comments={[]} />
             <CommentForm
-              articleTitle={"Palawan : Entre El Nido & Coron, découvrez le joyau des Philippines !"}
+              articleTitle={"Palawan : Coron et El Nido, le joyau des Philippines"}
               articleUrl="https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines"
             />
           </section>

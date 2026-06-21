@@ -1041,7 +1041,7 @@ export default function PhilippinesPage() {
               },
             ]} />
             <CommentForm
-              articleTitle="Itinéraire Philippines : 3 semaines pour découvrir la perle de l'Orient"
+              articleTitle="Voyage aux Philippines : itinéraire de 3 semaines"
               articleUrl="https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient"
             />
           </section>

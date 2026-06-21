@@ -1193,7 +1193,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
           <section className="article-comments-section">
             <CommentsList comments={[]} />
             <CommentForm
-              articleTitle={"Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus"}
+              articleTitle={"Palawan : de Puerto Princesa à Port Barton"}
               articleUrl="https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus"
             />
           </section>

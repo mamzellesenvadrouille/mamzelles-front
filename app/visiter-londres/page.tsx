@@ -918,7 +918,7 @@ export default function VisiterLondresPage() {
               },
             ]} />
             <CommentForm
-              articleTitle={"Visiter Londres en 1 semaine : l’essentiel par quartier"}
+              articleTitle={"Visiter Londres : que faire en 7 jours par quartier"}
               articleUrl="https://mamzellesenvadrouille.com/visiter-londres"
             />
           </section>

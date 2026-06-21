@@ -502,7 +502,7 @@ export default function MadridPage() {
             ]} />
 
             <CommentForm
-              articleTitle="3 jours à Madrid : les incontournables de la capitale espagnole"
+              articleTitle="Visiter Madrid en 3 jours : itinéraire et bons plans"
               articleUrl="https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours"
             />
 
