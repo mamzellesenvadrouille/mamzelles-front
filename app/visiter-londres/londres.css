@@ -12,7 +12,7 @@
   .mobile-hero-break { display: inline; }
   .tablet-only-br { display: none; }
   .desktop-tablet-br { display: none; }
-  .desktop-only-br { display: none; }
+  .desktop-only-br { display: inline; }
   .article-resto-link-desktop { display: none; }
   .article-londres .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
   .article-day-header h2 { font-size: 32px !important; }
@@ -1267,8 +1267,8 @@
   .article-londres .article-resto-body { padding: 16px 18px !important; }
   .article-londres .article-resto-head { padding: 11px 16px !important; }
   .article-londres .article-resto-name { font-size: 22px !important; }
-  .article-londres .article-resto-head-label { font-size: 20px !important; }
-  .article-londres .article-rendre-label span { font-size: 20px !important; }
+  .article-londres .article-resto-head-label { font-size: 22px !important; }
+  .article-londres .article-rendre-label span { font-size: 22px !important; }
   .article-londres .article-rendre-label .article-rendre-icon-wrap { width: 28px !important; height: 28px !important; }
   .article-londres .article-rendre-timeline { padding: 14px 16px 14px 14px !important; }
 }
@@ -1277,4 +1277,11 @@
   .article-londres .article-resto-name { font-size: 21px !important; }
   .article-londres .article-resto-head-label { font-size: 22px !important; }
   .article-londres .article-rendre-label span { font-size: 22px !important; }
+}
+
+.resto-head-text-short { display: none; }
+
+@media (max-width: 768px) {
+  .resto-head-text-full { display: none; }
+  .resto-head-text-short { display: inline; }
 }
