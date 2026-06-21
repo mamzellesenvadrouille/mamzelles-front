@@ -152,7 +152,7 @@ export default function Formules() {
               <div className="fcard-name">L&apos;Escale</div>
               <div className="fcard-days">2 à 4 jours</div>
             </div>
-            <div className="fcard-price"><span>À partir de</span><strong>179€</strong></div>
+            <div className="fcard-price"><span>À partir de</span><strong>179 €</strong></div>
             <div className="fcard-arrow-wrap">
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 3 restaurants, 3 sites & activités</p></div>
@@ -166,7 +166,7 @@ export default function Formules() {
               <div className="fcard-name">La Vadrouille</div>
               <div className="fcard-days">5 à 8 jours</div>
             </div>
-            <div className="fcard-price"><span>À partir de</span><strong>329€</strong></div>
+            <div className="fcard-price"><span>À partir de</span><strong>329 €</strong></div>
             <div className="fcard-arrow-wrap">
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 5 restaurants, 5 sites & activités</p></div>
@@ -179,7 +179,7 @@ export default function Formules() {
               <div className="fcard-name">La Grande Vadrouille</div>
               <div className="fcard-days">9 à 14 jours</div>
             </div>
-            <div className="fcard-price"><span>À partir de</span><strong>499€</strong></div>
+            <div className="fcard-price"><span>À partir de</span><strong>499 €</strong></div>
             <div className="fcard-arrow-wrap">
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 8 restaurants, 8 sites & activités</p></div>
@@ -214,7 +214,7 @@ export default function Formules() {
             <div className="frcard-divider" />
             <div className="form-right-price-block">
               <p className="form-right-price-label">À partir de</p>
-              <p className="form-right-price">549€</p>
+              <p className="form-right-price">549 €</p>
             </div>
             <a href="#formulaire" className="btn-dark form-right-cta">Demander un devis gratuit</a>
           </div>
@@ -234,19 +234,19 @@ export default function Formules() {
               <Users size={32} strokeWidth={1.2} className="opt-card-icon" />
               <div className="opt-card-name">Adulte supplémentaire</div>
               <div className="opt-card-sub">(12 ans et +)</div>
-              <div className="opt-card-price">+25€</div>
+              <div className="opt-card-price">+25 €</div>
             </div>
             <div className="opt-card">
               <User size={32} strokeWidth={1.2} className="opt-card-icon" />
               <div className="opt-card-name">Enfant</div>
               <div className="opt-card-sub">(2 à 11 ans)</div>
-              <div className="opt-card-price">+15€</div>
+              <div className="opt-card-price">+15 €</div>
             </div>
             <div className="opt-card">
               <MapPin size={32} strokeWidth={1.2} className="opt-card-icon" />
               <div className="opt-card-name">Destination<br />supplémentaire</div>
               <div className="opt-card-sub">&nbsp;</div>
-              <div className="opt-card-price">+35€</div>
+              <div className="opt-card-price">+35 €</div>
             </div>
             <div className="opt-card">
               <Calendar size={32} strokeWidth={1.2} className="opt-card-icon" />
