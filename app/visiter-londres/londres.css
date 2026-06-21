@@ -1046,7 +1046,7 @@
   gap: 8px;
   color: #fff;
   font-family: "Cormorant Garamond", serif;
-  font-size: 21px !important;
+  font-size: 24px !important;
   font-style: italic;
 }
 
@@ -1162,7 +1162,7 @@
 
 .article-londres .article-rendre-label span {
   font-family: "Cormorant Garamond", serif;
-  font-size: 21px !important;
+  font-size: 24px !important;
   font-weight: 600;
   font-style: italic;
   color: var(--dark);
@@ -1267,7 +1267,14 @@
   .article-londres .article-resto-body { padding: 16px 18px !important; }
   .article-londres .article-resto-head { padding: 11px 16px !important; }
   .article-londres .article-resto-name { font-size: 22px !important; }
-  .article-londres .article-rendre-label span { font-size: 19px !important; }
+  .article-londres .article-resto-head-label { font-size: 20px !important; }
+  .article-londres .article-rendre-label span { font-size: 20px !important; }
   .article-londres .article-rendre-label .article-rendre-icon-wrap { width: 28px !important; height: 28px !important; }
   .article-londres .article-rendre-timeline { padding: 14px 16px 14px 14px !important; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .article-londres .article-resto-name { font-size: 21px !important; }
+  .article-londres .article-resto-head-label { font-size: 22px !important; }
+  .article-londres .article-rendre-label span { font-size: 22px !important; }
 }
