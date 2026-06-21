@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import './philippines.css';
+import './port-barton.css';
 import Navbar from '../components/Navbar';
 import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
@@ -7,30 +7,30 @@ import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
-  title: "Voyage aux Philippines : itinéraire de 3 semaines",
-  description: "Explorez notre itinéraire de 3 semaines aux Philippines, entre îles de rêve & spots incontournables, pour organiser votre voyage au paradis !",
-  alternates: { canonical: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient' },
+  title: "Palawan : de Puerto Princesa à Port Barton",
+  description: "Un mois à Palawan loin des foules : Puerto Princesa, Sabang et sa rivière souterraine, Port Barton et la paradisiaque Modessa Island.",
+  alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus' },
   openGraph: {
-    title: "Voyage aux Philippines : itinéraire de 3 semaines",
-    description: 'Notre itinéraire détaillé de 3 semaines aux Philippines : Palawan, Banaue, Bohol, Siquijor, Siargao...',
-    url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+    title: "Palawan : de Puerto Princesa à Port Barton",
+    description: "Un mois à Palawan loin des foules, de Puerto Princesa à la paradisiaque Modessa Island.",
+    url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
     siteName: 'MamZelles en vadrouille',
-    images: [{ url: 'https://mamzellesenvadrouille.com/Philippines.webp', width: 1920, height: 1080 }],
+    images: [{ url: 'https://mamzellesenvadrouille.com/Puerto-Princesa-Port-Barton.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
-    publishedTime: '2024-09-01T00:00:00.000Z',
+    publishedTime: '2025-03-14T19:11:45.000Z',
     authors: ['MamZelles en vadrouille'],
   },
 };
 
-export default function PhilippinesPage() {
+export default function PalawanPortBartonPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: "Voyage aux Philippines : itinéraire de 3 semaines",
-    description: "Explorez notre itinéraire de 3 semaines aux Philippines, entre îles de rêve & spots incontournables, pour organiser votre voyage au paradis !",
-    image: 'https://mamzellesenvadrouille.com/Philippines.webp',
-    datePublished: '2024-09-01',
+    headline: "Palawan : de Puerto Princesa à Port Barton",
+    description: "Un mois à Palawan loin des foules : Puerto Princesa, Sabang et sa rivière souterraine, Port Barton et la paradisiaque Modessa Island.",
+    image: 'https://mamzellesenvadrouille.com/Puerto-Princesa-Port-Barton.webp',
+    datePublished: '2025-03-14',
     dateModified: '2026-06-21',
     author: {
       '@type': 'Organization',
@@ -47,7 +47,7 @@ export default function PhilippinesPage() {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+      '@id': 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
     },
   };
 
@@ -62,12 +62,12 @@ export default function PhilippinesPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/Philippines.webp" alt="Philippines, îles paradisiaques aux eaux turquoise" style={{objectPosition: 'center 40%'}} />
+        <img className="hero-bg" src="/Puerto-Princesa-Port-Barton.webp" alt="Palawan : Puerto Princesa, Port Barton et Modessa Island" style={{objectPosition: 'center 65%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>Itinéraire Philippines<br /><em>3 semaines pour découvrir la perle de l&apos;Orient</em></h1>
+          <h1>Palawan<br /><em>De Puerto Princesa à Port Barton</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Notre itinéraire détaillé pour explorer les Philippines<br className="mobile-hero-break" /><br className="tablet-only-br" /> en 3 semaines,<br className="desktop-only-br" /> entre îles de rêve, rizières en terrasse,<br className="tablet-only-br" /> cascades et rencontres inoubliables.</p>
+          <p className="hero-desc">Un Palawan secret, loin des foules et des clichés.</p>
         </div>
       </section>
 
@@ -77,7 +77,7 @@ export default function PhilippinesPage() {
       <div className="article-bref-bar">
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <span>3 semaines min.</span>
+          <span>3-4 semaines</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -87,7 +87,7 @@ export default function PhilippinesPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>60-80 €/j/pers.</span>
+          <span>50-70 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -107,942 +107,1094 @@ export default function PhilippinesPage() {
           <span className="article-cdcr-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="#c8956c" stroke="#c8956c" strokeWidth="1"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
           </span>
-          <h2>Ce qui a rendu ce voyage inoubliable</h2>
+          <h2>Pourquoi nous avons adoré ce Palawan secret</h2>
         </div>
         <div className="article-cdcr-grid">
-          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre île coup de cœur</span><span className="article-cdcr-value">→ Palawan</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">Le moment le plus émouvant</span><span className="article-cdcr-value">→ Les rizières de Batad</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">À découvrir sans hésiter</span><span className="article-cdcr-value">→ Les cascades de Siquijor</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">L&apos;énergie qu&apos;on<br className="tablet-only-br" />a adorée</span><span className="article-cdcr-value">→ L&apos;ambiance surf de Siargao</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre étape coup de cœur</span><span className="article-cdcr-value">→ Modessa Island</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Le spot le plus incroyable</span><span className="article-cdcr-value">→ Le viewpoint de San Vicente</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Le moment le plus magique</span><span className="article-cdcr-value">→ Le sunset à Port Barton</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">À tester<br className="tablet-only-br" /> sans hésiter</span><span className="article-cdcr-value">→ Le kayak jusqu&apos;à Coconut Beach</span></div>
         </div>
       </div>
 
-      <div className="article-layout article-philippines">
+      <div className="article-layout article-portbarton">
         <main className="article-main">
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
             <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
             <ol className="article-toc-list">
-              <li><a href="#itineraire">Notre itinéraire en 3 semaines</a></li>
-              <li><a href="#palawan">📍 Palawan : El Nido et Coron</a></li>
-              <li><a href="#banaue">📍 Banaue &amp; Batad</a></li>
-              <li><a href="#bohol">📍 Bohol &amp; ses petits plus uniques</a></li>
-              <li><a href="#siquijor">📍 Siquijor — L&apos;île mystique aux magnifiques cascades</a></li>
-              <li><a href="#siargao">📍 Siargao — L&apos;île des surfeurs</a></li>
-              <li><a href="#budget">Quel budget pour 3 semaines ?</a></li>
-              <li><a href="#pratique">Tout savoir pour organiser votre voyage</a></li>
+              <li><a href="#manille">📍 Arrivée à Manille</a></li>
+              <li><a href="#puerto-princesa">📍 Puerto Princesa</a></li>
+              <li><a href="#sabang">📍 Sabang &amp; sa rivière souterraine</a></li>
+              <li><a href="#port-barton">📍 Port Barton</a></li>
+              <li><a href="#san-vicente">📍 San Vicente</a></li>
+              <li><a href="#retour-port-barton">📍 De retour à Port Barton</a></li>
+              <li><a href="#roxas">📍 Roxas</a></li>
+              <li><a href="#modessa">📍 Modessa Island</a></li>
+              <li><a href="#au-revoir">📍 Bye bye Palawan</a></li>
             </ol>
           </nav>
 
           {/* INTRO */}
           <section className="article-section">
-            <p className="article-intro"><strong>Vous envisagez de partir à la découverte des Philippines et vous cherchez l&apos;itinéraire parfait ? Vous êtes au bon endroit ! Nous vous partageons ici le nôtre en détail.<br />Belle lecture à vous et bon voyage !</strong></p>
-            <p><strong>Les Philippines c&apos;est plus de 7500 îles,</strong> ce qui nous offre de nombreuses possibilités de découvertes. Chaque île est différente, ce qui rend le choix encore plus compliqué !</p>
-            <p>Vouloir découvrir un maximum d&apos;endroits sous-entend pas mal de déplacements pour rejoindre les différentes îles en avion et/ou en ferry. Durant notre voyage, nous avons rencontré plusieurs personnes qui ont fait le choix de ne rien planifier et de voir au fur et à mesure où ils souhaitaient se rendre.</p>
-            <p>À moins d&apos;avoir 2 mois devant vous et un budget illimité, il en ressort majoritairement que <strong>les déplacements sont une vraie galère et une grosse perte de temps si ce n&apos;est pas anticipé.</strong> Pas mal d&apos;entre elles ont donc renoncé à découvrir d&apos;autres îles.</p>
-            <p><strong>Planifier son itinéraire</strong> permet de cibler vos points d&apos;intérêt sans vous égarer, sans perdre trop de temps dans l&apos;organisation sur place et dans vos déplacements, mais aussi de ne pas exploser votre budget !</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2696-1024x768.jpg" alt="Naked Beach Siargao Island Hopping" className="article-img-full" loading="lazy" />
-            <p>Le fait d&apos;<strong>anticiper les réservations</strong> laisse moins de place aux plans galères et aux mauvaises surprises. Par exemple, devoir chercher un hôtel sur place et le choisir par dépit car ils sont tous complets… Acheter un billet d&apos;avion 200 € alors qu&apos;il y a la possibilité de le payer 4 fois moins cher quelques mois auparavant… Ou encore ne pas avoir de billet le jour prévu car les vols et / ou les ferrys sont pleins !</p>
-            <p>Pour organiser vos déplacements, vous avez plusieurs possibilités. Il existe différentes compagnies aériennes telles que <strong><a href="https://www.philippineairlines.com" target="_blank" rel="noopener noreferrer" className="article-link">Philippines Airlines</a></strong>, <strong><a href="https://www.airasia.com/en/gb" target="_blank" rel="noopener noreferrer" className="article-link">Air Asia</a></strong> et <strong><a href="https://www.cebupacificair.com/en-PH/" target="_blank" rel="noopener noreferrer" className="article-link">Cebu Pacific</a></strong>. Il en est de même pour les ferrys : <strong><a href="https://www.oceanjet.net/" target="_blank" rel="noopener noreferrer" className="article-link">Océan Jet</a></strong>, <strong><a href="https://liteferries.com.ph/" target="_blank" rel="noopener noreferrer" className="article-link">Lite Shipping Corporation</a></strong> et <strong><a href="https://www.starliteferries.com/" target="_blank" rel="noopener noreferrer" className="article-link">Starlite Ferries</a></strong>.</p>
-            <p>Vous trouverez plusieurs sites qui vous permettront de planifier votre voyage. Personnellement, nous avons utilisé <strong><a href="https://12go.asia/fr" target="_blank" rel="noopener noreferrer" className="article-link">12go.asia</a></strong> pour réserver nos trajets en bus et en ferry. Pour les vols, nous avons comparé les différentes propositions sur <strong><a href="https://www.skyscanner.fr/" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a></strong> en fonction des dates et des destinations qui nous intéressaient, puis nous avons acheté nos billets directement sur le site internet des compagnies aériennes, c&apos;est souvent plus économique !</p>
-            <p>Quelques mois avant notre départ, nous avons donc sélectionné les endroits dans lesquels nous voulions nous rendre et avons réservé tous nos déplacements en avion, ferry et bus, et booké nos hébergements. Nous n&apos;avons vraiment pas regretté cette organisation !</p>
+            <p className="article-intro">Embarquez pour Palawan, de Puerto Princesa à Port Barton, et plongez dans une aventure loin des foules touristiques !</p>
+            <p>Après un premier voyage à travers les Philippines, nous avons choisi, pour notre deuxième séjour, de consacrer un mois entier à Palawan, cette île incroyable de la mer de Sulu, dans le Sud-ouest du pays.</p>
+            <p>Très allongée, l'île s’étend sur 450 km de long et a une largeur moyenne de 50 km.</p>
+            <p>De Puerto Princesa et son célèbre island hopping, à Sabang et sa rivière souterraine, en passant par San Vicente et Port Barton, pour finir en beauté sur la magnifique Modessa Island, nous vous racontons tout, étape par étape !</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2026/06/Port-barton.jpg" alt="Camping Palawan Port Barton" className="article-img-full" loading="lazy" />
+            <p>Après un long voyage depuis Nice, en passant par Londres et Beijing (Chine), nous arrivons à Manille vers 22 h. Nous avions presque oublié cette sensation quand on sort de l’avion… Chaleur + humidité, pas de doute, nous sommes bien aux Philippines. Récupération des sacs à dos et c’est parti !</p>
+            <div className="article-day-header article-day-header-tight">
+              <h3>Comment se rendre à Palawan ?</h3>
+            </div>
+            <p>Ne manquez pas notre autre article sur Palawan. Vous y trouverez des infos pratiques, notamment sur les aéroports et les transports à privilégier pour rejoindre facilement l’archipel.</p>
+            <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan El Nido Coron" className="article-img-full" loading="lazy" /></a>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À LIRE AUSSI</strong><p><a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-link">⋙ PALAWAN : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</a></p></div>
+            </div>
           </section>
 
-          {/* ITINERAIRE */}
+          <section id="manille" className="article-section">
+            <div className="article-day-header">
+              <h2>📍 Arrivée à Manille</h2>
+            </div>
+            <p>Nous avons pris un hôtel à 10 minutes de l’aéroport car notre prochain vol est le lendemain vers 13 h. Pour 30 € la nuit, petit-déjeuner compris, l'<strong><a href="https://maps.app.goo.gl/atQGdGUGWigJJWE1A?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Achievers Airport Hotel</a></strong> est top. Si, comme nous, vous êtes juste de passage pour une nuit à Manille, nous vous recommandons vivement cet hôtel. Il est possible de vous arranger avec eux pour organiser les transferts aéroport &lt;—&gt; hôtel, qui sont gratuits.</p>
+            <p>Demain, c'est donc direction Puerto Princesa, la capitale de Palawan. 300,000 habitants sur 2,381 km², c’est l’une des plus grandes villes des Philippines en termes de superficie.</p>
+            <p>On a trop hâte de vraiment commencer notre voyage, et de découvrir cette 1ère ville de notre itinéraire !</p>
+          </section>
+
+          <section id="puerto-princesa" className="article-section">
+            <div className="article-day-header">
+              <h2>📍 Puerto Princesa, la porte d'entrée de Palawan</h2>
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 1</span>
+              <h3>De Manille à Puerto Princesa</h3>
+            </div>
+            <p>Après un vol rapide d’1 h 30, nous arrivons à Puerto Princesa.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0328-768x1024.jpg" alt="Aéroport Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0330_jpg-768x1024.jpg" alt="Tuk-tuk Palawan Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Pour vos trajets en ville, téléchargez l'appli RIDE (l'équivalent local de GRAB) : les prix sont fixes et affichés à l'avance, fini les négociations à rallonge. On l'a utilisée partout à Puerto Princesa.</p></div>
+            </div>
+            <p>138 Php (2,30 €) pour rejoindre notre hôtel, le <strong><a href="https://maps.app.goo.gl/fgYS5rtgfwrui66U6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Puerto Pension Inn</a></strong>, à une dizaine de minutes de l’aéroport. C’est plutôt correct ! Nous y passerons 4 nuits. Comptez 28 € par nuit, petit-déjeuner compris.</p>
+            <p>Cet hôtel est un petit havre de paix niché au beau milieu de la ville. Idéalement situé au bout de la Malvar Road, il est juste au-dessus de la fameuse <strong>Baywalk</strong>. La chambre est décorée de façon traditionnelle, tout en bois et en bambou. En plus d'être très jolie, elle est aussi équipée de la clim’, de la télé et d’un petit frigo.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0587-768x1024.jpg" alt="Puerto Pension Inn Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0358-768x1024.jpg" alt="Kinabuch Grill &amp; Bar Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Une fois installées, nous partons découvrir les alentours. Par hasard, en nous baladant, à plus ou moins 25 minutes à pied de notre hôtel, nous tombons sur <strong><a href="https://maps.app.goo.gl/Cq7u3UDvRwHEnsNW9?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Kinabuchs Grill and Bar</a></strong>. On se laisse tenter… Ils proposent une grande carte, le choix est difficile. Ici, vous pouvez goûter tout un tas de spécialités philippines. Amélie a testé le Beef Tagalog, de la viande de bœuf marinée dans une sauce incroyable aux oignons. Ce sera Gambas pour Laurie. Les accompagnements sont à prendre à part. En se faisant plaisir (apéro compris), nous payons 20 € pour 2.</p>
+            <p>Après s’être clairement remplies, on retourne à l'hôtel. On ne s’est pas encore remises du voyage, du coup, niveau fatigue, on est KO ! Alors, c'est dodo tôt pour nous ce soir.</p>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 2</span>
+              <h3>Puerto Princesa &amp; sa plage</h3>
+            </div>
+            <p>Pour notre 1ère journée à Puerto Princesa, réveil tranquille et petit-déjeuner au dernier étage de l’hôtel avec vue sur la baie… On prend le temps.</p>
+            <p>Dans l’après-midi, nous partons découvrir la plage <strong>BM Beach</strong>, située à environ 2 km du centre-ville.</p>
+            <p>Nous prenons un tuk-tuk via <strong>RIDE</strong> pour nous y rendre. Cette plage est réputée pour son ambiance paisible, ses eaux peu profondes et son cadre naturel. Parfait pour patauger !</p>
+            <p>Cet endroit est essentiellement fréquenté par des familles philippines. Elles viennent y passer la journée pour pratiquer l’une de leurs activités favorites, le karaoké, of course ! Ici, vous avez donc la possibilité de louer des petites cabanes en bord de plage pour la journée. Pique-nique, karaoké party et bonne ambiance au programme !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0404-768x1024.jpg" alt="BM Beach Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0426_jpg-768x1024.jpg" alt="BM Beach Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Nous longeons ensuite la plage jusqu’au bout, histoire de nous balader. C’est là qu’on tombe sur le <a href="https://maps.app.goo.gl/xUtDGMWj5C95Goaf6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Bamboo Nest Beach</strong></a>, un endroit très sympa, idéal pour les backpackers. L’hôtel dispose de quelques chambres, notamment des dortoirs, mais surtout de Floating Houses (sorte de maisons flottantes en bois).</p>
+            <p>Il y en a de différentes tailles. Les plus petites peuvent être tractées sur l’eau jusqu’au banc de sable qui se situe à 1 km de la côte. On profite de l’endroit tout en buvant une petite bière pour se rafraîchir.</p>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3254-768x1024.jpg" alt="Floating house Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3255-768x1024.jpg" alt="Artisanat BM Beach Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3256-768x1024.jpg" alt="Rue BM Beach Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Après ce moment agréable, loin du tumulte de la ville, nous retournons dans le centre-ville.</p>
+            <p>Pour le dîner, nous mangeons aux <strong><a href="https://maps.app.goo.gl/8VB7vk571MFiJM9d9?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Artisans</a></strong>, une bonne adresse où l’on mange de bons plats frais et savoureux.</p>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 3</span>
+              <h3>Island hopping à Puerto Princesa</h3>
+            </div>
+            <p>Nouvelle journée, nouvelle virée ! Aujourd’hui, c’est Island hopping dans la baie de Honda. Nous avons réservé l’excursion directement avec l’hôtel pour 1500 Php (25 €).</p>
+            <p>Un van vient nous chercher à 7 h 30. En route, nous récupérons d’autres personnes.</p>
+            <p>Comme tout est bien pensé pour les touristes, on fait un petit arrêt dans une boutique pour louer du matériel si besoin (palmes, masque, tuba, chaussures d’eau, etc.). Au programme de la journée, 4 spots à visiter…
+C’est parti, nous sommes 8 sur le bateau.</p>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
+              <div><strong>Le conseil des MamZelles</strong><p>Pour vos island hoppings, passez systématiquement par votre hôtel plutôt qu’une agence — les prix sont souvent bien plus intéressants.</p></div>
+            </div>
+            <h4>⧐ Starfish Island</h4>
+            <p>Une petite île sympa où on peut observer des étoiles de mer. Il y a une zone délimitée pour les voir. En réalité, on n’en a pas vu une seule dans la zone indiquée... Mais surprise quand on a repris le bateau, on remarque qu’il y en avait des dizaines juste en dessous !</p>
+            <p>Nous avons mangé sur cette île. Le repas (ou plutôt le buffet !) est préparé par notre guide et l’équipage du bateau. Il y avait de tout : du riz, de la viande, du poisson, des salades… Vous avez la possibilité d’acheter des boissons sur place.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0463-768x1024.jpg" alt="Starfish Island Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0461-768x1024.jpg" alt="Buffet Island hopping Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Pambato Reef</h4>
+            <p>En pleine mer, on accoste sur un ponton pour pouvoir découvrir le sanctuaire marin Pambato Reef. On y observe de nombreux poissons, mais en réalité, ils balancent de la nourriture pour les attirer.</p>
+            <p>On n’aime pas vraiment ça… Pour autant, le décor est tout de même superbe. On a l’impression d’être immergées dans un aquarium.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0446-1-768x1024.jpg" alt="Pambato Reef Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0467-768x1024.jpg" alt="Pambato Reef Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Luli Island</h4>
+            <p>Luli Island est une petite île qui disparaît quasiment au gré des marées. Elle n’est vraiment pas grande, on fait vite le tour à pied. Sur place, quelques petites paillotes sont mises à disposition pour se poser ou s’abriter du soleil.</p>
+            <p>Il y a également un petit snack qui propose des sandwiches, des grillades ou des cocktails de fruits.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/DJI_20241115_131748_116-768x1024.jpg" alt="Luli Island Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0488-768x1024.jpg" alt="Cabane Luli Island Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Cowrie Island</h4>
+            <p>Contrairement aux autres spots, Cowrie Island est une île très animée. On ne s'attendait pas à voir autant de monde sur place en débarquant ! Cette plage de sable blanc est en tout cas parfaite pour la baignade.</p>
+            <p>On y trouve des bars, des restaurants, un terrain de beach-volley et un salon de massage. On peut même se faire tatouer au henné ! Sachez que vous avez la possibilité de venir sur cette île juste pour y passer la journée.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3257-768x1024.jpg" alt="" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/DJI_20241115_144925_747-2-768x1024.jpg" alt="Cowrie Island Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Notre avis sur cet Island hopping</h4>
+            <p>Retour sur la terre ferme vers 15 h 45. Sur le trajet de l’hôtel, nous repassons par la boutique pour rendre le matériel de plage (masques et tubas) que nous avons loué.</p>
+            <p>Nous avons passé en moyenne une heure par spot, sauf sur l’île où nous avons mangé. Nous y sommes restées plus ou moins 2 h 30.</p>
+            <p>Cet Island hopping est bien moins fréquenté que ceux du Nord de Palawan (Coron &amp; El Nido), ce qui est plutôt agréable. Le fait qu’il y ait beaucoup moins de monde fait que nous avions les spots rien que pour nous ! Par contre, on ne vous le cache pas, même si c’était très sympa et très joli, c’est tout de même bien moins impressionnant que les Island hoppings de Coron et El Nido.</p>
+            <h4>⧐ Baywalk, la promenade nocturne incontournable</h4>
+            <p>Pour la soirée, petite balade et repas sur la <strong>Baywalk</strong> qui se situe à 3 minutes à pied de notre hôtel. Sur place, on découvre un petit marché, une grande promenade et plusieurs restaurants. L’endroit est très familial : il est possible de louer des petits vélos, des voiturettes, des tuk-tuks à pédales…</p>
+            <p>Pour le restaurant, notre choix (enfin celui de Laurie) s’est fait en fonction des poissons frais exposés sur les étals. On dînera donc au <strong>Kobe's</strong>.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0530-1024x768.jpg" alt="Baywalk Puerto Princessa" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4929-768x1024.jpg" alt="Bike Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4928-768x1024.jpg" alt="Baywalk Puerto Princesa Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0526_jpg-768x1024.jpg" alt="Baywalk food Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 3</span>
+              <h3>Une histoire de laverie &amp; de friperies...</h3>
+            </div>
+            <p>Comme chaque matin, on passe dire bonjour à nos copines de la réception... Surprise ! Elles nous annoncent que notre linge (que nous avions déposé la veille à faire laver) a brûlé ! Vidéos à l’appui, ce ne sont pas que nos affaires qui sont parties en fumée, mais tout le bâtiment de la laverie !</p>
+            <p>Effectivement, ça sent le brûlé dans tout le quartier puisque le feu s’est déclaré dans une rue parallèle à notre hôtel ! La journée commence bien ! Bon, il n’y a pas eu de blessé, c’est le principal. Hormis des débardeurs et des shorts, nous avions également déposé nos vêtements chauds, ceux avec lesquels nous avions voyagé (pantalons, sweats, chaussettes…).</p>
+            <p>C’est avec ces mêmes vêtements que nous comptions rentrer en France, dans le froid polaire de décembre ! Pas le choix, on est obligées de se trouver de nouveaux vêtements chauds en urgence. Comme Puerto Princesa est la plus grande ville que l’on visite pendant ce séjour à Palawan, si on ne trouve pas de vêtements aujourd’hui, on rentrera alors en France en short et en débardeur ! Lol.</p>
+            <p>Du coup, pour notre plus grand plaisir, c’est parti pour une virée shopping… En vrai, on déteste ça !</p>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4933-768x1024.jpg" alt="Centre commercial Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0572-768x1024.jpg" alt="Market Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0349-768x1024.jpg" alt="Tuk-tuk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Direction donc le centre commercial SM City Puerto Princesa, sous 35 degrés. Une fois à l’intérieur, c’est le choc thermique, il fait tellement froid ! Mais pourquoi les Philippins mettent-ils toujours les clim’ aussi fortes ?!! Quoi qu’il en soit, impossible de trouver des vêtements chauds malgré un nombre conséquent de boutiques. On décide alors de rebrousser chemin car on avait repéré en route quelques magasins qui, pour autant, ne payaient pas de mine.</p>
+            <p>Ce sont en fait des friperies — et c’est là qu’on trouvera finalement notre bonheur. Mission accomplie, youhou !</p>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Puerto Princesa regorge de friperies où l’on peut faire de vraies affaires ! Vêtements chauds pour survivre aux clims glaciales des vans, ou belles fringues d’été… on peut y trouver de vrais trésors. La plupart des Philippins y achètent leurs vêtements, bien plus accessibles que dans les centres commerciaux.</p></div>
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 4</span>
+              <h3>Voyage = Relax</h3>
+            </div>
+            <p>Aujourd’hui, nous quittons notre petit havre de paix pour passer une dernière nuit à Puerto Princesa, mais dans un autre hôtel. Nous sommes attendues et invitées par le <strong><a href="https://maps.app.goo.gl/aKuuXDziTRmG2wYw7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Canvas Boutique Hotel</a></strong>.</p>
+            <p>Pour nous y rendre, nous avons commandé un tuk-tuk via <strong>RIDE</strong>.</p>
+            <p>On découvre alors un hôtel moderne et artistique, qui offre un certain standing. Il y a même une piscine !</p>
+            <p>Nous arrivons dans le grand hall d’accueil en mode sacs à dos, et nous sommes bien les seules ! C’est un « hôtel valises » comme on appelle ce genre d’établissement. Lol !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0609-768x1024.jpg" alt="Canvas Boutique Hotel Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0641-1-768x1024.jpg" alt="Canvas Boutique Hotel Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Avec son design contemporain et toutes ses œuvres d’art locales, le <strong><a href="https://maps.app.goo.gl/aKuuXDziTRmG2wYw7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Canvas Boutique Hotel</a></strong> est canon en tout cas.
+La chambre est très spacieuse. On a deux immenses lits rien que pour nous, c’est tout confort !
+On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir et de se prélasser au bord de l’eau.</p>
+            <p>Après ce moment détente, on se prépare pour aller manger. On a repéré un petit restaurant méditerranéen à seulement 3 minutes à pied qui nous tente bien, le <strong><a href="https://maps.app.goo.gl/nE3UvjaE6jgvVZDk7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Bersian Restaurant</a></strong>. Effectivement, on s’est régalées.</p>
+            <p>Il est temps d’aller se coucher. Demain, nous partons vers une nouvelle destination, on a trop hâte !</p>
+            
+            
+            
+            <div className="pb-resto-section">
+              <h3 className="pb-resto-title">Où manger à Puerto Princesa ?</h3>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€</span>
+                <span className="pb-resto-tier-label">Budget</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://maps.app.goo.gl/nE3UvjaE6jgvVZDk7?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Bersian Restaurant</span>
+                <span className="pb-resto-card-desc">Spécialiste du shawarma à Puerto Princesa — cuisine méditerranéenne authentique et généreuse</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://maps.app.goo.gl/8VB7vk571MFiJM9d9?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Artisans</span>
+                <span className="pb-resto-card-desc">Cuisine variée et généreuse dans un cadre artistique soigné — du burger au tacos, tout est bon</span>
+              </a>
+              <a href="https://maps.app.goo.gl/Cq7u3UDvRwHEnsNW9?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Kinabuchs Grill and Bar</span>
+                <span className="pb-resto-card-desc">Le classique de Puerto Princesa : spécialités philippines, crocodile au menu et ambiance de terrasse</span>
+              </a>
+              </div>
+            </div>
+            </div>
+</section>
+
+          <section id="sabang" className="article-section">
+            <div className="article-day-header">
+              <h2>📍 Sabang &amp; sa rivière souterraine</h2>
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 1</span>
+              <h3>Direction Sabang !</h3>
+            </div>
+            <p>Réveil dans notre hôtel bling-bling. Pour le petit-déjeuner, un grand buffet est proposé… Œufs brouillés pour Laurie et tartines à la confiture pour Amélie (qui déteste manger salé de bon matin).</p>
+            <p>Après le p’tit dej, on profite d’un dernier moment à la piscine. Ça fait vraiment du bien, car il est seulement 10 h 30 et il fait déjà 30 degrés, ressenti 37 !</p>
+            <p>Midi, il est temps de quitter l’hôtel et cette petite parenthèse enchantée.</p>
+            <h4>⧐ Comment se rendre à Sabang ?</h4>
+            <p>On a prévu d’aller à Sabang aujourd’hui, à environ 1 h 30 de Puerto Princesa. Il y a plusieurs possibilités pour s’y rendre, dont le taxi (organisé par l’hôtel pour 1,500 Php / pers.) et le van privé (au même tarif).</p>
+            <p>Pour notre part, nous avons suivi la recommandation de notre futur hôte de passer par une compagnie de transport public, <strong>Bloomfield Transport Van</strong>.</p>
+            <p>Il y a plusieurs départs dans la journée : 10 h, 14 h et 16 h. Nous prendrons celui de 14 h. Le point de RDV de la société de transport se trouvant à 10 minutes  de notre hôtel, on utilise une fois de plus l’application <strong>RIDE</strong> pour nous y rendre.</p>
+            <p>Arrivées à Bloomfield, nous avons l’agréable surprise de payer seulement 300 Php (4,80 €) par personne (le tarif tourne aujourd’hui plutôt autour de 500 à 600 Php selon la compagnie).</p>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4932-768x1024.jpg" alt="Bloomfield Transport Van Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4930-768x1024.jpg" alt="Contact Bloomfield Transport Van Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0647-2-768x1024.jpg" alt="Ka Inato Restaurant Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Comme nous sommes un peu en avance, on y laisse nos gros sacs pour aller rapidement manger un bout. On a repéré à deux pas de là, un petit restaurant super bien noté sur Google, le <strong><a href="https://maps.app.goo.gl/N9DAq3Ej6SL9t1KC6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Ka Inato</a></strong>.</p>
+            <p>Sur place, on découvre qu’une partie du personnel est sourde ou malentendante. Dans le menu, on trouve des fiches avec quelques mots traduits en langue des signes pour nous permettre de communiquer avec eux, et notamment pour qu’ils puissent prendre notre commande.</p>
+            <p>Forcément, on « joue le jeu ». On adore le concept ! Sachez que c’est ici que nous avons mangé le meilleur poulet grillé de notre vie et à un prix dérisoire. Bref, on recommande cet endroit à 100 % !</p>
+            <p>Malheureusement, on n’a pas vraiment le temps de prendre le temps, alors on engloutit notre merveilleux poulet en 3ème vitesse, et let’s go to the van.</p>
+            <p>À bientôt Puerto Princesa !</p>
+            <h4>⧐ Sabang, nous voilà !</h4>
+            <p>On se retrouve au milieu des Philippins, on adore se fondre dans la masse. Le van est le même que si nous l’avions pris à l’hôtel, sauf que celui-ci est public et donc beaucoup moins cher.</p>
+            <p>Direction Sabang, une petite localité située à 75 km du centre de Puerto Princesa.</p>
+            <p>C’est un petit village côtier, relativement tranquille, principalement connu pour sa proximité avec la rivière souterraine. Ici, les gens vivent de la pêche, de l’agriculture et du tourisme. C’est une destination qui offre une expérience authentique au cœur de la culture locale, loin du tumulte de la ville.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4939-768x1024.jpg" alt="Bambua Nature Cottage Sabang" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4938-768x1024.jpg" alt="Bambua Nature Cottage Sabang" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Le van nous dépose devant notre hôtel, le <strong><a href="https://maps.app.goo.gl/KRiHSQu7Mkq48Juu7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Bambua Nature Cottage</a></strong>. Un autre petit paradis sur terre. Un peu perdu dans la pampa, on y accède par un petit chemin balisé (qui grimpe pas mal !). Un chien nous escorte. Une fois en haut, nos hôtes sont là pour nous accueillir.</p>
+            <p>On fait la connaissance du propriétaire, un Néerlandais, qui nous raconte son extraordinaire histoire… Il est arrivé à Sabang il y a plus de 25 ans, à une époque où il n'y avait rien. Son parcours est digne d’un véritable Robinson des temps modernes !</p>
+            <p>Il a vécu sur la plage, noué des liens avec des singes, et survécu en se nourrissant avec les moyens du bord. Plus tard, il crée une ferme, cultive du riz, et vit de ses récoltes. Puis, sa vie prend un tournant le jour où il rencontre une Philippine. Il l’épouse, et ensemble, ils construisent cet endroit unique.</p>
+            <p>Après ça, on nous accompagne jusqu’à notre cottage. Il y en a plusieurs, mais on a vraiment le sentiment d’être isolées. À peine arrivées, on s’y sent trop bien !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0681_jpg-768x1024.jpg" alt="Plage Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0667_jpg-768x1024.jpg" alt="Children Sabang" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0664_jpg-768x1024.jpg" alt="Rue Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0691_jpg-768x1024.jpg" alt="Plage Coconuts Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Affaires déballées et bien installées, on part découvrir les environs...</p>
+            <p>Nous sommes à 10 bonnes minutes à pied du centre et de la plage que l’on part rejoindre. En chemin, on se rend rapidement compte qu’il y a très peu de touristes. En réalité, la plupart d'entre eux ne dorment pas à Sabang. Ils viennent juste passer la journée en excursion, puis repartent. Mais comme on aime ne pas faire comme tout le monde, on y reste 2 nuits !</p>
+            <p>Sabang est une petite ville où il n’y a pas grand-chose à voir, mais qui offre une très belle et grande plage. On ne peut pas s’empêcher de marcher les pieds dans l’eau pour découvrir un peu le littoral. On essaie de ne pas trop traîner, car ce soir, on a prévu de dîner à l’hôtel. Au menu, nouilles aux légumes et au poulet pour seulement 250 Php (4 €). Un régal !</p>
+            <p>Il est temps d’aller se coucher, demain on doit se lever tôt. Au programme, visite de la rivière souterraine, un endroit unique au monde. On a trop hâte !</p>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 2</span>
+              <h3>La rivière souterraine de Sabang</h3>
+            </div>
+            <p>Réveil à 6 h 30. On a rendez-vous avec notre guide pour notre excursion (réservée via notre hôtel) à 7 h 50 sur le quai.</p>
+            <p>Le départ est à 8 h et c'est le premier de la journée. Du coup, on devrait être à peu près seules sur ce lieu incroyable… Nous sommes 8 en tout cas à embarquer sur le bateau. Direction l'Underground River !</p>
+            <h4>⧐ Un grand Wahooo !</h4>
+            <p>On fait 15 minutes de bangka environ avant de débarquer sur une magnifique plage. De là, on récupère des casques et un audio-guide en français.</p>
+            
+            <p>On nous fait ensuite embarquer dans un autre bateau, bien plus petit et sans moteur, un paddle boat comme ils l’appellent. C’est partiii !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0784-2-768x1024.jpg" alt="Plage Underground River Sabang" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0709-768x1024.jpg" alt="Plage Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            
+            <p>Nous avons seulement parcouru 2 km en paddle boat dans la grotte, mais elle regorge en fait de coins encore inexplorés. Avec ses centaines de milliers de chauves-souris, c’est clairement la maison de Batman ! Lol.</p>
+            <p>Le nombre de visiteurs est limité chaque jour afin de préserver l'écosystème de ce merveilleux endroit. Donc mieux vaut ne pas arriver trop tard, au risque de ne pas pouvoir y accéder.</p>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
+              <div><strong>Le conseil des MamZelles</strong><p>La route vers les points de vue de San Vicente est vraiment chaotique : gros nids de poule, beaucoup de sable, dévers... Ne faites surtout pas l’impasse sur le casque et restez très prudents !</p></div>
+            </div>
+            <p>La visite a duré environ 45 minutes. Bien que les avis soient mitigés sur l’Underground River, on est vraiment contentes de l’avoir fait et on vous le recommande vivement. C’est clairement impressionnant !
+Nous sommes de retour au port de Sabang vers 11 h.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0781-768x1024.jpg" alt="Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0727-768x1024.jpg" alt="Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0736-768x1024.jpg" alt="Stalactites Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0740-768x1024.jpg" alt="Stalactites Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+                        <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À ne pas manquer</strong><p>La rivière souterraine de Puerto Princesa, classée à l’UNESCO, est l’une des plus longues rivières navigables souterraines au monde et considérée comme la 7ème merveille naturelle du monde. Récupérez l’audio-guide en français au départ : les explications valent vraiment le détour.</p></div>
+            </div>
+<h4>⧐ De retour sur la terre ferme...</h4>
+            <p>Un petit restaurant sur la plage nous fait de l’œil. On s’y installe pour boire un verre et manger. Après ça, rien de mieux pour digérer qu’une petite balade sur la plage...</p>
+            <p>On tombe sur plusieurs stands de massage. Avec les lits à l’ombre des cocotiers et face à la mer, Laurie se laisse tenter. Le cadre est idyllique. En même temps, une heure de massage intégral à l’huile essentielle pour 500 Php (8 €), comment résister ?</p>
+            <p>Pendant ce temps, Amélie qui n’aime pas plus se faire masser que ça, part explorer la plage.</p>
+            <p>Quand on se retrouve une heure plus tard, Laurie est dans un état de décontraction intense ! On décide alors de rentrer tranquillement à l’hôtel. Rincées de cette journée, on dînera et on profitera de cette dernière soirée au <strong><a href="https://maps.app.goo.gl/KRiHSQu7Mkq48Juu7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Bambua Nature Cottage</a></strong>.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0804-768x1024.jpg" alt="Massage Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0808-768x1024.jpg" alt="Beach Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0817-1-1024x768.jpg" alt="Beach Sabang Puerto Princesa" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0794-768x1024.jpg" alt="Buffle Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            
+            
+            
+            <div className="pb-resto-section">
+              <h3 className="pb-resto-title">Où manger à Sabang ?</h3>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€</span>
+                <span className="pb-resto-tier-label">Budget</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://maps.app.goo.gl/zJjDyGKiPNPcs27u6?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">La Casa In Sabang</span>
+                <span className="pb-resto-card-desc">Adresse simple et authentique, parfaite après la rivière souterraine</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://maps.app.goo.gl/LofYgzaJiExmWuxU7?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Red Turtle Restaurant</span>
+                <span className="pb-resto-card-desc">Vue sur la mer, meilleure cuisine du village — une valeur sûre</span>
+              </a>
+              </div>
+            </div>
+            </div>
+</section>
+
+          <section id="port-barton" className="article-section">
+            <div className="article-day-header">
+              <h2>📍 Port Barton, un paradis encore préservé</h2>
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 1</span>
+              <h3>En route pour Port Barton !</h3>
+            </div>
+            <p>Ce matin, on prend le temps de profiter de cet endroit incroyable avant de se mettre en route pour notre prochaine destination qui n'est autre que Port Barton ! De tout notre voyage, c'est clairement l'endroit qu'on attend le plus de découvrir...</p>
+            <p>Après une matinée chill et de bons sandwichs avalés au poulet frit, faits avec amour par nos hôtes, on récupère nos sacs et c'est parti.</p>
+            <p>Bye bye Sabang !</p>
+            <h4>⧐ Comment se rendre à Port Barton ?</h4>
+            <p>Nous avons organisé notre transfert avec la même société qu’avec laquelle nous sommes arrivées, <strong>Bloomfield Transport</strong>. Le bureau se trouve non loin du port. Le van passe nous récupérer en bas de l’hôtel, sur la route principale, à 14 h.</p>
+            
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Pour rejoindre Port Barton, comptez environ 4 h de route au total, avec un changement de van à Salvacion (30 à 45 min de pause). Plusieurs départs dans la journée : 8 h, 9 h, 10 h ou 14 h.</p></div>
+            </div>
+            <p>Mais pourquoi mettre la clim' toujours aussi forte dans les transports ?! On ne vous le cache pas, on se gèle dans le van. On a fini par prendre une serviette de plage pour se couvrir. On ne le répètera jamais assez, prévoyez toujours des vêtements chauds pour les transports !</p>
+            <p>Petite pause à <strong>Salvacion</strong> comme prévu pendant 35 minutes. Vous trouverez à cette intersection de quoi vous rafraîchir et vous restaurer. Il y a aussi des toilettes.</p>
+            <h4>⧐ Nos premiers pas au paradis !</h4>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0843-768x1024.jpg" alt="Barton Bistro Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0850-768x1024.jpg" alt="Barton Bistro Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0852-767x1024.jpg" alt="Plage Port Barton Palawan" loading="lazy" style={{flex: '0.749', minWidth: 0}} />
+            </div>
+            <p>Nous arrivons à 18 h à Port Barton. Nous sommes déposées à la <strong>station Bus Terminal</strong>.</p>
+            <p>On rejoint notre petit chez nous pour les 6 prochaines nuits en tuk-tuk, à l’<a href="https://maps.app.goo.gl/TRoACtdw6spzrzAMA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Aquarius Hôtel</strong></a>. Pour tout le séjour, nous payons 10,360 Php (165 €). Le petit-déjeuner n'est pas inclus. En revanche, le café et l’eau filtrée sont à disposition en permanence. Cet hôtel est tenu par une mère et sa fille. Elles sont tellement gentilles, on se sent rapidement comme en famille.</p>
+            <p>Il fait déjà nuit quand nous partons en vadrouille, direction la plage. On avait repéré un petit bar restaurant, pieds dans le sable, le <a href="https://maps.app.goo.gl/pgdnTk2y7tC8fqm79?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Barton Bistro</strong></a><em>…</em> 100 Php (1,60 €) la bière et 500 Php (8 €) la pizza. Les prix sont un peu plus élevés qu’à Puerto Princesa, ce qui est normal puisqu’on est plus isolées ici. En tout cas, on s’est régalées. On a tellement hâte de découvrir le paysage de jour…</p>
+            <p>En attendant, bonne nuit tout le monde !</p>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 2</span>
+              <h3>En mode farniente</h3>
+            </div>
+            <p>Première journée pleine à Port Barton. Aujourd’hui, on a visité essentiellement le village et la plage. Nous avons un énorme coup de cœur pour cet endroit.</p>
+            <p>Port Barton est un village de pêcheurs situé dans la municipalité de San Vicente. Il est connu pour son ambiance paisible et décontractée, ses magnifiques plages et ses îles paradisiaques aux eaux cristallines.</p>
+            <p>Ce village, réputé pour sa beauté pittoresque, offre une alternative plus calme et moins développée que des destinations touristiques et plus populaires comme El Nido et Coron. C'est une destination parfaite pour les voyageurs cherchant à éviter les foules, tout en profitant de la beauté naturelle de Palawan. Ce petit paradis a gardé toute son authenticité. On valide !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0866-768x1024.jpg" alt="Village Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0867-768x1024.jpg" alt="Village Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Ce matin, on a pris le temps. Les gens sont tellement sympas et ouverts aux rencontres, à la discussion. On a envie de parler avec tout le monde !</p>
+            <p>On est allées manger au <a href="https://maps.app.goo.gl/ygt5bt2qVCHQCQw49?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Flow Bar</strong></a> le midi, un restaurant-bar piscine. Leurs burgers et leurs pizzas sont incroyables ! Pour info, vous avez la possibilité de commander un verre et de profiter de la piscine toute la journée si vous le souhaitez.</p>
+            <p>Fin de journée sur la plage et coucher de soleil au <a href="https://maps.app.goo.gl/AZQ2T4UY7cYbkCFZ6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mai Tai</strong></a>. L’endroit est vraiment agréable et les cocktails y sont très bons !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0925-768x1024.jpg" alt="Port Barton Puerto Princesa Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0946-1024x768.jpg" alt="Sunset Port Barton Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 3</span>
+              <h3>White Beach &amp; Coconut Beach</h3>
+            </div>
+            <p>Nouvelle journée à Port Barton. Aujourd’hui, nous partons à la découverte de 2 belles plages qui se trouvent à proximité du village de Port Barton.</p>
+            <p>Coconut Beach et White Beach portent bien leur nom. Quelle que soit la façon que vous choisissez pour les rejoindre, ça n'est pas de tout repos. Bref, ces plages se méritent !</p>
+            <h4>⧐ Comment se rendre aux célèbres plages de Port Barton ?</h4>
+            <p>Pour rejoindre ces plages de rêve, il y a donc plusieurs solutions : par la route (davantage une piste ou un chemin de terre d’ailleurs !) en scooter et en tuk-tuk, ou par la mer, en bangka et en kayak.</p>
+            <p>Apparemment en kayak, avec de bons bras et peu de vent, il ne faut que 10 minutes pour accéder à Coconut Beach depuis la plage de Port Barton. Une idée qu’on garde en tête pour une prochaine fois, d'autant que notre hôtel a un kayak et qu’il est prêté gratuitement.</p>
+            
+            <p>À la base, nous voulions y aller en scooter, mais un couple qu’on a rencontré la veille nous a dit que c’était quand même assez galère, voire dangereux d’y aller en 2 roues.</p>
+            <p>Comme il a plu ce matin, le chemin est encore plus « casse-gueule » que d’habitude ! Vu qu’on ne veut pas mourir à Port Barton, on choisit sans hésiter l’option tuk-tuk, et on a bien fait !</p>
+            <p>On fait clairement du tuk-tuk en mode 4x4, le chemin est vraiment chaotique. On met entre 15 et 20 minutes pour rejoindre White Beach, la plage la plus éloignée. On payera 600 Php (9,60 €) Aller-Retour, notre chauffeur nous attendra à Coconut Beach.</p>
+            <h4>⧐ White Beach</h4>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0972-768x1024.jpg" alt="White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0984-1024x768.jpg" alt="White Beach Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <p>Il y a un petit restaurant à l’entrée du site. Pour accéder à la plage, il faut payer un droit d’entrée de 50 Php par personne (0,80 €).</p>
+            <p>White Beach est une belle plage de sable blanc. Nous avons de la chance, il n’y a pas grand monde, juste quelques chèvres qui viennent nous rendre visite.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1175_jpg-768x1024.jpg" alt="White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1002-768x1024.jpg" alt="White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Coconut Beach</h4>
+            <p>Nous profitons de la plage avant de rejoindre Coconut Beach en longeant la mer par la droite. Comme son nom l’indique, c’est une plage de cocotiers, très jolie aussi. Cependant, pour se baigner, on conseille de rester à White Beach, à cause des nombreux rochers dans l’eau.</p>
+            <p>Le temps est vite passé et le soleil commence à décliner, il est temps de rentrer. Comme prévu, notre chauffeur de tuk-tuk nous attend avec un ami. On échange quelques mots avec eux, ils sont adorables.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1061-768x1024.jpg" alt="Coconut Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1065_jpg-768x1024.jpg" alt="Coconut Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Une fin de journée comme on les aime !</h4>
+            <p>De retour à l'hôtel. Au programme, petite douche rapide avant de ressortir dîner.</p>
+            <p>On avait repéré un petit restaurant qui ne paye pas de mine à première vue, mais toujours plein à craquer ! C’est le <a href="https://maps.app.goo.gl/X64quhkVZUMnF6BZA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Star Apple Canteen</strong></a>. En devanture, un étal de viandes et de poissons frais nous fait saliver. Pour 250 Php (4 €), accompagnement compris (riz et salade composée), on choisit son poisson, son morceau de poulet ou de porc (ribs) qu’ils grillent directement.</p>
+            <p>Un buffet avec des plats locaux, comme du poulet curry, du poulet adobo, et bien d'autres spécialités, est aussi proposé. Comptez seulement 150 Php (2,40 €) en moyenne par assiette. Un vrai coup de cœur ce petit restaurant ! On le recommande fortement pour son incroyable rapport qualité-prix.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1085-768x1024.jpg" alt="Star Apple Canteen Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1090-768x1024.jpg" alt="Star Apple Canteen Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 4</span>
+              <h3>Entre plage, bars et restaurants...</h3>
+            </div>
+            <p>Les vacances, tout simplement ! Nous prenons le temps d'échanger avec les locaux, les Philippins sont tellement gentils et toujours disponibles !</p>
+            <p>Côté organisation, nous avons réservé notre Island hopping pour le sur-lendemain, planifié notre transfert en taxi-boat vers la prochaine destination, et bouclé quelques détails pour la fin de notre séjour…</p>
+            <p>Une journée tranquille mais productive.</p>
+            <p>On la termine en beauté avec un massage d'une heure face à la mer, full body, pour seulement 500 Php (8 €). Que du bonheur !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0963_jpg-768x1024.jpg" alt="Port Barton Beach Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0962_jpg-1024x768.jpg" alt="Bangka Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0861-1024x768.jpg" alt="Plage Port Barton Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1123-768x1024.jpg" alt="Sunset Port Barton Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 5</span>
+              <h3>On rejoint White Beach en kayak !</h3>
+            </div>
+            <p>Aujourd'hui, on relève le défi !
+Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White Beach à la rame !</p>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Le conseil des MamZelles</strong><p>On nous avait promis 10 minutes en kayak jusqu’à Coconut Beach, mais prévoyez plutôt 20 à 30 minutes selon la marée et le vent. Par marée basse, pensez à passer plus au large : le fond est très peu profond à certains endroits.</p></div>
+            </div>
+            <p>En tout cas, défi relevé ! On est trop fières de nous ! Les paysages qu'on aperçoit en chemin sont canons. Le temps de traversée est très vite passé finalement. Bon, il faudra rentrer après, et ça, c'est une autre histoire !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1153_jpg-3-768x1024.jpg" alt="Kayak White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1163-1024x768.jpg" alt="Coconut Beach Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <p>À peine le pied sur la terre ferme, un cochon en balade sur la plage vient nous tenir compagnie. Trop drôle ! On reprend un peu nos esprits avant de faire chemin inverse, surtout qu’on a déjà mal dans tout le corps !</p>
+            <p>Même si le retour a été plus compliqué avec le vent qui s'est levé, on est super contentes de l’avoir fait. L'expérience était vraiment chouette.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1180-768x1024.jpg" alt="Cochon White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1185-768x1024.jpg" alt="Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Pour finir la journée en beauté, nous retrouvons une locale au <a href="https://maps.app.goo.gl/AZQ2T4UY7cYbkCFZ6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mai Tai</strong></a>, avec qui le courant est tout de suite bien passé. Elle nous présente à plein de gens de son entourage, locaux et expatriés.</p>
+            <p>On se sent Port Bartonaises le temps d’une soirée... Un moment magique de partage qu’on sera loin d’oublier !</p>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 6</span>
+              <h3>Island hopping à Port Barton</h3>
+            </div>
+            <p>Nous avons rendez-vous à 9 h à côté du <strong><a href="https://maps.app.goo.gl/pgdnTk2y7tC8fqm79?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Barton Bistro</a></strong>. On paye 1500 Php (24 €) par personne, soit 1300 Php + 200 Php d’éco-taxe. Pas de prise de tête à savoir avec qui il faut réserver, c’est le même prix partout. Pour notre excursion, nous sommes directement passées par un local que nous avons rencontré quelques jours plus tôt sur la plage.</p>
+            <p>Here we goooo ! Nous sommes une dizaine sur le bateau. Les membres de l’équipage sont 3 et sont au taquet pour nous faire passer une belle journée.</p>
+            <p>Il est prévu qu'on découvre 6 spots aujourd'hui...</p>
+            <h4>⧐ Twin Reef</h4>
+            <p>Ce spot est magique puisqu'il offre deux formations de coraux jumelles qui s'étendent sous l'eau. Le spectacle marin est juste wahoo ! C’est donc un lieu idéal pour le snorkeling.</p>
+            <p>L’eau est belle et transparente. Les jeux de lumière sur les coraux et les poissons tropicaux créent une ambiance féérique.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1229-768x1024.jpg" alt="Twin Reef Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_5058-768x1024.jpg" alt="Bangka Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Turtle Spot</h4>
+            <p>On se jette du bateau à la recherche des tortues. On nous avait prévenues qu'aucune nourriture ne serait jetée pour les appâter, et que si on en voyait, on serait donc chanceuses.</p>
+            <p>Malgré un long moment passé à les chercher, aucune n'a pointé son petit nez. Dommage, mais on a quand même découvert un magnifique spot !</p>
+            <h4>⧐ Exotic Island</h4>
+            <p>Cette île est située à proximité de Maxima Island. Les deux îles sont séparées par un banc de sable submergé, créant un genre de lagon. C’est paradisiaque.</p>
+            <p>On amarre entre les 2 îles. L’eau est magnifique. Sur Maxima, l’île de gauche, il y a une petite maison, où l’on peut acheter des boissons.</p>
+            <p>L’île de droite, Exotic Island, est celle où l’on mange. Ce midi c’est buffet préparé avec soin et amour par les membres de l’équipage. Entre le poisson et le poulet cuits au barbecue, les moules, les nouilles, les salades… il y a énormément de choix. Impossible de ne pas trouver son bonheur !</p>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1248-768x1024.jpg" alt="Maxima Island Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1271-2-768x1024.jpg" alt="Exotic Island Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1295-768x1024.jpg" alt="Exotic Island Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Fantastic Reef</h4>
+            <p>Ce spot porte bien son nom : un jardin sous-marin éclatant de couleurs où coraux, poissons tropicaux et même tortues se donnent rendez-vous. Faire du snorkeling à Fantastic Reef, c'est entrer dans un aquarium grandeur nature.</p>
+            <p>Fantastic Reef est donc un sanctuaire de biodiversité où l'eau cristalline révèle un spectacle fascinant.</p>
+            <p>Bref, on en a pris plein, les yeux !</p>
+            <h4>⧐ Capsalay Island</h4>
+            <p>On s’est senties comme seules au monde sur cette petite île. D’un côté, une belle plage de sable blanc remplie de jolis coquillages, de l’autre, une mangrove.</p>
+            <p>Dommage qu’on y ait fait qu’un rapide stop.</p>
+            <h4>⧐ Sand Bar ou Starfish Island</h4>
+            <p>Non loin de la plage de Port Barton, on débarque sur un îlot de sable. Magnifique, c’est comme s’il était posé au beau milieu de la mer !</p>
+            <p>Il est possible de rejoindre ce banc de sable en kayak. On a pu y voir quelques grosses étoiles de mer.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1354-768x1024.jpg" alt="Starfish Island Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1356-768x1024.jpg" alt="Sand Bar Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Notre avis sur cet Island hopping</h4>
+            <p>On a passé une merveilleuse journée, on est complètement conquises !</p>
+            <p>Tout au long de cette excursion, on nous a proposé des verres de rhum arrangé. Heureusement, on a été sages, sinon on aurait pu vite finir pompettes ! L’équipage était très sympa, à nos petits soins. Il n’a pas hésité à mettre de la musique internationale sur le bateau pour ambiancer tout le monde.</p>
+            <p>Les spots n’étaient pas bondés de monde. Certes, les paysages sont moins impressionnants que ceux d’El Nido ou Coron, mais ils sont tout de même canons !</p>
+            <p>Nous sommes de retour à Port Barton vers 17 h, just in time pour le sunset !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1244-768x1024.jpg" alt="Exotic Island Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1114-768x1024.jpg" alt="Bangka Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            
+            
+            
+            
+            <div className="pb-resto-section">
+              <h3 className="pb-resto-title">Où manger à Port Barton ?</h3>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€</span>
+                <span className="pb-resto-tier-label">Budget</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://maps.app.goo.gl/YX8Spkx5dx1vxFMy5?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Canteen Chariz John</span>
+                <span className="pb-resto-card-desc">Grill philippin, poissons et poulet frais sur braise — simple, local et savoureux</span>
+              </a>
+              <a href="https://maps.app.goo.gl/X64quhkVZUMnF6BZA?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Star Apple Canteen</span>
+                <span className="pb-resto-card-desc">Étal de poissons et viandes frais : on choisit sa pièce, riz inclus — inoubliable</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://maps.app.goo.gl/CcCanLsRgTusATpp6?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Ausan Restaurant</span>
+                <span className="pb-resto-card-desc">Sur la plage, cuisine philippine fraîche et plats copieux dans un cadre paradisiaque</span>
+              </a>
+              <a href="https://maps.app.goo.gl/c6UtyGbGtXZwG3WA9?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Kusinero del Barrio</span>
+                <span className="pb-resto-card-desc">Saveurs philippines maison dans un cadre décontracté</span>
+              </a>
+              <a href="https://maps.app.goo.gl/X6XcSzBbLy82UkH86?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Bus Café</span>
+                <span className="pb-resto-card-desc">Café-bar-karaoké unique, ambiance festive et cuisine généreuse</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€€</span>
+                <span className="pb-resto-tier-label">Bars & restos de plage</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://maps.app.goo.gl/ygt5bt2qVCHQCQw49?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Flow Bar</span>
+                <span className="pb-resto-card-desc">Restaurant-bar avec piscine, pizzas et burgers délicieux — idéal pour une après-midi chill</span>
+              </a>
+              <a href="https://maps.app.goo.gl/MTfbYLtwxz3jRxzu5?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Jungle Bar</span>
+                <span className="pb-resto-card-desc">Bar-resto franco-philippin dans la jungle, cuisine maison et vue imprenable sur la baie</span>
+              </a>
+              <a href="https://maps.app.goo.gl/AZQ2T4UY7cYbkCFZ6?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Mai Tai</span>
+                <span className="pb-resto-card-desc">Bar de plage avec jeux, cocktails au sunset et bons petits plats</span>
+              </a>
+              <a href="https://maps.app.goo.gl/hpuGu8kkSQoYaHLx8?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Marguerita Sunset Bar</span>
+                <span className="pb-resto-card-desc"><svg width="16" height="16" viewBox="0 0 24 24" fill="#c8956c" stroke="none" style={{display:"inline",verticalAlign:"middle",marginRight:"4px"}}><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg> Cuisine philippine et italienne, musique live et couchers de soleil inoubliables</span>
+              </a>
+              <a href="https://maps.app.goo.gl/WEi3ETWc6DpPqGPD7?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Mojito Bar</span>
+                <span className="pb-resto-card-desc">Dans la jungle à 5 min en tuk-tuk, mojitos divins et mini-burgers à tomber</span>
+              </a>
+              <a href="https://maps.app.goo.gl/cY9R3wRanqAvKNX2A?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Beach Club</span>
+                <span className="pb-resto-card-desc"><svg width="16" height="16" viewBox="0 0 24 24" fill="#c8956c" stroke="none" style={{display:"inline",verticalAlign:"middle",marginRight:"4px"}}><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg> Cuisine raffinée en bord de plage, cocktails remarquables — spot parfait pour le sunset</span>
+              </a>
+              </div>
+            </div>
+            </div>
+</section>
+
+          <section id="san-vicente" className="article-section">
+            <div className="article-day-header">
+              <h2>📍 San Vicente &amp; ses secrets encore bien gardés</h2>
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 1</span>
+              <h3>Direction San Vicente !</h3>
+            </div>
+            <p>C'est le cœur rempli d'émotion que nous quittons Port Barton, ainsi que toutes les personnes formidables que nous y avons rencontrées.</p>
+            <p>Mais ce n'est pas un adieu définitif, car nous reviendrons dans quelques jours... Port Barton, ce n'est qu'un au revoir ! En attendant, cap sur San Vicente !</p>
+            <h4>⧐ Comment se rendre à San Vicente ?</h4>
+            <p>Réveil matinal pour prendre le <strong>taxi-boat</strong> (<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8956c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{display:"inline",verticalAlign:"middle",marginRight:"3px"}}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+63 998 497 9135). Rendez-vous donné à 8 h 30 près du <strong><a href="https://maps.app.goo.gl/AZQ2T4UY7cYbkCFZ6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Mai Tai</a></strong>, mais, fidèle au rythme local, le taxi-boat n'arrivera qu'à 9 h 15. Le temps pour le capitaine de finaliser des documents administratifs avec les gardes-côtes, nous levons l'ancre vers 9 h 30.</p>
+            <p>Le trajet dure environ 45 minutes, pour un tarif de 400 Php (6,40 €) par personne. Il est aussi possible de rejoindre San Vicente en van, mais cela prend près de 2 h. Par la mer, c'est donc bien plus rapide, et on trouve que le voyage en bangka est bien plus agréable qu’en van.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1864_jpg-768x1024.jpg" alt="Taxi-boat Port Barton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1370-768x1024.jpg" alt="Garde-côte Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>En chemin, surprise, on nous fait faire une halte sur une plage isolée, accessible uniquement par bateau. Ce lieu paradisiaque s’appelle <strong><a href="https://maps.app.goo.gl/uhHzRkevYvEL39Te8?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Palawan Camping</a></strong>. Une étendue de sable immaculé, une eau cristalline...</p>
+            <p>Ici, le temps semble suspendu. Entre la sérénité du paysage et l'idée de passer la nuit dans l'une de leurs tentes, cet endroit nous fait rêver. Un jus de fruits frais avalé, il est déjà temps de repartir.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1392-768x1024.jpg" alt="Palawan Camping Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1394-768x1024.jpg" alt="Island Camping Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>30 minutes plus tard, nous arrivons au port de San Vicente. La superficie de ce village de pêcheurs est de 146 km². En réalité, Port Barton fait partie de la municipalité de San Vicente. Loin d’être dans le top des destinations touristiques de Palawan, San Vicente est un mélange de plages immaculées, d'activités de plein air et de tranquillité.</p>
+            <p>Grâce à son nouvel aéroport, sa <strong>Long Beach</strong> et ses compétitions de surf, cette petite ville paisible commence à attirer de plus en plus de monde.</p>
+            <h4>⧐ Débarquement à San Vicente !</h4>
+            <p>On prend directement un tuk-tuk électrique. C’est bien la 1ère fois que nous voyons cela aux Philippines ! Nous traversons la ville… petites épiceries, marchés locaux, quincailleries, pharmacies, banques, on y trouve tout !</p>
+            <p>Direction notre hôtel à 10 minutes du centre. Notre hébergement à l’<strong><a href="https://maps.app.goo.gl/RKuR3rxcbj6DvB7v7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Acuario Beach Inn</a></strong> est une petite cabane sur la plage. Elle est parfaitement équipée avec la clim’ et l’eau chaude, on adooore ! Leurs tarifs sont très attractifs puisque nous avons seulement payé 1,320 Php (21 €) par nuit, petits-déjeuners compris.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1409-768x1024.jpg" alt="Port San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1415-1024x768.jpg" alt="Tuk-tuk San Vicente Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <p>L’endroit est vraiment sympa. Repos garanti puisqu’il n’y a rien de spécial à faire dans les environs, exceptée une randonnée dont on parlera plus tard.</p>
+            <p>Face à la mer, on profite de notre 1ère soirée à San Vicente, avec comme cadeau de bienvenue, un splendide coucher de soleil dans cet endroit hors du temps.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1427-768x1024.jpg" alt="Acuario Beach Inn San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1428-768x1024.jpg" alt="Acuario Beach Inn San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 2</span>
+              <h3>L'aventure du One Hundred Steps</h3>
+            </div>
+            <p>Après une nuit bercée par le bruit des vagues, on se réveille en douceur. Malgré tout, on est au taquet pour cette 1ère journée ! Le petit-déjeuner est servi face à la mer, le bonheur.</p>
+            <p>Le défi de la journée, le One hundred steps, un point de vue qu’on peut rejoindre à pied depuis notre hôtel...</p>
+            <h4>⧐ Le 100 Steps, une randonnée qui vaut la peine !</h4>
+            
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Pourquoi « 100 Steps » (100 pas) ? Parce qu'en réalité il y en a bien plus ! Montez tôt le matin ou en fin de journée quand il fait plus frais, et prévoyez de l'eau pour l'ascension. Le nom restera toujours un mystère en tout cas…</p></div>
+            </div>
+            <p>Le chemin grimpe pas mal pour arriver au point de vue. À environ un tiers du chemin, on rejoint une petite maisonnette. On doit payer ici un droit de passage de 20 Php (0,32 €) par personne si on veut pouvoir continuer notre ascension.</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1482-1024x768.jpg" alt="One hundred steps San Vicente Port Barton" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1505-768x1024.jpg" alt="Mamzelles en vadrouille San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1484_jpg-768x1024.jpg" alt="One hundred steps San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>On est au bout de notre vie et trempées de sueur quand on arrive en haut, mais l’incroyable panorama nous fait vite oublier notre fatigue et la chaleur qu'il fait. La mer des deux côtés, des plages de sable blanc à perte de vue… on en prend plein les yeux.</p>
+            <p>La descente est quand même beaucoup plus facile. De retour en bas, on fait un petit tour dans le village.</p>
+            <p>On croise pas mal d’enfants du quartier, intrigués par notre présence, et très curieux de savoir ce qu’on fait par ici. On prend le temps d’échanger avec la petite bande. Entre chants, danses et parties de basket, on passe un super moment !</p>
+            <h4>⧐ La vie locale à San Vicente</h4>
+            <p>On retourne à l’hôtel par la plage. On passe près des étals où sèche la pêche du jour au soleil. Aux Philippines, il est très commun d’acheter des sacs de poissons séchés. Avec des techniques traditionnelles restées intactes, les locaux vivent et se nourrissent toujours de leur pêche.</p>
+            <p>De retour à notre petite cabane sur la plage, on a à peine le temps de prendre une douche que le soleil commence déjà à se coucher...</p>
+            
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_PortBarton1-768x1024.jpg" alt="Poissons séchés San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1540-768x1024.jpg" alt="San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            
+            <p>Il n’y a pas de restaurant à proximité, du coup on dîne à l’hôtel le soir. Tous les plats sont préparés minute. Il y a souvent beaucoup d’attente pour être servies, mais c’est toujours délicieux !</p>
+            
+            <p>Après avoir observé un long moment les étoiles, on part se coucher. Demain, de nouvelles aventures nous attendent.</p>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 3</span>
+              <h3>SanVic Viewpoint &amp; Bato ni Ningning</h3>
+            </div>
+            <p>Petit-déjeuner devant la mer, que demander de plus ? C’est vraiment un kiffe de commencer ses journées comme ça !</p>
+            <p>Programme du jour : location d’un scooter à l’hôtel pour 500 Php (8 €) la journée et direction les points de vue de San Vicente ! De ce qu'on en a vu sur Google Maps, ça a l’air plutôt pas mal...</p>
+            <h4>⧐ Comment s'y rendre ?</h4>
+            <p>Après avoir fait le plein pour 250 Php (4,10 €), il nous faut 50 minutes pour rejoindre notre 1er spot. On ne vous le cache pas, on a traversé des portions de route vraiment très mauvaises.</p>
+            
+            <h4>⧐ SanVic Viewpoint</h4>
+            <p>Pour accéder au site, il faut débourser 25 Php (0,40 €) par personne. D’ici, la vue sur la <strong>Long Beach</strong>, que nous avons longée pour venir jusqu’ici, est canon !</p>
+            <p>Sachez que cette plage, avec ses 14 km, est la plus longue des Philippines et la 2ème plus longue d’Asie.</p>
+            <p>Tout au bout du chemin, un gros rocher est aménagé pour pouvoir monter dessus et apprécier davantage la vue.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1654-768x1024.jpg" alt="SanVic Viewpoint San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1649-768x1024.jpg" alt="SanVic Viewpoint San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Bato ni Ningning</h4>
+            <p>Nous reprenons le scooter pour nous rendre au 2ème point de vue. C’est à 2 minutes seulement en redescendant. Le droit d’entrée est également de 25 Php (0,40 €).</p>
+            <p>Ici aussi, un gros rocher qu'on peut facilement escalader, trône au milieu du paysage.</p>
+            <p>Ce point de vue est moins élevé que l’autre, mais se trouve exactement dans l’axe de la <strong>Long Beach</strong>. Le décor est superbe et permet de belles prises de vue !</p>
+            <p>Hormis quelques groupes d'étudiants, il n'y a pas foule. C'est plutôt agréable de visiter des lieux incontournables dans ces conditions.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1659-768x1024.jpg" alt="Bato ni Ningning Viewpoint San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/VID_20241128_061216_00_097_2025-08-10_10-50-51_capture-decran-4-1024x768.jpg" alt="View Point San Vicente" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <h4>⧐ San Vicente, capitale du surf de Palawan</h4>
+            <p>Nous partons en direction du <strong>village d'Alimanguan</strong> pour manger. On a repéré un hôtel-restaurant sur la plage qui nous tente bien. Avec ses paillotes et ses tables en bois sur la plage, <strong><a href="https://maps.app.goo.gl/SuZi49NXLTBWWueQA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">The Turtle Beach Resort &amp; Restaurant</a></strong> est très chill.</p>
+            <p>L’endroit commence à être bien connu pour son spot de surf et son festival, le « SanVicSurf ». La ville de San Vicente a d’ailleurs été déclarée « capitale du surf » de Palawan par le conseil provincial.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1686-768x1024.jpg" alt="Surf San Vicente Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1684-768x1024.jpg" alt="The Turtle Beach &amp; Restaurant San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>On est trop bien. On profite de ce petit coin de paradis jusqu’en fin d’après-midi. Au vu de l’état de la route, on fait en sorte de rentrer avant la nuit, c’est bien plus prudent.</p>
+            <p>Retour à l’hôtel vers 18 h, le soleil est quasi-couché. Ici, toutes les soirées se ressemblent mais sont uniques à la fois !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1712-768x1024.jpg" alt="Sunset coconuts San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2781-768x1024.jpg" alt="Sunset San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 4</span>
+              <h3>L'émission Survivor à San Vicente !</h3>
+            </div>
+            <p>Aujourd'hui, direction la <strong>Long Beach</strong> en scooter, avec pour objectif d’aller manger au <strong><a href="https://maps.app.goo.gl/jzsoVqWrkhpspYEh6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Club Agutaya</a></strong>.</p>
+            <p>Mais surprise en arrivant, le restaurant est privatisé par l’équipe de production du <em>Survivor</em> Suédois. L'émission est actuellement en tournage sur la plage, à quelques centaines de mètres de là. On nous invite donc à revenir le lendemain.</p>
+            <p>On décide alors de continuer notre chemin. On tombe par hasard sur <strong><a href="https://maps.app.goo.gl/NW9gtCY1cS44DWe29?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">The Hotel Elizabeth</a></strong>. Pensées pour notre fourgon aménagé qui porte le même nom, on décide de s’y arrêter.</p>
+            <p>L'hôtel (davantage un complexe) est immense et en plein travaux. On nous accueille comme des princesses. On a même droit à un petit tour en voiturette. On nous installe au restaurant de la plage. Excepté le temps pluvieux, le cadre est parfait. Nous sommes les seules sur cette immense plage… enfin presque !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1047-1-768x1024.jpg" alt="The Hotel Elizabeth Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1048-1-768x1024.jpg" alt="The Hotel Elizabeth Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Le tournage de <em>Survivor</em> se trouve à quelques centaines de mètres sur notre droite. La plage est régulièrement traversée par de gros 4x4 de la production. C'est plutôt amusant de se retrouver si proches du tournage et de se dire : « Bah ça va, ils ne sont pas si isolés que ça les candidats ! Il y a la route juste derrière et des restos tout autour ! » Lol.</p>
+            <p>On se laisse tenter par une pizza.  Trop bonne ! Son prix est assez élevé, mais pas vraiment étonnant vu l’endroit.</p>
+            <p>Il est temps de repartir. Dernier regard sur la <strong>Long Beach</strong>, qui porte si bien son nom, et on se remet doucement en route, en espérant qu’il ne se mette pas à pleuvoir…</p>
+            <p>La soirée se termine tranquillement à l’hôtel.</p>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 5</span>
+              <h3>Suite...</h3>
+            </div>
+            <p>Ce matin, sur la plage de l’hôtel, avec les enfants du quartier, c’est fabrication de balles de jonglage et construction de châteaux de sable. Une matinée simple et pleine de sourires.</p>
+            <p>À 12 h 15, départ en scooter, et comme prévu la veille, direction le<strong> <a href="https://maps.app.goo.gl/jzsoVqWrkhpspYEh6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Club Agutaya</a></strong>. À peine entrées, c’est un gros Wahoo ! Cet hôtel est juste incroyable !</p>
+            <p>Bien qu'une partie de l'établissement reste privatisée, on peut quand même accéder au restaurant de la plage.</p>
+            <p>En fait, c'est ici que loge l'équipe de production pour le <em>Survivor</em> Suédois. C’est aussi l’endroit où séjournent les candidats éliminés ainsi que le jury final. Forcément, certains espaces (dont la piscine, snif !) sont interdits d’accès pour un souci de confidentialité.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1769_jpg-768x1024.jpg" alt="Coconuts San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1776-768x1024.jpg" alt="Agutaya Club San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Au restaurant, nous optons pour un Beef Tagalog. Le fameux bœuf mijoté dans une sauce aux oignons. Une tuerie ! Ce plat est validé à 100 % une fois de plus.</p>
+            <p>De retour à l'hôtel, nous avions prévu une sortie en paddle banka, mais le temps a tourné… la pluie s’est mise à tomber et le vent s’est levé. Tant pis, ce sera peut-être pour demain !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1699-768x1024.jpg" alt="San Vicente Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1718-1024x768.jpg" alt="Sunset San Vicente Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 6</span>
+              <h3>Paddle bangka et retour à Port Barton</h3>
+            </div>
+            <p>Réveil matinal et petit-déjeuner protéiné avant de prendre le départ pour notre expédition en paddle banka vers <strong>Mialbok Island</strong>.</p>
+            <p>Cette (toute) petite île se trouve juste en face de notre hôtel. Les pagaies sont en bois et pèsent au moins 3 kg chacune… Ça va le faire, on ne se démotive pas !</p>
+            <h4>⧐ Paddle bangka à San Vicente</h4>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1756-768x1024.jpg" alt="San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1827-768x1024.jpg" alt="Paddle bangka San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>L'eau est magnifique, transparente, avec plein de poissons et quelques méduses aussi. Le vent est léger, mais il y a pas mal de courant tout de même.</p>
+            <p>Après 20 minutes de traversée, nous arrivons enfin sur l'île. Nous sommes accueillies par deux toutous qui font la sécurité.</p>
+            <p>L'île est privée et habitée par une famille philippine, des amis de nos hôtes. Il n’y a donc aucun problème pour nous de débarquer. La plage est belle, recouverte de coquillages.
+On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'hôtel.</p>
+            <h4>⧐ Au revoir San Vicente !</h4>
+            <p>De retour sur la terre ferme et après une douche rapide, on boucle nos bagages. Bye bye l’<strong><a href="https://maps.app.goo.gl/RKuR3rxcbj6DvB7v7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Acuario Beach Inn</a></strong> ! On a un petit pincement au cœur en partant… On y était tellement bien !</p>
+            <p>Direction le <a href="https://maps.app.goo.gl/3xatKqm6574fHRjo6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mango Bar</strong></a> au port de San Vicente pour déjeuner. Au menu, un crabe fraîchement pêché pour Laurie (390 Php, soit 6,40 €) et un demi-poulet frit pour Amélie (260 Php, soit 4,25 €).</p>
+            <p>Après une lutte acharnée avec le crabe et quelques fous rires (il fallait la voir dépiauter la bête !), nous nous dirigeons vers le quai d’embarquement.</p>
+            <p>Le départ de notre taxi-boat est prévu à 15 h 30, et il est à l’heure ! La traversée se passe sans encombre. On a hâte de retrouver Port Barton !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1552_jpg-768x1024.jpg" alt="Surf San Vicente Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1533-768x1024.jpg" alt="San Vicente Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            
+            
+            
+            <div className="pb-resto-section">
+              <h3 className="pb-resto-title">Où manger à San Vicente ?</h3>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€</span>
+                <span className="pb-resto-tier-label">Rapport qualité-prix</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://maps.app.goo.gl/3xatKqm6574fHRjo6?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Mango Bar</span>
+                <span className="pb-resto-card-desc">Bar de pêcheurs décontracté au port — fruits de mer frais et belle carte variée</span>
+              </a>
+              <a href="https://maps.app.goo.gl/pdfASm1pTL6DAaQi7?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Turtle Beach</span>
+                <span className="pb-resto-card-desc">Tables en bois sur la plage, ambiance surf et cuisine familiale</span>
+              </a>
+              </div>
+            </div>
+            <div className="pb-resto-tier">
+              <div className="pb-resto-tier-header">
+                <span className="pb-resto-tier-badge">€€€</span>
+                <span className="pb-resto-tier-label">Gastronomique</span>
+              </div>
+              <div className="pb-resto-grid">
+              <a href="https://maps.app.goo.gl/jzsoVqWrkhpspYEh6?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">Club Agutaya</span>
+                <span className="pb-resto-card-desc">Grande carte et dîner en bord de mer sur Long Beach</span>
+              </a>
+              <a href="https://maps.app.goo.gl/NW9gtCY1cS44DWe29?g_st=ic" target="_blank" className="pb-resto-card">
+                <span className="pb-resto-card-name">The Hotel Elizabeth</span>
+                <span className="pb-resto-card-desc">Cuisine soignée dans un cadre resort avec vue mer</span>
+              </a>
+              </div>
+            </div>
+            </div>
+</section>
+
+          <section id="retour-port-barton" className="article-section">
+            <div className="article-day-header">
+              <h2>📍 De retour à Port Barton</h2>
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 1</span>
+              <h3>Port Barton, on est lààààà !</h3>
+            </div>
+            <p>Pour notre nouveau séjour, nous allons cette fois-ci à <strong><a href="https://maps.app.goo.gl/uxPXBHPsYYbwqxSX8?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Ausan Beach</a></strong>. L’hôtel est sur la plage. Et ça tombe bien, le taxi-boat nous débarque juste devant ! En réalité, on serait bien retournées à l’<strong><a href="https://maps.app.goo.gl/TRoACtdw6spzrzAMA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Acuarius</a></strong>, mais il était complet à cette période.
+Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’hôtels aux Philippines), nous avons payé 10,320 Php (170 €) pour 5 nuits, petits-déjeuners compris.</p>
+            <p>Nous nous installons dans notre joli cottage et partons au <strong><a href="https://maps.app.goo.gl/AZQ2T4UY7cYbkCFZ6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Mai Tai</a></strong>, pour l'apéro sunset.</p>
+            <p>On dînera ensuite au <a href="https://maps.app.goo.gl/X64quhkVZUMnF6BZA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Star Apple Canteen</strong></a>. C’est qu’on commence à avoir nos petites habitudes ici ! Bref, une fin de journée comme on les aime.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1907-768x1024.jpg" alt="Sunset Port Barton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1909_jpg-768x1024.jpg" alt="Sunset Port Barton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 2</span>
+              <h3>Bonjour la pluie !</h3>
+            </div>
+            <h4>⧐ Nuit bruyante, réveil difficile...</h4>
+            <p>À <strong><a href="https://maps.app.goo.gl/9YR6fbcEzVTnRTqV7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Ausan Beach</a></strong>, nous avions réservé un petit cottage, mais pas de bol, nous sommes tombées sur celui situé juste à côté de la cuisine et face au restaurant. Clairement, à cause du bruit incessant, la nuit n'a pas été de tout repos ! Chose qu’on fait vraiment rarement (voire jamais), on s’est permises d’en parler avec les réceptionnistes, qui se sont montrées, pour le coup, très compréhensives. Comme l’hôtel est plein, nous n’avons le choix que de passer encore 2 nuits dans notre cottage avant de pouvoir changer de chambre.</p>
+            <p>Pour les 2 dernières nuits, nous serons dans le bâtiment au 1er étage, vue sur la mer ! Mais surtout, on sera au calme. Du coup, notre petit conseil si vous réservez dans cet hôtel, évitez les cottages.</p>
+            <p>À part ça, le petit-déjeuner, inclus dans le prix de la chambre, est varié et délicieux. C'est d’ailleurs ici qu’on a mangé les meilleurs banana pancakes ! Le restaurant de l'hôtel propose également, à tout moment de la journée, des plats copieux, super bons, et peu onéreux (comptez en moyenne 250 Php / 4,10 €).</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3799-768x1024.jpg" alt="Ice-cream Port Barton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2068-768x1024.jpg" alt="Fisherman Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Un peu de pluie aujourd'hui, mais rien qui puisse nous arrêter. On se balade dans les petites rues de Port Barton en profitant de chaque instant.</p>
+            <p>Pour le déjeuner, direction le <strong><a href="https://maps.app.goo.gl/WEi3ETWc6DpPqGPD7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Mojito Bar</a></strong> qui se trouve à une quinzaine de minutes à pied de la plage de Port Barton. Ambiance jardin tropical, l’endroit est agréable et apaisant. Leurs mini-burgers sont incroyables, et les mojitos excellents !</p>
+            <h4>⧐ Manucure à Port Barton</h4>
+            <p>En redescendant vers le centre de Port Barton par la route principale (celle du terminal des bus), nous passons devant un salon de manucure. Ça fait quelques jours que Laurie me fatigue avec ses ongles qu’elle aimerait refaire faire. Il pleut, alors ça peut être enfin le bon moment ! Un rapide coup d’œil sur les avis Google… il y a de très bons commentaires, let’s go !</p>
+            <p>Le salon s’appelle <strong><a href="https://maps.app.goo.gl/1UAkBxTJP63PJ9gW9?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Hynails services</a></strong>. La nana est très appliquée et les produits sont de bonne qualité. Le tarif est de 500 Php (8 €) pour une pose de vernis semi-permanent. C’est franchement très correct ! Bref, vous pouvez y aller les yeux fermés.</p>
+            <h4>⧐ On se fait tatouer !</h4>
+            <p>La journée est déjà presque terminée, mais on a encore un petit truc à faire… Nous avons rendez-vous au <strong><a href="https://maps.app.goo.gl/Cc4n3fVZRPuAJGd17?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Rebel Art Tattoo Kollectiv</a></strong>. Et oui, impossible de résister à l’idée de se faire tatouer en souvenir de ce merveilleux voyage !</p>
+            <p>Le salon est très propre, l’ambiance très sympa et les tatoueurs très pros. Pendant que nous nous faisions tatouer, on a même eu droit à un petit concert privé de Skinny, le super assistant qui fait tout pour nous mettre à l’aise.</p>
+            <p>Nos tatouages sont canons, on est ravies du résultat. En plus, le tarif défie toute concurrence. Clairement, on vous recommande cette adresse à 100 %.</p>
+            <p>Repas du soir à <strong><a href="https://maps.app.goo.gl/c6UtyGbGtXZwG3WA9?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Kusinero del Barrio</a></strong>, l’un de nos restaurants préférés à Port Barton.</p>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3793-768x1024.jpg" alt="Rebel Art Tattoo Kollectiv Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3794-768x1024.jpg" alt="Rebel Art Tattoo Kollectiv Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3798-768x1024.jpg" alt="Rebel Art Tattoo Kollectiv Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 3</span>
+              <h3>Un avant-goût de Noël</h3>
+            </div>
+            <p>Ce midi, nous allons déjeuner au <a href="https://maps.app.goo.gl/MTfbYLtwxz3jRxzu5?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Jungle Bar</strong></a>. Pour le rejoindre, il faut compter 30 minutes de tuk-tuk sur une route bien chaotique. Il faut en fait emprunter la même route que pour aller à White Beach. Il y a des panneaux en chemin pour indiquer l’endroit… Si vous voyez « Don’t worry, beer happy », c’est par là ! Pour info, prévoir entre 500 et 600 Php (entre 8 et 10 €) pour le trajet Aller-Retour.</p>
+            <p>Le <a href="https://maps.app.goo.gl/MTfbYLtwxz3jRxzu5?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Jungle Bar</strong></a> est tenu par Sandrine, une Française expatriée depuis une dizaine d'années. On y découvre de jolis cottages avec une vue imprenable sur la baie. Le lieu est calme, idéal pour se reposer et profiter de la nature.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1951-1024x768.jpg" alt="Sunset Port Borton San Vicente" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1955-768x1024.jpg" alt="Sunset Port Borton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>De retour dans le centre de Port Barton, vu la foule qui se presse dans tous les sens, on sent qu’il se passe un événement exceptionnel. On découvre qu’un marché est installé, avec des stands de jeux (casino), de street food, de vêtements et de babioles en tout genre.</p>
+            <p>Nous apprenons que Noël aux Philippines est une fête qui dure plusieurs semaines. C'est d’ailleurs la saison des festivités la plus longue au monde. Les préparatifs commencent dès septembre et marquent officiellement le début de la période de Noël.</p>
+            <p>À Port Barton, Noël se vit dans une ambiance simple mais riche en traditions. Du coup, on a pu assister à l’une d’elles : la distribution de sacs de riz aux habitants, une coutume courante dans les villages philippins. Vous n’imaginez pas à quel point les gens étaient heureux de recevoir ce cadeau ! Ici, Noël est donc bien plus qu'une période de fête, c'est un moment de solidarité et de partage, où de simples gestes renforcent les liens entre les habitants.</p>
+            <p>Alors voilà, à la mi-novembre, sous 37 degrés et à l'ombre des palmiers, tout le monde se salue joyeusement en se souhaitant un Merry Christmas. Plutôt fun !</p>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 4</span>
+              <h3>On s'offre un Island hopping privé !</h3>
+            </div>
+            <p>Aujourd’hui, on a décidé de se faire plaisir ! On part en bateau privé à la journée pour 6,000 Php. Le prix est fixe, du coup, plus on est nombreux, moins cela revient cher.</p>
+            <p>L'avantage du tour privé, c'est qu'on choisit notre itinéraire…</p>
+            <h4>⧐ Palawan Camping</h4>
+            <p>Alors c’est parti pour notre première destination, et on a choisi <a href="https://maps.app.goo.gl/uhHzRkevYvEL39Te8?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Palawan Camping</strong></a>. Vous vous en souvenez ? C’est le petit paradis que nous avions découvert lors d'une halte en taxi-boat en direction de San Vicente !</p>
+            <p>En chemin, une tortue nous fait l'honneur d'apparaître et de nous montrer sa p’tite tête. Un moment magique.</p>
+            <p>Accessible uniquement par bateau, la plage de ce camping de luxe est magnifique, avec une eau limpide. Pendant qu’on se baigne, l'équipage du bateau nous prépare le déjeuner. Poulet, ribs de porc, poisson frais, calamars, salades, riz…, le buffet gargantuesque est préparé avec soin. On prend le temps de savourer ce repas dans ce cadre magique.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/VID_20241205_034255_00_102_2025-08-10_18-03-50_capture-decran-1024x768.jpg" alt="Island hopping Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2023-1024x768.jpg" alt="Camping Palawan Port Barton San Vicente" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <h4>⧐ Gilligans Beach</h4>
+            <p>Après un moment de détente, cap sur la plage privée <strong><a href="https://maps.app.goo.gl/MSga8kS1KxkXpkAa6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Gilligans</a></strong>, un autre endroit paradisiaque.</p>
+            <p>Cette plage est également accessible par la route. On y découvre une maison entièrement équipée à louer pour 10 personnes, parfaite pour un séjour en groupe. Un petit bar de plage charmant avec des balançoires ajoute à l'ambiance une touche paisible et détendue.</p>
+            <p>Ici, le temps semble s’être arrêté. À peine le temps d'avaler une petite bière qu'il est déjà l’heure de rentrer.</p>
+            <p>Sur le chemin du retour, nous avions prévu de passer par le spot des tortues, mais le temps est passé trop vite. Cela dit, nous avons tellement profité de cette journée que nous ne regrettons rien. De toute façon, pas le choix, les bateaux doivent impérativement rentrer avant la tombée de la nuit.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2044-768x1024.jpg" alt="Gilligans Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2060-768x1024.jpg" alt="Island hopping Port Barton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <span className="article-day-badge">Jour 5</span>
+              <h3>Derniers instants dans notre petit paradis</h3>
+            </div>
+            <p>Nous partons cet après-midi. On profite de nos derniers moments dans notre village coup de cœur des Philippines !</p>
+            <p>Après un petit tour en ville, on déjeune au restaurant <strong><a href="https://maps.app.goo.gl/NuxTp3Fe7s7z5qFr9?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">El Busero Inn</a></strong>, situé sur la plage, juste à côté de notre hôtel <strong><a href="https://maps.app.goo.gl/9YR6fbcEzVTnRTqV7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Ausan Beach</a></strong>. C'est le tout premier restaurant de Port Barton, et la cuisine y est excellente. Laurie a goûté une de leurs spécialités, le ceviché de thon. Visiblement, le meilleur de sa vie !</p>
+            <p>En dessert, nous nous laissons tenter par une glace à l'ubé, au glacier juste à côté. Sa couleur violette nous intrigue. L’ubé est en fait un légume, mais son goût est étonnamment sucré. Une délicieuse découverte pour conclure ce dernier repas !</p>
+            <p>Il est temps de quitter notre petit paradis. Nous avons réservé un tuk-tuk pour rejoindre notre prochaine destination, à moins d’une heure d’ici. Au revoir Port Barton !</p>
+          </section>
+
+          <section id="roxas" className="article-section">
+            <div className="article-day-header">
+              <h2>📍 Welcome to Roxas !</h2>
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <h3>Roxas, une petite ville surprenante !</h3>
+            </div>
+            <p>C'est depuis Roxas que nous embarquerons pour la dernière grande destination de ce voyage...</p>
+            <p>Quitter Port Barton n'a pas été facile, mais on sait que l'endroit qui nous attend saura vite nous faire oublier ce petit pincement au cœur.</p>
+            <h4>⧐ Comment se rendre à Roxas ?</h4>
+            <p>Roxas est la plus grande ville proche de Port Barton. Cette municipalité est située sur la côte Est de Palawan. Il faut compter 45 minutes en tuk-tuk pour s'y rendre. Comptez environ 1,000 Php (16 €) pour le trajet.</p>
+            <p>Il est également possible de faire le transfert en van, mais cette option est plus onéreuse. Au-delà du tarif, on trouve que c’est bien plus sympa de pouvoir admirer les paysages en tuk-tuk !</p>
+            <h4>⧐ Fin de soirée festive à Roxas</h4>
+            <p>Nous arrivons à Roxas en début de soirée. Nous avons réservé une chambre au <strong><a href="https://maps.app.goo.gl/A9Fu7fADx2yLKR9z6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Peria Seafront</a></strong>. L’ambiance est exceptionnellement particulière car ils préparent et décorent leur hall pour une réception de mariage prévue le lendemain. L’hôtel dispose d’un ponton, ce qui ajoute un charme à cet endroit.</p>
+            <p>Direction le centre-ville pour explorer un peu les environs. Nous arrivons en plein cœur des festivités ! Un grand tournoi de basket est organisé… ce qui n'est pas étonnant puisque ce sport est une véritable institution aux Philippines. Même dans les villages les plus isolés, il y a toujours un panier de basket.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2158-768x1024.jpg" alt="Peria Seafront Roxas Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2168-768x1024.jpg" alt="Jeepney Roxas Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2127-768x1024.jpg" alt="Peria Seafront Roxas Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2146-1024x768.jpg" alt="Noël Roxas Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <p>Juste à côté a lieu une fête foraine avec des stands de jeux et des manèges. Tout d’un coup, la foule se presse pour se rassembler sur la place principale. Très curieuses, on les suit. On comprend rapidement que tout le monde attend avec impatience l'illumination du sapin de Noël !</p>
+            <p>On profite de l'ambiance chaleureuse pour grignoter quelques spécialités dans les stands de nourriture. On adore !</p>
+            <p>Après ce moment en immersion, on ne traîne pas et on retourne à l'hôtel pour une bonne nuit de sommeil.</p>
+            <p>Demain, on a rendez-vous entre 10 h et 11 h 30, à quelques minutes à pied de là, pour embarquer sur un bateau… On l'a tellement attendu ce moment !</p>
+          </section>
+
+          <section id="modessa" className="article-section">
+            <div className="article-day-header">
+              <h2>📍 Modessa Island ou le paradis sur Terre !</h2>
+            </div>
+            <p>Réveil matinal, on est tellement excitées ! Direction le point de rendez-vous.</p>
+            <p>Il est quasiment midi quand on embarque sur une petite bangka, qui nous conduit à une autre bien plus grande. Du coup, en pleine mer, changement de bateau en mode Filipino style !</p>
+            <p>Après 1 h de traversée, on arrive sur une petite île privée, et quand on dit petite, on ne mâche pas nos mots…</p>
+            <p>Bienvenue à Modessa Island !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2183_jpg-768x1024.jpg" alt="Bangka Modessa Island Roxas" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2203-1024x768.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-day-header article-day-header-tight">
+              <h3>Débarquement sur Modessa Island</h3>
+            </div>
+            <p>Nous restons 2 nuits sur cette île paradisiaque. Cet endroit a été partiellement détruit par le passage du typhon Odette en 2021. Selon le personnel, l’île était encore plus belle avant, mais pour nous, elle est déjà parfaite.</p>
+            <p>Certaines installations semblent un peu dater, mais l'atmosphère qui se dégage de cette île fait vite oublier ce détail. La plage est sublime, l’eau d’un bleu cristallin… Un vrai décor de carte postale !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2209-768x1024.jpg" alt="Modessa Island Beach" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2215-1024x768.jpg" alt="Modessa Island Beach" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <p>On nous accompagne jusqu’à notre bungalow. Il y en a une dizaine sur la plage. Construits traditionnellement en bois, en bambou et en feuillage tressé, l’hébergement offre à lui seul une expérience authentique et rustique.</p>
+            <p>Les bungalows sont tous équipés d'un grand lit et d’un petit lit, d'une salle de bain privée, d'un ventilateur électrique et d'un hamac sur la terrasse pour se détendre face à la mer.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_5196-1-768x1024.jpg" alt="Modessa Island Bungalow" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2412-768x1024.jpg" alt="Modessa Island Roxas Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Une fois installées, nous partons explorer l’île. Il ne faut pas plus de 20 minutes pour faire tranquillement le tour. Les stigmates du typhon Odette sont encore visibles, notamment l'ancien club de plongée, partiellement détruit par la tempête.</p>
+            <p>L’île est entourée d'une plage de sable blanc et bordée d’une mer limpide. On se sent tellement bien ici. On se sent comme seules au monde. C’est la déconnexion totale !</p>
+            
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Sur Modessa Island, l’électricité ne fonctionne que de 18 h à 7 h : pensez à charger téléphones, appareils photo et batteries externes pendant la nuit. Le Wi-Fi et le réseau cellulaire sont également limités — parfait pour profiter pleinement de l’expérience insulaire !</p></div>
+            </div>
+            <p>Pour la petite anecdote, sachez que s’il y a beaucoup de vent ou que le ciel est très couvert, il n’y a tout simplement pas de réseau dans de nombreux endroits du pays ! Les Philippins nous l’ont souvent répété, et ça s’est avéré chaque fois.</p>
+            <div className="article-day-header article-day-header-tight">
+              <h3>Que faire à Modessa Island ?</h3>
+            </div>
+            <p>Alors, qu’est-ce qu’on va faire ici pendant 2 jours ?!! Bah, pas grand-chose en fait... et c’est ça qui est bon !</p>
+            <h4>⧐ Farniente</h4>
+            <p>La plage face aux hébergements est paradisiaque et parfaite pour se détendre, bouquiner ou faire bronzette. C’est l’endroit idéal pour prendre le temps de prendre le temps.</p>
+            
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2317-768x1024.jpg" alt="Farniente Modessa Island" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2422-768x1024.jpg" alt="Farniente Modessa Island" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Snorkeling</h4>
+            <p>Modessa est entourée de récifs coralliens. On y découvre une faune marine diversifiée, notamment des poissons tropicaux et des étoiles de mer. Des informations à ce sujet sont affichées dans la salle du restaurant.</p>
+            <p>Ils rappellent, par exemple, de ne surtout pas toucher les poissons-pierres, les raies pastenagues et les poissons-lions. De par leurs défenses venimeuses, leurs piqûres peuvent être extrêmement dangereuses, voire mortelles !</p>
+            <p>Si vous n’avez pas de matériel de snorkeling, pas de panique… vous avez la possibilité d’en louer ici !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2224.jpg-768x1024.jpg" alt="Snorkeling Modessa Island" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2216-1024x768.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <h4>⧐ Balades</h4>
+            <p>Au rythme des marées, des bancs de sable apparaissent et disparaissent. Bien entendu, on s’est amusées à les rejoindre.</p>
+            <p>On a assisté à une scène surprenante : deux chiens de l’île nageaient, se déplaçant dans l’eau avant de s’immobiliser comme s’ils attendaient quelque chose. Plus tard, le gérant nous a expliqué qu’ils partaient faire leurs courses, pêchant leurs poissons qu’ils ramenaient ensuite pour qu’on les leur cuisine. Incroyable, non ?!!</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2241-1024x768.jpg" alt="Modessa Island plage" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/VID_20241208_141612_00_116_2025-08-11_10-44-44_capture-decran-1-768x1024.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <h4>⧐ Activités</h4>
+            <p>Un terrain de basket-ball ainsi qu’un filet de beach-volley sont à disposition. Il y a également un billard près du restaurant.</p>
+            <h4>⧐ Restauration</h4>
+            <p>Au niveau de la restauration, tout est préparé à la minute avec des produits frais. Comme chaque séjour ici est en pension complète, on nous propose pour chaque repas de choisir entre deux plats, toujours accompagnés d'une salade. En dessert, on a droit à des fruits frais, of course.</p>
+            <p>Pour le petit-déjeuner, c’est œufs (sous toutes ses formes !) ou pancakes, servis avec des fruits.</p>
+            <p>Le café, le thé et l’eau filtrée restent à disposition tout au long de la journée.</p>
+            <div className="article-day-header article-day-header-tight">
+              <h3>Comment se rendre à Modessa Island ?</h3>
+            </div>
+            <p>Si vous souhaitez venir dans ce paradis perdu, vous pouvez contacter directement MARCO (<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8956c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{display:"inline",verticalAlign:"middle",marginRight:"3px"}}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+63 912 045 9971), le responsable de l’île, qui se fera un plaisir de vous organiser cette expérience unique !</p>
+            <p>Pour ce séjour de 2 nuits, nous avons payé 5,500 Php (90 €) par personne. Les transferts en bateau Roxas &lt;-&gt; Modessa, ainsi que tous les repas, sont compris.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2236-1-1024x768.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2255-768x1024.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Modessa Island est une destination idéale pour ceux qui recherchent une escapade paisible, loin de l'agitation touristique. C’est l’endroit parfait pour se reconnecter avec la nature dans un cadre idyllique.</p>
+            
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À ne pas manquer</strong><p>Modessa Island, c'est notre paradis sur Terre de ce voyage : une île privée minuscule, du sable blanc, une mer limpide et zéro réseau. Deux nuits dans un bungalow les pieds dans l'eau, on en rêve encore.</p></div>
+            </div>
+          </section>
+
+          <section id="au-revoir" className="article-section">
+            <div className="article-day-header">
+              <h2>📍 Bye bye Palawan. Ce n'est qu'un au revoir...</h2>
+            </div>
+            <p>Après un bon dernier petit-déjeuner, il est temps de quitter ce petit paradis perdu. Retour à Roxas en bangka et direction le terminal de bus en tuk-tuk pour prendre un van public.</p>
+            <p>Ce matin, on a le cœur lourd… On sent particulièrement arriver la fin de notre voyage.</p>
+            <div className="article-day-header article-day-header-tight">
+              <h3>Direction Puerto Princesa en van</h3>
+            </div>
+            <p>Pas besoin de booker à l’avance le van, il y en a toutes les 45 minutes environ. Par contre, il ne vaut mieux pas avoir un timing serré pour le trajet... Normalement, il faut compter 2 h de route pour aller de Roxas à Puerto Princesa, nous avons mis un peu plus de 3 h !</p>
+            <p>Il y avait en fait une cargaison de poissons en provenance d’El Nido dans des glacières stockées sur le toit du van, et nous avons dû faire une multitude d’arrêts pour la livrer.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2454-768x1024.jpg" alt="Tuk-tuk Roxas" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2458_jpg-1024x768.jpg" alt="Van Roxas Puerto" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <p>Vu l’heure tardive à laquelle nous arrivons, le chauffeur nous dépose directement à l’hôtel. Pour notre dernière nuit sur Palawan, nous dormons au <strong><a href="https://maps.app.goo.gl/pYTCXj8cjJDEZRdm7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Mariner’s Pension House</a></strong>.</p>
+            <p>Il se situe plus ou moins dans le même quartier que le <strong><a href="https://maps.app.goo.gl/fgYS5rtgfwrui66U6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Puerto Pension Inn</a></strong>. Le petit truc en plus, c’est la piscine. Nous avons payé 1,720 Php (28 €) pour la nuit, petit-déjeuner compris.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1100-1-768x1024.jpg" alt="Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1102-1-768x1024.jpg" alt="Market Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Pour cette dernière soirée, on n’a pas pu s’empêcher de retourner sur la <strong>Baywalk</strong> et plus précisément d’aller manger au <strong>Kobe's</strong>. On avait déjà testé ce petit resto lors de notre 1er passage à Puerto Princesa, en début de séjour, et on avait bien mangé ! Sans aucun doute, ce sera un poisson grillé pour Laurie et un Beef Tagalog pour Amélie.</p>
+            <p>Après un repas très copieux, histoire de digérer un peu, on fait un petit tour au marché. On en profite pour acheter quelques souvenirs avant de se remettre en chemin, direction l’hôtel. Demain matin, on pourra prendre le temps, notre avion pour Manille décolle seulement à 13 h 30.</p>
+            <div className="article-day-header article-day-header-tight">
+              <h3>En route pour Manille</h3>
+            </div>
+            <p>Après une bonne nuit de sommeil et un petit-déjeuner complet, nous profitons de la piscine jusqu’à ce qu’il soit temps de partir.</p>
+            <p>On commande un tuk-tuk avec l’application <strong>RIDE</strong>, et direction l’aéroport. Ciaoooo Palawan !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1098-768x1024.jpg" alt="Swimming pool Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/Tuk-tuk-Puerto-Princesa-768x1024.jpg" alt="Tuk-tuk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+            <p>Nous arrivons à Manille pour la dernière nuit de notre séjour. Une toute petite nuit, car demain, nous devons être à l’aéroport à 3 h 30 ! Nous avons réservé à l'<strong><a href="https://maps.app.goo.gl/atQGdGUGWigJJWE1A?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Achievers Airport Hotel</a></strong> (le même qu’à l’aller). Ce qui est top avec cet hôtel, c’est que les transferts sont inclus dans le tarif.</p>
+            <p>Le van nous récupère donc au terminal, au niveau des arrivées. On est KO, alors on se la joue tranquille pour cette fin de journée.</p>
+            <p>On trie nos affaires, ressortons nos vêtements d’hiver… Pour faire au plus rapide, on dîne au restaurant de l’hôtel. Les plats sont très bons, et niveau prix, c’est très correct. Le responsable en profite pour nous demander ce que nous voulons comme petit-déjeuner pour nous le préparer à emporter demain matin. Il y a une multitude de choix. Pour nous, ça sera gaufres et pancakes, simple et efficace. Repas avalé, on part se coucher. Le réveil sonne à 2 h, aïe aïe aïe !</p>
+            <div className="article-day-header article-day-header-tight">
+              <h3>Palawan, tu nous manques déjà !</h3>
+            </div>
+            <p>C’est le grand jour ! Réveil très tôt comme prévu. On récupère nos box préparées avec amour pour notre petit-déjeuner, et c’est parti pour l’aéroport.</p>
+            <p>Au revoir Manille, au revoir les Philippines... On se revoit bientôt, c’est sûr !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1111-768x1024.jpg" alt="Aéroport Manille" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3888-768x1024.jpg" alt="Aéroport Manille" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
+          </section>
+
           <section id="itineraire" className="article-section">
             <div className="article-day-header">
-              <h2>Notre itinéraire en 3 semaines</h2>
+              <h2>Autre itinéraire de 3 semaines aux Philippines</h2>
             </div>
-            <p>Nous avions une envie irréfutable de découvrir de belles plages, des îles paradisiaques aux eaux turquoise et émeraude, de la végétation luxuriante, et des paysages à couper le souffle.</p>
-            <p>Entre terre et mer, c&apos;est partiiiii pour les Philippines !</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Notre itinéraire</strong>
-              <p><i className="ti ti-plane" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Manille → Palawan, El Nido (3 nuits)<br />
-              <i className="ti ti-plane" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>El Nido → Coron (3 nuits)<br />
-              <i className="ti ti-plane" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Coron → Manille<br />
-              <i className="ti ti-bus" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Manille → Banaue (3 nuits)<br />
-              <i className="ti ti-bus" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Retour Manille<br />
-              <i className="ti ti-plane" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Manille → Bohol (3 nuits)<br />
-              <i className="ti ti-ship" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Bohol → Siquijor (3 nuits)<br />
-              <i className="ti ti-ship" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Siquijor → Bohol + <i className="ti ti-ship" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Bohol → Cebu (1 nuit)<br />
-              <i className="ti ti-plane" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Cebu → Siargao (3 nuits)<br />
-              <i className="ti ti-plane" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Siargao → Manille</p></div>
-            </div>
-          </section>
-
-          {/* PALAWAN */}
-          <section id="palawan" className="article-section">
-            <div className="article-day-header">
-              <h2>📍 Palawan : El Nido et Coron</h2>
-            </div>
-            <p>Palawan est une <strong>véritable perle tropicale</strong> réputée pour ses paysages à couper le souffle. Entre plages de sable blanc, eaux cristallines et formations rocheuses majestueuses, cette île incarne la définition même de l&apos;évasion, où chaque recoin révèle une beauté sauvage et intacte.</p>
-            <p>Notre voyage commence donc à Palawan. Nous avons passé quelques jours à El Nido, puis à Coron. Il y a tellement de choses à vous raconter que <strong>nous y avons consacré un article.</strong></p>
-            <p>Des lagons d&apos;El Nido, aux récifs préservés de Coron, préparez-vous à plonger dans ce décor de rêve, où l&apos;évasion devient réalité !</p>
-            <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" style={{display:"block", margin:"24px 0"}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan Blog" className="article-img-full" loading="lazy" /></a>
+            <p>Si vous souhaitez découvrir un autre <strong>itinéraire de 3 semaines</strong> à travers les Philippines et trouver toutes les infos pour préparer votre voyage (formalités, santé, météo, etc.), <strong>n'hésitez pas à lire cet article</strong>, on vous partage tout !</p>
+            <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Les Philippines Blog" className="article-img-full" loading="lazy" /></a>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À lire aussi</strong><p><a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-link">⋙ PALAWAN : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</a></p></div>
-            </div>
-          </section>
-
-          {/* BANAUE */}
-          <section id="banaue" className="article-section">
-            <div className="article-day-header">
-              <h2>📍 Banaue &amp; Batad</h2>
-            </div>
-            <p><strong>Banaue</strong> est une petite ville de montagne située dans la <strong>région d&apos;Ifugao,</strong> au Nord de l&apos;île de Luzon. Cette dernière est la plus grande île des Philippines. 380 kilomètres séparent Banaue de Manille. C&apos;est le point de départ pour découvrir les plus belles rizières en terrasse du pays.</p>
-            <p><strong>Inscrites sur la liste du patrimoine mondial à l&apos;UNESCO</strong> en 1995, les rizières en terrasse du Nord des Philippines sont communément considérées comme la 8ème Merveille du monde.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0388-768x1024.jpeg" alt="I survived Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1145-1024x768.jpg" alt="Rizières en terrasses Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1288-1024x768.jpg" alt="Wonder of the World Batad" className="article-img-full" loading="lazy" />
-            <div className="article-day-header article-day-header-tight">
-              <span className="article-day-badge">Jour 1</span>
-              <h3>De Manille à Banaue</h3>
-            </div>
-            <h4>⧐ Comment se rendre à Banaue ?</h4>
-            <p><strong>Pour nous rendre à Banaue, nous avons choisi l&apos;option bus au départ de Manille.</strong> Vous avez également la possibilité de vous y rendre en transport privé, mais le tarif ne sera pas le même ! Nous avions réservé le transfert plusieurs semaines avant. Le trajet aller-retour nous est revenu à <strong>1800 Php (30 €)</strong> par personne.</p>
-            <p>Nous devons nous rendre à la gare routière de la compagnie <strong><a href="https://ohayami.ph/" target="_blank" rel="noopener noreferrer" className="article-link">Ohayami Trans</a></strong> à Manille pour 22 h 30, ce qui nous laisse le temps d&apos;aller manger un bout et de faire un petit tour dans le secteur.</p>
-            <p>Nous sommes dans un quartier populaire, assez pauvre pour ne pas dire ghetto. Nous traversons quelques rues… C&apos;est la première fois qu&apos;on a le <strong>sentiment de ne pas être en sécurité,</strong> mais ce n&apos;est que notre ressenti. Après avoir mangé, nous retournons à la gare routière. Nous récupérons nos billets et c&apos;est parti pour un grand périple.</p>
-            
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Si comme nous, vous souhaitez aller à Banaue en bus, vous devrez passer l&apos;épreuve du bus climatisé ! Ce n&apos;est pas un mythe, il y fait vraiment froid. Prévoyez de quoi vous couvrir.</p></div>
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_5522-768x1024.jpeg" alt="Bus Manille Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0925-768x1024.jpg" alt="Bus Manille Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p><strong>Il y a 9 h de bus pour relier Manille à Banaue.</strong> Nous partons à 23 h. Nous nous sommes dit : « Nickel, on va pouvoir dormir ». Bah non, pas du tout ! On est toujours en admiration devant ces personnes qui, 5 minutes après le départ, piquent déjà du nez. Cependant, les sièges sont vraiment confortables et s&apos;inclinent encore plus que ceux des avions. Lumière tamisée, musique country en fond, tout est calme puisque tout le monde dort.</p>
-            <p>Le bus s&apos;arrête 3 fois sur le trajet dans des sortes de stations services. Pauses pipi ! Ah oui, il n&apos;y a pas de toilette dans le bus ! Durant ces pauses qui dégourdissent les jambes et qui réchauffent aussi, vous trouverez également de quoi grignoter (biscuits, chips, boissons chaudes et fraîches…).</p>
-            <p><strong>Il est environ 8 h 30 quand nous arrivons à Banaue</strong> sous la pluie (en même temps, c&apos;est le Nord !). Tellement contentes d&apos;être arrivées, rien ne peut nous démoraliser. On va faire la danse du soleil !</p>
-            <p>À peine débarquées à la gare routière, nous devons payer une taxe de <strong>50 Php (0,85 €)</strong> par personne. Un tuk-tuk nous attend pour nous emmener à l&apos;hôtel, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJs6HrIW0okDMRNsWmK_hmVqs" target="_blank" className="article-link article-resto-link-desktop">Bogah Homestay</a><a href="https://maps.app.goo.gl/TxQ3NYyVdn6xQ6Ge6" target="_blank" className="article-link article-resto-link-mobile">Bogah Homestay</a></strong>.</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0940-1024x768.jpg" alt="City Banaue" className="article-img-full" loading="lazy" />
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0991-768x1024.jpg" alt="Ville Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_0953-1024x768.jpg" alt="Banaue Tour Map" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-
-            <p>Nous arrivons à l&apos;heure du petit déjeuner, parfait après ce long trajet en bus ! Nous nous installons à la terrasse de l&apos;hôtel pour déguster leur incroyable pancake au coulis de chocolat et prendre un café. C&apos;est à ce moment-là qu&apos;un membre du personnel se joint à nous et nous présente tout ce qu&apos;il y a à voir, à faire dans le coin.</p>
-            <p>Nous organisons directement avec lui nos deux prochaines journées… <strong>Jour 1, trek à Batad, et Jour 2, visite d&apos;Hapao et de ses Hot springs.</strong> Pour deux personnes et les excursions des deux jours, nous payons <strong>10 800 Php (173 €)</strong>, transport privé et guide compris.</p>
-            <h4>⧐ La ville de Banaue</h4>
-            <p>Pour cette première demi-journée, nous partons donc vadrouiller dans la ville de <strong>Banaue</strong>. Cette ville construite à flanc de montagne n&apos;a pas un charme fou et nous paraît très pauvre. Nous empruntons le <strong>pont suspendu pour rejoindre le haut du centre-ville</strong>. L&apos;endroit n&apos;est pas vraiment touristique.</p>
-            <p>Après avoir exploré le centre, <strong>nous montons vers le village.</strong> Ça grimpe pas mal mais c&apos;est une bonne mise en jambes pour ce qui nous attend le lendemain. Nous passons plusieurs petites maisons et croisons quelques habitants. Ici, c&apos;est un peu la débrouille. Les gens vivent de rien et avec rien. La plupart des maisons que l&apos;on croise en chemin sont constituées de trois murs en parpaings et d&apos;un bout de tôle en guise de toit.</p>
-            <p><strong>Après avoir marché une bonne trentaine de minutes</strong> et longé des rizières en terrasse, on arrive à notre objectif, <strong>une petite cascade.</strong> D&apos;ici le panorama est incroyable ! Quelques photos avec des locaux surgis de nulle part, et il est temps de redescendre avant qu&apos;il ne fasse nuit.</p>
-            <p>Nous avons observé qu&apos;ici beaucoup de personnes mâchent quelque chose de rouge (à en voir ce qu&apos;ils crachent), qu&apos;ils stockent dans leurs joues. Nous avons appris qu&apos;il s&apos;agit de la « moma », une plante qui donne le sentiment d&apos;être plus fort, avec des effets un peu euphorisants.</p>
-            <p>Il n&apos;y a <strong>pas vraiment de restaurant ou d&apos;endroit pour sortir à Banaue,</strong> du coup nous restons à l&apos;hôtel pour dîner. Leurs plats sont très bons et leurs prix très corrects.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1059-1-1024x768.jpg" alt="Enfants Banaue" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2507-768x1024.jpg" alt="Bridge Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1002-768x1024.jpg" alt="Vue Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1076-1024x768.jpg" alt="Vue depuis l'hôtel Banaue" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-
-            {/* JOUR 2 BATAD */}
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 2</span>
-              <h3>Batad, les rizières en terrasse &amp; Tappiyah Falls</h3>
-            </div>
-            <p>Après une bonne nuit et un petit-déjeuner copieux, <strong>notre van est là</strong> pour nous emmener à Batad. On est trop excitées, on a trop hâte de découvrir ces paysages.</p>
-            <p><strong>Après une petite demi-heure de route, nous arrivons.</strong> Notre guide pour la journée nous attend (obligatoire). C&apos;est en fait un habitant du village.</p>
-            <p>Nous avons choisi de venir <strong>découvrir ce village à la journée</strong> mais sachez qu&apos;il y a la <strong>possibilité de faire un trek sur plusieurs jours.</strong> En gros, vous partez de Banaue pour rejoindre Batad à pied, en passant par des sentiers, des forêts, des rizières… De ce qu&apos;on nous en a dit, c&apos;est assez fatiguant mais c&apos;est une belle expérience à vivre.</p>
-            <h4>⧐ Batad, la 8ème Merveille du monde</h4>
-            <p><strong>Une quinzaine de minutes de marche plus tard, nous arrivons par le haut du village.</strong> C&apos;est la seule voie d&apos;accès. La vue sur les rizières en terrasses et le village en contrebas est juste impressionnante. Un amphithéâtre végétal, avec pour scène le village. Nous sommes là, au milieu des montagnes, devant ce qui est considéré comme la 8ème Merveille du monde, et on comprend pourquoi !</p>
-            <p>Nous sommes clairement émues et bouche bée face à la magie et la beauté de ce paysage. À cet instant, on se sent hors du temps. Il se dégage ici une énergie particulière.</p>
-            <p>Cela fait seulement 10 ans qu&apos;il y a de l&apos;électricité à Batad, mais <strong>il n&apos;y a toujours aucun réseau téléphonique et internet.</strong></p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1327-768x1024.jpg" alt="Enfants Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1319-768x1024.jpg" alt="Batad Trek" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p>Nous suivons notre guide à travers les rizières en terrasse. Il nous apprend plein de choses, notamment que toutes <strong>ces terrasses ont été façonnées par la main de l&apos;Homme il y a plus de 2 000 ans</strong> et qu&apos;elles se transmettent de génération en génération.</p>
-            <p>Le riz, qui est cultivé ici par les familles, est seulement pour leur consommation. Ils n&apos;en produisent pas suffisamment pour le commercialiser. Alors que dans le reste du pays le riz est cultivé et récolté 2 fois par an, ici à Batad, c&apos;est seulement une fois dans l&apos;année, soit en février.</p>
-            <div className="article-must">
-              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>Le meilleur moment pour venir voir les rizières en terrasse à Batad est au mois de mai. C&apos;est juste avant la récolte, quand tout est bien vert.</p></div>
-            </div>
-            <p>On se pose la question quand même… De quoi vivent les habitants de Batad ? Du tourisme of course !</p>
-            <p>Notre guide est un jeune homme du village. En même temps, qui de mieux placé pour nous faire découvrir cet endroit ? Il connaît les lieux comme sa poche. Certains habitants du village accueillent les gens de passage pour la nuit, d&apos;autres tiennent des restaurants. Les femmes vendent des objets en bois sculpté et des pochettes cousues main. <strong>Pendant notre visite, nous avons donc acheté des petits souvenirs pour contribuer à l&apos;économie du village.</strong></p>
-            
-            <p>Cependant, on nous explique que l&apos;exode rural est un danger qui menace ce magnifique paysage. Si les jeunes quittent le village, qui va prendre le relai pour entretenir les rizières et les faire perdurer ? Vivre ici, coupé du monde, n&apos;emballe pas tous les jeunes de la région. Une dame nous explique qu&apos;à l&apos;âge de 8 ans elle aidait ses parents et travaillait tous les jours dans les cultures. Aujourd&apos;hui, elle a des enfants qui ne veulent pas apprendre ce métier et l&apos;aider dans ces tâches : « ils préfèrent regarder des vidéos sur Tik-Tok ! ».</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0380-1024x768.jpg" alt="Merveille du monde Batad" className="article-img-full" loading="lazy" />
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1115-768x1024.jpg" alt="Batad vu du ciel" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1287-1024x768.jpeg" alt="Rice terrace Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Nous continuons notre balade en mode funambule sur des murets d&apos;une vingtaine de centimètres de large, pas plus. Absorbées par le paysage, on a failli finir dans la boue à plusieurs reprises ! Et oui, en plus d&apos;être étroits, ils sont glissants par endroits. <strong>Mieux vaut ne pas avoir le vertige</strong> non plus… On se retrouve parfois avec la rizière d&apos;un côté (avec la boue et plein d&apos;escargots, beurk !), et le vide de 2 mètres de l&apos;autre côté.</p>
-            <p>Nous traversons les rizières et empruntons des « escaliers » qui relient des terrasses entre elles. Là aussi <strong>c&apos;est plutôt sportif.</strong> Alors qu&apos;on galère un peu sur certains passages, notre guide est quant à lui très à l&apos;aise en tongs !</p>
-            <p><strong>Nous arrivons de l&apos;autre côté de la vallée, au niveau d&apos;une grosse maison en béton et au toit bleu.</strong> Elle semble en construction. De là aussi, la vue sur l&apos;amphithéâtre est saisissante.</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1298-1024x768.jpg" alt="Trek Batad" className="article-img-full" loading="lazy" />
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1294-1-1024x768.jpg" alt="Randonnée Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1217_jpg-768x1024.jpg" alt="Love Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <h4>⧐ Tappiyah Falls</h4>
-            <p>On traverse la maison et de l&apos;autre côté, c&apos;est un tout autre paysage. On se croirait transporté dans la jungle. Il paraît qu&apos;au bout du chemin, <strong>une incroyable cascade</strong> nous attend…</p>
-            <p><strong>Mais ça se mérite !</strong> À partir d&apos;ici, <strong>il faut compter une bonne vingtaine de minutes de marche</strong> pour y accéder. De marche oui, mais de marches d&apos;escalier surtout !</p>
-            <p>En effet, pour accéder à cette cascade, c&apos;est <strong>plus de 700 marches étroites, bancales et glissantes à descendre</strong> (qu&apos;il faudra bien évidemment remonter !). Si les escaliers du village sont par endroits un peu sportifs, celui-là nous a littéralement tétanisé les cuisses !</p>
-            <p>Après l&apos;effort, le réconfort. Arrivées au niveau de la cascade, notre guide nous laisse. Il nous dit de prendre notre temps, qu&apos;il nous attend plus loin. Ni une ni deux, on enlève les chaussures pour traverser et rejoindre la zone de cailloux face à la cascade. Bon, elle est super fraîche (14 degrés) mais ça fait du bien aux jambes.</p>
-            <p>Nous passons un moment à contempler <strong>cette spectaculaire chute de 45 mètres de haut.</strong> Le vacarme assourdissant des trombes d&apos;eaux est impressionnant. Quelques courageux se baignent. Plusieurs cairns se dressent devant la cascade… Du coup, on n&apos;a pas pu s&apos;empêcher de mettre notre petite pierre à l&apos;édifice !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1238_jpg-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1257-768x1024.jpg" alt="Tappiyah Falls Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p>Nous profitons pleinement de ce moment avant de retrouver notre guide pour rebrousser chemin. C&apos;est parti pour remonter les <strong>700 marches, et la pente est assez raide !</strong> Ce sont les mollets qui en prennent un coup… Mais franchement, aucun regret. Nous sommes tellement heureuses de l&apos;avoir fait. <strong>« I survived Batad ! »,</strong> comme on dit ici.</p>
-            <p>Il faut encore retraverser les rizières en terrasse et grimper quelques escaliers pour rejoindre le restaurant où nous allons manger dans le village.</p>
-            <p><strong>Notre guide nous a réservé une table dans un petit restaurant</strong> qui ne paye pas de mine, mais avec une vue panoramique incroyable ! Cet endroit restera gravé à jamais dans nos mémoires. On scrute ce paysage comme pour ne pas en rater une miette. Et pour couronner le tout, on nous sert l&apos;un des meilleurs poulet curry qu&apos;on ait mangé aux Philippines !</p>
-            
-            <p>Il est temps pour nous de quitter cette merveille du monde et de retrouver notre chauffeur. Notre guide nous accompagne pour rejoindre la route. Le retour n&apos;est pas très long, mais ça monte encore et encore ! D&apos;autant qu&apos;après la pause déjeuner, on a un peu les jambes coupées.</p>
-            <p><strong>Sur le chemin du retour,</strong> notre chauffeur nous arrête au bord de la route, au niveau d&apos;un <strong>point de vue qui surplombe un petit village appelé Bangaan Village.</strong> Cet endroit est également très joli… Il nous fait penser à Batad, mais en plus petit et moins impressionnant.</p>
-            <p>Retour à l&apos;hôtel, fin de journée tranquille pour nous. Au programme, repos, apéro, repas et dodo. Il faut être en forme pour le lendemain. Il est prévu qu&apos;on découvre un autre spot très sympa de la région !</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1329-1024x768.jpg" alt="Rizières en terrasses Bangaan Village" className="article-img-full" loading="lazy" />
-
-            {/* JOUR 3 HAPAO */}
-            <div className="article-day-header article-day-header-tight">
-              <span className="article-day-badge">Jour 3</span>
-              <h3>Le village d&apos;Hapao, ses rizières &amp; les Hot springs</h3>
-            </div>
-            <h4>⧐ Hapao &amp; ses rizières</h4>
-            <p>Nous avons prévu aujourd&apos;hui de découvrir le village d&apos;<strong>Hapao qui se situe à environ 45 minutes en van de notre hôtel.</strong> Après avoir avalé de merveilleux pancakes au chocolat avec un petit café, c&apos;est partiiii pour de nouvelles aventures ! On ne vous le cache pas, ça tire un peu dans les jambes à cause du trek de la veille, mais rien ne nous empêchera de profiter au maximum de chaque moment.</p>
-            <p>En route pour Hapao, notre chauffeur nous arrête à différents points de vue. On en prend plein les yeux, les paysages sont extraordinaires !</p>
-            <p>Arrivées sur place, nous rencontrons <strong>notre guide qui est en fait une femme du village.</strong></p>
-            <p>Elle nous demande si nous souhaitons faire la version courte ou la version longue de la balade. <strong>On choisit la version longue,</strong> en se disant que c&apos;est toujours très intéressant de partager des moments pareils avec les locaux. Nous ne regrettons pas notre choix. Nous la suivons à travers les rizières en terrasse et les escaliers jusqu&apos;à son village. Elle est très contente de nous montrer là où elle vit avec sa famille et comment ils vivent.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1392-1-1024x768.jpg" alt="Rice terrace Hapao Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1417-1024x768.jpg" alt="Culture riz Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>À la différence de Batad, ils produisent ici <strong>différents types de riz : le riz blanc organique (bio), le riz rouge et le riz complet.</strong> Notre guide nous explique les différents procédés pour les faire pousser. Une bonne partie de ce qu&apos;ils récoltent est pour la commercialisation. On vous promet que depuis ce voyage, on ne voit plus les choses de la même façon quand on mange du riz !</p>
-            <p>À Hapao, les locaux cultivent également du café, du poivre, des tomates et des courgettes. En tout cas, ce village est très joli et les couleurs sont incroyables. Contrairement à Batad où ce n&apos;était pas vraiment la meilleure période, ici toutes les terrasses sont déjà bien vertes.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1425-1024x768.jpg" alt="Rice terrace Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1516-768x1024.jpg" alt="Rice Terrace Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <h4>⧐ Les Hot springs d&apos;Hapao</h4>
-            <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !</p>
-            
-            <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Si vous portez des bijoux en « toc », enlevez-les avant d&apos;entrer dans les Hot springs. Ils vont noircir au contact de la source d&apos;eau chaude et vous ne pourrez plus les récupérer. Pour les bijoux en or et argent, ils noircissent mais se nettoient.</p></div>
-            </div>
-            <p>Une légère odeur de soufre se dégage de cet endroit. N&apos;oublions pas que les Philippines sont sur des terres volcaniques. En sortant de l&apos;eau, nous avons sur la peau comme une pellicule grasse, et on sent un peu l&apos;œuf pourri ! Heureusement, il y a des douches sur place pour se rincer.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1470-769x1024.jpg" alt="Hot Springs Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2477-1024x768.jpg" alt="Sources eau chaude Hapao Batad" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Après ce moment de détente, il est temps de faire demi-tour car nous avons notre bus pour Manille en fin d&apos;après-midi. Pour le retour, nous empruntons un autre chemin, bien plus court mais tout aussi joli.</p>
-            
-            
-            <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Si vous venez visiter le village d&apos;Hapao, prévoyez votre pique-nique. Il n&apos;y a rien sur place pour vous restaurer mis à part des gâteaux qu&apos;on trouve dans la petite épicerie avant d&apos;entrer dans le village.</p></div>
+              <div><strong>À LIRE AUSSI</strong><p><a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-link">⋙ ITINÉRAIRE PHILIPPINES : 3 semaines pour découvrir la perle de l'Orient !</a></p></div>
             </div>
             
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1509-1-768x1024.jpg" alt="Hapao Batad Banaue" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1528-768x1024.jpg" alt="Hapao View Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1540_jpg-1-768x1024.jpg" alt="Enfant Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <h4>⧐ Retour en bus à Manille</h4>
-            <p>Nous retournons à l&apos;hôtel en van. Nous récupérons nos bagages et grignotons avant de rejoindre la gare routière. C&apos;est ainsi que s&apos;achève cette parenthèse magique dans cet endroit aux paysages incroyables.</p>
-            <p><strong>17 h 30, nous reprenons le bus direction Manille.</strong></p>
-            <p>La clim, toujours la clim ! Nous avions anticipé et pris avec nous tout ce que nous avions de plus chaud à se mettre sur le dos pour le trajet.</p>
-            <p><strong>Arrivée à Manille prévue vers 3 h du matin…</strong> L&apos;horaire est un peu pourri mais pas le choix.</p>
-            <p>Un peu comme à l&apos;aller, <strong>le trajet nous semble interminable.</strong> Mais à la différence, nous sommes parties de jour. Notre chauffeur de bus, alias « Schumi », prend beaucoup de risques au niveau de sa conduite sur les routes de montagne. Il roule vite, même sans visibilité dans les virages !</p>
-            <p><strong>Ce qui est fou, c&apos;est que même la nuit, il y a beaucoup de circulation.</strong> Arrivées vers 2 h du matin aux abords de Manille, nous nous retrouvons dans des bouchons !</p>
-            <p>Nous avons un vol à 10 h pour une autre destination. Histoire de dormir un peu, nous prenons une chambre au <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJXR1qtLHOlzMRaJoK2hH_YLU" target="_blank" className="article-link article-resto-link-desktop">Siayan Travellers Inn</a><a href="https://maps.app.goo.gl/u2HDMC729tBkVkEC9" target="_blank" className="article-link article-resto-link-mobile">Siayan Travellers Inn</a></strong>, non loin de l&apos;aéroport et de notre terminal.</p>
-          </section>
-
-          <section id="bohol" className="article-section">
-            <div className="article-day-header">
-              <h2>📍 Bohol &amp; ses petits plus uniques</h2>
-            </div>
-            <p>Bohol est une province des Philippines située dans la <strong>région des Visayas Centrales.</strong> Cette île est très grande en comparaison à la dernière sur laquelle on a posé le pied. 71 km² de superficie à Coron, contre près de 5 000 km² à Bohol. Elle est considérée comme la <strong>10ème plus grande île de l&apos;archipel des Philippines.</strong></p>
-            <p>Cette île paradisiaque abrite des paysages splendides, une végétation luxuriante, des plages de rêves, des spots de plongée incroyables et quelques plus que l&apos;on ne peut découvrir qu&apos;ici. Impossible pour nous de tout voir car nous ne passons que 2 nuits sur cette île. Nous avons souhaité nous rendre à Bohol pour ces quelques plus qui rendent cette île unique et magique…</p>
-            <h4>⧐ Comment se rendre à Bohol ?</h4>
-            <p><strong>Si comme nous vous venez de Manille, alors le plus simple est de prendre l&apos;avion.</strong> Il faut prévoir 1 h 30 de vol pour parcourir les 900 km qui séparent ces 2 villes. Pour vous donner une idée, si vous aviez envie de faire ce trajet en voiture et en ferry, il faut compter 25 h selon Google Maps.</p>
-            <p><strong>Si vous venez de Cebu (Cebu City et Talood), de Negros (Dumaguete) ou Siquijor, vous pouvez prendre le ferry.</strong></p>
-
-            {/* JOUR 1 BOHOL */}
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 1</span>
-              <h3>Bohol, la rivière Loboc &amp; ses Lucioles</h3>
-            </div>
-            <p>Il est environ 12 h 30 quand nous arrivons à l&apos;aéroport de Bohol. Nous avions anticipé et organisé le transfert avec notre hôtel. Nous avons payé <strong>1500 Php (25 €)</strong> pour <strong>aller de la presqu&apos;île de Panglao,</strong> où se trouve l&apos;aéroport, <strong>à notre hébergement qui se situe au bord de la Loboc River.</strong></p>
-            <p><strong>Il faut compter 1 h de route pour ce trajet.</strong> Vous avez également la possibilité de prendre une jeepney, les bus de ville ou les tricycles. Au vu de notre arrivée sous la pluie, on a bien fait de prévoir le taxi, certes plus cher, mais plus confort et plus rapide !</p>
-            <p>Sur le trajet direction l&apos;hôtel, nous sommes surprises par <strong>le paysage intensément vert.</strong> Nous apprendrons par la suite que c&apos;est principalement parce qu&apos;il pleut très souvent ici. On a de la chance, la pluie s&apos;arrête rapidement et laisse place à un beau soleil. On a trop hâte de découvrir l&apos;hébergement que nous avons booké !</p>
-            <p>Nous avons choisi de séjourner à l&apos;hôtel <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJ_xBza6pFqjMR-EU34vg8NwI" target="_blank" className="article-link article-resto-link-desktop">Water to Forest Ecolodge</a><a href="https://maps.app.goo.gl/nUkT7gXtNLjbSgCq5" target="_blank" className="article-link article-resto-link-mobile">Water to Forest Ecolodge</a></strong>. Pour y accéder, sur les derniers kilomètres, nous empruntons un chemin de terre qui longe la rivière. Bon là, avec la pluie qui est tombée, on est plutôt sur un chemin de boue !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0393-1024x768.jpg" alt="Water to Forest Ecolodge Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1626-768x1024.jpg" alt="Water to Forest Ecolodge Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p><strong>Arrivées à l&apos;hôtel, nous sommes directement en immersion dans la jungle.</strong> Un véritable havre de paix entre la maison et la cabane… Au rez-de-chaussée, un petit coin salon, une petite table basse et 2 hamacs. Au top pour l&apos;apéro ! Sur le côté, le coin salle de bain avec l&apos;essentiel : un lavabo, un miroir, et derrière les rideaux, une douche à l&apos;air libre. On accède à l&apos;étage par une échelle en bambou. L&apos;espace nuit est tout ouvert sur la jungle. Tout ouvert parce qu&apos;il n&apos;y a ni mur, ni fenêtre, juste des voilages en guise de rideaux.</p>
-            <p>Sous le ventilateur, au milieu de la pièce, un grand lit trône protégé par une moustiquaire, simple mais efficace. <strong>Nous sommes carrément conquises par cet endroit !</strong> Le lit nous appelle… Fatiguées du voyage, on aurait presque envie d&apos;aller se coucher maintenant ! Mais l&apos;envie de partir à la découverte du coin est plus forte… Alors on grignote un morceau au restaurant de l&apos;hôtel qui propose de délicieux tapas, on prend une petite douche froide mais revigorante avec vue sur la jungle, et c&apos;est reparti !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1914-1-768x1024.jpg" alt="Room Water to Forest Ecolodge Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1930_jpg-768x1024.jpg" alt="Water to Forest Ecolodge Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <h4>⧐ Sortie lucioles sur la rivière Loboc</h4>
-            <p>L&apos;île de Bohol renferme de multiples secrets, dont l&apos;un se révèle seulement une fois la nuit tombée.</p>
-            <p>Ce soir nous allons à la <strong>rencontre des lucioles sur la Loboc River. La meilleure période pour les observer est entre décembre et janvier,</strong> la moins bonne entre juin et août.</p>
-            <p>Vous avez <strong>plusieurs possibilités pour aller voir ces petits vers luisants : en bateau, en canoë / paddle, par un organisme d&apos;excursion ou via un hôtel.</strong> Nous avons choisi de le faire via l&apos;hôtel <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJL_kS7VlEqjMReSFllcg5DQg" target="_blank" className="article-link article-resto-link-desktop">Loboc River Resort</a><a href="https://maps.app.goo.gl/GXfKpQJsQMTgpnbF6" target="_blank" className="article-link article-resto-link-mobile">Loboc River Resort</a></strong>, un grand complexe hôtelier qui se situe un peu plus haut le long de la rivière. Nous prenons un tuk-tuk et y arrivons seulement en 5 minutes. La grande terrasse du restaurant de cet hôtel offre une vue imprenable sur la rivière.</p>
-            <p><strong>Le Loboc River Resort a son propre bateau et propose des balades nocturnes.</strong> Si vous êtes curieux de savoir pourquoi on ne l&apos;a pas fait en canoë ou en paddle, c&apos;est tout simplement parce que Laurie est souvent en mode Pierre Richard (lol), et qu&apos;on n&apos;avait aucune envie de tomber dans la rivière de nuit ! Il faut préciser qu&apos;habituellement la couleur de cette rivière est entre le vert émeraude et le bleu turquoise. Là, avec la pluie qui est tombée ces derniers jours, elle est clairement marron.</p>
-            <p>Pour <strong>500 Php (8 €)</strong> par personne, assises au sec sur le bateau, nous avons passé un moment plutôt sympathique, même magique !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_1661-768x1024.jpg" alt="Lucioles rivière Loboc Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_1674-768x1024.jpg" alt="Lucioles Loboc River Resort Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p><strong>Il est 18 h 30, nous partons en bateau.</strong> Nous sommes une petite dizaine à embarquer. Nous remontons la Loboc river. Au bout de 5 minutes seulement de traversée, nous les apercevons… Au beau milieu de la nuit, se dresse devant nous un premier arbre scintillant, rempli de lucioles. C&apos;est féerique, on se croirait dans un Disney ! Alors qu&apos;on ne voit absolument rien dans ce noir complet, les lucioles illuminent les arbres telles des guirlandes qui clignotent en rythme. Une impression de Noël dans la jungle, c&apos;est plutôt fou. On a bien essayé d&apos;immortaliser le moment, mais malheureusement les photos ne rendent pas grand chose.</p>
-            <p>Ce qui est particulier, c&apos;est qu&apos;elles se trouvent toutes sur les mêmes arbres et à des endroits bien précis. <strong>Notre bateau nous amène donc sur 4 spots différents.</strong></p>
-            <p><strong>Retour au ponton après 45 minutes de balade.</strong> Timing parfait pour se laisser tenter par un petit cocktail au bar de l&apos;hôtel. On enchaîne sur un dîner à la bougie avec vue sur la rivière. Après cette belle première journée, plutôt fatigante d&apos;ailleurs, retour à l&apos;hôtel en tuk-tuk pour un dodo bercé par les bruits de la jungle.</p>
-            <p>Pour info, sachez que vous avez la <strong>possibilité de faire une petite croisière sur la Loboc River à bord de bateaux restaurants où se produisent des chanteurs et des groupes de musique de l&apos;île.</strong> C&apos;est une attraction plutôt populaire mais nous avons choisi de ne pas la faire pour privilégier d&apos;autres visites. On se serait bien laissées tenter si on avait eu plus de temps…</p>
-
-            {/* JOUR 2 BOHOL */}
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 2</span>
-              <h3>Les Chocolate Hills, les Tarsiers &amp; l&apos;Église de corail (Baclayon)</h3>
-            </div>
-            <p>Objectif de la journée, aller à la découverte de ces petits plus qu&apos;abritent l&apos;île de Bohol… <strong>On a prévu une boucle d&apos;environ 120 km, soit plus ou moins 3 h 30 de route.</strong></p>
-            <p>Comme à notre habitude, <strong>nous louons un scooter pour 2 jours.</strong> Pour nous, il n&apos;y a pas mieux pour vadrouiller. En 2 roues, on a un sentiment de liberté, d&apos;autant qu&apos;il n&apos;y a pas de contrainte d&apos;horaire, et qu&apos;on peut s&apos;arrêter où on veut et quand on veut. Dans ces moments, on aime se perdre, c&apos;est la meilleure façon pour découvrir des paysages, rencontrer des locaux, etc.</p>
-            <p><strong>Nous louons donc le scooter directement à l&apos;hôtel pour</strong> <strong>400 Php (6 €)/jour</strong>. Et c&apos;est parti pour une journée road trip à la découverte de l&apos;île de Bohol !</p>
-            <p>Nous traversons de jolis villages, les gens se mettent au bord de la route pour nous saluer. Ils semblent trop contents de nous voir passer. Il faut dire que cette île est une destination bien moins touristique que Palawan par exemple.</p>
-            <p>Premier arrêt au niveau de la <strong>forêt Mahogany appelée aussi Bilar Man-Made Forest.</strong> Bon, cet endroit n&apos;a rien de naturel puisque comme son nom l&apos;indique, c&apos;est une forêt qui a été créée par l&apos;homme. Cependant, c&apos;est plutôt sympa à voir. La route passe littéralement à travers cette <strong>forêt d&apos;acajous.</strong> Mieux vaut rouler doucement dans le secteur parce qu&apos;il y a toujours des personnes qui se prennent en photo au milieu de la route.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1830-1024x768.jpg" alt="Scooter Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1706-768x1024.jpg" alt="Bilar Man-Made Forest Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <h4>⧐ Les Chocolate Hills</h4>
-            <p>Nous continuons notre road trip vers le <strong>Nord de l&apos;île,</strong> direction le deuxième spot. Non loin de la ville de Carmen, c&apos;est l&apos;endroit le plus visité de Bohol… Les Chocolate Hills ou les Collines de chocolat portent bien leur nom.</p>
-            <p>Enfin, tout dépend en réalité de la période où on les voit. <strong>Durant la période la plus sèche (de février à juillet), elles sont effectivement de couleur brune, sinon elles sont vertes.</strong></p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_4782-1024x768.jpg" alt="Chocolate Hills Bohol" className="article-img-full" loading="lazy" />
-            <p>Arrivées au niveau du complexe, il y a un <strong>grand parking pour stationner</strong> sans difficulté. L&apos;entrée est de <strong>50 Php (0,80 €)</strong> par personne. Une fois réglée, <strong>nous montons dans un van qui nous emmène sur les hauteurs.</strong></p>
-            <p><strong>Selon l&apos;heure à laquelle on s&apos;y rend, il peut y avoir beaucoup de monde,</strong> mais c&apos;est quand même à voir ! L&apos;endroit est clairement pensé pour accueillir les touristes. <strong>Sur place, vous trouverez une boutique de souvenirs et un grand restaurant.</strong> Nous empruntons l&apos;escalier pour monter jusqu&apos;au point de vue. Il y a un panneau qui explique l&apos;histoire de ces mystérieuses collines.</p>
-            <p>En bref, <strong>leur formation date d&apos;il y a environ 2 millions d&apos;années.</strong> Ces collines sont composées de sable et de calcaire provenant de l&apos;accumulation de couches successives de corail et de coquillages au fond de la mer. Ce sont les mouvements des plaques tectoniques qui ont sorti ce paysage de l&apos;eau. Ensuite, c&apos;est l&apos;érosion et la dissolution dues à la pluie qui ont terminé de façonner tout cela. Avec cette formation géologique peu commune, ces collines rendent le paysage vraiment spécial !</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1744-768x1024.jpg" alt="Chocolate Hills Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1807-1024x768.jpg" alt="I love Chocolate Hills Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_4780-768x1024.jpg" alt="Chocolate Hills Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Le saviez-vous ?</strong><p>Tout autour de vous, étendues sur 50 km², se dressent près de 1 780 collines, mesurant entre 30 et 60 mètres de hauteur. À noter : un panneau interdit de faire voler son drone à partir de 8 h du matin.</p></div>
-            </div>
-            <p>Sachez que vous avez également la <strong>possibilité de louer un quad ou un buggy pour vous balader sur un circuit entre les collines.</strong></p>
-            <p>Nous reprenons la route et nous nous arrêtons un peu plus loin dans un petit resto appelé <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJJxwddCs_qjMRP6GnI_Fic6Y" target="_blank" className="article-link article-resto-link-desktop">Basak Bistro Batuan</a><a href="https://maps.app.goo.gl/qQdLr8XUFfhbvsAe9" target="_blank" className="article-link article-resto-link-mobile">Basak Bistro Batuan</a></strong>. L&apos;endroit n&apos;est pas vraiment touristique mais c&apos;est aussi ça que l&apos;on recherche. En tout cas, on a super bien mangé. C&apos;est là-bas qu&apos;on a découvert que roter après avoir mangé n&apos;est pas du tout mal vu, bien au contraire… Et c&apos;est plutôt surprenant la première fois, surtout quand ce sont nos voisins de table qui s&apos;en donnent à cœur joie !</p>
-            <h4>⧐ Les stars de Bohol : les tarsiers</h4>
-            <p>C&apos;est reparti, direction le troisième spot. On tenait absolument à les voir… <strong>Ce sont les plus petits singes au monde. Ils mesurent en moyenne 15 cm et pèsent moins de 100 g.</strong> Ce sont les tarsiers !</p>
-            <p>Vous avez deux possibilités pour observer ces petits primates : au <strong>Centre de conservation des tarsiers ou bien au Sanctuaire de Corella.</strong></p>
-            <p>Après quelques recherches, sans hésitation, <strong>notre choix s&apos;est porté sur le sanctuaire de Corella.</strong> C&apos;est une fondation officielle qui œuvre pour la protection du tarsier où les petits primates sont en quasi-liberté. Le tarsier est un animal très anxieux et il peut facilement se retrouver en détresse s&apos;il est enfermé.</p>
-            <p>Pour <strong>50 Php (0,80 €)</strong> par personne et un guide rien que pour nous, nous accédons à la zone d&apos;observation. <strong>Ici, il n&apos;y a que 6 tarsiers.</strong> Le guide nous aide à les trouver dans cette petite jungle, et nous apporte quelques informations pour davantage les connaître.</p>
-            <p>Ce petit animal chasse la nuit et dort le jour. De ce fait, dans un silence complet, il faut trouver les branches sur lesquelles ils sont accrochés pour la sieste.</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Le tarsier est extrêmement sensible au bruit et à la lumière. Un pic de stress peut lui être fatal. Pas de flash, silence complet — c&apos;est la règle absolue du sanctuaire.</p></div>
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1860_jpg-1024x768.jpg" alt="Tarsier Sanctuary Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1854-768x1024.jpg" alt="Tarsier Sanctuary Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p>Ils sont tellement mignons ! Des petites boules de poils avec de gros yeux globuleux. On dirait des petits Guizmo (le gentil Gremlins). On peut donc s&apos;en approcher sans faire de bruit, mais on ne peut bien sûr pas les toucher. Comme on n&apos;a aucune envie d&apos;être responsable d&apos;un suicide de tarsier, on respecte les règles !</p>
-            <p>On ne croirait pas comme ça, à le voir en totale inertie sur sa branche, mais ce petit singe de 15 cm est capable de faire des bonds de 4 mètres ! Autres caractéristiques plutôt particulières, proportionnellement, les yeux du tarsier sont 150 fois plus grands que ceux de l&apos;humain. Il est également capable de tourner sa tête à presque 360°.</p>
-            <p><strong>Notre visite a duré une bonne vingtaine de minutes.</strong> À la sortie du sanctuaire, passage obligé par la boutique de souvenirs et par un petit musée où sont exposés des squelettes de tarsiers (on préfère largement les voir vivants !).</p>
-            <p><strong>On reprend la route vers le Sud</strong> et on finit la boucle en passant par Baclayon church.</p>
-            <h4>⧐ L&apos;église de corail de Baclayon</h4>
-            <p>Bon, on n&apos;a pas spécialement pour habitude de visiter les églises durant nos voyages, mais là, on était plutôt intriguées de visiter celle-ci.</p>
-            <p>L&apos;église de Baclayon est considérée comme la <strong>plus ancienne église catholique des Philippines.</strong> La construction de cet imposant édifice a duré 10 ans. Les travaux ont été finis en 1727.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_1866_jpg-768x1024.jpg" alt="Baclayon Church Église de corail Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1875-768x1024.jpg" alt="Eglise Baclayon Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p>Sa particularité est qu&apos;<strong>elle est constituée de corail et de blancs d&apos;œufs.</strong> Oui oui, du blanc d&apos;œuf ! En effet, des blocs de corail ont été récupérés dans la mer juste en face, puis ont été taillés, avant d&apos;être soulevés et déplacés jusqu&apos;au chantier à l&apos;aide de bambous. Et le ciment utilisé pour coller les blocs entre eux n&apos;est autre que du blanc d&apos;œuf… <strong>Ils utiliseront plus d&apos;un million d&apos;œufs</strong> pour la construction de l&apos;église !</p>
-            <p>D&apos;importants travaux de rénovation et de restauration ont été effectués suite au séisme de 2013 qui a lourdement endommagé la bâtisse. Elle est aujourd&apos;hui réouverte au public.</p>
-            <p><strong>L&apos;entrée se fait par le côté.</strong> Comme on a débarqué là-bas en short et en débardeur, <strong>la dame de l&apos;accueil nous couvre les jambes et les bras avec des foulards avant de pénétrer dans les lieux.</strong></p>
-            <p>Nous payons <strong>150 Php (2,40 €)</strong> par personne pour pouvoir accéder à l&apos;église et au petit musée attenant. Ce dernier a pris place dans ce qui était à l&apos;époque le couvent. Bien que ce musée ne semble pas très bien entretenu, on y trouve de nombreuses reliques et autres artefacts religieux datant du 16ème siècle.</p>
-            <p>L&apos;église est quant à elle plutôt jolie. Elle possède de belles fresques au plafond. L&apos;autel est relativement imposant.</p>
-            <p>Le tour rapidement effectué, nous nous dirigeons vers la sortie pour rendre les foulards qui nous avaient gracieusement été prêtés. Une fois dehors, les portes principales de l&apos;église s&apos;ouvrent… <strong>C&apos;est l&apos;heure de la messe, du coup, c&apos;est gratuit</strong> (sauf pour le musée) ! Donc petit conseil, <strong>renseignez-vous sur l&apos;heure des messes pour ne pas avoir à payer l&apos;entrée.</strong></p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_1897-768x1024.jpg" alt="Coconuts Bohol" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_1891-1024x768.jpg" alt="Loboc River Bohol" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Nous terminons la boucle de plus de 120 km en rejoignant notre hôtel. Pour la première fois des vacances, on décide de se poser un peu. Au programme, soirée chill, cocktails et bon dîner. On se sent tellement bien dans cet Écolodge… On prend le temps de prendre le temps !</p>
-            <p>Nous repartons déjà demain et devrons quitter l&apos;hôtel à 13 h pour nous rendre au port de Tagbilaran. Notre passage à Bohol était court mais on en a pris plein les yeux ! Nous profitons de cette dernière nuit au beau milieu de la jungle.</p>
-
-            {/* JOUR 3 BOHOL */}
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 3</span>
-              <h3>Au revoir Bohol, bonjour Siquijor !</h3>
-            </div>
-            <p>Dernier réveil dans ce cadre magique, un peu hors du temps. Bercées par le bruit de la jungle, on a tellement bien dormi !</p>
-            <p>On profite de cet endroit enchanté jusqu&apos;au dernier moment, puis <strong>direction le port de Tagbilaran qui se situe à plus ou moins 45 minutes de route.</strong></p>
-          </section>
-
-          <section id="siquijor" className="article-section">
-            <div className="article-day-header">
-              <h2>📍 Siquijor — L&apos;île mystique aux magnifiques cascades</h2>
-            </div>
-            <h4>⧐ Siquijor, « The Magic Island »</h4>
-            <p>Siquijor est une île faisant partie de la <strong>région des Visayas centrales.</strong> Mais savez-vous pourquoi les philippins ne se rendent pas à Siquijor ? À cause des sorcières !</p>
-            <p>Au programme, de belles plages, une multitude de cascades, mais surtout une atmosphère vraiment spéciale. Siquijor est un endroit où l&apos;on se sent bien. C&apos;est une île qui est encore bien préservée du tourisme. <strong>Elle est aussi très peu visitée par les locaux.</strong></p>
-            <p>Siquijor est aussi appelée <strong>« The Magic Island ». Cela vient du fait qu&apos;il y a depuis toujours de fortes croyances sur l&apos;existence de sorcières sur l&apos;île. </strong>Pour les habitants de Siquijor, leur présence ne fait aucun doute. Pour le reste des philippins, cette croyance leur fait suffisamment peur pour éviter de passer leurs vacances sur cette île.</p>
-            <p>Selon les habitants de l&apos;île, les sorcières vivent parmi eux. Des locaux qu&apos;on a rencontré nous ont confié que certains peuvent les voir, d&apos;autres non, et qu&apos;il y a des gentilles sorcières, d&apos;autres maléfiques.</p>
-            <p>Sur l&apos;île, il y a également <strong>beaucoup de guérisseurs qui pratiquent des rites vaudou,</strong> notamment pour guérir les habitants d&apos;une maladie ou malédiction. Une fois par an, <strong>en mars généralement, ils organisent le Healing Festival</strong> où ils proposent leurs services de guérison.</p>
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 1</span>
-              <h3>Arrivée à Siquijor après 2 h de ferry</h3>
-            </div>
-            <p>Il fait déjà nuit quand nous arrivons. Nous récupérons nos sacs (assez rapidement d&apos;ailleurs) et c&apos;est partiii ! <strong>Welcome to Siquijor !</strong> On avait tellement hâte de découvrir cette île mystérieuse. Bon, pour ne pas changer les bonnes habitudes, on arrive sous la pluie. Jusqu&apos;ici, rien d&apos;anormal !</p>
-            <p>Nous prenons un <strong>tuk-tuk directement à la sortie du quai,</strong> direction l&apos;hôtel <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJ4T6VmYw-qzMRnHRKd_-Meik" target="_blank" className="article-link article-resto-link-desktop">Charisma beach</a><a href="https://maps.app.goo.gl/nnUV8b4zSv8wjZb18" target="_blank" className="article-link article-resto-link-mobile">Charisma beach</a></strong>. <strong>Tous les tuk-tuks sont aux mêmes tarifs pour les mêmes trajets. </strong></p>
-            <p>Arrivées à l&apos;hôtel, on découvre notre chambre, ou plutôt notre petite maison, vue sur piscine, et à quelques pas de la plage. On est au top !</p>
-            <p>Le soir, on se la joue tranquille et on profite de cet endroit agréable malgré la pluie qui tombe. C&apos;est une bonne occasion pour découvrir la carte du restaurant de l&apos;hôtel.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1955-768x1024.jpg" alt="Port Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1967-1024x768.jpg" alt="Charisma Beach Siquijor" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 2</span>
-              <h3>Journée pluvieuse…</h3>
-            </div>
-            <p>Premier réveil sur l&apos;île de Siquijor, mais aussi premier déluge aux Philippines. Il a plu toute la nuit, les allées de l&apos;hôtel sont inondées. Et là, c&apos;est un peu le drame... Qu&apos;est-ce qu&apos;on va faire avec ce temps ?</p>
-            <p>De grosses pluies sont prévues toute la journée. Ce n&apos;est pas vraiment prudent de louer un scooter et de rouler sous cette pluie torrentielle. D&apos;autant qu&apos;avec ce temps, les spots que nous voulions visiter ne doivent pas être accessibles. C&apos;est tellement frustrant d&apos;être là et de ne rien pouvoir faire ! Nous sommes le 14 février et la météo l&apos;a décidé pour nous… Pas grave, on va rester sous la couette et en profiter pour organiser nos prochaines vadrouilles !</p>
-            <p><strong>Dans la journée, on reçoit sur nos téléphones plusieurs messages d&apos;alerte météo. On nous demande de rester à l&apos;abri et de faire attention aux glissements de terrain. </strong>Pas très rassurant tout ça !</p>
-            <p>Nous checkons régulièrement le ciel et la météo, mais aucune amélioration en vue. Le temps semble s&apos;être dégradé sur une grande partie des Philippines. Notre prochaine destination prévue dans quelques jours n&apos;est pas épargnée non plus... Va t-on vraiment terminer ce voyage de rêve sous la pluie et ne plus voir le soleil ? C&apos;est totalement déprimant !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1986-768x1024.jpg" alt="Charisma Beach Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1970-768x1024.jpg" alt="Coconuts Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p>La journée s&apos;achève et on se demande si on ne devrait pas modifier l&apos;itinéraire de la fin de notre séjour.</p>
-            <p>Bref, la nuit porte conseil. Demain sera un autre jour…</p>
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 3</span>
-              <h3>Après la pluie, le beau temps</h3>
-            </div>
-            <p>On se réveille d&apos;une bonne et longue nuit de sommeil. Et ce matin, il ne pleut plus ! Bon, ce n&apos;est pas grand soleil non plus, mais ça se tient.</p>
-            <p>On a hâte de découvrir cette île. Pour ça, <strong>on s&apos;est organisées un petit circuit entre plages et cascades. </strong>Après la journée de perdue hier, on est motivées pour voir un maximum de spots aujourd&apos;hui.</p>
-            <p>P&apos;tit dej&apos; avalé et let&apos;s go ! <strong>Nous louons un scooter à l&apos;hôtel </strong>pour <strong>450 Php (7,30 €)</strong> la journée. L&apos;avantage de le louer directement à l&apos;hôtel est qu&apos;on ne vous impose pas un horaire maximum pour le retour. La seule chose est de rendre le scooter avec le même niveau de carburant que quand vous le prenez. Pour avoir une idée, nous avons payé <strong>200 Php (3,20 €)</strong> <strong>le plein de carburant. </strong></p>
-            <h4>⧐ Tubod Beach</h4>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2030-1024x768.jpg" alt="Tubod Beach Siquijor" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2036-1024x768.jpg" alt="Tubod Beach Siquijor" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p><strong>L&apos;accès à cette plage n&apos;est pas vraiment bien indiqué. Nous garons le scooter en contre-bas de la route et empruntons un petit chemin qui descend jusqu&apos;à la plage.</strong></p>
-            <p>C&apos;est une jolie plage, mais le principal intérêt ici se trouve sous l&apos;eau. <strong>Sur la gauche, se trouve donc la réserve marine.</strong> Il y aurait tout un tas de divers poissons et coraux à observer. On ne s&apos;est pas jetées à l&apos;eau (frileuses que nous sommes !) mais <strong>il paraît que ça vaut vraiment le coup.</strong></p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>La plage est gratuite. Pour nager dans la zone du sanctuaire marin : 20 Php (0,32 €) par personne. Location de matériel de snorkeling : 50 Php (0,80 €).</p></div>
-            </div>
-            <h4>⧐ Lugnason Falls</h4>
-            <p>Nous reprenons la route direction Lugnason Falls, à 3,5 km. Pour accéder à la cascade, <strong>il suffit de suivre le chemin. Il y a quelques marches à descendre. </strong>Dans l&apos;idée, rien de compliqué, mais avec la pluie qui est tombée, le sol est gorgé d&apos;eau et c&apos;est super glissant. Le site est sympa et en plus il n&apos;y a personne. On découvre une <strong>belle cascade avec un gros débit d&apos;eau et un bassin pour se baigner.</strong></p>
-            <p>On ne vous le cache pas, on est quand même un peu déçues. La couleur de l&apos;eau est loin d&apos;être identique à celle des photos Google. En même temps, pas étonnant avec tout ce qui est tombé la veille. L&apos;eau est marron, ce qui donne tout de suite un peu moins envie de s&apos;y baigner.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2039-768x1024.jpg" alt="Lugnason Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2053-768x1024.jpg" alt="Lugnason Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p>Puis direction Lazy pour le prochain spot. Nous roulons une petite trentaine de minutes.</p>
-            <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>Utiliser un scooter est la meilleure solution pour découvrir des endroits encore préservés du tourisme, rencontrer des locaux, traverser des villages, et surtout ressentir un sentiment de liberté totale !</p></div>
-            </div>
-            <h4>⧐ Lagaan Falls</h4>
-            <p>Arrivées à Lagaan falls, un parking nous attend. Nous payons <strong>10 Php (0,16 €)</strong> pour laisser le scooter. Une taxe de <strong>50 Php (0,80 €)</strong> par personne est demandée pour accéder au site.</p>
-            <p>On nous propose d&apos;être accompagnées par un guide (payant). <strong>Ce n&apos;est pas obligatoire et surtout pas nécessaire.</strong></p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2074-768x1024.jpg" alt="Lagaan falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2081-768x1024.jpg" alt="Lagaan falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p><strong>Nous suivons donc le chemin balisé </strong>qui descend jusqu&apos;à la cascade. L&apos;endroit est très sympa. <strong>Il y a plusieurs zones pour se baigner. </strong></p>
-            <p>Si comme Laurie, l&apos;envie vous prend de vous jeter à l&apos;eau, vous pouvez le faire à l&apos;aide d&apos;une corde. Vous aurez l&apos;impression d&apos;être Tarzan le temps d&apos;un saut. Les locaux sont là pour vous encourager.</p>
-            <h4>⧐ Cambugahay Falls</h4>
-            <p>Nous continuons notre circuit pour aller à Cambugahay Falls. En moins de 15 minutes nous y sommes.</p>
-            <p>Au vu du nombre de scooters et de tuk-tuks stationnés au bord de la route, on se doute qu&apos;il y a du monde sur place. En même temps, cet endroit est l&apos;un des plus convoités de l&apos;île. Il faut payer une taxe de <strong>20 Php (0,32 €)</strong> par personne pour accéder au site.</p>
-            <div className="article-must">
-              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>Prévoyez des chaussures d&apos;eau ! Remontez la rivière sur la gauche pour découvrir les 3 niveaux de la cascade. Au 2ème palier, laissez-vous tenter par l&apos;expérience radeau pour 50 Php (0,80 €).</p></div>
-            </div>
-            <p>Même s&apos;ils sont un peu sommaires, plusieurs passages sont aménagés pour traverser la rivière. C&apos;est vrai que cet endroit est très beau, mais là aussi, à cause de la pluie, l&apos;eau n&apos;est pas du tout turquoise. On ne va pas se plaindre, on est quand même sur un spot incroyable !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2113-768x1024.jpg" alt="Cambugahay Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2110-768x1024.jpg" alt="Cambugahay Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p><strong>Au 2ème palier, on découvre un bassin</strong> géré par des philippins, où se trouvent un radeau et des cordes pour se jeter à l&apos;eau.</p>
-            <p><strong>C&apos;est en fait une séance photos touristique,</strong> et c&apos;est tout un programme ! On nous fait monter sur le radeau, qui est en réalité attaché à l&apos;avant et à l&apos;arrière par des cordes. Le radeau est tiré par une personne jusqu&apos;à la cascade. Pendant ce temps, on nous mitraille de photos et de vidéos faites avec notre téléphone qu&apos;on a confié avant de monter sur le radeau.</p>
-            <p>On découvre par la même occasion <strong>l&apos;effet drone, une spécialité ici !</strong> Les philippins adorent faire ça. Ils ont une manière de filmer bien à eux. Ils courent, tournent, se baissent, sautent… Et c&apos;est vrai que le résultat est plutôt pas mal !</p>
-            <p>Après avoir bien profité de l&apos;endroit, il faut maintenant remonter l&apos;escalier. Arrivées en haut, des vendeurs de bouteilles d&apos;eau fraîche nous attendent. Ça tombe à pic, on était desséchées après cette remontada !</p>
-            <h4>⧐ Salagdoong Beach</h4>
-            <p>Notre avant dernier spot de la journée est Salagdoong Beach. Une jolie petite plage, une mer magnifique mais <strong>la baignade y est interdite.</strong> On n&apos;a pas vraiment compris pourquoi à vrai dire. Apparemment, pour cause de réhabilitation de la plage, mais pour autant, pas de travaux en vue.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0409-768x1024.jpg" alt="Salagdoong Beach Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2183-768x1024.jpg" alt="Salagdoong Beach Siquijor Plongeoir" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2172-1-1024x769.jpg" alt="Salagdoong Beach Siquijor" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2193-768x1024.jpg" alt="Salagdoong Beach Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p>Tant pis, on profite quand même du moment et on cherche <strong>un endroit pour manger. On suit le chemin sur la gauche qui longe l&apos;hôtel. </strong>Au bout, le restaurant du <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJiSZVQxQZqzMRwNjg3sFl-Zs" target="_blank" className="article-link article-resto-link-desktop">Jelly Sea Resort</a><a href="https://maps.app.goo.gl/K6pxzqejNBMN2xxz6" target="_blank" className="article-link article-resto-link-mobile">Jelly Sea Resort</a></strong> nous attend... Petites tables, hamacs, on s&apos;y installe pour manger. Tout les plats sont préparés à la minute. Une bonne bière fraîche en apéro et on profite du paysage.</p>
-            <p>Une fois le repas englouti, nous retournons sur nos pas pour <strong>visiter la petite presqu&apos;île.</strong> C&apos;est en fait un gros rocher auquel on accède par un escalier. On peut s&apos;y balader. <strong>Il y a plusieurs plateformes et plongeoirs, d&apos;où il est interdit de sauter, qui offrent de beaux points de vue. </strong></p>
-            <h4>⧐ Paliton Beach</h4>
-            <p>Pour finir cette journée en beauté, nous nous rendons à Paliton Beach. <strong>Coucher de soleil, apéro les pieds dans le sable, le paradis ! Sur la plage, il y a des cabanes où on peut acheter des cocktails et des bières.</strong> Ici l&apos;ambiance est plutôt festive et décontractée. Il y a beaucoup de monde, locaux et touristes. Le sunset est fou, la lumière est incroyable. Il y a quelques nuages mais cela rend le coucher de soleil encore plus magique.</p>
-            <p>Voilà voilà, encore une journée qui se termine. On a plein de belles images dans la tête. Cette nuit sera malheureusement la dernière que nous passerons sur cette île magnifique qui regorge de spots incroyables.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3207_jpg-1-1024x768.jpg" alt="Sunset Paliton Beach Siquijor" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3205-1024x768.jpg" alt="Sunset Paliton Beach Siquijor" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 4</span>
-              <h3>Nouvelle journée, nouvelles aventures !</h3>
-            </div>
-            <p>Réveil, p&apos;tit dej&apos;, préparation des affaires, check-out et go to the pier. Pour nous y rendre, <strong>nous prenons un tuk-tuk à la sortie de l&apos;hôtel.</strong></p>
-            <p><strong>Ce soir, nous dormirons à Cebu et nous avons 2 bateaux à prendre pour nous y rendre. </strong></p>
-            <p>Direction <strong>le port de Bohol.</strong> Il y a une taxe de <strong>14 Php (0,23 €)</strong> par personne à régler quand vous quittez l&apos;île.</p>
-            <p><strong>Nous avions réservé nos places au 1er étage, en plein air,</strong> comme pour chaque trajet. Nous préférons car <strong>dans les espaces fermés, il fait toujours beaucoup trop froid à cause de la clim&apos;. </strong></p>
-            <p>Arrivées à Bohol, nous avons 3 h devant nous avant notre prochain ferry. On en profite pour aller faire un petit tour en ville.</p>
-          </section>
-
-          <section id="cebu" className="article-section">
-            <div className="article-day-header">
-              <h2>📍 Cebu — Une nuit de transit</h2>
-            </div>
-            <p>Nous avons fait le choix dans notre itinéraire de ne pas visiter Cebu. Pour autant, <strong>il paraît que le Sud de l&apos;île est magnifique.</strong> On se dit qu&apos;on passe sûrement à côté de beaux paysages, mais on ne peut malheureusement pas tout faire, tout voir…</p>
-            <p>Nous amarrons au port de Cebu. Entre Siquijor et Cebu (port), c&apos;est deux mondes, deux ambiances !</p>
-            <p><strong>À la sortie du port, les locaux sont un peu oppressants et insistants.</strong> Il y a beaucoup de monde, de bruit, de voitures, de pollution. Nous décidons de nous éloigner de cet endroit et arrêtons un taxi un peu plus loin.</p>
-            <p>Pour <strong>500 Php (8 €)</strong>, il nous conduit à notre hôtel situé à mi-chemin entre le port et l&apos;aéroport. Pour notre nuit de transit, l&apos;hôtel <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJazt7AwOaqTMRMQSLUTCsems" target="_blank" className="article-link article-resto-link-desktop">Lapu-Lapu Cottages</a><a href="https://maps.app.goo.gl/fUNqHCzn97Uh4nf4A" target="_blank" className="article-link article-resto-link-mobile">Lapu-Lapu Cottages</a></strong> est top.</p>
-            <h4>⧐ Réveil à Cebu, direction Siargao !</h4>
-            <p>Nous avons booké un taxi la veille avec la réception de l&apos;hôtel. Il passe nous récupérer à 3 h 30. Autant vous dire que la nuit a été courte ! Nous payons <strong>300 Php (4,80 €)</strong> pour aller de hôtel à l&apos;aéroport.</p>
-          </section>
-
-          <section id="siargao" className="article-section">
-            <div className="article-day-header">
-              <h2>📍 Siargao — L&apos;île des surfeurs</h2>
-            </div>
-            <p>L&apos;île de Siargao se trouve <strong>au Nord de la province de Surigao, </strong>tout à l&apos;Est des Philippines. L&apos;un de ses nombreux charmes est qu&apos;elle est encore épargnée du tourisme de masse. Pour tout vous dire, <strong>on a eu un réel coup de cœur pour cette île !</strong></p>
-            <p>Nous avions tellement hâte de découvrir Siargao comme on nous l&apos;a décrite, avec son ambiance particulière, à la cool et détente. Welcome to Siargao, <strong>la capitale du surf aux Philippines !</strong> Si cette île est connue pour être un haut lieu du surf où les amateurs de grosses vagues du monde entier se réunissent chaque année, ce n&apos;est pas seulement pour cela qu&apos;elle nous a attirée…</p>
-            <p><strong>Les 48 îles et îlots qui composent Siargao valent le détour. </strong>Des plages de sable blanc, une mer cristalline, des paysages paradisiaques, et tout cela dans une ambiance détendue avec des locaux accueillants et souriants.</p>
-            <p>Nous sommes tellement contentes d&apos;être là, et en même temps, la fin de ce merveilleux voyage approche.</p>
-             <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>La meilleure période pour visiter Siargao est de mars à juin.</p></div>
-            </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2440-768x1024.jpg" alt="Surf Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2461-copie-768x1024.jpg" alt="Surf Spots Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2436-2-768x1024.jpg" alt="Siargao Beach Coconuts" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 1</span>
-              <h3>Arrivée sous la pluie sur l&apos;île aux cocotiers</h3>
-            </div>
-            <p><strong>En arrivant de Cebu, nous avions seulement 1 h de vol. Si vous arrivez de manille, il y a un peu plus de 2 h de vol.  </strong></p>
-            <p>Il est 8 h 30 environ quand nous atterrissons à Siargao. Bien que le temps soit couvert, vue du ciel, la première aperçue de l&apos;île est incroyable avec ses cocotiers à perte de vue.</p>
-            <p>On arrive dans un tout petit aéroport à peine plus grand que notre appartement. Nous attendons nos sacs devant le seul et unique tapis. <strong>En sortant de l&apos;aéroport, nous devons régler la taxe de l&apos;île,</strong> soit <strong>20 Php (0,32 €)</strong> par personne et par passage (à l&apos;arrivée et au départ).</p>
-            <p>Nous n&apos;avions pas organisé notre trajet jusqu&apos;à l&apos;hôtel car on nous avait informées qu&apos;il y avait plusieurs possibilités une fois sur place (bus, taxi, van touristique…).</p>
-            <p>En effet, <strong>sur le parking de l'aéroport, plusieurs vans attendent les touristes.</strong> On nous demande où se situe notre hébergement. Nous sommes alors dispatchés et regroupés dans les vans en fonction de la localisation des hôtels. <strong>Pour nous, c&apos;est direction Général Luna.</strong> Pour le transfert, nous payons <strong>300 Php (4,85 €)</strong> par personne.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2355-768x1024.jpg" alt="Coconuts Forest Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2519-1-1024x768.jpg" alt="Siargao City" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Nous arrivons à l&apos;hôtel, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJQdnOz-MJBDMRTXqTy15LTIA" target="_blank" className="article-link article-resto-link-desktop">Siargao Beach Inn</a><a href="https://maps.app.goo.gl/wA6WhcgUW8ThN21X7" target="_blank" className="article-link article-resto-link-mobile">Siargao Beach Inn</a></strong> situé sur la route principale de Général Luna. <strong>Son emplacement sur la plage est vraiment top</strong> et notre chambre à l&apos;étage d&apos;un bungalow offre une vue incroyable sur l&apos;océan.</p>
-            <p>Il est 10 h du matin, nos bagages sont posés et on a qu&apos;une envie, aller découvrir cette île. Malheureusement, le temps n&apos;est pas avec nous. II pleut toujours. En même temps on le savait, ce n&apos;est pas la meilleure période pour venir visiter Siargao. Mais tant pis pour la météo, il nous en faut plus pour nous empêcher d&apos;aller vadrouiller. Nous partons de l&apos;hôtel à pied, histoire d&apos;explorer un peu les alentours.</p>
-            <p><strong>Les stigmates du super-typhon survenu en 2021 sont encore bien présents. </strong>En effet, en décembre 2021, des vents de 195 km/h et des rafales atteignant les 270 km/h se sont abattus sur l&apos;île de Siargao, faisant s&apos;envoler les toits des maisons et bâtiments, arrachant des poteaux électriques, déracinant des arbres et privant des villes entières d&apos;électricité.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2380-768x1024.jpg" alt="Siargao Beach Inn" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9616-1024x768.jpg" alt="Siargao Beach Inn" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <h4>⧐ La Cloud 9</h4>
-            <p>Pour nous rendre un peu plus loin, nous prenons finalement un tuk-tuk. Nous arrivons à un endroit bien connu de Siargao, <strong>la Cloud 9. </strong></p>
-            <p><strong>C&apos;est un espace dédié au surf. </strong>On a la sensation de rentrer dans un petit village. <strong>À l&apos;entrée, sur la droite, se trouve le stand pour acheter les tickets d&apos;accès.</strong> Il faut compter <strong>100 Php (1,60 €)</strong> par personne.</p>
-            <p><strong>Le ticket est valable toute la journée.</strong> Vous pouvez donc sortir et entrer dans la zone autant de fois que vous le souhaitez.  Si vous revenez le lendemain, alors il faudra racheter un ticket d&apos;accès. S&apos;en suivent plusieurs stands de souvenirs en tous genres.</p>
-            <p>Si vous voulez prendre un court de surf c&apos;est ici qu&apos;il faut venir. <strong>Ce qui est sympa, c&apos;est ce long ponton qui s&apos;avance sur la mer. </strong>On peut s&apos;approcher des vagues et observer les surfeurs au plus près.</p>
-            <p>Sur la gauche du ponton, il y a quelques bars. Cabanes en bois, transats, cocktails, vue sur l&apos;océan… que demander de plus ?</p>
-            <p>Mais au fait, c&apos;est quoi la Cloud 9 ? C&apos;est le nom qui est donné à LA vague de ce spot. Siargao est dans le <strong>Top 10 des meilleurs endroits où surfer dans le monde. <strong>Chaque année, en </strong>septembre, a lieu ici le festival du surf. </strong></p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2418-1024x768.jpg" alt="Cloud 9 BoardWalk Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2397-1024x768.jpg" alt="Siargao Beach Cloud 9" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2414-2-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2401-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2416-1024x768.jpg" alt="Bridge Cloud 9 Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Avec tout ça, il est plus que l&apos;heure d&apos;aller déjeuner. C&apos;est fou ce que le temps passe vite en vacances !</p>
-            <p>Une fois sorties de la zone, nous tombons par hasard sur un petit bar restaurant Éco Shop, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJNfMXfQMJBDMRG67jZ51_XIc" target="_blank" className="article-link article-resto-link-desktop">Goodies</a><a href="https://maps.app.goo.gl/Pa8TDrPVbPQyZc8EA" target="_blank" className="article-link article-resto-link-mobile">Goodies</a></strong>. On peut y acheter des vêtements et divers articles sympas. Il y a également un espace de coworking. On a adoré l&apos;ambiance de cet endroit. Niveau restau, tout est frais, préparé à la minute. Si vous aimez manger healthy, c&apos;est à dire sain et léger, tout en étant rassasié, c&apos;est ici que vous devez venir.</p>
-            <p>Notre retour à l&apos;hôtel se fait sous une pluie battante. Bilan de la journée : mouillées et fatiguées !</p>
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 2</span>
-              <h3>De la pluie, de la pluie, encore de la pluie !</h3>
-            </div>
-            <p>C&apos;est un peu déprimées que nous nous réveillons ce matin. Depuis notre lit king size, on observe l&apos;océan déchaîné et la pluie qui ne cesse de tomber.</p>
-            <p>Après avoir chillé toute la matinée et repéré notre spot pour manger le midi, c&apos;est parti pour un tour sous la pluie, direction le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJOWDyiBv2AzMRpVvm7y_rqv4" target="_blank" className="article-link article-resto-link-desktop">Bravo Beach Resort</a><a href="https://maps.app.goo.gl/y3YSFS4gUvJx5X8V6" target="_blank" className="article-link article-resto-link-mobile">Bravo Beach Resort</a></strong>. Ici, c&apos;est un peu le paradis du skateur et du surfeur. Dès qu&apos;on entre dans l&apos;enceinte de l&apos;établissement, on est dans l&apos;ambiance avec un skate bowl à disposition.</p>
-            <p>Le restaurant se trouve tout au fond, face à l&apos;océan. L&apos;ambiance y est décontractée. Confortablement installées dans nos petits canapés, on trinque avec une savoureuse Caïpirina. Le restaurant sert essentiellement des plats espagnols mais vous y trouverez de tout. Pour nous, qui dit Espagne, dit tapas ! Nous ne regrettons pas notre choix, les croquetas (entre autres) sont à tomber par terre. Le rapport qualité / prix est correct.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2531_jpg-767x1024.jpg" alt="Ville tuk-tuk Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2530-1-1024x768.jpg" alt="Siargao City" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <h4>⧐ Island hopping à Siargao</h4>
-            <p>Nous repassons par la cloud 9 pour admirer le spectacle. En repartant, nous tombons sur <strong>un organisme qui propose des Island hoppings.</strong></p>
-            <p>On nous informe que le tarif est de <strong>1500 Php (24,20 €)</strong><strong> par personne</strong>, repas compris, <strong>pour faire le tour de 3 îles.</strong> Vu le temps incertain prévu pour les prochains jours, on préfère ne rien réserver.</p>
-            <p>Pour partir en excursion, on nous indique qu&apos;il y a aussi <strong>la possibilité de nous rendre directement sur le quai le matin même, et de nous joindre à un groupe qui n&apos;est pas complet ou de le faire en bateau privé.</strong></p>
-            <p>Alors Carpe Diem, on verra bien demain !</p>
-            <h4>⧐ Où faire la fête ? Harana Surf Resort</h4>
-            <p>En attendant, nous avons trouvé l&apos;endroit où nous allons manger le soir (on a l&apos;impression qu&apos;on ne fait que ça !).</p>
-            <p>Non loin de la Cloud 9, se trouve le <a href="https://www.google.com/maps/place/?q=place_id:ChIJie8EK_IJBDMRqS1JERgdQOU" target="_blank" className="article-link article-resto-link-desktop"><strong>Harana Surf Resort</strong></a><a href="https://maps.app.goo.gl/JcV2JfPgNKGSgnA9A" target="_blank" className="article-link article-resto-link-mobile"><strong>Harana Surf Resort</strong></a>. Cet endroit n&apos;est pas facile à repérer car il n&apos;est pas situé sur la route principale. Il faut s&apos;engouffrer dans une petite rue, le Harana se trouve tout au bout.</p>
-            <p>Encore un restaurant avec une déco incroyable et une atmosphère trop agréable. La cuisine est délicieuse et copieuse. Le personnel est vraiment sympa et le service rapide. C&apos;est seulement plus tard dans la soirée qu&apos;on comprend pourquoi le service était si rapide... Nous sommes samedi et en quelques heures, le restaurant s&apos;est transformé en piste de danse !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2537-768x1024.jpg" alt="Harana Surf Resort Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9644-1024x768.jpg" alt="Harana Surf Resort Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>En effet, à partir de 22 h, les tables sont mises de côté pour ne laisser place qu&apos;à celle du DJ.</p>
-            <p>Les gens arrivent par dizaines, des groupes d&apos;amis, des touristes, des philippins, des surfeurs... Tous viennent faire la fête et passer un bon moment. C&apos;est vraiment ce soir que nous nous rendons compte que Siargao n&apos;est pas seulement l&apos;île des surfeurs, mais aussi l&apos;île des fêtards.</p>
-            <p>Après cette belle soirée, retour à l&apos;hôtel. On va croiser les doigts pour la météo du lendemain et faire la danse du soleil !</p>
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 3</span>
-              <h3>Il fait beau — À nous l&apos;Island hopping !</h3>
-            </div>
-            <p>Réveil face à l&apos;océan après une nuit incroyable, et surprise, il fait beau ! Notre danse a fonctionné ! P&apos;tit dej&apos;, préparation du sac de plage, location d&apos;un scooter à l&apos;hôtel et c&apos;est parti.</p>
-            <p>Comme on nous l&apos;a conseillé la veille, nous nous rendons directement sur le quai.</p>
-                        <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des mamzelles</strong><p>Via l&apos;Office du Tourisme, nous avons pris un bateau privé pour 2000 Php (32 €) par personne, sans le repas. Certes un peu plus cher qu&apos;avec les organismes, mais ils nous ont proposé 4 îles au lieu de 3 !</p></div>
-            </div>
-            <p>Par contre, si on avait su, <strong>on aurait prévu les boules Quies !</strong> Le bruit du moteur de la bangka est juste assourdissant. Ça fait le même effet que lorsqu&apos;on sort d&apos;un concert où la musique était trop forte. Quand le moteur du bateau s&apos;arrête, on a les oreilles qui sifflent encore un bon moment.</p>
-            <h4>⧐ Casulian Island</h4>
-            <p>Direction Casulian Island, et plus précisément <strong>Corregidor Beach.</strong> Cette île ne fait normalement pas partie de l&apos;Island hopping.</p>
-            <p>C&apos;est la plus éloignée et nous mettons environ <strong>une heure pour la rejoindre. </strong></p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/DJI_0415-768x1024.jpg" alt="Corregidor Beach Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_20230219_101825_767-1024x768.jpg" alt="Corregidor Beach Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Notre capitaine nous informe que nous avons une petite heure sur place et nous propose <strong>une randonnée de 30 minutes avec un guide (donc payante) jusqu&apos;au point le plus haut de l&apos;île. </strong>Nous préférons profiter de la plage et du soleil.</p>
-            <p>Cette île isolée est tout de même assez grande. On y trouve un village et des hôtels, mais la plage sur laquelle nous avons débarqué est quasi-déserte. C&apos;est tellement apaisant.</p>
-            <h4>⧐ Naked Island</h4>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2694-1024x768.jpg" alt="Naked Beach Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0421-1024x768.jpg" alt="Naked Beach Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Nous reprenons la bangka direction Naked Island.</p>
-            <p>L&apos;île Naked, comme son nom l&apos;indique, est nue. Il n&apos;y a rien. Pas de construction, pas de végétation. <strong>Il s&apos;agit littéralement d&apos;un banc de sable blanc et fin au milieu de la mer.</strong> C&apos;est impressionnant !</p>
-            <p>On se trouve chanceuses d&apos;avoir posé les pieds sur ce petit bout de sable perdu au beau milieu de l&apos;océan, parce qu&apos;on sait d&apos;avance qu&apos;un jour il disparaîtra…</p>
-            <h4>⧐ Daku Island</h4>
-            <p>Notre 3ème spot est Daku Island. <strong>Daku est la plus grande des 4 îles que nous visitons aujourd&apos;hui.</strong> « Daku » est un mot local qui signifie « grand ».</p>
-            <p><strong>C&apos;est ici que nous allons manger.</strong> Notre capitaine nous accompagne jusqu&apos;à des petites cabanes juste au-dessus de la plage.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2718-768x1024.jpeg" alt="Daku Island Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2742-1024x767.jpg" alt="Daku Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2708-1-1024x768.jpg" alt="Daku Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1594-1024x768.jpg" alt="Daku Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Le paysage est magnifique. <strong>Encore une île paradisiaque !</strong> La longue étendue de sable blanc poudreux et les coconuts qui se balancent forment un décor idyllique de carte postale pour ceux qui veulent se détendre.</p>
-            <p>Dans les cabanes autour de nous, un groupe de touristes et une famille de philippins sont installés. Une dame vient nous demander ce que l&apos;on souhaite manger. Pour <strong>600 Php (9,66 €)</strong> pour deux, on nous servira un 1/2 poulet pané (fraîchement tué), accompagné de riz et d&apos;une sauce aux notes sucrées. L&apos;un des meilleurs poulets de notre vie, simple mais tellement bon !</p>
-            <p>Après avoir bien mangé, baladé et digéré, nous reprenons la mer.</p>
-            <h4>⧐ Guyam Island</h4>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1194-1024x768.jpg" alt="Guyam Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0431-1024x768.jpg" alt="Guyam Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <p>Nous arrivons sur la dernière île de notre tour, Guyam Island. Une taxe de <strong>40 Php (0,64 €)</strong> par personne est à payer à l&apos;arrivée.</p>
-            <p>C&apos;est une petite île pleine de charme. <strong>Ses eaux peu profondes couleur émeraude sont idéales pour patauger.</strong> Ses quelques arbres et son sable blanc poudreux font de cet endroit un petit paradis. Cette île est toute petite, on peut faire le tour à pied. Il n&apos;y a pas d&apos;habitation, juste quelques cabanes qui vendent des boissons et de la nourriture.</p>
-            <p><strong>Le seul point négatif est qu&apos;il y a énormément de monde </strong>puisque tous les Island hoppings se rejoignent ici en fin de journée.</p>
-            <p>Retour au quai vers 16 h avec tous ces paysages en tête, heureuses de cette journée.</p>
-            <p>On reprend le scooter en direction de l&apos;hôtel, histoire de prendre une bonne douche avant de repartir... On a un rendez-vous de prévu !</p>
-            <h4>⧐ Où se faire tatouer ? Rad Tattoo</h4>
-            <p>Et oui, histoire de marquer ce moment et de graver ce voyage à jamais, nous allons nous faire tatouer.</p>
-            <p>Si cela fait aussi partie de vos projets ou que l&apos;envie vous prend, nous vous conseillons vivement le salon <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJ5YlZcIz3AzMR4zkbQGztiz4" target="_blank" className="article-link article-resto-link-desktop">RAD Tattoo &amp; Cafe Siargao</a><a href="https://maps.app.goo.gl/FhjLg8FV2WdaJ1ft6" target="_blank" className="article-link article-resto-link-mobile">RAD Tattoo &amp; Cafe Siargao</a></strong>. Leur local est clean, ils sont très pros (les règles d&apos;hygiène sont respectées) et très sympas.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2932-1024x768.jpg" alt="RAD Tattoo Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2901-1024x768.jpg" alt="Cloud 9 night Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <h4>⧐ Où faire la fête ? Mad Monkey</h4>
-            <p>Pour finir la soirée, on avait envie de manger dans un endroit dont on a beaucoup entendu parler depuis notre arrivée à Siargao, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJY6KU1y0JBDMRQVqscCdtbqo" target="_blank" className="article-link article-resto-link-desktop">Mad Monkey</a><a href="https://maps.app.goo.gl/BrfHavHrY7WdcTrA8" target="_blank" className="article-link article-resto-link-mobile">Mad Monkey</a></strong>. Située tout au Nord de Général Luna, c&apos;est une auberge de jeunesse exclusivement réservée aux adultes.</p>
-            <p>Si vous cherchez une ambiance chaleureuse et conviviale, dans un décor incroyable, que ce soit pour boire un verre ou manger avec du bon son, vous êtes au bon endroit !</p>
-            <p>On découvre rapidement le concept. Ici, toutes les heures, les barmans sonnent la cloche et payent leur tournée de shooters à toutes les personnes présentes. Alors forcément, le soir venu, sous couvert de l&apos;alcool, tout le monde s&apos;aime et tout le monde parle avec tout le monde. Franchement, on y a passé un très bon moment !</p>
-            <p>Comme toutes les bonnes choses ont une fin, il est temps de rentrer se coucher.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2979-768x1024.jpg" alt="Mad Monkey Siargao Night" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_2939-1024x768.jpg" alt="Mad Monkey Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <div className="article-day-header">
-              <span className="article-day-badge">Jour 4</span>
-              <h3>Direction le Nord de Siargao avant le grand retour</h3>
-            </div>
-            <p>C&apos;est le cœur lourd que nous entamons cette dernière demi-journée à Siargao. Nous avons notre vol pour Manille en début d&apos;après-midi. Il nous reste peu de temps ici, mais suffisamment pour pouvoir en profiter à fond. Nous chevauchons notre scooter et c&apos;est parti.</p>
-            <p>En dehors des Island hoppings et du surf, il y a aussi de <strong>nombreuses activités et lieux à découvrir sur l&apos;île. </strong></p>
-            <p>On le redit, mais <strong>il se dégage vraiment à Siargao une atmosphère unique, autant par son côté relaxant et survolté à la fois, que par sa beauté sauvage et son authenticité.</strong> Siargao est un vrai coup de cœur pour nous et vous charmera à coup sûr. Rien que de se balader en scooter à travers cette île est un réel plaisir. Les paysages sont juste magnifiques.</p>
-            <h4>⧐ Coconut tree view &amp; la Palm road</h4>
-            <p>Facile à trouver, le premier spot est sur la route principale qui monte <strong>vers le Nord de l&apos;île. Au bord de la chaussée, il offre un beau point de vue</strong> sur une immense forêt de cocotiers.</p>
-            <p>Juste un peu plus loin, en poursuivant notre chemin en scooter, on tombe sur <strong>la fameuse route bordée de coconuts.</strong> Elle est surnommée la Palm road. On n&apos;a pas pu s&apos;empêcher de faire voler le drone. On se sent tellement petites au milieu de cette étendue de cocotiers.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2874-1-1024x768.jpg" alt="Coconut tree view Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/DJI_0440-768x1024.jpg" alt="Coconuts road Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <h4>⧐ Maasin Bridge River</h4>
-            <p>Ici, <strong>une petite rivière enchantée traverse la jungle.</strong> C&apos;est un endroit tellement apaisant et relaxant. Comme il a plu récemment, l&apos;eau n&apos;est malheureusement pas si belle qu&apos;espérée.</p>
-            <p>Pour entrer dans la zone, il faut payer <strong>20 Php (0,32 €)</strong> par personne. On accède alors à un plongeoir en bois duquel on peut sauter dans la rivière.</p>
-            <p>Si vous souhaitez faire une <strong>balade sur la rivière en bateau,</strong> le tarif est de <strong>250 Php (4,05 €)</strong> par personne. <strong>Des locaux vous emmèneront jusqu&apos;à une lagune secrète.</strong> Vous avez également la possibilité de faire la <strong>balade en kayak.</strong> Pour 2 personnes, il faut compter <strong>550 Php (8,90 €)</strong>, guide compris.</p>
-            <p>Pour trouver cet endroit, il suffit de taper Maasin bridge sur votre GPS.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1122-768x1024.jpg" alt="Maasin Bridge River Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3064-768x1024.jpg" alt="Maasin Bridge River Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <h4>⧐ Magpopongko tidal pools</h4>
-            <p>Malgré le monde, il n&apos;y a <strong>aucun problème pour le stationnement.</strong> Le long de la route qui mène à la plage s&apos;enchaînent plusieurs grands parkings. Nous avons payé <strong>10 Php (0,16 €)</strong> pour y laisser le scooter.</p>
-            <p>Pour accéder au site, il faut débourser <strong>50 Php (0,80 €)</strong> par personne. L&apos;endroit est très fréquenté. On y trouve des boutiques de souvenirs, des bars et des restaurants. <strong>Une fois sur la plage, partez sur la gauche. </strong></p>
-            <p><strong>Au niveau des rochers, il y a un chemin pour accéder aux piscines naturelles. Vous avez aussi la possibilité de passer directement par l&apos;eau. </strong></p>
-            <div className="article-avis">
-              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des mamzelles</strong><p>Venez une bonne heure avant la marée basse pour pouvoir profiter pleinement des lieux. Renseignez-vous sur les horaires des marées.</p></div>
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9730-3-1024x768.jpg" alt="Magpopongko Piscines naturelles Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/DJI_0477-1-769x1024.jpg" alt="Magpopongko Tidal pools Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p>Il y a plusieurs piscines. N&apos;hésitez pas à <strong>continuer sur la gauche en marchant dans l&apos;eau pour découvrir de beaux spots et surtout vous isoler de la foule. </strong></p>
-            <p>En ce qui nous concerne, on a peu de temps pour vraiment explorer l&apos;endroit. Nous prenons donc le chemin de terre à la queue leu leu et restons du coup vers l&apos;entrée.</p>
-            <p>On fait trempette 5 minutes, sauf qu&apos;il y a énormément de monde, quitte à se faire bousculer. On préfère donc prendre du recul et envoyer le drone. La vue d&apos;en haut est incroyable. Et surprise, on découvre que les piscines forment un cœur !</p>
-            <h4>⧐ Pacifico Beach</h4>
-            <p>Nous continuons notre petit road trip vers le Nord de Siargao, direction Pacifico Beach. Nous sommes à environ 1 h de route de Général Luna.</p>
-            <p><strong>Cette plage déserte de sable blanc est juste wahooo ! </strong>Elle tient son nom de son emplacement car elle se situe face à l&apos;océan Pacifique.</p>
-            <p>L&apos;eau est translucide. Au bord, il y a un peu de rochers et de corail. Ce n&apos;est pas vraiment un endroit pour venir se prélasser tranquillement dans l&apos;eau. C&apos;est même l&apos;<strong>un des plus gros spots de surf de l&apos;île.</strong> Les vagues sont impressionnantes !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3032-1024x768.jpg" alt="Pacifico Beach Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3042-1-768x1024.jpg" alt="Pacifico Beach Siargao" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-            </div>
-            <p>Nous n&apos;avons malheureusement plus le temps d&apos;aller plus loin, il faut rebrousser chemin et rentrer à l&apos;hôtel. Un van nous y attend pour nous conduire à l&apos;aéroport, direction Manille.</p>
-            <p>Au revoir les Philippines, on reviendra, c&apos;est sûr... !!</p>
-          </section>
-
-          <section id="budget" className="article-section">
-            <div className="article-day-header">
-              <h2>Quel budget pour 3 semaines aux Philippines ?</h2>
-            </div>
-            <p>C&apos;est bien beau de partir au bout du monde pour des vacances au paradis, mais <strong>quel budget faut-il prévoir ? </strong> Pas de secret entre nous, on vous dit tout !</p>
-
-            {/* Chiffre clé */}
-            <div style={{textAlign: 'center', margin: '36px 0 32px', padding: '32px 24px', background: '#fdf4ee', borderRadius: '12px', border: '1px solid var(--gold)'}}>
-              <p style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '56px', fontWeight: 600, color: 'var(--gold)', lineHeight: 1, margin: '0 0 8px'}}>1 880 €</p>
-              <p style={{fontSize: '12px', letterSpacing: '2px', textTransform: 'uppercase', color: '#8a847e', margin: 0}}>notre budget total par personne — 3 semaines</p>
-            </div>
-
-            {/* 4 cartes */}
-            <div className="article-pratique-grid" style={{marginBottom: '32px'}}>
-              <div className="article-pratique-card">
-                <h3 className="budget-h3" style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-plane" aria-hidden="true" style={{color:"var(--gold)",flexShrink:0}}></i>Vols internationaux</h3>
-                <p>Pour nos vols internationaux aller / retour (Paris - Djeda, Djeda - Manille), nous avons payé <strong>465 €</strong> par personne avec Saudia Airlines.</p><p>Les tarifs peuvent bien évidemment fluctuer en fonction de la saison et de la compagnie aérienne.</p>
-              </div>
-              <div className="article-pratique-card">
-                <h3 className="budget-h3" style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-bus" aria-hidden="true" style={{color:"var(--gold)",flexShrink:0}}></i>Transports sur place</h3>
-                <p style={{marginTop: '12px'}}><strong>Vols internes :</strong> entre 30 € et 100 € par vol — plus vous les réservez tôt, mieux c&apos;est ! <br /><strong>Bus</strong> (Manille → Banaue) : 30 € aller-retour par personne.<br /><strong>Ferry</strong> entre les îles : entre 10 € et 30 € par traversée.<br /><strong>Tuk-tuks / jeepneys :</strong> entre 1 € et 5 €. Pour les taxis, demandez la plaquette des tarifs. <br /><strong>Grab</strong> (Manille, Cebu) et <strong>Backride</strong> (Palawan) sont moins chères que le taxi.</p>
-              </div>
-              <div className="article-pratique-card">
-                <h3 className="budget-h3" style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-bed" aria-hidden="true" style={{color:"var(--gold)",flexShrink:0}}></i>Hébergements</h3>
-                <p>Les hôtels-resorts bling bling, c&apos;est pas trop notre truc ! L&apos;idéal pour nous : un minimum de confort et d&apos;intimité. Nous avons opté pour du <strong>milieu de gamme</strong> durant tout notre séjour.<br /><br /><strong>Auberges / guest houses :</strong> 5 € à 15 € / nuit<br /><strong>Milieu de gamme :</strong> 15 € à 60 € / nuit<br /><strong>Resorts de luxe :</strong> 80 € à 150 € / nuit</p>
-              </div>
-              <div className="article-pratique-card">
-                <h3 className="budget-h3" style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-tools-kitchen-2" aria-hidden="true" style={{color:"var(--gold)",flexShrink:0}}></i>Repas &amp; Activités</h3>
-                <p>Qui dit Philippines, dit îles, dit excursions en bateau, snorkeling, plongées et visites de sites naturels !<br /><br /><strong>Restaurant local :</strong> 2 € à 5 € / repas<br /><strong>Restaurant milieu de gamme :</strong> 5 € à 15 € / repas<br /><strong>Island hopping :</strong> 20 € à 35 € / pers., repas compris<br /><strong>Dépenses diverses</strong> (souvenirs, shopping, pourboires...) : 100 € à 150 €</p>
-              </div>
-            </div>
-
-            {/* Tableau 3 niveaux */}
-            <div className="article-day-header"><h3>Budget estimé pour 3 semaines</h3></div>
-            <div className="article-budget-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', margin: '8px 0 32px'}}>
-              <div style={{textAlign: 'center', padding: '24px 16px', background: 'var(--bg)', border: '1px solid var(--line)', borderRadius: '8px'}}>
-                <p style={{fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#8a847e', margin: '0 0 12px'}}>Économique</p>
-                <p className="budget-price" style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '28px', fontWeight: 600, color: 'var(--dark)', margin: '0 0 4px'}}>1 200 € – 1 500 €</p>
-                <p style={{fontSize: '12px', color: '#8a847e', margin: 0}}>par personne</p>
-              </div>
-              <div style={{textAlign: 'center', padding: '24px 16px', background: '#fdf4ee', border: '1px solid var(--gold)', borderRadius: '8px'}}>
-                <p style={{fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', color: 'var(--gold)', margin: '0 0 12px'}}>Moyen</p>
-                <p className="budget-price" style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '28px', fontWeight: 600, color: 'var(--dark)', margin: '0 0 4px'}}>1 600 € – 2 200 €</p>
-                <p style={{fontSize: '12px', color: '#8a847e', margin: 0}}>par personne</p>
-              </div>
-              <div style={{textAlign: 'center', padding: '24px 16px', background: 'var(--bg)', border: '1px solid var(--line)', borderRadius: '8px'}}>
-                <p style={{fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#8a847e', margin: '0 0 12px'}}>Confortable</p>
-                <p className="budget-price" style={{fontFamily: "'Cormorant Garamond', serif", fontSize: '28px', fontWeight: 600, color: 'var(--dark)', margin: '0 0 4px'}}>2 400 € – 3 000 €</p>
-                <p style={{fontSize: '12px', color: '#8a847e', margin: 0}}>par personne</p>
-              </div>
-            </div>
-            <p>Ce budget peut varier selon la saison, le type d&apos;activités et votre style de voyage.</p>
-
-            {/* Conseils */}
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Nos conseils pour optimiser votre budget</strong>
-                <p>⋙ <strong style={{display:"inline",fontSize:"inherit",letterSpacing:"inherit",textTransform:"none",color:"inherit"}}>Choisir la bonne saison pour partir.</strong> Les Philippines ont une saison touristique (novembre à avril) où les prix sont plus élevés. Si vous voulez économiser, partir en basse saison (mai à octobre) peut permettre de trouver des hébergements et des activités à des prix plus attractifs, même si la météo peut être moins stable à cause de la mousson.</p>
-                <p>⋙ <strong style={{display:"inline",fontSize:"inherit",letterSpacing:"inherit",textTransform:"none",color:"inherit"}}>Planifier les vols internes à l&apos;avance,</strong> les tarifs augmentent à l&apos;approche des dates.</p>
-                <p>⋙ <strong style={{display:"inline",fontSize:"inherit",letterSpacing:"inherit",textTransform:"none",color:"inherit"}}>Privilégier les ferrys</strong> lorsque les distances le permettent (entre Cebu, Bohol et Siquijor par exemple).</p>
-                <p>⋙ <strong style={{display:"inline",fontSize:"inherit",letterSpacing:"inherit",textTransform:"none",color:"inherit"}}>Les auberges de jeunesse ou les guest houses</strong> peuvent être de bonnes alternatives aux hôtels. Pour un séjour plus long, vous pouvez négocier directement avec les propriétaires d&apos;hébergements pour des prix dégressifs. C&apos;est une pratique courante aux Philippines.</p>
-                <p>⋙ <strong style={{display:"inline",fontSize:"inherit",letterSpacing:"inherit",textTransform:"none",color:"inherit"}}>Manger local.</strong> Le coût de la nourriture dans les restaurants locaux ou les marchés est vraiment bas comparé aux restaurants touristiques.</p>
-              </div>
-            </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_3668-768x1024.jpg" alt="Island Hopping Kayangan Lake Coron" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_9967-1-1024x768.jpg" alt="Tapiutan Island Hopping El Nido Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-          </section>
-
-          <section id="pratique" className="article-section">
-            <div className="article-day-header">
-              <h2>Tout savoir pour organiser votre voyage</h2>
-            </div>
-
-            <p className="pratique-label">Formalités</p>
-            <ul className="pratique-list">
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>Pour un séjour de moins de 30 jours aux Philippines, le citoyen français n&apos;a pas besoin de visa.</strong> Cependant, vous devez justifier d&apos;un <strong>passeport valide au moins 6 mois après la sortie prévue du pays</strong> et d&apos;un vol de retour dans les 30 jours. Si la période de voyage dépasse les 30 jours, vous devez faire une demande auprès de l&apos;<strong><a href="https://immigration.gov.ph/visas/" target="_blank" rel="noopener noreferrer" className="article-link">immigration</a></strong> pour obtenir un visa longue durée.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p>Il est impératif de remplir le <strong>formulaire obligatoire eTravel</strong> (gratuit) sur le <strong><a href="https://etravel.gov.ph" target="_blank" rel="noopener noreferrer" className="article-link">site officiel du gouvernement philippin</a></strong> dans les 72 h précédant votre voyage. Vous recevrez un QR code à présenter à l&apos;embarquement et à l&apos;arrivée.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>On vous recommande vivement d&apos;avoir toujours de l&apos;argent liquide sur vous.</strong> Il y a beaucoup d&apos;endroits où la carte bleue n&apos;est pas acceptée (même dans les hôtels). Sur certaines îles, il est même compliqué de retirer de l&apos;argent. Les distributeurs sont souvent en panne ou vides.</p>
-              </li>
-            </ul>
-
-            <p className="pratique-label">Santé</p>
-            <ul className="pratique-list">
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>Il n&apos;y a pas de vaccin obligatoire pour se rendre aux Philippines,</strong> mais certains sont tout de même recommandés : tétanos, diphtérie, poliomyélite (DTP), hépatites A et B, coqueluche, typhoïde et rage.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>Prenez une assurance maladie et rapatriement avant de partir</strong> (<strong><a href="https://www.chapkadirect.fr" target="_blank" rel="noopener noreferrer" className="article-link">Chapka</a></strong>, <strong><a href="https://www.yupwego.com/fr" target="_blank" rel="noopener noreferrer" className="article-link">Yupwego</a></strong>...). Si ce n&apos;est pas le cas, tous les frais seront à votre charge, y compris en cas d&apos;urgence vitale.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>Protégez-vous contre les moustiques</strong> qui peuvent être porteurs de maladies telles que le paludisme et la dengue. Envisagez de prendre un traitement de fond ou procurez-vous un répulsif efficace.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>L&apos;eau du robinet n&apos;étant pas potable,</strong> consommez seulement l&apos;eau en bouteille ou l&apos;eau filtrée. Si vous sortez un peu des sentiers battus, <strong>évitez les glaçons et les aliments crus,</strong> favorisez les aliments bien cuits.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p>Nous vous conseillons fortement de <strong>prendre une trousse à pharmacie</strong> : anti-diarrhéique, antiseptique, anti-inflammatoire, crème solaire, antibiotiques pour les possibles infections intestinales...</p>
-              </li>
-            </ul>
-
-            <p className="pratique-label">Loisirs</p>
-            <ul className="pratique-list">
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>Si vous souhaitez louer un scooter, pensez à prendre votre permis de conduite.</strong> Les scooters mis en location sont des 125CC. Ce n&apos;est pas systématique, mais sur certaines îles on vous recommande de l&apos;avoir en cas de contrôle de police. À titre informatif, nous n&apos;avons jamais été contrôlées.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p>Prévoir des chaussures pour marcher dans l&apos;eau ou des tongs qui tiennent aux pieds.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p>Indispensable selon nous, emportez un <strong>sac waterproof</strong> pour protéger vos affaires (téléphone, drone, clés, portefeuille…) lors des Island hoppings. En arrivant sur certaines îles, vous êtes parfois débarqués à quelques mètres du bord qu&apos;il faut rejoindre à la nage.</p>
-              </li>
-            </ul>
-
-            <p className="pratique-label">Météo</p>
-            <ul className="pratique-list">
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>Le climat des Philippines est principalement tropical,</strong> il fait chaud toute l&apos;année. Il y a trois saisons distinctes : la saison tempérée de décembre à février, la saison sèche de mars à mai, et la saison des pluies de juin à novembre. <strong>La meilleure période se situe entre janvier et avril.</strong></p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p>Nous avions décidé de partir en février pour s&apos;assurer d&apos;une belle météo. Pour autant, même les locaux n&apos;avaient jamais vu de telles précipitations... Nous avons reçu à plusieurs reprises des messages d&apos;alerte pour des inondations et glissements de terrain.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>La météo aux Philippines est finalement assez imprévisible.</strong> Ce pays est aussi souvent confronté à des typhons et des séismes.</p>
-              </li>
-            </ul>
-
-            <p className="pratique-label">Infos pratiques</p>
-            <ul className="pratique-list">
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>En arrivant à l&apos;aéroport de Manille, nous avons acheté une puce Globe.</strong> Pour 80 Go de connexion internet sur 30 jours, comptez <strong>1750 Php (29,80 €)</strong>. Les appels ne sont pas inclus. Sinon, vous trouverez du Wifi un peu partout mais <strong>le réseau n&apos;est vraiment pas top aux Philippines.</strong></p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>Les Philippines ont 6 à 7 heures d&apos;avance sur l&apos;heure française</strong> (selon l&apos;heure d&apos;été ou d&apos;hiver en France). Les effets du décalage peuvent être compliqués à gérer les premiers jours...</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>Vous n&apos;aurez pas besoin d&apos;adaptateur aux Philippines,</strong> les prises sont identiques à celles en France. Le voltage est de 220 volts. Cependant, restez vigilants, nous avons entendu des histoires de chargeurs qui ont pris feu !</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>Ne vous chargez pas avec trop de vêtements.</strong> Vous aurez la possibilité de les laver sur place. Tous les hôtels proposent un service de laundry pour <strong>100 Php (1,60 €)</strong> le kilo en moyenne.</p>
-              </li>
-              <li className="pratique-item">
-                <span className="pratique-dash"></span>
-                <p><strong>On vous conseille de jeter un œil sur des groupes Facebook</strong> tels que "les francophones aux Philippines (tout sauf la météo)" ou "les français aux Philippines"... Vous y trouverez beaucoup d&apos;infos utiles et pratiques pour votre séjour.</p>
-              </li>
-            </ul>
-
           </section>
 
           <section className="article-comments-section">
-            <h2 className="article-comments-title">Commentaires</h2>
-
-            <CommentsList comments={[
-              {
-                id: '55',
-                author: 'JOËLLE JEUNET',
-                date: '7 juin 2026',
-                text: "Bravo et merci !\nJ’ai vu et lu beaucoup de choses, mais il me semble que votre blog est le mieux en tout ! Je vais donc m’appuyer dessus pour… TOUT !\nJ’espérais un voyage en septembre, au vu de la météo, je pense pousser a Novembre comme vous, pour 1 mois.\nJe vais donc étudier de plus près et reviendrai vers vous sûrement !",
-                reply: { author: 'MamZelles en vadrouille', date: '9 juin 2026', text: "Oooohh !!! Quel bonheur de lire ce petit message ! 🥰 Ça nous fait tellement plaisir ! 😄\nNovembre est parfait pour découvrir la majorité des îles. Après, la météo aux Philippines, c’est un vrai sujet ! 😅 D’une année à l’autre, ça n’a parfois rien à voir...\nEn tout cas, n’hésitez pas si vous avez besoin de conseils 😉👌\nÀ très bientôt ! ☀️🌴" }
-              },
-              {
-                id: '44',
-                author: 'Annaka',
-                date: '22 nov. 2025',
-                text: "Bonjour, quand y etes vous allées ?\n\na bientôt :)",
-                reply: { author: 'MamZelles en vadrouille', date: '30 nov. 2025', text: "Bonjour,\nNous étions parties en novembre. 😉👌🏼\nN’hésitez pas si vous avez d’autres questions... 🤗☀️" }
-              },
-              {
-                id: '43',
-                author: 'Val',
-                date: '14 nov. 2025',
-                text: "Au top les filles !! ..on pars 2 mois aux Philippines début décembre ..merci pour toutes vos bonnes vibes et conseils qui ont aiguillés nos pistes d’atterrissage :)",
-                reply: { author: 'MamZelles en vadrouille', date: '30 nov. 2025', text: "Avec plaisir ! 😍\nBon voyage !!! ✈️☀️🌴" }
-              },
-              {
-                id: '37',
-                author: 'Baptiste',
-                date: '10 sept. 2025',
-                text: "Bonjour et merci pour votre partage. A quelle période étiez vous parties ? Nous souhaiterions faire un itinéraire semblable au votre du 6 au 26 novembre cela semble un peu tôt vis à vis de la saison sèche... ce qui nous fait hésiter.",
-                reply: { author: 'MamZelles en vadrouille', date: '15 sept. 2025', text: "Bonjour,\nAvec plaisir pour le partage ! 🤗\nPour ce voyage, nous étions également parties en novembre. Pour explorer Palawan, la période est idéale ! Pour les autres îles, c’est un peu aléatoire... En réalité, il n’existe pas de période parfaite si vous souhaitez visiter plusieurs îles, chacune ayant son propre microclimat.\nN’hésitez pas si vous avez besoin d’autres informations. On vous souhaite en tout cas de bons préparatifs et un beau voyage ! ☀️🏝️" }
-              },
-              {
-                id: '35',
-                author: 'Tessier',
-                date: '25 août 2025',
-                text: "d’accord merci beaucoup. Vous m’avez convaincue, c’est magnifique!",
-                reply: { author: 'MamZelles en vadrouille', date: '28 août 2025', text: "Bonjour,\nTrop heureuses de vous lire ! ☀️🤗\nOn vous souhaite donc un merveilleux voyage dans ce fabuleux pays." }
-              },
-              {
-                id: '33',
-                author: 'Tessier',
-                date: '22 août 2025',
-                text: "Bonjour, merci pour toutes ces informations. Je me pose une question concernant les deux jours à Banaue, aviez vous pris vos bagages depuis Manille dans le bus? Nous aurons chacun une grosse valise. merci",
-                reply: { author: 'MamZelles en vadrouille', date: '25 août 2025', text: "Bonjour,\nNous étions en sacs à dos donc pas de problématique de valises pour nous.\nPour autant, sachez qu’il est possible de vous organiser avec votre hôtel à Manille, avec un petit supplément, pour qu’ils vous gardent vos valises.\nOn vous souhaite un bon séjour dans l’un des plus beaux pays au monde ! ☀️🏝️🤩" }
-              },
-              {
-                id: '21',
-                author: 'Mimi des iles',
-                date: '21 janv. 2025',
-                text: "Merci bc pour ce partage qui va bc m aider pour mon voyage prévu en avril",
-                reply: { author: 'MamZelles en vadrouille', date: '23 févr. 2025', text: "Avec grand plaisir ! 😊 On serait heureuses d’avoir un petit retour sur ce voyage de rêve ! ☀️🏝️\nBons préparatifs en attendant. 🤗🤗" }
-              },
-            ]} />
+            <CommentsList comments={[]} />
             <CommentForm
-              articleTitle="Itinéraire Philippines : 3 semaines pour découvrir la perle de l'Orient"
-              articleUrl="https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient"
+              articleTitle={"Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus"}
+              articleUrl="https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus"
             />
           </section>
 
@@ -1061,22 +1213,22 @@ export default function PhilippinesPage() {
                   <p className="article-related-title-card">Palawan : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</p>
                 </div>
               </a>
-              <a href="/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus" className="article-related-card">
+              <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/Blog-Port-Barton-1536x1229.jpg.webp" alt="Palawan Port Barton" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Itinéraire Philippines 3 semaines" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus</p>
+                  <p className="article-related-title-card">Itinéraire Philippines : 3 semaines pour découvrir la perle de l&apos;Orient !</p>
                 </div>
               </a>
-              <a href="/road-trip-a-lanzarote" className="article-related-card">
+              <a href="/visiter-madrid-en-3-jours" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote.jpeg" alt="Lanzarote" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid-1536x1229.jpeg.webp" alt="Madrid" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Road trip à Lanzarote : l&apos;île aux 300 volcans</p>
+                  <p className="article-related-title-card">Visiter Madrid en 3 jours : notre guide complet !</p>
                 </div>
               </a>
             </div>
