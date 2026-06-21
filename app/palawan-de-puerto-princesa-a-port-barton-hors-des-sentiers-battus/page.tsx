@@ -7,12 +7,12 @@ import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
-  title: "Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus | MamZelles en vadrouille",
-  description: "Un mois à Palawan loin des foules : Puerto Princesa, Sabang et sa rivière souterraine, Port Barton, San Vicente et la paradisiaque Modessa Island. Notre carnet de voyage complet.",
+  title: "Palawan : de Puerto Princesa à Port Barton",
+  description: "Un mois loin des foules entre Puerto Princesa, la rivière souterraine de Sabang, le village de pêcheurs de Port Barton et la paradisiaque Modessa Island.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus' },
   openGraph: {
-    title: "Palawan : De Puerto Princesa à Port Barton, hors des sentiers battus",
-    description: "Un mois à Palawan loin des foules, de Puerto Princesa à la paradisiaque Modessa Island.",
+    title: "Palawan : de Puerto Princesa à Port Barton",
+    description: "Un mois loin des foules à Palawan, de Puerto Princesa à Port Barton.",
     url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/Puerto-Princesa-Port-Barton.webp', width: 1920, height: 1080 }],
@@ -24,8 +24,39 @@ export const metadata: Metadata = {
 };
 
 export default function PalawanPortBartonPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: "Palawan : de Puerto Princesa à Port Barton",
+    description: "Un mois loin des foules entre Puerto Princesa, la rivière souterraine de Sabang, le village de pêcheurs de Port Barton et la paradisiaque Modessa Island.",
+    image: 'https://mamzellesenvadrouille.com/Puerto-Princesa-Port-Barton.webp',
+    datePublished: '2025-03-14',
+    dateModified: '2026-06-21',
+    author: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      url: 'https://mamzellesenvadrouille.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://mamzellesenvadrouille.com/icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
+    },
+  };
+
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
       {/* HERO */}
@@ -56,7 +87,7 @@ export default function PalawanPortBartonPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>50-70€/j/pers.</span>
+          <span>50-70 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -112,7 +143,7 @@ export default function PalawanPortBartonPage() {
             <p>Très allongée, l'île s’étend sur 450 km de long et a une largeur moyenne de 50 km.</p>
             <p>De Puerto Princesa et son célèbre island hopping, à Sabang et sa rivière souterraine, en passant par San Vicente et Port Barton, pour finir en beauté sur la magnifique Modessa Island, nous vous racontons tout, étape par étape !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2026/06/Port-barton.jpg" alt="Camping Palawan Port Barton" className="article-img-full" loading="lazy" />
-            <p>Après un long voyage depuis Nice, en passant par Londres et Beijing (Chine), nous arrivons à Manille vers 22h. Nous avions presque oublié cette sensation quand on sort de l’avion… Chaleur + humidité, pas de doute, nous sommes bien aux Philippines. Récupération des sacs à dos et c’est parti !</p>
+            <p>Après un long voyage depuis Nice, en passant par Londres et Beijing (Chine), nous arrivons à Manille vers 22 h. Nous avions presque oublié cette sensation quand on sort de l’avion… Chaleur + humidité, pas de doute, nous sommes bien aux Philippines. Récupération des sacs à dos et c’est parti !</p>
             <div className="article-day-header article-day-header-tight">
               <h3>Comment se rendre à Palawan ?</h3>
             </div>
@@ -128,7 +159,7 @@ export default function PalawanPortBartonPage() {
             <div className="article-day-header">
               <h2>📍 Arrivée à Manille</h2>
             </div>
-            <p>Nous avons pris un hôtel à 10 minutes de l’aéroport car notre prochain vol est le lendemain vers 13h. Pour 30€ la nuit, petit-déjeuner compris, l'<strong><a href="https://maps.app.goo.gl/atQGdGUGWigJJWE1A?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Achievers Airport Hotel</a></strong> est top. Si, comme nous, vous êtes juste de passage pour une nuit à Manille, nous vous recommandons vivement cet hôtel. Il est possible de vous arranger avec eux pour organiser les transferts aéroport &lt;—&gt; hôtel, qui sont gratuits.</p>
+            <p>Nous avons pris un hôtel à 10 minutes de l’aéroport car notre prochain vol est le lendemain vers 13 h. Pour 30 € la nuit, petit-déjeuner compris, l'<strong><a href="https://maps.app.goo.gl/atQGdGUGWigJJWE1A?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Achievers Airport Hotel</a></strong> est top. Si, comme nous, vous êtes juste de passage pour une nuit à Manille, nous vous recommandons vivement cet hôtel. Il est possible de vous arranger avec eux pour organiser les transferts aéroport &lt;—&gt; hôtel, qui sont gratuits.</p>
             <p>Demain, c'est donc direction Puerto Princesa, la capitale de Palawan. 300,000 habitants sur 2,381 km², c’est l’une des plus grandes villes des Philippines en termes de superficie.</p>
             <p>On a trop hâte de vraiment commencer notre voyage, et de découvrir cette 1ère ville de notre itinéraire !</p>
           </section>
@@ -141,7 +172,7 @@ export default function PalawanPortBartonPage() {
               <span className="article-day-badge">Jour 1</span>
               <h3>De Manille à Puerto Princesa</h3>
             </div>
-            <p>Après un vol rapide d’1h30, nous arrivons à Puerto Princesa.</p>
+            <p>Après un vol rapide d’1 h 30, nous arrivons à Puerto Princesa.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0328-768x1024.jpg" alt="Aéroport Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0330_jpg-768x1024.jpg" alt="Tuk-tuk Palawan Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -151,13 +182,13 @@ export default function PalawanPortBartonPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Pour vos trajets en ville, téléchargez l'appli RIDE (l'équivalent local de GRAB) : les prix sont fixes et affichés à l'avance, fini les négociations à rallonge. On l'a utilisée partout à Puerto Princesa.</p></div>
             </div>
-            <p>138 Php (2€30) pour rejoindre notre hôtel, le <strong><a href="https://maps.app.goo.gl/fgYS5rtgfwrui66U6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Puerto Pension Inn</a></strong>, à une dizaine de minutes de l’aéroport. C’est plutôt correct ! Nous y passerons 4 nuits. Comptez 28€ par nuit, petit-déjeuner compris.</p>
+            <p>138 Php (2,30 €) pour rejoindre notre hôtel, le <strong><a href="https://maps.app.goo.gl/fgYS5rtgfwrui66U6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Puerto Pension Inn</a></strong>, à une dizaine de minutes de l’aéroport. C’est plutôt correct ! Nous y passerons 4 nuits. Comptez 28 € par nuit, petit-déjeuner compris.</p>
             <p>Cet hôtel est un petit havre de paix niché au beau milieu de la ville. Idéalement situé au bout de la Malvar Road, il est juste au-dessus de la fameuse <strong>Baywalk</strong>. La chambre est décorée de façon traditionnelle, tout en bois et en bambou. En plus d'être très jolie, elle est aussi équipée de la clim’, de la télé et d’un petit frigo.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0587-768x1024.jpg" alt="Puerto Pension Inn Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0358-768x1024.jpg" alt="Kinabuch Grill &amp; Bar Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Une fois installées, nous partons découvrir les alentours. Par hasard, en nous baladant, à plus ou moins 25 minutes à pied de notre hôtel, nous tombons sur <strong><a href="https://maps.app.goo.gl/Cq7u3UDvRwHEnsNW9?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Kinabuchs Grill and Bar</a></strong>. On se laisse tenter… Ils proposent une grande carte, le choix est difficile. Ici, vous pouvez goûter tout un tas de spécialités philippines. Amélie a testé le Beef Tagalog, de la viande de bœuf marinée dans une sauce incroyable aux oignons. Ce sera Gambas pour Laurie. Les accompagnements sont à prendre à part. En se faisant plaisir (apéro compris), nous payons 20€ pour 2.</p>
+            <p>Une fois installées, nous partons découvrir les alentours. Par hasard, en nous baladant, à plus ou moins 25 minutes à pied de notre hôtel, nous tombons sur <strong><a href="https://maps.app.goo.gl/Cq7u3UDvRwHEnsNW9?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Kinabuchs Grill and Bar</a></strong>. On se laisse tenter… Ils proposent une grande carte, le choix est difficile. Ici, vous pouvez goûter tout un tas de spécialités philippines. Amélie a testé le Beef Tagalog, de la viande de bœuf marinée dans une sauce incroyable aux oignons. Ce sera Gambas pour Laurie. Les accompagnements sont à prendre à part. En se faisant plaisir (apéro compris), nous payons 20 € pour 2.</p>
             <p>Après s’être clairement remplies, on retourne à l'hôtel. On ne s’est pas encore remises du voyage, du coup, niveau fatigue, on est KO ! Alors, c'est dodo tôt pour nous ce soir.</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 2</span>
@@ -184,8 +215,8 @@ export default function PalawanPortBartonPage() {
               <span className="article-day-badge">Jour 3</span>
               <h3>Island hopping à Puerto Princesa</h3>
             </div>
-            <p>Nouvelle journée, nouvelle virée ! Aujourd’hui, c’est Island hopping dans la baie de Honda. Nous avons réservé l’excursion directement avec l’hôtel pour 1500 Php (25€).</p>
-            <p>Un van vient nous chercher à 7h30. En route, nous récupérons d’autres personnes.</p>
+            <p>Nouvelle journée, nouvelle virée ! Aujourd’hui, c’est Island hopping dans la baie de Honda. Nous avons réservé l’excursion directement avec l’hôtel pour 1500 Php (25 €).</p>
+            <p>Un van vient nous chercher à 7 h 30. En route, nous récupérons d’autres personnes.</p>
             <p>Comme tout est bien pensé pour les touristes, on fait un petit arrêt dans une boutique pour louer du matériel si besoin (palmes, masque, tuba, chaussures d’eau, etc.). Au programme de la journée, 4 spots à visiter…
 C’est parti, nous sommes 8 sur le bateau.</p>
             <div className="article-avis">
@@ -221,11 +252,11 @@ C’est parti, nous sommes 8 sur le bateau.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/DJI_20241115_144925_747-2-768x1024.jpg" alt="Cowrie Island Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <h4>⧐ Notre avis sur cet Island hopping</h4>
-            <p>Retour sur la terre ferme vers 15h45. Sur le trajet de l’hôtel, nous repassons par la boutique pour rendre le matériel de plage (masques et tubas) que nous avons loué.</p>
-            <p>Nous avons passé en moyenne une heure par spot, sauf sur l’île où nous avons mangé. Nous y sommes restées plus ou moins 2h30.</p>
+            <p>Retour sur la terre ferme vers 15 h 45. Sur le trajet de l’hôtel, nous repassons par la boutique pour rendre le matériel de plage (masques et tubas) que nous avons loué.</p>
+            <p>Nous avons passé en moyenne une heure par spot, sauf sur l’île où nous avons mangé. Nous y sommes restées plus ou moins 2 h 30.</p>
             <p>Cet Island hopping est bien moins fréquenté que ceux du Nord de Palawan (Coron &amp; El Nido), ce qui est plutôt agréable. Le fait qu’il y ait beaucoup moins de monde fait que nous avions les spots rien que pour nous ! Par contre, on ne vous le cache pas, même si c’était très sympa et très joli, c’est tout de même bien moins impressionnant que les Island hoppings de Coron et El Nido.</p>
             <h4>⧐ Baywalk, la promenade nocturne incontournable</h4>
-            <p>Pour la soirée, petite balade et repas sur la <strong>Baywalk</strong> qui se situe à 3 minutes à pied de notre hôtel. Sur place, on découvre un petit marché, une grande promenade et plusieurs restaurants. L’endroit est très familial. Comme la plupart des enfants ici, il est possible de louer des petits vélos, des voiturettes, des tuk-tuks à pédales…</p>
+            <p>Pour la soirée, petite balade et repas sur la <strong>Baywalk</strong> qui se situe à 3 minutes à pied de notre hôtel. Sur place, on découvre un petit marché, une grande promenade et plusieurs restaurants. L’endroit est très familial : il est possible de louer des petits vélos, des voiturettes, des tuk-tuks à pédales…</p>
             <p>Pour le restaurant, notre choix (enfin celui de Laurie) s’est fait en fonction des poissons frais exposés sur les étals. On dînera donc au <strong>Kobe's</strong>.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0530-1024x768.jpg" alt="Baywalk Puerto Princessa" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -316,13 +347,13 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
               <h3>Direction Sabang !</h3>
             </div>
             <p>Réveil dans notre hôtel bling-bling. Pour le petit-déjeuner, un grand buffet est proposé… Œufs brouillés pour Laurie et tartines à la confiture pour Amélie (qui déteste manger salé de bon matin).</p>
-            <p>Après le p’tit dej, on profite d’un dernier moment à la piscine. Ça fait vraiment du bien, car il est seulement 10h30 et il fait déjà 30 degrés, ressenti 37 !</p>
+            <p>Après le p’tit dej, on profite d’un dernier moment à la piscine. Ça fait vraiment du bien, car il est seulement 10 h 30 et il fait déjà 30 degrés, ressenti 37 !</p>
             <p>Midi, il est temps de quitter l’hôtel et cette petite parenthèse enchantée.</p>
             <h4>⧐ Comment se rendre à Sabang ?</h4>
-            <p>On a prévu d’aller à Sabang aujourd’hui, à environ 1h30 de Puerto Princesa. Il y a plusieurs possibilités pour s’y rendre, dont le taxi (organisé par l’hôtel pour 1,500 Php / pers.) et le van privé (au même tarif).</p>
-            <p>Pour notre part, nous avons suivi la recommandation de notre futur hôte de passer par une compagnie de transport public, <strong>Bloomfiel Transport Van</strong>.</p>
-            <p>Il y a plusieurs départs dans la journée : 10h, 14h et 16h. Nous prendrons celui de 14h. Le point de RDV de la société de transport se trouvant à 10 minutes  de notre hôtel, on utilise une fois de plus l’application <strong>RIDE</strong> pour nous y rendre.</p>
-            <p>Arrivées à Bloomfield, nous avons l’agréable surprise de payer seulement 300 Php (4€80) par personne.</p>
+            <p>On a prévu d’aller à Sabang aujourd’hui, à environ 1 h 30 de Puerto Princesa. Il y a plusieurs possibilités pour s’y rendre, dont le taxi (organisé par l’hôtel pour 1,500 Php / pers.) et le van privé (au même tarif).</p>
+            <p>Pour notre part, nous avons suivi la recommandation de notre futur hôte de passer par une compagnie de transport public, <strong>Bloomfield Transport Van</strong>.</p>
+            <p>Il y a plusieurs départs dans la journée : 10 h, 14 h et 16 h. Nous prendrons celui de 14 h. Le point de RDV de la société de transport se trouvant à 10 minutes  de notre hôtel, on utilise une fois de plus l’application <strong>RIDE</strong> pour nous y rendre.</p>
+            <p>Arrivées à Bloomfield, nous avons l’agréable surprise de payer seulement 300 Php (4,80 €) par personne (le tarif tourne aujourd’hui plutôt autour de 500 à 600 Php selon la compagnie).</p>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4932-768x1024.jpg" alt="Bloomfield Transport Van Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_4930-768x1024.jpg" alt="Contact Bloomfield Transport Van Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -355,14 +386,14 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
             </div>
             <p>Affaires déballées et bien installées, on part découvrir les environs...</p>
             <p>Nous sommes à 10 bonnes minutes à pied du centre et de la plage que l’on part rejoindre. En chemin, on se rend rapidement compte qu’il y a très peu de touristes. En réalité, la plupart d'entre eux ne dorment pas à Sabang. Ils viennent juste passer la journée en excursion, puis repartent. Mais comme on aime ne pas faire comme tout le monde, on y reste 2 nuits !</p>
-            <p>Sabang est une petite ville où il n’y a pas grand-chose à voir, mais qui offre une très belle et grande plage. On ne peut pas s’empêcher de marcher les pieds dans l’eau pour découvrir un peu le littoral. On essaie de ne pas trop traîner, car ce soir, on a prévu de dîner à l’hôtel. Au menu, nouilles aux légumes et au poulet pour seulement 250 Php (4€). Un régal !</p>
+            <p>Sabang est une petite ville où il n’y a pas grand-chose à voir, mais qui offre une très belle et grande plage. On ne peut pas s’empêcher de marcher les pieds dans l’eau pour découvrir un peu le littoral. On essaie de ne pas trop traîner, car ce soir, on a prévu de dîner à l’hôtel. Au menu, nouilles aux légumes et au poulet pour seulement 250 Php (4 €). Un régal !</p>
             <p>Il est temps d’aller se coucher, demain on doit se lever tôt. Au programme, visite de la rivière souterraine, un endroit unique au monde. On a trop hâte !</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 2</span>
               <h3>La rivière souterraine de Sabang</h3>
             </div>
-            <p>Réveil à 6h30. On a rendez-vous avec notre guide pour notre excursion (réservée via notre hôtel) à 7h50 sur le quai.</p>
-            <p>Le départ est à 8h et c'est le premier de la journée. Du coup, on devrait être à peu près seules sur ce lieu incroyable… Nous sommes 8 en tout cas à embarquer sur le bateau. Direction l'Underground River !</p>
+            <p>Réveil à 6 h 30. On a rendez-vous avec notre guide pour notre excursion (réservée via notre hôtel) à 7 h 50 sur le quai.</p>
+            <p>Le départ est à 8 h et c'est le premier de la journée. Du coup, on devrait être à peu près seules sur ce lieu incroyable… Nous sommes 8 en tout cas à embarquer sur le bateau. Direction l'Underground River !</p>
             <h4>⧐ Un grand Wahooo !</h4>
             <p>On fait 15 minutes de bangka environ avant de débarquer sur une magnifique plage. De là, on récupère des casques et un audio-guide en français.</p>
             
@@ -379,7 +410,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
               <div><strong>Le conseil des MamZelles</strong><p>La route vers les points de vue de San Vicente est vraiment chaotique : gros nids de poule, beaucoup de sable, dévers... Ne faites surtout pas l’impasse sur le casque et restez très prudents !</p></div>
             </div>
             <p>La visite a duré environ 45 minutes. Bien que les avis soient mitigés sur l’Underground River, on est vraiment contentes de l’avoir fait et on vous le recommande vivement. C’est clairement impressionnant !
-Nous sommes de retour au port de Sabang vers 11h.</p>
+Nous sommes de retour au port de Sabang vers 11 h.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0781-768x1024.jpg" alt="Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0727-768x1024.jpg" alt="Underground River Sabang Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -394,7 +425,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             </div>
 <h4>⧐ De retour sur la terre ferme...</h4>
             <p>Un petit restaurant sur la plage nous fait de l’œil. On s’y installe pour boire un verre et manger. Après ça, rien de mieux pour digérer qu’une petite balade sur la plage...</p>
-            <p>On tombe sur plusieurs stands de massage. Avec les lits à l’ombre des cocotiers et face à la mer, Laurie se laisse tenter. Le cadre est idyllique. En même temps, une heure de massage intégral à l’huile essentielle pour 500 Php (8€), comment résister ?</p>
+            <p>On tombe sur plusieurs stands de massage. Avec les lits à l’ombre des cocotiers et face à la mer, Laurie se laisse tenter. Le cadre est idyllique. En même temps, une heure de massage intégral à l’huile essentielle pour 500 Php (8 €), comment résister ?</p>
             <p>Pendant ce temps, Amélie qui n’aime pas plus se faire masser que ça, part explorer la plage.</p>
             <p>Quand on se retrouve une heure plus tard, Laurie est dans un état de décontraction intense ! On décide alors de rentrer tranquillement à l’hôtel. Rincées de cette journée, on dînera et on profitera de cette dernière soirée au <strong><a href="https://maps.app.goo.gl/KRiHSQu7Mkq48Juu7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Bambua Nature Cottage</a></strong>.</p>
             <div className="article-gallery-2">
@@ -449,11 +480,11 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             <p>Après une matinée chill et de bons sandwichs avalés au poulet frit, faits avec amour par nos hôtes, on récupère nos sacs et c'est parti.</p>
             <p>Bye bye Sabang !</p>
             <h4>⧐ Comment se rendre à Port Barton ?</h4>
-            <p>Nous avons organisé notre transfert avec la même société qu’avec laquelle nous sommes arrivées, <strong>Bloomfield Transport</strong>. Le bureau se trouve non loin du port. Le van passe nous récupérer en bas de l’hôtel, sur la route principale, à 14h.</p>
+            <p>Nous avons organisé notre transfert avec la même société qu’avec laquelle nous sommes arrivées, <strong>Bloomfield Transport</strong>. Le bureau se trouve non loin du port. Le van passe nous récupérer en bas de l’hôtel, sur la route principale, à 14 h.</p>
             
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Pour rejoindre Port Barton, comptez environ 4h de route au total, avec un changement de van à Salvacion (30 à 45 min de pause). Plusieurs départs dans la journée : 8h, 9h, 10h ou 14h.</p></div>
+              <div><strong>Bon à savoir</strong><p>Pour rejoindre Port Barton, comptez environ 4 h de route au total, avec un changement de van à Salvacion (30 à 45 min de pause). Plusieurs départs dans la journée : 8 h, 9 h, 10 h ou 14 h.</p></div>
             </div>
             <p>Mais pourquoi mettre la clim' toujours aussi forte dans les transports ?! On ne vous le cache pas, on se gèle dans le van. On a fini par prendre une serviette de plage pour se couvrir. On ne le répètera jamais assez, prévoyez toujours des vêtements chauds pour les transports !</p>
             <p>Petite pause à <strong>Salvacion</strong> comme prévu pendant 35 minutes. Vous trouverez à cette intersection de quoi vous rafraîchir et vous restaurer. Il y a aussi des toilettes.</p>
@@ -463,9 +494,9 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0850-768x1024.jpg" alt="Barton Bistro Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0852-767x1024.jpg" alt="Plage Port Barton Palawan" loading="lazy" style={{flex: '0.749', minWidth: 0}} />
             </div>
-            <p>Nous arrivons à 18h à Port Barton. Nous sommes déposées à la <strong>station Bus Terminal</strong>.</p>
-            <p>On rejoint notre petit chez nous pour les 6 prochaines nuits en tuk-tuk, à l’<a href="https://maps.app.goo.gl/TRoACtdw6spzrzAMA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Aquarius Hôtel</strong></a>. Pour tout le séjour, nous payons 10,360 Php (165€). Le petit-déjeuner n'est pas inclus. En revanche, le café et l’eau filtrée sont à disposition en permanence. Cet hôtel est tenu par une mère et sa fille. Elles sont tellement gentilles, on se sent rapidement comme en famille.</p>
-            <p>Il fait déjà nuit quand nous partons en vadrouille, direction la plage. On avait repéré un petit bar restaurant, pieds dans le sable, le <a href="https://maps.app.goo.gl/pgdnTk2y7tC8fqm79?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Barton Bistro</strong></a><em>…</em> 100 Php (1,60€) la bière et 500 Php (8€) la pizza. Les prix sont un peu plus élevés qu’à Puerto Princesa, ce qui est normal puisqu’on est plus isolées ici. En tout cas, on s’est régalées. On a tellement hâte de découvrir le paysage de jour…</p>
+            <p>Nous arrivons à 18 h à Port Barton. Nous sommes déposées à la <strong>station Bus Terminal</strong>.</p>
+            <p>On rejoint notre petit chez nous pour les 6 prochaines nuits en tuk-tuk, à l’<a href="https://maps.app.goo.gl/TRoACtdw6spzrzAMA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Aquarius Hôtel</strong></a>. Pour tout le séjour, nous payons 10,360 Php (165 €). Le petit-déjeuner n'est pas inclus. En revanche, le café et l’eau filtrée sont à disposition en permanence. Cet hôtel est tenu par une mère et sa fille. Elles sont tellement gentilles, on se sent rapidement comme en famille.</p>
+            <p>Il fait déjà nuit quand nous partons en vadrouille, direction la plage. On avait repéré un petit bar restaurant, pieds dans le sable, le <a href="https://maps.app.goo.gl/pgdnTk2y7tC8fqm79?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Barton Bistro</strong></a><em>…</em> 100 Php (1,60 €) la bière et 500 Php (8 €) la pizza. Les prix sont un peu plus élevés qu’à Puerto Princesa, ce qui est normal puisqu’on est plus isolées ici. En tout cas, on s’est régalées. On a tellement hâte de découvrir le paysage de jour…</p>
             <p>En attendant, bonne nuit tout le monde !</p>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 2</span>
@@ -490,20 +521,20 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
               <h3>White Beach &amp; Coconut Beach</h3>
             </div>
             <p>Nouvelle journée à Port Barton. Aujourd’hui, nous partons à la découverte de 2 belles plages qui se trouvent à proximité du village de Port Barton.</p>
-            <p>Coconut Beach et White Beach portent bien leur nom. Quelque soit la façon que vous choisissez pour les rejoindre, ça n'est pas de tout repos. Bref, ces plages se méritent !</p>
+            <p>Coconut Beach et White Beach portent bien leur nom. Quelle que soit la façon que vous choisissez pour les rejoindre, ça n'est pas de tout repos. Bref, ces plages se méritent !</p>
             <h4>⧐ Comment se rendre aux célèbres plages de Port Barton ?</h4>
             <p>Pour rejoindre ces plages de rêve, il y a donc plusieurs solutions : par la route (davantage une piste ou un chemin de terre d’ailleurs !) en scooter et en tuk-tuk, ou par la mer, en bangka et en kayak.</p>
             <p>Apparemment en kayak, avec de bons bras et peu de vent, il ne faut que 10 minutes pour accéder à Coconut Beach depuis la plage de Port Barton. Une idée qu’on garde en tête pour une prochaine fois, d'autant que notre hôtel a un kayak et qu’il est prêté gratuitement.</p>
             
             <p>À la base, nous voulions y aller en scooter, mais un couple qu’on a rencontré la veille nous a dit que c’était quand même assez galère, voire dangereux d’y aller en 2 roues.</p>
             <p>Comme il a plu ce matin, le chemin est encore plus « casse-gueule » que d’habitude ! Vu qu’on ne veut pas mourir à Port Barton, on choisit sans hésiter l’option tuk-tuk, et on a bien fait !</p>
-            <p>On fait clairement du tuk-tuk en mode 4x4, le chemin est vraiment chaotique. On met entre 15 et 20 minutes pour rejoindre White Beach, la plage la plus éloignée. On payera 600 Php (9€60) Aller-Retour, notre chauffeur nous attendra à Coconut Beach.</p>
+            <p>On fait clairement du tuk-tuk en mode 4x4, le chemin est vraiment chaotique. On met entre 15 et 20 minutes pour rejoindre White Beach, la plage la plus éloignée. On payera 600 Php (9,60 €) Aller-Retour, notre chauffeur nous attendra à Coconut Beach.</p>
             <h4>⧐ White Beach</h4>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0972-768x1024.jpg" alt="White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0984-1024x768.jpg" alt="White Beach Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <p>Il y a un petit restaurant à l’entrée du site. Pour accéder à la plage, il faut payer un droit d’entrée de 50 Php par personne (0,80 €).</p>
+            <p>Il y a un petit restaurant à l’entrée du site. Pour accéder à la plage, il faut payer un droit d’entrée de 50 Php par personne (0,80 €).</p>
             <p>White Beach est une belle plage de sable blanc. Nous avons de la chance, il n’y a pas grand monde, juste quelques chèvres qui viennent nous rendre visite.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1175_jpg-768x1024.jpg" alt="White Beach Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -518,8 +549,8 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             </div>
             <h4>⧐ Une fin de journée comme on les aime !</h4>
             <p>De retour à l'hôtel. Au programme, petite douche rapide avant de ressortir dîner.</p>
-            <p>On avait repéré un petit restaurant qui ne paye pas de mine à première vue, mais toujours plein à craquer ! C’est le <a href="https://maps.app.goo.gl/X64quhkVZUMnF6BZA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Star Apple Canteen</strong></a>. En devanture, un étal de viandes et de poissons frais nous fait saliver. Pour 250 Php (4€), accompagnement compris (riz et salade composée), on choisit son poisson, son morceau de poulet ou de porc (ribs) qu’ils grillent directement.</p>
-            <p>Un buffet avec des plats locaux, comme du poulet curry, du poulet adobo, et bien d'autres spécialités, est aussi proposé. Comptez seulement 150 Php (2€40) en moyenne par assiette. Un vrai coup de cœur ce petit restaurant ! On le recommande fortement pour son incroyable rapport qualité-prix.</p>
+            <p>On avait repéré un petit restaurant qui ne paye pas de mine à première vue, mais toujours plein à craquer ! C’est le <a href="https://maps.app.goo.gl/X64quhkVZUMnF6BZA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Star Apple Canteen</strong></a>. En devanture, un étal de viandes et de poissons frais nous fait saliver. Pour 250 Php (4 €), accompagnement compris (riz et salade composée), on choisit son poisson, son morceau de poulet ou de porc (ribs) qu’ils grillent directement.</p>
+            <p>Un buffet avec des plats locaux, comme du poulet curry, du poulet adobo, et bien d'autres spécialités, est aussi proposé. Comptez seulement 150 Php (2,40 €) en moyenne par assiette. Un vrai coup de cœur ce petit restaurant ! On le recommande fortement pour son incroyable rapport qualité-prix.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1085-768x1024.jpg" alt="Star Apple Canteen Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1090-768x1024.jpg" alt="Star Apple Canteen Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -531,7 +562,7 @@ Nous sommes de retour au port de Sabang vers 11h.</p>
             <p>Les vacances, tout simplement ! Nous prenons le temps d'échanger avec les locaux, les Philippins sont tellement gentils et toujours disponibles !</p>
             <p>Côté organisation, nous avons réservé notre Island hopping pour le sur-lendemain, planifié notre transfert en taxi-boat vers la prochaine destination, et bouclé quelques détails pour la fin de notre séjour…</p>
             <p>Une journée tranquille mais productive.</p>
-            <p>On la termine en beauté avec un massage d'une heure face à la mer, full body, pour seulement 500 Php (8€). Que du bonheur !</p>
+            <p>On la termine en beauté avec un massage d'une heure face à la mer, full body, pour seulement 500 Php (8 €). Que du bonheur !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0963_jpg-768x1024.jpg" alt="Port Barton Beach Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_0962_jpg-1024x768.jpg" alt="Bangka Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -567,7 +598,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <span className="article-day-badge">Jour 6</span>
               <h3>Island hopping à Port Barton</h3>
             </div>
-            <p>Nous avons rendez-vous à 9h à côté du <strong><a href="https://maps.app.goo.gl/pgdnTk2y7tC8fqm79?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Barton Bistro</a></strong>. On paye 1500 Php (24€) par personne, soit 1300 Php + 200 Php d’éco-taxe. Pas de prise de tête à savoir avec qui il faut réserver, c’est le même prix partout. Pour notre excursion, nous sommes directement passées par un local que nous avons rencontré quelques jours plus tôt sur la plage.</p>
+            <p>Nous avons rendez-vous à 9 h à côté du <strong><a href="https://maps.app.goo.gl/pgdnTk2y7tC8fqm79?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Barton Bistro</a></strong>. On paye 1500 Php (24 €) par personne, soit 1300 Php + 200 Php d’éco-taxe. Pas de prise de tête à savoir avec qui il faut réserver, c’est le même prix partout. Pour notre excursion, nous sommes directement passées par un local que nous avons rencontré quelques jours plus tôt sur la plage.</p>
             <p>Here we goooo ! Nous sommes une dizaine sur le bateau. Les membres de l’équipage sont 3 et sont au taquet pour nous faire passer une belle journée.</p>
             <p>Il est prévu qu'on découvre 6 spots aujourd'hui...</p>
             <h4>⧐ Twin Reef</h4>
@@ -607,7 +638,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             <p>On a passé une merveilleuse journée, on est complètement conquises !</p>
             <p>Tout au long de cette excursion, on nous a proposé des verres de rhum arrangé. Heureusement, on a été sages, sinon on aurait pu vite finir pompettes ! L’équipage était très sympa, à nos petits soins. Il n’a pas hésité à mettre de la musique internationale sur le bateau pour ambiancer tout le monde.</p>
             <p>Les spots n’étaient pas bondés de monde. Certes, les paysages sont moins impressionnants que ceux d’El Nido ou Coron, mais ils sont tout de même canons !</p>
-            <p>Nous sommes de retour à Port Barton vers 17h, just in time pour le sunset !</p>
+            <p>Nous sommes de retour à Port Barton vers 17 h, just in time pour le sunset !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1244-768x1024.jpg" alt="Exotic Island Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1114-768x1024.jpg" alt="Bangka Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -700,8 +731,8 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             <p>C'est le cœur rempli d'émotion que nous quittons Port Barton, ainsi que toutes les personnes formidables que nous y avons rencontrées.</p>
             <p>Mais ce n'est pas un adieu définitif, car nous reviendrons dans quelques jours... Port Barton, ce n'est qu'un au revoir ! En attendant, cap sur San Vicente !</p>
             <h4>⧐ Comment se rendre à San Vicente ?</h4>
-            <p>Réveil matinal pour prendre le <strong>taxi-boat</strong> (<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8956c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{display:"inline",verticalAlign:"middle",marginRight:"3px"}}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+63 998 497 9135). Rendez-vous donné à 8h30 près du <strong><a href="https://maps.app.goo.gl/AZQ2T4UY7cYbkCFZ6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Mai Tai</a></strong>, mais, fidèle au rythme local, le taxi-boat n'arrivera qu'à 9h15. Le temps pour le capitaine de finaliser des documents administratifs avec les gardes-côtes, nous levons l'ancre vers 9h30.</p>
-            <p>Le trajet dure environ 45 minutes, pour un tarif de 400 Php (6€40) par personne. Il est aussi possible de rejoindre San Vicente en van, mais cela prend près de 2h. Par la mer, c'est donc bien plus rapide, et on trouve que le voyage en bangka est bien plus agréable qu’en van.</p>
+            <p>Réveil matinal pour prendre le <strong>taxi-boat</strong> (<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8956c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{display:"inline",verticalAlign:"middle",marginRight:"3px"}}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+63 998 497 9135). Rendez-vous donné à 8 h 30 près du <strong><a href="https://maps.app.goo.gl/AZQ2T4UY7cYbkCFZ6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Mai Tai</a></strong>, mais, fidèle au rythme local, le taxi-boat n'arrivera qu'à 9 h 15. Le temps pour le capitaine de finaliser des documents administratifs avec les gardes-côtes, nous levons l'ancre vers 9 h 30.</p>
+            <p>Le trajet dure environ 45 minutes, pour un tarif de 400 Php (6,40 €) par personne. Il est aussi possible de rejoindre San Vicente en van, mais cela prend près de 2 h. Par la mer, c'est donc bien plus rapide, et on trouve que le voyage en bangka est bien plus agréable qu’en van.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1864_jpg-768x1024.jpg" alt="Taxi-boat Port Barton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1370-768x1024.jpg" alt="Garde-côte Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -716,7 +747,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
             <p>Grâce à son nouvel aéroport, sa <strong>Long Beach</strong> et ses compétitions de surf, cette petite ville paisible commence à attirer de plus en plus de monde.</p>
             <h4>⧐ Débarquement à San Vicente !</h4>
             <p>On prend directement un tuk-tuk électrique. C’est bien la 1ère fois que nous voyons cela aux Philippines ! Nous traversons la ville… petites épiceries, marchés locaux, quincailleries, pharmacies, banques, on y trouve tout !</p>
-            <p>Direction notre hôtel à 10 minutes du centre. Notre hébergement à l’<strong><a href="https://maps.app.goo.gl/RKuR3rxcbj6DvB7v7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Acuario Beach Inn</a></strong> est une petite cabane sur la plage. Elle est parfaitement équipée avec la clim’ et l’eau chaude, on adooore ! Leurs tarifs sont très attractifs puisque nous avons seulement payé 1,320 Php (21€) par nuit, petits-déjeuners compris.</p>
+            <p>Direction notre hôtel à 10 minutes du centre. Notre hébergement à l’<strong><a href="https://maps.app.goo.gl/RKuR3rxcbj6DvB7v7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Acuario Beach Inn</a></strong> est une petite cabane sur la plage. Elle est parfaitement équipée avec la clim’ et l’eau chaude, on adooore ! Leurs tarifs sont très attractifs puisque nous avons seulement payé 1,320 Php (21 €) par nuit, petits-déjeuners compris.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1409-768x1024.jpg" alt="Port San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1415-1024x768.jpg" alt="Tuk-tuk San Vicente Port Barton" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -739,7 +770,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Pourquoi « 100 Steps » (100 pas) ? Parce qu'en réalité il y en a bien plus ! Montez tôt le matin ou en fin de journée quand il fait plus frais, et prévoyez de l'eau pour l'ascension. Le nom restera toujours un mystère en tout cas…</p></div>
             </div>
-            <p>Le chemin grimpe pas mal pour arriver au point de vue. À environ un tiers du chemin, on rejoint une petite maisonnette. On doit payer ici un droit de passage de 20 Php (0€32) par personne si on veut pouvoir continuer notre ascension.</p>
+            <p>Le chemin grimpe pas mal pour arriver au point de vue. À environ un tiers du chemin, on rejoint une petite maisonnette. On doit payer ici un droit de passage de 20 Php (0,32 €) par personne si on veut pouvoir continuer notre ascension.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1482-1024x768.jpg" alt="One hundred steps San Vicente Port Barton" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1505-768x1024.jpg" alt="Mamzelles en vadrouille San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -765,12 +796,12 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <h3>SanVic Viewpoint &amp; Bato ni Ningning</h3>
             </div>
             <p>Petit-déjeuner devant la mer, que demander de plus ? C’est vraiment un kiffe de commencer ses journées comme ça !</p>
-            <p>Programme du jour : location d’un scooter à l’hôtel pour 500 Php (8 €) la journée et direction les points de vue de San Vicente ! De ce qu'on en a vu sur Google Maps, ça a l’air plutôt pas mal...</p>
+            <p>Programme du jour : location d’un scooter à l’hôtel pour 500 Php (8 €) la journée et direction les points de vue de San Vicente ! De ce qu'on en a vu sur Google Maps, ça a l’air plutôt pas mal...</p>
             <h4>⧐ Comment s'y rendre ?</h4>
-            <p>Après avoir fait le plein pour 250 Php (4€10), il nous faut 50 minutes pour rejoindre notre 1er spot. On ne vous le cache pas, on a traversé des portions de route vraiment très mauvaises.</p>
+            <p>Après avoir fait le plein pour 250 Php (4,10 €), il nous faut 50 minutes pour rejoindre notre 1er spot. On ne vous le cache pas, on a traversé des portions de route vraiment très mauvaises.</p>
             
             <h4>⧐ SanVic Viewpoint</h4>
-            <p>Pour accéder au site, il faut débourser 25 Php (0€40) par personne. D’ici, la vue sur la <strong>Long Beach</strong>, que nous avons longée pour venir jusqu’ici, est canon !</p>
+            <p>Pour accéder au site, il faut débourser 25 Php (0,40 €) par personne. D’ici, la vue sur la <strong>Long Beach</strong>, que nous avons longée pour venir jusqu’ici, est canon !</p>
             <p>Sachez que cette plage, avec ses 14 km, est la plus longue des Philippines et la 2ème plus longue d’Asie.</p>
             <p>Tout au bout du chemin, un gros rocher est aménagé pour pouvoir monter dessus et apprécier davantage la vue.</p>
             <div className="article-gallery-2">
@@ -778,7 +809,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1649-768x1024.jpg" alt="SanVic Viewpoint San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <h4>⧐ Bato ni Ningning</h4>
-            <p>Nous reprenons le scooter pour nous rendre au 2ème point de vue. C’est à 2 minutes seulement en redescendant. Le droit d’entrée est également de 25 Php (0€40).</p>
+            <p>Nous reprenons le scooter pour nous rendre au 2ème point de vue. C’est à 2 minutes seulement en redescendant. Le droit d’entrée est également de 25 Php (0,40 €).</p>
             <p>Ici aussi, un gros rocher qu'on peut facilement escalader, trône au milieu du paysage.</p>
             <p>Ce point de vue est moins élevé que l’autre, mais se trouve exactement dans l’axe de la <strong>Long Beach</strong>. Le décor est superbe et permet de belles prises de vue !</p>
             <p>Hormis quelques groupes d'étudiants, il n'y a pas foule. C'est plutôt agréable de visiter des lieux incontournables dans ces conditions.</p>
@@ -794,7 +825,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1684-768x1024.jpg" alt="The Turtle Beach &amp; Restaurant San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>On est trop bien. On profite de ce petit coin de paradis jusqu’en fin d’après-midi. Au vu de l’état de la route, on fait en sorte de rentrer avant la nuit, c’est bien plus prudent.</p>
-            <p>Retour à l’hôtel vers 18h, le soleil est quasi-couché. Ici, toutes les soirées se ressemblent mais sont uniques à la fois !</p>
+            <p>Retour à l’hôtel vers 18 h, le soleil est quasi-couché. Ici, toutes les soirées se ressemblent mais sont uniques à la fois !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1712-768x1024.jpg" alt="Sunset coconuts San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2781-768x1024.jpg" alt="Sunset San Vicente Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -820,7 +851,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
               <h3>Suite...</h3>
             </div>
             <p>Ce matin, sur la plage de l’hôtel, avec les enfants du quartier, c’est fabrication de balles de jonglage et construction de châteaux de sable. Une matinée simple et pleine de sourires.</p>
-            <p>À 12h15, départ en scooter, et comme prévu la veille, direction le<strong> <a href="https://maps.app.goo.gl/jzsoVqWrkhpspYEh6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Club Agutaya</a></strong>. À peine entrées, c’est un gros Wahoo ! Cet hôtel est juste incroyable !</p>
+            <p>À 12 h 15, départ en scooter, et comme prévu la veille, direction le<strong> <a href="https://maps.app.goo.gl/jzsoVqWrkhpspYEh6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Club Agutaya</a></strong>. À peine entrées, c’est un gros Wahoo ! Cet hôtel est juste incroyable !</p>
             <p>Bien qu'une partie de l'établissement reste privatisée, on peut quand même accéder au restaurant de la plage.</p>
             <p>En fait, c'est ici que loge l'équipe de production pour le <em>Survivor</em> Suédois. C’est aussi l’endroit où séjournent les candidats éliminés ainsi que le jury final. Forcément, certains espaces (dont la piscine, snif !) sont interdits d’accès pour un souci de confidentialité.</p>
             <div className="article-gallery-2">
@@ -850,9 +881,9 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
 On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'hôtel.</p>
             <h4>⧐ Au revoir San Vicente !</h4>
             <p>De retour sur la terre ferme et après une douche rapide, on boucle nos bagages. Bye bye l’<strong><a href="https://maps.app.goo.gl/RKuR3rxcbj6DvB7v7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Acuario Beach Inn</a></strong> ! On a un petit pincement au cœur en partant… On y était tellement bien !</p>
-            <p>Direction le <a href="https://maps.app.goo.gl/3xatKqm6574fHRjo6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mango Bar</strong></a> au port de San Vicente pour déjeuner. Au menu, un crabe fraîchement pêché pour Laurie (390 Php, soit 6€40) et un demi-poulet frit pour Amélie (260 Php, soit 4€25).</p>
+            <p>Direction le <a href="https://maps.app.goo.gl/3xatKqm6574fHRjo6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Mango Bar</strong></a> au port de San Vicente pour déjeuner. Au menu, un crabe fraîchement pêché pour Laurie (390 Php, soit 6,40 €) et un demi-poulet frit pour Amélie (260 Php, soit 4,25 €).</p>
             <p>Après une lutte acharnée avec le crabe et quelques fous rires (il fallait la voir dépiauter la bête !), nous nous dirigeons vers le quai d’embarquement.</p>
-            <p>Le départ de notre taxi-boat est prévu à 15h30, et il est à l’heure ! La traversée se passe sans encombre. On a hâte de retrouver Port Barton !</p>
+            <p>Le départ de notre taxi-boat est prévu à 15 h 30, et il est à l’heure ! La traversée se passe sans encombre. On a hâte de retrouver Port Barton !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1552_jpg-768x1024.jpg" alt="Surf San Vicente Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1533-768x1024.jpg" alt="San Vicente Port Barton Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -906,7 +937,7 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
               <h3>Port Barton, on est lààààà !</h3>
             </div>
             <p>Pour notre nouveau séjour, nous allons cette fois-ci à <strong><a href="https://maps.app.goo.gl/uxPXBHPsYYbwqxSX8?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Ausan Beach</a></strong>. L’hôtel est sur la plage. Et ça tombe bien, le taxi-boat nous débarque juste devant ! En réalité, on serait bien retournées à l’<strong><a href="https://maps.app.goo.gl/TRoACtdw6spzrzAMA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Acuarius</a></strong>, mais il était complet à cette période.
-Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’hôtels aux Philippines), nous avons payé 10,320 Php (170€) pour 5 nuits, petits-déjeuners compris.</p>
+Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’hôtels aux Philippines), nous avons payé 10,320 Php (170 €) pour 5 nuits, petits-déjeuners compris.</p>
             <p>Nous nous installons dans notre joli cottage et partons au <strong><a href="https://maps.app.goo.gl/AZQ2T4UY7cYbkCFZ6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Mai Tai</a></strong>, pour l'apéro sunset.</p>
             <p>On dînera ensuite au <a href="https://maps.app.goo.gl/X64quhkVZUMnF6BZA?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Star Apple Canteen</strong></a>. C’est qu’on commence à avoir nos petites habitudes ici ! Bref, une fin de journée comme on les aime.</p>
             <div className="article-gallery-2">
@@ -920,7 +951,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             <h4>⧐ Nuit bruyante, réveil difficile...</h4>
             <p>À <strong><a href="https://maps.app.goo.gl/9YR6fbcEzVTnRTqV7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Ausan Beach</a></strong>, nous avions réservé un petit cottage, mais pas de bol, nous sommes tombées sur celui situé juste à côté de la cuisine et face au restaurant. Clairement, à cause du bruit incessant, la nuit n'a pas été de tout repos ! Chose qu’on fait vraiment rarement (voire jamais), on s’est permises d’en parler avec les réceptionnistes, qui se sont montrées, pour le coup, très compréhensives. Comme l’hôtel est plein, nous n’avons le choix que de passer encore 2 nuits dans notre cottage avant de pouvoir changer de chambre.</p>
             <p>Pour les 2 dernières nuits, nous serons dans le bâtiment au 1er étage, vue sur la mer ! Mais surtout, on sera au calme. Du coup, notre petit conseil si vous réservez dans cet hôtel, évitez les cottages.</p>
-            <p>À part ça, le petit-déjeuner, inclus dans le prix de la chambre, est varié et délicieux. C'est d’ailleurs ici qu’on a mangé les meilleurs banana pancakes ! Le restaurant de l'hôtel propose également, à tout moment de la journée, des plats copieux, super bons, et peu onéreux (comptez en moyenne 250 Php / 4€10).</p>
+            <p>À part ça, le petit-déjeuner, inclus dans le prix de la chambre, est varié et délicieux. C'est d’ailleurs ici qu’on a mangé les meilleurs banana pancakes ! Le restaurant de l'hôtel propose également, à tout moment de la journée, des plats copieux, super bons, et peu onéreux (comptez en moyenne 250 Php / 4,10 €).</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_3799-768x1024.jpg" alt="Ice-cream Port Barton San Vicente" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2068-768x1024.jpg" alt="Fisherman Port Barton" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -929,7 +960,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             <p>Pour le déjeuner, direction le <strong><a href="https://maps.app.goo.gl/WEi3ETWc6DpPqGPD7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Mojito Bar</a></strong> qui se trouve à une quinzaine de minutes à pied de la plage de Port Barton. Ambiance jardin tropical, l’endroit est agréable et apaisant. Leurs mini-burgers sont incroyables, et les mojitos excellents !</p>
             <h4>⧐ Manucure à Port Barton</h4>
             <p>En redescendant vers le centre de Port Barton par la route principale (celle du terminal des bus), nous passons devant un salon de manucure. Ça fait quelques jours que Laurie me fatigue avec ses ongles qu’elle aimerait refaire faire. Il pleut, alors ça peut être enfin le bon moment ! Un rapide coup d’œil sur les avis Google… il y a de très bons commentaires, let’s go !</p>
-            <p>Le salon s’appelle <strong><a href="https://maps.app.goo.gl/1UAkBxTJP63PJ9gW9?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Hynails services</a></strong>. La nana est très appliquée et les produits sont de bonne qualité. Le tarif est de 500 Php (8€) pour une pose de vernis semi-permanent. C’est franchement très correct ! Bref, vous pouvez y aller les yeux fermés.</p>
+            <p>Le salon s’appelle <strong><a href="https://maps.app.goo.gl/1UAkBxTJP63PJ9gW9?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Hynails services</a></strong>. La nana est très appliquée et les produits sont de bonne qualité. Le tarif est de 500 Php (8 €) pour une pose de vernis semi-permanent. C’est franchement très correct ! Bref, vous pouvez y aller les yeux fermés.</p>
             <h4>⧐ On se fait tatouer !</h4>
             <p>La journée est déjà presque terminée, mais on a encore un petit truc à faire… Nous avons rendez-vous au <strong><a href="https://maps.app.goo.gl/Cc4n3fVZRPuAJGd17?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Rebel Art Tattoo Kollectiv</a></strong>. Et oui, impossible de résister à l’idée de se faire tatouer en souvenir de ce merveilleux voyage !</p>
             <p>Le salon est très propre, l’ambiance très sympa et les tatoueurs très pros. Pendant que nous nous faisions tatouer, on a même eu droit à un petit concert privé de Skinny, le super assistant qui fait tout pour nous mettre à l’aise.</p>
@@ -944,7 +975,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
               <span className="article-day-badge">Jour 3</span>
               <h3>Un avant-goût de Noël</h3>
             </div>
-            <p>Ce midi, nous allons déjeuner au <a href="https://maps.app.goo.gl/MTfbYLtwxz3jRxzu5?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Jungle Bar</strong></a>. Pour le rejoindre, il faut compter 30 minutes de tuk-tuk sur une route bien chaotique. Il faut en fait emprunter la même route que pour aller à White Beach. Il y a des panneaux en chemin pour indiquer l’endroit… Si vous voyez « Don’t worry, beer happy », c’est par là ! Pour info, prévoir entre 500 et 600 Php (entre 8 et 10€) pour le trajet Aller-Retour.</p>
+            <p>Ce midi, nous allons déjeuner au <a href="https://maps.app.goo.gl/MTfbYLtwxz3jRxzu5?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Jungle Bar</strong></a>. Pour le rejoindre, il faut compter 30 minutes de tuk-tuk sur une route bien chaotique. Il faut en fait emprunter la même route que pour aller à White Beach. Il y a des panneaux en chemin pour indiquer l’endroit… Si vous voyez « Don’t worry, beer happy », c’est par là ! Pour info, prévoir entre 500 et 600 Php (entre 8 et 10 €) pour le trajet Aller-Retour.</p>
             <p>Le <a href="https://maps.app.goo.gl/MTfbYLtwxz3jRxzu5?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Jungle Bar</strong></a> est tenu par Sandrine, une Française expatriée depuis une dizaine d'années. On y découvre de jolis cottages avec une vue imprenable sur la baie. Le lieu est calme, idéal pour se reposer et profiter de la nature.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_1951-1024x768.jpg" alt="Sunset Port Borton San Vicente" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -958,7 +989,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
               <span className="article-day-badge">Jour 4</span>
               <h3>On s'offre un Island hopping privé !</h3>
             </div>
-            <p>Aujourd’hui, on a décidé de se faire plaisir ! On part en bateau privé à la journée pour 6,000 Php. Le prix est fixe, du coup, plus on est nombreux, moins cela revient cher.</p>
+            <p>Aujourd’hui, on a décidé de se faire plaisir ! On part en bateau privé à la journée pour 6,000 Php. Le prix est fixe, du coup, plus on est nombreux, moins cela revient cher.</p>
             <p>L'avantage du tour privé, c'est qu'on choisit notre itinéraire…</p>
             <h4>⧐ Palawan Camping</h4>
             <p>Alors c’est parti pour notre première destination, et on a choisi <a href="https://maps.app.goo.gl/uhHzRkevYvEL39Te8?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Palawan Camping</strong></a>. Vous vous en souvenez ? C’est le petit paradis que nous avions découvert lors d'une halte en taxi-boat en direction de San Vicente !</p>
@@ -997,7 +1028,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             <p>C'est depuis Roxas que nous embarquerons pour la dernière grande destination de ce voyage...</p>
             <p>Quitter Port Barton n'a pas été facile, mais on sait que l'endroit qui nous attend saura vite nous faire oublier ce petit pincement au cœur.</p>
             <h4>⧐ Comment se rendre à Roxas ?</h4>
-            <p>Roxas est la plus grande ville proche de Port Barton. Cette municipalité est située sur la côte Est de Palawan. Il faut compter 45 minutes en tuk-tuk pour s'y rendre. Comptez environ 1,000 Php (16 €) pour le trajet.</p>
+            <p>Roxas est la plus grande ville proche de Port Barton. Cette municipalité est située sur la côte Est de Palawan. Il faut compter 45 minutes en tuk-tuk pour s'y rendre. Comptez environ 1,000 Php (16 €) pour le trajet.</p>
             <p>Il est également possible de faire le transfert en van, mais cette option est plus onéreuse. Au-delà du tarif, on trouve que c’est bien plus sympa de pouvoir admirer les paysages en tuk-tuk !</p>
             <h4>⧐ Fin de soirée festive à Roxas</h4>
             <p>Nous arrivons à Roxas en début de soirée. Nous avons réservé une chambre au <strong><a href="https://maps.app.goo.gl/A9Fu7fADx2yLKR9z6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Peria Seafront</a></strong>. L’ambiance est exceptionnellement particulière car ils préparent et décorent leur hall pour une réception de mariage prévue le lendemain. L’hôtel dispose d’un ponton, ce qui ajoute un charme à cet endroit.</p>
@@ -1013,7 +1044,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             <p>Juste à côté a lieu une fête foraine avec des stands de jeux et des manèges. Tout d’un coup, la foule se presse pour se rassembler sur la place principale. Très curieuses, on les suit. On comprend rapidement que tout le monde attend avec impatience l'illumination du sapin de Noël !</p>
             <p>On profite de l'ambiance chaleureuse pour grignoter quelques spécialités dans les stands de nourriture. On adore !</p>
             <p>Après ce moment en immersion, on ne traîne pas et on retourne à l'hôtel pour une bonne nuit de sommeil.</p>
-            <p>Demain, on a rendez-vous entre 10h et 11h30, à quelques minutes à pied de là, pour embarquer sur un bateau… On l'a tellement attendu ce moment !</p>
+            <p>Demain, on a rendez-vous entre 10 h et 11 h 30, à quelques minutes à pied de là, pour embarquer sur un bateau… On l'a tellement attendu ce moment !</p>
           </section>
 
           <section id="modessa" className="article-section">
@@ -1022,7 +1053,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             </div>
             <p>Réveil matinal, on est tellement excitées ! Direction le point de rendez-vous.</p>
             <p>Il est quasiment midi quand on embarque sur une petite bangka, qui nous conduit à une autre bien plus grande. Du coup, en pleine mer, changement de bateau en mode Filipino style !</p>
-            <p>Après 1h de traversée, on arrive sur une petite île privée, et quand on dit petite, on ne mâche pas nos mots…</p>
+            <p>Après 1 h de traversée, on arrive sur une petite île privée, et quand on dit petite, on ne mâche pas nos mots…</p>
             <p>Bienvenue à Modessa Island !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2183_jpg-768x1024.jpg" alt="Bangka Modessa Island Roxas" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -1048,7 +1079,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Sur Modessa Island, l’électricité ne fonctionne que de 18h à 7h : pensez à charger téléphones, appareils photo et batteries externes pendant la nuit. Le Wi-Fi et le réseau cellulaire sont également limités — parfait pour profiter pleinement de l’expérience insulaire !</p></div>
+              <div><strong>Bon à savoir</strong><p>Sur Modessa Island, l’électricité ne fonctionne que de 18 h à 7 h : pensez à charger téléphones, appareils photo et batteries externes pendant la nuit. Le Wi-Fi et le réseau cellulaire sont également limités — parfait pour profiter pleinement de l’expérience insulaire !</p></div>
             </div>
             <p>Pour la petite anecdote, sachez que s’il y a beaucoup de vent ou que le ciel est très couvert, il n’y a tout simplement pas de réseau dans de nombreux endroits du pays ! Les Philippins nous l’ont souvent répété, et ça s’est avéré chaque fois.</p>
             <div className="article-day-header article-day-header-tight">
@@ -1087,7 +1118,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
               <h3>Comment se rendre à Modessa Island ?</h3>
             </div>
             <p>Si vous souhaitez venir dans ce paradis perdu, vous pouvez contacter directement MARCO (<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8956c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{display:"inline",verticalAlign:"middle",marginRight:"3px"}}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+63 912 045 9971), le responsable de l’île, qui se fera un plaisir de vous organiser cette expérience unique !</p>
-            <p>Pour ce séjour de 2 nuits, nous avons payé 5,500 Php (90 €) par personne. Les transferts en bateau Roxas &lt;-&gt; Modessa, ainsi que tous les repas, sont compris.</p>
+            <p>Pour ce séjour de 2 nuits, nous avons payé 5,500 Php (90 €) par personne. Les transferts en bateau Roxas &lt;-&gt; Modessa, ainsi que tous les repas, sont compris.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2236-1-1024x768.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2255-768x1024.jpg" alt="Modessa Island Palawan" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -1104,25 +1135,25 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
             <div className="article-day-header">
               <h2>📍 Bye bye Palawan. Ce n'est qu'un au revoir...</h2>
             </div>
-            <p>Après un bon dernier petit-déjeuner, il est temps de quitter ce petit paradis perdu. Retour à Roxas en bangka et direction la <strong>terminal station</strong> en tuk-tuk pour prendre un van public.</p>
+            <p>Après un bon dernier petit-déjeuner, il est temps de quitter ce petit paradis perdu. Retour à Roxas en bangka et direction le terminal de bus en tuk-tuk pour prendre un van public.</p>
             <p>Ce matin, on a le cœur lourd… On sent particulièrement arriver la fin de notre voyage.</p>
             <div className="article-day-header article-day-header-tight">
               <h3>Direction Puerto Princesa en van</h3>
             </div>
-            <p>Pas besoin de booker à l’avance le van, il y en a toutes les 45 minutes environ. Par contre, il ne vaut mieux pas avoir un timing serré pour le trajet... Normalement, il faut compter 2h de route pour aller de Roxas à Puerto Princesa, nous avons mis un peu plus de 3h !</p>
+            <p>Pas besoin de booker à l’avance le van, il y en a toutes les 45 minutes environ. Par contre, il ne vaut mieux pas avoir un timing serré pour le trajet... Normalement, il faut compter 2 h de route pour aller de Roxas à Puerto Princesa, nous avons mis un peu plus de 3 h !</p>
             <p>Il y avait en fait une cargaison de poissons en provenance d’El Nido dans des glacières stockées sur le toit du van, et nous avons dû faire une multitude d’arrêts pour la livrer.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2454-768x1024.jpg" alt="Tuk-tuk Roxas" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/03/IMG_2458_jpg-1024x768.jpg" alt="Van Roxas Puerto" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Vu l’heure tardive à laquelle nous arrivons, le chauffeur nous dépose directement à l’hôtel. Pour notre dernière nuit sur Palawan, nous dormons au <strong><a href="https://maps.app.goo.gl/pYTCXj8cjJDEZRdm7?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Mariner’s Pension House</a></strong>.</p>
-            <p>Il se situe plus ou moins dans le même quartier que le <strong><a href="https://maps.app.goo.gl/fgYS5rtgfwrui66U6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Puerto Pension Inn</a></strong>. Le petit truc en plus, c’est la piscine. Nous avons payé 1,720 Php (28 €) pour la nuit, petit-déjeuner compris.</p>
+            <p>Il se situe plus ou moins dans le même quartier que le <strong><a href="https://maps.app.goo.gl/fgYS5rtgfwrui66U6?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Puerto Pension Inn</a></strong>. Le petit truc en plus, c’est la piscine. Nous avons payé 1,720 Php (28 €) pour la nuit, petit-déjeuner compris.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1100-1-768x1024.jpg" alt="Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1102-1-768x1024.jpg" alt="Market Baywalk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Pour cette dernière soirée, on n’a pas pu s’empêcher de retourner sur la <strong>Baywalk</strong> et plus précisément d’aller manger au <strong>Kobe's</strong>. On avait déjà testé ce petit resto lors de notre 1er passage à Puerto Princesa, en début de séjour, et on avait bien mangé ! Sans aucun doute, ce sera un poisson grillé pour Laurie et un Beef Tagalog pour Amélie.</p>
-            <p>Après un repas très copieux, histoire de digérer un peu, on fait un petit tour au marché. On en profite pour acheter quelques souvenirs avant de se remettre en chemin, direction l’hôtel. Demain matin, on pourra prendre le temps, notre avion pour Manille décolle seulement à 13h30.</p>
+            <p>Après un repas très copieux, histoire de digérer un peu, on fait un petit tour au marché. On en profite pour acheter quelques souvenirs avant de se remettre en chemin, direction l’hôtel. Demain matin, on pourra prendre le temps, notre avion pour Manille décolle seulement à 13 h 30.</p>
             <div className="article-day-header article-day-header-tight">
               <h3>En route pour Manille</h3>
             </div>
@@ -1132,9 +1163,9 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/IMG_1098-768x1024.jpg" alt="Swimming pool Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2025/08/Tuk-tuk-Puerto-Princesa-768x1024.jpg" alt="Tuk-tuk Puerto Princesa" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Nous arrivons à Manille pour la dernière nuit de notre séjour. Une toute petite nuit, car demain, nous devons être à l’aéroport à 3h30 ! Nous avons réservé à l'<strong><a href="https://maps.app.goo.gl/atQGdGUGWigJJWE1A?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Achievers Airport Hotel</a></strong> (le même qu’à l’aller). Ce qui est top avec cet hôtel, c’est que les transferts sont inclus dans le tarif.</p>
+            <p>Nous arrivons à Manille pour la dernière nuit de notre séjour. Une toute petite nuit, car demain, nous devons être à l’aéroport à 3 h 30 ! Nous avons réservé à l'<strong><a href="https://maps.app.goo.gl/atQGdGUGWigJJWE1A?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Achievers Airport Hotel</a></strong> (le même qu’à l’aller). Ce qui est top avec cet hôtel, c’est que les transferts sont inclus dans le tarif.</p>
             <p>Le van nous récupère donc au terminal, au niveau des arrivées. On est KO, alors on se la joue tranquille pour cette fin de journée.</p>
-            <p>On trie nos affaires, ressortons nos vêtements d’hiver… Pour faire au plus rapide, on dîne au restaurant de l’hôtel. Les plats sont très bons, et niveau prix, c’est très correct. Le responsable en profite pour nous demander ce que nous voulons comme petit-déjeuner pour nous le préparer à emporter demain matin. Il y a une multitude de choix. Pour nous, ça sera gaufres et pancakes, simple et efficace. Repas avalé, on part se coucher. Le réveil sonne à 2h, aïe aïe aïe !</p>
+            <p>On trie nos affaires, ressortons nos vêtements d’hiver… Pour faire au plus rapide, on dîne au restaurant de l’hôtel. Les plats sont très bons, et niveau prix, c’est très correct. Le responsable en profite pour nous demander ce que nous voulons comme petit-déjeuner pour nous le préparer à emporter demain matin. Il y a une multitude de choix. Pour nous, ça sera gaufres et pancakes, simple et efficace. Repas avalé, on part se coucher. Le réveil sonne à 2 h, aïe aïe aïe !</p>
             <div className="article-day-header article-day-header-tight">
               <h3>Palawan, tu nous manques déjà !</h3>
             </div>
