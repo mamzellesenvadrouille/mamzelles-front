@@ -7,11 +7,11 @@ import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
-  title: "Itinéraire Philippines 3 semaines : la perle de l'Orient",
+  title: "Voyage aux Philippines : itinéraire de 3 semaines",
   description: "Explorez notre itinéraire de 3 semaines aux Philippines, entre îles de rêve & spots incontournables, pour organiser votre voyage au paradis !",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient' },
   openGraph: {
-    title: "Itinéraire Philippines 3 semaines : découvrir la perle de l'Orient",
+    title: "Voyage aux Philippines : itinéraire de 3 semaines",
     description: 'Notre itinéraire détaillé de 3 semaines aux Philippines : Palawan, Banaue, Bohol, Siquijor, Siargao...',
     url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
     siteName: 'MamZelles en vadrouille',
@@ -24,8 +24,39 @@ export const metadata: Metadata = {
 };
 
 export default function PhilippinesPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: "Voyage aux Philippines : itinéraire de 3 semaines",
+    description: "Explorez notre itinéraire de 3 semaines aux Philippines, entre îles de rêve & spots incontournables, pour organiser votre voyage au paradis !",
+    image: 'https://mamzellesenvadrouille.com/Philippines.webp',
+    datePublished: '2024-09-01',
+    dateModified: '2026-06-21',
+    author: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      url: 'https://mamzellesenvadrouille.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://mamzellesenvadrouille.com/icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+    },
+  };
+
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
     <div style={{ width: '100%', overflowX: 'hidden' }}>
 
       {/* HERO */}
