@@ -322,7 +322,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1516-768x1024.jpg" alt="Rice Terrace Hapao Batad" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
             <h4>⧐ Les Hot springs d&apos;Hapao</h4>
-            <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !</p>
+            <p>Direction maintenant les <strong>Hot springs qui se trouvent derrière le village. La rivière à 15 degrés</strong> d&apos;un côté, et de l&apos;autre, <strong>un bassin naturel avec une eau à 35 degrés…</strong> Vous avez le choix ! Il y a pas mal de jeunes Philippins sur place. Ils s&apos;amusent à passer du bassin chaud à la rivière… Choc thermique garanti !</p>
             
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
@@ -484,9 +484,9 @@ export default function PhilippinesPage() {
               <h2>📍 Siquijor — L&apos;île mystique aux magnifiques cascades</h2>
             </div>
             <h4>⧐ Siquijor, « The Magic Island »</h4>
-            <p>Siquijor est une île faisant partie de la <strong>région des Visayas centrales.</strong> Mais savez-vous pourquoi les philippins ne se rendent pas à Siquijor ? À cause des sorcières !</p>
+            <p>Siquijor est une île faisant partie de la <strong>région des Visayas centrales.</strong> Mais savez-vous pourquoi les Philippins ne se rendent pas à Siquijor ? À cause des sorcières !</p>
             <p>Au programme, de belles plages, une multitude de cascades, mais surtout une atmosphère vraiment spéciale. Siquijor est un endroit où l&apos;on se sent bien. C&apos;est une île qui est encore bien préservée du tourisme. <strong>Elle est aussi très peu visitée par les locaux.</strong></p>
-            <p>Siquijor est aussi appelée <strong>« The Magic Island ». Cela vient du fait qu&apos;il y a depuis toujours de fortes croyances sur l&apos;existence de sorcières sur l&apos;île. </strong>Pour les habitants de Siquijor, leur présence ne fait aucun doute. Pour le reste des philippins, cette croyance leur fait suffisamment peur pour éviter de passer leurs vacances sur cette île.</p>
+            <p>Siquijor est aussi appelée <strong>« The Magic Island ». Cela vient du fait qu&apos;il y a depuis toujours de fortes croyances sur l&apos;existence de sorcières sur l&apos;île. </strong>Pour les habitants de Siquijor, leur présence ne fait aucun doute. Pour le reste des Philippins, cette croyance leur fait suffisamment peur pour éviter de passer leurs vacances sur cette île.</p>
             <p>Selon les habitants de l&apos;île, les sorcières vivent parmi eux. Des locaux qu&apos;on a rencontré nous ont confié que certains peuvent les voir, d&apos;autres non, et qu&apos;il y a des gentilles sorcières, d&apos;autres maléfiques.</p>
             <p>Sur l&apos;île, il y a également <strong>beaucoup de guérisseurs qui pratiquent des rites vaudou,</strong> notamment pour guérir les habitants d&apos;une maladie ou malédiction. Une fois par an, <strong>en mars généralement, ils organisent le Healing Festival</strong> où ils proposent leurs services de guérison.</p>
             <div className="article-day-header">
@@ -566,9 +566,9 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2113-768x1024.jpg" alt="Cambugahay Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2110-768x1024.jpg" alt="Cambugahay Falls Siquijor" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-            <p><strong>Au 2ème palier, on découvre un bassin</strong> géré par des philippins, où se trouvent un radeau et des cordes pour se jeter à l&apos;eau.</p>
+            <p><strong>Au 2ème palier, on découvre un bassin</strong> géré par des Philippins, où se trouvent un radeau et des cordes pour se jeter à l&apos;eau.</p>
             <p><strong>C&apos;est en fait une séance photos touristique,</strong> et c&apos;est tout un programme ! On nous fait monter sur le radeau, qui est en réalité attaché à l&apos;avant et à l&apos;arrière par des cordes. Le radeau est tiré par une personne jusqu&apos;à la cascade. Pendant ce temps, on nous mitraille de photos et de vidéos faites avec notre téléphone qu&apos;on a confié avant de monter sur le radeau.</p>
-            <p>On découvre par la même occasion <strong>l&apos;effet drone, une spécialité ici !</strong> Les philippins adorent faire ça. Ils ont une manière de filmer bien à eux. Ils courent, tournent, se baissent, sautent… Et c&apos;est vrai que le résultat est plutôt pas mal !</p>
+            <p>On découvre par la même occasion <strong>l&apos;effet drone, une spécialité ici !</strong> Les Philippins adorent faire ça. Ils ont une manière de filmer bien à eux. Ils courent, tournent, se baissent, sautent… Et c&apos;est vrai que le résultat est plutôt pas mal !</p>
             <p>Après avoir bien profité de l&apos;endroit, il faut maintenant remonter l&apos;escalier. Arrivées en haut, des vendeurs de bouteilles d&apos;eau fraîche nous attendent. Ça tombe à pic, on était desséchées après cette remontada !</p>
             <h4>⧐ Salagdoong Beach</h4>
             <p>Notre avant dernier spot de la journée est Salagdoong Beach. Une jolie petite plage, une mer magnifique mais <strong>la baignade y est interdite.</strong> On n&apos;a pas vraiment compris pourquoi à vrai dire. Apparemment, pour cause de réhabilitation de la plage, mais pour autant, pas de travaux en vue.</p>
@@ -633,7 +633,7 @@ export default function PhilippinesPage() {
               <span className="article-day-badge">Jour 1</span>
               <h3>Arrivée sous la pluie sur l&apos;île aux cocotiers</h3>
             </div>
-            <p><strong>En arrivant de Cebu, nous avions seulement 1 h de vol. Si vous arrivez de manille, il y a un peu plus de 2 h de vol.  </strong></p>
+            <p><strong>En arrivant de Cebu, nous avions seulement 1 h de vol. Si vous arrivez de Manille, il y a un peu plus de 2 h de vol.  </strong></p>
             <p>Il est 8 h 30 environ quand nous atterrissons à Siargao. Bien que le temps soit couvert, vue du ciel, la première aperçue de l&apos;île est incroyable avec ses cocotiers à perte de vue.</p>
             <p>On arrive dans un tout petit aéroport à peine plus grand que notre appartement. Nous attendons nos sacs devant le seul et unique tapis. <strong>En sortant de l&apos;aéroport, nous devons régler la taxe de l&apos;île,</strong> soit <strong>20 Php (0,32 €)</strong> par personne et par passage (à l&apos;arrivée et au départ).</p>
             <p>Nous n&apos;avions pas organisé notre trajet jusqu&apos;à l&apos;hôtel car on nous avait informées qu&apos;il y avait plusieurs possibilités une fois sur place (bus, taxi, van touristique…).</p>
@@ -643,7 +643,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2519-1-1024x768.jpg" alt="Siargao City" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Nous arrivons à l&apos;hôtel, le <strong><a href="https://www.google.com/maps/place/?q=place_id:ChIJQdnOz-MJBDMRTXqTy15LTIA" target="_blank" className="article-link article-resto-link-desktop">Siargao Beach Inn</a><a href="https://maps.app.goo.gl/wA6WhcgUW8ThN21X7" target="_blank" className="article-link article-resto-link-mobile">Siargao Beach Inn</a></strong> situé sur la route principale de Général Luna. <strong>Son emplacement sur la plage est vraiment top</strong> et notre chambre à l&apos;étage d&apos;un bungalow offre une vue incroyable sur l&apos;océan.</p>
-            <p>Il est 10 h du matin, nos bagages sont posés et on a qu&apos;une envie, aller découvrir cette île. Malheureusement, le temps n&apos;est pas avec nous. II pleut toujours. En même temps on le savait, ce n&apos;est pas la meilleure période pour venir visiter Siargao. Mais tant pis pour la météo, il nous en faut plus pour nous empêcher d&apos;aller vadrouiller. Nous partons de l&apos;hôtel à pied, histoire d&apos;explorer un peu les alentours.</p>
+            <p>Il est 10 h du matin, nos bagages sont posés et on a qu&apos;une envie, aller découvrir cette île. Malheureusement, le temps n&apos;est pas avec nous. Il pleut toujours. En même temps on le savait, ce n&apos;est pas la meilleure période pour venir visiter Siargao. Mais tant pis pour la météo, il nous en faut plus pour nous empêcher d&apos;aller vadrouiller. Nous partons de l&apos;hôtel à pied, histoire d&apos;explorer un peu les alentours.</p>
             <p><strong>Les stigmates du super-typhon survenu en 2021 sont encore bien présents. </strong>En effet, en décembre 2021, des vents de 195 km/h et des rafales atteignant les 270 km/h se sont abattus sur l&apos;île de Siargao, faisant s&apos;envoler les toits des maisons et bâtiments, arrachant des poteaux électriques, déracinant des arbres et privant des villes entières d&apos;électricité.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_2380-768x1024.jpg" alt="Siargao Beach Inn" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -693,7 +693,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/10/IMG_9644-1024x768.jpg" alt="Harana Surf Resort Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>En effet, à partir de 22 h, les tables sont mises de côté pour ne laisser place qu&apos;à celle du DJ.</p>
-            <p>Les gens arrivent par dizaines, des groupes d&apos;amis, des touristes, des philippins, des surfeurs... Tous viennent faire la fête et passer un bon moment. C&apos;est vraiment ce soir que nous nous rendons compte que Siargao n&apos;est pas seulement l&apos;île des surfeurs, mais aussi l&apos;île des fêtards.</p>
+            <p>Les gens arrivent par dizaines, des groupes d&apos;amis, des touristes, des Philippins, des surfeurs... Tous viennent faire la fête et passer un bon moment. C&apos;est vraiment ce soir que nous nous rendons compte que Siargao n&apos;est pas seulement l&apos;île des surfeurs, mais aussi l&apos;île des fêtards.</p>
             <p>Après cette belle soirée, retour à l&apos;hôtel. On va croiser les doigts pour la météo du lendemain et faire la danse du soleil !</p>
             <div className="article-day-header">
               <span className="article-day-badge">Jour 3</span>
@@ -735,7 +735,7 @@ export default function PhilippinesPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/IMG_1594-1024x768.jpg" alt="Daku Island Siargao" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Le paysage est magnifique. <strong>Encore une île paradisiaque !</strong> La longue étendue de sable blanc poudreux et les coconuts qui se balancent forment un décor idyllique de carte postale pour ceux qui veulent se détendre.</p>
-            <p>Dans les cabanes autour de nous, un groupe de touristes et une famille de philippins sont installés. Une dame vient nous demander ce que l&apos;on souhaite manger. Pour <strong>600 Php (9,66 €)</strong> pour deux, on nous servira un 1/2 poulet pané (fraîchement tué), accompagné de riz et d&apos;une sauce aux notes sucrées. L&apos;un des meilleurs poulets de notre vie, simple mais tellement bon !</p>
+            <p>Dans les cabanes autour de nous, un groupe de touristes et une famille de Philippins sont installés. Une dame vient nous demander ce que l&apos;on souhaite manger. Pour <strong>600 Php (9,66 €)</strong> pour deux, on nous servira un 1/2 poulet pané (fraîchement tué), accompagné de riz et d&apos;une sauce aux notes sucrées. L&apos;un des meilleurs poulets de notre vie, simple mais tellement bon !</p>
             <p>Après avoir bien mangé, baladé et digéré, nous reprenons la mer.</p>
             <h4>⧐ Guyam Island</h4>
             <div className="article-gallery-2">
@@ -833,7 +833,7 @@ export default function PhilippinesPage() {
               </div>
               <div className="article-pratique-card">
                 <h3 className="budget-h3" style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-bus" aria-hidden="true" style={{color:"var(--gold)",flexShrink:0}}></i>Transports sur place</h3>
-                <p style={{marginTop: '12px'}}><strong>Vols internes :</strong> entre 30 € et 100 € par vol — plus vous les réservez tôt, mieux c&apos;est ! <br /><strong>Bus</strong> (Manille → Banaue) : 30 € aller-retour par personne.<br /><strong>Ferry</strong> entre les îles : entre 10 € et 30 € par traversée.<br /><strong>Tuk-tuks / jeepneys :</strong> entre 1 € et 5 €. Pour les taxis, demandez la plaquette des tarifs. <br /><strong>Grab</strong> (Manille, Cebu) et <strong>Backride</strong> (Palawan) sont moins chères que le taxi.</p>
+                <p style={{marginTop: '12px'}}><strong>Vols internes :</strong> entre 30 € et 100 € par vol — plus vous les réservez tôt, mieux c&apos;est ! <br /><strong>Bus</strong> (Manille → Banaue) : 30 € aller-retour par personne.<br /><strong>Ferry</strong> entre les îles : entre 10 € et 30 € par traversée.<br /><strong>Tuk-tuks / jeepneys :</strong> entre 1 € et 5 €. Pour les taxis, demandez la plaquette des tarifs. <br /><strong>Grab</strong> (Manille, Cebu) et <strong>Backride</strong> (Palawan) sont moins chers que le taxi.</p>
               </div>
               <div className="article-pratique-card">
                 <h3 className="budget-h3" style={{display:"flex",alignItems:"center",gap:"10px"}}><i className="ti ti-bed" aria-hidden="true" style={{color:"var(--gold)",flexShrink:0}}></i>Hébergements</h3>
@@ -980,7 +980,7 @@ export default function PhilippinesPage() {
               </li>
               <li className="pratique-item">
                 <span className="pratique-dash"></span>
-                <p><strong>On vous conseille de jeter un œil sur des groupes Facebook</strong> tels que "les francophones aux Philippines (tout sauf la météo)" ou "les français aux Philippines"... Vous y trouverez beaucoup d&apos;infos utiles et pratiques pour votre séjour.</p>
+                <p><strong>On vous conseille de jeter un œil sur des groupes Facebook</strong> tels que "les Francophones aux Philippines (tout sauf la météo)" ou "les Français aux Philippines"... Vous y trouverez beaucoup d&apos;infos utiles et pratiques pour votre séjour.</p>
               </li>
             </ul>
 
