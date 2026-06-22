@@ -147,7 +147,7 @@ export default function MarrakechPage() {
               <p><strong>Grâce aux visites incontournables et tous nos conseils, imprégnez-vous de l'effervescence de la ville rouge, que ce soit pour organiser votre séjour ou tout simplement vous inspirer...</strong></p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6164-1024x768.jpg" alt="Place Jemaa El-Fna nuit" className="article-img-full" loading="lazy" />
               <p>Surnommée <strong>la ville rouge</strong> en référence à la couleur d’une grande partie de ses immeubles et de ses maisons, Marrakech est la 4ème plus grande ville du Maroc après Casablanca, Fès et Tanger. Mais la ville rouge reste la <strong>capitale touristique</strong>.</p>
-              <p>Marrakech, c'est le dépaysement total à seulement 3h30 de Paris en avion. De nombreux aéroports français proposent désormais des vols directs à moindre coût. C'est aussi un climat idéal quasiment toute l'année.</p>
+              <p>Marrakech, c'est le dépaysement total à seulement 3 h 30 de Paris en avion. De nombreux aéroports français proposent désormais des vols directs à moindre coût. C'est aussi un climat idéal quasiment toute l'année.</p>
               <p>Marrakech, c’est l’effervescence, ça part vraiment dans toutes les directions… Ce sont les couleurs, les odeurs, les saveurs qui stimulent tous vos sens.</p>
               <p>Marrakech, c’est aussi la culture, l'architecture et les paysages spectaculaires !</p>
               <p>Marrakech est une ville unique, une expérience à elle seule.</p>
@@ -169,7 +169,7 @@ export default function MarrakechPage() {
                 <h3>⧐ La MÉDINA, ou la vieille ville de Marrakech</h3>
               </div>
               <p>Cerclée par ses 19 kilomètres de remparts, la médina de Marrakech s’étend sur 600 hectares. Elle est la plus peuplée de l'Afrique du Nord.</p>
-              <p>Classée au patrimoine mondiale de l’humanité par l'UNESCO, elle est le cœur historique de Marrakech.</p>
+              <p>Classée au patrimoine mondial de l’humanité par l'UNESCO, elle est le cœur historique de Marrakech.</p>
               <p>La médina est la partie la plus touristique, mais aussi la plus authentique de la ville rouge. Elle est elle-même composée de nombreux quartiers.</p>
               <p>Ce labyrinthe de ruelles abrite la plupart des attractions à ne surtout pas manquer : <strong>la fameuse place Jemaa el-Fna, les souks, les monuments historiques, les musées, sans oublier les nombreux petits restaurants qui éveilleront vos papilles</strong>.</p>
               <div className="article-gallery-2">
@@ -220,7 +220,7 @@ export default function MarrakechPage() {
               <p>C'est le bazar anarchique que l’on trouve dans la médina qui en fait particulièrement son charme. Les souks sont idéaux pour se plonger pleinement dans la vie marocaine.</p>
               <p>Une question nous est souvent posée : <strong>faut-il prendre un guide pour visiter la médina ?</strong> Sans réfléchir, notre réponse est non. Nous sommes 2 nanas et nous ne nous sommes jamais senties en insécurité. De plus un guide, qu'il vous faudra payer, vous conduira dans des endroits que vous pouvez découvrir par vous-même.</p>
               <p>Pour nous, <strong>le meilleur moyen de visiter la médina est de s'y perdre</strong>. Alors osez un peu de folie et perdez vous dans ce labyrinthe sans crainte.</p>
-              <p>Gardez en tête qu’il arrive que de jeunes marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction quand ils les voient un peu déboussolés. Si besoin, préférez demander votre chemin aux commerçants. Pensez aussi à lever les yeux, <strong>il y a souvent des panneaux suspendus au niveau des croisements dans les souks qui vous donneront des indications sur la route à suivre</strong> pour rejoindre les endroits stratégiques.</p>
+              <p>Gardez en tête qu’il arrive que de jeunes Marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction quand ils les voient un peu déboussolés. Si besoin, préférez demander votre chemin aux commerçants. Pensez aussi à lever les yeux, <strong>il y a souvent des panneaux suspendus au niveau des croisements dans les souks qui vous donneront des indications sur la route à suivre</strong> pour rejoindre les endroits stratégiques.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4959-768x1024.jpg" alt="Souk médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_E4843-768x1024.jpg" alt="Boutiques souk" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -295,13 +295,13 @@ export default function MarrakechPage() {
               <p>En 1980, <strong>le domaine est racheté par le couple Yves Saint Laurent et Pierre Bergé</strong>. Ils le rebaptisent la Villa Oasis. Ils entreprennent alors d'importants travaux de restauration du jardin pour le rendre aussi beau que Jacques Majorelle l’avait imaginé. Aujourd’hui, on y retrouve plus de 300 espèces de plantes sur 1 hectare de terrain.</p>
               <p>Yves Saint Laurent et Pierre Bergé transforment également l'atelier de peinture de Jacques Majorelle en musée des arts berbères ouvert au public.</p>
               <p>Ils y exposent également des pièces haute couture de leur collection.</p>
-              <p>A la mort d'Yves Saint Laurent en 2008, ses cendres son dispersées dans la roseraie de la Villa Oasis, où un mémorial est créé en son honneur.</p>
+              <p>A la mort d'Yves Saint Laurent en 2008, ses cendres sont dispersées dans la roseraie de la Villa Oasis, où un mémorial est créé en son honneur.</p>
               <p>Vous l'aurez compris, <strong>ce n'est pas </strong><strong>juste un magnifique jardin où déambuler dans les allées, c’est aussi un lieu chargé d’histoire</strong>.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6751-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5851-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" />
               </div>
-              <p><strong>Le jardin se visite tous les jours de 8h à 17h30. L’entrée est au tarif 170 Dh (17€) et est gratuit pour les enfants de moins de 10 ans. </strong></p>
+              <p><strong>Le jardin se visite tous les jours de 8 h 30 à 18 h (dernier accès à 17 h 30). Le billet s’achète désormais uniquement en ligne : comptez autour de 150 Dh (environ 15 €) pour le jardin seul, un peu plus pour le billet combiné avec les musées. L’entrée est gratuite pour les enfants de moins de 10 ans. </strong></p>
               <p>Vous aurez alors accès au jardin,  à une galerie où sont exposées des affiches d’Yves Saint Laurent, à la boutique du jardin et du musée.</p>
               <p>Pensez à prendre vos billets sur leur <strong><a href="https://tickets.jardinmajorelle.com/Visite" target="_blank" rel="noopener noreferrer" className="article-link">site internet</a></strong> au plus tôt afin d'avoir des disponibilités sur le créneau horaire qui vous arrange.</p>
               <div className="article-day-header article-day-header-tight">
@@ -309,9 +309,9 @@ export default function MarrakechPage() {
               </div>
               <p><strong>S’il y a un bien un palais à visiter, c’est celui-ci.</strong> C'est le plus grand de Marrakech !</p>
               <p>Vous pourrez admirer l'architecture marocaine dans toute sa splendeur. Les peintures, les sculptures, les mosaïques, et les vitraux que l’on y trouve sont magnifiques et mettent en valeur tout le savoir faire des artisans.</p>
-              <p>La palais est composé de plus de 150 pièces, de différentes cours et de jardins avec des fontaines. Le tout est très grand, mais surtout très beau !</p>
+              <p>Le palais est composé de plus de 150 pièces, de différentes cours et de jardins avec des fontaines. Le tout est très grand, mais surtout très beau !</p>
               <p>Pour la petite histoire « Bahia » signifie « la belle, la brillante ». C’est en fait l’ancien harem du Grand Vizir Bou Ahmed, qui vivait ici avec ses 4 épouses et ses 24 concubines.</p>
-              <p><strong>Le palais est ouvert tous les jours de 9h a 17h. Pour le visiter, l’entrée est payante : 100 Dh (10€) pour les adultes et 30 Dh (3€) pour les enfants. </strong></p>
+              <p><strong>Le palais est ouvert tous les jours de 9 h à 17 h. Pour le visiter, l’entrée est payante : 100 Dh (10 €) pour les adultes et 30 Dh (3 €) pour les enfants. </strong></p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8154-1.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8184.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" />
@@ -324,7 +324,7 @@ export default function MarrakechPage() {
               <p>Vous pourrez ainsi admirer les <strong>magnifiques clichés d'amateurs ou de célèbres photographes qui ont parcouru le Maroc à travers le temps</strong>. Les photos révèlent notamment les différents panoramas du pays, ainsi que les rencontres avec ses habitants.</p>
               <p>Vous y découvrirez également d’anciennes cartes postales, d’anciens journaux et d'autres documents retraçant l’histoire du Maroc.</p>
               <p>N’hésitez pas à monter sur la terrasse qui offre une vue panoramique sur la vieille ville. Il y a également une cafeteria, de quoi se rafraîchir après l’exposition.</p>
-              <p><strong>Le musée est ouvert tous les jours de 9h30 à 19h. Il faut compter 50 Dh (5€) pour accéder au musée. </strong></p>
+              <p><strong>Le musée est ouvert tous les jours de 9 h 30 à 19 h. Il faut compter 50 Dh (5 €) pour accéder au musée. </strong></p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8205-1024x766.jpg" alt="Musée de la photo Marrakech" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8202.jpg" alt="Musée de la photo Marrakech" loading="lazy" />
@@ -336,7 +336,7 @@ export default function MarrakechPage() {
               <p>Prenez un moment pour apprécier le calme au milieu de cette végétation luxuriante.</p>
               <p>Si vous avez le temps, vous pouvez également savourer l’endroit en vous installant à la table de l’un des deux cafés. Le premier se trouve au niveau des bassins, l’autre sur une jolie terrasse qui surplombe le jardin.</p>
               <p>Il y a également une tour dans laquelle vous pouvez monter. C'est l'une des plus haute de la médina.</p>
-              <p><strong>Le jardin secret se visite tous les jours de 9h30 à 18h. Le tarif de l’entrée est de 100 Dh (10€) et de 80 Dh (8€) pour les moins de 24 ans.</strong> Il faut ajouter un supplément de 40 Dh (4€) pour monter dans la tour.</p>
+              <p><strong>Le jardin secret se visite tous les jours de 9 h 30 à 18 h. Le tarif de l’entrée est de 100 Dh (10 €) et de 80 Dh (8 €) pour les moins de 24 ans.</strong> Il faut ajouter un supplément de 40 Dh (4 €) pour monter dans la tour.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8123.jpg" alt="Jardin secret Marrakech" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8121-1024x768.jpg" alt="Jardin secret Marrakech" loading="lazy" />
@@ -349,7 +349,7 @@ export default function MarrakechPage() {
               <p>Du sol au plafond, elle est décorée de zellige, de stuc et de sculptures réalisées avec beaucoup de précision et de détails.</p>
               <p>On y compte 7 patios, des salles de prière et une salle pour les ablutions.</p>
               <p>La médersa pouvait accueillir jusqu’à 900 étudiants. Les 132 chambres permettaient de loger des étudiants gratuitement, notamment ceux qui n’étaient pas originaires de Marrakech.</p>
-              <p><strong>L’école coranique se visite tous les jours de 9h à 18h. L’entrée est au tarif de 50 Dh (5€). </strong></p>
+              <p><strong>L’école coranique se visite tous les jours de 9 h à 18 h. L’entrée est au tarif de 50 Dh (5 €). </strong></p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8090.jpg" alt="La Médersa Marrakech" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8112.jpg" alt="La Médersa Marrakech" loading="lazy" />
@@ -371,7 +371,7 @@ export default function MarrakechPage() {
             <div className="article-day-header">
               <h2>📍 Où manger à Marrakech ?</h2>
             </div>
-              <p>Il arrive que des restaurants ne payent pas de mine à première vue. Ne vous laisser pas influencer, ils révèlent bien souvent un joli toit-terrasse avec une vue incroyable sur la ville !</p>
+              <p>Il arrive que des restaurants ne payent pas de mine à première vue. Ne vous laissez pas influencer, ils révèlent bien souvent un joli toit-terrasse avec une vue incroyable sur la ville !</p>
               <p>Nous avons nos petites habitudes quant aux endroits où manger et prendre un verre dans la médina…</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4960-768x1024.jpg" alt="Souk Kafé médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -463,9 +463,9 @@ export default function MarrakechPage() {
               </div>
               <p><strong>Nous vous partageons quelques-unes de nos adresses préférées (toutes proposent de l’alcool) :</strong></p>
               <p>・<em>Dar donab</em> (médina, Bab Doukkala) : hôtel luxueux dans un petit palais. <strong>Tarif : 150 Dh pour l'accès piscine. Repas à la carte en supplément.</strong></p>
-              <p>・<em>Manzil la tortue</em> (km12, route de Ouarzazate) : un havre de paix. Choix entre 2 plats, tout est fait maison. Cocktails délicieux. <strong>Tarif : 250 Dh accès piscine + déjeuner.</strong></p>
-              <p>・<em>La vie en rose</em> (km14, route de l’Ourika) : joli cadre. Ânes et chevaux se baladant sur le terrain. Repas simples mais de qualité. <strong>Tarif : 250 Dh accès piscine + déjeuner.</strong></p>
-              <p>・<em>La ferme berbère</em> (km9, route de l’Ourika) : ambiance familiale. Menu unique et excellent. <strong>Tarif : 290 Dh accès piscine + déjeuner.</strong></p>
+              <p>・<em>Manzil la tortue</em> (km 12, route de Ouarzazate) : un havre de paix. Choix entre 2 plats, tout est fait maison. Cocktails délicieux. <strong>Tarif : 250 Dh accès piscine + déjeuner.</strong></p>
+              <p>・<em>La vie en rose</em> (km 14, route de l’Ourika) : joli cadre. Ânes et chevaux se baladant sur le terrain. Repas simples mais de qualité. <strong>Tarif : 250 Dh accès piscine + déjeuner.</strong></p>
+              <p>・<em>La ferme berbère</em> (km 9, route de l’Ourika) : ambiance familiale. Menu unique et excellent. <strong>Tarif : 290 Dh accès piscine + déjeuner.</strong></p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6555-1024x768.jpg" alt="Manzil Tortue Marrakech" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4841_jpg-768x1024.jpg" alt="Dar Donab médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -475,10 +475,10 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6619-1024x768.jpg" alt="Ferme Berbere Marrakech" loading="lazy" />
               </div>
               <p>Et pour profiter au maximum de votre journée de détente, sachez que tous ces établissements proposent des massages à la carte.</p>
-              <p><strong>Il y a également des parcs aquatiques à Marrakech.</strong> Nous avons testé Oasiria (km4, route d’Amizmiz).</p>
+              <p><strong>Il y a également des parcs aquatiques à Marrakech.</strong> Nous avons testé Oasiria (km 4, route d’Amizmiz).</p>
               <p>Il est le 1er parc aquatique du Maroc. Il s'étend sur 10 hectares et offre une vaste panoplie d'attractions aquatiques pour toute la famille.</p>
-              <p>De nombreux espaces verts et de détente, ainsi qu'un terrain de beach-volley / soccer sont mis à disposition. Le parc est ouvert toute l’année et propose en hiver une piscine chauffée de 300m2.</p>
-              <p><strong>Tarif à la journée pour la période de mars à octobre : 130 Dh pour les adultes, et 100 Dh pour les enfants de moins d'1M50 et les séniors de plus de 65 ans. </strong></p>
+              <p>De nombreux espaces verts et de détente, ainsi qu'un terrain de beach-volley / soccer sont mis à disposition. Le parc est ouvert toute l’année et propose en hiver une piscine chauffée de 300 m².</p>
+              <p><strong>Tarif à la journée pour la période de mars à octobre : 130 Dh pour les adultes, et 100 Dh pour les enfants de moins d'1,50 m et les séniors de plus de 65 ans. </strong></p>
               <div className="article-gallery-3">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6353-1024x768.jpg" alt="Entrée Oasiria Marrakech" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6376-1024x768.jpg" alt="Oasiria Marrakech" loading="lazy" />
@@ -517,7 +517,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6057-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <p><strong>Vous serez également plus tranquille pour les visites</strong> : pas de file d’attente interminable !</p>
-              <p>Renseignez vous tout de même avant sur les horaires qui peuvent être modifiés. Généralement, les établissements ferment plus tôt dans l’après-midi. Une fois la nuit tombée, le jeun rompu, c’est à nouveau l’effervescence dans les rues !</p>
+              <p>Renseignez-vous tout de même avant sur les horaires qui peuvent être modifiés. Généralement, les établissements ferment plus tôt dans l’après-midi. Une fois la nuit tombée, le jeun rompu, c’est à nouveau l’effervescence dans les rues !</p>
               <p>Nous avons pour habitude de nous adapter aux pays que nous visitons. Pour le Maroc, en période de ramadan, nous évitons de boire ou de manger en pleine rue… Non pas que cela choque les marocains, c’est davantage une forme de respect de notre part.</p>
               <div className="article-avis">
                 <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
@@ -537,7 +537,7 @@ export default function MarrakechPage() {
               <div className="article-day-header article-day-header-tight">
                 <h3>Arriver en avion</h3>
               </div>
-              <p>Pour arriver à Marrakech, nous avons voyagé avec la compagnie <strong><a href="https://www.easyjet.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">EasyJet</a></strong> depuis Nice, en vol direct. Les billets nous sont revenus à 368€ pour deux. Il faut compter généralement près de 3h de vol pour rejoindre l'aéroport de Marrakech-Ménara.</p>
+              <p>Pour arriver à Marrakech, nous avons voyagé avec la compagnie <strong><a href="https://www.easyjet.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">EasyJet</a></strong> depuis Nice, en vol direct. Les billets nous sont revenus à 368 € pour deux. Il faut compter généralement près de 3 h de vol pour rejoindre l'aéroport de Marrakech-Ménara.</p>
               <p>Nous vous recommandons de comparer les offres des différentes compagnies aériennes sur <strong><a href="https://www.skyscanner.fr" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a></strong> pour vous rendre à Marrakech (ou ailleurs !). On utilise beaucoup ce site pour trouver les vols qui nous conviennent, que ce soit au niveau des horaires ou des tarifs.</p>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4997-1024x768.jpg" alt="Café des épices" className="article-img-full" loading="lazy" />
               <div className="article-day-header article-day-header-tight">
@@ -546,16 +546,16 @@ export default function MarrakechPage() {
               <h4>En taxi</h4>
               <p>Marrakech se visite essentiellement à pied. Pour autant, le taxi reste la baaaaase pour se déplacer ! C'est certainement le moyen de transport le plus populaire dans tout le pays.</p>
               <p>Sachez qu'en fonction de l'endroit où vous souhaitez vous rendre à Marrakech, vous n'utiliserez pas les mêmes taxis :</p>
-              <p>・<strong>Les petits taxis : </strong>Leur couleur change en fonction de la localité. Ils sont jaunes ou beiges à Marrakech. Ils ont uniquement le droit de circuler dans le périmètre urbain, et il faudra négocier le prix avant de monter dans le véhicule. Attention, les petits taxis ne peuvent transporter que 3 personnes à la fois. Pour avoir une idée, depuis l'aéroport, comptez 70 Dh (7€) pour rejoindre la médina et 100 Dh (10€) pour vous rendre dans la palmeraie.</p>
+              <p>・<strong>Les petits taxis : </strong>Leur couleur change en fonction de la localité. Ils sont jaunes ou beiges à Marrakech. Ils ont uniquement le droit de circuler dans le périmètre urbain, et il faudra négocier le prix avant de monter dans le véhicule. Attention, les petits taxis ne peuvent transporter que 3 personnes à la fois. Pour avoir une idée, depuis l'aéroport, comptez 70 Dh (7 €) pour rejoindre la médina et 100 Dh (10 €) pour vous rendre dans la palmeraie.</p>
               <p>・<strong>Les grands taxis</strong><strong> : </strong>Ils sont généralement jaunes et de marque Mercedes. À l'inverse des petits taxis, ils peuvent sortir de la zone urbaine, mais leurs tarifs sont plus élevés pour une course. Ayant très rarement un compteur, il faut donc négocier le prix avant de partir. Notez que les chauffeurs de grand taxi sont souvent des fous du volant ! Evitez les trajets de nuit pour votre sécurité.</p>
-              <p>・<strong>Les taxis privés :</strong> Si vous n'êtes pas friand de la négociation, faites alors appel à un taxi privé. Les chauffeurs mettent le compteur de manière obligatoire, et les prix fixés sont toujours honnêtes. D'ailleurs, les tarifs sont généralement collés sur leur pare-brise. Pour avoir une idée, pour se rendre de la médina à la palmeraie, comptez 100 Dh (10€).</p>
+              <p>・<strong>Les taxis privés :</strong> Si vous n'êtes pas friand de la négociation, faites alors appel à un taxi privé. Les chauffeurs mettent le compteur de manière obligatoire, et les prix fixés sont toujours honnêtes. D'ailleurs, les tarifs sont généralement collés sur leur pare-brise. Pour avoir une idée, pour se rendre de la médina à la palmeraie, comptez 100 Dh (10 €).</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7135-1024x768.jpg" alt="Âne à Marrakech" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5273-768x1024.jpg" alt="Derb âne Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <h4>En calèche</h4>
               <p>Marrakech est l'une des rares villes du Maroc à avoir conservé le transport en calèche. Ces dernières sont majoritairement <strong>stationnées au niveau de la rue qui relie la Koutoubia à la place Jemaa el-Fna</strong>.</p>
-              <p>Il est possible de monter à 4 ou 5 personnes à bord d'une calèche. Comme pour les taxis, le prix se négocie. Pour 30Mn de balade dans la médina, <strong>prévoyez en moyenne 200 Dh (20€)</strong>.</p>
+              <p>Il est possible de monter à 4 ou 5 personnes à bord d'une calèche. Comme pour les taxis, le prix se négocie. Pour 30 minutes de balade dans la médina, <strong>prévoyez en moyenne 200 Dh (20 €)</strong>.</p>
               <div className="article-day-header article-day-header-tight">
                 <h3>Quand partir ?</h3>
               </div>
@@ -575,11 +575,11 @@ export default function MarrakechPage() {
               <p><strong>Change : </strong>Il est intéressant de savoir que vous pouvez utiliser quasiment de partout des euros pour payer. Pour autant, si vous souhaitez changez des euros en dirhams, préférez le faire directement à l'aéroport, les taux sont les plus intéressants. Autrement, les taux varient peu d'un établissement à l'autre à Marrakech.</p>
               <p>Sachez qu'il est illégal d'importer ou de sortir des dirhams du pays. Aussi, conservez vos reçus de change. Ils prouvent que vous avez changé légalement votre argent et vous seront demandés pour convertir le reste de vos dirhams dans les banques marocaines et les bureaux de change.</p>
               <p><strong>Pourboire :</strong> Il fait partie intégrante de la vie marocaine. Pratiquement tous les services justifient un pourboire (= bakchich) ! Par exemple, il est d'usage de laisser un pourboire de 10% au restaurant.</p>
-              <p><strong>Bon à savoir !</strong> Pour éviter les frais relatifs aux retraits ou aux achats, nous utilisons la carte <strong><a href="https://www.boursorama-banque.com/" target="_blank" rel="noopener noreferrer" className="article-link">Boursorama</a></strong> Ultim pour tous nos voyages à l'étranger (y compris hors UE). En entrant le code parrainage AMTR2375, vous pourrez bénéficier d'un crédit offert de 130€ pour toute ouverture de compte.</p>
+              <p><strong>Bon à savoir !</strong> Pour éviter les frais relatifs aux retraits ou aux achats, nous utilisons la carte <strong><a href="https://www.boursorama-banque.com/" target="_blank" rel="noopener noreferrer" className="article-link">Boursorama</a></strong> Ultim pour tous nos voyages à l'étranger (y compris hors UE). En entrant le code parrainage AMTR2375, vous pourrez bénéficier d'un crédit offert de 130 € pour toute ouverture de compte.</p>
               <div className="article-day-header article-day-header-tight">
                 <h3>Dress Code</h3>
               </div>
-              <p><strong>Il n’y pas de dress code imposé à Marrakech. Il faut juste faire preuve de bon sens. </strong></p>
+              <p><strong>Il n’y a pas de dress code imposé à Marrakech. Il faut juste faire preuve de bon sens. </strong></p>
               <p>Si vous visitez un palais, au même titre qu’un temple en Asie, il est préférable de se couvrir les épaules en signe de respect.</p>
               <p>Aussi, si vous ne voulez pas choquer dans la rue, alors adaptez votre tenue...</p>
               <p>Pour les femmes particulièrement, évitez ainsi les vêtements très courts et / ou les décolletés plongeants par exemple !</p>
