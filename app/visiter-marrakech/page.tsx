@@ -304,17 +304,14 @@ export default function MarrakechPage() {
               </div>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6768-1024x768.jpg" alt="Bleu Majorelle Marrakech" loading="lazy" className="article-img-full" />
               <p>En 1980, <strong>le domaine est racheté par le couple Yves Saint Laurent et Pierre Bergé</strong>. Ils le rebaptisent la Villa Oasis. Ils entreprennent alors d'importants travaux de restauration du jardin pour le rendre aussi beau que Jacques Majorelle l’avait imaginé. Aujourd’hui, on y retrouve plus de 300 espèces de plantes sur 1 hectare de terrain.</p>
-              <p>Yves Saint Laurent et Pierre Bergé transforment également l'atelier de peinture de Jacques Majorelle en musée des arts berbères ouvert au public.</p>
-              <p>Ils y exposent également des pièces haute couture de leur collection.</p>
+              <p>Yves Saint Laurent et Pierre Bergé transforment également l'atelier de peinture de Jacques Majorelle en musée des arts berbères ouvert au public. Ils y exposent également des pièces haute couture de leur collection.</p>
               <p>A la mort d'Yves Saint Laurent en 2008, ses cendres sont dispersées dans la roseraie de la Villa Oasis, où un mémorial est créé en son honneur.</p>
               <p>Vous l'aurez compris, <strong>ce n'est pas </strong><strong>juste un magnifique jardin où déambuler dans les allées, c’est aussi un lieu chargé d’histoire</strong>.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6751-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5851-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
-              <p><strong>Le jardin se visite tous les jours de 8 h à 17 h 30. L’entrée est au tarif de 170 Dh (17 €) et est gratuite pour les enfants de moins de 10 ans.</strong> Vous aurez alors accès au jardin, à une galerie où sont exposées des affiches d’Yves Saint Laurent, à la boutique du jardin et du musée berbère. Si vous souhaitez également accéder au musée, comptez <strong>330 Dh</strong> pour le billet combiné. Pensez à prendre vos billets sur leur <a href="https://tickets.jardinmajorelle.com/Visite" target="_blank" rel="noopener noreferrer" className="article-link">site internet</a> au plus tôt.</p>
-              <p>Vous aurez alors accès au jardin,  à une galerie où sont exposées des affiches d’Yves Saint Laurent, à la boutique du jardin et du musée.</p>
-              <p>Pensez à prendre vos billets sur leur <strong><a href="https://tickets.jardinmajorelle.com/Visite" target="_blank" rel="noopener noreferrer" className="article-link">site internet</a></strong> au plus tôt afin d'avoir des disponibilités sur le créneau horaire qui vous arrange.</p>
+              <p><strong>Le jardin se visite tous les jours de 8 h à 17 h 30. L’entrée est au tarif de 170 Dh (17 €) et est gratuite pour les enfants de moins de 10 ans.</strong> Les billets s’achètent <strong>uniquement en ligne</strong> sur leur <a href="https://tickets.jardinmajorelle.com/Visite" target="_blank" rel="noopener noreferrer" className="article-link">site officiel</a> — pensez à réserver votre créneau à l’avance. Votre billet donne accès au jardin, à une galerie d’affiches d’Yves Saint Laurent et à la boutique. Pour le musée berbère, comptez <strong>330 Dh</strong> pour le billet combiné.</p>
               <div className="article-day-header article-day-header-tight">
                 <h3>Le Palais de la Bahia</h3>
               </div>
