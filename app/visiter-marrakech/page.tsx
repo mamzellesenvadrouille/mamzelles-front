@@ -666,10 +666,7 @@ export default function MarrakechPage() {
                           <li><strong>Sortie de dirhams</strong> — Sachez qu'il est illégal d'importer ou de sortir des dirhams du pays. Aussi, conservez vos reçus de change. Ils prouvent que vous avez changé légalement votre argent et vous seront demandés pour convertir le reste de vos dirhams dans les banques marocaines et les bureaux de change.</li>
                           <li><strong>Pourboire (bakchich)</strong> — Il fait partie intégrante de la vie marocaine. Pratiquement tous les services justifient un pourboire (= bakchich) ! Par exemple, il est d'usage de laisser un pourboire de 10% au restaurant.</li>
                         </ul>
-                        <div className="article-tip">
-                          <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                          <div><strong>Bon à savoir</strong><p>Pour éviter les frais de retrait à l&apos;étranger, nous utilisons la carte <a href="https://www.boursorama-banque.com/" target="_blank" rel="noopener noreferrer" className="article-link">Boursorama</a> Ultim pour tous nos voyages.</p></div>
-                        </div>
+                        
                       </>
                     ),
                   },
