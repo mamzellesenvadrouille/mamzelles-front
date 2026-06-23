@@ -447,12 +447,16 @@ export default function MarrakechPage() {
                     </a>
                     <a href="https://maps.app.goo.gl/8Pybhtk1PeSdhozw6" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Café arabe</span>
-                      <span className="pb-resto-card-desc">Cuisine italienne et marocaine, alcool au rendez-vous.</span>
+                      <span className="pb-resto-card-desc">L’adresse historique pour boire un verre à Marrakech. Cuisine italienne et marocaine, alcool au rendez-vous.</span>
                     </a>
                   </div>
                 </div>
               </div>
-                                          <p><strong>≫</strong> Si vous le souhaitez, vous avez également la possibilité de vous faire livrer à domicile via l’application GLOVO (le Uber Eats marocain !).</p>
+                                          
+              <div className="article-tip">
+                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                <div><strong>Bon à savoir</strong><p>Vous avez également la possibilité de vous faire livrer à domicile via l&apos;application GLOVO (le Uber Eats marocain !) — pratique pour les soirées cocooning dans votre riad !</p></div>
+              </div>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1848-1024x768.jpg" alt="Kui-Zin médina Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5204_jpg-768x1024.jpg" alt="Restaurant Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -469,7 +473,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4888_jpg-768x1024.jpg" alt="Dar Donab Marrakech médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5098-768x1024.jpg" alt="Piscine Manzil Tortue Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
-                            <div className="pb-resto-grid" style={{gridTemplateColumns:'repeat(2,1fr)',marginBottom:'12px'}}>
+                            <div className="pb-resto-grid" style={{gridTemplateColumns:'repeat(2,1fr)',marginTop:'28px',marginBottom:'12px'}}>
                 <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
                     <a href="https://www.google.com/maps/place/?q=place_id:ChIJNb0AY2jurw0RbO3ykgyWmVQ" target="_blank" className="article-link article-resto-link-desktop" style={{color:"inherit",textDecoration:"none"}}>Dar donab</a>

@@ -1101,6 +1101,9 @@
 
 
 /* Cartes riads â€” display block pour empiler les infos */
+.article-marrakech .pb-riad-card {
+  background: var(--bg);
+}
 .article-marrakech .pb-riad-card .pb-resto-card-name,
 .article-marrakech .pb-riad-card .pb-resto-card-desc {
   display: block;
