@@ -1108,13 +1108,3 @@
 .article-marrakech .pb-riad-card .pb-resto-card-desc {
   display: block;
 }
-.article-marrakech .pb-riad-card .pb-resto-card-name {
-  font-size: 20px;
-  font-weight: 600;
-  color: #1a1512;
-}
-.article-marrakech .pb-riad-card .pb-resto-card-desc {
-  font-size: 13px;
-  color: rgba(26,21,18,0.65);
-  line-height: 1.6;
-}
