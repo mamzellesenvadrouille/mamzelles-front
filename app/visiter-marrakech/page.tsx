@@ -397,7 +397,7 @@ export default function MarrakechPage() {
                     <span className="pb-resto-tier-label">Petits prix</span>
                   </div>
                                 <div className="pb-resto-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)', marginBottom: '12px'}}>
-                <div className="pb-resto-card">
+                <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
                     <a href="https://www.google.com/maps/place/?q=place_id:ChIJNb0AY2jurw0RbO3ykgyWmVQ" target="_blank" className="article-link article-resto-link-desktop" style={{color: "inherit", textDecoration: "none"}}>Dar donab</a>
                     <a href="https://maps.app.goo.gl/dZQ8YNQm8BhzDkmX6" target="_blank" className="article-link article-resto-link-mobile" style={{color: "inherit", textDecoration: "none"}}>Dar donab</a>
@@ -406,7 +406,7 @@ export default function MarrakechPage() {
                   <span className="pb-resto-card-desc">Hôtel luxueux dans un petit palais au cœur de la médina.</span>
                   <span className="pb-resto-card-desc" style={{color: "var(--dark)", fontWeight: 600}}>150 Dh accès piscine — repas à la carte en supplément.</span>
                 </div>
-                <div className="pb-resto-card">
+                <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
                     <a href="https://www.google.com/maps/place/?q=place_id:ChIJ23VUUwPxrw0RIowkEJOjCVg" target="_blank" className="article-link article-resto-link-desktop" style={{color: "inherit", textDecoration: "none"}}>Manzil la tortue</a>
                     <a href="https://maps.app.goo.gl/txijutAUPUUN6qZKA" target="_blank" className="article-link article-resto-link-mobile" style={{color: "inherit", textDecoration: "none"}}>Manzil la tortue</a>
@@ -417,7 +417,7 @@ export default function MarrakechPage() {
                 </div>
               </div>
               <div className="pb-resto-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)', marginBottom: '28px'}}>
-                <div className="pb-resto-card">
+                <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
                     <a href="https://www.google.com/maps/place/?q=place_id:ChIJ6R175Qfmrw0RlCOwZ7eHRRg" target="_blank" className="article-link article-resto-link-desktop" style={{color: "inherit", textDecoration: "none"}}>La vie en rose</a>
                     <a href="https://maps.app.goo.gl/HyLEaDMCh63vQg3J6" target="_blank" className="article-link article-resto-link-mobile" style={{color: "inherit", textDecoration: "none"}}>La vie en rose</a>
@@ -426,7 +426,7 @@ export default function MarrakechPage() {
                   <span className="pb-resto-card-desc">Joli cadre, ânes et chevaux sur le terrain. Repas simples mais de qualité.</span>
                   <span className="pb-resto-card-desc" style={{color: "var(--dark)", fontWeight: 600}}>250 Dh accès piscine + déjeuner.</span>
                 </div>
-                <div className="pb-resto-card">
+                <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
                     <a href="https://www.google.com/maps/place/?q=place_id:ChIJneE65kjlrw0R0LMqzsrocjo" target="_blank" className="article-link article-resto-link-desktop" style={{color: "inherit", textDecoration: "none"}}>La ferme berbère</a>
                     <a href="https://maps.app.goo.gl/PXQu437JWWuwkgWP7" target="_blank" className="article-link article-resto-link-mobile" style={{color: "inherit", textDecoration: "none"}}>La ferme berbère</a>

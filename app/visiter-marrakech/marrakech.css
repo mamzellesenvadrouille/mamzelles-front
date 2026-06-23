@@ -1098,3 +1098,15 @@
   .article-marrakech .article-pratique-nav-btn { font-size: 13px !important; padding: 8px 16px 8px 10px !important; }
   .article-marrakech .article-pratique-nav-icon svg { width: 15px !important; height: 15px !important; }
 }
+
+
+/* Cartes riads â€” display block pour empiler les infos */
+.article-marrakech .pb-riad-card .pb-resto-card-name,
+.article-marrakech .pb-riad-card .pb-resto-card-desc {
+  display: block;
+}
+.article-marrakech .pb-riad-card .pb-resto-card-desc {
+  font-size: 14px;
+  color: rgba(26,21,18,0.65);
+  line-height: 1.6;
+}
