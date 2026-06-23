@@ -560,12 +560,11 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_9711-1024x768.jpg" alt="Vue du ciel Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6057-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
-              <p><strong>Vous serez également plus tranquille pour les visites</strong> : pas de file d’attente interminable !</p>
-              <p>Renseignez-vous tout de même avant sur les horaires qui peuvent être modifiés. Généralement, les établissements ferment plus tôt dans l’après-midi. Une fois la nuit tombée, le jeun rompu, c’est à nouveau l’effervescence dans les rues !</p>
+                            <p>Renseignez-vous tout de même avant sur les horaires qui peuvent être modifiés. Généralement, les établissements ferment plus tôt dans l’après-midi. Une fois la nuit tombée, le jeun rompu, c’est à nouveau l’effervescence dans les rues !</p>
                             <p>Nous avons pour habitude de nous adapter aux pays que nous visitons. Pour le Maroc, en période de ramadan, nous évitons de boire ou de manger en pleine rue… Non pas que cela choque les Marocains, c’est davantage une forme de respect de notre part.</p>
               <div className="article-avis">
                 <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                <div><strong>Le conseil des MamZelles</strong><p>Visiter Marrakech pendant le ramadan est plutôt un bon plan ! C’est l’une des périodes les moins touristiques de l’année, les vols et les hébergements sont moins chers, et vous serez plus tranquille pour les visites.</p></div>
+                <div><strong>Le conseil des MamZelles</strong><p>Visiter Marrakech pendant le ramadan est plutôt un bon plan ! C’est l’une des périodes les moins touristiques de l’année, les vols et les hébergements sont moins chers. Vous serez également plus tranquille pour les visites : pas de file d’attente interminable !</p></div>
               </div>
           </section>
 
