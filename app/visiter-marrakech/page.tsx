@@ -327,8 +327,7 @@ export default function MarrakechPage() {
               <div className="article-day-header article-day-header-tight">
                 <h3>Le Musée de la Photographie</h3>
               </div>
-              <p>Cet endroit a été créé par Hamid Mergani et Patrick Manach, deux amoureux de laphotographie, et du Maroc bien sûr !</p>
-              <p>À travers les nombreux clichés exposés et réalisés entre 1878 et 1960, leur objectif est de montrer la diversité du Maroc, depuis les débuts de la photo jusqu’à l’art moderne.</p>
+              <p>Cet endroit a été créé par Hamid Mergani et Patrick Manach, deux amoureux de la photographie, et du Maroc bien sûr ! À travers les nombreux clichés exposés et réalisés entre 1878 et 1960, leur objectif est de montrer la diversité du Maroc, depuis les débuts de la photo jusqu’à l’art moderne.</p>
               <p>Vous pourrez ainsi admirer les <strong>magnifiques clichés d'amateurs ou de célèbres photographes qui ont parcouru le Maroc à travers le temps</strong>. Les photos révèlent notamment les différents panoramas du pays, ainsi que les rencontres avec ses habitants.</p>
               <p>Vous y découvrirez également d’anciennes cartes postales, d’anciens journaux et d'autres documents retraçant l’histoire du Maroc.</p>
               <p>N’hésitez pas à monter sur la terrasse qui offre une vue panoramique sur la vieille ville. Il y a également une cafeteria, de quoi se rafraîchir après l’exposition.</p>
@@ -404,7 +403,7 @@ export default function MarrakechPage() {
                     </a>
                     <a href="https://maps.app.goo.gl/Cyry27cHx4R9CvE67" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Kui-Zin</span>
-                      <span className="pb-resto-card-desc">Street food savoureuse et créative — le meilleur rapport qualité/prix de la médina.</span>
+                      <span className="pb-resto-card-desc">Rooftop en plein cœur de la médina, cuisine marocaine faite maison et buffet généreux.</span>
                     </a>
                     <a href="https://maps.app.goo.gl/THAbfYXY2YoaY2528" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Café des épices</span>
@@ -448,14 +447,12 @@ export default function MarrakechPage() {
                     </a>
                     <a href="https://maps.app.goo.gl/8Pybhtk1PeSdhozw6" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Café arabe</span>
-                      <span className="pb-resto-card-desc">L'adresse historique pour boire un verre à Marrakech. Cadre, cuisine et alcool au rendez-vous.</span>
+                      <span className="pb-resto-card-desc">L'adresse historique pour boire un verre à Marrakech. Alcool au rendez-vous.</span>
                     </a>
                   </div>
                 </div>
               </div>
-              <p>(dans ce restaurant associatif, vous pouvez vous faire tatouer au henné en même temps que vous mangez. Le concept est trop top !)</p>
-              <p>Il y a peu d’endroits qui proposent de l'alcool dans la ville, mais vous pourrez en consommer dans ces deux bars / restaurants notamment.</p>
-              <p><strong>≫</strong> Si vous le souhaitez, vous avez également la possibilité de vous faire livrer à domicile via l’application <strong>GLOVO</strong> (le Uber Eats marocain !).</p>
+                                          <p><strong>≫</strong> Si vous le souhaitez, vous avez également la possibilité de vous faire livrer à domicile via l’application <strong>GLOVO</strong> (le Uber Eats marocain !).</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1848-1024x768.jpg" alt="Kui-Zin médina Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5204_jpg-768x1024.jpg" alt="Restaurant Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
