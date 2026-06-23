@@ -447,7 +447,7 @@ export default function MarrakechPage() {
                     </a>
                     <a href="https://maps.app.goo.gl/8Pybhtk1PeSdhozw6" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Café arabe</span>
-                      <span className="pb-resto-card-desc">L’adresse historique pour boire un verre à Marrakech. Cuisine italienne et marocaine, alcool au rendez-vous.</span>
+                      <span className="pb-resto-card-desc">L’adresse historique pour manger à Marrakech. Cuisine italienne et marocaine, alcool au rendez-vous.</span>
                     </a>
                   </div>
                 </div>
@@ -481,7 +481,7 @@ export default function MarrakechPage() {
                   </span>
                   <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Médina, Bab Doukkala</span>
                   <span className="pb-resto-card-desc">Hôtel luxueux dans un petit palais au cœur de la médina.</span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--dark)",fontWeight:600}}>150 Dh accès piscine — repas à la carte en supplément.</span>
+                  <span className="pb-resto-card-desc" style={{color:"rgba(26,21,18,0.65)"}}>150 Dh accès piscine — repas à la carte en supplément.</span>
                 </div>
                 <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
@@ -490,7 +490,7 @@ export default function MarrakechPage() {
                   </span>
                   <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 12, route de Ouarzazate</span>
                   <span className="pb-resto-card-desc">Un havre de paix. Tout est fait maison, cocktails délicieux.</span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--dark)",fontWeight:600}}>À partir de 400 Dh (piscine + déjeuner).</span>
+                  <span className="pb-resto-card-desc" style={{color:"rgba(26,21,18,0.65)"}}>À partir de 400 Dh (piscine + déjeuner).</span>
                 </div>
               </div>
               <div className="pb-resto-grid" style={{gridTemplateColumns:'repeat(2,1fr)',marginBottom:'28px'}}>
@@ -501,7 +501,7 @@ export default function MarrakechPage() {
                   </span>
                   <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 14, route de l’Ourika</span>
                   <span className="pb-resto-card-desc">Joli cadre, ânes et chevaux sur le terrain. Repas simples mais de qualité.</span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--dark)",fontWeight:600}}>250 Dh accès piscine + déjeuner.</span>
+                  <span className="pb-resto-card-desc" style={{color:"rgba(26,21,18,0.65)"}}>250 Dh accès piscine + déjeuner.</span>
                 </div>
                 <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
@@ -510,7 +510,7 @@ export default function MarrakechPage() {
                   </span>
                   <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 9, route de l’Ourika</span>
                   <span className="pb-resto-card-desc">Ambiance familiale, menu unique et excellent.</span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--dark)",fontWeight:600}}>290 Dh accès piscine + déjeuner.</span>
+                  <span className="pb-resto-card-desc" style={{color:"rgba(26,21,18,0.65)"}}>290 Dh accès piscine + déjeuner.</span>
                 </div>
               </div>
               <div className="article-gallery-2">
