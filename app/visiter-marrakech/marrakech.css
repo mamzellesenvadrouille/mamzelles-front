@@ -1111,3 +1111,12 @@
 .article-marrakech .pb-riad-card .pb-resto-card-desc:last-child {
   color: rgba(26,21,18,0.70);
 }
+
+/* Blocs tip/avis dans section organiser â€” style liseret gauche comme Londres */
+.article-marrakech #organiser .article-tip,
+.article-marrakech #organiser .article-avis {
+  background: #fff;
+  border: none;
+  border-left: 3px solid var(--gold);
+  border-radius: 0;
+}
