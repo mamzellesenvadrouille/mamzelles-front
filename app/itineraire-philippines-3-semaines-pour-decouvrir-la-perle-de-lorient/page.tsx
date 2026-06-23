@@ -890,7 +890,7 @@ export default function PhilippinesPage() {
             </div>
             <div className="article-pratique">
               <div className="article-pratique-block">
-                <h3 className="article-pratique-title">Tout ce qu&apos;il faut savoir avant de partir</h3>
+                <h3 className="article-pratique-title">Nos conseils avant de partir</h3>
                 <PratiqueOnglets onglets={[
                   {
                     id: 'formalites',
