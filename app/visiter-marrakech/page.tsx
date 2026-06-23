@@ -193,7 +193,7 @@ export default function MarrakechPage() {
               <p>Même si nous n’aspirons pas vraiment à cette ambiance, l’Hivernage reste un quartier agréable à découvrir et pour y flâner… Les rues sont propres, verdoyantes, et la végétation y est luxuriante.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8377-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1556-1-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1.463', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1556-1-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>⧐ La PALMERAIE, ou le poumon de la ville rouge</h3>
@@ -252,7 +252,7 @@ export default function MarrakechPage() {
                             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7041-1024x768.jpg" alt="Boutique plaques Marrakech" loading="lazy" className="article-img-full" />
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5004-1-768x1024.jpg" alt="Lumières de Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7001-1024x768.jpg" alt="Souk Marrakech" loading="lazy" style={{flex: '1.463', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7001-1024x768.jpg" alt="Souk Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>⧐ L’incroyable place JEMAA EL-FNA !</h3>
@@ -322,7 +322,7 @@ export default function MarrakechPage() {
               <p><strong>Le palais est ouvert tous les jours de 9 h à 17 h. Pour le visiter, l’entrée est payante : 100 Dh (10 €) pour les adultes et 30 Dh (3 €) pour les enfants. </strong></p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8154-1.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8184.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.463', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8184.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>Le Musée de la Photographie</h3>
@@ -347,7 +347,7 @@ export default function MarrakechPage() {
               <p><strong>Le jardin secret se visite tous les jours de 9 h 30 à 18 h. Le tarif de l'entrée est de 80 Dh (environ 7,50 €), et de 60 Dh (environ 5,50 €) pour les 7-24 ans.</strong> Il faut ajouter un supplément de 40 Dh (4 €) pour monter dans la tour.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8123.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8121-1024x768.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1.463', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8121-1024x768.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>La Médersa Ali Ben Youssef</h3>
@@ -360,7 +360,7 @@ export default function MarrakechPage() {
               <p><strong>L’école coranique se visite tous les jours de 9 h à 18 h. L’entrée est au tarif de 50 Dh (5 €). </strong></p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8090.jpg" alt="La Médersa Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8112.jpg" alt="La Médersa Marrakech" loading="lazy" style={{flex: '1.463', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8112.jpg" alt="La Médersa Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>La Koutoubia</h3>
