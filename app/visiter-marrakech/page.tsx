@@ -396,44 +396,46 @@ export default function MarrakechPage() {
                     <span className="pb-resto-tier-badge">€</span>
                     <span className="pb-resto-tier-label">Petits prix</span>
                   </div>
-                  <div className="pb-resto-grid">
-                    <a href="https://maps.app.goo.gl/PTjrcNqVpT7RMt1w7" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Atay café</span>
-                      <span className="pb-resto-card-desc">Cuisine marocaine généreuse dans un cadre authentique. Notre cantine de la médina.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/Cyry27cHx4R9CvE67" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Kui-Zin</span>
-                      <span className="pb-resto-card-desc">Rooftop en plein cœur de la médina, cuisine marocaine faite maison et buffet généreux.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/THAbfYXY2YoaY2528" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Café des épices</span>
-                      <span className="pb-resto-card-desc">Terrasse avec vue sur les toits, jus frais et petits plats simples face aux souks.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/Jdaszd1dJw9qsEJL7" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Henna café</span>
-                      <span className="pb-resto-card-desc">Restaurant associatif où l'on mange en se faisant tatouer au henné. Concept unique !</span>
-                    </a>
-                  </div>
+                                <div className="pb-resto-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)', marginBottom: '12px'}}>
+                <div className="pb-resto-card">
+                  <span className="pb-resto-card-name">
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJNb0AY2jurw0RbO3ykgyWmVQ" target="_blank" className="article-link article-resto-link-desktop" style={{color: "inherit", textDecoration: "none"}}>Dar donab</a>
+                    <a href="https://maps.app.goo.gl/dZQ8YNQm8BhzDkmX6" target="_blank" className="article-link article-resto-link-mobile" style={{color: "inherit", textDecoration: "none"}}>Dar donab</a>
+                  </span>
+                  <span className="pb-resto-card-desc" style={{color: "var(--gold)", fontStyle: "italic"}}>Médina, Bab Doukkala</span>
+                  <span className="pb-resto-card-desc">Hôtel luxueux dans un petit palais au cœur de la médina.</span>
+                  <span className="pb-resto-card-desc" style={{color: "var(--dark)", fontWeight: 600}}>150 Dh accès piscine — repas à la carte en supplément.</span>
                 </div>
-                <div className="pb-resto-tier">
-                  <div className="pb-resto-tier-header">
-                    <span className="pb-resto-tier-badge">€€</span>
-                    <span className="pb-resto-tier-label">Intermédiaire</span>
-                  </div>
-                  <div className="pb-resto-grid">
-                    <a href="https://maps.app.goo.gl/nTrdEU5KVV5Xj7GP6" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Le Jardin</span>
-                      <span className="pb-resto-card-desc">Riad verdoyant au cœur de la médina. Cadre romantique, cuisine raffinée et fraîche.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/LJijbJUkqoSbVLL4A" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">La Terrasse des épices</span>
-                      <span className="pb-resto-card-desc">Vue panoramique sur la médina, cuisine marocaine soignée et cocktails sans alcool.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/b7rSeahrnbAMyH866" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Le Nomad</span>
-                      <span className="pb-resto-card-desc">Design épuré, rooftop avec vue sur les toits et menu fusion maroco-contemporain.</span>
-                    </a>
-                  </div>
+                <div className="pb-resto-card">
+                  <span className="pb-resto-card-name">
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ23VUUwPxrw0RIowkEJOjCVg" target="_blank" className="article-link article-resto-link-desktop" style={{color: "inherit", textDecoration: "none"}}>Manzil la tortue</a>
+                    <a href="https://maps.app.goo.gl/txijutAUPUUN6qZKA" target="_blank" className="article-link article-resto-link-mobile" style={{color: "inherit", textDecoration: "none"}}>Manzil la tortue</a>
+                  </span>
+                  <span className="pb-resto-card-desc" style={{color: "var(--gold)", fontStyle: "italic"}}>Km 12, route de Ouarzazate</span>
+                  <span className="pb-resto-card-desc">Un havre de paix. Tout est fait maison, cocktails délicieux.</span>
+                  <span className="pb-resto-card-desc" style={{color: "var(--dark)", fontWeight: 600}}>À partir de 400 Dh (piscine + déjeuner).</span>
+                </div>
+              </div>
+              <div className="pb-resto-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)', marginBottom: '28px'}}>
+                <div className="pb-resto-card">
+                  <span className="pb-resto-card-name">
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ6R175Qfmrw0RlCOwZ7eHRRg" target="_blank" className="article-link article-resto-link-desktop" style={{color: "inherit", textDecoration: "none"}}>La vie en rose</a>
+                    <a href="https://maps.app.goo.gl/HyLEaDMCh63vQg3J6" target="_blank" className="article-link article-resto-link-mobile" style={{color: "inherit", textDecoration: "none"}}>La vie en rose</a>
+                  </span>
+                  <span className="pb-resto-card-desc" style={{color: "var(--gold)", fontStyle: "italic"}}>Km 14, route de l’Ourika</span>
+                  <span className="pb-resto-card-desc">Joli cadre, ânes et chevaux sur le terrain. Repas simples mais de qualité.</span>
+                  <span className="pb-resto-card-desc" style={{color: "var(--dark)", fontWeight: 600}}>250 Dh accès piscine + déjeuner.</span>
+                </div>
+                <div className="pb-resto-card">
+                  <span className="pb-resto-card-name">
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJneE65kjlrw0R0LMqzsrocjo" target="_blank" className="article-link article-resto-link-desktop" style={{color: "inherit", textDecoration: "none"}}>La ferme berbère</a>
+                    <a href="https://maps.app.goo.gl/PXQu437JWWuwkgWP7" target="_blank" className="article-link article-resto-link-mobile" style={{color: "inherit", textDecoration: "none"}}>La ferme berbère</a>
+                  </span>
+                  <span className="pb-resto-card-desc" style={{color: "var(--gold)", fontStyle: "italic"}}>Km 9, route de l’Ourika</span>
+                  <span className="pb-resto-card-desc">Ambiance familiale, menu unique et excellent.</span>
+                  <span className="pb-resto-card-desc" style={{color: "var(--dark)", fontWeight: 600}}>290 Dh accès piscine + déjeuner.</span>
+                </div>
+              </div>
                 </div>
                 <div className="pb-resto-tier">
                   <div className="pb-resto-tier-header">
