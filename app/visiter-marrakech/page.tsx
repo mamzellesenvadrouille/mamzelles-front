@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
     url: 'https://mamzellesenvadrouille.com/visiter-marrakech',
     siteName: 'MamZelles en vadrouille',
-    images: [{ url: '/marrakech.webp', width: 1920, height: 1080 }],
+    images: [{ url: '/Marrakech.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
     publishedTime: '2022-12-27T13:46:02.000Z',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Visiter Marrakech : que faire dans la ville rouge",
     description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
-    images: ['/marrakech.webp'],
+    images: ['/Marrakech.webp'],
   },
 };
 
@@ -36,7 +36,7 @@ export default function MarrakechPage() {
     '@type': 'BlogPosting',
     headline: "Visiter Marrakech : que faire dans la ville rouge",
     description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
-    image: '/marrakech.webp',
+    image: '/Marrakech.webp',
     datePublished: '2022-12-27',
     dateModified: '2026-06-22',
     author: {
@@ -69,7 +69,7 @@ export default function MarrakechPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/marrakech.webp" alt="Visiter Marrakech, la ville rouge" style={{objectPosition: 'center 55%'}} />
+        <img className="hero-bg" src="/Marrakech.webp" alt="Visiter Marrakech, la ville rouge" style={{objectPosition: 'center 55%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Marrakech<br /><em>Que faire dans la ville rouge</em></h1>
@@ -149,10 +149,8 @@ export default function MarrakechPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6164-1024x768.jpg" alt="Place Jemaa El-Fna nuit" className="article-img-full" loading="lazy" />
               <p>Surnommée <strong>la ville rouge</strong> en référence à la couleur d’une grande partie de ses immeubles et de ses maisons, Marrakech est la 4ème plus grande ville du Maroc après Casablanca, Fès et Tanger. Mais la ville rouge reste la <strong>capitale touristique</strong>.</p>
               <p>Marrakech, c'est le dépaysement total à seulement 3 h 30 de Paris en avion. De nombreux aéroports français proposent désormais des vols directs à moindre coût. C'est aussi un climat idéal quasiment toute l'année.</p>
-              <p>Marrakech, c’est l’effervescence, ça part vraiment dans toutes les directions… Ce sont les couleurs, les odeurs, les saveurs qui stimulent tous vos sens.</p>
-              <p>Marrakech, c’est aussi la culture, l'architecture et les paysages spectaculaires !</p>
-              <p>Marrakech est une ville unique, une expérience à elle seule.</p>
-              <p>Nous avons la chance d'avoir visité Marrakech à plusieurs reprises, notamment grâce au fait que les parents d’Amélie sont propriétaires d’un petit Riad (qu’ils mettent en location) au cœur de la médina, dans le quartier Dar El Bacha. On s’y sent un peu comme à la maison du coup !</p>
+              <p>Marrakech, c’est l’effervescence, ça part vraiment dans toutes les directions… Ce sont les couleurs, les odeurs, les saveurs qui stimulent tous vos sens. C’est aussi la culture, l’architecture et les paysages spectaculaires ! Marrakech est une ville unique, une expérience à elle seule.</p>
+              <p>Nous avons la chance d'avoir visité Marrakech à plusieurs reprises, notamment grâce au fait que les parents d’Amélie étaient propriétaires d’un petit Riad au cœur de la médina, dans le quartier Dar El Bacha. On s’y sent un peu comme à la maison du coup !</p>
               <p>Ce point de chute à Marrakech nous a également permis d’organiser quelques road trips au Maroc, et ainsi de visiter de nombreuses régions…</p>
           </section>
 
@@ -169,8 +167,7 @@ export default function MarrakechPage() {
               <div className="article-day-header article-day-header-tight">
                 <h3>⧐ La MÉDINA, ou la vieille ville de Marrakech</h3>
               </div>
-              <p>Cerclée par ses 19 kilomètres de remparts, la médina de Marrakech s’étend sur 600 hectares. Elle est la plus peuplée de l'Afrique du Nord.</p>
-              <p>Classée au patrimoine mondial de l’humanité par l'UNESCO, elle est le cœur historique de Marrakech.</p>
+              <p>Cerclée par ses 19 kilomètres de remparts, la médina de Marrakech s’étend sur 600 hectares. Elle est la plus peuplée de l'Afrique du Nord. Classée au patrimoine mondial de l’humanité par l'UNESCO, elle est le cœur historique de Marrakech.</p>
               <p>La médina est la partie la plus touristique, mais aussi la plus authentique de la ville rouge. Elle est elle-même composée de nombreux quartiers.</p>
               <p>Ce labyrinthe de ruelles abrite la plupart des attractions à ne surtout pas manquer : <strong>la fameuse place Jemaa el-Fna, les souks, les monuments historiques, les musées, sans oublier les nombreux petits restaurants qui éveilleront vos papilles</strong>.</p>
               <div className="article-gallery-2">
@@ -223,7 +220,7 @@ export default function MarrakechPage() {
               <p>Pour nous, <strong>le meilleur moyen de visiter la médina est de s'y perdre</strong>. Alors osez un peu de folie et perdez vous dans ce labyrinthe sans crainte.</p>
               <div className="article-tip">
                 <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                <div><strong>Notre conseil</strong><p>Gardez en tête qu&apos;il arrive que de jeunes Marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction. Ne vous laissez pas influencer — faites confiance à votre instinct et à votre carte !</p></div>
+                <div><strong>Le conseil des MamZelles</strong><p>Gardez en tête qu&apos;il arrive que de jeunes Marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction. Ne vous laissez pas influencer — faites confiance à votre instinct et à votre carte !</p></div>
               </div>
               <p>Gardez en tête qu’il arrive que de jeunes Marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction quand ils les voient un peu déboussolés. Si besoin, préférez demander votre chemin aux commerçants. Pensez aussi à lever les yeux, <strong>il y a souvent des panneaux suspendus au niveau des croisements dans les souks qui vous donneront des indications sur la route à suivre</strong> pour rejoindre les endroits stratégiques.</p>
               <div className="article-gallery-2">
