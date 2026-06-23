@@ -171,7 +171,7 @@ export default function MarrakechPage() {
               <p>La médina est la partie la plus touristique, mais aussi la plus authentique de la ville rouge. Elle est elle-même composée de nombreux quartiers.</p>
               <p>Ce labyrinthe de ruelles abrite la plupart des attractions à ne surtout pas manquer : <strong>la fameuse place Jemaa el-Fna, les souks, les monuments historiques, les musées, sans oublier les nombreux petits restaurants qui éveilleront vos papilles</strong>.</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6090-1024x768.jpg" alt="Café des épices Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6090-1024x768.jpg" alt="Café des épices Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5675-768x1024.jpg" alt="Boutique cuir Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
@@ -182,8 +182,8 @@ export default function MarrakechPage() {
               <p>Si vous avez envie de faire les boutiques, notamment de grandes marques internationales, vous êtes au bon endroit ! Rendez-vous alors dans le centre commercial où vous trouverez aussi toutes les chaînes de fast food les plus connues !</p>
               <p><strong>Le jardin Majorelle, la splendide gare de Marrakech, le Palais des Congrès ou encore le Théâtre Royal</strong> se trouvent dans le Guéliz.</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6290-1024x768.jpg" alt="SkyBar Guéliz Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6279-769x1024.jpg" alt="Boutiques Guéliz" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6290-1024x768.jpg" alt="SkyBar Guéliz Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6279-769x1024.jpg" alt="Boutiques Guéliz" loading="lazy" style={{flex: '0.751', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>⧐ L'HIVERNAGE, ou le quartier chic de Marrakech</h3>
@@ -192,8 +192,8 @@ export default function MarrakechPage() {
               <p>Ce quartier attire les populations aisées à la recherche de modernité et de vie nocturne.</p>
               <p>Même si nous n’aspirons pas vraiment à cette ambiance, l’Hivernage reste un quartier agréable à découvrir et pour y flâner… Les rues sont propres, verdoyantes, et la végétation y est luxuriante.</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8377-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1556-1-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8377-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1556-1-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>⧐ La PALMERAIE, ou le poumon de la ville rouge</h3>
@@ -203,8 +203,8 @@ export default function MarrakechPage() {
               <p>C’est grâce à un réseau de canalisation souterrain ancestral que tous ces hectares de palmeraie sont irrigués.</p>
               <p>Dans ce quartier, cohabitent donc avec cet <strong>écrin de verdure, de grandes résidences hôtelières, toutes équipées d’énormes piscines et de salles de sport, et des propriétés démesurées de personnes fortunées</strong>.</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_2233-2-1024x768.jpg" alt="Quad Palmeraie Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_2243-1024x768.jpg" alt="Quad Palmeraie Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_2233-2-1024x768.jpg" alt="Quad Palmeraie Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_2243-1024x768.jpg" alt="Quad Palmeraie Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
           </section>
 
@@ -238,7 +238,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5234-768x1024.jpg" alt="Boutique souk Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4973-1-1024x768.jpg" alt="Perles de Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4973-1-1024x768.jpg" alt="Perles de Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5935-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <p>Même si cela fait partie de l’ambiance, les commerçants qui vous accostent pour vous vendre leurs produits peuvent se montrer très insistants. N’hésitez pas à leur dire « la safi ! » (stop !, en français), ou « baraka ! » (ça suffit !) si vous n’êtes pas intéressé.</p>
@@ -250,9 +250,9 @@ export default function MarrakechPage() {
               <p>La médina c’est aussi les somptueux riads que l'on ne soupçonne même pas ! Notez qu’un riad est une maison urbaine traditionnelle marocaine, construite autour d'un patio ou d'un jardin intérieur. Dans certains, on y trouve même un bassin, voire une petite piscine !</p>
               <p>Dissimulés dans des petites ruelles, à l’abri des regards, on ne s'attend pas à découvrir de véritables petits (ou grands) palais, lorsque l’on pousse leur porte ! Nous sommes toujours impressionnées et émerveillées par leur beauté quand nous avons l’occasion d’en visiter.</p>
               <div className="article-gallery-3">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7041-1024x768.jpg" alt="Boutique plaques Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5004-1-768x1024.jpg" alt="Lumières de Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7001-1024x768.jpg" alt="Souk Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7041-1024x768.jpg" alt="Boutique plaques Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5004-1-768x1024.jpg" alt="Lumières de Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7001-1024x768.jpg" alt="Souk Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>⧐ L’incroyable place JEMAA EL-FNA !</h3>
@@ -265,20 +265,20 @@ export default function MarrakechPage() {
                 <div><strong>À NE PAS MANQUER</strong><p>Ne passez pas à côté des stands de jus de fruits frais sans les goûter — tellement bons et si peu chers ! Et en fin de journée, installez-vous en hauteur sur la terrasse d&apos;un café de la place pour observer l&apos;agitation dans toute sa splendeur.</p></div>
               </div>
               <div className="article-gallery-3">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3880-1-1024x769.jpg" alt="Place Jemma El-Fna jour" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3882.jpg" alt="Place Jemma El-Fna jour Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5793-3-1024x768.jpg" alt="Place Jemma El-Fna jour Kech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3880-1-1024x769.jpg" alt="Place Jemma El-Fna jour" loading="lazy" style={{flex: '1.332', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3882.jpg" alt="Place Jemma El-Fna jour Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5793-3-1024x768.jpg" alt="Place Jemma El-Fna jour Kech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <p>Pour tout vous dire, nous évitons de nous approcher de trop près des dresseurs de singes. Ils n’hésitent pas à les faire grimper sur vous et à vous réclamer ensuite quelques dirhams. Et si vous souhaitez les prendre en photo, même à la volée, ça ne sera pas gratuit non plus… Du coup, soyez discret ! Nous avons en tout cas bien trop de peine devant ces petits singes tenus en laisse, déguisés et dressés pour faire les bêtes de foire. C’est un commerce que nous ne préférons pas encourager.</p>
               <p>Ne passez pas à côté des stands de jus de fruits frais sans les goûter. Ils sont tellement bons et si peu chers !</p>
               <p>En fin de journée, des échoppes de restauration sont installées. Les vendeurs de soupe ou d’escargots vous feront signe pour que vous goûtiez à leur spécialité à la volée.</p>
               <p>Dans les autres, vous aurez le choix entre du poisson, des grillades, du couscous, etc. <strong>Ce n’est pas pour autant le meilleur endroit pour manger.</strong> Les prix sont excessifs et ce n’est pas forcément très bon. Les rabatteurs sont très insistants pour que vous vous installiez à leur table et peuvent même se montrer oppressants. Soyez ferme avec eux, et ne vous laissez pas influencer  !</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5249-1024x768.jpg" alt="Stands Place Jemaa El-Fna" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5017-1024x768.jpg" alt="Place Jemaa El-Fna nuit Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5249-1024x768.jpg" alt="Stands Place Jemaa El-Fna" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5017-1024x768.jpg" alt="Place Jemaa El-Fna nuit Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5016-1024x768.jpg" alt="Place Jemaa El-Fna nuit Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5016-1024x768.jpg" alt="Place Jemaa El-Fna nuit Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5049_jpg-768x1024.jpg" alt="Place Jemaa El-Fna nuit" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <p>Le soir, c’est encore une autre ambiance !</p>
@@ -298,9 +298,9 @@ export default function MarrakechPage() {
               <p>Il transforme ce dernier en un véritable oasis avec des cactus, des palmiers, des bambous, des fontaines, des bassins et surtout avec cette merveilleuse couleur bleue…</p>
               <p><strong>Jacques Majorelle s'inspire du Lac de Tasgah</strong> (dans l'Atlas marocain) et crée ce bleu doux, intense et électrique pour repeindre sa villa et divers éléments qui la compose (le portail, les jarres et les pergolas). C’est ce fameux bleu que l'on retrouvera sur ses toiles, ce bleu que l'on appelle aujourd'hui le <strong>bleu Majorelle</strong>.</p>
               <div className="article-gallery-3">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5853-768x1024.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6761-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6768-1024x768.jpg" alt="Bleu Majorelle Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5853-768x1024.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6761-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6768-1024x768.jpg" alt="Bleu Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <p>En 1980, <strong>le domaine est racheté par le couple Yves Saint Laurent et Pierre Bergé</strong>. Ils le rebaptisent la Villa Oasis. Ils entreprennent alors d'importants travaux de restauration du jardin pour le rendre aussi beau que Jacques Majorelle l’avait imaginé. Aujourd’hui, on y retrouve plus de 300 espèces de plantes sur 1 hectare de terrain.</p>
               <p>Yves Saint Laurent et Pierre Bergé transforment également l'atelier de peinture de Jacques Majorelle en musée des arts berbères ouvert au public.</p>
@@ -308,8 +308,8 @@ export default function MarrakechPage() {
               <p>A la mort d'Yves Saint Laurent en 2008, ses cendres sont dispersées dans la roseraie de la Villa Oasis, où un mémorial est créé en son honneur.</p>
               <p>Vous l'aurez compris, <strong>ce n'est pas </strong><strong>juste un magnifique jardin où déambuler dans les allées, c’est aussi un lieu chargé d’histoire</strong>.</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6751-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5851-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6751-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5851-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <p><strong>Le jardin se visite tous les jours de 8 h à 17 h 30. L’entrée est au tarif de 170 Dh (17 €) et est gratuite pour les enfants de moins de 10 ans. </strong></p>
               <p>Vous aurez alors accès au jardin,  à une galerie où sont exposées des affiches d’Yves Saint Laurent, à la boutique du jardin et du musée.</p>
@@ -324,8 +324,8 @@ export default function MarrakechPage() {
               <p>Pour la petite histoire « Bahia » signifie « la belle, la brillante ». C’est en fait l’ancien harem du Grand Vizir Bou Ahmed, qui vivait ici avec ses 4 épouses et ses 24 concubines.</p>
               <p><strong>Le palais est ouvert tous les jours de 9 h à 17 h. Pour le visiter, l’entrée est payante : 100 Dh (10 €) pour les adultes et 30 Dh (3 €) pour les enfants. </strong></p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8154-1.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8184.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8154-1.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8184.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>Le Musée de la Photographie</h3>
@@ -337,8 +337,8 @@ export default function MarrakechPage() {
               <p>N’hésitez pas à monter sur la terrasse qui offre une vue panoramique sur la vieille ville. Il y a également une cafeteria, de quoi se rafraîchir après l’exposition.</p>
               <p><strong>Le musée est ouvert tous les jours de 9 h 30 à 19 h. Il faut compter 60 Dh (environ 6 €) pour accéder au musée. </strong></p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8205-1024x766.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8202.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8205-1024x766.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.337', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8202.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>Le Jardin Secret</h3>
@@ -349,8 +349,8 @@ export default function MarrakechPage() {
               <p>Il y a également une tour dans laquelle vous pouvez monter. C'est l'une des plus haute de la médina.</p>
               <p><strong>Le jardin secret se visite tous les jours de 9 h 30 à 18 h. Le tarif de l’entrée est de 80 Dh (environ 7,50 €), et de 60 Dh (environ 5,50 €) pour les 7-24 ans.</strong> Il faut ajouter un supplément de 40 Dh (4 €) pour monter dans la tour.</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8123.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8121-1024x768.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8123.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8121-1024x768.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>La Médersa Ali Ben Youssef</h3>
@@ -362,8 +362,8 @@ export default function MarrakechPage() {
               <p>La médersa pouvait accueillir jusqu’à 900 étudiants. Les 132 chambres permettaient de loger des étudiants gratuitement, notamment ceux qui n’étaient pas originaires de Marrakech.</p>
               <p><strong>L’école coranique se visite tous les jours de 9 h à 18 h. L’entrée est au tarif de 50 Dh (5 €). </strong></p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8090.jpg" alt="La Médersa Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8112.jpg" alt="La Médersa Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8090.jpg" alt="La Médersa Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8112.jpg" alt="La Médersa Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>La Koutoubia</h3>
@@ -386,10 +386,10 @@ export default function MarrakechPage() {
               <p>Nous avons nos petites habitudes quant aux endroits où manger et prendre un verre dans la médina…</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4960-768x1024.jpg" alt="Souk Kafé médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6099-1024x768.jpg" alt="Café des épices Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6099-1024x768.jpg" alt="Café des épices Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5290_jpg-1024x768.jpg" alt="Henna Café Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5290_jpg-1024x768.jpg" alt="Henna Café Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5292-768x1024.jpg" alt="Henna Café Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <p><strong>Voici notre liste en fonction de leurs tarifs</strong><strong> :</strong></p>
@@ -464,7 +464,7 @@ export default function MarrakechPage() {
                 <div><strong>Bon à savoir</strong><p>Vous avez également la possibilité de vous faire livrer à domicile via l&apos;application <strong>GLOVO</strong> (le Uber Eats marocain !) — pratique pour les soirées cocooning dans votre riad !</p></div>
               </div>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1848-1024x768.jpg" alt="Kui-Zin médina Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1848-1024x768.jpg" alt="Kui-Zin médina Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5204_jpg-768x1024.jpg" alt="Restaurant Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
           </section>
@@ -485,12 +485,12 @@ export default function MarrakechPage() {
               <p>・<em><a href="https://www.google.com/maps/place/?q=place_id:ChIJ6R175Qfmrw0RlCOwZ7eHRRg" target="_blank" className="article-link article-resto-link-desktop">La vie en rose</a><a href="https://maps.app.goo.gl/HyLEaDMCh63vQg3J6" target="_blank" className="article-link article-resto-link-mobile">La vie en rose</a></em> (km 14, route de l’Ourika) : joli cadre. Ânes et chevaux se baladant sur le terrain. Repas simples mais de qualité. <strong>Tarif : 250 Dh accès piscine + déjeuner.</strong></p>
               <p>・<em><a href="https://www.google.com/maps/place/?q=place_id:ChIJneE65kjlrw0R0LMqzsrocjo" target="_blank" className="article-link article-resto-link-desktop">La ferme berbère</a><a href="https://maps.app.goo.gl/PXQu437JWWuwkgWP7" target="_blank" className="article-link article-resto-link-mobile">La ferme berbère</a></em> (km 9, route de l’Ourika) : ambiance familiale. Menu unique et excellent. <strong>Tarif : 290 Dh accès piscine + déjeuner.</strong></p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6555-1024x768.jpg" alt="Manzil Tortue Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6555-1024x768.jpg" alt="Manzil Tortue Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4841_jpg-768x1024.jpg" alt="Dar Donab médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6690-1024x768.jpg" alt="Ferme Berbere Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6619-1024x768.jpg" alt="Ferme Berbere Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6690-1024x768.jpg" alt="Ferme Berbere Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6619-1024x768.jpg" alt="Ferme Berbere Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <p>Et pour profiter au maximum de votre journée de détente, sachez que tous ces établissements proposent des massages à la carte.</p>
               <p><strong>Il y a également des parcs aquatiques à Marrakech.</strong> Nous avons testé <a href="https://www.google.com/maps/place/?q=place_id:ChIJE-7HtBLvrw0Rybnp68GzPEY" target="_blank" className="article-link article-resto-link-desktop">Oasiria</a><a href="https://maps.app.goo.gl/asEX7BCr5rWR3fUT9" target="_blank" className="article-link article-resto-link-mobile">Oasiria</a> (km 4, route d’Amizmiz).</p>
@@ -498,9 +498,9 @@ export default function MarrakechPage() {
               <p>De nombreux espaces verts et de détente, ainsi qu'un terrain de beach-volley / soccer sont mis à disposition. Le parc est ouvert toute l’année et propose en hiver une piscine chauffée de 300 m².</p>
               <p><strong>Tarif à la journée (le parc est ouvert d’avril à début novembre) : 300 Dh (environ 29 €) pour les adultes et les enfants de plus d’1,50 m, et 200 Dh (environ 19 €) pour les enfants de moins d’1,50 m et les seniors de plus de 65 ans (gratuit en dessous de 80 cm). </strong></p>
               <div className="article-gallery-3">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6353-1024x768.jpg" alt="Entrée Oasiria Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6376-1024x768.jpg" alt="Oasiria Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6496-768x1024.jpg" alt="Oasiria Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6353-1024x768.jpg" alt="Entrée Oasiria Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6376-1024x768.jpg" alt="Oasiria Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6496-768x1024.jpg" alt="Oasiria Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
           </section>
 
@@ -512,9 +512,9 @@ export default function MarrakechPage() {
               <p>C'est en tout cas sans hésitation que <strong>nous vous conseillons de loger dans un riad au cœur de la médina</strong>.</p>
               <p>Pour nous, rien de tel pour se plonger vraiment dans l'ambiance. Et puis, c'est tellement facile du coup de pouvoir tout faire à pied !</p>
               <div className="article-gallery-3">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6976-1-1024x768.jpg" alt="Riad maison Atlas" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1833-1024x768.jpg" alt="Riad maison" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5707-768x1024.jpg" alt="Riad maison" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6976-1-1024x768.jpg" alt="Riad maison Atlas" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1833-1024x768.jpg" alt="Riad maison" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5707-768x1024.jpg" alt="Riad maison" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <p>Il existe dans ce cas, deux possibilités :</p>
               <p>・<strong>louer une chambre</strong> dans un riad en pension complète ou en demi-pension ;</p>
@@ -531,7 +531,7 @@ export default function MarrakechPage() {
               <p>Il y a effectivement une autre ambiance à Marrakech pendant la période du ramadan. La ville est comme au ralenti. En journée, les rues sont bien plus désertes qu’habituellement.</p>
               <p>Pour autant, pas d’inquiétude… Marrakech étant une ville très touristique, vous trouverez toujours des boutiques et des restaurants ouverts.</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_9711-1024x768.jpg" alt="Vue du ciel Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_9711-1024x768.jpg" alt="Vue du ciel Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6057-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <p><strong>Vous serez également plus tranquille pour les visites</strong> : pas de file d’attente interminable !</p>
@@ -588,8 +588,8 @@ export default function MarrakechPage() {
                                                     <li>Les taxis privés : Si vous n'êtes pas friand de la négociation, faites alors appel à un taxi privé. Les chauffeurs mettent le compteur de manière obligatoire, et les prix fixés sont toujours honnêtes. D'ailleurs, les tarifs sont généralement collés sur leur pare-brise. Pour avoir une idée, pour se rendre de la médina à la palmeraie, comptez 100 Dh (10€).</li>
                         </ul>
                         <div className="article-gallery-2">
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7135-1024x768.jpg" alt="Taxis Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5273-768x1024.jpg" alt="Taxi Marrakech médina" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7135-1024x768.jpg" alt="Taxis Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5273-768x1024.jpg" alt="Taxi Marrakech médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
                         </div>
                       </>
                     ),
@@ -622,8 +622,8 @@ export default function MarrakechPage() {
                         <p><strong>Nous vous recommandons donc fortement de ne pas vous rendre à Marrakech en été.</strong> Au-delà de la foule, les températures, souvent supérieures à 35°C, peuvent limiter les activités et les excursions... Évitez de vous rendre dans le désert d'Agafay par exemple à cette période !</p>
                         <p>Contrairement à ce que l'on pourrait penser, <strong>les hivers peuvent être frais</strong> même si le taux d'ensoleillement est important à ce moment-là. L'écart entre les températures le jour et la nuit étant important, il conviendra d'emporter une bonne veste dans votre valise !</p>
                         <div className="article-gallery-2">
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6100-768x1024.jpg" alt="Marrakech printemps" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5740-768x1024.jpg" alt="Marrakech automne" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6100-768x1024.jpg" alt="Marrakech printemps" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5740-768x1024.jpg" alt="Marrakech automne" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
                         </div>
                       </>
                     ),
@@ -659,8 +659,8 @@ export default function MarrakechPage() {
                         <p>Aussi, si vous ne voulez pas choquer dans la rue, alors adaptez votre tenue...</p>
                         <p>Pour les femmes particulièrement, évitez ainsi les vêtements très courts et / ou les décolletés plongeants par exemple !</p>
                         <div className="article-gallery-2">
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4975-768x1024.jpg" alt="Dress code Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6081-1024x768.jpg" alt="Médina Marrakech" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4975-768x1024.jpg" alt="Dress code Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6081-1024x768.jpg" alt="Médina Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                         </div>
                       </>
                     ),
