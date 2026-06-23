@@ -319,7 +319,7 @@ export default function MarrakechPage() {
               <p>Vous pourrez admirer l'architecture marocaine dans toute sa splendeur. Les peintures, les sculptures, les mosaïques, et les vitraux que l’on y trouve sont magnifiques et mettent en valeur tout le savoir faire des artisans.</p>
               <p>Le palais est composé de plus de 150 pièces, de différentes cours et de jardins avec des fontaines. Le tout est très grand, mais surtout très beau !</p>
               <p>Pour la petite histoire « Bahia » signifie « la belle, la brillante ». C’est en fait l’ancien harem du Grand Vizir Bou Ahmed, qui vivait ici avec ses 4 épouses et ses 24 concubines.</p>
-              <p><strong>Le palais est ouvert tous les jours de 9h a 17h. Pour le visiter, l’entrée est payante : 100 Dh (10 €) pour les adultes et 30 Dh (3 €) pour les enfants. </strong></p>
+              <p><strong>Le palais est ouvert tous les jours de 9 h à 17 h. Pour le visiter, l’entrée est payante : 100 Dh (10 €) pour les adultes et 30 Dh (3 €) pour les enfants. </strong></p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8154-1.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8184.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -558,7 +558,7 @@ export default function MarrakechPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>,
                     content: (
                       <>
-                        <p>Pour arriver à Marrakech, nous avons voyagé avec la compagnie <strong>EasyJet</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 368€ pour deux. Il faut compter généralement près de 3h de vol pour rejoindre l'aéroport de Marrakech-Ménara.</p>
+                        <p>Pour arriver à Marrakech, nous avons voyagé avec la compagnie <strong>EasyJet</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 368€ pour deux. Il faut compter généralement près de 3 h de vol pour rejoindre l'aéroport de Marrakech-Ménara.</p>
                         <p>Nous vous recommandons de comparer les offres des différentes compagnies aériennes sur <strong>Skyscanner</strong> pour vous rendre à Marrakech (ou ailleurs !). On utilise beaucoup ce site pour trouver les vols qui nous conviennent, que ce soit au niveau des horaires ou des tarifs.</p>
                         <div className="article-tip">
                           <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
