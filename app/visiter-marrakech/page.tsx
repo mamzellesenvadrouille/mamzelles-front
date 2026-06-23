@@ -554,7 +554,7 @@ export default function MarrakechPage() {
               <h2>📍 Marrakech pendant le Ramadan, bonne idée ou pas ?</h2>
             </div>
               <p>Vous connaissez l’expression « c’est quoi tout ce ramdam » ? Ramdam vient du mot ramadan. Si lors de la période du ramadan les journées sont calmes, le soir c’est un vrai ramdam !</p>
-                            <p>Il y a effectivement une autre ambiance à Marrakech pendant la période du ramadan. La ville est comme au ralenti. En journée, les rues sont bien plus désertes qu’habituellement.</p>
+                            <p>Il y a une autre ambiance à Marrakech pendant la période du ramadan. La ville est comme au ralenti. En journée, les rues sont bien plus désertes qu’habituellement.</p>
               <p>Pour autant, pas d’inquiétude… Marrakech étant une ville très touristique, vous trouverez toujours des boutiques et des restaurants ouverts.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_9711-1024x768.jpg" alt="Vue du ciel Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -591,7 +591,11 @@ export default function MarrakechPage() {
                     content: (
                       <>
                         <p>Pour arriver à Marrakech, nous avons voyagé avec la compagnie <strong>EasyJet</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 368 € pour deux. Il faut compter généralement près de 3 h de vol pour rejoindre l'aéroport de Marrakech-Ménara.</p>
-                        <p>Nous vous recommandons de comparer les offres des différentes compagnies aériennes sur <strong>Skyscanner</strong> pour vous rendre à Marrakech (ou ailleurs !). On utilise beaucoup ce site pour trouver les vols qui nous conviennent, que ce soit au niveau des horaires ou des tarifs.</p>
+                        
+              <div className="article-tip">
+                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                <div><strong>Bon à savoir</strong><p>Nous vous recommandons de comparer les offres des différentes compagnies aériennes sur <a href="https://www.skyscanner.fr" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a> pour vous rendre à Marrakech (ou ailleurs !). On utilise beaucoup ce site pour trouver les vols qui nous conviennent, que ce soit au niveau des horaires ou des tarifs.</p></div>
+              </div>
                         <div className="article-tip">
                           <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
                           <div><strong>Bon à savoir</strong><p>Nous vous recommandons de comparer les offres sur <a href="https://www.skyscanner.fr" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a> ou d&apos;acheter directement sur le site de votre compagnie pour obtenir le meilleur tarif.</p></div>
