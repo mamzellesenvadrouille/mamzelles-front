@@ -1108,3 +1108,6 @@
 .article-marrakech .pb-riad-card .pb-resto-card-desc {
   display: block;
 }
+.article-marrakech .pb-riad-card .pb-resto-card-desc:last-child {
+  color: rgba(26,21,18,0.70);
+}
