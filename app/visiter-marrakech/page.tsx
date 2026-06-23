@@ -447,12 +447,16 @@ export default function MarrakechPage() {
                     </a>
                     <a href="https://maps.app.goo.gl/8Pybhtk1PeSdhozw6" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Café arabe</span>
-                      <span className="pb-resto-card-desc">L'adresse historique pour boire un verre à Marrakech. Alcool au rendez-vous.</span>
+                      <span className="pb-resto-card-desc">Cuisine italienne et marocaine, alcool au rendez-vous.</span>
                     </a>
                   </div>
                 </div>
               </div>
-                                          <p><strong>≫</strong> Si vous le souhaitez, vous avez également la possibilité de vous faire livrer à domicile via l’application <strong>GLOVO</strong> (le Uber Eats marocain !).</p>
+                                          
+              <div className="article-tip">
+                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                <div><strong>Bon à savoir</strong><p>Vous avez également la possibilité de vous faire livrer à domicile via l&apos;application <strong>GLOVO</strong> (le Uber Eats marocain !) — pratique pour les soirées cocooning dans votre riad !</p></div>
+              </div>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1848-1024x768.jpg" alt="Kui-Zin médina Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5204_jpg-768x1024.jpg" alt="Restaurant Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
