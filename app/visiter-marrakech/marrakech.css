@@ -232,7 +232,10 @@
 
 @media (max-width: 768px) {
   .article-layout { padding: 28px 20px; }
-
+  .article-gallery-3 { grid-template-columns: 1fr; }
+  .article-gallery-3 img { height: 220px; }
+  .article-gallery-2 { grid-template-columns: 1fr; }
+  .article-gallery-2 img { height: 220px; }
   .article-day-header h2 { font-size: 34px; }
   .article-marrakech .article-section h3 { font-size: 28px !important; }
   .article-marrakech .article-section h4 { font-size: 24px !important; }
@@ -454,7 +457,8 @@
   .article-main { order: 1; overflow-x: hidden; }
   .article-sidebar { order: 2; position: static !important; }
   .article-coup-de-coeur { padding: 16px 24px !important; width: 100% !important; left: auto !important; transform: none !important; position: relative !important; }
-
+  .article-gallery-3 img { height: auto; aspect-ratio: unset; object-fit: cover; width: 100%; }
+  .article-gallery-2 img { height: auto; aspect-ratio: unset; object-fit: cover; width: 100%; }
   .article-cdcr-grid { flex-direction: column; }
   .article-cdcr-header h2 { font-size: 18px !important; }
   .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; }

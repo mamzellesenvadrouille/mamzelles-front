@@ -249,11 +249,11 @@ export default function MarrakechPage() {
               <p>Les prix ne sont généralement pas affichés. <strong>N’ayez pas peur de négocier, </strong><strong>cela fait parti du jeu ici</strong>. Et pour avoir le meilleur prix, petit conseil, demandez le prix Marrakchi !</p>
               <p>La médina c’est aussi les somptueux riads que l'on ne soupçonne même pas ! Notez qu’un riad est une maison urbaine traditionnelle marocaine, construite autour d'un patio ou d'un jardin intérieur. Dans certains, on y trouve même un bassin, voire une petite piscine !</p>
               <p>Dissimulés dans des petites ruelles, à l’abri des regards, on ne s'attend pas à découvrir de véritables petits (ou grands) palais, lorsque l’on pousse leur porte ! Nous sommes toujours impressionnées et émerveillées par leur beauté quand nous avons l’occasion d’en visiter.</p>
-              <div className="article-gallery-3">
+                            <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7041-1024x768.jpg" alt="Boutique plaques Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5004-1-768x1024.jpg" alt="Lumières de Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7001-1024x768.jpg" alt="Souk Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5004-1-768x1024.jpg" alt="Lumières de Marrakech" loading="lazy" className="article-img-full" />
               <div className="article-day-header article-day-header-tight">
                 <h3>⧐ L’incroyable place JEMAA EL-FNA !</h3>
               </div>
@@ -297,11 +297,11 @@ export default function MarrakechPage() {
               <p>Pour la petite histoire, cet endroit porte le nom de son fondateur, <strong>Jacques Majorelle, un peintre français</strong>. En 1936, il fait construire une maison-atelier dans le Nord-Ouest de la médina. Il passe alors 22 ans à aménager sa villa et son jardin.</p>
               <p>Il transforme ce dernier en un véritable oasis avec des cactus, des palmiers, des bambous, des fontaines, des bassins et surtout avec cette merveilleuse couleur bleue…</p>
               <p><strong>Jacques Majorelle s'inspire du Lac de Tasgah</strong> (dans l'Atlas marocain) et crée ce bleu doux, intense et électrique pour repeindre sa villa et divers éléments qui la compose (le portail, les jarres et les pergolas). C’est ce fameux bleu que l'on retrouvera sur ses toiles, ce bleu que l'on appelle aujourd'hui le <strong>bleu Majorelle</strong>.</p>
-              <div className="article-gallery-3">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5853-768x1024.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                            <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6761-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6768-1024x768.jpg" alt="Bleu Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5853-768x1024.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" className="article-img-full" />
               <p>En 1980, <strong>le domaine est racheté par le couple Yves Saint Laurent et Pierre Bergé</strong>. Ils le rebaptisent la Villa Oasis. Ils entreprennent alors d'importants travaux de restauration du jardin pour le rendre aussi beau que Jacques Majorelle l’avait imaginé. Aujourd’hui, on y retrouve plus de 300 espèces de plantes sur 1 hectare de terrain.</p>
               <p>Yves Saint Laurent et Pierre Bergé transforment également l'atelier de peinture de Jacques Majorelle en musée des arts berbères ouvert au public.</p>
               <p>Ils y exposent également des pièces haute couture de leur collection.</p>
@@ -497,11 +497,11 @@ export default function MarrakechPage() {
               <p>Il est le 1er parc aquatique du Maroc. Il s'étend sur 10 hectares et offre une vaste panoplie d'attractions aquatiques pour toute la famille.</p>
               <p>De nombreux espaces verts et de détente, ainsi qu'un terrain de beach-volley / soccer sont mis à disposition. Le parc est ouvert toute l’année et propose en hiver une piscine chauffée de 300 m².</p>
               <p><strong>Tarif à la journée (le parc est ouvert d’avril à début novembre) : 300 Dh (environ 29 €) pour les adultes et les enfants de plus d’1,50 m, et 200 Dh (environ 19 €) pour les enfants de moins d’1,50 m et les seniors de plus de 65 ans (gratuit en dessous de 80 cm). </strong></p>
-              <div className="article-gallery-3">
+                            <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6353-1024x768.jpg" alt="Entrée Oasiria Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6376-1024x768.jpg" alt="Oasiria Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6496-768x1024.jpg" alt="Oasiria Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6496-768x1024.jpg" alt="Oasiria Marrakech" loading="lazy" className="article-img-full" />
           </section>
 
           <section id="loger" className="article-section">
@@ -511,11 +511,11 @@ export default function MarrakechPage() {
               <p>Finalement, tout dépend de ce que vous recherchez pour votre logement : gamme de tarif, piscine, services proposés, localisation ?</p>
               <p>C'est en tout cas sans hésitation que <strong>nous vous conseillons de loger dans un riad au cœur de la médina</strong>.</p>
               <p>Pour nous, rien de tel pour se plonger vraiment dans l'ambiance. Et puis, c'est tellement facile du coup de pouvoir tout faire à pied !</p>
-              <div className="article-gallery-3">
+                            <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6976-1-1024x768.jpg" alt="Riad maison Atlas" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1833-1024x768.jpg" alt="Riad maison" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5707-768x1024.jpg" alt="Riad maison" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5707-768x1024.jpg" alt="Riad maison" loading="lazy" className="article-img-full" />
               <p>Il existe dans ce cas, deux possibilités :</p>
               <p>・<strong>louer une chambre</strong> dans un riad en pension complète ou en demi-pension ;</p>
               <p>・<strong>louer un riad en entier.</strong> Vous vous sentirez comme à la maison ! Cela ne vous coûtera pas forcément plus cher et vous aurez toute votre intimité.</p>
