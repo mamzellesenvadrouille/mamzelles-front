@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
     url: 'https://mamzellesenvadrouille.com/visiter-marrakech',
     siteName: 'MamZelles en vadrouille',
-    images: [{ url: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6164.jpg', width: 1920, height: 1080 }],
+    images: [{ url: '/marrakech.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
     publishedTime: '2022-12-27T13:46:02.000Z',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Visiter Marrakech : que faire dans la ville rouge",
     description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
-    images: ['https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6164.jpg'],
+    images: ['/marrakech.webp'],
   },
 };
 
@@ -36,7 +36,7 @@ export default function MarrakechPage() {
     '@type': 'BlogPosting',
     headline: "Visiter Marrakech : que faire dans la ville rouge",
     description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
-    image: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6164.jpg',
+    image: '/marrakech.webp',
     datePublished: '2022-12-27',
     dateModified: '2026-06-22',
     author: {
@@ -69,7 +69,7 @@ export default function MarrakechPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6164.jpg" alt="Visiter Marrakech, la ville rouge" style={{objectPosition: 'center 55%'}} />
+        <img className="hero-bg" src="/marrakech.webp" alt="Visiter Marrakech, la ville rouge" style={{objectPosition: 'center 55%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Marrakech<br /><em>Que faire dans la ville rouge</em></h1>
@@ -221,6 +221,10 @@ export default function MarrakechPage() {
               <p>C'est le bazar anarchique que l’on trouve dans la médina qui en fait particulièrement son charme. Les souks sont idéaux pour se plonger pleinement dans la vie marocaine.</p>
               <p>Une question nous est souvent posée : <strong>faut-il prendre un guide pour visiter la médina ?</strong> Sans réfléchir, notre réponse est non. Nous sommes 2 nanas et nous ne nous sommes jamais senties en insécurité. De plus un guide, qu'il vous faudra payer, vous conduira dans des endroits que vous pouvez découvrir par vous-même.</p>
               <p>Pour nous, <strong>le meilleur moyen de visiter la médina est de s'y perdre</strong>. Alors osez un peu de folie et perdez vous dans ce labyrinthe sans crainte.</p>
+              <div className="article-tip">
+                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                <div><strong>Notre conseil</strong><p>Gardez en tête qu&apos;il arrive que de jeunes Marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction. Ne vous laissez pas influencer — faites confiance à votre instinct et à votre carte !</p></div>
+              </div>
               <p>Gardez en tête qu’il arrive que de jeunes Marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction quand ils les voient un peu déboussolés. Si besoin, préférez demander votre chemin aux commerçants. Pensez aussi à lever les yeux, <strong>il y a souvent des panneaux suspendus au niveau des croisements dans les souks qui vous donneront des indications sur la route à suivre</strong> pour rejoindre les endroits stratégiques.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4959-768x1024.jpg" alt="Souk médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -241,6 +245,10 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5935-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <p>Même si cela fait partie de l’ambiance, les commerçants qui vous accostent pour vous vendre leurs produits peuvent se montrer très insistants. N’hésitez pas à leur dire « la safi ! » (stop !, en français), ou « baraka ! » (ça suffit !) si vous n’êtes pas intéressé.</p>
+              <div className="article-tip">
+                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                <div><strong>Bon à savoir</strong><p>Les prix ne sont généralement pas affichés dans les souks. N&apos;ayez pas peur de négocier, cela fait partie du jeu ! Pour avoir le meilleur prix, n&apos;hésitez pas à faire semblant de partir — c&apos;est souvent à ce moment-là que le vendeur propose son vrai prix.</p></div>
+              </div>
               <p>Les prix ne sont généralement pas affichés. <strong>N’ayez pas peur de négocier, </strong><strong>cela fait parti du jeu ici</strong>. Et pour avoir le meilleur prix, petit conseil, demandez le prix Marrakchi !</p>
               <p>La médina c’est aussi les somptueux riads que l'on ne soupçonne même pas ! Notez qu’un riad est une maison urbaine traditionnelle marocaine, construite autour d'un patio ou d'un jardin intérieur. Dans certains, on y trouve même un bassin, voire une petite piscine !</p>
               <p>Dissimulés dans des petites ruelles, à l’abri des regards, on ne s'attend pas à découvrir de véritables petits (ou grands) palais, lorsque l’on pousse leur porte ! Nous sommes toujours impressionnées et émerveillées par leur beauté quand nous avons l’occasion d’en visiter.</p>
@@ -255,6 +263,10 @@ export default function MarrakechPage() {
               <p>Au cœur de la médina se trouve la fameuse place Jemaa el-Fna. Nous la conseillons comme <strong>point de départ pour visiter la vielle ville</strong>.</p>
               <p>Plus qu’une simple place publique, elle est l'attraction phare de la ville rouge. De jour comme de nuit, c’est l’ébullition ! Concrètement, <strong>l</strong><strong>a place Jamaa el-Fna est l’endroit le plus vivant de la médina</strong>.</p>
               <p>Entre les artistes de rue qui sautent dans tous les sens, les arracheurs de dents qui revendent des dents d’occasion (oui, oui, vous avez bien lu !), les porteurs d’eau qui n’hésitent pas à prendre la pause devant les objectifs, les femmes qui tatouent au henné, les charmeurs de serpents et les dresseurs de singes, tout le monde se côtoie pour former un joyeux tumulte !</p>
+              <div className="article-must">
+                <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+                <div><strong>À NE PAS MANQUER</strong><p>Ne passez pas à côté des stands de jus de fruits frais sans les goûter — tellement bons et si peu chers ! Et en fin de journée, installez-vous en hauteur sur la terrasse d&apos;un café de la place pour observer l&apos;agitation dans toute sa splendeur.</p></div>
+              </div>
               <div className="article-gallery-3">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3880-1-1024x769.jpg" alt="Place Jemma El-Fna jour" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3882.jpg" alt="Place Jemma El-Fna jour Marrakech" loading="lazy" />
@@ -304,6 +316,7 @@ export default function MarrakechPage() {
               </div>
               <p><strong>Le jardin se visite tous les jours de 8 h à 17 h 30. L’entrée est au tarif de 170 Dh (17 €) et est gratuite pour les enfants de moins de 10 ans. </strong></p>
               <p>Vous aurez alors accès au jardin,  à une galerie où sont exposées des affiches d’Yves Saint Laurent, à la boutique du jardin et du musée.</p>
+              <p>Pensez à prendre vos billets sur leur <a href="https://tickets.jardinmajorelle.com/Visite" target="_blank" rel="noopener noreferrer" className="article-link">site internet</a> au plus tôt afin d'avoir des disponibilités sur le créneau horaire qui vous arrange. Si vous souhaitez également accéder au musée berbère, comptez <strong>330 Dh</strong> pour le billet combiné.</p>
               <p>Pensez à prendre vos billets sur leur <strong><a href="https://tickets.jardinmajorelle.com/Visite" target="_blank" rel="noopener noreferrer" className="article-link">site internet</a></strong> au plus tôt afin d'avoir des disponibilités sur le créneau horaire qui vous arrange.</p>
               <div className="article-day-header article-day-header-tight">
                 <h3>Le Palais de la Bahia</h3>
@@ -393,15 +406,19 @@ export default function MarrakechPage() {
                   <div className="pb-resto-grid">
                     <a href="https://maps.app.goo.gl/PTjrcNqVpT7RMt1w7" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Atay café</span>
+                      <span className="pb-resto-card-desc">Cuisine marocaine généreuse dans un cadre authentique. Notre cantine de la médina.</span>
                     </a>
                     <a href="https://maps.app.goo.gl/Cyry27cHx4R9CvE67" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Kui-Zin</span>
+                      <span className="pb-resto-card-desc">Street food savoureuse et créative — le meilleur rapport qualité/prix de la médina.</span>
                     </a>
                     <a href="https://maps.app.goo.gl/THAbfYXY2YoaY2528" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Café des épices</span>
+                      <span className="pb-resto-card-desc">Terrasse avec vue sur les toits, jus frais et petits plats simples face aux souks.</span>
                     </a>
                     <a href="https://maps.app.goo.gl/Jdaszd1dJw9qsEJL7" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Henna café</span>
+                      <span className="pb-resto-card-desc">Restaurant associatif où l'on mange en se faisant tatouer au henné. Concept unique !</span>
                     </a>
                   </div>
                 </div>
@@ -413,12 +430,15 @@ export default function MarrakechPage() {
                   <div className="pb-resto-grid">
                     <a href="https://maps.app.goo.gl/nTrdEU5KVV5Xj7GP6" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Jardin</span>
+                      <span className="pb-resto-card-desc">Riad verdoyant au cœur de la médina. Cadre romantique, cuisine raffinée et fraîche.</span>
                     </a>
                     <a href="https://maps.app.goo.gl/LJijbJUkqoSbVLL4A" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">La Terrasse des épices</span>
+                      <span className="pb-resto-card-desc">Vue panoramique sur la médina, cuisine marocaine soignée et cocktails sans alcool.</span>
                     </a>
                     <a href="https://maps.app.goo.gl/b7rSeahrnbAMyH866" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Nomad</span>
+                      <span className="pb-resto-card-desc">Design épuré, rooftop avec vue sur les toits et menu fusion maroco-contemporain.</span>
                     </a>
                   </div>
                 </div>
@@ -430,16 +450,22 @@ export default function MarrakechPage() {
                   <div className="pb-resto-grid">
                     <a href="https://maps.app.goo.gl/eaWGAcKKmE1wyBwH9" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Kabana</span>
+                      <span className="pb-resto-card-desc">Rooftop chic avec une vue imprenable sur la Koutoubia. Sert de l'alcool — une rareté.</span>
                     </a>
                     <a href="https://maps.app.goo.gl/8Pybhtk1PeSdhozw6" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Café arabe</span>
+                      <span className="pb-resto-card-desc">L'adresse historique pour boire un verre à Marrakech. Cadre, cuisine et alcool au rendez-vous.</span>
                     </a>
                   </div>
                 </div>
               </div>
               <p>(dans ce restaurant associatif, vous pouvez vous faire tatouer au henné en même temps que vous mangez. Le concept est trop top !)</p>
               <p>Il y a peu d’endroits qui proposent de l'alcool dans la ville, mais vous pourrez en consommer dans ces deux bars / restaurants notamment.</p>
-              <p><strong>≫</strong> Si vous le souhaitez, vous avez également la possibilité de vous faire livrer à domicile via l’application <strong>GLOVO</strong> (le Uber Eats marocain !).</p>
+              
+              <div className="article-tip">
+                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                <div><strong>Bon à savoir</strong><p>Vous avez également la possibilité de vous faire livrer à domicile via l&apos;application <strong>GLOVO</strong> (le Uber Eats marocain !) — pratique pour les soirées cocooning dans votre riad !</p></div>
+              </div>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1848-1024x768.jpg" alt="Kui-Zin médina Marrakech" loading="lazy" />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5204_jpg-768x1024.jpg" alt="Restaurant Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
