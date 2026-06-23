@@ -401,10 +401,6 @@ export default function MarrakechPage() {
                       <span className="pb-resto-card-name">Atay café</span>
                       <span className="pb-resto-card-desc">Cuisine marocaine généreuse dans un cadre authentique. Notre cantine de la médina.</span>
                     </a>
-                    <a href="https://maps.app.goo.gl/Cyry27cHx4R9CvE67" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Kui-Zin</span>
-                      <span className="pb-resto-card-desc">Rooftop en plein cœur de la médina, cuisine marocaine faite maison et buffet généreux.</span>
-                    </a>
                     <a href="https://maps.app.goo.gl/THAbfYXY2YoaY2528" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Café des épices</span>
                       <span className="pb-resto-card-desc">Terrasse avec vue sur les toits, jus frais et petits plats simples face aux souks.</span>
@@ -412,6 +408,10 @@ export default function MarrakechPage() {
                     <a href="https://maps.app.goo.gl/Jdaszd1dJw9qsEJL7" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Henna café</span>
                       <span className="pb-resto-card-desc">Restaurant associatif où l'on mange en se faisant tatouer au henné. Concept unique !</span>
+                    </a>
+                    <a href="https://maps.app.goo.gl/Cyry27cHx4R9CvE67" target="_blank" className="pb-resto-card">
+                      <span className="pb-resto-card-name">Kui-Zin</span>
+                      <span className="pb-resto-card-desc">Rooftop en plein cœur de la médina, cuisine marocaine faite maison et buffet généreux.</span>
                     </a>
                   </div>
                 </div>
@@ -421,13 +421,13 @@ export default function MarrakechPage() {
                     <span className="pb-resto-tier-label">Intermédiaire</span>
                   </div>
                   <div className="pb-resto-grid">
-                    <a href="https://maps.app.goo.gl/nTrdEU5KVV5Xj7GP6" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Le Jardin</span>
-                      <span className="pb-resto-card-desc">Riad verdoyant au cœur de la médina. Cadre romantique, cuisine raffinée et fraîche.</span>
-                    </a>
                     <a href="https://maps.app.goo.gl/LJijbJUkqoSbVLL4A" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">La Terrasse des épices</span>
                       <span className="pb-resto-card-desc">Vue panoramique sur la médina, cuisine marocaine soignée et cocktails sans alcool.</span>
+                    </a>
+                    <a href="https://maps.app.goo.gl/nTrdEU5KVV5Xj7GP6" target="_blank" className="pb-resto-card">
+                      <span className="pb-resto-card-name">Le Jardin</span>
+                      <span className="pb-resto-card-desc">Riad verdoyant au cœur de la médina. Cadre romantique, cuisine raffinée et fraîche.</span>
                     </a>
                     <a href="https://maps.app.goo.gl/b7rSeahrnbAMyH866" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Nomad</span>
@@ -441,13 +441,13 @@ export default function MarrakechPage() {
                     <span className="pb-resto-tier-label">Plus chic</span>
                   </div>
                   <div className="pb-resto-grid">
-                    <a href="https://maps.app.goo.gl/eaWGAcKKmE1wyBwH9" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Le Kabana</span>
-                      <span className="pb-resto-card-desc">Rooftop chic avec une vue imprenable sur la Koutoubia. Sert de l'alcool — une rareté.</span>
-                    </a>
                     <a href="https://maps.app.goo.gl/8Pybhtk1PeSdhozw6" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Café arabe</span>
                       <span className="pb-resto-card-desc">L’adresse historique pour manger à Marrakech. Cuisine italienne et marocaine, alcool au rendez-vous.</span>
+                    </a>
+                    <a href="https://maps.app.goo.gl/eaWGAcKKmE1wyBwH9" target="_blank" className="pb-resto-card">
+                      <span className="pb-resto-card-name">Le Kabana</span>
+                      <span className="pb-resto-card-desc">Rooftop chic avec une vue imprenable sur la Koutoubia. Sert de l'alcool — une rareté.</span>
                     </a>
                   </div>
                 </div>
@@ -485,12 +485,12 @@ export default function MarrakechPage() {
                 </div>
                 <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ23VUUwPxrw0RIowkEJOjCVg" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Manzil la tortue</a>
-                    <a href="https://maps.app.goo.gl/txijutAUPUUN6qZKA" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Manzil la tortue</a>
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJneE65kjlrw0R0LMqzsrocjo" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La ferme berbère</a>
+                    <a href="https://maps.app.goo.gl/PXQu437JWWuwkgWP7" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La ferme berbère</a>
                   </span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 12, route de Ouarzazate</span>
-                  <span className="pb-resto-card-desc">Un havre de paix. Tout est fait maison, cocktails délicieux.</span>
-                  <span className="pb-resto-card-desc">À partir de 400 Dh (piscine + déjeuner).</span>
+                  <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 9, route de l’Ourika</span>
+                  <span className="pb-resto-card-desc">Ambiance familiale, menu unique et excellent.</span>
+                  <span className="pb-resto-card-desc">290 Dh accès piscine + déjeuner.</span>
                 </div>
               </div>
               <div className="pb-resto-grid" style={{gridTemplateColumns:'repeat(2,1fr)',marginBottom:'28px'}}>
@@ -505,12 +505,12 @@ export default function MarrakechPage() {
                 </div>
                 <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJneE65kjlrw0R0LMqzsrocjo" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La ferme berbère</a>
-                    <a href="https://maps.app.goo.gl/PXQu437JWWuwkgWP7" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La ferme berbère</a>
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ23VUUwPxrw0RIowkEJOjCVg" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Manzil la tortue</a>
+                    <a href="https://maps.app.goo.gl/txijutAUPUUN6qZKA" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Manzil la tortue</a>
                   </span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 9, route de l’Ourika</span>
-                  <span className="pb-resto-card-desc">Ambiance familiale, menu unique et excellent.</span>
-                  <span className="pb-resto-card-desc">290 Dh accès piscine + déjeuner.</span>
+                  <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 12, route de Ouarzazate</span>
+                  <span className="pb-resto-card-desc">Un havre de paix. Tout est fait maison, cocktails délicieux.</span>
+                  <span className="pb-resto-card-desc">À partir de 400 Dh (piscine + déjeuner).</span>
                 </div>
               </div>
               <div className="article-gallery-2">
