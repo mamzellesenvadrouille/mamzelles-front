@@ -69,7 +69,7 @@ export default function MarrakechPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/Marrakech.webp" alt="Visiter Marrakech, la ville rouge" style={{objectPosition: 'center 55%'}} />
+        <img className="hero-bg" src="/Marrakech.webp" alt="Visiter Marrakech, la ville rouge" style={{objectPosition: 'center 60%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Marrakech<br /><em>Que faire dans la ville rouge</em></h1>
@@ -220,7 +220,7 @@ export default function MarrakechPage() {
               <p>Pour nous, <strong>le meilleur moyen de visiter la médina est de s'y perdre</strong>. Alors osez un peu de folie et perdez vous dans ce labyrinthe sans crainte.</p>
               <div className="article-tip">
                 <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                <div><strong>Le conseil des MamZelles</strong><p>Gardez en tête qu&apos;il arrive que de jeunes Marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction. Ne vous laissez pas influencer — faites confiance à votre instinct et à votre carte !</p></div>
+                <div><strong>Le conseil des MamZelles</strong><p>Dans la médina, certains jeunes n&apos;hésitent pas à vous emmener délibérément dans la mauvaise direction. On vous explique comment éviter ça !</p></div>
               </div>
               <p>Gardez en tête qu’il arrive que de jeunes Marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction quand ils les voient un peu déboussolés. Si besoin, préférez demander votre chemin aux commerçants. Pensez aussi à lever les yeux, <strong>il y a souvent des panneaux suspendus au niveau des croisements dans les souks qui vous donneront des indications sur la route à suivre</strong> pour rejoindre les endroits stratégiques.</p>
               <div className="article-gallery-2">
