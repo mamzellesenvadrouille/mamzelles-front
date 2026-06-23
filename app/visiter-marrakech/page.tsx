@@ -474,54 +474,54 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5098-768x1024.jpg" alt="Piscine Manzil Tortue Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <p><strong>Nous vous partageons quelques-unes de nos adresses préférées (toutes proposent de l’alcool) :</strong></p>
-                            <div className="pb-resto-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)'}}>
+                                          <div className="pb-resto-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)'}}>
                 <a href="https://www.google.com/maps/place/?q=place_id:ChIJNb0AY2jurw0RbO3ykgyWmVQ" target="_blank" className="pb-resto-card article-resto-link-desktop">
                   <span className="pb-resto-card-name">Dar donab</span>
-                  <span className="pb-resto-card-desc">Médina, Bab Doukkala</span>
+                  <span className="pb-resto-card-desc" style={{fontStyle: "italic", color: "var(--gold)"}}>Médina, Bab Doukkala</span>
                   <span className="pb-resto-card-desc">Hôtel luxueux dans un petit palais au cœur de la médina.</span>
                   <span className="pb-resto-card-desc"><strong>150 Dh accès piscine — repas à la carte en supplément.</strong></span>
                 </a>
                 <a href="https://maps.app.goo.gl/dZQ8YNQm8BhzDkmX6" target="_blank" className="pb-resto-card article-resto-link-mobile">
                   <span className="pb-resto-card-name">Dar donab</span>
-                  <span className="pb-resto-card-desc">Médina, Bab Doukkala</span>
+                  <span className="pb-resto-card-desc" style={{fontStyle: "italic", color: "var(--gold)"}}>Médina, Bab Doukkala</span>
                   <span className="pb-resto-card-desc">Hôtel luxueux dans un petit palais au cœur de la médina.</span>
                   <span className="pb-resto-card-desc"><strong>150 Dh accès piscine — repas à la carte en supplément.</strong></span>
                 </a>
                 <a href="https://www.google.com/maps/place/?q=place_id:ChIJ23VUUwPxrw0RIowkEJOjCVg" target="_blank" className="pb-resto-card article-resto-link-desktop">
                   <span className="pb-resto-card-name">Manzil la tortue</span>
-                  <span className="pb-resto-card-desc">Km 12, route de Ouarzazate</span>
+                  <span className="pb-resto-card-desc" style={{fontStyle: "italic", color: "var(--gold)"}}>Km 12, route de Ouarzazate</span>
                   <span className="pb-resto-card-desc">Un havre de paix. Tout est fait maison, cocktails délicieux.</span>
                   <span className="pb-resto-card-desc"><strong>À partir de 400 Dh (piscine + déjeuner).</strong></span>
                 </a>
                 <a href="https://maps.app.goo.gl/txijutAUPUUN6qZKA" target="_blank" className="pb-resto-card article-resto-link-mobile">
                   <span className="pb-resto-card-name">Manzil la tortue</span>
-                  <span className="pb-resto-card-desc">Km 12, route de Ouarzazate</span>
+                  <span className="pb-resto-card-desc" style={{fontStyle: "italic", color: "var(--gold)"}}>Km 12, route de Ouarzazate</span>
                   <span className="pb-resto-card-desc">Un havre de paix. Tout est fait maison, cocktails délicieux.</span>
                   <span className="pb-resto-card-desc"><strong>À partir de 400 Dh (piscine + déjeuner).</strong></span>
                 </a>
               </div>
-              <div className="pb-resto-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)'}}>
+              <div className="pb-resto-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)', marginTop: '12px'}}>
                 <a href="https://www.google.com/maps/place/?q=place_id:ChIJ6R175Qfmrw0RlCOwZ7eHRRg" target="_blank" className="pb-resto-card article-resto-link-desktop">
                   <span className="pb-resto-card-name">La vie en rose</span>
-                  <span className="pb-resto-card-desc">Km 14, route de l’Ourika</span>
+                  <span className="pb-resto-card-desc" style={{fontStyle: "italic", color: "var(--gold)"}}>Km 14, route de l’Ourika</span>
                   <span className="pb-resto-card-desc">Joli cadre, ânes et chevaux sur le terrain. Repas simples mais de qualité.</span>
                   <span className="pb-resto-card-desc"><strong>250 Dh accès piscine + déjeuner.</strong></span>
                 </a>
                 <a href="https://maps.app.goo.gl/HyLEaDMCh63vQg3J6" target="_blank" className="pb-resto-card article-resto-link-mobile">
                   <span className="pb-resto-card-name">La vie en rose</span>
-                  <span className="pb-resto-card-desc">Km 14, route de l’Ourika</span>
+                  <span className="pb-resto-card-desc" style={{fontStyle: "italic", color: "var(--gold)"}}>Km 14, route de l’Ourika</span>
                   <span className="pb-resto-card-desc">Joli cadre, ânes et chevaux sur le terrain. Repas simples mais de qualité.</span>
                   <span className="pb-resto-card-desc"><strong>250 Dh accès piscine + déjeuner.</strong></span>
                 </a>
                 <a href="https://www.google.com/maps/place/?q=place_id:ChIJneE65kjlrw0R0LMqzsrocjo" target="_blank" className="pb-resto-card article-resto-link-desktop">
                   <span className="pb-resto-card-name">La ferme berbère</span>
-                  <span className="pb-resto-card-desc">Km 9, route de l’Ourika</span>
+                  <span className="pb-resto-card-desc" style={{fontStyle: "italic", color: "var(--gold)"}}>Km 9, route de l’Ourika</span>
                   <span className="pb-resto-card-desc">Ambiance familiale, menu unique et excellent.</span>
                   <span className="pb-resto-card-desc"><strong>290 Dh accès piscine + déjeuner.</strong></span>
                 </a>
                 <a href="https://maps.app.goo.gl/PXQu437JWWuwkgWP7" target="_blank" className="pb-resto-card article-resto-link-mobile">
                   <span className="pb-resto-card-name">La ferme berbère</span>
-                  <span className="pb-resto-card-desc">Km 9, route de l’Ourika</span>
+                  <span className="pb-resto-card-desc" style={{fontStyle: "italic", color: "var(--gold)"}}>Km 9, route de l’Ourika</span>
                   <span className="pb-resto-card-desc">Ambiance familiale, menu unique et excellent.</span>
                   <span className="pb-resto-card-desc"><strong>290 Dh accès piscine + déjeuner.</strong></span>
                 </a>
