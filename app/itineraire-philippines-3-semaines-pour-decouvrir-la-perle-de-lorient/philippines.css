@@ -1,5 +1,5 @@
 /* ============================================
-   PHILIPPINES Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
+   PHILIPPINES ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Styles spÃƒÆ’Ã‚Â©cifiques ÃƒÆ’  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -719,4 +719,269 @@
 
 @media (min-width: 769px) {
   .article-resto-link-desktop { display: inline; }
+}
+
+/* ============================================
+   SECTION ORGANISER â€” article-pratique (repris depuis Londres)
+   ============================================ */
+.article-philippines .article-pratique {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 8px 0 24px;
+}
+
+.article-philippines .article-pratique-block {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px 28px;
+}
+
+.article-philippines .article-pratique-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--dark);
+  margin: 0 0 16px !important;
+}
+
+.article-philippines .article-pratique-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #a89a86;
+  margin: 0 0 16px !important;
+}
+
+.article-philippines .article-pratique-block h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gold);
+  margin: 18px 0 6px !important;
+}
+
+.article-philippines .article-pratique-sub h5 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 20px 0 8px !important;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-philippines .article-pratique-sub h5:first-child {
+  margin-top: 0 !important;
+}
+
+.article-philippines .article-pratique-block p {
+  margin-bottom: 12px;
+}
+
+.article-philippines .article-pratique-block p:last-child {
+  margin-bottom: 0;
+}
+
+.article-philippines .article-pratique-block .article-gallery-2,
+.article-philippines .article-pratique-block .article-gallery-3 {
+  margin: 14px 0;
+}
+
+.article-philippines .article-pratique-block .article-tip,
+.article-philippines .article-pratique-block .article-avis {
+  margin: 16px 0;
+}
+
+.article-philippines .article-pratique-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-philippines .article-pratique-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 15px !important;
+  line-height: 1.6;
+  color: var(--dark);
+}
+
+.article-philippines .article-pratique-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* --- Sous-cartes premium pour les blocs pratiques Ãƒ  plusieurs sous-thÃƒÂ¨mes
+   (ex: "Comment s'y rendre", "Comment se dÃƒÂ©placer") : chaque sous-thÃƒÂ¨me
+   devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
+   de texte. Aucune perte de contenu, juste une meilleure structure. --- */
+.article-philippines .article-pratique-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 20px;
+}
+
+.article-philippines .article-pratique-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 9px 16px 9px 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark);
+  cursor: pointer;
+  transition: background .2s, border-color .2s, color .2s;
+}
+
+.article-philippines .article-pratique-nav-icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.article-philippines .article-pratique-nav-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: var(--gold);
+  transition: stroke .2s;
+}
+
+.article-philippines .article-pratique-nav-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  transition: background .2s, color .2s;
+}
+
+.article-philippines .article-pratique-nav-btn:hover {
+  border-style: solid;
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.article-philippines .article-pratique-nav-btn-actif,
+.article-philippines .article-pratique-nav-btn-actif:hover {
+  background: var(--gold);
+  border-style: solid;
+  border-color: var(--gold);
+  color: #fff;
+}
+
+.article-philippines .article-pratique-nav-btn-actif .article-pratique-nav-icon svg,
+.article-philippines .article-pratique-nav-btn-actif:hover .article-pratique-nav-icon svg {
+  stroke: #fff;
+}
+
+.article-philippines .article-pratique-nav-btn-actif .article-pratique-nav-badge,
+.article-philippines .article-pratique-nav-btn-actif:hover .article-pratique-nav-badge {
+  background: #fff;
+  color: var(--gold);
+}
+
+.article-philippines .article-pratique-sub[hidden] {
+  display: none;
+}
+
+.article-philippines .article-pratique-sub {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 0;
+  animation: article-pratique-fade .25s ease;
+}
+
+@keyframes article-pratique-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.article-philippines .article-pratique-sub-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.article-philippines .article-pratique-sub-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.article-philippines .article-pratique-sub-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: #fff;
+}
+
+.article-philippines .article-pratique-sub-head h4 {
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 19px !important;
+  font-weight: 600 !important;
+  color: var(--dark) !important;
+  margin: 0 !important;
+}
+
+.article-philippines .article-pratique-sub p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+.article-philippines .article-pratique-sub p:last-child {
+  margin-bottom: 0;
+}
+
+.article-philippines .article-pratique-sub .article-gallery-2,
+.article-philippines .article-pratique-sub .article-gallery-3 {
+  margin: 12px 0;
+}
+
+.article-philippines .article-pratique-sub .article-tip,
+.article-philippines .article-pratique-sub .article-avis {
+  margin: 12px 0;
+}
+
+/* --- Pratique : mobile (placÃƒÂ© APRÃƒË†S le desktop, comme convenu) --- */
+@media (max-width: 768px) {
+  .article-philippines .article-pratique-block { padding: 18px 18px !important; }
+  .article-philippines .article-pratique-title { font-size: 22px !important; }
+  .article-philippines .article-pratique-block h4 { font-size: 14px !important; }
+  .article-philippines .article-pratique-sub { padding: 16px 18px !important; }
+  .article-philippines .article-pratique-sub-head h4 { font-size: 17px !important; }
+  .article-philippines .article-pratique-sub-icon { width: 30px !important; height: 30px !important; }
+  .article-philippines .article-pratique-sub-icon svg { width: 15px !important; height: 15px !important; }
+  .article-philippines .article-pratique-nav-btn { font-size: 13px !important; padding: 8px 16px 8px 10px !important; }
+  .article-philippines .article-pratique-nav-icon svg { width: 15px !important; height: 15px !important; }
 }
