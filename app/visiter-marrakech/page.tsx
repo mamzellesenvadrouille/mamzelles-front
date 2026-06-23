@@ -476,8 +476,8 @@ export default function MarrakechPage() {
                             <div className="pb-resto-grid" style={{gridTemplateColumns:'repeat(2,1fr)',marginTop:'28px',marginBottom:'12px'}}>
                 <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJNb0AY2jurw0RbO3ykgyWmVQ" target="_blank" className="article-link article-resto-link-desktop" style={{color:"inherit",textDecoration:"none"}}>Dar donab</a>
-                    <a href="https://maps.app.goo.gl/dZQ8YNQm8BhzDkmX6" target="_blank" className="article-link article-resto-link-mobile" style={{color:"inherit",textDecoration:"none"}}>Dar donab</a>
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJNb0AY2jurw0RbO3ykgyWmVQ" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Dar donab</a>
+                    <a href="https://maps.app.goo.gl/dZQ8YNQm8BhzDkmX6" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Dar donab</a>
                   </span>
                   <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Médina, Bab Doukkala</span>
                   <span className="pb-resto-card-desc">Hôtel luxueux dans un petit palais au cœur de la médina.</span>
@@ -485,8 +485,8 @@ export default function MarrakechPage() {
                 </div>
                 <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ23VUUwPxrw0RIowkEJOjCVg" target="_blank" className="article-link article-resto-link-desktop" style={{color:"inherit",textDecoration:"none"}}>Manzil la tortue</a>
-                    <a href="https://maps.app.goo.gl/txijutAUPUUN6qZKA" target="_blank" className="article-link article-resto-link-mobile" style={{color:"inherit",textDecoration:"none"}}>Manzil la tortue</a>
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ23VUUwPxrw0RIowkEJOjCVg" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Manzil la tortue</a>
+                    <a href="https://maps.app.goo.gl/txijutAUPUUN6qZKA" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Manzil la tortue</a>
                   </span>
                   <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 12, route de Ouarzazate</span>
                   <span className="pb-resto-card-desc">Un havre de paix. Tout est fait maison, cocktails délicieux.</span>
@@ -496,8 +496,8 @@ export default function MarrakechPage() {
               <div className="pb-resto-grid" style={{gridTemplateColumns:'repeat(2,1fr)',marginBottom:'28px'}}>
                 <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ6R175Qfmrw0RlCOwZ7eHRRg" target="_blank" className="article-link article-resto-link-desktop" style={{color:"inherit",textDecoration:"none"}}>La vie en rose</a>
-                    <a href="https://maps.app.goo.gl/HyLEaDMCh63vQg3J6" target="_blank" className="article-link article-resto-link-mobile" style={{color:"inherit",textDecoration:"none"}}>La vie en rose</a>
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ6R175Qfmrw0RlCOwZ7eHRRg" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La vie en rose</a>
+                    <a href="https://maps.app.goo.gl/HyLEaDMCh63vQg3J6" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La vie en rose</a>
                   </span>
                   <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 14, route de l’Ourika</span>
                   <span className="pb-resto-card-desc">Joli cadre, ânes et chevaux sur le terrain. Repas simples mais de qualité.</span>
@@ -505,8 +505,8 @@ export default function MarrakechPage() {
                 </div>
                 <div className="pb-resto-card pb-riad-card">
                   <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJneE65kjlrw0R0LMqzsrocjo" target="_blank" className="article-link article-resto-link-desktop" style={{color:"inherit",textDecoration:"none"}}>La ferme berbère</a>
-                    <a href="https://maps.app.goo.gl/PXQu437JWWuwkgWP7" target="_blank" className="article-link article-resto-link-mobile" style={{color:"inherit",textDecoration:"none"}}>La ferme berbère</a>
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJneE65kjlrw0R0LMqzsrocjo" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La ferme berbère</a>
+                    <a href="https://maps.app.goo.gl/PXQu437JWWuwkgWP7" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La ferme berbère</a>
                   </span>
                   <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 9, route de l’Ourika</span>
                   <span className="pb-resto-card-desc">Ambiance familiale, menu unique et excellent.</span>
