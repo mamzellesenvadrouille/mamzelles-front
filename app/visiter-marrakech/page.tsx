@@ -260,10 +260,6 @@ export default function MarrakechPage() {
               <p>Au cœur de la médina se trouve la fameuse place Jemaa el-Fna. Nous la conseillons comme <strong>point de départ pour visiter la vielle ville</strong>.</p>
               <p>Plus qu’une simple place publique, elle est l'attraction phare de la ville rouge. De jour comme de nuit, c’est l’ébullition ! Concrètement, <strong>l</strong><strong>a place Jamaa el-Fna est l’endroit le plus vivant de la médina</strong>.</p>
               <p>Entre les artistes de rue qui sautent dans tous les sens, les arracheurs de dents qui revendent des dents d’occasion (oui, oui, vous avez bien lu !), les porteurs d’eau qui n’hésitent pas à prendre la pause devant les objectifs, les femmes qui tatouent au henné, les charmeurs de serpents et les dresseurs de singes, tout le monde se côtoie pour former un joyeux tumulte !</p>
-              <div className="article-must">
-                <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-                <div><strong>À NE PAS MANQUER</strong><p>Ne passez pas à côté des stands de jus de fruits frais sans les goûter — tellement bons et si peu chers ! Et en fin de journée, installez-vous en hauteur sur la terrasse d&apos;un café de la place pour observer l&apos;agitation dans toute sa splendeur.</p></div>
-              </div>
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3880-1-1024x769.jpg" alt="Place Jemma El-Fna jour" loading="lazy" className="article-img-full" />
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3882.jpg" alt="Place Jemma El-Fna jour Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -283,7 +279,12 @@ export default function MarrakechPage() {
               </div>
               <p>Le soir, c’est encore une autre ambiance !</p>
               <p>En plus de toutes les animations de la journée, de nouveaux rassemblements se créent autour de groupes de musique, de danseurs, de conteurs et de stands de jeux (pêche à la bouteille de soda, mini golf, casques de réalité virtuelle, etc.).</p>
-              <p><strong>Nous vous conseillons de prendre un peu de hauteur</strong> sur la terrasse d’un des cafés de la place pour observer cette agitation complètement déroutante !</p>
+              
+
+              <div className="article-must">
+                <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+                <div><strong>À NE PAS MANQUER</strong><p>Nous vous conseillons de prendre un peu de hauteur sur la terrasse d&apos;un des cafés de la place pour observer cette agitation complètement déroutante !</p></div>
+              </div>
           </section>
 
           <section id="visites" className="article-section">
