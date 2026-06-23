@@ -561,7 +561,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6057-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
                             <p>Renseignez-vous tout de même avant sur les horaires qui peuvent être modifiés. Généralement, les établissements ferment plus tôt dans l’après-midi. Une fois la nuit tombée, le jeun rompu, c’est à nouveau l’effervescence dans les rues !</p>
-                            <p>Nous avons pour habitude de nous adapter aux pays que nous visitons. Pour le Maroc, en période de ramadan, nous évitons de boire ou de manger en pleine rue… Non pas que cela choque les Marocains, c’est davantage une forme de respect de notre part.</p>
+              <p>Nous avons pour habitude de nous adapter aux pays que nous visitons. Pour le Maroc, en période de ramadan, nous évitons de boire ou de manger en pleine rue… Non pas que cela choque les marocains, c’est davantage une forme de respect de notre part.</p>
               <div className="article-avis">
                 <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
                 <div><strong>Le conseil des MamZelles</strong><p>Visiter Marrakech pendant le ramadan est plutôt un bon plan ! C’est l’une des périodes les moins touristiques de l’année, les vols et les hébergements sont moins chers. Vous serez également plus tranquille pour les visites : pas de file d’attente interminable !</p></div>
@@ -591,14 +591,9 @@ export default function MarrakechPage() {
                     content: (
                       <>
                         <p>Pour arriver à Marrakech, nous avons voyagé avec la compagnie <strong>EasyJet</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 368 € pour deux. Il faut compter généralement près de 3 h de vol pour rejoindre l'aéroport de Marrakech-Ménara.</p>
-                        
-              <div className="article-tip">
-                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                <div><strong>Bon à savoir</strong><p>Nous vous recommandons de comparer les offres des différentes compagnies aériennes sur <a href="https://www.skyscanner.fr" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a> pour vous rendre à Marrakech (ou ailleurs !). On utilise beaucoup ce site pour trouver les vols qui nous conviennent, que ce soit au niveau des horaires ou des tarifs.</p></div>
-              </div>
                         <div className="article-tip">
                           <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                          <div><strong>Bon à savoir</strong><p>Nous vous recommandons de comparer les offres sur <a href="https://www.skyscanner.fr" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a> ou d&apos;acheter directement sur le site de votre compagnie pour obtenir le meilleur tarif.</p></div>
+                          <div><strong>Bon à savoir</strong><p>Nous vous recommandons de comparer les offres des différentes compagnies aériennes sur <a href="https://www.skyscanner.fr" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a> pour vous rendre à Marrakech (ou ailleurs !). On utilise beaucoup ce site pour trouver les vols qui nous conviennent, que ce soit au niveau des horaires ou des tarifs.</p></div>
                         </div>
                       </>
                     ),
@@ -631,6 +626,7 @@ export default function MarrakechPage() {
                       <>
                         <p>Marrakech est l'une des rares villes du Maroc à avoir conservé le transport en calèche. Ces dernières sont majoritairement <strong>stationnées au niveau de la rue qui relie la Koutoubia à la place Jemaa el-Fna</strong>.</p>
                         <p>Il est possible de monter à 4 ou 5 personnes à bord d'une calèche. Comme pour les taxis, le prix se négocie. Pour 30Mn de balade dans la médina, <strong>prévoyez en moyenne 200 Dh (20 €)</strong>.</p>
+              <p>Nous tenons cependant à préciser que nous ne cautionnons pas ce mode de transport. Les chevaux qui tirent ces calèches sont souvent maigres et visiblement épuisés — c’est quelque chose que nous ne pouvons pas ignorer.</p>
                       </>
                     ),
                   },
