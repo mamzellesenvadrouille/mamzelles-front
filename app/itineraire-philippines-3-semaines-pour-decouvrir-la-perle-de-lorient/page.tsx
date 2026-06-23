@@ -898,9 +898,18 @@ export default function PhilippinesPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"/><path d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2"/><path d="M9 14l2 2l4 -4"/></svg>,
                     content: (
                       <>
-                        <p><strong>Pour un séjour de moins de 30 jours aux Philippines, le citoyen français n&apos;a pas besoin de visa.</strong> Cependant, vous devez justifier d&apos;un <strong>passeport valide au moins 6 mois après la sortie prévue du pays</strong> et d&apos;un vol de retour dans les 30 jours. Si la période de voyage dépasse les 30 jours, vous devez faire une demande auprès de l&apos;<strong><a href="https://immigration.gov.ph/visas/" target="_blank" rel="noopener noreferrer" className="article-link">immigration</a></strong> pour obtenir un visa longue durée.</p>
-                        <p>Il est impératif de remplir le <strong>formulaire obligatoire eTravel</strong> (gratuit) sur le <strong><a href="https://etravel.gov.ph" target="_blank" rel="noopener noreferrer" className="article-link">site officiel du gouvernement philippin</a></strong> dans les 72 h précédant votre voyage. Vous recevrez un QR code à présenter à l&apos;embarquement et à l&apos;arrivée.</p>
-                        <p><strong>On vous recommande vivement d&apos;avoir toujours de l&apos;argent liquide sur vous.</strong> Il y a beaucoup d&apos;endroits où la carte bleue n&apos;est pas acceptée (même dans les hôtels). Sur certaines îles, il est même compliqué de retirer de l&apos;argent. Les distributeurs sont souvent en panne ou vides.</p>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>Pour un séjour de moins de 30 jours aux Philippines, le citoyen français n&apos;a pas besoin de visa.</strong> Cependant, vous devez justifier d&apos;un <strong>passeport valide au moins 6 mois après la sortie prévue du pays</strong> et d&apos;un vol de retour dans les 30 jours. Si la période de voyage dépasse les 30 jours, vous devez faire une demande auprès de l&apos;<strong><a href="https://immigration.gov.ph/visas/" target="_blank" rel="noopener noreferrer" className="article-link">immigration</a></strong> pour obtenir un visa longue durée.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p>Il est impératif de remplir le <strong>formulaire obligatoire eTravel</strong> (gratuit) sur le <strong><a href="https://etravel.gov.ph" target="_blank" rel="noopener noreferrer" className="article-link">site officiel du gouvernement philippin</a></strong> dans les 72 h précédant votre voyage. Vous recevrez un QR code à présenter à l&apos;embarquement et à l&apos;arrivée.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>On vous recommande vivement d&apos;avoir toujours de l&apos;argent liquide sur vous.</strong> Il y a beaucoup d&apos;endroits où la carte bleue n&apos;est pas acceptée (même dans les hôtels). Sur certaines îles, il est même compliqué de retirer de l&apos;argent. Les distributeurs sont souvent en panne ou vides.</p>
+                        </div>
                       </>
                     ),
                   },
@@ -910,11 +919,26 @@ export default function PhilippinesPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M8 8v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"/><path d="M4 10a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -8"/><path d="M10 14h4"/><path d="M12 12v4"/></svg>,
                     content: (
                       <>
-                        <p><strong>Il n&apos;y a pas de vaccin obligatoire pour se rendre aux Philippines,</strong> mais certains sont tout de même recommandés : tétanos, diphtérie, poliomyélite (DTP), hépatites A et B, coqueluche, typhoïde et rage.</p>
-                        <p><strong>Prenez une assurance maladie et rapatriement avant de partir</strong> (<strong><a href="https://www.chapkadirect.fr" target="_blank" rel="noopener noreferrer" className="article-link">Chapka</a></strong>, <strong><a href="https://www.yupwego.com/fr" target="_blank" rel="noopener noreferrer" className="article-link">Yupwego</a></strong>...). Si ce n&apos;est pas le cas, tous les frais seront à votre charge, y compris en cas d&apos;urgence vitale.</p>
-                        <p><strong>Protégez-vous contre les moustiques</strong> qui peuvent être porteurs de maladies telles que le paludisme et la dengue. Envisagez de prendre un traitement de fond ou procurez-vous un répulsif efficace.</p>
-                        <p><strong>L&apos;eau du robinet n&apos;étant pas potable,</strong> consommez seulement l&apos;eau en bouteille ou l&apos;eau filtrée. Si vous sortez un peu des sentiers battus, <strong>évitez les glaçons et les aliments crus,</strong> favorisez les aliments bien cuits.</p>
-                        <p>Nous vous conseillons fortement de <strong>prendre une trousse à pharmacie</strong> : anti-diarrhéique, antiseptique, anti-inflammatoire, crème solaire, antibiotiques pour les possibles infections intestinales...</p>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>Il n&apos;y a pas de vaccin obligatoire pour se rendre aux Philippines,</strong> mais certains sont tout de même recommandés : tétanos, diphtérie, poliomyélite (DTP), hépatites A et B, coqueluche, typhoïde et rage.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>Prenez une assurance maladie et rapatriement avant de partir</strong> (<strong><a href="https://www.chapkadirect.fr" target="_blank" rel="noopener noreferrer" className="article-link">Chapka</a></strong>, <strong><a href="https://www.yupwego.com/fr" target="_blank" rel="noopener noreferrer" className="article-link">Yupwego</a></strong>...). Si ce n&apos;est pas le cas, tous les frais seront à votre charge, y compris en cas d&apos;urgence vitale.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>Protégez-vous contre les moustiques</strong> qui peuvent être porteurs de maladies telles que le paludisme et la dengue. Envisagez de prendre un traitement de fond ou procurez-vous un répulsif efficace.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>L&apos;eau du robinet n&apos;étant pas potable,</strong> consommez seulement l&apos;eau en bouteille ou l&apos;eau filtrée. Si vous sortez un peu des sentiers battus, <strong>évitez les glaçons et les aliments crus,</strong> favorisez les aliments bien cuits.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p>Nous vous conseillons fortement de <strong>prendre une trousse à pharmacie</strong> : anti-diarrhéique, antiseptique, anti-inflammatoire, crème solaire, antibiotiques pour les possibles infections intestinales...</p>
+                        </div>
                       </>
                     ),
                   },
@@ -924,9 +948,18 @@ export default function PhilippinesPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 7h12a1 1 0 0 1 1 1v4.5a2.5 2.5 0 0 1 -2.5 2.5h-.5a2 2 0 0 1 -2 -2a2 2 0 1 0 -4 0a2 2 0 0 1 -2 2h-.5a2.5 2.5 0 0 1 -2.5 -2.5v-4.5a1 1 0 0 1 1 -1"/><path d="M10 17a2 2 0 0 0 2 2h3.5a5.5 5.5 0 0 0 5.5 -5.5v-9.5"/></svg>,
                     content: (
                       <>
-                        <p><strong>Si vous souhaitez louer un scooter, pensez à prendre votre permis de conduite.</strong> Les scooters mis en location sont des 125CC. Ce n&apos;est pas systématique, mais sur certaines îles on vous recommande de l&apos;avoir en cas de contrôle de police. À titre informatif, nous n&apos;avons jamais été contrôlées.</p>
-                        <p>Prévoir des chaussures pour marcher dans l&apos;eau ou des tongs qui tiennent aux pieds.</p>
-                        <p>Indispensable selon nous, emportez un <strong>sac waterproof</strong> pour protéger vos affaires (téléphone, drone, clés, portefeuille…) lors des Island hoppings. En arrivant sur certaines îles, vous êtes parfois débarqués à quelques mètres du bord qu&apos;il faut rejoindre à la nage.</p>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>Si vous souhaitez louer un scooter, pensez à prendre votre permis de conduite.</strong> Les scooters mis en location sont des 125CC. Ce n&apos;est pas systématique, mais sur certaines îles on vous recommande de l&apos;avoir en cas de contrôle de police. À titre informatif, nous n&apos;avons jamais été contrôlées.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p>Prévoir des chaussures pour marcher dans l&apos;eau ou des tongs qui tiennent aux pieds.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p>Indispensable selon nous, emportez un <strong>sac waterproof</strong> pour protéger vos affaires (téléphone, drone, clés, portefeuille…) lors des Island hoppings. En arrivant sur certaines îles, vous êtes parfois débarqués à quelques mètres du bord qu&apos;il faut rejoindre à la nage.</p>
+                        </div>
                       </>
                     ),
                   },
@@ -936,9 +969,18 @@ export default function PhilippinesPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/></svg>,
                     content: (
                       <>
-                        <p><strong>Le climat des Philippines est principalement tropical,</strong> il fait chaud toute l&apos;année. Il y a trois saisons distinctes : la saison tempérée de décembre à février, la saison sèche de mars à mai, et la saison des pluies de juin à novembre. <strong>La meilleure période se situe entre janvier et avril.</strong></p>
-                        <p>Nous avions décidé de partir en février pour s&apos;assurer d&apos;une belle météo. Pour autant, même les locaux n&apos;avaient jamais vu de telles précipitations... Nous avons reçu à plusieurs reprises des messages d&apos;alerte pour des inondations et glissements de terrain.</p>
-                        <p><strong>La météo aux Philippines est finalement assez imprévisible.</strong> Ce pays est aussi souvent confronté à des typhons et des séismes.</p>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>Le climat des Philippines est principalement tropical,</strong> il fait chaud toute l&apos;année. Il y a trois saisons distinctes : la saison tempérée de décembre à février, la saison sèche de mars à mai, et la saison des pluies de juin à novembre. <strong>La meilleure période se situe entre janvier et avril.</strong></p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p>Nous avions décidé de partir en février pour s&apos;assurer d&apos;une belle météo. Pour autant, même les locaux n&apos;avaient jamais vu de telles précipitations... Nous avons reçu à plusieurs reprises des messages d&apos;alerte pour des inondations et glissements de terrain.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>La météo aux Philippines est finalement assez imprévisible.</strong> Ce pays est aussi souvent confronté à des typhons et des séismes.</p>
+                        </div>
                       </>
                     ),
                   },
@@ -948,11 +990,26 @@ export default function PhilippinesPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>,
                     content: (
                       <>
-                        <p><strong>En arrivant à l&apos;aéroport de Manille, nous avons acheté une puce Globe.</strong> Pour 80 Go de connexion internet sur 30 jours, comptez <strong>1750 Php (29,80 €)</strong>. Les appels ne sont pas inclus. Sinon, vous trouverez du Wifi un peu partout mais <strong>le réseau n&apos;est vraiment pas top aux Philippines.</strong></p>
-                        <p><strong>Les Philippines ont 6 à 7 heures d&apos;avance sur l&apos;heure française</strong> (selon l&apos;heure d&apos;été ou d&apos;hiver en France). Les effets du décalage peuvent être compliqués à gérer les premiers jours...</p>
-                        <p><strong>Vous n&apos;aurez pas besoin d&apos;adaptateur aux Philippines,</strong> les prises sont identiques à celles en France. Le voltage est de 220 volts. Cependant, restez vigilants, nous avons entendu des histoires de chargeurs qui ont pris feu !</p>
-                        <p><strong>Ne vous chargez pas avec trop de vêtements.</strong> Vous aurez la possibilité de les laver sur place. Tous les hôtels proposent un service de laundry pour <strong>100 Php (1,60 €)</strong> le kilo en moyenne.</p>
-                        <p><strong>On vous conseille de jeter un œil sur des groupes Facebook</strong> tels que "les Francophones aux Philippines (tout sauf la météo)" ou "les Français aux Philippines"... Vous y trouverez beaucoup d&apos;infos utiles et pratiques pour votre séjour.</p>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>En arrivant à l&apos;aéroport de Manille, nous avons acheté une puce Globe.</strong> Pour 80 Go de connexion internet sur 30 jours, comptez <strong>1750 Php (29,80 €)</strong>. Les appels ne sont pas inclus. Sinon, vous trouverez du Wifi un peu partout mais <strong>le réseau n&apos;est vraiment pas top aux Philippines.</strong></p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>Les Philippines ont 6 à 7 heures d&apos;avance sur l&apos;heure française</strong> (selon l&apos;heure d&apos;été ou d&apos;hiver en France). Les effets du décalage peuvent être compliqués à gérer les premiers jours...</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>Vous n&apos;aurez pas besoin d&apos;adaptateur aux Philippines,</strong> les prises sont identiques à celles en France. Le voltage est de 220 volts. Cependant, restez vigilants, nous avons entendu des histoires de chargeurs qui ont pris feu !</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>Ne vous chargez pas avec trop de vêtements.</strong> Vous aurez la possibilité de les laver sur place. Tous les hôtels proposent un service de laundry pour <strong>100 Php (1,60 €)</strong> le kilo en moyenne.</p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p><strong>On vous conseille de jeter un œil sur des groupes Facebook</strong> tels que "les Francophones aux Philippines (tout sauf la météo)" ou "les Français aux Philippines"... Vous y trouverez beaucoup d&apos;infos utiles et pratiques pour votre séjour.</p>
+                        </div>
                       </>
                     ),
                   },
