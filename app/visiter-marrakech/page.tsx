@@ -521,10 +521,8 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6690-1024x768.jpg" alt="Ferme Berbere Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6619-1024x768.jpg" alt="Ferme Berbere Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
-              <p>Et pour profiter au maximum de votre journée de détente, sachez que tous ces établissements proposent des massages à la carte.</p>
-              <p><strong>Il y a également des parcs aquatiques à Marrakech.</strong> Nous avons testé Oasiria (km4, route d’Amizmiz).</p>
-              <p>Il est le 1er parc aquatique du Maroc. Il s'étend sur 10 hectares et offre une vaste panoplie d'attractions aquatiques pour toute la famille.</p>
-              <p>De nombreux espaces verts et de détente, ainsi qu'un terrain de beach-volley / soccer sont mis à disposition. Le parc est ouvert toute l’année et propose en hiver une piscine chauffée de 300m2.</p>
+                            <p><strong>Il y a également des parcs aquatiques à Marrakech.</strong> Nous avons testé Oasiria (km4, route d’Amizmiz).</p>
+              <p>Il est le 1er parc aquatique du Maroc. Il s’étend sur 10 hectares et offre une vaste panoplie d’attractions aquatiques pour toute la famille. De nombreux espaces verts et de détente, ainsi qu’un terrain de beach-volley / soccer sont mis à disposition. Le parc est ouvert toute l’année et propose en hiver une piscine chauffée de 300 m².</p>
               <p><strong>Tarif à la journée (le parc est ouvert d'avril à début novembre) : 300 Dh (environ 29 €) pour les adultes et les enfants de plus d'1,50 m, et 200 Dh (environ 19 €) pour les enfants de moins d'1,50 m et les seniors de plus de 65 ans (gratuit en dessous de 80 cm).</strong></p>
                             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6353-1024x768.jpg" alt="Entrée Oasiria Marrakech" loading="lazy" className="article-img-full" />
               <div className="article-gallery-2">
@@ -556,8 +554,7 @@ export default function MarrakechPage() {
               <h2>📍 Marrakech pendant le Ramadan, bonne idée ou pas ?</h2>
             </div>
               <p>Vous connaissez l’expression « c’est quoi tout ce ramdam » ? Ramdam vient du mot ramadan. Si lors de la période du ramadan les journées sont calmes, le soir c’est un vrai ramdam !</p>
-              <p><strong>Visiter Marrakech pendant le ramadan est plutôt un bon plan. </strong>C’est l’une des périodes les moins touristiques de l’année, les vols et les hébergements sont de ce fait moins chers.</p>
-              <p>Il y a effectivement une autre ambiance à Marrakech pendant la période du ramadan. La ville est comme au ralenti. En journée, les rues sont bien plus désertes qu’habituellement.</p>
+                            <p>Il y a effectivement une autre ambiance à Marrakech pendant la période du ramadan. La ville est comme au ralenti. En journée, les rues sont bien plus désertes qu’habituellement.</p>
               <p>Pour autant, pas d’inquiétude… Marrakech étant une ville très touristique, vous trouverez toujours des boutiques et des restaurants ouverts.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_9711-1024x768.jpg" alt="Vue du ciel Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -565,10 +562,10 @@ export default function MarrakechPage() {
               </div>
               <p><strong>Vous serez également plus tranquille pour les visites</strong> : pas de file d’attente interminable !</p>
               <p>Renseignez-vous tout de même avant sur les horaires qui peuvent être modifiés. Généralement, les établissements ferment plus tôt dans l’après-midi. Une fois la nuit tombée, le jeun rompu, c’est à nouveau l’effervescence dans les rues !</p>
-              <p>Nous avons pour habitude de nous adapter aux pays que nous visitons. Pour le Maroc, en période de ramadan, nous évitons de boire ou de manger en pleine rue… Non pas que cela choque les marocains, c’est davantage une forme de respect de notre part.</p>
+                            <p>Nous avons pour habitude de nous adapter aux pays que nous visitons. Pour le Maroc, en période de ramadan, nous évitons de boire ou de manger en pleine rue… Non pas que cela choque les Marocains, c’est davantage une forme de respect de notre part.</p>
               <div className="article-avis">
                 <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                <div><strong>Notre avis</strong><p>Visiter Marrakech pendant le Ramadan reste un bon plan : moins de monde sur les sites, une ambiance unique le soir... Pensez simplement à vérifier les horaires, parfois modifiés pendant cette période.</p></div>
+                <div><strong>Le conseil des MamZelles</strong><p>Visiter Marrakech pendant le ramadan est plutôt un bon plan ! C’est l’une des périodes les moins touristiques de l’année, les vols et les hébergements sont moins chers, et vous serez plus tranquille pour les visites.</p></div>
               </div>
           </section>
 
