@@ -336,8 +336,8 @@ export default function MarrakechPage() {
               <p>N’hésitez pas à monter sur la terrasse qui offre une vue panoramique sur la vieille ville. Il y a également une cafeteria, de quoi se rafraîchir après l’exposition.</p>
               <p><strong>Le musée est ouvert tous les jours de 9 h 30 à 19 h. Il faut compter 60 Dh (environ 6 €) pour accéder au musée. </strong></p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8205-1024x766.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8202.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8205-1024x766.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.337', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8202.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.463', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>Le Jardin Secret</h3>
