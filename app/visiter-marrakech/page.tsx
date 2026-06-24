@@ -69,7 +69,7 @@ export default function MarrakechPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/Marrakech.webp" alt="Visiter Marrakech, la ville rouge" style={{objectPosition: 'center 65%'}} />
+        <img className="hero-bg" src="/Marrakech.webp" alt="Visiter Marrakech, la ville rouge" style={{objectPosition: 'center 63%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Marrakech<br /><em>Que faire dans la ville rouge</em></h1>
