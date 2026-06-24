@@ -723,7 +723,7 @@ export default function MarrakechPage() {
           </section>
 
           {/* OUTRO */}
-          <section className="article-comments-section">
+          <section className="article-comments">
             <CommentsList comments={[
               {
                 id: '1',
@@ -756,7 +756,7 @@ export default function MarrakechPage() {
               </a>
               <a href="/visiter-londres" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Londres" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres.jpg" alt="Londres" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Angleterre</span>
