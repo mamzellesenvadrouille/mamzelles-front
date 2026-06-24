@@ -724,6 +724,8 @@ export default function MarrakechPage() {
 
           {/* OUTRO */}
           <section className="article-comments">
+            <h2 className="article-comments-title">Commentaires</h2>
+
             <CommentsList comments={[
               {
                 id: '1',
