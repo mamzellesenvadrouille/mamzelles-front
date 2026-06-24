@@ -10,8 +10,8 @@
   .hero-article .hero-content { padding: 0 24px 36px !important; bottom: -10px !important; }
   .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 22px !important; white-space: normal !important; }
   .mobile-hero-break { display: inline; }
-  .mobile-only-br { display: inline; }
-  .tablet-only-br { display: none; }
+  .mobile-only-br { display: inline !important; }
+  .tablet-only-br { display: none !important; }
   .desktop-tablet-br { display: none; }
   .article-marrakech .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
   .article-day-header h2 { font-size: 32px !important; }
@@ -535,7 +535,8 @@
   font-size: 14px; }
 
 @media (max-width: 768px) {
-  .article-marrakech .article-bref-bar { padding: 14px 16px; gap: 8px 12px; justify-content: space-evenly; }
+  .article-marrakech .article-bref-bar { display: grid !important; grid-template-columns: repeat(3, auto); justify-content: center; justify-items: start; padding: 14px 16px; gap: 8px 16px; }
+  .article-marrakech .article-bref-bar .article-bref-bar-sep { display: none; }
   .article-bref-bar-sep { display: none; }
   .article-bref-bar-item { font-size: 12px; }
 }
