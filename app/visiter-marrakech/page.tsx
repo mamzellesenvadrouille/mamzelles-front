@@ -728,7 +728,23 @@ export default function MarrakechPage() {
           </section>
 
           <section className="article-comments-section">
-            <CommentsList comments={[]} />
+            <CommentsList comments={[
+              {
+                id: '1',
+                author: 'Alexandre Le Bris',
+                date: '1 année il y a',
+                text: "Merci pour ces bons conseils ! Nous avons été surpris de voir que les tarifs d\'entrées avaient pas mal augmentés. 10€ pour visiter la jardin secret par personne, ça commence. à faire !",
+                replies: [
+                  {
+                    id: '2',
+                    author: 'mamzellesenvadrouille',
+                    date: '1 année il y a',
+                    isAuthor: true,
+                    text: "Merci beaucoup pour votre retour ! 😊 C\'est vrai que sur ces dernières années, les tarifs d\'entrée des musées se sont envolés... On espère malgré tout que vous avez passé un beau séjour au soleil et que vous avez aimé l\'ambiance unique de Marrakech ! 😍",
+                  }
+                ]
+              }
+            ]} />
             <CommentForm
               articleTitle={"Visiter Marrakech : que faire dans la ville rouge"}
               articleUrl="https://mamzellesenvadrouille.com/visiter-marrakech"
