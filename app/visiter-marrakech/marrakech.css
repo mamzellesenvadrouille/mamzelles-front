@@ -10,6 +10,7 @@
   .hero-article .hero-content { padding: 0 24px 36px !important; bottom: -10px !important; }
   .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 22px !important; white-space: normal !important; }
   .mobile-hero-break { display: inline; }
+  .mobile-only-br { display: inline; }
   .tablet-only-br { display: none; }
   .desktop-tablet-br { display: none; }
   .article-marrakech .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
@@ -534,7 +535,6 @@
   font-size: 14px; }
 
 @media (max-width: 768px) {
-  .mobile-only-br { display: inline; }
   .article-marrakech .article-bref-bar { padding: 14px 16px; gap: 8px 12px; justify-content: space-evenly; }
   .article-bref-bar-sep { display: none; }
   .article-bref-bar-item { font-size: 12px; }
