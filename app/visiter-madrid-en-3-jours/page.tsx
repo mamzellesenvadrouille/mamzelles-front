@@ -85,7 +85,7 @@ export default function MadridPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>€€</span>
+          <span>80-100 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
