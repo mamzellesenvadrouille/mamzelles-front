@@ -74,7 +74,7 @@ export default function MarrakechPage() {
         <div className="hero-content">
           <h1>Marrakech<br /><em>Que faire dans la ville rouge</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Tous nos secrets pour découvrir la ville rouge et son effervescence.</p>
+          <p className="hero-desc">Tous nos secrets pour découvrir la ville rouge<br className="tablet-only-br" /> et son effervescence.</p>
         </div>
       </section>
 
