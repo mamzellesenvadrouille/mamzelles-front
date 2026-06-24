@@ -626,7 +626,11 @@ export default function MarrakechPage() {
                       <>
                         <p>Marrakech est l'une des rares villes du Maroc à avoir conservé le transport en calèche. Ces dernières sont majoritairement <strong>stationnées au niveau de la rue qui relie la Koutoubia à la place Jemaa el-Fna</strong>.</p>
                         <p>Il est possible de monter à 4 ou 5 personnes à bord d'une calèche. Comme pour les taxis, le prix se négocie. Pour 30Mn de balade dans la médina, <strong>prévoyez en moyenne 200 Dh (20 €)</strong>.</p>
-              <p>Nous tenons cependant à préciser que nous ne cautionnons pas ce mode de transport. Les chevaux qui tirent ces calèches sont souvent maigres et visiblement épuisés — c’est quelque chose que nous ne pouvons pas ignorer.</p>
+              
+              <div className="article-avis">
+                <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
+                <div><strong>Le conseil des MamZelles</strong><p>Nous tenons cependant à préciser que nous ne cautionnons pas ce mode de transport. Les chevaux qui tirent ces calèches sont souvent maigres et visiblement épuisés — c’est quelque chose que nous ne pouvons pas ignorer.</p></div>
+              </div>
                       </>
                     ),
                   },
