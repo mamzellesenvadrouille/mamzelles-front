@@ -443,11 +443,11 @@ export default function MarrakechPage() {
                   <div className="pb-resto-grid">
                     <a href="https://maps.app.goo.gl/8Pybhtk1PeSdhozw6" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Café arabe</span>
-                      <span className="pb-resto-card-desc">L’adresse historique pour manger à Marrakech. Cuisine italienne et marocaine, alcool au rendez-vous.</span>
+                      <span className="pb-resto-card-desc">L’adresse historique. Cuisine italienne et marocaine, alcool au rendez-vous.</span>
                     </a>
                     <a href="https://maps.app.goo.gl/eaWGAcKKmE1wyBwH9" target="_blank" className="pb-resto-card">
                       <span className="pb-resto-card-name">Le Kabana</span>
-                      <span className="pb-resto-card-desc">Rooftop chic avec une vue imprenable sur la Koutoubia. Sert de l'alcool — une rareté.</span>
+                      <span className="pb-resto-card-desc">Rooftop chic avec une vue imprenable sur la Koutoubia. Sert de l'alcool.</span>
                     </a>
                   </div>
                 </div>
