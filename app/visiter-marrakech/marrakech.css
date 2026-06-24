@@ -11,6 +11,7 @@
   .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 22px !important; white-space: normal !important; }
   .mobile-hero-break { display: inline; }
   .mobile-only-br { display: inline !important; }
+  .marrakech-hero-br { display: inline !important; }
   .tablet-only-br { display: none !important; }
   .desktop-tablet-br { display: none; }
   .article-marrakech .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
@@ -26,6 +27,7 @@
   .hero-article .hero-bg { object-position: center 70% !important; }
   .tablet-only-br { display: inline; }
   .mobile-only-br { display: none; }
+  .marrakech-hero-br { display: none; }
   .mobile-hero-break { display: none; }
   .desktop-tablet-br { display: inline; }
 }
@@ -33,6 +35,7 @@
 @media (min-width: 1025px) {
   .tablet-only-br { display: none; }
   .mobile-only-br { display: none; }
+  .marrakech-hero-br { display: none; }
   .mobile-hero-break { display: none; }
   .desktop-tablet-br { display: inline; }
 }
