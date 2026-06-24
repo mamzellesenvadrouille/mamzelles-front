@@ -621,7 +621,7 @@ export default function MarrakechPage() {
                   {
                     id: 'caleche',
                     label: 'En calèche',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="5" cy="18" r="2"/><circle cx="17" cy="18" r="2"/><path d="M3 18H1V9l3-5h13l3 5v4h-2M7 18h8"/><path d="M9 5v4M14 5v4"/></svg>,
+                    icon: <i className="ti ti-horse" style={{fontSize:'18px'}}></i>,
                     content: (
                       <>
                         <p>Marrakech est l'une des rares villes du Maroc à avoir conservé le transport en calèche. Ces dernières sont majoritairement <strong>stationnées au niveau de la rue qui relie la Koutoubia à la place Jemaa el-Fna</strong>.</p>
