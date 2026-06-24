@@ -535,8 +535,7 @@
   font-size: 14px; }
 
 @media (max-width: 768px) {
-  .article-marrakech .article-bref-bar { display: grid !important; grid-template-columns: repeat(3, auto); justify-content: center; justify-items: start; padding: 14px 16px; gap: 8px 16px; }
-  .article-marrakech .article-bref-bar .article-bref-bar-sep { display: none; }
+  .article-bref-bar { padding: 14px 20px; gap: 10px 16px; }
   .article-bref-bar-sep { display: none; }
   .article-bref-bar-item { font-size: 12px; }
 }
