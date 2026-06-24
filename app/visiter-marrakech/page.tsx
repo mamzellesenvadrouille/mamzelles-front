@@ -714,8 +714,8 @@ export default function MarrakechPage() {
               <h2>📍 Désert d&apos;Agafay : une expérience aux portes de Marrakech</h2>
             </div>
             <p>Loin de l’effervescence et du tumulte de Marrakech, nous vous conseillons de vivre une expérience complètement magique... Celle de passer une <strong>nuit inoubliable dans le désert d’Agafay</strong> !</p>
-            <p>N'hésitez pas à <strong><a href="/dormir-dans-le-desert-agafay" className="article-link">lire notre article</a></strong> pour découvrir tous nos conseils et notre récit de voyage, et vivre à votre tour cette incroyable expérience !</p>
-            <a href="/dormir-dans-le-desert-agafay" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/75F1E0BA-2260-4821-B2C7-DEAE2106C433-300x240.jpg" alt="Agafay Blog" className="article-img-full" loading="lazy" /></a>
+            
+            <a href="/dormir-dans-le-desert-agafay" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/75F1E0BA-2260-4821-B2C7-DEAE2106C433.jpg" alt="Agafay Blog" className="article-img-full" loading="lazy" /></a>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À LIRE AUSSI</strong><p><a href="/dormir-dans-le-desert-agafay" className="article-link">⋙ Dormir dans le désert d&apos;Agafay, une expérience inoubliable !</a></p></div>
@@ -724,9 +724,7 @@ export default function MarrakechPage() {
 
           {/* OUTRO */}
           <section className="article-section">
-          <p><em><strong>Nous espérons que notre article sur Marrakech vous aura plu et qu'il vous inspirera pour votre prochain voyage !</strong></em></p>
-          <p><em><strong>Si vous avez des questions, ou que vous souhaitez nous partager un retour d'expérience, n'hésitez pas à nous la</strong><strong>isser un commentaire, à nous contacter via le </strong><strong><a href="/formules#formulaire" className="article-link">formulaire de contact</a> ou sur notre compte <a href="https://www.instagram.com/mamzellesenvadrouille/" target="_blank" rel="noopener noreferrer" className="article-link">Instagram</a>.</strong></em></p>
-          <p><em><strong>Nous nous ferons un plaisir de vous lire et de vous répondre !</strong></em></p>
+          
           </section>
 
           <section className="article-comments-section">
