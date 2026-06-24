@@ -9,11 +9,11 @@ import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
   title: "Visiter Marrakech : que faire dans la ville rouge",
-  description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
+  description: "Médina, souks, Jardin Majorelle, riads... Découvrez nos conseils et bonnes adresses pour visiter Marrakech et vous imprégner de la ville rouge.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-marrakech' },
   openGraph: {
     title: "Visiter Marrakech : que faire dans la ville rouge",
-    description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
+    description: "Médina, souks, Jardin Majorelle, riads... Découvrez nos conseils et bonnes adresses pour visiter Marrakech et vous imprégner de la ville rouge.",
     url: 'https://mamzellesenvadrouille.com/visiter-marrakech',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: '/Marrakech.webp', width: 1920, height: 1080 }],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Visiter Marrakech : que faire dans la ville rouge",
-    description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
+    description: "Médina, souks, Jardin Majorelle, riads... Découvrez nos conseils et bonnes adresses pour visiter Marrakech et vous imprégner de la ville rouge.",
     images: ['/Marrakech.webp'],
   },
 };
@@ -35,7 +35,7 @@ export default function MarrakechPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: "Visiter Marrakech : que faire dans la ville rouge",
-    description: "Tous nos conseils pour visiter Marrakech : quartiers, médina, visites incontournables, riads, où manger et infos pratiques pour préparer votre séjour.",
+    description: "Médina, souks, Jardin Majorelle, riads... Découvrez nos conseils et bonnes adresses pour visiter Marrakech et vous imprégner de la ville rouge.",
     image: '/Marrakech.webp',
     datePublished: '2022-12-27',
     dateModified: '2026-06-22',
