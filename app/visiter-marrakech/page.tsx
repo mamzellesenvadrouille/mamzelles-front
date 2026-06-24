@@ -723,10 +723,6 @@ export default function MarrakechPage() {
           </section>
 
           {/* OUTRO */}
-          <section className="article-section">
-          
-          </section>
-
           <section className="article-comments-section">
             <CommentsList comments={[
               {
