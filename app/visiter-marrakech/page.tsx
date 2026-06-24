@@ -629,7 +629,7 @@ export default function MarrakechPage() {
               
               <div className="article-avis">
                 <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                <div><strong>Le conseil des MamZelles</strong><p>Nous tenons cependant à préciser que nous ne cautionnons pas ce mode de transport. Les chevaux qui tirent ces calèches sont souvent maigres et visiblement épuisés — c’est quelque chose que nous ne pouvons pas ignorer.</p></div>
+                <div><strong>L’avis des MamZelles</strong><p>Nous tenons cependant à préciser que nous ne cautionnons pas ce mode de transport. Les chevaux qui tirent ces calèches sont souvent maigres et visiblement épuisés — c’est quelque chose que nous ne pouvons pas ignorer.</p></div>
               </div>
                       </>
                     ),
