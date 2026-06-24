@@ -332,7 +332,7 @@ export default function MarrakechPage() {
               <p>Vous pourrez ainsi admirer les <strong>magnifiques clichés d'amateurs ou de célèbres photographes qui ont parcouru le Maroc à travers le temps</strong>. Les photos révèlent notamment les différents panoramas du pays, ainsi que les rencontres avec ses habitants.</p>
               <p>Vous y découvrirez également d’anciennes cartes postales, d’anciens journaux et d'autres documents retraçant l’histoire du Maroc.</p>
               <p>N’hésitez pas à monter sur la terrasse qui offre une vue panoramique sur la vieille ville. Il y a également une cafeteria, de quoi se rafraîchir après l’exposition.</p>
-              <p><strong>Le musée est ouvert tous les jours de 9 h 30 à 19 h. Il faut compter 60 Dh (environ 6 €) pour accéder au musée. </strong></p>
+              <p><strong>Le musée est ouvert tous les jours de 9 h 30 à 19 h. Il faut compter 80 Dh (environ 8 €) pour accéder au musée. </strong></p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8205-1024x766.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.337', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8202.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.463', minWidth: 0}} />
@@ -344,7 +344,7 @@ export default function MarrakechPage() {
               <p>Prenez un moment pour apprécier le calme au milieu de cette végétation luxuriante.</p>
               <p>Si vous avez le temps, vous pouvez également savourer l’endroit en vous installant à la table de l’un des deux cafés. Le premier se trouve au niveau des bassins, l’autre sur une jolie terrasse qui surplombe le jardin.</p>
               <p>Il y a également une tour dans laquelle vous pouvez monter. C'est l'une des plus haute de la médina.</p>
-              <p><strong>Le jardin secret se visite tous les jours de 9 h 30 à 18 h. Le tarif de l'entrée est de 80 Dh (environ 7,50 €), et de 60 Dh (environ 5,50 €) pour les 7-24 ans.</strong> Il faut ajouter un supplément de 40 Dh (4 €) pour monter dans la tour.</p>
+              <p><strong>Le jardin secret se visite tous les jours de 9 h 30 à 18 h. Le tarif de l'entrée est de 100 Dh (environ 10 €), et de 80 Dh (environ 7,50 €) pour les moins de 24 ans. Gratuit pour les moins de 12 ans.</strong> Il faut ajouter un supplément de 40 Dh (4 €) pour monter dans la tour.</p>
               <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8123.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8121-1024x768.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -734,15 +734,7 @@ export default function MarrakechPage() {
                 author: 'Alexandre Le Bris',
                 date: '1 année il y a',
                 text: "Merci pour ces bons conseils ! Nous avons été surpris de voir que les tarifs d\'entrées avaient pas mal augmentés. 10€ pour visiter la jardin secret par personne, ça commence. à faire !",
-                replies: [
-                  {
-                    id: '2',
-                    author: 'mamzellesenvadrouille',
-                    date: '1 année il y a',
-                    isAuthor: true,
-                    text: "Merci beaucoup pour votre retour ! 😊 C\'est vrai que sur ces dernières années, les tarifs d\'entrée des musées se sont envolés... On espère malgré tout que vous avez passé un beau séjour au soleil et que vous avez aimé l\'ambiance unique de Marrakech ! 😍",
-                  }
-                ]
+                reply: { author: 'MamZelles en vadrouille', date: '1 année il y a', text: "Merci beaucoup pour votre retour ! 😊 C'est vrai que sur ces dernières années, les tarifs d'entrée des musées se sont envolés... On espère malgré tout que vous avez passé un beau séjour au soleil et que vous avez aimé l'ambiance unique de Marrakech ! 😍" }
               }
             ]} />
             <CommentForm
