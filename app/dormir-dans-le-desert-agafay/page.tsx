@@ -244,6 +244,25 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <p><strong>La réponse est oui !</strong> Si vous ne souhaitez pas dormir sur place, vous avez aussi la possibilité de profiter des lieux seulement à la journée.</p>
               <p>Hormis le Scarabeo Camp, sachez qu'il existe aujourd’hui de nombreux camps ou complexes qui proposent un forfait journalier : vous aurez alors accès à la piscine (pour ceux qui en disposent), pourrez déjeuner sur place et participer aux activités proposées (moyennant cependant un coût supplémentaire).</p>
               <p>Ces dernières vous permettront entre autres de découvrir un peu mieux le coin, que ce soit à dos de dromadaire, en quad ou en buggy.</p>
+
+              <p>Nous avons également eu l&apos;occasion de passer une journée à <strong>La Bohème</strong>, un autre camp de la région. L&apos;endroit est indéniablement beau — grand, soigné, avec une piscine et une ambiance DJ lounge en fond sonore. On y mange très bien, et les activités proposées (buggy, balade à dromadaire) sont franchement sympas.</p>
+              <p>Cela dit, nous avons moins accroché à l&apos;atmosphère générale. C&apos;est plus &quot;resort&quot;, plus festif — et on y perd un peu cette sensation d&apos;isolement total et d&apos;authenticité qui nous avait tant charmées au Scarabeo. Deux ambiances vraiment différentes, selon ce que vous recherchez !</p>
+
+              <div className="article-gallery-2">
+                <img src="/la-boheme1.webp" alt="La Bohème Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="/la-boheme2.webp" alt="La Bohème Agafay désert" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              </div>
+
+              <div className="article-avis">
+                <div className="article-avis-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </div>
+                <div className="article-avis-body">
+                  <span className="article-avis-title">L&apos;avis des MamZelles</span>
+                  <p>La Bohème est une belle adresse pour une journée animée dans le désert. Mais si vous cherchez l&apos;authenticité et le dépaysement absolu, notre cœur reste au Scarabeo Camp.</p>
+                </div>
+              </div>
+
               <p>Mais comme vous l'aurez compris, <strong>nous conseillons vivement, si votre budget le permet bien entendu, de passer une nuit dans le désert d'Agafay</strong>... Vous profiterez davantage de toute la magie du site et apprécierez l'atmosphère qui y règne le soir notamment.</p>
               <div className="article-gallery-2">
                               <div className="article-gallery-2">
