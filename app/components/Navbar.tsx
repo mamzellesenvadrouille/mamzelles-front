@@ -25,7 +25,7 @@ const destinations = [
     pays: 'Maroc',
     liens: [
       { label: 'Marrakech', href: '/visiter-marrakech' },
-      { label: 'Désert d\'Agafay', href: 'https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/' },
+      { label: 'Désert d\'Agafay', href: '/dormir-dans-le-desert-agafay' },
     ]
   },
   {
