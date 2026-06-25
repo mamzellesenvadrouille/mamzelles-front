@@ -1154,3 +1154,9 @@
 
 /* Marge H4 rÃ©duite */
 .article-agafay .article-h4 { margin-top: 12px !important; }
+
+/* Force left align in tarif subblocks */
+.article-agafay .agafay-tarif-subblock,
+.article-agafay .agafay-tarif-subblock *,
+.article-agafay .agafay-tarif-list,
+.article-agafay .agafay-tarif-list li { text-align: left !important; }
