@@ -143,7 +143,7 @@ export default function MarrakechPage() {
               <p><strong>Loin de l’effervescence et du tumulte de Marrakech, nous vous conseillons de vivre une expérience complètement magique </strong><strong>Celle de passer une nuit inoubliable dans le désert d’Agafay !</strong></p>
               <p><strong>En amoureux ou entre amis, c'est certain, ce souvenir restera à jamais gravé dans vos mémoires ! </strong></p>
               <p><strong>Vous êtes tenté ? Voici tous nos conseils et notre récit de voyage pour vous inspirer et vivre à votre tour cette incroyable expérience !</strong></p>
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5395-1024x768.jpg" alt="Piscine Agafay" className="article-img-full" loading="lazy" />
+                            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5395.jpg" alt="Désert d'Agafay" className="article-img-full" loading="lazy" />
           </section>
 
           <section id="desert" className="article-section">
@@ -160,8 +160,10 @@ export default function MarrakechPage() {
                 </div>
               </div>
               <p><strong>Ce désert de dunes rocailleuses</strong> est juste incroyable ! On y trouve même une oasis d'environ sept hectares surnommée l’Oasis enchantée. Eucalyptus, oliviers et vignes qui s’y trouvent sont irrigués naturellement par l’Oued situé à proximité.</p>
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5539-768x1024.jpg" alt="Mamzelles désert" className="article-img-full" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5408-1024x768.jpg" alt="Scarabeo Camp Agafay" className="article-img-full" loading="lazy" />
+                            <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5539.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5408.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              </div>
           </section>
 
           <section id="camp" className="article-section">
@@ -170,14 +172,18 @@ export default function MarrakechPage() {
               <p>Il semblait correspondre en tout point à ce que l'on recherchait pour notre séjour... Un endroit de rêve isolé avec piscine, un bon rapport qualité / prix, et de très bons retours quant à l'accueil chaleureux du personnel et de la qualité des repas.</p>
               <p>Ce camp est l'un des premiers dans la région qui eut ouvert. <strong>Un vrai bivouac composé de tentes berbères.</strong> Rien qu'à voir les photos de cet endroit, on était déjà sous le charme !</p>
               <p>Et quelle surprise ce fut en découvrant ce lieu à notre arrivée ! Le Scarabeo Camp est juste magique ! C'est un <strong>dépaysement total, hors du temps</strong>. Le camp a préservé son authenticité tout en offrant un confort moderne.</p>
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5301-1024x768.jpg" alt="Scarabeo Camp panneau" className="article-img-full" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5332_jpg-768x1024.jpg" alt="Désert d'Agafay" className="article-img-full" loading="lazy" />
+                            <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5301.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5332_jpg.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              </div>
               <h3 className="article-h3">Connaissez-vous le glamping ?</h3>
               <p><strong>Le glamping est une tendance en vogue qui combine camping et glamour !</strong> Le glamping est donc un mode d'hébergement touristique en pleine nature, associant le confort au respect de l'environnement.</p>
               <p>Vous comprenez l'idée ? Et bien, pour résumer, c’est exactement l’esprit du Scarabeo Camp !</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5351-768x1024.jpg" alt="Piscine désert Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5586-768x1024.jpg" alt="Salle de bain Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                              <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5351.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5586.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              </div>
               </div>
               <h3 className="article-h3">Le Scarabeo Camp</h3>
               <p>Dès notre arrivée, nous sommes accueillies avec des pâtisseries marocaines et un thé à la menthe (le whisky berbère, la base !).
@@ -187,8 +193,10 @@ Installées à une table, on y contemple le paysage dégagé sur l’Atlas. Une 
 Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décoration est soignée, épurée et authentique.</p>
               <p><strong>On ne peut pas louper la piscine...</strong> incroyable au beau milieu de rien ! À peine on l'aperçoit, qu'on a déjà trop hâte d'y faire un plouf !</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_1548-768x1024.jpg" alt="Tente berbère Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5323-768x1024.jpg" alt="Tente berbère désert" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                              <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_1548.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5323.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              </div>
               </div>
           </section>
 
@@ -198,33 +206,43 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <p>C'est à ce moment-là que le personnel propose aux clients du camp de prendre l'apéritif au bar de la piscine...</p>
               <p>Nous avons alors le choix de commander des softs ou de l'alcool. Il est possible d'acheter une bouteille de vin (blanc, rosé ou rouge) ou de se faire servir au verre.</p>
               <p>On se sent clairement au paradis ! Avec un tel décor et une ambiance aussi sereine, c'est du pur bonheur !</p>
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5593-1024x768.jpg" alt="Bar piscine Scarabeo Camp" className="article-img-full" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5397-768x1024.jpg" alt="Coucher de soleil Agafay" className="article-img-full" loading="lazy" />
+                            <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5593.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5397.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              </div>
               <p>À la nuit tombée, des lanternes sont allumées dans l’ensemble du camp.</p>
               <p>Nous n'avons qu’à suivre le chemin éclairé pour rejoindre la grande tente où est servi le dîner et où a lieu un petit concert privé… Un homme joue de la guitare et chante un répertoire plutôt sympa !</p>
               <p>L’excellent repas se fait à la lueur des chandelles : assortiment d’entrées, tajine de bœuf, tajine de poulet citron, et enfin le dessert. Les quantités sont plutôt généreuses et du vin nous est proposé (avec un supplément bien entendu).</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5494-768x1024.jpg" alt="Lumières bougies camp" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5492-768x1024.jpg" alt="Tente pour le dîner" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                              <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5494.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5492.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5486-1024x768.jpg" alt="Dîner Scarabeo Camp" className="article-img-full" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5499-768x1024.jpg" alt="Dîner Scarabeo Camp désert" className="article-img-full" loading="lazy" />
+              </div>
+                            <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5486.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5499.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              </div>
               <p>Pour finir cette merveilleuse soirée, petite digestion autour du feu de camp, des fauteuils nous y attendent.</p>
               <p>Et comme il fait un peu frais, le personnel qui est aux petits soins pour nous, apportera un plaid à chacune...</p>
               <p>On se sent tellement bien ! Rien de tel après un repas si copieux pour faire une petite pause et apprécier le moment.</p>
               <p>Le ciel était dégagé ce soir-là et on a pu admirer des milliers d’étoiles. On aurait aimé que le temps s'arrête...</p>
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5476-1024x768.jpg" alt="Feu de camp désert" className="article-img-full" loading="lazy" />
+                            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5476.jpg" alt="Désert d'Agafay" className="article-img-full" loading="lazy" />
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5464-768x1024.jpg" alt="Tente le soir Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5521-768x1024.jpg" alt="Lumière désert Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                              <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5464.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5521.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              </div>
               </div>
               <p>Le matin, un petit déjeuner copieux nous attend sous une tente. Un grand buffet est proposé avec du thé, du café, des jus de fruit, des céréales, des œufs, du pain, et surtout avec les fameuses crêpes aux 1000 trous marocaines !</p>
               <p>Un vrai régal ! Il y en a vraiment pour tous les goûts.</p>
               <p>Il est généralement demandé de <strong>quitter la tente entre 10 h et 11 h, mais le personnel nous a gentiment proposé de passer plus de temps sans frais supplémentaire </strong>au sein de leur établissement. Nous profiterons donc de ce cadre exceptionnel jusqu'à 17 h ! Autant dire que nous ne nous sommes pas faites prier !</p>
               <p>Comme vous l'avez compris, vous pouvez ainsi continuer à profiter de ce cadre magnifique, de la piscine, mais également des activités proposées après avoir rendu la tente.</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5647-768x1024.jpg" alt="Piscine Scarabeo Camp" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5596-768x1024.jpg" alt="Libellule Scarabeo Camp désert" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                              <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5647.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5596.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              </div>
               </div>
               <h3 className="article-h3">Est-il possible de venir seulement à la journée ?</h3>
               <p><strong>La réponse est oui !</strong> Si vous ne souhaitez pas dormir sur place, vous avez aussi la possibilité de profiter des lieux seulement à la journée.</p>
@@ -232,8 +250,10 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <p>Ces dernières vous permettront entre autres de découvrir un peu mieux le coin, que ce soit à dos de dromadaire, en quad ou en buggy.</p>
               <p>Mais comme vous l'aurez compris, <strong>nous conseillons vivement, si votre budget le permet bien entendu, de passer une nuit dans le désert d'Agafay</strong>... Vous profiterez davantage de toute la magie du site et apprécierez l'atmosphère qui y règne le soir notamment.</p>
               <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5415-768x1024.jpg" alt="Mamzelles Agafay désert" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5449_jpg-768x1024.jpg" alt="Dromadaire Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                              <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5415.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5449_jpg.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              </div>
               </div>
           </section>
 
