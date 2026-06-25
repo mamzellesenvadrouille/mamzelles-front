@@ -289,7 +289,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                     <li><strong>Tente 2 personnes</strong> — demi-pension comprise<br />2650 Dh (265 €)</li>
                     <li><strong>Suite familiale 4 personnes</strong><br />3250 Dh (325 €)</li>
                   </ul>
-                  <p className="agafay-tarif-note">Plus vous serez nombreux, moins cela vous coûtera cher !</p>
+                  <p className="agafay-tarif-note">Plus vous serez nombreux, moins ce sera cher !</p>
                 </div>
 
                 <div className="agafay-tarif-card">
