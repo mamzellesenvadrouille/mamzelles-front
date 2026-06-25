@@ -283,7 +283,7 @@
 
 .article-toc-list li { display: flex; align-items: center; gap: 12px; font-size: 13px; }
 
-.article-toc-list li::before { content: 'â—'; font-size: 8px; color: var(--gold); flex-shrink: 0; line-height: 1; margin-top: 2px; }
+.article-toc-list li::before { content: '\2022'; font-size: 8px; color: var(--gold); flex-shrink: 0; line-height: 1; margin-top: 2px; }
 
 .article-toc-list a { color: #555; transition: color .2s; }
 
@@ -1162,4 +1162,4 @@
 .article-agafay .agafay-tarif-list-item { display: block; text-align: left !important; }
 
 /* Point dorÃ© devant les titres de sections */
-.article-agafay .article-day-header h2::before { content: 'â—'; color: var(--gold); font-size: 10px; margin-right: 12px; vertical-align: middle; }
+.article-agafay .article-day-header h2::before { content: '\2022'; color: var(--gold); font-size: 10px; margin-right: 12px; vertical-align: middle; }
