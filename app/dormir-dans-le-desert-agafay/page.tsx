@@ -8,11 +8,11 @@ import NewsletterForm from '../components/NewsletterForm';
 import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
-  title: "Dormir dans le désert d'Agafay : notre expérience",
+  title: "Agafay : dormir dans le désert, notre expérience inoubliable",
   description: "Dormir dans le désert d'Agafay, à 40 min de Marrakech : notre expérience au Scarabeo Camp et nos conseils pour organiser votre nuit inoubliable.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay' },
   openGraph: {
-    title: "Dormir dans le désert d'Agafay : notre expérience",
+    title: "Agafay : dormir dans le désert, notre expérience inoubliable",
     description: "Dormir dans le désert d'Agafay, à 40 min de Marrakech : notre expérience au Scarabeo Camp et nos conseils pour organiser votre nuit inoubliable.",
     url: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay',
     siteName: 'MamZelles en vadrouille',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Dormir dans le désert d'Agafay : notre expérience",
+    title: "Agafay : dormir dans le désert, notre expérience inoubliable",
     description: "Dormir dans le désert d'Agafay, à 40 min de Marrakech : notre expérience au Scarabeo Camp et nos conseils pour organiser votre nuit inoubliable.",
     images: ['/Agafay.webp'],
   },
@@ -34,7 +34,7 @@ export default function MarrakechPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: "Dormir dans le désert d'Agafay : notre expérience",
+    headline: "Agafay : dormir dans le désert, notre expérience inoubliable",
     description: "Dormir dans le désert d'Agafay, à 40 min de Marrakech : notre expérience au Scarabeo Camp et nos conseils pour organiser votre nuit inoubliable.",
     image: '/Agafay.webp',
     datePublished: '2023-01-13',
@@ -377,7 +377,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               }
             ]} />
             <CommentForm
-              articleTitle={"Dormir dans le désert d'Agafay : notre expérience"}
+              articleTitle={"Agafay : dormir dans le désert, notre expérience inoubliable"}
               articleUrl="https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay"
             />
           </section>
