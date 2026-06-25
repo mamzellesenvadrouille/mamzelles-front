@@ -1,5 +1,5 @@
 /* ============================================
-   MARRAKECH â€” Styles spÃ©cifiques Ã  l'article
+   MARRAKECH ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Styles spÃƒÆ’Ã‚Â©cifiques ÃƒÆ’  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -68,27 +68,13 @@
   margin-bottom: 16px;
   color: var(--dark); }
 
-.article-toc-list { list-style: none;
-  counter-reset: toc;
-  display: flex;
-  flex-direction: column;
-  gap: 10px; }
+.article-toc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 
-.article-toc-list li { counter-increment: toc;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 13px; }
+.article-toc-list li { display: flex; align-items: center; gap: 12px; font-size: 13px; }
 
-.article-toc-list li::before { content: counter(toc, decimal-leading-zero);
-  font-size: 11px;
-  color: var(--gold);
-  font-weight: 600;
-  letter-spacing: 1px;
-  flex-shrink: 0; }
+.article-toc-list li::before { content: '\2022'; font-size: 16px; color: var(--gold); flex-shrink: 0; line-height: 1; }
 
-.article-toc-list a { color: #555;
-  transition: color .2s; }
+.article-toc-list a { color: #555; transition: color .2s; }
 
 .article-toc-list a:hover { color: var(--gold); }
 
@@ -279,11 +265,11 @@
 
 .article-toc-title { font-family: "Cormorant Garamond", serif; font-size: 20px; font-weight: 600; margin-bottom: 16px; color: var(--dark); }
 
-.article-toc-list { list-style: none; counter-reset: toc; display: flex; flex-direction: column; gap: 10px; }
+.article-toc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 
-.article-toc-list li { counter-increment: toc; display: flex; align-items: center; gap: 12px; font-size: 13px; }
+.article-toc-list li { display: flex; align-items: center; gap: 12px; font-size: 13px; }
 
-.article-toc-list li::before { content: counter(toc, decimal-leading-zero); font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 1px; flex-shrink: 0; }
+.article-toc-list li::before { content: '\2022'; font-size: 16px; color: var(--gold); flex-shrink: 0; line-height: 1; }
 
 .article-toc-list a { color: #555; transition: color .2s; }
 
@@ -729,7 +715,7 @@
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
 /* ============================================
-   BLOCS OÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ MANGER ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Port Barton
+   BLOCS OÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ MANGER ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Port Barton
    ============================================ */
 
 .pb-resto-section {
@@ -841,7 +827,7 @@
 }
 
 /* ============================================
-   SECTION ORGANISER â€” article-pratique (repris depuis Londres)
+   SECTION ORGANISER ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â article-pratique (repris depuis Londres)
    ============================================ */
 .article-marrakech .article-pratique {
   display: flex;
@@ -941,8 +927,8 @@
   background: var(--gold);
 }
 
-/* --- Sous-cartes premium pour les blocs pratiques Ãƒ  plusieurs sous-thÃƒÂ¨mes
-   (ex: "Comment s'y rendre", "Comment se dÃƒÂ©placer") : chaque sous-thÃƒÂ¨me
+/* --- Sous-cartes premium pour les blocs pratiques ÃƒÆ’Ã†â€™  plusieurs sous-thÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨mes
+   (ex: "Comment s'y rendre", "Comment se dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©placer") : chaque sous-thÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨me
    devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
    de texte. Aucune perte de contenu, juste une meilleure structure. --- */
 .article-marrakech .article-pratique-nav {
@@ -1092,7 +1078,7 @@
   margin: 12px 0;
 }
 
-/* --- Pratique : mobile (placÃƒÂ© APRÃƒË†S le desktop, comme convenu) --- */
+/* --- Pratique : mobile (placÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© APRÃƒÆ’Ã†â€™Ãƒâ€¹Ã¢â‚¬ S le desktop, comme convenu) --- */
 @media (max-width: 768px) {
   .article-marrakech .article-pratique-block { padding: 18px 18px !important; }
   .article-marrakech .article-pratique-title { font-size: 22px !important; }
@@ -1106,7 +1092,7 @@
 }
 
 
-/* Cartes riads â€” display block pour empiler les infos */
+/* Cartes riads ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â display block pour empiler les infos */
 .article-marrakech .pb-riad-card {
   background: var(--bg);
 }
@@ -1118,7 +1104,7 @@
   color: rgba(26,21,18,0.70);
 }
 
-/* Blocs tip/avis dans section organiser â€” style liseret gauche comme Londres */
+/* Blocs tip/avis dans section organiser ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â style liseret gauche comme Londres */
 .article-marrakech #organiser .article-tip,
 .article-marrakech #organiser .article-avis {
   background: #fff;
@@ -1127,3 +1113,5 @@
   border-radius: 8px;
   padding: 18px 24px 18px 22px;
 }
+/* Point dorÃƒÂ© devant les titres de sections */
+.article-marrakech .article-day-header h2::before { content: '\2022'; color: var(--gold); font-size: 46px; margin-right: 12px; vertical-align: middle; line-height: 0; position: relative; top: -2px; }
