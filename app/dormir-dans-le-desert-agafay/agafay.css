@@ -4,7 +4,7 @@
    ============================================ */
 
 @media (max-width: 768px) {
-  .hero-article .hero-overlay { background: linear-gradient(to bottom, rgba(10,5,2,0.45) 0%, rgba(10,5,2,0.75) 100%) !important; }
+  .hero-article .hero-overlay { background: linear-gradient(to bottom, rgba(10,5,2,0.25) 0%, rgba(10,5,2,0.55) 100%) !important; }
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 45vh !important; min-height: 280px !important; }
   .hero-article .hero-content { padding: 0 24px 36px !important; bottom: -30px !important; }
@@ -442,7 +442,7 @@
   .article-sidebar { position: sticky; bottom: 24px; align-self: flex-end; }
   .hero-article .hero-desc { font-size: 14px !important; }
   .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; }
-  .hero-article .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.85) 0%, rgba(10,5,2,0.6) 50%, rgba(10,5,2,0.3) 100%) !important; }
+  .hero-article .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.65) 0%, rgba(10,5,2,0.45) 50%, rgba(10,5,2,0.2) 100%) !important; }
   .article-pratique-grid { grid-template-columns: 1fr; }
   .article-coup-de-coeur { padding: 24px 40px !important; overflow: hidden; }
   .article-cdcr-grid { flex-wrap: nowrap !important; gap: 0 !important; }
