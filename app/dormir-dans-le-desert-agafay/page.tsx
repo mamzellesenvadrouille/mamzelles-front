@@ -202,8 +202,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <div className="article-day-header">
               <h2>📍 Notre séjour au Scarabeo Camp</h2>
             </div>
-              <p>En fin de journée, nous avons la chance d'assister à un merveilleux coucher de soleil.</p>
-              <p>C'est à ce moment-là que le personnel propose aux clients du camp de prendre l'apéritif au bar de la piscine...</p>
+              <p>En fin de journée, nous avons la chance d'assister à un merveilleux coucher de soleil. C'est à ce moment-là que le personnel propose aux clients du camp de prendre l'apéritif au bar de la piscine...</p>
               <p>Nous avons alors le choix de commander des softs ou de l'alcool. Il est possible d'acheter une bouteille de vin (blanc, rosé ou rouge) ou de se faire servir au verre.</p>
               <p>On se sent clairement au paradis ! Avec un tel décor et une ambiance aussi sereine, c'est du pur bonheur !</p>
                             <div className="article-gallery-2">
@@ -223,10 +222,8 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5486.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5499.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
-              <p>Pour finir cette merveilleuse soirée, petite digestion autour du feu de camp, des fauteuils nous y attendent.</p>
-              <p>Et comme il fait un peu frais, le personnel qui est aux petits soins pour nous, apportera un plaid à chacune...</p>
-              <p>On se sent tellement bien ! Rien de tel après un repas si copieux pour faire une petite pause et apprécier le moment.</p>
-              <p>Le ciel était dégagé ce soir-là et on a pu admirer des milliers d’étoiles. On aurait aimé que le temps s'arrête...</p>
+              <p>Pour finir cette merveilleuse soirée, petite digestion autour du feu de camp, des fauteuils nous y attendent. Et comme il fait un peu frais, le personnel qui est aux petits soins pour nous, apportera un plaid à chacune...</p>
+              <p>On se sent tellement bien ! Rien de tel après un repas si copieux pour faire une petite pause et apprécier le moment. Le ciel était dégagé ce soir-là et on a pu admirer des milliers d’étoiles. On aurait aimé que le temps s'arrête.</p>
                             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5476.jpg" alt="Désert d'Agafay" className="article-img-full" loading="lazy" />
               <div className="article-gallery-2">
                               <div className="article-gallery-2">
@@ -234,8 +231,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5521.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               </div>
-              <p>Le matin, un petit déjeuner copieux nous attend sous une tente. Un grand buffet est proposé avec du thé, du café, des jus de fruit, des céréales, des œufs, du pain, et surtout avec les fameuses crêpes aux 1000 trous marocaines !</p>
-              <p>Un vrai régal ! Il y en a vraiment pour tous les goûts.</p>
+              <p>Le matin, un petit déjeuner copieux nous attend sous une tente. Un grand buffet est proposé avec du thé, du café, des jus de fruit, des céréales, des œufs, du pain, et surtout avec les fameuses crêpes aux 1000 trous marocaines ! Un vrai régal ! Il y en a vraiment pour tous les goûts.</p>
               <p>Il est généralement demandé de <strong>quitter la tente entre 10 h et 11 h, mais le personnel nous a gentiment proposé de passer plus de temps sans frais supplémentaire </strong>au sein de leur établissement. Nous profiterons donc de ce cadre exceptionnel jusqu'à 17 h ! Autant dire que nous ne nous sommes pas faites prier !</p>
               <p>Comme vous l'avez compris, vous pouvez ainsi continuer à profiter de ce cadre magnifique, de la piscine, mais également des activités proposées après avoir rendu la tente.</p>
               <div className="article-gallery-2">
