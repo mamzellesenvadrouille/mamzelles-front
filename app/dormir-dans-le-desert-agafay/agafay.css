@@ -8,7 +8,7 @@
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 45vh !important; min-height: 280px !important; }
   .hero-article .hero-content { padding: 0 24px 36px !important; bottom: -30px !important; }
-  .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 22px !important; white-space: normal !important; }
+  .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 20px !important; white-space: normal !important; }
   .mobile-hero-break { display: inline; }
   .mobile-only-br { display: inline !important; }
   .agafay-hero-br { display: inline !important; }
@@ -394,7 +394,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .article-agafay .article-section h3 { line-height: 1.1; }
   .article-agafay .article-section h4 { line-height: 1.1 !important; }
-  .budget-price { font-size: 22px !important; white-space: nowrap !important; }
+  .budget-price { font-size: 20px !important; white-space: nowrap !important; }
   .article-coup-de-coeur { padding: 32px 30px; }
   .article-cdcr-grid { grid-template-columns: repeat(2, 1fr); }
   .article-cdcr-item:nth-child(1) { flex: 1 1 0 !important; }
@@ -1095,7 +1095,7 @@
 /* --- Pratique : mobile (placÃƒÂ© APRÃƒË†S le desktop, comme convenu) --- */
 @media (max-width: 768px) {
   .article-agafay .article-pratique-block { padding: 18px 18px !important; }
-  .article-agafay .article-pratique-title { font-size: 22px !important; }
+  .article-agafay .article-pratique-title { font-size: 20px !important; }
   .article-agafay .article-pratique-block h4 { font-size: 14px !important; }
   .article-agafay .article-pratique-sub { padding: 16px 18px !important; }
   .article-agafay .article-pratique-sub-head h4 { font-size: 17px !important; }
@@ -1147,7 +1147,7 @@
 .agafay-tarif-list-item:last-child { border-bottom: none; }
 .agafay-tarif-note { font-size: 12px !important; color: var(--gold) !important; font-style: italic; margin-bottom: 0 !important; }
 .agafay-tarif-subblock-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
-.agafay-tarif-camp-label { font-family: 'Cormorant Garamond', serif !important; font-size: 17px !important; font-weight: 600 !important; color: var(--gold) !important; font-style: italic !important; margin: 0 0 8px !important; white-space: nowrap !important; }
+.agafay-tarif-camp-label { font-family: 'Cormorant Garamond', serif !important; font-size: 20px !important; font-weight: 600 !important; color: var(--gold) !important; font-style: italic !important; margin: 0 0 8px !important; }
 @media (max-width: 768px) { .agafay-tarif-subblock-grid { grid-template-columns: 1fr; } }
 .agafay-tarif-subblock { background: rgba(200,149,108,0.06); border-radius: 6px; padding: 12px 14px; text-align: left !important; }
 @media (max-width: 768px) { .agafay-tarif-grid { grid-template-columns: 1fr; gap: 14px; } }
