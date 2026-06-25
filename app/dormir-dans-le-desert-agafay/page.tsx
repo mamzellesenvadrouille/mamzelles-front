@@ -261,35 +261,19 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <div className="article-day-header">
               <h2>📍 Tout savoir pour organiser son expérience</h2>
             </div>
-              <PratiqueOnglets onglets={[
-                  {
-                    id: 'rendre',
-                    label: "Comment s'y rendre ?",
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2M5 17l-1 3M19 17l1 3M8 7V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2"/><circle cx="7.5" cy="14.5" r="1"/><circle cx="16.5" cy="14.5" r="1"/></svg>,
-                    content: (
-                      <>
-                        <p>Pour rappel, le désert d&apos;Agafay se situe à 40 min environ du centre-ville de Marrakech.</p>
-                        <p><strong>Vous avez la possibilité de vous rendre au Scarabeo Camp en utilisant un grand taxi ou un taxi privé.</strong> Il faut compter 400 Dh (40 €) par trajet en moyenne pour 4 personnes.</p>
-                        <p>Autrement, <strong>il est possible de réserver directement votre transport via le camp</strong>. Dans ce cas, c&apos;est bien plus onéreux... Il faut compter 550 Dh (55 €) par trajet pour 3 personnes ou 810 Dh (81 €) pour 4 personnes par exemple.</p>
-                      </>
-                    )
-                  },
-                  {
-                    id: 'budget',
-                    label: 'Quel budget ?',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>,
-                    content: (
-                      <>
-                        <p><strong>Pour une nuit (+ 2 jours)</strong></p>
-                        <p>Honnêtement, passer une nuit dans le désert d&apos;Agafay, et notamment au Scarabeo Camp, nécessite de <strong>prévoir une bonne petite enveloppe</strong>... !</p>
-                        <p>Pour une nuit dans une tente de 2 personnes par exemple, demi-pension comprise, il faut débourser 2400 Dh (240 €). Pour la réservation d&apos;une suite familiale de 4 personnes, il faut compter 2950 Dh (290 €). En définitive, <strong>plus vous serez nombreux à vivre cette expérience, moins cela vous coûtera cher</strong> !</p>
-                        <p><strong>Pour une journée</strong></p>
-                        <p>Si vous souhaitez passer uniquement la journée au Scarabeo Camp, comptez 350 Dh (35 €) par adulte et 185 Dh (18,50 €) pour les enfants de moins de 12 ans.</p>
-                        <p>Compris dans ce tarif, <strong>vous aurez accès à la piscine et profiterez de leur succulent déjeuner marocain</strong> !</p>
-                      </>
-                    )
-                  }
-              ]} />
+              <h3 className="article-h3">Comment s&apos;y rendre ?</h3>
+              <p>Pour rappel, le désert d&apos;Agafay se situe à 40 min environ du centre-ville de Marrakech.</p>
+              <p><strong>Vous avez la possibilité de vous rendre au Scarabeo Camp en utilisant un grand taxi ou un taxi privé.</strong> Il faut compter 400 Dh (40 €) par trajet en moyenne pour 4 personnes.</p>
+              <p>Autrement, <strong>il est possible de réserver directement votre transport via le camp</strong>. Dans ce cas, c&apos;est bien plus onéreux... Il faut compter 550 Dh (55 €) par trajet pour 3 personnes ou 810 Dh (81 €) pour 4 personnes par exemple.</p>
+
+              <h3 className="article-h3">Quel budget ?</h3>
+              <p><strong>Pour une nuit (+ 2 jours)</strong></p>
+              <p>Honnêtement, passer une nuit dans le désert d&apos;Agafay, et notamment au Scarabeo Camp, nécessite de <strong>prévoir une bonne petite enveloppe</strong>... !</p>
+              <p>Pour une nuit dans une tente de 2 personnes par exemple, demi-pension comprise, il faut débourser 2400 Dh (240 €). Pour la réservation d&apos;une suite familiale de 4 personnes, il faut compter 2950 Dh (290 €). En définitive, <strong>plus vous serez nombreux à vivre cette expérience, moins cela vous coûtera cher</strong> !</p>
+              <p><strong>Pour une journée</strong></p>
+              <p>Si vous souhaitez passer uniquement la journée au Scarabeo Camp, comptez 350 Dh (35 €) par adulte et 185 Dh (18,50 €) pour les enfants de moins de 12 ans.</p>
+              <p>Compris dans ce tarif, <strong>vous aurez accès à la piscine et profiterez de leur succulent déjeuner marocain</strong> !</p>
+
               <p>S&apos;il vous manque des informations pour organiser votre séjour au Scarabeo Camp, n&apos;hésitez pas à consulter leur <strong><a href="https://www.scarabeocamp.com" target="_blank" rel="noopener noreferrer">site internet</a></strong>.</p>
 
               <div className="article-avis">
