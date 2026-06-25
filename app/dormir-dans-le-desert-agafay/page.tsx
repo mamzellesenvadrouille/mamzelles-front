@@ -276,12 +276,35 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <p>Autrement, <strong>il est possible de réserver directement votre transport via le camp</strong>. Dans ce cas, c&apos;est bien plus onéreux... Il faut compter 550 Dh (55 €) par trajet pour 3 personnes ou 810 Dh (81 €) pour 4 personnes par exemple.</p>
 
               <h3 className="article-h3">Quel budget ?</h3>
-              <p><strong>Pour une nuit (+ 2 jours)</strong></p>
-              <p>Honnêtement, passer une nuit dans le désert d&apos;Agafay, et notamment au Scarabeo Camp, nécessite de <strong>prévoir une bonne petite enveloppe</strong>... !</p>
-              <p>Pour une nuit dans une tente de 2 personnes par exemple, demi-pension comprise, il faut débourser 2400 Dh (240 €). Pour la réservation d&apos;une suite familiale de 4 personnes, il faut compter 2950 Dh (290 €). En définitive, <strong>plus vous serez nombreux à vivre cette expérience, moins cela vous coûtera cher</strong> !</p>
-              <p><strong>Pour une journée</strong></p>
-              <p>Si vous souhaitez passer uniquement la journée au Scarabeo Camp, comptez 350 Dh (35 €) par adulte et 185 Dh (18,50 €) pour les enfants de moins de 12 ans.</p>
-              <p>Compris dans ce tarif, <strong>vous aurez accès à la piscine et profiterez de leur succulent déjeuner marocain</strong> !</p>
+
+              <div className="agafay-tarif-grid">
+                <div className="agafay-tarif-card">
+                  <div className="agafay-tarif-header">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 2.76 2.24 5 5 5s5-2.24 5-5a5 5 0 0 0-5-5z"/><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/></svg>
+                    <span className="agafay-tarif-title">Pour une nuit</span>
+                    <span className="agafay-tarif-sub">(+ 2 jours)</span>
+                  </div>
+                  <p>Honnêtement, passer une nuit dans le désert d&apos;Agafay nécessite de <strong>prévoir une bonne petite enveloppe</strong>... !</p>
+                  <ul className="agafay-tarif-list">
+                    <li><strong>Tente 2 personnes</strong> — demi-pension comprise<br />2400 Dh (240 €)</li>
+                    <li><strong>Suite familiale 4 personnes</strong><br />2950 Dh (290 €)</li>
+                  </ul>
+                  <p className="agafay-tarif-note">Plus vous serez nombreux, moins cela vous coûtera cher !</p>
+                </div>
+
+                <div className="agafay-tarif-card">
+                  <div className="agafay-tarif-header">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <span className="agafay-tarif-title">Pour une journée</span>
+                    <span className="agafay-tarif-sub">(day pass)</span>
+                  </div>
+                  <ul className="agafay-tarif-list">
+                    <li><strong>Adulte</strong> — 350 Dh (35 €)</li>
+                    <li><strong>Enfant</strong> (moins de 12 ans) — 185 Dh (18,50 €)</li>
+                  </ul>
+                  <p className="agafay-tarif-note">Accès piscine + déjeuner marocain inclus !</p>
+                </div>
+              </div>
 
               <p>S&apos;il vous manque des informations pour organiser votre séjour au Scarabeo Camp, n&apos;hésitez pas à consulter leur <strong><a href="https://www.scarabeocamp.com" target="_blank" rel="noopener noreferrer">site internet</a></strong>.</p>
 
