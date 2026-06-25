@@ -51,11 +51,10 @@
   gap: 12px;
   font-size: 13px; }
 
-.article-toc-list li::before { content: counter(toc, decimal-leading-zero);
-  font-size: 11px;
+.article-toc-list li::before { content: '\2022';
+  font-size: 14px;
   color: var(--gold);
   font-weight: 600;
-  letter-spacing: 1px;
   flex-shrink: 0; }
 
 .article-toc-list a { color: #555;
@@ -77,7 +76,7 @@
   line-height: 1.1; }
 
 .article-section h3 { font-family: "Cormorant Garamond", serif;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 600;
   color: var(--dark);
   margin: 32px 0 16px; }
@@ -212,6 +211,7 @@
   .article-gallery-2 img { height: 220px; }
   .article-day-header h2 { font-size: 32px; }
   .article-section-h2 { font-size: 32px; }
+  .article-section h3 { font-size: 28px !important; }
 }
 
 .article-coup-de-coeur { background: var(--bg);
@@ -255,7 +255,7 @@
 
 .article-toc-list li { counter-increment: toc; display: flex; align-items: center; gap: 12px; font-size: 13px; }
 
-.article-toc-list li::before { content: counter(toc, decimal-leading-zero); font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 1px; flex-shrink: 0; }
+.article-toc-list li::before { content: '\2022'; font-size: 14px; color: var(--gold); font-weight: 600; flex-shrink: 0; }
 
 .article-toc-list a { color: #555; transition: color .2s; }
 
@@ -267,7 +267,7 @@
 
 .article-section-h2 { font-family: "Cormorant Garamond", serif; font-size: 36px; font-weight: 500; color: var(--dark); margin-bottom: 32px; line-height: 1.1; }
 
-.article-section h3 { font-family: "Cormorant Garamond", serif; font-size: 26px !important; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
+.article-section h3 { font-family: "Cormorant Garamond", serif; font-size: 32px; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
 
 .article-section p { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 14px; }
 
@@ -417,6 +417,7 @@
   .article-gallery-2 img { height: auto; aspect-ratio: unset; object-fit: cover; width: 100%; }
   .article-day-header h2 { font-size: 32px; }
   .article-section-h2 { font-size: 32px; }
+  .article-section h3 { font-size: 28px !important; }
   .article-cdcr-grid { flex-direction: column; }
   .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; }
   .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }

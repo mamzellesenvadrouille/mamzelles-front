@@ -126,7 +126,7 @@ export default function MadridPage() {
               <li><a href="#que-faire">3 jours à Madrid, que faire ?</a></li>
               <li><a href="#jour1">Jour 1 — El Centro</a></li>
               <li><a href="#jour2">Jour 2 — Malasaña, Salamanca, El Retiro</a></li>
-              <li><a href="#jour3">Jour 3 — Lavapiès / Rastro, Atocha, Barrio de las Letras / Huertas</a></li>
+              <li><a href="#jour3">Jour 3 — Lavapiès - Rastro, Atocha, Barrio de Las Letras - Huertas</a></li>
               <li><a href="#pratique">Tout savoir pour organiser votre voyage</a></li>
             </ol>
           </nav>
@@ -322,9 +322,9 @@ export default function MadridPage() {
           <section id="jour3" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 3</span>
-              <h2>Lavapiès / Rastro, Atocha, Barrio de Las Letras / Huertas</h2>
+              <h2>Lavapiès - Rastro, Atocha, Barrio de Las Letras - Huertas</h2>
             </div>
-            <h3>Lavapiès / El Rastro</h3>
+            <h3>Lavapiès - Rastro</h3>
             <p>Voici les quartiers multiculturels de Madrid qui rassemblent le plus grand nombre de communautés. Vous souhaitez goûter différents plats du monde ? C&apos;est ici qu&apos;il faut vous rendre !</p>
             <p>Il s&apos;agit à la base de quartiers populaires. Suite à leur évolution, ils sont aujourd&apos;hui des endroits branchés, la culture y étant très présente.</p>
             <p>On découvre par exemple à Lavapiès la <strong>Tabacalera</strong>, une ancienne usine à tabac transformée en centre culturel où sont proposées au public de nombreuses expositions et activités. Lavapiès est également connu dans le monde pour son street-art.</p>
@@ -366,7 +366,7 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1962-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
 
-            <h3>Barrio de las Letras / Huertas</h3>
+            <h3>Barrio de Las Letras - Huertas</h3>
             <p>En face du <strong>musée Thyssen-Bornemisza</strong> se trouve le quartier des Lettres. Il tient son nom de son passé littéraire — de nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol. Des citations gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong> en témoignent encore.</p>
             <p>Ces quartiers font partie des plus anciens de Madrid et des plus animés le soir. La Plaza Santa Ana, bordée de cafés et de restaurants, est le lieu idéal pour une petite pause.</p>
             <div className="article-gallery-2">
