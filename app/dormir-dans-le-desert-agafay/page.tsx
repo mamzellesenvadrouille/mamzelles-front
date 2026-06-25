@@ -299,11 +299,18 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                     <span className="agafay-tarif-sub">(day pass)</span>
                   </div>
                   <p>Une belle façon de découvrir la magie d&apos;Agafay sans dormir sur place !</p>
+                  <p className="agafay-tarif-camp-label">Scarabeo Camp</p>
                   <ul className="agafay-tarif-list">
                     <li><strong>Adulte</strong> — 450 Dh (45 €)</li>
                     <li><strong>Enfant</strong> (4-10 ans) — 225 Dh (22,50 €)</li>
                   </ul>
                   <p className="agafay-tarif-note">Accès piscine + déjeuner marocain inclus !</p>
+                  <p className="agafay-tarif-camp-label" style={{marginTop: '16px'}}>La Bohème</p>
+                  <ul className="agafay-tarif-list">
+                    <li><strong>Adulte</strong> — 450 Dh (45 €)</li>
+                    <li><strong>Enfant</strong> — 250 Dh (25 €)</li>
+                  </ul>
+                  <p className="agafay-tarif-note">Piscine + déjeuner + transferts inclus !</p>
                 </div>
               </div>
 
