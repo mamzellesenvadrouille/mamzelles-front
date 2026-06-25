@@ -1,5 +1,5 @@
 /* ============================================
-   MARRAKECH ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Styles spÃƒÆ’Ã‚Â©cifiques ÃƒÆ’  l'article
+   MARRAKECH â€” Styles spÃ©cifiques Ã  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -714,9 +714,7 @@
 
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
-/* ============================================
-   BLOCS OÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ MANGER ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Port Barton
-   ============================================ */
+
 
 .pb-resto-section {
   margin: 32px 0;
@@ -826,9 +824,7 @@
   .article-resto-link-desktop { display: inline; }
 }
 
-/* ============================================
-   SECTION ORGANISER ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â article-pratique (repris depuis Londres)
-   ============================================ */
+
 .article-marrakech .article-pratique {
   display: flex;
   flex-direction: column;
@@ -927,10 +923,7 @@
   background: var(--gold);
 }
 
-/* --- Sous-cartes premium pour les blocs pratiques ÃƒÆ’Ã†â€™  plusieurs sous-thÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨mes
-   (ex: "Comment s'y rendre", "Comment se dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©placer") : chaque sous-thÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨me
-   devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
-   de texte. Aucune perte de contenu, juste une meilleure structure. --- */
+
 .article-marrakech .article-pratique-nav {
   display: flex;
   flex-wrap: wrap;
@@ -1078,7 +1071,7 @@
   margin: 12px 0;
 }
 
-/* --- Pratique : mobile (placÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© APRÃƒÆ’Ã†â€™Ãƒâ€¹Ã¢â‚¬ S le desktop, comme convenu) --- */
+
 @media (max-width: 768px) {
   .article-marrakech .article-pratique-block { padding: 18px 18px !important; }
   .article-marrakech .article-pratique-title { font-size: 22px !important; }
@@ -1092,7 +1085,7 @@
 }
 
 
-/* Cartes riads ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â display block pour empiler les infos */
+
 .article-marrakech .pb-riad-card {
   background: var(--bg);
 }
@@ -1104,7 +1097,7 @@
   color: rgba(26,21,18,0.70);
 }
 
-/* Blocs tip/avis dans section organiser ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â style liseret gauche comme Londres */
+
 .article-marrakech #organiser .article-tip,
 .article-marrakech #organiser .article-avis {
   background: #fff;
@@ -1113,5 +1106,5 @@
   border-radius: 8px;
   padding: 18px 24px 18px 22px;
 }
-/* Point dorÃƒÂ© devant les titres de sections */
-.article-marrakech .article-day-header h2::before { content: '\2022'; color: var(--gold); font-size: 46px; margin-right: 12px; vertical-align: middle; line-height: 0; position: relative; top: -2px; }
+
+.article-marrakech .article-day-header h2::before { content: '\00BB\00BB'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
