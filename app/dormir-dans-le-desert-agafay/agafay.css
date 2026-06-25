@@ -1133,3 +1133,5 @@
 .article-agafay .article-img-full + h3.article-h3 { margin-top: 42px; }
 
 .article-agafay #organiser .article-pratique-onglets + p { margin-top: 24px; }
+
+.article-agafay .article-h4 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; font-style: italic; color: var(--gold); margin: 28px 0 12px; }
