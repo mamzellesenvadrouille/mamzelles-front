@@ -131,11 +131,11 @@ export default function MarrakechPage() {
           <nav className="article-toc">
             <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
             <ol className="article-toc-list">
-              <li><a href="#desert">📍 Le désert d&apos;Agafay, aux portes de Marrakech</a></li>
-              <li><a href="#camp">📍 Quel camp choisir dans le désert d&apos;Agafay&nbsp;?</a></li>
-              <li><a href="#sejour">📍 Notre séjour au Scarabeo Camp</a></li>
-              <li><a href="#organiser">📍 Tout savoir pour organiser son expérience</a></li>
-              <li><a href="#marrakech">📍 Si vous passez aussi un séjour à Marrakech</a></li>
+              <li><a href="#desert">Le désert d&apos;Agafay, aux portes de Marrakech</a></li>
+              <li><a href="#camp">Quel camp choisir dans le désert d&apos;Agafay&nbsp;?</a></li>
+              <li><a href="#sejour">Notre séjour au Scarabeo Camp</a></li>
+              <li><a href="#organiser">Tout savoir pour organiser son expérience</a></li>
+              <li><a href="#marrakech">Si vous passez aussi un séjour à Marrakech</a></li>
             </ol>
           </nav>
 
@@ -148,7 +148,7 @@ export default function MarrakechPage() {
 
           <section id="desert" className="article-section">
               <div className="article-day-header">
-              <h2>📍 Le désert d'Agafay, aux portes de Marrakech</h2>
+              <h2>Le désert d'Agafay, aux portes de Marrakech</h2>
             </div>
               <p><strong>Le désert se situe à une trentaine de kilomètres de Marrakech</strong> (environ 40 min en voiture), sur les premières hauteurs du massif du Haut Atlas.</p>
               <div className="article-tip">
@@ -164,7 +164,7 @@ export default function MarrakechPage() {
 
           <section id="camp" className="article-section">
               <div className="article-day-header">
-              <h2>📍 Quel camp choisir dans le désert d'Agafay ?</h2>
+              <h2>Quel camp choisir dans le désert d'Agafay ?</h2>
             </div>
               <p>Après avoir épluché de nombreuses adresses de camps dans le désert d'Agafay, que ce soit sur internet, des blogs ou les réseaux sociaux, notre choix s’est finalement porté sur le <strong>Scarabeo Camp</strong>.</p>
               <p>Il semblait correspondre en tout point à ce que l'on recherchait pour notre séjour... Un endroit de rêve isolé avec piscine, un bon rapport qualité / prix, et de très bons retours quant à l'accueil chaleureux du personnel et de la qualité des repas.</p>
@@ -200,7 +200,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
 
           <section id="sejour" className="article-section">
               <div className="article-day-header">
-              <h2>📍 Notre séjour au Scarabeo Camp</h2>
+              <h2>Notre séjour au Scarabeo Camp</h2>
             </div>
               <p>En fin de journée, nous avons la chance d'assister à un merveilleux coucher de soleil. C'est à ce moment-là que le personnel propose aux clients du camp de prendre l'apéritif au bar de la piscine...</p>
               <p>Nous avons alors le choix de commander des softs ou de l'alcool. Il est possible d'acheter une bouteille de vin (blanc, rosé ou rouge) ou de se faire servir au verre.</p>
@@ -268,7 +268,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
 
           <section id="organiser" className="article-section">
               <div className="article-day-header">
-              <h2>📍 Tout savoir pour organiser son expérience</h2>
+              <h2>Tout savoir pour organiser son expérience</h2>
             </div>
               <h3 className="article-h3">Comment s&apos;y rendre ?</h3>
               <p>Pour rappel, le désert d&apos;Agafay se situe à 40 min environ du centre-ville de Marrakech.</p>
@@ -330,7 +330,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
 
           <section id="marrakech" className="article-section">
               <div className="article-day-header">
-              <h2>📍 Si vous passez aussi un séjour à Marrakech</h2>
+              <h2>Si vous passez aussi un séjour à Marrakech</h2>
             </div>
               <p>Il est possible que vous soyez passées à côté de certaines visites, pourtant incontournables pour nous à Marrakech ! N&apos;hésitez pas à lire notre article pour découvrir tous les secrets de la ville rouge par quartier, ainsi que tous nos conseils !</p>
 

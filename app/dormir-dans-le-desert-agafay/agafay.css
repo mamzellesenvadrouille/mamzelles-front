@@ -279,11 +279,11 @@
 
 .article-toc-title { font-family: "Cormorant Garamond", serif; font-size: 20px; font-weight: 600; margin-bottom: 16px; color: var(--dark); }
 
-.article-toc-list { list-style: none; counter-reset: toc; display: flex; flex-direction: column; gap: 10px; }
+.article-toc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 
-.article-toc-list li { counter-increment: toc; display: flex; align-items: center; gap: 12px; font-size: 13px; }
+.article-toc-list li { display: flex; align-items: center; gap: 12px; font-size: 13px; }
 
-.article-toc-list li::before { content: counter(toc, decimal-leading-zero); font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 1px; flex-shrink: 0; }
+.article-toc-list li::before { content: 'â—'; font-size: 8px; color: var(--gold); flex-shrink: 0; line-height: 1; margin-top: 2px; }
 
 .article-toc-list a { color: #555; transition: color .2s; }
 
@@ -1160,3 +1160,6 @@
 .article-agafay .agafay-tarif-subblock *,
 .article-agafay .agafay-tarif-list,
 .article-agafay .agafay-tarif-list-item { display: block; text-align: left !important; }
+
+/* Point dorÃ© devant les titres de sections */
+.article-agafay .article-day-header h2::before { content: 'â—'; color: var(--gold); font-size: 10px; margin-right: 12px; vertical-align: middle; }
