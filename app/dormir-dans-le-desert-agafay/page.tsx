@@ -273,7 +273,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <h3 className="article-h3">Comment s&apos;y rendre ?</h3>
               <p>Pour rappel, le désert d&apos;Agafay se situe à 40 min environ du centre-ville de Marrakech.</p>
               <p><strong>Vous avez la possibilité de vous rendre au Scarabeo Camp en utilisant un grand taxi ou un taxi privé.</strong> Il faut compter 400 Dh (40 €) par trajet en moyenne pour 4 personnes.</p>
-              <p>Autrement, <strong>il est possible de réserver directement votre transport via le camp</strong>. Dans ce cas, c&apos;est bien plus onéreux... Il faut compter 550 Dh (55 €) par trajet pour 3 personnes ou 810 Dh (81 €) pour 4 personnes par exemple.</p>
+              <p>Autrement, <strong>il est possible de réserver directement votre transport via le camp</strong>. Dans ce cas, c&apos;est bien plus onéreux... Il faut compter 550 Dh (55 €) par trajet pour 1 à 4 personnes.</p>
 
               <h3 className="article-h3">Quel budget ?</h3>
 
@@ -299,6 +299,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                     <span className="agafay-tarif-sub">(day pass)</span>
                   </div>
                   <p>Une belle façon de découvrir la magie d&apos;Agafay sans dormir sur place !</p>
+                  <div className="agafay-tarif-subblock-grid">
                   <div className="agafay-tarif-subblock">
                     <p className="agafay-tarif-camp-label">Scarabeo Camp</p>
                     <ul className="agafay-tarif-list">
@@ -314,6 +315,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                       <li><strong>Enfant</strong> — 250 Dh (25 €)</li>
                     </ul>
                     <p className="agafay-tarif-note">Piscine + déjeuner + transferts inclus !</p>
+                  </div>
                   </div>
                 </div>
               </div>

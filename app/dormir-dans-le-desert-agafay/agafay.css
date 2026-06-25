@@ -1146,9 +1146,10 @@
 .agafay-tarif-list li { font-size: 13px; color: var(--dark); line-height: 1.8; padding: 8px 0; border-bottom: 1px solid rgba(200,149,108,0.15); }
 .agafay-tarif-list li:last-child { border-bottom: none; }
 .agafay-tarif-note { font-size: 12px !important; color: var(--gold) !important; font-style: italic; margin-bottom: 0 !important; }
-.agafay-tarif-camp-label { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 600; color: var(--dark); font-style: italic; margin: 0 0 4px !important; }
-.agafay-tarif-subblock { background: rgba(200,149,108,0.06); border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-.agafay-tarif-subblock:last-child { margin-bottom: 0; }
+.agafay-tarif-subblock-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
+.agafay-tarif-camp-label { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; color: var(--gold); font-style: italic; margin: 0 0 8px !important; }
+@media (max-width: 768px) { .agafay-tarif-subblock-grid { grid-template-columns: 1fr; } }
+.agafay-tarif-subblock { background: rgba(200,149,108,0.06); border-radius: 6px; padding: 12px 14px; }
 @media (max-width: 768px) { .agafay-tarif-grid { grid-template-columns: 1fr; gap: 14px; } }
 
 /* Marge H4 rÃ©duite */
