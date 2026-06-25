@@ -74,7 +74,7 @@ export default function MarrakechPage() {
         <div className="hero-content">
           <h1>Agafay<br /><em>Une nuit dans le désert</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Notre récit et nos conseils pour vivre<br className="agafay-hero-br" /> une nuit magique dans le désert.</p>
+          <p className="hero-desc">Notre récit et nos conseils pour vivre<br className="agafay-hero-br" /><br className="tablet-only-br" />une nuit magique dans le désert.</p>
         </div>
       </section>
 
