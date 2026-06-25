@@ -319,17 +319,13 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <div className="article-day-header">
               <h2>📍 Si vous passez aussi un séjour à Marrakech</h2>
             </div>
-              <p>Il est possible que vous soyez passées à côté de certaines visites, pourtant incontournables pour nous à Marrakech !</p>
-              <p>N&apos;hésitez pas à lire notre article pour découvrir tous les secrets de la ville rouge par quartier, ainsi que tous nos conseils !</p>
+              <p>Il est possible que vous soyez passées à côté de certaines visites, pourtant incontournables pour nous à Marrakech ! N&apos;hésitez pas à lire notre article pour découvrir tous les secrets de la ville rouge par quartier, ainsi que tous nos conseils !</p>
+
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Marrakech-Blog.jpg" alt="Visiter Marrakech" className="article-img-full" loading="lazy" />
 
               <div className="article-must">
-                <div className="article-must-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                </div>
-                <div className="article-must-body">
-                  <span className="article-must-title">À lire aussi</span>
-                  <p><a href="/visiter-marrakech" className="article-link">≫ Visiter Marrakech : que faire dans la ville rouge</a></p>
-                </div>
+                <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+                <div><strong>À LIRE AUSSI</strong><p><a href="/visiter-marrakech" className="article-link">⋙ Visiter Marrakech : que faire dans la ville rouge</a></p></div>
               </div>
           </section>
 
