@@ -1,5 +1,5 @@
 /* ============================================
-   MARRAKECH — Styles spécifiques à l'article
+   MARRAKECH â€” Styles spÃ©cifiques Ã  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -729,7 +729,7 @@
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
 /* ============================================
-   BLOCS OÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ MANGER ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Port Barton
+   BLOCS OÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ MANGER ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Port Barton
    ============================================ */
 
 .pb-resto-section {
@@ -841,7 +841,7 @@
 }
 
 /* ============================================
-   SECTION ORGANISER — article-pratique (repris depuis Londres)
+   SECTION ORGANISER â€” article-pratique (repris depuis Londres)
    ============================================ */
 .article-agafay .article-pratique {
   display: flex;
@@ -941,8 +941,8 @@
   background: var(--gold);
 }
 
-/* --- Sous-cartes premium pour les blocs pratiques Ã  plusieurs sous-thÃ¨mes
-   (ex: "Comment s'y rendre", "Comment se dÃ©placer") : chaque sous-thÃ¨me
+/* --- Sous-cartes premium pour les blocs pratiques Ãƒ  plusieurs sous-thÃƒÂ¨mes
+   (ex: "Comment s'y rendre", "Comment se dÃƒÂ©placer") : chaque sous-thÃƒÂ¨me
    devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
    de texte. Aucune perte de contenu, juste une meilleure structure. --- */
 .article-agafay .article-pratique-nav {
@@ -1092,7 +1092,7 @@
   margin: 12px 0;
 }
 
-/* --- Pratique : mobile (placÃ© APRÃˆS le desktop, comme convenu) --- */
+/* --- Pratique : mobile (placÃƒÂ© APRÃƒË†S le desktop, comme convenu) --- */
 @media (max-width: 768px) {
   .article-agafay .article-pratique-block { padding: 18px 18px !important; }
   .article-agafay .article-pratique-title { font-size: 22px !important; }
@@ -1106,7 +1106,7 @@
 }
 
 
-/* Cartes riads — display block pour empiler les infos */
+/* Cartes riads â€” display block pour empiler les infos */
 .article-agafay .pb-riad-card {
   background: var(--bg);
 }
@@ -1118,7 +1118,7 @@
   color: rgba(26,21,18,0.70);
 }
 
-/* Blocs tip/avis dans section organiser — style liseret gauche comme Londres */
+/* Blocs tip/avis dans section organiser â€” style liseret gauche comme Londres */
 .article-agafay #organiser .article-tip,
 .article-agafay #organiser .article-avis {
   background: #fff;
@@ -1127,3 +1127,9 @@
   border-radius: 8px;
   padding: 18px 24px 18px 22px;
 }
+
+/* Agafay spacing fixes */
+.article-agafay .article-gallery-2 + h3.article-h3,
+.article-agafay .article-img-full + h3.article-h3 { margin-top: 48px; }
+
+.article-agafay #organiser .article-pratique-onglets + p { margin-top: 24px; }
