@@ -147,7 +147,9 @@ export default function MarrakechPage() {
           </section>
 
           <section id="desert" className="article-section">
-              <h2 className="article-section-title">Le désert d'Agafay, aux portes de Marrakech</h2>
+              <div className="article-day-header">
+              <h2>📍 Le désert d'Agafay, aux portes de Marrakech</h2>
+            </div>
               <p><strong>Le désert se situe à une trentaine de kilomètres de Marrakech</strong> (environ 40 min en voiture), sur les premières hauteurs du massif du Haut Atlas.</p>
               <p>Il s’agit d’un reg qui s’étend sur plusieurs centaines d’hectares. À ne pas confondre avec le désert d’Erg Chebbi, plus connu sous le nom des dunes de Merzouga dans le Sahara.</p>
               <div className="article-tip">
@@ -156,7 +158,7 @@ export default function MarrakechPage() {
                 </div>
                 <div className="article-tip-body">
                   <span className="article-tip-title">Bon à savoir</span>
-                  <p>Un <strong>erg</strong> est un désert de sable, tandis qu&apos;un <strong>reg</strong> est un désert de pierre. Agafay est donc un désert rocailleux, à ne pas confondre avec les dunes de Merzouga dans le Sahara.</p>
+                  <p>Un <span style={{fontWeight:700}}>erg</span> est un désert de sable, tandis qu&apos;un <span style={{fontWeight:700}}>reg</span> est un désert de pierre. Agafay est donc un désert rocailleux, à ne pas confondre avec les dunes de Merzouga dans le Sahara.</p>
                 </div>
               </div>
               <p><strong>Ce désert de dunes rocailleuses</strong> est juste incroyable ! On y trouve même une oasis d'environ sept hectares surnommée l’Oasis enchantée. Eucalyptus, oliviers et vignes qui s’y trouvent sont irrigués naturellement par l’Oued situé à proximité.</p>
@@ -167,7 +169,9 @@ export default function MarrakechPage() {
           </section>
 
           <section id="camp" className="article-section">
-              <h2 className="article-section-title">Quel camp choisir dans le désert d'Agafay ?</h2>
+              <div className="article-day-header">
+              <h2>📍 Quel camp choisir dans le désert d'Agafay ?</h2>
+            </div>
               <p>Après avoir épluché de nombreuses adresses de camps dans le désert d'Agafay, que ce soit sur internet, des blogs ou les réseaux sociaux, notre choix s’est finalement porté sur le <strong>Scarabeo Camp</strong>.</p>
               <p>Il semblait correspondre en tout point à ce que l'on recherchait pour notre séjour... Un endroit de rêve isolé avec piscine, un bon rapport qualité / prix, et de très bons retours quant à l'accueil chaleureux du personnel et de la qualité des repas.</p>
               <p>Ce camp est l'un des premiers dans la région qui eut ouvert. <strong>Un vrai bivouac composé de tentes berbères.</strong> Rien qu'à voir les photos de cet endroit, on était déjà sous le charme !</p>
@@ -201,7 +205,9 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
           </section>
 
           <section id="sejour" className="article-section">
-              <h2 className="article-section-title">Notre séjour au Scarabeo Camp</h2>
+              <div className="article-day-header">
+              <h2>📍 Notre séjour au Scarabeo Camp</h2>
+            </div>
               <p>En fin de journée, nous avons la chance d'assister à un merveilleux coucher de soleil.</p>
               <p>C'est à ce moment-là que le personnel propose aux clients du camp de prendre l'apéritif au bar de la piscine...</p>
               <p>Nous avons alors le choix de commander des softs ou de l'alcool. Il est possible d'acheter une bouteille de vin (blanc, rosé ou rouge) ou de se faire servir au verre.</p>
@@ -258,7 +264,9 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
           </section>
 
           <section id="organiser" className="article-section">
-              <h2 className="article-section-title">Tout savoir pour organiser son expérience</h2>
+              <div className="article-day-header">
+              <h2>📍 Tout savoir pour organiser son expérience</h2>
+            </div>
               <PratiqueOnglets onglets={[
                   {
                     id: 'rendre',
@@ -302,7 +310,9 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
           </section>
 
           <section id="marrakech" className="article-section">
-              <h2 className="article-section-title">Si vous passez aussi un séjour à Marrakech</h2>
+              <div className="article-day-header">
+              <h2>📍 Si vous passez aussi un séjour à Marrakech</h2>
+            </div>
               <p>Il est possible que vous soyez passées à côté de certaines visites, pourtant incontournables pour nous à Marrakech !</p>
               <p>N&apos;hésitez pas à lire notre article pour découvrir tous les secrets de la ville rouge par quartier, ainsi que tous nos conseils !</p>
 
