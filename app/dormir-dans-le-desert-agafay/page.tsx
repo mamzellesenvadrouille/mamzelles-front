@@ -282,7 +282,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                   <div className="agafay-tarif-header">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <span className="agafay-tarif-title">Pour une nuit</span>
-                    <span className="agafay-tarif-sub">(+ 2 jours)</span>
+                    <span className="agafay-tarif-sub">(2 jours)</span>
                   </div>
                   <p>Honnêtement, passer une nuit dans le désert d&apos;Agafay nécessite de <strong>prévoir une bonne petite enveloppe</strong>... !</p>
                   <ul className="agafay-tarif-list">
