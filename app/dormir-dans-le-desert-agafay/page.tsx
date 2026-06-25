@@ -9,11 +9,11 @@ import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
   title: "Dormir dans le désert d'Agafay : notre expérience",
-  description: "Notre récit et tous nos conseils pour dormir dans le désert d'Agafay, près de Marrakech : glamping au Scarabeo Camp, budget, comment s'y rendre.",
+  description: "Dormir dans le désert d'Agafay, à 40 min de Marrakech : notre expérience au Scarabeo Camp et nos conseils pour organiser votre nuit inoubliable.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay' },
   openGraph: {
     title: "Dormir dans le désert d'Agafay : notre expérience",
-    description: "Notre récit et tous nos conseils pour dormir dans le désert d'Agafay, près de Marrakech : glamping au Scarabeo Camp, budget, comment s'y rendre.",
+    description: "Dormir dans le désert d'Agafay, à 40 min de Marrakech : notre expérience au Scarabeo Camp et nos conseils pour organiser votre nuit inoubliable.",
     url: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: '/Agafay.webp', width: 1920, height: 1080 }],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Dormir dans le désert d'Agafay : notre expérience",
-    description: "Notre récit et tous nos conseils pour dormir dans le désert d'Agafay, près de Marrakech : glamping au Scarabeo Camp, budget, comment s'y rendre.",
+    description: "Dormir dans le désert d'Agafay, à 40 min de Marrakech : notre expérience au Scarabeo Camp et nos conseils pour organiser votre nuit inoubliable.",
     images: ['/Agafay.webp'],
   },
 };
@@ -35,7 +35,7 @@ export default function MarrakechPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: "Dormir dans le désert d'Agafay : notre expérience",
-    description: "Notre récit et tous nos conseils pour dormir dans le désert d'Agafay, près de Marrakech : glamping au Scarabeo Camp, budget, comment s'y rendre.",
+    description: "Dormir dans le désert d'Agafay, à 40 min de Marrakech : notre expérience au Scarabeo Camp et nos conseils pour organiser votre nuit inoubliable.",
     image: '/Agafay.webp',
     datePublished: '2023-01-13',
     dateModified: '2026-06-22',
