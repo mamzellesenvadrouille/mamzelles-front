@@ -115,13 +115,13 @@ export default function MadridPage() {
         </div>
       </div>
 
-      <div className="article-layout">
+      <div className="article-layout article-madrid">
         <main className="article-main">
 
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
+            <h2 className="article-toc-title"><svg width="14" height="14" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l&apos;article</h2>
             <ol className="article-toc-list">
               <li><a href="#que-faire">3 jours à Madrid, que faire ?</a></li>
               <li><a href="#jour1">Jour 1 — El Centro</a></li>
@@ -150,7 +150,7 @@ export default function MadridPage() {
           <section id="jour1" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 1</span>
-              <h2>⧐ El Centro</h2>
+              <h2>El Centro</h2>
             </div>
             <p>Comme son nom le laisse entendre, il s&apos;agit là du centre historique de Madrid. C&apos;est dans ce barrio que vous trouverez les <strong>attractions principales</strong> de la capitale.</p>
             <h3>Le Palais Royal</h3>
@@ -251,9 +251,9 @@ export default function MadridPage() {
           <section id="jour2" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 2</span>
-              <h2>⧐ Malasaña, ⧐ Salamanca, ⧐ El Retiro</h2>
+              <h2>Malasaña, Salamanca, El Retiro</h2>
             </div>
-            <h3>📍 Malasaña</h3>
+            <h3>Malasaña</h3>
             <p>Il est le 1er quartier que nous avons découvert car c&apos;est ici que nous avons décidé de poser nos valises pour ces 3 jours. Au moment où nous cherchions un hôtel, notre choix s&apos;est rapidement porté sur ce quartier car il est décrit comme <strong>branché</strong>, <strong>alternatif</strong>, avec une <strong>identité forte</strong>, et une <strong>atmosphère prégnante</strong>.</p>
             <p>C&apos;est exactement ce que nous avons découvert ! Un surprenant quartier où l&apos;on se laisse facilement porter à la mode madrilène !</p>
             <p>Nous avons donc logé à l&apos;<a href="https://www.google.com/maps/place/?q=place_id:ChIJGbpsLGMoQg0RLmDZRucihwY" target="_blank" className="article-link article-resto-link-desktop">Hostal Goyal Pizzaro</a><a href="https://maps.app.goo.gl/p34xCNUWF6PNNAy17" target="_blank" className="article-link article-resto-link-mobile">Hostal Goyal Pizzaro</a>. Cet établissement, situé à proximité du métro et des lieux incontournables à visiter, est installé dans un bâtiment de style Art nouveau. La chambre spacieuse et très propre, donnant sur la ville, fait de cet hôtel une adresse de qualité.</p>
@@ -279,7 +279,7 @@ export default function MadridPage() {
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
               <div><strong>L&apos;avis des MamZelles</strong><p>Si vous ne savez pas dans quel quartier dormir à Madrid, choisissez Malasaña. Son ambiance authentique, sa vie de quartier animée et sa situation centrale en font, selon nous, le meilleur compromis pour découvrir la capitale à pied tout en profitant de l&apos;atmosphère madrilène.</p></div>
             </div>
-            <h3>📍 Salamanca</h3>
+            <h3>Salamanca</h3>
             <p>Autre style de quartier, autre ambiance ! Le barrio de <strong>Salamanca</strong> est le quartier chic de Madrid. Sur les grands boulevards, des restaurants gastronomiques et des bars un peu sélects, dans les petites rues, des boutiques de luxe et de créateurs… L&apos;ambiance qui règne dans ce quartier est relativement calme.</p>
             <p>Pour les connaisseurs de la série, il est à noter que la façade utilisée dans « La Casa de Papel » pour représenter la banque d&apos;Espagne est située un peu plus au nord. Il faudra remonter la <strong>Calle de Serrano</strong> jusqu&apos;au N°115.</p>
             <p>Ne pouvant pas bloquer la circulation dans le secteur stratégique de la Banque d&apos;Espagne pendant le temps du tournage, le bâtiment utilisé comme décor est en fait celui du « Consejo Superior de Investigaciones Científicas ».</p>
@@ -288,7 +288,7 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2443-scaled-768x1024.jpeg" alt="Salamanca Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2431-scaled-1024x768.jpeg" alt="Salamanca Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <h3>📍 El Retiro</h3>
+            <h3>El Retiro</h3>
             <p>Depuis le « Circulo de Belles Artes », direction la <strong>Plaza de Cibeles</strong> en passant par la banque d&apos;Espagne. Sur cette place se dressent d&apos;imposants bâtiments, tel que le <strong>Palacio de Comunicaciones</strong>. Celui-ci fait désormais office d&apos;Hôtel de ville, et accueille un centre culturel. Il possède également un rooftop qui offre un beau panorama sur la ville.</p>
             <p>Si vous avez envie de visiter de jolis musées, c&apos;est dans ce quartier que vous trouverez votre bonheur ! Le <strong>musée du Prado</strong>, le <strong>musée Thyssen-Bornemisza</strong> et le <strong>Centro de Arte Reina Sofia</strong> se trouvent à proximité du <strong>Parque del Retiro</strong>.</p>
             <div className="article-gallery-2">
@@ -322,9 +322,9 @@ export default function MadridPage() {
           <section id="jour3" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 3</span>
-              <h2>⧐ Lavapiès / Rastro, ⧐ Atocha, ⧐ Barrio de Las Letras / Huertas</h2>
+              <h2>Lavapiès / Rastro, Atocha, Barrio de Las Letras / Huertas</h2>
             </div>
-            <h3>📍 Lavapiès / El Rastro</h3>
+            <h3>Lavapiès / El Rastro</h3>
             <p>Voici les quartiers multiculturels de Madrid qui rassemblent le plus grand nombre de communautés. Vous souhaitez goûter différents plats du monde ? C&apos;est ici qu&apos;il faut vous rendre !</p>
             <p>Il s&apos;agit à la base de quartiers populaires. Suite à leur évolution, ils sont aujourd&apos;hui des endroits branchés, la culture y étant très présente.</p>
             <p>On découvre par exemple à Lavapiès la <strong>Tabacalera</strong>, une ancienne usine à tabac transformée en centre culturel où sont proposées au public de nombreuses expositions et activités. Lavapiès est également connu dans le monde pour son street-art.</p>
@@ -344,7 +344,7 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1887-scaled-705x1024.jpeg" alt="El Rastro Madrid" loading="lazy" style={{flex: '0.689', minWidth: 0}} />
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1879-scaled-1024x768.jpeg" alt="El Rastro Madrid" className="article-img-full" loading="lazy" />
-            <h3>📍 Atocha</h3>
+            <h3>Atocha</h3>
             <p>C&apos;est le quartier administratif de Madrid, mais il est surtout connu pour sa majestueuse gare ! En effet, la gare d&apos;Atocha est la plus importante de la capitale et propose aux voyageurs des trajets en train dans toute l&apos;Espagne mais aussi à l&apos;international. Inaugurée en 1851, cette oeuvre architecturale a, au fur et à mesure du temps, été rénovée et agrandie.</p>
             <p>L&apos;ancien hall principal de la gare abrite un jardin tropical. Il faut dire que l&apos;endroit s&apos;y prête bien, la structure métallique et le toit en verre faisant office de serre. Le jardin de 4 000 m² recense plus de 400 espèces de plantes différentes provenant des quatre coins du monde.</p>
             <p>Nous vous conseillons vivement d&apos;y faire un petit tour. Vous trouverez sur place de nombreux cafés et restaurants. On se croirait dans un petit village nature !</p>
@@ -366,7 +366,7 @@ export default function MadridPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1962-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
 
-            <h3>📍 Barrio de las Letras / Huertas</h3>
+            <h3>Barrio de las Letras / Huertas</h3>
             <p>En face du <strong>musée Thyssen-Bornemisza</strong> se trouve le quartier des Lettres. Il tient son nom de son passé littéraire — de nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol. Des citations gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong> en témoignent encore.</p>
             <p>Ces quartiers font partie des plus anciens de Madrid et des plus animés le soir. La Plaza Santa Ana, bordée de cafés et de restaurants, est le lieu idéal pour une petite pause.</p>
             <div className="article-gallery-2">
@@ -381,15 +381,15 @@ export default function MadridPage() {
               <span className="article-day-badge">Infos pratiques</span>
               <h2 className="article-section-h2">3 jours à Madrid, tout savoir pour organiser votre voyage</h2>
             </div>
-            <h3>✓ Où dormir ?</h3>
+            <h3>Où dormir ?</h3>
             <p>Nous avons logé à l&apos;<a href="https://www.google.com/maps/place/?q=place_id:ChIJGbpsLGMoQg0RLmDZRucihwY" target="_blank" className="article-link article-resto-link-desktop">Hostal Goyal Pizzaro</a><a href="https://maps.app.goo.gl/p34xCNUWF6PNNAy17" target="_blank" className="article-link article-resto-link-mobile">Hostal Goyal Pizzaro</a> dans le quartier de Malasaña. Idéalement situé, propre et spacieux, c&apos;est une adresse que nous recommandons sans hésiter. Pour les budgets plus élevés, le quartier de Salamanca offre de belles options hôtelières. Dans tous les cas, privilégiez un logement dans Malasaña ou El Centro pour être à pied de tout.</p>
-            <h3>✓ Quel budget prévoir ?</h3>
+            <h3>Quel budget prévoir ?</h3>
             <p>Madrid est une capitale accessible. Comptez environ <strong>80 à 120 € par personne et par jour</strong> en incluant l&apos;hébergement, les repas et les activités. Les tapas permettent de manger bien et pas cher — une bière + 2 tapas tourne autour de 4 à 6 € dans les bars du centre. Les musées nationaux (Prado, Reina Sofia) sont gratuits certains soirs.</p>
-            <h3>✓ Arriver en avion</h3>
+            <h3>Arriver en avion</h3>
             <p>Il est désormais facile de trouver des vols directs à destination de Madrid à moindre coût. De <strong>nombreuses compagnies</strong> desservent maintenant la capitale espagnole. Les départs se font depuis la plupart des aéroports.</p>
             <p>Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136 € pour deux. Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>. Le tarif y était plus avantageux que si on les avait achetés avec un comparateur de vols.</p>
             <p>Nous avons été en tout cas ravies de voyager avec cette compagnie. Aucun retard sur les vols aller et retour, personnel très sympa… Un petit en-cas sucré ou salé est offert pendant la traversée.</p>
-            <h3>✓ Aéroport ↔︎ Centre ville</h3>
+            <h3>Aéroport ↔︎ Centre ville</h3>
             <p>Quelle que soit la compagnie que vous choisirez, vous atterrirez à l&apos;<strong>aéroport Adolfo Suárez Madrid-Barajas</strong>. Plusieurs options s&apos;offrent à vous pour rejoindre le centre :</p>
             <div className="article-transport-grid">
               <div className="article-transport-item">
@@ -429,7 +429,7 @@ export default function MadridPage() {
                 </div>
               </div>
             </div>
-            <h3>✓ Comment se déplacer à Madrid ?</h3>
+            <h3>Comment se déplacer à Madrid ?</h3>
             <ul>
               <li><strong>À pied</strong> — Notre préféré. Il fait beau très souvent à Madrid, et déambuler dans ses rues est le meilleur moyen de s&apos;imprégner de son ambiance unique.</li>
               <li><strong>Métro</strong> — 12 lignes desservant le centre, de 6 h 05 à 1 h 30. <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">Plan du réseau →</a></li>
@@ -441,7 +441,7 @@ export default function MadridPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Notre conseil transport</strong><p>Optez pour la carte Multi (2,50 €) + 10 trajets Metrobús (7,30 €), valable métro zone A et tout le réseau bus. La carte est en vente dans toutes les stations de métro, ainsi qu&apos;à l&apos;aéroport. En alternative, la carte métro 48 h à 14,20 € si vous privilégiez le métro. Dans les deux cas, -50 % pour les enfants de moins de 11 ans.</p></div>
             </div>
-            <h3>✓ Quand partir ?</h3>
+            <h3>Quand partir ?</h3>
             <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
             <p>Les mois de <strong>mai, juin et septembre</strong> restent les plus agréables : températures douces, pluies inexistantes, et les nombreux parcs explosent de mille couleurs.</p>
             <p>Nous vous conseillons d&apos;éviter <strong>juillet et août</strong> qui peuvent être très chauds — et très fréquentés !</p>
