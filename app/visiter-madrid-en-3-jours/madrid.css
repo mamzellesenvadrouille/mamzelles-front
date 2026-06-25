@@ -684,3 +684,18 @@
 
 /* Espace entre paragraphe et H3 suivant */
 .article-madrid p + h3 { margin-top: 30px !important; }
+
+/* Grille transport â€” Comment se dÃ©placer */
+.madrid-transport-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 28px; }
+
+.madrid-transport-card { display: flex; align-items: flex-start; gap: 14px; padding: 16px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; border-left: 3px solid var(--gold); }
+
+.madrid-transport-card-icon { width: 36px; height: 36px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+.madrid-transport-card-body { display: flex; flex-direction: column; gap: 4px; }
+
+.madrid-transport-card-body strong { font-family: "Inter", sans-serif; font-size: 14px; font-weight: 600; color: var(--dark); }
+
+.madrid-transport-card-body span { font-family: "Inter", sans-serif; font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+@media (max-width: 768px) { .madrid-transport-grid { grid-template-columns: 1fr; } }
