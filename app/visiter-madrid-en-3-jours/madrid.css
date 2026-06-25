@@ -665,3 +665,8 @@
 .article-madrid .article-section > .article-avis:last-child,
 .article-madrid .article-section > .article-tip:last-child,
 .article-madrid .article-section > .article-must:last-child { margin-bottom: 0; }
+
+/* Espace harmonisÃ© entre blocs avis/tip/must et H3 suivant */
+.article-madrid .article-avis + h3,
+.article-madrid .article-tip + h3,
+.article-madrid .article-must + h3 { margin-top: 8px; }
