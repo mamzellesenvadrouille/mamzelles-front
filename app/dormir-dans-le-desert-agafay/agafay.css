@@ -1164,4 +1164,4 @@
 /* Point dorÃ© devant les titres de sections */
 .article-agafay .article-day-header h2::before { content: '\2022'; color: var(--gold); font-size: 46px; margin-right: 12px; vertical-align: middle; line-height: 0; position: relative; top: -2px; }
 
-.article-agafay #organiser h3.article-h3:last-of-type { margin-top: 48px !important; }
+.article-agafay #organiser h3.article-h3:last-of-type { margin-top: 36px !important; }
