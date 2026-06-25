@@ -321,7 +321,36 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
           <section className="article-comments">
             <h2 className="article-comments-title">Commentaires</h2>
 
-            <CommentsList comments={[]} />
+            <CommentsList comments={[
+              {
+                id: '4',
+                author: 'Aurélie',
+                date: '3 mois il y a',
+                text: "Bonjour, j\'aimerais savoir quel camp vous avez choisi. Le Stone camp ou les Roches Noires. Est-ce qu\'il y a une animation le soir ou des activités possibles (chameau, quad,…) ? Les photos sont magnifiques. Merci",
+                reply: { author: 'MamZelles en vadrouille', date: '2 mois il y a', text: "Bonjour, nous avions passé notre séjour au Scarabeo Camp que nous avions validé à 100% ! Nous avons aussi visité La Bohème, mais nous avons moins apprécié l\'endroit. Bonne continuation pour la réservation de votre séjour. ☀️🐪" }
+              },
+              {
+                id: '3',
+                author: 'Pouget',
+                date: '1 année il y a',
+                text: "Merci pour toutes ces informations très utiles. Peut-on y aller seul en voiture ? Merci pour votre réponse.",
+                reply: { author: 'MamZelles en vadrouille', date: '1 année il y a', text: "Bonjour, oui absolument ! 👍🏼 Bon voyage. ☀️" }
+              },
+              {
+                id: '2',
+                author: 'Claudia',
+                date: '1 année il y a',
+                text: "Bonjour, merci pour cet article ! Vous y êtes allé à quelle période ? Je devrais y être en fin octobre. Je m\'interroge sur la température de l\'eau de la piscine.",
+                reply: { author: 'MamZelles en vadrouille', date: '1 année il y a', text: "Coucou ! Avec grand plaisir ! 🤗 Nous y étions allées en avril, on avait eu un temps magnifique. ☀️ On espère que vous aurez aussi une belle météo, ce qui chauffera la piscine… 😉 On vous souhaite de bonnes vacances ! 🌴" }
+              },
+              {
+                id: '1',
+                author: 'Bouteloup',
+                date: '3 années il y a',
+                text: "Félicitations les filles pour votre blog, vous y avez mis beaucoup de vous et on ressent tout l\'amour qu\'il y a entre vous. Je ne connaissais pas le principe du glamping et j\'adore, ce lieu est magique pour une escapade en amoureux. Quelles seront vos prochaines destinations ? Est-ce que l\'aménagement d\'Elisabeth avance ? Merci encore de nous faire partager tout cela et merci pour les bons plans 😘",
+                reply: { author: 'MamZelles en vadrouille', date: '3 années il y a', text: "Mille mercis pour ce petit message qui nous fait très plaisir ! C\'est tellement encourageant pour nous… 🥰 Contentes en tout cas que l\'article sur Agafay vous ai plu ! 🤩 Notre prochain gros voyage est prévu dans peu de temps…, on a trop hâte ! ☀️🌴 Du coup, Élisabeth (notre camion que l\'on aménage toutes les deux) est mise pour l\'instant en pause… 🚐 Bref, on a plein de beaux projets à venir et on est au taquet !!! On espère que vous allez bien. Belle journée à vous & à bientôt ! Amélie, Laurie & Aladdin 😘😘🐶" }
+              }
+            ]} />
             <CommentForm
               articleTitle={"Dormir dans le désert d'Agafay : notre expérience"}
               articleUrl="https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay"
