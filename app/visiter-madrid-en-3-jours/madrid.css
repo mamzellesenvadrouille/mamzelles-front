@@ -1,5 +1,5 @@
 /* ============================================
-   MADRID ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Styles spÃƒÆ’Ã‚Â©cifiques ÃƒÆ’  l'article
+   MARRAKECH Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -7,8 +7,37 @@
   .hero-article .hero-overlay { background: linear-gradient(to bottom, rgba(10,5,2,0.45) 0%, rgba(10,5,2,0.75) 100%) !important; }
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 45vh !important; min-height: 280px !important; }
-  .hero-article .hero-content { padding: 0 24px 36px !important; }
-  .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 0.52em !important; white-space: normal !important; }
+  .hero-article .hero-content { padding: 0 24px 36px !important; bottom: -30px !important; }
+  .hero-article .hero-content h1 em { font-weight: 600 !important; font-size: 22px !important; white-space: normal !important; }
+  .mobile-hero-break { display: inline; }
+  .mobile-only-br { display: inline !important; }
+  .marrakech-hero-br { display: inline !important; }
+  .tablet-only-br { display: none !important; }
+  .desktop-tablet-br { display: none; }
+  .article-marrakech .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; }
+  .article-day-header h2 { font-size: 32px !important; }
+  .article-marrakech .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; }
+  .article-marrakech .article-section h3.budget-h3 { font-size: 18px !important; }
+  .article-marrakech .article-section h3.budget-h3 i { font-size: 20px !important; }
+  .article-budget-grid { grid-template-columns: 1fr !important; }
+  .budget-price { white-space: nowrap !important; font-size: 26px !important; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-article .hero-bg { object-position: center 70% !important; }
+  .tablet-only-br { display: inline; }
+  .mobile-only-br { display: none; }
+  .marrakech-hero-br { display: none; }
+  .mobile-hero-break { display: none; }
+  .desktop-tablet-br { display: inline; }
+}
+
+@media (min-width: 1025px) {
+  .tablet-only-br { display: none; }
+  .mobile-only-br { display: none; }
+  .marrakech-hero-br { display: none; }
+  .mobile-hero-break { display: none; }
+  .desktop-tablet-br { display: inline; }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -39,42 +68,13 @@
   margin-bottom: 16px;
   color: var(--dark); }
 
-.article-toc-list { list-style: none;
-  counter-reset: toc;
-  display: flex;
-  flex-direction: column;
-  gap: 10px; }
 
-.article-toc-list li { counter-increment: toc;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 13px; }
-
-.article-toc-list li::before { content: counter(toc, decimal-leading-zero);
-  font-size: 11px;
-  color: var(--gold);
-  font-weight: 600;
-  letter-spacing: 1px;
-  flex-shrink: 0; }
-
-.article-toc-list a { color: #555;
-  transition: color .2s; }
-
-.article-toc-list a:hover { color: var(--gold); }
 
 .article-section { margin-bottom: 32px;
   padding-bottom: 32px;
   border-bottom: 1px solid var(--line); }
 
 .article-section:last-of-type { border-bottom: none; }
-
-.article-section-h2 { font-family: "Cormorant Garamond", serif;
-  font-size: 36px;
-  font-weight: 500;
-  color: var(--dark);
-  margin-bottom: 32px;
-  line-height: 1.1; }
 
 .article-section h3 { font-family: "Cormorant Garamond", serif;
   font-size: 24px;
@@ -119,14 +119,23 @@
   line-height: 1.1;
   margin-bottom: 10px; }
 
-.article-comments { margin-top: 0;
-  padding-top: 0; }
+.article-pratique-grid { display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; }
 
-.article-comments-title { font-family: "Cormorant Garamond", serif;
-  font-size: 26px;
+.article-pratique-card { background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px; }
+
+.article-pratique-card h3 { font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
   font-weight: 600;
   color: var(--dark);
-  margin-bottom: 24px; }
+  margin: 0 0 12px !important; }
+
+.article-pratique-card p { font-size: 13px !important;
+  margin-bottom: 0 !important; }
 
 .article-sidebar { display: flex;
   flex-direction: column;
@@ -202,6 +211,7 @@
     padding: 40px 30px;
     gap: 40px; }
   .article-sidebar { position: static; }
+  .article-pratique-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -210,19 +220,15 @@
   .article-gallery-3 img { height: 220px; }
   .article-gallery-2 { grid-template-columns: 1fr; }
   .article-gallery-2 img { height: 220px; }
-  .article-day-header h2 { font-size: 28px; }
-  .article-section-h2 { font-size: 28px; }
+  .article-day-header h2 { font-size: 34px; }
+  .article-marrakech .article-section h3 { font-size: 28px !important; }
+  .article-marrakech .article-section h4 { font-size: 24px !important; }
 }
 
 .article-coup-de-coeur { background: var(--bg);
   border-top: 3px solid var(--gold);
   padding: 40px 52px;
   border-bottom: 1px solid var(--line); }
-
-@media (max-width: 1024px) {
-  .article-coup-de-coeur { padding: 32px 30px; }
-  .article-cdcr-grid { grid-template-columns: repeat(2, 1fr); }
-}
 
 @media (max-width: 768px) {
   .article-coup-de-coeur { padding: 24px 20px; }
@@ -265,9 +271,7 @@
 
 .article-section:last-of-type { border-bottom: none; }
 
-.article-section-h2 { font-family: "Cormorant Garamond", serif; font-size: 36px; font-weight: 500; color: var(--dark); margin-bottom: 32px; line-height: 1.1; }
-
-.article-section h3 { font-family: "Cormorant Garamond", serif; font-size: 26px !important; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
+.article-section h3 { font-family: "Cormorant Garamond", serif; font-size: 24px; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
 
 .article-section p { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 14px; }
 
@@ -301,7 +305,13 @@
 
 .article-img-full { width: 100%; height: auto; display: block; margin: 8px 0; }
 
-.article-comments-title { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin-bottom: 36px; }
+.article-pratique-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+.article-pratique-card { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 24px; }
+
+.article-pratique-card h3 { font-family: "Cormorant Garamond", serif; font-size: 20px; font-weight: 600; color: var(--dark); margin: 0 0 12px !important; }
+
+.article-pratique-card p { font-size: 13px !important; margin-bottom: 0 !important; }
 
 .article-sidebar { display: flex; flex-direction: column; gap: 24px; position: sticky; bottom: 24px; align-self: flex-end; }
 
@@ -337,7 +347,7 @@
 
 .sidebar-cta-text { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.7; font-weight: 300; margin-bottom: 20px; }
 
-.article-coup-de-coeur { background: #e8ddd3; padding: 12px 0 12px 80px; margin-top: 8px; width: calc(100vw - 17px); position: relative; left: 50%; transform: translateX(-50%); }
+.article-coup-de-coeur { background: #e8ddd3; padding: 12px 0 12px 80px; margin-top: 8px; width: 100vw; position: relative; left: 50%; transform: translateX(-50%); }
 
 .article-cdcr-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
 
@@ -351,13 +361,25 @@
 
 .article-cdcr-item:first-child { border-left: 1px solid transparent; padding-left: 0; padding-right: 16px; }
 
-.article-cdcr-item:nth-child(1) { flex: 0.8 1 0; }
+.article-cdcr-item:nth-child(1) { flex: 1 1 0; }
 
 .article-cdcr-item:nth-child(2) { flex: 1 1 0; }
 
-.article-cdcr-item:nth-child(3) { flex: 1.25 1 0; }
+.article-cdcr-item:nth-child(3) { flex: 1 1 0; }
 
-.article-cdcr-item:nth-child(4) { flex: 1.3 1 0; }
+.article-cdcr-item:nth-child(4) { flex: 1 1 0; }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .article-marrakech .article-section h3 { line-height: 1.1; }
+  .article-marrakech .article-section h4 { line-height: 1.1 !important; }
+  .budget-price { font-size: 22px !important; white-space: nowrap !important; }
+  .article-coup-de-coeur { padding: 32px 30px; }
+  .article-cdcr-grid { grid-template-columns: repeat(2, 1fr); }
+  .article-cdcr-item:nth-child(1) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(2) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(3) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(4) { flex: 1 1 0 !important; }
+}
 
 .article-cdcr-item:last-child { padding-right: 0; padding-left: 16px; }
 
@@ -385,7 +407,7 @@
 
 .article-tip p:last-child { margin-bottom: 0 !important; }
 
-.article-must { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 28px 0; }
+.article-must { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 28px 0 16px; }
 
 .article-must-icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; color: var(--gold); }
 
@@ -399,11 +421,19 @@
   .hero-article .hero-desc { font-size: 14px !important; }
   .hero-article .hero-content { max-width: 60% !important; padding-left: 40px !important; }
   .hero-article .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.85) 0%, rgba(10,5,2,0.6) 50%, rgba(10,5,2,0.3) 100%) !important; }
+  .article-pratique-grid { grid-template-columns: 1fr; }
   .article-coup-de-coeur { padding: 24px 40px !important; overflow: hidden; }
-  .article-cdcr-grid { flex-wrap: wrap; gap: 16px; }
-  .article-cdcr-item { flex: 1 1 0 !important; min-width: 0; }
+  .article-cdcr-grid { flex-wrap: nowrap !important; gap: 0 !important; }
+  .article-cdcr-item:nth-child(1) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(2) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(3) { flex: 1 1 0 !important; }
+  .article-cdcr-item:nth-child(4) { flex: 1 1 0 !important; }
   .sidebar-cta-title { font-size: 23px !important; }
   .sidebar-cta .btn-gold { padding: 8px 18px !important; font-size: 9px !important; }
+}
+
+@media (max-width: 1024px) {
+  .article-pratique-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -411,18 +441,15 @@
   .article-main { order: 1; overflow-x: hidden; }
   .article-sidebar { order: 2; position: static !important; }
   .article-coup-de-coeur { padding: 16px 24px !important; width: 100% !important; left: auto !important; transform: none !important; position: relative !important; }
-  .article-gallery-3 { grid-template-columns: 1fr; }
   .article-gallery-3 img { height: auto; aspect-ratio: unset; object-fit: cover; width: 100%; }
-  .article-gallery-2 { grid-template-columns: 1fr; }
   .article-gallery-2 img { height: auto; aspect-ratio: unset; object-fit: cover; width: 100%; }
-  .article-day-header h2 { font-size: 28px; }
-  .article-section-h2 { font-size: 28px; }
   .article-cdcr-grid { flex-direction: column; }
+  .article-cdcr-header h2 { font-size: 18px !important; }
   .article-cdcr-item { flex: 1; border-left: none !important; border-top: 1px solid var(--line); padding: 12px 0 0 !important; }
   .article-cdcr-item:first-child { border-top: none; padding-top: 0 !important; }
   .article-cdcr-item:last-child { padding-left: 0 !important; }
   .article-cdcr-item { display: flex; flex-direction: column; gap: 2px; }
-  .hero-article .hero-content { padding: 0 24px 10px !important; }
+  .hero-article .hero-content { padding: 0 24px 36px !important; }
   .sidebar-cta-title { font-size: 30px !important; }
 }
 
@@ -494,47 +521,7 @@
   .article-bref-bar-item { font-size: 12px; }
 }
 
-.article-transport-grid { display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin: 28px 0; }
 
-.article-transport-item { display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  padding: 16px;
-  background: var(--bg);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  border-left: 3px solid var(--gold); }
-
-.article-transport-icon { min-width: 36px;
-  height: 36px;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--gold); }
-
-.article-transport-item > div:last-child { display: flex;
-  flex-direction: column;
-  gap: 4px; }
-
-.article-transport-item strong { font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--dark); }
-
-.article-transport-item span { font-family: "Inter", sans-serif;
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.5; }
-
-@media (max-width: 768px) {
-  .article-transport-grid { grid-template-columns: 1fr; }
-}
 
 .article-related { margin-top: 32px;
   padding-top: 32px;
@@ -602,3 +589,521 @@
 @media (max-width: 768px) {
   .article-related-grid { grid-template-columns: 1fr; gap: 16px; }
 }
+
+.article-marrakech .article-day-header { margin-top: 30px;
+  margin-bottom: 24px; }
+
+.article-marrakech .article-day-badge { margin-bottom: 8px; }
+
+.article-marrakech .article-section h3 { font-size: 32px;
+  margin: 8px 0 16px; }
+
+.article-marrakech .article-section h4 { font-family: "Cormorant Garamond", serif;
+  font-size: 26px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--gold);
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 28px 0 12px; }
+
+.article-marrakech .article-section h3.budget-h3 { font-size: 24px !important; }
+.article-marrakech .article-section h3.budget-h3 i { font-size: 26px !important; }
+
+.article-marrakech .article-section h3 + h4 { margin-top: 2px !important; }
+
+.article-marrakech .article-day-header + h4 { margin-top: 2px !important; }
+
+.article-marrakech .article-day-header-tight { margin-bottom: 8px !important; }
+
+.article-marrakech p + .article-day-header-tight,
+.article-marrakech .article-tip + .article-day-header-tight,
+.article-marrakech .article-avis + .article-day-header-tight,
+.article-marrakech .article-must + .article-day-header-tight,
+.article-marrakech .article-gallery-2 + .article-day-header-tight,
+.article-marrakech .article-gallery-3 + .article-day-header-tight,
+.article-marrakech .article-img-full + .article-day-header-tight { margin-top: 40px; }
+
+
+.article-marrakech .article-gallery-2 + h4,
+.article-marrakech .article-gallery-3 + h4,
+.article-marrakech .article-img-full + h4 { margin-top: 24px; }
+
+.article-marrakech .article-gallery-2 { margin: 0; }
+
+.article-marrakech .article-gallery-3 { margin: 0; }
+
+.article-marrakech .article-img-full { margin: 0; }
+
+.article-marrakech p + .article-gallery-2,
+.article-marrakech p + .article-gallery-3,
+.article-marrakech p + .article-img-full,
+.article-marrakech h3 + .article-gallery-2,
+.article-marrakech h3 + .article-gallery-3,
+.article-marrakech h3 + .article-img-full,
+.article-marrakech h4 + .article-gallery-2,
+.article-marrakech h4 + .article-gallery-3,
+.article-marrakech h4 + .article-img-full { margin-top: 24px; }
+
+.article-marrakech .article-gallery-2 + p,
+.article-marrakech .article-gallery-3 + p,
+.article-marrakech .article-img-full + p,
+.article-marrakech .article-gallery-2 + h4,
+.article-marrakech .article-gallery-3 + h4,
+.article-marrakech .article-img-full + h4 { margin-top: 24px; }
+
+.article-marrakech .article-gallery-2 + .article-gallery-2,
+.article-marrakech .article-gallery-2 + .article-gallery-3,
+.article-marrakech .article-gallery-3 + .article-gallery-2,
+.article-marrakech .article-gallery-3 + .article-gallery-3,
+.article-marrakech .article-gallery-2 + .article-img-full,
+.article-marrakech .article-img-full + .article-gallery-2,
+.article-marrakech .article-gallery-3 + .article-img-full,
+.article-marrakech .article-img-full + .article-gallery-3 { margin-top: 8px; }
+
+.pratique-list { list-style: none;
+  margin: 0 0 32px;
+  padding: 0; }
+
+.article-comments-title { font-family: "Cormorant Garamond", serif; font-size: 26px; font-weight: 600; color: var(--dark); margin-bottom: 36px; }
+
+.pratique-label { display: inline-block;
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #c8956c !important;
+  background: none;
+  border-bottom: 2px solid #c8956c;
+  padding: 2px 0;
+  font-family: "Inter", sans-serif;
+  margin: 24px 0 20px; }
+
+.pratique-label:first-of-type { margin-top: 0; }
+
+.pratique-label-dot { width: 4px; height: 4px; border-radius: 50%; background: #fff; display: inline-block; flex-shrink: 0; }
+
+.pratique-item { display: grid;
+  grid-template-columns: 6px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 8px 0; }
+
+.pratique-dash { width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-top: 9px;
+  display: block; }
+
+.pratique-item p { font-size: 14px !important;
+  color: #555 !important;
+  line-height: 1.9 !important;
+  margin: 0 !important; }
+
+.pratique-item p strong { color: var(--dark) !important;
+  font-weight: 600 !important; }
+
+.pratique-item a { color: var(--gold) !important;
+  text-decoration: underline !important; }
+/* ============================================
+   BLOCS OÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ MANGER ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Port Barton
+   ============================================ */
+
+.pb-resto-section {
+  margin: 32px 0;
+  background: #faf7f4;
+  border: 1px solid rgba(200,149,108,0.18);
+  border-radius: 12px;
+  padding: 28px 28px 20px;
+}
+
+.pb-resto-title {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  color: #1a1512 !important;
+  margin: 0 0 20px !important;
+  padding-bottom: 14px !important;
+  border-bottom: 1.5px solid rgba(200,149,108,0.30) !important;
+  letter-spacing: 0.01em !important;
+}
+
+.pb-resto-tier { margin-bottom: 22px; }
+.pb-resto-tier:last-child { margin-bottom: 0; }
+
+.pb-resto-tier-header {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 12px;
+}
+
+.pb-resto-tier-badge {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background: #c8956c;
+  border-radius: 6px;
+  padding: 5px 16px;
+  white-space: nowrap;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.pb-resto-tier-label { display: none; }
+
+.pb-resto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.pb-resto-card {
+  background: #fff;
+  border: 1px solid rgba(200,149,108,0.15);
+  border-radius: 8px;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: box-shadow 0.18s, border-color 0.18s, transform 0.18s;
+}
+
+.pb-resto-card:hover {
+  box-shadow: 0 4px 18px rgba(200,149,108,0.16);
+  border-color: rgba(200,149,108,0.45);
+  transform: translateY(-2px);
+}
+
+.pb-resto-card-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1512;
+  line-height: 1.2;
+  transition: color 0.18s;
+}
+
+.pb-resto-card:hover .pb-resto-card-name { color: #c8956c; }
+
+.pb-resto-card-desc {
+  font-size: 13px;
+  color: rgba(26,21,18,0.50);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .pb-resto-section { padding: 20px 16px 14px; }
+  .pb-resto-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .pb-resto-card { padding: 10px 12px; }
+  .pb-resto-card .pb-resto-card-name { font-size: 20px !important; }
+  .pb-resto-section h3.pb-resto-title { font-size: 25px !important; }
+}
+
+@media (max-width: 480px) {
+  .pb-resto-grid { grid-template-columns: 1fr; }
+}
+.article-resto-link-mobile { display: none; }
+
+@media (max-width: 768px) {
+  .article-resto-link-desktop { display: none; }
+  .article-resto-link-mobile { display: inline; }
+}
+
+@media (min-width: 769px) {
+  .article-resto-link-desktop { display: inline; }
+}
+
+/* ============================================
+   SECTION ORGANISER Ã¢â‚¬â€ article-pratique (repris depuis Londres)
+   ============================================ */
+.article-marrakech .article-pratique {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 8px 0 24px;
+}
+
+.article-marrakech .article-pratique-block {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px 28px;
+}
+
+.article-marrakech .article-pratique-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--dark);
+  margin: 0 0 16px !important;
+}
+
+.article-marrakech .article-pratique-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #a89a86;
+  margin: 0 0 16px !important;
+}
+
+.article-marrakech .article-pratique-block h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gold);
+  margin: 18px 0 6px !important;
+}
+
+.article-marrakech .article-pratique-sub h5 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 20px 0 8px !important;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-marrakech .article-pratique-sub h5:first-child {
+  margin-top: 0 !important;
+}
+
+.article-marrakech .article-pratique-block p {
+  margin-bottom: 12px;
+}
+
+.article-marrakech .article-pratique-block p:last-child {
+  margin-bottom: 0;
+}
+
+.article-marrakech .article-pratique-block .article-gallery-2,
+.article-marrakech .article-pratique-block .article-gallery-3 {
+  margin: 14px 0;
+}
+
+.article-marrakech .article-pratique-block .article-tip,
+.article-marrakech .article-pratique-block .article-avis {
+  margin: 16px 0;
+}
+
+.article-marrakech .article-pratique-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-marrakech .article-pratique-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 15px !important;
+  line-height: 1.6;
+  color: var(--dark);
+}
+
+.article-marrakech .article-pratique-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* --- Sous-cartes premium pour les blocs pratiques ÃƒÆ’  plusieurs sous-thÃƒÆ’Ã‚Â¨mes
+   (ex: "Comment s'y rendre", "Comment se dÃƒÆ’Ã‚Â©placer") : chaque sous-thÃƒÆ’Ã‚Â¨me
+   devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
+   de texte. Aucune perte de contenu, juste une meilleure structure. --- */
+.article-marrakech .article-pratique-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 20px;
+}
+
+.article-marrakech .article-pratique-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 9px 16px 9px 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark);
+  cursor: pointer;
+  transition: background .2s, border-color .2s, color .2s;
+}
+
+.article-marrakech .article-pratique-nav-icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.article-marrakech .article-pratique-nav-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: var(--gold);
+  transition: stroke .2s;
+}
+
+.article-marrakech .article-pratique-nav-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  transition: background .2s, color .2s;
+}
+
+.article-marrakech .article-pratique-nav-btn:hover {
+  border-style: solid;
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.article-marrakech .article-pratique-nav-btn-actif,
+.article-marrakech .article-pratique-nav-btn-actif:hover {
+  background: var(--gold);
+  border-style: solid;
+  border-color: var(--gold);
+  color: #fff;
+}
+
+.article-marrakech .article-pratique-nav-btn-actif .article-pratique-nav-icon svg,
+.article-marrakech .article-pratique-nav-btn-actif:hover .article-pratique-nav-icon svg {
+  stroke: #fff;
+}
+
+.article-marrakech .article-pratique-nav-btn-actif .article-pratique-nav-badge,
+.article-marrakech .article-pratique-nav-btn-actif:hover .article-pratique-nav-badge {
+  background: #fff;
+  color: var(--gold);
+}
+
+.article-marrakech .article-pratique-sub[hidden] {
+  display: none;
+}
+
+.article-marrakech .article-pratique-sub {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 0;
+  animation: article-pratique-fade .25s ease;
+}
+
+@keyframes article-pratique-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.article-marrakech .article-pratique-sub-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.article-marrakech .article-pratique-sub-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.article-marrakech .article-pratique-sub-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: #fff;
+}
+
+.article-marrakech .article-pratique-sub-head h4 {
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 19px !important;
+  font-weight: 600 !important;
+  color: var(--dark) !important;
+  margin: 0 !important;
+}
+
+.article-marrakech .article-pratique-sub p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+.article-marrakech .article-pratique-sub p:last-child {
+  margin-bottom: 0;
+}
+
+.article-marrakech .article-pratique-sub .article-gallery-2,
+.article-marrakech .article-pratique-sub .article-gallery-3 {
+  margin: 12px 0;
+}
+
+.article-marrakech .article-pratique-sub .article-tip,
+.article-marrakech .article-pratique-sub .article-avis {
+  margin: 12px 0;
+}
+
+/* --- Pratique : mobile (placÃƒÆ’Ã‚Â© APRÃƒÆ’Ã‹â€ S le desktop, comme convenu) --- */
+@media (max-width: 768px) {
+  .article-marrakech .article-pratique-block { padding: 18px 18px !important; }
+  .article-marrakech .article-pratique-title { font-size: 22px !important; }
+  .article-marrakech .article-pratique-block h4 { font-size: 14px !important; }
+  .article-marrakech .article-pratique-sub { padding: 16px 18px !important; }
+  .article-marrakech .article-pratique-sub-head h4 { font-size: 17px !important; }
+  .article-marrakech .article-pratique-sub-icon { width: 30px !important; height: 30px !important; }
+  .article-marrakech .article-pratique-sub-icon svg { width: 15px !important; height: 15px !important; }
+  .article-marrakech .article-pratique-nav-btn { font-size: 13px !important; padding: 8px 16px 8px 10px !important; }
+  .article-marrakech .article-pratique-nav-icon svg { width: 15px !important; height: 15px !important; }
+}
+
+
+/* Cartes riads Ã¢â‚¬â€ display block pour empiler les infos */
+.article-marrakech .pb-riad-card {
+  background: var(--bg);
+}
+.article-marrakech .pb-riad-card .pb-resto-card-name,
+.article-marrakech .pb-riad-card .pb-resto-card-desc {
+  display: block;
+}
+.article-marrakech .pb-riad-card .pb-resto-card-desc:last-child {
+  color: rgba(26,21,18,0.70);
+}
+
+/* Blocs tip/avis dans section organiser Ã¢â‚¬â€ style liseret gauche comme Londres */
+.article-marrakech #organiser .article-tip,
+.article-marrakech #organiser .article-avis {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 18px 24px 18px 22px;
+}
+/* Point dorÃ© devant les titres de sections */
+.article-marrakech .article-day-header h2::before { content: '\2022'; color: var(--gold); font-size: 46px; margin-right: 12px; vertical-align: middle; line-height: 0; position: relative; top: -2px; }
