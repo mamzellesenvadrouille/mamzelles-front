@@ -286,8 +286,8 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                   </div>
                   <p>Honnêtement, passer une nuit dans le désert d&apos;Agafay nécessite de <strong>prévoir une bonne petite enveloppe</strong>... !</p>
                   <ul className="agafay-tarif-list">
-                    <li><strong>Tente 2 personnes</strong> — demi-pension comprise<br />2400 Dh (240 €)</li>
-                    <li><strong>Suite familiale 4 personnes</strong><br />2950 Dh (290 €)</li>
+                    <li><strong>Tente 2 personnes</strong> — demi-pension comprise<br />2650 Dh (265 €)</li>
+                    <li><strong>Suite familiale 4 personnes</strong><br />3250 Dh (325 €)</li>
                   </ul>
                   <p className="agafay-tarif-note">Plus vous serez nombreux, moins cela vous coûtera cher !</p>
                 </div>
@@ -300,8 +300,8 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                   </div>
                   <p>Une belle façon de découvrir la magie d&apos;Agafay sans dormir sur place !</p>
                   <ul className="agafay-tarif-list">
-                    <li><strong>Adulte</strong> — 350 Dh (35 €)</li>
-                    <li><strong>Enfant</strong> (moins de 12 ans) — 185 Dh (18,50 €)</li>
+                    <li><strong>Adulte</strong> — 450 Dh (45 €)</li>
+                    <li><strong>Enfant</strong> (4-10 ans) — 225 Dh (22,50 €)</li>
                   </ul>
                   <p className="agafay-tarif-note">Accès piscine + déjeuner marocain inclus !</p>
                 </div>
