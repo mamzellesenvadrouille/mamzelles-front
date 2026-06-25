@@ -1118,9 +1118,8 @@
   color: rgba(26,21,18,0.70);
 }
 
-/* Blocs tip/avis dans section organiser â€” style liseret gauche comme Londres */
-.article-agafay #organiser .article-tip,
-.article-agafay #organiser .article-avis {
+/* Blocs tip dans section organiser â€” style liseret gauche */
+.article-agafay #organiser .article-tip {
   background: #fff;
   border: 1px solid var(--line);
   border-left: 3px solid var(--gold);
