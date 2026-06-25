@@ -301,15 +301,15 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                   <p>Une belle façon de découvrir la magie d&apos;Agafay sans dormir sur place !</p>
                   <div className="agafay-tarif-subblock-grid">
                   <div className="agafay-tarif-subblock">
-                    <p className="agafay-tarif-camp-label">Scarabeo Camp</p>
+                    <p className="agafay-tarif-camp-label"><a href="https://www.scarabeocamp.com" target="_blank" rel="noopener noreferrer">Scarabeo Camp</a></p>
                     <div className="agafay-tarif-list">
                       <div className="agafay-tarif-list-item"><strong>Adulte</strong> — 450 Dh (45 €)</div>
                       <div className="agafay-tarif-list-item"><strong>Enfant (4-10 ans)</strong> — 225 Dh (22,50 €)</div>
                     </div>
-                    <p className="agafay-tarif-note">Accès piscine + déjeuner marocain inclus !</p>
+                    <p className="agafay-tarif-note">Accès piscine + déjeuner inclus !</p>
                   </div>
                   <div className="agafay-tarif-subblock">
-                    <p className="agafay-tarif-camp-label">La Bohème</p>
+                    <p className="agafay-tarif-camp-label"><a href="https://boheme-marrakech.com" target="_blank" rel="noopener noreferrer">La Bohème</a></p>
                     <div className="agafay-tarif-list">
                       <div className="agafay-tarif-list-item"><strong>Adulte</strong> — 450 Dh (45 €)</div>
                       <div className="agafay-tarif-list-item"><strong>Enfant</strong> — 250 Dh (25 €)</div>
