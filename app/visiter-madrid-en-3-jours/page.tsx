@@ -5,40 +5,31 @@ import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
 import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
-import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
-  title: "Visiter Marrakech : que faire dans la ville rouge",
-  description: "Médina, souks, Jardin Majorelle, riads... Découvrez nos conseils et bonnes adresses pour visiter Marrakech et vous imprégner de la ville rouge.",
-  alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-marrakech' },
+  title: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
+  description: 'Retrouvez nos itinéraires pour visiter Madrid en 3 jours. Plongez-vous dans l\'ambiance espagnole avec le top de nos visites incontournables !',
+  alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours' },
   openGraph: {
-    title: "Visiter Marrakech : que faire dans la ville rouge",
-    description: "Médina, souks, Jardin Majorelle, riads... Découvrez nos conseils et bonnes adresses pour visiter Marrakech et vous imprégner de la ville rouge.",
-    url: 'https://mamzellesenvadrouille.com/visiter-marrakech',
+    title: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
+    description: 'Retrouvez nos itinéraires pour visiter Madrid en 3 jours.',
+    url: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours',
     siteName: 'MamZelles en vadrouille',
-    images: [{ url: '/Marrakech.webp', width: 1920, height: 1080 }],
+    images: [{ url: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid.jpeg', width: 1920, height: 1536 }],
     locale: 'fr_FR',
     type: 'article',
-    publishedTime: '2022-12-27T13:46:02.000Z',
-    authors: ['MamZelles en vadrouille'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: "Visiter Marrakech : que faire dans la ville rouge",
-    description: "Médina, souks, Jardin Majorelle, riads... Découvrez nos conseils et bonnes adresses pour visiter Marrakech et vous imprégner de la ville rouge.",
-    images: ['/Marrakech.webp'],
   },
 };
 
-export default function MarrakechPage() {
+export default function MadridPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: "Visiter Marrakech : que faire dans la ville rouge",
-    description: "Médina, souks, Jardin Majorelle, riads... Découvrez nos conseils et bonnes adresses pour visiter Marrakech et vous imprégner de la ville rouge.",
-    image: '/Marrakech.webp',
-    datePublished: '2022-12-27',
-    dateModified: '2026-06-22',
+    headline: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
+    description: "Retrouvez nos itinéraires pour visiter Madrid en 3 jours. Plongez-vous dans l'ambiance espagnole avec le top de nos visites incontournables !",
+    image: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid.jpeg',
+    datePublished: '2022-01-08',
+    dateModified: '2026-06-21',
     author: {
       '@type': 'Organization',
       name: 'MamZelles en vadrouille',
@@ -54,7 +45,7 @@ export default function MarrakechPage() {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://mamzellesenvadrouille.com/visiter-marrakech',
+      '@id': 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours',
     },
   };
 
@@ -69,12 +60,12 @@ export default function MarrakechPage() {
       {/* HERO */}
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/Marrakech.webp" alt="Visiter Marrakech, la ville rouge" style={{objectPosition: 'center 63%'}} />
+        <img className="hero-bg" src="/Madrid.webp" alt="Madrid, vue sur la Gran Vía" style={{objectPosition: 'center 0%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>Marrakech<br /><em>Que faire dans la ville rouge</em></h1>
+          <h1>3 jours à Madrid<br /><em>Les incontournables de la capitale espagnole</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Tous nos secrets pour découvrir<br className="marrakech-hero-br" />la ville rouge<br className="tablet-only-br" /> et son effervescence.</p>
+          <p className="hero-desc">Notre itinéraire détaillé pour découvrir Madrid en 3 jours,<br className="hide-mobile-br" />entre quartiers emblématiques, monuments incontournables<br className="hide-mobile-br" />et adresses que nous avons adorées.</p>
         </div>
       </section>
 
@@ -84,694 +75,469 @@ export default function MarrakechPage() {
       <div className="article-bref-bar">
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <span>4 jours</span>
+          <span>3 jours</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
-          <span>Printemps &amp; automne</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <span>Mars à juin, sept. à nov.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>60-90 €/j/pers.</span>
+          <span>80-100 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M14.8 9a2 2 0 0 0-2-1.5h-1.6a2 2 0 0 0 0 4h1.6a2 2 0 0 1 0 4H11a2 2 0 0 1-2-1.5"/><line x1="12" y1="6" x2="12" y2="18"/></svg>
-          <span>Dirham (MAD)</span>
+          <span>Euro (€)</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          <span>Arabe &amp; Français</span>
+          <span>Espagnol &amp; Anglais</span>
         </div>
       </div>
 
       {/* BLOC COUP DE COEUR */}
       <div className="article-coup-de-coeur">
-        <div className="article-cdcr-header">
+          <div className="article-cdcr-header">
           <span className="article-cdcr-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="#c8956c" stroke="#c8956c" strokeWidth="1"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
           </span>
-          <h2>Pourquoi nous avons adoré Marrakech</h2>
+          <h2>Pourquoi nous avons adoré Madrid</h2>
         </div>
         <div className="article-cdcr-grid">
-          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre quartier coup de cœur</span><span className="article-cdcr-value">→ La médina</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">Le moment le plus magique</span><span className="article-cdcr-value">→ Jemaa el-Fna à la nuit tombée</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">La visite incontournable</span><span className="article-cdcr-value">→ Le Jardin Majorelle</span></div>
-          <div className="article-cdcr-item"><span className="article-cdcr-label">À tester<br className="tablet-only-br" /> sans hésiter</span><span className="article-cdcr-value">→ Une journée détente en riad</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre quartier préféré</span><span className="article-cdcr-value">→ Malasaña</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">L&apos;adresse où on retournerait</span><span className="article-cdcr-value">→ Le Mercado de San Miguel</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Le lieu qui nous a surpris</span><span className="article-cdcr-value">→ Le Palacio de Cristal au coucher du soleil</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre meilleur souvenir</span><span className="article-cdcr-value">→ Le panorama depuis le Riu la nuit</span></div>
         </div>
       </div>
 
-      <div className="article-layout article-marrakech">
+      <div className="article-layout">
         <main className="article-main">
+
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{display:"inline",verticalAlign:"middle",marginRight:"8px"}}><path d="M5 2H19C19.6 2 20 2.4 20 3V22L12 17L4 22V3C4 2.4 4.4 2 5 2Z"/></svg>Sommaire de l&apos;article</h2>
+            <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
             <ol className="article-toc-list">
-              <li><a href="#quartiers">Se repérer dans les principaux quartiers de Marrakech</a></li>
-              <li><a href="#medina">Zoom sur la médina, notre quartier coup de cœur</a></li>
-              <li><a href="#visites">Que voir à Marrakech ? Les visites incontournables</a></li>
-              <li><a href="#manger">Où manger à Marrakech ?</a></li>
-              <li><a href="#riads">Riads où passer la journée</a></li>
-              <li><a href="#loger">Où loger à Marrakech ?</a></li>
-              <li><a href="#ramadan">Marrakech pendant le Ramadan, bonne idée ou pas ?</a></li>
-              <li><a href="#organiser">Tout savoir pour organiser son voyage à Marrakech</a></li>
-              <li><a href="#agafay">Désert d&apos;Agafay</a></li>
+              <li><a href="#que-faire">3 jours à Madrid, que faire ?</a></li>
+              <li><a href="#jour1">Jour 1 — El Centro</a></li>
+              <li><a href="#jour2">Jour 2 — Malasaña, Salamanca, El Retiro</a></li>
+              <li><a href="#jour3">Jour 3 — Lavapiès / Rastro, Atocha, Barrio de las Letras / Huertas</a></li>
+              <li><a href="#pratique">Tout savoir pour organiser votre voyage</a></li>
             </ol>
           </nav>
 
-          <section className="article-section">
-              <p className="article-intro"><strong>Que voir à Marrakech ? Que faire ? Que vous y séjourniez un week-end, quelques jours ou même une semaine, vous verrez, vous aurez toujours le sentiment de ne pas y rester suffisamment longtemps tellement cette ville est riche de découvertes ! </strong></p>
-              <p><strong>Grâce aux visites incontournables et tous nos conseils, imprégnez-vous de l'effervescence de la ville rouge, que ce soit pour organiser votre séjour ou tout simplement vous inspirer...</strong></p>
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6164-1024x768.jpg" alt="Place Jemaa El-Fna nuit" className="article-img-full" loading="lazy" />
-              <p>Surnommée <strong>la ville rouge</strong> en référence à la couleur d’une grande partie de ses immeubles et de ses maisons, Marrakech est la 4ème plus grande ville du Maroc après Casablanca, Fès et Tanger. Mais la ville rouge reste la <strong>capitale touristique</strong>.</p>
-              <p>Marrakech, c'est le dépaysement total à seulement 3 h 30 de Paris en avion. De nombreux aéroports français proposent désormais des vols directs à moindre coût. C'est aussi un climat idéal quasiment toute l'année.</p>
-              <p>Marrakech, c’est l’effervescence, ça part vraiment dans toutes les directions… Ce sont les couleurs, les odeurs, les saveurs qui stimulent tous vos sens. C’est aussi la culture, l’architecture et les paysages spectaculaires ! Marrakech est une ville unique, une expérience à elle seule.</p>
-              <p>Nous avons la chance d'avoir visité Marrakech à plusieurs reprises, notamment grâce au fait que les parents d’Amélie étaient propriétaires d’un petit Riad au cœur de la médina, dans le quartier Dar El Bacha. On s’y sent un peu comme à la maison du coup !</p>
-              <p>Ce point de chute à Marrakech nous a également permis d’organiser quelques road trips au Maroc, et ainsi de visiter de nombreuses régions…</p>
+          {/* INTRO */}
+          <section id="que-faire" className="article-section">
+            <p className="article-intro"><strong>Vous voulez visiter Madrid en 3 jours ? Quel excellent choix ! Vous trouverez ici notre itinéraire et tous nos conseils pour découvrir les quartiers et les visites incontournables de la capitale espagnole !</strong></p>
+            <p>Pourquoi Madrid ? Nous avions envie de nous évader dans un endroit animé, à l&apos;ambiance chaleureuse, notamment à l&apos;approche des fêtes de Noël. Il fallait aussi que l&apos;on tienne compte des restrictions liées au Covid pour s&apos;y rendre.</p>
+            <p>Notre choix s&apos;est immédiatement porté sur Madrid ! Nous avions donc un long week-end de 3 jours pour découvrir la capitale espagnole…</p>
+            <p>Depuis ce séjour, Madrid est clairement devenue l&apos;une de nos villes coup de coeur en Europe ! Une véritable pépite où histoire et modernité forment le parfait équilibre.</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2229-scaled-1024x768.jpeg" alt="Palais de Cristal Madrid" className="article-img-full" loading="lazy" />
+            <h3>Avant de commencer...</h3>
+            <p>Madrid est la capitale espagnole, mais aussi le centre politique, économique et culturel d&apos;Espagne. Elle est la plus grande ville du pays : en comparaison, Madrid est 5 fois plus grande que Paris !</p>
+            <p>Potentiellement, Madrid peut plaire à tout le monde, tant pour l&apos;architecture de ses bâtiments historiques, que pour sa culture, sa gastronomie, sa vie nocturne, ses multiples lieux où faire du shopping, et son soleil toute l&apos;année ! Chacun y trouve son compte !</p>
+            <p>Si nous devions décrire Madrid en 3 mots, on la qualifierait d&apos;authentique, effervescente et tolérante. En ce qui nous concerne, on s&apos;y sentait trop bien ! Prévoir un séjour de 3 jours à Madrid est parfait pour vous imprégner de la « Vida Loca » !</p>
+            <p>À Madrid, chaque barrio (notez quartier en espagnol !) a sa propre identité, son histoire, et ils sont nombreux ! Autant de quartiers qui montrent la diversité culturelle de cette ville que nous avons tant aimée.</p>
+            <p>Allez, c&apos;est parti ! Voici notre itinéraire pour découvrir Madrid en 3 jours en fonction des quartiers.</p>
           </section>
 
-          <section id="quartiers" className="article-section">
+          {/* JOUR 1 */}
+          <section id="jour1" className="article-section">
             <div className="article-day-header">
-              <h2>Se repérer dans les principaux quartiers de Marrakech</h2>
+              <span className="article-day-badge">Jour 1</span>
+              <h2>⧐ El Centro</h2>
             </div>
-              <p>Marrakech est divisé en plusieurs quartiers : la <strong>Médina</strong>, le <strong>Guéliz</strong>, l'<strong>Hivernage</strong> et la <strong>Palmeraie</strong>.</p>
-              <p>L’architecture de chacun d’entre eux est bien différente, révélant ainsi leur époque de construction.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5221-768x1024.jpg" alt="Souk Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5271-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>⧐ La MÉDINA, ou la vieille ville de Marrakech</h3>
-              </div>
-              <p>Cerclée par ses 19 kilomètres de remparts, la médina de Marrakech s’étend sur 600 hectares. Elle est la plus peuplée de l'Afrique du Nord. Classée au patrimoine mondial de l’humanité par l'UNESCO, elle est le cœur historique de Marrakech.</p>
-              <p>La médina est la partie la plus touristique, mais aussi la plus authentique de la ville rouge. Elle est elle-même composée de nombreux quartiers.</p>
-              <p>Ce labyrinthe de ruelles abrite la plupart des attractions à ne surtout pas manquer : <strong>la fameuse place Jemaa el-Fna, les souks, les monuments historiques, les musées, sans oublier les nombreux petits restaurants qui éveilleront vos papilles</strong>.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6090-1024x768.jpg" alt="Café des épices Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5675-768x1024.jpg" alt="Boutique cuir Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>⧐ De l'autre côté des remparts, le GUÉLIZ</h3>
-              </div>
-              <p>Le Guéliz est le premier quartier moderne de Marrakech. Ce quartier occidentalisé a été construit lors du protectorat français sur le Maroc. Pour la petite anecdote, le nom « Guéliz » proviendrait de la déformation de la prononciation du mot « Église » !</p>
-              <p>Dans ce quartier, loin de l’effervescence de la médina, vous trouverez de longues rues et de larges avenues, toutes bordées de terrasses de cafés, de restaurants et de bars.</p>
-              <p>Si vous avez envie de faire les boutiques, notamment de grandes marques internationales, vous êtes au bon endroit ! Rendez-vous alors dans le centre commercial où vous trouverez aussi toutes les chaînes de fast food les plus connues !</p>
-              <p><strong>Le jardin Majorelle, la splendide gare de Marrakech, le Palais des Congrès ou encore le Théâtre Royal</strong> se trouvent dans le Guéliz.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6290-1024x768.jpg" alt="SkyBar Guéliz Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6279-769x1024.jpg" alt="Boutiques Guéliz" loading="lazy" style={{flex: '0.751', minWidth: 0}} />
-              </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>⧐ L'HIVERNAGE, ou le quartier chic de Marrakech</h3>
-              </div>
-              <p><strong>Hôtels prestigieux, salons de cocktails, casinos, clubs lounges, boites de nuit et voitures de luxe</strong>… Bienvenue dans l’Hivernage !</p>
-              <p>Ce quartier attire les populations aisées à la recherche de modernité et de vie nocturne.</p>
-              <p>Même si nous n’aspirons pas vraiment à cette ambiance, l’Hivernage reste un quartier agréable à découvrir et pour y flâner… Les rues sont propres, verdoyantes, et la végétation y est luxuriante.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8377-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1556-1-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>⧐ La PALMERAIE, ou le poumon de la ville rouge</h3>
-              </div>
-              <p>Ce quartier est clairement un oasis de verdure ! Pourtant, il doit malheureusement céder aujourd’hui de la place aux complexes hôteliers de luxe…</p>
-              <p>Cette vaste zone de 13 000 hectares est un véritable patrimoine naturel marocain. En effet, on y trouve plus de 150 000 arbres, et notamment des palmiers, qui permettent aux marocains de produire des dattes, de l'huile, du vin de palme, des cœurs de palmier ou encore du bois.</p>
-              <p>C’est grâce à un réseau de canalisation souterrain ancestral que tous ces hectares de palmeraie sont irrigués.</p>
-              <p>Dans ce quartier, cohabitent donc avec cet <strong>écrin de verdure, de grandes résidences hôtelières, toutes équipées d’énormes piscines et de salles de sport, et des propriétés démesurées de personnes fortunées</strong>.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_2233-2-1024x768.jpg" alt="Quad Palmeraie Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_2243-1024x768.jpg" alt="Quad Palmeraie Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-          </section>
-
-          <section id="medina" className="article-section">
-            <div className="article-day-header">
-              <h2>Zoom sur la médina, notre quartier coup de cœur</h2>
+            <p>Comme son nom le laisse entendre, il s&apos;agit là du centre historique de Madrid. C&apos;est dans ce barrio que vous trouverez les <strong>attractions principales</strong> de la capitale.</p>
+            <h3>Le Palais Royal</h3>
+            <p>Tout d&apos;abord, découvrez le <strong>Palais Royal</strong> de Madrid. Il fait partie des plus grands palais d&apos;Europe, mais aussi des plus beaux !</p>
+            <p>Bien qu&apos;il ne soit plus habité par la famille royale, il reste un lieu symbolique du pouvoir qu&apos;il est possible de visiter. Pour cela, nous vous conseillons d&apos;acheter vos <a href="https://tickets.patrimonionacional.es/fr-FR/venta-de-entradas" target="_blank" rel="noopener noreferrer" className="article-link">billets</a> à l&apos;avance.</p>
+            <p>Notez qu&apos;il est possible de voir la relève de la garde du Palais Royal de Madrid. Cela se passe tous les mercredis et samedis à 11 h. Il est aussi possible d&apos;assister à la relève solennelle de la garde les premiers mercredis du mois à 12 h (sauf en janvier, août et septembre). C&apos;est apparemment un spectacle unique à ne pas manquer !</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2446-scaled-1024x768.jpeg" alt="Palais Royal Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2456-scaled-768x1024.jpeg" alt="Palais Royal Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>⧐ La MÉDINA, un vrai souk !</h3>
-              </div>
-              <p>C'est le bazar anarchique que l’on trouve dans la médina qui en fait particulièrement son charme. Les souks sont idéaux pour se plonger pleinement dans la vie marocaine.</p>
-              <p>Une question nous est souvent posée : <strong>faut-il prendre un guide pour visiter la médina ?</strong> Sans réfléchir, notre réponse est non. Nous sommes 2 nanas et nous ne nous sommes jamais senties en insécurité. De plus un guide, qu'il vous faudra payer, vous conduira dans des endroits que vous pouvez découvrir par vous-même.</p>
-              <p>Pour nous, <strong>le meilleur moyen de visiter la médina est de s'y perdre</strong>. Alors osez un peu de folie et perdez vous dans ce labyrinthe sans crainte.</p>
-              <div className="article-tip">
-                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                <div><strong>Le conseil des MamZelles</strong><p>Dans la médina, certains jeunes n&apos;hésitent pas à vous emmener délibérément dans la mauvaise direction. On vous explique comment éviter ça !</p></div>
-              </div>
-              <p>Gardez en tête qu’il arrive que de jeunes Marocains prennent un malin plaisir à indiquer aux touristes une mauvaise direction quand ils les voient un peu déboussolés. Si besoin, préférez demander votre chemin aux commerçants. Pensez aussi à lever les yeux, <strong>il y a souvent des panneaux suspendus au niveau des croisements dans les souks qui vous donneront des indications sur la route à suivre</strong> pour rejoindre les endroits stratégiques.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4959-768x1024.jpg" alt="Souk médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_E4843-768x1024.jpg" alt="Boutiques souk" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-              <p>Piétons, vélos, mobylettes et charrettes tirées par des ânes… Il vaut mieux rester vigilant quand on se balade dans la médina !</p>
-              <p>Ses ruelles principales sont généralement couvertes de bois ou de tôle permettant de protéger les passants du soleil ou de la pluie.</p>
-              <p><strong>Les souks (les marchés) sont organisés par quartier et par métier.</strong> On y retrouve les ferronniers, les potiers, les maroquiniers, les sculpteurs et les tanneurs que l’on peut voir à l’œuvre.</p>
-              <p>Ce sont sur les artères principales que l’on trouve ensuite tous leurs objets artisanaux en vente : sacs en cuir, bijoux, lampes, tapis, djellabas et babouches « climatisées » (comme ils les appellent !), il y en a pour tous les goûts.</p>
-              <p>Aussi, vous ne pourrez pas louper les stands d’épices, de « zeitoun » (olives), de fruits secs et de pâtisseries…</p>
-              <p>Quel que soit l’endroit où vous vous promènerez dans la médina, vous sentirez tous vos sens en éveil !</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5223-768x1024.jpg" alt="Souk Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5234-768x1024.jpg" alt="Boutique souk Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4973-1-1024x768.jpg" alt="Perles de Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5935-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-              <p>Même si cela fait partie de l’ambiance, les commerçants qui vous accostent pour vous vendre leurs produits peuvent se montrer très insistants. N’hésitez pas à leur dire « la safi ! » (stop !, en français), ou « baraka ! » (ça suffit !) si vous n’êtes pas intéressé.</p>
-              <div className="article-tip">
-                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                <div><strong>Bon à savoir</strong><p>Les prix ne sont généralement pas affichés dans les souks. N&apos;ayez pas peur de négocier, cela fait partie du jeu ! Pour avoir le meilleur prix, n&apos;hésitez pas à faire semblant de partir.</p></div>
-              </div>
-              <p>Les prix ne sont généralement pas affichés. <strong>N’ayez pas peur de négocier, </strong><strong>cela fait parti du jeu ici</strong>. Et pour avoir le meilleur prix, petit conseil, demandez le prix Marrakchi !</p>
-              <p>La médina c’est aussi les somptueux riads que l'on ne soupçonne même pas ! Notez qu’un riad est une maison urbaine traditionnelle marocaine, construite autour d'un patio ou d'un jardin intérieur. Dans certains, on y trouve même un bassin, voire une petite piscine !</p>
-              <p>Dissimulés dans des petites ruelles, à l’abri des regards, on ne s'attend pas à découvrir de véritables petits (ou grands) palais, lorsque l’on pousse leur porte ! Nous sommes toujours impressionnées et émerveillées par leur beauté quand nous avons l’occasion d’en visiter.</p>
-                            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7041-1024x768.jpg" alt="Boutique plaques Marrakech" loading="lazy" className="article-img-full" />
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5004-1-768x1024.jpg" alt="Lumières de Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7001-1024x768.jpg" alt="Souk Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>⧐ L’incroyable place JEMAA EL-FNA !</h3>
-              </div>
-              <p>Au cœur de la médina se trouve la fameuse place Jemaa el-Fna. Nous la conseillons comme <strong>point de départ pour visiter la vielle ville</strong>.</p>
-              <p>Plus qu’une simple place publique, elle est l'attraction phare de la ville rouge. De jour comme de nuit, c’est l’ébullition ! Concrètement, <strong>l</strong><strong>a place Jamaa el-Fna est l’endroit le plus vivant de la médina</strong>.</p>
-              <p>Entre les artistes de rue qui sautent dans tous les sens, les arracheurs de dents qui revendent des dents d’occasion (oui, oui, vous avez bien lu !), les porteurs d’eau qui n’hésitent pas à prendre la pause devant les objectifs, les femmes qui tatouent au henné, les charmeurs de serpents et les dresseurs de singes, tout le monde se côtoie pour former un joyeux tumulte !</p>
-              <div className="article-must">
-                <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-                <div><strong>À NE PAS MANQUER</strong><p>Nous vous conseillons de prendre un peu de hauteur sur la terrasse d&apos;un des cafés de la place pour observer cette agitation complètement déroutante !</p></div>
-              </div>
-                            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3880-1-1024x769.jpg" alt="Place Jemma El-Fna jour" loading="lazy" className="article-img-full" />
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_3882.jpg" alt="Place Jemma El-Fna jour Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5793-3-1024x768.jpg" alt="Place Jemma El-Fna jour Kech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <p>Pour tout vous dire, nous évitons de nous approcher de trop près des dresseurs de singes. Ils n’hésitent pas à les faire grimper sur vous et à vous réclamer ensuite quelques dirhams. Et si vous souhaitez les prendre en photo, même à la volée, ça ne sera pas gratuit non plus… Du coup, soyez discret ! Nous avons en tout cas bien trop de peine devant ces petits singes tenus en laisse, déguisés et dressés pour faire les bêtes de foire. C’est un commerce que nous ne préférons pas encourager.</p>
-              <p>Ne passez pas à côté des stands de jus de fruits frais sans les goûter. Ils sont tellement bons et si peu chers !</p>
-              <p>En fin de journée, des échoppes de restauration sont installées. Les vendeurs de soupe ou d’escargots vous feront signe pour que vous goûtiez à leur spécialité à la volée.</p>
-              <p>Dans les autres, vous aurez le choix entre du poisson, des grillades, du couscous, etc. <strong>Ce n’est pas pour autant le meilleur endroit pour manger.</strong> Les prix sont excessifs et ce n’est pas forcément très bon. Les rabatteurs sont très insistants pour que vous vous installiez à leur table et peuvent même se montrer oppressants. Soyez ferme avec eux, et ne vous laissez pas influencer  !</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5249-1024x768.jpg" alt="Stands Place Jemaa El-Fna" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5017-1024x768.jpg" alt="Place Jemaa El-Fna nuit Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5016-1024x768.jpg" alt="Place Jemaa El-Fna nuit Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5049_jpg-768x1024.jpg" alt="Place Jemaa El-Fna nuit" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-              <p>Le soir, c’est encore une autre ambiance !</p>
-              <p>En plus de toutes les animations de la journée, de nouveaux rassemblements se créent autour de groupes de musique, de danseurs, de conteurs et de stands de jeux (pêche à la bouteille de soda, mini golf, casques de réalité virtuelle, etc.).</p>
-              
-          </section>
-
-          <section id="visites" className="article-section">
-            <div className="article-day-header">
-              <h2>Que voir à Marrakech ? Les visites incontournables</h2>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1690_jpg-scaled-768x1024.jpeg" alt="Palais Royal Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2451-scaled-1024x768.jpeg" alt="Palais Royal Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>Le Jardin Majorelle</h3>
-              </div>
-              <p>C'est sûrement <strong>l'endroit le plus visité de la ville rouge</strong>. On ne vous le cache pas, il y a souvent beaucoup de monde, mais ce petit havre de paix reste un lieu immanquable à visiter.</p>
-              <p>Pour la petite histoire, cet endroit porte le nom de son fondateur, <strong>Jacques Majorelle, un peintre français</strong>. En 1936, il fait construire une maison-atelier dans le Nord-Ouest de la médina. Il passe alors 22 ans à aménager sa villa et son jardin.</p>
-              <p>Il transforme ce dernier en un véritable oasis avec des cactus, des palmiers, des bambous, des fontaines, des bassins et surtout avec cette merveilleuse couleur bleue…</p>
-              <p><strong>Jacques Majorelle s'inspire du Lac de Tasgah</strong> (dans l'Atlas marocain) et crée ce bleu doux, intense et électrique pour repeindre sa villa et divers éléments qui la compose (le portail, les jarres et les pergolas). C’est ce fameux bleu que l'on retrouvera sur ses toiles, ce bleu que l'on appelle aujourd'hui le <strong>bleu Majorelle</strong>.</p>
-                            <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5853-768x1024.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6761-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6768-1024x768.jpg" alt="Bleu Majorelle Marrakech" loading="lazy" className="article-img-full" />
-              <p>En 1980, <strong>le domaine est racheté par le couple Yves Saint Laurent et Pierre Bergé</strong>. Ils le rebaptisent la Villa Oasis. Ils entreprennent alors d'importants travaux de restauration du jardin pour le rendre aussi beau que Jacques Majorelle l’avait imaginé. Aujourd’hui, on y retrouve plus de 300 espèces de plantes sur 1 hectare de terrain.</p>
-              <p>Yves Saint Laurent et Pierre Bergé transforment également l'atelier de peinture de Jacques Majorelle en musée des arts berbères ouvert au public. Ils y exposent également des pièces haute couture de leur collection.</p>
-              <p>A la mort d'Yves Saint Laurent en 2008, ses cendres sont dispersées dans la roseraie de la Villa Oasis, où un mémorial est créé en son honneur.</p>
-              <p>Vous l'aurez compris, <strong>ce n'est pas </strong><strong>juste un magnifique jardin où déambuler dans les allées, c’est aussi un lieu chargé d’histoire</strong>.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6751-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5851-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <p><strong>Le jardin se visite tous les jours de 8 h à 17 h 30. L’entrée est au tarif de 170 Dh (17 €) et est gratuite pour les enfants de moins de 10 ans.</strong> Les billets s’achètent <strong>uniquement en ligne</strong> sur leur <a href="https://tickets.jardinmajorelle.com/Visite" target="_blank" rel="noopener noreferrer" className="article-link">site officiel</a> — pensez à réserver votre créneau à l’avance. Votre billet donne accès au jardin, à une galerie d’affiches d’Yves Saint Laurent et à la boutique. Pour le musée berbère, comptez <strong>330 Dh</strong> pour le billet combiné.</p>
-                            <p>Pensez à prendre vos billets sur leur <strong><a href="https://tickets.jardinmajorelle.com/Visite" target="_blank" rel="noopener noreferrer" className="article-link">site internet</a></strong> au plus tôt afin d'avoir des disponibilités sur le créneau horaire qui vous arrange.</p>
-              <div className="article-day-header article-day-header-tight">
-                <h3>Le Palais de la Bahia</h3>
-              </div>
-              <p><strong>S’il y a un bien un palais à visiter, c’est celui-ci.</strong> C'est le plus grand de Marrakech !</p>
-              <p>Vous pourrez admirer l'architecture marocaine dans toute sa splendeur. Les peintures, les sculptures, les mosaïques, et les vitraux que l’on y trouve sont magnifiques et mettent en valeur tout le savoir faire des artisans.</p>
-              <p>Le palais est composé de plus de 150 pièces, de différentes cours et de jardins avec des fontaines. Le tout est très grand, mais surtout très beau !</p>
-              <p>Pour la petite histoire « Bahia » signifie « la belle, la brillante ». C’est en fait l’ancien harem du Grand Vizir Bou Ahmed, qui vivait ici avec ses 4 épouses et ses 24 concubines.</p>
-              <p><strong>Le palais est ouvert tous les jours de 9 h à 17 h. Pour le visiter, l’entrée est payante : 100 Dh (10 €) pour les adultes et 30 Dh (3 €) pour les enfants. </strong></p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8154-1.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8184.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>Le Musée de la Photographie</h3>
-              </div>
-              <p>Cet endroit a été créé par Hamid Mergani et Patrick Manach, deux amoureux de la photographie, et du Maroc bien sûr !</p>
-              <p>À travers les nombreux clichés exposés et réalisés entre 1878 et 1960, leur objectif est de montrer la diversité du Maroc, depuis les débuts de la photo jusqu’à l’art moderne.</p>
-              <p>Vous pourrez ainsi admirer les <strong>magnifiques clichés d'amateurs ou de célèbres photographes qui ont parcouru le Maroc à travers le temps</strong>. Les photos révèlent notamment les différents panoramas du pays, ainsi que les rencontres avec ses habitants.</p>
-              <p>Vous y découvrirez également d’anciennes cartes postales, d’anciens journaux et d'autres documents retraçant l’histoire du Maroc.</p>
-              <p>N’hésitez pas à monter sur la terrasse qui offre une vue panoramique sur la vieille ville. Il y a également une cafeteria, de quoi se rafraîchir après l’exposition.</p>
-              <p><strong>Le musée est ouvert tous les jours de 9 h 30 à 19 h. Il faut compter 80 Dh (environ 8 €) pour accéder au musée. </strong></p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8205-1024x766.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.337', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8202.jpg" alt="Musée de la photo Marrakech" loading="lazy" style={{flex: '1.463', minWidth: 0}} />
-              </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>Le Jardin Secret</h3>
-              </div>
-              <p><strong>Un petit havre de paix au milieu du tumulte des souks</strong>, où l’on y découvre 2 jardins. Le 1er est d'inspiration islamique, le 2ème est plus exotique.</p>
-              <p>Prenez un moment pour apprécier le calme au milieu de cette végétation luxuriante.</p>
-              <p>Si vous avez le temps, vous pouvez également savourer l’endroit en vous installant à la table de l’un des deux cafés. Le premier se trouve au niveau des bassins, l’autre sur une jolie terrasse qui surplombe le jardin.</p>
-              <p>Il y a également une tour dans laquelle vous pouvez monter. C'est l'une des plus haute de la médina.</p>
-              <p><strong>Le jardin secret se visite tous les jours de 9 h 30 à 18 h. Le tarif de l'entrée est de 100 Dh (environ 10 €), et de 80 Dh (environ 7,50 €) pour les moins de 24 ans. Gratuit pour les moins de 12 ans.</strong> Il faut ajouter un supplément de 40 Dh (4 €) pour monter dans la tour.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8123.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8121-1024x768.jpg" alt="Jardin secret Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>La Médersa Ali Ben Youssef</h3>
-              </div>
-              <p>Médersa signifie établissement d’enseignement religieux musulman.</p>
-              <p>Cette ancienne école coranique est la plus grande, mais elle est surtout <strong>considérée comme la plus belle d’Afrique du Nord</strong>. C’est l’un des rares établissements religieux accessible aux non-musulmans.</p>
-              <p>Du sol au plafond, elle est décorée de zellige, de stuc et de sculptures réalisées avec beaucoup de précision et de détails.</p>
-              <p>On y compte 7 patios, des salles de prière et une salle pour les ablutions.</p>
-              <p>La médersa pouvait accueillir jusqu’à 900 étudiants. Les 132 chambres permettaient de loger des étudiants gratuitement, notamment ceux qui n’étaient pas originaires de Marrakech.</p>
-              <p><strong>L’école coranique se visite tous les jours de 9 h à 18 h. L’entrée est au tarif de 50 Dh (5 €). </strong></p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8090.jpg" alt="La Médersa Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8112.jpg" alt="La Médersa Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <div className="article-day-header article-day-header-tight">
-                <h3>La Koutoubia</h3>
-              </div>
-              <p>Non loin de la place Jemaa el-Fna, se dresse la splendide Koutoubia. Bâtie en 1147, elle est le site le plus ancien de Marrakech. Avec son minaret de 77 mètres de haut, vous ne pourrez pas la louper !</p>
-              <p><strong>Elle est la plus grande mosquée de Marrakech et le symbole de la ville. </strong></p>
-              <p>La Koutoubia possède l'une des plus grandes salles de prière du Maroc et peut accueillir jusqu'à 20.000 fidèles.</p>
-              <p>Tout comme pour les autres mosquées de la ville, l’entrée est interdite aux non-musulmans. Si vous n'êtes pas musulmans vous devrez donc vous contenter de l’observer de l’extérieur.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6837-768x1024.jpg" alt="Koutoubia Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5258-768x1024.jpg" alt="La Koutoubia Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-          </section>
-
-          <section id="manger" className="article-section">
-            <div className="article-day-header">
-              <h2>Où manger à Marrakech ?</h2>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1677-scaled-1024x768.jpeg" alt="Palais Royal Madrid" className="article-img-full" loading="lazy" style={{objectPosition: 'center bottom'}} />
+            <h3>La Cathédrale de la Almudena</h3>
+            <p>Non loin de là, vous trouverez la <strong>Cathédrale de la Almudena</strong>. Son dôme est accessible aux visiteurs via le musée, du lundi au samedi de 10 h à 14 h 30. Comptez 7 € l’entrée.</p>
+            <p>L&apos;entrée s&apos;effectue par la porte principale de la cathédrale, face au Palais Royal. Depuis la « cúpula », vous aurez une vue exceptionnelle sur la ville, notamment sur les jardins de Campo del Moro.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1699_jpg-scaled-768x1024.jpeg" alt="Cathédrale de la Almudena Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2462_jpg-scaled-734x1024.jpeg" alt="Cathédrale de la Almudena Madrid" loading="lazy" style={{flex: '0.717', minWidth: 0}} />
             </div>
-              <p>Il arrive que des restaurants ne payent pas de mine à première vue. Ne vous laissez pas influencer, ils révèlent bien souvent un joli toit-terrasse avec une vue incroyable sur la ville !</p>
-              <p>Nous avons nos petites habitudes quant aux endroits où manger et prendre un verre dans la médina…</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4960-768x1024.jpg" alt="Souk Kafé médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6099-1024x768.jpg" alt="Café des épices Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5290_jpg-1024x768.jpg" alt="Henna Café Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5292-768x1024.jpg" alt="Henna Café Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-                            <div className="pb-resto-section">
-                <h3 className="pb-resto-title">Nos adresses où manger, par gamme de prix</h3>
-                <div className="pb-resto-tier">
-                  <div className="pb-resto-tier-header">
-                    <span className="pb-resto-tier-badge">€</span>
-                    <span className="pb-resto-tier-label">Petits prix</span>
-                  </div>
-                  <div className="pb-resto-grid">
-                    <a href="https://maps.app.goo.gl/PTjrcNqVpT7RMt1w7" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Atay café</span>
-                      <span className="pb-resto-card-desc">Cuisine marocaine généreuse dans un cadre authentique. Notre cantine de la médina.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/THAbfYXY2YoaY2528" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Café des épices</span>
-                      <span className="pb-resto-card-desc">Terrasse avec vue sur les toits, jus frais et petits plats simples face aux souks.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/Jdaszd1dJw9qsEJL7" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Henna café</span>
-                      <span className="pb-resto-card-desc">Restaurant associatif où l'on mange en se faisant tatouer au henné. Concept unique !</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/Cyry27cHx4R9CvE67" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Kui-Zin</span>
-                      <span className="pb-resto-card-desc">Rooftop en plein cœur de la médina, cuisine marocaine faite maison et buffet généreux.</span>
-                    </a>
-                  </div>
-                </div>
-                <div className="pb-resto-tier">
-                  <div className="pb-resto-tier-header">
-                    <span className="pb-resto-tier-badge">€€</span>
-                    <span className="pb-resto-tier-label">Intermédiaire</span>
-                  </div>
-                  <div className="pb-resto-grid">
-                    <a href="https://maps.app.goo.gl/LJijbJUkqoSbVLL4A" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">La Terrasse des épices</span>
-                      <span className="pb-resto-card-desc">Vue panoramique sur la médina, cuisine marocaine soignée et cocktails sans alcool.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/nTrdEU5KVV5Xj7GP6" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Le Jardin</span>
-                      <span className="pb-resto-card-desc">Riad verdoyant au cœur de la médina. Cadre romantique, cuisine raffinée et fraîche.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/b7rSeahrnbAMyH866" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Le Nomad</span>
-                      <span className="pb-resto-card-desc">Design épuré, rooftop avec vue sur les toits et menu fusion maroco-contemporain.</span>
-                    </a>
-                  </div>
-                </div>
-                <div className="pb-resto-tier">
-                  <div className="pb-resto-tier-header">
-                    <span className="pb-resto-tier-badge">€€€</span>
-                    <span className="pb-resto-tier-label">Plus chic</span>
-                  </div>
-                  <div className="pb-resto-grid">
-                    <a href="https://maps.app.goo.gl/8Pybhtk1PeSdhozw6" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Le Café arabe</span>
-                      <span className="pb-resto-card-desc">L’adresse historique. Cuisine italienne et marocaine, alcool au rendez-vous.</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/eaWGAcKKmE1wyBwH9" target="_blank" className="pb-resto-card">
-                      <span className="pb-resto-card-name">Le Kabana</span>
-                      <span className="pb-resto-card-desc">Rooftop chic avec une vue imprenable sur la Koutoubia. Sert de l'alcool.</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-                                          
-              <div className="article-tip">
-                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                <div><strong>Bon à savoir</strong><p>Vous avez également la possibilité de vous faire livrer à domicile via l&apos;application GLOVO (le Uber Eats marocain !) — pratique pour les soirées cocooning dans votre riad !</p></div>
-              </div>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1848-1024x768.jpg" alt="Kui-Zin médina Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5204_jpg-768x1024.jpg" alt="Restaurant Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-          </section>
-
-          <section id="riads" className="article-section">
-            <div className="article-day-header">
-              <h2>Riads où passer la journée</h2>
+            <h3>Le Mercado de San Miguel</h3>
+            <p>Empruntez ensuite la <strong>Calle Mayor</strong> située en face de la cathédrale, pour vous diriger vers la <strong>Plaza San Miguel</strong> et son fameux mercado. Ce marché atypique, haut lieu de la vie madrilène, est un incontournable lors d&apos;un séjour à Madrid !</p>
+            <p>Avec son architecture incroyable, composée d&apos;une structure en métal et tout en verre, le <strong>Mercado de San Miguel</strong> est un endroit très prisé par les amateurs de gastronomie espagnole, notamment de tapas.</p>
+            <p>Un gros coup de coeur pour nous ! Vous pourrez vous y rendre chaque jour de 10 h à minuit pour y goûter des spécialités terre, mer ou veggie façon espagnole ! C&apos;est également le lieu idéal pour déguster de bons vins ou boire une bière.</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1760-scaled-1024x768.jpeg" alt="Mercado San Miguel Madrid" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1742-scaled-768x1024.jpeg" alt="Mercado San Miguel Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1782_jpg-scaled-768x1024.jpeg" alt="Mercado San Miguel Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
             </div>
-              <p>Si comme nous, vous passez votre séjour dans un riad au cœur de la médina, il y a de fortes chances, en fonction de la gamme de votre hébergement, que vous n’ayez pas de piscine pour y faire quelques longueurs ou pour bronzer à son bord sur un transat !</p>
-              <p><strong>De nombreux riads vous proposent des forfaits à la journée</strong> : repas et accès à la piscine avec le transport si nécessaire (en supplément). En effet, même si certains se trouvent dans la médina, la plupart se situent en dehors.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4888_jpg-768x1024.jpg" alt="Dar Donab Marrakech médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5098-768x1024.jpg" alt="Piscine Manzil Tortue Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-                            <div className="pb-resto-grid" style={{gridTemplateColumns:'repeat(2,1fr)',marginTop:'28px',marginBottom:'12px'}}>
-                <div className="pb-resto-card pb-riad-card">
-                  <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJNb0AY2jurw0RbO3ykgyWmVQ" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Dar donab</a>
-                    <a href="https://maps.app.goo.gl/dZQ8YNQm8BhzDkmX6" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Dar donab</a>
-                  </span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Médina, Bab Doukkala</span>
-                  <span className="pb-resto-card-desc">Hôtel luxueux dans un petit palais au cœur de la médina.</span>
-                  <span className="pb-resto-card-desc">150 Dh accès piscine — repas à la carte en supplément.</span>
-                </div>
-                <div className="pb-resto-card pb-riad-card">
-                  <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJneE65kjlrw0R0LMqzsrocjo" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La ferme berbère</a>
-                    <a href="https://maps.app.goo.gl/PXQu437JWWuwkgWP7" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La ferme berbère</a>
-                  </span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 9, route de l’Ourika</span>
-                  <span className="pb-resto-card-desc">Ambiance familiale, menu unique et excellent.</span>
-                  <span className="pb-resto-card-desc">290 Dh accès piscine + déjeuner.</span>
-                </div>
-              </div>
-              <div className="pb-resto-grid" style={{gridTemplateColumns:'repeat(2,1fr)',marginBottom:'28px'}}>
-                <div className="pb-resto-card pb-riad-card">
-                  <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ6R175Qfmrw0RlCOwZ7eHRRg" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La vie en rose</a>
-                    <a href="https://maps.app.goo.gl/HyLEaDMCh63vQg3J6" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>La vie en rose</a>
-                  </span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 14, route de l’Ourika</span>
-                  <span className="pb-resto-card-desc">Joli cadre, ânes et chevaux sur le terrain. Repas simples mais de qualité.</span>
-                  <span className="pb-resto-card-desc">250 Dh accès piscine + déjeuner.</span>
-                </div>
-                <div className="pb-resto-card pb-riad-card">
-                  <span className="pb-resto-card-name">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJ23VUUwPxrw0RIowkEJOjCVg" target="_blank" className="article-resto-link-desktop" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Manzil la tortue</a>
-                    <a href="https://maps.app.goo.gl/txijutAUPUUN6qZKA" target="_blank" className="article-resto-link-mobile" style={{color:"inherit",textDecoration:"none",fontSize:"20px",fontFamily:"'Cormorant Garamond', serif",fontWeight:"600"}}>Manzil la tortue</a>
-                  </span>
-                  <span className="pb-resto-card-desc" style={{color:"var(--gold)",fontStyle:"italic"}}>Km 12, route de Ouarzazate</span>
-                  <span className="pb-resto-card-desc">Un havre de paix. Tout est fait maison, cocktails délicieux.</span>
-                  <span className="pb-resto-card-desc">À partir de 400 Dh (piscine + déjeuner).</span>
-                </div>
-              </div>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6555-1024x768.jpg" alt="Manzil Tortue Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4841_jpg-768x1024.jpg" alt="Dar Donab médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6690-1024x768.jpg" alt="Ferme Berbere Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6619-1024x768.jpg" alt="Ferme Berbere Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              </div>
-                            <p><strong>Il y a également des parcs aquatiques à Marrakech.</strong> Nous avons testé Oasiria (km4, route d’Amizmiz).</p>
-              <p>Il est le 1er parc aquatique du Maroc. Il s’étend sur 10 hectares et offre une vaste panoplie d’attractions aquatiques pour toute la famille. De nombreux espaces verts et de détente, ainsi qu’un terrain de beach-volley / soccer sont mis à disposition. Le parc est ouvert toute l’année et propose en hiver une piscine chauffée de 300 m².</p>
-              <p><strong>Tarif à la journée (le parc est ouvert d'avril à début novembre) : 300 Dh (environ 29 €) pour les adultes et les enfants de plus d'1,50 m, et 200 Dh (environ 19 €) pour les enfants de moins d'1,50 m et les seniors de plus de 65 ans (gratuit en dessous de 80 cm).</strong></p>
-                            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6353-1024x768.jpg" alt="Entrée Oasiria Marrakech" loading="lazy" className="article-img-full" />
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6376-1024x768.jpg" alt="Oasiria Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6496-768x1024.jpg" alt="Oasiria Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-          </section>
-
-          <section id="loger" className="article-section">
-            <div className="article-day-header">
-              <h2>Où loger à Marrakech ?</h2>
-            </div>
-              <p>Finalement, tout dépend de ce que vous recherchez pour votre logement : gamme de tarif, piscine, services proposés, localisation ?</p>
-              <p>C'est en tout cas sans hésitation que <strong>nous vous conseillons de loger dans un riad au cœur de la médina</strong>.</p>
-              <p>Pour nous, rien de tel pour se plonger vraiment dans l'ambiance. Et puis, c'est tellement facile du coup de pouvoir tout faire à pied !</p>
-                            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6976-1-1024x768.jpg" alt="Riad maison Atlas" loading="lazy" className="article-img-full" />
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1833-1024x768.jpg" alt="Riad maison" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5707-768x1024.jpg" alt="Riad maison" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-              <p>Il existe dans ce cas, deux possibilités :</p>
-              <p>・<strong>louer une chambre</strong> dans un riad en pension complète ou en demi-pension ;</p>
-              <p>・<strong>louer un riad en entier.</strong> Vous vous sentirez comme à la maison ! Cela ne vous coûtera pas forcément plus cher et vous aurez toute votre intimité.</p>
-              <p>Vous trouverez aussi une multitude d’hôtels et de complexes hôteliers en dehors de la médina. Il vous faudra cependant prendre un taxi pour vous rendre au cœur de la ville.</p>
-          </section>
-
-          <section id="ramadan" className="article-section">
-            <div className="article-day-header">
-              <h2>Marrakech pendant le Ramadan, bonne idée ou pas ?</h2>
-            </div>
-              <p>Vous connaissez l’expression « c’est quoi tout ce ramdam » ? Ramdam vient du mot ramadan. Si lors de la période du ramadan les journées sont calmes, le soir c’est un vrai ramdam !</p>
-                            <p>Il y a une autre ambiance à Marrakech pendant la période du ramadan. La ville est comme au ralenti. En journée, les rues sont bien plus désertes qu’habituellement.</p>
-              <p>Pour autant, pas d’inquiétude… Marrakech étant une ville très touristique, vous trouverez toujours des boutiques et des restaurants ouverts.</p>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_9711-1024x768.jpg" alt="Vue du ciel Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6057-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              </div>
-                            <p>Renseignez-vous tout de même avant sur les horaires qui peuvent être modifiés. Généralement, les établissements ferment plus tôt dans l’après-midi. Une fois la nuit tombée, le jeun rompu, c’est à nouveau l’effervescence dans les rues !</p>
-              <p>Nous avons pour habitude de nous adapter aux pays que nous visitons. Pour le Maroc, en période de ramadan, nous évitons de boire ou de manger en pleine rue… Non pas que cela choque les marocains, c’est davantage une forme de respect de notre part.</p>
-              <div className="article-avis">
-                <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                <div><strong>Le conseil des MamZelles</strong><p>Visiter Marrakech pendant le ramadan est plutôt un bon plan ! C’est l’une des périodes les moins touristiques de l’année, les vols et les hébergements sont moins chers. Vous serez également plus tranquille pour les visites : pas de file d’attente interminable !</p></div>
-              </div>
-          </section>
-
-          <section id="organiser" className="article-section">
-            <div className="article-day-header">
-              <h2>Tout savoir pour organiser son voyage à Marrakech</h2>
-            </div>
-            <div className="article-pratique">
-
-              <div className="article-pratique-block">
-                <h3 className="article-pratique-title">Quelles sont les formalités pour entrer au Maroc ?</h3>
-                        <p>Pour vous rendre au Maroc, vous devez impérativement avoir un <strong>passeport en cours de validité</strong>. Le pays étant hors de l’Union Européenne, la carte d’identité ne suffit pas.</p>
-                        <p>Marrakech est doté d'un aéroport international nommé Marrakech-Ménara. Il occupe la 7ème place du classement des meilleurs aéroports du monde. C’est aussi l’un des plus beaux !</p>
-              </div>
-
-              <div className="article-pratique-block">
-                <h3 className="article-pratique-title">Comment s'y rendre et se déplacer ?</h3>
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4997-1024x768.jpg" alt="Aéroport Marrakech-Ménara" className="article-img-full" loading="lazy" style={{marginBottom: '20px'}} />
-                <PratiqueOnglets onglets={[
-                  {
-                    id: 'avion',
-                    label: 'En avion',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>,
-                    content: (
-                      <>
-                        <p>Pour arriver à Marrakech, nous avons voyagé avec la compagnie <strong>EasyJet</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 368 € pour deux. Il faut compter généralement près de 3 h de vol pour rejoindre l'aéroport de Marrakech-Ménara.</p>
-                        <div className="article-tip">
-                          <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                          <div><strong>Bon à savoir</strong><p>Nous vous recommandons de comparer les offres des différentes compagnies aériennes sur <a href="https://www.skyscanner.fr" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a> pour vous rendre à Marrakech (ou ailleurs !). On utilise beaucoup ce site pour trouver les vols qui nous conviennent, que ce soit au niveau des horaires ou des tarifs.</p></div>
-                        </div>
-                      </>
-                    ),
-                  },
-                  {
-                    id: 'taxi',
-                    label: 'En taxi',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6-6h15m-6 0v-5"/></svg>,
-                    content: (
-                      <>
-                        <p>Marrakech se visite essentiellement à pied. Pour autant, le taxi reste la baaaaase pour se déplacer ! C'est certainement le moyen de transport le plus populaire dans tout le pays.</p>
-                        <p>Sachez qu'en fonction de l'endroit où vous souhaitez vous rendre à Marrakech, vous n'utiliserez pas les mêmes taxis :</p>
-                        <ul className="article-pratique-list">
-                                                    <li>Les petits taxis : Leur couleur change en fonction de la localité. Ils sont jaunes ou beiges à Marrakech. Ils ont uniquement le droit de circuler dans le périmètre urbain, et il faudra négocier le prix avant de monter dans le véhicule. Attention, les petits taxis ne peuvent transporter que 3 personnes à la fois. Pour avoir une idée, depuis l'aéroport, comptez 70 Dh (7 €) pour rejoindre la médina et 100 Dh (10 €) pour vous rendre dans la palmeraie.</li>
-                                                    <li>Les grands taxis : Ils sont généralement jaunes et de marque Mercedes. À l'inverse des petits taxis, ils peuvent sortir de la zone urbaine, mais leurs tarifs sont plus élevés pour une course. Ayant très rarement un compteur, il faut donc négocier le prix avant de partir. Notez que les chauffeurs de grand taxi sont souvent des fous du volant ! Evitez les trajets de nuit pour votre sécurité.</li>
-                                                    <li>Les taxis privés : Si vous n'êtes pas friand de la négociation, faites alors appel à un taxi privé. Les chauffeurs mettent le compteur de manière obligatoire, et les prix fixés sont toujours honnêtes. D'ailleurs, les tarifs sont généralement collés sur leur pare-brise. Pour avoir une idée, pour se rendre de la médina à la palmeraie, comptez 100 Dh (10 €).</li>
-                        </ul>
-                        <div className="article-gallery-2">
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7135-1024x768.jpg" alt="Taxis Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5273-768x1024.jpg" alt="Taxi Marrakech médina" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                        </div>
-                      </>
-                    ),
-                  },
-                  {
-                    id: 'caleche',
-                    label: 'En calèche',
-                    icon: <i className="ti ti-horse" style={{fontSize:'18px'}}></i>,
-                    content: (
-                      <>
-                        <p>Marrakech est l'une des rares villes du Maroc à avoir conservé le transport en calèche. Ces dernières sont majoritairement <strong>stationnées au niveau de la rue qui relie la Koutoubia à la place Jemaa el-Fna</strong>.</p>
-                        <p>Il est possible de monter à 4 ou 5 personnes à bord d'une calèche. Comme pour les taxis, le prix se négocie. Pour 30Mn de balade dans la médina, <strong>prévoyez en moyenne 200 Dh (20 €)</strong>.</p>
-              
-              <div className="article-avis">
-                <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                <div><strong>L’avis des MamZelles</strong><p>Nous tenons cependant à préciser que nous ne cautionnons pas ce mode de transport. Les chevaux qui tirent ces calèches sont souvent maigres et visiblement épuisés — c’est quelque chose que nous ne pouvons pas ignorer.</p></div>
-              </div>
-                      </>
-                    ),
-                  },
-                ]} />
-              </div>
-
-              <div className="article-pratique-block">
-                <h3 className="article-pratique-title">Pour en savoir plus...</h3>
-                <PratiqueOnglets onglets={[
-                  {
-                    id: 'quand-partir',
-                    label: 'Quand partir',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7"/><path d="M16 3v4M8 3v4M4 11h16M11 15h1M12 15v3"/></svg>,
-                    content: (
-                      <>
-                        <p><strong>Le climat à Marrakech est agréable toute l'année !</strong> Vous ne vous tromperez donc jamais en prévoyant un séjour vers cette destination.</p>
-                        <p>Pour nous, les meilleures saisons pour découvrir la ville rouge restent tout de même le <strong>printemps</strong> (mars à mai) et l'<strong>automne</strong> (septembre à novembre). <strong>Les températures oscillent généralement entre 23 et 28°C. </strong>Vous éviterez ainsi l'afflux touristique de la période estivale, et les tarifs des hôtels et des activités qui augmentent.</p>
-                        <p><strong>Nous vous recommandons donc fortement de ne pas vous rendre à Marrakech en été.</strong> Au-delà de la foule, les températures, souvent supérieures à 35°C, peuvent limiter les activités et les excursions... Évitez de vous rendre dans le désert d'Agafay par exemple à cette période !</p>
-                        <p>Contrairement à ce que l'on pourrait penser, <strong>les hivers peuvent être frais</strong> même si le taux d'ensoleillement est important à ce moment-là. L'écart entre les températures le jour et la nuit étant important, il conviendra d'emporter une bonne veste dans votre valise !</p>
-                        <div className="article-gallery-2">
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6100-768x1024.jpg" alt="Marrakech printemps" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5740-768x1024.jpg" alt="Marrakech automne" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                        </div>
-                      </>
-                    ),
-                  },
-                  {
-                    id: 'argent',
-                    label: 'Argent',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"/><path d="M15 9a2 2 0 1 0-4 0v5a2 2 0 0 1-2 2h6"/><path d="M9 12h4"/></svg>,
-                    content: (
-                      <>
-                        <ul className="article-pratique-list">
-                          <li><strong>DAB</strong> — La monnaie du Maroc est le dirham (Dh ou MAD). On trouve de partout en ville des distributeurs de billets acceptant les Visa, MasterCard et American Express. Il est essentiel de savoir que les retraits d'espèces avec une carte étrangère entraînent souvent d'importants frais.</li>
-                          <li><strong>Cartes de crédit</strong> — Quasiment tous les restaurants et les bars acceptent les cartes de crédit. Cependant, prévoyez des espèces pour payer dans les boutiques, notamment dans les souks.</li>
-                          <li><strong>Change</strong> — Il est intéressant de savoir que vous pouvez utiliser quasiment de partout des euros pour payer. Pour autant, si vous souhaitez changez des euros en dirhams, préférez le faire directement à l'aéroport, les taux sont les plus intéressants. Autrement, les taux varient peu d'un établissement à l'autre à Marrakech.</li>
-                          <li><strong>Sortie de dirhams</strong> — Sachez qu'il est illégal d'importer ou de sortir des dirhams du pays. Aussi, conservez vos reçus de change. Ils prouvent que vous avez changé légalement votre argent et vous seront demandés pour convertir le reste de vos dirhams dans les banques marocaines et les bureaux de change.</li>
-                          <li><strong>Pourboire (bakchich)</strong> — Il fait partie intégrante de la vie marocaine. Pratiquement tous les services justifient un pourboire (= bakchich) ! Par exemple, il est d'usage de laisser un pourboire de 10% au restaurant.</li>
-                        </ul>
-                        
-                      </>
-                    ),
-                  },
-                  {
-                    id: 'dress-code',
-                    label: 'Dress code',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M19.5 12.572l-7.5 7.428-7.5-7.428a5 5 0 1 1 7.5-6.566a5 5 0 1 1 7.5 6.572"/></svg>,
-                    content: (
-                      <>
-                        <p><strong>Il n’y pas de dress code imposé à Marrakech. Il faut juste faire preuve de bon sens. </strong></p>
-                        <p>Si vous visitez un palais, au même titre qu’un temple en Asie, il est préférable de se couvrir les épaules en signe de respect.</p>
-                        <p>Aussi, si vous ne voulez pas choquer dans la rue, alors adaptez votre tenue...</p>
-                        <p>Pour les femmes particulièrement, évitez ainsi les vêtements très courts et / ou les décolletés plongeants par exemple !</p>
-                        <div className="article-gallery-2">
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_4975-768x1024.jpg" alt="Dress code Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-                          <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6081-1024x768.jpg" alt="Médina Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                        </div>
-                      </>
-                    ),
-                  },
-                  {
-                    id: 'courses',
-                    label: 'Courses & alcool',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>,
-                    content: (
-                      <>
-                        <p>Si vous souhaitez faire des courses de nourriture et / ou d’alcool, sachez qu’il existe de nombreux magasins où cela est possible. Il y a par exemple <strong>plusieurs Carrefour Market dans Marrakech</strong>.</p>
-                        <p>Vous trouverez également tout ce dont vous aurez besoin <strong>dans des centres commerciaux</strong> comme au Ménara Mall. Vous pourrez même y acheter du porc.</p>
-                        <p>Pour information, le rayon alcool est souvent à l’écart, voire à un étage différent.</p>
-                      </>
-                    ),
-                  },
-                ]} />
-              </div>
-
-            </div>
-          </section>
-
-          <section id="agafay" className="article-section">
-            <div className="article-day-header">
-              <h2>Désert d&apos;Agafay : une expérience aux portes de Marrakech</h2>
-            </div>
-            <p>Loin de l’effervescence et du tumulte de Marrakech, nous vous conseillons de vivre une expérience complètement magique... Celle de passer une <strong>nuit inoubliable dans le désert d’Agafay</strong> !</p>
-            
-            <a href="/dormir-dans-le-desert-agafay" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/75F1E0BA-2260-4821-B2C7-DEAE2106C433.jpg" alt="Agafay Blog" className="article-img-full" loading="lazy" /></a>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À LIRE AUSSI</strong><p><a href="/dormir-dans-le-desert-agafay" className="article-link">⋙ Dormir dans le désert d&apos;Agafay, une expérience inoubliable !</a></p></div>
+              <div><strong>À ne surtout pas manquer</strong><p>Le Mercado de San Miguel est ouvert tous les jours de 10 h à minuit. Le meilleur moment ? En fin d&apos;après-midi, à l&apos;heure de l&apos;apéro, quand les Madrilènes s&apos;y retrouvent après le travail — c&apos;est là que Madrid se révèle vraiment !</p></div>
+            </div>
+            <h3>La Plaza Mayor</h3>
+            <p>Continuez ensuite votre vadrouille en direction de la <strong>Plaza Mayor</strong>, cette fameuse place rectangulaire où les Madrilènes apprécient se retrouver pour y boire un café.</p>
+            <p>Ce lieu piéton est également très fréquenté par les touristes. Vous trouverez sous les arcades de nombreux commerces traditionnels.</p>
+            <p>Le dimanche, s&apos;y trouve le marché des billets et des pièces de collection, le « Mercado de monedas y sellos ». Il est ouvert de 9 h à 14 h. C&apos;est un marché unique au monde qui plait énormément aux collectionneurs.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1898-scaled-695x1024.jpeg" alt="Plaza Mayor Madrid" loading="lazy" style={{flex: '0.679', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1905-scaled-1024x768.jpeg" alt="Plaza Mayor Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1911-scaled-1024x768.jpeg" alt="Plaza Mayor Madrid" className="article-img-full" loading="lazy" />
+            <h3>La Plaza de la Puerta del Sol</h3>
+            <p>En continuant votre chemin, tout près de cette place, vous arriverez à la <strong>Plaza de la Puerta Del Sol</strong>. Très animée, c&apos;est la place principale de Madrid, et notamment la plus centrale. Cet endroit étant piéton, il y a toujours beaucoup de monde de jour comme de nuit. C&apos;est sur cette place que se déroulent la plupart des évènements, manifestations et rassemblements.</p>
+            <p>Idéalement située, la Plaza de la Puerta Del Sol permet de relier différents points d&apos;intérêts.</p>
+            <p>Si vous aimez le shopping, vous trouverez de quoi faire par ici ! De nombreuses enseignes nationales et internationales se situent sur les artères qui partent de cette place. En tout cas, nous vous conseillons d&apos;emprunter la <strong>Calle de Preciados</strong>, ou la <strong>Calle de la Montera</strong>, pour rejoindre <strong>Gran Via</strong>.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2330-scaled-768x1024.jpeg" alt="Puerta del Sol Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1926-scaled-1024x768.jpeg" alt="Puerta del Sol Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <h3>Gran Via</h3>
+            <p><strong>Gran Via</strong> est une grande avenue, l&apos;une des principales de Madrid, et sûrement la plus connue. Peu importe l&apos;heure à laquelle nous y sommes passées, il y avait toujours foule et beaucoup d&apos;animations. Vous y trouverez essentiellement des boutiques, des restaurants, des hôtels, des cinémas et des théâtres. Cette artère a d&apos;ailleurs le surnom du « Broadway Madrilène ».</p>
+            <p>Notre hôtel étant situé à 5 minutes à pied, nous avons parcouru Gran Via en long, en large et en travers, de la <strong>Place d&apos;Espagne</strong> à l&apos;emblématique <strong>Edificio Metropolis</strong>.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1665-scaled-1024x768.jpeg" alt="Gran Via Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1851-scaled-768x1024.jpeg" alt="Gran Via Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Sur la Plaza España se trouve un grand hôtel, le <a href="https://www.riu360rooftopbar.com/en/" target="_blank" rel="noopener noreferrer" className="article-link">Riu</a>, tel un building. Si vous souhaitez admirer une vue époustouflante à 360° sur la ville tout en sirotant un petit cocktail, c&apos;est ici qu&apos;il faut vous rendre !</p><p>L&apos;entrée est payante : 5 € de 11 h à 17 h en semaine, et 10 € après 17 h ainsi que tout le week-end. Nous avons choisi d&apos;y aller le soir pour observer la ville scintillant de toutes ses lumières.</p><p>Quel spectacle ! Sur ce rooftop au 27ème étage, nous avions la sensation d&apos;être sur le toit de la capitale. Pour le prix, vous pourrez vivre une expérience très sympa… Il y a une passerelle en verre sur ce rooftop ! Du coup, vous verrez ce qu&apos;il se passe sous vos pieds, 117 m plus bas. C&apos;est impressionnant. Sensations garanties !</p></div>
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1668_jpg-scaled-768x1024.jpeg" alt="Hôtel Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2364-scaled-1024x768.jpeg" alt="Vue depuis le Riu Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2361-scaled-768x1024.jpeg" alt="Rooftop Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2371-scaled-768x1024.jpeg" alt="Vue Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2350-scaled-768x1024.jpeg" alt="Cocktail Riu Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <p>De la Place d&apos;Espagne, remontez la Gran Via. Vous passerez alors par la <strong>Plaza del Callao</strong>. Faisant l&apos;angle de la rue, vous tomberez sur le célèbre <strong>Edificio Carrion</strong> et son mythique panneau publicitaire Schweppes. Vous ne pourrez pas le louper !</p>
+            <p>Vous avez suivi la série « Les Demoiselles du Téléphone » ? Le bâtiment qui a servi pour le décor se trouve un peu plus haut sur Gran Via.</p>
+            <p>L&apos;<strong>Edificio Telefónica</strong> est très imposant, vous le reconnaitrez facilement. Juste en face de celui-ci se trouve un McDonald&apos;s… Rien d&apos;incroyable, mais il fait partie des plus beaux restaurants de la marque dans le monde.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2341-scaled-768x1024.jpeg" alt="Edificio Carrion Schweppes Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2102-scaled-768x1024.jpeg" alt="Edificio Telefónica Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <h3>L&apos;Edificio Metropolis & le Circulo de Bellas Artes</h3>
+            <p>Lorsque vous arriverez au bas de l&apos;avenue, vous tomberez sur le célèbre <strong>Edificio Metropolis</strong> et sa magnifique coupole. Levez les yeux pour admirer l&apos;architecture de ce bâtiment, dessiné par des Français. Il est l&apos;édifice le plus photographié de Madrid.</p>
+            <p>Nous vous conseillons de monter en haut du <strong>Circulo de Bellas Artes</strong>, un centre culturel situé juste en face. Moyennant 6 €, vous pourrez profiter de son rooftop, l&apos; « Azotea ». Dans la partie lounge, où de confortables « beds » sont installés, vous pourrez lézarder au soleil. La partie bar / restaurant bénéficie d&apos;une grande terrasse où la vue sur la ville est exceptionnelle ! De là-haut, entre autres, vous verrez d&apos;un côté la banque d&apos;Espagne, la Plaza de Cibeles et son palais, et de l&apos;autre, le Metropolis avec son dôme en ardoise et sa statue ailée.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2051-scaled-768x1024.jpeg" alt="Edificio Metropolis Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2055-scaled-768x1024.jpeg" alt="Vue Metropolis Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2053-scaled-1024x768.jpeg" alt="Vue Metropolis Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2074_jpg-scaled-768x1024.jpeg" alt="Nous à Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
+              <div><strong>L&apos;avis des MamZelles</strong><p>El Centro est dense, mais chaque rue réserve une surprise. Notre conseil : ne vous fixez pas un programme trop rigide pour cette journée — laissez-vous porter par l&apos;ambiance et les découvertes au fil des ruelles.</p></div>
             </div>
           </section>
 
-          {/* OUTRO */}
+          {/* JOUR 2 */}
+          <section id="jour2" className="article-section">
+            <div className="article-day-header">
+              <span className="article-day-badge">Jour 2</span>
+              <h2>⧐ Malasaña, ⧐ Salamanca, ⧐ El Retiro</h2>
+            </div>
+            <h3>📍 Malasaña</h3>
+            <p>Il est le 1er quartier que nous avons découvert car c&apos;est ici que nous avons décidé de poser nos valises pour ces 3 jours. Au moment où nous cherchions un hôtel, notre choix s&apos;est rapidement porté sur ce quartier car il est décrit comme <strong>branché</strong>, <strong>alternatif</strong>, avec une <strong>identité forte</strong>, et une <strong>atmosphère prégnante</strong>.</p>
+            <p>C&apos;est exactement ce que nous avons découvert ! Un surprenant quartier où l&apos;on se laisse facilement porter à la mode madrilène !</p>
+            <p>Nous avons donc logé à l&apos;<a href="https://www.google.com/maps/place/?q=place_id:ChIJGbpsLGMoQg0RLmDZRucihwY" target="_blank" className="article-link article-resto-link-desktop">Hostal Goyal Pizzaro</a><a href="https://maps.app.goo.gl/p34xCNUWF6PNNAy17" target="_blank" className="article-link article-resto-link-mobile">Hostal Goyal Pizzaro</a>. Cet établissement, situé à proximité du métro et des lieux incontournables à visiter, est installé dans un bâtiment de style Art nouveau. La chambre spacieuse et très propre, donnant sur la ville, fait de cet hôtel une adresse de qualité.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1652_jpg-scaled-768x1024.jpeg" alt="Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1655_jpg-scaled-768x1024.jpeg" alt="Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2535-scaled-768x1024.jpeg" alt="Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2554-scaled-1024x768.jpeg" alt="Street-art Malasaña Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <p>On en est certaine, vous apprécierez l&apos;ambiance de Malasaña. Ses rues pavées, ses façades colorées, son street-art, ses boutiques rétros et vintages où l&apos;on peut acheter des fringues au kilo vous charmeront.</p>
+            <p>Malasaña fait partie des barrios préférés des Madrilènes. C&apos;est THE PLACE TO BE pour les virées nocturnes. Vous y trouverez de nombreux restaurants, bars alternatifs, bars à tapas et clubs. L&apos;esprit de la « Movida » (= Vida Loca) est bien présent dans ce quartier. En effet, c&apos;est ici, dans les années 1980, qu&apos;est née la révolution sociale et culturelle.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1660_jpg-scaled-768x1024.jpeg" alt="Street-art Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2566-scaled-768x1024.jpeg" alt="Façade Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2546-scaled-768x1024.jpeg" alt="Façades Malasaña Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2556-scaled-1024x768.jpeg" alt="Friperie Malasaña Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
+              <div><strong>L&apos;avis des MamZelles</strong><p>Si vous ne savez pas dans quel quartier dormir à Madrid, choisissez Malasaña. Son ambiance authentique, sa vie de quartier animée et sa situation centrale en font, selon nous, le meilleur compromis pour découvrir la capitale à pied tout en profitant de l&apos;atmosphère madrilène.</p></div>
+            </div>
+            <h3>📍 Salamanca</h3>
+            <p>Autre style de quartier, autre ambiance ! Le barrio de <strong>Salamanca</strong> est le quartier chic de Madrid. Sur les grands boulevards, des restaurants gastronomiques et des bars un peu sélects, dans les petites rues, des boutiques de luxe et de créateurs… L&apos;ambiance qui règne dans ce quartier est relativement calme.</p>
+            <p>Pour les connaisseurs de la série, il est à noter que la façade utilisée dans « La Casa de Papel » pour représenter la banque d&apos;Espagne est située un peu plus au nord. Il faudra remonter la <strong>Calle de Serrano</strong> jusqu&apos;au N°115.</p>
+            <p>Ne pouvant pas bloquer la circulation dans le secteur stratégique de la Banque d&apos;Espagne pendant le temps du tournage, le bâtiment utilisé comme décor est en fait celui du « Consejo Superior de Investigaciones Científicas ».</p>
+            <p>Concrètement, nous avons trouvé Salamanca sympa pour s&apos;y balader, mais sans grand intérêt si vous n&apos;y venez pas dans un but précis.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2443-scaled-768x1024.jpeg" alt="Salamanca Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2431-scaled-1024x768.jpeg" alt="Salamanca Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <h3>📍 El Retiro</h3>
+            <p>Depuis le « Circulo de Belles Artes », direction la <strong>Plaza de Cibeles</strong> en passant par la banque d&apos;Espagne. Sur cette place se dressent d&apos;imposants bâtiments, tel que le <strong>Palacio de Comunicaciones</strong>. Celui-ci fait désormais office d&apos;Hôtel de ville, et accueille un centre culturel. Il possède également un rooftop qui offre un beau panorama sur la ville.</p>
+            <p>Si vous avez envie de visiter de jolis musées, c&apos;est dans ce quartier que vous trouverez votre bonheur ! Le <strong>musée du Prado</strong>, le <strong>musée Thyssen-Bornemisza</strong> et le <strong>Centro de Arte Reina Sofia</strong> se trouvent à proximité du <strong>Parque del Retiro</strong>.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2116-scaled-1024x768.jpeg" alt="Banque d'Espagne Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2062-scaled-1024x768.jpeg" alt="Vue banque d'Espagne Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <p>Ce magnifique <strong>Parque del Retiro</strong> est clairement le poumon de la capitale, un oasis végétal au coeur de Madrid. Du côté de l&apos;entrée principale se trouve l&apos;imposante <strong>Puerta de Alcalà</strong>. Nous vous conseillons d&apos;emprunter le sentier pour entrer dans le parc pour profiter du calme qui règne dans cet endroit.</p>
+            <p>Nous sommes rapidement tombées sur le lac, où nous n&apos;avons pas su résister à la tentation de faire un <strong>petit tour de barque</strong> pour admirer de près le <strong>Monument à Alfonso XII</strong>. C&apos;était une chouette expérience ! Nous avons déboursé 6 € pour 3/4 d&apos;heure de navigation.</p>
+            <p>En vous baladant à travers le parc, vous découvrirez de nombreuses fontaines et de grandes allées bordées d&apos;arbres, où des artistes de rue, des musiciens et peintres s&apos;installent la journée.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2121-scaled-1024x768.jpeg" alt="El Retiro Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2207-scaled-1024x768.jpeg" alt="Retiro Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2187-scaled-768x1024.jpeg" alt="Barque El Retiro Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2174_jpg-scaled-768x1024.jpeg" alt="Barque El Retiro Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2211_jpg-scaled-768x1024.jpeg" alt="Fontaine El Retiro Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <p>Nous finissons par arriver au magnifique <strong>Palacio de Cristal</strong>, constitué de verre et de métal. Auparavant, cette serre servait à mettre à l&apos;abri des plantes exotiques en hiver. Aujourd&apos;hui, elle est utilisée comme centre d&apos;exposition.</p>
+            <p>Nous vous conseillons de vous y rendre en fin de journée… Cette structure de verre devient impressionnante lorsque la lumière du coucher de soleil la traverse.</p>
+            <p>Terminez votre balade dans la roseraie, située également dans le Parque del Retiro. Malheureusement, ce n&apos;était pas la meilleure période pour y découvrir les rosiers en fleur !</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2223-scaled-1024x768.jpeg" alt="Palacio de Cristal Madrid" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2214-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2247-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2253-scaled-768x1024.jpeg" alt="Palacio de Cristal Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+          </section>
+
+          {/* JOUR 3 */}
+          <section id="jour3" className="article-section">
+            <div className="article-day-header">
+              <span className="article-day-badge">Jour 3</span>
+              <h2>⧐ Lavapiès / Rastro, ⧐ Atocha, ⧐ Barrio de Las Letras / Huertas</h2>
+            </div>
+            <h3>📍 Lavapiès / El Rastro</h3>
+            <p>Voici les quartiers multiculturels de Madrid qui rassemblent le plus grand nombre de communautés. Vous souhaitez goûter différents plats du monde ? C&apos;est ici qu&apos;il faut vous rendre !</p>
+            <p>Il s&apos;agit à la base de quartiers populaires. Suite à leur évolution, ils sont aujourd&apos;hui des endroits branchés, la culture y étant très présente.</p>
+            <p>On découvre par exemple à Lavapiès la <strong>Tabacalera</strong>, une ancienne usine à tabac transformée en centre culturel où sont proposées au public de nombreuses expositions et activités. Lavapiès est également connu dans le monde pour son street-art.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2421-scaled-768x1024.jpeg" alt="Lavapiès Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1857-scaled-768x1024.jpeg" alt="Lavapiès Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+            <p>Vous ne devrez louper en aucun cas le <strong>marché El Rastro</strong> qui a lieu chaque dimanche et jour férié, de 8 h 30 à 15 h. Il est une institution à Madrid et est considéré comme l&apos;<strong>un des plus grands marchés aux puces d&apos;Europe</strong> !</p>
+            <p>Dans la rue principale, vous trouverez sur les stands essentiellement des articles neufs et des produits typiques de marché (produits locaux, sacs, vêtements, bijoux, souvenirs, etc.).</p>
+            <p>C&apos;est aussi le paradis des brocanteurs… En effet, dans les petites boutiques qui longent le marché, ou encore dans celles des petites rues perpendiculaires, vous trouverez toutes sortes d&apos;objets à chiner. Dans ce coin, se trouve également tout un secteur dédié aux antiquités, où vous pourrez notamment dégoter des tableaux anciens, et un autre dédié aux fripes (vêtements vintages).</p>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À ne surtout pas manquer</strong><p>El Rastro n&apos;a lieu que le dimanche et les jours fériés de 8 h 30 à 15 h. Organisez votre séjour pour que votre 3ème jour tombe un dimanche — vous ne le regretterez pas !</p></div>
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1870-scaled-768x1024.jpeg" alt="El Rastro Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1887-scaled-705x1024.jpeg" alt="El Rastro Madrid" loading="lazy" style={{flex: '0.689', minWidth: 0}} />
+            </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1879-scaled-1024x768.jpeg" alt="El Rastro Madrid" className="article-img-full" loading="lazy" />
+            <h3>📍 Atocha</h3>
+            <p>C&apos;est le quartier administratif de Madrid, mais il est surtout connu pour sa majestueuse gare ! En effet, la gare d&apos;Atocha est la plus importante de la capitale et propose aux voyageurs des trajets en train dans toute l&apos;Espagne mais aussi à l&apos;international. Inaugurée en 1851, cette oeuvre architecturale a, au fur et à mesure du temps, été rénovée et agrandie.</p>
+            <p>L&apos;ancien hall principal de la gare abrite un jardin tropical. Il faut dire que l&apos;endroit s&apos;y prête bien, la structure métallique et le toit en verre faisant office de serre. Le jardin de 4 000 m² recense plus de 400 espèces de plantes différentes provenant des quatre coins du monde.</p>
+            <p>Nous vous conseillons vivement d&apos;y faire un petit tour. Vous trouverez sur place de nombreux cafés et restaurants. On se croirait dans un petit village nature !</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1986-scaled-1024x768.jpeg" alt="Gare Atocha Madrid" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2002-scaled-768x1024.jpeg" alt="Atocha Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2006-scaled-1024x768.jpeg" alt="Atocha Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
+              <div><strong>L&apos;avis des MamZelles</strong><p>La gare d&apos;Atocha est souvent négligée par les touristes qui la traversent sans s&apos;y arrêter. C&apos;est une erreur ! Le jardin tropical intégré dans l&apos;ancienne verrière est un des endroits les plus insolites et apaisants de Madrid. Prévoyez 30 minutes minimum pour vous y promener et y prendre un café. C&apos;est gratuit et totalement inattendu.</p></div>
+            </div>
+            <p>Si par hasard vous avez la chance d&apos;être à Madrid le 2ème week-end du mois, vous ne pourrez pas louper le <strong>Mercado de Motores</strong>. Situé dans l&apos;ancienne <strong>gare de Delicias</strong>, le marché accueille de nombreux artisans, créateurs, designers et brocanteurs. Du rétro, du vintage, de l&apos;artisanat, des objets d&apos;occasion, tout y est !</p>
+            <p>Vous apprécierez déambuler sur les quais et admirer les wagons et locomotives du XIXème siècle. Nous avons trouvé cet endroit plutôt original et de toute beauté !</p>
+            <p>À l&apos;extérieur, notamment le long de la gare, quelques stands de brocanteurs ainsi que des food trucks vous feront de l&apos;oeil. Ces derniers sont peu nombreux mais tous sont alléchants. En choisir un pour manger sur le pouce ne sera pas chose facile !</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1954-scaled-1024x768.jpeg" alt="Mercado de Motores Madrid" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1959-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1962-scaled-768x1024.jpeg" alt="Mercado de Motores Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
+            </div>
+
+            <h3>📍 Barrio de las Letras / Huertas</h3>
+            <p>En face du <strong>musée Thyssen-Bornemisza</strong> se trouve le quartier des Lettres. Il tient son nom de son passé littéraire — de nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol. Des citations gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong> en témoignent encore.</p>
+            <p>Ces quartiers font partie des plus anciens de Madrid et des plus animés le soir. La Plaza Santa Ana, bordée de cafés et de restaurants, est le lieu idéal pour une petite pause.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2299-scaled-768x1024.jpeg" alt="Barrio de las Letras Madrid" loading="lazy" />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2322_jpg-scaled-768x1024.jpeg" alt="Huertas Madrid" loading="lazy" />
+            </div>
+          </section>
+
+          {/* INFOS PRATIQUES */}
+          <section id="pratique" className="article-section">
+            <div className="article-day-header">
+              <span className="article-day-badge">Infos pratiques</span>
+              <h2 className="article-section-h2">3 jours à Madrid, tout savoir pour organiser votre voyage</h2>
+            </div>
+            <h3>✓ Où dormir ?</h3>
+            <p>Nous avons logé à l&apos;<a href="https://www.google.com/maps/place/?q=place_id:ChIJGbpsLGMoQg0RLmDZRucihwY" target="_blank" className="article-link article-resto-link-desktop">Hostal Goyal Pizzaro</a><a href="https://maps.app.goo.gl/p34xCNUWF6PNNAy17" target="_blank" className="article-link article-resto-link-mobile">Hostal Goyal Pizzaro</a> dans le quartier de Malasaña. Idéalement situé, propre et spacieux, c&apos;est une adresse que nous recommandons sans hésiter. Pour les budgets plus élevés, le quartier de Salamanca offre de belles options hôtelières. Dans tous les cas, privilégiez un logement dans Malasaña ou El Centro pour être à pied de tout.</p>
+            <h3>✓ Quel budget prévoir ?</h3>
+            <p>Madrid est une capitale accessible. Comptez environ <strong>80 à 120 € par personne et par jour</strong> en incluant l&apos;hébergement, les repas et les activités. Les tapas permettent de manger bien et pas cher — une bière + 2 tapas tourne autour de 4 à 6 € dans les bars du centre. Les musées nationaux (Prado, Reina Sofia) sont gratuits certains soirs.</p>
+            <h3>✓ Arriver en avion</h3>
+            <p>Il est désormais facile de trouver des vols directs à destination de Madrid à moindre coût. De <strong>nombreuses compagnies</strong> desservent maintenant la capitale espagnole. Les départs se font depuis la plupart des aéroports.</p>
+            <p>Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136 € pour deux. Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>. Le tarif y était plus avantageux que si on les avait achetés avec un comparateur de vols.</p>
+            <p>Nous avons été en tout cas ravies de voyager avec cette compagnie. Aucun retard sur les vols aller et retour, personnel très sympa… Un petit en-cas sucré ou salé est offert pendant la traversée.</p>
+            <h3>✓ Aéroport ↔︎ Centre ville</h3>
+            <p>Quelle que soit la compagnie que vous choisirez, vous atterrirez à l&apos;<strong>aéroport Adolfo Suárez Madrid-Barajas</strong>. Plusieurs options s&apos;offrent à vous pour rejoindre le centre :</p>
+            <div className="article-transport-grid">
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
+                </div>
+                <div>
+                  <strong>Métro ligne 8</strong>
+                  <span>4,50 € · 15-25 min · Dessert Nuevos Ministerios (lignes 6 et 10). Tickets aux guichets automatiques à la station de l&apos;aéroport.</span>
+                </div>
+              </div>
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
+                </div>
+                <div>
+                  <strong>Bus Exprés Aeropuerto</strong>
+                  <span>5,10 € · 40 min · 24h/24. Attention : de 23 h 55 à 5 h 35, départ depuis la Plaza de Cibeles (et non la gare Puerta de Atocha).</span>
+                </div>
+              </div>
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
+                </div>
+                <div>
+                  <strong>Taxi</strong>
+                  <span>~33 € · Option pratique si vous êtes en groupe ou très chargé·e·s. Pas notre recommandation en solo.</span>
+                </div>
+              </div>
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
+                </div>
+                <div>
+                  <strong>Uber</strong>
+                  <span>Zone dédiée séparée des taxis : Parking P1 (T1) · Parking express (T2) · Parking P4, Module D, Étage 4 (T4).</span>
+                </div>
+              </div>
+            </div>
+            <h3>✓ Comment se déplacer à Madrid ?</h3>
+            <ul>
+              <li><strong>À pied</strong> — Notre préféré. Il fait beau très souvent à Madrid, et déambuler dans ses rues est le meilleur moyen de s&apos;imprégner de son ambiance unique.</li>
+              <li><strong>Métro</strong> — 12 lignes desservant le centre, de 6 h 05 à 1 h 30. <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">Plan du réseau →</a></li>
+              <li><strong>Bus</strong> — Réseau dense, de 6 h 30 à 23 h 30. <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">Planifier son trajet →</a></li>
+              <li><strong>Bus panoramique</strong> — Toit décapotable, 2 circuits avec arrêts aux principaux sites. Parfait pour une première découverte sans effort.</li>
+              <li><strong>Vélos &amp; trottinettes électriques</strong> — Location en libre-service, bornes partout en ville. Pour les plus actifs !</li>
+            </ul>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Notre conseil transport</strong><p>Optez pour la carte Multi (2,50 €) + 10 trajets Metrobús (7,30 €), valable métro zone A et tout le réseau bus. La carte est en vente dans toutes les stations de métro, ainsi qu&apos;à l&apos;aéroport. En alternative, la carte métro 48 h à 14,20 € si vous privilégiez le métro. Dans les deux cas, -50 % pour les enfants de moins de 11 ans.</p></div>
+            </div>
+            <h3>✓ Quand partir ?</h3>
+            <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
+            <p>Les mois de <strong>mai, juin et septembre</strong> restent les plus agréables : températures douces, pluies inexistantes, et les nombreux parcs explosent de mille couleurs.</p>
+            <p>Nous vous conseillons d&apos;éviter <strong>juillet et août</strong> qui peuvent être très chauds — et très fréquentés !</p>
+          </section>
+
+
+
+
+
+          {/* NEWSLETTER */}
+          {/* COMMENTAIRES */}
           <section className="article-comments">
             <h2 className="article-comments-title">Commentaires</h2>
 
             <CommentsList comments={[
               {
                 id: '1',
-                author: 'Alexandre Le Bris',
-                date: '1 année il y a',
-                text: "Merci pour ces bons conseils ! Nous avons été surpris de voir que les tarifs d\'entrées avaient pas mal augmentés. 10€ pour visiter la jardin secret par personne, ça commence. à faire !",
-                reply: { author: 'MamZelles en vadrouille', date: '1 année il y a', text: "Merci beaucoup pour votre retour ! 😊 C'est vrai que sur ces dernières années, les tarifs d'entrée des musées se sont envolés... On espère malgré tout que vous avez passé un beau séjour au soleil et que vous avez aimé l'ambiance unique de Marrakech ! 😍" }
-              }
+                author: 'Derieux',
+                date: '19 fév. 2026',
+                text: "Bonjour, merci à vous pour cette belle rétrospective et conseils d'un petit voyage de 3 jours à Madrid. Nous partons aussi pour 3 jours et super boulot de votre road book qui nous donne bien envie ! Belle continuation professionnelle et surtout votre vie personnelle avec de beaux voyages !",
+                reply: { author: 'MamZelles en vadrouille', date: '25 mars 2026', text: "Bonjour, olala... On découvre seulement votre message aujourd'hui ! 🙈 Votre retour sur notre article nous fait énormément plaisir ! 🤗 On vous souhaite également une belle continuation et on espère que vous en avez aussi pris plein les yeux à Madrid ! ☀️" }
+              },
+              {
+                id: '2',
+                author: 'Gaudefroy',
+                date: '19 déc. 2025',
+                text: "nous partons dans 2 jours à Madrid et pour 2 jours, merci pour vos infos précieuses, j'ai tout noté !",
+                reply: { author: 'MamZelles en vadrouille', date: '22 déc. 2025', text: "Top ! Merci pour ce retour qui fait super plaisir ! 🤗🤗" }
+              },
+              {
+                id: '3',
+                author: 'Valérie Celas',
+                date: '8 déc. 2025',
+                text: "Bonjour, et merci pour vos partages 😊 avez-vous des adresses de logements à me conseiller pour Madrid svp ? Belle journée.",
+                reply: { author: 'MamZelles en vadrouille', date: '22 déc. 2025', text: "Bonjour, non malheureusement, nous n'avons pas de logement à recommander. En espérant que vous avez trouvé votre bonheur ! 🤗 Belles fêtes de fin d'année et bon séjour à Madrid ! ☀️" }
+              },
+              {
+                id: '4',
+                author: 'Nathalie',
+                date: '24 oct. 2025',
+                text: "hola ! je vais à Madrid demain, avec mon fils, pour fêter ses 18 ans ! visite du stade de foot du real (qui n'est pas dans votre récap !!), mais c'est le passage obligé pour mon garçon !! pour le reste, j'ai pris plein de notes sur vos déambulations ! ça m'a donné envie ! gracias",
+                reply: { author: 'MamZelles en vadrouille', date: '30 oct. 2025', text: "Bonjour, merci pour votre retour ! 🤗 Joyeux anniversaire à votre garçon ! 🎉 On vous souhaite un magnifique séjour dans cette ville incroyable ! 🤩" }
+              },
+              {
+                id: '5',
+                author: 'Toubeau',
+                date: '12 janv. 2025',
+                text: "Bonjour, je vais bientôt à Madrid. J'ai établi mon planning en prenant vos infos. Un grand merci",
+                reply: { author: 'MamZelles en vadrouille', date: '23 fév. 2025', text: "Trop contentes d'avoir contribué à votre organisation ! 🤗🤗 Cette ville est incroyable, on a tellement aimé ! Bons préparatifs et bon voyage. ✈️😊" }
+              },
+              {
+                id: '6',
+                author: 'Solange Faure',
+                date: '10 mars 2024',
+                text: "Bonsoir, je m'inspire complètement de votre superbe compte rendu sur Madrid avec des photos qui font rêver. Merci beaucoup. Et bon voyage à vous pour d'autres destinations",
+                reply: { author: 'MamZelles en vadrouille', date: '25 oct. 2024', text: "Coucou ! On découvre seulement aujourd'hui votre petit message qui nous fait énormément plaisir ! 🥰 Heureuses de savoir que notre article ait pu vous inspirer pour votre séjour à Madrid. Merci beaucoup à vous aussi pour votre retour ! 😊" }
+              },
             ]} />
+
             <CommentForm
-              articleTitle={"Visiter Marrakech : que faire dans la ville rouge"}
-              articleUrl="https://mamzellesenvadrouille.com/visiter-marrakech"
+              articleTitle="Visiter Madrid en 3 jours : itinéraire et bons plans"
+              articleUrl="https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours"
             />
+
           </section>
 
           <NewsletterForm />
 
-          {/* ARTICLES LIES */}
           <div className="article-related">
             <h3 className="article-related-title">À lire aussi</h3>
             <div className="article-related-grid">
-              <a href="/visiter-madrid-en-3-jours" className="article-related-card">
+              <a href="/visiter-marrakech" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid-1536x1229.jpeg.webp" alt="Madrid" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Marrakech-Blog.jpg" alt="Marrakech" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
-                  <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Visiter Madrid en 3 jours : itinéraire et bons plans</p>
+                  <span className="article-related-cat">Maroc</span>
+                  <p className="article-related-title-card">Marrakech : tous les secrets pour découvrir la ville rouge</p>
                 </div>
               </a>
-              <a href="/visiter-londres" className="article-related-card">
+              <a href="/visiter-londres-en-1-semaine" className="article-related-card">
                 <div className="article-related-img-wrap">
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres.jpg" alt="Londres" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Angleterre</span>
-                  <p className="article-related-title-card">Visiter Londres : notre guide complet</p>
+                  <p className="article-related-title-card">Visiter Londres : que faire en 7 jours par quartier</p>
                 </div>
               </a>
-              <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-related-card">
+              <a href="/road-trip-a-lanzarote" className="article-related-card">
                 <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Itinéraire Philippines 3 semaines" className="article-related-img" />
+                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote.jpeg" alt="Lanzarote" className="article-related-img" />
                 </div>
                 <div className="article-related-body">
-                  <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Voyage aux Philippines : itinéraire de 3 semaines</p>
+                  <span className="article-related-cat">Espagne</span>
+                  <p className="article-related-title-card">Road trip à Lanzarote : l&apos;île aux 300 volcans</p>
                 </div>
               </a>
             </div>
@@ -782,6 +548,8 @@ export default function MarrakechPage() {
 
         {/* SIDEBAR */}
         <aside className="article-sidebar">
+
+
           <div className="sidebar-card-white">
             <div className="sidebar-about-img-wrap">
               <img src="/nous.webp" alt="Amélie et Laurie" className="sidebar-about-img" />
@@ -790,7 +558,6 @@ export default function MarrakechPage() {
             <p className="sidebar-about-text">Nous, c&apos;est Amélie &amp; Laurie, deux amoureuses de la vie et du voyage. Nous partageons ici nos aventures à travers le monde.</p>
             <a href="/qui-sommes-nous" className="sidebar-link">Notre histoire →</a>
           </div>
-
           <div className="sidebar-card sidebar-cta">
             <img src="/home-hero.webp" alt="" className="sidebar-cta-bg-img" />
             <div className="sidebar-cta-gradient" />
@@ -802,6 +569,7 @@ export default function MarrakechPage() {
           </div>
         </aside>
       </div>
+
 
       <ScrollToTop />
 
