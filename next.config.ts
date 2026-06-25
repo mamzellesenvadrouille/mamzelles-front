@@ -3,8 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
-      { source: '/dormir-dans-le-desert-agafay', destination: 'https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay', permanent: true },
-      { source: '/dormir-dans-le-desert-agafay/', destination: 'https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/', permanent: true },
       { source: '/road-trip-a-lanzarote', destination: 'https://blog.mamzellesenvadrouille.com/road-trip-a-lanzarote', permanent: true },
       { source: '/road-trip-a-lanzarote/', destination: 'https://blog.mamzellesenvadrouille.com/road-trip-a-lanzarote/', permanent: true },
       { source: '/visiter-londres-en-1-semaine', destination: '/visiter-londres', permanent: true },
