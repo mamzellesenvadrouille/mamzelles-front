@@ -129,17 +129,17 @@ export default function MarrakechPage() {
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
+            <h2 className="article-toc-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{display:"inline",verticalAlign:"middle",marginRight:"8px"}}><path d="M5 2H19C19.6 2 20 2.4 20 3V22L12 17L4 22V3C4 2.4 4.4 2 5 2Z"/></svg>Sommaire de l&apos;article</h2>
             <ol className="article-toc-list">
-              <li><a href="#quartiers">📍 Se repérer dans les principaux quartiers de Marrakech</a></li>
-              <li><a href="#medina">📍 Zoom sur la médina, notre quartier coup de cœur</a></li>
-              <li><a href="#visites">📍 Que voir à Marrakech ? Les visites incontournables</a></li>
-              <li><a href="#manger">📍 Où manger à Marrakech ?</a></li>
-              <li><a href="#riads">📍 Riads où passer la journée</a></li>
-              <li><a href="#loger">📍 Où loger à Marrakech ?</a></li>
-              <li><a href="#ramadan">📍 Marrakech pendant le Ramadan, bonne idée ou pas ?</a></li>
-              <li><a href="#organiser">📍 Tout savoir pour organiser son voyage à Marrakech</a></li>
-              <li><a href="#agafay">📍 Désert d&apos;Agafay</a></li>
+              <li><a href="#quartiers">Se repérer dans les principaux quartiers de Marrakech</a></li>
+              <li><a href="#medina">Zoom sur la médina, notre quartier coup de cœur</a></li>
+              <li><a href="#visites">Que voir à Marrakech ? Les visites incontournables</a></li>
+              <li><a href="#manger">Où manger à Marrakech ?</a></li>
+              <li><a href="#riads">Riads où passer la journée</a></li>
+              <li><a href="#loger">Où loger à Marrakech ?</a></li>
+              <li><a href="#ramadan">Marrakech pendant le Ramadan, bonne idée ou pas ?</a></li>
+              <li><a href="#organiser">Tout savoir pour organiser son voyage à Marrakech</a></li>
+              <li><a href="#agafay">Désert d&apos;Agafay</a></li>
             </ol>
           </nav>
 
@@ -156,7 +156,7 @@ export default function MarrakechPage() {
 
           <section id="quartiers" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Se repérer dans les principaux quartiers de Marrakech</h2>
+              <h2>Se repérer dans les principaux quartiers de Marrakech</h2>
             </div>
               <p>Marrakech est divisé en plusieurs quartiers : la <strong>Médina</strong>, le <strong>Guéliz</strong>, l'<strong>Hivernage</strong> et la <strong>Palmeraie</strong>.</p>
               <p>L’architecture de chacun d’entre eux est bien différente, révélant ainsi leur époque de construction.</p>
@@ -210,7 +210,7 @@ export default function MarrakechPage() {
 
           <section id="medina" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Zoom sur la médina, notre quartier coup de cœur</h2>
+              <h2>Zoom sur la médina, notre quartier coup de cœur</h2>
             </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>⧐ La MÉDINA, un vrai souk !</h3>
@@ -288,7 +288,7 @@ export default function MarrakechPage() {
 
           <section id="visites" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Que voir à Marrakech ? Les visites incontournables</h2>
+              <h2>Que voir à Marrakech ? Les visites incontournables</h2>
             </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>Le Jardin Majorelle</h3>
@@ -377,7 +377,7 @@ export default function MarrakechPage() {
 
           <section id="manger" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Où manger à Marrakech ?</h2>
+              <h2>Où manger à Marrakech ?</h2>
             </div>
               <p>Il arrive que des restaurants ne payent pas de mine à première vue. Ne vous laissez pas influencer, ils révèlent bien souvent un joli toit-terrasse avec une vue incroyable sur la ville !</p>
               <p>Nous avons nos petites habitudes quant aux endroits où manger et prendre un verre dans la médina…</p>
@@ -465,7 +465,7 @@ export default function MarrakechPage() {
 
           <section id="riads" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Riads où passer la journée</h2>
+              <h2>Riads où passer la journée</h2>
             </div>
               <p>Si comme nous, vous passez votre séjour dans un riad au cœur de la médina, il y a de fortes chances, en fonction de la gamme de votre hébergement, que vous n’ayez pas de piscine pour y faire quelques longueurs ou pour bronzer à son bord sur un transat !</p>
               <p><strong>De nombreux riads vous proposent des forfaits à la journée</strong> : repas et accès à la piscine avec le transport si nécessaire (en supplément). En effet, même si certains se trouvent dans la médina, la plupart se situent en dehors.</p>
@@ -533,7 +533,7 @@ export default function MarrakechPage() {
 
           <section id="loger" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Où loger à Marrakech ?</h2>
+              <h2>Où loger à Marrakech ?</h2>
             </div>
               <p>Finalement, tout dépend de ce que vous recherchez pour votre logement : gamme de tarif, piscine, services proposés, localisation ?</p>
               <p>C'est en tout cas sans hésitation que <strong>nous vous conseillons de loger dans un riad au cœur de la médina</strong>.</p>
@@ -551,7 +551,7 @@ export default function MarrakechPage() {
 
           <section id="ramadan" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Marrakech pendant le Ramadan, bonne idée ou pas ?</h2>
+              <h2>Marrakech pendant le Ramadan, bonne idée ou pas ?</h2>
             </div>
               <p>Vous connaissez l’expression « c’est quoi tout ce ramdam » ? Ramdam vient du mot ramadan. Si lors de la période du ramadan les journées sont calmes, le soir c’est un vrai ramdam !</p>
                             <p>Il y a une autre ambiance à Marrakech pendant la période du ramadan. La ville est comme au ralenti. En journée, les rues sont bien plus désertes qu’habituellement.</p>
@@ -570,7 +570,7 @@ export default function MarrakechPage() {
 
           <section id="organiser" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Tout savoir pour organiser son voyage à Marrakech</h2>
+              <h2>Tout savoir pour organiser son voyage à Marrakech</h2>
             </div>
             <div className="article-pratique">
 
@@ -711,7 +711,7 @@ export default function MarrakechPage() {
 
           <section id="agafay" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Désert d&apos;Agafay : une expérience aux portes de Marrakech</h2>
+              <h2>Désert d&apos;Agafay : une expérience aux portes de Marrakech</h2>
             </div>
             <p>Loin de l’effervescence et du tumulte de Marrakech, nous vous conseillons de vivre une expérience complètement magique... Celle de passer une <strong>nuit inoubliable dans le désert d’Agafay</strong> !</p>
             

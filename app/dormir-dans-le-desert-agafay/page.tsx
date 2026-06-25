@@ -129,7 +129,7 @@ export default function MarrakechPage() {
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
+            <h2 className="article-toc-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{display:"inline",verticalAlign:"middle",marginRight:"8px"}}><path d="M5 2H19C19.6 2 20 2.4 20 3V22L12 17L4 22V3C4 2.4 4.4 2 5 2Z"/></svg>Sommaire de l&apos;article</h2>
             <ol className="article-toc-list">
               <li><a href="#desert">Le désert d&apos;Agafay, aux portes de Marrakech</a></li>
               <li><a href="#camp">Quel camp choisir dans le désert d&apos;Agafay&nbsp;?</a></li>
