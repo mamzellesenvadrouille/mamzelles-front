@@ -298,7 +298,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                     <span className="agafay-tarif-title">Pour une journée</span>
                     
                   </div>
-                  <p>Une belle façon de découvrir la magie d&apos;Agafay sans dormir sur place !</p>
+                  <p>Une belle façon de découvrir la magie d&apos;Agafay sans dormir sur place.</p>
                   <div className="agafay-tarif-subblock-grid">
                   <div className="agafay-tarif-subblock">
                     <p className="agafay-tarif-camp-label"><a href="https://www.scarabeocamp.com" target="_blank" rel="noopener noreferrer">Scarabeo Camp</a></p>
