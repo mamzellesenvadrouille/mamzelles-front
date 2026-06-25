@@ -255,7 +255,7 @@
 
 .article-toc-list li { counter-increment: toc; display: flex; align-items: center; gap: 12px; font-size: 13px; }
 
-.article-toc-list li::before { content: '\2022'; font-size: 14px; color: var(--gold); font-weight: 600; flex-shrink: 0; }
+.article-toc-list li::before { content: '\2022'; font-size: 16px; color: var(--gold); flex-shrink: 0; line-height: 1; }
 
 .article-toc-list a { color: #555; transition: color .2s; }
 
@@ -623,7 +623,7 @@
 
 /* Espacement article-day-header */
 .article-madrid .article-day-header { margin-top: 30px; margin-bottom: 24px; }
-.article-madrid .article-day-badge { margin-bottom: 8px; }
+.article-madrid .article-day-badge { margin-bottom: 16px; }
 
 /* H3 */
 .article-madrid .article-section h3 { font-size: 32px; margin: 8px 0 16px; }
@@ -644,7 +644,10 @@
 /* Marge 24px entre photo et texte */
 .article-madrid .article-gallery-2 + p,
 .article-madrid .article-gallery-3 + p,
-.article-madrid .article-img-full + p { margin-top: 24px; }
+.article-madrid .article-img-full + p,
+.article-madrid .article-gallery-2 + h3,
+.article-madrid .article-gallery-3 + h3,
+.article-madrid .article-img-full + h3 { margin-top: 40px; }
 
 /* Marge 8px entre photos consÃ©cutives */
 .article-madrid .article-gallery-2 + .article-gallery-2,

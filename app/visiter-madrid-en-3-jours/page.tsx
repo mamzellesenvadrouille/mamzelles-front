@@ -121,7 +121,7 @@ export default function MadridPage() {
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title"><svg width="14" height="14" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l&apos;article</h2>
+            <h2 className="article-toc-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l&apos;article</h2>
             <ol className="article-toc-list">
               <li><a href="#que-faire">3 jours à Madrid, que faire ?</a></li>
               <li><a href="#jour1">Jour 1 — El Centro</a></li>
