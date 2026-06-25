@@ -670,3 +670,8 @@
 .article-madrid .article-avis + h3,
 .article-madrid .article-tip + h3,
 .article-madrid .article-must + h3 { margin-top: 8px; }
+
+/* Espace avant nouveau jour quand prÃ©cÃ©dÃ© d'un bloc avis/tip/must */
+.article-madrid .article-avis + .article-day-header,
+.article-madrid .article-tip + .article-day-header,
+.article-madrid .article-must + .article-day-header { margin-top: 30px; }
