@@ -489,7 +489,7 @@
 
 .sidebar-cta-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; z-index: 0; }
 
-.sidebar-cta-gradient { position: absolute; inset: 0; background: linear-gradient(to right, rgba(248,244,239,1) 0%, rgba(248,244,239,0.95) 40%, rgba(248,244,239,0.4) 62%, rgba(248,244,239,0) 78%); z-index: 1; }
+.sidebar-cta-gradient { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(248,244,239,1) 0%, rgba(248,244,239,0.95) 40%, rgba(248,244,239,0.4) 62%, rgba(248,244,239,0) 78%); z-index: 1; }
 
 .sidebar-cta-body { position: relative; z-index: 2; padding: 30px; display: flex; flex-direction: column; gap: 10px; }
 
