@@ -1162,4 +1162,4 @@
 .article-agafay .agafay-tarif-list-item { display: block; text-align: left !important; }
 
 /* Point dorÃ© devant les titres de sections */
-.article-agafay .article-day-header h2::before { content: '\2022'; color: var(--gold); font-size: 28px; margin-right: 12px; vertical-align: middle; }
+.article-agafay .article-day-header h2::before { content: '\2022'; color: var(--gold); font-size: 38px; margin-right: 12px; vertical-align: middle; }
