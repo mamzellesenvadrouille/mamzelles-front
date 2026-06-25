@@ -699,3 +699,164 @@
 .madrid-transport-card-body span { font-family: "Inter", sans-serif; font-size: 13px; color: var(--muted); line-height: 1.5; }
 
 @media (max-width: 768px) { .madrid-transport-grid { grid-template-columns: 1fr; } }
+
+/* PratiqueOnglets â€” mÃªme style que Marrakech */
+.article-madrid .article-pratique-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 20px;
+}
+
+.article-madrid .article-pratique-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 9px 16px 9px 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark);
+  cursor: pointer;
+  transition: background .2s, border-color .2s, color .2s;
+}
+
+.article-madrid .article-pratique-nav-icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.article-madrid .article-pratique-nav-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: var(--gold);
+  transition: stroke .2s;
+}
+
+.article-madrid .article-pratique-nav-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  transition: background .2s, color .2s;
+}
+
+.article-madrid .article-pratique-nav-btn:hover {
+  border-style: solid;
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.article-madrid .article-pratique-nav-btn-actif,
+.article-madrid .article-pratique-nav-btn-actif:hover {
+  background: var(--gold);
+  border-style: solid;
+  border-color: var(--gold);
+  color: #fff;
+}
+
+.article-madrid .article-pratique-nav-btn-actif .article-pratique-nav-icon svg,
+.article-madrid .article-pratique-nav-btn-actif:hover .article-pratique-nav-icon svg {
+  stroke: #fff;
+}
+
+.article-madrid .article-pratique-nav-btn-actif .article-pratique-nav-badge,
+.article-madrid .article-pratique-nav-btn-actif:hover .article-pratique-nav-badge {
+  background: #fff;
+  color: var(--gold);
+}
+
+.article-madrid .article-pratique-sub[hidden] {
+  display: none;
+}
+
+.article-madrid .article-pratique-sub {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 0;
+  animation: article-pratique-fade .25s ease;
+}
+
+@keyframes article-pratique-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.article-madrid .article-pratique-sub-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.article-madrid .article-pratique-sub-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.article-madrid .article-pratique-sub-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: #fff;
+}
+
+.article-madrid .article-pratique-sub-head h4 {
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 19px !important;
+  font-weight: 600 !important;
+  color: var(--dark) !important;
+  margin: 0 !important;
+}
+
+.article-madrid .article-pratique-sub p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+.article-madrid .article-pratique-sub p:last-child {
+  margin-bottom: 0;
+}
+
+.article-madrid .article-pratique-sub .article-gallery-2,
+.article-madrid .article-pratique-sub .article-gallery-3 {
+  margin: 12px 0;
+}
+
+.article-madrid .article-pratique-sub .article-tip,
+.article-madrid .article-pratique-sub .article-avis {
+  margin: 12px 0;
+}
+
+
+@media (max-width: 768px) {
+  .article-madrid .article-pratique-block { padding: 18px 18px !important; }
+  .article-madrid .article-pratique-title { font-size: 22px !important; }
+  .article-madrid .article-pratique-block h4 { font-size: 14px !important; }
+  .article-madrid .article-pratique-sub { padding: 16px 18px !important; }
+  .article-madrid .article-pratique-sub-head h4 { font-size: 17px !important; }
+  .article-madrid .article-pratique-sub-icon { width: 30px !important; height: 30px !important; }
+  .article-madrid .article-pratique-sub-icon svg { width: 15px !important; height: 15px !important; }
+  .article-madrid .article-pratique-nav-btn { font-size: 13px !important; padding: 8px 16px 8px 10px !important; }
+  .article-madrid .article-pratique-nav-icon svg { width: 15px !important; height: 15px !important; }
+}

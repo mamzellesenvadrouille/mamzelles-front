@@ -86,7 +86,7 @@ export default function MadridPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>80-100 €/j/pers.</span>
+          <span>90-120 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -383,9 +383,9 @@ export default function MadridPage() {
               <h2 className="article-section-h2">3 jours à Madrid, tout savoir pour organiser votre voyage</h2>
             </div>
             <h3>Où dormir ?</h3>
-            <p>Nous avons logé à l&apos;<a href="https://www.google.com/maps/place/?q=place_id:ChIJGbpsLGMoQg0RLmDZRucihwY" target="_blank" className="article-link article-resto-link-desktop">Hostal Goyal Pizzaro</a><a href="https://maps.app.goo.gl/p34xCNUWF6PNNAy17" target="_blank" className="article-link article-resto-link-mobile">Hostal Goyal Pizzaro</a> dans le quartier de Malasaña. Idéalement situé, propre et spacieux, c&apos;est une adresse que nous recommandons sans hésiter. Pour les budgets plus élevés, le quartier de Salamanca offre de belles options hôtelières. Dans tous les cas, privilégiez un logement dans Malasaña ou El Centro pour être à pied de tout.</p>
+            <p>Nous avons logé à l&apos;<a href="https://www.google.com/maps/place/?q=place_id:ChIJGbpsLGMoQg0RLmDZRucihwY" target="_blank" className="article-link article-resto-link-desktop">Hostal Goyal Pizzaro</a><a href="https://maps.app.goo.gl/p34xCNUWF6PNNAy17" target="_blank" className="article-link article-resto-link-mobile">Hostal Goyal Pizzaro</a> dans le quartier de Malasaña — idéalement situé, propre et spacieux, c&apos;est une adresse que nous recommandons sans hésiter. Dans tous les cas, privilégiez Malasaña ou El Centro pour être au cœur de tout : quartiers animés, bien situés et accessibles à pied.</p>
             <h3>Quel budget prévoir ?</h3>
-            <p>Madrid est une capitale accessible. Comptez environ <strong>80 à 120 € par personne et par jour</strong> en incluant l&apos;hébergement, les repas et les activités. Les tapas permettent de manger bien et pas cher — une bière + 2 tapas tourne autour de 4 à 6 € dans les bars du centre. Les musées nationaux (Prado, Reina Sofia) sont gratuits certains soirs.</p>
+            <p>Madrid est une capitale accessible. Comptez environ <strong>90 à 120 € par personne et par jour</strong> en incluant l&apos;hébergement, les repas et les activités. Les tapas permettent de manger bien et pas cher — une bière + 2 tapas tourne autour de 4 à 6 € dans les bars du centre. Les musées nationaux (Prado, Reina Sofia) sont gratuits certains soirs.</p>
             <h3>Arriver en avion</h3>
             <p>Il est désormais facile de trouver des vols directs à destination de Madrid à moindre coût. De <strong>nombreuses compagnies</strong> desservent maintenant la capitale espagnole. Les départs se font depuis la plupart des aéroports.</p>
             <p>Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136 € pour deux. Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>. Le tarif y était plus avantageux que si on les avait achetés avec un comparateur de vols.</p>
