@@ -1147,9 +1147,9 @@
 .agafay-tarif-list li:last-child { border-bottom: none; }
 .agafay-tarif-note { font-size: 12px !important; color: var(--gold) !important; font-style: italic; margin-bottom: 0 !important; }
 .agafay-tarif-subblock-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
-.agafay-tarif-camp-label { font-family: 'Cormorant Garamond', serif !important; font-size: 22px !important; font-weight: 600 !important; color: var(--gold) !important; font-style: italic !important; margin: 0 0 8px !important; }
+.agafay-tarif-camp-label { font-family: 'Cormorant Garamond', serif !important; font-size: 17px !important; font-weight: 600 !important; color: var(--gold) !important; font-style: italic !important; margin: 0 0 8px !important; white-space: nowrap !important; }
 @media (max-width: 768px) { .agafay-tarif-subblock-grid { grid-template-columns: 1fr; } }
-.agafay-tarif-subblock { background: rgba(200,149,108,0.06); border-radius: 6px; padding: 12px 14px; }
+.agafay-tarif-subblock { background: rgba(200,149,108,0.06); border-radius: 6px; padding: 12px 14px; text-align: left !important; }
 @media (max-width: 768px) { .agafay-tarif-grid { grid-template-columns: 1fr; gap: 14px; } }
 
 /* Marge H4 rÃ©duite */
