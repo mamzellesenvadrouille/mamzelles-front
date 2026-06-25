@@ -243,7 +243,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <h3 className="article-h3">Est-il possible de venir seulement à la journée ?</h3>
               <p><strong>La réponse est oui !</strong> Si vous ne souhaitez pas dormir sur place, vous avez aussi la possibilité de profiter des lieux seulement à la journée.</p>
               
-              <h4 className="article-h4">La Bohème</h4>
+              <h4 className="article-h4">⧐ <a href="https://boheme-marrakech.com" target="_blank" rel="noopener noreferrer">La Bohème</a></h4>
               <p>Nous avons également eu l&apos;occasion de passer une journée à <strong>La Bohème</strong>, un autre camp de la région. L&apos;endroit est indéniablement beau — grand, soigné, avec une piscine et une ambiance DJ lounge en fond sonore. On y mange très bien, et les activités proposées (buggy, balade à dromadaire) sont franchement sympas.</p>
               <p>Cela dit, nous avons moins accroché à l&apos;atmosphère générale. C&apos;est plus &quot;resort&quot;, plus festif — et on y perd un peu cette sensation d&apos;isolement total et d&apos;authenticité qui nous avait tant charmées au Scarabeo. Deux ambiances vraiment différentes, selon ce que vous recherchez !</p>
 
