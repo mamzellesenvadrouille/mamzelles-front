@@ -5,6 +5,7 @@ import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
 import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
+import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
   title: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
@@ -430,53 +431,60 @@ export default function MadridPage() {
               </div>
             </div>
             <h3>Comment se déplacer à Madrid ?</h3>
-            <div className="madrid-transport-grid">
-              <div className="madrid-transport-card">
-                <div className="madrid-transport-card-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M13 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/><path d="M7.5 8.5c1 .5 2 1 3 3l1 4 2-3 1.5 3"/></svg>
-                </div>
-                <div className="madrid-transport-card-body">
-                  <strong>À pied</strong>
-                  <span>Notre préféré. Déambuler dans ses rues est le meilleur moyen de s&apos;imprégner de l&apos;ambiance madrilène.</span>
-                </div>
-              </div>
-              <div className="madrid-transport-card">
-                <div className="madrid-transport-card-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="7.5" cy="16.5" r="1"/><circle cx="16.5" cy="16.5" r="1"/></svg>
-                </div>
-                <div className="madrid-transport-card-body">
-                  <strong>Métro</strong>
-                  <span>12 lignes, de 6 h 05 à 1 h 30. <a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">Plan du réseau →</a></span>
-                </div>
-              </div>
-              <div className="madrid-transport-card">
-                <div className="madrid-transport-card-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 17V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10"/><path d="M3 17h18"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg>
-                </div>
-                <div className="madrid-transport-card-body">
-                  <strong>Bus</strong>
-                  <span>Réseau dense, de 6 h 30 à 23 h 30. <a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">Planifier son trajet →</a></span>
-                </div>
-              </div>
-              <div className="madrid-transport-card">
-                <div className="madrid-transport-card-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5"/><path d="M3 12h18"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M9.5 17h5"/></svg>
-                </div>
-                <div className="madrid-transport-card-body">
-                  <strong>Bus panoramique</strong>
-                  <span>Toit décapotable, 2 circuits avec arrêts aux principaux sites. Idéal pour une première découverte.</span>
-                </div>
-              </div>
-              <div className="madrid-transport-card">
-                <div className="madrid-transport-card-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="5.5" cy="17.5" r="2.5"/><circle cx="18.5" cy="17.5" r="2.5"/><path d="M8 17.5h7M15 17.5l-3-8 2.5-.5M10 9.5l-1.5.5"/></svg>
-                </div>
-                <div className="madrid-transport-card-body">
-                  <strong>Vélos &amp; trottinettes</strong>
-                  <span>Location en libre-service, bornes partout en ville. Pour les plus actifs !</span>
-                </div>
-              </div>
-            </div>
+            <PratiqueOnglets onglets={[
+              {
+                id: 'apied',
+                label: 'À pied',
+                icon: <i className="ti ti-walk" style={{fontSize:'18px'}}></i>,
+                content: (
+                  <>
+                    <p>Notre moyen de transport préféré à Madrid ! Il fait beau très souvent, et déambuler dans ses rues est le meilleur moyen de s&apos;imprégner de l&apos;ambiance unique de la capitale. La plupart des quartiers incontournables sont accessibles à pied depuis le centre.</p>
+                  </>
+                ),
+              },
+              {
+                id: 'metro',
+                label: 'Métro',
+                icon: <i className="ti ti-train" style={{fontSize:'18px'}}></i>,
+                content: (
+                  <>
+                    <p>Le métro de Madrid est l&apos;un des plus développés d&apos;Europe avec <strong>12 lignes</strong> desservant l&apos;ensemble de la ville, de 6 h 05 à 1 h 30. Pratique, rapide et très bien indiqué.</p>
+                    <p><a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">Plan du réseau →</a></p>
+                  </>
+                ),
+              },
+              {
+                id: 'bus',
+                label: 'Bus',
+                icon: <i className="ti ti-bus" style={{fontSize:'18px'}}></i>,
+                content: (
+                  <>
+                    <p>Le réseau de bus est très dense et couvre les zones non desservies par le métro. Il fonctionne de 6 h 30 à 23 h 30, avec des bus de nuit (<em>búhos</em>) jusqu&apos;à l&apos;aube.</p>
+                    <p><a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">Planifier son trajet →</a></p>
+                  </>
+                ),
+              },
+              {
+                id: 'bus-panoramique',
+                label: 'Bus panoramique',
+                icon: <i className="ti ti-bus-stop" style={{fontSize:'18px'}}></i>,
+                content: (
+                  <>
+                    <p>Le bus panoramique à toit décapotable propose <strong>2 circuits</strong> avec arrêts aux principaux sites touristiques. Parfait pour une première découverte sans effort — vous pouvez monter et descendre à chaque arrêt.</p>
+                  </>
+                ),
+              },
+              {
+                id: 'velos',
+                label: 'Vélos & trottinettes',
+                icon: <i className="ti ti-bike" style={{fontSize:'18px'}}></i>,
+                content: (
+                  <>
+                    <p>Madrid dispose d&apos;un bon réseau de pistes cyclables et de nombreuses bornes de location en libre-service (<strong>BiciMAD</strong> pour les vélos électriques). Les trottinettes électriques sont également très présentes en ville. Idéal pour les plus actifs !</p>
+                  </>
+                ),
+              },
+            ]} />
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Notre conseil transport</strong><p>Optez pour la carte Multi (2,50 €) + 10 trajets Metrobús (7,30 €), valable métro zone A et tout le réseau bus. La carte est en vente dans toutes les stations de métro, ainsi qu&apos;à l&apos;aéroport. En alternative, la carte métro 48 h à 14,20 € si vous privilégiez le métro. Dans les deux cas, -50 % pour les enfants de moins de 11 ans.</p></div>
