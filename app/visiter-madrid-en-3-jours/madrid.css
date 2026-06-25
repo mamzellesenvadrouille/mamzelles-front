@@ -659,3 +659,9 @@
 .article-madrid .article-img-full + .article-gallery-2,
 .article-madrid .article-gallery-3 + .article-img-full,
 .article-madrid .article-img-full + .article-gallery-3 { margin-top: 8px; }
+
+/* SymÃ©trie espace avant ligne horizontale */
+.article-madrid .article-section > p:last-child,
+.article-madrid .article-section > .article-avis:last-child,
+.article-madrid .article-section > .article-tip:last-child,
+.article-madrid .article-section > .article-must:last-child { margin-bottom: 0; }
