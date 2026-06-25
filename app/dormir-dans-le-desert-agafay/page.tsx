@@ -285,10 +285,10 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                     <span className="agafay-tarif-sub">(2 jours)</span>
                   </div>
                   <p>Honnêtement, passer une nuit dans le désert d&apos;Agafay nécessite de <strong>prévoir une bonne petite enveloppe</strong>... !</p>
-                  <ul className="agafay-tarif-list">
-                    <li><strong>Tente 2 personnes</strong> — demi-pension comprise<br />2650 Dh (265 €)</li>
-                    <li><strong>Suite familiale 4 personnes</strong><br />3250 Dh (325 €)</li>
-                  </ul>
+                  <div className="agafay-tarif-list">
+                    <div className="agafay-tarif-list-item"><strong>Tente 2 personnes</strong> — demi-pension comprise<br />2650 Dh (265 €)</div>
+                    <div className="agafay-tarif-list-item"><strong>Suite familiale 4 personnes</strong><br />3250 Dh (325 €)</div>
+                  </div>
                   <p className="agafay-tarif-note">Plus vous serez nombreux, moins ce sera cher !</p>
                 </div>
 
@@ -302,18 +302,18 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                   <div className="agafay-tarif-subblock-grid">
                   <div className="agafay-tarif-subblock">
                     <p className="agafay-tarif-camp-label">Scarabeo Camp</p>
-                    <ul className="agafay-tarif-list">
-                      <li><strong>Adulte</strong> — 450 Dh (45 €)</li>
-                      <li><strong>Enfant</strong> (4-10 ans) — 225 Dh (22,50 €)</li>
-                    </ul>
+                    <div className="agafay-tarif-list">
+                      <div className="agafay-tarif-list-item"><strong>Adulte</strong> — 450 Dh (45 €)</div>
+                      <div className="agafay-tarif-list-item"><strong>Enfant</strong> (4-10 ans) — 225 Dh (22,50 €)</div>
+                    </div>
                     <p className="agafay-tarif-note">Accès piscine + déjeuner marocain inclus !</p>
                   </div>
                   <div className="agafay-tarif-subblock">
                     <p className="agafay-tarif-camp-label">La Bohème</p>
-                    <ul className="agafay-tarif-list">
-                      <li><strong>Adulte</strong> — 450 Dh (45 €)</li>
-                      <li><strong>Enfant</strong> — 250 Dh (25 €)</li>
-                    </ul>
+                    <div className="agafay-tarif-list">
+                      <div className="agafay-tarif-list-item"><strong>Adulte</strong> — 450 Dh (45 €)</div>
+                      <div className="agafay-tarif-list-item"><strong>Enfant</strong> — 250 Dh (25 €)</div>
+                    </div>
                     <p className="agafay-tarif-note">Piscine + déjeuner + transferts inclus !</p>
                   </div>
                   </div>
