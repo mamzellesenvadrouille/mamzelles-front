@@ -153,13 +153,8 @@ export default function MarrakechPage() {
               <p><strong>Le désert se situe à une trentaine de kilomètres de Marrakech</strong> (environ 40 min en voiture), sur les premières hauteurs du massif du Haut Atlas.</p>
               <p>Il s’agit d’un reg qui s’étend sur plusieurs centaines d’hectares. À ne pas confondre avec le désert d’Erg Chebbi, plus connu sous le nom des dunes de Merzouga dans le Sahara.</p>
               <div className="article-tip">
-                <div className="article-tip-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg>
-                </div>
-                <div className="article-tip-body">
-                  <span className="article-tip-title">Bon à savoir</span>
-                  <p>Un <span style={{fontWeight:700}}>erg</span> est un désert de sable, tandis qu&apos;un <span style={{fontWeight:700}}>reg</span> est un désert de pierre. Agafay est donc un désert rocailleux, à ne pas confondre avec les dunes de Merzouga dans le Sahara.</p>
-                </div>
+                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                <div><strong>Bon à savoir</strong><p>Un <strong>erg</strong> est un désert de sable, tandis qu&apos;un <strong>reg</strong> est un désert de pierre. Agafay est donc un désert rocailleux, à ne pas confondre avec les dunes de Merzouga dans le Sahara.</p></div>
               </div>
               <p><strong>Ce désert de dunes rocailleuses</strong> est juste incroyable ! On y trouve même une oasis d'environ sept hectares surnommée l’Oasis enchantée. Eucalyptus, oliviers et vignes qui s’y trouvent sont irrigués naturellement par l’Oued situé à proximité.</p>
                             <div className="article-gallery-2">
