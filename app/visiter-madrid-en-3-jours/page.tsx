@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import './marrakech.css';
+import './madrid.css';
 import Navbar from '../components/Navbar';
 import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
