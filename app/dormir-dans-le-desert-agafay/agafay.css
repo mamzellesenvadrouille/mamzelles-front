@@ -4,7 +4,7 @@
    ============================================ */
 
 @media (max-width: 768px) {
-  .hero-article .hero-overlay { background: linear-gradient(to bottom, rgba(10,5,2,0.35) 0%, rgba(10,5,2,0.65) 100%) !important; }
+  .hero-article .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.65) 0%, rgba(10,5,2,0.45) 50%, rgba(10,5,2,0.15) 100%) !important; }
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 45vh !important; min-height: 280px !important; }
   .hero-article .hero-content { padding: 0 24px 36px !important; bottom: -30px !important; }
@@ -489,7 +489,7 @@
 
 .sidebar-cta-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; z-index: 0; }
 
-.sidebar-cta-gradient { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(248,244,239,1) 0%, rgba(248,244,239,0.95) 40%, rgba(248,244,239,0.4) 62%, rgba(248,244,239,0) 78%); z-index: 1; }
+.sidebar-cta-gradient { position: absolute; inset: 0; background: linear-gradient(to right, rgba(248,244,239,1) 0%, rgba(248,244,239,0.95) 40%, rgba(248,244,239,0.4) 62%, rgba(248,244,239,0) 78%); z-index: 1; }
 
 .sidebar-cta-body { position: relative; z-index: 2; padding: 30px; display: flex; flex-direction: column; gap: 10px; }
 
