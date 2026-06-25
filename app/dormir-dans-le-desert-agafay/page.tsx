@@ -304,7 +304,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                     <p className="agafay-tarif-camp-label">Scarabeo Camp</p>
                     <div className="agafay-tarif-list">
                       <div className="agafay-tarif-list-item"><strong>Adulte</strong> — 450 Dh (45 €)</div>
-                      <div className="agafay-tarif-list-item"><strong>Enfant</strong> (4-10 ans) — 225 Dh (22,50 €)</div>
+                      <div className="agafay-tarif-list-item"><strong>Enfant (4-10 ans)</strong> — 225 Dh (22,50 €)</div>
                     </div>
                     <p className="agafay-tarif-note">Accès piscine + déjeuner marocain inclus !</p>
                   </div>
