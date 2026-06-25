@@ -280,7 +280,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <div className="agafay-tarif-grid">
                 <div className="agafay-tarif-card">
                   <div className="agafay-tarif-header">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 2.76 2.24 5 5 5s5-2.24 5-5a5 5 0 0 0-5-5z"/><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <span className="agafay-tarif-title">Pour une nuit</span>
                     <span className="agafay-tarif-sub">(+ 2 jours)</span>
                   </div>
@@ -298,6 +298,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                     <span className="agafay-tarif-title">Pour une journée</span>
                     <span className="agafay-tarif-sub">(day pass)</span>
                   </div>
+                  <p>Une belle façon de découvrir la magie d&apos;Agafay sans dormir sur place !</p>
                   <ul className="agafay-tarif-list">
                     <li><strong>Adulte</strong> — 350 Dh (35 €)</li>
                     <li><strong>Enfant</strong> (moins de 12 ans) — 185 Dh (18,50 €)</li>
@@ -306,12 +307,13 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                 </div>
               </div>
 
-              <p>S&apos;il vous manque des informations pour organiser votre séjour au Scarabeo Camp, n&apos;hésitez pas à consulter leur <strong><a href="https://www.scarabeocamp.com" target="_blank" rel="noopener noreferrer">site internet</a></strong>.</p>
-
               <div className="article-avis">
                 <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="var(--gold)" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
                 <div><strong>Le mot des MamZelles</strong><p>Nous tenons à préciser que ce n&apos;est pas une collaboration : il s&apos;agit juste d&apos;un gros coup de cœur pour cet établissement !</p></div>
               </div>
+
+              <p>S&apos;il vous manque des informations pour organiser votre séjour au Scarabeo Camp, n&apos;hésitez pas à consulter leur <strong><a href="https://www.scarabeocamp.com" target="_blank" rel="noopener noreferrer">site internet</a></strong>.</p>
+
           </section>
 
           <section id="marrakech" className="article-section">
