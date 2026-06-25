@@ -165,7 +165,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5271-768x1024.jpg" alt="Derb Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
-                <h3>⧐ La MÉDINA, ou la vieille ville de Marrakech</h3>
+                <h3>La MÉDINA, ou la vieille ville de Marrakech</h3>
               </div>
               <p>Cerclée par ses 19 kilomètres de remparts, la médina de Marrakech s’étend sur 600 hectares. Elle est la plus peuplée de l'Afrique du Nord. Classée au patrimoine mondial de l’humanité par l'UNESCO, elle est le cœur historique de Marrakech.</p>
               <p>La médina est la partie la plus touristique, mais aussi la plus authentique de la ville rouge. Elle est elle-même composée de nombreux quartiers.</p>
@@ -175,7 +175,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5675-768x1024.jpg" alt="Boutique cuir Marrakech" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
-                <h3>⧐ De l'autre côté des remparts, le GUÉLIZ</h3>
+                <h3>De l'autre côté des remparts, le GUÉLIZ</h3>
               </div>
               <p>Le Guéliz est le premier quartier moderne de Marrakech. Ce quartier occidentalisé a été construit lors du protectorat français sur le Maroc. Pour la petite anecdote, le nom « Guéliz » proviendrait de la déformation de la prononciation du mot « Église » !</p>
               <p>Dans ce quartier, loin de l’effervescence de la médina, vous trouverez de longues rues et de larges avenues, toutes bordées de terrasses de cafés, de restaurants et de bars.</p>
@@ -186,7 +186,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6279-769x1024.jpg" alt="Boutiques Guéliz" loading="lazy" style={{flex: '0.751', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
-                <h3>⧐ L'HIVERNAGE, ou le quartier chic de Marrakech</h3>
+                <h3>L'HIVERNAGE, ou le quartier chic de Marrakech</h3>
               </div>
               <p><strong>Hôtels prestigieux, salons de cocktails, casinos, clubs lounges, boites de nuit et voitures de luxe</strong>… Bienvenue dans l’Hivernage !</p>
               <p>Ce quartier attire les populations aisées à la recherche de modernité et de vie nocturne.</p>
@@ -196,7 +196,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_1556-1-1024x768.jpg" alt="Hivernage Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
-                <h3>⧐ La PALMERAIE, ou le poumon de la ville rouge</h3>
+                <h3>La PALMERAIE, ou le poumon de la ville rouge</h3>
               </div>
               <p>Ce quartier est clairement un oasis de verdure ! Pourtant, il doit malheureusement céder aujourd’hui de la place aux complexes hôteliers de luxe…</p>
               <p>Cette vaste zone de 13 000 hectares est un véritable patrimoine naturel marocain. En effet, on y trouve plus de 150 000 arbres, et notamment des palmiers, qui permettent aux marocains de produire des dattes, de l'huile, du vin de palme, des cœurs de palmier ou encore du bois.</p>
@@ -213,7 +213,7 @@ export default function MarrakechPage() {
               <h2>Zoom sur la médina, notre quartier coup de cœur</h2>
             </div>
               <div className="article-day-header article-day-header-tight">
-                <h3>⧐ La MÉDINA, un vrai souk !</h3>
+                <h3>La MÉDINA, un vrai souk !</h3>
               </div>
               <p>C'est le bazar anarchique que l’on trouve dans la médina qui en fait particulièrement son charme. Les souks sont idéaux pour se plonger pleinement dans la vie marocaine.</p>
               <p>Une question nous est souvent posée : <strong>faut-il prendre un guide pour visiter la médina ?</strong> Sans réfléchir, notre réponse est non. Nous sommes 2 nanas et nous ne nous sommes jamais senties en insécurité. De plus un guide, qu'il vous faudra payer, vous conduira dans des endroits que vous pouvez découvrir par vous-même.</p>
@@ -255,7 +255,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_7001-1024x768.jpg" alt="Souk Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
-                <h3>⧐ L’incroyable place JEMAA EL-FNA !</h3>
+                <h3>L’incroyable place JEMAA EL-FNA !</h3>
               </div>
               <p>Au cœur de la médina se trouve la fameuse place Jemaa el-Fna. Nous la conseillons comme <strong>point de départ pour visiter la vielle ville</strong>.</p>
               <p>Plus qu’une simple place publique, elle est l'attraction phare de la ville rouge. De jour comme de nuit, c’est l’ébullition ! Concrètement, <strong>l</strong><strong>a place Jamaa el-Fna est l’endroit le plus vivant de la médina</strong>.</p>

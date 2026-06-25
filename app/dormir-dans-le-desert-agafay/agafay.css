@@ -1162,7 +1162,7 @@
 .article-agafay .agafay-tarif-list-item { display: block; text-align: left !important; }
 
 /* Point dorÃ© devant les titres de sections */
-.article-agafay .article-day-header h2::before { content: '\00BB\00BB'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
+.article-agafay .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
 
 .article-agafay #organiser h3.article-h3:last-of-type { margin-top: 36px !important; }
 
