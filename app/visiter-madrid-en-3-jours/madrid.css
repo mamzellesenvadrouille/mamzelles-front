@@ -862,4 +862,4 @@
 /* Espace harmonisÃ© blocs â†’ H3 */
 .article-madrid .article-avis + h3,
 .article-madrid .article-tip + h3,
-.article-madrid .article-must + h3 { margin-top: 8px; }
+.article-madrid .article-must + h3 { margin-top: 8px !important; }
