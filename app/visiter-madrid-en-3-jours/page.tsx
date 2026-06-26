@@ -9,11 +9,11 @@ import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
   title: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
-  description: 'Retrouvez nos itinéraires pour visiter Madrid en 3 jours. Plongez-vous dans l\'ambiance espagnole avec le top de nos visites incontournables !',
+  description: 'Madrid en 3 jours : Palais Royal, Malasaña, El Retiro… notre itinéraire complet par quartier, nos coups de cœur et tous nos conseils pratiques.',
   alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours' },
   openGraph: {
     title: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
-    description: 'Retrouvez nos itinéraires pour visiter Madrid en 3 jours.',
+    description: 'Madrid en 3 jours : itinéraire complet par quartier, coups de cœur et conseils pratiques.',
     url: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid.jpeg', width: 1920, height: 1536 }],
@@ -27,7 +27,7 @@ export default function MadridPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
-    description: "Retrouvez nos itinéraires pour visiter Madrid en 3 jours. Plongez-vous dans l'ambiance espagnole avec le top de nos visites incontournables !",
+    description: "Madrid en 3 jours : Palais Royal, Malasaña, El Retiro… notre itinéraire complet par quartier, nos coups de cœur et tous nos conseils pratiques.",
     image: 'https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid.jpeg',
     datePublished: '2022-01-08',
     dateModified: '2026-06-21',
