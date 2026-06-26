@@ -998,3 +998,6 @@
 
 /* Chevron dorÃ© devant les H2 */
 .article-philippines .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
+
+/* Bloc itinÃ©raire â€” sans ampoule, largeur rÃ©duite */
+.philippines-itin-tip { max-width: 480px; }

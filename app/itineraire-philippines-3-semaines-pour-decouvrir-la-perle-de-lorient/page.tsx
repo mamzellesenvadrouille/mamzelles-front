@@ -157,8 +157,7 @@ export default function PhilippinesPage() {
             </div>
             <p>Nous avions une envie irréfutable de découvrir de belles plages, des îles paradisiaques aux eaux turquoise et émeraude, de la végétation luxuriante, et des paysages à couper le souffle.</p>
             <p>Entre terre et mer, c&apos;est partiiiii pour les Philippines !</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-tip philippines-itin-tip">
               <div><strong>Notre itinéraire</strong>
               <p><i className="ti ti-plane" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>Manille → Palawan, El Nido (3 nuits)<br />
               <i className="ti ti-plane" aria-hidden="true" style={{color: 'var(--gold)', marginRight: '6px', fontSize: '18px', verticalAlign: 'middle'}}></i>El Nido → Coron (3 nuits)<br />
