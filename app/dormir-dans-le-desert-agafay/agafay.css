@@ -1,10 +1,10 @@
 /* ============================================
-   MARRAKECH â€” Styles spÃ©cifiques Ã  l'article
+   MARRAKECH Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  l'article
    Extrait de globals.css
    ============================================ */
 
 @media (max-width: 768px) {
-  .hero-article .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.65) 0%, rgba(10,5,2,0.45) 50%, rgba(10,5,2,0.15) 100%) !important; }
+  .hero-article .hero-overlay { background: linear-gradient(to bottom, rgba(10,5,2,0.45) 0%, rgba(10,5,2,0.75) 100%) !important; }
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 45vh !important; min-height: 280px !important; }
   .hero-article .hero-content { padding: 0 24px 36px !important; bottom: -30px !important; }
@@ -729,7 +729,7 @@
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
 /* ============================================
-   BLOCS OÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ MANGER ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Port Barton
+   BLOCS OÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ MANGER ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Port Barton
    ============================================ */
 
 .pb-resto-section {
@@ -841,7 +841,7 @@
 }
 
 /* ============================================
-   SECTION ORGANISER â€” article-pratique (repris depuis Londres)
+   SECTION ORGANISER Ã¢â‚¬â€ article-pratique (repris depuis Londres)
    ============================================ */
 .article-agafay .article-pratique {
   display: flex;
@@ -941,8 +941,8 @@
   background: var(--gold);
 }
 
-/* --- Sous-cartes premium pour les blocs pratiques Ãƒ  plusieurs sous-thÃƒÂ¨mes
-   (ex: "Comment s'y rendre", "Comment se dÃƒÂ©placer") : chaque sous-thÃƒÂ¨me
+/* --- Sous-cartes premium pour les blocs pratiques ÃƒÆ’  plusieurs sous-thÃƒÆ’Ã‚Â¨mes
+   (ex: "Comment s'y rendre", "Comment se dÃƒÆ’Ã‚Â©placer") : chaque sous-thÃƒÆ’Ã‚Â¨me
    devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
    de texte. Aucune perte de contenu, juste une meilleure structure. --- */
 .article-agafay .article-pratique-nav {
@@ -1092,7 +1092,7 @@
   margin: 12px 0;
 }
 
-/* --- Pratique : mobile (placÃƒÂ© APRÃƒË†S le desktop, comme convenu) --- */
+/* --- Pratique : mobile (placÃƒÆ’Ã‚Â© APRÃƒÆ’Ã‹â€ S le desktop, comme convenu) --- */
 @media (max-width: 768px) {
   .article-agafay .article-pratique-block { padding: 18px 18px !important; }
   .article-agafay .article-pratique-title { font-size: 20px !important; }
@@ -1106,7 +1106,7 @@
 }
 
 
-/* Cartes riads â€” display block pour empiler les infos */
+/* Cartes riads Ã¢â‚¬â€ display block pour empiler les infos */
 .article-agafay .pb-riad-card {
   background: var(--bg);
 }
@@ -1118,7 +1118,7 @@
   color: rgba(26,21,18,0.70);
 }
 
-/* Blocs tip dans section organiser â€” style liseret gauche */
+/* Blocs tip dans section organiser Ã¢â‚¬â€ style liseret gauche */
 .article-agafay #organiser .article-tip {
   background: #fff;
   border: 1px solid var(--line);
@@ -1152,7 +1152,7 @@
 .agafay-tarif-subblock { background: rgba(200,149,108,0.06); border-radius: 6px; padding: 12px 14px; text-align: left !important; }
 @media (max-width: 768px) { .agafay-tarif-grid { grid-template-columns: 1fr; gap: 14px; } }
 
-/* Marge H4 rÃ©duite */
+/* Marge H4 rÃƒÂ©duite */
 .article-agafay .article-h4 { margin-top: 20px !important; }
 
 /* Force left align in tarif subblocks */
@@ -1161,7 +1161,7 @@
 .article-agafay .agafay-tarif-list,
 .article-agafay .agafay-tarif-list-item { display: block; text-align: left !important; }
 
-/* Point dorÃ© devant les titres de sections */
+/* Point dorÃƒÂ© devant les titres de sections */
 .article-agafay .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
 
 .article-agafay #organiser h3.article-h3:last-of-type { margin-top: 36px !important; }
