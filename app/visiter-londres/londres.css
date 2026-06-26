@@ -425,7 +425,7 @@
 
 .article-avis p { font-size: 13px !important; color: #555 !important; line-height: 1.9 !important; margin-bottom: 0 !important; }
 
-.article-tip { display: flex; gap: 16px; background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 8px; padding: 18px 24px 18px 22px; margin: 28px 0; }
+.article-tip { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 28px 0; }
 
 .article-tip-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
 
@@ -1289,10 +1289,13 @@
 /* Chevron dorÃ© devant les H2 */
 .article-londres .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
 
-/* Espace symÃ©trique autour des blocs must/tip aprÃ¨s une image */
-.article-londres .article-gallery-2 + .article-must,
-.article-londres .article-gallery-3 + .article-must,
-.article-londres .article-img-full + .article-must,
-.article-londres .article-gallery-2 + .article-tip,
-.article-londres .article-gallery-3 + .article-tip,
-.article-londres .article-img-full + .article-tip { margin-top: 24px !important; }
+/* Espace symÃ©trique autour des blocs must/tip */
+.article-londres .article-must,
+.article-londres .article-tip { margin-top: 24px !important; margin-bottom: 24px !important; }
+
+.article-londres .article-must + .article-gallery-2,
+.article-londres .article-must + .article-gallery-3,
+.article-londres .article-must + .article-img-full,
+.article-londres .article-tip + .article-gallery-2,
+.article-londres .article-tip + .article-gallery-3,
+.article-londres .article-tip + .article-img-full { margin-top: 0 !important; }

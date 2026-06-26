@@ -374,15 +374,6 @@ export default function VisiterLondresPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Si vous aimez ce genre d’ambiance décalée, nous vous conseillons de visiter ces quartiers le dimanche.</p></div>
             </div>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3237-1-scaled-1024x768.jpeg" alt="Old Spitalfields" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3238-scaled-1024x768.jpeg" alt="Old Spitalfields 1" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4319-scaled-1024x686.jpeg" alt="Graff 2" className="article-img-full" loading="lazy" />
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4304-scaled-1024x686.jpeg" alt="Graff 4" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0189-scaled-1024x768.jpeg" alt="Brick Lane" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -396,6 +387,15 @@ export default function VisiterLondresPage() {
                   <p>Avec une cuisine authentique et variée, le plus difficile ici sera de choisir le stand qui vous tentera le plus !</p>
                 </div>
               </div>
+            </div>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3237-1-scaled-1024x768.jpeg" alt="Old Spitalfields" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3238-scaled-1024x768.jpeg" alt="Old Spitalfields 1" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4319-scaled-1024x686.jpeg" alt="Graff 2" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_4304-scaled-1024x686.jpeg" alt="Graff 4" loading="lazy" style={{flex: '1.493', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0189-scaled-1024x768.jpeg" alt="Brick Lane" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
 
             <div className="article-resto">
