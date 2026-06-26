@@ -450,6 +450,10 @@ export default function MadridPage() {
                   <>
                     <p>Le métro de Madrid est l&apos;un des plus développés d&apos;Europe avec <strong>12 lignes</strong> desservant l&apos;ensemble de la ville, de 6 h 05 à 1 h 30. Pratique, rapide et très bien indiqué.</p>
                     <p><a href="https://www.metromadrid.es/es" target="_blank" rel="noopener noreferrer" className="article-link">Plan du réseau →</a></p>
+                    <div className="article-tip">
+                      <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                      <div><strong>Notre conseil transport</strong><p>Optez pour la carte Multi (2,50&nbsp;€) + 10 trajets Metrobús (7,30&nbsp;€), valable métro zone A et tout le réseau bus. La carte est en vente dans toutes les stations de métro, ainsi qu&apos;à l&apos;aéroport. En alternative, la carte métro 48&nbsp;h à 14,20&nbsp;€ si vous privilégiez le métro. Dans les deux cas, -50&nbsp;% pour les enfants de moins de 11 ans.</p></div>
+                    </div>
                   </>
                 ),
               },
@@ -461,6 +465,10 @@ export default function MadridPage() {
                   <>
                     <p>Le réseau de bus est très dense et couvre les zones non desservies par le métro. Il fonctionne de 6 h 30 à 23 h 30, avec des bus de nuit (<em>búhos</em>) jusqu&apos;à l&apos;aube.</p>
                     <p><a href="https://www.emtmadrid.es/EMTBUS/Mi-itinerario?lang=es-ES" target="_blank" rel="noopener noreferrer" className="article-link">Planifier son trajet →</a></p>
+                    <div className="article-tip">
+                      <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                      <div><strong>Notre conseil transport</strong><p>Optez pour la carte Multi (2,50&nbsp;€) + 10 trajets Metrobús (7,30&nbsp;€), valable métro zone A et tout le réseau bus. La carte est en vente dans toutes les stations de métro, ainsi qu&apos;à l&apos;aéroport. En alternative, la carte métro 48&nbsp;h à 14,20&nbsp;€ si vous privilégiez le métro. Dans les deux cas, -50&nbsp;% pour les enfants de moins de 11 ans.</p></div>
+                    </div>
                   </>
                 ),
               },
