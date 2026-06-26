@@ -385,7 +385,11 @@ export default function MadridPage() {
             <h3>Où dormir ?</h3>
             <p>Nous avons logé à l&apos;<a href="https://www.google.com/maps/place/?q=place_id:ChIJGbpsLGMoQg0RLmDZRucihwY" target="_blank" className="article-link article-resto-link-desktop">Hostal Goyal Pizzaro</a><a href="https://maps.app.goo.gl/p34xCNUWF6PNNAy17" target="_blank" className="article-link article-resto-link-mobile">Hostal Goyal Pizzaro</a> dans le quartier de Malasaña — idéalement situé, propre et spacieux, c&apos;est une adresse que nous recommandons sans hésiter. Dans tous les cas, privilégiez Malasaña ou El Centro pour être au cœur de tout : quartiers animés, bien situés et accessibles à pied.</p>
             <h3>Quel budget prévoir ?</h3>
-            <p>Madrid est une capitale accessible. Comptez environ <strong>90 à 120 € par personne et par jour</strong> en incluant l&apos;hébergement, les repas et les activités. Les tapas permettent de manger bien et pas cher — une bière + 2 tapas tourne autour de 4 à 6 € dans les bars du centre. Les musées nationaux (Prado, Reina Sofia) sont gratuits certains soirs.</p>
+            <p>Madrid est une capitale accessible. Comptez environ <strong>90 à 120 € par personne et par jour</strong> en incluant l&apos;hébergement, les repas et les activités. Les tapas permettent de manger bien et pas cher — une bière + 2 tapas tourne autour de 4 à 6 € dans les bars du centre.</p>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Les musées nationaux (Prado, Reina Sofia) sont gratuits certains soirs.</p></div>
+            </div>
             <h3>Arriver en avion</h3>
             <p>Il est désormais facile de trouver des vols directs à destination de Madrid à moindre coût. De <strong>nombreuses compagnies</strong> desservent maintenant la capitale espagnole. Les départs se font depuis la plupart des aéroports.</p>
             <p>Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136 € pour deux. Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>. Le tarif y était plus avantageux que si on les avait achetés avec un comparateur de vols.</p>
@@ -493,7 +497,7 @@ export default function MadridPage() {
                 ),
               },
             ]} />
-            <h3 style={{marginTop:'48px'}}>Quand partir ?</h3>
+            <h3 style={{marginTop:'32px'}}>Quand partir ?</h3>
             <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
             <p>Les mois de <strong>mai, juin et septembre</strong> restent les plus agréables : températures douces, pluies inexistantes, et les nombreux parcs explosent de mille couleurs.</p>
             <p>Nous vous conseillons d&apos;éviter <strong>juillet et août</strong> qui peuvent être très chauds — et très fréquentés !</p>
