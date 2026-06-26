@@ -797,7 +797,7 @@ export default function VisiterLondresPage() {
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9284-scaled-1024x768.jpeg" alt="Stratford Street Londres 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 </div>
               </div>
-              <div className="article-pratique-block">
+              <div className="article-pratique-block article-pratique-block-deplacement">
                 <h3 className="article-pratique-title">Comment se déplacer dans la capitale ?</h3>
                 <p>Comme vous l’aurez compris tout au long de cet article, il existe donc différents moyens de transports pour se déplacer au centre de Londres et dans sa périphérie.</p>
                 <p>Le <strong>métro</strong>, le <strong>train DLR</strong> (pour se rendre dans l’Est), les <strong>tramways du sud de Londres</strong>, les <strong>trains Overground et National Rail</strong> de la ville, le <strong>téléphérique de la Tamise</strong>, le <strong>Uber Boat</strong>, le <strong>bus rouge</strong> (mythique avec son étage !) et le <strong>taxi</strong> (majoritairement noir, il fait partie du décor de la capitale !).</p>
