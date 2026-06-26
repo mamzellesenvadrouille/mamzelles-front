@@ -1316,6 +1316,7 @@
 /* Bloc Se loger : mÃªme visu que pratique-sub */
 .article-londres .article-pratique-block-loger .article-avis {
   margin: 22px 0 !important;
+  margin-top: 20px !important;
   background: #fff !important;
   border: 1px solid var(--line) !important;
   border-left: 3px solid var(--gold) !important;
