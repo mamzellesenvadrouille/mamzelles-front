@@ -924,8 +924,8 @@ export default function VisiterLondresPage() {
                       <>
                         <p>Cela dépend de vos envies, puisque pour nous, Londres se découvre à toutes les périodes de l’année !</p>
                         <p>Vous verrez ci-dessous que chaque saison a ses avantages et ses inconvénients...</p>
-                          <li><strong>En hiver</strong> (déc-fév) : Les journées sont courtes et froides. Il pleut souvent et il arrive même qu'il neige ! Les musées et les sites touristiques sont moins bondés que le reste de l'année, ainsi, les prix des visites sont plus intéressants.</li>
                         <ul className="article-pratique-list-gold">
+                          <li><strong>En hiver</strong> (déc-fév) : Les journées sont courtes et froides. Il pleut souvent et il arrive même qu'il neige ! Les musées et les sites touristiques sont moins bondés que le reste de l'année, ainsi, les prix des visites sont plus intéressants.</li>
                           <li><strong>Au printemps</strong> (mars-mai) : Le temps est frais et humide. Les foules commencent à affluer dans la capitale. Les parcs, de plus en plus fréquentés par les Londoniens, sortent de l'hiver et les arbres fleurissent.</li>
                           <li><strong>En été</strong> (juin-août) : Le temps est doux à chaud. Les journées sont longues et ensoleillées. Les vacances scolaires et la saison touristique coïncident, de ce fait, les attractions sont souvent bondées.</li>
                           <li><strong>En automne</strong> (sept-nov) : Notre préférée ! Cette belle saison est parfois fraîche, mais elle reste ensoleillée. Après l'été et la rentrée scolaire, Londres est plus paisible. Il y fait bon vivre... Les parcs sont habillés de couleurs orangées et sont juste splendides !</li>
@@ -939,8 +939,8 @@ export default function VisiterLondresPage() {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M15 9a2 2 0 1 0 -4 0v5a2 2 0 0 1 -2 2h6"/><path d="M9 12h4"/></svg>,
                     content: (
                       <>
-                          <li><strong>DAB</strong> : La monnaie du Royaume-Uni est la livre sterling (£). On trouve de partout dans la ville des distributeurs de billets acceptant les Visa, MasterCard, Cirrus ou Maestro, et American Express. Il est essentiel de savoir que les retraits d'espèces avec une carte étrangère entraînent souvent des frais.</li>
                         <ul className="article-pratique-list-gold">
+                          <li><strong>DAB</strong> : La monnaie du Royaume-Uni est la livre sterling (£). On trouve de partout dans la ville des distributeurs de billets acceptant les Visa, MasterCard, Cirrus ou Maestro, et American Express. Il est essentiel de savoir que les retraits d'espèces avec une carte étrangère entraînent souvent des frais.</li>
                           <li><strong>Cartes de crédit</strong> : Boutiques, taxis... acceptent les cartes de crédit.</li>
                           <li><strong>Change</strong> : Si vous souhaitez changer des euros en livres, nous vous conseillons de vous rendre dans les bureaux de poste, ils ne prélèvent aucune commission.</li>
                           <li><strong>Pourboire</strong> : Au restaurant, le service est souvent inclus dans l'addition. Si ce n'est pas le cas, il est d'usage de laisser un pourboire de 10% (sauf si vous n'êtes pas satisfait !). En tout cas, inutile de laisser des « tips » quand on prend une bière ou un verre de vin dans un pub...</li>
