@@ -989,7 +989,7 @@
 
 .article-londres .article-pratique-sub .article-tip,
 .article-londres .article-pratique-sub .article-avis {
-  margin: 12px 0;
+  margin: 12px 0 !important;
   background: #fff !important;
   border: 1px solid var(--line) !important;
   border-left: 3px solid var(--gold) !important;
