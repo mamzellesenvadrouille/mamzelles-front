@@ -1,6 +1,6 @@
 /* ============================================
-   VISITER LONDRES â€” Styles spÃ©cifiques Ã  lâ€™article
-   CalquÃ© sur port-barton.css (scopÃ© .article-londres)
+   VISITER LONDRES Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  lÃ¢â‚¬â„¢article
+   CalquÃƒÂ© sur port-barton.css (scopÃƒÂ© .article-londres)
    ============================================ */
 
 @media (max-width: 768px) {
@@ -281,11 +281,11 @@
 
 .article-toc-title { font-family: "Cormorant Garamond", serif; font-size: 20px; font-weight: 600; margin-bottom: 16px; color: var(--dark); }
 
-.article-toc-list { list-style: none; counter-reset: toc; display: flex; flex-direction: column; gap: 10px; }
+.article-toc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 
-.article-toc-list li { counter-increment: toc; display: flex; align-items: center; gap: 12px; font-size: 13px; }
+.article-toc-list li { display: flex; align-items: center; gap: 12px; font-size: 13px; }
 
-.article-toc-list li::before { content: counter(toc, decimal-leading-zero); font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 1px; flex-shrink: 0; }
+.article-toc-list li::before { content: '\2022'; font-size: 16px; color: var(--gold); flex-shrink: 0; line-height: 1; }
 
 .article-toc-list a { color: #555; transition: color .2s; }
 
@@ -329,8 +329,8 @@
 
 .article-img-full { width: 100%; height: auto; display: block; margin: 8px 0; }
 
-/* Recadrage ponctuel pour une image prÃ©cise demandÃ©e en effet "pano"
-   (coupe le bas de la photo) â€” usage ciblÃ©, ne touche pas aux galeries. */
+/* Recadrage ponctuel pour une image prÃƒÂ©cise demandÃƒÂ©e en effet "pano"
+   (coupe le bas de la photo) Ã¢â‚¬â€ usage ciblÃƒÂ©, ne touche pas aux galeries. */
 .article-img-pano { max-height: 480px; object-fit: cover; object-position: top; }
 
 .article-pratique-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -746,7 +746,7 @@
 
 
 /* ============================================
-   BLOC Â« INFORMATIONS PRATIQUES Â» (spÃ©cifique Londres)
+   BLOC Ã‚Â« INFORMATIONS PRATIQUES Ã‚Â» (spÃƒÂ©cifique Londres)
    ============================================ */
 .article-londres .article-pratique {
   display: flex;
@@ -846,8 +846,8 @@
   background: var(--gold);
 }
 
-/* --- Sous-cartes premium pour les blocs pratiques Ã  plusieurs sous-thÃ¨mes
-   (ex: "Comment s'y rendre", "Comment se dÃ©placer") : chaque sous-thÃ¨me
+/* --- Sous-cartes premium pour les blocs pratiques Ãƒ  plusieurs sous-thÃƒÂ¨mes
+   (ex: "Comment s'y rendre", "Comment se dÃƒÂ©placer") : chaque sous-thÃƒÂ¨me
    devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
    de texte. Aucune perte de contenu, juste une meilleure structure. --- */
 .article-londres .article-pratique-nav {
@@ -997,7 +997,7 @@
   margin: 12px 0;
 }
 
-/* --- Pratique : mobile (placÃ© APRÃˆS le desktop, comme convenu) --- */
+/* --- Pratique : mobile (placÃƒÂ© APRÃƒË†S le desktop, comme convenu) --- */
 @media (max-width: 768px) {
   .article-londres .article-pratique-block { padding: 18px 18px !important; }
   .article-londres .article-pratique-title { font-size: 22px !important; }
@@ -1012,8 +1012,8 @@
 
 
 /* ============================================
-   BLOC Â« POUR MANGER Â» â€” fiche carnet de voyage
-   (en-tÃªte sombre + tampon prix + carte resto)
+   BLOC Ã‚Â« POUR MANGER Ã‚Â» Ã¢â‚¬â€ fiche carnet de voyage
+   (en-tÃƒÂªte sombre + tampon prix + carte resto)
    ============================================ */
 .article-londres .article-resto {
   margin: 24px 0;
@@ -1126,7 +1126,7 @@
 }
 
 /* ============================================
-   BLOC Â« POUR S'Y RENDRE Â» â€” timeline itinÃ©raire
+   BLOC Ã‚Â« POUR S'Y RENDRE Ã‚Â» Ã¢â‚¬â€ timeline itinÃƒÂ©raire
    ============================================ */
 .article-londres .article-rendre {
   background: var(--bg);
@@ -1239,7 +1239,7 @@
   color: var(--dark);
 }
 
-/* deuxiÃ¨me mode de transport dans le mÃªme bloc : nouvelle timeline sÃ©parÃ©e */
+/* deuxiÃƒÂ¨me mode de transport dans le mÃƒÂªme bloc : nouvelle timeline sÃƒÂ©parÃƒÂ©e */
 .article-londres .article-rendre-or {
   display: flex;
   align-items: center;
@@ -1285,3 +1285,6 @@
   .resto-head-text-full { display: none; }
   .resto-head-text-short { display: inline; }
 }
+
+/* Chevron dorÃ© devant les H2 */
+.article-londres .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }

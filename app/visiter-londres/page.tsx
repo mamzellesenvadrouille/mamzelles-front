@@ -9,7 +9,7 @@ import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
   title: "Visiter Londres : que faire en 7 jours par quartier",
-  description: "Notre itinéraire complet pour visiter Londres en 7 jours, quartier par quartier : que faire, où manger et nos meilleurs bons plans pratiques.",
+  description: "Visiter Londres en 7 jours par quartier : Westminster, Notting Hill, Camden, Shoreditch… notre itinéraire complet, nos adresses préférées et nos coups de cœur.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-londres' },
   openGraph: {
     title: "Visiter Londres : que faire en 7 jours par quartier",
@@ -28,7 +28,7 @@ export default function VisiterLondresPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: 'Visiter Londres : que faire en 7 jours par quartier',
-    description: "Notre itinéraire complet pour visiter Londres en 7 jours, quartier par quartier : que faire, où manger et nos meilleurs bons plans pratiques.",
+    description: "Visiter Londres en 7 jours par quartier : Westminster, Notting Hill, Camden, Shoreditch… notre itinéraire complet, nos adresses préférées et nos coups de cœur.",
     image: 'https://mamzellesenvadrouille.com/Londres.webp',
     datePublished: '2021-10-19',
     dateModified: '2026-06-21',
@@ -123,16 +123,16 @@ export default function VisiterLondresPage() {
           {/* SOMMAIRE */}
           <nav className="article-toc">
             <h2 className="article-toc-title">📌 Sommaire de l’article</h2>
-            <ol className="article-toc-list">
-              <li><a href="#jour-1-westminster">📍 Jour 1 — Westminster</a></li>
-              <li><a href="#jour-2-southwark">📍 Jour 2 — Southwark &amp; South Bank, La City</a></li>
-              <li><a href="#jour-3-notting">📍 Jour 3 — Notting Hill</a></li>
-              <li><a href="#jour-4-brick">📍 Jour 4 — Brick Lane, Shoreditch &amp; Spitalfields</a></li>
-              <li><a href="#jour-5-covent">📍 Jour 5 — Covent Garden, Soho, Chinatown &amp; Piccadilly</a></li>
-              <li><a href="#jour-6-camden">📍 Jour 6 — Camden Town, Stratford</a></li>
-              <li><a href="#jour-7-brighton">📍 Jour 7 — Brighton, à 1 h de train de Londres</a></li>
-              <li><a href="#pratique">📍 Informations pratiques</a></li>
-            </ol>
+            <ul className="article-toc-list">
+              <li><a href="#jour-1-westminster">Jour 1 — Westminster</a></li>
+              <li><a href="#jour-2-southwark">Jour 2 — Southwark &amp; South Bank, La City</a></li>
+              <li><a href="#jour-3-notting">Jour 3 — Notting Hill</a></li>
+              <li><a href="#jour-4-brick">Jour 4 — Brick Lane, Shoreditch &amp; Spitalfields</a></li>
+              <li><a href="#jour-5-covent">Jour 5 — Covent Garden, Soho, Chinatown &amp; Piccadilly</a></li>
+              <li><a href="#jour-6-camden">Jour 6 — Camden Town, Stratford</a></li>
+              <li><a href="#jour-7-brighton">Jour 7 — Brighton, à 1 h de train de Londres</a></li>
+              <li><a href="#pratique">Informations pratiques</a></li>
+            </ul>
           </nav>
 
           {/* INTRO */}
@@ -199,7 +199,7 @@ export default function VisiterLondresPage() {
               <span className="article-day-badge">Jour 2</span>
               <h2>Southwark &amp; South Bank, La City</h2>
             </div>
-            <h3>📍 Southwark &amp; South Bank</h3>
+            <h3>Southwark &amp; South Bank</h3>
             <p>Modernes et historiques à la fois, ils font partie des quartiers incontournables de Londres. Situés sur les bords de la Tamise, ils offrent une multitude d’attractions.</p>
             <p>Commencez par prendre de la hauteur en montant dans le <strong>London Eye</strong> à 135 m ! Vous profiterez d’une vue panoramique à couper le souffle sur la ville. Pour réserver vos tickets, c’est <a href="https://www.londoneye.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
             <p>Puis, découvrez le <strong>Millenium Bridge</strong>, un pont piéton en acier, qui parait être suspendu au-dessus du fleuve. Il relie le quartier de Southwark à La City.</p>
@@ -254,7 +254,7 @@ export default function VisiterLondresPage() {
                 </div>
               </div>
             </div>
-            <h3>📍 La City</h3>
+            <h3>La City</h3>
             <p>La City est l’un des quartiers les plus anciens de la capitale où se côtoient des édifices historiques majestueux, tels que le <strong>Tower Bridge</strong> et d’immenses gratte-ciel. En effet, il est à la fois le centre historique et le plus gros quartier des affaires de la ville. Le contraste des paysages est ici incroyable !</p>
             <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur ! Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
             <p>Pour les plus téméraires, et moyennant £13.40 (15,80 €), vous pouvez emprunter la passerelle en verre (<a href="https://www.towerbridge.org.uk" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42 m du sol. Sensations garanties !</p>
@@ -404,7 +404,7 @@ export default function VisiterLondresPage() {
               <span className="article-day-badge">Jour 5</span>
               <h2>Covent Garden, Soho, Chinatown &amp; Piccadilly</h2>
             </div>
-            <h3>📍 Covent Garden</h3>
+            <h3>Covent Garden</h3>
             <p>En ébullition ! C’est comme cela que nous qualifierons ce quartier très animé. C’est l’unique endroit à Londres où les spectacles de rue sont autorisés. Il est donc fréquent de croiser des artistes de rue (jongleurs, cracheurs de feu, musiciens, etc.), ce qui apporte une atmosphère particulière à ce lieu.</p>
             <p><strong>Covent Garden</strong> est surtout connu pour son sublime <strong>marché couvert</strong>, telle une immense serre en plein coeur de Londres, ses stands de bijoux, de vêtements, d’objets d’artisanat, et ses boutiques de mode.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9628-scaled-1024x768.jpeg" alt="Covent Garden Londres" className="article-img-full" loading="lazy" />
@@ -439,7 +439,7 @@ export default function VisiterLondresPage() {
                 </div>
               </div>
             </div>
-            <h3>📍 Soho, Chinatown &amp; Piccadilly</h3>
+            <h3>Soho, Chinatown &amp; Piccadilly</h3>
             <p>En continuant votre chemin, vous vous retrouverez à <strong>Soho</strong> avec son charme bohème et sa diversité. Ce petit quartier est connu aujourd’hui pour être le quartier gay de Londres.</p>
             <p>Situé près de <strong>Leicester Square</strong>, n’hésitez pas à faire un petit détour par <strong>Chinatown</strong>, où de grandes arches chinoises marquent le début du quartier. Cet incroyable quartier chinois en plein coeur de Londres est surprenant, tant par sa décoration traditionnelle, que par le nombre de boutiques et de restaurants asiatiques que l’on y trouve. Pour autant, ne vous attendez pas à un endroit immense, vous seriez déçus ! Chinatown se résume à une grande avenue, mais juste ce qu’il faut pour nous plonger dans l’ambiance.</p>
             <p>À 5 minutes à pied, vous arriverez facilement à <strong>Piccadilly Circus</strong>. Cette place est mondialement connue pour ses panneaux publicitaires géants et lumineux. Elle est d’ailleurs souvent comparée à une version miniature de Times Square à New York. Piccadilly Circus est un endroit toujours très fréquenté et animé.</p>
@@ -474,7 +474,7 @@ export default function VisiterLondresPage() {
               <span className="article-day-badge">Jour 6</span>
               <h2>Camden Town, Stratford</h2>
             </div>
-            <h3>📍 Camden Town</h3>
+            <h3>Camden Town</h3>
             <p>Vous voilà dans le quartier le plus connu pour sa culture underground et alternative.</p>
             <p>En effet, il n’est pas peu fréquent de croiser des punks à crête verte ou des gothiques chaussés de New Rocks ! C’est un quartier original, dont l’excentricité est une norme.</p>
             <p>Dès la sortie de métro, vous débarquerez dans « un autre monde » ! Vous déboucherez tout d’abord sur <strong>Camden High Street</strong>, une rue commerçante populaire qui regorge de boutiques et de pubs aux enseignes colorées, plus extravagantes les unes que les autres. C’est notamment l’occasion d’y acheter un petit souvenir de la capitale, les prix, n’étant pas affichés, sont donc facilement négociables.</p>
@@ -535,7 +535,7 @@ export default function VisiterLondresPage() {
                 </div>
               </div>
             </div>
-            <h3>📍 Stratford</h3>
+            <h3>Stratford</h3>
             <p>Nous avons été très agréablement surprises par ce <strong>nouveau quartier</strong> que nous ne connaissions pas et que nous avons découvert lors de notre dernier séjour.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9510-scaled-1024x768.jpeg" alt="Stratford Londres" className="article-img-full" loading="lazy" />
             <p>Notamment connu pour son centre commercial le plus grand d’Europe (<strong>Westfield</strong>), ce quartier de l’est de Londres est également célèbre depuis 2012 grâce aux Jeux Olympiques d’été qui s’y sont déroulés.</p>
