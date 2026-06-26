@@ -390,7 +390,7 @@ export default function MadridPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Les musées nationaux (Prado, Reina Sofia) sont gratuits certains soirs.</p></div>
             </div>
-            <h3>Arriver en avion</h3>
+            <h3 style={{marginTop:'32px'}}>Arriver en avion</h3>
             <p>Il est désormais facile de trouver des vols directs à destination de Madrid à moindre coût. De <strong>nombreuses compagnies</strong> desservent maintenant la capitale espagnole. Les départs se font depuis la plupart des aéroports.</p>
             <p>Pour notre part, nous avons voyagé avec la compagnie <strong>Iberia</strong> depuis Nice, en vol direct. Les billets nous sont revenus à 136 € pour deux. Nous les avons directement acheté sur leur <a href="https://www.iberia.com/fr/chercheur-vols/" target="_blank" rel="noopener noreferrer" className="article-link">site</a>. Le tarif y était plus avantageux que si on les avait achetés avec un comparateur de vols.</p>
             <p>Nous avons été en tout cas ravies de voyager avec cette compagnie. Aucun retard sur les vols aller et retour, personnel très sympa… Un petit en-cas sucré ou salé est offert pendant la traversée.</p>
@@ -434,7 +434,7 @@ export default function MadridPage() {
                 </div>
               </div>
             </div>
-            <h3>Comment se déplacer à Madrid ?</h3>
+            <h3 style={{marginTop:'32px'}}>Comment se déplacer à Madrid ?</h3>
             <PratiqueOnglets onglets={[
               {
                 id: 'apied',
