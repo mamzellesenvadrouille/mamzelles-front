@@ -817,6 +817,12 @@
 .article-londres .article-pratique-block .article-avis {
   margin: 16px 0;
 }
+.article-londres .article-pratique-block .article-tip {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  padding: 18px 24px 18px 22px;
+}
 
 .article-londres .article-pratique-list {
   list-style: none;
