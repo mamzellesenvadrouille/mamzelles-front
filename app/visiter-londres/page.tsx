@@ -324,6 +324,19 @@ export default function VisiterLondresPage() {
             </div>
             <p>Le <strong>vendredi</strong> et le <strong>samedi</strong>, rendez-vous à la célèbre brocante de <strong>Portobello</strong>, devenue l’attraction phare de ce quartier. On y trouve vraiment de tout. Ce marché typique se présente comme le plus grand marché d’antiquités du monde, où plus de 1000 vendeurs se rassemblent.</p>
             <p>Vous trouverez aussi à Notting Hill, notamment à <strong>Ledbury Road</strong> et <strong>Westbourne Grove</strong>, de nombreuses boutiques chics, de décoration, d’objets vintages et insolites.</p>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
+                  <span className="article-resto-tag">Mar → Dim</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJdwn8yacPdkgRK_hk82Ttt5o" target="_blank" className="article-resto-link-desktop">Cheeky Scone</a><a href="https://maps.app.goo.gl/5CkDbw8M79UMeUtR8" target="_blank" className="article-resto-link-mobile">Cheeky Scone</a></p>
+                  <p className="article-resto-sub">Spécialistes des scones · Notting Hill</p>
+                  <p>À deux pas de Portobello Road, ce café artisanal propose des scones fraîchement préparés chaque jour dans des dizaines de parfums originaux — lemon blueberry, toffee apple, cheese tomato... Avec clotted cream et jam, bien sûr. Un incontournable !</p>
+                </div>
+              </div>
+            </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
@@ -397,6 +410,45 @@ export default function VisiterLondresPage() {
                 </div>
               </div>
             </div>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span className="resto-head-text-full">Notre adresse coup de cœur</span><span className="resto-head-text-short">Notre coup de cœur</span></span>
+                  <span className="article-resto-tag">Réservation conseillée</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJxYs1ArocdkgR-G13PLmofec" target="_blank" className="article-resto-link-desktop">Dishoom Shoreditch</a><a href="https://maps.app.goo.gl/FC4CWvc1QmbWniZC6" target="_blank" className="article-resto-link-mobile">Dishoom Shoreditch</a></p>
+                  <p className="article-resto-sub">Cuisine indienne-iranienne · Shoreditch</p>
+                  <p>Une institution à Londres ! Dishoom propose une cuisine indienne d'inspiration iranienne dans un cadre de café de Bombay des années 1960. Black daal, chicken ruby, garlic naan... Les plats sont généreux et les saveurs incroyables. File d'attente quasi assurée, mais ça vaut le coup !</p>
+                </div>
+              </div>
+            </div>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
+                  <span className="article-resto-tag">Burgers</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJibKTL7ccdkgRQF8h6shQij0" target="_blank" className="article-resto-link-desktop">Black Bear Burger</a><a href="https://maps.app.goo.gl/nXhYxTivYRvXaoJQ9" target="_blank" className="article-resto-link-mobile">Black Bear Burger</a></p>
+                  <p className="article-resto-sub">Burgers primés · Boxpark Shoreditch</p>
+                  <p>Élu parmi les meilleurs burgers du monde, le Black Bear Burger au Boxpark de Shoreditch est une adresse à ne pas manquer si vous aimez les burgers. Le double Miso Bacon Burger est leur spécialité — juteux, savoureux, inoubliable.</p>
+                </div>
+              </div>
+            </div>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
+                  <span className="article-resto-tag">Burgers</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ-d5QKsgEdkgRJR2U3AGxhyc" target="_blank" className="article-resto-link-desktop">Bleecker Burger</a><a href="https://maps.app.goo.gl/PbWYaPMwz2PSdZa78" target="_blank" className="article-resto-link-mobile">Bleecker Burger</a></p>
+                  <p className="article-resto-sub">Burgers artisanaux · Spitalfields</p>
+                  <p>Autre référence des burgers londoniens, Bleecker est installé à Spitalfields Market. Simple, sans fioritures, mais d'une qualité irréprochable. Le double cheeseburger est leur signature.</p>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section id="jour-5-covent" className="article-section">
@@ -464,6 +516,45 @@ export default function VisiterLondresPage() {
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
                   <div><span className="article-rendre-stop-title">Station Tottenham Court Road</span><p><strong>Northern Line</strong> (noire) ou <strong>Central Line</strong> (rouge).</p></div>
+                </div>
+              </div>
+            </div>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
+                  <span className="article-resto-tag">Brunch</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJX_OPq9QEdkgRwIpAEYl2RYc" target="_blank" className="article-resto-link-desktop">The Breakfast Club</a><a href="https://maps.app.goo.gl/C8TNm3yikY4fKYer6" target="_blank" className="article-resto-link-mobile">The Breakfast Club</a></p>
+                  <p className="article-resto-sub">Brunch incontournable · Soho</p>
+                  <p>The Breakfast Club est LA référence du brunch à Londres. Pancakes, eggs benedict, granola bowls... Le menu est généreux et les produits sont frais. Comptez un peu d'attente aux heures de pointe — ça vaut vraiment le détour !</p>
+                </div>
+              </div>
+            </div>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
+                  <span className="article-resto-tag">Sunday Roast · Viandes</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJOTAQhtMEdkgR9ZmC_mZR0UM" target="_blank" className="article-resto-link-desktop">Blacklock Soho</a><a href="https://maps.app.goo.gl/nuXA4X1iZd74Rvin7" target="_blank" className="article-resto-link-mobile">Blacklock Soho</a></p>
+                  <p className="article-resto-sub">Sunday roast &amp; viandes · Soho</p>
+                  <p>Blacklock est réputé pour ses viandes grillées et son Sunday roast. Un cadre intimiste en sous-sol, une ambiance décontractée et des plats généreux. La cheesecake maison est à tomber !</p>
+                </div>
+              </div>
+            </div>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
+                  <span className="article-resto-tag">Afternoon tea · Réservation obligatoire</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJk3umitYEdkgRdi1T77lCf78" target="_blank" className="article-resto-link-desktop">Fortnum &amp; Mason — Diamond Jubilee Tea Salon</a><a href="https://maps.app.goo.gl/TEV9xsrDgPnSJGkC9" target="_blank" className="article-resto-link-mobile">Fortnum &amp; Mason Tea Salon</a></p>
+                  <p className="article-resto-sub">Afternoon tea · Piccadilly</p>
+                  <p>Pour une expérience typiquement britannique, le Diamond Jubilee Tea Salon de Fortnum &amp; Mason est une adresse de rêve. Scones, sandwichs et pâtisseries raffinées dans un cadre élégant. Réservation obligatoire et tenue correcte exigée.</p>
                 </div>
               </div>
             </div>
