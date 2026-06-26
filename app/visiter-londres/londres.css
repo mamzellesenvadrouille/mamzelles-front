@@ -813,15 +813,6 @@
   margin: 14px 0;
 }
 
-.article-londres .article-pratique-block .article-tip,
-.article-londres .article-pratique-block .article-avis {
-  margin: 28px 0;
-  background: #fff !important;
-  border: 1px solid var(--line) !important;
-  border-left: 3px solid var(--gold) !important;
-  padding: 18px 24px 18px 22px !important;
-}
-
 .article-londres .article-pratique-list {
   list-style: none;
   margin: 0;
