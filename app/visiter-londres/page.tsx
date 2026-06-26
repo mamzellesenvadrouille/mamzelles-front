@@ -122,7 +122,7 @@ export default function VisiterLondresPage() {
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title">📌 Sommaire de l’article</h2>
+            <h2 className="article-toc-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l’article</h2>
             <ul className="article-toc-list">
               <li><a href="#jour-1-westminster">Jour 1 — Westminster</a></li>
               <li><a href="#jour-2-southwark">Jour 2 — Southwark &amp; South Bank, La City</a></li>
@@ -595,59 +595,7 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/12/IMG_9340-scaled-715x1024.jpg" alt="Regent’s Park Londres" loading="lazy" style={{flex: '0.698', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" loading="lazy" style={{flex: '1.313', minWidth: 0}} />
             </div>
-            <div className="article-resto">
-              <div className="article-resto-item">
-                <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
-                  <span className="article-resto-tag">Ambiance cosy</span>
-                </div>
-                <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJU0_M_eMadkgRVOGDDv1SSjQ" target="_blank" className="article-resto-link-desktop">Honest Burgers Camden</a><a href="https://maps.app.goo.gl/ZqL6cRaRTcrGH2JWA" target="_blank" className="article-resto-link-mobile">Honest Burgers Camden</a></p>
-                  <p className="article-resto-sub">Burgers faits maison · Camden Lock</p>
-                  <p>Si vous n’avez pas envie de manger sur le pouce, ce restaurant à l’ambiance cosy et conviviale, en plein cœur du marché de Camden Lock, vous fera saliver les papilles avec sa carte de burgers faits maison !</p>
-                </div>
-              </div>
-            </div>
-            <div className="article-rendre">
-              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
-              <p className="article-rendre-intro">Deux possibilités s’offrent à vous :</p>
-              <div className="article-rendre-timeline">
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">En métro</span><p>Prendre la <strong>Northern Line</strong> (ligne noire) et s’arrêter à la station <strong>Camden Town</strong>.</p></div>
-                </div>
-              </div>
-              <div className="article-rendre-or">ou</div>
-              <div className="article-rendre-timeline">
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot article-rendre-stop-alt" />
-                  <div><span className="article-rendre-stop-title">Station Warwick Avenue</span><p>Prenez le métro (<strong>Bakerloo Line</strong>, ligne marron) jusqu’à Little Venice pour commencer la croisière.</p></div>
-                </div>
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot article-rendre-stop-alt" />
-                  <div><span className="article-rendre-stop-title">Balade en péniche, 45 minutes</span><p>Cette jolie balade reposante vous permet de découvrir Londres d’une façon atypique. Vous traverserez Regent’s Park, apercevrez le London Zoo, et longerez de magnifiques demeures aux façades victoriennes, avant d’arriver à Camden Town. Le tarif pour cette <a href="https://www.getyourguide.fr/londres-l57/londres-regent-s-canal-waterbus-little-venice-camden-lock-t390028/" target="_blank" rel="noopener noreferrer" className="article-link">balade en péniche</a> est de £12 (14 €) par personne.</p></div>
-                </div>
-              </div>
-            </div>
-            <h3>Stratford</h3>
-            <p>Nous avons été très agréablement surprises par ce <strong>nouveau quartier</strong> que nous ne connaissions pas et que nous avons découvert lors de notre dernier séjour.</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9510-scaled-1024x768.jpeg" alt="Stratford Londres" className="article-img-full" loading="lazy" />
-            <p>Notamment connu pour son centre commercial le plus grand d’Europe (<strong>Westfield</strong>), ce quartier de l’est de Londres est également célèbre depuis 2012 grâce aux Jeux Olympiques d’été qui s’y sont déroulés.</p>
-            <p>En effet, le quartier réaménagé pour l’occasion accueillait le village olympique mais aussi diverses infrastructures : stades, piscine, vélodrome, le parc olympique Queen Elizabeth et l’<strong>ArcelorMittal Orbit</strong> (emblème des J.O 2012).</p>
-            <p>Cette dernière, une étrange tour métallique de 115 m, vous offrira une vue imprenable sur l’ensemble du parc.</p>
-            <p>Depuis 2016, une attraction a été ajoutée à la tour. Il s’agit d’un toboggan long de 178 m, le plus long du monde ! Une <a href="https://arcelormittalorbit.com" target="_blank" rel="noopener noreferrer" className="article-link">activité</a> bien sympathique à faire en famille ou entre amis.</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9788-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
-            </div>
-            <p>Aujourd’hui, le quartier continue de se développer et les londoniens ont bien investi les lieux. Le village olympique a été reconverti en logements, hôtels et espaces de travail pour les entreprises.</p>
-            <p>Vous trouverez de nombreux parcs fleuris et très bien entretenus, les Anglais adorent ça ! Du coup, c’était l’endroit rêvé pour nous avec Aladdin !</p>
-            <p>Dans le coin, vous pouvez également vous balader le long de <strong>rives aménagées</strong>, où des péniches à la décoration bohème ou rétro sont amarrées et de <strong>nombreux bars et restaurants</strong> typiquement anglais sont implantés.</p>
-            <p>On vous conseille d’y faire un tour. Cet endroit est apaisant et ressourçant à côté de l’effervescence connue du coeur de la ville !</p>
-            <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0007-scaled-1024x764.jpeg" alt="Stratford Londres 2" loading="lazy" style={{flex: '1.34', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9545-scaled-1024x768.jpeg" alt="Stratford Londres nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-            </div>
+
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
