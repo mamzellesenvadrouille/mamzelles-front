@@ -123,8 +123,8 @@ export default function PhilippinesPage() {
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
-            <ol className="article-toc-list">
+            <h2 className="article-toc-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l&apos;article</h2>
+            <ul className="article-toc-list">
               <li><a href="#itineraire">Notre itinéraire en 3 semaines</a></li>
               <li><a href="#palawan">📍 Palawan : El Nido et Coron</a></li>
               <li><a href="#banaue">📍 Banaue &amp; Batad</a></li>
@@ -133,7 +133,7 @@ export default function PhilippinesPage() {
               <li><a href="#siargao">📍 Siargao — L&apos;île des surfeurs</a></li>
               <li><a href="#budget">Quel budget pour 3 semaines ?</a></li>
               <li><a href="#pratique">Tout savoir pour organiser votre voyage</a></li>
-            </ol>
+            </ul>
           </nav>
 
           {/* INTRO */}

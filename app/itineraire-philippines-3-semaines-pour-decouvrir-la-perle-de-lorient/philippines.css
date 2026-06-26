@@ -1,5 +1,5 @@
 /* ============================================
-   PHILIPPINES ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Styles spÃƒÆ’Ã‚Â©cifiques ÃƒÆ’  l'article
+   PHILIPPINES ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Styles spÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©cifiques ÃƒÆ’Ã†â€™  l'article
    Extrait de globals.css
    ============================================ */
 
@@ -273,11 +273,11 @@
 
 .article-toc-title { font-family: "Cormorant Garamond", serif; font-size: 20px; font-weight: 600; margin-bottom: 16px; color: var(--dark); }
 
-.article-toc-list { list-style: none; counter-reset: toc; display: flex; flex-direction: column; gap: 10px; }
+.article-toc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 
-.article-toc-list li { counter-increment: toc; display: flex; align-items: center; gap: 12px; font-size: 13px; }
+.article-toc-list li { display: flex; align-items: center; gap: 12px; font-size: 13px; }
 
-.article-toc-list li::before { content: counter(toc, decimal-leading-zero); font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 1px; flex-shrink: 0; }
+.article-toc-list li::before { content: '\2022'; font-size: 16px; color: var(--gold); flex-shrink: 0; line-height: 1; }
 
 .article-toc-list a { color: #555; transition: color .2s; }
 
@@ -722,7 +722,7 @@
 }
 
 /* ============================================
-   SECTION ORGANISER â€” article-pratique (repris depuis Londres)
+   SECTION ORGANISER Ã¢â‚¬â€ article-pratique (repris depuis Londres)
    ============================================ */
 .article-philippines .article-pratique {
   display: flex;
@@ -822,8 +822,8 @@
   background: var(--gold);
 }
 
-/* --- Sous-cartes premium pour les blocs pratiques Ãƒ  plusieurs sous-thÃƒÂ¨mes
-   (ex: "Comment s'y rendre", "Comment se dÃƒÂ©placer") : chaque sous-thÃƒÂ¨me
+/* --- Sous-cartes premium pour les blocs pratiques ÃƒÆ’  plusieurs sous-thÃƒÆ’Ã‚Â¨mes
+   (ex: "Comment s'y rendre", "Comment se dÃƒÆ’Ã‚Â©placer") : chaque sous-thÃƒÆ’Ã‚Â¨me
    devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
    de texte. Aucune perte de contenu, juste une meilleure structure. --- */
 .article-philippines .article-pratique-nav {
@@ -973,7 +973,7 @@
   margin: 12px 0;
 }
 
-/* --- Pratique : mobile (placÃƒÂ© APRÃƒË†S le desktop, comme convenu) --- */
+/* --- Pratique : mobile (placÃƒÆ’Ã‚Â© APRÃƒÆ’Ã‹â€ S le desktop, comme convenu) --- */
 @media (max-width: 768px) {
   .article-philippines .article-pratique-block { padding: 18px 18px !important; }
   .article-philippines .article-pratique-title { font-size: 22px !important; }
@@ -987,7 +987,7 @@
 }
 
 
-/* Texte attÃ©nuÃ© dans les onglets pratique (cohÃ©rence avec Londres) */
+/* Texte attÃƒÂ©nuÃƒÂ© dans les onglets pratique (cohÃƒÂ©rence avec Londres) */
 .article-philippines .article-pratique-sub .pratique-item p {
   color: #555 !important;
 }
@@ -995,3 +995,6 @@
   color: var(--dark) !important;
   font-weight: 600 !important;
 }
+
+/* Chevron dorÃ© devant les H2 */
+.article-philippines .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
