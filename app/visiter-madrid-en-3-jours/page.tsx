@@ -493,7 +493,7 @@ export default function MadridPage() {
                 ),
               },
             ]} />
-            <h3>Quand partir ?</h3>
+            <h3 style={{marginTop:'48px'}}>Quand partir ?</h3>
             <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
             <p>Les mois de <strong>mai, juin et septembre</strong> restent les plus agréables : températures douces, pluies inexistantes, et les nombreux parcs explosent de mille couleurs.</p>
             <p>Nous vous conseillons d&apos;éviter <strong>juillet et août</strong> qui peuvent être très chauds — et très fréquentés !</p>
