@@ -862,9 +862,4 @@
 /* Espace harmonisÃ© blocs â†’ H3 */
 .article-madrid .article-avis + h3,
 .article-madrid .article-tip + h3,
-.article-madrid .article-must + h3 { margin-top: 32px; }
-
-/* Neutraliser margin-bottom des blocs avant H3 pour cohÃ©rence avec p + h3 */
-.article-madrid .article-avis:has(+ h3),
-.article-madrid .article-tip:has(+ h3),
-.article-madrid .article-must:has(+ h3) { margin-bottom: 0; }
+.article-madrid .article-must + h3 { margin-top: 8px; }
