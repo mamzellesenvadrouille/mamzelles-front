@@ -602,8 +602,8 @@ export default function VisiterLondresPage() {
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9510-scaled-1024x768.jpeg" alt="Stratford Londres" className="article-img-full" loading="lazy" />
             <p>Cette étrange tour métallique de 115 m vous offrira une vue imprenable sur l'ensemble du parc. Depuis 2016, une attraction a été ajoutée à la tour : un toboggan long de 178 m, le plus long du monde ! Une <a href="https://arcelormittalorbit.com" target="_blank" rel="noopener noreferrer" className="article-link">activité</a> bien sympathique à faire en famille ou entre amis.</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9788-scaled-1024x768.jpeg" alt="ArcelorMittal Orbit Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-1024x768.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9788-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <p>Aujourd'hui, le quartier continue de se développer et les londoniens ont bien investi les lieux. Le village olympique a été reconverti en logements, hôtels et espaces de travail. Vous trouverez de nombreux parcs fleuris et très bien entretenus — c'était l'endroit rêvé pour nous avec Aladdin&nbsp;!</p>
             <p>Dans le coin, vous pouvez également vous balader le long de <strong>rives aménagées</strong>, où des péniches à la décoration bohème sont amarrées et de <strong>nombreux bars et restaurants</strong> typiquement anglais sont implantés. On vous conseille d'y faire un tour&nbsp;!</p>
