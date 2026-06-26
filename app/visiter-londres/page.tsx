@@ -9,7 +9,7 @@ import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
   title: "Visiter Londres : que faire en 7 jours par quartier",
-  description: "Visiter Londres en 7 jours par quartier : Westminster, Notting Hill, Camden, Shoreditch… notre itinéraire complet, nos adresses préférées et nos coups de cœur.",
+  description: "Que faire à Londres en une semaine ? Westminster, Notting Hill, Camden, Shoreditch… notre itinéraire complet par quartier, nos adresses et nos coups de cœur.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-londres' },
   openGraph: {
     title: "Visiter Londres : que faire en 7 jours par quartier",
@@ -28,7 +28,7 @@ export default function VisiterLondresPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: 'Visiter Londres : que faire en 7 jours par quartier',
-    description: "Visiter Londres en 7 jours par quartier : Westminster, Notting Hill, Camden, Shoreditch… notre itinéraire complet, nos adresses préférées et nos coups de cœur.",
+    description: "Que faire à Londres en une semaine ? Westminster, Notting Hill, Camden, Shoreditch… notre itinéraire complet par quartier, nos adresses et nos coups de cœur.",
     image: 'https://mamzellesenvadrouille.com/Londres.webp',
     datePublished: '2021-10-19',
     dateModified: '2026-06-21',
