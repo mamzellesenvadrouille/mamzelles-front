@@ -596,6 +596,19 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9364-scaled-1024x780.jpeg" alt="Regent’s Park Londres 2" loading="lazy" style={{flex: '1.313', minWidth: 0}} />
             </div>
 
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s'y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">En métro</span><p><strong>Northern Line</strong> (noire) → station <strong>Camden Town</strong>.</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">En péniche</span><p>Balade depuis <strong>Little Venice</strong> (métro <strong>Bakerloo Line</strong> → station <strong>Warwick Avenue</strong>). Traversée de Regent's Park, vue sur le London Zoo, façades victoriennes. Trajet de 45 min, environ 12£ (14 €) par personne.</p></div>
+                </div>
+              </div>
+            </div>
             <h3>Stratford</h3>
             <p>Nous avons été très agréablement surprises par ce <strong>nouveau quartier</strong> que nous ne connaissions pas et que nous avons découvert lors de notre dernier séjour. Il est idéalement situé puisque tous les lieux incontournables à visiter de la capitale sont à plus ou moins 30 min de métro.</p>
             <p>Notamment connu pour son centre commercial le plus grand d'Europe (<strong>Westfield</strong>), ce quartier de l'est de Londres est également célèbre depuis 2012 grâce aux Jeux Olympiques d'été qui s'y sont déroulés. Le quartier réaménagé pour l'occasion accueillait le village olympique ainsi que diverses infrastructures : stades, piscine, vélodrome, le parc olympique Queen Elizabeth et l'<strong>ArcelorMittal Orbit</strong> (emblème des J.O 2012).</p>
