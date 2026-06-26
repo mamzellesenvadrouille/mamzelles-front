@@ -1322,3 +1322,29 @@
   border-left: 3px solid var(--gold) !important;
   padding: 18px 24px 18px 22px !important;
 }
+
+/* Listes Ã  puces dorÃ©es dans les onglets pratiques */
+.article-londres .article-pratique-list-gold {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.article-londres .article-pratique-list-gold li {
+  padding-left: 18px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #3a2e28;
+}
+.article-londres .article-pratique-list-gold li::before {
+  content: '\2022';
+  color: var(--gold);
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1.65;
+}
