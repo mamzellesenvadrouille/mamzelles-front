@@ -1312,3 +1312,12 @@
 
 /* Fond beige sur article-avis dans les sections jour uniquement */
 .article-londres section.article-section:not(#pratique) .article-avis { background: #fdf4ee; }
+
+/* Bloc Se loger : mÃªme visu que pratique-sub */
+.article-londres .article-pratique-block-loger .article-avis {
+  margin: 22px 0 !important;
+  background: #fff !important;
+  border: 1px solid var(--line) !important;
+  border-left: 3px solid var(--gold) !important;
+  padding: 18px 24px 18px 22px !important;
+}

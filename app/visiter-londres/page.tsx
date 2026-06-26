@@ -783,7 +783,7 @@ export default function VisiterLondresPage() {
                 ]} />
               </div>
               
-              <div className="article-pratique-block">
+              <div className="article-pratique-block article-pratique-block-loger">
                 <h3 className="article-pratique-title">Où se loger ?</h3>
                 <p>De façon générale, les hébergements sont chers à Londres mais plusieurs possibilités s’offrent à vous : les B’n’B (Bed and Breakfast), les <strong>auberges de jeunesse</strong>, les <strong>hôtels</strong>, les <strong>résidences hôtelières</strong> et les <strong>locations d’appartement</strong>.</p>
                 <p>Cette fois-ci, nous avons opté pour un appart’hôtel de la chaîne des résidences hôtelières <strong>Adagio</strong>. Le logement est situé dans l’<strong>Est de Londres</strong>, à <strong>Stratford</strong>, et plus précisément dans le village olympique (cf. Jour 6 - Stratford).</p>
