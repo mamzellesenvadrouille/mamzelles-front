@@ -397,19 +397,7 @@ export default function VisiterLondresPage() {
                 </div>
               </div>
             </div>
-            <div className="article-rendre">
-              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
-              <div className="article-rendre-timeline">
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Station Liverpool Street</span><p>Pour déjeuner au Old Spitalfields Market, commencez par visiter <strong>Spitalfields</strong> — l’une des plus grandes stations du centre de Londres.</p></div>
-                </div>
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Lignes desservies</span><p><strong>Central Line</strong> (rouge), <strong>Circle Line</strong> (jaune), <strong>Hammersmith &amp; City Line</strong> (rose clair), <strong>London Overground</strong> (orange) et <strong>Metropolitan Line</strong> (rose foncé).</p></div>
-                </div>
-              </div>
-            </div>
+
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -446,6 +434,20 @@ export default function VisiterLondresPage() {
                   <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ-d5QKsgEdkgRJR2U3AGxhyc" target="_blank" className="article-resto-link-desktop">Bleecker Burger</a><a href="https://maps.app.goo.gl/PbWYaPMwz2PSdZa78" target="_blank" className="article-resto-link-mobile">Bleecker Burger</a></p>
                   <p className="article-resto-sub">Burgers artisanaux · Spitalfields</p>
                   <p>Autre référence des burgers londoniens, Bleecker est installé à Spitalfields Market. Simple, sans fioritures, mais d'une qualité irréprochable. Le double cheeseburger est leur signature.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">Station Liverpool Street</span><p>Pour déjeuner au Old Spitalfields Market, commencez par visiter <strong>Spitalfields</strong> — l’une des plus grandes stations du centre de Londres.</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">Lignes desservies</span><p><strong>Central Line</strong> (rouge), <strong>Circle Line</strong> (jaune), <strong>Hammersmith &amp; City Line</strong> (rose clair), <strong>London Overground</strong> (orange) et <strong>Metropolitan Line</strong> (rose foncé).</p></div>
                 </div>
               </div>
             </div>
@@ -506,19 +508,6 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3612-1-1024x520.jpeg" alt="Regent Street" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3491-scaled-1024x768.jpeg" alt="Regent Street 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
-            <div className="article-rendre">
-              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
-              <div className="article-rendre-timeline">
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Commencez par Soho</span><p>Ces trois quartiers se trouvent à proximité les uns des autres.</p></div>
-                </div>
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Station Tottenham Court Road</span><p><strong>Northern Line</strong> (noire) ou <strong>Central Line</strong> (rouge).</p></div>
-                </div>
-              </div>
-            </div>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -555,6 +544,20 @@ export default function VisiterLondresPage() {
                   <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJk3umitYEdkgRdi1T77lCf78" target="_blank" className="article-resto-link-desktop">Fortnum &amp; Mason — Diamond Jubilee Tea Salon</a><a href="https://maps.app.goo.gl/TEV9xsrDgPnSJGkC9" target="_blank" className="article-resto-link-mobile">Fortnum &amp; Mason Tea Salon</a></p>
                   <p className="article-resto-sub">Afternoon tea · Piccadilly</p>
                   <p>Pour une expérience typiquement britannique, le Diamond Jubilee Tea Salon de Fortnum &amp; Mason est une adresse de rêve. Scones, sandwichs et pâtisseries raffinées dans un cadre élégant. Réservation obligatoire et tenue correcte exigée.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">Commencez par Soho</span><p>Ces trois quartiers se trouvent à proximité les uns des autres.</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">Station Tottenham Court Road</span><p><strong>Northern Line</strong> (noire) ou <strong>Central Line</strong> (rouge).</p></div>
                 </div>
               </div>
             </div>
