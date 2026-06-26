@@ -858,3 +858,8 @@
 @media (max-width: 768px) {
   .article-madrid .article-section h3 { line-height: 1.2; }
 }
+
+/* Espace harmonisÃ© blocs â†’ H3 */
+.article-madrid .article-avis + h3,
+.article-madrid .article-tip + h3,
+.article-madrid .article-must + h3 { margin-top: 6px; }
