@@ -608,7 +608,7 @@ export default function VisiterLondresPage() {
             <p>Aujourd'hui, le quartier continue de se développer et les londoniens ont bien investi les lieux. Le village olympique a été reconverti en logements, hôtels et espaces de travail. Vous trouverez de nombreux parcs fleuris et très bien entretenus — c'était l'endroit rêvé pour nous avec Aladdin&nbsp;!</p>
             <p>Dans le coin, vous pouvez également vous balader le long de <strong>rives aménagées</strong>, où des péniches à la décoration bohème sont amarrées et de <strong>nombreux bars et restaurants</strong> typiquement anglais sont implantés. On vous conseille d'y faire un tour&nbsp;!</p>
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0007-scaled-1024x768.jpeg" alt="Stratford Londres 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0007-scaled-1024x764.jpeg" alt="Stratford Londres 2" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9545-scaled-1024x768.jpeg" alt="Stratford Londres nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <div className="article-rendre">
