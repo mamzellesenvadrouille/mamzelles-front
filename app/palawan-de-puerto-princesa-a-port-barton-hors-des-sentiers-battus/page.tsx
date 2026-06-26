@@ -7,11 +7,11 @@ import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
-  title: "Palawan : de Puerto Princesa à Port Barton",
-  description: "Un mois loin des foules entre Puerto Princesa, la rivière souterraine de Sabang, le village de pêcheurs de Port Barton et la paradisiaque Modessa Island.",
+  title: "Palawan : de Puerto Princesa à Port Barton, loin des foules",
+  description: "Puerto Princesa, Sabang, Port Barton, Modessa Island… un mois loin des foules à Palawan — notre itinéraire, nos bonnes adresses et nos coups de cœur.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus' },
   openGraph: {
-    title: "Palawan : de Puerto Princesa à Port Barton",
+    title: "Palawan : de Puerto Princesa à Port Barton, loin des foules",
     description: "Un mois loin des foules à Palawan, de Puerto Princesa à Port Barton.",
     url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
     siteName: 'MamZelles en vadrouille',
@@ -28,7 +28,7 @@ export default function PalawanPortBartonPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: "Palawan : de Puerto Princesa à Port Barton",
-    description: "Un mois loin des foules entre Puerto Princesa, la rivière souterraine de Sabang, le village de pêcheurs de Port Barton et la paradisiaque Modessa Island.",
+    description: "Puerto Princesa, Sabang, Port Barton, Modessa Island… un mois loin des foules à Palawan — notre itinéraire, nos bonnes adresses et nos coups de cœur.",
     image: 'https://mamzellesenvadrouille.com/Puerto-Princesa-Port-Barton.webp',
     datePublished: '2025-03-14',
     dateModified: '2026-06-21',
@@ -122,18 +122,18 @@ export default function PalawanPortBartonPage() {
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
-            <ol className="article-toc-list">
-              <li><a href="#manille">📍 Arrivée à Manille</a></li>
-              <li><a href="#puerto-princesa">📍 Puerto Princesa</a></li>
-              <li><a href="#sabang">📍 Sabang &amp; sa rivière souterraine</a></li>
-              <li><a href="#port-barton">📍 Port Barton</a></li>
-              <li><a href="#san-vicente">📍 San Vicente</a></li>
-              <li><a href="#retour-port-barton">📍 De retour à Port Barton</a></li>
-              <li><a href="#roxas">📍 Roxas</a></li>
-              <li><a href="#modessa">📍 Modessa Island</a></li>
-              <li><a href="#au-revoir">📍 Bye bye Palawan</a></li>
-            </ol>
+            <h2 className="article-toc-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l&apos;article</h2>
+            <ul className="article-toc-list">
+              <li><a href="#manille">Arrivée à Manille</a></li>
+              <li><a href="#puerto-princesa">Puerto Princesa</a></li>
+              <li><a href="#sabang">Sabang &amp; sa rivière souterraine</a></li>
+              <li><a href="#port-barton">Port Barton</a></li>
+              <li><a href="#san-vicente">San Vicente</a></li>
+              <li><a href="#retour-port-barton">De retour à Port Barton</a></li>
+              <li><a href="#roxas">Roxas</a></li>
+              <li><a href="#modessa">Modessa Island</a></li>
+              <li><a href="#au-revoir">Bye bye Palawan</a></li>
+            </ul>
           </nav>
 
           {/* INTRO */}
@@ -157,7 +157,7 @@ export default function PalawanPortBartonPage() {
 
           <section id="manille" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Arrivée à Manille</h2>
+              <h2>Arrivée à Manille</h2>
             </div>
             <p>Nous avons pris un hôtel à 10 minutes de l’aéroport car notre prochain vol est le lendemain vers 13 h. Pour 30 € la nuit, petit-déjeuner compris, l'<strong><a href="https://maps.app.goo.gl/atQGdGUGWigJJWE1A?g_st=ic" target="_blank" rel="noopener noreferrer" className="article-link">Achievers Airport Hotel</a></strong> est top. Si, comme nous, vous êtes juste de passage pour une nuit à Manille, nous vous recommandons vivement cet hôtel. Il est possible de vous arranger avec eux pour organiser les transferts aéroport &lt;—&gt; hôtel, qui sont gratuits.</p>
             <p>Demain, c'est donc direction Puerto Princesa, la capitale de Palawan. 300,000 habitants sur 2,381 km², c’est l’une des plus grandes villes des Philippines en termes de superficie.</p>
@@ -166,7 +166,7 @@ export default function PalawanPortBartonPage() {
 
           <section id="puerto-princesa" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Puerto Princesa, la porte d'entrée de Palawan</h2>
+              <h2>Puerto Princesa, la porte d'entrée de Palawan</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -340,7 +340,7 @@ On enfile les maillots de bain, direction la piscine, histoire de se rafraîchir
 
           <section id="sabang" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Sabang &amp; sa rivière souterraine</h2>
+              <h2>Sabang &amp; sa rivière souterraine</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -470,7 +470,7 @@ Nous sommes de retour au port de Sabang vers 11 h.</p>
 
           <section id="port-barton" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Port Barton, un paradis encore préservé</h2>
+              <h2>Port Barton, un paradis encore préservé</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -722,7 +722,7 @@ Notre hôtel nous prête un kayak… Nous voilà parties pour rejoindre White B
 
           <section id="san-vicente" className="article-section">
             <div className="article-day-header">
-              <h2>📍 San Vicente &amp; ses secrets encore bien gardés</h2>
+              <h2>San Vicente &amp; ses secrets encore bien gardés</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -930,7 +930,7 @@ On profite un bon quart d'heure de ce décor de rêve avant de repartir vers l'h
 
           <section id="retour-port-barton" className="article-section">
             <div className="article-day-header">
-              <h2>📍 De retour à Port Barton</h2>
+              <h2>De retour à Port Barton</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <span className="article-day-badge">Jour 1</span>
@@ -1020,7 +1020,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
 
           <section id="roxas" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Welcome to Roxas !</h2>
+              <h2>Welcome to Roxas !</h2>
             </div>
             <div className="article-day-header article-day-header-tight">
               <h3>Roxas, une petite ville surprenante !</h3>
@@ -1049,7 +1049,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
 
           <section id="modessa" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Modessa Island ou le paradis sur Terre !</h2>
+              <h2>Modessa Island ou le paradis sur Terre !</h2>
             </div>
             <p>Réveil matinal, on est tellement excitées ! Direction le point de rendez-vous.</p>
             <p>Il est quasiment midi quand on embarque sur une petite bangka, qui nous conduit à une autre bien plus grande. Du coup, en pleine mer, changement de bateau en mode Filipino style !</p>
@@ -1133,7 +1133,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
 
           <section id="au-revoir" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Bye bye Palawan. Ce n'est qu'un au revoir...</h2>
+              <h2>Bye bye Palawan. Ce n'est qu'un au revoir...</h2>
             </div>
             <p>Après un bon dernier petit-déjeuner, il est temps de quitter ce petit paradis perdu. Retour à Roxas en bangka et direction le terminal de bus en tuk-tuk pour prendre un van public.</p>
             <p>Ce matin, on a le cœur lourd… On sent particulièrement arriver la fin de notre voyage.</p>
