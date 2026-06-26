@@ -8,12 +8,12 @@ import NewsletterForm from '../components/NewsletterForm';
 import PratiqueOnglets from '../components/PratiqueOnglets';
 
 export const metadata: Metadata = {
-  title: "Voyage aux Philippines : itinéraire de 3 semaines",
-  description: "Explorez notre itinéraire de 3 semaines aux Philippines, entre îles de rêve & spots incontournables, pour organiser votre voyage au paradis !",
+  title: "Philippines 3 semaines : Palawan Banaue Bohol Siquijor & Siargao",
+  description: "3 semaines aux Philippines : Palawan, Banaue, Bohol, Siquijor, Siargao… notre itinéraire complet, nos conseils pratiques & nos coups de cœur.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient' },
   openGraph: {
-    title: "Voyage aux Philippines : itinéraire de 3 semaines",
-    description: 'Notre itinéraire détaillé de 3 semaines aux Philippines : Palawan, Banaue, Bohol, Siquijor, Siargao...',
+    title: "Philippines 3 semaines : Palawan Banaue Bohol Siquijor & Siargao",
+    description: '3 semaines aux Philippines : Palawan, Banaue, Bohol, Siquijor, Siargao… notre itinéraire complet, nos conseils pratiques & nos coups de cœur.',
     url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/Philippines.webp', width: 1920, height: 1080 }],
@@ -29,7 +29,7 @@ export default function PhilippinesPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: "Voyage aux Philippines : itinéraire de 3 semaines",
-    description: "Explorez notre itinéraire de 3 semaines aux Philippines, entre îles de rêve & spots incontournables, pour organiser votre voyage au paradis !",
+    description: "3 semaines aux Philippines : Palawan, Banaue, Bohol, Siquijor, Siargao… notre itinéraire complet, nos conseils pratiques & nos coups de cœur.",
     image: 'https://mamzellesenvadrouille.com/Philippines.webp',
     datePublished: '2024-09-01',
     dateModified: '2026-06-21',
