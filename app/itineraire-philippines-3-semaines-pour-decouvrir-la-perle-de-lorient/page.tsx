@@ -126,11 +126,11 @@ export default function PhilippinesPage() {
             <h2 className="article-toc-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l&apos;article</h2>
             <ul className="article-toc-list">
               <li><a href="#itineraire">Notre itinéraire en 3 semaines</a></li>
-              <li><a href="#palawan">📍 Palawan : El Nido et Coron</a></li>
-              <li><a href="#banaue">📍 Banaue &amp; Batad</a></li>
-              <li><a href="#bohol">📍 Bohol &amp; ses petits plus uniques</a></li>
-              <li><a href="#siquijor">📍 Siquijor — L&apos;île mystique aux magnifiques cascades</a></li>
-              <li><a href="#siargao">📍 Siargao — L&apos;île des surfeurs</a></li>
+              <li><a href="#palawan">Palawan : El Nido et Coron</a></li>
+              <li><a href="#banaue">Banaue &amp; Batad</a></li>
+              <li><a href="#bohol">Bohol &amp; ses petits plus uniques</a></li>
+              <li><a href="#siquijor">Siquijor — L&apos;île mystique aux magnifiques cascades</a></li>
+              <li><a href="#siargao">Siargao — L&apos;île des surfeurs</a></li>
               <li><a href="#budget">Quel budget pour 3 semaines ?</a></li>
               <li><a href="#pratique">Tout savoir pour organiser votre voyage</a></li>
             </ul>
@@ -176,7 +176,7 @@ export default function PhilippinesPage() {
           {/* PALAWAN */}
           <section id="palawan" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Palawan : El Nido et Coron</h2>
+              <h2>Palawan : El Nido et Coron</h2>
             </div>
             <p>Palawan est une <strong>véritable perle tropicale</strong> réputée pour ses paysages à couper le souffle. Entre plages de sable blanc, eaux cristallines et formations rocheuses majestueuses, cette île incarne la définition même de l&apos;évasion, où chaque recoin révèle une beauté sauvage et intacte.</p>
             <p>Notre voyage commence donc à Palawan. Nous avons passé quelques jours à El Nido, puis à Coron. Il y a tellement de choses à vous raconter que <strong>nous y avons consacré un article.</strong></p>
@@ -191,7 +191,7 @@ export default function PhilippinesPage() {
           {/* BANAUE */}
           <section id="banaue" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Banaue &amp; Batad</h2>
+              <h2>Banaue &amp; Batad</h2>
             </div>
             <p><strong>Banaue</strong> est une petite ville de montagne située dans la <strong>région d&apos;Ifugao,</strong> au Nord de l&apos;île de Luzon. Cette dernière est la plus grande île des Philippines. 380 kilomètres séparent Banaue de Manille. C&apos;est le point de départ pour découvrir les plus belles rizières en terrasse du pays.</p>
             <p><strong>Inscrites sur la liste du patrimoine mondial à l&apos;UNESCO</strong> en 1995, les rizières en terrasse du Nord des Philippines sont communément considérées comme la 8ème Merveille du monde.</p>
@@ -359,7 +359,7 @@ export default function PhilippinesPage() {
 
           <section id="bohol" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Bohol &amp; ses petits plus uniques</h2>
+              <h2>Bohol &amp; ses petits plus uniques</h2>
             </div>
             <p>Bohol est une province des Philippines située dans la <strong>région des Visayas Centrales.</strong> Cette île est très grande en comparaison à la dernière sur laquelle on a posé le pied. 71 km² de superficie à Coron, contre près de 5 000 km² à Bohol. Elle est considérée comme la <strong>10ème plus grande île de l&apos;archipel des Philippines.</strong></p>
             <p>Cette île paradisiaque abrite des paysages splendides, une végétation luxuriante, des plages de rêves, des spots de plongée incroyables et quelques plus que l&apos;on ne peut découvrir qu&apos;ici. Impossible pour nous de tout voir car nous ne passons que 2 nuits sur cette île. Nous avons souhaité nous rendre à Bohol pour ces quelques plus qui rendent cette île unique et magique…</p>
@@ -482,7 +482,7 @@ export default function PhilippinesPage() {
 
           <section id="siquijor" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Siquijor — L&apos;île mystique aux magnifiques cascades</h2>
+              <h2>Siquijor — L&apos;île mystique aux magnifiques cascades</h2>
             </div>
             <h4>⧐ Siquijor, « The Magic Island »</h4>
             <p>Siquijor est une île faisant partie de la <strong>région des Visayas centrales.</strong> Mais savez-vous pourquoi les Philippins ne se rendent pas à Siquijor ? À cause des sorcières !</p>
@@ -603,7 +603,7 @@ export default function PhilippinesPage() {
 
           <section id="cebu" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Cebu — Une nuit de transit</h2>
+              <h2>Cebu — Une nuit de transit</h2>
             </div>
             <p>Nous avons fait le choix dans notre itinéraire de ne pas visiter Cebu. Pour autant, <strong>il paraît que le Sud de l&apos;île est magnifique.</strong> On se dit qu&apos;on passe sûrement à côté de beaux paysages, mais on ne peut malheureusement pas tout faire, tout voir…</p>
             <p>Nous amarrons au port de Cebu. Entre Siquijor et Cebu (port), c&apos;est deux mondes, deux ambiances !</p>
@@ -615,7 +615,7 @@ export default function PhilippinesPage() {
 
           <section id="siargao" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Siargao — L&apos;île des surfeurs</h2>
+              <h2>Siargao — L&apos;île des surfeurs</h2>
             </div>
             <p>L&apos;île de Siargao se trouve <strong>au Nord de la province de Surigao, </strong>tout à l&apos;Est des Philippines. L&apos;un de ses nombreux charmes est qu&apos;elle est encore épargnée du tourisme de masse. Pour tout vous dire, <strong>on a eu un réel coup de cœur pour cette île !</strong></p>
             <p>Nous avions tellement hâte de découvrir Siargao comme on nous l&apos;a décrite, avec son ambiance particulière, à la cool et détente. Welcome to Siargao, <strong>la capitale du surf aux Philippines !</strong> Si cette île est connue pour être un haut lieu du surf où les amateurs de grosses vagues du monde entier se réunissent chaque année, ce n&apos;est pas seulement pour cela qu&apos;elle nous a attirée…</p>
