@@ -8,7 +8,7 @@ import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
   title: "Palawan : Coron et El Nido, le joyau des Philippines",
-  description: "Découvrez Palawan, de ses lagons turquoise à El Nido aux récifs spectaculaires de Coron. Préparez votre voyage de rêve aux Philippines !",
+  description: "Palawan : de ses lagons turquoise à El Nido aux récifs de Coron — notre guide complet, nos coups de cœur et tous nos conseils pour préparer votre séjour.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines' },
   openGraph: {
     title: "Palawan : Coron et El Nido, le joyau des Philippines",
@@ -28,7 +28,7 @@ export default function PalawanElNidoCoronPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: "Palawan : Coron et El Nido, le joyau des Philippines",
-    description: "Découvrez Palawan, de ses lagons turquoise à El Nido aux récifs spectaculaires de Coron. Préparez votre voyage de rêve aux Philippines !",
+    description: "Palawan : de ses lagons turquoise à El Nido aux récifs de Coron — notre guide complet, nos coups de cœur et tous nos conseils pour préparer votre séjour.",
     image: 'https://mamzellesenvadrouille.com/El-Nido-Coron.webp',
     datePublished: '2024-10-17',
     dateModified: '2026-06-21',
@@ -122,12 +122,12 @@ export default function PalawanElNidoCoronPage() {
 
           {/* SOMMAIRE */}
           <nav className="article-toc">
-            <h2 className="article-toc-title">📌 Sommaire de l&apos;article</h2>
-            <ol className="article-toc-list">
-              <li><a href="#el-nido">📍 El Nido &amp; l&apos;archipel de Bacuit</a></li>
-              <li><a href="#coron">📍 Coron &amp; les îles Calamian</a></li>
+            <h2 className="article-toc-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l&apos;article</h2>
+            <ul className="article-toc-list">
+              <li><a href="#el-nido">El Nido &amp; l&apos;archipel de Bacuit</a></li>
+              <li><a href="#coron">Coron &amp; les îles Calamian</a></li>
               <li><a href="#itineraire">Notre itinéraire de 3 semaines aux Philippines</a></li>
-            </ol>
+            </ul>
           </nav>
 
           {/* INTRO */}
@@ -141,7 +141,7 @@ export default function PalawanElNidoCoronPage() {
 
           <section id="el-nido" className="article-section">
             <div className="article-day-header">
-              <h2>📍 El Nido &amp; l'archipel de Bacuit</h2>
+              <h2>El Nido &amp; l'archipel de Bacuit</h2>
             </div>
             <p>Cette ville tient son nom de sa localisation. Située tout au Nord de l’île de Palawan et encerclée par la jungle, son accès était compliqué jusqu’à l’ouverture de l’aéroport d’El Nido, appelé aussi l’<strong>aéroport de Lio.</strong> À ce jour, <strong>il faut 1h15 pour relier El Nido à Manille. </strong></p>
             <p><strong>Puerto Princesa, la capitale de Palawan,</strong> se trouve à 230 km plus au Sud. Vu l’état des routes et des limitations de vitesse, <strong>il faut tout de même compter 5 à 6 h de voiture / van pour relier ces 2 villes.</strong> Vous pouvez rajouter 2 h si vous faites le trajet en bus.</p>
@@ -309,7 +309,7 @@ export default function PalawanElNidoCoronPage() {
 
           <section id="coron" className="article-section">
             <div className="article-day-header">
-              <h2>📍 Coron &amp; les îles Calamian</h2>
+              <h2>Coron &amp; les îles Calamian</h2>
             </div>
             <p>Coron fait partie de la province de Palawan. <strong>Elle est la plus grande des îles Calamian.</strong></p>
             <p>Avant tout, pour éviter toute confusion, <strong>Coron est en fait le nom d’une ville de l’île de Busuanga. Coron Island est une petite île située juste en face. </strong>C’est l’une des îles que l’on visite lors des excursions. Il n’y a pas d’habitation, pas de restaurant. Les seuls habitants sont quelques locaux de tribus ancestrales qui dorment sur place pour préserver leur coin de paradis.</p>
