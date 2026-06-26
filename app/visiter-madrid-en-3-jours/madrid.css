@@ -676,7 +676,7 @@
 /* Espace entre blocs avis/tip/must et H3 suivant */
 
 /* Espace entre paragraphe et H3 suivant */
-.article-madrid p + h3 { margin-top: 30px !important; }
+.article-madrid p + h3 { margin-top: 32px !important; }
 
 /* Grille transport â€” Comment se dÃ©placer */
 .madrid-transport-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 28px; }
@@ -862,4 +862,4 @@
 /* Espace harmonisÃ© blocs â†’ H3 */
 .article-madrid .article-avis + h3,
 .article-madrid .article-tip + h3,
-.article-madrid .article-must + h3 { margin-top: 6px; }
+.article-madrid .article-must + h3 { margin-top: 32px; }
