@@ -821,6 +821,10 @@
   border: 1px solid var(--line);
   border-left: 3px solid var(--gold);
   padding: 18px 24px 18px 22px;
+  background: #fdf4ee;
+}
+.article-londres .article-pratique-block .article-avis {
+  background: #fff !important;
 }
 
 .article-londres .article-pratique-list {
@@ -1316,5 +1320,5 @@
 /* RÃ©duire espace entre H2 (day-header) et H3 qui suit directement */
 .article-londres .article-section .article-day-header + h3 { margin-top: 12px !important; }
 
-/* Fond beige uniquement sur article-avis dans les sections de l'article */
-.article-londres .article-section .article-avis { background: #fdf4ee; }
+/* Fond beige sur article-avis dans les sections jour uniquement */
+.article-londres section.article-section:not(#pratique) .article-avis { background: #fdf4ee; }
