@@ -407,7 +407,11 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJxYs1ArocdkgR-G13PLmofec" target="_blank" className="article-resto-link-desktop">Dishoom Shoreditch</a><a href="https://maps.app.goo.gl/FC4CWvc1QmbWniZC6" target="_blank" className="article-resto-link-mobile">Dishoom Shoreditch</a></p>
                   <p className="article-resto-sub">Cuisine indienne-iranienne · Shoreditch</p>
-                  <p>Une institution à Londres ! Dishoom propose une cuisine indienne d'inspiration iranienne dans un cadre de café de Bombay des années 1960. Black daal, chicken ruby, garlic naan... Les plats sont généreux et les saveurs incroyables. File d'attente quasi assurée, mais ça vaut le coup !</p>
+                  <p>Une institution à Londres ! Dishoom propose une cuisine indienne d'inspiration iranienne dans un cadre de café de Bombay des années 1960. Black daal, chicken ruby, garlic naan... Les plats sont généreux et les saveurs incroyables.</p>
+                  <div className="article-resto-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    File d'attente quasi assurée, mais ça vaut le coup !
+                  </div>
                 </div>
               </div>
             </div>
@@ -517,7 +521,11 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJX_OPq9QEdkgRwIpAEYl2RYc" target="_blank" className="article-resto-link-desktop">The Breakfast Club</a><a href="https://maps.app.goo.gl/C8TNm3yikY4fKYer6" target="_blank" className="article-resto-link-mobile">The Breakfast Club</a></p>
                   <p className="article-resto-sub">Brunch incontournable · Soho</p>
-                  <p>The Breakfast Club est LA référence du brunch à Londres. Pancakes, eggs benedict, granola bowls... Le menu est généreux et les produits sont frais. Comptez un peu d'attente aux heures de pointe — ça vaut vraiment le détour !</p>
+                  <p>The Breakfast Club est LA référence du brunch à Londres. Pancakes, eggs benedict, granola bowls... Le menu est généreux et les produits sont frais.</p>
+                  <div className="article-resto-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Comptez un peu d'attente aux heures de pointe — ça vaut vraiment le détour !
+                  </div>
                 </div>
               </div>
             </div>
@@ -543,7 +551,11 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJk3umitYEdkgRdi1T77lCf78" target="_blank" className="article-resto-link-desktop">Fortnum &amp; Mason — Diamond Jubilee Tea Salon</a><a href="https://maps.app.goo.gl/TEV9xsrDgPnSJGkC9" target="_blank" className="article-resto-link-mobile">Fortnum &amp; Mason Tea Salon</a></p>
                   <p className="article-resto-sub">Afternoon tea · Piccadilly</p>
-                  <p>Pour une expérience typiquement britannique, le Diamond Jubilee Tea Salon de Fortnum &amp; Mason est une adresse de rêve. Scones, sandwichs et pâtisseries raffinées dans un cadre élégant. Réservation obligatoire et tenue correcte exigée.</p>
+                  <p>Pour une expérience typiquement britannique, le Diamond Jubilee Tea Salon de Fortnum &amp; Mason est une adresse de rêve. Scones, sandwichs et pâtisseries raffinées dans un cadre élégant.</p>
+                  <div className="article-resto-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Réservation obligatoire et tenue correcte exigée.
+                  </div>
                 </div>
               </div>
             </div>
