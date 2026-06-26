@@ -815,7 +815,7 @@
 
 .article-londres .article-pratique-block .article-tip,
 .article-londres .article-pratique-block .article-avis {
-  margin: 24px 0;
+  margin: 12px 0;
   background: #fff !important;
   border: 1px solid var(--line) !important;
   border-left: 3px solid var(--gold) !important;
