@@ -966,7 +966,7 @@ export default function VisiterLondresPage() {
                     content: (
                       <>
                         <p>Pour finir, il est grandement conseillé de respecter <strong>certains paramètres</strong> pour vivre à la mode londonienne pendant votre séjour (et vous éviter certains accidents !) :</p>
-                        <ul className="article-pratique-list">
+                        <ul className="article-pratique-list-gold">
                           <li>Se tenir sur la droite dans les escalators, et monter ou descendre sur la gauche.</li>
                           <li>Laisser descendre les passagers du métro avant de monter.</li>
                           <li>Regarder à droite avant de traverser.</li>
