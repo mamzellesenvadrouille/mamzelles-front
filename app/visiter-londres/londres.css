@@ -1,6 +1,6 @@
 /* ============================================
-   VISITER LONDRES Ã¢â‚¬â€ Styles spÃƒÂ©cifiques Ãƒ  lÃ¢â‚¬â„¢article
-   CalquÃƒÂ© sur port-barton.css (scopÃƒÂ© .article-londres)
+   VISITER LONDRES â€” Styles spÃ©cifiques Ã  l'article
+   CalquÃ© sur port-barton.css (scopÃ© .article-londres)
    ============================================ */
 
 @media (max-width: 768px) {
@@ -329,8 +329,8 @@
 
 .article-img-full { width: 100%; height: auto; display: block; margin: 8px 0; }
 
-/* Recadrage ponctuel pour une image prÃƒÂ©cise demandÃƒÂ©e en effet "pano"
-   (coupe le bas de la photo) Ã¢â‚¬â€ usage ciblÃƒÂ©, ne touche pas aux galeries. */
+/* Recadrage ponctuel pour une image prÃ©cise demandÃ©e en effet "pano"
+   (coupe le bas de la photo) "â€ usage ciblÃ©, ne touche pas aux galeries. */
 .article-img-pano { max-height: 480px; object-fit: cover; object-position: top; }
 
 .article-pratique-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -746,7 +746,7 @@
 
 
 /* ============================================
-   BLOC Ã‚Â« INFORMATIONS PRATIQUES Ã‚Â» (spÃƒÂ©cifique Londres)
+   BLOC Ã‚Â« INFORMATIONS PRATIQUES Ã‚Â» (spÃ©cifique Londres)
    ============================================ */
 .article-londres .article-pratique {
   display: flex;
@@ -846,8 +846,8 @@
   background: var(--gold);
 }
 
-/* --- Sous-cartes premium pour les blocs pratiques Ãƒ  plusieurs sous-thÃƒÂ¨mes
-   (ex: "Comment s'y rendre", "Comment se dÃƒÂ©placer") : chaque sous-thÃƒÂ¨me
+/* --- Sous-cartes premium pour les blocs pratiques Ã  plusieurs sous-thÃ¨mes
+   (ex: "Comment s'y rendre", "Comment se dÃ©placer") : chaque sous-thÃ¨me
    devient sa propre carte distincte au lieu d'un simple <h4> dans un mur
    de texte. Aucune perte de contenu, juste une meilleure structure. --- */
 .article-londres .article-pratique-nav {
@@ -997,7 +997,7 @@
   margin: 12px 0;
 }
 
-/* --- Pratique : mobile (placÃƒÂ© APRÃƒË†S le desktop, comme convenu) --- */
+/* --- Pratique : mobile (placÃ© APRÃƒË†S le desktop, comme convenu) --- */
 @media (max-width: 768px) {
   .article-londres .article-pratique-block { padding: 18px 18px !important; }
   .article-londres .article-pratique-title { font-size: 22px !important; }
@@ -1012,8 +1012,8 @@
 
 
 /* ============================================
-   BLOC Ã‚Â« POUR MANGER Ã‚Â» Ã¢â‚¬â€ fiche carnet de voyage
-   (en-tÃƒÂªte sombre + tampon prix + carte resto)
+   BLOC Ã‚Â« POUR MANGER Ã‚Â» "â€ fiche carnet de voyage
+   (en-tÃªte sombre + tampon prix + carte resto)
    ============================================ */
 .article-londres .article-resto {
   margin: 24px 0;
@@ -1126,7 +1126,7 @@
 }
 
 /* ============================================
-   BLOC Ã‚Â« POUR S'Y RENDRE Ã‚Â» Ã¢â‚¬â€ timeline itinÃƒÂ©raire
+   BLOC Ã‚Â« POUR S'Y RENDRE Ã‚Â» "â€ timeline itinÃ©raire
    ============================================ */
 .article-londres .article-rendre {
   background: var(--bg);
@@ -1239,7 +1239,7 @@
   color: var(--dark);
 }
 
-/* deuxiÃƒÂ¨me mode de transport dans le mÃƒÂªme bloc : nouvelle timeline sÃƒÂ©parÃƒÂ©e */
+/* deuxiÃ¨me mode de transport dans le mÃªme bloc : nouvelle timeline sÃ©parÃ©e */
 .article-londres .article-rendre-or {
   display: flex;
   align-items: center;
@@ -1307,3 +1307,6 @@
 /* Gallery avec images de hauteur uniforme */
 .article-gallery-equal { align-items: stretch !important; }
 .article-gallery-equal img { object-fit: cover; height: 100%; min-height: 280px; }
+
+/* RÃ©duire espace entre H2 (day-header) et H3 qui suit directement */
+.article-londres .article-section .article-day-header + h3 { margin-top: 12px !important; }
