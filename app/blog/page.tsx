@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Blog Voyage | Itinéraires et Bons Plans',
-  description: "Itinéraires détaillés, bons plans et coups de cœur voyage. Philippines, Maroc, Espagne, Angleterre… Trouvez votre prochaine destination !",
+  title: 'Blog Voyage — MamZelles en vadrouille',
+  description: "Blog voyage de deux amoureuses du monde : guides complets en Europe et en Asie, bons plans, adresses coups de cœur et conseils pour préparer vos voyages.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/blog' },
   openGraph: {
-    title: 'Blog Voyage | Itinéraires et Bons Plans',
-    description: "Itinéraires détaillés, bons plans et coups de cœur voyage. Philippines, Maroc, Espagne, Angleterre et bien plus.",
+    title: 'Blog Voyage — MamZelles en vadrouille',
+    description: "Blog voyage de deux amoureuses du monde : guides complets en Europe et en Asie, bons plans, adresses coups de cœur et conseils pour préparer vos voyages.",
     url: 'https://mamzellesenvadrouille.com/blog',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/hero-blog.webp', width: 1200, height: 630 }],
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog Voyage | Itinéraires & Inspirations | MamZelles en vadrouille',
-    description: 'Itinéraires détaillés, bons plans et coups de cœur voyage. Philippines, Maroc, Espagne et plus.',
+    title: 'Blog Voyage — MamZelles en vadrouille',
+    description: 'Blog voyage de deux amoureuses du monde : guides complets en Europe et en Asie, bons plans, adresses coups de cœur et conseils pour préparer vos voyages.',
     images: ['https://mamzellesenvadrouille.com/hero-blog.webp'],
   },
 };
@@ -127,13 +127,75 @@ export default async function BlogPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Blog Voyage | Itinéraires et Bons Plans',
-    description: "Itinéraires détaillés, bons plans et coups de cœur voyage. Philippines, Maroc, Espagne, Angleterre… Trouvez votre prochaine destination !",
+    name: 'Blog Voyage — MamZelles en vadrouille',
+    description: "Blog voyage de deux amoureuses du monde : guides complets en Europe et en Asie, bons plans, adresses coups de cœur et conseils pour préparer vos voyages.",
     url: 'https://mamzellesenvadrouille.com/blog',
     isPartOf: {
       '@type': 'WebSite',
       name: 'MamZelles en vadrouille',
       url: 'https://mamzellesenvadrouille.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'MamZelles en vadrouille',
+      url: 'https://mamzellesenvadrouille.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://mamzellesenvadrouille.com/logo.webp',
+      },
+    },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
+          name: 'Palawan : de Puerto Princesa à Port Barton',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
+          name: 'Palawan : Coron et El Nido, le joyau des Philippines',
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+          name: 'Voyage aux Philippines : itinéraire de 3 semaines',
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          url: 'https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/',
+          name: "Dormir dans le désert d'Agafay, une expérience inoubliable !",
+        },
+        {
+          '@type': 'ListItem',
+          position: 5,
+          url: 'https://blog.mamzellesenvadrouille.com/visiter-marrakech/',
+          name: 'Marrakech, tous les secrets pour découvrir la ville rouge & son effervescence !',
+        },
+        {
+          '@type': 'ListItem',
+          position: 6,
+          url: 'https://blog.mamzellesenvadrouille.com/road-trip-a-lanzarote/',
+          name: "Une semaine à Lanzarote, Road trip sur l'île aux 300 volcans !",
+        },
+        {
+          '@type': 'ListItem',
+          position: 7,
+          url: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours',
+          name: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
+        },
+        {
+          '@type': 'ListItem',
+          position: 8,
+          url: 'https://mamzellesenvadrouille.com/visiter-londres',
+          name: 'Visiter Londres : que faire en 7 jours par quartier',
+        },
+      ],
     },
   };
 
