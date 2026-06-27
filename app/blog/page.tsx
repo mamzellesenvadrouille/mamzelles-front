@@ -141,7 +141,7 @@ export default async function BlogPage() {
       url: 'https://mamzellesenvadrouille.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://mamzellesenvadrouille.com/logo.webp',
+        url: 'https://mamzellesenvadrouille.com/icon.png',
       },
     },
     mainEntity: {
