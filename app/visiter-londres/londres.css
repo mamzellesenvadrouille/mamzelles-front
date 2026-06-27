@@ -1308,7 +1308,7 @@
 .article-gallery-equal img { object-fit: cover; height: 100%; min-height: 280px; }
 
 /* RÃ©duire espace entre H2 (day-header) et H3 qui suit directement */
-.article-londres .article-section .article-day-header + h3 { margin-top: 16px !important; }
+.article-londres .article-section .article-day-header + h3 { margin-top: 18px !important; }
 
 /* Fond beige sur article-avis dans les sections jour uniquement */
 .article-londres section.article-section:not(#pratique) .article-avis { background: #fdf4ee; }
