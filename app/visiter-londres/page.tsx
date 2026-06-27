@@ -626,7 +626,7 @@ export default function VisiterLondresPage() {
             <p>Notamment connu pour son centre commercial le plus grand d'Europe (<strong>Westfield</strong>), ce quartier de l'est de Londres est également célèbre depuis 2012 grâce aux Jeux Olympiques d'été qui s'y sont déroulés. Le quartier réaménagé pour l'occasion accueillait le village olympique ainsi que diverses infrastructures : stades, piscine, vélodrome, le parc olympique Queen Elizabeth et l'<strong>ArcelorMittal Orbit</strong> (emblème des J.O 2012).</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9510-scaled-1024x768.jpeg" alt="Stratford Londres" className="article-img-full" loading="lazy" />
             <p>Cette étrange tour métallique de 115 m vous offrira une vue imprenable sur l'ensemble du parc. Depuis 2016, une attraction a été ajoutée à la tour : un toboggan long de 178 m, le plus long du monde ! Une <a href="https://arcelormittalorbit.com" target="_blank" rel="noopener noreferrer" className="article-link">activité</a> bien sympathique à faire en famille ou entre amis.</p>
-            <div className="article-gallery-2 article-gallery-portrait-stratford">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9788-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>

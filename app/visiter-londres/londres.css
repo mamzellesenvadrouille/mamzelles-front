@@ -1348,12 +1348,3 @@
   top: 0;
   line-height: 1.65;
 }
-
-/* Galleries Stratford sur mobile */
-@media (max-width: 768px) {
-  /* Photos portrait Stratford : passer en colonne */
-  .article-gallery-portrait-stratford { flex-direction: column; }
-  .article-gallery-portrait-stratford img { flex: none !important; width: 100% !important; height: auto !important; }
-  /* Photos paysage equal : hauteur fixe cÃ´te Ã  cÃ´te */
-  .article-gallery-equal img { height: 140px !important; min-height: 140px !important; }
-}
