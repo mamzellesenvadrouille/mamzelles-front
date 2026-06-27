@@ -1348,3 +1348,8 @@
   top: 0;
   line-height: 1.65;
 }
+
+/* Gallery equal : hauteur fixe sur mobile */
+@media (max-width: 768px) {
+  .article-gallery-equal img { height: 220px; min-height: 220px; }
+}
