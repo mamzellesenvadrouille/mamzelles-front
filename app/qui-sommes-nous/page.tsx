@@ -3,12 +3,12 @@ import InstagramFeed from './InstagramFeed';
 import Navbar from '../components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Amélie & Laurie | MamZelles en vadrouille',
-  description: "Une histoire de vie et de moments partagés, entre vanlife et escapades... Découvrez Amélie et Laurie, créatrices de voyages sur mesure.",
+  title: 'Travel Planners & Voyage sur Mesure | MamZelles en vadrouille',
+  description: "Amélie & Laurie, travel planners et créatrices de voyages sur mesure. Vanlife et escapades autour du monde — le voyage comme une façon de vivre.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/qui-sommes-nous' },
   openGraph: {
-    title: 'Amélie & Laurie | MamZelles en vadrouille',
-    description: "Une histoire de vie et de moments partagés, entre vanlife et escapades... Amélie et Laurie, créatrices de voyages sur mesure.",
+    title: 'Travel Planners & Voyage sur Mesure | MamZelles en vadrouille',
+    description: "Amélie & Laurie, travel planners et créatrices de voyages sur mesure. Vanlife et escapades autour du monde — le voyage comme une façon de vivre.",
     url: 'https://mamzellesenvadrouille.com/qui-sommes-nous',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/hero-nous.webp', width: 1200, height: 630 }],
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amélie & Laurie, Travel Planners passionnées | MamZelles en vadrouille',
-    description: "Une histoire de vie, entre vanlife, escapades et voyages sur mesure.",
+    title: 'Travel Planners & Voyage sur Mesure | MamZelles en vadrouille',
+    description: "Amélie & Laurie, travel planners et créatrices de voyages sur mesure. Vanlife et escapades autour du monde — le voyage comme une façon de vivre.",
     images: ['https://mamzellesenvadrouille.com/hero-nous.webp'],
   },
 };
@@ -27,14 +27,18 @@ export default function QuiSommesNous() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: 'Amélie & Laurie | MamZelles en vadrouille',
-    description: "Une histoire de vie et de moments partagés, entre vanlife et escapades... Découvrez Amélie et Laurie, créatrices de voyages sur mesure.",
+    name: 'Travel Planners & Voyage sur Mesure | MamZelles en vadrouille',
+    description: "Amélie & Laurie, travel planners et créatrices de voyages sur mesure. Vanlife et escapades autour du monde — le voyage comme une façon de vivre.",
     url: 'https://mamzellesenvadrouille.com/qui-sommes-nous',
     mainEntity: {
       '@type': 'Organization',
       name: 'MamZelles en vadrouille',
       url: 'https://mamzellesenvadrouille.com',
       foundingLocation: 'Antibes, France',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://mamzellesenvadrouille.com/icon.png',
+      },
     },
   };
 
