@@ -402,7 +402,7 @@ export default function VisiterLondresPage() {
               <div className="article-resto-item">
                 <div className="article-resto-head">
                   <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span className="resto-head-text-full">Notre adresse coup de cœur</span><span className="resto-head-text-short">Notre coup de cœur</span></span>
-                  <span className="article-resto-tag">Réservation conseillée</span>
+                  <span className="article-resto-tag">Indien-iranien</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJxYs1ArocdkgR-G13PLmofec" target="_blank" className="article-resto-link-desktop">Dishoom Shoreditch</a><a href="https://maps.app.goo.gl/FC4CWvc1QmbWniZC6" target="_blank" className="article-resto-link-mobile">Dishoom Shoreditch</a></p>
@@ -626,7 +626,7 @@ export default function VisiterLondresPage() {
             <p>Notamment connu pour son centre commercial le plus grand d'Europe (<strong>Westfield</strong>), ce quartier de l'est de Londres est également célèbre depuis 2012 grâce aux Jeux Olympiques d'été qui s'y sont déroulés. Le quartier réaménagé pour l'occasion accueillait le village olympique ainsi que diverses infrastructures : stades, piscine, vélodrome, le parc olympique Queen Elizabeth et l'<strong>ArcelorMittal Orbit</strong> (emblème des J.O 2012).</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9510-scaled-1024x768.jpeg" alt="Stratford Londres" className="article-img-full" loading="lazy" />
             <p>Cette étrange tour métallique de 115 m vous offrira une vue imprenable sur l'ensemble du parc. Depuis 2016, une attraction a été ajoutée à la tour : un toboggan long de 178 m, le plus long du monde ! Une <a href="https://arcelormittalorbit.com" target="_blank" rel="noopener noreferrer" className="article-link">activité</a> bien sympathique à faire en famille ou entre amis.</p>
-            <div className="article-gallery-2">
+            <div className="article-gallery-2 article-gallery-portrait-stratford">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9788-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
