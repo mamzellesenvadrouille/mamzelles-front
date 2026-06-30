@@ -4,11 +4,11 @@ import Navbar from './components/Navbar';
 
 export const metadata: Metadata = {
   title: 'MamZelles en vadrouille | Voyage sur mesure',
-  description: "Votre voyage rêvé, pensé et organisé sur mesure par Amélie et Laurie. Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.",
+  description: "Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com' },
   openGraph: {
     title: 'MamZelles en vadrouille | Voyage sur mesure',
-    description: "Votre voyage rêvé, pensé et organisé sur mesure. Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.",
+    description: "Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.",
     url: 'https://mamzellesenvadrouille.com',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/og-home.png', width: 1200, height: 630 }],
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'MamZelles en vadrouille | Voyage sur mesure',
-    description: 'Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.',
+    description: 'Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.',
     images: ['https://mamzellesenvadrouille.com/og-home.png'],
   },
 };
@@ -28,7 +28,7 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'TravelAgency',
     name: 'MamZelles en vadrouille',
-    description: "Votre voyage rêvé, pensé et organisé sur mesure par Amélie et Laurie. Itinéraire personnalisé, carnet digital, devis gratuit sous 48h.",
+    description: "Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.",
     url: 'https://mamzellesenvadrouille.com',
     image: 'https://mamzellesenvadrouille.com/og-home.png',
     areaServed: 'FR',
