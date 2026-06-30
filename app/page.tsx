@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'MamZelles en vadrouille | Voyage sur mesure',
-    description: 'Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.',
+    description: "Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.",
     images: ['https://mamzellesenvadrouille.com/og-home.png'],
   },
 };
