@@ -4,12 +4,12 @@ import Navbar from '../components/Navbar';
 import ContactForm from '../ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Nos formules | Voyage sur mesure - MamZelles en vadrouille',
-  description: "Itinéraire de voyage 100% sur mesure selon vos envies, votre rythme et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
+  title: 'Carnet de Voyage Sur Mesure | MamZelles en vadrouille',
+  description: "Votre carnet de voyage 100% sur mesure, selon vos envies, votre rythme et votre budget. Appel découverte gratuit, devis sous 48h et sans engagement.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/formules' },
   openGraph: {
-    title: 'Nos formules | Voyage sur mesure - MamZelles en vadrouille',
-    description: "Itinéraire de voyage 100% sur mesure selon vos envies et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
+    title: 'Carnet de Voyage Sur Mesure | MamZelles en vadrouille',
+    description: "Votre carnet de voyage 100% sur mesure, selon vos envies, votre rythme et votre budget. Appel découverte gratuit, devis sous 48h et sans engagement.",
     url: 'https://mamzellesenvadrouille.com/formules',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/og-home.png', width: 1200, height: 630 }],
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nos formules | Voyage sur mesure - MamZelles en vadrouille',
-    description: 'Itinéraire personnalisé, devis gratuit sous 48h, carnet digital inclus.',
+    title: 'Carnet de Voyage Sur Mesure | MamZelles en vadrouille',
+    description: 'Votre carnet de voyage 100% sur mesure, selon vos envies, votre rythme et votre budget. Appel découverte gratuit, devis sous 48h et sans engagement.',
     images: ['https://mamzellesenvadrouille.com/og-home.png'],
   },
 };
@@ -28,12 +28,16 @@ export default function Formules() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Voyage sur mesure - MamZelles en vadrouille',
-    description: "Itinéraire de voyage 100% sur mesure selon vos envies, votre rythme et votre budget. Devis gratuit sous 48h, carnet digital inclus.",
+    name: 'Carnet de Voyage Sur Mesure | MamZelles en vadrouille',
+    description: "Votre carnet de voyage 100% sur mesure, selon vos envies, votre rythme et votre budget. Appel découverte gratuit, devis sous 48h et sans engagement.",
     provider: {
       '@type': 'Organization',
       name: 'MamZelles en vadrouille',
       url: 'https://mamzellesenvadrouille.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://mamzellesenvadrouille.com/icon.png',
+      },
     },
     areaServed: 'FR',
     url: 'https://mamzellesenvadrouille.com/formules',
