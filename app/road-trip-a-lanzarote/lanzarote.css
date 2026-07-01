@@ -608,8 +608,8 @@
   .article-related-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 
-.article-lanzarote .article-day-header { margin-top: 30px;
-  margin-bottom: 24px; }
+.article-lanzarote .article-day-header { margin-top: 48px;
+  margin-bottom: 32px; }
 
 .article-lanzarote .article-day-badge { margin-bottom: 8px; }
 
@@ -631,6 +631,7 @@
 .article-lanzarote .article-section h3 + h4 { margin-top: 2px !important; }
 
 .article-lanzarote .article-day-header + h4 { margin-top: 2px !important; }
+.article-lanzarote .article-day-header + .article-day-header-tight { margin-top: 2px !important; }
 
 .article-lanzarote .article-day-header-tight { margin-bottom: 8px !important; }
 
@@ -838,6 +839,3 @@
 
 /* Chevron dorÃ© devant les H2 */
 .article-lanzarote .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
-
-/* Badge Jour X */
-.article-lanzarote .article-day-badge { display: inline-block; background: var(--gold); color: #fff; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 12px; }
