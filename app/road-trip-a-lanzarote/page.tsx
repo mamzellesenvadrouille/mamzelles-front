@@ -422,7 +422,7 @@ export default function LanzarotePage() {
             <p>Nous arrivons au <strong>Mirador del Río</strong>, l'un des plus beaux points de vue de Lanzarote !</p>
             <p>Situé à 500 m d'altitude sur les falaises de Famara, il offre une vue imprenable sur <strong>El Risco de Famara</strong> et l'<strong>île de La Graciosa</strong> qui se trouve en face.</p>
             <p>Le <strong>belvédère del Río</strong> est une création architecturale de <strong>César Manrique</strong> qui s'intègre parfaitement dans l'environnement. Ce bâtiment donne accès à plusieurs étages avec différents points de vue.</p>
-            <p>L'entrée au Mirador del Río est payante (environ 9 € en tarif adulte et 4,50 € en tarif réduit en 2026, à confirmer sur <a href="https://www.cactlanzarote.com" target="_blank" rel="noopener noreferrer" className="article-link">cactlanzarote.com</a>), et un grand parking gratuit vous permettra de vous garer sans difficulté.</p>
+            <p>L'entrée au Mirador del Río est payante : 9 € en tarif adulte et 4,50 € en tarif réduit. Un grand parking gratuit vous permettra de vous garer sans difficulté.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6847-1024x768.jpg" alt="Mirador del Río Lanzarote" className="article-img-full" loading="lazy" />
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
@@ -443,19 +443,19 @@ export default function LanzarotePage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Vérifiez l'heure des marées avant de vous y rendre ! L'idéal est d'<strong>y aller à marée haute</strong>.</p></div>
             </div>
-            <p>Le paysage ne cesse de se transformer au fur et à mesure que la marée descend. Quand l'eau se retire, les roches volcaniques apparaissent. Une multitude de petites piscines se forment alors.</p>
-            <p>Apparaissent également des murets en forme de demi-cercle, construits par l'homme avec des blocs de roche volcanique entassés, qui servent de paravent ! Ils vont trop bien dans le décor, et c'est très astucieux, vu que Lanzarote est fortement exposée toute l'année aux alizés du Nord-Est (surtout dans l'après-midi) !</p>
-            <p>Vous pouvez pêcher des crabes ici, à condition que vous soyez équipé de chaussures adaptées pour gambader dans les rochers en toute sécurité. L'eau est peu profonde sur cette plage. Vous pouvez longuement marcher vers le large sans difficulté, vous aurez pied sur plusieurs dizaines de mètres.</p>
-            <p>En bref, la <strong>Playa Caletón Blanco</strong> est juste sublime et est l'endroit parfait pour lézarder quelques heures au soleil !</p>
-                                                <div className="article-gallery-3">
+            <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0315-768x1024.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0307-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0301-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
             </div>
-                        <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6938-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6935-768x1024.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6933-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+            <p>Le paysage ne cesse de se transformer au fur et à mesure que la marée descend. Quand l'eau se retire, les roches volcaniques apparaissent. Une multitude de petites piscines se forment alors.</p>
+            <p>Apparaissent également des murets en forme de demi-cercle, construits par l'homme avec des blocs de roche volcanique entassés, qui servent de paravent ! Ils vont trop bien dans le décor, et c'est très astucieux, vu que Lanzarote est fortement exposée toute l'année aux alizés du Nord-Est (surtout dans l'après-midi) !</p>
+            <p>Vous pouvez pêcher des crabes ici, à condition que vous soyez équipé de chaussures adaptées pour gambader dans les rochers en toute sécurité. L'eau est peu profonde sur cette plage. Vous pouvez longuement marcher vers le large sans difficulté, vous aurez pied sur plusieurs dizaines de mètres.</p>
+            <p>En bref, la <strong>Playa Caletón Blanco</strong> est juste sublime et est l'endroit parfait pour lézarder quelques heures au soleil !</p>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6938-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6935-768x1024.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6933-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
             </div>
 
             <div className="article-day-header article-day-header-tight">
