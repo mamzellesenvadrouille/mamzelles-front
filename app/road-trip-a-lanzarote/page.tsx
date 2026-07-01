@@ -294,12 +294,14 @@ export default function LanzarotePage() {
             <p>Arrivées à la <strong>Playa Mujeres</strong>, on découvre une jolie et longue plage de sable fin. Il y a très peu de monde, certainement lié au fait qu'elle soit assez isolée.</p>
             <p>En longeant la falaise sur la gauche, vous pouvez accéder à une petite crique, plus intimiste, appelée <strong>Caletón del Cobre</strong>. Si la marée est basse, vous pouvez continuer à longer la côte afin de découvrir les autres plages. La <strong>Playa Caletón San Marcial</strong>, magnifique petite plage au milieu des hautes falaises, vaut le coup d'œil !</p>
             <p>Il est possible depuis la Playa Mujeres de rejoindre la Playa Papagayo à pied. Pour cela, prenez le sentier qui longe la côte. Cette balade vous offrira de superbes points de vue ! Après avoir pris le temps ici et profité des dernières chaleurs de la journée, on reprend la voiture, direction la Playa Papagayo !</p>
-            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_180842_496-768x1024.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181912_661-1024x768.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181425_479-1024x768.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_180842_496-768x1024.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181912_661-1024x768.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_182515_074-768x1024.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181425_479-1024x768.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_182515_074-768x1024.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Playa Papagayo</h3>
