@@ -330,7 +330,8 @@ export default function LanzarotePage() {
             </div>
             <p>Pour notre 3ᵉ journée sur cette île aux paysages surprenants, nous partons à la découverte du <strong>Sud-Ouest</strong> !</p>
             <p>1ᵉʳ stop du jour à <strong>El Lago Verde (ou Charco Verde)</strong>. Vous trouverez un grand parking gratuit juste à l'entrée du site. Empruntez le petit sentier qui part de là pour accéder au <strong>Mirador del Charco de los Clicos</strong>.</p>
-            <p>L'accès est facile, faisable même en tong. Nous marchons 5 petites minutes pour arriver au spot. Et là, c'est un gros WAHOU ! On en prend plein les yeux avec le contraste des couleurs du paysage. Entre le bleu turquoise de la mer, le sable noir, le lac vert émeraude et les falaises oranges, c'est juste incroyable !</p>
+            <p>L'accès est facile, faisable même en tong. Nous marchons 5 petites minutes pour arriver au spot.</p>
+            <p>Et là, c'est un gros WAHOU ! On en prend plein les yeux avec le contraste des couleurs du paysage. Entre le bleu turquoise de la mer, le sable noir, le lac vert émeraude et les falaises oranges, c'est juste incroyable !</p>
                                                 <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6407-1024x768.jpg" alt="El Lago Verde Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/DJI_0280-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
