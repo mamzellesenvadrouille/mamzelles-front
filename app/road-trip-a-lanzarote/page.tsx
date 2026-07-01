@@ -332,11 +332,11 @@ export default function LanzarotePage() {
             <p>1ᵉʳ stop du jour à <strong>El Lago Verde (ou Charco Verde)</strong>. Vous trouverez un grand parking gratuit juste à l'entrée du site. Empruntez le petit sentier qui part de là pour accéder au <strong>Mirador del Charco de los Clicos</strong>.</p>
             <p>L'accès est facile, faisable même en tong. Nous marchons 5 petites minutes pour arriver au spot.</p>
             <p>Et là, c'est un gros WAHOU ! On en prend plein les yeux avec le contraste des couleurs du paysage. Entre le bleu turquoise de la mer, le sable noir, le lac vert émeraude et les falaises oranges, c'est juste incroyable !</p>
-                                                <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6407-1024x768.jpg" alt="El Lago Verde Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/DJI_0280-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0283-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6407-1024x768.jpg" alt="El Lago Verde Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/DJI_0280-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0283-1024x768.jpg" alt="Charco Verde Lanzarote" className="article-img-full" loading="lazy" />
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0282-1-1024x768.jpg" alt="Charco Verde Lanzarote" className="article-img-full" loading="lazy" />
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
@@ -359,11 +359,11 @@ export default function LanzarotePage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Pour apprécier davantage le moment et avoir un paysage encore plus spectaculaire, nous vous conseillons de <strong>venir à marée haute</strong>. Ici encore, on se rend compte de la puissance de Dame Nature !</p></div>
             </div>
-                                                <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6514-1024x768.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6531_jpg-768x1024.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6506-1024x768.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6514-1024x768.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6531_jpg-768x1024.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6506-1024x768.jpg" alt="Los Hervideros Lanzarote" className="article-img-full" loading="lazy" />
 
             <div className="article-day-header article-day-header-tight">
               <h3>Las Salinas de Janubio</h3>
@@ -387,13 +387,13 @@ export default function LanzarotePage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Prudence</strong><p>Pour tout vous dire, malgré la marée basse, il y avait ce jour-là un gros coefficient et beaucoup de vent… Du coup, les piscines étaient régulièrement recouvertes par les vagues, et il était très dangereux de s'y baigner, même de s'y approcher !</p></div>
             </div>
-            <p>En continuant votre chemin, vous tomberez sur la <strong>Mini Playa</strong>. Comme son nom l'indique, cette sublime plage de sable est tellement petite, qu'une fois votre serviette posée, il n'y a plus de place pour personne !</p>
-            <p>À peine plus loin, au <strong>Bufón de Simin</strong>, un spectacle de Dame Nature vous attend ! Ici, l'océan, poussé par le vent, vient taper la falaise. On a l'impression que l'eau jaillit des entrailles de la Terre sous forme de geyser. Soyez prêts à vous mouiller !</p>
-            <p>C'est le <strong>spot parfait</strong> que nous avons trouvé pour contempler le paysage et le coucher du soleil. Quel merveilleux souvenir on garde de ce moment !</p>
-                                                            <div className="article-gallery-2">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6663-1024x768.jpg" alt="Los Charcones Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6744-768x1024.jpg" alt="Los Charcones Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
             </div>
+            <p>En continuant votre chemin, vous tomberez sur la <strong>Mini Playa</strong>. Comme son nom l'indique, cette sublime plage de sable est tellement petite, qu'une fois votre serviette posée, il n'y a plus de place pour personne !</p>
+            <p>À peine plus loin, au <strong>Bufón de Simin</strong>, un spectacle de Dame Nature vous attend ! Ici, l'océan, poussé par le vent, vient taper la falaise. On a l'impression que l'eau jaillit des entrailles de la Terre sous forme de geyser. Soyez prêts à vous mouiller !</p>
+            <p>C'est le <strong>spot parfait</strong> que nous avons trouvé pour contempler le paysage et le coucher du soleil. Quel merveilleux souvenir on garde de ce moment !</p>
           </section>
 
           {/* JOUR 4 */}
