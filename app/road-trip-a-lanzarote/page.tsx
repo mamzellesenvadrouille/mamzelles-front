@@ -92,7 +92,7 @@ export default function LanzarotePage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>Voiture indispensable</span>
+          <span>60-80 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -142,14 +142,15 @@ export default function LanzarotePage() {
           <section className="article-section">
             <p className="article-intro">Vous envisagez de partir une semaine à Lanzarote et de faire un road trip sur l'île aux volcans ? Superbe idée ! Pour vous aider à y voir plus clair et organiser au mieux votre séjour, nous partageons ici tous nos itinéraires et bons plans…</p>
             <p>Cela fait un moment que nous voulions découvrir les Canaries. À défaut de faire le tour de toutes les îles de l'archipel, il a fallu faire un choix !</p>
-            <p>Notre cœur s'est rapidement tourné vers Lanzarote parce qu'elle est la plus sauvage, naturelle et authentique de toutes.</p>
-            <p>Avec ses paysages aussi surprenants qu'impressionnants, Lanzarote est surnommée l'<strong>île aux volcans</strong>. C'est la plus ancienne des Canaries puisqu'elle est âgée de 23 millions d'années !</p>
+            <p>Notre cœur s'est rapidement tourné vers Lanzarote parce qu'elle est la plus sauvage, naturelle et authentique de toutes. Avec ses paysages aussi surprenants qu'impressionnants, Lanzarote est surnommée l'<strong>île aux volcans</strong>. C'est la plus ancienne des Canaries puisqu'elle est âgée de 23 millions d'années !</p>
             <p>L'archipel des Canaries comporte 7 îles, Lanzarote est celle la plus à l'Est. Elle se situe au large des côtes marocaines. Sa superficie est de 845,94 km² pour être précise, ce qui fait d'elle la 4ᵉ plus grande île de l'archipel. Avec ses 142 517 habitants, Lanzarote est la 3ᵉ île la plus peuplée des Canaries après Tenerife et Grande Canarie.</p>
             <p>Cette île espagnole est réputée pour son climat, puisque ses températures moyennes varient entre 20 et 28 degrés, ce qui permet de la visiter toute l'année. C'est une destination très touristique, et notamment très prisée par les windsurfeurs car le vent y est quasi-constant.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6088-1024x768.jpg" alt="Montaña Colorada Lanzarote" className="article-img-full" loading="lazy" />
             <p>Nous nous sommes donc rendues à Lanzarote au mois de mars. Nous n'avons pas eu un super temps au départ, qu'on se le dise, mais cela ne nous a pas empêchées de partir à la découverte de cette île aux allures incroyables !</p>
-            <p>📌 Si vous avez l'intention de vadrouiller comme nous, n'oubliez pas au préalable de réserver votre véhicule qui est à récupérer directement sur le parking de l'aéroport. Nous vous conseillons le loueur <a href="https://www.cicar.com/FR" target="_blank" rel="noopener noreferrer" className="article-link">Cicar</a> qui propose le meilleur tarif (en tenant compte des conditions de location).</p>
-            <p>Nous vous recommandons également de ne pas prendre une petite voiture. Optez plutôt pour un modèle un peu plus robuste car il y a différents spots auxquels on accède uniquement par des routes accidentées.</p>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+              <div><strong>Le conseil des MamZelles</strong><p>Si vous avez l'intention de vadrouiller comme nous, n'oubliez pas au préalable de réserver votre véhicule qui est à récupérer directement sur le parking de l'aéroport. Nous vous conseillons le loueur <a href="https://www.cicar.com/FR/location-voitures-lanzarote" target="_blank" rel="noopener noreferrer" className="article-link">Cicar</a> qui propose le meilleur tarif (en tenant compte des conditions de location). Optez pour un modèle un peu plus robuste car il y a différents spots auxquels on accède uniquement par des routes accidentées.</p></div>
+            </div>
             <p>Nous avons réservé une chambre dans l'appart'hôtel <a href="https://www.google.com/maps/search/?api=1&query=Apartamentos+Acuario+Sol+Puerto+del+Carmen" target="_blank" className="article-link article-resto-link-desktop">Acuario Sol</a><a href="https://maps.app.goo.gl/XsT6hgbqyqUUTGsp9" target="_blank" className="article-link article-resto-link-mobile">Acuario Sol</a> dans la ville de Puerto del Carmen, sur la côte Sud-Est de l'île. Avec un très bon rapport qualité/prix et idéalement situé, il permet de visiter les 4 coins de l'île en moins de 45 min en voiture.</p>
                         <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5739-1024x768.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
@@ -157,8 +158,7 @@ export default function LanzarotePage() {
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5789_jpg-1024x768.jpg" alt="Puerto del Carmen Lanzarote" className="article-img-full" loading="lazy" />
             <p>Dès notre arrivée, nous sommes rapidement plongées dans un paysage aride, désertique voire lunaire. Tout juste sorties de l'aéroport, on aperçoit déjà une multitude de volcans…</p>
-            <p>Il est bon de savoir que Lanzarote regroupe <strong>300 cônes volcaniques</strong>, et que les <strong>3/4 de l'île sont recouverts de lave</strong>. Ce décor est impressionnant et fait tout le charme de cette île volcanique !</p>
-            <p>En effet, Lanzarote est marquée par les éruptions volcaniques qui ont eu lieu entre 1730 et 1736, et en 1824. La lave semble avoir figé le temps.</p>
+            <p>Il est bon de savoir que Lanzarote regroupe <strong>300 cônes volcaniques</strong>, et que les <strong>3/4 de l'île sont recouverts de lave</strong>. Ce décor est impressionnant et fait tout le charme de cette île volcanique ! En effet, Lanzarote est marquée par les éruptions volcaniques qui ont eu lieu entre 1730 et 1736, et en 1824. La lave semble avoir figé le temps.</p>
             <p>À ce moment-là, on a juste hâte de partir à la découverte de cette île aux multiples facettes !</p>
           </section>
 
