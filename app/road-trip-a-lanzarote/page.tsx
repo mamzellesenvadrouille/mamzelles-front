@@ -146,8 +146,10 @@ export default function LanzarotePage() {
             <p>L'archipel des Canaries comporte 7 îles, Lanzarote est celle la plus à l'Est. Elle se situe au large des côtes marocaines. Sa superficie est de 845,94 km² pour être précise, ce qui fait d'elle la 4ᵉ plus grande île de l'archipel. Avec ses 142 517 habitants, Lanzarote est la 3ᵉ île la plus peuplée des Canaries après Tenerife et Grande Canarie.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6088-1024x768.jpg" alt="Montaña Colorada Lanzarote" className="article-img-full" loading="lazy" />
             <p>Nous nous sommes donc rendues à Lanzarote au mois de mars. Nous n'avons pas eu un super temps au départ, qu'on se le dise, mais cela ne nous a pas empêchées de partir à la découverte de cette île aux allures incroyables !</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5739-1024x768.jpg" alt="Hôtel Acuario Sol Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5812-768x1024.jpg" alt="Hôtel Acuario Sol Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                        <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5739-1024x768.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5812-768x1024.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+            </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5789_jpg-1024x768.jpg" alt="Puerto del Carmen Lanzarote" className="article-img-full" loading="lazy" />
             <p>Pour notre séjour, nous avions choisi de loger à l'appart'hôtel <a href="https://www.google.com/maps/search/?api=1&query=Apartamentos+Acuario+Sol+Puerto+del+Carmen" target="_blank" className="article-link article-resto-link-desktop">Acuario Sol</a><a href="https://maps.app.goo.gl/XsT6hgbqyqUUTGsp9" target="_blank" className="article-link article-resto-link-mobile">Acuario Sol</a>, à Puerto del Carmen, un bon point de chute pour rayonner sur toute l'île.</p>
             <p>Il est bon de savoir que Lanzarote regroupe <strong>300 cônes volcaniques</strong>, et que les <strong>3/4 de l'île sont recouverts de lave</strong>. Ce décor est impressionnant et fait tout le charme de cette île volcanique !</p>
@@ -168,8 +170,10 @@ export default function LanzarotePage() {
             <p>C'est un endroit un peu secret qui se trouve dans peu de guides touristiques. Il se situe sur la <strong>L2-35</strong>. Ne cherchez pas de panneau, il n'y en a pas ! Garez-vous au niveau du petit parking qui longe la route. L'accès est facile, il ne vous restera plus qu'à traverser.</p>
             <p>Las Grietas est une grosse fissure sur la pente de la <strong>Montaña Blanca</strong>. Vous pouvez vous promener sur plusieurs mètres à travers un couloir étroit de lave pétrifiée où l'on peut observer les différentes couches volcaniques.</p>
             <p>On ressent clairement ici la force de la nature. Et il faut le dire, c'est un très bon spot pour faire de belles photos !</p>
-                                    <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_125711_751-768x1024.jpg" alt="Las Grietas Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_131051_336-768x1024.jpg" alt="Las Grietas Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                                <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_125711_751-768x1024.jpg" alt="Las Grietas Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_131051_336-768x1024.jpg" alt="Las Grietas Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Le Palmier incliné</h3>
@@ -181,10 +185,12 @@ export default function LanzarotePage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Mise à jour</strong><p>On nous a informées que <strong>le palmier était tombé</strong>. Il est actuellement couché par terre, coupé en deux et desséché...</p></div>
             </div>
-                        <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_135909_267-1024x768.jpg" alt="Palmier incliné Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5966_jpg-768x1024.jpg" alt="Palmier Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5970_jpg-768x1024.jpg" alt="Palmier Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_140308_534-768x1024.jpg" alt="Palmier incliné Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                    <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_135909_267-1024x768.jpg" alt="Palmier incliné Lanzarote" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5966_jpg-768x1024.jpg" alt="Palmier Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5970_jpg-768x1024.jpg" alt="Palmier Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_140308_534-768x1024.jpg" alt="Palmier incliné Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>La Montaña Colorada</h3>
@@ -208,8 +214,10 @@ export default function LanzarotePage() {
             <p>Depuis le parking, empruntez le petit sentier sur environ 1 km à travers une mer de lave. Arrivé au pied du cratère, suivez le chemin sur la droite.</p>
             <p>Après quelques minutes de marche, vous tomberez sur l'ouverture permettant de pénétrer au <strong>cœur du volcan</strong>. À cet endroit, si vous jetez un œil sur la droite, vous apercevrez un gros bloc de pierre qui dépasse dans ce paysage lunaire. Il s'agit en fait du rocher qui fermait le cratère et qui a été projeté lors de la dernière éruption volcanique.</p>
             <p>Une fois à l'intérieur, le décor est saisissant. On peut facilement se laisser transporter et imaginer la lave, les grondements, les explosions… On se croirait vraiment sur une autre planète !</p>
-                                    <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6059-768x1024.jpg" alt="El Cuervo Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_9413-1024x768.jpg" alt="El Cuervo Lanzarote" className="article-img-full" loading="lazy" />
+                                                <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6059-768x1024.jpg" alt="El Cuervo Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_9413-1024x768.jpg" alt="El Cuervo Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>La Montaña Negra</h3>
@@ -223,8 +231,10 @@ export default function LanzarotePage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Mise à jour</strong><p>Il est désormais <strong>interdit de monter</strong> sur la Montaña Negra.</p></div>
             </div>
-                        <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6022-1024x768.jpg" alt="Montaña Negra Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_185432_226-768x1024.jpg" alt="Montaña Negra Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                    <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6022-1024x768.jpg" alt="Montaña Negra Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_185432_226-768x1024.jpg" alt="Montaña Negra Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+            </div>
             <p>Direction <strong>Puerto del Carmen</strong>, où se trouve notre hôtel, pour y manger un petit morceau en attendant la belle journée du lendemain qui s'annonce !</p>
           </section>
 
@@ -245,19 +255,25 @@ export default function LanzarotePage() {
             <p>Imaginez à perte de vue un paysage noir, dû aux cendres volcaniques, sur lequel des trous de 2 à 5 m de diamètre apparaissent. <strong>Les vignes</strong> sont plantées dans ces immenses alvéoles afin de les protéger du vent.</p>
             <p>Les trous, plus ou moins profonds, permettent d'atteindre une couche de terre plus argileuse et humide. Les cendres à la surface jouent un rôle de protection pour la vigne et réduisent également l'évaporation de l'eau.</p>
             <p>Il est bon de savoir que les viticulteurs font tout manuellement, aucun engin agricole n'est utilisé pour cela. Si jamais les trous ne sont pas assez profonds pour protéger les vignes contre les vents brûlants et asséchants du Sahara, ils complètent le dispositif de protection en construisant autour des murs de pierre en forme de demi-cercle.</p>
-                        <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6196-768x1024.jpg" alt="Vignes volcaniques Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6159-1024x768.jpg" alt="La Geria Lanzarote" className="article-img-full" loading="lazy" />
+                                    <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6196-768x1024.jpg" alt="Vignes volcaniques Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6159-1024x768.jpg" alt="La Geria Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+            </div>
             <p>À la <a href="https://www.google.com/maps/search/?api=1&query=Bodega+La+Geria+Lanzarote" target="_blank" className="article-link article-resto-link-desktop">Bodega de La Geria</a><a href="https://maps.app.goo.gl/w5N4ttCyfQSDS2oL9" target="_blank" className="article-link article-resto-link-mobile">Bodega de La Geria</a>, vous avez la possibilité de déguster et d'acheter le vin qu'ils produisent. Il y a également sur place un petit restaurant. Les tapas y sont excellentes, laissez-vous tenter ! Ce haut-lieu est facilement accessible depuis leur parking.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Évitez les heures de pointe pour vous y rendre à cause de l'afflux des bus touristiques qui pourrait gâcher votre moment !</p></div>
             </div>
-                        <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6181-1024x768.jpg" alt="La Geria Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/La-Bodega-768x1024.jpg" alt="Bodega La Geria Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                    <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6181-1024x768.jpg" alt="La Geria Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/La-Bodega-768x1024.jpg" alt="Bodega La Geria Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+            </div>
             <p>Nous n'avons pas su résister à la tentation de faire voler notre drone dans cet endroit époustouflant. Impossible de repartir d'ici sans prendre quelques photos vues du ciel ! Pour cela, nous avons repris la voiture et sommes allées nous poser dans un petit chemin non loin de là.</p>
-                        <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0261-768x1024.jpg" alt="Vignes volcaniques Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0244-768x1024.jpg" alt="Vignes volcaniques Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6191-768x1024.jpg" alt="Route Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                    <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0261-768x1024.jpg" alt="Vignes volcaniques Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0244-768x1024.jpg" alt="Vignes volcaniques Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6191-768x1024.jpg" alt="Route Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Playa Mujeres</h3>
@@ -272,9 +288,11 @@ export default function LanzarotePage() {
             <p>En longeant la falaise sur la gauche, vous pouvez accéder à une petite crique, plus intimiste, appelée <strong>Caletón del Cobre</strong>. Si la marée est basse, vous pouvez continuer à longer la côte afin de découvrir les autres plages. La <strong>Playa Caletón San Marcial</strong>, magnifique petite plage au milieu des hautes falaises, vaut le coup d'œil !</p>
             <p>Il est possible depuis la Playa Mujeres de rejoindre la Playa Papagayo à pied. Pour cela, prenez le sentier qui longe la côte. Cette balade vous offrira de superbes points de vue !</p>
                         <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6219-1024x768.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" />
-                        <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_180842_496-768x1024.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181912_661-1024x768.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181425_479-1024x768.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" />
+                                    <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_180842_496-768x1024.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181912_661-1024x768.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181425_479-1024x768.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+            </div>
             <p>Après avoir pris le temps ici et profité des dernières chaleurs de la journée, on reprend la voiture, direction la Playa Papagayo !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_182515_074-768x1024.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
 
@@ -285,9 +303,11 @@ export default function LanzarotePage() {
             <p>Pour admirer le coucher du soleil et se poser sur le <strong>spot parfait</strong>, nous avons longé l'unique restaurant du coin pour rejoindre la <strong>pointe de la falaise</strong>.</p>
             <p>D'ici, on aperçoit sur la droite toutes les plages citées précédemment. Même si on était juste au top devant ce merveilleux panorama, nous n'étions malheureusement pas les seules à avoir eu cette idée !</p>
             <p>En tout cas, le ciel était voilé ce soir-là aussi. Nous n'aurons pas eu notre petit sunset tant attendu. Dommage… Demain peut-être ?!</p>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6276-1024x768.jpg" alt="Playa Papagayo Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6281-1024x768.jpg" alt="Playa Papagayo Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6287-1024x768.jpg" alt="Playa San Marcial Lanzarote" className="article-img-full" loading="lazy" />
+                        <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6276-1024x768.jpg" alt="Playa Papagayo Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6281-1024x768.jpg" alt="Playa Papagayo Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6287-1024x768.jpg" alt="Playa San Marcial Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+            </div>
           </section>
 
           {/* JOUR 3 */}
@@ -303,14 +323,18 @@ export default function LanzarotePage() {
             <p>Pour notre 3ᵉ journée sur cette île aux paysages surprenants, nous partons à la découverte du <strong>Sud-Ouest</strong> !</p>
             <p>1ᵉʳ stop du jour à <strong>El Lago Verde (ou Charco Verde)</strong>. Vous trouverez un grand parking gratuit juste à l'entrée du site. Empruntez le petit sentier qui part de là pour accéder au <strong>Mirador del Charco de los Clicos</strong>.</p>
             <p>L'accès est facile, faisable même en tong. Nous marchons 5 petites minutes pour arriver au spot. Et là, c'est un gros WAHOU ! On en prend plein les yeux avec le contraste des couleurs du paysage. Entre le bleu turquoise de la mer, le sable noir, le lac vert émeraude et les falaises oranges, c'est juste incroyable !</p>
-                                    <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6407-1024x768.jpg" alt="El Lago Verde Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/DJI_0280-1024x768.jpg" alt="Charco Verde Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0283-1024x768.jpg" alt="Charco Verde Lanzarote" className="article-img-full" loading="lazy" />
+                                                <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6407-1024x768.jpg" alt="El Lago Verde Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/DJI_0280-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0283-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+            </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0282-1-1024x768.jpg" alt="Charco Verde Lanzarote" className="article-img-full" loading="lazy" />
             <p>N'hésitez pas avant de reprendre la route, à faire un petit arrêt au village de pêcheurs <strong>El Golfo</strong>, que ce soit pour y manger du poisson de la pêche du jour ou tout simplement vous imprégner de l'atmosphère de l'endroit.</p>
-                                    <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6441-1024x768.jpg" alt="El Golfo Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6461-1024x768.jpg" alt="El Golfo Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6468-1024x768.jpg" alt="El Golfo Lanzarote" className="article-img-full" loading="lazy" />
+                                                <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6441-1024x768.jpg" alt="El Golfo Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6461-1024x768.jpg" alt="El Golfo Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6468-1024x768.jpg" alt="El Golfo Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Los Hervideros</h3>
@@ -322,9 +346,11 @@ export default function LanzarotePage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Pour apprécier davantage le moment et avoir un paysage encore plus spectaculaire, nous vous conseillons de <strong>venir à marée haute</strong>. Ici encore, on se rend compte de la puissance de Dame Nature !</p></div>
             </div>
-                                    <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6514-1024x768.jpg" alt="Los Hervideros Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6531_jpg-768x1024.jpg" alt="Los Hervideros Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6506-1024x768.jpg" alt="Los Hervideros Lanzarote" className="article-img-full" loading="lazy" />
+                                                <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6514-1024x768.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6531_jpg-768x1024.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6506-1024x768.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Las Salinas de Janubio</h3>
@@ -333,8 +359,10 @@ export default function LanzarotePage() {
             <p>De l'autre côté, vous apercevrez la lagune longue d'1 km créée par une éruption volcanique, ainsi que les célèbres <strong>Salinas de Janubio</strong>.</p>
             <p>Elles sont les plus étendues des Îles Canaries et constituent un paysage humain d'une grande valeur architecturale et culturelle. De nos jours, elles continuent de produire l'or blanc qui a été essentiel à l'économie de l'île jusqu'à quelques décennies seulement.</p>
             <p>Nous nous sommes rendues sur ce site en fin d'après-midi. La lumière était juste sublime… Elle se reflétait sur les marais et nous a offert un joli camaïeu de rose sur les salins.</p>
-                                                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220318_163623_323-768x1024.jpg" alt="Las Salinas de Janubio Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6580-1024x768.jpg" alt="Las Salinas de Janubio Lanzarote" className="article-img-full" loading="lazy" />
+                                                            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220318_163623_323-768x1024.jpg" alt="Las Salinas de Janubio Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6580-1024x768.jpg" alt="Las Salinas de Janubio Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Los Charcones</h3>
@@ -349,8 +377,10 @@ export default function LanzarotePage() {
             <p>En continuant votre chemin, vous tomberez sur la <strong>Mini Playa</strong>. Comme son nom l'indique, cette sublime plage de sable est tellement petite, qu'une fois votre serviette posée, il n'y a plus de place pour personne !</p>
             <p>À peine plus loin, au <strong>Bufón de Simin</strong>, un spectacle de Dame Nature vous attend ! Ici, l'océan, poussé par le vent, vient taper la falaise. On a l'impression que l'eau jaillit des entrailles de la Terre sous forme de geyser. Soyez prêts à vous mouiller !</p>
             <p>C'est le <strong>spot parfait</strong> que nous avons trouvé pour contempler le paysage et le coucher du soleil. Quel merveilleux souvenir on garde de ce moment !</p>
-                                                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6663-1024x768.jpg" alt="Los Charcones Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6744-768x1024.jpg" alt="Los Charcones Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                                            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6663-1024x768.jpg" alt="Los Charcones Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6744-768x1024.jpg" alt="Los Charcones Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+            </div>
           </section>
 
           {/* JOUR 4 */}
@@ -366,8 +396,10 @@ export default function LanzarotePage() {
             <p>Aujourd'hui, nous partons au <strong>Nord-Est</strong> de Lanzarote. Comme nous sommes samedi, cela tombe à pic pour faire une halte à Haría et découvrir son petit <strong>marché artisanal</strong> (10 h - 14 h).</p>
             <p>On y fait effectivement rapidement le tour, mais l'ambiance est particulièrement agréable ici. Profitez-en pour vous balader dans le village, à l'ombre des palmiers.</p>
             <p>Après avoir déjeuné dans un petit restaurant typique sur la Place León y Castillo, nous reprenons la voiture pour 12 minutes de route...</p>
-                                                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6825-768x1024.jpg" alt="Haría Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6830-768x1024.jpg" alt="Haría Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                                            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6825-768x1024.jpg" alt="Haría Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6830-768x1024.jpg" alt="Haría Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Mirador del Río</h3>
@@ -380,9 +412,11 @@ export default function LanzarotePage() {
               <div><strong>Bon à savoir</strong><p>L'entrée au Mirador del Río est payante (environ 9 € en tarif adulte et 4,50 € en tarif réduit en 2026, à confirmer sur cactlanzarote.com), et un grand parking gratuit vous permettra de vous garer sans difficulté. Si l'architecture ne vous intéresse pas, empruntez alors le sentier qui part sur la gauche, juste avant le parking : au bout du chemin, vous découvrirez une vue tout aussi exceptionnelle sur El Risco de Famara et l'île de La Graciosa.</p></div>
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6847-1024x768.jpg" alt="Mirador del Río Lanzarote" className="article-img-full" loading="lazy" />
-                        <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6841-768x1024.jpg" alt="Mirador del Río Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220319_150851_872-1024x768.jpg" alt="Mirador del Río Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6881-768x1024.jpg" alt="Mirador del Río Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                    <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6841-768x1024.jpg" alt="Mirador del Río Lanzarote" loading="lazy" style={{flex:"0.265",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220319_150851_872-1024x768.jpg" alt="Mirador del Río Lanzarote" loading="lazy" style={{flex:"0.471",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6881-768x1024.jpg" alt="Mirador del Río Lanzarote" loading="lazy" style={{flex:"0.265",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Playa Caletón Blanco</h3>
@@ -397,12 +431,16 @@ export default function LanzarotePage() {
             <p>Apparaissent également des murets en forme de demi-cercle, construits par l'homme avec des blocs de roche volcanique entassés, qui servent de paravent ! Ils vont trop bien dans le décor, et c'est très astucieux, vu que Lanzarote est fortement exposée toute l'année aux alizés du Nord-Est (surtout dans l'après-midi) !</p>
             <p>Vous pouvez pêcher des crabes ici, à condition que vous soyez équipé de chaussures adaptées pour gambader dans les rochers en toute sécurité. L'eau est peu profonde sur cette plage. Vous pouvez longuement marcher vers le large sans difficulté, vous aurez pied sur plusieurs dizaines de mètres.</p>
             <p>En bref, la <strong>Playa Caletón Blanco</strong> est juste sublime et est l'endroit parfait pour lézarder quelques heures au soleil !</p>
-                                    <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0315-768x1024.jpg" alt="Playa Caletón Blanco Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0307-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0301-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6938-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6935-768x1024.jpg" alt="Playa Caletón Blanco Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6933-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" className="article-img-full" loading="lazy" />
+                                                <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0315-768x1024.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0307-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0301-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+            </div>
+                        <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6938-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6935-768x1024.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6933-1024x768.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Punta Mujeres</h3>
@@ -411,10 +449,14 @@ export default function LanzarotePage() {
             <p>Vous trouverez du coup, parmi toutes les maisons blanches typiques de Lanzarote, de nombreuses locations de vacances, de petites boutiques et de quoi vous restaurer.</p>
             <p>Mais le plus intéressant sont les 2 km de côte ! Vous y découvrirez plusieurs <strong>piscines naturelles</strong>, dont l'eau est renouvelée à chaque marée. Ici par contre, nous vous conseillons de <strong>venir à marée basse</strong>.</p>
             <p>La plupart des piscines sont vraiment naturelles, d'autres sont façonnées par la main de l'homme afin de faciliter leur accès. Autour des bassins, des petites plateformes ont également été aménagées pour poser sa serviette, mais il peut vite être très difficile d'y trouver une petite place…</p>
-                                                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_9357-768x1024.jpg" alt="Punta Mujeres Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6953-1024x768.jpg" alt="Punta Mujeres Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_9363-1024x768.jpg" alt="Piscine naturelle Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_9350-768x1024.jpg" alt="Piscine naturelle Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                                            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_9357-768x1024.jpg" alt="Punta Mujeres Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6953-1024x768.jpg" alt="Punta Mujeres Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+            </div>
+                        <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_9363-1024x768.jpg" alt="Piscine naturelle Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_9350-768x1024.jpg" alt="Piscine naturelle Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+            </div>
           </section>
 
           {/* JOUR 5 */}
@@ -437,8 +479,10 @@ export default function LanzarotePage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Pour le rejoindre, revenez un peu sur vos pas et rejoignez la falaise sur votre droite. L'endroit est bien indiqué sur les GPS sous le nom de <strong>Cueva de los Suecos (ou Cueva de las Cabras)</strong>. Beaucoup de personnes passent à côté sans le voir, alors n'hésitez pas à arpenter les lieux avec la localisation.</p></div>
             </div>
-                                                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_133410_551-768x1024.jpg" alt="Mirador El Risco de Famara Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7140-1024x768.jpg" alt="Mirador El Risco de Famara Lanzarote" className="article-img-full" loading="lazy" />
+                                                            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_133410_551-768x1024.jpg" alt="Mirador El Risco de Famara Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7140-1024x768.jpg" alt="Mirador El Risco de Famara Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Cueva de los Suecos (ou Cueva de las Cabras)</h3>
@@ -450,9 +494,11 @@ export default function LanzarotePage() {
             <p>Pour trouver ce mirador, il faut <strong>longer le bord de la falaise</strong>. Une fois sur place, vous apercevrez des <strong>rochers et de grosses marches qui descendent sur la droite</strong>.</p>
             <p>Clairement, même nous qui n'avons pas forcément le vertige, nous avons trouvé cet endroit très impressionnant ! Pour nous rassurer, nous sommes descendues sur les fesses car nous avions les jambes qui tétanisaient.</p>
             <p>Vous prendrez donc un tout petit chemin avant d'arriver dans la grotte. Vous vous retrouverez alors à <strong>623 mètres de hauteur et à flanc de falaise</strong> ! Avec sa vue à couper le souffle, on a trouvé ce lieu tout simplement incroyable… Certainement le plus époustouflant de Lanzarote !</p>
-                                                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131855_002-1024x768.jpg" alt="Cueva de los Suecos Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131446_704-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7212-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                                            <div className="article-gallery-3">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131855_002-1024x768.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.471",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131446_704-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.265",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7212-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.265",minWidth:0}} />
+            </div>
 
             <div className="article-day-header article-day-header-tight">
               <h3>Playa Famara</h3>
@@ -462,11 +508,15 @@ export default function LanzarotePage() {
             <p>Cette belle et <strong>longue plage de 5 km</strong>, parsemée de dunes et d'abris en pierre (comme ceux visibles sur la Playa Caletón Blanco), est cependant parfaite pour une balade en bord de mer ou une petite séance bronzette à l'abri du vent.</p>
             <p>Non loin de là, se trouve le petit <strong>village de La Caleta</strong>. Très animé en haute saison, vous y trouverez quelques magasins (de surf majoritairement), restaurants et bars.</p>
             <p>Nous y avons fait une petite halte avant de rentrer à l'hôtel. C'était l'occasion parfaite pour profiter des derniers rayons de soleil de la journée autour d'une bonne sangria !</p>
-                                                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7268-768x1024.jpg" alt="Playa Famara Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/11/IMG_7308_jpg-768x1024.jpg" alt="Playa Famara" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                                            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7268-768x1024.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/11/IMG_7308_jpg-768x1024.jpg" alt="Playa Famara" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+            </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/11/IMG_7334-1024x768.jpg" alt="Playa Famara dunes" className="article-img-full" loading="lazy" />
-                        <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7320_jpg-768x1024.jpg" alt="Playa Famara Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7340_jpg-768x1024.jpg" alt="Playa Famara Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
+                                    <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7320_jpg-768x1024.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7340_jpg-768x1024.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+            </div>
           </section>
 
           {/* SECTION PRATIQUE */}
