@@ -67,7 +67,7 @@ export default function LanzarotePage() {
 
       <section className="hero hero-article" style={{ overflowX: 'hidden' }}>
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/Lanzarote.webp" alt="Road trip d'une semaine à Lanzarote, l'île aux volcans" style={{objectPosition: 'center 55%'}} />
+        <img className="hero-bg" src="/Lanzarote.webp" alt="Road trip d'une semaine à Lanzarote, l'île aux volcans" style={{objectPosition: 'center 85%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Lanzarote<br /><em>L'île aux 300 volcans</em></h1>
