@@ -232,14 +232,14 @@ export default function LanzarotePage() {
             <p>Notre objectif initial était d'arriver à son point le plus haut avant le coucher du soleil ! Vu comme le ciel est chargé ce soir-là, il n'y aura pas d'incroyable sunset… Mais tant pis, on y est, on y va !</p>
             <p>Il y a plusieurs sentiers pour monter. À noter cependant que plus ils sont inclinés, plus ils seront difficiles à gravir physiquement et plus ils seront glissants ! À vous du coup de choisir le meilleur chemin à emprunter.</p>
             <p>Arrivées au sommet, on a l'impression d'être sur le toit du monde ! Même si on ne peut pas assister au coucher du soleil, ce spot nous offre une <strong>vue spectaculaire à 360°</strong>.</p>
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6022-1024x768.jpg" alt="Montaña Negra Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_185432_226-768x1024.jpg" alt="Montaña Negra Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+            </div>
             <p>De là, c'est bien plus facile et bien moins fatigant pour rejoindre le parking ! Comme des gosses, on est redescendues en courant et en se laissant porter par la pente, quitte à se remplir les chaussures de cailloux ! Fous rires garantis ! En moins de 15 minutes, nous étions de retour à la voiture.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Mise à jour</strong><p>Il est désormais <strong>interdit de monter</strong> sur la Montaña Negra.</p></div>
-            </div>
-                                    <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6022-1024x768.jpg" alt="Montaña Negra Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_185432_226-768x1024.jpg" alt="Montaña Negra Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
             </div>
             <p>Direction <strong>Puerto del Carmen</strong>, où se trouve notre hôtel, pour y manger un petit morceau en attendant la belle journée du lendemain qui s'annonce !</p>
           </section>
@@ -290,16 +290,15 @@ export default function LanzarotePage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Avec une voiture suffisamment robuste (évitez la Fiat 500 !), l'endroit est facile d'accès, sinon vous risqueriez de laisser des bouts de voiture sur place ! Il est possible de stationner sans difficulté sur les grands parkings gratuits mis à disposition.</p></div>
             </div>
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6219-1024x768.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" />
             <p>Arrivées à la <strong>Playa Mujeres</strong>, on découvre une jolie et longue plage de sable fin. Il y a très peu de monde, certainement lié au fait qu'elle soit assez isolée.</p>
             <p>En longeant la falaise sur la gauche, vous pouvez accéder à une petite crique, plus intimiste, appelée <strong>Caletón del Cobre</strong>. Si la marée est basse, vous pouvez continuer à longer la côte afin de découvrir les autres plages. La <strong>Playa Caletón San Marcial</strong>, magnifique petite plage au milieu des hautes falaises, vaut le coup d'œil !</p>
-            <p>Il est possible depuis la Playa Mujeres de rejoindre la Playa Papagayo à pied. Pour cela, prenez le sentier qui longe la côte. Cette balade vous offrira de superbes points de vue !</p>
-                        <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6219-1024x768.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" />
-                                    <div className="article-gallery-3">
+            <p>Il est possible depuis la Playa Mujeres de rejoindre la Playa Papagayo à pied. Pour cela, prenez le sentier qui longe la côte. Cette balade vous offrira de superbes points de vue ! Après avoir pris le temps ici et profité des dernières chaleurs de la journée, on reprend la voiture, direction la Playa Papagayo !</p>
+            <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_180842_496-768x1024.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181912_661-1024x768.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_181425_479-1024x768.jpg" alt="Playa Mujeres Lanzarote" loading="lazy" style={{flex:"0.390",minWidth:0}} />
             </div>
-            <p>Après avoir pris le temps ici et profité des dernières chaleurs de la journée, on reprend la voiture, direction la Playa Papagayo !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220317_182515_074-768x1024.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:"60%",margin:"0 auto",display:"block"}} />
 
             <div className="article-day-header article-day-header-tight">
