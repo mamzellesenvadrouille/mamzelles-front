@@ -280,8 +280,8 @@ export default function LanzarotePage() {
             </div>
             <p>Changement de décor ! À environ 30 minutes en voiture de La Geria, direction les plages de la côte Sud, réputées pour leur beauté.</p>
             <p>Les 4 derniers kilomètres se font sur une <strong>route accidentée</strong> et ça secoue pas mal ! Après 3 km de piste environ, la route se divise. <strong>Playa Papagayo</strong> d'un côté, les autres plages de l'autre. Nous prenons <strong>sur la droite</strong> dans un premier temps, direction Playa Mujeres, car nous voulons terminer notre journée de vadrouille par le coucher de soleil à la Playa Papagayo…</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Nous vous recommandons d'être équipé d'un véhicule suffisamment robuste pour emprunter cette piste — évitez la Fiat 500, vous risqueriez de laisser des bouts de voiture sur place ! Il est possible de stationner sans difficulté sur les grands parkings gratuits mis à disposition.</p></div>
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6219-1024x768.jpg" alt="Playa Mujeres Lanzarote" className="article-img-full" loading="lazy" />
@@ -349,8 +349,8 @@ export default function LanzarotePage() {
             <p>À 5 minutes en voiture d'<strong>El Golfo</strong>, nous arrivons à los <strong>Hervideros</strong>, se traduisant littéralement par « eau bouillante ». Ici, vous n'aurez aucune difficulté à vous garer non plus (grand parking).</p>
             <p>Encore un endroit impressionnant, comme figé par le temps. Le site est recouvert de lave mais propose plusieurs petits sentiers balisés et bien aménagés pour déambuler.</p>
             <p>Vous découvrirez dans cet univers chaotique de lave pétrifiée, différents points de vue et 2 grottes dans lesquelles la mer vient s'engouffrer. Aussi, depuis quelques puits de jour bien dissimulés dans le décor, on peut observer les vagues se fracasser dans les grottes, provoquant un bruit assourdissant.</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-avis">
+              <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Pour apprécier davantage le moment et avoir un paysage encore plus spectaculaire, nous vous conseillons de venir à marée haute. Ici encore, on se rend compte de la puissance de Dame Nature !</p></div>
             </div>
             <div className="article-gallery-2">
@@ -377,8 +377,8 @@ export default function LanzarotePage() {
             <p>On reprend la route vers <strong>los Charcones</strong> et ses <strong>piscines naturelles</strong>. Une règle inévitable pour voir les piscines (et s'y baigner pour les plus courageux !), <strong>s'y rendre à marée basse</strong> !</p>
             <p>Nous avons choisi de nous garer à l'<strong>usine de dessalement de Yaíza</strong>. Il y a un peu de piste, mais l'accès reste facile. Pour vous y rendre, tapez sur le GPS « Canal Gestión Lanzarote - Central de Janubio » ou les coordonnées <strong>28.9210617, 13.8365738</strong>.</p>
             <p>De là, suivez la côte à pied. N'hésitez pas à sortir du sentier pour rejoindre le bord de l'eau, il y a plusieurs piscines bien cachées !</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
               <div><strong>Prudence</strong><p>Pour tout vous dire, malgré la marée basse, il y avait ce jour-là un gros coefficient et beaucoup de vent… Du coup, les piscines étaient régulièrement recouvertes par les vagues, et il était très dangereux de s'y baigner, même de s'y approcher !</p></div>
             </div>
             <div className="article-gallery-2">
@@ -495,8 +495,8 @@ export default function LanzarotePage() {
             <div className="article-day-header article-day-header-tight">
               <h3>Cueva de los Suecos (ou Cueva de las Cabras)</h3>
             </div>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
               <div><strong>Prudence</strong><p>Si vous avez le vertige, nous vous déconseillons vivement de vous y aventurer. Ce spot n'est pas du tout sécurisé, et nous déconseillons fortement l'accès aux enfants.</p></div>
             </div>
             <p>Pour trouver ce mirador, il faut <strong>longer le bord de la falaise</strong>. Une fois sur place, vous apercevrez des <strong>rochers et de grosses marches qui descendent sur la droite</strong>.</p>
