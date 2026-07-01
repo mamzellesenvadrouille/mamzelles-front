@@ -510,10 +510,10 @@ export default function LanzarotePage() {
             <p>Pour trouver ce mirador, il faut <strong>longer le bord de la falaise</strong>. Une fois sur place, vous apercevrez des <strong>rochers et de grosses marches qui descendent sur la droite</strong>.</p>
             <p>Clairement, même nous qui n'avons pas forcément le vertige, nous avons trouvé cet endroit très impressionnant ! Pour nous rassurer, nous sommes descendues sur les fesses car nous avions les jambes qui tétanisaient.</p>
             <p>Vous prendrez donc un tout petit chemin avant d'arriver dans la grotte. Vous vous retrouverez alors à <strong>623 mètres de hauteur et à flanc de falaise</strong> ! Avec sa vue à couper le souffle, on a trouvé ce lieu tout simplement incroyable… Certainement le plus époustouflant de Lanzarote !</p>
-                                                            <div className="article-gallery-3">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131855_002-1024x768.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.471",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131446_704-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.265",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7212-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.265",minWidth:0}} />
+                                                            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131855_002-1024x768.jpg" alt="Cueva de los Suecos Lanzarote" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131446_704-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7212-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
             </div>
 
             <div className="article-day-header article-day-header-tight">
