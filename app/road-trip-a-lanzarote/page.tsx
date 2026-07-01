@@ -512,8 +512,8 @@ export default function LanzarotePage() {
             <p>Vous prendrez donc un tout petit chemin avant d'arriver dans la grotte. Vous vous retrouverez alors à <strong>623 mètres de hauteur et à flanc de falaise</strong> ! Avec sa vue à couper le souffle, on a trouvé ce lieu tout simplement incroyable… Certainement le plus époustouflant de Lanzarote !</p>
                                                             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131855_002-1024x768.jpg" alt="Cueva de los Suecos Lanzarote" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131446_704-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7212-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_131446_704-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7212-768x1024.jpg" alt="Cueva de los Suecos Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
             </div>
 
             <div className="article-day-header article-day-header-tight">
@@ -522,14 +522,14 @@ export default function LanzarotePage() {
             <p>Après que la <strong>Playa Famara</strong> nous ait fait de l'œil d'en haut, c'est parti pour la rejoindre en voiture en 30 minutes.</p>
             <p>Si vous voulez vous baigner ou barboter en détente, vous n'êtes pas au bon endroit… Il y a généralement pas mal de vent et de belles vagues, ce qui en fait un <strong>paradis pour les surfeurs</strong>, et un spot reconnu dans le monde entier !</p>
             <p>Cette belle et <strong>longue plage de 5 km</strong>, parsemée de dunes et d'abris en pierre (comme ceux visibles sur la Playa Caletón Blanco), est cependant parfaite pour une balade en bord de mer ou une petite séance bronzette à l'abri du vent.</p>
-            <p>Non loin de là, se trouve le petit <strong>village de La Caleta</strong>. Très animé en haute saison, vous y trouverez quelques magasins (de surf majoritairement), restaurants et bars.</p>
-            <p>Nous y avons fait une petite halte avant de rentrer à l'hôtel. C'était l'occasion parfaite pour profiter des derniers rayons de soleil de la journée autour d'une bonne sangria !</p>
-                                                            <div className="article-gallery-2">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7268-768x1024.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/11/IMG_7308_jpg-768x1024.jpg" alt="Playa Famara" loading="lazy" style={{flex:"0.500",minWidth:0}} />
             </div>
+            <p>Non loin de là, se trouve le petit <strong>village de La Caleta</strong>. Très animé en haute saison, vous y trouverez quelques magasins (de surf majoritairement), restaurants et bars.</p>
+            <p>Nous y avons fait une petite halte avant de rentrer à l'hôtel. C'était l'occasion parfaite pour profiter des derniers rayons de soleil de la journée autour d'une bonne sangria !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/11/IMG_7334-1024x768.jpg" alt="Playa Famara dunes" className="article-img-full" loading="lazy" />
-                                    <div className="article-gallery-2">
+            <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7320_jpg-768x1024.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7340_jpg-768x1024.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
             </div>
