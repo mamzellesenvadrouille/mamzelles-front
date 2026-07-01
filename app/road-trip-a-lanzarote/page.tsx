@@ -148,7 +148,7 @@ export default function LanzarotePage() {
             <p>Nous nous sommes donc rendues à Lanzarote au mois de mars. Nous n'avons pas eu un super temps au départ, qu'on se le dise, mais cela ne nous a pas empêchées de partir à la découverte de cette île aux allures incroyables !</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5739-1024x768.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5812-768x1024.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5812-scaled.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5789_jpg-1024x768.jpg" alt="Puerto del Carmen Lanzarote" className="article-img-full" loading="lazy" />
             <p>Pour notre séjour, nous avions choisi de loger à l'appart'hôtel <a href="https://www.google.com/maps/search/?api=1&query=Apartamentos+Acuario+Sol+Puerto+del+Carmen" target="_blank" className="article-link article-resto-link-desktop">Acuario Sol</a><a href="https://maps.app.goo.gl/XsT6hgbqyqUUTGsp9" target="_blank" className="article-link article-resto-link-mobile">Acuario Sol</a>, à Puerto del Carmen, un bon point de chute pour rayonner sur toute l'île.</p>
