@@ -351,7 +351,7 @@ export default function LanzarotePage() {
             <p>Vous découvrirez dans cet univers chaotique de lave pétrifiée, différents points de vue et 2 grottes dans lesquelles la mer vient s'engouffrer. Aussi, depuis quelques puits de jour bien dissimulés dans le décor, on peut observer les vagues se fracasser dans les grottes, provoquant un bruit assourdissant.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Pour apprécier davantage le moment et avoir un paysage encore plus spectaculaire, nous vous conseillons de <strong>venir à marée haute</strong>. Ici encore, on se rend compte de la puissance de Dame Nature !</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>Pour apprécier davantage le moment et avoir un paysage encore plus spectaculaire, nous vous conseillons de venir à marée haute. Ici encore, on se rend compte de la puissance de Dame Nature !</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6514-1024x768.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
