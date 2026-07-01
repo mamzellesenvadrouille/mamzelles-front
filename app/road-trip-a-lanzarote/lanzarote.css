@@ -613,7 +613,7 @@
 .article-lanzarote .article-day-header { margin-top: 48px;
   margin-bottom: 32px; }
 
-.article-lanzarote .article-day-badge { margin-bottom: 8px; }
+.article-lanzarote .article-day-badge { margin-bottom: 16px; }
 
 .article-lanzarote .article-section h3 { font-size: 32px;
   margin: 8px 0 16px; }
@@ -633,7 +633,7 @@
 .article-lanzarote .article-section h3 + h4 { margin-top: 2px !important; }
 
 .article-lanzarote .article-day-header + h4 { margin-top: 2px !important; }
-.article-lanzarote .article-day-header + .article-day-header-tight { margin-top: 2px !important; }
+.article-lanzarote .article-day-header + .article-day-header-tight { margin-top: 0px !important; }
 
 .article-lanzarote .article-day-header-tight { margin-bottom: 8px !important; }
 

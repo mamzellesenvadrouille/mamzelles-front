@@ -157,16 +157,15 @@ export default function LanzarotePage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5812-768x1024.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5789_jpg-1024x768.jpg" alt="Puerto del Carmen Lanzarote" className="article-img-full" loading="lazy" />
-            <p>Dès notre arrivée, nous sommes rapidement plongées dans un paysage aride, désertique voire lunaire. Tout juste sorties de l'aéroport, on aperçoit déjà une multitude de volcans…</p>
-            <p>Il est bon de savoir que Lanzarote regroupe <strong>300 cônes volcaniques</strong>, et que les <strong>3/4 de l'île sont recouverts de lave</strong>. Ce décor est impressionnant et fait tout le charme de cette île volcanique ! En effet, Lanzarote est marquée par les éruptions volcaniques qui ont eu lieu entre 1730 et 1736, et en 1824. La lave semble avoir figé le temps.</p>
-            <p>À ce moment-là, on a juste hâte de partir à la découverte de cette île aux multiples facettes !</p>
+            <p>Sachez que Lanzarote regroupe <strong>300 cônes volcaniques</strong>, et que les <strong>3/4 de l'île sont recouverts de lave</strong>. Ce décor est impressionnant et fait tout le charme de cette île volcanique ! En effet, Lanzarote est marquée par les éruptions volcaniques qui ont eu lieu entre 1730 et 1736, et en 1824. La lave semble avoir figé le temps.</p>
+            <p>Dès notre arrivée, nous sommes rapidement plongées dans un paysage aride, désertique voire lunaire. Tout juste sorties de l'aéroport, on aperçoit déjà une multitude de volcans… À ce moment-là, on a juste hâte de partir à la découverte de cette île aux multiples facettes !</p>
           </section>
 
           {/* JOUR 1 */}
           <section id="jour-1" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 1</span>
-              <h2>Jour 1 : Las Grietas, le Palmier incliné, la Montaña Colorada, El Cuervo &amp; la Montaña Negra</h2>
+              <h2>Las Grietas, le Palmier incliné, la Montaña Colorada, El Cuervo &amp; la Montaña Negra</h2>
             </div>
 
             <div className="article-day-header article-day-header-tight">
@@ -248,7 +247,7 @@ export default function LanzarotePage() {
           <section id="jour-2" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 2</span>
-              <h2>Jour 2 : La Geria, Playa Mujeres &amp; Playa Papagayo</h2>
+              <h2>La Geria, Playa Mujeres &amp; Playa Papagayo</h2>
             </div>
 
             <div className="article-day-header article-day-header-tight">
@@ -322,7 +321,7 @@ export default function LanzarotePage() {
           <section id="jour-3" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 3</span>
-              <h2>Jour 3 : El Lago Verde, Los Hervideros, Las Salinas de Janubio &amp; Los Charcones</h2>
+              <h2>El Lago Verde, Los Hervideros, Las Salinas de Janubio &amp; Los Charcones</h2>
             </div>
 
             <div className="article-day-header article-day-header-tight">
@@ -402,7 +401,7 @@ export default function LanzarotePage() {
           <section id="jour-4" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 4</span>
-              <h2>Jour 4 : Haría, Mirador del Río, Playa Caletón Blanco &amp; Punta Mujeres</h2>
+              <h2>Haría, Mirador del Río, Playa Caletón Blanco &amp; Punta Mujeres</h2>
             </div>
 
             <div className="article-day-header article-day-header-tight">
@@ -479,7 +478,7 @@ export default function LanzarotePage() {
           <section id="jour-5" className="article-section">
             <div className="article-day-header">
               <span className="article-day-badge">Jour 5</span>
-              <h2>Jour 5 : El Risco de Famara, la Cueva de los Suecos &amp; la Playa Famara</h2>
+              <h2>El Risco de Famara, la Cueva de los Suecos &amp; la Playa Famara</h2>
             </div>
 
             <div className="article-day-header article-day-header-tight">
