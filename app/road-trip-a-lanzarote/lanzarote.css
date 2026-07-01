@@ -253,6 +253,8 @@
 
 .hero-article { height: 70vh; }
 
+.article-lanzarote .hero-article .hero-bg { object-position: center 85%; }
+
 .hero-article .hero-content { bottom: 0;
   top: auto;
   transform: none;
