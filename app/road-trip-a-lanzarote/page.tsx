@@ -336,8 +336,10 @@ export default function LanzarotePage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6407-1024x768.jpg" alt="El Lago Verde Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/DJI_0280-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0283-1024x768.jpg" alt="Charco Verde Lanzarote" className="article-img-full" loading="lazy" />
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0282-1-1024x768.jpg" alt="Charco Verde Lanzarote" className="article-img-full" loading="lazy" />
+            <div className="article-gallery-2">
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0283-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0282-1-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.500",minWidth:0}} />
+            </div>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Si vous souhaitez descendre sur la plage, il faudra arriver de l'autre côté. <strong>L'accès depuis le Mirador est définitivement fermé</strong> afin de préserver la falaise. Cet endroit étant un incontournable à Lanzarote, le Mirador est toujours très fréquenté. Du coup, nous vous conseillons de vous y rendre plutôt en fin de journée. Il y aura moins de monde et la lumière sera plus belle…</p></div>
