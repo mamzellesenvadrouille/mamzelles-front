@@ -378,7 +378,7 @@ export default function LanzarotePage() {
             <p>Nous avons choisi de nous garer à l'<strong>usine de dessalement de Yaíza</strong>. Il y a un peu de piste, mais l'accès reste facile. Pour vous y rendre, tapez sur le GPS « Canal Gestión Lanzarote - Central de Janubio » ou les coordonnées <strong>28.9210617, 13.8365738</strong>.</p>
             <p>De là, suivez la côte à pied. N'hésitez pas à sortir du sentier pour rejoindre le bord de l'eau, il y a plusieurs piscines bien cachées !</p>
             <div className="article-must">
-              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="var(--gold)" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
               <div><strong>Prudence</strong><p>Pour tout vous dire, malgré la marée basse, il y avait ce jour-là un gros coefficient et beaucoup de vent… Du coup, les piscines étaient régulièrement recouvertes par les vagues, et il était très dangereux de s'y baigner, même de s'y approcher !</p></div>
             </div>
             <div className="article-gallery-2">
@@ -496,7 +496,7 @@ export default function LanzarotePage() {
               <h3>Cueva de los Suecos (ou Cueva de las Cabras)</h3>
             </div>
             <div className="article-must">
-              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="var(--gold)" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
               <div><strong>Prudence</strong><p>Si vous avez le vertige, nous vous déconseillons vivement de vous y aventurer. Ce spot n'est pas du tout sécurisé, et nous déconseillons fortement l'accès aux enfants.</p></div>
             </div>
             <p>Pour trouver ce mirador, il faut <strong>longer le bord de la falaise</strong>. Une fois sur place, vous apercevrez des <strong>rochers et de grosses marches qui descendent sur la droite</strong>.</p>
