@@ -159,6 +159,7 @@ export default function LanzarotePage() {
           {/* JOUR 1 */}
           <section id="jour-1" className="article-section">
             <div className="article-day-header">
+              <span className="article-day-badge">Jour 1</span>
               <h2>Jour 1 : Las Grietas, le Palmier incliné, la Montaña Colorada, El Cuervo &amp; la Montaña Negra</h2>
             </div>
 
@@ -242,6 +243,7 @@ export default function LanzarotePage() {
           {/* JOUR 2 */}
           <section id="jour-2" className="article-section">
             <div className="article-day-header">
+              <span className="article-day-badge">Jour 2</span>
               <h2>Jour 2 : La Geria, Playa Mujeres &amp; Playa Papagayo</h2>
             </div>
 
@@ -314,6 +316,7 @@ export default function LanzarotePage() {
           {/* JOUR 3 */}
           <section id="jour-3" className="article-section">
             <div className="article-day-header">
+              <span className="article-day-badge">Jour 3</span>
               <h2>Jour 3 : El Lago Verde, Los Hervideros, Las Salinas de Janubio &amp; Los Charcones</h2>
             </div>
 
@@ -390,6 +393,7 @@ export default function LanzarotePage() {
           {/* JOUR 4 */}
           <section id="jour-4" className="article-section">
             <div className="article-day-header">
+              <span className="article-day-badge">Jour 4</span>
               <h2>Jour 4 : Haría, Mirador del Río, Playa Caletón Blanco &amp; Punta Mujeres</h2>
             </div>
 
@@ -464,6 +468,7 @@ export default function LanzarotePage() {
           {/* JOUR 5 */}
           <section id="jour-5" className="article-section">
             <div className="article-day-header">
+              <span className="article-day-badge">Jour 5</span>
               <h2>Jour 5 : El Risco de Famara, la Cueva de los Suecos &amp; la Playa Famara</h2>
             </div>
 

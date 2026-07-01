@@ -1,6 +1,6 @@
 /* ============================================
-   LANZAROTE — Styles spécifiques à l'article
-   Calqué sur port-barton.css (scopé .article-lanzarote)
+   LANZAROTE â€” Styles spÃ©cifiques Ã  l'article
+   CalquÃ© sur port-barton.css (scopÃ© .article-lanzarote)
    ============================================ */
 
 @media (max-width: 768px) {
@@ -725,7 +725,7 @@
 .pratique-item a { color: var(--gold) !important;
   text-decoration: underline !important; }
 /* ============================================
-   BLOCS OÙ MANGER — Lanzarote
+   BLOCS OÃ™ MANGER â€” Lanzarote
    ============================================ */
 
 .pb-resto-section {
@@ -836,5 +836,8 @@
   .article-resto-link-desktop { display: inline; }
 }
 
-/* Chevron doré devant les H2 */
+/* Chevron dorÃ© devant les H2 */
 .article-lanzarote .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
+
+/* Badge Jour X */
+.article-lanzarote .article-day-badge { display: inline-block; background: var(--gold); color: #fff; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 12px; }
