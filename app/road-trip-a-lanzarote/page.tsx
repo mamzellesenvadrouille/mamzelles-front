@@ -571,6 +571,7 @@ export default function LanzarotePage() {
           </section>
 
           <section className="article-comments-section">
+            <h2 className="article-comments-title">Commentaires</h2>
             <CommentsList comments={[
               {
                 id: '1',
