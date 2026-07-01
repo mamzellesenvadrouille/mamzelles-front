@@ -150,7 +150,7 @@ export default function LanzarotePage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5739.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5812.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
             </div>
-            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5789_jpg.jpg" alt="Puerto del Carmen Lanzarote" className="article-img-full" loading="lazy" />
+            <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5789.jpg" alt="Puerto del Carmen Lanzarote" className="article-img-full" loading="lazy" />
             <p>Pour notre séjour, nous avions choisi de loger à l'appart'hôtel <a href="https://www.google.com/maps/search/?api=1&query=Apartamentos+Acuario+Sol+Puerto+del+Carmen" target="_blank" className="article-link article-resto-link-desktop">Acuario Sol</a><a href="https://maps.app.goo.gl/XsT6hgbqyqUUTGsp9" target="_blank" className="article-link article-resto-link-mobile">Acuario Sol</a>, à Puerto del Carmen, un bon point de chute pour rayonner sur toute l'île.</p>
             <p>Il est bon de savoir que Lanzarote regroupe <strong>300 cônes volcaniques</strong>, et que les <strong>3/4 de l'île sont recouverts de lave</strong>. Ce décor est impressionnant et fait tout le charme de cette île volcanique !</p>
             <p>En effet, Lanzarote est marquée par les éruptions volcaniques qui ont eu lieu entre 1730 et 1736, et en 1824. La lave semble avoir figé le temps.</p>
@@ -187,8 +187,8 @@ export default function LanzarotePage() {
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_135909_267.jpg" alt="Palmier incliné Lanzarote" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5966_jpg.jpg" alt="Palmier Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5970_jpg.jpg" alt="Palmier Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5966.jpg" alt="Palmier Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5970.jpg" alt="Palmier Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220316_140308_534.jpg" alt="Palmier incliné Lanzarote" className="article-img-full" loading="lazy" style={{maxWidth:'60%',margin:'0 auto',display:'block'}} />
 
@@ -352,7 +352,7 @@ export default function LanzarotePage() {
             </div>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6514.jpg" alt="Los Hervideros Lanzarote" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6531_jpg.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6531.jpg" alt="Los Hervideros Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6506.jpg" alt="Los Hervideros Lanzarote" loading="lazy" />
             </div>
 
@@ -516,12 +516,12 @@ export default function LanzarotePage() {
             <p>Nous y avons fait une petite halte avant de rentrer à l'hôtel. C'était l'occasion parfaite pour profiter des derniers rayons de soleil de la journée autour d'une bonne sangria !</p>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7268.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/11/IMG_7308_jpg.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7320_jpg.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/11/IMG_7308.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7320.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/11/IMG_7334.jpg" alt="Playa Famara dunes Lanzarote" loading="lazy" />
-              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7340_jpg.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
+              <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7340.jpg" alt="Playa Famara Lanzarote" loading="lazy" style={{flex:'0.75',minWidth:0}} />
             </div>
           </section>
 
