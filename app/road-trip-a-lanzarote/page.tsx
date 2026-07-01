@@ -140,20 +140,26 @@ export default function LanzarotePage() {
 
           {/* INTRO */}
           <section className="article-section">
-            <p className="article-intro">Vous envisagez de partir une semaine à Lanzarote et de faire un road trip sur l'île aux volcans ? Superbe idée ! Pour vous aider à y voir plus clair et organiser au mieux votre séjour, nous partageons ici tous nos itinéraires et bons plans.</p>
+            <p className="article-intro">Vous envisagez de partir une semaine à Lanzarote et de faire un road trip sur l'île aux volcans ? Superbe idée ! Pour vous aider à y voir plus clair et organiser au mieux votre séjour, nous partageons ici tous nos itinéraires et bons plans…</p>
+            <p>Cela fait un moment que nous voulions découvrir les Canaries. À défaut de faire le tour de toutes les îles de l'archipel, il a fallu faire un choix !</p>
             <p>Notre cœur s'est rapidement tourné vers Lanzarote parce qu'elle est la plus sauvage, naturelle et authentique de toutes.</p>
             <p>Avec ses paysages aussi surprenants qu'impressionnants, Lanzarote est surnommée l'<strong>île aux volcans</strong>. C'est la plus ancienne des Canaries puisqu'elle est âgée de 23 millions d'années !</p>
             <p>L'archipel des Canaries comporte 7 îles, Lanzarote est celle la plus à l'Est. Elle se situe au large des côtes marocaines. Sa superficie est de 845,94 km² pour être précise, ce qui fait d'elle la 4ᵉ plus grande île de l'archipel. Avec ses 142 517 habitants, Lanzarote est la 3ᵉ île la plus peuplée des Canaries après Tenerife et Grande Canarie.</p>
+            <p>Cette île espagnole est réputée pour son climat, puisque ses températures moyennes varient entre 20 et 28 degrés, ce qui permet de la visiter toute l'année. C'est une destination très touristique, et notamment très prisée par les windsurfeurs car le vent y est quasi-constant.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6088-1024x768.jpg" alt="Montaña Colorada Lanzarote" className="article-img-full" loading="lazy" />
             <p>Nous nous sommes donc rendues à Lanzarote au mois de mars. Nous n'avons pas eu un super temps au départ, qu'on se le dise, mais cela ne nous a pas empêchées de partir à la découverte de cette île aux allures incroyables !</p>
+            <p>📌 Si vous avez l'intention de vadrouiller comme nous, n'oubliez pas au préalable de réserver votre véhicule qui est à récupérer directement sur le parking de l'aéroport. Nous vous conseillons le loueur <a href="https://www.cicar.com/FR" target="_blank" rel="noopener noreferrer" className="article-link">Cicar</a> qui propose le meilleur tarif (en tenant compte des conditions de location).</p>
+            <p>Nous vous recommandons également de ne pas prendre une petite voiture. Optez plutôt pour un modèle un peu plus robuste car il y a différents spots auxquels on accède uniquement par des routes accidentées.</p>
+            <p>Nous avons réservé une chambre dans l'appart'hôtel <a href="https://www.google.com/maps/search/?api=1&query=Apartamentos+Acuario+Sol+Puerto+del+Carmen" target="_blank" className="article-link article-resto-link-desktop">Acuario Sol</a><a href="https://maps.app.goo.gl/XsT6hgbqyqUUTGsp9" target="_blank" className="article-link article-resto-link-mobile">Acuario Sol</a> dans la ville de Puerto del Carmen, sur la côte Sud-Est de l'île. Avec un très bon rapport qualité/prix et idéalement situé, il permet de visiter les 4 coins de l'île en moins de 45 min en voiture.</p>
                         <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5739-1024x768.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5812-768x1024.jpg" alt="Hôtel Acuario Sol Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_5789_jpg-1024x768.jpg" alt="Puerto del Carmen Lanzarote" className="article-img-full" loading="lazy" />
-            <p>Pour notre séjour, nous avions choisi de loger à l'appart'hôtel <a href="https://www.google.com/maps/search/?api=1&query=Apartamentos+Acuario+Sol+Puerto+del+Carmen" target="_blank" className="article-link article-resto-link-desktop">Acuario Sol</a><a href="https://maps.app.goo.gl/XsT6hgbqyqUUTGsp9" target="_blank" className="article-link article-resto-link-mobile">Acuario Sol</a>, à Puerto del Carmen, un bon point de chute pour rayonner sur toute l'île.</p>
+            <p>Dès notre arrivée, nous sommes rapidement plongées dans un paysage aride, désertique voire lunaire. Tout juste sorties de l'aéroport, on aperçoit déjà une multitude de volcans…</p>
             <p>Il est bon de savoir que Lanzarote regroupe <strong>300 cônes volcaniques</strong>, et que les <strong>3/4 de l'île sont recouverts de lave</strong>. Ce décor est impressionnant et fait tout le charme de cette île volcanique !</p>
             <p>En effet, Lanzarote est marquée par les éruptions volcaniques qui ont eu lieu entre 1730 et 1736, et en 1824. La lave semble avoir figé le temps.</p>
+            <p>À ce moment-là, on a juste hâte de partir à la découverte de cette île aux multiples facettes !</p>
           </section>
 
           {/* JOUR 1 */}
@@ -329,6 +335,10 @@ export default function LanzarotePage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0283-1024x768.jpg" alt="Charco Verde Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
             </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0282-1-1024x768.jpg" alt="Charco Verde Lanzarote" className="article-img-full" loading="lazy" />
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Si vous souhaitez descendre sur la plage, il faudra arriver de l'autre côté. <strong>L'accès depuis le Mirador est définitivement fermé</strong> afin de préserver la falaise. Cet endroit étant un incontournable à Lanzarote, le Mirador est toujours très fréquenté. Du coup, nous vous conseillons de vous y rendre plutôt en fin de journée. Il y aura moins de monde et la lumière sera plus belle…</p></div>
+            </div>
             <p>N'hésitez pas avant de reprendre la route, à faire un petit arrêt au village de pêcheurs <strong>El Golfo</strong>, que ce soit pour y manger du poisson de la pêche du jour ou tout simplement vous imprégner de l'atmosphère de l'endroit.</p>
                                                 <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6441-1024x768.jpg" alt="El Golfo Lanzarote" loading="lazy" style={{flex:"0.333",minWidth:0}} />
