@@ -46,21 +46,21 @@ const articles = [
   },
   {
     titre: "Dormir dans le désert d'Agafay, une expérience inoubliable !",
-    url: 'https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/',
+    url: '/dormir-dans-le-desert-agafay',
     image: null,
     localImage: '/Agafay.webp',
     categorie: 'Maroc',
   },
   {
     titre: 'Marrakech, tous les secrets pour découvrir la ville rouge & son effervescence !',
-    url: 'https://blog.mamzellesenvadrouille.com/visiter-marrakech/',
+    url: '/visiter-marrakech',
     image: null,
     localImage: '/Marrakech.webp',
     categorie: 'Maroc',
   },
   {
     titre: "Une semaine à Lanzarote, Road trip sur l'île aux 300 volcans !",
-    url: 'https://blog.mamzellesenvadrouille.com/road-trip-a-lanzarote/',
+    url: '/road-trip-a-lanzarote',
     image: null,
     localImage: '/Lanzarote.webp',
     categorie: 'Espagne',
@@ -168,19 +168,19 @@ export default async function BlogPage() {
         {
           '@type': 'ListItem',
           position: 4,
-          url: 'https://blog.mamzellesenvadrouille.com/dormir-dans-le-desert-agafay/',
+          url: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay',
           name: "Dormir dans le désert d'Agafay, une expérience inoubliable !",
         },
         {
           '@type': 'ListItem',
           position: 5,
-          url: 'https://blog.mamzellesenvadrouille.com/visiter-marrakech/',
+          url: 'https://mamzellesenvadrouille.com/visiter-marrakech',
           name: 'Marrakech, tous les secrets pour découvrir la ville rouge & son effervescence !',
         },
         {
           '@type': 'ListItem',
           position: 6,
-          url: 'https://blog.mamzellesenvadrouille.com/road-trip-a-lanzarote/',
+          url: 'https://mamzellesenvadrouille.com/road-trip-a-lanzarote',
           name: "Une semaine à Lanzarote, Road trip sur l'île aux 300 volcans !",
         },
         {
