@@ -18,8 +18,8 @@ export async function POST(req: NextRequest) {
           price_data: {
             currency: 'eur',
             product_data: {
-              name: `${formule} — MamZelles en vadrouille`,
-              description: `${description}\nCliente : ${clientName}`,
+              name: `Votre voyage sur mesure — ${formule}`,
+              description: description.replace(/\n/g, ' · '),
             },
             unit_amount: Math.round(montant * 100),
           },
@@ -29,6 +29,9 @@ export async function POST(req: NextRequest) {
       mode: 'payment',
       success_url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://mamzellesenvadrouille.com'}/paiement/confirmation?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://mamzellesenvadrouille.com'}/paiement/annulation`,
+      custom_text: {
+        submit: { message: 'Votre itinéraire personnalisé sera préparé avec soin dès réception de votre paiement.' },
+      },
       customer_email: undefined,
       metadata: {
         clientName,

@@ -26,7 +26,8 @@ export default function AdminDevis() {
   const [noteClient, setNoteClient] = useState('');
   const [loading, setLoading] = useState(false);
   const [paymentUrl, setPaymentUrl] = useState('');
-  const [copied, setCopied] = useState(false);
+  const [soldeUrl, setSoldeUrl] = useState('');
+  const [copied, setCopied] = useState<'acompte' | 'solde' | null>(null);
   const [error, setError] = useState('');
 
   async function handleAuth(e: React.FormEvent) {
@@ -71,12 +72,12 @@ export default function AdminDevis() {
   const total = Math.max(0, formule.prix + optionsTotal - remise);
 
   function buildDescription() {
-    const lines = [`Formule : ${formule.label}`];
+    const lines = [`Formule ${formule.label}`];
     selectedOptions.forEach(o => {
-      lines.push(`${OPTIONS[o.index].label} × ${o.qty} (+${OPTIONS[o.index].prix * o.qty} €)`);
+      lines.push(`${OPTIONS[o.index].label} × ${o.qty}`);
     });
-    if (remise > 0) lines.push(`Remise : -${remise} €`);
-    if (noteClient) lines.push(`Note : ${noteClient}`);
+    if (remise > 0) lines.push(`Remise appliquée : -${remise} €`);
+    if (noteClient) lines.push(noteClient);
     return lines.join('\n');
   }
 
@@ -86,31 +87,50 @@ export default function AdminDevis() {
     setError('');
     setLoading(true);
     setPaymentUrl('');
+    setSoldeUrl('');
 
-    const res = await fetch('/api/checkout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        clientName: clientName.trim(),
-        formule: formule.label,
-        montant: total,
-        description: buildDescription(),
+    const acompte = Math.round(total * 0.5 * 100) / 100;
+    const solde = Math.round((total - acompte) * 100) / 100;
+
+    const [resAcompte, resSolde] = await Promise.all([
+      fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          clientName: clientName.trim(),
+          formule: formule.label,
+          montant: acompte,
+          description: `ACOMPTE 50% · ${buildDescription()}`,
+        }),
       }),
-    });
+      fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          clientName: clientName.trim(),
+          formule: formule.label,
+          montant: solde,
+          description: `SOLDE 50% · ${buildDescription()}`,
+        }),
+      }),
+    ]);
 
-    const data = await res.json();
+    const dataAcompte = await resAcompte.json();
+    const dataSolde = await resSolde.json();
     setLoading(false);
-    if (data.url) {
-      setPaymentUrl(data.url);
+
+    if (dataAcompte.url && dataSolde.url) {
+      setPaymentUrl(dataAcompte.url);
+      setSoldeUrl(dataSolde.url);
     } else {
-      setError('Erreur lors de la génération du lien. Réessaie.');
+      setError('Erreur lors de la génération des liens. Réessaie.');
     }
   }
 
-  function handleCopy() {
-    navigator.clipboard.writeText(paymentUrl);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  function handleCopy(url: string, type: 'acompte' | 'solde') {
+    navigator.clipboard.writeText(url);
+    setCopied(type);
+    setTimeout(() => setCopied(null), 2000);
   }
 
   function handleReset() {
@@ -120,6 +140,7 @@ export default function AdminDevis() {
     setRemise(0);
     setNoteClient('');
     setPaymentUrl('');
+    setSoldeUrl('');
     setError('');
   }
 
@@ -152,19 +173,30 @@ export default function AdminDevis() {
           <div style={styles.title}>Générer un devis</div>
         </div>
 
-        {paymentUrl ? (
+        {paymentUrl && soldeUrl ? (
           <div style={styles.successWrap}>
-            <div style={styles.successTitle}>✅ Lien de paiement prêt</div>
+            <div style={styles.successTitle}>Liens de paiement prêts</div>
             <div style={styles.successInfo}>
-              <strong>{clientName}</strong> — {formule.label} — <strong>{total} €</strong>
+              <strong>{clientName}</strong> — {formule.label} — Total : <strong>{total} €</strong>
             </div>
-            <div style={styles.urlBox}>{paymentUrl}</div>
-            <div style={styles.btnRow}>
-              <button onClick={handleCopy} style={styles.btnGold}>
-                {copied ? '✓ Copié !' : 'Copier le lien'}
+
+            <div style={styles.linkBlock}>
+              <div style={styles.linkLabel}>ACOMPTE 50% — {Math.round(total * 0.5 * 100) / 100} € <span style={styles.linkHint}>→ à envoyer maintenant</span></div>
+              <div style={styles.urlBox}>{paymentUrl}</div>
+              <button onClick={() => handleCopy(paymentUrl, 'acompte')} style={styles.btnGold}>
+                {copied === 'acompte' ? '✓ Copié !' : 'Copier le lien acompte'}
               </button>
-              <button onClick={handleReset} style={styles.btnOutline}>Nouveau devis</button>
             </div>
+
+            <div style={styles.linkBlock}>
+              <div style={styles.linkLabel}>SOLDE 50% — {Math.round((total - Math.round(total * 0.5 * 100) / 100) * 100) / 100} € <span style={styles.linkHint}>→ à envoyer à la livraison</span></div>
+              <div style={styles.urlBox}>{soldeUrl}</div>
+              <button onClick={() => handleCopy(soldeUrl, 'solde')} style={{ ...styles.btnGold, background: '#1a1512' }}>
+                {copied === 'solde' ? '✓ Copié !' : 'Copier le lien solde'}
+              </button>
+            </div>
+
+            <button onClick={handleReset} style={styles.btnOutline}>Nouveau devis</button>
           </div>
         ) : (
           <form onSubmit={handleGenerate}>
@@ -304,5 +336,7 @@ const styles: Record<string, React.CSSProperties> = {
   successTitle: { fontFamily: 'Cormorant Garamond, serif', fontSize: 22, color: '#1a1512' },
   successInfo: { fontFamily: 'Inter, sans-serif', fontSize: 14, color: '#1a1512', opacity: 0.8 },
   urlBox: { padding: '12px 16px', background: '#f8f4ef', border: '1px solid #e8e0d6', fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#888', wordBreak: 'break-all', lineHeight: 1.5 },
-  error: { fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#c0392b', marginBottom: 12 },
+  linkBlock: { display: 'flex', flexDirection: 'column', gap: 10, padding: '16px', background: '#f8f4ef', border: '1px solid #e8e0d6' },
+  linkLabel: { fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.05em', color: '#1a1512', textTransform: 'uppercase' as const },
+  linkHint: { fontWeight: 400, color: '#888', textTransform: 'none' as const },
 };
