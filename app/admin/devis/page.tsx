@@ -21,6 +21,7 @@ export default function AdminDevis() {
 
   const [clientName, setClientName] = useState('');
   const [formuleIndex, setFormuleIndex] = useState(0);
+  const [prixSurMesure, setPrixSurMesure] = useState(549);
   const [selectedOptions, setSelectedOptions] = useState<{ index: number; qty: number }[]>([]);
   const [remise, setRemise] = useState(0);
   const [noteClient, setNoteClient] = useState('');
@@ -68,8 +69,10 @@ export default function AdminDevis() {
   }
 
   const formule = FORMULES[formuleIndex];
+  const isSurMesure = formule.label === 'Sur-mesure';
+  const prixBase = isSurMesure ? prixSurMesure : formule.prix;
   const optionsTotal = selectedOptions.reduce((sum, o) => sum + OPTIONS[o.index].prix * o.qty, 0);
-  const total = Math.max(0, formule.prix + optionsTotal - remise);
+  const total = Math.max(0, prixBase + optionsTotal - remise);
 
   function buildDescription() {
     const lines = [`Formule ${formule.label}`];
@@ -136,6 +139,7 @@ export default function AdminDevis() {
   function handleReset() {
     setClientName('');
     setFormuleIndex(0);
+    setPrixSurMesure(549);
     setSelectedOptions([]);
     setRemise(0);
     setNoteClient('');
@@ -229,6 +233,22 @@ export default function AdminDevis() {
                 ))}
               </div>
             </div>
+
+            {/* Prix sur-mesure */}
+            {isSurMesure && (
+              <div style={styles.field}>
+                <label style={styles.label}>Prix sur-mesure (€)</label>
+                <input
+                  type="number"
+                  min={549}
+                  value={prixSurMesure || ''}
+                  onChange={e => setPrixSurMesure(parseInt(e.target.value) || 549)}
+                  placeholder="549"
+                  style={{ ...styles.input, width: 160 }}
+                />
+                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#888', marginTop: 6 }}>À partir de 549 € — ajuste selon le projet</div>
+              </div>
+            )}
 
             {/* Options */}
             <div style={styles.field}>
