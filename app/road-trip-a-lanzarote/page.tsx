@@ -72,7 +72,7 @@ export default function LanzarotePage() {
         <div className="hero-content">
           <h1>Lanzarote<br /><em>L'île aux 300 volcans</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Une semaine de road trip sur l'île la plus sauvage des Canaries.</p>
+          <p className="hero-desc">Une semaine de road trip sur l'île<br className="mobile-hero-break" /> la plus sauvage des Canaries.</p>
         </div>
       </section>
 
