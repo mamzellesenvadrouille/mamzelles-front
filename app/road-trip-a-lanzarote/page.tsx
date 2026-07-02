@@ -616,7 +616,7 @@ export default function LanzarotePage() {
                   <p className="article-related-title-card">Visiter Madrid en 3 jours : itinéraire et bons plans</p>
                 </div>
               </a>
-              <a href="https://blog.mamzellesenvadrouille.com/visiter-marrakech/" target="_blank" rel="noopener noreferrer" className="article-related-card">
+              <a href="/visiter-marrakech" className="article-related-card">
                 <div className="article-related-img-wrap">
                   <img src="/Marrakech.webp" alt="Marrakech" className="article-related-img" />
                 </div>
