@@ -432,7 +432,7 @@ export default function LanzarotePage() {
             <p>¡Vamos a la playa ! En un petit quart d'heure en voiture, vous arriverez à la <strong>Playa Caletón Blanco</strong>. Une grande piscine naturelle, du sable blanc et une eau turquoise, cette plage est juste magnifique !</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Vérifiez l'heure des marées avant de vous y rendre ! L'idéal est d'<strong>y aller à marée haute</strong>.</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>Vérifiez l'heure des marées avant de vous y rendre ! L'idéal est d'y aller à marée haute.</p></div>
             </div>
             <div className="article-gallery-3">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_0315-768x1024.jpg" alt="Playa Caletón Blanco Lanzarote" loading="lazy" style={{flex:"0.220",minWidth:0}} />
