@@ -22,10 +22,12 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .hero-article .hero-bg { object-position: center 85% !important; }
+  .hero-article .hero-bg { object-position: center 82% !important; }
   .tablet-only-br { display: inline; }
   .mobile-hero-break { display: none; }
   .desktop-tablet-br { display: inline; }
+  .cdcr-coeur { font-size: 0; }
+  .cdcr-coeur::after { content: 'â™¡'; font-size: 14px; }
 }
 
 @media (min-width: 1025px) {

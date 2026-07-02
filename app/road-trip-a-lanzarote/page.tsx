@@ -115,7 +115,7 @@ export default function LanzarotePage() {
           <h2>Pourquoi nous avons adoré Lanzarote</h2>
         </div>
         <div className="article-cdcr-grid">
-          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre spot coup de ♡</span><span className="article-cdcr-value">→ La Cueva de los Suecos</span></div>
+          <div className="article-cdcr-item"><span className="article-cdcr-label">Notre spot coup de <span className="cdcr-coeur">cœur</span></span><span className="article-cdcr-value">→ La Cueva de los Suecos</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">Le paysage le plus fou</span><span className="article-cdcr-value">→ Les vignes de La Geria</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">La plus belle plage</span><span className="article-cdcr-value">→ La Playa Caletón Blanco</span></div>
           <div className="article-cdcr-item"><span className="article-cdcr-label">À ne pas manquer</span><span className="article-cdcr-value">→ Le cratère d'El Cuervo</span></div>
