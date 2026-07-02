@@ -544,7 +544,7 @@ export default function LanzarotePage() {
             <div className="article-day-header-tight article-pratique-h3" style={{paddingTop:'1px'}}>
               <h3>Se déplacer à Lanzarote</h3>
             </div>
-            <div className="article-pratique-block article-pratique-block-deplacement">
+            <div className="article-pratique-block article-pratique-block-deplacement" style={{paddingBottom:'1px'}}>
               <p>Quelle que soit la compagnie que vous choisirez, vous atterrirez à l'<strong>aeropuerto César Manrique</strong>. De là, nous vous conseillons vivement de <strong>récupérer un véhicule</strong> afin d'être autonome sur Lanzarote, les endroits à visiter étant difficilement accessibles en transport en commun.</p>
               <p>Nous sommes passées par <a href="https://www.cicar.com/FR" target="_blank" rel="noopener noreferrer" className="article-link">Cicar</a> et avons loué une Fiat 500XL. Comme nous vous l'avons déjà recommandé, évitez de louer un « pot de yaourt » qui pourrait vous mettre en difficulté sur les routes accidentées pour rejoindre certains spots.</p>
               <p>Leurs tarifs de location sont les plus intéressants de l'île. Nous vous conseillons de réserver votre véhicule avant votre arrivée. Plus vous le ferez tôt, plus les tarifs seront avantageux. Pour autant, rien ne vous sera prélevé sur votre carte, vous réglerez tout sur place.</p>
