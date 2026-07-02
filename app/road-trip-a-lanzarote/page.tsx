@@ -525,11 +525,9 @@ export default function LanzarotePage() {
 
           {/* SECTION PRATIQUE */}
           <section id="pratique" className="article-section">
-            <div className="article-day-header">
-              <h2>Tout savoir pour organiser son voyage à Lanzarote</h2>
-            </div>
+            <h2 style={{fontFamily:'"Cormorant Garamond", serif', fontSize:'38px', fontWeight:500, color:'var(--dark)', lineHeight:1.1, marginBottom:'20px'}}>Tout savoir pour organiser son voyage à Lanzarote</h2>
 
-            <div className="article-pratique-block article-pratique-block-deplacement" style={{marginTop:'-4px'}}>
+            <div className="article-pratique-block article-pratique-block-deplacement">
               <h3 className="article-pratique-title" style={{marginTop:0}}>Arriver en avion</h3>
               <p>Pour arriver à Lanzarote, nous avons voyagé avec la compagnie <a href="https://www.ryanair.com/fr/fr" target="_blank" rel="noopener noreferrer" className="article-link">Ryanair</a> depuis Marseille, en vol direct. Les billets nous sont revenus à 160 € pour deux.</p>
               <p>Nous vous recommandons de comparer les offres des différentes compagnies aériennes sur <a href="https://www.skyscanner.fr" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a> pour vous rendre aux Canaries (ou ailleurs !). On utilise beaucoup ce site pour trouver les vols qui nous conviennent, que ce soit au niveau des horaires ou des tarifs.</p>
