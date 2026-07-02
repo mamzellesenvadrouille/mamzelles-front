@@ -97,24 +97,8 @@ export default function CookieBanner() {
         .cookie-actions {
           display: flex;
           align-items: center;
-          gap: 20px;
+          gap: 12px;
           flex-shrink: 0;
-        }
-        .cookie-btn-accept {
-          font-family: 'Inter', sans-serif;
-          font-size: 12.5px;
-          font-weight: 500;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          background: var(--gold, #c8956c);
-          color: #fff;
-          border: none;
-          padding: 9px 22px;
-          cursor: pointer;
-          transition: background 0.2s;
-        }
-        .cookie-btn-accept:hover {
-          background: var(--gold2, #b8834f);
         }
         .cookie-btn-refuse {
           font-family: 'Inter', sans-serif;
@@ -128,9 +112,27 @@ export default function CookieBanner() {
           text-underline-offset: 3px;
           padding: 0;
           transition: opacity 0.2s;
+          white-space: nowrap;
         }
         .cookie-btn-refuse:hover {
           opacity: 0.7;
+        }
+        .cookie-btn-accept {
+          font-family: 'Inter', sans-serif;
+          font-size: 12.5px;
+          font-weight: 500;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          background: var(--gold, #c8956c);
+          color: #fff;
+          border: none;
+          padding: 9px 22px;
+          cursor: pointer;
+          transition: background 0.2s;
+          white-space: nowrap;
+        }
+        .cookie-btn-accept:hover {
+          background: var(--gold2, #b8834f);
         }
         @media (max-width: 640px) {
           .cookie-banner {
@@ -140,8 +142,7 @@ export default function CookieBanner() {
             gap: 14px;
           }
           .cookie-actions {
-            width: 100%;
-            justify-content: space-between;
+            gap: 16px;
           }
         }
       `}</style>
@@ -151,8 +152,8 @@ export default function CookieBanner() {
           <a href="/confidentialite">En savoir plus</a>
         </p>
         <div className="cookie-actions">
-          <button className="cookie-btn-accept" onClick={handleAccept}>Accepter</button>
           <button className="cookie-btn-refuse" onClick={handleRefuse}>Refuser</button>
+          <button className="cookie-btn-accept" onClick={handleAccept}>Accepter</button>
         </div>
       </div>
     </>
