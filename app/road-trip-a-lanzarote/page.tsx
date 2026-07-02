@@ -551,7 +551,7 @@ export default function LanzarotePage() {
               <p>Du coup, si vous louez comme nous votre voiture chez Cicar, rendez-vous à la sortie de l'aéroport. Leur bureau est facilement reconnaissable, c'est celui où il y a foule ! Il faudra prendre votre mal en patience pour récupérer votre véhicule. Pour gagner un peu de temps, n'hésitez pas à sortir de la zone de débarquement pour aller au guichet du côté de la sortie. De là, on vous remettra votre clé, leur parking est situé juste en face de l'aéroport. Pratique !</p>
             </div>
 
-            <div className="article-day-header-tight article-pratique-h3 article-pratique-h3-last" style={{marginTop:'8px', paddingTop:'1px'}}>
+            <div className="article-day-header-tight article-pratique-h3 article-pratique-h3-last" style={{marginTop:'12px', paddingTop:'1px'}}>
               <h3>Quand partir ?</h3>
             </div>
             <div className="article-pratique-block article-pratique-block-deplacement">
