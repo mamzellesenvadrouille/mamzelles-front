@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
           price_data: {
             currency: 'eur',
             product_data: {
-              name: `Votre voyage sur mesure — ${formule}`,
+              name: formule === 'Sur-mesure' ? 'Votre voyage sur mesure' : `Formule ${formule}`,
               description: description.replace(/\n/g, ' · '),
             },
             unit_amount: Math.round(montant * 100),
