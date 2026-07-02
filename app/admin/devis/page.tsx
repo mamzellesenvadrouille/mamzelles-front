@@ -75,23 +75,12 @@ export default function AdminDevis() {
   const total = Math.max(0, prixBase + optionsTotal - remise);
 
   function buildDescription() {
-    const lines = [`Formule ${formule.label}`];
+    const lines: string[] = [];
     selectedOptions.forEach(o => {
       lines.push(`${OPTIONS[o.index].label} × ${o.qty}`);
     });
     if (remise > 0) lines.push(`Remise appliquée : -${remise} €`);
-    if (noteClient) lines.push(noteClient);
-    return lines.join('\n');
-  }
-
-  async function shortenUrl(url: string): Promise<string> {
-    try {
-      const res = await fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(url)}`);
-      if (res.ok) return await res.text();
-      return url;
-    } catch {
-      return url;
-    }
+    return lines.join(' · ');
   }
 
   async function handleGenerate(e: React.FormEvent) {
@@ -113,7 +102,7 @@ export default function AdminDevis() {
           clientName: clientName.trim(),
           formule: formule.label,
           montant: acompte,
-          description: `ACOMPTE 50% · ${buildDescription()}`,
+          description: [noteClient, buildDescription(), 'ACOMPTE 50%'].filter(Boolean).join('\n'),
         }),
       }),
       fetch('/api/checkout', {
@@ -123,25 +112,21 @@ export default function AdminDevis() {
           clientName: clientName.trim(),
           formule: formule.label,
           montant: solde,
-          description: `SOLDE 50% · ${buildDescription()}`,
+          description: [noteClient, buildDescription(), 'SOLDE 50%'].filter(Boolean).join('\n'),
         }),
       }),
     ]);
 
     const dataAcompte = await resAcompte.json();
     const dataSolde = await resSolde.json();
+    setLoading(false);
 
     if (dataAcompte.url && dataSolde.url) {
-      const [shortAcompte, shortSolde] = await Promise.all([
-        shortenUrl(dataAcompte.url),
-        shortenUrl(dataSolde.url),
-      ]);
-      setPaymentUrl(shortAcompte);
-      setSoldeUrl(shortSolde);
+      setPaymentUrl(dataAcompte.url);
+      setSoldeUrl(dataSolde.url);
     } else {
       setError('Erreur lors de la génération des liens. Réessaie.');
     }
-    setLoading(false);
   }
 
   function handleCopy(url: string, type: 'acompte' | 'solde') {
