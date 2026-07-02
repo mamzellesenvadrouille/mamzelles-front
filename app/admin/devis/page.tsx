@@ -84,6 +84,16 @@ export default function AdminDevis() {
     return lines.join('\n');
   }
 
+  async function shortenUrl(url: string): Promise<string> {
+    try {
+      const res = await fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(url)}`);
+      if (res.ok) return await res.text();
+      return url;
+    } catch {
+      return url;
+    }
+  }
+
   async function handleGenerate(e: React.FormEvent) {
     e.preventDefault();
     if (!clientName.trim()) { setError('Merci de renseigner le nom de la cliente.'); return; }
@@ -120,14 +130,18 @@ export default function AdminDevis() {
 
     const dataAcompte = await resAcompte.json();
     const dataSolde = await resSolde.json();
-    setLoading(false);
 
     if (dataAcompte.url && dataSolde.url) {
-      setPaymentUrl(dataAcompte.url);
-      setSoldeUrl(dataSolde.url);
+      const [shortAcompte, shortSolde] = await Promise.all([
+        shortenUrl(dataAcompte.url),
+        shortenUrl(dataSolde.url),
+      ]);
+      setPaymentUrl(shortAcompte);
+      setSoldeUrl(shortSolde);
     } else {
       setError('Erreur lors de la génération des liens. Réessaie.');
     }
+    setLoading(false);
   }
 
   function handleCopy(url: string, type: 'acompte' | 'solde') {
