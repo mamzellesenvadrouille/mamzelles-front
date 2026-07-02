@@ -24,10 +24,10 @@ export const metadata: Metadata = {
 
 const articles = [
   {
-    titre: 'Palawan — De Puerto Princesa à Port Barton',
-    url: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
+    titre: "Itinéraire Philippines — 3 semaines pour découvrir la perle de l'Orient",
+    url: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
     image: null,
-    localImage: '/Puerto-Princesa-Port-Barton.webp',
+    localImage: '/Philippines.webp',
     categorie: 'Philippines',
   },
   {
@@ -38,10 +38,10 @@ const articles = [
     categorie: 'Philippines',
   },
   {
-    titre: "Itinéraire Philippines — 3 semaines pour découvrir la perle de l'Orient",
-    url: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+    titre: 'Palawan — De Puerto Princesa à Port Barton',
+    url: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
     image: null,
-    localImage: '/Philippines.webp',
+    localImage: '/Puerto-Princesa-Port-Barton.webp',
     categorie: 'Philippines',
   },
   {
@@ -84,9 +84,9 @@ const articles = [
 async function getWpImages(): Promise<Record<string, string>> {
   try {
     const slugs = [
-      'palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-      'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
       'itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+      'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
+      'palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
       'dormir-dans-le-desert-agafay',
       'visiter-marrakech',
       'road-trip-a-lanzarote',
@@ -114,9 +114,9 @@ export default async function BlogPage() {
   const wpImages = await getWpImages();
 
   const slugs = [
-    'palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-    'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
     'itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+    'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
+    'palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
     'dormir-dans-le-desert-agafay',
     'visiter-marrakech',
     'road-trip-a-lanzarote',
@@ -150,8 +150,8 @@ export default async function BlogPage() {
         {
           '@type': 'ListItem',
           position: 1,
-          url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-          name: 'Palawan — De Puerto Princesa à Port Barton',
+          url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+          name: "Itinéraire Philippines — 3 semaines pour découvrir la perle de l'Orient",
         },
         {
           '@type': 'ListItem',
@@ -162,8 +162,8 @@ export default async function BlogPage() {
         {
           '@type': 'ListItem',
           position: 3,
-          url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
-          name: "Itinéraire Philippines — 3 semaines pour découvrir la perle de l'Orient",
+          url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
+          name: 'Palawan — De Puerto Princesa à Port Barton',
         },
         {
           '@type': 'ListItem',
