@@ -12,7 +12,7 @@ const destinations = [
     pays: 'Espagne',
     liens: [
       { label: 'Madrid', href: '/visiter-madrid-en-3-jours' },
-      { label: 'Lanzarote', href: 'https://blog.mamzellesenvadrouille.com/road-trip-a-lanzarote/' },
+      { label: 'Lanzarote', href: '/road-trip-a-lanzarote' },
     ]
   },
   {
