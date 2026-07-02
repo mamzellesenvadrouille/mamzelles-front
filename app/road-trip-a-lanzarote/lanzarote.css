@@ -636,7 +636,7 @@
 .article-lanzarote .article-section h3 + h4 { margin-top: 2px !important; }
 
 .article-lanzarote .article-day-header + h4 { margin-top: 2px !important; }
-.article-lanzarote .article-day-header + .article-day-header-tight { margin-top: -4px !important; }
+.article-lanzarote .article-day-header + .article-day-header-tight { margin-top: -4px; }
 
 .article-lanzarote .article-day-header-tight { margin-bottom: 0px !important; }
 .article-lanzarote .article-day-header-tight h3 { margin-top: 0 !important; margin-bottom: 10px !important; }
@@ -903,5 +903,8 @@
 /* Chevron dorÃ© devant les H2 */
 .article-lanzarote .article-pratique-title { margin: 36px 0 10px !important; }
 .article-lanzarote .article-pratique-block:first-of-type .article-pratique-title { margin-top: 0 !important; }
+.article-lanzarote .article-pratique-h3-wrap { margin-top: -8px; margin-bottom: 0; }
+.article-lanzarote .article-pratique-h3-wrap h3 { margin-top: 0 !important; margin-bottom: 10px !important; font-family: "Cormorant Garamond", serif; font-size: 32px; font-weight: 500; color: var(--dark); line-height: 1.1; }
+.article-lanzarote .article-pratique-h3-wrap + .article-pratique-block { margin-top: 36px; }
 
 .article-lanzarote .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }

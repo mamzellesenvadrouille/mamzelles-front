@@ -529,7 +529,7 @@ export default function LanzarotePage() {
               <h2>Tout savoir pour organiser son voyage à Lanzarote</h2>
             </div>
 
-            <div className="article-day-header article-day-header-tight" style={{marginTop:'-12px'}}>
+            <div className="article-day-header article-day-header-tight" style={{marginTop:'-8px'}}>
               <h3>Arriver en avion</h3>
             </div>
             <div className="article-pratique-block article-pratique-block-deplacement">
