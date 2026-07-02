@@ -639,7 +639,7 @@
 .article-lanzarote .article-day-header + .article-day-header-tight { margin-top: -4px !important; }
 
 .article-lanzarote .article-day-header-tight { margin-bottom: 0px !important; }
-.article-lanzarote .article-day-header-tight h3 { margin-bottom: 10px !important; }
+.article-lanzarote .article-day-header-tight h3 { margin-top: 0 !important; margin-bottom: 10px !important; }
 
 .article-lanzarote .article-tip,
 .article-lanzarote .article-avis,
