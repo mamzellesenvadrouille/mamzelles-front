@@ -557,7 +557,7 @@ export default function LanzarotePage() {
             <div className="article-pratique-block article-pratique-block-deplacement">
               <p>Comme pour toutes les îles des Canaries, c'est assez facile de répondre : <strong>tout le temps</strong> ! Le climat est très tempéré, il fait entre 20 et 28 degrés toute l'année.</p>
               <p>Nous vous conseillons donc de partir quand les températures sont basses en France, pour profiter d'un peu de douceur !</p>
-              <p>Évitez malgré tout de vous rendre à Lanzarote pendant les mois de juillet et août qui peuvent être très chauds. Hormis la chaleur, vous éviterez également la foule.</p>
+              <p style={{marginBottom:0}}>Évitez malgré tout de vous rendre à Lanzarote pendant les mois de juillet et août qui peuvent être très chauds. Hormis la chaleur, vous éviterez également la foule.</p>
             </div>
 
 
