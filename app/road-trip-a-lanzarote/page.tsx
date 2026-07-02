@@ -379,7 +379,7 @@ export default function LanzarotePage() {
             <p>De là, suivez la côte à pied. N'hésitez pas à sortir du sentier pour rejoindre le bord de l'eau, il y a plusieurs piscines bien cachées !</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="var(--gold)" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
-              <div><strong>Prudence</strong><p>Pour tout vous dire, malgré la marée basse, il y avait ce jour-là un gros coefficient et beaucoup de vent… Du coup, les piscines étaient régulièrement recouvertes par les vagues, et il était très dangereux de s'y baigner, même de s'y approcher !</p></div>
+              <div><strong>Prudence</strong><p>Malgré la marée basse, il y avait ce jour-là un gros coefficient et beaucoup de vent… Du coup, les piscines étaient régulièrement recouvertes par les vagues, et il était très dangereux de s'y baigner, même de s'y approcher !</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6663-1024x768.jpg" alt="Los Charcones Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
@@ -414,7 +414,7 @@ export default function LanzarotePage() {
             <p>Nous arrivons au <strong>Mirador del Río</strong>, l'un des plus beaux points de vue de Lanzarote !</p>
             <p>Situé à 500 m d'altitude sur les falaises de Famara, il offre une vue imprenable sur <strong>El Risco de Famara</strong> et l'<strong>île de La Graciosa</strong> qui se trouve en face.</p>
             <p>Le <strong>belvédère del Río</strong> est une création architecturale de <strong>César Manrique</strong> qui s'intègre parfaitement dans l'environnement. Ce bâtiment donne accès à plusieurs étages avec différents points de vue.</p>
-            <p>L'entrée au Mirador del Río est payante : 9 € en tarif adulte et 4,50 € en tarif réduit. Un grand parking gratuit vous permettra de vous garer sans difficulté.</p>
+            <p>L'entrée au Mirador del Río est payante : 9 € en tarif adulte et 4,50 € en tarif réduit (tarifs à jour sur <a href="https://www.cactlanzarote.com" target="_blank" rel="noopener noreferrer" className="article-link">cactlanzarote.com</a>). Un grand parking gratuit vous permettra de vous garer sans difficulté.</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_6847-1024x768.jpg" alt="Mirador del Río Lanzarote" className="article-img-full" loading="lazy" />
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
@@ -429,8 +429,7 @@ export default function LanzarotePage() {
             <div className="article-day-header article-day-header-tight">
               <h3>Playa Caletón Blanco</h3>
             </div>
-            <p>¡Vamos a la playa ! En un petit quart d'heure en voiture, vous arriverez à la <strong>Playa Caletón Blanco</strong>.</p>
-            <p>Une grande piscine naturelle, du sable blanc et une eau turquoise, cette plage est juste magnifique !</p>
+            <p>¡Vamos a la playa ! En un petit quart d'heure en voiture, vous arriverez à la <strong>Playa Caletón Blanco</strong>. Une grande piscine naturelle, du sable blanc et une eau turquoise, cette plage est juste magnifique !</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Vérifiez l'heure des marées avant de vous y rendre ! L'idéal est d'<strong>y aller à marée haute</strong>.</p></div>
@@ -483,10 +482,7 @@ export default function LanzarotePage() {
             <p>Sur place, vous trouverez une vue imprenable et vertigineuse sur la <strong>plage de Famara</strong>, mais aussi des tables de pique-nique et des structures de jeu pour enfants. C'est l'endroit idéal pour passer un petit moment en famille.</p>
             <p>Il n'est pas rare de croiser des parapentes et des deltaplanes sur ce spot, car c'est de là qu'ils décollent.</p>
             <p>Depuis ce mirador, la vue est magnifique, mais à 5 minutes à pied de là se trouve un autre point de vue encore plus spectaculaire !</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Pour le rejoindre, revenez un peu sur vos pas et rejoignez la falaise sur votre droite. L'endroit est bien indiqué sur les GPS sous le nom de <strong>Cueva de los Suecos (ou Cueva de las Cabras)</strong>. Beaucoup de personnes passent à côté sans le voir, alors n'hésitez pas à arpenter les lieux avec la localisation.</p></div>
-            </div>
+
                                                             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/DJI_20220320_133410_551-768x1024.jpg" alt="Mirador El Risco de Famara Lanzarote" loading="lazy" style={{flex:"0.360",minWidth:0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/IMG_7140-1024x768.jpg" alt="Mirador El Risco de Famara Lanzarote" loading="lazy" style={{flex:"0.640",minWidth:0}} />
