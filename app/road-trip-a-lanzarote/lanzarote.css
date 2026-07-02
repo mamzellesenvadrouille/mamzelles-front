@@ -27,7 +27,7 @@
   .mobile-hero-break { display: none; }
   .desktop-tablet-br { display: inline; }
   .cdcr-coeur { font-size: 0; }
-  .cdcr-coeur::after { content: 'â™¡'; font-size: 14px; }
+  .cdcr-coeur::after { content: '\2661'; font-size: 14px; }
 }
 
 @media (min-width: 1025px) {
