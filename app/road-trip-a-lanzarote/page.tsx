@@ -541,18 +541,20 @@ export default function LanzarotePage() {
               </div>
             </div>
 
+            <div className="article-day-header article-day-header-tight" style={{marginTop:'0px', paddingTop:'1px'}}>
+              <h3>Se déplacer à Lanzarote</h3>
+            </div>
             <div className="article-pratique-block article-pratique-block-deplacement">
-              <div className="article-day-header article-day-header-tight">
-                <h3>Se déplacer à Lanzarote</h3>
-              </div>
               <p>Quelle que soit la compagnie que vous choisirez, vous atterrirez à l'<strong>aeropuerto César Manrique</strong>. De là, nous vous conseillons vivement de <strong>récupérer un véhicule</strong> afin d'être autonome sur Lanzarote, les endroits à visiter étant difficilement accessibles en transport en commun.</p>
               <p>Nous sommes passées par <a href="https://www.cicar.com/FR" target="_blank" rel="noopener noreferrer" className="article-link">Cicar</a> et avons loué une Fiat 500XL. Comme nous vous l'avons déjà recommandé, évitez de louer un « pot de yaourt » qui pourrait vous mettre en difficulté sur les routes accidentées pour rejoindre certains spots.</p>
               <p>Leurs tarifs de location sont les plus intéressants de l'île. Nous vous conseillons de réserver votre véhicule avant votre arrivée. Plus vous le ferez tôt, plus les tarifs seront avantageux. Pour autant, rien ne vous sera prélevé sur votre carte, vous réglerez tout sur place.</p>
               <p>Du coup, si vous louez comme nous votre voiture chez Cicar, rendez-vous à la sortie de l'aéroport. Leur bureau est facilement reconnaissable, c'est celui où il y a foule ! Il faudra prendre votre mal en patience pour récupérer votre véhicule. Pour gagner un peu de temps, n'hésitez pas à sortir de la zone de débarquement pour aller au guichet du côté de la sortie. De là, on vous remettra votre clé, leur parking est situé juste en face de l'aéroport. Pratique !</p>
             </div>
 
+            <div className="article-day-header article-day-header-tight" style={{marginTop:'0px', paddingTop:'1px'}}>
+              <h3>Quand partir ?</h3>
+            </div>
             <div className="article-pratique-block article-pratique-block-deplacement">
-              <h3 className="article-pratique-title">Quand partir ?</h3>
               <p>Comme pour toutes les îles des Canaries, c'est assez facile de répondre : <strong>tout le temps</strong> ! Le climat est très tempéré, il fait entre 20 et 28 degrés toute l'année.</p>
               <p>Nous vous conseillons donc de partir quand les températures sont basses en France, pour profiter d'un peu de douceur !</p>
               <p>Évitez malgré tout de vous rendre à Lanzarote pendant les mois de juillet et août qui peuvent être très chauds. Hormis la chaleur, vous éviterez également la foule.</p>
