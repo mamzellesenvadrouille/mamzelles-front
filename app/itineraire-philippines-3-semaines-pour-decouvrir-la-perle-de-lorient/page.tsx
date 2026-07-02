@@ -1107,7 +1107,7 @@ export default function PhilippinesPage() {
                 </div>
                 <div className="article-related-body">
                   <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Road trip à Lanzarote : l&apos;île aux 300 volcans</p>
+                  <p className="article-related-title-card">Que faire à Lanzarote ? Road trip d&apos;une semaine</p>
                 </div>
               </a>
             </div>
