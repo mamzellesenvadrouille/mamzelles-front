@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import CookieBanner from "./components/CookieBanner";
 
 export const metadata: Metadata = {
   title: "MamZelles en vadrouille",
@@ -27,20 +28,17 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
+        {/* GA script chargé uniquement si l'utilisateur accepte — déclenché depuis CookieBanner */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-85C1JHTMSH"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
+          id="ga-script"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-85C1JHTMSH');
-          `}
-        </Script>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   );
 }
