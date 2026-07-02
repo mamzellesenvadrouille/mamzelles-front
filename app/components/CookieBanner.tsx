@@ -73,14 +73,15 @@ export default function CookieBanner() {
           left: 0;
           right: 0;
           z-index: 9999;
-          background: var(--bg, #f8f4ef);
+          background: #ffffff;
           border-top: 1.5px solid var(--gold, #c8956c);
-          padding: 18px 32px;
+          padding: 20px 32px;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: space-between;
-          gap: 24px;
+          gap: 14px;
           box-shadow: 0 -4px 24px rgba(26,21,18,0.07);
+          text-align: center;
         }
         .cookie-text {
           font-family: 'Inter', sans-serif;
@@ -97,8 +98,7 @@ export default function CookieBanner() {
         .cookie-actions {
           display: flex;
           align-items: center;
-          gap: 12px;
-          flex-shrink: 0;
+          gap: 16px;
         }
         .cookie-btn-refuse {
           font-family: 'Inter', sans-serif;
@@ -136,13 +136,7 @@ export default function CookieBanner() {
         }
         @media (max-width: 640px) {
           .cookie-banner {
-            flex-direction: column;
-            align-items: flex-start;
             padding: 16px 20px;
-            gap: 14px;
-          }
-          .cookie-actions {
-            gap: 16px;
           }
         }
       `}</style>
