@@ -15,7 +15,7 @@ export default function Annulation() {
       </nav>
       <div style={{ minHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 20px' }}>
         <div style={{ textAlign: 'center', maxWidth: 520, width: '100%', margin: '0 auto' }}>
-          <img src="/icon.png" alt="MamZelles en vadrouille" style={{ width: 70, height: 70, objectFit: 'contain', marginBottom: 24, opacity: 0.85 }} />
+          <img src="/icon.png" alt="MamZelles en vadrouille" style={{ width: 70, height: 70, objectFit: 'contain', marginBottom: 24, opacity: 0.85, display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
           <h1 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 36, color: '#1a1512', marginBottom: 16, fontWeight: 600 }}>
             Paiement annulé
           </h1>
