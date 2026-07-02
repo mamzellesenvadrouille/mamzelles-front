@@ -525,7 +525,7 @@ export default function LanzarotePage() {
 
           {/* SECTION PRATIQUE */}
           <section id="pratique" className="article-section">
-            <div className="article-day-header" style={{paddingBottom:'1px', marginTop:'32px'}}>
+            <div className="article-day-header" style={{paddingBottom:'1px', marginTop:'32px', marginBottom:'4px'}}>
               <h2>Tout savoir pour organiser son voyage à Lanzarote</h2>
             </div>
 
