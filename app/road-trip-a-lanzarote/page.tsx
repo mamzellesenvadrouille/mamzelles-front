@@ -525,10 +525,14 @@ export default function LanzarotePage() {
 
           {/* SECTION PRATIQUE */}
           <section id="pratique" className="article-section">
-            <h2 style={{fontFamily:'"Cormorant Garamond", serif', fontSize:'38px', fontWeight:500, color:'var(--dark)', lineHeight:1.1, marginBottom:'20px'}}>Tout savoir pour organiser son voyage à Lanzarote</h2>
+            <div className="article-day-header">
+              <h2>Tout savoir pour organiser son voyage à Lanzarote</h2>
+            </div>
 
             <div className="article-pratique-block article-pratique-block-deplacement">
-              <h3 className="article-pratique-title" style={{marginTop:0}}>Arriver en avion</h3>
+              <div className="article-day-header article-day-header-tight">
+                <h3>Arriver en avion</h3>
+              </div>
               <p>Pour arriver à Lanzarote, nous avons voyagé avec la compagnie <a href="https://www.ryanair.com/fr/fr" target="_blank" rel="noopener noreferrer" className="article-link">Ryanair</a> depuis Marseille, en vol direct. Les billets nous sont revenus à 160 € pour deux.</p>
               <p>Nous vous recommandons de comparer les offres des différentes compagnies aériennes sur <a href="https://www.skyscanner.fr" target="_blank" rel="noopener noreferrer" className="article-link">Skyscanner</a> pour vous rendre aux Canaries (ou ailleurs !). On utilise beaucoup ce site pour trouver les vols qui nous conviennent, que ce soit au niveau des horaires ou des tarifs.</p>
               <div className="article-tip">
@@ -538,7 +542,9 @@ export default function LanzarotePage() {
             </div>
 
             <div className="article-pratique-block article-pratique-block-deplacement">
-              <h3 className="article-pratique-title">Se déplacer à Lanzarote</h3>
+              <div className="article-day-header article-day-header-tight">
+                <h3>Se déplacer à Lanzarote</h3>
+              </div>
               <p>Quelle que soit la compagnie que vous choisirez, vous atterrirez à l'<strong>aeropuerto César Manrique</strong>. De là, nous vous conseillons vivement de <strong>récupérer un véhicule</strong> afin d'être autonome sur Lanzarote, les endroits à visiter étant difficilement accessibles en transport en commun.</p>
               <p>Nous sommes passées par <a href="https://www.cicar.com/FR" target="_blank" rel="noopener noreferrer" className="article-link">Cicar</a> et avons loué une Fiat 500XL. Comme nous vous l'avons déjà recommandé, évitez de louer un « pot de yaourt » qui pourrait vous mettre en difficulté sur les routes accidentées pour rejoindre certains spots.</p>
               <p>Leurs tarifs de location sont les plus intéressants de l'île. Nous vous conseillons de réserver votre véhicule avant votre arrivée. Plus vous le ferez tôt, plus les tarifs seront avantageux. Pour autant, rien ne vous sera prélevé sur votre carte, vous réglerez tout sur place.</p>
