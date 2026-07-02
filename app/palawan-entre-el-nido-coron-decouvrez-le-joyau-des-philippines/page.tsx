@@ -9,11 +9,11 @@ import NewsletterForm from '../components/NewsletterForm';
 export const metadata: Metadata = {
   title: "Palawan : Coron et El Nido, le joyau des Philippines",
   description: "Palawan : de ses lagons turquoise à El Nido aux récifs de Coron — notre guide complet, nos coups de cœur et tous nos conseils pour préparer votre séjour.",
-  alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines' },
+  alternates: { canonical: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines' },
   openGraph: {
     title: "Palawan : Coron et El Nido, le joyau des Philippines",
     description: 'De ses lagons turquoise à El Nido aux récifs spectaculaires de Coron, plongez dans le joyau des Philippines.',
-    url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines',
+    url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/El-Nido-Coron.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
@@ -47,7 +47,7 @@ export default function PalawanElNidoCoronPage() {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines',
+      '@id': 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
     },
   };
 
@@ -527,7 +527,7 @@ export default function PalawanElNidoCoronPage() {
             <CommentsList comments={[]} />
             <CommentForm
               articleTitle={"Palawan : Coron et El Nido, le joyau des Philippines"}
-              articleUrl="https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-Philippines"
+              articleUrl="https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines"
             />
           </section>
 
