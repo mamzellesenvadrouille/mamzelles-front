@@ -429,7 +429,7 @@ export default function LanzarotePage() {
             <div className="article-day-header article-day-header-tight">
               <h3>Playa Caletón Blanco</h3>
             </div>
-            <p>¡Vamos a la playa ! En un petit quart d'heure en voiture, vous arriverez à la <strong>Playa Caletón Blanco</strong>. Une grande piscine naturelle, du sable blanc et une eau turquoise, cette plage est juste magnifique !</p>
+            <p>¡ Vamos à la playa ! En un petit quart d'heure en voiture, vous arriverez à la <strong>Playa Caletón Blanco</strong>. Une grande piscine naturelle, du sable blanc et une eau turquoise, cette plage est juste magnifique !</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>Vérifiez l'heure des marées avant de vous y rendre ! L'idéal est d'y aller à marée haute.</p></div>
