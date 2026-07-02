@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 export default function Annulation() {
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
-      <nav style={{ padding: '20px 40px', borderBottom: '1px solid #e8e0d6' }}>
+      <nav style={{ padding: '20px 40px', borderBottom: '1px solid #e8e0d6', textAlign: 'center' }}>
         <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 20, color: '#c8956c' }}>
           MamZelles en vadrouille
         </span>
       </nav>
       <div style={{ minHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 20px' }}>
-        <div style={{ textAlign: 'center', maxWidth: 520 }}>
+        <div style={{ textAlign: 'center', maxWidth: 520, width: '100%', margin: '0 auto' }}>
           <img src="/icon.png" alt="MamZelles en vadrouille" style={{ width: 70, height: 70, objectFit: 'contain', marginBottom: 24, opacity: 0.85 }} />
           <h1 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 36, color: '#1a1512', marginBottom: 16, fontWeight: 600 }}>
             Paiement annulé
