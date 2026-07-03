@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Annulation() {
   return (
     <div style={{ width: '100%', overflowX: 'hidden' }}>
-      <nav style={{ padding: '20px 40px', borderBottom: '1px solid #e8e0d6', textAlign: 'center' }}>
+      <nav style={{ padding: '20px 40px', borderBottom: '1px solid #e8e0d6' }}>
         <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 20, color: '#c8956c' }}>
           MamZelles en vadrouille
         </span>
