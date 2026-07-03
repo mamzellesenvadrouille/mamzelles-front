@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
             currency: 'eur',
             product_data: {
               name: formule === 'Sur-mesure' ? 'Votre voyage sur mesure' : `Formule ${formule}`,
-              description: description.replace(/\n/g, ' · '),
+              description: description.replace(/\n/g, ' — '),
             },
             unit_amount: Math.round(montant * 100),
           },

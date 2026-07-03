@@ -80,7 +80,7 @@ export default function AdminDevis() {
       lines.push(`${OPTIONS[o.index].label} × ${o.qty}`);
     });
     if (remise > 0) lines.push(`Remise appliquée : -${remise} €`);
-    return lines.join(' · ');
+    return lines.join(' — ');
   }
 
   async function handleGenerate(e: React.FormEvent) {
