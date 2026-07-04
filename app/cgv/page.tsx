@@ -33,7 +33,7 @@ export default function CGV() {
         <p>Les présentes conditions générales de vente (CGV) régissent les relations contractuelles entre MamZelles en vadrouille et toute personne (« le client ») commandant une prestation de création d&rsquo;itinéraire de voyage personnalisé. Toute commande implique l&rsquo;acceptation pleine et entière des présentes CGV.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 2 — Formules et tarifs</h2>
-        <p style={{ marginBottom: '8px' }}>MamZelles en vadrouille propose les formules suivantes :</p>
+        <p style={{ marginBottom: '8px' }}>MamZelles en vadrouille propose les formules de base suivantes :</p>
         <ul style={{ paddingLeft: '18px', margin: '0' }}>
           <li><strong>L&rsquo;Escale</strong> (2 à 4 jours) — 179 €</li>
           <li><strong>La Vadrouille</strong> (5 à 8 jours) — 329 €</li>
