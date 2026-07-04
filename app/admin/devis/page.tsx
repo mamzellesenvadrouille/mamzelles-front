@@ -378,7 +378,7 @@ export default function AdminDevis() {
       </div>
 
       {/* Historique des devis */}
-      <div style={{ ...styles.card, marginTop: 24 }}>
+      <div style={{ ...styles.card, marginTop: 24, maxWidth: 1100 }}>
         <div style={{ ...styles.header, marginBottom: 20 }}>
           <div style={styles.title}>Historique des devis</div>
         </div>
@@ -493,12 +493,12 @@ const styles: Record<string, React.CSSProperties> = {
   linkBlock: { display: 'flex', flexDirection: 'column', gap: 10, padding: '16px', background: '#f8f4ef', border: '1px solid #e8e0d6' },
   linkLabel: { fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.05em', color: '#1a1512', textTransform: 'uppercase' as const },
   linkHint: { fontWeight: 400, color: '#888', textTransform: 'none' as const },
-  table: { width: '100%', borderCollapse: 'collapse' as const, fontFamily: 'Inter, sans-serif', fontSize: 13 },
-  th: { textAlign: 'left' as const, padding: '8px 12px', fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase' as const, color: '#888', borderBottom: '1px solid #e8e0d6' },
-  td: { padding: '10px 12px', color: '#1a1512', verticalAlign: 'middle' as const },
-  trEven: { background: '#fff' },
-  trOdd: { background: '#fafaf8' },
-  trDone: { background: '#f0faf0' },
+  table: { width: '100%', borderCollapse: 'collapse' as const, fontFamily: 'Inter, sans-serif', fontSize: 13, tableLayout: 'fixed' as const },
+  th: { textAlign: 'left' as const, padding: '12px 16px', fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase' as const, color: '#888', borderBottom: '2px solid #e8e0d6', whiteSpace: 'nowrap' as const },
+  td: { padding: '14px 16px', color: '#1a1512', verticalAlign: 'middle' as const, whiteSpace: 'nowrap' as const, overflow: 'hidden', textOverflow: 'ellipsis' },
+  trEven: { background: '#fff', borderBottom: '1px solid #f0ebe4' },
+  trOdd: { background: '#fafaf8', borderBottom: '1px solid #f0ebe4' },
+  trDone: { background: '#f0faf0', borderBottom: '1px solid #d4edda' },
   btnDelete: { background: 'none', border: 'none', color: '#ccc', cursor: 'pointer', fontSize: 14, padding: '2px 6px', fontFamily: 'Inter, sans-serif' },
   btnLinks: { background: 'none', border: '1px solid #e8e0d6', color: '#1a1512', cursor: 'pointer', fontSize: 11, padding: '3px 8px', fontFamily: 'Inter, sans-serif', letterSpacing: '0.05em' },
   btnCopySmall: { background: '#c8956c', border: 'none', color: '#fff', cursor: 'pointer', fontSize: 11, padding: '4px 10px', fontFamily: 'Inter, sans-serif', flexShrink: 0 },
