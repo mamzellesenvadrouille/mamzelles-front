@@ -17,6 +17,8 @@ const OPTIONS = [
 type DevisRecord = {
   id: string;
   clientName: string;
+  clientEmail?: string;
+  dateVoyage?: string;
   formule: string;
   total: number;
   note: string;
@@ -36,6 +38,8 @@ export default function AdminDevis() {
   const [loadingHistorique, setLoadingHistorique] = useState(false);
   const [visibleLinks, setVisibleLinks] = useState<string | null>(null);
   const [clientName, setClientName] = useState('');
+  const [clientEmail, setClientEmail] = useState('');
+  const [dateVoyage, setDateVoyage] = useState('');
   const [formuleIndex, setFormuleIndex] = useState(0);
   const [prixSurMesure, setPrixSurMesure] = useState(549);
   const [selectedOptions, setSelectedOptions] = useState<{ index: number; qty: number }[]>([]);
@@ -46,6 +50,7 @@ export default function AdminDevis() {
   const [soldeUrl, setSoldeUrl] = useState('');
   const [copied, setCopied] = useState<'acompte' | 'solde' | null>(null);
   const [error, setError] = useState('');
+  const [filtreStatut, setFiltreStatut] = useState<'tous' | 'attente' | 'regle'>('tous');
 
   async function handleAuth(e: React.FormEvent) {
     e.preventDefault();
@@ -176,6 +181,8 @@ export default function AdminDevis() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           clientName: clientName.trim(),
+          clientEmail: clientEmail.trim(),
+          dateVoyage: dateVoyage.trim(),
           formule: formule.label,
           total,
           note: noteClient,
@@ -197,6 +204,8 @@ export default function AdminDevis() {
 
   function handleReset() {
     setClientName('');
+    setClientEmail('');
+    setDateVoyage('');
     setFormuleIndex(0);
     setPrixSurMesure(549);
     setSelectedOptions([]);
@@ -273,6 +282,30 @@ export default function AdminDevis() {
                 onChange={e => setClientName(e.target.value)}
                 style={styles.input}
               />
+            </div>
+
+            {/* Email + Date voyage côte à côte */}
+            <div style={{ display: 'flex', gap: 16, marginBottom: 24 }}>
+              <div style={{ flex: 1 }}>
+                <label style={styles.label}>Email</label>
+                <input
+                  type="email"
+                  placeholder="sophie@email.com"
+                  value={clientEmail}
+                  onChange={e => setClientEmail(e.target.value)}
+                  style={styles.input}
+                />
+              </div>
+              <div style={{ flex: 1 }}>
+                <label style={styles.label}>Date de voyage</label>
+                <input
+                  type="text"
+                  placeholder="Ex : Mai 2027"
+                  value={dateVoyage}
+                  onChange={e => setDateVoyage(e.target.value)}
+                  style={styles.input}
+                />
+              </div>
             </div>
 
             {/* Formule */}
@@ -381,20 +414,68 @@ export default function AdminDevis() {
 
       {/* Historique des devis */}
       <div style={{ ...styles.card, marginTop: 24, maxWidth: 1100 }}>
-        <div style={{ ...styles.header, marginBottom: 20 }}>
+        <div style={{ ...styles.header, marginBottom: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
           <div style={styles.title}>Historique des devis</div>
+          <div style={{ display: 'flex', gap: 8 }}>
+            {(['tous', 'attente', 'regle'] as const).map(f => (
+              <button key={f} onClick={() => setFiltreStatut(f)} style={{
+                padding: '6px 14px', border: '1px solid #e8e0d6', background: filtreStatut === f ? '#c8956c' : '#fff',
+                color: filtreStatut === f ? '#fff' : '#1a1512', fontFamily: 'Inter, sans-serif', fontSize: 11,
+                letterSpacing: '0.06em', textTransform: 'uppercase', cursor: 'pointer',
+              }}>
+                {f === 'tous' ? 'Tous' : f === 'attente' ? 'En attente' : 'Réglés'}
+              </button>
+            ))}
+          </div>
         </div>
+
+        {/* Totaux */}
+        {historique.length > 0 && (() => {
+          const filtered = historique.filter(d =>
+            filtreStatut === 'tous' ? true :
+            filtreStatut === 'regle' ? (d.acomptePaye && d.soldePaye) :
+            !(d.acomptePaye && d.soldePaye)
+          );
+          const ca = filtered.reduce((s, d) => s + d.total, 0);
+          const caEncaisse = filtered.reduce((s, d) => s + (d.acomptePaye ? Math.round(d.total * 0.5 * 100) / 100 : 0) + (d.soldePaye ? Math.round((d.total - Math.round(d.total * 0.5 * 100) / 100) * 100) / 100 : 0), 0);
+          return (
+            <div style={{ display: 'flex', gap: 24, marginBottom: 20, fontFamily: 'Inter, sans-serif', fontSize: 13 }}>
+              <div style={{ padding: '12px 20px', background: '#f8f4ef', border: '1px solid #e8e0d6' }}>
+                <div style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888', marginBottom: 4 }}>Devis</div>
+                <div style={{ fontWeight: 600, color: '#1a1512' }}>{filtered.length}</div>
+              </div>
+              <div style={{ padding: '12px 20px', background: '#f8f4ef', border: '1px solid #e8e0d6' }}>
+                <div style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888', marginBottom: 4 }}>CA total</div>
+                <div style={{ fontWeight: 600, color: '#c8956c' }}>{ca} €</div>
+              </div>
+              <div style={{ padding: '12px 20px', background: '#f8f4ef', border: '1px solid #e8e0d6' }}>
+                <div style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888', marginBottom: 4 }}>Encaissé</div>
+                <div style={{ fontWeight: 600, color: '#2d8a4e' }}>{caEncaisse} €</div>
+              </div>
+            </div>
+          );
+        })()}
         {loadingHistorique ? (
           <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888' }}>Chargement...</p>
         ) : historique.length === 0 ? (
           <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888' }}>Aucun devis généré pour l'instant.</p>
-        ) : (
+        ) : (() => {
+          const filtered = historique.filter(d =>
+            filtreStatut === 'tous' ? true :
+            filtreStatut === 'regle' ? (d.acomptePaye && d.soldePaye) :
+            !(d.acomptePaye && d.soldePaye)
+          );
+          return filtered.length === 0 ? (
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888' }}>Aucun devis dans cette catégorie.</p>
+          ) : (
           <>
           <table style={styles.table}>
             <thead>
               <tr>
                 <th style={styles.th}>Date</th>
                 <th style={styles.th}>Cliente</th>
+                <th style={styles.th}>Email</th>
+                <th style={styles.th}>Départ</th>
                 <th style={styles.th}>Formule</th>
                 <th style={styles.th}>Note</th>
                 <th style={styles.th}>Total</th>
@@ -406,11 +487,13 @@ export default function AdminDevis() {
               </tr>
             </thead>
             <tbody>
-              {historique.map((d, i) => (
+              {filtered.map((d, i) => (
                 <>
                 <tr key={i} style={d.acomptePaye && d.soldePaye ? styles.trDone : i % 2 === 0 ? styles.trEven : styles.trOdd}>
                   <td style={styles.td}>{new Date(d.date).toLocaleDateString('fr-FR')}</td>
                   <td style={styles.td}>{d.clientName}</td>
+                  <td style={{ ...styles.td, color: '#888', fontSize: 12 }}>{d.clientEmail || '—'}</td>
+                  <td style={{ ...styles.td, color: '#c8956c' }}>{d.dateVoyage || '—'}</td>
                   <td style={styles.td}>{d.formule}</td>
                   <td style={styles.td}>{d.note || '—'}</td>
                   <td style={{ ...styles.td, fontWeight: 600 }}>{d.total} €</td>
@@ -437,7 +520,7 @@ export default function AdminDevis() {
                 </tr>
                 {visibleLinks === d.id && (
                   <tr style={{ background: '#f8f4ef' }}>
-                    <td colSpan={10} style={{ padding: '12px 16px' }}>
+                    <td colSpan={12} style={{ padding: '12px 16px' }}>
                       <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, marginBottom: 8 }}>
                         <strong style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888' }}>Acompte 50% — {Math.round(d.total * 0.5 * 100) / 100} €</strong>
                         <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 4 }}>
@@ -460,7 +543,8 @@ export default function AdminDevis() {
             </tbody>
           </table>
           </>
-        )}
+          );
+        })()}
       </div>
     </div>
   );
