@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const FORMULES = [
   { label: "L'Escale", prix: 179 },
@@ -14,11 +14,21 @@ const OPTIONS = [
   { label: 'Destination supplémentaire', prix: 35 },
 ];
 
+type DevisRecord = {
+  id: string;
+  clientName: string;
+  formule: string;
+  total: number;
+  note: string;
+  date: string;
+};
+
 export default function AdminDevis() {
   const [auth, setAuth] = useState(false);
   const [password, setPassword] = useState('');
   const [authError, setAuthError] = useState('');
-
+  const [historique, setHistorique] = useState<DevisRecord[]>([]);
+  const [loadingHistorique, setLoadingHistorique] = useState(false);
   const [clientName, setClientName] = useState('');
   const [formuleIndex, setFormuleIndex] = useState(0);
   const [prixSurMesure, setPrixSurMesure] = useState(549);
@@ -41,9 +51,20 @@ export default function AdminDevis() {
     if (res.ok) {
       setAuth(true);
       setAuthError('');
+      loadHistorique();
     } else {
       setAuthError('Mot de passe incorrect.');
     }
+  }
+
+  async function loadHistorique() {
+    setLoadingHistorique(true);
+    try {
+      const res = await fetch('/api/devis-list');
+      const data = await res.json();
+      setHistorique(data);
+    } catch {}
+    setLoadingHistorique(false);
   }
 
   function toggleOption(index: number) {
@@ -124,6 +145,18 @@ export default function AdminDevis() {
     if (dataAcompte.url && dataSolde.url) {
       setPaymentUrl(dataAcompte.url);
       setSoldeUrl(dataSolde.url);
+      // Sauvegarder dans l'historique
+      await fetch('/api/devis-save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          clientName: clientName.trim(),
+          formule: formule.label,
+          total,
+          note: noteClient,
+        }),
+      });
+      loadHistorique();
     } else {
       setError('Erreur lors de la génération des liens. Réessaie.');
     }
@@ -318,6 +351,43 @@ export default function AdminDevis() {
           </form>
         )}
       </div>
+
+      {/* Historique des devis */}
+      <div style={{ ...styles.card, marginTop: 24 }}>
+        <div style={{ ...styles.header, marginBottom: 20 }}>
+          <div style={styles.title}>Historique des devis</div>
+        </div>
+        {loadingHistorique ? (
+          <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888' }}>Chargement...</p>
+        ) : historique.length === 0 ? (
+          <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888' }}>Aucun devis généré pour l'instant.</p>
+        ) : (
+          <table style={styles.table}>
+            <thead>
+              <tr>
+                <th style={styles.th}>Date</th>
+                <th style={styles.th}>Cliente</th>
+                <th style={styles.th}>Formule</th>
+                <th style={styles.th}>Note</th>
+                <th style={styles.th}>Total</th>
+                <th style={styles.th}>Acompte</th>
+              </tr>
+            </thead>
+            <tbody>
+              {historique.map((d, i) => (
+                <tr key={i} style={i % 2 === 0 ? styles.trEven : styles.trOdd}>
+                  <td style={styles.td}>{new Date(d.date).toLocaleDateString('fr-FR')}</td>
+                  <td style={styles.td}>{d.clientName}</td>
+                  <td style={styles.td}>{d.formule}</td>
+                  <td style={styles.td}>{d.note || '—'}</td>
+                  <td style={{ ...styles.td, fontWeight: 600 }}>{d.total} €</td>
+                  <td style={{ ...styles.td, color: '#c8956c', fontWeight: 600 }}>{Math.round(d.total * 0.5 * 100) / 100} €</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </div>
     </div>
   );
 }
@@ -358,4 +428,9 @@ const styles: Record<string, React.CSSProperties> = {
   linkBlock: { display: 'flex', flexDirection: 'column', gap: 10, padding: '16px', background: '#f8f4ef', border: '1px solid #e8e0d6' },
   linkLabel: { fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.05em', color: '#1a1512', textTransform: 'uppercase' as const },
   linkHint: { fontWeight: 400, color: '#888', textTransform: 'none' as const },
+  table: { width: '100%', borderCollapse: 'collapse' as const, fontFamily: 'Inter, sans-serif', fontSize: 13 },
+  th: { textAlign: 'left' as const, padding: '8px 12px', fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase' as const, color: '#888', borderBottom: '1px solid #e8e0d6' },
+  td: { padding: '10px 12px', color: '#1a1512', verticalAlign: 'middle' as const },
+  trEven: { background: '#fff' },
+  trOdd: { background: '#fafaf8' },
 };
