@@ -21,6 +21,10 @@ type DevisRecord = {
   total: number;
   note: string;
   date: string;
+  acompteUrl?: string;
+  soldeUrl?: string;
+  acomptePaye?: boolean;
+  soldePaye?: boolean;
 };
 
 export default function AdminDevis() {
@@ -28,7 +32,7 @@ export default function AdminDevis() {
   const [password, setPassword] = useState('');
   const [authError, setAuthError] = useState('');
   const [historique, setHistorique] = useState<DevisRecord[]>([]);
-  const [loadingHistorique, setLoadingHistorique] = useState(false);
+  const [visibleLinks, setVisibleLinks] = useState<string | null>(null);
   const [clientName, setClientName] = useState('');
   const [formuleIndex, setFormuleIndex] = useState(0);
   const [prixSurMesure, setPrixSurMesure] = useState(549);
@@ -65,6 +69,24 @@ export default function AdminDevis() {
       setHistorique(data);
     } catch {}
     setLoadingHistorique(false);
+  }
+
+  async function deleteDevis(id: string) {
+    await fetch('/api/devis-save', {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id }),
+    });
+    loadHistorique();
+  }
+
+  async function toggleStatut(d: DevisRecord, field: 'acomptePaye' | 'soldePaye') {
+    await fetch('/api/devis-save', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: d.id, field, value: !d[field] }),
+    });
+    loadHistorique();
   }
 
   function toggleOption(index: number) {
@@ -145,7 +167,7 @@ export default function AdminDevis() {
     if (dataAcompte.url && dataSolde.url) {
       setPaymentUrl(dataAcompte.url);
       setSoldeUrl(dataSolde.url);
-      // Sauvegarder dans l'historique
+      // Sauvegarder dans l'historique avec les liens
       await fetch('/api/devis-save', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -154,6 +176,8 @@ export default function AdminDevis() {
           formule: formule.label,
           total,
           note: noteClient,
+          acompteUrl: dataAcompte.url,
+          soldeUrl: dataSolde.url,
         }),
       });
       loadHistorique();
@@ -362,6 +386,7 @@ export default function AdminDevis() {
         ) : historique.length === 0 ? (
           <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888' }}>Aucun devis généré pour l'instant.</p>
         ) : (
+          <>
           <table style={styles.table}>
             <thead>
               <tr>
@@ -371,21 +396,60 @@ export default function AdminDevis() {
                 <th style={styles.th}>Note</th>
                 <th style={styles.th}>Total</th>
                 <th style={styles.th}>Acompte</th>
+                <th style={styles.th}>A. reçu</th>
+                <th style={styles.th}>S. reçu</th>
+                <th style={styles.th}></th>
+                <th style={styles.th}></th>
               </tr>
             </thead>
             <tbody>
               {historique.map((d, i) => (
-                <tr key={i} style={i % 2 === 0 ? styles.trEven : styles.trOdd}>
+                <>
+                <tr key={i} style={d.acomptePaye && d.soldePaye ? styles.trDone : i % 2 === 0 ? styles.trEven : styles.trOdd}>
                   <td style={styles.td}>{new Date(d.date).toLocaleDateString('fr-FR')}</td>
                   <td style={styles.td}>{d.clientName}</td>
                   <td style={styles.td}>{d.formule}</td>
                   <td style={styles.td}>{d.note || '—'}</td>
                   <td style={{ ...styles.td, fontWeight: 600 }}>{d.total} €</td>
                   <td style={{ ...styles.td, color: '#c8956c', fontWeight: 600 }}>{Math.round(d.total * 0.5 * 100) / 100} €</td>
+                  <td style={{ ...styles.td, textAlign: 'center' }}>
+                    <input type="checkbox" checked={!!d.acomptePaye} onChange={() => toggleStatut(d, 'acomptePaye')} style={{ cursor: 'pointer', accentColor: '#c8956c', width: 16, height: 16 }} />
+                  </td>
+                  <td style={{ ...styles.td, textAlign: 'center' }}>
+                    <input type="checkbox" checked={!!d.soldePaye} onChange={() => toggleStatut(d, 'soldePaye')} style={{ cursor: 'pointer', accentColor: '#c8956c', width: 16, height: 16 }} />
+                  </td>
+                  <td style={styles.td}>
+                    <button onClick={() => setVisibleLinks(visibleLinks === d.id ? null : d.id)} style={styles.btnLinks}>Liens</button>
+                  </td>
+                  <td style={styles.td}>
+                    <button onClick={() => deleteDevis(d.id)} style={styles.btnDelete} title="Supprimer">✕</button>
+                  </td>
                 </tr>
+                {visibleLinks === d.id && (
+                  <tr style={{ background: '#f8f4ef' }}>
+                    <td colSpan={10} style={{ padding: '12px 16px' }}>
+                      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, marginBottom: 8 }}>
+                        <strong style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888' }}>Acompte 50% — {Math.round(d.total * 0.5 * 100) / 100} €</strong>
+                        <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 4 }}>
+                          <span style={{ color: '#888', wordBreak: 'break-all', flex: 1 }}>{d.acompteUrl || '—'}</span>
+                          {d.acompteUrl && <button onClick={() => { navigator.clipboard.writeText(d.acompteUrl!); }} style={styles.btnCopySmall}>Copier</button>}
+                        </div>
+                      </div>
+                      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12 }}>
+                        <strong style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888' }}>Solde 50% — {Math.round((d.total - Math.round(d.total * 0.5 * 100) / 100) * 100) / 100} €</strong>
+                        <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 4 }}>
+                          <span style={{ color: '#888', wordBreak: 'break-all', flex: 1 }}>{d.soldeUrl || '—'}</span>
+                          {d.soldeUrl && <button onClick={() => { navigator.clipboard.writeText(d.soldeUrl!); }} style={styles.btnCopySmall}>Copier</button>}
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                )}
+                </>
               ))}
             </tbody>
           </table>
+          </>
         )}
       </div>
     </div>
@@ -395,8 +459,8 @@ export default function AdminDevis() {
 const styles: Record<string, React.CSSProperties> = {
   authWrap: { minHeight: '100vh', background: '#f8f4ef', display: 'flex', alignItems: 'center', justifyContent: 'center' },
   authCard: { background: '#fff', padding: '40px 48px', border: '1px solid #e8e0d6', maxWidth: 360, width: '100%', display: 'flex', flexDirection: 'column', gap: 16 },
-  wrap: { minHeight: '100vh', background: '#f8f4ef', padding: '40px 20px', display: 'flex', justifyContent: 'center' },
-  card: { background: '#fff', border: '1px solid #e8e0d6', padding: '40px 48px', maxWidth: 600, width: '100%', height: 'fit-content' },
+  wrap: { minHeight: '100vh', background: '#f8f4ef', padding: '40px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center' },
+  card: { background: '#fff', border: '1px solid #e8e0d6', padding: '40px 48px', maxWidth: 700, width: '100%', height: 'fit-content' },
   header: { marginBottom: 32, borderBottom: '1px solid #e8e0d6', paddingBottom: 20 },
   logo: { fontFamily: 'Cormorant Garamond, serif', fontSize: 18, color: '#c8956c', letterSpacing: '0.05em', marginBottom: 4 },
   title: { fontFamily: 'Cormorant Garamond, serif', fontSize: 28, color: '#1a1512', fontWeight: 600 },
@@ -433,4 +497,9 @@ const styles: Record<string, React.CSSProperties> = {
   td: { padding: '10px 12px', color: '#1a1512', verticalAlign: 'middle' as const },
   trEven: { background: '#fff' },
   trOdd: { background: '#fafaf8' },
+  trDone: { background: '#f0faf0' },
+  btnDelete: { background: 'none', border: 'none', color: '#ccc', cursor: 'pointer', fontSize: 14, padding: '2px 6px', fontFamily: 'Inter, sans-serif' },
+  btnLinks: { background: 'none', border: '1px solid #e8e0d6', color: '#1a1512', cursor: 'pointer', fontSize: 11, padding: '3px 8px', fontFamily: 'Inter, sans-serif', letterSpacing: '0.05em' },
+  btnCopySmall: { background: '#c8956c', border: 'none', color: '#fff', cursor: 'pointer', fontSize: 11, padding: '4px 10px', fontFamily: 'Inter, sans-serif', flexShrink: 0 },
+  btnClear: { marginTop: 16, background: 'none', border: 'none', fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#888', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: 3, padding: 0 },
 };
