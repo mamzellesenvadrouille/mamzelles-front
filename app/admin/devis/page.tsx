@@ -73,6 +73,7 @@ export default function AdminDevis() {
   }
 
   async function deleteDevis(id: string) {
+    if (!confirm('Supprimer ce devis ?')) return;
     await fetch('/api/devis-save', {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
