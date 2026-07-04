@@ -36,6 +36,7 @@ export async function PATCH(req: NextRequest) {
 
 export async function DELETE(req: NextRequest) {
   try {
+    const { id, all } = await req.json();
     if (all) {
       const ids = await redis.lrange('devis:index', 0, -1);
       if (ids.length > 0) {
