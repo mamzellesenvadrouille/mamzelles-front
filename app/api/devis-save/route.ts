@@ -7,11 +7,10 @@ export async function POST(req: NextRequest) {
   try {
     const devis = await req.json();
     const id = `devis:${Date.now()}`;
-    await redis.set(id, JSON.stringify({
+    await redis.set(id, {
       ...devis,
       date: new Date().toISOString(),
-    }));
-    // Ajoute l'id à la liste
+    });
     await redis.lpush('devis:index', id);
     return NextResponse.json({ ok: true });
   } catch (error) {

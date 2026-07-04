@@ -11,7 +11,10 @@ export async function GET() {
     const devis = await Promise.all(
       ids.map(async (id) => {
         const data = await redis.get(id as string);
-        return data ? { id, ...JSON.parse(data as string) } : null;
+        if (!data) return null;
+        // Upstash retourne déjà l'objet parsé
+        const parsed = typeof data === 'string' ? JSON.parse(data) : data;
+        return { id, ...parsed };
       })
     );
 
