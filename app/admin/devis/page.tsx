@@ -33,6 +33,8 @@ export default function AdminDevis() {
   const [authError, setAuthError] = useState('');
   const [historique, setHistorique] = useState<DevisRecord[]>([]);
   const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
+  const [loadingHistorique, setLoadingHistorique] = useState(false);
+  const [visibleLinks, setVisibleLinks] = useState<string | null>(null);
   const [clientName, setClientName] = useState('');
   const [formuleIndex, setFormuleIndex] = useState(0);
   const [prixSurMesure, setPrixSurMesure] = useState(549);
