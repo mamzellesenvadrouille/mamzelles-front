@@ -455,6 +455,52 @@ export default function AdminDevis() {
             </div>
           );
         })()}
+        {historique.length > 0 && (() => {
+          const filtered = historique.filter(d =>
+            filtreStatut === 'tous' ? true :
+            filtreStatut === 'regle' ? (d.acomptePaye && d.soldePaye) :
+            !(d.acomptePaye && d.soldePaye)
+          );
+          const parMois: Record<string, { devis: number; ca: number; encaisse: number }> = {};
+          filtered.forEach(d => {
+            const dt = new Date(d.date);
+            const key = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}`;
+            if (!parMois[key]) parMois[key] = { devis: 0, ca: 0, encaisse: 0 };
+            parMois[key].devis += 1;
+            parMois[key].ca += d.total;
+            parMois[key].encaisse += (d.acomptePaye ? Math.round(d.total * 0.5 * 100) / 100 : 0) + (d.soldePaye ? Math.round((d.total - Math.round(d.total * 0.5 * 100) / 100) * 100) / 100 : 0);
+          });
+          const moisNoms = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+          const lignes = Object.keys(parMois).sort().reverse().map(key => {
+            const [annee, mois] = key.split('-');
+            return { label: `${moisNoms[parseInt(mois, 10) - 1]} ${annee}`, ...parMois[key] };
+          });
+          return lignes.length === 0 ? null : (
+            <div style={{ marginBottom: 20 }}>
+              <div style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888', marginBottom: 8, fontFamily: 'Inter, sans-serif' }}>CA par mois</div>
+              <table style={{ ...styles.table, maxWidth: 500 }}>
+                <thead>
+                  <tr>
+                    <th style={styles.th}>Mois</th>
+                    <th style={styles.th}>Devis</th>
+                    <th style={styles.th}>CA total</th>
+                    <th style={styles.th}>Encaissé</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {lignes.map(l => (
+                    <tr key={l.label}>
+                      <td style={styles.td}>{l.label}</td>
+                      <td style={styles.td}>{l.devis}</td>
+                      <td style={{ ...styles.td, color: '#c8956c', fontWeight: 600 }}>{l.ca} €</td>
+                      <td style={{ ...styles.td, color: '#2d8a4e', fontWeight: 600 }}>{l.encaisse} €</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        })()}
         {loadingHistorique ? (
           <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888' }}>Chargement...</p>
         ) : historique.length === 0 ? (
@@ -469,6 +515,7 @@ export default function AdminDevis() {
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888' }}>Aucun devis dans cette catégorie.</p>
           ) : (
           <>
+          <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
           <table style={styles.table}>
             <thead>
               <tr>
@@ -542,6 +589,7 @@ export default function AdminDevis() {
               ))}
             </tbody>
           </table>
+          </div>
           </>
           );
         })()}
