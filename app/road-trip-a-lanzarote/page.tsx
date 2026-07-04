@@ -5,6 +5,7 @@ import ScrollToTop from '../components/ScrollToTop';
 import CommentForm from '../components/CommentForm';
 import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: "Que faire à Lanzarote ? Road trip d'une semaine",
@@ -665,43 +666,7 @@ export default function LanzarotePage() {
 
       <ScrollToTop />
 
-      <footer className="footer">
-        <div className="footer-top">
-          <div className="footer-col">
-            <div className="footer-logo-wrap">
-              <span className="footer-logo-main">MamZelles en vadrouille</span>
-              <span className="footer-logo-sub">Créatrices de voyages sur mesure</span>
-            </div>
-          </div>
-          <div className="footer-col-sep" />
-          <div className="footer-col">
-            <a href="https://instagram.com/mamzellesenvadrouille" target="_blank" rel="noopener noreferrer" className="footer-social-item">
-              <div className="footer-social-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-              </div>
-              <div className="footer-social-text">
-                <span className="footer-social-label">Suivez nos aventures</span>
-                <span className="footer-social-value">@mamzellesenvadrouille</span>
-              </div>
-            </a>
-          </div>
-          <div className="footer-col-sep" />
-          <div className="footer-col">
-            <a href="mailto:contact@mamzellesenvadrouille.com" className="footer-social-item">
-              <div className="footer-social-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div className="footer-social-text">
-                <span className="footer-social-label">Écrivez-nous</span>
-                <span className="footer-social-value">contact@mamzellesenvadrouille.com</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          © 2026 MamZelles en vadrouille — Tous droits réservés · <a href="/confidentialite" style={{ color: 'rgba(26,21,18,0.5)', fontSize: '12px', textDecoration: 'underline' }}>Politique de confidentialité</a>
-        </div>
-      </footer>
+      <Footer />
 
     </>
   );
