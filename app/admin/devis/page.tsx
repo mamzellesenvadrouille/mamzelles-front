@@ -413,7 +413,7 @@ export default function AdminDevis() {
       </div>
 
       {/* Historique des devis */}
-      <div style={{ ...styles.card, marginTop: 24, maxWidth: 1100 }}>
+      <div style={{ ...styles.card, marginTop: 24, maxWidth: 1400 }}>
         <div style={{ ...styles.header, marginBottom: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
           <div style={styles.title}>Historique des devis</div>
           <div style={{ display: 'flex', gap: 8 }}>
@@ -636,7 +636,7 @@ const styles: Record<string, React.CSSProperties> = {
   linkHint: { fontWeight: 400, color: '#888', textTransform: 'none' as const },
   table: { width: '100%', borderCollapse: 'collapse' as const, fontFamily: 'Inter, sans-serif', fontSize: 13 },
   th: { textAlign: 'left' as const, padding: '12px 16px', fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase' as const, color: '#888', borderBottom: '2px solid #e8e0d6', whiteSpace: 'nowrap' as const },
-  td: { padding: '14px 16px', color: '#1a1512', verticalAlign: 'middle' as const },
+  td: { padding: '14px 16px', color: '#1a1512', verticalAlign: 'middle' as const, whiteSpace: 'nowrap' as const },
   trEven: { background: '#fff', borderBottom: '1px solid #f0ebe4' },
   trOdd: { background: '#fafaf8', borderBottom: '1px solid #f0ebe4' },
   trDone: { background: '#f0faf0', borderBottom: '1px solid #d4edda' },
