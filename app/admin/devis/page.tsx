@@ -32,8 +32,7 @@ export default function AdminDevis() {
   const [password, setPassword] = useState('');
   const [authError, setAuthError] = useState('');
   const [historique, setHistorique] = useState<DevisRecord[]>([]);
-  const [visibleLinks, setVisibleLinks] = useState<string | null>(null);
-  const [loadingHistorique, setLoadingHistorique] = useState(false);
+  const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
   const [clientName, setClientName] = useState('');
   const [formuleIndex, setFormuleIndex] = useState(0);
   const [prixSurMesure, setPrixSurMesure] = useState(549);
@@ -73,12 +72,12 @@ export default function AdminDevis() {
   }
 
   async function deleteDevis(id: string) {
-    if (!confirm('Supprimer ce devis ?')) return;
     await fetch('/api/devis-save', {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id }),
     });
+    setConfirmDeleteId(null);
     loadHistorique();
   }
 
@@ -424,7 +423,14 @@ export default function AdminDevis() {
                     <button onClick={() => setVisibleLinks(visibleLinks === d.id ? null : d.id)} style={styles.btnLinks}>Liens</button>
                   </td>
                   <td style={styles.td}>
-                    <button onClick={() => deleteDevis(d.id)} style={styles.btnDelete} title="Supprimer">✕</button>
+                    {confirmDeleteId === d.id ? (
+                      <span style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+                        <button onClick={() => deleteDevis(d.id)} style={{ ...styles.btnCopySmall, background: '#c0392b', fontSize: 11, padding: '3px 8px' }}>Oui</button>
+                        <button onClick={() => setConfirmDeleteId(null)} style={{ ...styles.btnLinks, fontSize: 11 }}>Non</button>
+                      </span>
+                    ) : (
+                      <button onClick={() => setConfirmDeleteId(d.id)} style={styles.btnDelete} title="Supprimer">✕</button>
+                    )}
                   </td>
                 </tr>
                 {visibleLinks === d.id && (
