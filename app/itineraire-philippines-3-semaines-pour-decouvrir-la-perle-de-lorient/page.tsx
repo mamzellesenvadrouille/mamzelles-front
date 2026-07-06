@@ -208,6 +208,10 @@ export default function PhilippinesPage() {
             <p><strong>Pour nous rendre à Banaue, nous avons choisi l&apos;option bus au départ de Manille.</strong> Vous avez également la possibilité de vous y rendre en transport privé, mais le tarif ne sera pas le même ! Nous avions réservé le transfert plusieurs semaines avant. Le trajet aller-retour nous est revenu à <strong>1800 Php (30 €)</strong> par personne.</p>
             <p>Nous devons nous rendre à la gare routière de la compagnie <strong><a href="https://ohayami.ph/" target="_blank" rel="noopener noreferrer" className="article-link">Ohayami Trans</a></strong> à Manille pour 22 h 30, ce qui nous laisse le temps d&apos;aller manger un bout et de faire un petit tour dans le secteur.</p>
             <p>Nous sommes dans un quartier populaire, assez pauvre pour ne pas dire ghetto. Nous traversons quelques rues… C&apos;est la première fois qu&apos;on a le <strong>sentiment de ne pas être en sécurité,</strong> mais ce n&apos;est que notre ressenti. Après avoir mangé, nous retournons à la gare routière. Nous récupérons nos billets et c&apos;est parti pour un grand périple.</p>
+
+            <div className="article-update">
+              <p><strong>Mise à jour</strong> — Depuis le 22 juin 2026, un nouvel opérateur dessert la route Manille-Banaue : <strong>G.V. Florida Transport Inc.</strong> Le départ se fait désormais directement du <strong>PITX (Parañaque Integrated Terminal Exchange)</strong>, une gare routière moderne près de l&apos;aéroport de Manille (NAIA) — fini la traversée de Manille pour rejoindre une gare au nord comme nous l&apos;avons fait ! Billets en vente sur place (Booth 6, Counter 7). Départ de PITX à 21h30, retour de Banaue à 19h.</p>
+            </div>
             
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
