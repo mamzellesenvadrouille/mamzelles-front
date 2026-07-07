@@ -45,7 +45,7 @@ export default function AdminDevis() {
   const [selectedOptions, setSelectedOptions] = useState<{ index: number; qty: number }[]>([]);
   const [remise, setRemise] = useState(0);
   const [noteClient, setNoteClient] = useState('');
-  const [messagePerso, setMessagePerso] = useState('On a hâte de préparer votre voyage sur-mesure !');
+  const [messagePerso, setMessagePerso] = useState('On est ravies de pouvoir imaginer votre prochain voyage avec vous. Voici notre proposition.');
   const [propositionUrl, setPropositionUrl] = useState('');
   const [loadingProposition, setLoadingProposition] = useState(false);
   const [copiedProposition, setCopiedProposition] = useState(false);
@@ -479,7 +479,7 @@ export default function AdminDevis() {
 
             {/* Note */}
             <div style={styles.field}>
-              <label style={styles.label}>Note (apparaîtra sur le reçu)</label>
+              <label style={styles.label}>Destination / Note</label>
               <textarea
                 value={noteClient}
                 onChange={e => setNoteClient(e.target.value)}
