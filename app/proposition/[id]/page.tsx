@@ -26,19 +26,14 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
   const { id } = await params;
   const proposition = await getProposition(id);
 
-  if (!proposition) {
-    return (
-      <div style={{ minHeight: '100vh', background: '#f8f4ef', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 20px' }}>
-        <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: '#888' }}>Cette proposition n&apos;existe pas ou plus.</p>
-      </div>
-    );
-  }
-
-  const acompte = Math.round(proposition.total * 0.5 * 100) / 100;
-  const solde = Math.round((proposition.total - acompte) * 100) / 100;
+  const acompte = proposition ? Math.round(proposition.total * 0.5 * 100) / 100 : 0;
+  const solde = proposition ? Math.round((proposition.total - acompte) * 100) / 100 : 0;
 
   return (
     <div style={{ minHeight: '100vh', background: '#f8f4ef', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '60px 20px' }}>
+      {!proposition ? (
+        <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: '#888' }}>Cette proposition n&apos;existe pas ou plus.</p>
+      ) : (
       <div style={{ maxWidth: 640, width: '100%' }}>
 
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
@@ -117,6 +112,7 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
           <a href="https://mamzellesenvadrouille.com/cgv" style={{ color: '#aaa', textDecoration: 'underline' }}>Conditions générales de vente</a>
         </p>
       </div>
+      )}
     </div>
   );
 }
