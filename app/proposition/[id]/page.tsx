@@ -1,5 +1,6 @@
 import { Redis } from '@upstash/redis';
 import { notFound } from 'next/navigation';
+import type { ReactElement } from 'react';
 
 const redis = Redis.fromEnv();
 
@@ -23,7 +24,7 @@ async function getProposition(id: string): Promise<PropositionData | null> {
   return (typeof data === 'string' ? JSON.parse(data) : data) as PropositionData;
 }
 
-export default async function PropositionPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function PropositionPage({ params }: { params: Promise<{ id: string }> }): Promise<ReactElement> {
   const { id } = await params;
   const proposition = await getProposition(id);
 
