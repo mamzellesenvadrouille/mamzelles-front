@@ -131,7 +131,9 @@ export default function ContactForm() {
               {status === 'loading' ? 'Envoi en cours...' : 'Envoyer ma demande'}
             </button>
           </div>
-          <p className="form-note">Réponse garantie sous 48h · Sans engagement</p>
+          {status !== 'success' && (
+            <p className="form-note">Réponse garantie sous 48h · Sans engagement</p>
+          )}
         </form>
       </div>
     </section>
