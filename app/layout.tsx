@@ -28,10 +28,26 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
+        {/* Consent Mode v2 : état par défaut (refusé), déclaré AVANT le chargement de gtag.js.
+            Obligatoire pour que Google envoie les hits Analytics une fois le consentement accordé. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'analytics_storage': 'denied'
+              });
+            `,
+          }}
+        />
         {/* GA script chargé uniquement si l'utilisateur accepte — déclenché depuis CookieBanner */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-85C1JHTMSH"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           id="ga-script"
         />
       </head>

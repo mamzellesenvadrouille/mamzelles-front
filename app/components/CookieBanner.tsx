@@ -29,6 +29,14 @@ export function initGA() {
   if (typeof window === 'undefined') return;
   window.dataLayer = window.dataLayer || [];
   function gtag(...args: unknown[]) { window.dataLayer.push(args); }
+  // Consent Mode v2 : on informe Google que la personne a accepté,
+  // sinon les hits restent bloqués même après gtag('config', ...).
+  gtag('consent', 'update', {
+    ad_storage: 'granted',
+    ad_user_data: 'granted',
+    ad_personalization: 'granted',
+    analytics_storage: 'granted',
+  });
   gtag('js', new Date());
   gtag('config', 'G-85C1JHTMSH');
 }
