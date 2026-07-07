@@ -48,10 +48,12 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
 
         <div style={{ background: '#fff', border: '1px solid #e8e0d6', padding: '48px 40px' }}>
 
-          <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 16, color: '#1a1512', lineHeight: 1.7, marginBottom: 32 }}>
-            Bonjour {proposition.clientName.split(' ')[0]},
-            <br /><br />
-            {proposition.messagePerso || "Merci pour votre message, on a hâte de préparer votre voyage sur-mesure ! Voici un premier aperçu de ce que l'on vous propose."}
+          <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 26, color: '#1a1512', marginBottom: 20 }}>
+            Bonjour <em style={{ color: '#c8956c' }}>{proposition.clientName.split(' ')[0]}</em>,
+          </div>
+
+          <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: '#1a1512', lineHeight: 1.8, marginBottom: 32 }}>
+            {proposition.messagePerso || "On est ravies de pouvoir imaginer votre prochain voyage avec vous. Voici notre proposition."}
           </p>
 
           <div style={{ borderTop: '1px solid #e8e0d6', paddingTop: 32 }}>
@@ -105,6 +107,9 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
 
         <p style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888', marginTop: 32 }}>
           Une question ? Répondez simplement à notre dernier email.
+        </p>
+        <p style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#aaa', marginTop: 12 }}>
+          <a href="https://mamzellesenvadrouille.com/cgv" style={{ color: '#aaa', textDecoration: 'underline' }}>Conditions générales de vente</a>
         </p>
       </div>
     </div>
