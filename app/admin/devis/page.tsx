@@ -546,9 +546,9 @@ export default function AdminDevis() {
                 {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#555', marginTop: 6, fontStyle: 'italic' }}>&laquo; {d.message} &raquo;</div>}
               </div>
               <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
-                <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11 }}>Créer le devis</button>
-                <button type="button" onClick={() => marquerTraitee(d.id, !d.traitee)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7 }}>{d.traitee ? 'Non traitée' : 'Traitée'}</button>
-                <button type="button" onClick={() => supprimerDemande(d.id)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.5 }}>Supprimer</button>
+                <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, width: 90 }}>Créer le devis</button>
+                <button type="button" onClick={() => marquerTraitee(d.id, !d.traitee)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7, width: 90 }}>{d.traitee ? 'Non traitée' : 'Traitée'}</button>
+                <button type="button" onClick={() => supprimerDemande(d.id)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.5, width: 90 }}>Supprimer</button>
               </div>
             </div>
           ))}
