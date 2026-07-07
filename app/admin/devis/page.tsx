@@ -45,6 +45,10 @@ export default function AdminDevis() {
   const [selectedOptions, setSelectedOptions] = useState<{ index: number; qty: number }[]>([]);
   const [remise, setRemise] = useState(0);
   const [noteClient, setNoteClient] = useState('');
+  const [messagePerso, setMessagePerso] = useState('On a hâte de préparer votre voyage sur-mesure !');
+  const [propositionUrl, setPropositionUrl] = useState('');
+  const [loadingProposition, setLoadingProposition] = useState(false);
+  const [copiedProposition, setCopiedProposition] = useState(false);
   const [loading, setLoading] = useState(false);
   const [paymentUrl, setPaymentUrl] = useState('');
   const [soldeUrl, setSoldeUrl] = useState('');
@@ -132,6 +136,43 @@ export default function AdminDevis() {
     });
     if (remise > 0) lines.push(`Remise appliquée : -${remise} €`);
     return lines.join(' — ');
+  }
+
+  async function handleGenerateProposition() {
+    if (!clientName.trim()) { setError('Merci de renseigner le nom de la cliente.'); return; }
+    setError('');
+    setLoadingProposition(true);
+    setPropositionUrl('');
+
+    try {
+      const res = await fetch('/api/proposition-save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          clientName: clientName.trim(),
+          destination: noteClient.trim(),
+          dateVoyage: dateVoyage.trim(),
+          formule: formule.label,
+          total,
+          messagePerso: messagePerso.trim(),
+        }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        setPropositionUrl(data.url);
+      } else {
+        setError('Erreur lors de la génération de la proposition. Réessaie.');
+      }
+    } catch {
+      setError('Erreur lors de la génération de la proposition. Réessaie.');
+    }
+    setLoadingProposition(false);
+  }
+
+  function handleCopyProposition() {
+    navigator.clipboard.writeText(propositionUrl);
+    setCopiedProposition(true);
+    setTimeout(() => setCopiedProposition(false), 2000);
   }
 
   async function handleGenerate(e: React.FormEvent) {
@@ -397,6 +438,17 @@ export default function AdminDevis() {
               />
             </div>
 
+            {/* Message personnalisé pour la proposition */}
+            <div style={styles.field}>
+              <label style={styles.label}>Message personnalisé (page de proposition)</label>
+              <textarea
+                value={messagePerso}
+                onChange={e => setMessagePerso(e.target.value)}
+                style={styles.textarea}
+                rows={2}
+              />
+            </div>
+
             {/* Total */}
             <div style={styles.totalBox}>
               <span>Total à encaisser</span>
@@ -404,6 +456,20 @@ export default function AdminDevis() {
             </div>
 
             {error && <div style={styles.error}>{error}</div>}
+
+            <button type="button" onClick={handleGenerateProposition} style={{ ...styles.btnOutline, marginBottom: 12 }} disabled={loadingProposition}>
+              {loadingProposition ? 'Génération...' : 'Envoyer une proposition'}
+            </button>
+
+            {propositionUrl && (
+              <div style={{ ...styles.linkBlock, marginBottom: 16 }}>
+                <div style={styles.linkLabel}>Lien de la proposition <span style={styles.linkHint}>→ à envoyer par email</span></div>
+                <div style={styles.urlBox}>{propositionUrl}</div>
+                <button type="button" onClick={handleCopyProposition} style={styles.btnOutline}>
+                  {copiedProposition ? '✓ Copié !' : 'Copier le lien'}
+                </button>
+              </div>
+            )}
 
             <button type="submit" style={styles.btnGold} disabled={loading}>
               {loading ? 'Génération...' : 'Générer le lien de paiement'}
