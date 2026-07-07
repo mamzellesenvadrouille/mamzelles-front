@@ -6,7 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { prenom, email, duree, destination, adultes, enfants, budget, message } = body;
+    const { prenom, email, telephone, duree, destination, adultes, enfants, budget, message } = body;
 
     await resend.emails.send({
       from: 'MamZelles en vadrouille <noreply@mamzellesenvadrouille.com>',
@@ -28,6 +28,10 @@ export async function POST(req: NextRequest) {
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #e8e0d4; font-size: 13px; color: #5a5048;">Email</td>
                 <td style="padding: 10px 0; border-bottom: 1px solid #e8e0d4; font-size: 14px;"><a href="mailto:${email}" style="color: #c8a96e;">${email}</a></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #e8e0d4; font-size: 13px; color: #5a5048;">Téléphone</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #e8e0d4; font-size: 14px;">${telephone ? `<a href="tel:${telephone}" style="color: #c8a96e;">${telephone}</a>` : '—'}</td>
               </tr>
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #e8e0d4; font-size: 13px; color: #5a5048;">Formule / Durée</td>
