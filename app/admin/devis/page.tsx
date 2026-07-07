@@ -483,7 +483,7 @@ export default function AdminDevis() {
               <textarea
                 value={noteClient}
                 onChange={e => setNoteClient(e.target.value)}
-                placeholder="Ex : Voyage Bali 10 jours, mai 2027"
+                placeholder="Ex : Voyage Philippines 14 jours"
                 style={styles.textarea}
                 rows={2}
               />
