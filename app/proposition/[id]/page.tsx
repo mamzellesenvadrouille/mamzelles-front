@@ -65,7 +65,7 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
               <tbody>
                 <tr>
                   <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>Formule</td>
-                  <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, borderBottom: '1px solid #f0ebe3' }}>{proposition.formule}</td>
+                  <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, borderBottom: '1px solid #f0ebe3', whiteSpace: 'nowrap', paddingLeft: 12 }}>{proposition.formule}</td>
                 </tr>
                 {proposition.destination && (
                   <tr>
