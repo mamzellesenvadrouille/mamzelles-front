@@ -66,6 +66,7 @@ export default function ContactForm() {
           <div className="form-grid">
             <input type="text" name="prenom" placeholder="Nom Prénom" className="fi span2" />
             <input type="email" name="email" placeholder="Email" className="fi span2" />
+            <input type="tel" name="telephone" placeholder="Téléphone (optionnel)" className="fi span2" />
             <select name="duree" className="fs span2" defaultValue=""
               onChange={e => { e.target.style.color = e.target.value ? '#1a1512' : ''; e.target.style.fontWeight = e.target.value ? '600' : ''; }}>
               <option value="" disabled hidden>Durée du voyage</option>
