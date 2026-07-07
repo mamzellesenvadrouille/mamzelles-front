@@ -38,7 +38,7 @@ export function initGA() {
     analytics_storage: 'granted',
   });
   gtag('js', new Date());
-  gtag('config', 'G-85C1JHTMSH', { debug_mode: true }); // TEMPORAIRE — à retirer une fois le diagnostic terminé
+  gtag('config', 'G-85C1JHTMSH');
 }
 
 declare global {
