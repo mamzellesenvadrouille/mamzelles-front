@@ -52,8 +52,8 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
             Bonjour <em style={{ color: '#c8956c' }}>{proposition.clientName.split(' ')[0]}</em>,
           </div>
 
-          <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: '#1a1512', lineHeight: 1.8, marginBottom: 32 }}>
-            {proposition.messagePerso || "On est ravies de pouvoir imaginer votre prochain voyage avec vous. Voici notre proposition."}
+          <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: '#1a1512', lineHeight: 1.8, marginBottom: 32, whiteSpace: 'pre-line' }}>
+            {proposition.messagePerso || "On est ravies de pouvoir imaginer votre prochain voyage avec vous.\nVoici notre proposition."}
           </p>
 
           <div style={{ borderTop: '1px solid #e8e0d6', paddingTop: 32 }}>

@@ -45,7 +45,7 @@ export default function AdminDevis() {
   const [selectedOptions, setSelectedOptions] = useState<{ index: number; qty: number }[]>([]);
   const [remise, setRemise] = useState(0);
   const [noteClient, setNoteClient] = useState('');
-  const [messagePerso, setMessagePerso] = useState('On est ravies de pouvoir imaginer votre prochain voyage avec vous. Voici notre proposition.');
+  const [messagePerso, setMessagePerso] = useState('On est ravies de pouvoir imaginer votre prochain voyage avec vous.\nVoici notre proposition.');
   const [propositionUrl, setPropositionUrl] = useState('');
   const [loadingProposition, setLoadingProposition] = useState(false);
   const [copiedProposition, setCopiedProposition] = useState(false);
