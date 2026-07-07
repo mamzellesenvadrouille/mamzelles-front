@@ -76,7 +76,8 @@ export default function ContactForm() {
               <option>Sur-mesure, + de 2 semaines</option>
             </select>
             <input type="text" name="destination" placeholder="Destination(s) souhaitée(s)" className="fi span2" />
-            <select name="adultes" className="fs" defaultValue=""
+            <input type="text" name="budget" placeholder="Budget approximatif" className="fi span2" />
+            <select name="adultes" className="fs span2" defaultValue=""
               onChange={e => { e.target.style.color = e.target.value ? '#1a1512' : ''; e.target.style.fontWeight = e.target.value ? '600' : ''; }}>
               <option value="" disabled hidden>Nb adultes (12 ans et +)</option>
               <option>1 adulte</option>
@@ -85,7 +86,7 @@ export default function ContactForm() {
               <option>4 adultes</option>
               <option>5 adultes et +</option>
             </select>
-            <select name="enfants" className="fs" defaultValue=""
+            <select name="enfants" className="fs span2" defaultValue=""
               onChange={e => { e.target.style.color = e.target.value ? '#1a1512' : ''; e.target.style.fontWeight = e.target.value ? '600' : ''; }}>
               <option value="" disabled hidden>Nb enfants (2 à 11 ans)</option>
               <option>0 enfant</option>
@@ -93,7 +94,6 @@ export default function ContactForm() {
               <option>2 enfants</option>
               <option>3 enfants et +</option>
             </select>
-            <input type="text" name="budget" placeholder="Budget approximatif" className="fi span2" />
           </div>
 
           <textarea name="message" placeholder="Dites-nous tout sur votre projet de voyage !" className="ft" rows={4} />
