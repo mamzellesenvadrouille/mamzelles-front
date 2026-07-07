@@ -126,11 +126,13 @@ export default function ContactForm() {
             <p className="form-error">Une erreur est survenue. Veuillez réessayer.</p>
           )}
 
-          <div className="form-submit-wrap">
-            <button type="submit" className="form-submit" disabled={status === 'loading'}>
-              {status === 'loading' ? 'Envoi en cours...' : 'Envoyer ma demande'}
-            </button>
-          </div>
+          {status !== 'success' && (
+            <div className="form-submit-wrap">
+              <button type="submit" className="form-submit" disabled={status === 'loading'}>
+                {status === 'loading' ? 'Envoi en cours...' : 'Envoyer ma demande'}
+              </button>
+            </div>
+          )}
           {status !== 'success' && (
             <p className="form-note">Réponse garantie sous 48h · Sans engagement</p>
           )}
