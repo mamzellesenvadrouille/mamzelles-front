@@ -1,6 +1,4 @@
 import { Redis } from '@upstash/redis';
-import { notFound } from 'next/navigation';
-import type { ReactElement } from 'react';
 
 const redis = Redis.fromEnv();
 
@@ -24,11 +22,17 @@ async function getProposition(id: string): Promise<PropositionData | null> {
   return (typeof data === 'string' ? JSON.parse(data) : data) as PropositionData;
 }
 
-export default async function PropositionPage({ params }: { params: Promise<{ id: string }> }): Promise<ReactElement> {
+export default async function PropositionPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const proposition = await getProposition(id);
 
-  if (!proposition) notFound();
+  if (!proposition) {
+    return (
+      <div style={{ minHeight: '100vh', background: '#f8f4ef', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 20px' }}>
+        <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: '#888' }}>Cette proposition n&apos;existe pas ou plus.</p>
+      </div>
+    );
+  }
 
   const acompte = Math.round(proposition.total * 0.5 * 100) / 100;
   const solde = Math.round((proposition.total - acompte) * 100) / 100;
