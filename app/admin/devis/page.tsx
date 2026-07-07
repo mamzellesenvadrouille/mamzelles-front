@@ -202,6 +202,8 @@ export default function AdminDevis() {
           destination: noteClient.trim(),
           dateVoyage: dateVoyage.trim(),
           formule: formule.label,
+          options: selectedOptions.map(o => ({ label: OPTIONS[o.index].label, qty: o.qty, prix: OPTIONS[o.index].prix })),
+          remise,
           total,
           messagePerso: messagePerso.trim(),
         }),
