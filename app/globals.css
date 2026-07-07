@@ -179,6 +179,8 @@ a { text-decoration: none; color: inherit; }
 .fs { color: var(--muted); }
 .fs option { color: var(--dark); background: var(--bg); font-weight: 400; }
 .fi:focus, .fs:focus, .ft:focus { border-color: var(--gold); border-width: 1.5px; box-shadow: 0 0 0 3px rgba(200,149,108,0.15); }
+.field-error { border-color: #d64545 !important; border-width: 1.5px !important; }
+.field-error:focus { box-shadow: 0 0 0 3px rgba(214,69,69,0.15) !important; }
 .span2 { grid-column: span 2; }
 .ft { resize: vertical; min-height: 90px; margin-bottom: 16px; }
 .form-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }

@@ -4,6 +4,7 @@ import { useState } from 'react';
 export default function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errors, setErrors] = useState<string[]>([]);
+  const [fieldErrors, setFieldErrors] = useState<Set<string>>(new Set());
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -21,15 +22,18 @@ export default function ContactForm() {
       { name: 'message', label: 'Votre message' },
     ];
     const errs = required.filter(f => !data.get(f.name)?.toString().trim()).map(f => f.label);
+    const missingNames = new Set(required.filter(f => !data.get(f.name)?.toString().trim()).map(f => f.name));
     const email = data.get('email')?.toString() || '';
-    if (email && !/^[^@]+@[^@]+\.[^@]+$/.test(email)) errs.push('Email invalide');
+    if (email && !/^[^@]+@[^@]+\.[^@]+$/.test(email)) { errs.push('Email invalide'); missingNames.add('email'); }
 
     if (errs.length > 0) {
       setErrors(errs);
+      setFieldErrors(missingNames);
       return;
     }
 
     setErrors([]);
+    setFieldErrors(new Set());
     setStatus('loading');
 
     try {
@@ -49,6 +53,15 @@ export default function ContactForm() {
     }
   }
 
+  function clearFieldError(name: string) {
+    setFieldErrors(prev => {
+      if (!prev.has(name)) return prev;
+      const next = new Set(prev);
+      next.delete(name);
+      return next;
+    });
+  }
+
   return (
     <section className="contact-section" id="formulaire">
       <img src="/cta.webp" alt="" className="contact-bg" />
@@ -64,21 +77,21 @@ export default function ContactForm() {
 
         <form onSubmit={handleSubmit} noValidate>
           <div className="form-grid">
-            <input type="text" name="prenom" placeholder="Nom Prénom" className="fi span2" />
-            <input type="email" name="email" placeholder="Email" className="fi span2" />
+            <input type="text" name="prenom" placeholder="Nom Prénom" className={`fi span2 ${fieldErrors.has('prenom') ? 'field-error' : ''}`} onInput={() => clearFieldError('prenom')} />
+            <input type="email" name="email" placeholder="Email" className={`fi span2 ${fieldErrors.has('email') ? 'field-error' : ''}`} onInput={() => clearFieldError('email')} />
             <input type="tel" name="telephone" placeholder="Téléphone (optionnel)" className="fi span2" />
-            <select name="duree" className="fs span2" defaultValue=""
-              onChange={e => { e.target.style.color = e.target.value ? '#1a1512' : ''; e.target.style.fontWeight = e.target.value ? '600' : ''; }}>
+            <select name="duree" className={`fs span2 ${fieldErrors.has('duree') ? 'field-error' : ''}`} defaultValue=""
+              onChange={e => { e.target.style.color = e.target.value ? '#1a1512' : ''; e.target.style.fontWeight = e.target.value ? '600' : ''; clearFieldError('duree'); }}>
               <option value="" disabled hidden>Durée du voyage</option>
               <option>L&apos;Escale, 2 à 4 jours</option>
               <option>La Vadrouille, 5 à 8 jours</option>
               <option>La Grande Vadrouille, 9 à 14 jours</option>
               <option>Sur-mesure, + de 2 semaines</option>
             </select>
-            <input type="text" name="destination" placeholder="Destination(s) souhaitée(s)" className="fi span2" />
-            <input type="text" name="budget" placeholder="Budget approximatif" className="fi span2" />
-            <select name="adultes" className="fs span2" defaultValue=""
-              onChange={e => { e.target.style.color = e.target.value ? '#1a1512' : ''; e.target.style.fontWeight = e.target.value ? '600' : ''; }}>
+            <input type="text" name="destination" placeholder="Destination(s) souhaitée(s)" className={`fi span2 ${fieldErrors.has('destination') ? 'field-error' : ''}`} onInput={() => clearFieldError('destination')} />
+            <input type="text" name="budget" placeholder="Budget approximatif" className={`fi span2 ${fieldErrors.has('budget') ? 'field-error' : ''}`} onInput={() => clearFieldError('budget')} />
+            <select name="adultes" className={`fs span2 ${fieldErrors.has('adultes') ? 'field-error' : ''}`} defaultValue=""
+              onChange={e => { e.target.style.color = e.target.value ? '#1a1512' : ''; e.target.style.fontWeight = e.target.value ? '600' : ''; clearFieldError('adultes'); }}>
               <option value="" disabled hidden>Nb adultes (12 ans et +)</option>
               <option>1 adulte</option>
               <option>2 adultes</option>
@@ -96,7 +109,7 @@ export default function ContactForm() {
             </select>
           </div>
 
-          <textarea name="message" placeholder="Dites-nous tout sur votre projet de voyage !" className="ft" rows={4} />
+          <textarea name="message" placeholder="Dites-nous tout sur votre projet de voyage !" className={`ft ${fieldErrors.has('message') ? 'field-error' : ''}`} rows={4} onInput={() => clearFieldError('message')} />
 
           {errors.length > 0 && (
             <p className="form-error">Merci de remplir tous les champs obligatoires.</p>
