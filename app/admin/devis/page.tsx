@@ -98,6 +98,17 @@ export default function AdminDevis() {
     setClientName(d.prenom || '');
     setClientEmail(d.email || '');
     setNoteClient(d.destination || '');
+    const idx = FORMULES.findIndex(f => d.duree?.startsWith(f.label));
+    if (idx !== -1) setFormuleIndex(idx);
+
+    const nbAdultes = parseInt(d.adultes) || 0;
+    const nbEnfants = parseInt(d.enfants) || 0;
+    const extraAdultes = Math.max(0, nbAdultes - 2);
+    const newOptions: { index: number; qty: number }[] = [];
+    if (extraAdultes > 0) newOptions.push({ index: 0, qty: extraAdultes });
+    if (nbEnfants > 0) newOptions.push({ index: 1, qty: nbEnfants });
+    setSelectedOptions(newOptions);
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
