@@ -37,7 +37,7 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
       <div style={{ maxWidth: 640, width: '100%' }}>
 
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
-          <img src="/icon.png" alt="MamZelles en vadrouille" style={{ width: 56, height: 56, marginBottom: 16 }} />
+          <img src="/icon.png" alt="MamZelles en vadrouille" style={{ width: 56, height: 56, marginBottom: 16, marginLeft: 'auto', marginRight: 'auto', display: 'block' }} />
           <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 28, color: '#1a1512', letterSpacing: '0.02em' }}>
             MamZelles en vadrouille
           </div>
@@ -83,7 +83,7 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
                     <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, borderBottom: '1px solid #f0ebe3' }}>+{o.prix * o.qty} €</td>
                   </tr>
                 ))}
-                {proposition.remise && proposition.remise > 0 && (
+                {(proposition.remise ?? 0) > 0 && (
                   <tr>
                     <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>Remise</td>
                     <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, color: '#c8956c', borderBottom: '1px solid #f0ebe3' }}>-{proposition.remise} €</td>
