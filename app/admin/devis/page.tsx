@@ -55,6 +55,8 @@ export default function AdminDevis() {
   const [copied, setCopied] = useState<'acompte' | 'solde' | null>(null);
   const [error, setError] = useState('');
   const [filtreStatut, setFiltreStatut] = useState<'tous' | 'attente' | 'regle'>('tous');
+  const [demandes, setDemandes] = useState<any[]>([]);
+  const [loadingDemandes, setLoadingDemandes] = useState(false);
 
   async function handleAuth(e: React.FormEvent) {
     e.preventDefault();
@@ -67,9 +69,36 @@ export default function AdminDevis() {
       setAuth(true);
       setAuthError('');
       loadHistorique();
+      loadDemandes();
     } else {
       setAuthError('Mot de passe incorrect.');
     }
+  }
+
+  async function loadDemandes() {
+    setLoadingDemandes(true);
+    try {
+      const res = await fetch('/api/contact');
+      const data = await res.json();
+      setDemandes(Array.isArray(data) ? data.filter((d: any) => !d.traitee) : []);
+    } catch {}
+    setLoadingDemandes(false);
+  }
+
+  async function marquerTraitee(id: string) {
+    await fetch('/api/contact', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, traitee: true }),
+    });
+    loadDemandes();
+  }
+
+  function remplirDepuisDemande(d: any) {
+    setClientName(d.prenom || '');
+    setClientEmail(d.email || '');
+    setNoteClient(d.destination || '');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   async function loadHistorique() {
@@ -477,6 +506,33 @@ export default function AdminDevis() {
           </form>
         )}
       </div>
+
+      {/* Demandes en attente (formulaire de contact) */}
+      {demandes.length > 0 && (
+        <div style={{ ...styles.card, marginTop: 24, maxWidth: 1400 }}>
+          <div style={{ ...styles.header, marginBottom: 20 }}>
+            <div style={styles.title}>Nouvelles demandes ({demandes.length})</div>
+          </div>
+          {demandes.map((d) => (
+            <div key={d.id} style={{ border: '1px solid #e8e0d6', padding: '16px 20px', marginBottom: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap' as const, gap: 12 }}>
+              <div>
+                <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 18, color: '#1a1512' }}>{d.prenom}</div>
+                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888', marginTop: 4 }}>
+                  {d.email} {d.telephone && `· ${d.telephone}`}
+                </div>
+                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#1a1512', marginTop: 8 }}>
+                  <strong>{d.duree}</strong> · {d.destination} · {d.adultes}{d.enfants && d.enfants !== '0 enfant' ? `, ${d.enfants}` : ''} · Budget : {d.budget}
+                </div>
+                {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#555', marginTop: 8, fontStyle: 'italic' }}>&laquo; {d.message} &raquo;</div>}
+              </div>
+              <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
+                <button type="button" onClick={() => remplirDepuisDemande(d)} style={styles.btnOutline}>Créer le devis</button>
+                <button type="button" onClick={() => marquerTraitee(d.id)} style={{ ...styles.btnOutline, opacity: 0.6 }}>Marquer traitée</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Historique des devis */}
       <div style={{ ...styles.card, marginTop: 24, maxWidth: 1400 }}>

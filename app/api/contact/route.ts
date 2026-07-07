@@ -1,12 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { Redis } from '@upstash/redis';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const redis = Redis.fromEnv();
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const { prenom, email, telephone, duree, destination, adultes, enfants, budget, message } = body;
+
+    const id = `demande:${Date.now()}`;
+    await redis.set(id, {
+      id,
+      prenom, email, telephone, duree, destination, adultes, enfants, budget, message,
+      date: new Date().toISOString(),
+      traitee: false,
+    });
+    await redis.lpush('demandes:index', id);
 
     await resend.emails.send({
       from: 'MamZelles en vadrouille <noreply@mamzellesenvadrouille.com>',
@@ -70,5 +81,48 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     console.error('Email error:', error);
     return NextResponse.json({ error: 'Erreur envoi' }, { status: 500 });
+  }
+}
+
+export async function GET() {
+  try {
+    const ids = await redis.lrange('demandes:index', 0, -1);
+    const demandes = await Promise.all(
+      ids.map(async (id) => {
+        const data = await redis.get(id as string);
+        return typeof data === 'string' ? JSON.parse(data) : data;
+      })
+    );
+    return NextResponse.json(demandes.filter(Boolean));
+  } catch (error) {
+    console.error('Redis error:', error);
+    return NextResponse.json({ error: 'Erreur de lecture' }, { status: 500 });
+  }
+}
+
+export async function PATCH(req: NextRequest) {
+  try {
+    const { id, traitee } = await req.json();
+    const data = await redis.get(id as string);
+    if (!data) return NextResponse.json({ error: 'Demande introuvable' }, { status: 404 });
+    const demande = typeof data === 'string' ? JSON.parse(data) : data;
+    demande.traitee = traitee;
+    await redis.set(id, demande);
+    return NextResponse.json({ ok: true });
+  } catch (error) {
+    console.error('Redis error:', error);
+    return NextResponse.json({ error: 'Erreur de mise à jour' }, { status: 500 });
+  }
+}
+
+export async function DELETE(req: NextRequest) {
+  try {
+    const { id } = await req.json();
+    await redis.del(id);
+    await redis.lrem('demandes:index', 0, id);
+    return NextResponse.json({ ok: true });
+  } catch (error) {
+    console.error('Redis error:', error);
+    return NextResponse.json({ error: 'Erreur de suppression' }, { status: 500 });
   }
 }
