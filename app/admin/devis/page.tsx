@@ -80,16 +80,25 @@ export default function AdminDevis() {
     try {
       const res = await fetch('/api/contact');
       const data = await res.json();
-      setDemandes(Array.isArray(data) ? data.filter((d: any) => !d.traitee) : []);
+      setDemandes(Array.isArray(data) ? data : []);
     } catch {}
     setLoadingDemandes(false);
   }
 
-  async function marquerTraitee(id: string) {
+  async function marquerTraitee(id: string, traitee: boolean) {
     await fetch('/api/contact', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id, traitee: true }),
+      body: JSON.stringify({ id, traitee }),
+    });
+    loadDemandes();
+  }
+
+  async function supprimerDemande(id: string) {
+    await fetch('/api/contact', {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id }),
     });
     loadDemandes();
   }
@@ -525,20 +534,21 @@ export default function AdminDevis() {
             <div style={styles.title}>Nouvelles demandes ({demandes.length})</div>
           </div>
           {demandes.map((d) => (
-            <div key={d.id} style={{ border: '1px solid #e8e0d6', padding: '16px 20px', marginBottom: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap' as const, gap: 12 }}>
+            <div key={d.id} style={{ border: '1px solid #e8e0d6', background: d.traitee ? '#f8f4ef' : '#fff', padding: '14px 18px', marginBottom: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap' as const, gap: 10 }}>
               <div>
-                <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 18, color: '#1a1512' }}>{d.prenom}</div>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888', marginTop: 4 }}>
+                <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 17, color: '#1a1512' }}>{d.prenom}</div>
+                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#888', marginTop: 3 }}>
                   {d.email} {d.telephone && `· ${d.telephone}`}
                 </div>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#1a1512', marginTop: 8 }}>
+                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#1a1512', marginTop: 6 }}>
                   <strong>{d.duree}</strong> · {d.destination} · {d.adultes}{d.enfants && d.enfants !== '0 enfant' ? `, ${d.enfants}` : ''} · Budget : {d.budget}
                 </div>
-                {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#555', marginTop: 8, fontStyle: 'italic' }}>&laquo; {d.message} &raquo;</div>}
+                {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#555', marginTop: 6, fontStyle: 'italic' }}>&laquo; {d.message} &raquo;</div>}
               </div>
-              <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
-                <button type="button" onClick={() => remplirDepuisDemande(d)} style={styles.btnOutline}>Créer le devis</button>
-                <button type="button" onClick={() => marquerTraitee(d.id)} style={{ ...styles.btnOutline, opacity: 0.6 }}>Marquer traitée</button>
+              <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
+                <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11 }}>Créer le devis</button>
+                <button type="button" onClick={() => marquerTraitee(d.id, !d.traitee)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7 }}>{d.traitee ? 'Non traitée' : 'Traitée'}</button>
+                <button type="button" onClick={() => supprimerDemande(d.id)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.5 }}>Supprimer</button>
               </div>
             </div>
           ))}
