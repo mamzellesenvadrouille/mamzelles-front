@@ -508,7 +508,7 @@ export default function AdminDevis() {
 
             {error && <div style={styles.error}>{error}</div>}
 
-            <button type="button" onClick={handleGenerateProposition} style={{ ...styles.btnOutline, marginBottom: 12 }} disabled={loadingProposition}>
+            <button type="button" onClick={handleGenerateProposition} style={{ ...styles.btnGold, marginBottom: 12 }} disabled={loadingProposition}>
               {loadingProposition ? 'Génération...' : 'Envoyer une proposition'}
             </button>
 
