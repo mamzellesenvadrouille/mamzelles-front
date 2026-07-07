@@ -45,6 +45,11 @@ export default function ContactForm() {
       if (res.ok) {
         setStatus('success');
         form.reset();
+        form.querySelectorAll('select').forEach((el) => {
+          const select = el as HTMLSelectElement;
+          select.style.color = '';
+          select.style.fontWeight = '';
+        });
       } else {
         setStatus('error');
       }
