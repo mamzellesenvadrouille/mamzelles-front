@@ -3,11 +3,15 @@ import { notFound } from 'next/navigation';
 
 const redis = Redis.fromEnv();
 
+type PropositionOption = { label: string; qty: number; prix: number };
+
 type PropositionData = {
   clientName: string;
   destination?: string;
   dateVoyage?: string;
   formule: string;
+  options?: PropositionOption[];
+  remise?: number;
   total: number;
   messagePerso?: string;
   date: string;
@@ -33,6 +37,7 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
       <div style={{ maxWidth: 640, width: '100%' }}>
 
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
+          <img src="/icon.png" alt="MamZelles en vadrouille" style={{ width: 56, height: 56, marginBottom: 16 }} />
           <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 28, color: '#1a1512', letterSpacing: '0.02em' }}>
             MamZelles en vadrouille
           </div>
@@ -46,7 +51,7 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
           <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 16, color: '#1a1512', lineHeight: 1.7, marginBottom: 32 }}>
             Bonjour {proposition.clientName.split(' ')[0]},
             <br /><br />
-            {proposition.messagePerso || "On a hâte de préparer votre voyage sur-mesure !"}
+            {proposition.messagePerso || "Merci pour votre message, on a hâte de préparer votre voyage sur-mesure ! Voici un premier aperçu de ce que l'on vous propose."}
           </p>
 
           <div style={{ borderTop: '1px solid #e8e0d6', paddingTop: 32 }}>
@@ -54,7 +59,7 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
               Récapitulatif
             </div>
 
-            <table style={{ width: '100%', fontFamily: 'Inter, sans-serif', fontSize: 14 }}>
+            <table style={{ width: '100%', fontFamily: 'Inter, sans-serif', fontSize: 14, borderCollapse: 'collapse' }}>
               <tbody>
                 <tr>
                   <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>Formule</td>
@@ -70,6 +75,18 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
                   <tr>
                     <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>Date de départ</td>
                     <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, borderBottom: '1px solid #f0ebe3' }}>{proposition.dateVoyage}</td>
+                  </tr>
+                )}
+                {proposition.options && proposition.options.map((o, i) => (
+                  <tr key={i}>
+                    <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>{o.label}{o.qty > 1 ? ` × ${o.qty}` : ''}</td>
+                    <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, borderBottom: '1px solid #f0ebe3' }}>+{o.prix * o.qty} €</td>
+                  </tr>
+                ))}
+                {proposition.remise && proposition.remise > 0 && (
+                  <tr>
+                    <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>Remise</td>
+                    <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, color: '#c8956c', borderBottom: '1px solid #f0ebe3' }}>-{proposition.remise} €</td>
                   </tr>
                 )}
               </tbody>
