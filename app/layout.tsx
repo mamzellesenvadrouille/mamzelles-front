@@ -46,7 +46,7 @@ export default function RootLayout({
         />
         {/* GA script chargé uniquement si l'utilisateur accepte — déclenché depuis CookieBanner */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-7YPPSZ81WG"
+          src="https://www.googletagmanager.com/gtag/js?id=G-98VQMRY36C"
           strategy="afterInteractive"
           id="ga-script"
         />
