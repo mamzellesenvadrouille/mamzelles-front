@@ -29,6 +29,17 @@ type DevisRecord = {
   soldePaye?: boolean;
 };
 
+const RESPONSIVE_STYLES = `
+  @media (max-width: 640px) {
+    .demande-card { flex-direction: column !important; align-items: stretch !important; }
+    .demande-actions { flex-direction: row !important; flex-wrap: wrap !important; width: 100% !important; }
+    .demande-actions button { flex: 1 1 calc(50% - 6px) !important; width: auto !important; min-width: 100px !important; }
+  }
+  @media (max-width: 480px) {
+    .admin-card { padding: 24px 16px !important; }
+  }
+`;
+
 export default function AdminDevis() {
   const [auth, setAuth] = useState(false);
   const [password, setPassword] = useState('');
@@ -331,7 +342,8 @@ export default function AdminDevis() {
 
   return (
     <div style={styles.wrap}>
-      <div style={styles.card}>
+      <style>{RESPONSIVE_STYLES}</style>
+      <div className="admin-card" style={styles.card}>
         <div style={styles.header}>
           <div style={styles.logo}>MamZelles en vadrouille</div>
           <div style={styles.title}>Générer un devis</div>
@@ -531,12 +543,12 @@ export default function AdminDevis() {
 
       {/* Demandes en attente (formulaire de contact) */}
       {demandes.length > 0 && (
-        <div style={{ ...styles.card, marginTop: 24, maxWidth: 1400 }}>
+        <div className="admin-card" style={{ ...styles.card, marginTop: 24, maxWidth: 1400 }}>
           <div style={{ ...styles.header, marginBottom: 20 }}>
             <div style={styles.title}>Nouvelles demandes ({demandes.length})</div>
           </div>
           {demandes.map((d) => (
-            <div key={d.id} style={{ border: '1px solid #e8e0d6', background: d.traitee ? '#f8f4ef' : '#fff', padding: '14px 18px', marginBottom: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap' as const, gap: 10 }}>
+            <div key={d.id} className="demande-card" style={{ border: '1px solid #e8e0d6', background: d.traitee ? '#f8f4ef' : '#fff', padding: '14px 18px', marginBottom: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap' as const, gap: 10 }}>
               <div>
                 <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 17, color: '#1a1512' }}>{d.prenom}</div>
                 <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#888', marginTop: 3 }}>
@@ -547,7 +559,7 @@ export default function AdminDevis() {
                 </div>
                 {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#555', marginTop: 6, fontStyle: 'italic' }}>&laquo; {d.message} &raquo;</div>}
               </div>
-              <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
+              <div className="demande-actions" style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
                 <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, width: 90 }}>Créer le devis</button>
                 <button type="button" onClick={() => marquerTraitee(d.id, !d.traitee)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7, width: 90 }}>{d.traitee ? 'Non traitée' : 'Traitée'}</button>
                 <button type="button" onClick={() => supprimerDemande(d.id)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.5, width: 90 }}>Supprimer</button>
