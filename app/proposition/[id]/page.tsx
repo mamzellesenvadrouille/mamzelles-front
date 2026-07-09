@@ -30,11 +30,125 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
   const solde = proposition ? Math.round((proposition.total - acompte) * 100) / 100 : 0;
 
   return (
-    <div style={{ minHeight: '100vh', background: '#f8f4ef', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '60px 20px' }}>
+    <div className="prop-page">
+      {/* Styles responsive — les styles inline ne supportent pas les media queries,
+          donc ce bloc gère l'adaptation mobile sans toucher au rendu desktop. */}
+      <style>{`
+        .prop-page {
+          min-height: 100vh;
+          background: #f8f4ef;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 60px 20px;
+        }
+        .prop-wrap {
+          max-width: 640px;
+          width: 100%;
+        }
+        .prop-card {
+          background: #fff;
+          border: 1px solid #e8e0d6;
+          padding: 48px 40px;
+        }
+        .prop-greet {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 26px;
+          color: #1a1512;
+          margin-bottom: 20px;
+        }
+        .prop-table-wrap {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+        .prop-table {
+          width: 100%;
+          font-family: 'Inter', sans-serif;
+          font-size: 14px;
+          border-collapse: collapse;
+        }
+        .prop-table td {
+          white-space: normal;
+          word-break: break-word;
+        }
+        .prop-table td:first-child {
+          color: #888;
+          padding: 10px 0;
+          border-bottom: 1px solid #f0ebe3;
+          width: 42%;
+        }
+        .prop-table td:last-child {
+          text-align: right;
+          font-weight: 600;
+          padding: 10px 0 10px 12px;
+          border-bottom: 1px solid #f0ebe3;
+        }
+        .prop-total {
+          background: #f8f4ef;
+          padding: 20px 24px;
+          margin-top: 24px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 12px;
+        }
+        .prop-total-amount {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 28px;
+          color: #c8956c;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+
+        @media (max-width: 640px) {
+          .prop-page {
+            padding: 32px 14px;
+          }
+          .prop-card {
+            padding: 28px 20px;
+          }
+          .prop-greet {
+            font-size: 22px;
+          }
+          .prop-table {
+            font-size: 13px;
+          }
+          .prop-table td:first-child {
+            width: 48%;
+          }
+          .prop-total {
+            padding: 16px 18px;
+            flex-wrap: wrap;
+          }
+          .prop-total-amount {
+            font-size: 24px;
+          }
+        }
+
+        @media (max-width: 380px) {
+          .prop-table td:first-child,
+          .prop-table td:last-child {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 4px 0;
+          }
+          .prop-table tr {
+            display: block;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0ebe3;
+          }
+          .prop-table td:first-child,
+          .prop-table td:last-child {
+            border-bottom: none;
+          }
+        }
+      `}</style>
+
       {!proposition ? (
         <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: '#888' }}>Cette proposition n&apos;existe pas ou plus.</p>
       ) : (
-      <div style={{ maxWidth: 640, width: '100%' }}>
+      <div className="prop-wrap">
 
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
           <img src="/icon.png" alt="MamZelles en vadrouille" style={{ width: 56, height: 56, marginBottom: 16, marginLeft: 'auto', marginRight: 'auto', display: 'block' }} />
@@ -46,9 +160,9 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
           </div>
         </div>
 
-        <div style={{ background: '#fff', border: '1px solid #e8e0d6', padding: '48px 40px' }}>
+        <div className="prop-card">
 
-          <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 26, color: '#1a1512', marginBottom: 20 }}>
+          <div className="prop-greet">
             Bonjour <em style={{ color: '#c8956c' }}>{proposition.clientName.split(' ')[0]}</em>,
           </div>
 
@@ -61,42 +175,44 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
               Récapitulatif
             </div>
 
-            <table style={{ width: '100%', fontFamily: 'Inter, sans-serif', fontSize: 14, borderCollapse: 'collapse' }}>
-              <tbody>
-                <tr>
-                  <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>Formule</td>
-                  <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, borderBottom: '1px solid #f0ebe3', whiteSpace: 'nowrap', paddingLeft: 12 }}>{proposition.formule}</td>
-                </tr>
-                {proposition.destination && (
+            <div className="prop-table-wrap">
+              <table className="prop-table">
+                <tbody>
                   <tr>
-                    <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>Voyage</td>
-                    <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, borderBottom: '1px solid #f0ebe3' }}>{proposition.destination}</td>
+                    <td>Formule</td>
+                    <td>{proposition.formule}</td>
                   </tr>
-                )}
-                {proposition.dateVoyage && (
-                  <tr>
-                    <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>Date de départ</td>
-                    <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, borderBottom: '1px solid #f0ebe3' }}>{proposition.dateVoyage}</td>
-                  </tr>
-                )}
-                {proposition.options && proposition.options.map((o, i) => (
-                  <tr key={i}>
-                    <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>{o.label}{o.qty > 1 ? ` × ${o.qty}` : ''}</td>
-                    <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, borderBottom: '1px solid #f0ebe3' }}>+{o.prix * o.qty} €</td>
-                  </tr>
-                ))}
-                {(proposition.remise ?? 0) > 0 && (
-                  <tr>
-                    <td style={{ padding: '10px 0', color: '#888', borderBottom: '1px solid #f0ebe3' }}>Remise</td>
-                    <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: 600, color: '#c8956c', borderBottom: '1px solid #f0ebe3' }}>-{proposition.remise} €</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
+                  {proposition.destination && (
+                    <tr>
+                      <td>Voyage</td>
+                      <td>{proposition.destination}</td>
+                    </tr>
+                  )}
+                  {proposition.dateVoyage && (
+                    <tr>
+                      <td>Date de départ</td>
+                      <td>{proposition.dateVoyage}</td>
+                    </tr>
+                  )}
+                  {proposition.options && proposition.options.map((o, i) => (
+                    <tr key={i}>
+                      <td>{o.label}{o.qty > 1 ? ` × ${o.qty}` : ''}</td>
+                      <td>+{o.prix * o.qty} €</td>
+                    </tr>
+                  ))}
+                  {(proposition.remise ?? 0) > 0 && (
+                    <tr>
+                      <td>Remise</td>
+                      <td style={{ color: '#c8956c' }}>-{proposition.remise} €</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
 
-            <div style={{ background: '#f8f4ef', padding: '20px 24px', marginTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div className="prop-total">
               <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 14, color: '#1a1512' }}>Total estimé</span>
-              <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 28, color: '#c8956c', fontWeight: 600 }}>{proposition.total} €</span>
+              <span className="prop-total-amount">{proposition.total} €</span>
             </div>
 
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: '#888', marginTop: 16, lineHeight: 1.6 }}>
