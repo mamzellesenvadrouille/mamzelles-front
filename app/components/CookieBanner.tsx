@@ -38,7 +38,7 @@ export function initGA() {
     analytics_storage: 'granted',
   });
   gtag('js', new Date());
-  gtag('config', 'G-98VQMRY36C');
+  gtag('config', 'G-85C1JHTMSH');
 }
 
 declare global {

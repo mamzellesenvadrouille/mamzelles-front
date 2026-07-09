@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import CookieBanner from "./components/CookieBanner";
 
@@ -46,7 +47,7 @@ export default function RootLayout({
         />
         {/* GA script chargé uniquement si l'utilisateur accepte — déclenché depuis CookieBanner */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-98VQMRY36C"
+          src="https://www.googletagmanager.com/gtag/js?id=G-85C1JHTMSH"
           strategy="afterInteractive"
           id="ga-script"
         />
@@ -54,6 +55,10 @@ export default function RootLayout({
       <body>
         {children}
         <CookieBanner />
+        {/* Vercel Analytics : ne dépend pas du consentement cookies (pas de tracking
+            individuel, données agrégées et anonymes) — actif immédiatement, en parallèle
+            de Google Analytics, le temps que le souci GA4 soit résolu. */}
+        <Analytics />
       </body>
     </html>
   );
