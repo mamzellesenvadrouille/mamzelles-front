@@ -27,6 +27,8 @@ type DevisRecord = {
   soldeUrl?: string;
   acomptePaye?: boolean;
   soldePaye?: boolean;
+  factureAcompteUrl?: string;
+  factureSoldeUrl?: string;
 };
 
 const RESPONSIVE_STYLES = `
@@ -153,11 +155,50 @@ export default function AdminDevis() {
   }
 
   async function toggleStatut(d: DevisRecord, field: 'acomptePaye' | 'soldePaye') {
+    const nouvelleValeur = !d[field];
+
     await fetch('/api/devis-save', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id: d.id, field, value: !d[field] }),
+      body: JSON.stringify({ id: d.id, field, value: nouvelleValeur }),
     });
+
+    // Si on vient de cocher (et pas décocher), on génère la facture correspondante
+    const factureField = field === 'acomptePaye' ? 'factureAcompteUrl' : 'factureSoldeUrl';
+    const dejaGeneree = d[factureField as 'factureAcompteUrl' | 'factureSoldeUrl'];
+
+    if (nouvelleValeur && !dejaGeneree) {
+      const acompte = Math.round(d.total * 0.5 * 100) / 100;
+      const solde = Math.round((d.total - acompte) * 100) / 100;
+      const montant = field === 'acomptePaye' ? acompte : solde;
+      const type = field === 'acomptePaye' ? 'acompte' : 'solde';
+
+      try {
+        const res = await fetch('/api/facture', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            clientName: d.clientName,
+            clientEmail: d.clientEmail,
+            formule: d.formule,
+            montant,
+            description: [d.note, type.toUpperCase() + ' 50%'].filter(Boolean).join('\n'),
+            type,
+          }),
+        });
+        const data = await res.json();
+        if (data.pdfUrl) {
+          await fetch('/api/devis-save', {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: d.id, field: factureField, value: data.pdfUrl }),
+          });
+        }
+      } catch {
+        // La facture pourra être régénérée manuellement si besoin ; le paiement reste bien coché
+      }
+    }
+
     loadHistorique();
   }
 
@@ -732,11 +773,25 @@ export default function AdminDevis() {
                           {d.acompteUrl && <button onClick={() => { navigator.clipboard.writeText(d.acompteUrl!); }} style={styles.btnCopySmall}>Copier</button>}
                         </div>
                       </div>
-                      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12 }}>
+                      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, marginBottom: 8 }}>
                         <strong style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888' }}>Solde 50% — {Math.round((d.total - Math.round(d.total * 0.5 * 100) / 100) * 100) / 100} €</strong>
                         <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 4 }}>
                           <span style={{ color: '#888', wordBreak: 'break-all', flex: 1 }}>{d.soldeUrl || '—'}</span>
                           {d.soldeUrl && <button onClick={() => { navigator.clipboard.writeText(d.soldeUrl!); }} style={styles.btnCopySmall}>Copier</button>}
+                        </div>
+                      </div>
+                      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, marginBottom: 8, paddingTop: 8, borderTop: '1px solid #e8e0d6' }}>
+                        <strong style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888' }}>Facture acompte (PDF)</strong>
+                        <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 4 }}>
+                          <span style={{ color: '#888', wordBreak: 'break-all', flex: 1 }}>{d.factureAcompteUrl || 'Pas encore générée — coche "A. reçu"'}</span>
+                          {d.factureAcompteUrl && <button onClick={() => { navigator.clipboard.writeText(d.factureAcompteUrl!); }} style={styles.btnCopySmall}>Copier</button>}
+                        </div>
+                      </div>
+                      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12 }}>
+                        <strong style={{ fontSize: 11, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#888' }}>Facture solde (PDF)</strong>
+                        <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 4 }}>
+                          <span style={{ color: '#888', wordBreak: 'break-all', flex: 1 }}>{d.factureSoldeUrl || 'Pas encore générée — coche "S. reçu"'}</span>
+                          {d.factureSoldeUrl && <button onClick={() => { navigator.clipboard.writeText(d.factureSoldeUrl!); }} style={styles.btnCopySmall}>Copier</button>}
                         </div>
                       </div>
                     </td>
