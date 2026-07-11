@@ -59,11 +59,14 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    // 6. Relire la facture pour être sûre d'avoir le PDF généré après la mise à jour du statut "payée"
+    const refreshed = await stripe.invoices.retrieve(paid.id!);
+
     return NextResponse.json({
-      invoiceId: paid.id,
-      pdfUrl: paid.hosted_invoice_url || paid.invoice_pdf,
-      hostedUrl: paid.hosted_invoice_url,
-      number: paid.number,
+      invoiceId: refreshed.id,
+      pdfUrl: refreshed.invoice_pdf,
+      hostedUrl: refreshed.hosted_invoice_url,
+      number: refreshed.number,
     });
   } catch (error) {
     console.error('Stripe invoice error:', error);
