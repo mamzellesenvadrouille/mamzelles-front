@@ -32,8 +32,8 @@ type DevisRecord = {
 const RESPONSIVE_STYLES = `
   @media (max-width: 640px) {
     .demande-card { flex-direction: column !important; align-items: stretch !important; }
-    .demande-actions { flex-direction: row !important; flex-wrap: wrap !important; width: 100% !important; }
-    .demande-actions button { flex: 1 1 calc(50% - 6px) !important; width: auto !important; min-width: 100px !important; }
+    .demande-actions { flex-direction: row !important; flex-wrap: nowrap !important; width: 100% !important; }
+    .demande-actions button { flex: 1 1 0 !important; width: auto !important; min-width: 0 !important; padding: 6px 4px !important; font-size: 10px !important; }
   }
   @media (max-width: 480px) {
     .admin-card { padding: 24px 16px !important; }
