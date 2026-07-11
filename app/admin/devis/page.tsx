@@ -557,7 +557,7 @@ export default function AdminDevis() {
                 <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#1a1512', marginTop: 6 }}>
                   <strong>{d.duree}</strong> · {d.destination} · {d.adultes}{d.enfants && d.enfants !== '0 enfant' ? `, ${d.enfants}` : ''} · Budget : {d.budget}
                 </div>
-                {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#555', marginTop: 6, fontStyle: 'italic' }}>&laquo; {d.message} &raquo;</div>}
+                {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#555', marginTop: 6, fontStyle: 'italic', maxWidth: 600 }}>&laquo; {d.message} &raquo;</div>}
               </div>
               <div className="demande-actions" style={{ display: 'flex', gap: 6, flexShrink: 0, flexBasis: 'auto' }}>
                 <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, width: 90 }}>Créer le devis</button>
