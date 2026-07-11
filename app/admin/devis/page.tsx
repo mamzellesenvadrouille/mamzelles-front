@@ -35,8 +35,8 @@ type DevisRecord = {
 const RESPONSIVE_STYLES = `
   @media (max-width: 640px) {
     .demande-card { flex-direction: column !important; align-items: stretch !important; }
-    .demande-actions { flex-direction: row !important; flex-wrap: wrap !important; width: 100% !important; gap: 6px !important; row-gap: 6px !important; }
-    .demande-actions button { flex: 1 1 calc(50% - 6px) !important; width: auto !important; min-width: 0 !important; padding: 8px 4px !important; font-size: 10px !important; margin: 0 !important; }
+    .demande-actions { flex-direction: row !important; flex-wrap: nowrap !important; width: 100% !important; }
+    .demande-actions button { flex: 1 1 0 !important; width: auto !important; min-width: 0 !important; padding: 6px 4px !important; font-size: 10px !important; }
   }
   @media (max-width: 480px) {
     .admin-card { padding: 24px 16px !important; }
@@ -650,7 +650,7 @@ export default function AdminDevis() {
           {demandes.map((d) => (
             <div key={d.id} className="demande-card" style={{ border: '1px solid #e8e0d6', background: d.traitee ? '#f8f4ef' : '#fff', padding: '14px 18px', marginBottom: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'nowrap' as const, gap: 10 }}>
               <div style={{ flex: '1 1 auto', minWidth: 0 }}>
-                <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 21, fontWeight: 600, color: '#1a1512' }}>{d.prenom}</div>
+                <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 17, color: '#1a1512' }}>{d.prenom}</div>
                 <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#888', marginTop: 3 }}>
                   {d.email} {d.telephone && `· ${d.telephone}`}
                 </div>
