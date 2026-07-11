@@ -160,6 +160,7 @@ export default function AdminDevis() {
     const solde = Math.round((d.total - acompte) * 100) / 100;
     const montant = type === 'acompte' ? acompte : solde;
     const factureField = type === 'acompte' ? 'factureAcompteUrl' : 'factureSoldeUrl';
+    const statutField = type === 'acompte' ? 'acomptePaye' : 'soldePaye';
 
     try {
       const res = await fetch('/api/facture', {
@@ -183,6 +184,13 @@ export default function AdminDevis() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ id: d.id, field: factureField, value: data.pdfUrl }),
         });
+        if (!d[statutField]) {
+          await fetch('/api/devis-save', {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: d.id, field: statutField, value: true }),
+          });
+        }
         if (type === 'acompte' && data.number) {
           await fetch('/api/devis-save', {
             method: 'PATCH',
