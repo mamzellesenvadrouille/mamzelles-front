@@ -34,6 +34,7 @@ export async function POST(req: NextRequest) {
       customer: customer.id,
       collection_method: 'charge_automatically',
       auto_advance: false,
+      pending_invoice_items_behavior: 'include',
       footer: 'MamZelles en vadrouille — Merci pour votre confiance.',
       metadata: {
         clientName,
