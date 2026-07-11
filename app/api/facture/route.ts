@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       invoiceId: paid.id,
-      pdfUrl: paid.invoice_pdf,
+      pdfUrl: paid.hosted_invoice_url || paid.invoice_pdf,
       hostedUrl: paid.hosted_invoice_url,
       number: paid.number,
     });
