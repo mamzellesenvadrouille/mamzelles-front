@@ -29,11 +29,10 @@ export async function POST(req: NextRequest) {
       ].filter(Boolean).join(' — '),
     });
 
-    // 3. Créer la facture en mode "envoi manuel" (paiement déjà encaissé via Checkout)
+    // 3. Créer la facture (paiement déjà encaissé via Checkout, on ne demande pas à Stripe de l'envoyer)
     const invoice = await stripe.invoices.create({
       customer: customer.id,
-      collection_method: 'send_invoice',
-      days_until_due: 0,
+      collection_method: 'charge_automatically',
       auto_advance: false,
       footer: 'MamZelles en vadrouille — Merci pour votre confiance.',
       metadata: {
@@ -47,7 +46,17 @@ export async function POST(req: NextRequest) {
     const finalized = await stripe.invoices.finalizeInvoice(invoice.id!);
 
     // 5. Marquer la facture comme payée hors système (le paiement a déjà été encaissé via Checkout)
-    const paid = await stripe.invoices.pay(finalized.id!, { paid_out_of_band: true });
+    // Si un retry réseau a déjà fait passer la facture en "payée" juste avant, on récupère simplement son état actuel plutôt que d'échouer.
+    let paid: Stripe.Invoice;
+    try {
+      paid = await stripe.invoices.pay(finalized.id!, { paid_out_of_band: true });
+    } catch (payError: any) {
+      if (payError?.raw?.message === 'Invoice is already paid' || payError?.message?.includes('already paid')) {
+        paid = await stripe.invoices.retrieve(finalized.id!);
+      } else {
+        throw payError;
+      }
+    }
 
     return NextResponse.json({
       invoiceId: paid.id,
