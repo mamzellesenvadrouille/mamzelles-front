@@ -71,6 +71,7 @@ export default function AdminDevis() {
   const [filtreStatut, setFiltreStatut] = useState<'tous' | 'attente' | 'regle'>('tous');
   const [demandes, setDemandes] = useState<any[]>([]);
   const [loadingDemandes, setLoadingDemandes] = useState(false);
+  const [selectedDemandeId, setSelectedDemandeId] = useState<string | null>(null);
 
   async function handleAuth(e: React.FormEvent) {
     e.preventDefault();
@@ -118,6 +119,7 @@ export default function AdminDevis() {
   }
 
   function remplirDepuisDemande(d: any) {
+    setSelectedDemandeId(d.id);
     setClientName(d.prenom || '');
     setClientEmail(d.email || '');
     setNoteClient(d.destination || '');
@@ -290,6 +292,26 @@ export default function AdminDevis() {
       const data = await res.json();
       if (data.url) {
         setPropositionUrl(data.url);
+
+        // Si cette proposition part d'une demande, on l'y rattache pour le suivi/relances
+        if (selectedDemandeId) {
+          await fetch('/api/contact', {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: selectedDemandeId, field: 'devisEnvoyeLe', value: new Date().toISOString() }),
+          });
+          await fetch('/api/contact', {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: selectedDemandeId, field: 'devisLienUrl', value: data.url }),
+          });
+          await fetch('/api/contact', {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: selectedDemandeId, traitee: true }),
+          });
+          loadDemandes();
+        }
       } else {
         setError('Erreur lors de la génération de la proposition. Réessaie.');
       }
@@ -374,6 +396,7 @@ export default function AdminDevis() {
   }
 
   function handleReset() {
+    setSelectedDemandeId(null);
     setClientName('');
     setClientEmail('');
     setDateVoyage('');
@@ -626,6 +649,21 @@ export default function AdminDevis() {
                   <strong>{d.duree}</strong> · {d.destination} · {d.adultes}{d.enfants && d.enfants !== '0 enfant' ? `, ${d.enfants}` : ''} · Budget : {d.budget}
                 </div>
                 {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#555', marginTop: 6, fontStyle: 'italic', maxWidth: 600 }}>&laquo; {d.message} &raquo;</div>}
+                {d.devisEnvoyeLe && (() => {
+                  const jours = Math.floor((Date.now() - new Date(d.devisEnvoyeLe).getTime()) / 86400000);
+                  const aRelancer = jours >= 7;
+                  return (
+                    <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, marginTop: 6, color: aRelancer ? '#c0392b' : '#888' }}>
+                      {aRelancer ? '⏰ ' : ''}Devis envoyé le {new Date(d.devisEnvoyeLe).toLocaleDateString('fr-FR')} ({jours === 0 ? "aujourd'hui" : `il y a ${jours} jour${jours > 1 ? 's' : ''}`}){aRelancer ? ' — à relancer' : ''}
+                      {d.devisLienUrl && (
+                        <>
+                          {' · '}
+                          <button type="button" onClick={() => navigator.clipboard.writeText(d.devisLienUrl)} style={{ background: 'none', border: 'none', color: '#c8956c', cursor: 'pointer', fontSize: 11, padding: 0, textDecoration: 'underline' }}>copier le lien</button>
+                        </>
+                      )}
+                    </div>
+                  );
+                })()}
               </div>
               <div className="demande-actions" style={{ display: 'flex', gap: 6, flexShrink: 0, flexBasis: 'auto' }}>
                 <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, width: 90 }}>Créer le devis</button>

@@ -102,11 +102,20 @@ export async function GET() {
 
 export async function PATCH(req: NextRequest) {
   try {
-    const { id, traitee } = await req.json();
+    const body = await req.json();
+    const { id } = body;
     const data = await redis.get(id as string);
     if (!data) return NextResponse.json({ error: 'Demande introuvable' }, { status: 404 });
     const demande = typeof data === 'string' ? JSON.parse(data) : data;
-    demande.traitee = traitee;
+
+    if ('field' in body) {
+      // Mise à jour générique (ex: devisEnvoyeLe, devisLienUrl)
+      demande[body.field] = body.value;
+    } else if ('traitee' in body) {
+      // Compatibilité avec l'ancien format
+      demande.traitee = body.traitee;
+    }
+
     await redis.set(id, demande);
     return NextResponse.json({ ok: true });
   } catch (error) {
