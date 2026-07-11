@@ -118,6 +118,15 @@ export default function AdminDevis() {
     loadDemandes();
   }
 
+  async function marquerMailEnvoye(id: string) {
+    await fetch('/api/contact', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, field: 'mailEnvoyeLe', value: new Date().toISOString() }),
+    });
+    loadDemandes();
+  }
+
   function remplirDepuisDemande(d: any) {
     setSelectedDemandeId(d.id);
     setClientName(d.prenom || '');
@@ -649,6 +658,15 @@ export default function AdminDevis() {
                   <strong>{d.duree}</strong> · {d.destination} · {d.adultes}{d.enfants && d.enfants !== '0 enfant' ? `, ${d.enfants}` : ''} · Budget : {d.budget}
                 </div>
                 {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#555', marginTop: 6, fontStyle: 'italic', maxWidth: 600 }}>&laquo; {d.message} &raquo;</div>}
+                {d.mailEnvoyeLe && (() => {
+                  const jours = Math.floor((Date.now() - new Date(d.mailEnvoyeLe).getTime()) / 86400000);
+                  const aRelancer = jours >= 7;
+                  return (
+                    <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, marginTop: 4, color: aRelancer ? '#c0392b' : '#888' }}>
+                      {aRelancer ? '⏰ ' : ''}Mail envoyé le {new Date(d.mailEnvoyeLe).toLocaleDateString('fr-FR')} ({jours === 0 ? "aujourd'hui" : `il y a ${jours} jour${jours > 1 ? 's' : ''}`}){aRelancer ? ' — à relancer' : ''}
+                    </div>
+                  );
+                })()}
                 {d.devisEnvoyeLe && (() => {
                   const jours = Math.floor((Date.now() - new Date(d.devisEnvoyeLe).getTime()) / 86400000);
                   const aRelancer = jours >= 7;
@@ -666,6 +684,7 @@ export default function AdminDevis() {
                 })()}
               </div>
               <div className="demande-actions" style={{ display: 'flex', gap: 6, flexShrink: 0, flexBasis: 'auto' }}>
+                <button type="button" onClick={() => marquerMailEnvoye(d.id)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7, width: 90 }}>Mail envoyé</button>
                 <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, width: 90 }}>Créer le devis</button>
                 <button type="button" onClick={() => marquerTraitee(d.id, !d.traitee)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7, width: 90 }}>{d.traitee ? 'Non traitée' : 'Traitée'}</button>
                 <button type="button" onClick={() => supprimerDemande(d.id)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.5, width: 90 }}>Supprimer</button>
