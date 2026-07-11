@@ -160,7 +160,7 @@ export default function Formules() {
             <div className="fcard-price"><span>À partir de</span><strong>179 €</strong></div>
             <div className="fcard-arrow-wrap">
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 3 restaurants, 3 sites & activités</p></div>
+              <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 5 restaurants, 5 sites & activités</p></div>
             </div>
           </div>
 
@@ -187,7 +187,7 @@ export default function Formules() {
             <div className="fcard-price"><span>À partir de</span><strong>499 €</strong></div>
             <div className="fcard-arrow-wrap">
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 8 restaurants, 8 sites & activités</p></div>
+              <div className="fcard-tooltip"><p><strong>2 destinations incluses</strong></p><p>Suggestions : 5 restaurants, 5 sites & activités par destination</p></div>
             </div>
           </div>
 
