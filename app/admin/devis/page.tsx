@@ -29,6 +29,7 @@ type DevisRecord = {
   soldePaye?: boolean;
   factureAcompteUrl?: string;
   factureSoldeUrl?: string;
+  factureAcompteNumber?: string;
 };
 
 const RESPONSIVE_STYLES = `
@@ -171,6 +172,8 @@ export default function AdminDevis() {
           montant,
           description: [d.note, type.toUpperCase() + ' 50%'].filter(Boolean).join('\n'),
           type,
+          referenceAcompteNumber: type === 'solde' ? d.factureAcompteNumber : undefined,
+          referenceAcompteMontant: type === 'solde' ? acompte : undefined,
         }),
       });
       const data = await res.json();
@@ -180,6 +183,13 @@ export default function AdminDevis() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ id: d.id, field: factureField, value: data.pdfUrl }),
         });
+        if (type === 'acompte' && data.number) {
+          await fetch('/api/devis-save', {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: d.id, field: 'factureAcompteNumber', value: data.number }),
+          });
+        }
         loadHistorique();
       } else {
         alert('Erreur lors de la génération de la facture. Réessaie.');

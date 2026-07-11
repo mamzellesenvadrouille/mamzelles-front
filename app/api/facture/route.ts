@@ -5,7 +5,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 export async function POST(req: NextRequest) {
   try {
-    const { clientName, clientEmail, formule, montant, description, type } = await req.json();
+    const { clientName, clientEmail, formule, montant, description, type, referenceAcompteNumber, referenceAcompteMontant } = await req.json();
     // type: 'acompte' | 'solde'
 
     if (!clientName || !montant || montant <= 0) {
@@ -28,6 +28,16 @@ export async function POST(req: NextRequest) {
         description?.replace(/\n/g, ' — '),
       ].filter(Boolean).join(' — '),
     });
+
+    // 2bis. Sur la facture solde, ajouter une ligne de rappel de l'acompte déjà réglé (montant 0, purement informatif)
+    if (type === 'solde' && referenceAcompteNumber && referenceAcompteMontant) {
+      await stripe.invoiceItems.create({
+        customer: customer.id,
+        currency: 'eur',
+        amount: 0,
+        description: `Pour rappel : acompte de ${referenceAcompteMontant} € déjà réglé (facture n° ${referenceAcompteNumber})`,
+      });
+    }
 
     // 3. Créer la facture (paiement déjà encaissé via Checkout, on ne demande pas à Stripe de l'envoyer)
     const invoice = await stripe.invoices.create({
