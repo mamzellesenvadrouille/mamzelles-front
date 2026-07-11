@@ -203,7 +203,9 @@ export default function AdminDevis() {
 
     if (nouvelleValeur && !dejaGeneree) {
       const type = field === 'acomptePaye' ? 'acompte' : 'solde';
-      await genererFacture(d, type);
+      if (confirm('Générer la facture ' + type + ' pour ' + d.clientName + ' ? Cette action est définitive, la facture ne pourra plus être ni modifiée ni supprimée.')) {
+        await genererFacture(d, type);
+      }
     }
 
     loadHistorique();
@@ -794,7 +796,7 @@ export default function AdminDevis() {
                           {d.factureAcompteUrl ? (
                             <button onClick={() => { navigator.clipboard.writeText(d.factureAcompteUrl!); }} style={styles.btnCopySmall}>Copier</button>
                           ) : (
-                            <button onClick={() => genererFacture(d, 'acompte')} style={styles.btnCopySmall}>Générer</button>
+                            <button onClick={() => { if (confirm('Générer la facture acompte pour ' + d.clientName + ' ? Cette action est définitive, la facture ne pourra plus être ni modifiée ni supprimée.')) genererFacture(d, 'acompte'); }} style={styles.btnCopySmall}>Générer</button>
                           )}
                         </div>
                       </div>
@@ -805,7 +807,7 @@ export default function AdminDevis() {
                           {d.factureSoldeUrl ? (
                             <button onClick={() => { navigator.clipboard.writeText(d.factureSoldeUrl!); }} style={styles.btnCopySmall}>Copier</button>
                           ) : (
-                            <button onClick={() => genererFacture(d, 'solde')} style={styles.btnCopySmall}>Générer</button>
+                            <button onClick={() => { if (confirm('Générer la facture solde pour ' + d.clientName + ' ? Cette action est définitive, la facture ne pourra plus être ni modifiée ni supprimée.')) genererFacture(d, 'solde'); }} style={styles.btnCopySmall}>Générer</button>
                           )}
                         </div>
                       </div>
