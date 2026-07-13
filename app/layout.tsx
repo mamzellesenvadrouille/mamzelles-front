@@ -5,6 +5,7 @@ import "./globals.css";
 import CookieBanner from "./components/CookieBanner";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mamzellesenvadrouille.com"),
   title: "MamZelles en vadrouille",
   description: "Votre travel planner sur-mesure",
   alternates: {

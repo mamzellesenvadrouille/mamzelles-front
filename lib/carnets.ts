@@ -46,6 +46,9 @@ export interface CarnetDestinationRef {
   overrides?: Partial<Destination>; // si le carnet "duplique et adapte" au lieu de réutiliser tel quel
 }
 
+// Une destination une fois résolue pour un carnet précis (avec son nombre de nuits pour CE voyage)
+export type DestinationResolue = Destination & { nuits: number };
+
 export interface ConseilMamZelles {
   type: "conseil" | "coup-de-coeur" | "a-eviter";
   texte: string;
@@ -81,7 +84,7 @@ export interface Carnet {
   indispensables: { visa: string; passeport: string; vaccins: string; assurance: string; monnaie: string };
   // Gel automatique : une fois le voyage terminé, le contenu des destinations
   // est figé pour toujours, même si les fiches destination évoluent ensuite.
-  destinationsSnapshot?: Destination[];
+  destinationsSnapshot?: DestinationResolue[];
   figeLe?: string; // date à laquelle le gel a eu lieu, null/absent = pas encore figé
   createdAt: string;
   updatedAt: string;
@@ -153,13 +156,13 @@ export async function getCarnetComplet(slug: string) {
 
   // Sinon on résout en direct depuis les fiches destination
   const destinations = await Promise.all(
-    carnet.destinations.map(async (ref) => {
+    carnet.destinations.map(async (ref): Promise<DestinationResolue | null> => {
       const base = await getDestination(ref.destinationId);
       if (!base) return null;
       return { ...base, ...ref.overrides, nuits: ref.nuits };
     })
   );
-  const destinationsCompletes = destinations.filter((d): d is Destination => d !== null);
+  const destinationsCompletes = destinations.filter((d): d is DestinationResolue => d !== null);
 
   // Voyage tout juste terminé et jamais figé : on fige maintenant, une bonne fois pour toutes
   if (voyageTermine && !carnet.destinationsSnapshot) {

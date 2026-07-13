@@ -1,0 +1,186 @@
+/* app/voyage/[slug]/carnet.module.css */
+/* À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/carnet.module.css */
+
+.body {
+  --gold: #c8956c;
+  --gold-deep: #a8734c;
+  --cream: #f8f4ef;
+  --dark: #1a1512;
+  --muted: #8a8074;
+  --line: rgba(26, 21, 18, 0.09);
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px; --s5: 48px;
+
+  background: var(--cream);
+  color: var(--dark);
+  font-family: var(--font-inter, "Inter", sans-serif);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 44px 28px;
+  position: relative;
+}
+.wrap:not(:first-of-type)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 1px;
+  background: var(--gold);
+}
+@media (max-width: 480px) {
+  .wrap { padding: 36px 24px; }
+}
+
+.eyebrow {
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--gold-deep);
+  font-weight: 600;
+  display: block;
+}
+
+.display1 {
+  font-family: var(--font-cormorant, "Cormorant Garamond", serif);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 16px 0 8px;
+}
+.display2 {
+  font-family: var(--font-cormorant, "Cormorant Garamond", serif);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 10px 0 0;
+}
+.display2 em, .display1 em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--gold);
+}
+.bodySerif {
+  font-family: var(--font-cormorant, "Cormorant Garamond", serif);
+  font-size: 20px;
+  line-height: 1.55;
+  color: #3a3128;
+}
+
+.hero {
+  position: relative;
+  height: 92vh;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26,21,18,.08) 0%, rgba(26,21,18,.15) 40%, rgba(26,21,18,.65) 100%);
+}
+.heroContent {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 24px;
+}
+.heroContent .eyebrow { color: #ecd7c4; }
+.place { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; opacity: .85; }
+.dates {
+  margin-top: var(--s4);
+  font-size: 13px;
+  opacity: .75;
+  padding-top: var(--s2);
+  border-top: 1px solid rgba(255,255,255,.3);
+  width: 220px;
+}
+
+.sectionHead { margin-bottom: var(--s5); }
+.sectionHead .eyebrow { margin-bottom: var(--s1); }
+
+.welcome { text-align: center; }
+.welcome .bodySerif { max-width: 440px; margin: var(--s3) auto; }
+.signature {
+  margin-top: var(--s3);
+  font-family: var(--font-cormorant, "Cormorant Garamond", serif);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--gold);
+}
+
+.overviewGrid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5) var(--s3); }
+.overviewItem .val { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; color: var(--gold-deep); font-style: italic; }
+.overviewItem .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: var(--s1); }
+
+.routeList {}
+.routeStep { display: flex; align-items: baseline; gap: var(--s3); padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
+.routeStep:first-child { padding-top: 0; }
+.routeStep:last-child { border-bottom: none; }
+.idx { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 14px; color: var(--gold); font-style: italic; min-width: 20px; }
+.name { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 21px; }
+
+.destTabs { display: flex; gap: 8px; margin-bottom: var(--s5); flex-wrap: wrap; }
+.destTab { font-family: inherit; font-size: 13px; padding: 8px 16px; border: 1px solid var(--line); border-radius: 20px; background: none; cursor: pointer; color: var(--muted); transition: all .2s; }
+.destTabActive { background: var(--dark); color: #fff; border-color: var(--dark); }
+.destPhoto { height: 220px; border-radius: 3px; background-size: cover; background-position: center; display: flex; align-items: flex-end; padding: var(--s3); color: #fff; margin-bottom: var(--s4); }
+.destDays { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; opacity: .9; color: #ecd7c4; }
+.destPhoto h3 { font-family: var(--font-cormorant, "Cormorant Garamond", serif); margin: 4px 0 0; font-size: 26px; font-weight: 400; }
+
+.subEyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold-deep); font-weight: 600; margin: var(--s5) 0 var(--s3); }
+
+.dayItem { display: flex; gap: var(--s3); padding: var(--s2) 0; border-bottom: 1px solid var(--line); }
+.dayItem:last-child { border-bottom: none; }
+.time { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 15px; color: var(--gold); font-style: italic; min-width: 52px; flex-shrink: 0; }
+.desc strong { display: block; font-size: 14px; font-weight: 500; margin-bottom: 2px; }
+.desc span { font-size: 13px; color: var(--muted); }
+
+.miniGrid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3); }
+.miniCard img { width: 100%; height: 100px; object-fit: cover; border-radius: 3px; }
+.miniCard h4 { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-weight: 500; font-size: 16px; margin: 8px 0 1px; }
+.meta { font-size: 11px; color: var(--muted); }
+
+.practicalBox { background: #fff; border-radius: 3px; padding: var(--s3); margin-top: var(--s2); }
+.practicalBox p { font-size: 14px; color: var(--muted); margin: 0 0 8px; }
+.practicalBox p:last-child { margin-bottom: 0; }
+.practicalBox strong { color: var(--dark); font-weight: 500; }
+
+.advice { padding: var(--s4) 0; border-top: 1px solid var(--line); }
+.advice:last-child { border-bottom: 1px solid var(--line); }
+.tag { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold); font-weight: 600; }
+.advice p { margin: var(--s2) 0 0; }
+
+.budgetList { display: flex; flex-direction: column; gap: var(--s3); }
+.budgetRow .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+.label { font-size: 14px; font-weight: 500; }
+.amount { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 16px; color: var(--gold-deep); font-style: italic; }
+.budgetTrack { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.budgetFill { height: 100%; background: var(--gold); border-radius: 2px; transition: width 1s ease; }
+.budgetTotal { margin-top: var(--s4); padding-top: var(--s3); border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; }
+.budgetTotal .label { font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.budgetTotal .amount { font-size: 28px; color: var(--dark); }
+
+.checkList {}
+.checkItem { display: flex; align-items: center; gap: var(--s3); padding: var(--s3) 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+.checkItem:last-child { border-bottom: none; }
+.checkBox { width: 20px; height: 20px; border: 1px solid var(--gold); border-radius: 50%; flex-shrink: 0; position: relative; }
+.checked .checkBox { background: var(--gold); }
+.checked .checkBox::after { content: "✓"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 11px; }
+.checkLabel { font-size: 15px; transition: color .2s; }
+.checked .checkLabel { color: var(--muted); text-decoration: line-through; }
+
+.footerEnd { text-align: center; padding: 100px 28px; background: var(--dark); color: #f0e8de; }
+.footerEnd p { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; font-style: italic; max-width: 420px; margin: 0 auto; line-height: 1.5; }
+.brand { margin-top: var(--s4); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
