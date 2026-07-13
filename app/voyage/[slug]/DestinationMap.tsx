@@ -32,7 +32,7 @@ function chargerGoogleMaps(apiKey: string): Promise<void> {
   scriptChargement = new Promise((resolve) => {
     window.__mamzellesMapsCallback = () => resolve();
     const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=__mamzellesMapsCallback&loading=async`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=marker&callback=__mamzellesMapsCallback&loading=async`;
     script.async = true;
     document.head.appendChild(script);
   });
