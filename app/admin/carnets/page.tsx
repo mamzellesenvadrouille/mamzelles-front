@@ -6,6 +6,7 @@ import { useState } from "react";
 import Link from "next/link";
 import type { Carnet } from "@/lib/carnets";
 import AdminAuthGate from "../AdminAuthGate";
+import adminStyles from "../adminStyles";
 
 export default function AdminCarnetsPage() {
   const [carnets, setCarnets] = useState<Carnet[]>([]);
@@ -29,56 +30,61 @@ export default function AdminCarnetsPage() {
   }
 
   return (
-    <AdminAuthGate onAuthenticated={chargerCarnets}>
-      <div style={{ maxWidth: 800, margin: "0 auto", padding: "48px 24px", fontFamily: "Inter, sans-serif" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 32 }}>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 32 }}>Carnets MamZelles</h1>
-          <Link
-            href="/admin/carnets/nouveau"
-            style={{ background: "#1a1512", color: "#fff", padding: "10px 20px", borderRadius: 4, textDecoration: "none", fontSize: 14 }}
-          >
-            + Nouveau carnet
-          </Link>
-        </div>
-
-        {loading && <p>Chargement...</p>}
-        {!loading && carnets.length === 0 && <p>Aucun carnet pour l'instant.</p>}
-
-        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-          {carnets.map((c) => (
-            <div
-              key={c.slug}
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                padding: "16px 20px",
-                border: "1px solid #eee",
-                borderRadius: 6,
-              }}
-            >
-              <div>
-                <strong>{c.client?.prenoms}</strong> — {c.destination}
-                <div style={{ fontSize: 13, color: "#888" }}>
-                  /voyage/{c.slug} · {c.dates?.debut} → {c.dates?.fin}
-                </div>
-              </div>
-              <div style={{ display: "flex", gap: 8 }}>
-                <Link href={`/voyage/${c.slug}`} target="_blank" style={{ fontSize: 13, color: "#a8734c" }}>
-                  Voir
-                </Link>
-                <Link href={`/admin/carnets/${c.slug}`} style={{ fontSize: 13, color: "#a8734c" }}>
-                  Éditer
-                </Link>
-                <button
-                  onClick={() => supprimer(c.slug)}
-                  style={{ fontSize: 13, color: "#b33", background: "none", border: "none", cursor: "pointer" }}
-                >
-                  Supprimer
-                </button>
-              </div>
+    <AdminAuthGate onAuthenticated={chargerCarnets} label="Carnets">
+      <div style={adminStyles.wrap}>
+        <div style={{ ...adminStyles.card, maxWidth: 900 }}>
+          <div style={adminStyles.header}>
+            <div>
+              <div style={adminStyles.logo}>MamZelles en vadrouille</div>
+              <div style={adminStyles.title}>Carnets</div>
             </div>
-          ))}
+            <Link href="/admin/carnets/nouveau" style={{ ...adminStyles.btnGold, textDecoration: "none", display: "inline-block" }}>
+              + Nouveau carnet
+            </Link>
+          </div>
+
+          {loading && <p style={{ fontFamily: "Inter, sans-serif", fontSize: 14, color: "#888" }}>Chargement...</p>}
+          {!loading && carnets.length === 0 && (
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: 14, color: "#888" }}>Aucun carnet pour l&apos;instant.</p>
+          )}
+
+          {carnets.length > 0 && (
+            <table style={adminStyles.table}>
+              <thead>
+                <tr>
+                  <th style={adminStyles.th}>Client</th>
+                  <th style={adminStyles.th}>Destination</th>
+                  <th style={adminStyles.th}>Dates</th>
+                  <th style={adminStyles.th}>Lien</th>
+                  <th style={adminStyles.th}></th>
+                </tr>
+              </thead>
+              <tbody>
+                {carnets.map((c, i) => (
+                  <tr key={c.slug} style={i % 2 === 0 ? adminStyles.trOdd : adminStyles.trEven}>
+                    <td style={adminStyles.td}>{c.client?.prenoms}</td>
+                    <td style={adminStyles.td}>{c.destination}</td>
+                    <td style={adminStyles.td}>{c.dates?.debut} → {c.dates?.fin}</td>
+                    <td style={adminStyles.td}>
+                      <Link href={`/voyage/${c.slug}`} target="_blank" style={adminStyles.btnLinks}>
+                        Voir
+                      </Link>
+                    </td>
+                    <td style={adminStyles.td}>
+                      <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+                        <Link href={`/admin/carnets/${c.slug}`} style={adminStyles.btnLinks}>
+                          Éditer
+                        </Link>
+                        <button onClick={() => supprimer(c.slug)} style={adminStyles.btnDelete} title="Supprimer">
+                          ✕
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
         </div>
       </div>
     </AdminAuthGate>

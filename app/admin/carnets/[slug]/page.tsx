@@ -9,6 +9,7 @@ import { useState, use } from "react";
 import { useRouter } from "next/navigation";
 import type { Carnet, Destination, CarnetDestinationRef, ConseilMamZelles, BudgetLigne, ChecklistItem } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
+import adminStyles from "../../adminStyles";
 
 const carnetVide: Carnet = {
   slug: "",
@@ -27,6 +28,29 @@ const carnetVide: Carnet = {
   indispensables: { visa: "", passeport: "", vaccins: "", assurance: "", monnaie: "" },
   createdAt: "",
   updatedAt: "",
+};
+
+const sectionTitle: React.CSSProperties = {
+  fontFamily: "Cormorant Garamond, serif",
+  fontSize: 18,
+  fontWeight: 600,
+  color: "#1a1512",
+  marginBottom: 16,
+  paddingBottom: 10,
+  borderBottom: "1px solid #f0ebe4",
+};
+const sectionWrap: React.CSSProperties = { marginBottom: 36 };
+const smallLink: React.CSSProperties = {
+  marginTop: 10,
+  fontSize: 12.5,
+  color: "#c8956c",
+  background: "none",
+  border: "none",
+  cursor: "pointer",
+  fontFamily: "Inter, sans-serif",
+  fontWeight: 500,
+  letterSpacing: "0.03em",
+  padding: 0,
 };
 
 export default function EditCarnetPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -99,7 +123,6 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
     );
   }
 
-  // --- listes dynamiques (conseils, budget, checklists) ---
   function ajouterConseil() {
     update("conseils", [...carnet.conseils, { type: "conseil", texte: "" } as ConseilMamZelles]);
   }
@@ -110,219 +133,237 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
     update(champ, [...carnet[champ], { label: "", coche: false } as ChecklistItem]);
   }
 
-  const inputStyle: React.CSSProperties = {
-    width: "100%",
-    padding: "8px 10px",
-    border: "1px solid #ddd",
-    borderRadius: 4,
-    fontSize: 14,
-    fontFamily: "Inter, sans-serif",
-  };
-  const labelStyle: React.CSSProperties = { fontSize: 12, color: "#888", display: "block", marginBottom: 4, marginTop: 12 };
-  const sectionStyle: React.CSSProperties = { border: "1px solid #eee", borderRadius: 6, padding: 20, marginBottom: 20 };
-
   return (
-    <AdminAuthGate onAuthenticated={chargerDonnees}>
-      {loading ? (
-        <div style={{ padding: 48 }}>Chargement...</div>
-      ) : (
-    <div style={{ maxWidth: 700, margin: "0 auto", padding: "48px 24px", fontFamily: "Inter, sans-serif" }}>
-      <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 28, marginBottom: 24 }}>
-        {isNew ? "Nouveau carnet" : `Éditer : ${carnet.client.prenoms}`}
-      </h1>
-
-      <div style={sectionStyle}>
-        <strong>Infos générales</strong>
-        <label style={labelStyle}>Slug (identifiant du lien, ex: julie-thomas-maldives)</label>
-        <input style={inputStyle} value={carnet.slug} disabled={!isNew} onChange={(e) => update("slug", e.target.value)} />
-
-        <label style={labelStyle}>Prénoms du client</label>
-        <input style={inputStyle} value={carnet.client.prenoms} onChange={(e) => updateNested("client", "prenoms", e.target.value)} />
-
-        <label style={labelStyle}>Type de voyage (ex: Voyage de noces)</label>
-        <input style={inputStyle} value={carnet.client.typeVoyage} onChange={(e) => updateNested("client", "typeVoyage", e.target.value)} />
-
-        <label style={labelStyle}>Destination générale (ex: Maldives)</label>
-        <input style={inputStyle} value={carnet.destination} onChange={(e) => update("destination", e.target.value)} />
-
-        <div style={{ display: "flex", gap: 12 }}>
-          <div style={{ flex: 1 }}>
-            <label style={labelStyle}>Date de début</label>
-            <input type="date" style={inputStyle} value={carnet.dates.debut} onChange={(e) => updateNested("dates", "debut", e.target.value)} />
-          </div>
-          <div style={{ flex: 1 }}>
-            <label style={labelStyle}>Date de fin</label>
-            <input type="date" style={inputStyle} value={carnet.dates.fin} onChange={(e) => updateNested("dates", "fin", e.target.value)} />
-          </div>
-        </div>
-
-        <label style={labelStyle}>Photo hero (URL)</label>
-        <input style={inputStyle} value={carnet.hero.photo} onChange={(e) => updateNested("hero", "photo", e.target.value)} />
-
-        <label style={labelStyle}>Message de bienvenue</label>
-        <textarea style={{ ...inputStyle, minHeight: 80 }} value={carnet.bienvenue.message} onChange={(e) => updateNested("bienvenue", "message", e.target.value)} />
-      </div>
-
-      <div style={sectionStyle}>
-        <strong>Vue d'ensemble</strong>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-          <div><label style={labelStyle}>Météo (ex: 28°)</label><input style={inputStyle} value={carnet.overview.meteo} onChange={(e) => updateNested("overview", "meteo", e.target.value)} /></div>
-          <div><label style={labelStyle}>Budget prévu (€)</label><input type="number" style={inputStyle} value={carnet.overview.budget} onChange={(e) => updateNested("overview", "budget", Number(e.target.value))} /></div>
-          <div><label style={labelStyle}>Décalage horaire</label><input style={inputStyle} value={carnet.overview.decalage} onChange={(e) => updateNested("overview", "decalage", e.target.value)} /></div>
-          <div><label style={labelStyle}>Durée (jours)</label><input type="number" style={inputStyle} value={carnet.overview.dureeJours} onChange={(e) => updateNested("overview", "dureeJours", Number(e.target.value))} /></div>
-        </div>
-        <label style={labelStyle}>Parcours (une étape par ligne, ex: Paris)</label>
-        <textarea
-          style={{ ...inputStyle, minHeight: 60 }}
-          value={carnet.parcours.join("\n")}
-          onChange={(e) => update("parcours", e.target.value.split("\n").filter(Boolean))}
-        />
-      </div>
-
-      <div style={sectionStyle}>
-        <strong>Destinations incluses dans ce carnet</strong>
-        <p style={{ fontSize: 13, color: "#888" }}>
-          Sélectionne parmi tes fiches destination existantes. Pour créer une nouvelle fiche destination, ce sera dans l'admin dédié (à venir).
-        </p>
-        {destinationsDispo.length === 0 && <p style={{ fontSize: 13 }}>Aucune fiche destination pour l'instant.</p>}
-        {destinationsDispo.map((d) => {
-          const ref = carnet.destinations.find((r) => r.destinationId === d.id);
-          return (
-            <div key={d.id} style={{ display: "flex", alignItems: "center", gap: 12, padding: "8px 0", borderBottom: "1px solid #f2f2f2" }}>
-              <input type="checkbox" checked={!!ref} onChange={() => toggleDestination(d.id)} />
-              <span style={{ flex: 1 }}>{d.nom}</span>
-              {ref && (
-                <input
-                  type="number"
-                  style={{ ...inputStyle, width: 80 }}
-                  value={ref.nuits}
-                  onChange={(e) => updateNuits(d.id, Number(e.target.value))}
-                  placeholder="nuits"
-                />
-              )}
+    <AdminAuthGate onAuthenticated={chargerDonnees} label="Carnets">
+      <div style={adminStyles.wrap}>
+        <div style={adminStyles.card}>
+          <div style={adminStyles.header}>
+            <div>
+              <div style={adminStyles.logo}>MamZelles en vadrouille</div>
+              <div style={adminStyles.title}>{isNew ? "Nouveau carnet" : `Éditer : ${carnet.client.prenoms}`}</div>
             </div>
-          );
-        })}
-      </div>
-
-      <div style={sectionStyle}>
-        <strong>Conseils MamZelles</strong>
-        {carnet.conseils.map((c, i) => (
-          <div key={i} style={{ display: "flex", gap: 8, marginTop: 8 }}>
-            <select
-              style={{ ...inputStyle, width: 140 }}
-              value={c.type}
-              onChange={(e) => {
-                const copy = [...carnet.conseils];
-                copy[i] = { ...copy[i], type: e.target.value as ConseilMamZelles["type"] };
-                update("conseils", copy);
-              }}
-            >
-              <option value="conseil">Notre conseil</option>
-              <option value="coup-de-coeur">Coup de cœur</option>
-              <option value="a-eviter">À éviter</option>
-            </select>
-            <input
-              style={inputStyle}
-              value={c.texte}
-              onChange={(e) => {
-                const copy = [...carnet.conseils];
-                copy[i] = { ...copy[i], texte: e.target.value };
-                update("conseils", copy);
-              }}
-            />
           </div>
-        ))}
-        <button onClick={ajouterConseil} style={{ marginTop: 10, fontSize: 13, color: "#a8734c", background: "none", border: "none", cursor: "pointer" }}>+ Ajouter un conseil</button>
-      </div>
 
-      <div style={sectionStyle}>
-        <strong>Budget</strong>
-        {carnet.budget.map((b, i) => (
-          <div key={i} style={{ display: "flex", gap: 8, marginTop: 8 }}>
-            <input
-              style={inputStyle}
-              placeholder="Poste (ex: Vols)"
-              value={b.poste}
-              onChange={(e) => {
-                const copy = [...carnet.budget];
-                copy[i] = { ...copy[i], poste: e.target.value };
-                update("budget", copy);
-              }}
-            />
-            <input
-              type="number"
-              style={{ ...inputStyle, width: 120 }}
-              placeholder="Montant"
-              value={b.montant}
-              onChange={(e) => {
-                const copy = [...carnet.budget];
-                copy[i] = { ...copy[i], montant: Number(e.target.value) };
-                update("budget", copy);
-              }}
-            />
-          </div>
-        ))}
-        <button onClick={ajouterBudgetLigne} style={{ marginTop: 10, fontSize: 13, color: "#a8734c", background: "none", border: "none", cursor: "pointer" }}>+ Ajouter une ligne</button>
-      </div>
+          {loading ? (
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: 14, color: "#888" }}>Chargement...</p>
+          ) : (
+            <>
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Infos générales</div>
 
-      <div style={sectionStyle}>
-        <strong>Checklist réservations</strong>
-        {carnet.reservations.map((item, i) => (
-          <input
-            key={i}
-            style={{ ...inputStyle, marginTop: 8 }}
-            value={item.label}
-            onChange={(e) => {
-              const copy = [...carnet.reservations];
-              copy[i] = { ...copy[i], label: e.target.value };
-              update("reservations", copy);
-            }}
-          />
-        ))}
-        <button onClick={() => ajouterCheckItem("reservations")} style={{ marginTop: 10, fontSize: 13, color: "#a8734c", background: "none", border: "none", cursor: "pointer" }}>+ Ajouter</button>
-      </div>
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Slug (identifiant du lien)</label>
+                  <input style={adminStyles.input} placeholder="ex : julie-thomas-maldives" value={carnet.slug} disabled={!isNew} onChange={(e) => update("slug", e.target.value)} />
+                </div>
 
-      <div style={sectionStyle}>
-        <strong>Checklist valise</strong>
-        {carnet.checklistValise.map((item, i) => (
-          <input
-            key={i}
-            style={{ ...inputStyle, marginTop: 8 }}
-            value={item.label}
-            onChange={(e) => {
-              const copy = [...carnet.checklistValise];
-              copy[i] = { ...copy[i], label: e.target.value };
-              update("checklistValise", copy);
-            }}
-          />
-        ))}
-        <button onClick={() => ajouterCheckItem("checklistValise")} style={{ marginTop: 10, fontSize: 13, color: "#a8734c", background: "none", border: "none", cursor: "pointer" }}>+ Ajouter</button>
-      </div>
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Prénoms du client</label>
+                  <input style={adminStyles.input} value={carnet.client.prenoms} onChange={(e) => updateNested("client", "prenoms", e.target.value)} />
+                </div>
 
-      <div style={sectionStyle}>
-        <strong>Indispensables</strong>
-        <label style={labelStyle}>Visa</label>
-        <input style={inputStyle} value={carnet.indispensables.visa} onChange={(e) => updateNested("indispensables", "visa", e.target.value)} />
-        <label style={labelStyle}>Passeport</label>
-        <input style={inputStyle} value={carnet.indispensables.passeport} onChange={(e) => updateNested("indispensables", "passeport", e.target.value)} />
-        <label style={labelStyle}>Vaccins</label>
-        <input style={inputStyle} value={carnet.indispensables.vaccins} onChange={(e) => updateNested("indispensables", "vaccins", e.target.value)} />
-        <label style={labelStyle}>Assurance</label>
-        <input style={inputStyle} value={carnet.indispensables.assurance} onChange={(e) => updateNested("indispensables", "assurance", e.target.value)} />
-        <label style={labelStyle}>Monnaie</label>
-        <input style={inputStyle} value={carnet.indispensables.monnaie} onChange={(e) => updateNested("indispensables", "monnaie", e.target.value)} />
-      </div>
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Type de voyage</label>
+                  <input style={adminStyles.input} placeholder="ex : Voyage de noces" value={carnet.client.typeVoyage} onChange={(e) => updateNested("client", "typeVoyage", e.target.value)} />
+                </div>
 
-      <button
-        onClick={enregistrer}
-        disabled={saving}
-        style={{ background: "#1a1512", color: "#fff", padding: "12px 28px", borderRadius: 4, border: "none", fontSize: 14, cursor: "pointer" }}
-      >
-        {saving ? "Enregistrement..." : "Enregistrer le carnet"}
-      </button>
-    </div>
-      )}
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Destination générale</label>
+                  <input style={adminStyles.input} placeholder="ex : Maldives" value={carnet.destination} onChange={(e) => update("destination", e.target.value)} />
+                </div>
+
+                <div style={{ display: "flex", gap: 16 }}>
+                  <div style={{ ...adminStyles.field, flex: 1 }}>
+                    <label style={adminStyles.label}>Date de début</label>
+                    <input type="date" style={adminStyles.input} value={carnet.dates.debut} onChange={(e) => updateNested("dates", "debut", e.target.value)} />
+                  </div>
+                  <div style={{ ...adminStyles.field, flex: 1 }}>
+                    <label style={adminStyles.label}>Date de fin</label>
+                    <input type="date" style={adminStyles.input} value={carnet.dates.fin} onChange={(e) => updateNested("dates", "fin", e.target.value)} />
+                  </div>
+                </div>
+
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Photo hero (URL)</label>
+                  <input style={adminStyles.input} value={carnet.hero.photo} onChange={(e) => updateNested("hero", "photo", e.target.value)} />
+                </div>
+
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Message de bienvenue</label>
+                  <textarea style={{ ...adminStyles.textarea, minHeight: 80 }} value={carnet.bienvenue.message} onChange={(e) => updateNested("bienvenue", "message", e.target.value)} />
+                </div>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Vue d&apos;ensemble</div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                  <div style={adminStyles.field}>
+                    <label style={adminStyles.label}>Météo</label>
+                    <input style={adminStyles.input} placeholder="ex : 28°" value={carnet.overview.meteo} onChange={(e) => updateNested("overview", "meteo", e.target.value)} />
+                  </div>
+                  <div style={adminStyles.field}>
+                    <label style={adminStyles.label}>Budget prévu (€)</label>
+                    <input type="number" style={adminStyles.input} value={carnet.overview.budget} onChange={(e) => updateNested("overview", "budget", Number(e.target.value))} />
+                  </div>
+                  <div style={adminStyles.field}>
+                    <label style={adminStyles.label}>Décalage horaire</label>
+                    <input style={adminStyles.input} value={carnet.overview.decalage} onChange={(e) => updateNested("overview", "decalage", e.target.value)} />
+                  </div>
+                  <div style={adminStyles.field}>
+                    <label style={adminStyles.label}>Durée (jours)</label>
+                    <input type="number" style={adminStyles.input} value={carnet.overview.dureeJours} onChange={(e) => updateNested("overview", "dureeJours", Number(e.target.value))} />
+                  </div>
+                </div>
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Parcours (une étape par ligne)</label>
+                  <textarea
+                    style={{ ...adminStyles.textarea, minHeight: 60 }}
+                    placeholder={"Paris\nMalé\nBaa Atoll\nParis"}
+                    value={carnet.parcours.join("\n")}
+                    onChange={(e) => update("parcours", e.target.value.split("\n").filter(Boolean))}
+                  />
+                </div>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Destinations incluses</div>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
+                  Sélectionne parmi tes fiches destination existantes.
+                </p>
+                {destinationsDispo.length === 0 && (
+                  <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888" }}>Aucune fiche destination pour l&apos;instant.</p>
+                )}
+                {destinationsDispo.map((d) => {
+                  const ref = carnet.destinations.find((r) => r.destinationId === d.id);
+                  return (
+                    <div key={d.id} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 0", borderBottom: "1px solid #f0ebe4", fontFamily: "Inter, sans-serif", fontSize: 14 }}>
+                      <input type="checkbox" checked={!!ref} onChange={() => toggleDestination(d.id)} />
+                      <span style={{ flex: 1 }}>{d.nom}</span>
+                      {ref && (
+                        <input
+                          type="number"
+                          style={{ ...adminStyles.input, width: 90 }}
+                          value={ref.nuits}
+                          onChange={(e) => updateNuits(d.id, Number(e.target.value))}
+                          placeholder="nuits"
+                        />
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Conseils MamZelles</div>
+                {carnet.conseils.map((c, i) => (
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                    <select
+                      style={{ ...adminStyles.input, width: 160 }}
+                      value={c.type}
+                      onChange={(e) => {
+                        const copy = [...carnet.conseils];
+                        copy[i] = { ...copy[i], type: e.target.value as ConseilMamZelles["type"] };
+                        update("conseils", copy);
+                      }}
+                    >
+                      <option value="conseil">Notre conseil</option>
+                      <option value="coup-de-coeur">Coup de cœur</option>
+                      <option value="a-eviter">À éviter</option>
+                    </select>
+                    <input
+                      style={adminStyles.input}
+                      value={c.texte}
+                      onChange={(e) => {
+                        const copy = [...carnet.conseils];
+                        copy[i] = { ...copy[i], texte: e.target.value };
+                        update("conseils", copy);
+                      }}
+                    />
+                  </div>
+                ))}
+                <button onClick={ajouterConseil} style={smallLink}>+ Ajouter un conseil</button>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Budget</div>
+                {carnet.budget.map((b, i) => (
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                    <input
+                      style={adminStyles.input}
+                      placeholder="Poste (ex : Vols)"
+                      value={b.poste}
+                      onChange={(e) => {
+                        const copy = [...carnet.budget];
+                        copy[i] = { ...copy[i], poste: e.target.value };
+                        update("budget", copy);
+                      }}
+                    />
+                    <input
+                      type="number"
+                      style={{ ...adminStyles.input, width: 130 }}
+                      placeholder="Montant"
+                      value={b.montant}
+                      onChange={(e) => {
+                        const copy = [...carnet.budget];
+                        copy[i] = { ...copy[i], montant: Number(e.target.value) };
+                        update("budget", copy);
+                      }}
+                    />
+                  </div>
+                ))}
+                <button onClick={ajouterBudgetLigne} style={smallLink}>+ Ajouter une ligne</button>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Checklist réservations</div>
+                {carnet.reservations.map((item, i) => (
+                  <input
+                    key={i}
+                    style={{ ...adminStyles.input, marginBottom: 10 }}
+                    value={item.label}
+                    onChange={(e) => {
+                      const copy = [...carnet.reservations];
+                      copy[i] = { ...copy[i], label: e.target.value };
+                      update("reservations", copy);
+                    }}
+                  />
+                ))}
+                <button onClick={() => ajouterCheckItem("reservations")} style={smallLink}>+ Ajouter</button>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Checklist valise</div>
+                {carnet.checklistValise.map((item, i) => (
+                  <input
+                    key={i}
+                    style={{ ...adminStyles.input, marginBottom: 10 }}
+                    value={item.label}
+                    onChange={(e) => {
+                      const copy = [...carnet.checklistValise];
+                      copy[i] = { ...copy[i], label: e.target.value };
+                      update("checklistValise", copy);
+                    }}
+                  />
+                ))}
+                <button onClick={() => ajouterCheckItem("checklistValise")} style={smallLink}>+ Ajouter</button>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Indispensables</div>
+                {(["visa", "passeport", "vaccins", "assurance", "monnaie"] as const).map((champ) => (
+                  <div style={adminStyles.field} key={champ}>
+                    <label style={adminStyles.label}>{champ}</label>
+                    <input style={adminStyles.input} value={carnet.indispensables[champ]} onChange={(e) => updateNested("indispensables", champ, e.target.value)} />
+                  </div>
+                ))}
+              </div>
+
+              <button onClick={enregistrer} disabled={saving} style={adminStyles.btnGold}>
+                {saving ? "Enregistrement..." : "Enregistrer le carnet"}
+              </button>
+            </>
+          )}
+        </div>
+      </div>
     </AdminAuthGate>
   );
 }
