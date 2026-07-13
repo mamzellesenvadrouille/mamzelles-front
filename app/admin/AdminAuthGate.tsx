@@ -6,7 +6,12 @@ import { useState, useEffect, type ReactNode, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import adminStyles from "./adminStyles";
 
-const SESSION_KEY = "mamzelles-admin-auth";
+// Variable en mémoire (pas sessionStorage) : elle survit quand on navigue
+// d'une page admin à une autre en cliquant sur des liens (la page ne
+// recharge pas, donc cette variable reste en vie), mais elle repart à
+// zéro si la page est rechargée pour de vrai (F5) — puisque tout le
+// JavaScript se réexécute depuis le début dans ce cas.
+let dejaConnecteeCetteSession = false;
 
 export default function AdminAuthGate({
   onAuthenticated,
@@ -18,24 +23,18 @@ export default function AdminAuthGate({
   children: ReactNode;
   label?: string;
   // Si fourni, après connexion on redirige vers cette page (ex: la liste)
-  // plutôt que d'afficher le contenu de la page actuelle. Utile quand on
-  // arrive directement sur une page d'édition sans être encore connectée :
-  // on préfère toujours atterrir sur la liste après avoir tapé le mot de passe.
+  // plutôt que d'afficher le contenu de la page actuelle.
   redirectAfterLoginTo?: string;
 }) {
   const router = useRouter();
-  const [auth, setAuth] = useState(false);
-  const [checked, setChecked] = useState(false);
+  const [auth, setAuth] = useState(dejaConnecteeCetteSession);
   const [password, setPassword] = useState("");
   const [authError, setAuthError] = useState("");
 
   useEffect(() => {
-    const dejaConnecte = sessionStorage.getItem(SESSION_KEY) === "ok";
-    if (dejaConnecte) {
-      setAuth(true);
+    if (dejaConnecteeCetteSession) {
       onAuthenticated?.();
     }
-    setChecked(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -47,7 +46,7 @@ export default function AdminAuthGate({
       body: JSON.stringify({ password }),
     });
     if (res.ok) {
-      sessionStorage.setItem(SESSION_KEY, "ok");
+      dejaConnecteeCetteSession = true;
       setAuthError("");
       if (redirectAfterLoginTo) {
         router.push(redirectAfterLoginTo);
@@ -59,8 +58,6 @@ export default function AdminAuthGate({
       setAuthError("Mot de passe incorrect.");
     }
   }
-
-  if (!checked) return null;
 
   if (!auth) {
     return (
