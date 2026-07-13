@@ -2,10 +2,10 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/DestinationTabs.tsx
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
-import DestinationMap from "./DestinationMap";
+import DestinationMap, { type DestinationMapHandle } from "./DestinationMap";
 
 export default function DestinationTabs({
   destinations,
@@ -15,6 +15,13 @@ export default function DestinationTabs({
   googleMapsApiKey: string;
 }) {
   const [actif, setActif] = useState(0);
+  const mapHandleRef = useRef<DestinationMapHandle>(null);
+
+  function centrerSurLeLieu(lat?: number, lng?: number, nom?: string) {
+    if (typeof lat !== "number" || typeof lng !== "number") return;
+    mapHandleRef.current?.centrerSur(lat, lng, nom ?? "");
+    mapHandleRef.current?.scrollIntoView();
+  }
 
   if (destinations.length === 0) return null;
   const dest = destinations[actif];
@@ -65,13 +72,31 @@ export default function DestinationTabs({
               {dest.restaurants.length} restaurant{dest.restaurants.length > 1 ? "s" : ""} recommandé{dest.restaurants.length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
-              {dest.restaurants.map((r, i) => (
-                <div className={styles.miniCard} key={i}>
-                  <img src={r.photo} alt={r.nom} />
-                  <h4>{r.nom}</h4>
-                  <div className={styles.meta}>{r.cuisine} · {r.prix}</div>
-                </div>
-              ))}
+              {dest.restaurants.map((r, i) => {
+                const aCoords = typeof r.lat === "number" && typeof r.lng === "number";
+                const contenu = (
+                  <>
+                    <img src={r.photo} alt={r.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                    <h4>{r.nom}</h4>
+                    <div className={styles.meta}>{r.cuisine} · {r.prix}</div>
+                    {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
+                  </>
+                );
+                return aCoords ? (
+                  <button
+                    type="button"
+                    onClick={() => centrerSurLeLieu(r.lat, r.lng, r.nom)}
+                    className={styles.miniCard}
+                    key={i}
+                  >
+                    {contenu}
+                  </button>
+                ) : (
+                  <div className={styles.miniCard} key={i}>
+                    {contenu}
+                  </div>
+                );
+              })}
             </div>
           </>
         )}
@@ -82,13 +107,31 @@ export default function DestinationTabs({
               {dest.activites.length} site{dest.activites.length > 1 ? "s" : ""} & activité{dest.activites.length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
-              {dest.activites.map((a, i) => (
-                <div className={styles.miniCard} key={i}>
-                  <img src={a.photo} alt={a.nom} />
-                  <h4>{a.nom}</h4>
-                  <div className={styles.meta}>{a.description}</div>
-                </div>
-              ))}
+              {dest.activites.map((a, i) => {
+                const aCoords = typeof a.lat === "number" && typeof a.lng === "number";
+                const contenu = (
+                  <>
+                    <img src={a.photo} alt={a.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                    <h4>{a.nom}</h4>
+                    <div className={styles.meta}>{a.description}</div>
+                    {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
+                  </>
+                );
+                return aCoords ? (
+                  <button
+                    type="button"
+                    onClick={() => centrerSurLeLieu(a.lat, a.lng, a.nom)}
+                    className={styles.miniCard}
+                    key={i}
+                  >
+                    {contenu}
+                  </button>
+                ) : (
+                  <div className={styles.miniCard} key={i}>
+                    {contenu}
+                  </div>
+                );
+              })}
             </div>
           </>
         )}
@@ -104,7 +147,7 @@ export default function DestinationTabs({
           </>
         )}
 
-        <DestinationMap destination={dest} apiKey={googleMapsApiKey} />
+        <DestinationMap ref={mapHandleRef} destination={dest} apiKey={googleMapsApiKey} />
       </div>
     </div>
   );
