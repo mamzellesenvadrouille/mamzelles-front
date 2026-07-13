@@ -424,7 +424,7 @@ export default function AdminDevis() {
       <div style={styles.authWrap}>
         <form onSubmit={handleAuth} style={styles.authCard}>
           <div style={styles.logo}>MamZelles en vadrouille</div>
-          <div style={styles.authTitle}>Espace admin</div>
+          <div style={styles.authTitle}>Espace admin — Devis</div>
           <input
             type="password"
             placeholder="Mot de passe"
