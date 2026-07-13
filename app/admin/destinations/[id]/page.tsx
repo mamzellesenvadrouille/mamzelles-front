@@ -7,7 +7,7 @@
 
 import { useState, use } from "react";
 import { useRouter } from "next/navigation";
-import type { Destination, DeroulePoint, Restaurant, Activite } from "@/lib/carnets";
+import type { Destination, DeroulePoint, Hebergement, Restaurant, Activite } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
 
@@ -15,6 +15,7 @@ const destinationVide: Omit<Destination, "id" | "updatedAt"> & { id?: string } =
   nom: "",
   photo: "",
   deroule: [],
+  hebergements: [],
   restaurants: [],
   activites: [],
   seDeplacer: [],
@@ -58,7 +59,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
       .then((r) => r.json())
       .then((data) => {
         const found = (data.destinations ?? []).find((d: Destination) => d.id === routeId);
-        if (found) setDest(found);
+        if (found) setDest({ ...found, hebergements: found.hebergements ?? [] });
         setLoading(false);
       });
   }
@@ -89,6 +90,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
   function ajouterDeroule() {
     update("deroule", [...dest.deroule, { heure: "", titre: "", detail: "" } as DeroulePoint]);
   }
+  function ajouterHebergement() {
+    update("hebergements", [...(dest.hebergements ?? []), { nom: "", photo: "", description: "" } as Hebergement]);
+  }
   function ajouterRestaurant() {
     if (dest.restaurants.length >= 5) return;
     update("restaurants", [...dest.restaurants, { nom: "", photo: "", cuisine: "", prix: "€€" } as Restaurant]);
@@ -100,8 +104,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
   function ajouterConseilDeplacement() {
     update("seDeplacer", [...dest.seDeplacer, ""]);
   }
-  function supprimerLigne<K extends "deroule" | "restaurants" | "activites" | "seDeplacer">(champ: K, i: number) {
-    update(champ, (dest[champ] as unknown[]).filter((_, idx) => idx !== i) as (typeof destinationVide)[K]);
+  function supprimerLigne<K extends "deroule" | "hebergements" | "restaurants" | "activites" | "seDeplacer">(champ: K, i: number) {
+    update(champ, ((dest[champ] ?? []) as unknown[]).filter((_, idx) => idx !== i) as (typeof destinationVide)[K]);
   }
 
   return (
@@ -172,6 +176,59 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
               </div>
 
               <div style={sectionWrap}>
+                <div style={sectionTitle}>Hébergements</div>
+                {(dest.hebergements ?? []).map((h, i) => (
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
+                    <input
+                      style={adminStyles.input}
+                      placeholder="Nom"
+                      value={h.nom}
+                      onChange={(e) => {
+                        const copy = [...(dest.hebergements ?? [])];
+                        copy[i] = { ...copy[i], nom: e.target.value };
+                        update("hebergements", copy);
+                      }}
+                    />
+                    <input
+                      style={adminStyles.input}
+                      placeholder="Photo (URL)"
+                      value={h.photo}
+                      onChange={(e) => {
+                        const copy = [...(dest.hebergements ?? [])];
+                        copy[i] = { ...copy[i], photo: e.target.value };
+                        update("hebergements", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, width: 100 }}
+                      placeholder="Latitude"
+                      value={h.lat ?? ""}
+                      onChange={(e) => {
+                        const copy = [...(dest.hebergements ?? [])];
+                        copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
+                        update("hebergements", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, width: 100 }}
+                      placeholder="Longitude"
+                      value={h.lng ?? ""}
+                      onChange={(e) => {
+                        const copy = [...(dest.hebergements ?? [])];
+                        copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
+                        update("hebergements", copy);
+                      }}
+                    />
+                    <button onClick={() => supprimerLigne("hebergements", i)} style={adminStyles.btnDelete}>✕</button>
+                  </div>
+                ))}
+                <button onClick={ajouterHebergement} style={smallLink}>+ Ajouter un hébergement</button>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12, color: "#aaa", marginTop: 6 }}>
+                  Astuce : clic droit sur un lieu dans Google Maps → les coordonnées s&apos;affichent en haut du menu, clique dessus pour les copier.
+                </p>
+              </div>
+
+              <div style={sectionWrap}>
                 <div style={sectionTitle}>
                   Restaurants ({dest.restaurants.length}/5)
                 </div>
@@ -220,6 +277,26 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       <option value="€€">€€</option>
                       <option value="€€€">€€€</option>
                     </select>
+                    <input
+                      style={{ ...adminStyles.input, width: 90 }}
+                      placeholder="Latitude"
+                      value={r.lat ?? ""}
+                      onChange={(e) => {
+                        const copy = [...dest.restaurants];
+                        copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
+                        update("restaurants", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, width: 90 }}
+                      placeholder="Longitude"
+                      value={r.lng ?? ""}
+                      onChange={(e) => {
+                        const copy = [...dest.restaurants];
+                        copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
+                        update("restaurants", copy);
+                      }}
+                    />
                     <button onClick={() => supprimerLigne("restaurants", i)} style={adminStyles.btnDelete}>✕</button>
                   </div>
                 ))}
@@ -261,6 +338,26 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       onChange={(e) => {
                         const copy = [...dest.activites];
                         copy[i] = { ...copy[i], description: e.target.value };
+                        update("activites", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, width: 90 }}
+                      placeholder="Latitude"
+                      value={a.lat ?? ""}
+                      onChange={(e) => {
+                        const copy = [...dest.activites];
+                        copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
+                        update("activites", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, width: 90 }}
+                      placeholder="Longitude"
+                      value={a.lng ?? ""}
+                      onChange={(e) => {
+                        const copy = [...dest.activites];
+                        copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
                         update("activites", copy);
                       }}
                     />

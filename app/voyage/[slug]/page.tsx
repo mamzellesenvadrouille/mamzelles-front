@@ -90,7 +90,7 @@ export default async function CarnetPage({
             Par <em>destination.</em>
           </h2>
         </div>
-        <DestinationTabs destinations={carnet.destinationsCompletes} />
+        <DestinationTabs destinations={carnet.destinationsCompletes} googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""} />
       </section>
 
       {carnet.conseils.length > 0 && (
@@ -185,6 +185,24 @@ export default async function CarnetPage({
             </h2>
           </div>
           <CheckList items={carnet.checklistValise} />
+        </section>
+      )}
+
+      {carnet.contactsUrgence && carnet.contactsUrgence.length > 0 && (
+        <section className={styles.wrap}>
+          <div className={styles.sectionHead}>
+            <span className={styles.eyebrow}>En cas de besoin</span>
+            <h2 className={styles.display2}>
+              Contacts <em>d&apos;urgence.</em>
+            </h2>
+          </div>
+          <div className={styles.practicalBox}>
+            {carnet.contactsUrgence.map((c, i) => (
+              <p key={i}>
+                <strong>{c.label} :</strong> {c.valeur}
+              </p>
+            ))}
+          </div>
         </section>
       )}
 

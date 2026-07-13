@@ -5,8 +5,15 @@
 import { useState } from "react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
+import DestinationMap from "./DestinationMap";
 
-export default function DestinationTabs({ destinations }: { destinations: DestinationResolue[] }) {
+export default function DestinationTabs({
+  destinations,
+  googleMapsApiKey,
+}: {
+  destinations: DestinationResolue[];
+  googleMapsApiKey: string;
+}) {
   const [actif, setActif] = useState(0);
 
   if (destinations.length === 0) return null;
@@ -96,6 +103,8 @@ export default function DestinationTabs({ destinations }: { destinations: Destin
             </div>
           </>
         )}
+
+        <DestinationMap destination={dest} apiKey={googleMapsApiKey} />
       </div>
     </div>
   );

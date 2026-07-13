@@ -21,12 +21,24 @@ export interface Restaurant {
   photo: string;
   cuisine: string; // ex: "Fruits de mer"
   prix: "€" | "€€" | "€€€";
+  lat?: number;
+  lng?: number;
 }
 
 export interface Activite {
   nom: string;
   photo: string;
   description: string;
+  lat?: number;
+  lng?: number;
+}
+
+export interface Hebergement {
+  nom: string;
+  photo: string;
+  description: string;
+  lat?: number;
+  lng?: number;
 }
 
 export interface Destination {
@@ -34,6 +46,7 @@ export interface Destination {
   nom: string;
   photo: string;
   deroule: DeroulePoint[];
+  hebergements?: Hebergement[];
   restaurants: Restaurant[]; // objectif 5
   activites: Activite[]; // objectif 5
   seDeplacer: string[]; // liste de conseils pratiques
@@ -64,6 +77,11 @@ export interface ChecklistItem {
   coche: boolean;
 }
 
+export interface ContactUrgence {
+  label: string; // ex: "Ambulance locale", "Hôtel - réception", "Assurance voyage"
+  valeur: string; // ex: numéro de téléphone ou email
+}
+
 export interface Carnet {
   slug: string; // ex: "julie-thomas-maldives"
   client: {
@@ -82,6 +100,7 @@ export interface Carnet {
   reservations: ChecklistItem[];
   checklistValise: ChecklistItem[];
   indispensables: { visa: string; passeport: string; vaccins: string; assurance: string; monnaie: string };
+  contactsUrgence?: ContactUrgence[];
   // Gel automatique : une fois le voyage terminé, le contenu des destinations
   // est figé pour toujours, même si les fiches destination évoluent ensuite.
   destinationsSnapshot?: DestinationResolue[];
