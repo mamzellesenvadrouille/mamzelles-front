@@ -134,7 +134,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   }
 
   return (
-    <AdminAuthGate onAuthenticated={chargerDonnees} label="Carnets">
+    <AdminAuthGate onAuthenticated={chargerDonnees} label="Carnets" redirectAfterLoginTo="/admin/carnets">
       <div style={adminStyles.wrap}>
         <div style={adminStyles.card}>
           <div style={adminStyles.header}>

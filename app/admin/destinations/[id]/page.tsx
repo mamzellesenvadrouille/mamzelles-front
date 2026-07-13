@@ -105,7 +105,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
   }
 
   return (
-    <AdminAuthGate onAuthenticated={charger} label="Destinations">
+    <AdminAuthGate onAuthenticated={charger} label="Destinations" redirectAfterLoginTo="/admin/destinations">
       <div style={adminStyles.wrap}>
         <div style={adminStyles.card}>
           <div style={adminStyles.header}>

@@ -3,6 +3,7 @@
 "use client";
 
 import { useState, useEffect, type ReactNode, type FormEvent } from "react";
+import { useRouter } from "next/navigation";
 import adminStyles from "./adminStyles";
 
 const SESSION_KEY = "mamzelles-admin-auth";
@@ -11,11 +12,18 @@ export default function AdminAuthGate({
   onAuthenticated,
   children,
   label,
+  redirectAfterLoginTo,
 }: {
   onAuthenticated?: () => void;
   children: ReactNode;
   label?: string;
+  // Si fourni, après connexion on redirige vers cette page (ex: la liste)
+  // plutôt que d'afficher le contenu de la page actuelle. Utile quand on
+  // arrive directement sur une page d'édition sans être encore connectée :
+  // on préfère toujours atterrir sur la liste après avoir tapé le mot de passe.
+  redirectAfterLoginTo?: string;
 }) {
+  const router = useRouter();
   const [auth, setAuth] = useState(false);
   const [checked, setChecked] = useState(false);
   const [password, setPassword] = useState("");
@@ -40,9 +48,13 @@ export default function AdminAuthGate({
     });
     if (res.ok) {
       sessionStorage.setItem(SESSION_KEY, "ok");
-      setAuth(true);
       setAuthError("");
-      onAuthenticated?.();
+      if (redirectAfterLoginTo) {
+        router.push(redirectAfterLoginTo);
+      } else {
+        setAuth(true);
+        onAuthenticated?.();
+      }
     } else {
       setAuthError("Mot de passe incorrect.");
     }
