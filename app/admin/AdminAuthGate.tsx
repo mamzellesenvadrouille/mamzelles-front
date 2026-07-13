@@ -2,8 +2,10 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/admin/AdminAuthGate.tsx
 "use client";
 
-import { useState, type ReactNode, type FormEvent } from "react";
+import { useState, useEffect, type ReactNode, type FormEvent } from "react";
 import adminStyles from "./adminStyles";
+
+const SESSION_KEY = "mamzelles-admin-auth";
 
 export default function AdminAuthGate({
   onAuthenticated,
@@ -15,8 +17,19 @@ export default function AdminAuthGate({
   label?: string;
 }) {
   const [auth, setAuth] = useState(false);
+  const [checked, setChecked] = useState(false);
   const [password, setPassword] = useState("");
   const [authError, setAuthError] = useState("");
+
+  useEffect(() => {
+    const dejaConnecte = sessionStorage.getItem(SESSION_KEY) === "ok";
+    if (dejaConnecte) {
+      setAuth(true);
+      onAuthenticated?.();
+    }
+    setChecked(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   async function handleAuth(e: FormEvent) {
     e.preventDefault();
@@ -26,6 +39,7 @@ export default function AdminAuthGate({
       body: JSON.stringify({ password }),
     });
     if (res.ok) {
+      sessionStorage.setItem(SESSION_KEY, "ok");
       setAuth(true);
       setAuthError("");
       onAuthenticated?.();
@@ -33,6 +47,8 @@ export default function AdminAuthGate({
       setAuthError("Mot de passe incorrect.");
     }
   }
+
+  if (!checked) return null;
 
   if (!auth) {
     return (
