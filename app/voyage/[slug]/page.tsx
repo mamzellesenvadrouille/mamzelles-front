@@ -43,7 +43,7 @@ export default async function CarnetPage({
         <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Votre voyage</span>
           <h2 className={styles.display2}>
-            En un coup <em>d&apos;œil.</em>
+            En un coup <em>d&apos;œil</em>
           </h2>
         </div>
         <div className={styles.overviewGrid}>
@@ -70,7 +70,7 @@ export default async function CarnetPage({
         <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Le parcours</span>
           <h2 className={styles.display2}>
-            {carnet.parcours.length} <em>étapes.</em>
+            {carnet.parcours.length} <em>étapes</em>
           </h2>
         </div>
         <div className={styles.routeList}>
@@ -87,7 +87,7 @@ export default async function CarnetPage({
         <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Votre séjour</span>
           <h2 className={styles.display2}>
-            Par <em>destination.</em>
+            Par <em>destination</em>
           </h2>
         </div>
         <DestinationTabs destinations={carnet.destinationsCompletes} googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""} />
@@ -98,7 +98,7 @@ export default async function CarnetPage({
           <div className={styles.sectionHead}>
             <span className={styles.eyebrow}>Notre expertise</span>
             <h2 className={styles.display2}>
-              Les conseils <em>MamZelles.</em>
+              Les conseils <em>MamZelles</em>
             </h2>
           </div>
           {carnet.conseils.map((c, i) => (
@@ -119,7 +119,7 @@ export default async function CarnetPage({
           <div className={styles.sectionHead}>
             <span className={styles.eyebrow}>Récapitulatif</span>
             <h2 className={styles.display2}>
-              Votre <em>budget.</em>
+              Votre <em>budget</em>
             </h2>
           </div>
           <div className={styles.budgetList}>
@@ -153,7 +153,7 @@ export default async function CarnetPage({
           <div className={styles.sectionHead}>
             <span className={styles.eyebrow}>À préparer</span>
             <h2 className={styles.display2}>
-              Vos <em>réservations.</em>
+              Vos <em>réservations</em>
             </h2>
           </div>
           <CheckList items={carnet.reservations} />
@@ -164,7 +164,7 @@ export default async function CarnetPage({
         <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>À vérifier avant de partir</span>
           <h2 className={styles.display2}>
-            Les <em>indispensables.</em>
+            Les <em>indispensables</em>
           </h2>
         </div>
         <div className={styles.practicalBox}>
@@ -181,7 +181,7 @@ export default async function CarnetPage({
           <div className={styles.sectionHead}>
             <span className={styles.eyebrow}>Avant de partir</span>
             <h2 className={styles.display2}>
-              Checklist <em>valise.</em>
+              Checklist <em>valise</em>
             </h2>
           </div>
           <CheckList items={carnet.checklistValise} />
@@ -193,7 +193,7 @@ export default async function CarnetPage({
           <div className={styles.sectionHead}>
             <span className={styles.eyebrow}>En cas de besoin</span>
             <h2 className={styles.display2}>
-              Contacts <em>d&apos;urgence.</em>
+              Contacts <em>d&apos;urgence</em>
             </h2>
           </div>
           <div className={styles.practicalBox}>
