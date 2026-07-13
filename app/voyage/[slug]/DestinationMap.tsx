@@ -73,9 +73,13 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         if (infoWindowRef.current) {
           infoWindowRef.current.close();
         }
+        const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
         infoWindowRef.current = new window.google.maps.InfoWindow({
           position: { lat, lng },
-          content: `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;">${nom}</div>`,
+          content: `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;">
+            <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${nom}</div>
+            <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
+          </div>`,
         });
         infoWindowRef.current.open(mapInstance.current);
       },
@@ -144,14 +148,17 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             map: mapInstance.current!,
             position: { lat: lieu.lat, lng: lieu.lng },
             content: pin,
-            title: lieu.nom,
           });
           marker.addListener("gmp-click", () => {
             mapInstance.current.panTo({ lat: lieu.lat, lng: lieu.lng });
             if (infoWindowRef.current) infoWindowRef.current.close();
+            const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lieu.lat},${lieu.lng}`;
             infoWindowRef.current = new window.google!.maps.InfoWindow({
               position: { lat: lieu.lat, lng: lieu.lng },
-              content: `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;">${lieu.nom}</div>`,
+              content: `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;">
+                <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${lieu.nom}</div>
+                <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
+              </div>`,
             });
             infoWindowRef.current.open(mapInstance.current);
           });
