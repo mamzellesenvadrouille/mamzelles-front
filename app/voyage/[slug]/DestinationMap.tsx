@@ -168,6 +168,30 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, filtres, destination.id]);
 
+    // Localise le visiteur (avec sa permission) et affiche un point bleu sur la carte
+    useEffect(() => {
+      if (!pret || !mapInstance.current || !window.google || !navigator.geolocation) return;
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          if (!mapInstance.current) return;
+          const dot = document.createElement("div");
+          dot.style.cssText = "width:16px;height:16px;border-radius:50%;background:#4285F4;border:2px solid #fff;box-shadow:0 0 0 4px rgba(66,133,244,0.25),0 1px 4px rgba(0,0,0,.3);";
+          new window.google!.maps.marker.AdvancedMarkerElement({
+            map: mapInstance.current,
+            position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            content: dot,
+            zIndex: 999,
+          });
+        },
+        () => {
+          // permission refusée ou position indisponible : on ignore silencieusement
+        },
+        { enableHighAccuracy: true, timeout: 8000 }
+      );
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [pret, destination.id]);
+
     function toggleFiltre(cat: Categorie) {
       setFiltres((prev) => {
         const next = new Set(prev);
