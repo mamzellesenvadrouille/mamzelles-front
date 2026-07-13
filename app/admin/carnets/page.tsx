@@ -69,10 +69,10 @@ export default function AdminCarnetsPage() {
                     <td style={adminStyles.td}>{c.dates?.debut} → {c.dates?.fin}</td>
                     <td style={adminStyles.td}>
                       <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
-                        <Link href={`/voyage/${c.slug}`} target="_blank" style={{ ...adminStyles.btnLinks, width: 56, textAlign: "center" }}>
+                        <Link href={`/voyage/${c.slug}`} target="_blank" style={{ ...adminStyles.btnLinks, width: 76, textAlign: "center" }}>
                           Voir
                         </Link>
-                        <Link href={`/admin/carnets/${c.slug}`} style={{ ...adminStyles.btnLinks, width: 56, textAlign: "center" }}>
+                        <Link href={`/admin/carnets/${c.slug}`} style={{ ...adminStyles.btnLinks, width: 76, textAlign: "center" }}>
                           Éditer
                         </Link>
                         <button onClick={() => supprimer(c.slug)} style={adminStyles.btnDelete} title="Supprimer">
