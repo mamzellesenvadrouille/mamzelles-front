@@ -38,7 +38,10 @@ export default function AdminCarnetsPage() {
               <div style={adminStyles.logo}>MamZelles en vadrouille</div>
               <div style={adminStyles.title}>Carnets</div>
             </div>
-            <Link href="/admin/carnets/nouveau" style={{ ...adminStyles.btnGold, textDecoration: "none", display: "inline-block" }}>
+            <Link
+              href="/admin/carnets/nouveau"
+              style={{ ...adminStyles.btnGold, textDecoration: "none", display: "inline-block", padding: "9px 16px", fontSize: 11 }}
+            >
               + Nouveau carnet
             </Link>
           </div>
@@ -66,13 +69,13 @@ export default function AdminCarnetsPage() {
                     <td style={adminStyles.td}>{c.destination}</td>
                     <td style={adminStyles.td}>{c.dates?.debut} → {c.dates?.fin}</td>
                     <td style={adminStyles.td}>
-                      <Link href={`/voyage/${c.slug}`} target="_blank" style={adminStyles.btnLinks}>
+                      <Link href={`/voyage/${c.slug}`} target="_blank" style={{ ...adminStyles.btnLinks, width: 60, textAlign: "center" }}>
                         Voir
                       </Link>
                     </td>
                     <td style={adminStyles.td}>
                       <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-                        <Link href={`/admin/carnets/${c.slug}`} style={adminStyles.btnLinks}>
+                        <Link href={`/admin/carnets/${c.slug}`} style={{ ...adminStyles.btnLinks, width: 60, textAlign: "center" }}>
                           Éditer
                         </Link>
                         <button onClick={() => supprimer(c.slug)} style={adminStyles.btnDelete} title="Supprimer">
