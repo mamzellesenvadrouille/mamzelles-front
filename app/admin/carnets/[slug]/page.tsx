@@ -5,9 +5,10 @@
 // Pour créer un nouveau carnet, va sur /admin/carnets/nouveau
 "use client";
 
-import { useEffect, useState, use } from "react";
+import { useState, use } from "react";
 import { useRouter } from "next/navigation";
 import type { Carnet, Destination, CarnetDestinationRef, ConseilMamZelles, BudgetLigne, ChecklistItem } from "@/lib/carnets";
+import AdminAuthGate from "../../AdminAuthGate";
 
 const carnetVide: Carnet = {
   slug: "",
@@ -33,32 +34,12 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   const isNew = slug === "nouveau";
   const router = useRouter();
 
-  const [auth, setAuth] = useState(false);
-  const [password, setPassword] = useState("");
-  const [authError, setAuthError] = useState("");
-
   const [carnet, setCarnet] = useState<Carnet>(carnetVide);
   const [destinationsDispo, setDestinationsDispo] = useState<Destination[]>([]);
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
 
-  async function handleAuth(e: React.FormEvent) {
-    e.preventDefault();
-    const res = await fetch("/api/admin-auth", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ password }),
-    });
-    if (res.ok) {
-      setAuth(true);
-      setAuthError("");
-    } else {
-      setAuthError("Mot de passe incorrect.");
-    }
-  }
-
-  useEffect(() => {
-    if (!auth) return;
+  function chargerDonnees() {
     fetch("/api/destination-list")
       .then((r) => r.json())
       .then((data) => setDestinationsDispo(data.destinations ?? []));
@@ -72,7 +53,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
           setLoading(false);
         });
     }
-  }, [slug, isNew, auth]);
+  }
 
   function update<K extends keyof Carnet>(key: K, value: Carnet[K]) {
     setCarnet((prev) => ({ ...prev, [key]: value }));
@@ -129,39 +110,6 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
     update(champ, [...carnet[champ], { label: "", coche: false } as ChecklistItem]);
   }
 
-  if (!auth) {
-    return (
-      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#f8f4ef" }}>
-        <form
-          onSubmit={handleAuth}
-          style={{ background: "#fff", padding: "40px 36px", borderRadius: 8, boxShadow: "0 4px 24px rgba(26,21,18,0.08)", width: 320, textAlign: "center" }}
-        >
-          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 16, letterSpacing: ".04em", color: "#a8734c", marginBottom: 4 }}>
-            MamZelles en vadrouille
-          </div>
-          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 24, marginBottom: 20 }}>Espace admin</div>
-          <input
-            type="password"
-            placeholder="Mot de passe"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            autoFocus
-            style={{ width: "100%", padding: "10px 12px", border: "1px solid #ddd", borderRadius: 4, fontSize: 14, marginBottom: 10, fontFamily: "Inter, sans-serif" }}
-          />
-          {authError && <div style={{ color: "#b33", fontSize: 13, marginBottom: 10 }}>{authError}</div>}
-          <button
-            type="submit"
-            style={{ width: "100%", background: "#c8956c", color: "#fff", padding: "10px 20px", borderRadius: 4, border: "none", fontSize: 14, cursor: "pointer", fontFamily: "Inter, sans-serif" }}
-          >
-            Accéder
-          </button>
-        </form>
-      </div>
-    );
-  }
-
-  if (loading) return <div style={{ padding: 48 }}>Chargement...</div>;
-
   const inputStyle: React.CSSProperties = {
     width: "100%",
     padding: "8px 10px",
@@ -174,6 +122,10 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   const sectionStyle: React.CSSProperties = { border: "1px solid #eee", borderRadius: 6, padding: 20, marginBottom: 20 };
 
   return (
+    <AdminAuthGate onAuthenticated={chargerDonnees}>
+      {loading ? (
+        <div style={{ padding: 48 }}>Chargement...</div>
+      ) : (
     <div style={{ maxWidth: 700, margin: "0 auto", padding: "48px 24px", fontFamily: "Inter, sans-serif" }}>
       <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 28, marginBottom: 24 }}>
         {isNew ? "Nouveau carnet" : `Éditer : ${carnet.client.prenoms}`}
@@ -370,5 +322,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
         {saving ? "Enregistrement..." : "Enregistrer le carnet"}
       </button>
     </div>
+      )}
+    </AdminAuthGate>
   );
 }
