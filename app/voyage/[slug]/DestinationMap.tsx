@@ -11,7 +11,7 @@ import styles from "./carnet.module.css";
 type Categorie = "hebergements" | "restaurants" | "activites";
 
 const CATEGORIES: { key: Categorie; label: string; Icon: typeof Bed; color: string }[] = [
-  { key: "hebergements", label: "Hôtels", Icon: Bed, color: "#a8734c" },
+  { key: "hebergements", label: "Hôtels", Icon: Bed, color: "#5b7c99" },
   { key: "restaurants", label: "Restaurants", Icon: Utensils, color: "#c8956c" },
   { key: "activites", label: "Activités", Icon: Camera, color: "#7a9e7e" },
 ];
@@ -118,11 +118,16 @@ export default function DestinationMap({
         createRoot(inner).render(<Icon color="#fff" size={15} strokeWidth={2} />);
         pin.appendChild(inner);
 
+        pin.style.cursor = "pointer";
+
         const marker = new window.google!.maps.marker.AdvancedMarkerElement({
           map: mapInstance.current!,
           position: { lat: lieu.lat, lng: lieu.lng },
           content: pin,
           title: lieu.nom,
+        });
+        marker.addListener("gmp-click", () => {
+          window.open(`https://www.google.com/maps/search/?api=1&query=${lieu.lat},${lieu.lng}`, "_blank");
         });
         markersRef.current.push(marker);
       });
