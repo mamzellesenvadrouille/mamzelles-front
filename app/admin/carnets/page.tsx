@@ -59,7 +59,6 @@ export default function AdminCarnetsPage() {
                   <th style={adminStyles.th}>Destination</th>
                   <th style={adminStyles.th}>Dates</th>
                   <th style={adminStyles.th}>Lien</th>
-                  <th style={adminStyles.th}></th>
                 </tr>
               </thead>
               <tbody>
@@ -69,13 +68,11 @@ export default function AdminCarnetsPage() {
                     <td style={adminStyles.td}>{c.destination}</td>
                     <td style={adminStyles.td}>{c.dates?.debut} → {c.dates?.fin}</td>
                     <td style={adminStyles.td}>
-                      <Link href={`/voyage/${c.slug}`} target="_blank" style={{ ...adminStyles.btnLinks, width: 60, textAlign: "center" }}>
-                        Voir
-                      </Link>
-                    </td>
-                    <td style={adminStyles.td}>
-                      <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-                        <Link href={`/admin/carnets/${c.slug}`} style={{ ...adminStyles.btnLinks, width: 60, textAlign: "center" }}>
+                      <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+                        <Link href={`/voyage/${c.slug}`} target="_blank" style={{ ...adminStyles.btnLinks, width: 56, textAlign: "center" }}>
+                          Voir
+                        </Link>
+                        <Link href={`/admin/carnets/${c.slug}`} style={{ ...adminStyles.btnLinks, width: 56, textAlign: "center" }}>
                           Éditer
                         </Link>
                         <button onClick={() => supprimer(c.slug)} style={adminStyles.btnDelete} title="Supprimer">
