@@ -3,7 +3,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { renderToStaticMarkup } from "react-dom/server";
+import { createRoot } from "react-dom/client";
 import { Bed, Utensils, Camera } from "lucide-react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
@@ -115,7 +115,7 @@ export default function DestinationMap({
         pin.style.cssText = `background:${color};width:30px;height:30px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.3);border:2px solid #fff;`;
         const inner = document.createElement("div");
         inner.style.cssText = "transform:rotate(45deg);display:flex;";
-        inner.innerHTML = renderToStaticMarkup(<Icon color="#fff" size={15} strokeWidth={2} />);
+        createRoot(inner).render(<Icon color="#fff" size={15} strokeWidth={2} />);
         pin.appendChild(inner);
 
         const marker = new window.google!.maps.marker.AdvancedMarkerElement({
