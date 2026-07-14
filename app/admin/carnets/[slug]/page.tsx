@@ -23,7 +23,17 @@ const carnetVide: Carnet = {
   destinations: [],
   conseils: [],
   budget: [],
-  reservations: [],
+  reservations: [
+    { label: "Vol aller réservé", coche: false },
+    { label: "Vol retour réservé", coche: false },
+    { label: "Train réservé", coche: false },
+    { label: "Location de voiture réservée", coche: false },
+    { label: "Transfert aéroport ↔ hôtel réservé", coche: false },
+    { label: "Hébergement Destination 1 réservé", coche: false },
+    { label: "Hébergement Destination 2 réservé", coche: false },
+    { label: "Excursion principale réservée", coche: false },
+    { label: "Restaurant(s) coup de cœur réservé(s)", coche: false },
+  ],
   checklistValise: [
     { label: "Passeport valide (6 mois après le retour)", coche: false },
     { label: "Visa si nécessaire", coche: false },
