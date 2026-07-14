@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 import type { Destination, DeroulePoint, Hebergement, Restaurant, Activite } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
+import PhotoField from "../../PhotoField";
 
 const destinationVide: Omit<Destination, "id" | "updatedAt"> & { id?: string } = {
   nom: "",
@@ -189,13 +190,12 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                         update("hebergements", copy);
                       }}
                     />
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Photo (URL)"
+                    <PhotoField
+                      style={{ flex: 1 }}
                       value={h.photo}
-                      onChange={(e) => {
+                      onChange={(url) => {
                         const copy = [...(dest.hebergements ?? [])];
-                        copy[i] = { ...copy[i], photo: e.target.value };
+                        copy[i] = { ...copy[i], photo: url };
                         update("hebergements", copy);
                       }}
                     />
@@ -244,13 +244,12 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                         update("restaurants", copy);
                       }}
                     />
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Photo (URL)"
+                    <PhotoField
+                      style={{ flex: 1 }}
                       value={r.photo}
-                      onChange={(e) => {
+                      onChange={(url) => {
                         const copy = [...dest.restaurants];
-                        copy[i] = { ...copy[i], photo: e.target.value };
+                        copy[i] = { ...copy[i], photo: url };
                         update("restaurants", copy);
                       }}
                     />
@@ -321,13 +320,12 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                         update("activites", copy);
                       }}
                     />
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Photo (URL)"
+                    <PhotoField
+                      style={{ flex: 1 }}
                       value={a.photo}
-                      onChange={(e) => {
+                      onChange={(url) => {
                         const copy = [...dest.activites];
-                        copy[i] = { ...copy[i], photo: e.target.value };
+                        copy[i] = { ...copy[i], photo: url };
                         update("activites", copy);
                       }}
                     />
