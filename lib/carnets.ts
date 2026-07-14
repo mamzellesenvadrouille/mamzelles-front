@@ -57,6 +57,12 @@ export interface CarnetDestinationRef {
   destinationId: string;
   nuits: number;
   overrides?: Partial<Destination>; // si le carnet "duplique et adapte" au lieu de réutiliser tel quel
+  // Sélection précise des éléments de la fiche destination à inclure dans CE carnet.
+  // undefined = on inclut tout (comportement historique, rétrocompatible).
+  // [] = on a explicitement choisi de n'en inclure aucun.
+  hebergementsChoisis?: string[]; // noms des hébergements sélectionnés
+  restaurantsChoisis?: string[]; // noms des restaurants sélectionnés
+  activitesChoisies?: string[]; // noms des activités sélectionnées
 }
 
 // Une destination une fois résolue pour un carnet précis (avec son nombre de nuits pour CE voyage)
@@ -178,7 +184,20 @@ export async function getCarnetComplet(slug: string) {
     carnet.destinations.map(async (ref): Promise<DestinationResolue | null> => {
       const base = await getDestination(ref.destinationId);
       if (!base) return null;
-      return { ...base, ...ref.overrides, nuits: ref.nuits };
+      const fusionne = { ...base, ...ref.overrides };
+      return {
+        ...fusionne,
+        hebergements: ref.hebergementsChoisis
+          ? (fusionne.hebergements ?? []).filter((h) => ref.hebergementsChoisis!.includes(h.nom))
+          : fusionne.hebergements,
+        restaurants: ref.restaurantsChoisis
+          ? fusionne.restaurants.filter((r) => ref.restaurantsChoisis!.includes(r.nom))
+          : fusionne.restaurants,
+        activites: ref.activitesChoisies
+          ? fusionne.activites.filter((a) => ref.activitesChoisies!.includes(a.nom))
+          : fusionne.activites,
+        nuits: ref.nuits,
+      };
     })
   );
   const destinationsCompletes = destinations.filter((d): d is DestinationResolue => d !== null);

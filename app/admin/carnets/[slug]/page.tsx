@@ -7,7 +7,7 @@
 
 import { useState, use } from "react";
 import { useRouter } from "next/navigation";
-import type { Carnet, Destination, CarnetDestinationRef, ConseilMamZelles, BudgetLigne, ChecklistItem } from "@/lib/carnets";
+import type { Carnet, Destination, CarnetDestinationRef, ConseilMamZelles, BudgetLigne, ChecklistItem, ContactUrgence } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
 
@@ -26,6 +26,7 @@ const carnetVide: Carnet = {
   reservations: [],
   checklistValise: [],
   indispensables: { visa: "", passeport: "", vaccins: "", assurance: "", monnaie: "" },
+  contactsUrgence: [],
   createdAt: "",
   updatedAt: "",
 };
@@ -123,6 +124,23 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
     );
   }
 
+  function toggleItemChoisi(
+    destinationId: string,
+    champ: "hebergementsChoisis" | "restaurantsChoisis" | "activitesChoisies",
+    nom: string,
+    tousLesNoms: string[]
+  ) {
+    update(
+      "destinations",
+      carnet.destinations.map((d) => {
+        if (d.destinationId !== destinationId) return d;
+        const actuel = d[champ] ?? tousLesNoms; // undefined = tout est sélectionné par défaut
+        const nouveau = actuel.includes(nom) ? actuel.filter((n) => n !== nom) : [...actuel, nom];
+        return { ...d, [champ]: nouveau };
+      })
+    );
+  }
+
   function ajouterConseil() {
     update("conseils", [...carnet.conseils, { type: "conseil", texte: "" } as ConseilMamZelles]);
   }
@@ -131,6 +149,9 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   }
   function ajouterCheckItem(champ: "reservations" | "checklistValise") {
     update(champ, [...carnet[champ], { label: "", coche: false } as ChecklistItem]);
+  }
+  function ajouterContactUrgence() {
+    update("contactsUrgence", [...(carnet.contactsUrgence ?? []), { label: "", valeur: "" } as ContactUrgence]);
   }
 
   return (
@@ -234,18 +255,90 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 )}
                 {destinationsDispo.map((d) => {
                   const ref = carnet.destinations.find((r) => r.destinationId === d.id);
+                  const nomsHebergements = (d.hebergements ?? []).map((h) => h.nom);
+                  const nomsRestaurants = d.restaurants.map((r) => r.nom);
+                  const nomsActivites = d.activites.map((a) => a.nom);
                   return (
-                    <div key={d.id} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 0", borderBottom: "1px solid #f0ebe4", fontFamily: "Inter, sans-serif", fontSize: 14 }}>
-                      <input type="checkbox" checked={!!ref} onChange={() => toggleDestination(d.id)} />
-                      <span style={{ flex: 1 }}>{d.nom}</span>
+                    <div key={d.id} style={{ borderBottom: "1px solid #f0ebe4", padding: "10px 0" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: 12, fontFamily: "Inter, sans-serif", fontSize: 14 }}>
+                        <input type="checkbox" checked={!!ref} onChange={() => toggleDestination(d.id)} />
+                        <span style={{ flex: 1, fontWeight: 500 }}>{d.nom}</span>
+                        {ref && (
+                          <input
+                            type="number"
+                            style={{ ...adminStyles.input, width: 90 }}
+                            value={ref.nuits}
+                            onChange={(e) => updateNuits(d.id, Number(e.target.value))}
+                            placeholder="nuits"
+                          />
+                        )}
+                      </div>
+
                       {ref && (
-                        <input
-                          type="number"
-                          style={{ ...adminStyles.input, width: 90 }}
-                          value={ref.nuits}
-                          onChange={(e) => updateNuits(d.id, Number(e.target.value))}
-                          placeholder="nuits"
-                        />
+                        <div style={{ marginTop: 10, marginLeft: 26, display: "flex", flexDirection: "column", gap: 12 }}>
+                          {nomsHebergements.length > 0 && (
+                            <div>
+                              <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", color: "#aaa", marginBottom: 6 }}>
+                                Hébergements à inclure dans ce carnet
+                              </div>
+                              {nomsHebergements.map((nom) => {
+                                const coche = (ref.hebergementsChoisis ?? nomsHebergements).includes(nom);
+                                return (
+                                  <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
+                                    <input
+                                      type="checkbox"
+                                      checked={coche}
+                                      onChange={() => toggleItemChoisi(d.id, "hebergementsChoisis", nom, nomsHebergements)}
+                                    />
+                                    {nom}
+                                  </label>
+                                );
+                              })}
+                            </div>
+                          )}
+
+                          {nomsRestaurants.length > 0 && (
+                            <div>
+                              <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", color: "#aaa", marginBottom: 6 }}>
+                                Restaurants à inclure dans ce carnet
+                              </div>
+                              {nomsRestaurants.map((nom) => {
+                                const coche = (ref.restaurantsChoisis ?? nomsRestaurants).includes(nom);
+                                return (
+                                  <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
+                                    <input
+                                      type="checkbox"
+                                      checked={coche}
+                                      onChange={() => toggleItemChoisi(d.id, "restaurantsChoisis", nom, nomsRestaurants)}
+                                    />
+                                    {nom}
+                                  </label>
+                                );
+                              })}
+                            </div>
+                          )}
+
+                          {nomsActivites.length > 0 && (
+                            <div>
+                              <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", color: "#aaa", marginBottom: 6 }}>
+                                Sites & activités à inclure dans ce carnet
+                              </div>
+                              {nomsActivites.map((nom) => {
+                                const coche = (ref.activitesChoisies ?? nomsActivites).includes(nom);
+                                return (
+                                  <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
+                                    <input
+                                      type="checkbox"
+                                      checked={coche}
+                                      onChange={() => toggleItemChoisi(d.id, "activitesChoisies", nom, nomsActivites)}
+                                    />
+                                    {nom}
+                                  </label>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
                       )}
                     </div>
                   );
@@ -355,6 +448,35 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     <input style={adminStyles.input} value={carnet.indispensables[champ]} onChange={(e) => updateNested("indispensables", champ, e.target.value)} />
                   </div>
                 ))}
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Contacts d&apos;urgence</div>
+                {(carnet.contactsUrgence ?? []).map((c, i) => (
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                    <input
+                      style={adminStyles.input}
+                      placeholder="Ex : Ambulance locale, Hôtel - réception, Assurance..."
+                      value={c.label}
+                      onChange={(e) => {
+                        const copy = [...(carnet.contactsUrgence ?? [])];
+                        copy[i] = { ...copy[i], label: e.target.value };
+                        update("contactsUrgence", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, width: 200 }}
+                      placeholder="Numéro ou email"
+                      value={c.valeur}
+                      onChange={(e) => {
+                        const copy = [...(carnet.contactsUrgence ?? [])];
+                        copy[i] = { ...copy[i], valeur: e.target.value };
+                        update("contactsUrgence", copy);
+                      }}
+                    />
+                  </div>
+                ))}
+                <button onClick={ajouterContactUrgence} style={smallLink}>+ Ajouter un contact</button>
               </div>
 
               <button onClick={enregistrer} disabled={saving} style={adminStyles.btnGold}>

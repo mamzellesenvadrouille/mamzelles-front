@@ -111,12 +111,10 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
     update("hebergements", [...(dest.hebergements ?? []), { nom: "", photo: "", description: "" } as Hebergement]);
   }
   function ajouterRestaurant() {
-    if (dest.restaurants.length >= 5) return;
-    update("restaurants", [...dest.restaurants, { nom: "", photo: "", cuisine: "", prix: "€€" } as Restaurant]);
+        update("restaurants", [...dest.restaurants, { nom: "", photo: "", cuisine: "", prix: "€€" } as Restaurant]);
   }
   function ajouterActivite() {
-    if (dest.activites.length >= 5) return;
-    update("activites", [...dest.activites, { nom: "", photo: "", description: "" } as Activite]);
+        update("activites", [...dest.activites, { nom: "", photo: "", description: "" } as Activite]);
   }
   function ajouterConseilDeplacement() {
     update("seDeplacer", [...dest.seDeplacer, ""]);
@@ -282,7 +280,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
 
               <div style={sectionWrap}>
                 <div style={sectionTitle}>
-                  Restaurants ({dest.restaurants.length}/5)
+                  Restaurants ({dest.restaurants.length})
                 </div>
                 {dest.restaurants.map((r, i) => (
                   <div key={i} style={itemCard}>
@@ -382,14 +380,12 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     </div>
                   </div>
                 ))}
-                {dest.restaurants.length < 5 && (
-                  <button onClick={ajouterRestaurant} style={smallLink}>+ Ajouter un restaurant</button>
-                )}
+                <button onClick={ajouterRestaurant} style={smallLink}>+ Ajouter un restaurant</button>
               </div>
 
               <div style={sectionWrap}>
                 <div style={sectionTitle}>
-                  Sites & activités ({dest.activites.length}/5)
+                  Sites & activités ({dest.activites.length})
                 </div>
                 {dest.activites.map((a, i) => (
                   <div key={i} style={itemCard}>
@@ -471,9 +467,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     </div>
                   </div>
                 ))}
-                {dest.activites.length < 5 && (
-                  <button onClick={ajouterActivite} style={smallLink}>+ Ajouter une activité</button>
-                )}
+                <button onClick={ajouterActivite} style={smallLink}>+ Ajouter une activité</button>
               </div>
 
               <div style={sectionWrap}>
