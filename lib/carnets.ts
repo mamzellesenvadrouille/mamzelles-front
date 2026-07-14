@@ -105,6 +105,7 @@ export interface Carnet {
   budget: BudgetLigne[];
   reservations: ChecklistItem[];
   checklistValise: ChecklistItem[];
+  checklistVoyage?: ChecklistItem[];
   indispensables: { visa: string; passeport: string; vaccins: string; assurance: string; monnaie: string };
   contactsUrgence?: ContactUrgence[];
   // Gel automatique : une fois le voyage terminé, le contenu des destinations
