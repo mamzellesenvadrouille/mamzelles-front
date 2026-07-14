@@ -156,7 +156,7 @@ export default async function CarnetPage({
               Vos <em>réservations</em>
             </h2>
           </div>
-          <CheckList items={carnet.reservations} />
+          <CheckList items={carnet.reservations} storageKey={`mamzelles-checklist-reservations-${carnet.slug}`} />
         </section>
       )}
 
@@ -184,7 +184,7 @@ export default async function CarnetPage({
               Checklist <em>valise</em>
             </h2>
           </div>
-          <CheckList items={carnet.checklistValise} />
+          <CheckList items={carnet.checklistValise} storageKey={`mamzelles-checklist-valise-${carnet.slug}`} />
         </section>
       )}
 
