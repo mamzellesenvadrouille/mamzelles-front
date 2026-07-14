@@ -44,6 +44,22 @@ const smallLink: React.CSSProperties = {
   letterSpacing: "0.03em",
   padding: 0,
 };
+const itemCard: React.CSSProperties = {
+  border: "1px solid #f0ebe4",
+  borderRadius: 6,
+  padding: 16,
+  marginBottom: 14,
+  position: "relative",
+};
+const microLabel: React.CSSProperties = {
+  fontSize: 10.5,
+  textTransform: "uppercase",
+  letterSpacing: "0.06em",
+  color: "#aaa",
+  display: "block",
+  marginBottom: 3,
+};
+const fieldBox: React.CSSProperties = { marginBottom: 10 };
 
 export default function EditDestinationPage({ params }: { params: Promise<{ id: string }> }) {
   const { id: routeId } = use(params);
@@ -179,47 +195,83 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Hébergements</div>
                 {(dest.hebergements ?? []).map((h, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Nom"
-                      value={h.nom}
-                      onChange={(e) => {
-                        const copy = [...(dest.hebergements ?? [])];
-                        copy[i] = { ...copy[i], nom: e.target.value };
-                        update("hebergements", copy);
-                      }}
-                    />
-                    <PhotoField
-                      style={{ flex: 1 }}
-                      value={h.photo}
-                      onChange={(url) => {
-                        const copy = [...(dest.hebergements ?? [])];
-                        copy[i] = { ...copy[i], photo: url };
-                        update("hebergements", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, width: 100 }}
-                      placeholder="Latitude"
-                      value={h.lat ?? ""}
-                      onChange={(e) => {
-                        const copy = [...(dest.hebergements ?? [])];
-                        copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
-                        update("hebergements", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, width: 100 }}
-                      placeholder="Longitude"
-                      value={h.lng ?? ""}
-                      onChange={(e) => {
-                        const copy = [...(dest.hebergements ?? [])];
-                        copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
-                        update("hebergements", copy);
-                      }}
-                    />
-                    <button onClick={() => supprimerLigne("hebergements", i)} style={adminStyles.btnDelete}>✕</button>
+                  <div key={i} style={itemCard}>
+                    <button
+                      onClick={() => supprimerLigne("hebergements", i)}
+                      style={{ ...adminStyles.btnDelete, position: "absolute", top: 10, right: 10 }}
+                      title="Supprimer cet hébergement"
+                    >
+                      ✕
+                    </button>
+
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Nom</label>
+                      <input
+                        style={adminStyles.input}
+                        placeholder="ex : Soneva Fushi"
+                        value={h.nom}
+                        onChange={(e) => {
+                          const copy = [...(dest.hebergements ?? [])];
+                          copy[i] = { ...copy[i], nom: e.target.value };
+                          update("hebergements", copy);
+                        }}
+                      />
+                    </div>
+
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Photo</label>
+                      <PhotoField
+                        value={h.photo}
+                        onChange={(url) => {
+                          const copy = [...(dest.hebergements ?? [])];
+                          copy[i] = { ...copy[i], photo: url };
+                          update("hebergements", copy);
+                        }}
+                      />
+                    </div>
+
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Description</label>
+                      <input
+                        style={adminStyles.input}
+                        placeholder="ex : Villa sur pilotis, notre coup de cœur"
+                        value={h.description}
+                        onChange={(e) => {
+                          const copy = [...(dest.hebergements ?? [])];
+                          copy[i] = { ...copy[i], description: e.target.value };
+                          update("hebergements", copy);
+                        }}
+                      />
+                    </div>
+
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                      <div>
+                        <label style={microLabel}>Latitude</label>
+                        <input
+                          style={adminStyles.input}
+                          placeholder="ex : 5.3320"
+                          value={h.lat ?? ""}
+                          onChange={(e) => {
+                            const copy = [...(dest.hebergements ?? [])];
+                            copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
+                            update("hebergements", copy);
+                          }}
+                        />
+                      </div>
+                      <div>
+                        <label style={microLabel}>Longitude</label>
+                        <input
+                          style={adminStyles.input}
+                          placeholder="ex : 73.0708"
+                          value={h.lng ?? ""}
+                          onChange={(e) => {
+                            const copy = [...(dest.hebergements ?? [])];
+                            copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
+                            update("hebergements", copy);
+                          }}
+                        />
+                      </div>
+                    </div>
                   </div>
                 ))}
                 <button onClick={ajouterHebergement} style={smallLink}>+ Ajouter un hébergement</button>
@@ -233,70 +285,101 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   Restaurants ({dest.restaurants.length}/5)
                 </div>
                 {dest.restaurants.map((r, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Nom"
-                      value={r.nom}
-                      onChange={(e) => {
-                        const copy = [...dest.restaurants];
-                        copy[i] = { ...copy[i], nom: e.target.value };
-                        update("restaurants", copy);
-                      }}
-                    />
-                    <PhotoField
-                      style={{ flex: 1 }}
-                      value={r.photo}
-                      onChange={(url) => {
-                        const copy = [...dest.restaurants];
-                        copy[i] = { ...copy[i], photo: url };
-                        update("restaurants", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, width: 130 }}
-                      placeholder="Cuisine"
-                      value={r.cuisine}
-                      onChange={(e) => {
-                        const copy = [...dest.restaurants];
-                        copy[i] = { ...copy[i], cuisine: e.target.value };
-                        update("restaurants", copy);
-                      }}
-                    />
-                    <select
-                      style={{ ...adminStyles.input, width: 80 }}
-                      value={r.prix}
-                      onChange={(e) => {
-                        const copy = [...dest.restaurants];
-                        copy[i] = { ...copy[i], prix: e.target.value as Restaurant["prix"] };
-                        update("restaurants", copy);
-                      }}
+                  <div key={i} style={itemCard}>
+                    <button
+                      onClick={() => supprimerLigne("restaurants", i)}
+                      style={{ ...adminStyles.btnDelete, position: "absolute", top: 10, right: 10 }}
+                      title="Supprimer ce restaurant"
                     >
-                      <option value="€">€</option>
-                      <option value="€€">€€</option>
-                      <option value="€€€">€€€</option>
-                    </select>
-                    <input
-                      style={{ ...adminStyles.input, width: 90 }}
-                      placeholder="Latitude"
-                      value={r.lat ?? ""}
-                      onChange={(e) => {
-                        const copy = [...dest.restaurants];
-                        copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
-                        update("restaurants", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, width: 90 }}
-                      placeholder="Longitude"
-                      value={r.lng ?? ""}
-                      onChange={(e) => {
-                        const copy = [...dest.restaurants];
-                        copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
-                        update("restaurants", copy);
-                      }}
-                    />
-                    <button onClick={() => supprimerLigne("restaurants", i)} style={adminStyles.btnDelete}>✕</button>
+                      ✕
+                    </button>
+
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Nom</label>
+                      <input
+                        style={adminStyles.input}
+                        placeholder="ex : The Sea House"
+                        value={r.nom}
+                        onChange={(e) => {
+                          const copy = [...dest.restaurants];
+                          copy[i] = { ...copy[i], nom: e.target.value };
+                          update("restaurants", copy);
+                        }}
+                      />
+                    </div>
+
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Photo</label>
+                      <PhotoField
+                        value={r.photo}
+                        onChange={(url) => {
+                          const copy = [...dest.restaurants];
+                          copy[i] = { ...copy[i], photo: url };
+                          update("restaurants", copy);
+                        }}
+                      />
+                    </div>
+
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 90px", gap: 10, marginBottom: 10 }}>
+                      <div>
+                        <label style={microLabel}>Cuisine</label>
+                        <input
+                          style={adminStyles.input}
+                          placeholder="ex : Fruits de mer"
+                          value={r.cuisine}
+                          onChange={(e) => {
+                            const copy = [...dest.restaurants];
+                            copy[i] = { ...copy[i], cuisine: e.target.value };
+                            update("restaurants", copy);
+                          }}
+                        />
+                      </div>
+                      <div>
+                        <label style={microLabel}>Prix</label>
+                        <select
+                          style={adminStyles.input}
+                          value={r.prix}
+                          onChange={(e) => {
+                            const copy = [...dest.restaurants];
+                            copy[i] = { ...copy[i], prix: e.target.value as Restaurant["prix"] };
+                            update("restaurants", copy);
+                          }}
+                        >
+                          <option value="€">€</option>
+                          <option value="€€">€€</option>
+                          <option value="€€€">€€€</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                      <div>
+                        <label style={microLabel}>Latitude</label>
+                        <input
+                          style={adminStyles.input}
+                          placeholder="ex : 4.1898"
+                          value={r.lat ?? ""}
+                          onChange={(e) => {
+                            const copy = [...dest.restaurants];
+                            copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
+                            update("restaurants", copy);
+                          }}
+                        />
+                      </div>
+                      <div>
+                        <label style={microLabel}>Longitude</label>
+                        <input
+                          style={adminStyles.input}
+                          placeholder="ex : 73.5295"
+                          value={r.lng ?? ""}
+                          onChange={(e) => {
+                            const copy = [...dest.restaurants];
+                            copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
+                            update("restaurants", copy);
+                          }}
+                        />
+                      </div>
+                    </div>
                   </div>
                 ))}
                 {dest.restaurants.length < 5 && (
@@ -309,57 +392,83 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   Sites & activités ({dest.activites.length}/5)
                 </div>
                 {dest.activites.map((a, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Nom"
-                      value={a.nom}
-                      onChange={(e) => {
-                        const copy = [...dest.activites];
-                        copy[i] = { ...copy[i], nom: e.target.value };
-                        update("activites", copy);
-                      }}
-                    />
-                    <PhotoField
-                      style={{ flex: 1 }}
-                      value={a.photo}
-                      onChange={(url) => {
-                        const copy = [...dest.activites];
-                        copy[i] = { ...copy[i], photo: url };
-                        update("activites", copy);
-                      }}
-                    />
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Description"
-                      value={a.description}
-                      onChange={(e) => {
-                        const copy = [...dest.activites];
-                        copy[i] = { ...copy[i], description: e.target.value };
-                        update("activites", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, width: 90 }}
-                      placeholder="Latitude"
-                      value={a.lat ?? ""}
-                      onChange={(e) => {
-                        const copy = [...dest.activites];
-                        copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
-                        update("activites", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, width: 90 }}
-                      placeholder="Longitude"
-                      value={a.lng ?? ""}
-                      onChange={(e) => {
-                        const copy = [...dest.activites];
-                        copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
-                        update("activites", copy);
-                      }}
-                    />
-                    <button onClick={() => supprimerLigne("activites", i)} style={adminStyles.btnDelete}>✕</button>
+                  <div key={i} style={itemCard}>
+                    <button
+                      onClick={() => supprimerLigne("activites", i)}
+                      style={{ ...adminStyles.btnDelete, position: "absolute", top: 10, right: 10 }}
+                      title="Supprimer cette activité"
+                    >
+                      ✕
+                    </button>
+
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Nom</label>
+                      <input
+                        style={adminStyles.input}
+                        placeholder="ex : Marché aux poissons"
+                        value={a.nom}
+                        onChange={(e) => {
+                          const copy = [...dest.activites];
+                          copy[i] = { ...copy[i], nom: e.target.value };
+                          update("activites", copy);
+                        }}
+                      />
+                    </div>
+
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Photo</label>
+                      <PhotoField
+                        value={a.photo}
+                        onChange={(url) => {
+                          const copy = [...dest.activites];
+                          copy[i] = { ...copy[i], photo: url };
+                          update("activites", copy);
+                        }}
+                      />
+                    </div>
+
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Description</label>
+                      <input
+                        style={adminStyles.input}
+                        placeholder="ex : Marché traditionnel très animé"
+                        value={a.description}
+                        onChange={(e) => {
+                          const copy = [...dest.activites];
+                          copy[i] = { ...copy[i], description: e.target.value };
+                          update("activites", copy);
+                        }}
+                      />
+                    </div>
+
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                      <div>
+                        <label style={microLabel}>Latitude</label>
+                        <input
+                          style={adminStyles.input}
+                          placeholder="ex : 4.1746"
+                          value={a.lat ?? ""}
+                          onChange={(e) => {
+                            const copy = [...dest.activites];
+                            copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
+                            update("activites", copy);
+                          }}
+                        />
+                      </div>
+                      <div>
+                        <label style={microLabel}>Longitude</label>
+                        <input
+                          style={adminStyles.input}
+                          placeholder="ex : 73.5088"
+                          value={a.lng ?? ""}
+                          onChange={(e) => {
+                            const copy = [...dest.activites];
+                            copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
+                            update("activites", copy);
+                          }}
+                        />
+                      </div>
+                    </div>
                   </div>
                 ))}
                 {dest.activites.length < 5 && (
