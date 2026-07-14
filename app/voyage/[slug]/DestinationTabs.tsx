@@ -76,7 +76,11 @@ export default function DestinationTabs({
                 const aCoords = typeof r.lat === "number" && typeof r.lng === "number";
                 const contenu = (
                   <>
-                    <img src={r.photo} alt={r.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                    {r.photo ? (
+                      <img src={r.photo} alt={r.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                    ) : (
+                      <div className={styles.miniCardPlaceholder} />
+                    )}
                     <h4>{r.nom}</h4>
                     <div className={styles.meta}>{r.cuisine} · {r.prix}</div>
                     {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
@@ -111,7 +115,11 @@ export default function DestinationTabs({
                 const aCoords = typeof a.lat === "number" && typeof a.lng === "number";
                 const contenu = (
                   <>
-                    <img src={a.photo} alt={a.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                    {a.photo ? (
+                      <img src={a.photo} alt={a.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                    ) : (
+                      <div className={styles.miniCardPlaceholder} />
+                    )}
                     <h4>{a.nom}</h4>
                     <div className={styles.meta}>{a.description}</div>
                     {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}

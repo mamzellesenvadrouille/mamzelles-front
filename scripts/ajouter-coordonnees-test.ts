@@ -15,19 +15,19 @@ async function main() {
   if (male) {
     // Vrais restaurants existants à Malé
     const restosMale = [
-      { nom: "The Sea House", cuisine: "Fruits de mer, vue sur l'océan", prix: "€€" as const, lat: 4.1898, lng: 73.5295, photo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80" },
-      { nom: "Sala Thai Restaurant", cuisine: "Thaïlandais", prix: "€€" as const, lat: 4.1770, lng: 73.5108, photo: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80" },
-      { nom: "Mr. Octopus", cuisine: "Fruits de mer, italien", prix: "€€" as const, lat: 4.1748, lng: 73.5091, photo: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" },
-      { nom: "Seagull Café", cuisine: "Petit-déjeuner, desserts", prix: "€" as const, lat: 4.1735, lng: 73.5085, photo: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80" },
-      { nom: "Symphony Restaurant", cuisine: "Chinois, fruits de mer", prix: "€€€" as const, lat: 4.1741, lng: 73.5099, photo: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&q=80" },
+      { nom: "The Sea House", cuisine: "Fruits de mer, vue sur l'océan", prix: "€€" as const, lat: 4.1898, lng: 73.5295, photo: "" },
+      { nom: "Sala Thai Restaurant", cuisine: "Thaïlandais", prix: "€€" as const, lat: 4.1770, lng: 73.5108, photo: "" },
+      { nom: "Mr. Octopus", cuisine: "Fruits de mer, italien", prix: "€€" as const, lat: 4.1748, lng: 73.5091, photo: "" },
+      { nom: "Seagull Café", cuisine: "Petit-déjeuner, desserts", prix: "€" as const, lat: 4.1735, lng: 73.5085, photo: "" },
+      { nom: "Symphony Restaurant", cuisine: "Chinois, fruits de mer", prix: "€€€" as const, lat: 4.1741, lng: 73.5099, photo: "" },
     ];
     // Vrais sites et activités existants à Malé
     const activitesMale = [
-      { nom: "Marché aux poissons de Malé", description: "Marché traditionnel très animé, la vraie vie locale", lat: 4.1746, lng: 73.5088, photo: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&q=80" },
-      { nom: "Grande Mosquée du Vendredi (Hukuru Miskiy)", description: "Mosquée en pierre de corail du 17e siècle", lat: 4.1752, lng: 73.5097, photo: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80" },
-      { nom: "Musée National des Maldives", description: "Collection d'objets royaux et historiques", lat: 4.1759, lng: 73.5104, photo: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&q=80" },
-      { nom: "Sultan Park", description: "Ancien jardin royal, havre de verdure en pleine ville", lat: 4.1757, lng: 73.5102, photo: "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?w=400&q=80" },
-      { nom: "Monument du Tsunami", description: "Mémorial en hommage aux victimes de 2004", lat: 4.1720, lng: 73.5145, photo: "https://images.unsplash.com/photo-1518509562904-e7ef99cddff8?w=400&q=80" },
+      { nom: "Marché aux poissons de Malé", description: "Marché traditionnel très animé, la vraie vie locale", lat: 4.1746, lng: 73.5088, photo: "" },
+      { nom: "Grande Mosquée du Vendredi (Hukuru Miskiy)", description: "Mosquée en pierre de corail du 17e siècle", lat: 4.1752, lng: 73.5097, photo: "" },
+      { nom: "Musée National des Maldives", description: "Collection d'objets royaux et historiques", lat: 4.1759, lng: 73.5104, photo: "" },
+      { nom: "Sultan Park", description: "Ancien jardin royal, havre de verdure en pleine ville", lat: 4.1757, lng: 73.5102, photo: "" },
+      { nom: "Monument du Tsunami", description: "Mémorial en hommage aux victimes de 2004", lat: 4.1720, lng: 73.5145, photo: "" },
     ];
     await saveDestination({
       id: "male",
@@ -35,7 +35,7 @@ async function main() {
       photo: male.photo,
       deroule: male.deroule,
       hebergements: [
-        { nom: "Hulhule Island Hotel", photo: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=300&q=80", description: "Idéal pour une nuit avant le transfert vers l'atoll", lat: 4.1919, lng: 73.5285 },
+        { nom: "Hulhule Island Hotel", photo: "", description: "Idéal pour une nuit avant le transfert vers l'atoll", lat: 4.1919, lng: 73.5285 },
       ],
       restaurants: male.restaurants.map((r, i) => ({ ...r, ...restosMale[i] })),
       activites: male.activites.map((a, i) => ({ ...a, ...activitesMale[i] })),
@@ -71,7 +71,7 @@ async function main() {
       photo: baaAtoll.photo,
       deroule: baaAtoll.deroule,
       hebergements: [
-        { nom: "Soneva Fushi", photo: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=300&q=80", description: "Villa sur pilotis, notre coup de cœur pour ce voyage", lat: 5.3320, lng: 73.0708 },
+        { nom: "Soneva Fushi", photo: "", description: "Villa sur pilotis, notre coup de cœur pour ce voyage", lat: 5.3320, lng: 73.0708 },
       ],
       restaurants: baaAtoll.restaurants.map((r, i) => ({ ...r, ...restosBaa[i] })),
       activites: baaAtoll.activites.map((a, i) => ({ ...a, ...activitesBaa[i] })),
