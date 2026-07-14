@@ -23,11 +23,11 @@ async function main() {
     ];
     // Vrais sites et activités existants à Malé
     const activitesMale = [
-      { nom: "Marché aux poissons de Malé", description: "Marché traditionnel très animé, la vraie vie locale", lat: 4.1746, lng: 73.5088, photo: "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=400&q=80" },
-      { nom: "Grande Mosquée du Vendredi (Hukuru Miskiy)", description: "Mosquée en pierre de corail du 17e siècle", lat: 4.1752, lng: 73.5097, photo: "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=400&q=80" },
-      { nom: "Musée National des Maldives", description: "Collection d'objets royaux et historiques", lat: 4.1759, lng: 73.5104, photo: "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=400&q=80" },
-      { nom: "Sultan Park", description: "Ancien jardin royal, havre de verdure en pleine ville", lat: 4.1757, lng: 73.5102, photo: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80" },
-      { nom: "Monument du Tsunami", description: "Mémorial en hommage aux victimes de 2004", lat: 4.1720, lng: 73.5145, photo: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&q=80" },
+      { nom: "Marché aux poissons de Malé", description: "Marché traditionnel très animé, la vraie vie locale", lat: 4.1746, lng: 73.5088, photo: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&q=80" },
+      { nom: "Grande Mosquée du Vendredi (Hukuru Miskiy)", description: "Mosquée en pierre de corail du 17e siècle", lat: 4.1752, lng: 73.5097, photo: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80" },
+      { nom: "Musée National des Maldives", description: "Collection d'objets royaux et historiques", lat: 4.1759, lng: 73.5104, photo: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&q=80" },
+      { nom: "Sultan Park", description: "Ancien jardin royal, havre de verdure en pleine ville", lat: 4.1757, lng: 73.5102, photo: "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?w=400&q=80" },
+      { nom: "Monument du Tsunami", description: "Mémorial en hommage aux victimes de 2004", lat: 4.1720, lng: 73.5145, photo: "https://images.unsplash.com/photo-1518509562904-e7ef99cddff8?w=400&q=80" },
     ];
     await saveDestination({
       id: "male",
