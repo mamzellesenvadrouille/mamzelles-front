@@ -56,6 +56,7 @@ export default function AdminDestinationsPage() {
               <thead>
                 <tr>
                   <th style={adminStyles.th}>Nom</th>
+                  <th style={adminStyles.th}>Hébergements</th>
                   <th style={adminStyles.th}>Restaurants</th>
                   <th style={adminStyles.th}>Activités</th>
                   <th style={adminStyles.th}>Lien</th>
@@ -65,6 +66,7 @@ export default function AdminDestinationsPage() {
                 {destinations.map((d, i) => (
                   <tr key={d.id} style={i % 2 === 0 ? adminStyles.trOdd : adminStyles.trEven}>
                     <td style={adminStyles.td}>{d.nom}</td>
+                    <td style={adminStyles.td}>{d.hebergements?.length ?? 0}</td>
                     <td style={adminStyles.td}>{d.restaurants?.length ?? 0}</td>
                     <td style={adminStyles.td}>{d.activites?.length ?? 0}</td>
                     <td style={adminStyles.td}>

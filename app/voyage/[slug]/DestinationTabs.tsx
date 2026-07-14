@@ -51,6 +51,45 @@ export default function DestinationTabs({
           </div>
         </div>
 
+        {(dest.hebergements ?? []).length > 0 && (
+          <>
+            <div className={styles.subEyebrow}>
+              Hébergement{(dest.hebergements ?? []).length > 1 ? "s" : ""}
+            </div>
+            <div className={styles.miniGrid}>
+              {(dest.hebergements ?? []).map((h, i) => {
+                const aCoords = typeof h.lat === "number" && typeof h.lng === "number";
+                const contenu = (
+                  <>
+                    {h.photo ? (
+                      <img src={h.photo} alt={h.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                    ) : (
+                      <div className={styles.miniCardPlaceholder} />
+                    )}
+                    <h4>{h.nom}</h4>
+                    <div className={styles.meta}>{h.description}</div>
+                    {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
+                  </>
+                );
+                return aCoords ? (
+                  <button
+                    type="button"
+                    onClick={() => centrerSurLeLieu(h.lat, h.lng, h.nom)}
+                    className={styles.miniCard}
+                    key={i}
+                  >
+                    {contenu}
+                  </button>
+                ) : (
+                  <div className={styles.miniCard} key={i}>
+                    {contenu}
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
+
         {dest.deroule.length > 0 && (
           <>
             <div className={styles.subEyebrow}>Déroulé</div>
