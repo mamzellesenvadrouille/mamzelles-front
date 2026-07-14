@@ -188,6 +188,18 @@ export default async function CarnetPage({
         </section>
       )}
 
+      {carnet.checklistVoyage && carnet.checklistVoyage.length > 0 && (
+        <section className={styles.wrap}>
+          <div className={styles.sectionHead}>
+            <span className={styles.eyebrow}>Démarches à prévoir</span>
+            <h2 className={styles.display2}>
+              Checklist <em>voyage</em>
+            </h2>
+          </div>
+          <CheckList items={carnet.checklistVoyage} storageKey={`mamzelles-checklist-voyage-${carnet.slug}`} />
+        </section>
+      )}
+
       {carnet.contactsUrgence && carnet.contactsUrgence.length > 0 && (
         <section className={styles.wrap}>
           <div className={styles.sectionHead}>
