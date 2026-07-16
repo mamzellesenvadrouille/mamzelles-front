@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import { getCarnetComplet } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
-import ParcoursMap from "./ParcoursMap";
+import ParcoursSection from "./ParcoursSection";
 import CheckList from "./CheckList";
 import styles from "./carnet.module.css";
 
@@ -74,17 +74,11 @@ export default async function CarnetPage({
             {carnet.parcours.length} <em>étapes</em>
           </h2>
         </div>
-        <div className={styles.routeList}>
-          {carnet.parcours.map((etape, i) => (
-            <div className={styles.routeStep} key={i}>
-              <div className={styles.idx}>{String(i + 1).padStart(2, "0")}</div>
-              <div className={styles.name}>{etape}</div>
-            </div>
-          ))}
-        </div>
-        {carnet.parcoursCoords && carnet.parcoursCoords.length >= 2 && (
-          <ParcoursMap etapes={carnet.parcoursCoords} apiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""} />
-        )}
+        <ParcoursSection
+          parcours={carnet.parcours}
+          parcoursCoords={carnet.parcoursCoords}
+          apiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""}
+        />
       </section>
 
       <section className={styles.wrap}>
