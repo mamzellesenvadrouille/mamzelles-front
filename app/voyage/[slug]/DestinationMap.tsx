@@ -7,6 +7,7 @@ import { createRoot } from "react-dom/client";
 import { Bed, Utensils, Camera } from "lucide-react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
+import { chargerGoogleMaps } from "./googleMapsLoader";
 
 type Categorie = "hebergements" | "restaurants" | "activites";
 
@@ -15,29 +16,6 @@ const CATEGORIES: { key: Categorie; label: string; Icon: typeof Bed; color: stri
   { key: "restaurants", label: "Restaurants", Icon: Utensils, color: "#c8956c" },
   { key: "activites", label: "Activités", Icon: Camera, color: "#7a9e7e" },
 ];
-
-declare global {
-  interface Window {
-    google?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
-    __mamzellesMapsCallback?: () => void;
-  }
-}
-
-let scriptChargement: Promise<void> | null = null;
-
-function chargerGoogleMaps(apiKey: string): Promise<void> {
-  if (window.google?.maps) return Promise.resolve();
-  if (scriptChargement) return scriptChargement;
-
-  scriptChargement = new Promise((resolve) => {
-    window.__mamzellesMapsCallback = () => resolve();
-    const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=marker&callback=__mamzellesMapsCallback&loading=async`;
-    script.async = true;
-    document.head.appendChild(script);
-  });
-  return scriptChargement;
-}
 
 export interface DestinationMapHandle {
   centrerSur: (lat: number, lng: number, nom: string) => void;

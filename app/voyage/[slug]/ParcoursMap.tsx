@@ -10,28 +10,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { EtapeParcours } from "@/lib/carnets";
 import styles from "./carnet.module.css";
-
-declare global {
-  interface Window {
-    google?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
-    __mamzellesMapsCallback?: () => void;
-  }
-}
-
-let scriptChargement: Promise<void> | null = null;
-
-function chargerGoogleMaps(apiKey: string): Promise<void> {
-  if (window.google?.maps) return Promise.resolve();
-  if (scriptChargement) return scriptChargement;
-  scriptChargement = new Promise((resolve) => {
-    window.__mamzellesMapsCallback = () => resolve();
-    const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=marker&callback=__mamzellesMapsCallback&loading=async`;
-    script.async = true;
-    document.head.appendChild(script);
-  });
-  return scriptChargement;
-}
+import { chargerGoogleMaps } from "./googleMapsLoader";
 
 // Distance à vol d'oiseau entre deux points (formule de Haversine), en km
 function distanceKm(a: EtapeParcours, b: EtapeParcours): number {
