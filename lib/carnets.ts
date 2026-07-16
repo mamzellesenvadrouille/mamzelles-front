@@ -81,6 +81,7 @@ export interface BudgetLigne {
 export interface ChecklistItem {
   label: string;
   coche: boolean;
+  url?: string; // lien de réservation cliquable (pour "Vos réservations" surtout)
 }
 
 export interface ContactUrgence {
@@ -92,6 +93,11 @@ export interface EtapeParcours {
   nom: string;
   lat: number;
   lng: number;
+}
+
+export interface DocumentVoyage {
+  nom: string; // ex: "Billet d'avion aller-retour"
+  url: string;
 }
 
 export interface Carnet {
@@ -113,6 +119,7 @@ export interface Carnet {
   reservations: ChecklistItem[];
   checklistValise: ChecklistItem[];
   checklistVoyage?: ChecklistItem[];
+  documents?: DocumentVoyage[];
   indispensables: { visa: string; passeport: string; vaccins: string; assurance: string; monnaie: string };
   contactsUrgence?: ContactUrgence[];
   // Gel automatique : une fois le voyage terminé, le contenu des destinations

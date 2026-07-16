@@ -5,6 +5,7 @@ import { getCarnetComplet } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
 import CheckList from "./CheckList";
+import ReservationList from "./ReservationList";
 import styles from "./carnet.module.css";
 
 export default async function CarnetPage({
@@ -154,7 +155,7 @@ export default async function CarnetPage({
               Vos <em>réservations</em>
             </h2>
           </div>
-          <CheckList items={carnet.reservations} storageKey={`mamzelles-checklist-reservations-${carnet.slug}`} />
+          <ReservationList items={carnet.reservations} storageKey={`mamzelles-reservations-${carnet.slug}`} />
         </section>
       )}
 
@@ -197,6 +198,7 @@ export default async function CarnetPage({
           <CheckList items={carnet.checklistVoyage} storageKey={`mamzelles-checklist-voyage-${carnet.slug}`} />
         </section>
       )}
+
 
       {carnet.contactsUrgence && carnet.contactsUrgence.length > 0 && (
         <section className={styles.wrap}>

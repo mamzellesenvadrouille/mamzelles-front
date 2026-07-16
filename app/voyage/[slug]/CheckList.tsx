@@ -43,6 +43,18 @@ export default function CheckList({ items, storageKey }: { items: ChecklistItem[
     });
   }
 
+  function marquerReserve(i: number) {
+    setCoches((prev) => {
+      const next = prev.map((v, idx) => (idx === i ? true : v));
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(next));
+      } catch {
+        // pas grave si ça échoue
+      }
+      return next;
+    });
+  }
+
   return (
     <div className={styles.checkList}>
       {items.map((item, i) => (
@@ -53,6 +65,20 @@ export default function CheckList({ items, storageKey }: { items: ChecklistItem[
         >
           <div className={styles.checkBox} />
           <div className={styles.checkLabel}>{item.label}</div>
+          {item.url && (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                e.stopPropagation();
+                marquerReserve(i);
+              }}
+              style={{ marginLeft: "auto", fontSize: 12.5, color: "#c8956c", fontWeight: 500, whiteSpace: "nowrap" }}
+            >
+              Réserver →
+            </a>
+          )}
         </div>
       ))}
     </div>

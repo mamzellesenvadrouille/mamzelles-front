@@ -79,6 +79,7 @@ const carnetVide: Carnet = {
   ],
   indispensables: { visa: "", passeport: "", vaccins: "", assurance: "", monnaie: "" },
   contactsUrgence: [],
+  documents: [],
   createdAt: "",
   updatedAt: "",
 };
@@ -512,18 +513,39 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
               </div>
 
               <div style={sectionWrap}>
-                <div style={sectionTitle}>Checklist réservations</div>
+                <div style={sectionTitle}>Vos réservations</div>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
+                  Un lien de réservation par ligne (Skyscanner, Booking.com, site de l&apos;hôtel...). Le client coche automatiquement en cliquant dessus.
+                </p>
                 {carnet.reservations.map((item, i) => (
-                  <input
-                    key={i}
-                    style={{ ...adminStyles.input, marginBottom: 10 }}
-                    value={item.label}
-                    onChange={(e) => {
-                      const copy = [...carnet.reservations];
-                      copy[i] = { ...copy[i], label: e.target.value };
-                      update("reservations", copy);
-                    }}
-                  />
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                    <input
+                      style={{ ...adminStyles.input, flex: 1 }}
+                      placeholder="ex : Vol aller Paris → Malé"
+                      value={item.label}
+                      onChange={(e) => {
+                        const copy = [...carnet.reservations];
+                        copy[i] = { ...copy[i], label: e.target.value };
+                        update("reservations", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, flex: 1 }}
+                      placeholder="Lien de réservation (optionnel)"
+                      value={item.url ?? ""}
+                      onChange={(e) => {
+                        const copy = [...carnet.reservations];
+                        copy[i] = { ...copy[i], url: e.target.value };
+                        update("reservations", copy);
+                      }}
+                    />
+                    <button
+                      onClick={() => update("reservations", carnet.reservations.filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                    >
+                      ✕
+                    </button>
+                  </div>
                 ))}
                 <button onClick={() => ajouterCheckItem("reservations")} style={smallLink}>+ Ajouter</button>
               </div>
