@@ -51,7 +51,6 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
         infoWindowRef.current = new window.google.maps.InfoWindow({
           position: { lat: e.lat, lng: e.lng },
           content: `<div style="font-family:'Cormorant Garamond',serif;font-size:15px;font-style:normal;color:#1a1512;padding:0;line-height:1.2;">${e.nom}</div>`,
-          headerDisabled: true,
         });
         infoWindowRef.current.open(mapInstance.current);
         wrapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -104,7 +103,6 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
               infoWindowRef.current = new window.google.maps.InfoWindow({
                 position: { lat: e.lat, lng: e.lng },
                 content: `<div style="font-family:'Cormorant Garamond',serif;font-size:15px;font-style:normal;color:#1a1512;padding:0;line-height:1.2;">${e.nom}</div>`,
-                headerDisabled: true,
               });
               infoWindowRef.current.open(map);
             });
