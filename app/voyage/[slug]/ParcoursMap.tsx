@@ -50,7 +50,8 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
         if (infoWindowRef.current) infoWindowRef.current.close();
         infoWindowRef.current = new window.google.maps.InfoWindow({
           position: { lat: e.lat, lng: e.lng },
-          content: `<div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:#1a1512;padding:4px 6px;">${e.nom}</div>`,
+          content: `<div style="font-family:'Cormorant Garamond',serif;font-size:15px;font-style:normal;color:#1a1512;padding:0;line-height:1.2;">${e.nom}</div>`,
+          headerDisabled: true,
         });
         infoWindowRef.current.open(mapInstance.current);
         wrapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -89,7 +90,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
           etapes.forEach((e, i) => {
             const pin = document.createElement("div");
             pin.style.cssText =
-              "background:#c8956c;color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;font-weight:500;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);cursor:pointer;";
+              "background:#c8956c;color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Inter,sans-serif;font-style:normal;font-size:12px;font-weight:600;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);cursor:pointer;";
             pin.textContent = String(i + 1);
             const marker = new window.google.maps.marker.AdvancedMarkerElement({
               map,
@@ -102,7 +103,8 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
               if (infoWindowRef.current) infoWindowRef.current.close();
               infoWindowRef.current = new window.google.maps.InfoWindow({
                 position: { lat: e.lat, lng: e.lng },
-                content: `<div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:#1a1512;padding:4px 6px;">${e.nom}</div>`,
+                content: `<div style="font-family:'Cormorant Garamond',serif;font-size:15px;font-style:normal;color:#1a1512;padding:0;line-height:1.2;">${e.nom}</div>`,
+                headerDisabled: true,
               });
               infoWindowRef.current.open(map);
             });
