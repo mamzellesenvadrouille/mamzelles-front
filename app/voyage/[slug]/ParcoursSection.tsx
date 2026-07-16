@@ -25,17 +25,24 @@ export default function ParcoursSection({
   return (
     <>
       <div className={styles.routeList}>
-        {parcours.map((etape, i) => (
-          <div
-            className={styles.routeStep}
-            key={i}
-            onClick={aUneCarte ? () => mapHandleRef.current?.centrerSur(i) : undefined}
-            style={aUneCarte ? { cursor: "pointer" } : undefined}
-          >
-            <div className={styles.idx}>{String(i + 1).padStart(2, "0")}</div>
-            <div className={styles.name}>{etape}</div>
-          </div>
-        ))}
+        {parcours.map((etape, i) =>
+          aUneCarte ? (
+            <button
+              type="button"
+              className={styles.routeStep}
+              key={i}
+              onClick={() => mapHandleRef.current?.centrerSur(i)}
+            >
+              <div className={styles.idx}>{i + 1}</div>
+              <div className={styles.name}>{etape}</div>
+            </button>
+          ) : (
+            <div className={styles.routeStep} key={i}>
+              <div className={styles.idx}>{i + 1}</div>
+              <div className={styles.name}>{etape}</div>
+            </div>
+          )
+        )}
       </div>
       {aUneCarte && <ParcoursMap ref={mapHandleRef} etapes={parcoursCoords!} apiKey={apiKey} />}
     </>

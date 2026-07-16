@@ -50,7 +50,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
         if (infoWindowRef.current) infoWindowRef.current.close();
         infoWindowRef.current = new window.google.maps.InfoWindow({
           position: { lat: e.lat, lng: e.lng },
-          content: `<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;padding:2px 4px;">${e.nom}</div>`,
+          content: `<div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:#1a1512;padding:4px 6px;">${e.nom}</div>`,
         });
         infoWindowRef.current.open(mapInstance.current);
         wrapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -102,7 +102,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
               if (infoWindowRef.current) infoWindowRef.current.close();
               infoWindowRef.current = new window.google.maps.InfoWindow({
                 position: { lat: e.lat, lng: e.lng },
-                content: `<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;padding:2px 4px;">${e.nom}</div>`,
+                content: `<div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:#1a1512;padding:4px 6px;">${e.nom}</div>`,
               });
               infoWindowRef.current.open(map);
             });
