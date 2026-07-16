@@ -88,6 +88,12 @@ export interface ContactUrgence {
   valeur: string; // ex: numéro de téléphone ou email
 }
 
+export interface EtapeParcours {
+  nom: string;
+  lat: number;
+  lng: number;
+}
+
 export interface Carnet {
   slug: string; // ex: "julie-thomas-maldives"
   client: {
@@ -100,6 +106,7 @@ export interface Carnet {
   bienvenue: { message: string };
   overview: { meteo: string; budget: number; decalage: string; dureeJours: number };
   parcours: string[]; // ex: ["Paris", "Malé", "Baa Atoll", "Paris"]
+  parcoursCoords?: EtapeParcours[]; // mêmes étapes, mais avec coordonnées GPS pour la carte du trajet
   destinations: CarnetDestinationRef[];
   conseils: ConseilMamZelles[];
   budget: BudgetLigne[];

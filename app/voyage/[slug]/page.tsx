@@ -3,6 +3,7 @@
 import { notFound } from "next/navigation";
 import { getCarnetComplet } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
+import ParcoursMap from "./ParcoursMap";
 import CheckList from "./CheckList";
 import styles from "./carnet.module.css";
 
@@ -81,6 +82,9 @@ export default async function CarnetPage({
             </div>
           ))}
         </div>
+        {carnet.parcoursCoords && carnet.parcoursCoords.length >= 2 && (
+          <ParcoursMap etapes={carnet.parcoursCoords} apiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""} />
+        )}
       </section>
 
       <section className={styles.wrap}>
