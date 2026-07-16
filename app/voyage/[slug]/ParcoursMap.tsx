@@ -89,7 +89,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
           etapes.forEach((e, i) => {
             const pin = document.createElement("div");
             pin.style.cssText =
-              "background:#1a1512;color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Inter,sans-serif;font-size:12px;font-weight:600;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);cursor:pointer;";
+              "background:#c8956c;color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;font-weight:500;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);cursor:pointer;";
             pin.textContent = String(i + 1);
             const marker = new window.google.maps.marker.AdvancedMarkerElement({
               map,
