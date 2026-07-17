@@ -22,11 +22,26 @@ export default async function CarnetPage({
   // Météo en temps réel pour CHAQUE destination (îles différentes = climats différents)
   const meteoParDestination = await Promise.all(
     carnet.destinationsCompletes.map((dest) =>
-      typeof dest.meteoLat === "number" && typeof dest.meteoLng === "number"
-        ? getMeteoActuelle(dest.meteoLat, dest.meteoLng)
+      typeof dest.lat === "number" && typeof dest.lng === "number"
+        ? getMeteoActuelle(dest.lat, dest.lng)
         : Promise.resolve(null)
     )
   );
+
+  // Étapes du parcours construites automatiquement : ville de départ → chaque destination du carnet → retour.
+  // Si "villeDepart" n'est pas renseignée, on retombe sur la saisie manuelle historique.
+  const etapesAuto =
+    carnet.villeDepart && typeof carnet.villeDepart.lat === "number" && typeof carnet.villeDepart.lng === "number"
+      ? [
+          carnet.villeDepart,
+          ...carnet.destinationsCompletes
+            .filter((d): d is typeof d & { lat: number; lng: number } => typeof d.lat === "number" && typeof d.lng === "number")
+            .map((d) => ({ nom: d.nom, lat: d.lat, lng: d.lng })),
+          carnet.villeDepart,
+        ]
+      : null;
+  const parcoursCoordsAffiche = etapesAuto ?? carnet.parcoursCoords ?? [];
+  const parcoursNomsAffiches = etapesAuto ? etapesAuto.map((e) => e.nom) : carnet.parcours;
 
   // Compte à rebours avant le départ (uniquement si le voyage n'a pas encore commencé)
   const aujourdhui = new Date();
@@ -96,12 +111,12 @@ export default async function CarnetPage({
         <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Le parcours</span>
           <h2 className={styles.display2}>
-            {carnet.parcours.length} <em>étapes</em>
+            {parcoursNomsAffiches.length} <em>étapes</em>
           </h2>
         </div>
         <ParcoursSection
-          parcours={carnet.parcours}
-          parcoursCoords={carnet.parcoursCoords}
+          parcours={parcoursNomsAffiches}
+          parcoursCoords={parcoursCoordsAffiche}
           apiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""}
         />
       </section>

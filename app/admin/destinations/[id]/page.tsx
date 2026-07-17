@@ -148,6 +148,29 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   <label style={adminStyles.label}>Photo (URL)</label>
                   <input style={adminStyles.input} value={dest.photo} onChange={(e) => update("photo", e.target.value)} />
                 </div>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: 12, marginBottom: 6 }}>
+                  Coordonnées GPS de la destination (utilisées pour la météo en temps réel et la carte du parcours dans les carnets — une seule fois ici, plus besoin de les ressaisir ailleurs).
+                </p>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                  <div>
+                    <label style={microLabel}>Latitude</label>
+                    <input
+                      style={adminStyles.input}
+                      placeholder="ex : 5.3320"
+                      value={dest.lat ?? ""}
+                      onChange={(e) => update("lat", e.target.value ? Number(e.target.value) : undefined)}
+                    />
+                  </div>
+                  <div>
+                    <label style={microLabel}>Longitude</label>
+                    <input
+                      style={adminStyles.input}
+                      placeholder="ex : 73.0708"
+                      value={dest.lng ?? ""}
+                      onChange={(e) => update("lng", e.target.value ? Number(e.target.value) : undefined)}
+                    />
+                  </div>
+                </div>
               </div>
 
               <div style={sectionWrap}>
@@ -487,33 +510,6 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   </div>
                 ))}
                 <button onClick={ajouterConseilDeplacement} style={smallLink}>+ Ajouter un conseil</button>
-              </div>
-
-              <div style={sectionWrap}>
-                <div style={sectionTitle}>Météo en temps réel de cette destination</div>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
-                  Optionnel. Utile si le voyage a plusieurs destinations avec des climats différents (ex : plusieurs îles des Philippines).
-                </p>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-                  <div>
-                    <label style={microLabel}>Latitude</label>
-                    <input
-                      style={adminStyles.input}
-                      placeholder="ex : 5.3320"
-                      value={dest.meteoLat ?? ""}
-                      onChange={(e) => update("meteoLat", e.target.value ? Number(e.target.value) : undefined)}
-                    />
-                  </div>
-                  <div>
-                    <label style={microLabel}>Longitude</label>
-                    <input
-                      style={adminStyles.input}
-                      placeholder="ex : 73.0708"
-                      value={dest.meteoLng ?? ""}
-                      onChange={(e) => update("meteoLng", e.target.value ? Number(e.target.value) : undefined)}
-                    />
-                  </div>
-                </div>
               </div>
 
               <button onClick={enregistrer} disabled={saving} style={adminStyles.btnGold}>

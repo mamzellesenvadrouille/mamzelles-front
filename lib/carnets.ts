@@ -45,13 +45,13 @@ export interface Destination {
   id: string; // slug normalisé, ex: "baa-atoll"
   nom: string;
   photo: string;
+  lat?: number; // coordonnée GPS de la destination elle-même (météo + carte du parcours)
+  lng?: number;
   deroule: DeroulePoint[];
   hebergements?: Hebergement[];
   restaurants: Restaurant[]; // objectif 5
   activites: Activite[]; // objectif 5
   seDeplacer: string[]; // liste de conseils pratiques
-  meteoLat?: number; // coordonnées pour la météo temps réel de cette destination précise
-  meteoLng?: number;
   updatedAt: string;
 }
 
@@ -116,7 +116,8 @@ export interface Carnet {
   meteoLat?: number; // coordonnées pour la météo en temps réel (Open-Meteo, sans clé API)
   meteoLng?: number;
   parcours: string[]; // ex: ["Paris", "Malé", "Baa Atoll", "Paris"]
-  parcoursCoords?: EtapeParcours[]; // mêmes étapes, mais avec coordonnées GPS pour la carte du trajet
+  parcoursCoords?: EtapeParcours[]; // repli manuel si "villeDepart" n'est pas renseignée
+  villeDepart?: EtapeParcours; // ville de départ/retour du client — permet de construire les étapes automatiquement à partir des destinations du carnet
   destinations: CarnetDestinationRef[];
   conseils: ConseilMamZelles[];
   budget: BudgetLigne[];

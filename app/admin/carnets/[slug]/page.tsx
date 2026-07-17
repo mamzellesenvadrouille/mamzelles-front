@@ -297,9 +297,36 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
               </div>
 
               <div style={sectionWrap}>
-                <div style={sectionTitle}>Carte du trajet</div>
+                <div style={sectionTitle}>Ville de départ</div>
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
-                  Pour afficher une vraie carte du trajet (départ → destinations → retour), ajoute les coordonnées GPS de chaque étape ci-dessous, dans l&apos;ordre. Optionnel : sans coordonnées, seule la liste texte ci-dessus s&apos;affiche.
+                  Renseigne juste la ville de départ du client — les étapes du parcours (destinations incluses dans ce carnet) et leur carte se construisent ensuite automatiquement, dans l&apos;ordre où tu as ajouté les destinations ci-dessus.
+                </p>
+                <div style={{ display: "flex", gap: 8 }}>
+                  <input
+                    style={{ ...adminStyles.input, flex: 2 }}
+                    placeholder="ex : Paris"
+                    value={carnet.villeDepart?.nom ?? ""}
+                    onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { lat: 0, lng: 0 }), nom: e.target.value })}
+                  />
+                  <input
+                    style={{ ...adminStyles.input, flex: 1 }}
+                    placeholder="Latitude"
+                    value={carnet.villeDepart?.lat ?? ""}
+                    onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { nom: "", lng: 0 }), lat: Number(e.target.value) })}
+                  />
+                  <input
+                    style={{ ...adminStyles.input, flex: 1 }}
+                    placeholder="Longitude"
+                    value={carnet.villeDepart?.lng ?? ""}
+                    onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { nom: "", lat: 0 }), lng: Number(e.target.value) })}
+                  />
+                </div>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Carte du trajet (repli manuel)</div>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
+                  Uniquement si tu n&apos;as pas renseigné de ville de départ ci-dessus, ou pour un trajet avec des étapes particulières (escale, etc.). Sinon, ignore cette section.
                 </p>
                 {(carnet.parcoursCoords ?? []).map((etape, i) => (
                   <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
