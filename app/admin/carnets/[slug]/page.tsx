@@ -269,10 +269,6 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 <div style={sectionTitle}>Vue d&apos;ensemble</div>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                   <div style={adminStyles.field}>
-                    <label style={adminStyles.label}>Météo</label>
-                    <input style={adminStyles.input} placeholder="ex : 28°" value={carnet.overview.meteo} onChange={(e) => updateNested("overview", "meteo", e.target.value)} />
-                  </div>
-                  <div style={adminStyles.field}>
                     <label style={adminStyles.label}>Budget prévu (€)</label>
                     <input type="number" style={adminStyles.input} value={carnet.overview.budget} onChange={(e) => updateNested("overview", "budget", Number(e.target.value))} />
                   </div>
@@ -284,15 +280,6 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     <label style={adminStyles.label}>Durée (jours)</label>
                     <input type="number" style={adminStyles.input} value={carnet.overview.dureeJours} onChange={(e) => updateNested("overview", "dureeJours", Number(e.target.value))} />
                   </div>
-                </div>
-                <div style={adminStyles.field}>
-                  <label style={adminStyles.label}>Parcours (une étape par ligne)</label>
-                  <textarea
-                    style={{ ...adminStyles.textarea, minHeight: 60 }}
-                    placeholder={"Paris\nMalé\nBaa Atoll\nParis"}
-                    value={carnet.parcours.join("\n")}
-                    onChange={(e) => update("parcours", e.target.value.split("\n").filter(Boolean))}
-                  />
                 </div>
               </div>
 
@@ -321,59 +308,6 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { nom: "", lat: 0 }), lng: Number(e.target.value) })}
                   />
                 </div>
-              </div>
-
-              <div style={sectionWrap}>
-                <div style={sectionTitle}>Carte du trajet (repli manuel)</div>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
-                  Uniquement si tu n&apos;as pas renseigné de ville de départ ci-dessus, ou pour un trajet avec des étapes particulières (escale, etc.). Sinon, ignore cette section.
-                </p>
-                {(carnet.parcoursCoords ?? []).map((etape, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Nom (ex : Paris)"
-                      value={etape.nom}
-                      onChange={(e) => {
-                        const copy = [...(carnet.parcoursCoords ?? [])];
-                        copy[i] = { ...copy[i], nom: e.target.value };
-                        update("parcoursCoords", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, width: 110 }}
-                      placeholder="Latitude"
-                      value={etape.lat ?? ""}
-                      onChange={(e) => {
-                        const copy = [...(carnet.parcoursCoords ?? [])];
-                        copy[i] = { ...copy[i], lat: Number(e.target.value) };
-                        update("parcoursCoords", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, width: 110 }}
-                      placeholder="Longitude"
-                      value={etape.lng ?? ""}
-                      onChange={(e) => {
-                        const copy = [...(carnet.parcoursCoords ?? [])];
-                        copy[i] = { ...copy[i], lng: Number(e.target.value) };
-                        update("parcoursCoords", copy);
-                      }}
-                    />
-                    <button
-                      onClick={() => update("parcoursCoords", (carnet.parcoursCoords ?? []).filter((_, idx) => idx !== i))}
-                      style={adminStyles.btnDelete}
-                    >
-                      ✕
-                    </button>
-                  </div>
-                ))}
-                <button
-                  onClick={() => update("parcoursCoords", [...(carnet.parcoursCoords ?? []), { nom: "", lat: 0, lng: 0 }])}
-                  style={smallLink}
-                >
-                  + Ajouter une étape
-                </button>
               </div>
 
               <div style={sectionWrap}>
