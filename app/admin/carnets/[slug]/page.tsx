@@ -36,12 +36,12 @@ const carnetVide: Carnet = {
     { label: "Restaurant(s) coup de cœur réservé(s)", coche: false },
   ],
   checklistValise: [
-    { label: "Passeport valide (6 mois après le retour)", coche: false },
-    { label: "Visa si nécessaire", coche: false },
-    { label: "Billets d'avion / e-tickets imprimés ou sur le téléphone", coche: false },
-    { label: "Assurance voyage (contrat + numéro d'urgence)", coche: false },
+    // Uniquement des objets physiques à mettre dans le sac
+    { label: "Passeport et visa (si applicable)", coche: false },
+    { label: "Attestation d'assurance voyage (imprimée ou sur le téléphone)", coche: false },
+    { label: "Billets d'avion / e-tickets", coche: false },
+    { label: "Photocopies des papiers importants", coche: false },
     { label: "Carte bancaire internationale + un peu d'espèces", coche: false },
-    { label: "Photocopie des papiers importants (passeport, billets)", coche: false },
     { label: "Adaptateur de prise électrique", coche: false },
     { label: "Batterie externe et chargeurs", coche: false },
     { label: "Trousse à pharmacie de base (antidouleur, pansements...)", coche: false },
@@ -60,6 +60,7 @@ const carnetVide: Carnet = {
     { label: "Livre ou liseuse pour la détente", coche: false },
   ],
   checklistVoyage: [
+    // Uniquement des démarches/actions à faire, rien à emporter
     { label: "Vérifier la validité du passeport (6 mois après retour)", coche: false },
     { label: "Faire la demande de visa si nécessaire", coche: false },
     { label: "Vérifier les vaccins recommandés", coche: false },
@@ -67,12 +68,9 @@ const carnetVide: Carnet = {
     { label: "Prévenir la banque du voyage (paiements à l'étranger)", coche: false },
     { label: "Activer un forfait data international ou une carte SIM locale", coche: false },
     { label: "Télécharger les cartes hors-ligne (Google Maps, Maps.me)", coche: false },
-    { label: "Faire des photocopies / photos des papiers importants", coche: false },
     { label: "Vérifier la météo de la destination avant de faire la valise", coche: false },
-    { label: "Réserver le transport aéroport (aller et retour)", coche: false },
     { label: "Faire garder les animaux / arroser les plantes", coche: false },
     { label: "Suspendre ou rediriger le courrier", coche: false },
-    { label: "Vérifier les prises électriques du pays (adaptateur nécessaire ?)", coche: false },
     { label: "Enregistrer les numéros d'urgence sur place", coche: false },
     { label: "Prévenir un proche des dates et du lieu du voyage", coche: false },
     { label: "Faire le check-in en ligne du vol", coche: false },
