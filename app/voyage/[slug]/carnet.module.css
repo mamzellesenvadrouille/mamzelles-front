@@ -114,7 +114,7 @@
 }
 
 .sectionHead { margin-bottom: 44px; }
-.sectionHead .eyebrow { margin-bottom: 10px; }
+.sectionHead .eyebrow { margin-bottom: 14px; }
 
 .welcome { text-align: center; }
 .welcome .bodySerif { max-width: 440px; margin: var(--s3) auto; }
