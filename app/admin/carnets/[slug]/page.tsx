@@ -269,7 +269,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 <div style={sectionTitle}>Vue d&apos;ensemble</div>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                   <div style={adminStyles.field}>
-                    <label style={adminStyles.label}>Météo (valeur statique de secours)</label>
+                    <label style={adminStyles.label}>Météo</label>
                     <input style={adminStyles.input} placeholder="ex : 28°" value={carnet.overview.meteo} onChange={(e) => updateNested("overview", "meteo", e.target.value)} />
                   </div>
                   <div style={adminStyles.field}>
@@ -283,24 +283,6 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   <div style={adminStyles.field}>
                     <label style={adminStyles.label}>Durée (jours)</label>
                     <input type="number" style={adminStyles.input} value={carnet.overview.dureeJours} onChange={(e) => updateNested("overview", "dureeJours", Number(e.target.value))} />
-                  </div>
-                  <div style={adminStyles.field}>
-                    <label style={adminStyles.label}>Latitude météo (optionnel, active la météo en temps réel)</label>
-                    <input
-                      style={adminStyles.input}
-                      placeholder="ex : 5.3320"
-                      value={carnet.meteoLat ?? ""}
-                      onChange={(e) => update("meteoLat", e.target.value ? Number(e.target.value) : undefined)}
-                    />
-                  </div>
-                  <div style={adminStyles.field}>
-                    <label style={adminStyles.label}>Longitude météo</label>
-                    <input
-                      style={adminStyles.input}
-                      placeholder="ex : 73.0708"
-                      value={carnet.meteoLng ?? ""}
-                      onChange={(e) => update("meteoLng", e.target.value ? Number(e.target.value) : undefined)}
-                    />
                   </div>
                 </div>
                 <div style={adminStyles.field}>

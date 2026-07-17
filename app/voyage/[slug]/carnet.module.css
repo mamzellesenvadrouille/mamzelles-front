@@ -135,7 +135,7 @@
   color: var(--gold);
 }
 
-.overviewGrid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5) var(--s3); }
+.overviewGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s5) var(--s2); }
 .overviewItem .val { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; color: var(--gold-deep); font-style: italic; }
 .overviewItem .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: var(--s1); }
 
