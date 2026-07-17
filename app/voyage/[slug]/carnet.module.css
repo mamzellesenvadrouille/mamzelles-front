@@ -113,8 +113,8 @@
   width: 220px;
 }
 
-.sectionHead { margin-bottom: 36px; }
-.sectionHead .eyebrow { margin-bottom: var(--s1); }
+.sectionHead { margin-bottom: 44px; }
+.sectionHead .eyebrow { margin-bottom: 4px; }
 
 .welcome { text-align: center; }
 .welcome .bodySerif { max-width: 440px; margin: var(--s3) auto; }
