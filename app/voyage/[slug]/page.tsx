@@ -19,12 +19,14 @@ export default async function CarnetPage({
 
   if (!carnet) notFound();
 
-  // Météo en temps réel si des coordonnées sont renseignées, sinon on garde la valeur statique du formulaire
-  const meteoTempsReel =
-    typeof carnet.meteoLat === "number" && typeof carnet.meteoLng === "number"
-      ? await getMeteoActuelle(carnet.meteoLat, carnet.meteoLng)
-      : null;
-  const meteoAffichee = meteoTempsReel ? `${meteoTempsReel.icone} ${meteoTempsReel.temperature}°` : carnet.overview.meteo;
+  // Météo en temps réel pour CHAQUE destination (îles différentes = climats différents)
+  const meteoParDestination = await Promise.all(
+    carnet.destinationsCompletes.map((dest) =>
+      typeof dest.meteoLat === "number" && typeof dest.meteoLng === "number"
+        ? getMeteoActuelle(dest.meteoLat, dest.meteoLng)
+        : Promise.resolve(null)
+    )
+  );
 
   // Compte à rebours avant le départ (uniquement si le voyage n'a pas encore commencé)
   const aujourdhui = new Date();
@@ -76,10 +78,6 @@ export default async function CarnetPage({
         </div>
         <div className={styles.overviewGrid}>
           <div className={styles.overviewItem}>
-            <div className={styles.val}>{meteoAffichee}</div>
-            <div className={styles.lbl}>{meteoTempsReel ? "Météo actuelle" : "Météo moyenne"}</div>
-          </div>
-          <div className={styles.overviewItem}>
             <div className={styles.val}>{carnet.overview.budget.toLocaleString("fr-FR")} €</div>
             <div className={styles.lbl}>Budget prévu</div>
           </div>
@@ -115,7 +113,11 @@ export default async function CarnetPage({
             Par <em>destination</em>
           </h2>
         </div>
-        <DestinationTabs destinations={carnet.destinationsCompletes} googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""} />
+        <DestinationTabs
+          destinations={carnet.destinationsCompletes}
+          googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""}
+          meteoParDestination={meteoParDestination}
+        />
       </section>
 
       {carnet.conseils.length > 0 && (
