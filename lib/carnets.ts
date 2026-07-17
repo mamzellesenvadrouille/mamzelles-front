@@ -111,6 +111,8 @@ export interface Carnet {
   hero: { photo: string };
   bienvenue: { message: string };
   overview: { meteo: string; budget: number; decalage: string; dureeJours: number };
+  meteoLat?: number; // coordonnées pour la météo en temps réel (Open-Meteo, sans clé API)
+  meteoLng?: number;
   parcours: string[]; // ex: ["Paris", "Malé", "Baa Atoll", "Paris"]
   parcoursCoords?: EtapeParcours[]; // mêmes étapes, mais avec coordonnées GPS pour la carte du trajet
   destinations: CarnetDestinationRef[];
@@ -144,8 +146,35 @@ export function normaliserSlug(nom: string): string {
 }
 
 // ─────────────────────────────────────────────
-// CARNETS — clé: carnet:{slug}
+// MÉTÉO EN TEMPS RÉEL — via Open-Meteo, gratuit, sans clé API
 // ─────────────────────────────────────────────
+
+export async function getMeteoActuelle(lat: number, lng: number): Promise<{ temperature: number; icone: string } | null> {
+  try {
+    const res = await fetch(
+      `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,weather_code`,
+      { next: { revalidate: 3600 } } // on rafraîchit au maximum une fois par heure
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    const temperature = Math.round(data.current?.temperature_2m);
+    const code = data.current?.weather_code;
+    if (typeof temperature !== "number" || Number.isNaN(temperature)) return null;
+
+    // Icône simple selon le code météo (norme WMO utilisée par Open-Meteo)
+    let icone = "☀️";
+    if (code >= 1 && code <= 3) icone = "🌤️";
+    else if (code >= 45 && code <= 48) icone = "🌫️";
+    else if (code >= 51 && code <= 67) icone = "🌧️";
+    else if (code >= 71 && code <= 77) icone = "❄️";
+    else if (code >= 80 && code <= 82) icone = "🌦️";
+    else if (code >= 95) icone = "⛈️";
+
+    return { temperature, icone };
+  } catch {
+    return null; // en cas d'échec, l'appelant retombe sur la valeur statique
+  }
+}
 
 export async function getCarnet(slug: string): Promise<Carnet | null> {
   return await redis.get<Carnet>(`carnet:${slug}`);

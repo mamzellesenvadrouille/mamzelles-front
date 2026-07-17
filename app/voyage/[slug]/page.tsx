@@ -2,7 +2,7 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import { Lightbulb } from "lucide-react";
-import { getCarnetComplet } from "@/lib/carnets";
+import { getCarnetComplet, getMeteoActuelle } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
 import CheckList from "./CheckList";
@@ -19,6 +19,20 @@ export default async function CarnetPage({
 
   if (!carnet) notFound();
 
+  // Météo en temps réel si des coordonnées sont renseignées, sinon on garde la valeur statique du formulaire
+  const meteoTempsReel =
+    typeof carnet.meteoLat === "number" && typeof carnet.meteoLng === "number"
+      ? await getMeteoActuelle(carnet.meteoLat, carnet.meteoLng)
+      : null;
+  const meteoAffichee = meteoTempsReel ? `${meteoTempsReel.icone} ${meteoTempsReel.temperature}°` : carnet.overview.meteo;
+
+  // Compte à rebours avant le départ (uniquement si le voyage n'a pas encore commencé)
+  const aujourdhui = new Date();
+  aujourdhui.setHours(0, 0, 0, 0);
+  const dateDepart = new Date(carnet.dates.debut);
+  dateDepart.setHours(0, 0, 0, 0);
+  const joursAvantDepart = Math.round((dateDepart.getTime() - aujourdhui.getTime()) / (1000 * 60 * 60 * 24));
+
   return (
     <main className={styles.body}>
       <div className={styles.hero} style={{ backgroundImage: `url('${carnet.hero.photo}')` }}>
@@ -31,6 +45,14 @@ export default async function CarnetPage({
             {" — "}
             {new Date(carnet.dates.fin).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
           </div>
+          {joursAvantDepart > 0 && (
+            <div className={styles.countdown}>
+              J-{joursAvantDepart} avant le départ
+            </div>
+          )}
+          {joursAvantDepart === 0 && (
+            <div className={styles.countdown}>C&apos;est aujourd&apos;hui ! Bon voyage ✈️</div>
+          )}
         </div>
       </div>
 
@@ -51,8 +73,8 @@ export default async function CarnetPage({
         </div>
         <div className={styles.overviewGrid}>
           <div className={styles.overviewItem}>
-            <div className={styles.val}>{carnet.overview.meteo}</div>
-            <div className={styles.lbl}>Météo moyenne</div>
+            <div className={styles.val}>{meteoAffichee}</div>
+            <div className={styles.lbl}>{meteoTempsReel ? "Météo actuelle" : "Météo moyenne"}</div>
           </div>
           <div className={styles.overviewItem}>
             <div className={styles.val}>{carnet.overview.budget.toLocaleString("fr-FR")} €</div>

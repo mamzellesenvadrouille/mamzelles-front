@@ -113,6 +113,15 @@
   width: 220px;
 }
 
+.countdown {
+  margin-top: 18px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: #ecd7c4;
+  letter-spacing: .02em;
+}
+
 .sectionHead { margin-bottom: 44px; }
 .sectionHead .eyebrow { margin-bottom: 14px; }
 
