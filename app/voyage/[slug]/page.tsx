@@ -1,7 +1,7 @@
 // app/voyage/[slug]/page.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/page.tsx
 import { notFound } from "next/navigation";
-import { Lightbulb } from "lucide-react";
+import { Lightbulb, Plane } from "lucide-react";
 import { getCarnetComplet, getMeteoActuelle } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
@@ -51,7 +51,10 @@ export default async function CarnetPage({
             </div>
           )}
           {joursAvantDepart === 0 && (
-            <div className={styles.countdown}>C&apos;est aujourd&apos;hui ! Bon voyage ✈️</div>
+            <div className={styles.countdown}>
+              <Plane size={20} color="#c8956c" strokeWidth={2} style={{ marginRight: 10, verticalAlign: "-3px" }} />
+              C&apos;est aujourd&apos;hui ! Bon voyage
+            </div>
           )}
         </div>
       </div>
