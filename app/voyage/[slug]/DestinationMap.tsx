@@ -191,9 +191,9 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               onClick={() => toggleFiltre(c.key)}
               style={{
                 fontFamily: "Inter, sans-serif",
-                fontSize: 12.5,
-                padding: "6px 14px",
-                borderRadius: 20,
+                fontSize: 13.5,
+                padding: "8px 16px",
+                borderRadius: 24,
                 border: filtres.has(c.key) ? `1px solid ${c.color}` : "1px solid #e0dcd4",
                 background: filtres.has(c.key) ? c.color : "#fff",
                 color: filtres.has(c.key) ? "#fff" : "#8a8074",
