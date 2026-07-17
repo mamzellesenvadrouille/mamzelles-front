@@ -10,9 +10,11 @@ import DestinationMap, { type DestinationMapHandle } from "./DestinationMap";
 export default function DestinationTabs({
   destinations,
   googleMapsApiKey,
+  meteoParDestination,
 }: {
   destinations: DestinationResolue[];
   googleMapsApiKey: string;
+  meteoParDestination?: ({ temperature: number; icone: string } | null)[];
 }) {
   const [actif, setActif] = useState(0);
   const mapHandleRef = useRef<DestinationMapHandle>(null);
@@ -49,6 +51,22 @@ export default function DestinationTabs({
             <div className={styles.destDays}>{dest.nuits} nuit{dest.nuits > 1 ? "s" : ""}</div>
             <h3>{dest.nom}</h3>
           </div>
+          {meteoParDestination?.[actif] && (
+            <div
+              style={{
+                marginLeft: "auto",
+                background: "rgba(255,255,255,.92)",
+                color: "#1a1512",
+                borderRadius: 20,
+                padding: "6px 14px",
+                fontFamily: "'Cormorant Garamond', serif",
+                fontStyle: "italic",
+                fontSize: 16,
+              }}
+            >
+              {meteoParDestination[actif]!.icone} {meteoParDestination[actif]!.temperature}°
+            </div>
+          )}
         </div>
 
         {(dest.hebergements ?? []).length > 0 && (

@@ -489,6 +489,33 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                 <button onClick={ajouterConseilDeplacement} style={smallLink}>+ Ajouter un conseil</button>
               </div>
 
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Météo en temps réel de cette destination</div>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
+                  Optionnel. Utile si le voyage a plusieurs destinations avec des climats différents (ex : plusieurs îles des Philippines).
+                </p>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                  <div>
+                    <label style={microLabel}>Latitude</label>
+                    <input
+                      style={adminStyles.input}
+                      placeholder="ex : 5.3320"
+                      value={dest.meteoLat ?? ""}
+                      onChange={(e) => update("meteoLat", e.target.value ? Number(e.target.value) : undefined)}
+                    />
+                  </div>
+                  <div>
+                    <label style={microLabel}>Longitude</label>
+                    <input
+                      style={adminStyles.input}
+                      placeholder="ex : 73.0708"
+                      value={dest.meteoLng ?? ""}
+                      onChange={(e) => update("meteoLng", e.target.value ? Number(e.target.value) : undefined)}
+                    />
+                  </div>
+                </div>
+              </div>
+
               <button onClick={enregistrer} disabled={saving} style={adminStyles.btnGold}>
                 {saving ? "Enregistrement..." : "Enregistrer la destination"}
               </button>

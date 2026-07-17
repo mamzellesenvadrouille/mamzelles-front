@@ -50,6 +50,8 @@ export interface Destination {
   restaurants: Restaurant[]; // objectif 5
   activites: Activite[]; // objectif 5
   seDeplacer: string[]; // liste de conseils pratiques
+  meteoLat?: number; // coordonnées pour la météo temps réel de cette destination précise
+  meteoLng?: number;
   updatedAt: string;
 }
 
