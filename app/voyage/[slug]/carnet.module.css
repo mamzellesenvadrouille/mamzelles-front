@@ -113,7 +113,7 @@
   width: 220px;
 }
 
-.sectionHead { margin-bottom: var(--s5); }
+.sectionHead { margin-bottom: 28px; }
 .sectionHead .eyebrow { margin-bottom: var(--s1); }
 
 .welcome { text-align: center; }
@@ -169,9 +169,9 @@ button.miniCard:hover img { opacity: 0.9; }
 .practicalBox p:last-child { margin-bottom: 0; }
 .practicalBox strong { color: var(--dark); font-weight: 500; }
 
-.advice { padding: var(--s4) 0; border-top: 1px solid var(--line); }
-.advice:last-child { border-bottom: 1px solid var(--line); }
-.tag { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold); font-weight: 600; }
+.advice { padding: var(--s3) 0; }
+.tag { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold); font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.tagIcon { font-size: 20px; }
 .advice p { margin: var(--s2) 0 0; }
 
 .budgetList { display: flex; flex-direction: column; gap: var(--s3); }

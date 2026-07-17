@@ -103,9 +103,21 @@ export default async function CarnetPage({
           {carnet.conseils.map((c, i) => (
             <div className={styles.advice} key={i}>
               <div className={styles.tag}>
-                {c.type === "conseil" && "Notre conseil"}
-                {c.type === "coup-de-coeur" && "Coup de cœur ❤"}
-                {c.type === "a-eviter" && "À éviter ⚠"}
+                {c.type === "conseil" && (
+                  <>
+                    <span className={styles.tagIcon}>💡</span> Notre conseil
+                  </>
+                )}
+                {c.type === "coup-de-coeur" && (
+                  <>
+                    <span className={styles.tagIcon}>❤</span> Coup de cœur
+                  </>
+                )}
+                {c.type === "a-eviter" && (
+                  <>
+                    <span className={styles.tagIcon}>⚠</span> À éviter
+                  </>
+                )}
               </div>
               <p className={styles.bodySerif}>{c.texte}</p>
             </div>
