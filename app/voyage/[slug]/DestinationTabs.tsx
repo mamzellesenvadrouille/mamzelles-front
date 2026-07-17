@@ -93,15 +93,17 @@ export default function DestinationTabs({
         {dest.deroule.length > 0 && (
           <>
             <div className={styles.subEyebrow}>Déroulé</div>
-            {dest.deroule.map((point, i) => (
-              <div className={styles.dayItem} key={i}>
-                <div className={styles.time}>{point.heure}</div>
-                <div className={styles.desc}>
-                  <strong>{point.titre}</strong>
-                  <span>{point.detail}</span>
+            <div className={styles.dayList}>
+              {dest.deroule.map((point, i) => (
+                <div className={styles.dayItem} key={i}>
+                  <div className={styles.time}>{point.heure}</div>
+                  <div className={styles.desc}>
+                    <strong>{point.titre}</strong>
+                    <span>{point.detail}</span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </>
         )}
 

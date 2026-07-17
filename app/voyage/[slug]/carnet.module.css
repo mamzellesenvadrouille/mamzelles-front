@@ -146,8 +146,9 @@ button.routeStep:hover { border-color: var(--gold); }
 .destDays { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; opacity: .9; color: #ecd7c4; }
 .destPhoto h3 { font-family: var(--font-cormorant, "Cormorant Garamond", serif); margin: 4px 0 0; font-size: 26px; font-weight: 400; }
 
-.subEyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold-deep); font-weight: 600; margin: var(--s5) 0 var(--s3); }
+.subEyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold-deep); font-weight: 600; margin: var(--s5) 0 32px; }
 
+.dayList {}
 .dayItem { display: flex; gap: var(--s3); padding: var(--s2) 0; border-bottom: 1px solid var(--line); }
 .dayItem:last-child { border-bottom: none; }
 .time { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 15px; color: var(--gold); font-style: italic; min-width: 52px; flex-shrink: 0; }
@@ -169,10 +170,10 @@ button.miniCard:hover img { opacity: 0.9; }
 .practicalBox p:last-child { margin-bottom: 0; }
 .practicalBox strong { color: var(--dark); font-weight: 500; }
 
-.advice { padding: var(--s3) 0; }
+.advice { padding: 10px 0; }
 .tag { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold); font-weight: 600; display: flex; align-items: center; gap: 8px; }
 .tagIcon { font-size: 20px; }
-.advice p { margin: var(--s2) 0 0; }
+.advice p { margin: 6px 0 0; }
 
 .budgetList { display: flex; flex-direction: column; gap: var(--s3); }
 .budgetRow .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
@@ -180,7 +181,7 @@ button.miniCard:hover img { opacity: 0.9; }
 .amount { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 16px; color: var(--gold-deep); font-style: italic; }
 .budgetTrack { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; }
 .budgetFill { height: 100%; background: var(--gold); border-radius: 2px; transition: width 1s ease; }
-.budgetTotal { margin-top: var(--s4); padding-top: var(--s3); border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; }
+.budgetTotal { margin-top: var(--s5); padding-top: 0; display: flex; justify-content: space-between; align-items: baseline; }
 .budgetTotal .label { font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 .budgetTotal .amount { font-size: 28px; color: var(--dark); }
 

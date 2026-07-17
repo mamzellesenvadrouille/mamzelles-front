@@ -1,6 +1,7 @@
 // app/voyage/[slug]/page.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/page.tsx
 import { notFound } from "next/navigation";
+import { Lightbulb } from "lucide-react";
 import { getCarnetComplet } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
@@ -69,7 +70,7 @@ export default async function CarnetPage({
       </section>
 
       <section className={styles.wrap}>
-        <div className={styles.sectionHead}>
+        <div className={styles.sectionHead} style={{ marginBottom: 40 }}>
           <span className={styles.eyebrow}>Le parcours</span>
           <h2 className={styles.display2}>
             {carnet.parcours.length} <em>étapes</em>
@@ -83,7 +84,7 @@ export default async function CarnetPage({
       </section>
 
       <section className={styles.wrap}>
-        <div className={styles.sectionHead}>
+        <div className={styles.sectionHead} style={{ marginBottom: 40 }}>
           <span className={styles.eyebrow}>Votre séjour</span>
           <h2 className={styles.display2}>
             Par <em>destination</em>
@@ -105,7 +106,7 @@ export default async function CarnetPage({
               <div className={styles.tag}>
                 {c.type === "conseil" && (
                   <>
-                    <span className={styles.tagIcon}>💡</span> Notre conseil
+                    <Lightbulb size={18} color="#c8956c" fill="#c8956c" className={styles.tagIcon} /> Notre conseil
                   </>
                 )}
                 {c.type === "coup-de-coeur" && (
@@ -127,7 +128,7 @@ export default async function CarnetPage({
 
       {carnet.budget.length > 0 && (
         <section className={styles.wrap}>
-          <div className={styles.sectionHead}>
+          <div className={styles.sectionHead} style={{ marginBottom: 40 }}>
             <span className={styles.eyebrow}>Récapitulatif</span>
             <h2 className={styles.display2}>
               Votre <em>budget</em>
@@ -172,7 +173,7 @@ export default async function CarnetPage({
       )}
 
       <section className={styles.wrap}>
-        <div className={styles.sectionHead}>
+        <div className={styles.sectionHead} style={{ marginBottom: 40 }}>
           <span className={styles.eyebrow}>À vérifier avant de partir</span>
           <h2 className={styles.display2}>
             Les <em>indispensables</em>
