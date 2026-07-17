@@ -106,7 +106,7 @@ export default async function CarnetPage({
               <div className={styles.tag}>
                 {c.type === "conseil" && (
                   <>
-                    <Lightbulb size={18} color="#c8956c" fill="#c8956c" className={styles.tagIcon} /> Notre conseil
+                    <Lightbulb size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} /> Notre conseil
                   </>
                 )}
                 {c.type === "coup-de-coeur" && (
