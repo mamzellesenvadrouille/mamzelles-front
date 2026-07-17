@@ -13,6 +13,7 @@ import styles from "./carnet.module.css";
 
 export default function ReservationList({ items, storageKey }: { items: ChecklistItem[]; storageKey: string }) {
   const [confirmations, setConfirmations] = useState<string[]>(items.map(() => ""));
+  const [champFocus, setChampFocus] = useState<number | null>(null);
 
   useEffect(() => {
     try {
@@ -49,7 +50,7 @@ export default function ReservationList({ items, storageKey }: { items: Checklis
           <div key={i} className={`${styles.checkItem} ${reserve ? styles.checked : ""}`} style={{ flexDirection: "column", alignItems: "stretch", gap: 8 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <div className={styles.checkBox} />
-              <div className={styles.checkLabel} style={{ flex: 1 }}>{item.label}</div>
+              <div className={styles.checkLabel} style={{ flex: 1, textDecoration: "none", color: "#1a1512" }}>{item.label}</div>
               {item.url && (
                 <a
                   href={item.url}
@@ -66,14 +67,19 @@ export default function ReservationList({ items, storageKey }: { items: Checklis
               placeholder="Numéro de confirmation (une fois réservé)"
               value={confirmations[i] ?? ""}
               onChange={(e) => majConfirmation(i, e.target.value)}
+              onFocus={() => setChampFocus(i)}
+              onBlur={() => setChampFocus(null)}
               style={{
                 marginLeft: 32,
                 padding: "6px 10px",
                 fontSize: 13,
-                border: "1px solid var(--line, #e8e0d6)",
                 borderRadius: 3,
                 fontFamily: "Inter, sans-serif",
                 background: "#fff",
+                outline: "none",
+                WebkitAppearance: "none",
+                border: champFocus === i ? "1px solid #c8956c" : "1px solid #e8e0d6",
+                boxShadow: champFocus === i ? "0 0 0 1px #c8956c" : "none",
               }}
             />
           </div>
