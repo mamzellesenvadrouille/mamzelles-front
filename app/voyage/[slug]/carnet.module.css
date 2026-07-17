@@ -113,7 +113,7 @@
   width: 220px;
 }
 
-.sectionHead { margin-bottom: 28px; }
+.sectionHead { margin-bottom: 36px; }
 .sectionHead .eyebrow { margin-bottom: var(--s1); }
 
 .welcome { text-align: center; }

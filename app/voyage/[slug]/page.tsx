@@ -70,7 +70,7 @@ export default async function CarnetPage({
       </section>
 
       <section className={styles.wrap}>
-        <div className={styles.sectionHead} style={{ marginBottom: 40 }}>
+        <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Le parcours</span>
           <h2 className={styles.display2}>
             {carnet.parcours.length} <em>étapes</em>
@@ -84,7 +84,7 @@ export default async function CarnetPage({
       </section>
 
       <section className={styles.wrap}>
-        <div className={styles.sectionHead} style={{ marginBottom: 40 }}>
+        <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Votre séjour</span>
           <h2 className={styles.display2}>
             Par <em>destination</em>
@@ -128,7 +128,7 @@ export default async function CarnetPage({
 
       {carnet.budget.length > 0 && (
         <section className={styles.wrap}>
-          <div className={styles.sectionHead} style={{ marginBottom: 40 }}>
+          <div className={styles.sectionHead}>
             <span className={styles.eyebrow}>Récapitulatif</span>
             <h2 className={styles.display2}>
               Votre <em>budget</em>
@@ -173,7 +173,7 @@ export default async function CarnetPage({
       )}
 
       <section className={styles.wrap}>
-        <div className={styles.sectionHead} style={{ marginBottom: 40 }}>
+        <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>À vérifier avant de partir</span>
           <h2 className={styles.display2}>
             Les <em>indispensables</em>
