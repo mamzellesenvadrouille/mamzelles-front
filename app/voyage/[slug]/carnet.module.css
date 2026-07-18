@@ -155,7 +155,8 @@ button.routeStep:hover { border-color: var(--gold); }
 .destDays { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; opacity: .9; color: #ecd7c4; }
 .destPhoto h3 { font-family: var(--font-cormorant, "Cormorant Garamond", serif); margin: 4px 0 0; font-size: 26px; font-weight: 400; }
 
-.subEyebrow { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; font-style: italic; font-weight: 500; letter-spacing: normal; text-transform: none; color: var(--dark); margin: var(--s5) 0 20px; }
+.subEyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold-deep); font-weight: 600; margin: var(--s5) 0 20px; }
+.sectionLabelBig { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; font-style: italic; font-weight: 500; color: var(--dark); margin: var(--s5) 0 20px; }
 
 .dayList {}
 .dayItem { display: flex; gap: var(--s3); padding: var(--s2) 0; border-bottom: 1px solid var(--line); }

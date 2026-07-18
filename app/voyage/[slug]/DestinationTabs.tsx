@@ -72,7 +72,7 @@ export default function DestinationTabs({
 
         {(dest.hebergements ?? []).length > 0 && (
           <>
-            <div className={styles.subEyebrow}>
+            <div className={styles.sectionLabelBig}>
               Hébergement{(dest.hebergements ?? []).length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
@@ -128,7 +128,7 @@ export default function DestinationTabs({
 
         {dest.restaurants.length > 0 && (
           <>
-            <div className={styles.subEyebrow}>
+            <div className={styles.sectionLabelBig}>
               {dest.restaurants.length} restaurant{dest.restaurants.length > 1 ? "s" : ""} recommandé{dest.restaurants.length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
@@ -167,7 +167,7 @@ export default function DestinationTabs({
 
         {dest.activites.length > 0 && (
           <>
-            <div className={styles.subEyebrow}>
+            <div className={styles.sectionLabelBig}>
               {dest.activites.length} site{dest.activites.length > 1 ? "s" : ""} & activité{dest.activites.length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
