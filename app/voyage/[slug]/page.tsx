@@ -34,6 +34,7 @@ export default async function CarnetPage({
     carnet.villeDepart && typeof carnet.villeDepart.lat === "number" && typeof carnet.villeDepart.lng === "number"
       ? [
           carnet.villeDepart,
+          ...(carnet.escales ?? []),
           ...carnet.destinationsCompletes
             .filter((d): d is typeof d & { lat: number; lng: number } => typeof d.lat === "number" && typeof d.lng === "number")
             .map((d) => ({ nom: d.nom, lat: d.lat, lng: d.lng })),

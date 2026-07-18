@@ -92,6 +92,14 @@ const sectionTitle: React.CSSProperties = {
   borderBottom: "1px solid #f0ebe4",
 };
 const sectionWrap: React.CSSProperties = { marginBottom: 36 };
+const microLabel: React.CSSProperties = {
+  fontSize: 10.5,
+  textTransform: "uppercase",
+  letterSpacing: "0.06em",
+  color: "#aaa",
+  display: "block",
+  marginBottom: 8,
+};
 const smallLink: React.CSSProperties = {
   marginTop: 10,
   fontSize: 12.5,
@@ -284,11 +292,12 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
               </div>
 
               <div style={sectionWrap}>
-                <div style={sectionTitle}>Ville de départ</div>
+                <div style={sectionTitle}>Départ, escales & retour</div>
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
-                  Renseigne juste la ville de départ du client — les étapes du parcours (destinations incluses dans ce carnet) et leur carte se construisent ensuite automatiquement, dans l&apos;ordre où tu as ajouté les destinations ci-dessus.
+                  Renseigne la ville de départ/retour du client, et ajoute d&apos;éventuelles escales (transit avion, ville de passage...). Les destinations cochées ci-dessous s&apos;ajoutent ensuite automatiquement entre les deux, dans l&apos;ordre où tu les as cochées — la carte se construit toute seule.
                 </p>
-                <div style={{ display: "flex", gap: 8 }}>
+                <label style={microLabel}>Ville de départ / retour</label>
+                <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
                   <input
                     style={{ ...adminStyles.input, flex: 2 }}
                     placeholder="ex : Paris"
@@ -308,6 +317,54 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { nom: "", lat: 0 }), lng: Number(e.target.value) })}
                   />
                 </div>
+
+                <label style={microLabel}>Escales (facultatif)</label>
+                {(carnet.escales ?? []).map((etape, i) => (
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                    <input
+                      style={{ ...adminStyles.input, flex: 2 }}
+                      placeholder="ex : Dubaï (transit)"
+                      value={etape.nom}
+                      onChange={(e) => {
+                        const copy = [...(carnet.escales ?? [])];
+                        copy[i] = { ...copy[i], nom: e.target.value };
+                        update("escales", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, flex: 1 }}
+                      placeholder="Latitude"
+                      value={etape.lat ?? ""}
+                      onChange={(e) => {
+                        const copy = [...(carnet.escales ?? [])];
+                        copy[i] = { ...copy[i], lat: Number(e.target.value) };
+                        update("escales", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, flex: 1 }}
+                      placeholder="Longitude"
+                      value={etape.lng ?? ""}
+                      onChange={(e) => {
+                        const copy = [...(carnet.escales ?? [])];
+                        copy[i] = { ...copy[i], lng: Number(e.target.value) };
+                        update("escales", copy);
+                      }}
+                    />
+                    <button
+                      onClick={() => update("escales", (carnet.escales ?? []).filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ))}
+                <button
+                  onClick={() => update("escales", [...(carnet.escales ?? []), { nom: "", lat: 0, lng: 0 }])}
+                  style={smallLink}
+                >
+                  + Ajouter une escale
+                </button>
               </div>
 
               <div style={sectionWrap}>
