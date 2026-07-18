@@ -61,7 +61,7 @@ export default function DestinationTabs({
                 padding: "7px 16px",
                 fontFamily: "'Cormorant Garamond', serif",
                 fontStyle: "italic",
-                fontSize: 18,
+                fontSize: 20,
                 boxShadow: "0 2px 8px rgba(0,0,0,.15)",
               }}
             >
