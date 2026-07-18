@@ -19,7 +19,7 @@ const adminStyles: Record<string, React.CSSProperties> = {
   input: { width: "100%", padding: "10px 14px", border: "1px solid #e8e0d6", fontFamily: "Inter, sans-serif", fontSize: 14, color: "#1a1512", background: "#fafaf8", outline: "none", boxSizing: "border-box" },
   textarea: { width: "100%", padding: "10px 14px", border: "1px solid #e8e0d6", fontFamily: "Inter, sans-serif", fontSize: 14, color: "#1a1512", background: "#fafaf8", outline: "none", resize: "vertical", boxSizing: "border-box" },
   error: { fontFamily: "Inter, sans-serif", fontSize: 13, color: "#c0392b" },
-  btnGold: { padding: "13px 24px", background: "#c8956c", color: "#fff", border: "none", fontFamily: "Inter, sans-serif", fontSize: 12.5, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer" },
+  btnGold: { padding: "10px 20px", background: "#c8956c", color: "#fff", border: "none", fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer" },
   btnGoldFull: { width: "100%", padding: "13px", background: "#c8956c", color: "#fff", border: "none", fontFamily: "Inter, sans-serif", fontSize: 12.5, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer" },
   btnOutline: { width: "100%", padding: "13px", background: "transparent", color: "#1a1512", border: "1px solid #e8e0d6", fontFamily: "Inter, sans-serif", fontSize: 12.5, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer", marginTop: 10 },
   table: { width: "100%", borderCollapse: "collapse", fontFamily: "Inter, sans-serif", fontSize: 13 },

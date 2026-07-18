@@ -55,13 +55,14 @@ export default function DestinationTabs({
             <div
               style={{
                 marginLeft: "auto",
-                background: "rgba(255,255,255,.92)",
+                background: "rgba(255,255,255,.95)",
                 color: "#1a1512",
-                borderRadius: 20,
-                padding: "6px 14px",
+                borderRadius: 28,
+                padding: "12px 22px",
                 fontFamily: "'Cormorant Garamond', serif",
                 fontStyle: "italic",
-                fontSize: 16,
+                fontSize: 26,
+                boxShadow: "0 2px 10px rgba(0,0,0,.15)",
               }}
             >
               {meteoParDestination[actif]!.icone} {meteoParDestination[actif]!.temperature}°
