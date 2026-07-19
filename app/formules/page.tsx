@@ -310,6 +310,20 @@ export default function Formules() {
               <div className="step-circle-wrap">
                 <div className="step-num">02</div>
                 <div className="step-circle">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                </div>
+              </div>
+              <h3>Validation<br />du devis</h3>
+              <p>Le début de la préparation<br />de votre voyage.</p>
+            </div>
+            <div className="process-arrow">›</div>
+          </div>
+
+          <div className="process-step-wrap">
+            <div className="process-step">
+              <div className="step-circle-wrap">
+                <div className="step-num">03</div>
+                <div className="step-circle">
                   <Notebook size={26} strokeWidth={1.4} />
                 </div>
               </div>
@@ -322,7 +336,7 @@ export default function Formules() {
           <div className="process-step-wrap">
             <div className="process-step">
               <div className="step-circle-wrap">
-                <div className="step-num">03</div>
+                <div className="step-num">04</div>
                 <div className="step-circle">
                   <Smartphone size={26} strokeWidth={1.4} />
                 </div>
@@ -336,7 +350,7 @@ export default function Formules() {
           <div className="process-step-wrap">
             <div className="process-step">
               <div className="step-circle-wrap">
-                <div className="step-num">04</div>
+                <div className="step-num">05</div>
                 <div className="step-circle">
                   <Plane size={26} strokeWidth={1.4} />
                 </div>
