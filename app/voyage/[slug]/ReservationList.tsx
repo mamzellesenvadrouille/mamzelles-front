@@ -288,13 +288,13 @@ export default function ReservationList({
         <button
           onClick={ajouter}
           style={{
-            fontSize: 12.5,
+            fontSize: 12,
             fontWeight: 600,
             color: "#fff",
             background: "#c8956c",
             border: "none",
             height: 38,
-            padding: "0 16px",
+            padding: "0 12px",
             margin: 0,
             borderRadius: 3,
             cursor: "pointer",
