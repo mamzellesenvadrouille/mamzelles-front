@@ -138,7 +138,7 @@ export default function Formules() {
           <div className="ess-card">
             <Smartphone size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Cochez, notez,<br />personnalisez</h3>
-            <p>Votre carnet devient aussi<br />votre journal de bord.</p>
+            <p>Votre carnet devient aussi<br />votre journal de bord !</p>
           </div>
         </div>
       </section>
