@@ -96,8 +96,8 @@ export default function ContactsUrgence({
           }}
         />
         <input
-          type="text"
-          placeholder="Numéro ou email"
+          type="tel"
+          placeholder="Numéro de téléphone"
           value={nouvelleValeur}
           onChange={(e) => setNouvelleValeur(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && ajouter()}
