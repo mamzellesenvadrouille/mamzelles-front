@@ -13,7 +13,7 @@ const redis = Redis.fromEnv(); // utilise les mêmes variables d'env que tes dev
 export interface DeroulePoint {
   jour: string; // ex: "Jour 1" ou "Lundi 12 août"
   heure: string; // ex: "23h30"
-  action: string; // ex: "Arrivée à Malé"
+  titre: string; // ex: "Arrivée à Malé"
   note: string; // ex: "Accueil à l'aéroport"
 }
 
@@ -207,7 +207,7 @@ export async function saveCarnetProgress(slug: string, progress: CarnetProgress)
       destinationId: String(d.destinationId ?? "").slice(0, 100),
       jour: String(d.jour ?? "").slice(0, 50),
       heure: String(d.heure ?? "").slice(0, 20),
-      action: String(d.action ?? "").slice(0, 150),
+      titre: String(d.titre ?? "").slice(0, 150),
       note: String(d.note ?? "").slice(0, 300),
     })),
   };

@@ -91,17 +91,17 @@ export default function DestinationTabs({
   const [derouleCustom, setDerouleCustom] = useState(derouleCustomInitial);
   const [nJour, setNJour] = useState("");
   const [nHeure, setNHeure] = useState("");
-  const [nAction, setNAction] = useState("");
+  const [nTitre, setNTitre] = useState("");
   const [nNote, setNNote] = useState("");
 
   function ajouterNoteDeroule(destinationId: string) {
-    if (!nAction.trim()) return;
-    const next = [...derouleCustom, { destinationId, jour: nJour.trim(), heure: nHeure.trim(), action: nAction.trim(), note: nNote.trim() }];
+    if (!nTitre.trim()) return;
+    const next = [...derouleCustom, { destinationId, jour: nJour.trim(), heure: nHeure.trim(), titre: nTitre.trim(), note: nNote.trim() }];
     setDerouleCustom(next);
     sauvegarderDerouleCustom(slug, next);
     setNJour("");
     setNHeure("");
-    setNAction("");
+    setNTitre("");
     setNNote("");
   }
 
@@ -186,7 +186,7 @@ export default function DestinationTabs({
                       {point.heure}
                     </div>
                     <div className={styles.desc} style={{ flex: 1 }}>
-                      <strong>{point.action}</strong>
+                      <strong>{point.titre}</strong>
                       <span>{point.note}</span>
                       {point.estAjoutee && <div style={{ fontSize: 10.5, color: "#c8956c", marginTop: 4 }}>Ajouté par vous</div>}
                     </div>
@@ -211,9 +211,9 @@ export default function DestinationTabs({
                   <input placeholder="Jour" value={nJour} onChange={(e) => setNJour(e.target.value)} style={inputMemento} />
                   <input placeholder="Heure" value={nHeure} onChange={(e) => setNHeure(e.target.value)} style={{ ...inputMemento, width: 80 }} />
                   <input
-                    placeholder="Action"
-                    value={nAction}
-                    onChange={(e) => setNAction(e.target.value)}
+                    placeholder="Titre"
+                    value={nTitre}
+                    onChange={(e) => setNTitre(e.target.value)}
                     style={{ ...inputMemento, flex: 1, minWidth: 140 }}
                   />
                 </div>

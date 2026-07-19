@@ -213,11 +213,11 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     />
                     <input
                       style={adminStyles.input}
-                      placeholder="Action"
-                      value={point.action}
+                      placeholder="Titre"
+                      value={point.titre}
                       onChange={(e) => {
                         const copy = [...dest.deroule];
-                        copy[i] = { ...copy[i], action: e.target.value };
+                        copy[i] = { ...copy[i], titre: e.target.value };
                         update("deroule", copy);
                       }}
                     />
@@ -240,7 +240,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   </div>
                 ))}
                 <button
-                  onClick={() => update("deroule", [...dest.deroule, { jour: "", heure: "", action: "", note: "" } as DeroulePoint])}
+                  onClick={() => update("deroule", [...dest.deroule, { jour: "", heure: "", titre: "", note: "" } as DeroulePoint])}
                   style={smallLink}
                 >
                   + Ajouter une étape

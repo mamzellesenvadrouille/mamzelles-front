@@ -15,9 +15,9 @@ async function main() {
     await saveDestination({
       ...male,
       deroule: [
-        { jour: "Jour 1", heure: "23h30", action: "Arrivée à Malé", note: "Accueil à l'aéroport" },
-        { jour: "Jour 2", heure: "09h00", action: "Tour du marché local", note: "Avant le transfert vers l'atoll" },
-        { jour: "Jour 2", heure: "14h00", action: "Transfert vers l'atoll", note: "Hydravion depuis Malé" },
+        { jour: "Jour 1", heure: "23h30", titre: "Arrivée à Malé", note: "Accueil à l'aéroport" },
+        { jour: "Jour 2", heure: "09h00", titre: "Tour du marché local", note: "Avant le transfert vers l'atoll" },
+        { jour: "Jour 2", heure: "14h00", titre: "Transfert vers l'atoll", note: "Hydravion depuis Malé" },
       ],
     });
     console.log("✅ Déroulé ajouté à Malé");
@@ -31,9 +31,9 @@ async function main() {
     await saveDestination({
       ...baaAtoll,
       deroule: [
-        { jour: "Jour 3", heure: "10h00", action: "Snorkeling à Hanifaru Bay", note: "Réserve UNESCO, raies manta" },
-        { jour: "Jour 6", heure: "19h00", action: "Dîner sur le ponton", note: "Coucher de soleil, réservation recommandée" },
-        { jour: "Jour 12", heure: "12h00", action: "Retour vers Malé", note: "Puis vol retour vers Paris" },
+        { jour: "Jour 3", heure: "10h00", titre: "Snorkeling à Hanifaru Bay", note: "Réserve UNESCO, raies manta" },
+        { jour: "Jour 6", heure: "19h00", titre: "Dîner sur le ponton", note: "Coucher de soleil, réservation recommandée" },
+        { jour: "Jour 12", heure: "12h00", titre: "Retour vers Malé", note: "Puis vol retour vers Paris" },
       ],
     });
     console.log("✅ Déroulé ajouté à Baa Atoll");
