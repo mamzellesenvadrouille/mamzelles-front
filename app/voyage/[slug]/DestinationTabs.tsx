@@ -280,45 +280,6 @@ export default function DestinationTabs({
           </>
         )}
 
-        {dest.restaurants.length > 0 && (
-          <>
-            <div className={styles.sectionLabelBig}>
-              {dest.restaurants.length} restaurant{dest.restaurants.length > 1 ? "s" : ""} recommandé{dest.restaurants.length > 1 ? "s" : ""}
-            </div>
-            <div className={styles.miniGrid}>
-              {dest.restaurants.map((r, i) => {
-                const aCoords = typeof r.lat === "number" && typeof r.lng === "number";
-                const contenu = (
-                  <>
-                    {r.photo ? (
-                      <img src={r.photo} alt={r.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
-                    ) : (
-                      <div className={styles.miniCardPlaceholder} />
-                    )}
-                    <h4>{r.nom}</h4>
-                    <div className={styles.meta}>{r.cuisine} · {r.prix}</div>
-                    {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
-                  </>
-                );
-                return aCoords ? (
-                  <button
-                    type="button"
-                    onClick={() => centrerSurLeLieu(r.lat, r.lng, r.nom)}
-                    className={styles.miniCard}
-                    key={i}
-                  >
-                    {contenu}
-                  </button>
-                ) : (
-                  <div className={styles.miniCard} key={i}>
-                    {contenu}
-                  </div>
-                );
-              })}
-            </div>
-          </>
-        )}
-
         {dest.activites.length > 0 && (
           <>
             <div className={styles.sectionLabelBig}>
@@ -343,6 +304,45 @@ export default function DestinationTabs({
                   <button
                     type="button"
                     onClick={() => centrerSurLeLieu(a.lat, a.lng, a.nom)}
+                    className={styles.miniCard}
+                    key={i}
+                  >
+                    {contenu}
+                  </button>
+                ) : (
+                  <div className={styles.miniCard} key={i}>
+                    {contenu}
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
+
+        {dest.restaurants.length > 0 && (
+          <>
+            <div className={styles.sectionLabelBig}>
+              {dest.restaurants.length} restaurant{dest.restaurants.length > 1 ? "s" : ""} recommandé{dest.restaurants.length > 1 ? "s" : ""}
+            </div>
+            <div className={styles.miniGrid}>
+              {dest.restaurants.map((r, i) => {
+                const aCoords = typeof r.lat === "number" && typeof r.lng === "number";
+                const contenu = (
+                  <>
+                    {r.photo ? (
+                      <img src={r.photo} alt={r.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                    ) : (
+                      <div className={styles.miniCardPlaceholder} />
+                    )}
+                    <h4>{r.nom}</h4>
+                    <div className={styles.meta}>{r.cuisine} · {r.prix}</div>
+                    {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
+                  </>
+                );
+                return aCoords ? (
+                  <button
+                    type="button"
+                    onClick={() => centrerSurLeLieu(r.lat, r.lng, r.nom)}
                     className={styles.miniCard}
                     key={i}
                   >
