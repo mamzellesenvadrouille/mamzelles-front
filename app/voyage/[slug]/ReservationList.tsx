@@ -82,6 +82,11 @@ export default function ReservationList({
     const next = confirmations.map((v, idx) => (idx === i ? valeur : v));
     setConfirmations(next);
     sauvegarderConfirmationsLocal(next, confirmationsCustom);
+    // on ne bascule PAS en mode "Réservé" pendant la frappe, seulement une fois terminé (voir confirmerChamp)
+  }
+
+  function confirmerChamp(i: number) {
+    const valeur = confirmations[i] ?? "";
     const nextCoches = coches.map((v, idx) => (idx === i ? valeur.trim().length > 0 : v));
     setCoches(nextCoches);
     sync(nextCoches, custom);
@@ -91,6 +96,11 @@ export default function ReservationList({
     const next = confirmationsCustom.map((v, idx) => (idx === i ? valeur : v));
     setConfirmationsCustom(next);
     sauvegarderConfirmationsLocal(confirmations, next);
+    // on ne bascule PAS en mode "Réservé" pendant la frappe, seulement une fois terminé (voir confirmerChampCustom)
+  }
+
+  function confirmerChampCustom(i: number) {
+    const valeur = confirmationsCustom[i] ?? "";
     const nextCustom = custom.map((c, idx) => (idx === i ? { ...c, coche: valeur.trim().length > 0 } : c));
     setCustom(nextCustom);
     sync(coches, nextCustom);
@@ -124,10 +134,12 @@ export default function ReservationList({
     reserve: boolean,
     valeurConfirmation: string,
     onChangeConfirmation: (v: string) => void,
+    onConfirmer: () => void,
     cleFocus: string,
     ajoutee: boolean,
     onSupprimer?: () => void
   ) {
+    const enEdition = champFocus === cleFocus || editionForcee.has(cleFocus) || !reserve;
     return (
       <div
         style={{
@@ -175,7 +187,7 @@ export default function ReservationList({
             </button>
           )}
         </div>
-        {reserve && !editionForcee.has(cleFocus) ? (
+        {!enEdition ? (
           <div
             onClick={() => setEditionForcee((prev) => new Set(prev).add(cleFocus))}
             style={{ fontSize: 11.5, color: "#7a9e7e", fontWeight: 600, cursor: "pointer" }}
@@ -193,6 +205,7 @@ export default function ReservationList({
             onKeyDown={(e) => e.key === "Enter" && e.currentTarget.blur()}
             onBlur={() => {
               setChampFocus(null);
+              onConfirmer();
               setEditionForcee((prev) => {
                 const next = new Set(prev);
                 next.delete(cleFocus);
@@ -232,7 +245,7 @@ export default function ReservationList({
       <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
         {items.map((item, i) => (
           <div key={`base-${i}`}>
-            {carte(item.label, item.url, coches[i] ?? false, confirmations[i] ?? "", (v) => majConfirmation(i, v), `base-${i}`, false)}
+            {carte(item.label, item.url, coches[i] ?? false, confirmations[i] ?? "", (v) => majConfirmation(i, v), () => confirmerChamp(i), `base-${i}`, false)}
           </div>
         ))}
         {custom.map((item, i) => (
@@ -243,6 +256,7 @@ export default function ReservationList({
               item.coche,
               confirmationsCustom[i] ?? "",
               (v) => majConfirmationCustom(i, v),
+              () => confirmerChampCustom(i),
               `custom-${i}`,
               true,
               () => supprimerCustom(i)
@@ -281,6 +295,7 @@ export default function ReservationList({
             border: "none",
             height: 38,
             padding: "0 16px",
+            margin: 0,
             borderRadius: 3,
             cursor: "pointer",
             display: "flex",
@@ -288,6 +303,10 @@ export default function ReservationList({
             justifyContent: "center",
             flexShrink: 0,
             boxSizing: "border-box",
+            WebkitAppearance: "none",
+            appearance: "none",
+            lineHeight: "normal",
+            fontFamily: "Inter, sans-serif",
           }}
         >
           Ajouter
