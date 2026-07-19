@@ -108,9 +108,9 @@ export default async function CarnetPage({
 
         {carnet.budget.length > 0 && (
           <>
-            <div className={styles.sectionLabelBig} style={{ marginTop: 40 }}>
-              Budget prévu
-            </div>
+            <h2 className={styles.display2} style={{ marginTop: 44, marginBottom: 28 }}>
+              Budget <em>prévu</em>
+            </h2>
             <div className={styles.budgetList}>
               {carnet.budget.map((ligne, i) => {
                 const total = carnet.budget.reduce((s, l) => s + l.montant, 0);
