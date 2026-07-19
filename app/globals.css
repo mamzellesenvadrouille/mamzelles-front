@@ -57,7 +57,7 @@ a { text-decoration: none; color: inherit; }
 .ess-card { text-align: center; padding: 0 12px; border-right: 1px solid var(--line); }
 .ess-card:last-child { border-right: none; }
 .ess-icon { margin: 0 auto 18px; color: var(--gold); display: block; }
-.ess-card h3 { font-family: "Cormorant Garamond", serif; font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.ess-card h3 { font-family: "Cormorant Garamond", serif; font-size: 18px; font-weight: 700; line-height: 1.15; margin-bottom: 8px; }
 .ess-card p { font-size: 12px; line-height: 1.7; color: var(--muted); }
 
 /* FORMULES */

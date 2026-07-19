@@ -133,7 +133,7 @@ export default function Formules() {
           <div className="ess-card">
             <Notebook size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Carnet interactif</h3>
-            <p>Itinéraire, liens de réservation,<br />cartes Maps,<br />checklists.</p>
+            <p>Itinéraire(s), liens de<br />réservation, cartes Maps,<br />checklists...</p>
           </div>
           <div className="ess-card">
             <Smartphone size={34} className="ess-icon" strokeWidth={1.2} />
