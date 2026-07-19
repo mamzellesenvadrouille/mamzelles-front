@@ -2,7 +2,7 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import { Lightbulb, Plane } from "lucide-react";
-import { getCarnetComplet, getMeteoActuelle } from "@/lib/carnets";
+import { getCarnetComplet, getMeteoActuelle, getCarnetProgress } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
 import CheckList from "./CheckList";
@@ -18,6 +18,8 @@ export default async function CarnetPage({
   const carnet = await getCarnetComplet(slug);
 
   if (!carnet) notFound();
+
+  const progress = await getCarnetProgress(slug);
 
   // Météo en temps réel pour CHAQUE destination (îles différentes = climats différents)
   const meteoParDestination = await Promise.all(
@@ -211,7 +213,13 @@ export default async function CarnetPage({
               Vos <em>réservations</em>
             </h2>
           </div>
-          <ReservationList items={carnet.reservations} storageKey={`mamzelles-reservations-${carnet.slug}`} />
+          <ReservationList
+            items={carnet.reservations}
+            storageKey={`mamzelles-reservations-${carnet.slug}`}
+            slug={carnet.slug}
+            listeType="reservations"
+            progressInitiale={progress.reservations}
+          />
         </section>
       )}
 
@@ -239,7 +247,13 @@ export default async function CarnetPage({
               Checklist <em>valise</em>
             </h2>
           </div>
-          <CheckList items={carnet.checklistValise} storageKey={`mamzelles-checklist-valise-${carnet.slug}`} />
+          <CheckList
+            items={carnet.checklistValise}
+            storageKey={`mamzelles-checklist-valise-${carnet.slug}`}
+            slug={carnet.slug}
+            listeType="checklistValise"
+            progressInitiale={progress.checklistValise}
+          />
         </section>
       )}
 
@@ -251,7 +265,13 @@ export default async function CarnetPage({
               Checklist <em>voyage</em>
             </h2>
           </div>
-          <CheckList items={carnet.checklistVoyage} storageKey={`mamzelles-checklist-voyage-${carnet.slug}`} />
+          <CheckList
+            items={carnet.checklistVoyage}
+            storageKey={`mamzelles-checklist-voyage-${carnet.slug}`}
+            slug={carnet.slug}
+            listeType="checklistVoyage"
+            progressInitiale={progress.checklistVoyage}
+          />
         </section>
       )}
 

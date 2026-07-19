@@ -150,6 +150,51 @@ export function normaliserSlug(nom: string): string {
 }
 
 // ─────────────────────────────────────────────
+// SUIVI CLIENT — progression sur les réservations et checklists, partagée
+// entre tous les appareils (contrairement au numéro de confirmation, qui
+// reste privé au navigateur du client et n'est jamais envoyé ici).
+// clé Redis : progress:{slug}
+// ─────────────────────────────────────────────
+
+export interface ProgressListe {
+  coche: boolean[]; // état coché/réservé pour chaque item de base (même ordre que dans le carnet)
+  custom: { label: string; coche: boolean }[]; // items ajoutés librement par le client
+}
+
+export interface CarnetProgress {
+  reservations: ProgressListe;
+  checklistValise: ProgressListe;
+  checklistVoyage: ProgressListe;
+}
+
+function progressVide(): CarnetProgress {
+  return {
+    reservations: { coche: [], custom: [] },
+    checklistValise: { coche: [], custom: [] },
+    checklistVoyage: { coche: [], custom: [] },
+  };
+}
+
+export async function getCarnetProgress(slug: string): Promise<CarnetProgress> {
+  const data = await redis.get<CarnetProgress>(`progress:${slug}`);
+  return data ?? progressVide();
+}
+
+export async function saveCarnetProgress(slug: string, progress: CarnetProgress): Promise<void> {
+  // petites limites de sécurité pour éviter un abus (texte trop long, trop d'items ajoutés)
+  const nettoyerListe = (l: ProgressListe): ProgressListe => ({
+    coche: l.coche.slice(0, 200),
+    custom: l.custom.slice(0, 100).map((c) => ({ label: String(c.label).slice(0, 200), coche: !!c.coche })),
+  });
+  const propre: CarnetProgress = {
+    reservations: nettoyerListe(progress.reservations),
+    checklistValise: nettoyerListe(progress.checklistValise),
+    checklistVoyage: nettoyerListe(progress.checklistVoyage),
+  };
+  await redis.set(`progress:${slug}`, propre);
+}
+
+// ─────────────────────────────────────────────
 // MÉTÉO EN TEMPS RÉEL — via Open-Meteo, gratuit, sans clé API
 // ─────────────────────────────────────────────
 
