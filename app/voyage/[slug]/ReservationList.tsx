@@ -190,6 +190,7 @@ export default function ReservationList({
             value={valeurConfirmation}
             onChange={(e) => onChangeConfirmation(e.target.value)}
             onFocus={() => setChampFocus(cleFocus)}
+            onKeyDown={(e) => e.key === "Enter" && e.currentTarget.blur()}
             onBlur={() => {
               setChampFocus(null);
               setEditionForcee((prev) => {
@@ -259,7 +260,8 @@ export default function ReservationList({
           onKeyDown={(e) => e.key === "Enter" && ajouter()}
           style={{
             flex: 1,
-            padding: "8px 12px",
+            height: 38,
+            padding: "0 12px",
             fontSize: 13,
             borderRadius: 3,
             fontFamily: "Inter, sans-serif",
@@ -277,6 +279,7 @@ export default function ReservationList({
             color: "#fff",
             background: "#c8956c",
             border: "none",
+            height: 38,
             padding: "0 16px",
             borderRadius: 3,
             cursor: "pointer",
@@ -284,6 +287,7 @@ export default function ReservationList({
             alignItems: "center",
             justifyContent: "center",
             flexShrink: 0,
+            boxSizing: "border-box",
           }}
         >
           Ajouter
