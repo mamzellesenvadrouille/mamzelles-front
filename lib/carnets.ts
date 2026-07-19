@@ -54,7 +54,6 @@ export interface Destination {
   hebergements?: Hebergement[];
   restaurants: Restaurant[]; // objectif 5
   activites: Activite[]; // objectif 5
-  seDeplacer: string[]; // liste de conseils pratiques
   updatedAt: string;
 }
 

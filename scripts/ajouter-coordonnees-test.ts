@@ -39,7 +39,6 @@ async function main() {
       ],
       restaurants: male.restaurants.map((r, i) => ({ ...r, ...restosMale[i] })),
       activites: male.activites.map((a, i) => ({ ...a, ...activitesMale[i] })),
-      seDeplacer: male.seDeplacer,
     });
     console.log("✅ Malé mise à jour avec de vrais lieux et coordonnées");
   } else {
@@ -75,7 +74,6 @@ async function main() {
       ],
       restaurants: baaAtoll.restaurants.map((r, i) => ({ ...r, ...restosBaa[i] })),
       activites: baaAtoll.activites.map((a, i) => ({ ...a, ...activitesBaa[i] })),
-      seDeplacer: baaAtoll.seDeplacer,
     });
     console.log("✅ Baa Atoll mise à jour avec de vrais lieux et coordonnées");
   } else {
