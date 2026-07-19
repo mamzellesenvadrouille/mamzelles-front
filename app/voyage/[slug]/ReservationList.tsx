@@ -36,7 +36,7 @@ export default function ReservationList({
   progressInitiale,
 }: {
   items: ChecklistItem[];
-  storageKey: string; // clé localStorage pour les numéros de confirmation (privés, jamais envoyés au serveur)
+  storageKey: string;
   slug: string;
   listeType: "reservations";
   progressInitiale: ProgressListe;
@@ -47,7 +47,6 @@ export default function ReservationList({
   const [custom, setCustom] = useState<{ label: string; coche: boolean }[]>(progressInitiale.custom ?? []);
   const [nouveauLabel, setNouveauLabel] = useState("");
 
-  // Numéros de confirmation : uniquement en local, jamais synchronisés
   const [confirmations, setConfirmations] = useState<string[]>(items.map(() => ""));
   const [confirmationsCustom, setConfirmationsCustom] = useState<string[]>(custom.map(() => ""));
   const [champFocus, setChampFocus] = useState<string | null>(null);
@@ -61,7 +60,7 @@ export default function ReservationList({
         if (Array.isArray(valeurs.custom)) setConfirmationsCustom(valeurs.custom);
       }
     } catch {
-      // localStorage indisponible : on continue sans persistance locale
+      // localStorage indisponible
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storageKey]);
@@ -82,7 +81,6 @@ export default function ReservationList({
     const next = confirmations.map((v, idx) => (idx === i ? valeur : v));
     setConfirmations(next);
     sauvegarderConfirmationsLocal(next, confirmationsCustom);
-    // dès qu'un numéro est tapé, on marque "réservé" côté serveur (juste le statut, jamais le texte)
     const nextCoches = coches.map((v, idx) => (idx === i ? valeur.trim().length > 0 : v));
     setCoches(nextCoches);
     sync(nextCoches, custom);
@@ -115,61 +113,54 @@ export default function ReservationList({
     sync(coches, nextCustom);
   }
 
-  function ligne(
+  const totalItems = items.length + custom.length;
+  const totalReserves = coches.filter(Boolean).length + custom.filter((c) => c.coche).length;
+  const pourcentage = totalItems > 0 ? Math.round((totalReserves / totalItems) * 100) : 0;
+
+  function carte(
     label: string,
     url: string | undefined,
     reserve: boolean,
     valeurConfirmation: string,
     onChangeConfirmation: (v: string) => void,
     cleFocus: string,
+    ajoutee: boolean,
     onSupprimer?: () => void
   ) {
     return (
       <div
-        className={styles.checkItem}
-        style={{ flexDirection: "column", alignItems: "stretch", gap: 10, cursor: "default" }}
+        style={{
+          background: "#fff",
+          borderRadius: 8,
+          padding: "14px 16px",
+          border: ajoutee ? "1px dashed #d8cfc0" : "none",
+        }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-          <span
-            style={{
-              fontSize: 10.5,
-              fontWeight: 600,
-              letterSpacing: "0.05em",
-              textTransform: "uppercase",
-              padding: "3px 10px",
-              borderRadius: 12,
-              whiteSpace: "nowrap",
-              background: reserve ? "#c8956c" : "transparent",
-              color: reserve ? "#fff" : "#a8734c",
-              border: reserve ? "none" : "1px solid #c8956c",
-            }}
-          >
-            {reserve ? "Réservé ✓" : "À réserver"}
-          </span>
-          <div className={styles.checkLabel} style={{ flex: 1, textDecoration: "none", color: "#1a1512", minWidth: 160 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: reserve ? 0 : 8 }}>
+          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 19, color: "#1a1512", flex: 1 }}>
             {label}
           </div>
-              {url && !reserve && (
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    fontSize: 11.5,
-                    fontWeight: 600,
-                    color: "#fff",
-                    background: "#c8956c",
-                    padding: "7px 14px",
-                    borderRadius: 3,
-                    whiteSpace: "nowrap",
-                    textDecoration: "none",
-                  }}
-                >
-                  Réserver →
-                </a>
-              )}
+          {url && !reserve && (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontSize: 11.5,
+                fontWeight: 600,
+                color: "#fff",
+                background: "#c8956c",
+                padding: "6px 12px",
+                borderRadius: 3,
+                whiteSpace: "nowrap",
+                textDecoration: "none",
+              }}
+            >
+              Réserver →
+            </a>
+          )}
           {url && reserve && (
-            <a href={url} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, color: "#a8a29a", whiteSpace: "nowrap" }}>
+            <a href={url} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: "#a8a29a", whiteSpace: "nowrap" }}>
               Revoir le site →
             </a>
           )}
@@ -183,55 +174,74 @@ export default function ReservationList({
             </button>
           )}
         </div>
-        <input
-          type="text"
-          placeholder="Numéro de confirmation"
-          value={valeurConfirmation}
-          onChange={(e) => onChangeConfirmation(e.target.value)}
-          onFocus={() => setChampFocus(cleFocus)}
-          onBlur={() => setChampFocus(null)}
-          style={{
-            padding: "6px 10px",
-            fontSize: 13,
-            borderRadius: 3,
-            fontFamily: "Inter, sans-serif",
-            background: "#fff",
-            outline: "none",
-            WebkitAppearance: "none",
-            border: champFocus === cleFocus ? "1px solid #c8956c" : "1px solid #e8e0d6",
-            boxShadow: champFocus === cleFocus ? "0 0 0 1px #c8956c" : "none",
-          }}
-        />
+        {reserve ? (
+          <div style={{ fontSize: 11.5, color: "#7a9e7e", fontWeight: 600 }}>
+            Réservé{valeurConfirmation ? ` · ${valeurConfirmation}` : ""}
+          </div>
+        ) : (
+          <input
+            type="text"
+            placeholder="Numéro de confirmation"
+            value={valeurConfirmation}
+            onChange={(e) => onChangeConfirmation(e.target.value)}
+            onFocus={() => setChampFocus(cleFocus)}
+            onBlur={() => setChampFocus(null)}
+            style={{
+              border: "none",
+              borderBottom: champFocus === cleFocus ? "1px solid #c8956c" : "1px solid #eee",
+              fontSize: 12,
+              padding: "3px 0",
+              width: "100%",
+              color: "#666",
+              background: "transparent",
+              outline: "none",
+              fontFamily: "Inter, sans-serif",
+            }}
+          />
+        )}
+        {ajoutee && <div style={{ fontSize: 10.5, color: "#c8956c", marginTop: 6 }}>Ajouté par vous</div>}
       </div>
     );
   }
 
   return (
-    <div className={styles.checkList}>
-      {items.map((item, i) =>
-        <div key={`base-${i}`}>
-          {ligne(item.label, item.url, coches[i] ?? false, confirmations[i] ?? "", (v) => majConfirmation(i, v), `base-${i}`)}
+    <div>
+      <div style={{ marginBottom: 20 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, color: "#8a8074", marginBottom: 6, fontFamily: "Inter, sans-serif" }}>
+          <span>{totalReserves} sur {totalItems} réservée{totalReserves > 1 ? "s" : ""}</span>
+          <span>{pourcentage}%</span>
         </div>
-      )}
-
-      {custom.map((item, i) => (
-        <div key={`custom-${i}`}>
-          {ligne(
-            item.label,
-            undefined,
-            item.coche,
-            confirmationsCustom[i] ?? "",
-            (v) => majConfirmationCustom(i, v),
-            `custom-${i}`,
-            () => supprimerCustom(i)
-          )}
+        <div style={{ height: 3, background: "#e8e0d6", borderRadius: 2, overflow: "hidden" }}>
+          <div style={{ height: "100%", width: `${pourcentage}%`, background: "#c8956c", transition: "width .3s" }} />
         </div>
-      ))}
+      </div>
 
-      <div style={{ display: "flex", gap: 8, marginTop: 16 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        {items.map((item, i) => (
+          <div key={`base-${i}`}>
+            {carte(item.label, item.url, coches[i] ?? false, confirmations[i] ?? "", (v) => majConfirmation(i, v), `base-${i}`, false)}
+          </div>
+        ))}
+        {custom.map((item, i) => (
+          <div key={`custom-${i}`}>
+            {carte(
+              item.label,
+              undefined,
+              item.coche,
+              confirmationsCustom[i] ?? "",
+              (v) => majConfirmationCustom(i, v),
+              `custom-${i}`,
+              true,
+              () => supprimerCustom(i)
+            )}
+          </div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: 16, display: "flex", gap: 8 }}>
         <input
           type="text"
-          placeholder="Ajouter votre propre réservation (ex : location de kayak)..."
+          placeholder="Ajouter votre propre réservation..."
           value={nouveauLabel}
           onChange={(e) => setNouveauLabel(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && ajouter()}
@@ -243,6 +253,7 @@ export default function ReservationList({
             fontFamily: "Inter, sans-serif",
             border: "1px solid #e8e0d6",
             outline: "none",
+            background: "#fff",
           }}
         />
         <button
