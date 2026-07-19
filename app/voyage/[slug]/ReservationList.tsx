@@ -3,8 +3,10 @@
 //
 // Contrairement à CheckList (simple case à cocher), ici le client note
 // lui-même son numéro de confirmation une fois qu'il a réservé — c'est ce
-// texte qui fait foi, pas juste un clic. Sauvegardé dans son navigateur
-// (localStorage), donc ça reste à chaque fois qu'il revient sur son carnet.
+// texte qui fait foi. Un badge "À réserver" / "Réservé ✓" change
+// automatiquement selon si le numéro est rempli, et un vrai bouton
+// "Réserver" (pas une case à cocher trompeuse) invite au clic.
+// Sauvegardé dans le navigateur du client (localStorage).
 "use client";
 
 import { useState, useEffect } from "react";
@@ -47,18 +49,58 @@ export default function ReservationList({ items, storageKey }: { items: Checklis
       {items.map((item, i) => {
         const reserve = confirmations[i]?.trim().length > 0;
         return (
-          <div key={i} className={`${styles.checkItem} ${reserve ? styles.checked : ""}`} style={{ flexDirection: "column", alignItems: "stretch", gap: 8 }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-              <div className={styles.checkBox} />
-              <div className={styles.checkLabel} style={{ flex: 1, textDecoration: "none", color: "#1a1512" }}>{item.label}</div>
-              {item.url && (
+          <div
+            key={i}
+            className={styles.checkItem}
+            style={{ flexDirection: "column", alignItems: "stretch", gap: 10, cursor: "default" }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+              <span
+                style={{
+                  fontSize: 10.5,
+                  fontWeight: 600,
+                  letterSpacing: "0.05em",
+                  textTransform: "uppercase",
+                  padding: "3px 10px",
+                  borderRadius: 12,
+                  whiteSpace: "nowrap",
+                  background: reserve ? "#c8956c" : "transparent",
+                  color: reserve ? "#fff" : "#a8734c",
+                  border: reserve ? "none" : "1px solid #c8956c",
+                }}
+              >
+                {reserve ? "Réservé ✓" : "À réserver"}
+              </span>
+              <div className={styles.checkLabel} style={{ flex: 1, textDecoration: "none", color: "#1a1512", minWidth: 160 }}>
+                {item.label}
+              </div>
+              {item.url && !reserve && (
                 <a
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ fontSize: 12.5, color: "#c8956c", fontWeight: 500, whiteSpace: "nowrap" }}
+                  style={{
+                    fontSize: 12.5,
+                    fontWeight: 600,
+                    color: "#fff",
+                    background: "#c8956c",
+                    padding: "8px 16px",
+                    borderRadius: 20,
+                    whiteSpace: "nowrap",
+                    textDecoration: "none",
+                  }}
                 >
-                  Réserver →
+                  Réserver maintenant →
+                </a>
+              )}
+              {item.url && reserve && (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: 12, color: "#a8a29a", whiteSpace: "nowrap" }}
+                >
+                  Voir la réservation →
                 </a>
               )}
             </div>
@@ -70,7 +112,6 @@ export default function ReservationList({ items, storageKey }: { items: Checklis
               onFocus={() => setChampFocus(i)}
               onBlur={() => setChampFocus(null)}
               style={{
-                marginLeft: 32,
                 padding: "6px 10px",
                 fontSize: 13,
                 borderRadius: 3,
