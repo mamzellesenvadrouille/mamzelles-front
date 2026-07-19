@@ -96,11 +96,14 @@ export default function CheckList({
         <div
           key={`custom-${i}`}
           className={`${styles.checkItem} ${item.coche ? styles.checked : ""}`}
-          style={{ display: "flex", alignItems: "center" }}
+          style={{ display: "flex", alignItems: "center", borderLeft: "3px solid #c8956c", paddingLeft: 10 }}
         >
           <div onClick={() => toggleCustom(i)} style={{ display: "flex", alignItems: "center", gap: "var(--s3)", flex: 1, cursor: "pointer" }}>
             <div className={styles.checkBox} />
-            <div className={styles.checkLabel}>{item.label}</div>
+            <div>
+              <div className={styles.checkLabel}>{item.label}</div>
+              <div style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic", marginTop: 2 }}>Ajouté par vous</div>
+            </div>
           </div>
           <button
             onClick={() => supprimerCustom(i)}

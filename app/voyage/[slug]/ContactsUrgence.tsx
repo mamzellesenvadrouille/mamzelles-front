@@ -62,7 +62,7 @@ export default function ContactsUrgence({
           <p key={`custom-${i}`} style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <span style={{ flex: 1 }}>
               <strong>{c.label} :</strong> {c.valeur}{" "}
-              <span style={{ fontSize: 10.5, color: "#c8956c" }}>(ajouté par vous)</span>
+              <span style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic" }}>(ajouté par vous)</span>
             </span>
             <button
               onClick={() => supprimer(i)}

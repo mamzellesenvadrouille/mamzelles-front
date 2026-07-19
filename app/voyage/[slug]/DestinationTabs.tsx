@@ -178,7 +178,7 @@ export default function DestinationTabs({
                   <div
                     className={styles.dayItem}
                     key={i}
-                    style={point.estAjoutee ? { borderLeft: "3px solid #c8956c", paddingLeft: 10 } : undefined}
+                    style={undefined}
                   >
                     <div className={styles.time}>
                       {point.jour}
@@ -188,7 +188,7 @@ export default function DestinationTabs({
                     <div className={styles.desc} style={{ flex: 1 }}>
                       <strong>{point.titre}</strong>
                       <span>{point.note}</span>
-                      {point.estAjoutee && <div style={{ fontSize: 10.5, color: "#c8956c", marginTop: 4 }}>Ajouté par vous</div>}
+                      {point.estAjoutee && <div style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic", marginTop: 4 }}>Ajouté par vous</div>}
                     </div>
                     {point.estAjoutee && (
                       <button

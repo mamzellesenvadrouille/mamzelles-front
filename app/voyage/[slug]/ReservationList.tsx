@@ -147,7 +147,6 @@ export default function ReservationList({
           borderRadius: 8,
           padding: "14px 16px",
           border: "none",
-          ...(ajoutee ? { background: "#f6ead9", borderLeft: "3px solid #c8956c" } : {}),
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: reserve ? 0 : 8 }}>
@@ -226,7 +225,7 @@ export default function ReservationList({
             }}
           />
         )}
-        {ajoutee && <div style={{ fontSize: 10.5, color: "#c8956c", marginTop: 6 }}>Ajouté par vous</div>}
+        {ajoutee && <div style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic", marginTop: 6 }}>Ajouté par vous</div>}
       </div>
     );
   }
