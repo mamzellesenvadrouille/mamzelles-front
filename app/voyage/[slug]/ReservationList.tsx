@@ -146,7 +146,8 @@ export default function ReservationList({
           background: "#fff",
           borderRadius: 8,
           padding: "14px 16px",
-          border: ajoutee ? "1px dashed #d8cfc0" : "none",
+          border: "none",
+          ...(ajoutee ? { background: "#faf6f0" } : {}),
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: reserve ? 0 : 8 }}>
