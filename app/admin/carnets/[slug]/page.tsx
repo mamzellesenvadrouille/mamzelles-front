@@ -279,7 +279,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
 
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Vue d&apos;ensemble</div>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
                   <div style={adminStyles.field}>
                     <label style={adminStyles.label}>Budget prévu (€)</label>
                     <input type="number" style={adminStyles.input} value={carnet.overview.budget} onChange={(e) => updateNested("overview", "budget", Number(e.target.value))} />
