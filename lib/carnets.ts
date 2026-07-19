@@ -165,6 +165,7 @@ export interface CarnetProgress {
   reservations: ProgressListe;
   checklistValise: ProgressListe;
   checklistVoyage: ProgressListe;
+  contactsCustom: { label: string; valeur: string }[]; // contacts d'urgence ajoutés par le client lui-même
 }
 
 function progressVide(): CarnetProgress {
@@ -172,12 +173,15 @@ function progressVide(): CarnetProgress {
     reservations: { coche: [], custom: [] },
     checklistValise: { coche: [], custom: [] },
     checklistVoyage: { coche: [], custom: [] },
+    contactsCustom: [],
   };
 }
 
 export async function getCarnetProgress(slug: string): Promise<CarnetProgress> {
   const data = await redis.get<CarnetProgress>(`progress:${slug}`);
-  return data ?? progressVide();
+  if (!data) return progressVide();
+  // rétrocompatibilité : anciennes progressions sauvegardées avant l'ajout de contactsCustom
+  return { ...progressVide(), ...data };
 }
 
 export async function saveCarnetProgress(slug: string, progress: CarnetProgress): Promise<void> {
@@ -190,6 +194,10 @@ export async function saveCarnetProgress(slug: string, progress: CarnetProgress)
     reservations: nettoyerListe(progress.reservations),
     checklistValise: nettoyerListe(progress.checklistValise),
     checklistVoyage: nettoyerListe(progress.checklistVoyage),
+    contactsCustom: (progress.contactsCustom ?? []).slice(0, 50).map((c) => ({
+      label: String(c.label).slice(0, 100),
+      valeur: String(c.valeur).slice(0, 150),
+    })),
   };
   await redis.set(`progress:${slug}`, propre);
 }

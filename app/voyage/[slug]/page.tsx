@@ -7,6 +7,7 @@ import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
 import CheckList from "./CheckList";
 import ReservationList from "./ReservationList";
+import ContactsUrgence from "./ContactsUrgence";
 import styles from "./carnet.module.css";
 
 export default async function CarnetPage({
@@ -276,23 +277,19 @@ export default async function CarnetPage({
       )}
 
 
-      {carnet.contactsUrgence && carnet.contactsUrgence.length > 0 && (
-        <section className={styles.wrap}>
-          <div className={styles.sectionHead}>
-            <span className={styles.eyebrow}>En cas de besoin</span>
-            <h2 className={styles.display2}>
-              Contacts <em>d&apos;urgence</em>
-            </h2>
-          </div>
-          <div className={styles.practicalBox}>
-            {carnet.contactsUrgence.map((c, i) => (
-              <p key={i}>
-                <strong>{c.label} :</strong> {c.valeur}
-              </p>
-            ))}
-          </div>
-        </section>
-      )}
+      <section className={styles.wrap}>
+        <div className={styles.sectionHead}>
+          <span className={styles.eyebrow}>En cas de besoin</span>
+          <h2 className={styles.display2}>
+            Contacts <em>d&apos;urgence</em>
+          </h2>
+        </div>
+        <ContactsUrgence
+          contacts={carnet.contactsUrgence ?? []}
+          slug={carnet.slug}
+          contactsCustomInitiaux={progress.contactsCustom}
+        />
+      </section>
 
       <div className={styles.footerEnd}>
         <p>
