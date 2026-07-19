@@ -6,12 +6,12 @@
 // éléments personnalisés ajoutés). Le numéro de confirmation n'est JAMAIS
 // envoyé ici — il reste uniquement dans le navigateur du client.
 import { NextRequest, NextResponse } from "next/server";
-import { getCarnet, saveCarnetProgress, type CarnetProgress } from "@/lib/carnets";
+import { getCarnet, getCarnetProgress, saveCarnetProgress, type CarnetProgress } from "@/lib/carnets";
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { slug, progress } = body as { slug: string; progress: CarnetProgress };
+    const { slug, progress } = body as { slug: string; progress: Partial<CarnetProgress> };
 
     if (!slug || typeof slug !== "string") {
       return NextResponse.json({ error: "Slug manquant" }, { status: 400 });
@@ -24,7 +24,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Progression invalide" }, { status: 400 });
     }
 
-    await saveCarnetProgress(slug, progress);
+    // On ne reçoit que la liste modifiée (ex: juste "reservations") — on la fusionne
+    // avec la progression existante des deux autres listes, sans les écraser.
+    const existant = await getCarnetProgress(slug);
+    const fusionne: CarnetProgress = {
+      reservations: progress.reservations ?? existant.reservations,
+      checklistValise: progress.checklistValise ?? existant.checklistValise,
+      checklistVoyage: progress.checklistVoyage ?? existant.checklistVoyage,
+    };
+
+    await saveCarnetProgress(slug, fusionne);
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Erreur carnet-progress:", err);
