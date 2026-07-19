@@ -121,25 +121,38 @@ export default function CheckList({
           onKeyDown={(e) => e.key === "Enter" && ajouter()}
           style={{
             flex: 1,
-            padding: "8px 12px",
+            height: 38,
+            padding: "0 12px",
             fontSize: 13,
             borderRadius: 3,
             fontFamily: "Inter, sans-serif",
             border: "1px solid #e8e0d6",
             outline: "none",
+            boxSizing: "border-box",
           }}
         />
         <button
           onClick={ajouter}
           style={{
-            fontSize: 12.5,
+            fontSize: 12,
             fontWeight: 600,
             color: "#fff",
             background: "#c8956c",
             border: "none",
-            padding: "0 18px",
+            height: 38,
+            padding: "0 12px",
+            margin: 0,
             borderRadius: 3,
             cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexShrink: 0,
+            boxSizing: "border-box",
+            WebkitAppearance: "none",
+            appearance: "none",
+            lineHeight: "normal",
+            fontFamily: "Inter, sans-serif",
           }}
         >
           Ajouter
