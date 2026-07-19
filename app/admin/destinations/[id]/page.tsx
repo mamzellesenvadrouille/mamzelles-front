@@ -140,6 +140,16 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   <label style={adminStyles.label}>Nom de la destination</label>
                   <input style={adminStyles.input} placeholder="ex : Marrakech" value={dest.nom} onChange={(e) => update("nom", e.target.value)} />
                 </div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 16 }}>
+                  <div>
+                    <label style={adminStyles.label}>Continent</label>
+                    <input style={adminStyles.input} placeholder="ex : Asie" value={dest.continent ?? ""} onChange={(e) => update("continent", e.target.value)} />
+                  </div>
+                  <div>
+                    <label style={adminStyles.label}>Pays</label>
+                    <input style={adminStyles.input} placeholder="ex : Maldives" value={dest.pays ?? ""} onChange={(e) => update("pays", e.target.value)} />
+                  </div>
+                </div>
                 <div style={adminStyles.field}>
                   <label style={adminStyles.label}>Photo (URL)</label>
                   <input style={adminStyles.input} value={dest.photo} onChange={(e) => update("photo", e.target.value)} />

@@ -201,6 +201,97 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
     );
   }
 
+  function ligneDestination(d: Destination) {
+    const ref = carnet.destinations.find((r) => r.destinationId === d.id);
+    const nomsHebergements = (d.hebergements ?? []).map((h) => h.nom);
+    const nomsRestaurants = d.restaurants.map((r) => r.nom);
+    const nomsActivites = d.activites.map((a) => a.nom);
+    return (
+      <div key={d.id} style={{ borderBottom: "1px solid #f0ebe4", padding: "10px 0" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, fontFamily: "Inter, sans-serif", fontSize: 14 }}>
+          <input type="checkbox" checked={!!ref} onChange={() => toggleDestination(d.id)} />
+          <span style={{ flex: 1, fontWeight: 500 }}>{d.nom}</span>
+          {ref && (
+            <input
+              type="number"
+              style={{ ...adminStyles.input, width: 90 }}
+              value={ref.nuits}
+              onChange={(e) => updateNuits(d.id, Number(e.target.value))}
+              placeholder="nuits"
+            />
+          )}
+        </div>
+
+        {ref && (
+          <div style={{ marginTop: 10, marginLeft: 26, display: "flex", flexDirection: "column", gap: 12 }}>
+            {nomsHebergements.length > 0 && (
+              <div>
+                <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", color: "#aaa", marginBottom: 6 }}>
+                  Hébergements à inclure dans ce carnet
+                </div>
+                {nomsHebergements.map((nom) => {
+                  const coche = (ref.hebergementsChoisis ?? nomsHebergements).includes(nom);
+                  return (
+                    <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
+                      <input
+                        type="checkbox"
+                        checked={coche}
+                        onChange={() => toggleItemChoisi(d.id, "hebergementsChoisis", nom, nomsHebergements)}
+                      />
+                      {nom}
+                    </label>
+                  );
+                })}
+              </div>
+            )}
+
+            {nomsRestaurants.length > 0 && (
+              <div>
+                <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", color: "#aaa", marginBottom: 6 }}>
+                  Restaurants à inclure dans ce carnet
+                </div>
+                {nomsRestaurants.map((nom) => {
+                  const coche = (ref.restaurantsChoisis ?? nomsRestaurants).includes(nom);
+                  return (
+                    <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
+                      <input
+                        type="checkbox"
+                        checked={coche}
+                        onChange={() => toggleItemChoisi(d.id, "restaurantsChoisis", nom, nomsRestaurants)}
+                      />
+                      {nom}
+                    </label>
+                  );
+                })}
+              </div>
+            )}
+
+            {nomsActivites.length > 0 && (
+              <div>
+                <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", color: "#aaa", marginBottom: 6 }}>
+                  Sites & activités à inclure dans ce carnet
+                </div>
+                {nomsActivites.map((nom) => {
+                  const coche = (ref.activitesChoisies ?? nomsActivites).includes(nom);
+                  return (
+                    <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
+                      <input
+                        type="checkbox"
+                        checked={coche}
+                        onChange={() => toggleItemChoisi(d.id, "activitesChoisies", nom, nomsActivites)}
+                      />
+                      {nom}
+                    </label>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   function ajouterConseil() {
     update("conseils", [...carnet.conseils, { type: "conseil", texte: "" } as ConseilMamZelles]);
   }
@@ -437,96 +528,48 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 {destinationsDispo.length === 0 && (
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888" }}>Aucune fiche destination pour l&apos;instant.</p>
                 )}
-                {destinationsDispo.map((d) => {
-                  const ref = carnet.destinations.find((r) => r.destinationId === d.id);
-                  const nomsHebergements = (d.hebergements ?? []).map((h) => h.nom);
-                  const nomsRestaurants = d.restaurants.map((r) => r.nom);
-                  const nomsActivites = d.activites.map((a) => a.nom);
-                  return (
-                    <div key={d.id} style={{ borderBottom: "1px solid #f0ebe4", padding: "10px 0" }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: 12, fontFamily: "Inter, sans-serif", fontSize: 14 }}>
-                        <input type="checkbox" checked={!!ref} onChange={() => toggleDestination(d.id)} />
-                        <span style={{ flex: 1, fontWeight: 500 }}>{d.nom}</span>
-                        {ref && (
-                          <input
-                            type="number"
-                            style={{ ...adminStyles.input, width: 90 }}
-                            value={ref.nuits}
-                            onChange={(e) => updateNuits(d.id, Number(e.target.value))}
-                            placeholder="nuits"
-                          />
+                {(() => {
+                  const trie = [...destinationsDispo].sort((a, b) => {
+                    const ca = a.continent?.trim() || "Non classé";
+                    const cb = b.continent?.trim() || "Non classé";
+                    if (ca !== cb) return ca === "Non classé" ? 1 : cb === "Non classé" ? -1 : ca.localeCompare(cb);
+                    const pa = a.pays?.trim() || "Non classé";
+                    const pb = b.pays?.trim() || "Non classé";
+                    if (pa !== pb) return pa === "Non classé" ? 1 : pb === "Non classé" ? -1 : pa.localeCompare(pb);
+                    return a.nom.localeCompare(b.nom);
+                  });
+                  let continentPrecedent = "";
+                  let paysPrecedent = "";
+                  return trie.map((d) => {
+                    const continent = d.continent?.trim() || "Non classé";
+                    const pays = d.pays?.trim() || "Non classé";
+                    const afficherContinent = continent !== continentPrecedent;
+                    const afficherPays = afficherContinent || pays !== paysPrecedent;
+                    continentPrecedent = continent;
+                    paysPrecedent = pays;
+
+                    const entete = (afficherContinent || afficherPays) && (
+                      <div key={`entete-${continent}-${pays}`}>
+                        {afficherContinent && (
+                          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, fontStyle: "italic", color: "#1a1512", marginTop: 20, marginBottom: 6 }}>
+                            {continent}
+                          </div>
+                        )}
+                        {afficherPays && (
+                          <div style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em", color: "#a8734c", marginBottom: 6 }}>
+                            {pays}
+                          </div>
                         )}
                       </div>
-
-                      {ref && (
-                        <div style={{ marginTop: 10, marginLeft: 26, display: "flex", flexDirection: "column", gap: 12 }}>
-                          {nomsHebergements.length > 0 && (
-                            <div>
-                              <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", color: "#aaa", marginBottom: 6 }}>
-                                Hébergements à inclure dans ce carnet
-                              </div>
-                              {nomsHebergements.map((nom) => {
-                                const coche = (ref.hebergementsChoisis ?? nomsHebergements).includes(nom);
-                                return (
-                                  <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
-                                    <input
-                                      type="checkbox"
-                                      checked={coche}
-                                      onChange={() => toggleItemChoisi(d.id, "hebergementsChoisis", nom, nomsHebergements)}
-                                    />
-                                    {nom}
-                                  </label>
-                                );
-                              })}
-                            </div>
-                          )}
-
-                          {nomsRestaurants.length > 0 && (
-                            <div>
-                              <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", color: "#aaa", marginBottom: 6 }}>
-                                Restaurants à inclure dans ce carnet
-                              </div>
-                              {nomsRestaurants.map((nom) => {
-                                const coche = (ref.restaurantsChoisis ?? nomsRestaurants).includes(nom);
-                                return (
-                                  <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
-                                    <input
-                                      type="checkbox"
-                                      checked={coche}
-                                      onChange={() => toggleItemChoisi(d.id, "restaurantsChoisis", nom, nomsRestaurants)}
-                                    />
-                                    {nom}
-                                  </label>
-                                );
-                              })}
-                            </div>
-                          )}
-
-                          {nomsActivites.length > 0 && (
-                            <div>
-                              <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", color: "#aaa", marginBottom: 6 }}>
-                                Sites & activités à inclure dans ce carnet
-                              </div>
-                              {nomsActivites.map((nom) => {
-                                const coche = (ref.activitesChoisies ?? nomsActivites).includes(nom);
-                                return (
-                                  <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
-                                    <input
-                                      type="checkbox"
-                                      checked={coche}
-                                      onChange={() => toggleItemChoisi(d.id, "activitesChoisies", nom, nomsActivites)}
-                                    />
-                                    {nom}
-                                  </label>
-                                );
-                              })}
-                            </div>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
+                    );
+                    return (
+                      <div key={d.id}>
+                        {entete}
+                        {ligneDestination(d)}
+                      </div>
+                    );
+                  });
+                })()}
               </div>
 
               <div style={sectionWrap}>

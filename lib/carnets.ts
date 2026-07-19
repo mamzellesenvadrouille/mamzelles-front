@@ -46,6 +46,8 @@ export interface Destination {
   id: string; // slug normalisé, ex: "baa-atoll"
   nom: string;
   photo: string;
+  continent?: string; // ex: "Asie", pour ranger la bibliothèque de destinations
+  pays?: string; // ex: "Maldives"
   lat?: number; // coordonnée GPS de la destination elle-même (météo + carte du parcours)
   lng?: number;
   hebergements?: Hebergement[];
