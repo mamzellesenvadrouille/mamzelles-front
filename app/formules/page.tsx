@@ -131,14 +131,14 @@ export default function Formules() {
             <p>Les meilleures adresses<br />pour vous régaler</p>
           </div>
           <div className="ess-card">
-            <Map size={34} className="ess-icon" strokeWidth={1.2} />
-            <h3>Cartes Google Maps</h3>
-            <p>Toutes vos adresses<br />géolocalisées,<br />prêtes à explorer</p>
-          </div>
-          <div className="ess-card">
             <Notebook size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Carnet interactif</h3>
             <p>Itinéraire(s), réservations,<br />checklists,<br />notes personnelles.</p>
+          </div>
+          <div className="ess-card">
+            <Map size={34} className="ess-icon" strokeWidth={1.2} />
+            <h3>Cartes Google Maps</h3>
+            <p>Toutes vos adresses<br />géolocalisées,<br />prêtes à explorer</p>
           </div>
         </div>
       </section>
