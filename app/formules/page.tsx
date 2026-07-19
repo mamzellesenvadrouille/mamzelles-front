@@ -132,13 +132,13 @@ export default function Formules() {
           </div>
           <div className="ess-card">
             <Map size={34} className="ess-icon" strokeWidth={1.2} />
-            <h3>Carte Google Maps</h3>
+            <h3>Cartes Google Maps</h3>
             <p>Toutes vos adresses<br />géolocalisées,<br />prêtes à explorer</p>
           </div>
           <div className="ess-card">
             <Notebook size={34} className="ess-icon" strokeWidth={1.2} />
-            <h3>Carnet digital</h3>
-            <p>Réservations, infos pratiques,<br />check-list valise,<br />tout est dedans !</p>
+            <h3>Carnet interactif</h3>
+            <p>Itinéraire(s), réservations,<br />checklists,<br />notes personnelles.</p>
           </div>
         </div>
       </section>
