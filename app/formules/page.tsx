@@ -313,7 +313,7 @@ export default function Formules() {
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
                 </div>
               </div>
-              <h3>Validation<br />du devis</h3>
+              <h3>Validation du devis</h3>
               <p>Le début de la préparation<br />de votre voyage.</p>
             </div>
             <div className="process-arrow">›</div>
@@ -328,7 +328,7 @@ export default function Formules() {
                 </div>
               </div>
               <h3>Propositions<br />personnalisées</h3>
-              <p>Transports, hébergements,<br />activités...</p>
+              <p>On crée votre itinéraire<br />ensemble.</p>
             </div>
             <div className="process-arrow">›</div>
           </div>
