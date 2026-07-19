@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Plane, BedDouble, Utensils, MapPin, Compass, Users, User, Calendar, Notebook, Smartphone } from 'lucide-react';
+import { Plane, BedDouble, Utensils, MapPin, Map, Compass, Users, User, Calendar, Notebook, Smartphone } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import ContactForm from '../ContactForm';
 import Footer from '../components/Footer';
@@ -324,11 +324,11 @@ export default function Formules() {
               <div className="step-circle-wrap">
                 <div className="step-num">03</div>
                 <div className="step-circle">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                  <Map size={26} strokeWidth={1.4} />
                 </div>
               </div>
               <h3>Propositions<br />personnalisées</h3>
-              <p>Vols, hébergements,<br />activités.</p>
+              <p>Transports, hébergements,<br />activités...</p>
             </div>
             <div className="process-arrow">›</div>
           </div>
