@@ -15,6 +15,7 @@ import PhotoField from "../../PhotoField";
 const destinationVide: Omit<Destination, "id" | "updatedAt"> & { id?: string } = {
   nom: "",
   photo: "",
+  deroule: [],
   hebergements: [],
   restaurants: [],
   activites: [],
@@ -181,6 +182,69 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     />
                   </div>
                 </div>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Déroulé type</div>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
+                  Réutilisé tel quel dans chaque carnet qui inclut cette destination. Le client peut aussi ajouter ses propres notes en mémento sur sa page.
+                </p>
+                {dest.deroule.map((point, i) => (
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
+                    <input
+                      style={{ ...adminStyles.input, width: 100 }}
+                      placeholder="Jour"
+                      value={point.jour}
+                      onChange={(e) => {
+                        const copy = [...dest.deroule];
+                        copy[i] = { ...copy[i], jour: e.target.value };
+                        update("deroule", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, width: 80 }}
+                      placeholder="Heure"
+                      value={point.heure}
+                      onChange={(e) => {
+                        const copy = [...dest.deroule];
+                        copy[i] = { ...copy[i], heure: e.target.value };
+                        update("deroule", copy);
+                      }}
+                    />
+                    <input
+                      style={adminStyles.input}
+                      placeholder="Action"
+                      value={point.action}
+                      onChange={(e) => {
+                        const copy = [...dest.deroule];
+                        copy[i] = { ...copy[i], action: e.target.value };
+                        update("deroule", copy);
+                      }}
+                    />
+                    <input
+                      style={adminStyles.input}
+                      placeholder="Note"
+                      value={point.note}
+                      onChange={(e) => {
+                        const copy = [...dest.deroule];
+                        copy[i] = { ...copy[i], note: e.target.value };
+                        update("deroule", copy);
+                      }}
+                    />
+                    <button
+                      onClick={() => update("deroule", dest.deroule.filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ))}
+                <button
+                  onClick={() => update("deroule", [...dest.deroule, { jour: "", heure: "", action: "", note: "" } as DeroulePoint])}
+                  style={smallLink}
+                >
+                  + Ajouter une étape
+                </button>
               </div>
 
               <div style={sectionWrap}>

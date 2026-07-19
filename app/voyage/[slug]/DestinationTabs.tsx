@@ -3,21 +3,113 @@
 "use client";
 
 import { useRef, useState } from "react";
-import type { DestinationResolue } from "@/lib/carnets";
+import type { DestinationResolue, DeroulePoint } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 import DestinationMap, { type DestinationMapHandle } from "./DestinationMap";
+
+async function sauvegarderDerouleCustom(slug: string, derouleCustom: (DeroulePoint & { destinationId: string })[]) {
+  try {
+    await fetch("/api/carnet-progress", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ slug, progress: { derouleCustom } }),
+    });
+  } catch {
+    // pas grave si la sauvegarde échoue ponctuellement
+  }
+}
+
+// Extrait un numéro de jour depuis un texte libre (ex: "Jour 3" → 3). Sinon, poussé à la fin.
+function extraireJour(texte: string): number {
+  const m = texte.match(/\d+/);
+  return m ? parseInt(m[0], 10) : Infinity;
+}
+function extraireMinutes(texte: string): number {
+  const m = texte.match(/(\d{1,2})\s*[h:]\s*(\d{0,2})/i);
+  if (!m) return 0;
+  return (parseInt(m[1], 10) || 0) * 60 + (parseInt(m[2], 10) || 0);
+}
+function trierChronologiquement<T extends DeroulePoint>(points: T[]): T[] {
+  return [...points].sort((a, b) => {
+    const jourA = extraireJour(a.jour);
+    const jourB = extraireJour(b.jour);
+    if (jourA !== jourB) return jourA - jourB;
+    return extraireMinutes(a.heure) - extraireMinutes(b.heure);
+  });
+}
+
+const inputMemento: React.CSSProperties = {
+  height: 38,
+  padding: "0 12px",
+  fontSize: 13,
+  borderRadius: 3,
+  fontFamily: "Inter, sans-serif",
+  border: "1px solid #e8e0d6",
+  outline: "none",
+  background: "#fff",
+  boxSizing: "border-box",
+  width: 90,
+};
+
+const boutonMemento: React.CSSProperties = {
+  fontSize: 12,
+  fontWeight: 600,
+  color: "#fff",
+  background: "#c8956c",
+  border: "none",
+  height: 38,
+  padding: "0 12px",
+  margin: 0,
+  borderRadius: 3,
+  cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexShrink: 0,
+  boxSizing: "border-box",
+  WebkitAppearance: "none",
+  appearance: "none",
+  lineHeight: "normal",
+  fontFamily: "Inter, sans-serif",
+};
 
 export default function DestinationTabs({
   destinations,
   googleMapsApiKey,
   meteoParDestination,
+  slug,
+  derouleCustomInitial,
 }: {
   destinations: DestinationResolue[];
   googleMapsApiKey: string;
   meteoParDestination?: ({ temperature: number; icone: string } | null)[];
+  slug: string;
+  derouleCustomInitial: (DeroulePoint & { destinationId: string })[];
 }) {
   const [actif, setActif] = useState(0);
   const mapHandleRef = useRef<DestinationMapHandle>(null);
+  const [derouleCustom, setDerouleCustom] = useState(derouleCustomInitial);
+  const [nJour, setNJour] = useState("");
+  const [nHeure, setNHeure] = useState("");
+  const [nAction, setNAction] = useState("");
+  const [nNote, setNNote] = useState("");
+
+  function ajouterNoteDeroule(destinationId: string) {
+    if (!nAction.trim()) return;
+    const next = [...derouleCustom, { destinationId, jour: nJour.trim(), heure: nHeure.trim(), action: nAction.trim(), note: nNote.trim() }];
+    setDerouleCustom(next);
+    sauvegarderDerouleCustom(slug, next);
+    setNJour("");
+    setNHeure("");
+    setNAction("");
+    setNNote("");
+  }
+
+  function supprimerNoteDeroule(index: number) {
+    const next = derouleCustom.filter((_, i) => i !== index);
+    setDerouleCustom(next);
+    sauvegarderDerouleCustom(slug, next);
+  }
 
   function centrerSurLeLieu(lat?: number, lng?: number, nom?: string) {
     if (typeof lat !== "number" || typeof lng !== "number") return;
@@ -69,6 +161,78 @@ export default function DestinationTabs({
             </div>
           )}
         </div>
+
+        {(() => {
+          const notesDeCetteDestination = derouleCustom
+            .map((n, idx) => ({ ...n, indexOrigine: idx }))
+            .filter((n) => n.destinationId === dest.id);
+          const tousLesPoints = trierChronologiquement([
+            ...dest.deroule.map((p) => ({ ...p, estAjoutee: false, indexOrigine: -1 })),
+            ...notesDeCetteDestination.map((p) => ({ ...p, estAjoutee: true })),
+          ]);
+          return (
+            <>
+              <div className={styles.subEyebrow}>Déroulé</div>
+              <div className={styles.dayList}>
+                {tousLesPoints.map((point, i) => (
+                  <div
+                    className={styles.dayItem}
+                    key={i}
+                    style={point.estAjoutee ? { borderLeft: "2px dashed #d8cfc0", paddingLeft: 10 } : undefined}
+                  >
+                    <div className={styles.time}>
+                      {point.jour}
+                      {point.jour && point.heure ? " · " : ""}
+                      {point.heure}
+                    </div>
+                    <div className={styles.desc} style={{ flex: 1 }}>
+                      <strong>{point.action}</strong>
+                      <span>{point.note}</span>
+                      {point.estAjoutee && <div style={{ fontSize: 10.5, color: "#c8956c", marginTop: 4 }}>Ajouté par vous</div>}
+                    </div>
+                    {point.estAjoutee && (
+                      <button
+                        onClick={() => supprimerNoteDeroule(point.indexOrigine)}
+                        style={{ background: "none", border: "none", color: "#c0392b", cursor: "pointer", fontSize: 13 }}
+                        title="Retirer"
+                      >
+                        ✕
+                      </button>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div style={{ marginTop: 16, marginBottom: 8 }}>
+                <div style={{ fontSize: 11, color: "#8a8074", marginBottom: 8, fontFamily: "Inter, sans-serif" }}>
+                  Ajouter une note personnelle à votre mémento pour {dest.nom}
+                </div>
+                <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
+                  <input placeholder="Jour" value={nJour} onChange={(e) => setNJour(e.target.value)} style={inputMemento} />
+                  <input placeholder="Heure" value={nHeure} onChange={(e) => setNHeure(e.target.value)} style={{ ...inputMemento, width: 80 }} />
+                  <input
+                    placeholder="Action"
+                    value={nAction}
+                    onChange={(e) => setNAction(e.target.value)}
+                    style={{ ...inputMemento, flex: 1, minWidth: 140 }}
+                  />
+                </div>
+                <div style={{ display: "flex", gap: 8 }}>
+                  <input
+                    placeholder="Note (optionnel)"
+                    value={nNote}
+                    onChange={(e) => setNNote(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && ajouterNoteDeroule(dest.id)}
+                    style={{ ...inputMemento, flex: 1 }}
+                  />
+                  <button onClick={() => ajouterNoteDeroule(dest.id)} style={boutonMemento}>
+                    Ajouter
+                  </button>
+                </div>
+              </div>
+            </>
+          );
+        })()}
 
         {(dest.hebergements ?? []).length > 0 && (
           <>

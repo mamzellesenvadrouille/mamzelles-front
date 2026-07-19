@@ -50,6 +50,7 @@ export interface Destination {
   pays?: string; // ex: "Maldives"
   lat?: number; // coordonnée GPS de la destination elle-même (météo + carte du parcours)
   lng?: number;
+  deroule: DeroulePoint[]; // propre à cette destination, réutilisé tel quel dans chaque carnet qui l'inclut
   hebergements?: Hebergement[];
   restaurants: Restaurant[]; // objectif 5
   activites: Activite[]; // objectif 5
@@ -106,7 +107,6 @@ export interface DocumentVoyage {
 
 export interface Carnet {
   slug: string; // ex: "julie-thomas-maldives"
-  deroule: DeroulePoint[]; // le déroulé du séjour, propre à ce carnet précis (pas partagé entre destinations)
   client: {
     prenoms: string; // ex: "Julie & Thomas"
     typeVoyage: string; // ex: "Voyage de noces"
@@ -169,7 +169,7 @@ export interface CarnetProgress {
   checklistValise: ProgressListe;
   checklistVoyage: ProgressListe;
   contactsCustom: { label: string; valeur: string }[]; // contacts d'urgence ajoutés par le client lui-même
-  derouleCustom: DeroulePoint[]; // notes/mémento ajoutés par le client dans le déroulé
+  derouleCustom: (DeroulePoint & { destinationId: string })[]; // notes/mémento ajoutés par le client, rattachées à une destination précise
 }
 
 function progressVide(): CarnetProgress {
@@ -204,6 +204,7 @@ export async function saveCarnetProgress(slug: string, progress: CarnetProgress)
       valeur: String(c.valeur).slice(0, 150),
     })),
     derouleCustom: (progress.derouleCustom ?? []).slice(0, 50).map((d) => ({
+      destinationId: String(d.destinationId ?? "").slice(0, 100),
       jour: String(d.jour ?? "").slice(0, 50),
       heure: String(d.heure ?? "").slice(0, 20),
       action: String(d.action ?? "").slice(0, 150),
