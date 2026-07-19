@@ -328,7 +328,7 @@ export default function Formules() {
                 </div>
               </div>
               <h3>Réception de votre<br />carnet interactif</h3>
-              <p>Itinéraire(s), liens de réservation,<br />cartes Maps... tout-en-un.</p>
+              <p>Itinéraire(s), réservations,<br />checklists... sous 15 jours ouvrés.</p>
             </div>
             <div className="process-arrow">›</div>
           </div>
