@@ -13,8 +13,8 @@ type Categorie = "hebergements" | "restaurants" | "activites";
 
 const CATEGORIES: { key: Categorie; label: string; Icon: typeof Bed; color: string }[] = [
   { key: "hebergements", label: "Hôtels", Icon: Bed, color: "#7d4e6b" },
-  { key: "restaurants", label: "Restaurants", Icon: Utensils, color: "#c8956c" },
   { key: "activites", label: "Sites & activités", Icon: Camera, color: "#7a9e7e" },
+  { key: "restaurants", label: "Restaurants", Icon: Utensils, color: "#c8956c" },
 ];
 
 export interface DestinationMapHandle {
