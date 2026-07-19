@@ -33,7 +33,6 @@ async function main() {
       id: "male",
       nom: male.nom,
       photo: male.photo,
-      deroule: male.deroule,
       hebergements: [
         { nom: "Hulhule Island Hotel", photo: "https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=300&q=80", description: "Idéal pour une nuit avant le transfert vers l'atoll", lat: 4.1919, lng: 73.5285 },
       ],
@@ -69,7 +68,6 @@ async function main() {
       id: "baa-atoll",
       nom: baaAtoll.nom,
       photo: baaAtoll.photo,
-      deroule: baaAtoll.deroule,
       hebergements: [
         { nom: "Soneva Fushi", photo: "https://images.unsplash.com/photo-1601999705946-fbf42c3c6c66?w=300&q=80", description: "Villa sur pilotis, notre coup de cœur pour ce voyage", lat: 5.3320, lng: 73.0708 },
       ],
