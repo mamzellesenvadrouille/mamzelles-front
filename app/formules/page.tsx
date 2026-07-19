@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Plane, BedDouble, Utensils, MapPin, Map, Compass, Users, User, Calendar, Notebook } from 'lucide-react';
+import { Plane, BedDouble, Utensils, MapPin, Map, Compass, Users, User, Calendar, Notebook, Smartphone } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import ContactForm from '../ContactForm';
 import Footer from '../components/Footer';
@@ -310,11 +310,11 @@ export default function Formules() {
               <div className="step-circle-wrap">
                 <div className="step-num">02</div>
                 <div className="step-circle">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+                  <Notebook size={26} strokeWidth={1.4} />
                 </div>
               </div>
-              <h3>Vos liens de réservation,<br />prêts à cliquer</h3>
-              <p>Sous 10 jours ouvrés<br />après validation du devis.</p>
+              <h3>Réception de votre<br />carnet interactif</h3>
+              <p>Itinéraire, liens de réservation,<br />cartes... tout-en-un.</p>
             </div>
             <div className="process-arrow">›</div>
           </div>
@@ -324,11 +324,11 @@ export default function Formules() {
               <div className="step-circle-wrap">
                 <div className="step-num">03</div>
                 <div className="step-circle">
-                  <Notebook size={26} strokeWidth={1.4} />
+                  <Smartphone size={26} strokeWidth={1.4} />
                 </div>
               </div>
-              <h3>Réception de votre<br />carnet & Maps</h3>
-              <p>1 semaine avant le départ.</p>
+              <h3>Cochez, notez,<br />personnalisez</h3>
+              <p>Votre carnet accessible<br />à tout moment depuis votre téléphone.</p>
             </div>
             <div className="process-arrow">›</div>
           </div>
