@@ -8,6 +8,7 @@
 import { useState, use } from "react";
 import { useRouter } from "next/navigation";
 import type { Destination, DeroulePoint, Hebergement, Restaurant, Activite } from "@/lib/carnets";
+import { normaliserHeure } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
 import PhotoField from "../../PhotoField";
@@ -204,6 +205,11 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       onChange={(e) => {
                         const copy = [...dest.deroule];
                         copy[i] = { ...copy[i], heure: e.target.value };
+                        update("deroule", copy);
+                      }}
+                      onBlur={(e) => {
+                        const copy = [...dest.deroule];
+                        copy[i] = { ...copy[i], heure: normaliserHeure(e.target.value) };
                         update("deroule", copy);
                       }}
                     />

@@ -142,6 +142,18 @@ export interface Carnet {
 // HELPERS
 // ─────────────────────────────────────────────
 
+// Reformate n'importe quelle saisie d'heure libre ("14h", "14", "14:5", "9h5") en "14h00", "09h05"...
+// pour que toutes les heures du déroulé soient alignées visuellement, peu importe comment le champ a été rempli.
+export function normaliserHeure(texte: string): string {
+  const t = texte.trim();
+  if (!t) return "";
+  const m = t.match(/(\d{1,2})\s*[h:]?\s*(\d{0,2})/i);
+  if (!m) return t; // texte non reconnu, on le laisse tel quel plutôt que de le casser
+  const heures = Math.min(parseInt(m[1], 10) || 0, 23);
+  const minutes = Math.min(parseInt(m[2], 10) || 0, 59);
+  return `${String(heures).padStart(2, "0")}h${String(minutes).padStart(2, "0")}`;
+}
+
 export function normaliserSlug(nom: string): string {
   return nom
     .toLowerCase()

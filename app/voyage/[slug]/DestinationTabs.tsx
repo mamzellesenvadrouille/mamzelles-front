@@ -4,6 +4,7 @@
 
 import { useRef, useState } from "react";
 import type { DestinationResolue, DeroulePoint } from "@/lib/carnets";
+import { normaliserHeure } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 import DestinationMap, { type DestinationMapHandle } from "./DestinationMap";
 
@@ -209,7 +210,13 @@ export default function DestinationTabs({
                 </div>
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
                   <input placeholder="Jour" value={nJour} onChange={(e) => setNJour(e.target.value)} style={inputMemento} />
-                  <input placeholder="Heure" value={nHeure} onChange={(e) => setNHeure(e.target.value)} style={{ ...inputMemento, width: 80 }} />
+                  <input
+                    placeholder="Heure"
+                    value={nHeure}
+                    onChange={(e) => setNHeure(e.target.value)}
+                    onBlur={(e) => setNHeure(normaliserHeure(e.target.value))}
+                    style={{ ...inputMemento, width: 80 }}
+                  />
                   <input
                     placeholder="Titre"
                     value={nTitre}
