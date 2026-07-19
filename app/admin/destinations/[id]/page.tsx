@@ -19,7 +19,6 @@ const destinationVide: Omit<Destination, "id" | "updatedAt"> & { id?: string } =
   hebergements: [],
   restaurants: [],
   activites: [],
-  seDeplacer: [],
 };
 
 const sectionTitle: React.CSSProperties = {
@@ -113,10 +112,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
   function ajouterActivite() {
         update("activites", [...dest.activites, { nom: "", photo: "", description: "" } as Activite]);
   }
-  function ajouterConseilDeplacement() {
-    update("seDeplacer", [...dest.seDeplacer, ""]);
-  }
-  function supprimerLigne<K extends "hebergements" | "restaurants" | "activites" | "seDeplacer">(champ: K, i: number) {
+  function supprimerLigne<K extends "hebergements" | "restaurants" | "activites">(champ: K, i: number) {
     update(champ, ((dest[champ] ?? []) as unknown[]).filter((_, idx) => idx !== i) as (typeof destinationVide)[K]);
   }
 
@@ -525,25 +521,6 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   </div>
                 ))}
                 <button onClick={ajouterActivite} style={smallLink}>+ Ajouter une activité</button>
-              </div>
-
-              <div style={sectionWrap}>
-                <div style={sectionTitle}>Comment se déplacer</div>
-                {dest.seDeplacer.map((conseil, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
-                    <input
-                      style={adminStyles.input}
-                      value={conseil}
-                      onChange={(e) => {
-                        const copy = [...dest.seDeplacer];
-                        copy[i] = e.target.value;
-                        update("seDeplacer", copy);
-                      }}
-                    />
-                    <button onClick={() => supprimerLigne("seDeplacer", i)} style={adminStyles.btnDelete}>✕</button>
-                  </div>
-                ))}
-                <button onClick={ajouterConseilDeplacement} style={smallLink}>+ Ajouter un conseil</button>
               </div>
 
               <button onClick={enregistrer} disabled={saving} style={adminStyles.btnGold}>

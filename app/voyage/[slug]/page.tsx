@@ -146,7 +146,7 @@ export default async function CarnetPage({
           <div className={styles.sectionHead}>
             <span className={styles.eyebrow}>Notre expertise</span>
             <h2 className={styles.display2}>
-              Les conseils <em>MamZelles</em>
+              Les conseils des <em>MamZelles</em>
             </h2>
           </div>
           {carnet.conseils.map((c, i) => (

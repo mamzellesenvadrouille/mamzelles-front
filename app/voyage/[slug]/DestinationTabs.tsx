@@ -351,17 +351,6 @@ export default function DestinationTabs({
           </>
         )}
 
-        {dest.seDeplacer.length > 0 && (
-          <>
-            <div className={styles.subEyebrow}>Comment se déplacer</div>
-            <div className={styles.practicalBox}>
-              {dest.seDeplacer.map((conseil, i) => (
-                <p key={i}>{conseil}</p>
-              ))}
-            </div>
-          </>
-        )}
-
         <DestinationMap ref={mapHandleRef} destination={dest} apiKey={googleMapsApiKey} />
       </div>
     </div>
