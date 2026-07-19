@@ -277,7 +277,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 </div>
               </div>
 
-              <div style={sectionWrap}>
+              <div style={{ ...sectionWrap, marginBottom: 16 }}>
                 <div style={sectionTitle}>Vue d&apos;ensemble</div>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
                   <div style={adminStyles.field}>
@@ -631,16 +631,23 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Checklist valise</div>
                 {carnet.checklistValise.map((item, i) => (
-                  <input
-                    key={i}
-                    style={{ ...adminStyles.input, marginBottom: 10 }}
-                    value={item.label}
-                    onChange={(e) => {
-                      const copy = [...carnet.checklistValise];
-                      copy[i] = { ...copy[i], label: e.target.value };
-                      update("checklistValise", copy);
-                    }}
-                  />
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                    <input
+                      style={{ ...adminStyles.input, flex: 1 }}
+                      value={item.label}
+                      onChange={(e) => {
+                        const copy = [...carnet.checklistValise];
+                        copy[i] = { ...copy[i], label: e.target.value };
+                        update("checklistValise", copy);
+                      }}
+                    />
+                    <button
+                      onClick={() => update("checklistValise", carnet.checklistValise.filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                    >
+                      ✕
+                    </button>
+                  </div>
                 ))}
                 <button onClick={() => ajouterCheckItem("checklistValise")} style={smallLink}>+ Ajouter</button>
               </div>
@@ -651,16 +658,23 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   Les démarches à faire avant le départ (papiers, banque, maison...), à ne pas confondre avec la valise.
                 </p>
                 {(carnet.checklistVoyage ?? []).map((item, i) => (
-                  <input
-                    key={i}
-                    style={{ ...adminStyles.input, marginBottom: 10 }}
-                    value={item.label}
-                    onChange={(e) => {
-                      const copy = [...(carnet.checklistVoyage ?? [])];
-                      copy[i] = { ...copy[i], label: e.target.value };
-                      update("checklistVoyage", copy);
-                    }}
-                  />
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                    <input
+                      style={{ ...adminStyles.input, flex: 1 }}
+                      value={item.label}
+                      onChange={(e) => {
+                        const copy = [...(carnet.checklistVoyage ?? [])];
+                        copy[i] = { ...copy[i], label: e.target.value };
+                        update("checklistVoyage", copy);
+                      }}
+                    />
+                    <button
+                      onClick={() => update("checklistVoyage", (carnet.checklistVoyage ?? []).filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                    >
+                      ✕
+                    </button>
+                  </div>
                 ))}
                 <button onClick={() => ajouterCheckItem("checklistVoyage")} style={smallLink}>+ Ajouter</button>
               </div>
