@@ -11,9 +11,10 @@ const redis = Redis.fromEnv(); // utilise les mêmes variables d'env que tes dev
 // ─────────────────────────────────────────────
 
 export interface DeroulePoint {
-  heure: string; // ex: "23h30" ou "Jour 4"
-  titre: string;
-  detail: string;
+  jour: string; // ex: "Jour 1" ou "Lundi 12 août"
+  heure: string; // ex: "23h30"
+  action: string; // ex: "Arrivée à Malé"
+  note: string; // ex: "Accueil à l'aéroport"
 }
 
 export interface Restaurant {
@@ -47,7 +48,6 @@ export interface Destination {
   photo: string;
   lat?: number; // coordonnée GPS de la destination elle-même (météo + carte du parcours)
   lng?: number;
-  deroule: DeroulePoint[];
   hebergements?: Hebergement[];
   restaurants: Restaurant[]; // objectif 5
   activites: Activite[]; // objectif 5
@@ -104,6 +104,7 @@ export interface DocumentVoyage {
 
 export interface Carnet {
   slug: string; // ex: "julie-thomas-maldives"
+  deroule: DeroulePoint[]; // le déroulé du séjour, propre à ce carnet précis (pas partagé entre destinations)
   client: {
     prenoms: string; // ex: "Julie & Thomas"
     typeVoyage: string; // ex: "Voyage de noces"
@@ -166,6 +167,7 @@ export interface CarnetProgress {
   checklistValise: ProgressListe;
   checklistVoyage: ProgressListe;
   contactsCustom: { label: string; valeur: string }[]; // contacts d'urgence ajoutés par le client lui-même
+  derouleCustom: DeroulePoint[]; // notes/mémento ajoutés par le client dans le déroulé
 }
 
 function progressVide(): CarnetProgress {
@@ -174,6 +176,7 @@ function progressVide(): CarnetProgress {
     checklistValise: { coche: [], custom: [] },
     checklistVoyage: { coche: [], custom: [] },
     contactsCustom: [],
+    derouleCustom: [],
   };
 }
 
@@ -197,6 +200,12 @@ export async function saveCarnetProgress(slug: string, progress: CarnetProgress)
     contactsCustom: (progress.contactsCustom ?? []).slice(0, 50).map((c) => ({
       label: String(c.label).slice(0, 100),
       valeur: String(c.valeur).slice(0, 150),
+    })),
+    derouleCustom: (progress.derouleCustom ?? []).slice(0, 50).map((d) => ({
+      jour: String(d.jour ?? "").slice(0, 50),
+      heure: String(d.heure ?? "").slice(0, 20),
+      action: String(d.action ?? "").slice(0, 150),
+      note: String(d.note ?? "").slice(0, 300),
     })),
   };
   await redis.set(`progress:${slug}`, propre);

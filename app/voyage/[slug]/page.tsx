@@ -8,6 +8,7 @@ import ParcoursSection from "./ParcoursSection";
 import CheckList from "./CheckList";
 import ReservationList from "./ReservationList";
 import ContactsUrgence from "./ContactsUrgence";
+import DerouleSejour from "./DerouleSejour";
 import styles from "./carnet.module.css";
 
 export default async function CarnetPage({
@@ -123,6 +124,16 @@ export default async function CarnetPage({
           parcoursCoords={parcoursCoordsAffiche}
           apiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""}
         />
+      </section>
+
+      <section className={styles.wrap}>
+        <div className={styles.sectionHead}>
+          <span className={styles.eyebrow}>Jour par jour</span>
+          <h2 className={styles.display2}>
+            Le <em>déroulé</em>
+          </h2>
+        </div>
+        <DerouleSejour deroule={carnet.deroule} slug={carnet.slug} derouleCustomInitial={progress.derouleCustom} />
       </section>
 
       <section className={styles.wrap}>

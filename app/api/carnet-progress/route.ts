@@ -32,6 +32,7 @@ export async function POST(req: NextRequest) {
       checklistValise: progress.checklistValise ?? existant.checklistValise,
       checklistVoyage: progress.checklistVoyage ?? existant.checklistVoyage,
       contactsCustom: progress.contactsCustom ?? existant.contactsCustom,
+      derouleCustom: progress.derouleCustom ?? existant.derouleCustom,
     };
 
     await saveCarnetProgress(slug, fusionne);

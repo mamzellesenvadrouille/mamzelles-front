@@ -15,7 +15,6 @@ import PhotoField from "../../PhotoField";
 const destinationVide: Omit<Destination, "id" | "updatedAt"> & { id?: string } = {
   nom: "",
   photo: "",
-  deroule: [],
   hebergements: [],
   restaurants: [],
   activites: [],
@@ -104,9 +103,6 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
     }
   }
 
-  function ajouterDeroule() {
-    update("deroule", [...dest.deroule, { heure: "", titre: "", detail: "" } as DeroulePoint]);
-  }
   function ajouterHebergement() {
     update("hebergements", [...(dest.hebergements ?? []), { nom: "", photo: "", description: "" } as Hebergement]);
   }
@@ -119,7 +115,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
   function ajouterConseilDeplacement() {
     update("seDeplacer", [...dest.seDeplacer, ""]);
   }
-  function supprimerLigne<K extends "deroule" | "hebergements" | "restaurants" | "activites" | "seDeplacer">(champ: K, i: number) {
+  function supprimerLigne<K extends "hebergements" | "restaurants" | "activites" | "seDeplacer">(champ: K, i: number) {
     update(champ, ((dest[champ] ?? []) as unknown[]).filter((_, idx) => idx !== i) as (typeof destinationVide)[K]);
   }
 
@@ -148,8 +144,12 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   <label style={adminStyles.label}>Photo (URL)</label>
                   <input style={adminStyles.input} value={dest.photo} onChange={(e) => update("photo", e.target.value)} />
                 </div>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: 12, marginBottom: 6 }}>
-                  Coordonnées GPS de la destination (utilisées pour la météo en temps réel et la carte du parcours dans les carnets — une seule fois ici, plus besoin de les ressaisir ailleurs).
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Météo & position sur le parcours</div>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
+                  Ces coordonnées servent à afficher la météo en temps réel de cette destination, et à la positionner automatiquement sur la carte du parcours de chaque carnet qui l&apos;utilise.
                 </p>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                   <div>
@@ -171,46 +171,6 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     />
                   </div>
                 </div>
-              </div>
-
-              <div style={sectionWrap}>
-                <div style={sectionTitle}>Déroulé type</div>
-                {dest.deroule.map((point, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
-                    <input
-                      style={{ ...adminStyles.input, width: 90 }}
-                      placeholder="ex : Jour 2"
-                      value={point.heure}
-                      onChange={(e) => {
-                        const copy = [...dest.deroule];
-                        copy[i] = { ...copy[i], heure: e.target.value };
-                        update("deroule", copy);
-                      }}
-                    />
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Titre"
-                      value={point.titre}
-                      onChange={(e) => {
-                        const copy = [...dest.deroule];
-                        copy[i] = { ...copy[i], titre: e.target.value };
-                        update("deroule", copy);
-                      }}
-                    />
-                    <input
-                      style={adminStyles.input}
-                      placeholder="Détail"
-                      value={point.detail}
-                      onChange={(e) => {
-                        const copy = [...dest.deroule];
-                        copy[i] = { ...copy[i], detail: e.target.value };
-                        update("deroule", copy);
-                      }}
-                    />
-                    <button onClick={() => supprimerLigne("deroule", i)} style={adminStyles.btnDelete}>✕</button>
-                  </div>
-                ))}
-                <button onClick={ajouterDeroule} style={smallLink}>+ Ajouter une étape</button>
               </div>
 
               <div style={sectionWrap}>

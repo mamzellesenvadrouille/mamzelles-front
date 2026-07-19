@@ -12,6 +12,7 @@ import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
 
 const carnetVide: Carnet = {
+  deroule: [],
   slug: "",
   client: { prenoms: "", typeVoyage: "" },
   destination: "",
@@ -25,15 +26,15 @@ const carnetVide: Carnet = {
   conseils: [],
   budget: [],
   reservations: [
-    { label: "Vol aller réservé", coche: false },
-    { label: "Vol retour réservé", coche: false },
-    { label: "Train réservé", coche: false },
-    { label: "Location de voiture réservée", coche: false },
-    { label: "Transfert aéroport ↔ hôtel réservé", coche: false },
-    { label: "Hébergement Destination 1 réservé", coche: false },
-    { label: "Hébergement Destination 2 réservé", coche: false },
-    { label: "Excursion principale réservée", coche: false },
-    { label: "Restaurant(s) coup de cœur réservé(s)", coche: false },
+    { label: "Vol aller", coche: false },
+    { label: "Vol retour", coche: false },
+    { label: "Train", coche: false },
+    { label: "Location de voiture", coche: false },
+    { label: "Transfert aéroport ↔ hôtel", coche: false },
+    { label: "Hébergement Destination 1", coche: false },
+    { label: "Hébergement Destination 2", coche: false },
+    { label: "Excursion principale", coche: false },
+    { label: "Restaurant(s) coup de cœur", coche: false },
   ],
   checklistValise: [
     // Uniquement des objets physiques à mettre dans le sac
@@ -209,6 +210,9 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   function ajouterCheckItem(champ: "reservations" | "checklistValise" | "checklistVoyage") {
     update(champ, [...(carnet[champ] ?? []), { label: "", coche: false } as ChecklistItem]);
   }
+  function ajouterEtapeDeroule() {
+    update("deroule", [...carnet.deroule, { jour: "", heure: "", action: "", note: "" }]);
+  }
   function ajouterContactUrgence() {
     update("contactsUrgence", [...(carnet.contactsUrgence ?? []), { label: "", valeur: "" } as ContactUrgence]);
   }
@@ -289,6 +293,64 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     <input type="number" style={adminStyles.input} value={carnet.overview.dureeJours} onChange={(e) => updateNested("overview", "dureeJours", Number(e.target.value))} />
                   </div>
                 </div>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Déroulé du séjour</div>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
+                  Propre à ce carnet (pas partagé entre destinations). Le client peut aussi ajouter ses propres notes en mémento sur sa page.
+                </p>
+                {carnet.deroule.map((point, i) => (
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
+                    <input
+                      style={{ ...adminStyles.input, width: 100 }}
+                      placeholder="Jour (ex : Jour 1)"
+                      value={point.jour}
+                      onChange={(e) => {
+                        const copy = [...carnet.deroule];
+                        copy[i] = { ...copy[i], jour: e.target.value };
+                        update("deroule", copy);
+                      }}
+                    />
+                    <input
+                      style={{ ...adminStyles.input, width: 80 }}
+                      placeholder="Heure"
+                      value={point.heure}
+                      onChange={(e) => {
+                        const copy = [...carnet.deroule];
+                        copy[i] = { ...copy[i], heure: e.target.value };
+                        update("deroule", copy);
+                      }}
+                    />
+                    <input
+                      style={adminStyles.input}
+                      placeholder="Action"
+                      value={point.action}
+                      onChange={(e) => {
+                        const copy = [...carnet.deroule];
+                        copy[i] = { ...copy[i], action: e.target.value };
+                        update("deroule", copy);
+                      }}
+                    />
+                    <input
+                      style={adminStyles.input}
+                      placeholder="Note"
+                      value={point.note}
+                      onChange={(e) => {
+                        const copy = [...carnet.deroule];
+                        copy[i] = { ...copy[i], note: e.target.value };
+                        update("deroule", copy);
+                      }}
+                    />
+                    <button
+                      onClick={() => update("deroule", carnet.deroule.filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ))}
+                <button onClick={ajouterEtapeDeroule} style={smallLink}>+ Ajouter une étape</button>
               </div>
 
               <div style={sectionWrap}>
