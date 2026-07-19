@@ -50,6 +50,7 @@ export default function ReservationList({
   const [confirmations, setConfirmations] = useState<string[]>(items.map(() => ""));
   const [confirmationsCustom, setConfirmationsCustom] = useState<string[]>(custom.map(() => ""));
   const [champFocus, setChampFocus] = useState<string | null>(null);
+  const [editionForcee, setEditionForcee] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     try {
@@ -137,7 +138,7 @@ export default function ReservationList({
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: reserve ? 0 : 8 }}>
-          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 19, color: "#1a1512", flex: 1 }}>
+          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600, fontSize: 19, color: "#1a1512", flex: 1 }}>
             {label}
           </div>
           {url && !reserve && (
@@ -174,9 +175,13 @@ export default function ReservationList({
             </button>
           )}
         </div>
-        {reserve ? (
-          <div style={{ fontSize: 11.5, color: "#7a9e7e", fontWeight: 600 }}>
-            Réservé{valeurConfirmation ? ` · ${valeurConfirmation}` : ""}
+        {reserve && !editionForcee.has(cleFocus) ? (
+          <div
+            onClick={() => setEditionForcee((prev) => new Set(prev).add(cleFocus))}
+            style={{ fontSize: 11.5, color: "#7a9e7e", fontWeight: 600, cursor: "pointer" }}
+            title="Cliquer pour modifier"
+          >
+            Réservé{valeurConfirmation ? ` · ${valeurConfirmation}` : ""} <span style={{ color: "#a8a29a", fontWeight: 500 }}>(modifier)</span>
           </div>
         ) : (
           <input
@@ -185,7 +190,14 @@ export default function ReservationList({
             value={valeurConfirmation}
             onChange={(e) => onChangeConfirmation(e.target.value)}
             onFocus={() => setChampFocus(cleFocus)}
-            onBlur={() => setChampFocus(null)}
+            onBlur={() => {
+              setChampFocus(null);
+              setEditionForcee((prev) => {
+                const next = new Set(prev);
+                next.delete(cleFocus);
+                return next;
+              });
+            }}
             style={{
               border: "none",
               borderBottom: champFocus === cleFocus ? "1px solid #c8956c" : "1px solid #eee",
@@ -254,6 +266,7 @@ export default function ReservationList({
             border: "1px solid #e8e0d6",
             outline: "none",
             background: "#fff",
+            boxSizing: "border-box",
           }}
         />
         <button
@@ -264,9 +277,13 @@ export default function ReservationList({
             color: "#fff",
             background: "#c8956c",
             border: "none",
-            padding: "0 18px",
+            padding: "0 16px",
             borderRadius: 3,
             cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexShrink: 0,
           }}
         >
           Ajouter
