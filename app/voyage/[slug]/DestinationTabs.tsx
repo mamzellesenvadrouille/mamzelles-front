@@ -178,7 +178,7 @@ export default function DestinationTabs({
                   <div
                     className={styles.dayItem}
                     key={i}
-                    style={point.estAjoutee ? { background: "#faf6f0", borderRadius: 6, paddingLeft: 10, paddingRight: 10 } : undefined}
+                    style={point.estAjoutee ? { borderLeft: "3px solid #c8956c", paddingLeft: 10 } : undefined}
                   >
                     <div className={styles.time}>
                       {point.jour}
