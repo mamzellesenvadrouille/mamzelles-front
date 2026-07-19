@@ -149,28 +149,28 @@ export default function ReservationList({
           <div className={styles.checkLabel} style={{ flex: 1, textDecoration: "none", color: "#1a1512", minWidth: 160 }}>
             {label}
           </div>
-          {url && !reserve && (
-            <a
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                fontSize: 12.5,
-                fontWeight: 600,
-                color: "#fff",
-                background: "#c8956c",
-                padding: "8px 16px",
-                borderRadius: 20,
-                whiteSpace: "nowrap",
-                textDecoration: "none",
-              }}
-            >
-              Réserver maintenant →
-            </a>
-          )}
+              {url && !reserve && (
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    fontSize: 11.5,
+                    fontWeight: 600,
+                    color: "#fff",
+                    background: "#c8956c",
+                    padding: "7px 14px",
+                    borderRadius: 3,
+                    whiteSpace: "nowrap",
+                    textDecoration: "none",
+                  }}
+                >
+                  Réserver →
+                </a>
+              )}
           {url && reserve && (
             <a href={url} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, color: "#a8a29a", whiteSpace: "nowrap" }}>
-              Voir la réservation →
+              Revoir le site →
             </a>
           )}
           {onSupprimer && (
@@ -185,7 +185,7 @@ export default function ReservationList({
         </div>
         <input
           type="text"
-          placeholder="Numéro de confirmation (une fois réservé)"
+          placeholder="Numéro de confirmation"
           value={valeurConfirmation}
           onChange={(e) => onChangeConfirmation(e.target.value)}
           onFocus={() => setChampFocus(cleFocus)}
