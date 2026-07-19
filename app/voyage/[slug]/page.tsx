@@ -97,10 +97,6 @@ export default async function CarnetPage({
         </div>
         <div className={styles.overviewGrid}>
           <div className={styles.overviewItem}>
-            <div className={styles.val}>{carnet.overview.budget.toLocaleString("fr-FR")} €</div>
-            <div className={styles.lbl}>Budget prévu</div>
-          </div>
-          <div className={styles.overviewItem}>
             <div className={styles.val}>{carnet.overview.decalage}</div>
             <div className={styles.lbl}>Décalage horaire</div>
           </div>
@@ -109,41 +105,38 @@ export default async function CarnetPage({
             <div className={styles.lbl}>Durée du séjour</div>
           </div>
         </div>
-      </section>
 
-      {carnet.budget.length > 0 && (
-        <section className={styles.wrap}>
-          <div className={styles.sectionHead}>
-            <span className={styles.eyebrow}>Récapitulatif</span>
-            <h2 className={styles.display2}>
-              Votre <em>budget</em>
-            </h2>
-          </div>
-          <div className={styles.budgetList}>
-            {carnet.budget.map((ligne, i) => {
-              const total = carnet.budget.reduce((s, l) => s + l.montant, 0);
-              const pct = total > 0 ? Math.round((ligne.montant / total) * 100) : 0;
-              return (
-                <div className={styles.budgetRow} key={i}>
-                  <div className={styles.top}>
-                    <span className={styles.label}>{ligne.poste}</span>
-                    <span className={styles.amount}>{ligne.montant.toLocaleString("fr-FR")} €</span>
+        {carnet.budget.length > 0 && (
+          <>
+            <div className={styles.sectionLabelBig} style={{ marginTop: 40 }}>
+              Budget prévu
+            </div>
+            <div className={styles.budgetList}>
+              {carnet.budget.map((ligne, i) => {
+                const total = carnet.budget.reduce((s, l) => s + l.montant, 0);
+                const pct = total > 0 ? Math.round((ligne.montant / total) * 100) : 0;
+                return (
+                  <div className={styles.budgetRow} key={i}>
+                    <div className={styles.top}>
+                      <span className={styles.label}>{ligne.poste}</span>
+                      <span className={styles.amount}>{ligne.montant.toLocaleString("fr-FR")} €</span>
+                    </div>
+                    <div className={styles.budgetTrack}>
+                      <div className={styles.budgetFill} style={{ width: `${pct}%` }} />
+                    </div>
                   </div>
-                  <div className={styles.budgetTrack}>
-                    <div className={styles.budgetFill} style={{ width: `${pct}%` }} />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <div className={styles.budgetTotal}>
-            <span className={styles.label}>Total prévu</span>
-            <span className={styles.amount}>
-              {carnet.budget.reduce((s, l) => s + l.montant, 0).toLocaleString("fr-FR")} €
-            </span>
-          </div>
-        </section>
-      )}
+                );
+              })}
+            </div>
+            <div className={styles.budgetTotal}>
+              <span className={styles.label}>Total prévu</span>
+              <span className={styles.amount}>
+                {carnet.budget.reduce((s, l) => s + l.montant, 0).toLocaleString("fr-FR")} €
+              </span>
+            </div>
+          </>
+        )}
+      </section>
 
       <section className={styles.wrap}>
         <div className={styles.sectionHead}>
