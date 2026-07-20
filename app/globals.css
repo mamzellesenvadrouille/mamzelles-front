@@ -409,6 +409,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
 
   
+.fcard-tooltip { white-space: normal; max-width: 220px; right: 0; left: auto; }
 .hero-content h1 { font-size: 40px; }
 
   
