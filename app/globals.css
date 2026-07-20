@@ -152,7 +152,7 @@ a { text-decoration: none; color: inherit; }
 .process-subtitle { font-size: 14px; color: var(--muted); line-height: 1.85; font-weight: 300; text-align: center; margin-top: 14px; }
 .process-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; align-items: stretch; max-width: 1400px; margin: 0 auto; }
 .process-step-wrap { display: flex; align-items: stretch; }
-.process-step { padding: 16px 12px; display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
+.process-step { padding: 16px 4px; display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
 .process-arrow { display: flex; align-items: center; padding: 0 4px; color: var(--gold); font-size: 16px; margin-top: 36px; flex-shrink: 0; }
 .step-circle-wrap { position: relative; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; }
 .step-circle { width: 72px; height: 72px; background: #fff; border: 1.5px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
