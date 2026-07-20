@@ -71,7 +71,7 @@ a { text-decoration: none; color: inherit; }
 .fcard:hover { border-color: var(--gold); transform: translateX(3px); }
 .fcard-popular { border-color: var(--gold); background: #fffaf6; margin-top: 0; padding-top: 16px; }
 .popular-badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: var(--gold); color: #fff; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; padding: 3px 12px; border-radius: 20px; white-space: nowrap; }
-.fcard-icon { margin-top: 8px; align-self: flex-start; width: 36px; height: 36px; background: #f5ede3; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gold); }
+.fcard-icon { margin-top: 16px; align-self: flex-start; width: 36px; height: 36px; background: #f5ede3; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gold); }
 .fcard-info { margin-top: 8px; flex: 1; }
 .fcard-name { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 600; font-style: italic; line-height: 1; }
 .fcard-days { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 500; color: var(--muted); margin-top: 4px; letter-spacing: 1px; text-transform: uppercase; }
@@ -81,7 +81,7 @@ a { text-decoration: none; color: inherit; }
 .fcard-arrow { display: none; }
 .fcard-arrow-wrap { position: relative; flex-shrink: 0; flex-basis: 100%; border-top: 1px solid var(--line); margin-top: 12px; padding-top: 4px; }
 .fcard-tooltip { display: block; position: static; background: transparent; color: var(--muted); padding: 8px 0 0; margin: 0; border-radius: 0; font-size: 12px; line-height: 1.7; white-space: normal; text-align: left; }
-.fcard-tooltip strong { color: var(--gold-deep); display: block; margin-bottom: 4px; font-size: 14px; }
+.fcard-tooltip strong { color: var(--dark); display: block; margin-bottom: 4px; font-size: 14px; }
 
 /* FORMULES DROITE */
 .formulas-right { position: relative; overflow: hidden; display: flex; }
