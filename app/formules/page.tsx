@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Plane, BedDouble, Utensils, MapPin, Map, Compass, Users, User, Calendar, Notebook, Smartphone } from 'lucide-react';
+import { Plane, BedDouble, Utensils, MapPin, Map, Compass, Users, User, Calendar, Smartphone } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import ContactForm from '../ContactForm';
 import Footer from '../components/Footer';
@@ -133,7 +133,7 @@ export default function Formules() {
           <div className="ess-card">
             <Smartphone size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Carnet interactif</h3>
-            <p>Itinéraires, cartes Maps, liens utiles et checklists incluses</p>
+            <p>Itinéraires, cartes Maps, liens utiles, recommandations et checklists incluses</p>
           </div>
           <div className="ess-card">
             <User size={34} className="ess-icon" strokeWidth={1.2} />
@@ -338,7 +338,7 @@ export default function Formules() {
               <div className="step-circle-wrap">
                 <div className="step-num">04</div>
                 <div className="step-circle">
-                  <Notebook size={26} strokeWidth={1.4} />
+                  <Smartphone size={26} strokeWidth={1.4} />
                 </div>
               </div>
               <h3>Réception de votre<br />carnet interactif</h3>
