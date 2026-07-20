@@ -314,7 +314,7 @@ export default function Formules() {
                 </div>
               </div>
               <h3>Validation<br />de votre devis</h3>
-              <p>Nous préparons<br />votre voyage.</p>
+              <p>Nous commençons à<br />préparer votre voyage.</p>
             </div>
             <div className="process-arrow">›</div>
           </div>
