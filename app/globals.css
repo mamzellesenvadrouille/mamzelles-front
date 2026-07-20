@@ -1540,7 +1540,7 @@ html body .form-right-card h2.form-right-h2 {
 .process { padding: 48px 40px !important; }
 
   
-.process-steps { grid-template-columns: repeat(5, 1fr) !important; gap: 24px !important; }
+.process-steps { grid-template-columns: repeat(5, 1fr) !important; gap: 0 !important; }
 
   
 .process-arrow { display: flex !important; }
