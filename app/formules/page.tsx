@@ -356,7 +356,7 @@ export default function Formules() {
                 </div>
               </div>
               <h3>Partez l&apos;esprit léger</h3>
-              <p>Et profitez !</p>
+              <p>Tout est prêt, il ne vous<br />reste plus qu&apos;à profiter.</p>
             </div>
           </div>
 
