@@ -150,7 +150,7 @@ a { text-decoration: none; color: inherit; }
 .process-header h2 { font-family: "Cormorant Garamond", serif; font-size: 42px; line-height: 1.05; font-weight: 400; margin-top: 0; text-align: center; }
 .process-header h2 em { color: var(--gold); font-style: italic; }
 .process-subtitle { font-size: 14px; color: var(--muted); line-height: 1.85; font-weight: 300; text-align: center; margin-top: 14px; }
-.process-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; align-items: stretch; max-width: 900px; margin: 0 auto; }
+.process-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; align-items: stretch; max-width: 1000px; margin: 0 auto; }
 .process-step-wrap { display: flex; align-items: stretch; }
 .process-step { padding: 16px 4px; display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
 .process-arrow { display: flex; align-items: center; padding: 0 4px; color: var(--gold); font-size: 16px; margin-top: 36px; flex-shrink: 0; }

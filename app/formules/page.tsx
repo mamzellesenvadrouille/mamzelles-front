@@ -314,7 +314,7 @@ export default function Formules() {
                 </div>
               </div>
               <h3>Validation<br />de votre devis</h3>
-              <p>Nous lançons la préparation<br />de votre voyage.</p>
+              <p>Nous préparons<br />votre voyage.</p>
             </div>
             <div className="process-arrow">›</div>
           </div>
@@ -342,7 +342,7 @@ export default function Formules() {
                 </div>
               </div>
               <h3>Réception de votre<br />carnet interactif</h3>
-              <p>Votre Web App est prête<br />sous 15 jours ouvrés.</p>
+              <p>Prêt sous 15 jours ouvrés.</p>
             </div>
             <div className="process-arrow">›</div>
           </div>
