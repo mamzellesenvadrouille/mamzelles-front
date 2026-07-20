@@ -138,7 +138,7 @@ export default function Formules() {
           <div className="ess-card">
             <User size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Espace personnel</h3>
-            <p>Ajoutez vos réservations, vos notes et toutes vos informations de voyage.</p>
+            <p>Ajoutez vos réservations, vos notes et toutes vos informations de voyage</p>
           </div>
         </div>
       </section>
