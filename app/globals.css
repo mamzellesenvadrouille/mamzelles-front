@@ -75,9 +75,9 @@ a { text-decoration: none; color: inherit; }
 .fcard-info { margin-top: 8px; flex: 1; }
 .fcard-name { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 600; font-style: italic; line-height: 1; }
 .fcard-days { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 500; color: var(--muted); margin-top: 4px; letter-spacing: 1px; text-transform: uppercase; }
-.fcard-price { text-align: right; }
+.fcard-price { text-align: right; align-self: flex-start; margin-top: -4px; }
 .fcard-price span { display: block; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #bbb; }
-.fcard-price strong { font-family: "Cormorant Garamond", serif; font-size: 40px; color: var(--gold); font-weight: 500; letter-spacing: 0; line-height: 1; display: block; margin-top: -6px; }
+.fcard-price strong { font-family: "Cormorant Garamond", serif; font-size: 40px; color: var(--gold); font-weight: 500; letter-spacing: 0; line-height: 1; display: block; margin-top: 0; }
 .fcard-arrow { display: none; }
 .fcard-arrow-wrap { position: relative; flex-shrink: 0; flex-basis: 100%; border-top: 1px solid var(--line); margin-top: 12px; padding-top: 4px; }
 .fcard-tooltip { display: block; position: static; background: transparent; color: var(--muted); padding: 8px 0 0; margin: 0; border-radius: 0; font-size: 12px; line-height: 1.7; white-space: normal; text-align: left; }
