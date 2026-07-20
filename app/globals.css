@@ -78,12 +78,10 @@ a { text-decoration: none; color: inherit; }
 .fcard-price { text-align: right; }
 .fcard-price span { display: block; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #bbb; }
 .fcard-price strong { font-family: "Cormorant Garamond", serif; font-size: 40px; color: var(--gold); font-weight: 500; letter-spacing: 0; line-height: 1; }
-.fcard-arrow { color: var(--gold); flex-shrink: 0; }
+.fcard-arrow { display: none; }
 .fcard-arrow-wrap { position: relative; flex-shrink: 0; }
-.fcard-tooltip { display: none; position: absolute; right: 28px; top: 50%; transform: translateY(-50%); background: var(--dark); color: #fff; padding: 12px 16px; border-radius: 6px; font-size: 12px; line-height: 1.7; white-space: nowrap; z-index: 10; }
-.fcard-tooltip strong { color: var(--gold); display: block; margin-bottom: 4px; font-size: 14px; }
-.fcard-tooltip::after { content: ""; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-right: none; border-left-color: var(--dark); }
-.fcard-arrow-wrap:hover .fcard-tooltip { display: block; }
+.fcard-tooltip { display: block; position: static; background: transparent; color: var(--muted); padding: 8px 0 0; margin: 0; border-radius: 0; font-size: 12px; line-height: 1.7; white-space: normal; text-align: left; }
+.fcard-tooltip strong { color: var(--gold-deep); display: block; margin-bottom: 4px; font-size: 14px; }
 
 /* FORMULES DROITE */
 .formulas-right { position: relative; overflow: hidden; display: flex; }
@@ -409,7 +407,6 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
 
   
-.fcard-tooltip { white-space: normal; max-width: 220px; right: 0; left: auto; }
 .hero-content h1 { font-size: 40px; }
 
   
