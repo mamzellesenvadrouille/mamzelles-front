@@ -131,14 +131,14 @@ export default function Formules() {
             <p>Les meilleures adresses<br />pour vous régaler</p>
           </div>
           <div className="ess-card">
-            <Notebook size={34} className="ess-icon" strokeWidth={1.2} />
+            <Smartphone size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Carnet interactif</h3>
-            <p>Itinéraire(s), liens de<br />réservation, cartes Maps,<br />checklists...</p>
+            <p>Itinéraires, cartes Maps, liens utiles et checklists incluses.</p>
           </div>
           <div className="ess-card">
-            <Smartphone size={34} className="ess-icon" strokeWidth={1.2} />
-            <h3>Cochez, notez,<br />personnalisez</h3>
-            <p>Votre carnet devient aussi<br />votre journal de bord !</p>
+            <User size={34} className="ess-icon" strokeWidth={1.2} />
+            <h3>Espace personnel</h3>
+            <p>Ajoutez vos réservations, notes et informations de voyage.</p>
           </div>
         </div>
       </section>
