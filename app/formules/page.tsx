@@ -133,12 +133,12 @@ export default function Formules() {
           <div className="ess-card">
             <Smartphone size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Carnet interactif</h3>
-            <p>Itinéraires, cartes Maps, liens utiles, recommandations et checklists incluses</p>
+            <p>Itinéraires, cartes Maps, liens de réservation et checklists incluses</p>
           </div>
           <div className="ess-card">
             <User size={34} className="ess-icon" strokeWidth={1.2} />
             <h3>Espace personnel</h3>
-            <p>Ajoutez vos réservations, notes et informations tout au long du voyage</p>
+            <p>Ajoutez vos réservations, vos notes et toutes vos informations de voyage</p>
           </div>
         </div>
       </section>
