@@ -151,7 +151,7 @@ export default function Formules() {
           <p className="eyebrow-dark">Nos formules</p>
           <h2 className="form-h2">Trouvez celle<br />qui vous <em>correspond</em></h2>
 
-          <div className="fcard">
+          <a href="#formulaire" className="fcard">
             <div className="fcard-icon"><Compass size={16} strokeWidth={1.3} /></div>
             <div className="fcard-info">
               <div className="fcard-name">L&apos;Escale</div>
@@ -162,9 +162,9 @@ export default function Formules() {
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 5 sites & activités, 5 restaurants</p></div>
             </div>
-          </div>
+          </a>
 
-          <div className="fcard fcard-popular">
+          <a href="#formulaire" className="fcard fcard-popular">
             <div className="popular-badge">La plus populaire</div>
             <div className="fcard-icon"><Compass size={16} strokeWidth={1.3} /></div>
             <div className="fcard-info">
@@ -176,9 +176,9 @@ export default function Formules() {
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 5 sites & activités, 5 restaurants</p></div>
             </div>
-          </div>
+          </a>
 
-          <div className="fcard">
+          <a href="#formulaire" className="fcard">
             <div className="fcard-icon"><Compass size={16} strokeWidth={1.3} /></div>
             <div className="fcard-info">
               <div className="fcard-name">La Grande Vadrouille</div>
@@ -189,7 +189,7 @@ export default function Formules() {
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               <div className="fcard-tooltip"><p><strong>2 destinations incluses</strong></p><p>Suggestions : 5 sites & activités, 5 restaurants par destination</p></div>
             </div>
-          </div>
+          </a>
 
           <a href="#formulaire" className="btn-gold" style={{ marginTop: '24px', display: 'inline-flex', width: 'auto' }}>Demander un devis gratuit</a>
         </div>
@@ -364,7 +364,9 @@ export default function Formules() {
       </section>
 
       {/* FORMULAIRE CONTACT */}
-      <ContactForm />
+      <div id="formulaire">
+        <ContactForm />
+      </div>
 
       {/* DISCLAIMER */}
       <section className="disclaimer">
