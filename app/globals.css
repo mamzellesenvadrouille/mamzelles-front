@@ -1470,13 +1470,13 @@ html body .form-right-card h2.form-right-h2 {
 .form-right-h2 { font-size: 26px !important; font-weight: 600 !important; }
 
   
-.form-right-card { width: fit-content !important; margin: 177px 0 0 24px !important; padding: 28px 28px 16px 28px !important; min-height: 521px !important; align-self: flex-start !important; }
+.form-right-card { width: fit-content !important; margin: 177px 0 0 24px !important; padding: 28px 28px 16px 28px !important; min-height: 523px !important; align-self: flex-start !important; }
 
   
 .form-right-price-block { margin-top: 53px !important; margin-bottom: 8px !important; }
 
   
-.form-right-cta { font-size: 10px !important; letter-spacing: 2px !important; padding: 10px 22px !important; width: auto !important; align-self: flex-start !important; white-space: nowrap !important; margin-top: 40px !important; }
+.form-right-cta { font-size: 10px !important; letter-spacing: 2px !important; padding: 10px 22px !important; width: auto !important; align-self: flex-start !important; white-space: nowrap !important; margin-top: auto !important; }
 
   
 .mobile-only-br { display: inline !important; }
