@@ -79,8 +79,8 @@
 
 .hero {
   position: relative;
-  height: 78vh;
-  min-height: 520px;
+  height: 85vh;
+  min-height: 560px;
   background-size: cover;
   background-position: center;
 }
