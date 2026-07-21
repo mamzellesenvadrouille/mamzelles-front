@@ -191,7 +191,7 @@ export default function Formules() {
             </div>
           </a>
 
-          <a href="#formulaire" className="btn-gold" style={{ marginTop: '24px', display: 'inline-flex', width: 'auto' }}>Demander un devis gratuit</a>
+          <a href="#formulaire" className="btn-gold" style={{ marginTop: '8px', display: 'inline-flex', width: 'auto' }}>Demander un devis gratuit</a>
         </div>
 
         {/* DROITE */}
