@@ -111,7 +111,7 @@ a { text-decoration: none; color: inherit; }
 .frcard-features { display: flex; flex-direction: column; gap: 12px; }
 .frcard-feature { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #555; font-weight: 300; }
 .frcard-feature svg { color: var(--gold); flex-shrink: 0; }
-.form-right-price-block { margin-top: 52px; margin-bottom: 16px; }
+.form-right-price-block { margin-top: 51px; margin-bottom: 16px; }
 .form-right-price-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin-bottom: -3px; }
 .form-right-price { font-family: "Cormorant Garamond", serif; font-size: 48px; color: var(--gold); font-weight: 500; line-height: 1; }
 .form-right-cta { display: inline-flex; justify-content: center; margin-top: auto; }
