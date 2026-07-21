@@ -1540,7 +1540,7 @@ html body .form-right-card h2.form-right-h2 {
 /* PROCESS - 4 colonnes */
 
   
-.process { padding: 48px 40px !important; }
+.process { padding: 48px 16px !important; }
 
   
 .process-steps { grid-template-columns: repeat(5, 1fr) !important; gap: 0 !important; }
@@ -1549,19 +1549,19 @@ html body .form-right-card h2.form-right-h2 {
 .process-arrow { display: flex !important; }
 
   
-.step-circle { width: 56px !important; height: 56px !important; }
+.step-circle { width: 62px !important; height: 62px !important; }
 
   
-.step-circle svg { width: 20px !important; height: 20px !important; }
+.step-circle svg { width: 24px !important; height: 24px !important; }
 
   
-.step-num { font-size: 11px !important; }
+.step-num { font-size: 12px !important; }
 
   
-.process-step h3 { font-size: 16px !important; }
+.process-step h3 { font-size: 18px !important; }
 
   
-.process-step p { font-size: 11px !important; line-height: 1.5 !important; }
+.process-step p { font-size: 12px !important; line-height: 1.6 !important; }
 
   
 .process-header h2 { font-size: 32px !important; }
