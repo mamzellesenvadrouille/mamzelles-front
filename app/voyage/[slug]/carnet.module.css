@@ -116,12 +116,7 @@
   .dates { font-size: 13px; }
 }
 
-/* Bande du compte à rebours, sous le hero — style "billet d'avion" */
-.countdownBand {
-  background: var(--cream);
-  padding: 44px 24px;
-  text-align: center;
-}
+/* Ticket "compte à rebours", placé dans le hero sous les dates */
 .countdownTicket {
   display: inline-flex;
   align-items: center;
@@ -129,23 +124,21 @@
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 6px;
-  padding: 18px 32px;
+  padding: 16px 30px;
   position: relative;
+  margin-top: var(--s4);
 }
-.countdownTicket::before,
-.countdownTicket::after {
-  content: "";
+.countdownNotch {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--cream);
+  width: 12px;
+  height: 24px;
+  background: #fff;
   border: 1px solid var(--line);
 }
-.countdownTicket::before { left: -9px; }
-.countdownTicket::after { right: -9px; }
+.countdownNotchLeft { left: -6px; border-radius: 12px 0 0 12px; border-right: none; }
+.countdownNotchRight { right: -6px; border-radius: 0 12px 12px 0; border-left: none; }
 .countdownDivider {
   border-right: 1px dashed var(--line);
   padding-right: 20px;

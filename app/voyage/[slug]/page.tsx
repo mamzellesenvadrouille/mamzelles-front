@@ -66,29 +66,29 @@ export default async function CarnetPage({
             {" — "}
             {new Date(carnet.dates.fin).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
           </div>
+
+          {joursAvantDepart >= 0 && (
+            <div className={styles.countdownTicket}>
+              <div className={styles.countdownNotch + " " + styles.countdownNotchLeft} />
+              <div className={styles.countdownNotch + " " + styles.countdownNotchRight} />
+              {joursAvantDepart > 0 ? (
+                <>
+                  <div className={styles.countdownDivider}>
+                    <span className={styles.countdownNum}>J-{joursAvantDepart}</span>
+                  </div>
+                  <span className={styles.countdownLabel}>
+                    avant
+                    <br />
+                    le départ
+                  </span>
+                </>
+              ) : (
+                <span className={styles.countdownLabel} style={{ fontSize: 13 }}>C&apos;est aujourd&apos;hui !<br />Bon voyage</span>
+              )}
+            </div>
+          )}
         </div>
       </div>
-
-      {joursAvantDepart >= 0 && (
-        <div className={styles.countdownBand}>
-          <div className={styles.countdownTicket}>
-            {joursAvantDepart > 0 ? (
-              <>
-                <div className={styles.countdownDivider}>
-                  <span className={styles.countdownNum}>J-{joursAvantDepart}</span>
-                </div>
-                <span className={styles.countdownLabel}>
-                  avant
-                  <br />
-                  le départ
-                </span>
-              </>
-            ) : (
-              <span className={styles.countdownLabel} style={{ fontSize: 13 }}>C&apos;est aujourd&apos;hui !<br />Bon voyage</span>
-            )}
-          </div>
-        </div>
-      )}
 
       <section className={styles.wrap}>
         <div className={styles.welcome}>
