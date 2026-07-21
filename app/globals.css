@@ -161,6 +161,7 @@ a { text-decoration: none; color: inherit; }
 .step-ornament { color: var(--gold); font-size: 12px; margin: 8px 0; }
 .process-step h3 { font-family: "Cormorant Garamond", serif; font-size: 20px; font-weight: 700; margin-bottom: 8px; line-height: 1.2; }
 .process-step p { font-size: 13px; color: var(--muted); line-height: 1.7; font-weight: 300; }
+.tb-break { display: none; }
 
 /* FORMULAIRE CONTACT */
 .contact-section { position: relative; padding: 56px 52px; border-top: 1px solid var(--line); overflow: hidden; }
@@ -1562,6 +1563,12 @@ html body .form-right-card h2.form-right-h2 {
 
   
 .process-step p { font-size: 12px !important; line-height: 1.6 !important; }
+
+  
+.tb-break { display: block !important; }
+
+  
+.default-break { display: none !important; }
 
   
 .process-header h2 { font-size: 32px !important; }

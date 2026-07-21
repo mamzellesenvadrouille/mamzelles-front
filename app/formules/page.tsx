@@ -328,7 +328,7 @@ export default function Formules() {
                 </div>
               </div>
               <h3>Création de<br />votre itinéraire</h3>
-              <p>Nous concevons votre voyage<br />sur mesure, avec vous.</p>
+              <p>Nous concevons votre<br className="tb-break" /> voyage<br className="default-break" /> sur mesure,<br className="tb-break" /> avec vous.</p>
             </div>
             <div className="process-arrow">›</div>
           </div>
