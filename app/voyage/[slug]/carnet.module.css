@@ -116,35 +116,60 @@
   .dates { font-size: 13px; }
 }
 
-/* Bande du compte à rebours, sous le hero */
+/* Bande du compte à rebours, sous le hero — style "billet d'avion" */
 .countdownBand {
-  background: var(--dark);
-  color: #fff;
-  padding: 26px 24px;
+  background: var(--cream);
+  padding: 44px 24px;
   text-align: center;
-  border-top: 1px solid rgba(200, 149, 108, 0.4);
 }
-.countdownInner {
+.countdownTicket {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 18px 32px;
+  position: relative;
+}
+.countdownTicket::before,
+.countdownTicket::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 1px solid var(--line);
+}
+.countdownTicket::before { left: -9px; }
+.countdownTicket::after { right: -9px; }
+.countdownDivider {
+  border-right: 1px dashed var(--line);
+  padding-right: 20px;
 }
 .countdownNum {
   font-family: var(--font-cormorant, "Cormorant Garamond", serif);
   font-style: italic;
-  font-size: 34px;
-  color: var(--gold);
+  font-size: 30px;
+  color: var(--dark);
+  line-height: 1;
 }
 .countdownLabel {
-  font-size: 15px;
-  letter-spacing: .14em;
+  font-size: 12px;
+  letter-spacing: .1em;
   text-transform: uppercase;
-  color: #d9cfc3;
+  color: var(--muted);
+  line-height: 1.5;
+  text-align: left;
 }
 @media (max-width: 480px) {
-  .countdownNum { font-size: 26px; }
-  .countdownLabel { font-size: 12px; }
-  .countdownInner { gap: 8px; }
+  .countdownTicket { padding: 14px 22px; gap: 14px; }
+  .countdownNum { font-size: 24px; }
+  .countdownLabel { font-size: 10.5px; }
+  .countdownDivider { padding-right: 14px; }
 }
 
 .sectionHead { margin-bottom: 44px; }

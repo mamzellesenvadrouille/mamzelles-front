@@ -71,14 +71,20 @@ export default async function CarnetPage({
 
       {joursAvantDepart >= 0 && (
         <div className={styles.countdownBand}>
-          <div className={styles.countdownInner}>
+          <div className={styles.countdownTicket}>
             {joursAvantDepart > 0 ? (
               <>
-                <span className={styles.countdownNum}>J-{joursAvantDepart}</span>
-                <span className={styles.countdownLabel}>avant le départ</span>
+                <div className={styles.countdownDivider}>
+                  <span className={styles.countdownNum}>J-{joursAvantDepart}</span>
+                </div>
+                <span className={styles.countdownLabel}>
+                  avant
+                  <br />
+                  le départ
+                </span>
               </>
             ) : (
-              <span className={styles.countdownLabel} style={{ fontSize: 13 }}>C&apos;est aujourd&apos;hui ! Bon voyage</span>
+              <span className={styles.countdownLabel} style={{ fontSize: 13 }}>C&apos;est aujourd&apos;hui !<br />Bon voyage</span>
             )}
           </div>
         </div>
