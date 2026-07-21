@@ -121,7 +121,7 @@
   display: inline-flex;
   align-items: center;
   gap: 20px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.97);
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 16px 30px;
@@ -130,15 +130,18 @@
 }
 .countdownNotch {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 24px;
-  background: #fff;
-  border: 1px solid var(--line);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.001);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: inset 0 0 0 1px rgba(26, 21, 18, .12);
 }
-.countdownNotchLeft { left: -6px; border-radius: 12px 0 0 12px; border-right: none; }
-.countdownNotchRight { right: -6px; border-radius: 0 12px 12px 0; border-left: none; }
+.countdownNotchTop { top: -8px; }
+.countdownNotchBottom { bottom: -8px; }
 .countdownDivider {
   border-right: 1px dashed var(--line);
   padding-right: 20px;

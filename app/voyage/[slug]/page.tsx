@@ -69,8 +69,8 @@ export default async function CarnetPage({
 
           {joursAvantDepart >= 0 && (
             <div className={styles.countdownTicket}>
-              <div className={styles.countdownNotch + " " + styles.countdownNotchLeft} />
-              <div className={styles.countdownNotch + " " + styles.countdownNotchRight} />
+              <div className={styles.countdownNotch + " " + styles.countdownNotchTop} />
+              <div className={styles.countdownNotch + " " + styles.countdownNotchBottom} />
               {joursAvantDepart > 0 ? (
                 <>
                   <div className={styles.countdownDivider}>
