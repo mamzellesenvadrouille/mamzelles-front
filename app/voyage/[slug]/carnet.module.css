@@ -116,20 +116,30 @@
   .dates { font-size: 13px; }
 }
 
-/* Tampon "compte à rebours", placé dans le hero sous les dates */
-.countdownStamp {
-  margin-top: var(--s4);
+/* Bande du compte à rebours, sous le hero */
+.countdownBand {
+  background: var(--cream);
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  padding: 30px 24px;
+  text-align: center;
 }
-.countdownStampNum {
+.countdownLabel {
+  font-size: 11px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.countdownNum {
   font-family: var(--font-cormorant, "Cormorant Garamond", serif);
   font-style: italic;
-}
-.countdownStampText {
-  font-family: var(--font-inter, "Inter", sans-serif);
-  letter-spacing: 2px;
+  font-size: 38px;
+  color: var(--gold-deep);
+  line-height: 1;
 }
 @media (max-width: 480px) {
-  .countdownStamp svg { width: 108px; height: 108px; }
+  .countdownNum { font-size: 30px; }
 }
 
 .sectionHead { margin-bottom: 44px; }

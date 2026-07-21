@@ -1,7 +1,7 @@
 // app/voyage/[slug]/page.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/page.tsx
 import { notFound } from "next/navigation";
-import { Lightbulb } from "lucide-react";
+import { Lightbulb, Plane } from "lucide-react";
 import { getCarnetComplet, getMeteoActuelle, getCarnetProgress } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
@@ -66,39 +66,24 @@ export default async function CarnetPage({
             {" — "}
             {new Date(carnet.dates.fin).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
           </div>
+        </div>
+      </div>
 
-          {joursAvantDepart >= 0 && (
-            <div className={styles.countdownStamp}>
-              <svg width="128" height="128" viewBox="0 0 140 140">
-                <circle cx="70" cy="70" r="64" fill="none" stroke="#c8956c" strokeWidth="1.5" strokeDasharray="3 4" />
-                <circle cx="70" cy="70" r="54" fill="none" stroke="#c8956c" strokeWidth="1" />
-                <path id="stampTopArc" d="M 25 70 A 45 45 0 0 1 115 70" fill="none" />
-                <text className={styles.countdownStampText} fontSize="9" fill="#ecd7c4">
-                  <textPath href="#stampTopArc" startOffset="50%" textAnchor="middle">
-                    {carnet.destination.toUpperCase()}
-                  </textPath>
-                </text>
-                {joursAvantDepart > 0 ? (
-                  <text x="70" y="77" textAnchor="middle" className={styles.countdownStampNum} fontSize="26" fill="#fff">
-                    J-{joursAvantDepart}
-                  </text>
-                ) : (
-                  <text x="70" y="74" textAnchor="middle" className={styles.countdownStampNum} fontSize="14" fill="#fff">
-                    Bon
-                    <tspan x="70" dy="16">voyage</tspan>
-                  </text>
-                )}
-                <path id="stampBotArc" d="M 25 70 A 45 45 0 0 0 115 70" fill="none" />
-                <text className={styles.countdownStampText} fontSize="8" fill="#ecd7c4">
-                  <textPath href="#stampBotArc" startOffset="50%" textAnchor="middle">
-                    AVANT LE DÉPART
-                  </textPath>
-                </text>
-              </svg>
+      {joursAvantDepart >= 0 && (
+        <div className={styles.countdownBand}>
+          {joursAvantDepart > 0 ? (
+            <>
+              <div className={styles.countdownLabel}>Avant le départ</div>
+              <div className={styles.countdownNum}>J-{joursAvantDepart}</div>
+            </>
+          ) : (
+            <div className={styles.countdownNum} style={{ fontSize: 26 }}>
+              <Plane size={22} color="#a8734c" strokeWidth={2} style={{ marginRight: 10, verticalAlign: "-4px" }} />
+              C&apos;est aujourd&apos;hui ! Bon voyage
             </div>
           )}
         </div>
-      </div>
+      )}
 
       <section className={styles.wrap}>
         <div className={styles.welcome}>
