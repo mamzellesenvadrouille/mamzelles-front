@@ -5,6 +5,7 @@ import { Lightbulb, Plane } from "lucide-react";
 import { getCarnetComplet, getMeteoActuelle, getCarnetProgress } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
+import BudgetSection from "./BudgetSection";
 import CheckList from "./CheckList";
 import ReservationList from "./ReservationList";
 import ContactsUrgence from "./ContactsUrgence";
@@ -97,7 +98,7 @@ export default async function CarnetPage({
         <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Votre voyage</span>
           <h2 className={styles.display2}>
-            En un coup <em>d&apos;œil</em>
+            En <em>bref</em>
           </h2>
         </div>
         <div className={styles.overviewGrid}>
@@ -109,36 +110,18 @@ export default async function CarnetPage({
             <div className={styles.val}>{carnet.overview.dureeJours} jours</div>
             <div className={styles.lbl}>Durée du séjour</div>
           </div>
+          <div className={styles.overviewItem}>
+            <div className={styles.val}>{carnet.destinationsCompletes.length}</div>
+            <div className={styles.lbl}>Destination{carnet.destinationsCompletes.length > 1 ? "s" : ""}</div>
+          </div>
         </div>
 
-        {carnet.budget.length > 0 && (
+        {(carnet.budget.length > 0 || progress.budgetCustom.length > 0) && (
           <>
-            <h2 className={styles.display2} style={{ marginTop: 44, marginBottom: 28 }}>
-              Budget <em>prévu</em>
+            <h2 className={styles.display2} style={{ marginTop: 56, marginBottom: 28 }}>
+              Budget <em>estimé</em>
             </h2>
-            <div className={styles.budgetList}>
-              {carnet.budget.map((ligne, i) => {
-                const total = carnet.budget.reduce((s, l) => s + l.montant, 0);
-                const pct = total > 0 ? Math.round((ligne.montant / total) * 100) : 0;
-                return (
-                  <div className={styles.budgetRow} key={i}>
-                    <div className={styles.top}>
-                      <span className={styles.label}>{ligne.poste}</span>
-                      <span className={styles.amount}>{ligne.montant.toLocaleString("fr-FR")} €</span>
-                    </div>
-                    <div className={styles.budgetTrack}>
-                      <div className={styles.budgetFill} style={{ width: `${pct}%` }} />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            <div className={styles.budgetTotal}>
-              <span className={styles.label}>Total prévu</span>
-              <span className={styles.amount}>
-                {carnet.budget.reduce((s, l) => s + l.montant, 0).toLocaleString("fr-FR")} €
-              </span>
-            </div>
+            <BudgetSection budget={carnet.budget} slug={carnet.slug} budgetCustomInitial={progress.budgetCustom} />
           </>
         )}
       </section>
