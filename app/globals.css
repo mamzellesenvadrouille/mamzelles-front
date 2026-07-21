@@ -75,7 +75,7 @@ a { text-decoration: none; color: inherit; }
 .fcard-info { margin-top: 12px; flex: 1; }
 .fcard-name { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 600; font-style: italic; line-height: 1; }
 .fcard-days { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 500; color: var(--muted); margin-top: 4px; letter-spacing: 1px; text-transform: uppercase; }
-.fcard-price { text-align: right; align-self: flex-start; margin-top: -1px; }
+.fcard-price { text-align: right; align-self: flex-start; margin-top: 0px; }
 .fcard-price span { display: block; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #bbb; }
 .fcard-price strong { font-family: "Cormorant Garamond", serif; font-size: 40px; color: var(--gold); font-weight: 500; letter-spacing: 0; line-height: 1; display: block; margin-top: -6px; }
 .fcard-arrow { display: none; }
@@ -84,7 +84,7 @@ a { text-decoration: none; color: inherit; }
 .fcard-tooltip strong { color: #555; display: block; margin-bottom: 4px; font-size: 13px; font-weight: 300; }
 
 /* FORMULES DROITE */
-.formulas-right { position: relative; overflow: hidden; display: flex; }
+.formulas-right { position: relative; overflow: hidden; display: flex; background: var(--bg); }
 .form-right-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .form-right-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(248,244,239,1) 0%, rgba(248,244,239,0.95) 30%, rgba(248,244,239,0.75) 50%, rgba(248,244,239,0.35) 75%, rgba(248,244,239,0) 100%); }
 
@@ -96,7 +96,7 @@ a { text-decoration: none; color: inherit; }
   border: 1px solid var(--gold);
   border-radius: 12px;
   padding: 28px;
-  min-height: 480px;
+  min-height: 500px;
   box-shadow: none;
   display: flex;
   flex-direction: column;
@@ -1465,7 +1465,7 @@ html body .form-right-card h2.form-right-h2 {
 .form-right-h2 { font-size: 26px !important; font-weight: 600 !important; }
 
   
-.form-right-card { width: fit-content !important; margin: 60px 0 0 24px !important; padding: 28px 28px 16px 28px !important; min-height: auto !important; align-self: flex-start !important; }
+.form-right-card { width: fit-content !important; margin: 170px 0 0 24px !important; padding: 28px !important; min-height: 460px !important; align-self: flex-start !important; }
 
   
 .form-right-price-block { margin-top: 34px !important; margin-bottom: 8px !important; }
