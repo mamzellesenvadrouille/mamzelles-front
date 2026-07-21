@@ -1162,6 +1162,7 @@ a { text-decoration: none; color: inherit; }
 .fcard-price { display: flex !important; flex-direction: column !important; align-items: flex-end !important; justify-content: center !important; }
 .fcard-icon { margin-top: 18px !important; }
 .fcard-price strong { margin-top: 4px !important; }
+.fcard:nth-of-type(1) .fcard-price strong, .fcard-popular .fcard-price strong { margin-top: 2px !important; }
 
   
 .fcard-price strong { font-size: 32px !important; line-height: 1 !important; }
