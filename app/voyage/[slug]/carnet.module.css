@@ -132,18 +132,18 @@
 .countdownNum {
   font-family: var(--font-cormorant, "Cormorant Garamond", serif);
   font-style: italic;
-  font-size: 20px;
+  font-size: 34px;
   color: var(--gold);
 }
 .countdownLabel {
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: .14em;
   text-transform: uppercase;
   color: #d9cfc3;
 }
 @media (max-width: 480px) {
-  .countdownNum { font-size: 17px; }
-  .countdownLabel { font-size: 10px; }
+  .countdownNum { font-size: 26px; }
+  .countdownLabel { font-size: 12px; }
   .countdownInner { gap: 8px; }
 }
 
