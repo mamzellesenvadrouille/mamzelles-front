@@ -1234,8 +1234,7 @@ html body .form-right-card h2.form-right-h2 {
 @media (min-width: 769px) and (max-width: 1024px) {
 
   
-.form-right-img { object-position: center 15% !important; }
-.form-right-overlay { background: linear-gradient(to right, rgba(248,244,239,1) 0%, rgba(248,244,239,0.97) 40%, rgba(248,244,239,0.88) 70%, rgba(248,244,239,0.75) 100%) !important; }
+.form-right-img { object-position: 25% 15% !important; }
 
   
 /* NAV */
