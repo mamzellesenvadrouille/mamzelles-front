@@ -1163,6 +1163,7 @@ a { text-decoration: none; color: inherit; }
 .fcard-icon { margin-top: 18px !important; }
 .fcard:nth-of-type(3) .fcard-icon { margin-top: 24px !important; }
 .fcard-price strong { margin-top: 4px !important; }
+.fcard:nth-of-type(3) .fcard-price span { margin-top: 4px !important; }
 .fcard:nth-of-type(1) .fcard-price strong, .fcard-popular .fcard-price strong { margin-top: 0px !important; }
 
   
