@@ -66,19 +66,24 @@ export default async function CarnetPage({
             {" — "}
             {new Date(carnet.dates.fin).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
           </div>
-          {joursAvantDepart > 0 && (
-            <div className={styles.countdown}>
-              J-{joursAvantDepart} avant le départ
-            </div>
-          )}
-          {joursAvantDepart === 0 && (
-            <div className={styles.countdown}>
-              <Plane size={20} color="#c8956c" strokeWidth={2} style={{ marginRight: 10, verticalAlign: "-3px" }} />
-              C&apos;est aujourd&apos;hui ! Bon voyage
-            </div>
-          )}
         </div>
       </div>
+
+      {joursAvantDepart >= 0 && (
+        <div className={styles.countdownBand}>
+          <div className={styles.countdownInner}>
+            <Plane size={26} color="#c8956c" strokeWidth={2} className={styles.countdownPlane} />
+            {joursAvantDepart > 0 ? (
+              <>
+                <span className={styles.countdownNum}>J-{joursAvantDepart}</span>
+                <span className={styles.countdownLabel}>avant le départ</span>
+              </>
+            ) : (
+              <span className={styles.countdownLabel}>C&apos;est aujourd&apos;hui ! Bon voyage</span>
+            )}
+          </div>
+        </div>
+      )}
 
       <section className={styles.wrap}>
         <div className={styles.welcome}>

@@ -102,24 +102,58 @@
   color: #fff;
   padding: 0 24px;
 }
-.heroContent .eyebrow { color: #ecd7c4; }
-.place { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; opacity: .85; }
+.heroContent .eyebrow { color: #ecd7c4; font-size: 13px; letter-spacing: .18em; }
+.heroContent .display1 { font-size: 72px; margin: 22px 0 14px; }
+.place { font-size: 19px; letter-spacing: .1em; text-transform: uppercase; opacity: .9; font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-style: italic; }
 .dates {
-  margin-top: var(--s4);
-  font-size: 13px;
-  opacity: .75;
-  padding-top: var(--s2);
-  border-top: 1px solid rgba(255,255,255,.3);
-  width: 220px;
+  margin-top: var(--s3);
+  font-size: 15px;
+  opacity: .8;
+}
+@media (max-width: 640px) {
+  .heroContent .display1 { font-size: 48px; }
+  .place { font-size: 15px; }
+  .dates { font-size: 13px; }
 }
 
-.countdown {
-  margin-top: 18px;
-  font-family: 'Cormorant Garamond', serif;
+/* Bande dynamique du compte à rebours, sous le hero */
+.countdownBand {
+  background: linear-gradient(90deg, #1a1512, #2a2018);
+  color: #fff;
+  padding: 30px 24px;
+  text-align: center;
+  overflow: hidden;
+}
+.countdownInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+}
+.countdownPlane {
+  animation: countdownFly 2.6s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes countdownFly {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  50% { transform: translateX(14px) rotate(4deg); }
+}
+.countdownNum {
+  font-family: var(--font-cormorant, "Cormorant Garamond", serif);
   font-style: italic;
-  font-size: 17px;
-  color: #ecd7c4;
-  letter-spacing: .02em;
+  font-size: 38px;
+  color: var(--gold);
+  line-height: 1;
+}
+.countdownLabel {
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .85;
+}
+@media (max-width: 480px) {
+  .countdownNum { font-size: 28px; }
+  .countdownLabel { font-size: 11px; }
+  .countdownInner { gap: 12px; }
 }
 
 .sectionHead { margin-bottom: 44px; }
