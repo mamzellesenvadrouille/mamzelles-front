@@ -95,8 +95,8 @@ a { text-decoration: none; color: inherit; }
   background: transparent;
   border: 1px solid var(--gold);
   border-radius: 12px;
-  padding: 28px;
-  min-height: 522px;
+  padding: 28px 28px 40px 28px;
+  min-height: 640px;
   box-shadow: none;
   display: flex;
   flex-direction: column;
