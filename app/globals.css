@@ -1549,6 +1549,21 @@ html body .form-right-card h2.form-right-h2 {
 .process-arrow { display: flex !important; }
 
   
+.step-circle { width: 56px !important; height: 56px !important; }
+
+  
+.step-circle svg { width: 20px !important; height: 20px !important; }
+
+  
+.step-num { font-size: 11px !important; }
+
+  
+.process-step h3 { font-size: 16px !important; }
+
+  
+.process-step p { font-size: 11px !important; line-height: 1.5 !important; }
+
+  
 .process-header h2 { font-size: 32px !important; }
 
   
