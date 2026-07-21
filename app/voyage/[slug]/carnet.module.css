@@ -118,10 +118,8 @@
 
 /* Bande du compte à rebours, sous le hero */
 .countdownBand {
-  background: var(--cream);
-  border-top: 2px solid var(--gold);
   border-bottom: 2px solid var(--gold);
-  padding: 30px 24px;
+  padding: 16px 24px;
   text-align: center;
 }
 .countdownLabel {
