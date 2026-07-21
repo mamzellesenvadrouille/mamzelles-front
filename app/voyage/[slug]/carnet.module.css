@@ -116,56 +116,20 @@
   .dates { font-size: 13px; }
 }
 
-/* Ticket "compte à rebours", placé dans le hero sous les dates */
-.countdownTicket {
-  display: inline-flex;
-  align-items: center;
-  gap: 20px;
-  background: rgba(255, 255, 255, 0.97);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 16px 30px;
-  position: relative;
+/* Tampon "compte à rebours", placé dans le hero sous les dates */
+.countdownStamp {
   margin-top: var(--s4);
 }
-.countdownNotch {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.001);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: inset 0 0 0 1px rgba(26, 21, 18, .12);
-}
-.countdownNotchTop { top: -8px; }
-.countdownNotchBottom { bottom: -8px; }
-.countdownDivider {
-  border-right: 1px dashed var(--line);
-  padding-right: 20px;
-}
-.countdownNum {
+.countdownStampNum {
   font-family: var(--font-cormorant, "Cormorant Garamond", serif);
   font-style: italic;
-  font-size: 30px;
-  color: var(--dark);
-  line-height: 1;
 }
-.countdownLabel {
-  font-size: 12px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  line-height: 1.5;
-  text-align: left;
+.countdownStampText {
+  font-family: var(--font-inter, "Inter", sans-serif);
+  letter-spacing: 2px;
 }
 @media (max-width: 480px) {
-  .countdownTicket { padding: 14px 22px; gap: 14px; }
-  .countdownNum { font-size: 24px; }
-  .countdownLabel { font-size: 10.5px; }
-  .countdownDivider { padding-right: 14px; }
+  .countdownStamp svg { width: 108px; height: 108px; }
 }
 
 .sectionHead { margin-bottom: 44px; }

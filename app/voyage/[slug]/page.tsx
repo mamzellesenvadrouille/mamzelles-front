@@ -68,23 +68,33 @@ export default async function CarnetPage({
           </div>
 
           {joursAvantDepart >= 0 && (
-            <div className={styles.countdownTicket}>
-              <div className={styles.countdownNotch + " " + styles.countdownNotchTop} />
-              <div className={styles.countdownNotch + " " + styles.countdownNotchBottom} />
-              {joursAvantDepart > 0 ? (
-                <>
-                  <div className={styles.countdownDivider}>
-                    <span className={styles.countdownNum}>J-{joursAvantDepart}</span>
-                  </div>
-                  <span className={styles.countdownLabel}>
-                    avant
-                    <br />
-                    le départ
-                  </span>
-                </>
-              ) : (
-                <span className={styles.countdownLabel} style={{ fontSize: 13 }}>C&apos;est aujourd&apos;hui !<br />Bon voyage</span>
-              )}
+            <div className={styles.countdownStamp}>
+              <svg width="128" height="128" viewBox="0 0 140 140">
+                <circle cx="70" cy="70" r="64" fill="none" stroke="#c8956c" strokeWidth="1.5" strokeDasharray="3 4" />
+                <circle cx="70" cy="70" r="54" fill="none" stroke="#c8956c" strokeWidth="1" />
+                <path id="stampTopArc" d="M 25 70 A 45 45 0 0 1 115 70" fill="none" />
+                <text className={styles.countdownStampText} fontSize="9" fill="#ecd7c4">
+                  <textPath href="#stampTopArc" startOffset="50%" textAnchor="middle">
+                    {carnet.destination.toUpperCase()}
+                  </textPath>
+                </text>
+                {joursAvantDepart > 0 ? (
+                  <text x="70" y="77" textAnchor="middle" className={styles.countdownStampNum} fontSize="26" fill="#fff">
+                    J-{joursAvantDepart}
+                  </text>
+                ) : (
+                  <text x="70" y="74" textAnchor="middle" className={styles.countdownStampNum} fontSize="14" fill="#fff">
+                    Bon
+                    <tspan x="70" dy="16">voyage</tspan>
+                  </text>
+                )}
+                <path id="stampBotArc" d="M 25 70 A 45 45 0 0 0 115 70" fill="none" />
+                <text className={styles.countdownStampText} fontSize="8" fill="#ecd7c4">
+                  <textPath href="#stampBotArc" startOffset="50%" textAnchor="middle">
+                    AVANT LE DÉPART
+                  </textPath>
+                </text>
+              </svg>
             </div>
           )}
         </div>
