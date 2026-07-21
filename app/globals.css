@@ -61,7 +61,7 @@ a { text-decoration: none; color: inherit; }
 .ess-card p { font-size: 12px; line-height: 1.7; color: var(--muted); }
 
 /* FORMULES */
-.formules { display: grid; grid-template-columns: 42% 58%; width: 100%; }
+.formules { display: grid; grid-template-columns: 42% 58%; width: 100%; background: var(--bg); }
 .formulas-left { background: var(--bg); padding: 56px 44px 56px 100px; display: flex; flex-direction: column; }
 .form-h2 { font-family: "Cormorant Garamond", serif; font-size: 42px; line-height: 1.05; font-weight: 400; margin-bottom: 28px; }
 .form-h2 em { color: var(--gold); font-style: italic; }
