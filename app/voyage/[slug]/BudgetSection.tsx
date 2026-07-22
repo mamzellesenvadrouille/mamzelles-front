@@ -73,9 +73,7 @@ export default function BudgetSection({
                   )}
                 </span>
                 <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <span className={styles.amount}>
-                    {ligne.montant.toLocaleString("fr-FR")} € <span style={{ fontSize: 12, opacity: 0.7 }}>· {pct}%</span>
-                  </span>
+                  <span className={styles.amount}>{ligne.montant.toLocaleString("fr-FR")} €</span>
                   {ligne.ajoutee && (
                     <button
                       onClick={() => supprimer(indexCustom)}
@@ -87,8 +85,20 @@ export default function BudgetSection({
                   )}
                 </span>
               </div>
-              <div className={styles.budgetTrack}>
-                <div className={styles.budgetFill} style={{ width: `${pct}%` }} />
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <div className={styles.budgetTrack} style={{ flex: 1, height: 16, borderRadius: 8, position: "relative" }}>
+                  <div
+                    className={styles.budgetFill}
+                    style={{ width: `${pct}%`, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "flex-end", paddingRight: pct >= 15 ? 6 : 0 }}
+                  >
+                    {toutesLesLignes.length > 1 && pct >= 15 && (
+                      <span style={{ fontSize: 9, color: "#fff", fontWeight: 600 }}>{pct}%</span>
+                    )}
+                  </div>
+                </div>
+                {toutesLesLignes.length > 1 && pct < 15 && (
+                  <span style={{ fontSize: 10.5, color: "#a8a29a", flexShrink: 0 }}>{pct}%</span>
+                )}
               </div>
             </div>
           );
@@ -103,7 +113,7 @@ export default function BudgetSection({
       <div style={{ marginTop: 24, display: "flex", gap: 8, flexWrap: "wrap" }}>
         <input
           type="text"
-          placeholder="Poste (ex : Restaurants)"
+          placeholder="Dépenses (ex : Restaurants)"
           value={nPoste}
           onChange={(e) => setNPoste(e.target.value)}
           style={{
