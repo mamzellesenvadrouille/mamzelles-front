@@ -103,7 +103,7 @@ export default async function CarnetPage({
         </div>
         <div className={styles.overviewGrid}>
           <div className={styles.overviewItem}>
-            <div className={styles.val}>{carnet.overview.decalage}</div>
+            <div className={styles.val}>{carnet.overview.decalage.replace(/^([+-])\s*/, "$1 ")}</div>
             <div className={styles.lbl}>Décalage horaire</div>
           </div>
           <div className={styles.overviewItem}>
