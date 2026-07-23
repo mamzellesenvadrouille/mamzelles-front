@@ -211,7 +211,7 @@ button.miniCard:hover img { opacity: 0.9; }
 .budgetTrack { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; }
 .budgetFill { height: 100%; background: var(--gold); border-radius: 2px; transition: width 1s ease; }
 .budgetTotal { margin-top: var(--s5); padding-top: 0; display: flex; justify-content: space-between; align-items: baseline; }
-.budgetTotal .label { font-size: 15px; text-transform: uppercase; letter-spacing: .1em; color: var(--gold-deep); font-weight: 700; }
+.budgetTotal .label { font-size: 15px; text-transform: uppercase; letter-spacing: .1em; color: var(--dark); font-weight: 700; }
 .budgetTotal .amount { font-size: 32px; color: var(--dark); }
 
 .checkList {}
