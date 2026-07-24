@@ -118,7 +118,7 @@ export default async function CarnetPage({
 
         {(carnet.budget.length > 0 || progress.budgetCustom.length > 0) && (
           <>
-            <h2 className={styles.display2} style={{ marginTop: 56, marginBottom: 28 }}>
+            <h2 className={styles.display2} style={{ marginTop: 60, marginBottom: 32 }}>
               Budget <em>estimé</em>
             </h2>
             <BudgetSection budget={carnet.budget} slug={carnet.slug} budgetCustomInitial={progress.budgetCustom} />
