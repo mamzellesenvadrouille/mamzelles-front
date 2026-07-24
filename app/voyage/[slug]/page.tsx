@@ -101,7 +101,7 @@ export default async function CarnetPage({
             En <em>bref</em>
           </h2>
         </div>
-        <div className={styles.overviewGrid} style={{ marginTop: -5 }}>
+        <div className={styles.overviewGrid} style={{ marginTop: -10 }}>
           <div className={styles.overviewItem}>
             <div className={styles.val}>{carnet.overview.decalage.replace(/^([+-])\s*(\d+)\s*h/, "$1 $2 h")}</div>
             <div className={styles.lbl}>Décalage horaire</div>
@@ -118,7 +118,7 @@ export default async function CarnetPage({
 
         {(carnet.budget.length > 0 || progress.budgetCustom.length > 0) && (
           <>
-            <h2 className={styles.display2} style={{ marginTop: 80, marginBottom: 44 }}>
+            <h2 className={styles.display2} style={{ marginTop: 75, marginBottom: 39 }}>
               Budget <em>estimé</em>
             </h2>
             <BudgetSection budget={carnet.budget} slug={carnet.slug} budgetCustomInitial={progress.budgetCustom} />
