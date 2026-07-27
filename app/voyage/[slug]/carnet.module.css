@@ -172,18 +172,17 @@ button.routeStep:hover { border-color: var(--gold); }
 .destTabActive { background: var(--dark); color: #fff; border-color: var(--dark); }
 .destPhoto { height: 220px; border-radius: 3px; background-size: cover; background-position: center; }
 .destDays { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-deep); font-weight: 600; }
-.destInfoRow { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-top: 16px; margin-bottom: var(--s4); }
+.destInfoRow { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 16px; margin-bottom: var(--s4); }
 .destName { font-family: var(--font-cormorant, "Cormorant Garamond", serif); margin: 4px 0 0; font-size: 26px; font-weight: 400; color: var(--dark); }
 .destWeather {
   flex-shrink: 0;
-  background: #fff;
-  color: var(--dark);
-  border-radius: 22px;
-  padding: 7px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold-deep);
   font-family: var(--font-cormorant, "Cormorant Garamond", serif);
   font-style: italic;
-  font-size: 20px;
-  border: 1px solid var(--line);
+  font-size: 24px;
 }
 
 .subEyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold-deep); font-weight: 600; margin: var(--s5) 0 20px; }
