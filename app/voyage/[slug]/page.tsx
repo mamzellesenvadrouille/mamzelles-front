@@ -153,6 +153,7 @@ export default async function CarnetPage({
           meteoParDestination={meteoParDestination}
           slug={carnet.slug}
           derouleCustomInitial={progress.derouleCustom}
+          dateDebutVoyage={carnet.dates.debut}
         />
       </section>
 

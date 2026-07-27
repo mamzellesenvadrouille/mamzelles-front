@@ -80,12 +80,14 @@ export default function DestinationTabs({
   meteoParDestination,
   slug,
   derouleCustomInitial,
+  dateDebutVoyage,
 }: {
   destinations: DestinationResolue[];
   googleMapsApiKey: string;
   meteoParDestination?: ({ temperature: number; icone: string } | null)[];
   slug: string;
   derouleCustomInitial: (DeroulePoint & { destinationId: string })[];
+  dateDebutVoyage?: string;
 }) {
   const [actif, setActif] = useState(0);
   const mapHandleRef = useRef<DestinationMapHandle>(null);
@@ -94,6 +96,24 @@ export default function DestinationTabs({
   const [nHeure, setNHeure] = useState("");
   const [nTitre, setNTitre] = useState("");
   const [nNote, setNNote] = useState("");
+
+  // Calcule les dates d'arrivée/départ de chaque étape à partir de la date de
+  // début du voyage et du nombre de nuits cumulé des étapes précédentes.
+  const datesParDestination = (() => {
+    if (!dateDebutVoyage) return [];
+    let curseur = new Date(dateDebutVoyage);
+    return destinations.map((d) => {
+      const arrivee = new Date(curseur);
+      const depart = new Date(curseur);
+      depart.setDate(depart.getDate() + d.nuits);
+      curseur = new Date(depart);
+      return { arrivee, depart };
+    });
+  })();
+
+  function formatCourt(date: Date): string {
+    return date.toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
+  }
 
   function ajouterNoteDeroule(destinationId: string) {
     if (!nTitre.trim()) return;
@@ -130,7 +150,7 @@ export default function DestinationTabs({
             className={`${styles.destTab} ${i === actif ? styles.destTabActive : ""}`}
             onClick={() => setActif(i)}
           >
-            {d.nom}
+            {d.nom} · {d.nuits} nuit{d.nuits > 1 ? "s" : ""}
           </button>
         ))}
       </div>
@@ -141,17 +161,29 @@ export default function DestinationTabs({
           style={{ backgroundImage: `url('${dest.photo}')` }}
         />
 
+        {datesParDestination[actif] && (
+          <div className={styles.destDatesLine}>
+            Arrivée le {formatCourt(datesParDestination[actif].arrivee)} · Départ le {formatCourt(datesParDestination[actif].depart)}
+          </div>
+        )}
+
         <div className={styles.destInfoRow}>
           <div>
-            <div className={styles.destDays}>{dest.nuits} nuit{dest.nuits > 1 ? "s" : ""}</div>
-            <h3 className={styles.destName}>{dest.nom}</h3>
-          </div>
-          {meteoParDestination?.[actif] && (
-            <div className={styles.destWeather}>
-              {meteoParDestination[actif]!.icone} {meteoParDestination[actif]!.temperature}°
+            <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
+              <h3 className={styles.destName}>{dest.nom}</h3>
+              <span className={styles.destDays}>{dest.nuits} nuit{dest.nuits > 1 ? "s" : ""}</span>
             </div>
-          )}
+            {meteoParDestination?.[actif] && (
+              <div className={styles.destWeather}>
+                {meteoParDestination[actif]!.icone} {meteoParDestination[actif]!.temperature}°
+              </div>
+            )}
+          </div>
         </div>
+
+        {dest.resume && (
+          <p className={styles.destResume}>{dest.resume}</p>
+        )}
 
         {(() => {
           const notesDeCetteDestination = derouleCustom

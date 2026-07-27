@@ -50,6 +50,7 @@ export interface Destination {
   pays?: string; // ex: "Maldives"
   lat?: number; // coordonnée GPS de la destination elle-même (météo + carte du parcours)
   lng?: number;
+  resume?: string; // court résumé narratif de l'étape (2 lignes environ), affiché sous la photo dans le carnet client
   deroule: DeroulePoint[]; // propre à cette destination, réutilisé tel quel dans chaque carnet qui l'inclut
   hebergements?: Hebergement[];
   restaurants: Restaurant[]; // objectif 5
