@@ -157,6 +157,24 @@ export default async function CarnetPage({
         />
       </section>
 
+      {carnet.reservations.length > 0 && (
+        <section className={styles.wrap}>
+          <div className={styles.sectionHead} style={{ marginBottom: 30 }}>
+            <span className={styles.eyebrow}>À préparer</span>
+            <h2 className={styles.display2}>
+              Vos <em>réservations</em>
+            </h2>
+          </div>
+          <ReservationList
+            items={carnet.reservations}
+            storageKey={`mamzelles-reservations-${carnet.slug}`}
+            slug={carnet.slug}
+            listeType="reservations"
+            progressInitiale={progress.reservations}
+          />
+        </section>
+      )}
+
       {carnet.conseils.length > 0 && (
         <section className={styles.wrap}>
           <div className={styles.sectionHead}>
@@ -187,24 +205,6 @@ export default async function CarnetPage({
               <p className={styles.bodySerif}>{c.texte}</p>
             </div>
           ))}
-        </section>
-      )}
-
-      {carnet.reservations.length > 0 && (
-        <section className={styles.wrap}>
-          <div className={styles.sectionHead} style={{ marginBottom: 30 }}>
-            <span className={styles.eyebrow}>À préparer</span>
-            <h2 className={styles.display2}>
-              Vos <em>réservations</em>
-            </h2>
-          </div>
-          <ReservationList
-            items={carnet.reservations}
-            storageKey={`mamzelles-reservations-${carnet.slug}`}
-            slug={carnet.slug}
-            listeType="reservations"
-            progressInitiale={progress.reservations}
-          />
         </section>
       )}
 
