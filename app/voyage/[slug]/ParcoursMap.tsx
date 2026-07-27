@@ -136,7 +136,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
           </p>
         )}
         {pret && (
-          <div style={{ display: "flex", flexDirection: "column", gap: 6, marginTop: 20 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 6, marginTop: 32 }}>
             {segments.map((s, i) => (
               <div key={i} className={styles.meta} style={{ fontSize: 12.5 }}>
                 {s.de} → {s.a} · environ {s.km.toLocaleString("fr-FR")}{"\u00A0"}km à vol d&apos;oiseau
