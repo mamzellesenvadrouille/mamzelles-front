@@ -127,7 +127,7 @@ export default async function CarnetPage({
       </section>
 
       <section className={styles.wrap}>
-        <div className={styles.sectionHead} style={{ marginBottom: 38 }}>
+        <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Le parcours</span>
           <h2 className={styles.display2}>
             {parcoursNomsAffiches.length} <em>étapes</em>
@@ -141,7 +141,7 @@ export default async function CarnetPage({
       </section>
 
       <section className={styles.wrap}>
-        <div className={styles.sectionHead} style={{ marginBottom: 38 }}>
+        <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Votre séjour</span>
           <h2 className={styles.display2}>
             Par <em>destination</em>
