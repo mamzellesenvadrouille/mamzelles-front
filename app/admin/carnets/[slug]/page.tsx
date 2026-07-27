@@ -172,7 +172,14 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
       update("destinations", carnet.destinations.filter((d) => d.destinationId !== id));
     } else {
       const nouvelleRef: CarnetDestinationRef = { destinationId: id, nuits: 1 };
-      update("destinations", [...carnet.destinations, nouvelleRef]);
+      const nextDestinations = [...carnet.destinations, nouvelleRef];
+      update("destinations", nextDestinations);
+      if (!carnet.destination.trim()) {
+        const noms = nextDestinations
+          .map((ref) => destinationsDispo.find((d) => d.id === ref.destinationId)?.nom)
+          .filter((nom): nom is string => !!nom);
+        if (noms.length > 0) update("destination", noms.join(" & "));
+      }
     }
   }
 

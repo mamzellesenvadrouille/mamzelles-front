@@ -161,7 +161,16 @@ export default function NouveauCarnetPage() {
       update("destinations", carnet.destinations.filter((d) => d.destinationId !== id));
     } else {
       const nouvelleRef: CarnetDestinationRef = { destinationId: id, nuits: 1 };
-      update("destinations", [...carnet.destinations, nouvelleRef]);
+      const nextDestinations = [...carnet.destinations, nouvelleRef];
+      update("destinations", nextDestinations);
+      // Remplit automatiquement "Destination générale" si elle est encore vide,
+      // en listant les noms des destinations cochées (évite d'oublier ce champ).
+      if (!carnet.destination.trim()) {
+        const noms = nextDestinations
+          .map((ref) => destinationsDispo.find((d) => d.id === ref.destinationId)?.nom)
+          .filter((nom): nom is string => !!nom);
+        if (noms.length > 0) update("destination", noms.join(" & "));
+      }
     }
   }
 
