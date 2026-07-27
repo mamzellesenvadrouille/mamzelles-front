@@ -139,25 +139,15 @@ export default function DestinationTabs({
         <div
           className={styles.destPhoto}
           style={{ backgroundImage: `url('${dest.photo}')` }}
-        >
+        />
+
+        <div className={styles.destInfoRow}>
           <div>
             <div className={styles.destDays}>{dest.nuits} nuit{dest.nuits > 1 ? "s" : ""}</div>
-            <h3>{dest.nom}</h3>
+            <h3 className={styles.destName}>{dest.nom}</h3>
           </div>
           {meteoParDestination?.[actif] && (
-            <div
-              style={{
-                marginLeft: "auto",
-                background: "rgba(255,255,255,.95)",
-                color: "#1a1512",
-                borderRadius: 22,
-                padding: "7px 16px",
-                fontFamily: "'Cormorant Garamond', serif",
-                fontStyle: "italic",
-                fontSize: 20,
-                boxShadow: "0 2px 8px rgba(0,0,0,.15)",
-              }}
-            >
+            <div className={styles.destWeather}>
               {meteoParDestination[actif]!.icone} {meteoParDestination[actif]!.temperature}°
             </div>
           )}
