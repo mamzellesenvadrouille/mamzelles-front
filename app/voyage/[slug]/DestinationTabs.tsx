@@ -156,23 +156,20 @@ export default function DestinationTabs({
       </div>
 
       <div>
-        <div
-          className={styles.destPhoto}
-          style={{ backgroundImage: `url('${dest.photo}')` }}
-        />
-
         {datesParDestination[actif] && (
           <div className={styles.destDatesLine}>
             Arrivée le {formatCourt(datesParDestination[actif].arrivee)} · Départ le {formatCourt(datesParDestination[actif].depart)}
           </div>
         )}
 
+        <div
+          className={styles.destPhoto}
+          style={{ backgroundImage: `url('${dest.photo}')` }}
+        />
+
         <div className={styles.destInfoRow}>
           <div>
-            <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
-              <h3 className={styles.destName}>{dest.nom}</h3>
-              <span className={styles.destDays}>{dest.nuits} nuit{dest.nuits > 1 ? "s" : ""}</span>
-            </div>
+            <h3 className={styles.destName}>{dest.nom}</h3>
             {meteoParDestination?.[actif] && (
               <div className={styles.destWeather}>
                 {meteoParDestination[actif]!.icone} {meteoParDestination[actif]!.temperature}°
