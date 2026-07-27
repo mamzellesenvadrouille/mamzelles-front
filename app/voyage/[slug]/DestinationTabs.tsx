@@ -173,7 +173,7 @@ export default function DestinationTabs({
           <h3 className={styles.destName}>{dest.nom}</h3>
           {meteoParDestination?.[actif] && (
             <div className={styles.destWeather}>
-              {meteoParDestination[actif]!.icone} {meteoParDestination[actif]!.temperature}°
+              {meteoParDestination[actif]!.temperature} °C {meteoParDestination[actif]!.icone}
             </div>
           )}
         </div>
