@@ -168,14 +168,12 @@ export default function DestinationTabs({
         />
 
         <div className={styles.destInfoRow}>
-          <div>
-            <h3 className={styles.destName}>{dest.nom}</h3>
-            {meteoParDestination?.[actif] && (
-              <div className={styles.destWeather}>
-                {meteoParDestination[actif]!.icone} {meteoParDestination[actif]!.temperature}°
-              </div>
-            )}
-          </div>
+          <h3 className={styles.destName}>{dest.nom}</h3>
+          {meteoParDestination?.[actif] && (
+            <div className={styles.destWeather}>
+              {meteoParDestination[actif]!.icone} {meteoParDestination[actif]!.temperature}°
+            </div>
+          )}
         </div>
 
         {dest.resume && (
