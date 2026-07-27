@@ -152,6 +152,18 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   <label style={adminStyles.label}>Photo (URL)</label>
                   <input style={adminStyles.input} value={dest.photo} onChange={(e) => update("photo", e.target.value)} />
                 </div>
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Résumé de l&apos;étape (optionnel)</label>
+                  <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12.5, color: "#888", marginTop: -2, marginBottom: 8 }}>
+                    1 à 2 phrases racontant pourquoi cette étape, dans quel esprit — affiché sous la photo dans le carnet du client. Ex : « Première étape de votre voyage. Une nuit pour récupérer du vol avant de rejoindre Baa Atoll. »
+                  </p>
+                  <textarea
+                    style={{ ...adminStyles.input, minHeight: 64, resize: "vertical", fontFamily: "Inter, sans-serif" }}
+                    placeholder="ex : Première étape de votre voyage..."
+                    value={dest.resume ?? ""}
+                    onChange={(e) => update("resume", e.target.value)}
+                  />
+                </div>
               </div>
 
               <div style={sectionWrap}>
