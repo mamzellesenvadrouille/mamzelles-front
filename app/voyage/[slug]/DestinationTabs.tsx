@@ -3,6 +3,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { Calendar } from "lucide-react";
 import type { DestinationResolue, DeroulePoint } from "@/lib/carnets";
 import { normaliserHeure } from "@/lib/carnets";
 import styles from "./carnet.module.css";
@@ -158,6 +159,7 @@ export default function DestinationTabs({
       <div>
         {datesParDestination[actif] && (
           <div className={styles.destDatesLine}>
+            <Calendar size={14} color="#c8956c" strokeWidth={2} style={{ marginRight: 8, verticalAlign: "-2px" }} />
             Arrivée le {formatCourt(datesParDestination[actif].arrivee)} · Départ le {formatCourt(datesParDestination[actif].depart)}
           </div>
         )}
