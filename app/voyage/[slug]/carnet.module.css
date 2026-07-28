@@ -189,7 +189,7 @@ button.routeStep:hover { border-color: var(--gold); }
 .destResume { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 20px; line-height: 1.55; color: #3a3128; margin: 0 0 var(--s4); }
 
 .subEyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold-deep); font-weight: 600; margin: var(--s5) 0 8px; }
-.sectionLabelBig { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; font-style: italic; font-weight: 500; color: var(--dark); margin: var(--s5) 0 32px; }
+.sectionLabelBig { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; font-weight: 600; color: var(--dark); margin: var(--s5) 0 32px; }
 
 .dayList {}
 .dayItem { display: flex; gap: var(--s3); padding: var(--s2) 0; border-bottom: 1px solid var(--line); }
