@@ -180,7 +180,7 @@ export default async function CarnetPage({
 
       {carnet.reservations.length > 0 && (
         <section className={styles.wrap}>
-          <div className={styles.sectionHead} style={{ marginBottom: 35 }}>
+          <div className={styles.sectionHead} style={{ marginBottom: 38 }}>
             <span className={styles.eyebrow}>À préparer</span>
             <h2 className={styles.display2}>
               Vos <em>réservations</em>
@@ -247,7 +247,7 @@ export default async function CarnetPage({
 
       {carnet.checklistValise.length > 0 && (
         <section className={styles.wrap}>
-          <div className={styles.sectionHead} style={{ marginBottom: 25 }}>
+          <div className={styles.sectionHead} style={{ marginBottom: 20 }}>
             <span className={styles.eyebrow}>Avant de partir</span>
             <h2 className={styles.display2}>
               Checklist <em>valise</em>
@@ -265,7 +265,7 @@ export default async function CarnetPage({
 
       {carnet.checklistVoyage && carnet.checklistVoyage.length > 0 && (
         <section className={styles.wrap}>
-          <div className={styles.sectionHead} style={{ marginBottom: 25 }}>
+          <div className={styles.sectionHead} style={{ marginBottom: 20 }}>
             <span className={styles.eyebrow}>Démarches à prévoir</span>
             <h2 className={styles.display2}>
               Checklist <em>voyage</em>
