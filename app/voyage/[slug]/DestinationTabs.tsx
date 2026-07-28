@@ -3,7 +3,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Calendar, Ticket, MapPin } from "lucide-react";
+import { Calendar, Ticket, MapPin, Bed, Camera, Utensils } from "lucide-react";
 import type { DestinationResolue, DeroulePoint } from "@/lib/carnets";
 import { normaliserHeure } from "@/lib/carnets";
 import styles from "./carnet.module.css";
@@ -262,7 +262,8 @@ export default function DestinationTabs({
 
         {(dest.hebergements ?? []).length > 0 && (
           <>
-            <div className={styles.sectionLabelBig}>
+            <div className={styles.sectionLabelBig} style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <Bed size={22} color="#7d4e6b" strokeWidth={1.75} />
               Hébergement{(dest.hebergements ?? []).length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
@@ -308,7 +309,8 @@ export default function DestinationTabs({
 
         {dest.activites.length > 0 && (
           <>
-            <div className={styles.sectionLabelBig}>
+            <div className={styles.sectionLabelBig} style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <Camera size={22} color="#7a9e7e" strokeWidth={1.75} />
               {dest.activites.length} site{dest.activites.length > 1 ? "s" : ""} & activité{dest.activites.length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
@@ -330,22 +332,23 @@ export default function DestinationTabs({
                           onClick={(e) => e.stopPropagation()}
                           style={{
                             position: "absolute",
-                            top: 8,
-                            right: 8,
+                            top: 10,
+                            right: 10,
                             display: "inline-flex",
                             alignItems: "center",
-                            gap: 5,
+                            gap: 6,
                             background: "#fff",
                             color: "#a8734c",
-                            fontSize: 11.5,
-                            fontWeight: 600,
-                            padding: "6px 12px",
+                            border: "1.5px solid #a8734c",
+                            fontSize: 13,
+                            fontWeight: 700,
+                            padding: "8px 16px",
                             borderRadius: 20,
                             textDecoration: "none",
-                            boxShadow: "0 2px 6px rgba(26,21,18,.25)",
+                            boxShadow: "0 3px 10px rgba(26,21,18,.35)",
                           }}
                         >
-                          <Ticket size={13} strokeWidth={2} />
+                          <Ticket size={14} strokeWidth={2.5} />
                           Réserver
                         </a>
                       )}
@@ -383,7 +386,8 @@ export default function DestinationTabs({
 
         {dest.restaurants.length > 0 && (
           <>
-            <div className={styles.sectionLabelBig}>
+            <div className={styles.sectionLabelBig} style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <Utensils size={22} color="#c8956c" strokeWidth={1.75} />
               {dest.restaurants.length} restaurant{dest.restaurants.length > 1 ? "s" : ""} recommandé{dest.restaurants.length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
