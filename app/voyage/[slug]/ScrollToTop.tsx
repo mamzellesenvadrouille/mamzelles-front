@@ -32,7 +32,7 @@ export default function ScrollToTop() {
       style={{
         position: "fixed",
         bottom: 24,
-        right: 24,
+        right: "max(24px, calc(50% - 300px - 20px))",
         width: 44,
         height: 44,
         borderRadius: "50%",
