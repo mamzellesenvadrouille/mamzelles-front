@@ -336,8 +336,9 @@ export default function DestinationTabs({
                         style={{
                           display: "inline-flex",
                           alignItems: "center",
+                          alignSelf: "flex-start",
                           gap: 5,
-                          marginTop: 8,
+                          marginTop: 12,
                           background: "#c8956c",
                           color: "#fff",
                           fontSize: 11.5,
