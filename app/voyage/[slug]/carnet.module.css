@@ -189,7 +189,7 @@ button.routeStep:hover { border-color: var(--gold); }
 .destResume { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 20px; line-height: 1.55; color: #3a3128; margin: 0 0 var(--s4); }
 
 .subEyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--gold-deep); font-weight: 600; margin: var(--s5) 0 8px; }
-.sectionLabelBig { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; font-style: italic; font-weight: 500; color: var(--dark); margin: var(--s5) 0 20px; }
+.sectionLabelBig { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; font-style: italic; font-weight: 500; color: var(--dark); margin: var(--s5) 0 32px; }
 
 .dayList {}
 .dayItem { display: flex; gap: var(--s3); padding: var(--s2) 0; border-bottom: 1px solid var(--line); }
@@ -205,7 +205,7 @@ button.miniCard:hover img { opacity: 0.9; }
 .miniCard img { display: block; width: 100%; height: 100px; max-height: 100px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; background: var(--line); flex-shrink: 0; }
 .miniCardPlaceholder { width: 100%; height: 100px; max-height: 100px; aspect-ratio: 4 / 3; border-radius: 3px; flex-shrink: 0; background: linear-gradient(135deg, var(--cream), var(--line)); border: 1px solid var(--line); }
 .miniCard h4 { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-weight: 500; font-size: 19px; line-height: 1.25; margin: 8px 0 2px; }
-.meta { font-size: 11px; line-height: 1.5; color: var(--muted); flex-grow: 1; margin-top: 8px; }
+.meta { font-size: 11px; line-height: 1.5; color: var(--muted); flex-grow: 1; margin-top: 3px; }
 .mapsLink { font-size: 11px; color: var(--gold-deep); font-weight: 500; margin-top: 8px; display: inline-block; }
 
 .practicalBox { background: #fff; border-radius: 3px; padding: var(--s3); margin-top: var(--s2); }
