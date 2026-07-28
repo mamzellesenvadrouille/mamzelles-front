@@ -320,9 +320,9 @@ export default function DestinationTabs({
                       <div className={styles.miniCardPlaceholder} />
                     )}
                     <h4>{a.nom}</h4>
-                    <div className={styles.meta} style={{ marginTop: 0 }}>{a.description}</div>
+                    <div className={styles.meta}>{a.description}</div>
                     {aCoords && (
-                      <span className={styles.mapsLink} style={{ display: "inline-flex", alignItems: "center", gap: 4, marginTop: 6 }}>
+                      <span className={styles.mapsLink} style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
                         <MapPin size={12} color="#c8956c" strokeWidth={2} />
                         Voir sur la carte
                       </span>
