@@ -108,7 +108,7 @@ export default async function CarnetPage({
 
       <section className={styles.wrap}>
         <div className={styles.welcome}>
-          <h2 className={styles.display2} style={{ color: "#c8956c" }}>Bienvenue</h2>
+          <h2 className={styles.display2}>Bienvenue</h2>
           <p className={styles.bodySerif}>{carnet.bienvenue.message}</p>
           <div className={styles.signature}>Amélie & Laurie</div>
         </div>

@@ -128,7 +128,6 @@
   letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--dark);
-  font-weight: 700;
   margin-bottom: 8px;
 }
 .countdownNum {
