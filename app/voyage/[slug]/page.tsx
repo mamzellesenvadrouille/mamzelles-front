@@ -244,6 +244,7 @@ export default async function CarnetPage({
           <p><strong>Vaccins :</strong> {carnet.indispensables.vaccins}</p>
           <p><strong>Assurance voyage :</strong> {carnet.indispensables.assurance}</p>
           <p><strong>Monnaie :</strong> {carnet.indispensables.monnaie}</p>
+          <p><strong>Bon plan activités :</strong> utilisez le code <strong>MAMZELLESENVADROUILLE5</strong> sur l&apos;appli GetYourGuide pour -5% sur vos réservations d&apos;activités</p>
         </div>
       </section>
 
