@@ -204,7 +204,7 @@ button.miniCard { cursor: pointer; }
 button.miniCard:hover img { opacity: 0.9; }
 .miniCard img { display: block; width: 100%; height: 100px; max-height: 100px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; background: var(--line); flex-shrink: 0; }
 .miniCardPlaceholder { width: 100%; height: 100px; max-height: 100px; aspect-ratio: 4 / 3; border-radius: 3px; flex-shrink: 0; background: linear-gradient(135deg, var(--cream), var(--line)); border: 1px solid var(--line); }
-.miniCard h4 { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-weight: 500; font-size: 16px; margin: 8px 0 1px; }
+.miniCard h4 { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-weight: 500; font-size: 19px; margin: 8px 0 2px; }
 .meta { font-size: 11px; color: var(--muted); flex-grow: 1; }
 .mapsLink { font-size: 11px; color: var(--gold-deep); font-weight: 500; margin-top: 8px; display: inline-block; }
 
