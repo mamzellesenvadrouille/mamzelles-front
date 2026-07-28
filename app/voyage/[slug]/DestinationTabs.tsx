@@ -317,17 +317,31 @@ export default function DestinationTabs({
                     <h4>{a.nom}</h4>
                     <div className={styles.meta}>{a.description}</div>
                     {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
+                    {a.lienReservation && (
+                      <a
+                        href={a.lienReservation}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        className={styles.mapsLink}
+                        style={{ display: "block", color: "#7a9e7e" }}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Réserver →
+                      </a>
+                    )}
                   </>
                 );
                 return aCoords ? (
-                  <button
-                    type="button"
+                  <div
+                    role="button"
+                    tabIndex={0}
                     onClick={() => centrerSurLeLieu(a.lat, a.lng, a.nom)}
+                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(a.lat, a.lng, a.nom)}
                     className={styles.miniCard}
                     key={i}
                   >
                     {contenu}
-                  </button>
+                  </div>
                 ) : (
                   <div className={styles.miniCard} key={i}>
                     {contenu}

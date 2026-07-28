@@ -499,6 +499,20 @@ export default function NouvelleDestinationPage() {
                       />
                     </div>
 
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Lien de réservation (optionnel — ex : GetYourGuide)</label>
+                      <input
+                        style={adminStyles.input}
+                        placeholder="https://www.getyourguide.fr/..."
+                        value={a.lienReservation ?? ""}
+                        onChange={(e) => {
+                          const copy = [...dest.activites];
+                          copy[i] = { ...copy[i], lienReservation: e.target.value };
+                          update("activites", copy);
+                        }}
+                      />
+                    </div>
+
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                       <div>
                         <label style={microLabel}>Latitude</label>

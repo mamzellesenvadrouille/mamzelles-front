@@ -32,6 +32,7 @@ export interface Activite {
   description: string;
   lat?: number;
   lng?: number;
+  lienReservation?: string; // lien d'affiliation (ex: GetYourGuide) pour réserver cette activité
 }
 
 export interface Hebergement {
