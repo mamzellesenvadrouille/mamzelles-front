@@ -198,7 +198,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                   fontSize: 13.5,
                   padding: "8px 16px 8px 8px",
                   borderRadius: 24,
-                  border: filtres.has(c.key) ? `1px solid ${c.color}` : "1px solid #e8e0d6",
+                  border: "1px solid #e8e0d6",
                   background: filtres.has(c.key) ? `rgba(${r}, ${g}, ${b}, 0.08)` : "#fff",
                   color: "#1a1512",
                   cursor: "pointer",
