@@ -183,7 +183,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
     return (
       <div style={{ marginTop: 40 }} ref={wrapRef}>
-        <div className={styles.subEyebrow}>Carte interactive</div>
+        <div className={styles.subEyebrow} style={{ marginBottom: 20 }}>Carte interactive</div>
         <div style={{ display: "flex", gap: 8, marginBottom: 24, flexWrap: "wrap" }}>
           {CATEGORIES.map((c) => (
             <button
