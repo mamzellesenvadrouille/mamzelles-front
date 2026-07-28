@@ -82,16 +82,16 @@ export default async function CarnetPage({
           {joursAvantDepart > 0 ? (
             <>
               <div className={styles.countdownLabel}>Avant le départ</div>
-              <div className={styles.countdownNum} style={{ fontSize: 30, position: "relative", display: "inline-block" }}>
-                <Plane size={20} color="#a8734c" strokeWidth={2} style={{ position: "absolute", left: -28, top: "50%", transform: "translateY(-50%)" }} />
+              <div className={styles.countdownNum} style={{ fontSize: 30, display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
+                <Plane size={20} color="#a8734c" strokeWidth={2} />
                 J-{joursAvantDepart}
               </div>
             </>
           ) : (
             <>
               <div className={styles.countdownLabel}>Aujourd&apos;hui</div>
-              <div className={styles.countdownNum} style={{ fontSize: 30, position: "relative", display: "inline-block" }}>
-                <Plane size={22} color="#a8734c" strokeWidth={2} style={{ position: "absolute", left: -32, top: "50%", transform: "translateY(-50%)" }} />
+              <div className={styles.countdownNum} style={{ fontSize: 30, display: "flex", alignItems: "center", justifyContent: "center", gap: 10 }}>
+                <Plane size={22} color="#a8734c" strokeWidth={2} />
                 Bon voyage !
               </div>
             </>
