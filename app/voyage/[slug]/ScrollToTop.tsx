@@ -32,19 +32,21 @@ export default function ScrollToTop() {
       style={{
         position: "fixed",
         bottom: 24,
-        right: "max(24px, calc(50% - 300px - 60px))",
+        right: "max(24px, calc(50% - 300px - 100px))",
         width: 44,
         height: 44,
-        background: "none",
+        borderRadius: "50%",
+        background: "#c8956c",
         border: "none",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         cursor: "pointer",
+        boxShadow: "0 2px 10px rgba(26,21,18,.2)",
         zIndex: 50,
       }}
     >
-      <ArrowUp size={26} color="#a8734c" strokeWidth={2} />
+      <ArrowUp size={20} color="#fff" strokeWidth={2} />
     </button>
   );
 }
