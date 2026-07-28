@@ -9,6 +9,7 @@ import BudgetSection from "./BudgetSection";
 import CheckList from "./CheckList";
 import ReservationList from "./ReservationList";
 import ContactsUrgence from "./ContactsUrgence";
+import ScrollToTop from "./ScrollToTop";
 import styles from "./carnet.module.css";
 
 export default async function CarnetPage({
@@ -294,6 +295,8 @@ export default async function CarnetPage({
           contactsCustomInitiaux={progress.contactsCustom}
         />
       </section>
+
+      <ScrollToTop />
 
       <div className={styles.footerEnd}>
         <p>
