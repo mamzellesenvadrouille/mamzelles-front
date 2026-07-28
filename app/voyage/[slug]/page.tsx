@@ -89,10 +89,13 @@ export default async function CarnetPage({
               </div>
             </>
           ) : (
-            <div className={styles.countdownNum} style={{ fontSize: 26 }}>
-              <Plane size={22} color="#a8734c" strokeWidth={2} style={{ marginRight: 10, verticalAlign: "-4px" }} />
-              C&apos;est aujourd&apos;hui ! Bon voyage
-            </div>
+            <>
+              <div className={styles.countdownLabel}>Aujourd&apos;hui</div>
+              <div className={styles.countdownNum} style={{ fontSize: 26 }}>
+                <Plane size={22} color="#a8734c" strokeWidth={2} style={{ marginRight: 10, verticalAlign: "-4px" }} />
+                Bon voyage !
+              </div>
+            </>
           )}
         </div>
       )}
