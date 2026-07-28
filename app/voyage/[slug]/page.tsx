@@ -61,7 +61,6 @@ export default async function CarnetPage({
   const enVoyage = joursAvantDepart < 0 && aujourdhui <= dateFin;
   const dureeTotaleJours = Math.round((dateFin.getTime() - dateDepart.getTime()) / (1000 * 60 * 60 * 24)) + 1;
   const jourActuel = Math.round((aujourdhui.getTime() - dateDepart.getTime()) / (1000 * 60 * 60 * 24)) + 1;
-  const progressionVoyage = Math.min(100, Math.round((jourActuel / dureeTotaleJours) * 100));
 
   return (
     <main className={styles.body}>
@@ -83,7 +82,7 @@ export default async function CarnetPage({
           {joursAvantDepart > 0 ? (
             <>
               <div className={styles.countdownLabel}>Avant le départ</div>
-              <div className={styles.countdownNum}>
+              <div className={styles.countdownNum} style={{ fontSize: 30 }}>
                 <Plane size={20} color="#a8734c" strokeWidth={2} style={{ marginRight: 8, verticalAlign: "-2px" }} />
                 J-{joursAvantDepart}
               </div>
@@ -91,7 +90,7 @@ export default async function CarnetPage({
           ) : (
             <>
               <div className={styles.countdownLabel}>Aujourd&apos;hui</div>
-              <div className={styles.countdownNum} style={{ fontSize: 26 }}>
+              <div className={styles.countdownNum} style={{ fontSize: 30 }}>
                 <Plane size={22} color="#a8734c" strokeWidth={2} style={{ marginRight: 10, verticalAlign: "-4px" }} />
                 Bon voyage !
               </div>
@@ -103,11 +102,7 @@ export default async function CarnetPage({
       {enVoyage && (
         <div className={styles.countdownBand}>
           <div className={styles.countdownLabel}>Votre séjour</div>
-          <div className={styles.countdownNum}>Jour {jourActuel} sur {dureeTotaleJours}</div>
-          <div className={styles.tripProgressTrack}>
-            <div className={styles.tripProgressFill} style={{ width: `${progressionVoyage}%` }} />
-          </div>
-          <div className={styles.tripProgressCaption}>Bon séjour !</div>
+          <div className={styles.countdownNum} style={{ fontSize: 30 }}>Jour {jourActuel} sur {dureeTotaleJours}</div>
         </div>
       )}
 
