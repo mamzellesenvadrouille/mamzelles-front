@@ -186,6 +186,9 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         <div className={styles.subEyebrow} style={{ marginBottom: 20 }}>Carte interactive</div>
         <div style={{ display: "flex", gap: 8, marginBottom: 24, flexWrap: "wrap" }}>
           {CATEGORIES.map((c) => {
+            const r = parseInt(c.color.slice(1, 3), 16);
+            const g = parseInt(c.color.slice(3, 5), 16);
+            const b = parseInt(c.color.slice(5, 7), 16);
             return (
               <button
                 key={c.key}
@@ -196,7 +199,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                   padding: "8px 16px 8px 8px",
                   borderRadius: 24,
                   border: filtres.has(c.key) ? `1px solid ${c.color}` : "1px solid #e8e0d6",
-                  background: "#fff",
+                  background: filtres.has(c.key) ? `rgba(${r}, ${g}, ${b}, 0.08)` : "#fff",
                   color: "#1a1512",
                   cursor: "pointer",
                   transition: "all .15s",
