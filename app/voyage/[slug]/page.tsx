@@ -86,7 +86,7 @@ export default async function CarnetPage({
               <div className={styles.countdownNum} style={{ fontSize: 30, display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
                 <Plane size={20} color="#a8734c" strokeWidth={2} />
                 J-{joursAvantDepart}
-                <span style={{ width: 10, display: "inline-block" }} aria-hidden="true" />
+                <span style={{ width: 5, display: "inline-block" }} aria-hidden="true" />
               </div>
             </>
           ) : (
