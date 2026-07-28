@@ -286,14 +286,16 @@ export default function DestinationTabs({
                   </>
                 );
                 return aCoords ? (
-                  <button
-                    type="button"
+                  <div
+                    role="button"
+                    tabIndex={0}
                     onClick={() => centrerSurLeLieu(h.lat, h.lng, h.nom)}
+                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(h.lat, h.lng, h.nom)}
                     className={styles.miniCard}
                     key={i}
                   >
                     {contenu}
-                  </button>
+                  </div>
                 ) : (
                   <div className={styles.miniCard} key={i}>
                     {contenu}
@@ -359,27 +361,16 @@ export default function DestinationTabs({
                   </>
                 );
                 return aCoords ? (
-                  a.lienReservation ? (
-                    <div
-                      role="button"
-                      tabIndex={0}
-                      onClick={() => centrerSurLeLieu(a.lat, a.lng, a.nom)}
-                      onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(a.lat, a.lng, a.nom)}
-                      className={styles.miniCard}
-                      key={i}
-                    >
-                      {contenu}
-                    </div>
-                  ) : (
-                    <button
-                      type="button"
-                      onClick={() => centrerSurLeLieu(a.lat, a.lng, a.nom)}
-                      className={styles.miniCard}
-                      key={i}
-                    >
-                      {contenu}
-                    </button>
-                  )
+                  <div
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => centrerSurLeLieu(a.lat, a.lng, a.nom)}
+                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(a.lat, a.lng, a.nom)}
+                    className={styles.miniCard}
+                    key={i}
+                  >
+                    {contenu}
+                  </div>
                 ) : (
                   <div className={styles.miniCard} key={i}>
                     {contenu}
@@ -416,14 +407,16 @@ export default function DestinationTabs({
                   </>
                 );
                 return aCoords ? (
-                  <button
-                    type="button"
+                  <div
+                    role="button"
+                    tabIndex={0}
                     onClick={() => centrerSurLeLieu(r.lat, r.lng, r.nom)}
+                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(r.lat, r.lng, r.nom)}
                     className={styles.miniCard}
                     key={i}
                   >
                     {contenu}
-                  </button>
+                  </div>
                 ) : (
                   <div className={styles.miniCard} key={i}>
                     {contenu}
