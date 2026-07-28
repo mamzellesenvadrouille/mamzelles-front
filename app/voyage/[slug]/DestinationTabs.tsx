@@ -3,7 +3,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Calendar } from "lucide-react";
+import { Calendar, Ticket, MapPin } from "lucide-react";
 import type { DestinationResolue, DeroulePoint } from "@/lib/carnets";
 import { normaliserHeure } from "@/lib/carnets";
 import styles from "./carnet.module.css";
@@ -277,7 +277,12 @@ export default function DestinationTabs({
                     )}
                     <h4>{h.nom}</h4>
                     <div className={styles.meta}>{h.description}</div>
-                    {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
+                    {aCoords && (
+                      <span className={styles.mapsLink} style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
+                        <MapPin size={12} color="#c8956c" strokeWidth={2} />
+                        Voir sur la carte
+                      </span>
+                    )}
                   </>
                 );
                 return aCoords ? (
@@ -316,17 +321,34 @@ export default function DestinationTabs({
                     )}
                     <h4>{a.nom}</h4>
                     <div className={styles.meta}>{a.description}</div>
-                    {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
+                    {aCoords && (
+                      <span className={styles.mapsLink} style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
+                        <MapPin size={12} color="#c8956c" strokeWidth={2} />
+                        Voir sur la carte
+                      </span>
+                    )}
                     {a.lienReservation && (
                       <a
                         href={a.lienReservation}
                         target="_blank"
                         rel="noopener noreferrer sponsored"
-                        className={styles.mapsLink}
-                        style={{ display: "block", color: "#7a9e7e" }}
                         onClick={(e) => e.stopPropagation()}
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: 5,
+                          marginTop: 8,
+                          background: "#c8956c",
+                          color: "#fff",
+                          fontSize: 11.5,
+                          fontWeight: 600,
+                          padding: "6px 12px",
+                          borderRadius: 20,
+                          textDecoration: "none",
+                        }}
                       >
-                        Réserver →
+                        <Ticket size={13} strokeWidth={2} />
+                        Réserver
                       </a>
                     )}
                   </>
@@ -369,7 +391,12 @@ export default function DestinationTabs({
                     )}
                     <h4>{r.nom}</h4>
                     <div className={styles.meta}>{r.cuisine} · {r.prix}</div>
-                    {aCoords && <span className={styles.mapsLink}>Voir sur la carte ↑</span>}
+                    {aCoords && (
+                      <span className={styles.mapsLink} style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
+                        <MapPin size={12} color="#c8956c" strokeWidth={2} />
+                        Voir sur la carte
+                      </span>
+                    )}
                   </>
                 );
                 return aCoords ? (
