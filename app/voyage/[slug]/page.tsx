@@ -55,6 +55,14 @@ export default async function CarnetPage({
   dateDepart.setHours(0, 0, 0, 0);
   const joursAvantDepart = Math.round((dateDepart.getTime() - aujourdhui.getTime()) / (1000 * 60 * 60 * 24));
 
+  // Pendant le voyage : jour actuel / durée totale, pour la barre de progression
+  const dateFin = new Date(carnet.dates.fin);
+  dateFin.setHours(0, 0, 0, 0);
+  const enVoyage = joursAvantDepart < 0 && aujourdhui <= dateFin;
+  const dureeTotaleJours = Math.round((dateFin.getTime() - dateDepart.getTime()) / (1000 * 60 * 60 * 24)) + 1;
+  const jourActuel = Math.round((aujourdhui.getTime() - dateDepart.getTime()) / (1000 * 60 * 60 * 24)) + 1;
+  const progressionVoyage = Math.min(100, Math.round((jourActuel / dureeTotaleJours) * 100));
+
   return (
     <main className={styles.body}>
       <div className={styles.hero} style={{ backgroundImage: `url('${carnet.hero.photo}')` }}>
@@ -86,6 +94,17 @@ export default async function CarnetPage({
               C&apos;est aujourd&apos;hui ! Bon voyage
             </div>
           )}
+        </div>
+      )}
+
+      {enVoyage && (
+        <div className={styles.countdownBand}>
+          <div className={styles.countdownLabel}>Votre séjour</div>
+          <div className={styles.countdownNum}>Jour {jourActuel} sur {dureeTotaleJours}</div>
+          <div className={styles.tripProgressTrack}>
+            <div className={styles.tripProgressFill} style={{ width: `${progressionVoyage}%` }} />
+          </div>
+          <div className={styles.tripProgressCaption}>Bon séjour !</div>
         </div>
       )}
 

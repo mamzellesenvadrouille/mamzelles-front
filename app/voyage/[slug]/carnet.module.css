@@ -137,6 +137,9 @@
   color: var(--gold-deep);
   line-height: 1;
 }
+.tripProgressTrack { max-width: 280px; margin: 14px auto 0; height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.tripProgressFill { height: 100%; background: var(--gold); border-radius: 2px; transition: width 1s ease; }
+.tripProgressCaption { font-size: 12px; color: var(--muted); margin-top: 10px; }
 @media (max-width: 480px) {
   .countdownNum { font-size: 30px; }
 }
