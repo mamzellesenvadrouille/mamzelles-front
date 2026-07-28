@@ -86,7 +86,7 @@ export default async function CarnetPage({
               <div className={styles.countdownNum} style={{ fontSize: 30, display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
                 <Plane size={20} color="#a8734c" strokeWidth={2} />
                 J-{joursAvantDepart}
-                <span style={{ width: 20, display: "inline-block" }} aria-hidden="true" />
+                <span style={{ width: 10, display: "inline-block" }} aria-hidden="true" />
               </div>
             </>
           ) : (
@@ -95,7 +95,7 @@ export default async function CarnetPage({
               <div className={styles.countdownNum} style={{ fontSize: 30, display: "flex", alignItems: "center", justifyContent: "center", gap: 10 }}>
                 <Plane size={22} color="#a8734c" strokeWidth={2} />
                 Bon voyage !
-                <span style={{ width: 22, display: "inline-block" }} aria-hidden="true" />
+                <span style={{ width: 11, display: "inline-block" }} aria-hidden="true" />
               </div>
             </>
           )}
