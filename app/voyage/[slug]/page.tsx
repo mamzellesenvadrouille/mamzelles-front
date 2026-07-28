@@ -75,7 +75,10 @@ export default async function CarnetPage({
           {joursAvantDepart > 0 ? (
             <>
               <div className={styles.countdownLabel}>Avant le départ</div>
-              <div className={styles.countdownNum}>J-{joursAvantDepart}</div>
+              <div className={styles.countdownNum}>
+                <Plane size={20} color="#a8734c" strokeWidth={2} style={{ marginRight: 8, verticalAlign: "-2px" }} />
+                J-{joursAvantDepart}
+              </div>
             </>
           ) : (
             <div className={styles.countdownNum} style={{ fontSize: 26 }}>
