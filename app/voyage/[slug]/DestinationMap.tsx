@@ -196,10 +196,10 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                 style={{
                   fontFamily: "Inter, sans-serif",
                   fontSize: 13.5,
-                  padding: "8px 16px 8px 8px",
+                  padding: "8px 16px 8px 10px",
                   borderRadius: 24,
                   border: "1px solid #e8e0d6",
-                  background: filtres.has(c.key) ? `rgba(${r}, ${g}, ${b}, 0.08)` : "#fff",
+                  background: filtres.has(c.key) ? "#fff" : `rgba(${r}, ${g}, ${b}, 0.08)`,
                   color: "#1a1512",
                   cursor: "pointer",
                   transition: "all .15s",
@@ -210,8 +210,8 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               >
                 <span
                   style={{
-                    width: 22,
-                    height: 22,
+                    width: 20,
+                    height: 20,
                     borderRadius: "50%",
                     background: c.color,
                     color: "#fff",
@@ -221,7 +221,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                     flexShrink: 0,
                   }}
                 >
-                  <c.Icon size={12} strokeWidth={2} />
+                  <c.Icon size={11} strokeWidth={2} />
                 </span>
                 {c.label}
               </button>
