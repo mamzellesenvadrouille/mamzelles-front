@@ -2,7 +2,7 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/DestinationTabs.tsx
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Calendar, Ticket, MapPin } from "lucide-react";
 import type { DestinationResolue, DeroulePoint } from "@/lib/carnets";
 import { normaliserHeure } from "@/lib/carnets";
@@ -92,54 +92,11 @@ export default function DestinationTabs({
 }) {
   const [actif, setActif] = useState(0);
   const mapHandleRef = useRef<DestinationMapHandle>(null);
-  const racineRef = useRef<HTMLDivElement>(null);
   const [derouleCustom, setDerouleCustom] = useState(derouleCustomInitial);
   const [nJour, setNJour] = useState("");
   const [nHeure, setNHeure] = useState("");
   const [nTitre, setNTitre] = useState("");
   const [nNote, setNNote] = useState("");
-
-  // Force l'alignement pixel-parfait des cartes d'une même ligne (Hébergements,
-  // Sites & activités, Restaurants), en corrigeant les écarts d'arrondi que la
-  // grille CSS peut introduire — recalculé après chargement des images et au
-  // redimensionnement de la fenêtre.
-  useEffect(() => {
-    const racine = racineRef.current;
-    if (!racine) return;
-
-    function alignerLignes() {
-      const grilles = racine!.querySelectorAll<HTMLElement>('[class*="miniGrid"]');
-      grilles.forEach((grille) => {
-        const cartes = Array.from(grille.querySelectorAll<HTMLElement>('[class*="miniCard"]'));
-        cartes.forEach((c) => (c.style.height = "auto"));
-
-        const lignes = new Map<number, HTMLElement[]>();
-        cartes.forEach((carte) => {
-          const top = Math.round(carte.offsetTop);
-          const groupe = [...lignes.keys()].find((t) => Math.abs(t - top) < 5);
-          const cle = groupe !== undefined ? groupe : top;
-          if (!lignes.has(cle)) lignes.set(cle, []);
-          lignes.get(cle)!.push(carte);
-        });
-
-        lignes.forEach((cartesDeLaLigne) => {
-          if (cartesDeLaLigne.length < 2) return;
-          const hauteurMax = Math.max(...cartesDeLaLigne.map((c) => c.getBoundingClientRect().height));
-          cartesDeLaLigne.forEach((c) => (c.style.height = `${Math.ceil(hauteurMax)}px`));
-        });
-      });
-    }
-
-    alignerLignes();
-    const images = racine.querySelectorAll("img");
-    images.forEach((img) => img.addEventListener("load", alignerLignes));
-    window.addEventListener("resize", alignerLignes);
-
-    return () => {
-      images.forEach((img) => img.removeEventListener("load", alignerLignes));
-      window.removeEventListener("resize", alignerLignes);
-    };
-  }, [actif]);
 
   // Calcule les dates d'arrivée/départ de chaque étape à partir de la date de
   // début du voyage et du nombre de nuits cumulé des étapes précédentes.
@@ -199,7 +156,7 @@ export default function DestinationTabs({
         ))}
       </div>
 
-      <div ref={racineRef}>
+      <div>
         {datesParDestination[actif] && (
           <div className={styles.destDatesLine}>
             <Calendar size={14} color="#c8956c" strokeWidth={2} style={{ marginRight: 8, verticalAlign: "-2px" }} />
