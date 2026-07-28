@@ -314,11 +314,40 @@ export default function DestinationTabs({
                 const aCoords = typeof a.lat === "number" && typeof a.lng === "number";
                 const contenu = (
                   <>
-                    {a.photo ? (
-                      <img src={a.photo} alt={a.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
-                    ) : (
-                      <div className={styles.miniCardPlaceholder} />
-                    )}
+                    <div style={{ position: "relative" }}>
+                      {a.photo ? (
+                        <img src={a.photo} alt={a.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                      ) : (
+                        <div className={styles.miniCardPlaceholder} />
+                      )}
+                      {a.lienReservation && (
+                        <a
+                          href={a.lienReservation}
+                          target="_blank"
+                          rel="noopener noreferrer sponsored"
+                          onClick={(e) => e.stopPropagation()}
+                          style={{
+                            position: "absolute",
+                            top: 8,
+                            right: 8,
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: 5,
+                            background: "#c8956c",
+                            color: "#fff",
+                            fontSize: 11.5,
+                            fontWeight: 600,
+                            padding: "6px 12px",
+                            borderRadius: 20,
+                            textDecoration: "none",
+                            boxShadow: "0 2px 6px rgba(26,21,18,.25)",
+                          }}
+                        >
+                          <Ticket size={13} strokeWidth={2} />
+                          Réserver
+                        </a>
+                      )}
+                    </div>
                     <h4>{a.nom}</h4>
                     <div className={styles.meta}>{a.description}</div>
                     {aCoords && (
@@ -326,31 +355,6 @@ export default function DestinationTabs({
                         <MapPin size={12} color="#c8956c" strokeWidth={2} />
                         Voir sur la carte
                       </span>
-                    )}
-                    {a.lienReservation && (
-                      <a
-                        href={a.lienReservation}
-                        target="_blank"
-                        rel="noopener noreferrer sponsored"
-                        onClick={(e) => e.stopPropagation()}
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          alignSelf: "flex-start",
-                          gap: 5,
-                          marginTop: 12,
-                          background: "#c8956c",
-                          color: "#fff",
-                          fontSize: 11.5,
-                          fontWeight: 600,
-                          padding: "6px 12px",
-                          borderRadius: 20,
-                          textDecoration: "none",
-                        }}
-                      >
-                        <Ticket size={13} strokeWidth={2} />
-                        Réserver
-                      </a>
                     )}
                   </>
                 );
