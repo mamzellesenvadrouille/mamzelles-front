@@ -82,48 +82,7 @@ const articles = [
   },
 ];
 
-async function getWpImages(): Promise<Record<string, string>> {
-  try {
-    const slugs = [
-      'itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
-      'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
-      'palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-      'dormir-dans-le-desert-agafay',
-      'visiter-marrakech',
-      'road-trip-a-lanzarote',
-      'visiter-madrid-en-3-jours',
-      'visiter-londres-en-1-semaine',
-    ];
-    const res = await fetch(
-      `https://blog.mamzellesenvadrouille.com/wp-json/wp/v2/posts?slug=${slugs.join(',')}&_embed&per_page=10`,
-      { next: { revalidate: 3600 } }
-    );
-    if (!res.ok) return {};
-    const posts = await res.json();
-    const map: Record<string, string> = {};
-    for (const post of posts) {
-      const img = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-      if (img) map[post.slug] = img;
-    }
-    return map;
-  } catch {
-    return {};
-  }
-}
-
 export default async function BlogPage() {
-  const wpImages = await getWpImages();
-
-  const slugs = [
-    'itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
-    'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
-    'palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-    'dormir-dans-le-desert-agafay',
-    'visiter-marrakech',
-    'road-trip-a-lanzarote',
-    'visiter-madrid-en-3-jours',
-    'visiter-londres-en-1-semaine',
-  ];
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -227,8 +186,7 @@ export default async function BlogPage() {
         </div>
         <div className="blog-grid">
           {articles.map((article, i) => {
-            const slug = slugs[i];
-            const imgSrc = article.localImage || wpImages[slug] || '/home-hero.webp';
+            const imgSrc = article.localImage || '/home-hero.webp';
             const isExternal = article.url.startsWith('http');
             return (
               <a
