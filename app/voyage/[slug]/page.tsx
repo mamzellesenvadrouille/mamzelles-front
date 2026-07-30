@@ -326,6 +326,46 @@ export default async function CarnetPage({
               En profiter
             </a>
           </div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: 16,
+              background: "#fff",
+              border: "1px solid #e8e0d6",
+              borderRadius: 10,
+              padding: "16px 20px",
+            }}
+          >
+            <div>
+              <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", marginBottom: 3 }}>
+                Assurance voyage - Chapka
+              </div>
+              <div style={{ fontSize: 12.5, color: "#8a8074" }}>
+                Frais médicaux, rapatriement et assistance 24h/24
+              </div>
+            </div>
+            <a
+              href="https://www.chapkadirect.fr/index.php?action=produit&id=924&app=Mamzellesenvadrouille"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              style={{
+                flexShrink: 0,
+                background: "#c8956c",
+                color: "#fff",
+                fontSize: 11.5,
+                fontWeight: 600,
+                padding: "6px 12px",
+                borderRadius: 18,
+                textDecoration: "none",
+                whiteSpace: "nowrap",
+              }}
+            >
+              En profiter
+            </a>
+          </div>
         </div>
       </section>
 
