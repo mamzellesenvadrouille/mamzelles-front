@@ -59,7 +59,7 @@ export default function CGV() {
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 6 — Annulation</h2>
         <p style={{ marginBottom: '8px' }}>En cas d&rsquo;annulation par le client après le début de la prestation, l&rsquo;acompte de 50 % versé reste acquis à MamZelles en vadrouille, en couverture du travail déjà engagé.</p>
-        <p>Si le client demande des modifications importantes après validation du projet ou interrompt la prestation de manière définitive, les sommes déjà versées restent acquises au titre du travail réalisé.</p>
+        <p>Si le client interrompt définitivement la prestation après son commencement, les sommes déjà versées restent acquises au titre du travail réalisé.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 7 — Responsabilité et limites de la prestation</h2>
         <p style={{ marginBottom: '8px' }}>MamZelles en vadrouille fournit exclusivement une prestation de conseil en conception de voyages personnalisés. Elle n&rsquo;agit ni en qualité d&rsquo;agence de voyages, ni comme intermédiaire dans la réservation ou la vente de prestations touristiques. Aucun transport, hébergement, activité ou autre prestation touristique n&rsquo;est réservé ou vendu par MamZelles en vadrouille.</p>
