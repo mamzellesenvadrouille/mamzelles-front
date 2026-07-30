@@ -27,7 +27,7 @@ export default function Confidentialite() {
         <p style={{ color: '#aaa', fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '48px' }}>Dernière mise à jour : juillet 2026</p>
 
         <div style={{ borderLeft: '2px solid var(--gold)', paddingLeft: '20px', marginBottom: '40px' }}>
-          <p style={{ margin: '0 0 4px', color: 'var(--dark)', fontWeight: 600, opacity: 0.85 }}>Responsable du traitement</p>
+          <p style={{ margin: '0 0 4px', color: 'var(--dark)', fontWeight: 600, opacity: 0.85 }}>Responsable du traitement des données</p>
           <p style={{ margin: 0, color: 'var(--dark)', opacity: 0.7 }}>MamZelles en Vadrouille — Laurie &amp; Amélie<br />Antibes (06600, France)<br />Contact : <a href="mailto:contact@mamzellesenvadrouille.com" style={{ color: 'var(--gold)' }}>contact@mamzellesenvadrouille.com</a></p>
         </div>
 
@@ -46,8 +46,8 @@ export default function Confidentialite() {
           <li>Réponse à vos demandes de renseignements et devis (via <strong>Resend</strong>)</li>
           <li>Création et hébergement de votre carnet de voyage personnalisé (via <strong>Upstash</strong>, base de données sécurisée)</li>
           <li>Traitement de vos paiements et facturation (via <strong>Stripe</strong>)</li>
-          <li>Nous ne vendons jamais vos données à des tiers</li>
         </ul>
+        <p style={{ marginTop: '10px', fontWeight: 600 }}>Nous ne vendons ni ne cédons jamais vos données personnelles à des tiers.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Base légale des traitements</h2>
         <p style={{ marginBottom: '8px' }}>Les données sont traitées :</p>
@@ -67,8 +67,9 @@ export default function Confidentialite() {
         <ul style={{ paddingLeft: '18px', margin: '0' }}>
           <li><strong>Newsletter</strong> : jusqu&rsquo;à votre désinscription</li>
           <li><strong>Formulaire de contact</strong> : 3 ans maximum à compter de notre dernier échange</li>
-          <li><strong>Carnet de voyage</strong> : conservé le temps de la prestation, puis archivé ou supprimé sur simple demande</li>
+          <li><strong>Carnet de voyage</strong> : conservé pendant la durée de la prestation, puis archivé. Il peut être supprimé à tout moment sur simple demande du client.</li>
         </ul>
+        <p style={{ marginTop: '10px' }}>Le carnet de voyage est accessible via un lien personnel. Le client est responsable de la confidentialité de ce lien et s&rsquo;engage à ne pas le partager publiquement.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Vos droits (RGPD)</h2>
         <p style={{ marginBottom: '8px' }}>Conformément au RGPD, vous disposez des droits d&rsquo;accès, de rectification, d&rsquo;effacement, d&rsquo;opposition et de portabilité de vos données.</p>
@@ -78,8 +79,8 @@ export default function Confidentialite() {
         <p>Notre site utilise <strong>Vercel Analytics</strong> afin de mesurer la fréquentation du site de manière agrégée et anonyme. Aucun cookie publicitaire ou de suivi individuel n&rsquo;est utilisé.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Hébergement & sécurité</h2>
-        <p style={{ marginBottom: '8px' }}>Site hébergé par <strong>Vercel</strong> (certifié SOC 2). Newsletter gérée par <strong>Brevo</strong>, conforme au RGPD. Paiements sécurisés par <strong>Stripe</strong>. Données de carnets de voyage stockées via <strong>Upstash</strong>.</p>
-        <p>Les données sont protégées par des mesures techniques et organisationnelles appropriées destinées à assurer leur confidentialité et leur sécurité.</p>
+        <p style={{ marginBottom: '8px' }}>Le site est hébergé par <strong>Vercel</strong> (certifié SOC 2). La newsletter est gérée par <strong>Brevo</strong> (conforme au RGPD), les paiements sont sécurisés par <strong>Stripe</strong> et les carnets de voyage sont stockés via <strong>Upstash</strong>.</p>
+        <p>Des mesures techniques et organisationnelles appropriées sont mises en œuvre afin d&rsquo;assurer la confidentialité et la sécurité de vos données personnelles.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Réclamation</h2>
         <p>Vous pouvez introduire une réclamation auprès de la <strong>CNIL</strong> : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)' }}>www.cnil.fr</a></p>
