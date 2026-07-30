@@ -261,7 +261,7 @@ export default async function CarnetPage({
           >
             <div>
               <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", marginBottom: 3 }}>
-                Sites & activités — GetYourGuide
+                Sites & activités - GetYourGuide
               </div>
               <div style={{ fontSize: 12.5, color: "#8a8074" }}>
                 -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLESENVADROUILLE5</strong>
@@ -301,7 +301,7 @@ export default async function CarnetPage({
           >
             <div>
               <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", marginBottom: 3 }}>
-                Connexion sur place (eSIM) — Holafly
+                Connexion sur place - Holafly
               </div>
               <div style={{ fontSize: 12.5, color: "#8a8074" }}>
                 -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLES</strong>
