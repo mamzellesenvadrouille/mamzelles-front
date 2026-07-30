@@ -344,7 +344,7 @@ export default async function CarnetPage({
                 Assurance voyage - Chapka
               </div>
               <div style={{ fontSize: 12.5, color: "#8a8074" }}>
-                -5% via <strong style={{ color: "#c8956c" }}>notre lien</strong>
+                -5% via <strong style={{ color: "#c8956c" }}>NOTRE LIEN</strong>
               </div>
             </div>
             <a
