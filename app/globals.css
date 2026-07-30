@@ -2727,6 +2727,8 @@ html { overflow-x: hidden !important; }
   min-height: 240px;
   max-height: 240px;
   overflow: visible;
+  contain: none;
+  isolation: auto;
   display: flex;
   align-items: flex-end;
 }
