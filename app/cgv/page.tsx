@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Conditions générales de vente | MamZelles en vadrouille',
-  description: "Conditions générales de vente de MamZelles en vadrouille, service de création d'itinéraires de voyage sur mesure.",
+  description: "Conditions générales de vente de MamZelles en vadrouille, service de création de carnets de voyage interactifs sur mesure.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/cgv' },
 };
 
@@ -31,7 +31,7 @@ export default function CGV() {
         </div>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 1 — Objet</h2>
-        <p>Les présentes conditions générales de vente (CGV) régissent les relations contractuelles entre MamZelles en vadrouille et toute personne (« le client ») commandant une prestation de création d&rsquo;itinéraire de voyage personnalisé. Toute commande implique l&rsquo;acceptation pleine et entière des présentes CGV.</p>
+        <p>Les présentes conditions générales de vente (CGV) régissent les relations contractuelles entre MamZelles en vadrouille et toute personne (« le client ») commandant une prestation de création de carnet de voyage interactif personnalisé. Toute commande implique l&rsquo;acceptation pleine et entière des présentes CGV.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 2 — Formules et tarifs</h2>
         <p style={{ marginBottom: '8px' }}>MamZelles en vadrouille propose les formules de base suivantes :</p>
@@ -46,7 +46,7 @@ export default function CGV() {
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 3 — Commande et paiement</h2>
         <p style={{ marginBottom: '8px' }}>La commande est confirmée après réception d&rsquo;un devis personnalisé et acceptation par le client. Le règlement s&rsquo;effectue en deux temps, via la plateforme de paiement sécurisée Stripe :</p>
         <ul style={{ paddingLeft: '18px', margin: '0' }}>
-          <li><strong>Un acompte de 50 %</strong> du montant total, versé à la commande, qui déclenche le début du travail de création de l&rsquo;itinéraire</li>
+          <li><strong>Un acompte de 50 %</strong> du montant total, versé à la commande, qui déclenche le début du travail de création du carnet de voyage</li>
           <li><strong>Le solde de 50 %</strong>, à régler avant la transmission du carnet de voyage finalisé</li>
         </ul>
         <p style={{ marginTop: '8px' }}>Aucune prestation ni document final n&rsquo;est transmis tant que l&rsquo;intégralité du règlement n&rsquo;a pas été perçue.</p>
@@ -64,12 +64,12 @@ export default function CGV() {
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 7 — Responsabilité et limites de la prestation</h2>
         <p style={{ marginBottom: '8px' }}>MamZelles en vadrouille fournit exclusivement une prestation de conseil en conception de voyages personnalisés. Elle n&rsquo;agit ni en qualité d&rsquo;agence de voyages, ni comme intermédiaire dans la réservation ou la vente de prestations touristiques. Aucun transport, hébergement, activité ou autre prestation touristique n&rsquo;est réservé ou vendu par MamZelles en vadrouille.</p>
         <p style={{ marginBottom: '8px' }}>Les réservations (hébergements, transports, activités) restent à la charge et sous la responsabilité du client, qui reste libre de les effectuer ou non selon les recommandations fournies. MamZelles en vadrouille ne saurait être tenue responsable des modifications tarifaires, de disponibilité, ou d&rsquo;événements indépendants de sa volonté (conditions météorologiques, sanitaires, politiques, etc.) pouvant affecter le voyage.</p>
-        <p style={{ marginBottom: '8px' }}>Les recommandations sont établies selon les informations disponibles au moment de la conception de l&rsquo;itinéraire. Les prix, disponibilités, horaires et conditions des prestataires peuvent évoluer à tout moment après la remise du carnet de voyage.</p>
+        <p style={{ marginBottom: '8px' }}>Les recommandations sont établies selon les informations disponibles au moment de la conception du carnet de voyage. Les prix, disponibilités, horaires et conditions des prestataires peuvent évoluer à tout moment après la remise du carnet de voyage.</p>
         <p style={{ marginBottom: '8px' }}>Les informations relatives aux formalités administratives, sanitaires ou d&rsquo;entrée sur le territoire (passeport, visa, vaccinations, etc.) sont communiquées à titre indicatif. Il appartient au client de vérifier, avant son départ, les conditions officielles applicables auprès des autorités compétentes.</p>
         <p>Le client demeure seul responsable du choix final des prestations qu&rsquo;il réserve ainsi que de la vérification des informations communiquées par les différents prestataires.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 8 — Propriété intellectuelle</h2>
-        <p>L&rsquo;itinéraire personnalisé est conçu pour l&rsquo;usage exclusif du client ayant passé commande. Toute reproduction, revente ou diffusion à des tiers, en tout ou partie, est interdite sans accord préalable de MamZelles en vadrouille.</p>
+        <p>Le carnet de voyage interactif personnalisé est conçu pour l&rsquo;usage exclusif du client ayant passé commande. Toute reproduction, revente ou diffusion à des tiers, en tout ou partie, est interdite sans accord préalable de MamZelles en vadrouille.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 8 bis — Modifications demandées par le client</h2>
         <p>Toute demande de modification importante après validation du projet initial (changement de destination, de dates, de durée ou de programme) pourra entraîner un devis complémentaire ou un nouveau délai de réalisation.</p>
