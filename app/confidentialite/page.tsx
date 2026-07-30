@@ -28,7 +28,7 @@ export default function Confidentialite() {
 
         <div style={{ borderLeft: '2px solid var(--gold)', paddingLeft: '20px', marginBottom: '40px' }}>
           <p style={{ margin: '0 0 4px', color: 'var(--dark)', fontWeight: 600, opacity: 0.85 }}>Responsable du traitement des données</p>
-          <p style={{ margin: 0, color: 'var(--dark)', opacity: 0.7 }}>MamZelles en Vadrouille — Laurie &amp; Amélie<br />activité exercée par Amélie Truffaut, auto-entrepreneuse (SIRET 102 900 925 00011)<br />Antibes (06600), France<br />Contact : <a href="mailto:contact@mamzellesenvadrouille.com" style={{ color: 'var(--gold)' }}>contact@mamzellesenvadrouille.com</a></p>
+          <p style={{ margin: 0, color: 'var(--dark)', opacity: 0.7 }}>MamZelles en Vadrouille — Laurie &amp; Amélie<br />Activité exercée par Amélie Truffaut, auto-entrepreneuse (SIRET 102 900 925 00011)<br />Antibes (06600), France<br />Contact : <a href="mailto:contact@mamzellesenvadrouille.com" style={{ color: 'var(--gold)' }}>contact@mamzellesenvadrouille.com</a></p>
         </div>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Quelles données collectons-nous ?</h2>
