@@ -27,7 +27,7 @@ export default function CGV() {
         <p style={{ color: '#aaa', fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '48px' }}>Dernière mise à jour : juillet 2026</p>
 
         <div style={{ borderLeft: '2px solid var(--gold)', paddingLeft: '20px', marginBottom: '40px' }}>
-          <p style={{ margin: 0, color: 'var(--dark)', opacity: 0.7 }}>MamZelles en vadrouille est un service de travel planning sur mesure édité par Amélie Truffaut, auto-entrepreneuse, SIRET 102 900 925 00011, basée à Antibes (06600), France. Contact : <a href="mailto:contact@mamzellesenvadrouille.com" style={{ color: 'var(--gold)' }}>contact@mamzellesenvadrouille.com</a></p>
+          <p style={{ margin: 0, color: 'var(--dark)', opacity: 0.7 }}>MamZelles en vadrouille est un service de travel planning sur mesure<br />Édité par Amélie Truffaut, auto-entrepreneuse, SIRET 102 900 925 00011<br />Basée à Antibes (06600), France<br />Contact : <a href="mailto:contact@mamzellesenvadrouille.com" style={{ color: 'var(--gold)' }}>contact@mamzellesenvadrouille.com</a></p>
         </div>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 1 — Objet</h2>
