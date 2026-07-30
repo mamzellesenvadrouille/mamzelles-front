@@ -244,7 +244,88 @@ export default async function CarnetPage({
           <p><strong>Vaccins :</strong> {carnet.indispensables.vaccins}</p>
           <p><strong>Assurance voyage :</strong> {carnet.indispensables.assurance}</p>
           <p><strong>Monnaie :</strong> {carnet.indispensables.monnaie}</p>
-          <p><strong>Bon plan activités :</strong> utilisez le code <strong style={{ color: "#c8956c" }}>MAMZELLESENVADROUILLE5</strong> sur l&apos;appli GetYourGuide pour -5% sur vos réservations d&apos;activités.</p>
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: 16,
+              background: "#fff",
+              border: "1px solid #e8e0d6",
+              borderRadius: 10,
+              padding: "16px 20px",
+            }}
+          >
+            <div>
+              <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", marginBottom: 3 }}>
+                Sites & activités
+              </div>
+              <div style={{ fontSize: 12.5, color: "#8a8074" }}>
+                -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLESENVADROUILLE5</strong> sur GetYourGuide
+              </div>
+            </div>
+            <a
+              href="https://www.getyourguide.fr"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              style={{
+                flexShrink: 0,
+                background: "#c8956c",
+                color: "#fff",
+                fontSize: 12.5,
+                fontWeight: 600,
+                padding: "9px 16px",
+                borderRadius: 20,
+                textDecoration: "none",
+                whiteSpace: "nowrap",
+              }}
+            >
+              En profiter
+            </a>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: 16,
+              background: "#fff",
+              border: "1px solid #e8e0d6",
+              borderRadius: 10,
+              padding: "16px 20px",
+            }}
+          >
+            <div>
+              <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", marginBottom: 3 }}>
+                Connexion sur place (eSIM)
+              </div>
+              <div style={{ fontSize: 12.5, color: "#8a8074" }}>
+                -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLES</strong> sur Holafly
+              </div>
+            </div>
+            <a
+              href="https://holafly.sjv.io/c/7536572/3856277/24764"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              style={{
+                flexShrink: 0,
+                background: "#c8956c",
+                color: "#fff",
+                fontSize: 12.5,
+                fontWeight: 600,
+                padding: "9px 16px",
+                borderRadius: 20,
+                textDecoration: "none",
+                whiteSpace: "nowrap",
+              }}
+            >
+              En profiter
+            </a>
+          </div>
         </div>
       </section>
 
