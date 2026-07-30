@@ -316,39 +316,11 @@ export default function DestinationTabs({
                 const aCoords = typeof a.lat === "number" && typeof a.lng === "number";
                 const contenu = (
                   <>
-                    <div style={{ position: "relative" }}>
+                    <div>
                       {a.photo ? (
                         <img src={a.photo} alt={a.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
                       ) : (
                         <div className={styles.miniCardPlaceholder} />
-                      )}
-                      {a.lienReservation && (
-                        <a
-                          href={a.lienReservation}
-                          target="_blank"
-                          rel="noopener noreferrer sponsored"
-                          onClick={(e) => e.stopPropagation()}
-                          style={{
-                            position: "absolute",
-                            top: 8,
-                            right: 8,
-                            display: "inline-flex",
-                            alignItems: "center",
-                            gap: 4,
-                            background: "#c8956c",
-                            color: "#fff",
-                            border: "1.5px solid #fff",
-                            fontSize: 11,
-                            fontWeight: 600,
-                            padding: "5px 10px",
-                            borderRadius: 20,
-                            textDecoration: "none",
-                            boxShadow: "0 2px 6px rgba(26,21,18,.3)",
-                          }}
-                        >
-                          <Ticket size={11} strokeWidth={2} />
-                          Réserver
-                        </a>
                       )}
                     </div>
                     <h4>{a.nom}</h4>
@@ -359,6 +331,31 @@ export default function DestinationTabs({
                         Voir sur la carte
                       </span>
                     )}
+                    <div style={{ height: 28, marginTop: 8 }}>
+                      {a.lienReservation && (
+                        <a
+                          href={a.lienReservation}
+                          target="_blank"
+                          rel="noopener noreferrer sponsored"
+                          onClick={(e) => e.stopPropagation()}
+                          style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: 4,
+                            background: "#c8956c",
+                            color: "#fff",
+                            fontSize: 11,
+                            fontWeight: 600,
+                            padding: "5px 10px",
+                            borderRadius: 18,
+                            textDecoration: "none",
+                          }}
+                        >
+                          <Ticket size={11} strokeWidth={2} />
+                          Réserver
+                        </a>
+                      )}
+                    </div>
                   </>
                 );
                 return aCoords ? (
