@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Confidentialite() {
   return (
-    <div style={{ width: '100%', overflowX: 'hidden' }}>
+    <div style={{ width: '100%', overflowX: 'hidden', overflowY: 'visible' }}>
 
       <section className="hero hero-confidentialite">
         <Navbar />
