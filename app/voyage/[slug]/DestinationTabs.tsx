@@ -314,6 +314,8 @@ export default function DestinationTabs({
             <div className={styles.miniGrid}>
               {dest.activites.map((a, i) => {
                 const aCoords = typeof a.lat === "number" && typeof a.lng === "number";
+                const partnerIndex = i % 2 === 0 ? i + 1 : i - 1;
+                const ligneAUnLien = Boolean(a.lienReservation || dest.activites[partnerIndex]?.lienReservation);
                 const contenu = (
                   <>
                     <div>
@@ -331,31 +333,33 @@ export default function DestinationTabs({
                         Voir sur la carte
                       </span>
                     )}
-                    <div style={{ height: 28, marginTop: 8 }}>
-                      {a.lienReservation && (
-                        <a
-                          href={a.lienReservation}
-                          target="_blank"
-                          rel="noopener noreferrer sponsored"
-                          onClick={(e) => e.stopPropagation()}
-                          style={{
-                            display: "inline-flex",
-                            alignItems: "center",
-                            gap: 4,
-                            background: "#c8956c",
-                            color: "#fff",
-                            fontSize: 11,
-                            fontWeight: 600,
-                            padding: "5px 10px",
-                            borderRadius: 18,
-                            textDecoration: "none",
-                          }}
-                        >
-                          <Ticket size={11} strokeWidth={2} />
-                          Réserver
-                        </a>
-                      )}
-                    </div>
+                    {ligneAUnLien && (
+                      <div style={{ height: 28, marginTop: 8 }}>
+                        {a.lienReservation && (
+                          <a
+                            href={a.lienReservation}
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
+                            onClick={(e) => e.stopPropagation()}
+                            style={{
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: 4,
+                              background: "#c8956c",
+                              color: "#fff",
+                              fontSize: 11,
+                              fontWeight: 600,
+                              padding: "5px 10px",
+                              borderRadius: 18,
+                              textDecoration: "none",
+                            }}
+                          >
+                            <Ticket size={11} strokeWidth={2} />
+                            Réserver
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </>
                 );
                 return aCoords ? (
