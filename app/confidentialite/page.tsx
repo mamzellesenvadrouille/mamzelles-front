@@ -24,23 +24,27 @@ export default function Confidentialite() {
 
       <section style={{ maxWidth: '720px', margin: '0 auto', padding: '56px 24px 80px', fontFamily: 'Inter, sans-serif', color: 'var(--dark)', lineHeight: '1.8', fontSize: '15px' }}>
 
-        <p style={{ color: '#aaa', fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '48px' }}>Dernière mise à jour : juin 2026</p>
+        <p style={{ color: '#aaa', fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '48px' }}>Dernière mise à jour : juillet 2026</p>
 
         <div style={{ borderLeft: '2px solid var(--gold)', paddingLeft: '20px', marginBottom: '40px' }}>
           <p style={{ margin: 0, color: 'var(--dark)', opacity: 0.7 }}>MamZelles en vadrouille est un service de travel planning sur mesure créé par Amélie et Laurie, basé à Antibes (06600, France). Contact : <a href="mailto:contact@mamzellesenvadrouille.com" style={{ color: 'var(--gold)' }}>contact@mamzellesenvadrouille.com</a></p>
         </div>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Quelles données collectons-nous ?</h2>
-        <p style={{ marginBottom: '8px' }}>Nous collectons uniquement les données que vous nous transmettez volontairement :</p>
+        <p style={{ marginBottom: '8px' }}>Nous collectons les données que vous nous transmettez volontairement :</p>
         <ul style={{ paddingLeft: '18px', margin: '0' }}>
           <li>Votre <strong>adresse email</strong> via le formulaire d&rsquo;inscription à la newsletter</li>
           <li>Votre <strong>nom, adresse email et message</strong> via le formulaire de contact et de demande de devis</li>
+          <li>Vos <strong>dates de voyage, préférences, budget et informations de contact</strong>, communiquées lors de la conception de votre carnet de voyage personnalisé</li>
+          <li>Vos <strong>coordonnées de paiement</strong>, traitées directement et exclusivement par notre prestataire de paiement sécurisé Stripe (nous n&rsquo;avons jamais accès à vos données bancaires complètes)</li>
         </ul>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Comment utilisons-nous vos données ?</h2>
         <ul style={{ paddingLeft: '18px', margin: '0' }}>
           <li>Envoi de notre newsletter voyage, itinéraires et bons plans (via <strong>Brevo</strong>)</li>
           <li>Réponse à vos demandes de renseignements et devis (via <strong>Resend</strong>)</li>
+          <li>Création et hébergement de votre carnet de voyage personnalisé (via <strong>Upstash</strong>, base de données sécurisée)</li>
+          <li>Traitement de vos paiements et facturation (via <strong>Stripe</strong>)</li>
           <li>Nous ne vendons jamais vos données à des tiers</li>
         </ul>
 
@@ -48,6 +52,7 @@ export default function Confidentialite() {
         <ul style={{ paddingLeft: '18px', margin: '0' }}>
           <li><strong>Newsletter</strong> : jusqu&rsquo;à votre désinscription</li>
           <li><strong>Formulaire de contact</strong> : 3 ans maximum à compter de notre dernier échange</li>
+          <li><strong>Carnet de voyage</strong> : conservé le temps de la prestation, puis archivé ou supprimé sur simple demande</li>
         </ul>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Vos droits (RGPD)</h2>
@@ -55,10 +60,10 @@ export default function Confidentialite() {
         <p>Pour exercer ces droits : <a href="mailto:contact@mamzellesenvadrouille.com" style={{ color: 'var(--gold)' }}>contact@mamzellesenvadrouille.com</a></p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Cookies</h2>
-        <p>Notre site utilise uniquement des cookies techniques nécessaires à son bon fonctionnement. Aucun cookie publicitaire ou de tracking.</p>
+        <p>Notre site utilise <strong>Vercel Analytics</strong> pour mesurer la fréquentation de manière agrégée et anonyme, sans cookie ni suivi individuel. Aucun cookie publicitaire ou de tracking n&rsquo;est utilisé.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Hébergement & sécurité</h2>
-        <p>Site hébergé par <strong>Vercel</strong> (certifié SOC 2). Newsletter gérée par <strong>Brevo</strong>, conforme au RGPD.</p>
+        <p>Site hébergé par <strong>Vercel</strong> (certifié SOC 2). Newsletter gérée par <strong>Brevo</strong>, conforme au RGPD. Paiements sécurisés par <strong>Stripe</strong>. Données de carnets de voyage stockées via <strong>Upstash</strong>.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Réclamation</h2>
         <p>Vous pouvez introduire une réclamation auprès de la <strong>CNIL</strong> : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)' }}>www.cnil.fr</a></p>
