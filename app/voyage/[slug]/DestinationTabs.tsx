@@ -262,7 +262,8 @@ export default function DestinationTabs({
 
         {(dest.hebergements ?? []).length > 0 && (
           <>
-            <div className={styles.sectionLabelBig}>
+            <div className={styles.sectionLabelBig} style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#1a1512", flexShrink: 0 }} />
               Hébergement{(dest.hebergements ?? []).length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
@@ -308,7 +309,8 @@ export default function DestinationTabs({
 
         {dest.activites.length > 0 && (
           <>
-            <div className={styles.sectionLabelBig}>
+            <div className={styles.sectionLabelBig} style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#1a1512", flexShrink: 0 }} />
               {dest.activites.length} site{dest.activites.length > 1 ? "s" : ""} & activité{dest.activites.length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
@@ -384,7 +386,8 @@ export default function DestinationTabs({
 
         {dest.restaurants.length > 0 && (
           <>
-            <div className={styles.sectionLabelBig}>
+            <div className={styles.sectionLabelBig} style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#1a1512", flexShrink: 0 }} />
               {dest.restaurants.length} restaurant{dest.restaurants.length > 1 ? "s" : ""} recommandé{dest.restaurants.length > 1 ? "s" : ""}
             </div>
             <div className={styles.miniGrid}>
