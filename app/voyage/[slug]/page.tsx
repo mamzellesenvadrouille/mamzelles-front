@@ -261,10 +261,10 @@ export default async function CarnetPage({
           >
             <div>
               <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", marginBottom: 3 }}>
-                Sites & activités
+                Sites & activités — GetYourGuide
               </div>
               <div style={{ fontSize: 12.5, color: "#8a8074" }}>
-                -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLESENVADROUILLE5</strong> sur GetYourGuide
+                -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLESENVADROUILLE5</strong>
               </div>
             </div>
             <a
@@ -275,10 +275,10 @@ export default async function CarnetPage({
                 flexShrink: 0,
                 background: "#c8956c",
                 color: "#fff",
-                fontSize: 12.5,
+                fontSize: 11.5,
                 fontWeight: 600,
-                padding: "9px 16px",
-                borderRadius: 20,
+                padding: "6px 12px",
+                borderRadius: 18,
                 textDecoration: "none",
                 whiteSpace: "nowrap",
               }}
@@ -301,10 +301,10 @@ export default async function CarnetPage({
           >
             <div>
               <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", marginBottom: 3 }}>
-                Connexion sur place (eSIM)
+                Connexion sur place (eSIM) — Holafly
               </div>
               <div style={{ fontSize: 12.5, color: "#8a8074" }}>
-                -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLES</strong> sur Holafly
+                -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLES</strong>
               </div>
             </div>
             <a
@@ -315,10 +315,10 @@ export default async function CarnetPage({
                 flexShrink: 0,
                 background: "#c8956c",
                 color: "#fff",
-                fontSize: 12.5,
+                fontSize: 11.5,
                 fontWeight: 600,
-                padding: "9px 16px",
-                borderRadius: 20,
+                padding: "6px 12px",
+                borderRadius: 18,
                 textDecoration: "none",
                 whiteSpace: "nowrap",
               }}
