@@ -158,54 +158,23 @@ export function normaliserHeure(texte: string): string {
   return `${String(heures).padStart(2, "0")}h${String(minutes).padStart(2, "0")}`;
 }
 
-// Version utilisée PENDANT la saisie (onChange) : ne retire jamais le tiret final,
-// pour ne pas supprimer l'espace qu'on vient de taper avant le mot suivant.
-// Correspondance pays (français) → devise ISO, pour déduire automatiquement la
-// devise locale d'une destination sans avoir à la ressaisir à chaque étape.
-// Couvre la quasi-totalité des pays du monde. Les pays de la zone euro ne sont
-// volontairement pas listés (pas de convertisseur affiché dans ce cas).
+// Correspondance pays (français) → devise ISO. Volontairement limité aux devises
+// couvertes par notre source de taux (Frankfurter/BCE, ~30 devises majeures) —
+// pas de convertisseur affiché pour Maldives/Maroc/etc. faute de source fiable.
 const DEVISE_PAR_PAYS: Record<string, string> = {
-  // Afrique
-  maroc: "MAD", algerie: "DZD", tunisie: "TND", egypte: "EGP", libye: "LYD",
-  "afrique du sud": "ZAR", kenya: "KES", tanzanie: "TZS", ethiopie: "ETB",
-  nigeria: "NGN", ghana: "GHS", senegal: "XOF", "cote d ivoire": "XOF",
-  maurice: "MUR", seychelles: "SCR", madagascar: "MGA", namibie: "NAD",
-  botswana: "BWP", zimbabwe: "ZWL", zambie: "ZMW", ouganda: "UGX",
-  rwanda: "RWF", mozambique: "MZN", cameroun: "XAF", gabon: "XAF",
-  // Amériques
+  "afrique du sud": "ZAR",
   "etats-unis": "USD", usa: "USD", "etats unis": "USD", canada: "CAD",
-  mexique: "MXN", bresil: "BRL", argentine: "ARS", chili: "CLP",
-  colombie: "COP", perou: "PEN", equateur: "USD", bolivie: "BOB",
-  uruguay: "UYU", paraguay: "PYG", venezuela: "VES", cuba: "CUP",
-  "republique dominicaine": "DOP", jamaique: "JMD", "costa rica": "CRC",
-  panama: "PAB", guatemala: "GTQ", "porto rico": "USD",
-  // Asie
-  japon: "JPY", chine: "CNY", "coree du sud": "KRW", "coree du nord": "KPW",
-  inde: "INR", thailande: "THB", vietnam: "VND", cambodge: "KHR",
-  laos: "LAK", myanmar: "MMK", philippines: "PHP", indonesie: "IDR",
-  bali: "IDR", malaisie: "MYR", singapour: "SGD", "sri lanka": "LKR",
-  nepal: "NPR", bangladesh: "BDT", pakistan: "PKR", mongolie: "MNT",
-  taiwan: "TWD", "hong kong": "HKD", macao: "MOP", brunei: "BND",
-  maldives: "MVR",
-  // Moyen-Orient
-  turquie: "TRY", israel: "ILS", jordanie: "JOD", liban: "LBP",
-  "emirats arabes unis": "AED", dubai: "AED", "abou dabi": "AED",
-  qatar: "QAR", bahrein: "BHD", koweit: "KWD", "arabie saoudite": "SAR",
-  oman: "OMR", iran: "IRR", irak: "IQD", yemen: "YER", georgie: "GEL",
-  armenie: "AMD", azerbaidjan: "AZN",
-  // Europe hors zone euro
+  mexique: "MXN", bresil: "BRL",
+  japon: "JPY", chine: "CNY", "coree du sud": "KRW",
+  inde: "INR", thailande: "THB", philippines: "PHP", indonesie: "IDR",
+  bali: "IDR", malaisie: "MYR", singapour: "SGD",
+  israel: "ILS", turquie: "TRY",
   "royaume-uni": "GBP", "royaume uni": "GBP", angleterre: "GBP",
   "grande-bretagne": "GBP", "grande bretagne": "GBP", ecosse: "GBP",
   "pays de galles": "GBP", suisse: "CHF", norvege: "NOK", suede: "SEK",
   danemark: "DKK", islande: "ISK", pologne: "PLN", "republique tcheque": "CZK",
   tchequie: "CZK", hongrie: "HUF", roumanie: "RON", bulgarie: "BGN",
-  croatie: "EUR", serbie: "RSD", "bosnie herzegovine": "BAM",
-  albanie: "ALL", macedoine: "MKD", montenegro: "EUR", moldavie: "MDL",
-  ukraine: "UAH", russie: "RUB", bielorussie: "BYN",
-  // Océanie
   australie: "AUD", "nouvelle-zelande": "NZD", "nouvelle zelande": "NZD",
-  fidji: "FJD", "polynesie francaise": "XPF", tahiti: "XPF",
-  "nouvelle caledonie": "XPF", "papouasie nouvelle guinee": "PGK",
 };
 
 function normaliserPourRecherche(texte: string): string {
@@ -226,25 +195,22 @@ export function deviseDepuisPays(pays?: string): string | undefined {
 // Taux de change EUR → devise, récupéré côté serveur (comme la météo) pour éviter
 // tout souci de blocage réseau/CORS côté navigateur du client.
 export async function getTauxDevise(devise: string): Promise<number | null> {
-  const d = devise.toLowerCase();
-  const urls = [
-    `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur/${d}.json`,
-    `https://latest.currency-api.pages.dev/v1/currencies/eur/${d}.json`,
-  ];
-  for (const url of urls) {
-    try {
-      const res = await fetch(url, { next: { revalidate: 3600 } }); // rafraîchi au maximum 1x/heure
-      if (!res.ok) continue;
-      const data = await res.json();
-      const taux = data?.eur?.[d];
-      if (typeof taux === "number") return taux;
-    } catch {
-      // on tente l'URL suivante
-    }
+  try {
+    const res = await fetch(
+      `https://api.frankfurter.dev/v1/latest?base=EUR&symbols=${devise.toUpperCase()}`,
+      { next: { revalidate: 3600 } } // rafraîchi au maximum 1x/heure
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    const taux = data?.rates?.[devise.toUpperCase()];
+    return typeof taux === "number" ? taux : null;
+  } catch {
+    return null;
   }
-  return null;
 }
 
+// Version utilisée PENDANT la saisie (onChange) : ne retire jamais le tiret final,
+// pour ne pas supprimer l'espace qu'on vient de taper avant le mot suivant.
 export function normaliserSlugEnDirect(nom: string): string {
   return nom
     .toLowerCase()
