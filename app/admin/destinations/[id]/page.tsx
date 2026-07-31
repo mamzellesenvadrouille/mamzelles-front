@@ -8,7 +8,7 @@
 import { useState, use } from "react";
 import { useRouter } from "next/navigation";
 import type { Destination, DeroulePoint, Hebergement, Restaurant, Activite } from "@/lib/carnets";
-import { normaliserHeure } from "@/lib/carnets";
+import { normaliserHeure, deviseDepuisPays } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
 import PhotoField from "../../PhotoField";
@@ -146,6 +146,21 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   <div>
                     <label style={adminStyles.label}>Pays</label>
                     <input style={adminStyles.input} placeholder="ex : Maldives" value={dest.pays ?? ""} onChange={(e) => update("pays", e.target.value)} />
+                    <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginTop: 4, marginBottom: 0 }}>
+                      {deviseDepuisPays(dest.pays)
+                        ? `Devise détectée : ${deviseDepuisPays(dest.pays)}`
+                        : "Aucune devise détectée (zone euro ou pays non reconnu) — pas de convertisseur affiché"}
+                    </p>
+                    {deviseDepuisPays(dest.pays) && (
+                      <label style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 6, fontFamily: "Inter, sans-serif", fontSize: 12.5, color: "#555", cursor: "pointer" }}>
+                        <input
+                          type="checkbox"
+                          checked={dest.afficherConvertisseur !== false}
+                          onChange={(e) => update("afficherConvertisseur", e.target.checked)}
+                        />
+                        Afficher le convertisseur de devise dans ce carnet
+                      </label>
+                    )}
                   </div>
                 </div>
                 <div style={adminStyles.field}>

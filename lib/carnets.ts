@@ -53,6 +53,7 @@ export interface Destination {
   lat?: number; // coordonnée GPS de la destination elle-même (météo + carte du parcours)
   lng?: number;
   resume?: string; // court résumé narratif de l'étape (2 lignes environ), affiché sous la photo dans le carnet client
+  afficherConvertisseur?: boolean; // contrôle manuel : masque le convertisseur de devise même si une devise est détectée automatiquement (par défaut true)
   deroule: DeroulePoint[]; // propre à cette destination, réutilisé tel quel dans chaque carnet qui l'inclut
   hebergements?: Hebergement[];
   restaurants: Restaurant[]; // objectif 5

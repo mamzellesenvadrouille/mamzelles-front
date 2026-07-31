@@ -187,7 +187,8 @@ export default function DestinationTabs({
         {(() => {
           const deviseLocale = deviseDepuisPays(dest.pays);
           return (
-            deviseLocale && (
+            deviseLocale &&
+            dest.afficherConvertisseur !== false && (
               <div style={{ marginTop: 16, marginBottom: 8 }}>
                 <ConvertisseurDevise devise={deviseLocale} />
               </div>
