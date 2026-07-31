@@ -153,7 +153,7 @@ export default async function CarnetPage({
         <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>Le parcours</span>
           <h2 className={styles.display2}>
-            {parcoursNomsAffiches.length} <em>étapes</em>
+            Vos <em>étapes</em>
           </h2>
         </div>
         <ParcoursSection

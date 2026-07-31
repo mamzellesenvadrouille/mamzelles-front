@@ -154,7 +154,7 @@
   font-family: var(--font-cormorant, "Cormorant Garamond", serif);
   font-style: italic;
   font-size: 20px;
-  color: var(--gold);
+  color: var(--dark);
 }
 
 .overviewGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s5) var(--s2); }
@@ -221,7 +221,7 @@ button.routeStep:hover { border-color: var(--gold); }
 .budgetList { display: flex; flex-direction: column; gap: var(--s3); }
 .budgetRow .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
 .label { font-size: 14px; font-weight: 500; }
-.amount { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 16px; color: var(--gold-deep); font-style: italic; }
+.amount { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 21px; color: var(--gold-deep); font-style: italic; }
 .budgetTrack { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; }
 .budgetFill { height: 100%; background: var(--gold); border-radius: 2px; transition: width 1s ease; }
 .budgetTotal { margin-top: var(--s3); padding-top: 0; display: flex; justify-content: space-between; align-items: baseline; }

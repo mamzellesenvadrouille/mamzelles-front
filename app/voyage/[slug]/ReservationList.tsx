@@ -233,9 +233,8 @@ export default function ReservationList({
   return (
     <div>
       <div style={{ marginBottom: 20 }}>
-        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, color: "#8a8074", marginBottom: 6, fontFamily: "Inter, sans-serif" }}>
-          <span>{totalReserves} sur {totalItems} réservée{totalReserves > 1 ? "s" : ""}</span>
-          <span>{pourcentage}%</span>
+        <div style={{ fontSize: 12, color: "#8a8074", marginBottom: 6, fontFamily: "Inter, sans-serif" }}>
+          {totalReserves} sur {totalItems} réservée{totalReserves > 1 ? "s" : ""}
         </div>
         <div style={{ height: 3, background: "#e8e0d6", borderRadius: 2, overflow: "hidden" }}>
           <div style={{ height: "100%", width: `${pourcentage}%`, background: "#c8956c", transition: "width .3s" }} />

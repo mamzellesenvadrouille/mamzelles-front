@@ -88,27 +88,8 @@ export default function BudgetSection({
               <div className={styles.budgetTrack} style={{ height: 16, borderRadius: 8, position: "relative" }}>
                 <div
                   className={styles.budgetFill}
-                  style={{ width: `${pct}%`, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "flex-end", paddingRight: pct >= 15 ? 6 : 0 }}
-                >
-                  {toutesLesLignes.length > 1 && pct >= 15 && (
-                    <span style={{ fontSize: 9, color: "#fff", fontWeight: 600 }}>{pct}%</span>
-                  )}
-                </div>
-                {toutesLesLignes.length > 1 && pct < 15 && (
-                  <span
-                    style={{
-                      position: "absolute",
-                      left: `calc(${pct}% + 8px)`,
-                      top: "50%",
-                      transform: "translateY(-50%)",
-                      fontSize: 10.5,
-                      color: "#a8a29a",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    {pct}%
-                  </span>
-                )}
+                  style={{ width: `${pct}%`, borderRadius: 8 }}
+                />
               </div>
             </div>
           );
