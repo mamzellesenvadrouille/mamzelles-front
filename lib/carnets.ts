@@ -162,32 +162,50 @@ export function normaliserHeure(texte: string): string {
 // pour ne pas supprimer l'espace qu'on vient de taper avant le mot suivant.
 // Correspondance pays (français) → devise ISO, pour déduire automatiquement la
 // devise locale d'une destination sans avoir à la ressaisir à chaque étape.
-// Les pays de la zone euro ne sont volontairement pas listés (pas de convertisseur affiché).
+// Couvre la quasi-totalité des pays du monde. Les pays de la zone euro ne sont
+// volontairement pas listés (pas de convertisseur affiché dans ce cas).
 const DEVISE_PAR_PAYS: Record<string, string> = {
+  // Afrique
+  maroc: "MAD", algerie: "DZD", tunisie: "TND", egypte: "EGP", libye: "LYD",
+  "afrique du sud": "ZAR", kenya: "KES", tanzanie: "TZS", ethiopie: "ETB",
+  nigeria: "NGN", ghana: "GHS", senegal: "XOF", "cote d ivoire": "XOF",
+  maurice: "MUR", seychelles: "SCR", madagascar: "MGA", namibie: "NAD",
+  botswana: "BWP", zimbabwe: "ZWL", zambie: "ZMW", ouganda: "UGX",
+  rwanda: "RWF", mozambique: "MZN", cameroun: "XAF", gabon: "XAF",
+  // Amériques
+  "etats-unis": "USD", usa: "USD", "etats unis": "USD", canada: "CAD",
+  mexique: "MXN", bresil: "BRL", argentine: "ARS", chili: "CLP",
+  colombie: "COP", perou: "PEN", equateur: "USD", bolivie: "BOB",
+  uruguay: "UYU", paraguay: "PYG", venezuela: "VES", cuba: "CUP",
+  "republique dominicaine": "DOP", jamaique: "JMD", "costa rica": "CRC",
+  panama: "PAB", guatemala: "GTQ", "porto rico": "USD",
+  // Asie
+  japon: "JPY", chine: "CNY", "coree du sud": "KRW", "coree du nord": "KPW",
+  inde: "INR", thailande: "THB", vietnam: "VND", cambodge: "KHR",
+  laos: "LAK", myanmar: "MMK", philippines: "PHP", indonesie: "IDR",
+  bali: "IDR", malaisie: "MYR", singapour: "SGD", "sri lanka": "LKR",
+  nepal: "NPR", bangladesh: "BDT", pakistan: "PKR", mongolie: "MNT",
+  taiwan: "TWD", "hong kong": "HKD", macao: "MOP", brunei: "BND",
   maldives: "MVR",
-  maroc: "MAD",
-  angleterre: "GBP",
-  "royaume-uni": "GBP",
-  "grande-bretagne": "GBP",
-  suisse: "CHF",
-  turquie: "TRY",
-  thailande: "THB",
-  philippines: "PHP",
-  indonesie: "IDR",
-  bali: "IDR",
-  japon: "JPY",
-  "etats-unis": "USD",
-  usa: "USD",
-  canada: "CAD",
-  mexique: "MXN",
-  egypte: "EGP",
-  maurice: "MUR",
-  "sri-lanka": "LKR",
-  vietnam: "VND",
-  cambodge: "KHR",
-  "emirats-arabes-unis": "AED",
-  dubai: "AED",
-  qatar: "QAR",
+  // Moyen-Orient
+  turquie: "TRY", israel: "ILS", jordanie: "JOD", liban: "LBP",
+  "emirats arabes unis": "AED", dubai: "AED", "abou dabi": "AED",
+  qatar: "QAR", bahrein: "BHD", koweit: "KWD", "arabie saoudite": "SAR",
+  oman: "OMR", iran: "IRR", irak: "IQD", yemen: "YER", georgie: "GEL",
+  armenie: "AMD", azerbaidjan: "AZN",
+  // Europe hors zone euro
+  "royaume-uni": "GBP", "royaume uni": "GBP", angleterre: "GBP",
+  "grande-bretagne": "GBP", "grande bretagne": "GBP", ecosse: "GBP",
+  "pays de galles": "GBP", suisse: "CHF", norvege: "NOK", suede: "SEK",
+  danemark: "DKK", islande: "ISK", pologne: "PLN", "republique tcheque": "CZK",
+  tchequie: "CZK", hongrie: "HUF", roumanie: "RON", bulgarie: "BGN",
+  croatie: "EUR", serbie: "RSD", "bosnie herzegovine": "BAM",
+  albanie: "ALL", macedoine: "MKD", montenegro: "EUR", moldavie: "MDL",
+  ukraine: "UAH", russie: "RUB", bielorussie: "BYN",
+  // Océanie
+  australie: "AUD", "nouvelle-zelande": "NZD", "nouvelle zelande": "NZD",
+  fidji: "FJD", "polynesie francaise": "XPF", tahiti: "XPF",
+  "nouvelle caledonie": "XPF", "papouasie nouvelle guinee": "PGK",
 };
 
 function normaliserPourRecherche(texte: string): string {
@@ -195,6 +213,8 @@ function normaliserPourRecherche(texte: string): string {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[-']/g, " ")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
