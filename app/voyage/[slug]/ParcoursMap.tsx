@@ -27,6 +27,13 @@ function distanceKm(a: EtapeParcours, b: EtapeParcours): number {
   return Math.round(R * c);
 }
 
+function contenuBulle(nom: string): string {
+  return `<div style="font-family:Inter,sans-serif;display:flex;align-items:center;gap:10px;padding:2px 4px;">
+    <span style="font-weight:600;font-size:14px;">${nom}</span>
+    <span onclick="window.__fermerBulleParcours && window.__fermerBulleParcours()" style="cursor:pointer;color:#a8a29a;font-size:14px;line-height:1;">✕</span>
+  </div>`;
+}
+
 export interface ParcoursMapHandle {
   centrerSur: (index: number) => void;
 }
@@ -50,8 +57,9 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
         if (infoWindowRef.current) infoWindowRef.current.close();
         infoWindowRef.current = new window.google.maps.InfoWindow({
           position: { lat: e.lat, lng: e.lng },
-          content: `<div style="font-family:'Cormorant Garamond',serif;font-size:19px;font-style:normal;color:#1a1512;padding:0;line-height:1.3;">${e.nom}</div>`,
+          content: contenuBulle(e.nom),
         });
+        (window as any).__fermerBulleParcours = () => infoWindowRef.current?.close(); // eslint-disable-line @typescript-eslint/no-explicit-any
         infoWindowRef.current.open(mapInstance.current);
         wrapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
       },
@@ -102,8 +110,9 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
               if (infoWindowRef.current) infoWindowRef.current.close();
               infoWindowRef.current = new window.google.maps.InfoWindow({
                 position: { lat: e.lat, lng: e.lng },
-                content: `<div style="font-family:'Cormorant Garamond',serif;font-size:19px;font-style:normal;color:#1a1512;padding:0;line-height:1.3;">${e.nom}</div>`,
+                content: contenuBulle(e.nom),
               });
+              (window as any).__fermerBulleParcours = () => infoWindowRef.current?.close(); // eslint-disable-line @typescript-eslint/no-explicit-any
               infoWindowRef.current.open(map);
             });
             markersRef.current.push(marker);
