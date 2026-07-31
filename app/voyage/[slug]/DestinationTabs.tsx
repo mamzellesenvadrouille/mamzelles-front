@@ -8,6 +8,8 @@ import type { DestinationResolue, DeroulePoint } from "@/lib/carnets";
 import { normaliserHeure } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 import DestinationMap, { type DestinationMapHandle } from "./DestinationMap";
+import ConvertisseurDevise from "./ConvertisseurDevise";
+import { deviseDepuisPays } from "@/lib/carnets";
 
 async function sauvegarderDerouleCustom(slug: string, derouleCustom: (DeroulePoint & { destinationId: string })[]) {
   try {
@@ -181,6 +183,17 @@ export default function DestinationTabs({
         {dest.resume && (
           <p className={styles.destResume}>{dest.resume}</p>
         )}
+
+        {(() => {
+          const deviseLocale = deviseDepuisPays(dest.pays);
+          return (
+            deviseLocale && (
+              <div style={{ marginTop: 16, marginBottom: 8 }}>
+                <ConvertisseurDevise devise={deviseLocale} />
+              </div>
+            )
+          );
+        })()}
 
         {(() => {
           const notesDeCetteDestination = derouleCustom

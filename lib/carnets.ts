@@ -159,6 +159,49 @@ export function normaliserHeure(texte: string): string {
 
 // Version utilisée PENDANT la saisie (onChange) : ne retire jamais le tiret final,
 // pour ne pas supprimer l'espace qu'on vient de taper avant le mot suivant.
+// Correspondance pays (français) → devise ISO, pour déduire automatiquement la
+// devise locale d'une destination sans avoir à la ressaisir à chaque étape.
+// Les pays de la zone euro ne sont volontairement pas listés (pas de convertisseur affiché).
+const DEVISE_PAR_PAYS: Record<string, string> = {
+  maldives: "MVR",
+  maroc: "MAD",
+  angleterre: "GBP",
+  "royaume-uni": "GBP",
+  "grande-bretagne": "GBP",
+  suisse: "CHF",
+  turquie: "TRY",
+  thailande: "THB",
+  philippines: "PHP",
+  indonesie: "IDR",
+  bali: "IDR",
+  japon: "JPY",
+  "etats-unis": "USD",
+  usa: "USD",
+  canada: "CAD",
+  mexique: "MXN",
+  egypte: "EGP",
+  maurice: "MUR",
+  "sri-lanka": "LKR",
+  vietnam: "VND",
+  cambodge: "KHR",
+  "emirats-arabes-unis": "AED",
+  dubai: "AED",
+  qatar: "QAR",
+};
+
+function normaliserPourRecherche(texte: string): string {
+  return texte
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+}
+
+export function deviseDepuisPays(pays?: string): string | undefined {
+  if (!pays) return undefined;
+  return DEVISE_PAR_PAYS[normaliserPourRecherche(pays)];
+}
+
 export function normaliserSlugEnDirect(nom: string): string {
   return nom
     .toLowerCase()
