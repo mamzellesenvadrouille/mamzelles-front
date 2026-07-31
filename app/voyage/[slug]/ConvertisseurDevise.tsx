@@ -2,9 +2,9 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/ConvertisseurDevise.tsx
 //
 // Petit convertisseur EUR → devise locale, taux en temps réel via l'API
-// gratuite Frankfurter (pas de clé nécessaire, comme Open-Meteo pour la météo).
-// N'est affiché par la page appelante que si la destination a une devise
-// différente de l'euro renseignée.
+// gratuite fawazahmed0/currency-api (150+ devises couvertes, contrairement à
+// Frankfurter qui ne couvre que ~30 devises majeures et ne suffisait pas pour
+// des destinations comme les Maldives ou le Maroc).
 "use client";
 
 import { useEffect, useState } from "react";
@@ -16,15 +16,32 @@ export default function ConvertisseurDevise({ devise }: { devise: string }) {
 
   useEffect(() => {
     let annule = false;
-    fetch(`https://api.frankfurter.dev/v1/latest?base=EUR&symbols=${devise}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (annule) return;
-        const t = data?.rates?.[devise];
-        if (typeof t === "number") setTaux(t);
-        else setErreur(true);
-      })
-      .catch(() => !annule && setErreur(true));
+    const d = devise.toLowerCase();
+
+    async function charger() {
+      // On tente d'abord le CDN principal, puis un miroir de secours si besoin.
+      const urls = [
+        `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur/${d}.json`,
+        `https://latest.currency-api.pages.dev/v1/currencies/eur/${d}.json`,
+      ];
+      for (const url of urls) {
+        try {
+          const res = await fetch(url);
+          if (!res.ok) continue;
+          const data = await res.json();
+          const t = data?.eur?.[d];
+          if (typeof t === "number" && !annule) {
+            setTaux(t);
+            return;
+          }
+        } catch {
+          // on essaie l'URL suivante
+        }
+      }
+      if (!annule) setErreur(true);
+    }
+
+    charger();
     return () => {
       annule = true;
     };
