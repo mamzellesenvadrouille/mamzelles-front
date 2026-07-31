@@ -8,7 +8,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import type { Carnet, Destination, CarnetDestinationRef, ConseilMamZelles, BudgetLigne, ChecklistItem, ContactUrgence } from "@/lib/carnets";
-import { normaliserSlug } from "@/lib/carnets";
+import { normaliserSlug, normaliserSlugEnDirect } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
 
@@ -322,7 +322,7 @@ export default function NouveauCarnetPage() {
 
                 <div style={adminStyles.field}>
                   <label style={adminStyles.label}>Slug (identifiant du lien)</label>
-                  <input style={adminStyles.input} placeholder="ex : julie-thomas-maldives" value={carnet.slug} onChange={(e) => update("slug", normaliserSlug(e.target.value))} />
+                  <input style={adminStyles.input} placeholder="ex : julie-thomas-maldives" value={carnet.slug} onChange={(e) => update("slug", normaliserSlugEnDirect(e.target.value))} onBlur={(e) => update("slug", normaliserSlug(e.target.value))} />
                 </div>
 
                 <div style={adminStyles.field}>

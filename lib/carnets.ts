@@ -156,13 +156,20 @@ export function normaliserHeure(texte: string): string {
   return `${String(heures).padStart(2, "0")}h${String(minutes).padStart(2, "0")}`;
 }
 
-export function normaliserSlug(nom: string): string {
+// Version utilisée PENDANT la saisie (onChange) : ne retire jamais le tiret final,
+// pour ne pas supprimer l'espace qu'on vient de taper avant le mot suivant.
+export function normaliserSlugEnDirect(nom: string): string {
   return nom
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "") // retire les accents
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
+    .replace(/^-/, "");
+}
+
+// Version finale (à la sauvegarde / onBlur) : nettoie aussi les tirets en bout de texte.
+export function normaliserSlug(nom: string): string {
+  return normaliserSlugEnDirect(nom).replace(/-$/, "");
 }
 
 // ─────────────────────────────────────────────
