@@ -192,6 +192,7 @@ export interface CarnetProgress {
   contactsCustom: { label: string; valeur: string }[]; // contacts d'urgence ajoutés par le client lui-même
   derouleCustom: (DeroulePoint & { destinationId: string })[]; // notes/mémento ajoutés par le client, rattachées à une destination précise
   budgetCustom: BudgetLigne[]; // lignes de budget ajoutées par le client lui-même (ex: ses propres restaurants estimés)
+  notesLibres: string; // zone de notes libres du client, privée (jamais vue côté admin)
 }
 
 function progressVide(): CarnetProgress {
@@ -202,6 +203,7 @@ function progressVide(): CarnetProgress {
     contactsCustom: [],
     derouleCustom: [],
     budgetCustom: [],
+    notesLibres: "",
   };
 }
 
@@ -237,6 +239,7 @@ export async function saveCarnetProgress(slug: string, progress: CarnetProgress)
       poste: String(b.poste ?? "").slice(0, 60),
       montant: Math.max(0, Math.min(1000000, Number(b.montant) || 0)),
     })),
+    notesLibres: String(progress.notesLibres ?? "").slice(0, 5000),
   };
   await redis.set(`progress:${slug}`, propre);
 }

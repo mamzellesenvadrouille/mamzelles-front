@@ -34,6 +34,7 @@ export async function POST(req: NextRequest) {
       contactsCustom: progress.contactsCustom ?? existant.contactsCustom,
       derouleCustom: progress.derouleCustom ?? existant.derouleCustom,
       budgetCustom: progress.budgetCustom ?? existant.budgetCustom,
+      notesLibres: progress.notesLibres ?? existant.notesLibres,
     };
 
     await saveCarnetProgress(slug, fusionne);

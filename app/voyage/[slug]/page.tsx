@@ -9,6 +9,7 @@ import BudgetSection from "./BudgetSection";
 import CheckList from "./CheckList";
 import ReservationList from "./ReservationList";
 import ContactsUrgence from "./ContactsUrgence";
+import NotesSection from "./NotesSection";
 import ScrollToTop from "./ScrollToTop";
 import styles from "./carnet.module.css";
 
@@ -418,6 +419,16 @@ export default async function CarnetPage({
           slug={carnet.slug}
           contactsCustomInitiaux={progress.contactsCustom}
         />
+      </section>
+
+      <section className={styles.wrap}>
+        <div className={styles.sectionHead}>
+          <span className={styles.eyebrow}>Pense-bête</span>
+          <h2 className={styles.display2}>
+            Vos <em>notes</em>
+          </h2>
+        </div>
+        <NotesSection slug={carnet.slug} notesInitiales={progress.notesLibres} />
       </section>
 
       <ScrollToTop />
