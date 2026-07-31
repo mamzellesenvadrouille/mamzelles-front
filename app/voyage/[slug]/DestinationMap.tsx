@@ -196,31 +196,50 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
     return (
       <div style={{ marginTop: 40 }} ref={wrapRef}>
-        <div className={styles.subEyebrow}>Carte interactive</div>
+        <div className={styles.subEyebrow} style={{ marginBottom: 20 }}>Carte interactive</div>
         <div style={{ display: "flex", gap: 8, marginBottom: 24, flexWrap: "wrap" }}>
-          {CATEGORIES.map((c) => (
-            <button
-              key={c.key}
-              onClick={() => toggleFiltre(c.key)}
-              style={{
-                fontFamily: "Inter, sans-serif",
-                fontSize: 13.5,
-                padding: "8px 16px",
-                borderRadius: 24,
-                border: filtres.has(c.key) ? `1px solid ${c.color}` : "1px solid #e0dcd4",
-                background: filtres.has(c.key) ? c.color : "#fff",
-                color: filtres.has(c.key) ? "#fff" : "#8a8074",
-                cursor: "pointer",
-                transition: "all .15s",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 6,
-              }}
-            >
-              <c.Icon size={14} strokeWidth={2} />
-              {c.label}
-            </button>
-          ))}
+          {CATEGORIES.map((c) => {
+            const r = parseInt(c.color.slice(1, 3), 16);
+            const g = parseInt(c.color.slice(3, 5), 16);
+            const b = parseInt(c.color.slice(5, 7), 16);
+            return (
+              <button
+                key={c.key}
+                onClick={() => toggleFiltre(c.key)}
+                style={{
+                  fontFamily: "Inter, sans-serif",
+                  fontSize: 13.5,
+                  padding: "8px 16px 8px 10px",
+                  borderRadius: 24,
+                  border: "1px solid #e8e0d6",
+                  background: filtres.has(c.key) ? "#fff" : `rgba(${r}, ${g}, ${b}, 0.08)`,
+                  color: "#1a1512",
+                  cursor: "pointer",
+                  transition: "all .15s",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                }}
+              >
+                <span
+                  style={{
+                    width: 20,
+                    height: 20,
+                    borderRadius: "50%",
+                    background: c.color,
+                    color: "#fff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                  }}
+                >
+                  <c.Icon size={11} strokeWidth={2} />
+                </span>
+                {c.label}
+              </button>
+            );
+          })}
         </div>
         <div
           ref={mapRef}
