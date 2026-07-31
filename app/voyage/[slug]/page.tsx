@@ -409,6 +409,16 @@ export default async function CarnetPage({
 
       <section className={styles.wrap}>
         <div className={styles.sectionHead}>
+          <span className={styles.eyebrow}>Pense-bête</span>
+          <h2 className={styles.display2}>
+            Vos <em>notes</em>
+          </h2>
+        </div>
+        <NotesSection slug={carnet.slug} notesInitiales={progress.notesLibres} />
+      </section>
+
+      <section className={styles.wrap}>
+        <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>En cas de besoin</span>
           <h2 className={styles.display2}>
             Contacts <em>d&apos;urgence</em>
@@ -419,16 +429,6 @@ export default async function CarnetPage({
           slug={carnet.slug}
           contactsCustomInitiaux={progress.contactsCustom}
         />
-      </section>
-
-      <section className={styles.wrap}>
-        <div className={styles.sectionHead}>
-          <span className={styles.eyebrow}>Pense-bête</span>
-          <h2 className={styles.display2}>
-            Vos <em>notes</em>
-          </h2>
-        </div>
-        <NotesSection slug={carnet.slug} notesInitiales={progress.notesLibres} />
       </section>
 
       <ScrollToTop />
