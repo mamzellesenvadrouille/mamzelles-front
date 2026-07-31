@@ -308,7 +308,7 @@ export default async function CarnetPage({
               </div>
             </div>
             <a
-              href="https://holafly.sjv.io/c/7536572/3856277/24764"
+              href="https://holafly.sjv.io/jR2Ezn"
               target="_blank"
               rel="noopener noreferrer sponsored"
               style={{
