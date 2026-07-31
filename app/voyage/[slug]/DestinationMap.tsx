@@ -60,10 +60,17 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           infoWindowRef.current.close();
         }
         const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+        const activiteCorrespondante = lieuxParCategorie.activites.find(
+          (a) => a.lat === lat && a.lng === lng
+        );
+        const infosHtml = activiteCorrespondante?.infosPratiques
+          ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(activiteCorrespondante.infosPratiques)}</div>`
+          : "";
         infoWindowRef.current = new window.google.maps.InfoWindow({
           position: { lat, lng },
-          content: `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;">
+          content: `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
             <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${nom}</div>
+            ${infosHtml}
             <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
           </div>`,
         });
