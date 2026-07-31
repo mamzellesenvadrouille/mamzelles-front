@@ -2,7 +2,7 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import { Lightbulb, Plane } from "lucide-react";
-import { getCarnetComplet, getMeteoActuelle, getCarnetProgress } from "@/lib/carnets";
+import { getCarnetComplet, getMeteoActuelle, getCarnetProgress, getTauxDevise, deviseDepuisPays } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
 import BudgetSection from "./BudgetSection";
@@ -32,6 +32,15 @@ export default async function CarnetPage({
         ? getMeteoActuelle(dest.lat, dest.lng)
         : Promise.resolve(null)
     )
+  );
+
+  // Taux de change en temps réel pour chaque destination ayant une devise détectée
+  // (récupéré côté serveur, comme la météo, pour fiabilité maximale)
+  const tauxParDestination = await Promise.all(
+    carnet.destinationsCompletes.map((dest) => {
+      const devise = deviseDepuisPays(dest.pays);
+      return devise && dest.afficherConvertisseur !== false ? getTauxDevise(devise) : Promise.resolve(null);
+    })
   );
 
   // Étapes du parcours construites automatiquement : ville de départ → chaque destination du carnet → retour.
@@ -175,6 +184,7 @@ export default async function CarnetPage({
           destinations={carnet.destinationsCompletes}
           googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY ?? ""}
           meteoParDestination={meteoParDestination}
+          tauxParDestination={tauxParDestination}
           slug={carnet.slug}
           derouleCustomInitial={progress.derouleCustom}
           dateDebutVoyage={carnet.dates.debut}

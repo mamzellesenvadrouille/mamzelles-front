@@ -1,56 +1,22 @@
 // app/voyage/[slug]/ConvertisseurDevise.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/ConvertisseurDevise.tsx
 //
-// Petit convertisseur EUR → devise locale, taux en temps réel via l'API
-// gratuite fawazahmed0/currency-api (150+ devises couvertes, contrairement à
-// Frankfurter qui ne couvre que ~30 devises majeures et ne suffisait pas pour
-// des destinations comme les Maldives ou le Maroc).
+// Petit convertisseur EUR → devise locale. Le taux est récupéré côté SERVEUR
+// (dans page.tsx, via getTauxDevise) et transmis ici tout prêt — ce composant
+// ne fait plus aucun appel réseau lui-même, juste un calcul en direct pendant
+// que le client tape un montant. Ça évite tout souci de blocage réseau/CORS
+// côté navigateur, qui causait l'affichage qui "apparaissait puis disparaissait".
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-export default function ConvertisseurDevise({ devise }: { devise: string }) {
-  const [taux, setTaux] = useState<number | null>(null);
-  const [erreur, setErreur] = useState(false);
+export default function ConvertisseurDevise({ devise, taux }: { devise: string; taux: number | null }) {
   const [montant, setMontant] = useState("100");
 
-  useEffect(() => {
-    let annule = false;
-    const d = devise.toLowerCase();
-
-    async function charger() {
-      // On tente d'abord le CDN principal, puis un miroir de secours si besoin.
-      const urls = [
-        `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur/${d}.json`,
-        `https://latest.currency-api.pages.dev/v1/currencies/eur/${d}.json`,
-      ];
-      for (const url of urls) {
-        try {
-          const res = await fetch(url);
-          if (!res.ok) continue;
-          const data = await res.json();
-          const t = data?.eur?.[d];
-          if (typeof t === "number" && !annule) {
-            setTaux(t);
-            return;
-          }
-        } catch {
-          // on essaie l'URL suivante
-        }
-      }
-      if (!annule) setErreur(true);
-    }
-
-    charger();
-    return () => {
-      annule = true;
-    };
-  }, [devise]);
-
-  if (erreur) return null;
+  if (taux === null) return null;
 
   const montantNum = parseFloat(montant.replace(",", ".")) || 0;
-  const converti = taux ? montantNum * taux : null;
+  const converti = montantNum * taux;
 
   return (
     <div
@@ -87,7 +53,7 @@ export default function ConvertisseurDevise({ devise }: { devise: string }) {
       </div>
       <span style={{ color: "#c8956c" }}>=</span>
       <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, fontStyle: "italic", color: "#a8734c" }}>
-        {taux === null ? "…" : converti!.toLocaleString("fr-FR", { maximumFractionDigits: 2 })} {devise}
+        {converti.toLocaleString("fr-FR", { maximumFractionDigits: 2 })} {devise}
       </div>
     </div>
   );

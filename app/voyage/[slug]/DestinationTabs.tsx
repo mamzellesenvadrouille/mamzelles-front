@@ -81,6 +81,7 @@ export default function DestinationTabs({
   destinations,
   googleMapsApiKey,
   meteoParDestination,
+  tauxParDestination,
   slug,
   derouleCustomInitial,
   dateDebutVoyage,
@@ -88,6 +89,7 @@ export default function DestinationTabs({
   destinations: DestinationResolue[];
   googleMapsApiKey: string;
   meteoParDestination?: ({ temperature: number; icone: string } | null)[];
+  tauxParDestination?: (number | null)[];
   slug: string;
   derouleCustomInitial: (DeroulePoint & { destinationId: string })[];
   dateDebutVoyage?: string;
@@ -190,7 +192,7 @@ export default function DestinationTabs({
             deviseLocale &&
             dest.afficherConvertisseur !== false && (
               <div style={{ marginTop: 16, marginBottom: 8 }}>
-                <ConvertisseurDevise devise={deviseLocale} />
+                <ConvertisseurDevise devise={deviseLocale} taux={tauxParDestination?.[actif] ?? null} />
               </div>
             )
           );

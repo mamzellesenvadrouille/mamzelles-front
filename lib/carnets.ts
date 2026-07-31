@@ -223,6 +223,28 @@ export function deviseDepuisPays(pays?: string): string | undefined {
   return DEVISE_PAR_PAYS[normaliserPourRecherche(pays)];
 }
 
+// Taux de change EUR → devise, récupéré côté serveur (comme la météo) pour éviter
+// tout souci de blocage réseau/CORS côté navigateur du client.
+export async function getTauxDevise(devise: string): Promise<number | null> {
+  const d = devise.toLowerCase();
+  const urls = [
+    `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur/${d}.json`,
+    `https://latest.currency-api.pages.dev/v1/currencies/eur/${d}.json`,
+  ];
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, { next: { revalidate: 3600 } }); // rafraîchi au maximum 1x/heure
+      if (!res.ok) continue;
+      const data = await res.json();
+      const taux = data?.eur?.[d];
+      if (typeof taux === "number") return taux;
+    } catch {
+      // on tente l'URL suivante
+    }
+  }
+  return null;
+}
+
 export function normaliserSlugEnDirect(nom: string): string {
   return nom
     .toLowerCase()
