@@ -33,6 +33,7 @@ export interface Activite {
   lat?: number;
   lng?: number;
   lienReservation?: string; // lien d'affiliation (ex: GetYourGuide) pour réserver cette activité
+  infosPratiques?: string; // texte libre : tarif, horaires, équipement nécessaire... affiché sur la carte
 }
 
 export interface Hebergement {
