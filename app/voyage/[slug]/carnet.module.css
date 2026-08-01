@@ -199,6 +199,9 @@ button.routeStep:hover { border-color: var(--gold); }
 .desc span { font-size: 13px; color: var(--muted); }
 
 .miniGrid { display: grid; grid-template-columns: 1fr 1fr; row-gap: 32px; column-gap: var(--s3); align-items: start; }
+@media (max-width: 480px) {
+  .miniGrid { grid-template-columns: 1fr; row-gap: 24px; }
+}
 .miniCard { display: flex; flex-direction: column; text-decoration: none; color: inherit; cursor: default; background: none; border: none; padding: 0; text-align: left; width: 100%; font-family: inherit; }
 .miniCard[role="button"] { cursor: pointer; }
 .miniCard[role="button"]:hover img { opacity: 0.9; }
