@@ -2636,8 +2636,10 @@ html { overflow-x: hidden !important; }
   transition: color .2s;
 }
 .nav-dropdown-all:hover { color: var(--gold); }
-.nav-dropdown-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; }
-.nav-dropdown-group { display: flex; flex-direction: column; gap: 5px; }
+.nav-dropdown-grid { column-count: 2; column-gap: 24px; }
+.nav-dropdown-group { display: block; break-inside: avoid; margin-bottom: 16px; }
+.nav-dropdown-group .nav-dropdown-link { display: block; margin-bottom: 5px; }
+.nav-dropdown-group .nav-dropdown-link:last-child { margin-bottom: 0; }
 .nav-dropdown-pays {
   font-size: 9px;
   letter-spacing: 2.5px;
