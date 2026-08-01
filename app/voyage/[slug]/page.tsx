@@ -1,7 +1,7 @@
 // app/voyage/[slug]/page.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/page.tsx
 import { notFound } from "next/navigation";
-import { Lightbulb, Plane } from "lucide-react";
+import { Lightbulb, Plane, Heart, AlertTriangle } from "lucide-react";
 import { getCarnetComplet, getMeteoActuelle, getCarnetProgress, getTauxDevise, deviseDepuisPays } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
@@ -227,12 +227,12 @@ export default async function CarnetPage({
                 )}
                 {c.type === "coup-de-coeur" && (
                   <>
-                    <span className={styles.tagIcon}>❤</span> Coup de cœur
+                    <Heart size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} /> Coup de cœur
                   </>
                 )}
                 {c.type === "a-eviter" && (
                   <>
-                    <span className={styles.tagIcon}>⚠</span> À éviter
+                    <AlertTriangle size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} /> À éviter
                   </>
                 )}
               </div>
