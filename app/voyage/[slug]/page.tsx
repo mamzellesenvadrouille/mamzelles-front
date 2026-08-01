@@ -222,17 +222,17 @@ export default async function CarnetPage({
               <div className={styles.tag}>
                 {c.type === "conseil" && (
                   <>
-                    <Lightbulb size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} style={{ marginTop: -2 }} /> Notre astuce
+                    <Lightbulb size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} style={{ marginTop: -3 }} /> Notre astuce
                   </>
                 )}
                 {c.type === "coup-de-coeur" && (
                   <>
-                    <Heart size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} style={{ marginTop: -2 }} /> Coup de cœur
+                    <Heart size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} style={{ marginTop: -3 }} /> Coup de cœur
                   </>
                 )}
                 {c.type === "a-eviter" && (
                   <>
-                    <AlertTriangle size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} style={{ marginTop: -2 }} /> À éviter
+                    <AlertTriangle size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} style={{ marginTop: -3 }} /> À éviter
                   </>
                 )}
               </div>
