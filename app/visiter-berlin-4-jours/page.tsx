@@ -419,14 +419,68 @@ export default function VisiterBerlinPage() {
 
           {/* INFOS PRATIQUES */}
           <section id="pratique" className="article-section">
-            <div className="article-pratique">
-              <h2>Informations pratiques</h2>
-              <div className="article-pratique-intro">
-                <p>Quelques mots pour décrire cette capitale incroyable : elle est libre, brute, créative, décontractée, un peu chaotique… mais terriblement vivante.</p>
-                <p>Ce n’est pas une ville « carte postale » comme Paris ou Rome. Elle est parfois un peu grise, parfois industrielle, souvent imparfaite… mais c’est justement ce qui fait son charme. Personne ne regarde personne, tout le monde peut y être lui-même sans être jugé.</p>
-                <p>Selon les quartiers, l’énergie change énormément : vers Prenzlauer Berg c’est plus doux et bobo, autour de Kreuzberg plus alternatif et multiculturel, tandis que Mitte mélange histoire, touristes et vie urbaine. Berlin, une ville qui se vit autant qu’elle se visite.</p>
+            <div className="article-day-header">
+              <span className="article-day-badge">Infos pratiques</span>
+              <h2 className="article-section-h2">4 jours à Berlin, tout savoir pour organiser votre voyage</h2>
+            </div>
+            <div className="article-pratique-intro">
+              <p>Quelques mots pour décrire cette capitale incroyable : elle est libre, brute, créative, décontractée, un peu chaotique… mais terriblement vivante.</p>
+              <p>Ce n’est pas une ville « carte postale » comme Paris ou Rome. Elle est parfois un peu grise, parfois industrielle, souvent imparfaite… mais c’est justement ce qui fait son charme. Personne ne regarde personne, tout le monde peut y être lui-même sans être jugé.</p>
+              <p>Selon les quartiers, l’énergie change énormément : vers Prenzlauer Berg c’est plus doux et bobo, autour de Kreuzberg plus alternatif et multiculturel, tandis que Mitte mélange histoire, touristes et vie urbaine. Berlin, une ville qui se vit autant qu’elle se visite.</p>
+            </div>
+            <h3>Où dormir ?</h3>
+            <p>Nous avons logé à l’<strong>Hôtel Oderberger</strong>, dans le quartier de Prenzlauer Berg — un ancien bain public du début du XXe siècle transformé en hôtel design 4 étoiles, avec sa spectaculaire piscine néo-Renaissance. Une adresse que nous recommandons sans hésiter, idéalement située pour rayonner dans le nord-est de Berlin. Dans tous les cas, privilégiez Prenzlauer Berg ou Mitte pour être bien situées et accessibles à pied ou en tram.</p>
+            <h3>Quel budget prévoir ?</h3>
+            <p>Berlin reste une capitale très accessible. Comptez environ <strong>90 à 120 € par personne et par jour</strong> en incluant l’hébergement, les repas et les activités. La street food (Currywurst, Gemüse Kebab) permet de manger bien et pas cher, pour 5 à 8 € en moyenne.</p>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Bon à savoir</strong><p>Les musées de l’île aux Musées et de nombreux lieux culturels berlinois proposent des tarifs réduits en fin de journée ou des créneaux gratuits certains jours — renseignez-vous sur place ou en ligne avant votre visite.</p></div>
+            </div>
+            <h3 id="arriver-avion">Arriver en avion</h3>
+            <p>Il est désormais facile de trouver des vols directs à destination de Berlin à moindre coût. De <strong>nombreuses compagnies low-cost</strong> desservent la capitale allemande depuis la plupart des aéroports français.</p>
+            <p>Pour notre part, nous avons voyagé avec la compagnie <strong>easyJet</strong> depuis Nice, en vol direct. Les billets nous sont revenus à <strong>200 € pour deux</strong>, avec un temps de vol d’environ 2 h.</p>
+            <h3>Aéroport ↔︎ Centre-ville</h3>
+            <p>Quelle que soit la compagnie choisie, vous atterrirez la plupart du temps à l’<strong>aéroport de Berlin Brandenburg (BER)</strong>. Plusieurs options s’offrent à vous pour rejoindre le centre :</p>
+            <div className="article-transport-grid">
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
+                </div>
+                <div>
+                  <strong>S-Bahn (terminal 1)</strong>
+                  <span>5 € · env. 30 min jusqu’à la Hauptbahnhof · Ticket valable 2 h, achetable aux distributeurs de la station.</span>
+                </div>
               </div>
-              <div style={{marginTop: '32px'}}>
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
+                </div>
+                <div>
+                  <strong>Bus express (BER2/BER3)</strong>
+                  <span>~4 € · env. 30-40 min · Bonne alternative si le S-Bahn est bondé aux heures de pointe.</span>
+                </div>
+              </div>
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
+                </div>
+                <div>
+                  <strong>Taxi</strong>
+                  <span>~40-50 € · Option pratique si vous êtes en groupe ou très chargé·e·s. Pas notre recommandation en solo.</span>
+                </div>
+              </div>
+              <div className="article-transport-item">
+                <div className="article-transport-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
+                </div>
+                <div>
+                  <strong>Uber</strong>
+                  <span>Zone de prise en charge dédiée à l’aéroport, tarifs proches de ceux du taxi selon l’affluence.</span>
+                </div>
+              </div>
+            </div>
+            <h3 style={{marginTop:'32px'}}>Comment se déplacer à Berlin ?</h3>
+            <div style={{marginTop: '16px'}}>
                 <PratiqueOnglets onglets={[
                   {
                     id: 'transports',
@@ -479,7 +533,6 @@ export default function VisiterBerlinPage() {
                     ),
                   },
                 ]} />
-              </div>
             </div>
           </section>
 
