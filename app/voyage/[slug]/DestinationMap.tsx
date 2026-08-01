@@ -150,6 +150,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           });
           marker.addListener("gmp-click", () => {
             mapInstance.current.panTo({ lat: lieu.lat, lng: lieu.lng });
+            mapInstance.current.setZoom(16);
             if (infoWindowRef.current) infoWindowRef.current.close();
             const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lieu.lat},${lieu.lng}`;
             const infosHtml =
