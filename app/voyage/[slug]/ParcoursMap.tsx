@@ -44,6 +44,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
     const mapInstance = useRef<any>(null); // eslint-disable-line @typescript-eslint/no-explicit-any
     const markersRef = useRef<any[]>([]); // eslint-disable-line @typescript-eslint/no-explicit-any
     const infoWindowRef = useRef<any>(null); // eslint-disable-line @typescript-eslint/no-explicit-any
+    const vueGeneraleRef = useRef<() => void>(() => {});
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
 
@@ -58,6 +59,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
           position: { lat: e.lat, lng: e.lng },
           content: contenuBulle(e.nom),
         });
+        infoWindowRef.current.addListener("closeclick", () => vueGeneraleRef.current());
         infoWindowRef.current.open(mapInstance.current);
         wrapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
       },
@@ -81,6 +83,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
           });
           map.fitBounds(bounds, 40);
           mapInstance.current = map;
+          vueGeneraleRef.current = () => map.fitBounds(bounds, 40);
 
           new window.google.maps.Polyline({
             path: etapes.map((e) => ({ lat: e.lat, lng: e.lng })),
@@ -110,6 +113,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
                 position: { lat: e.lat, lng: e.lng },
                 content: contenuBulle(e.nom),
               });
+              infoWindowRef.current.addListener("closeclick", () => vueGeneraleRef.current());
               infoWindowRef.current.open(map);
             });
             markersRef.current.push(marker);
