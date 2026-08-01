@@ -213,9 +213,9 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                 onClick={() => toggleFiltre(c.key)}
                 style={{
                   fontFamily: "Inter, sans-serif",
-                  fontSize: actif ? 13.5 : 13,
-                  padding: actif ? "8px 16px 8px 10px" : "8px 16px",
-                  borderRadius: actif ? 24 : 20,
+                  fontSize: 13.5,
+                  padding: "8px 16px 8px 10px",
+                  borderRadius: 24,
                   border: actif ? "1px solid #e8e0d6" : "1px solid #d8d2c6",
                   background: actif ? "#fff" : "none",
                   color: actif ? "#1a1512" : "#6b6459",
@@ -223,26 +223,24 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                   transition: "all .2s",
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: actif ? 8 : 0,
+                  gap: 8,
                 }}
               >
-                {actif && (
-                  <span
-                    style={{
-                      width: 20,
-                      height: 20,
-                      borderRadius: "50%",
-                      background: c.color,
-                      color: "#fff",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      flexShrink: 0,
-                    }}
-                  >
-                    <c.Icon size={11} strokeWidth={2} />
-                  </span>
-                )}
+                <span
+                  style={{
+                    width: 20,
+                    height: 20,
+                    borderRadius: "50%",
+                    background: actif ? c.color : "#c8c2b6",
+                    color: "#fff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                  }}
+                >
+                  <c.Icon size={11} strokeWidth={2} />
+                </span>
                 {c.label}
               </button>
             );
