@@ -206,43 +206,43 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         <div className={styles.subEyebrow} style={{ marginBottom: 20 }}>Carte interactive</div>
         <div style={{ display: "flex", gap: 8, marginBottom: 24, flexWrap: "wrap" }}>
           {CATEGORIES.map((c) => {
-            const r = parseInt(c.color.slice(1, 3), 16);
-            const g = parseInt(c.color.slice(3, 5), 16);
-            const b = parseInt(c.color.slice(5, 7), 16);
+            const actif = filtres.has(c.key);
             return (
               <button
                 key={c.key}
                 onClick={() => toggleFiltre(c.key)}
                 style={{
                   fontFamily: "Inter, sans-serif",
-                  fontSize: 13.5,
-                  padding: "8px 16px 8px 10px",
-                  borderRadius: 24,
-                  border: "1px solid #e8e0d6",
-                  background: filtres.has(c.key) ? "#fff" : `rgba(${r}, ${g}, ${b}, 0.08)`,
-                  color: "#1a1512",
+                  fontSize: actif ? 13.5 : 13,
+                  padding: actif ? "8px 16px 8px 10px" : "8px 16px",
+                  borderRadius: actif ? 24 : 20,
+                  border: actif ? "1px solid #e8e0d6" : "1px solid #d8d2c6",
+                  background: actif ? "#fff" : "none",
+                  color: actif ? "#1a1512" : "#6b6459",
                   cursor: "pointer",
-                  transition: "all .15s",
+                  transition: "all .2s",
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: 8,
+                  gap: actif ? 8 : 0,
                 }}
               >
-                <span
-                  style={{
-                    width: 20,
-                    height: 20,
-                    borderRadius: "50%",
-                    background: c.color,
-                    color: "#fff",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexShrink: 0,
-                  }}
-                >
-                  <c.Icon size={11} strokeWidth={2} />
-                </span>
+                {actif && (
+                  <span
+                    style={{
+                      width: 20,
+                      height: 20,
+                      borderRadius: "50%",
+                      background: c.color,
+                      color: "#fff",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexShrink: 0,
+                    }}
+                  >
+                    <c.Icon size={11} strokeWidth={2} />
+                  </span>
+                )}
                 {c.label}
               </button>
             );
