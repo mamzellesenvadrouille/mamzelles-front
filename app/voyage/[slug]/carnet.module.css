@@ -104,7 +104,7 @@
 }
 .heroContent .eyebrow { color: #ecd7c4; font-size: 13px; letter-spacing: .18em; }
 .heroContent .display1 { font-size: 72px; margin: 22px 0 14px; }
-.place { font-size: 19px; letter-spacing: .1em; text-transform: uppercase; opacity: .9; font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-style: italic; }
+.place { font-size: 19px; letter-spacing: .1em; text-transform: uppercase; opacity: .9; font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-style: italic; font-weight: 700; }
 .dates {
   margin-top: var(--s3);
   font-size: 15px;
