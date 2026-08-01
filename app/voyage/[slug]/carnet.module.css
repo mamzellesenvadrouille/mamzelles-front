@@ -242,6 +242,6 @@ button.routeStep:hover { border-color: var(--gold); }
 .checkLabel { font-size: 15px; transition: color .2s; }
 .checked .checkLabel { color: var(--muted); text-decoration: line-through; }
 
-.footerEnd { text-align: center; padding: 100px 28px; background: var(--dark); color: #f0e8de; }
-.footerEnd p { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 26px; font-style: italic; max-width: 420px; margin: 0 auto; line-height: 1.5; }
+.footerEnd { text-align: center; padding: 56px 28px; background: var(--dark); color: #f0e8de; }
+.footerEnd p { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 21px; font-style: italic; max-width: 420px; margin: 0 auto; line-height: 1.5; }
 .brand { margin-top: var(--s4); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }

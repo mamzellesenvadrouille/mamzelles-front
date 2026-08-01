@@ -443,7 +443,7 @@ export default async function CarnetPage({
 
       <ScrollToTop />
 
-      <div className={styles.footerEnd}>
+      <div className={styles.footerEnd} style={{ marginTop: 32 }}>
         <p>
           Il y a des voyages qu&apos;on oublie.
           <br />
