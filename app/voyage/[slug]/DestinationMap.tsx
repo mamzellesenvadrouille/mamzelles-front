@@ -37,6 +37,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     const mapInstance = useRef<any>(null); // eslint-disable-line @typescript-eslint/no-explicit-any
     const markersRef = useRef<any[]>([]); // eslint-disable-line @typescript-eslint/no-explicit-any
     const infoWindowRef = useRef<any>(null); // eslint-disable-line @typescript-eslint/no-explicit-any
+    const vueGeneraleRef = useRef<() => void>(() => {});
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
     const [filtres, setFiltres] = useState<Set<Categorie>>(new Set(["hebergements", "restaurants", "activites"]));
@@ -74,6 +75,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
           </div>`,
         });
+        infoWindowRef.current.addListener("closeclick", () => vueGeneraleRef.current());
         infoWindowRef.current.open(mapInstance.current);
       },
       scrollIntoView() {
@@ -107,6 +109,10 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             disableDefaultUI: true,
             zoomControl: true,
           });
+          vueGeneraleRef.current = () => {
+            mapInstance.current?.setCenter(centre);
+            mapInstance.current?.setZoom(13);
+          };
 
           setPret(true);
         })
@@ -158,6 +164,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                 <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
               </div>`,
             });
+            infoWindowRef.current.addListener("closeclick", () => vueGeneraleRef.current());
             infoWindowRef.current.open(mapInstance.current);
           });
           markersRef.current.push(marker);
