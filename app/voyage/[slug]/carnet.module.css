@@ -162,11 +162,11 @@
 .overviewItem .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: var(--s1); }
 
 .routeList { display: flex; flex-wrap: wrap; gap: 10px; }
-.routeStep { display: flex; align-items: center; gap: 8px; padding: 8px 16px 8px 10px; border: 1px solid var(--line); border-radius: 24px; background: #fff; font-family: 'Inter', sans-serif; font-size: 13.5px; transition: border-color .15s; }
+.routeStep { display: flex; align-items: center; gap: 8px; padding: 8px 16px 8px 10px; border: 1px solid var(--line); border-radius: 24px; background: #fff; font-family: 'Inter', sans-serif; font-size: 13.5px; transition: border-color .15s; color: var(--dark); appearance: none; -webkit-appearance: none; }
 button.routeStep { cursor: pointer; }
 button.routeStep:hover { border-color: var(--gold); }
 .routeStep .idx { width: 20px; height: 20px; border-radius: 50%; background: var(--gold); color: #fff; font-family: 'Inter', sans-serif; font-size: 10.5px; font-style: normal; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.routeStep .name { font-family: 'Inter', sans-serif; font-size: 13.5px; }
+.routeStep .name { font-family: 'Inter', sans-serif; font-size: 13.5px; color: var(--dark); }
 .idx { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 14px; color: var(--gold); font-style: italic; min-width: 20px; }
 .name { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 21px; }
 
