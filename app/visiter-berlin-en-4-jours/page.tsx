@@ -154,8 +154,8 @@ export default function VisiterBerlinPage() {
             <p>En sortant du tram, dans ce quartier, on est tout de suite plongées dans l’ambiance. Il y a du monde partout, des vélos, des trams, des bus qui passent sans arrêt… ça bouge dans tous les sens. On ressent immédiatement l’énergie de Berlin !</p>
             <h3>Prenzlauer Berg</h3>
             <h4>Rüyam Gemüse Kebab, notre premier repas</h4>
-            <p>Il est 15 heures et on n’a toujours pas mangé. On se dirige vers l’hôtel, mais en chemin, premier arrêt gourmand obligatoire à <strong>Rüyam Gemüse Kebab</strong>. Une véritable institution à Berlin !</p>
-            <p>Ici, on ne parle pas d’un kebab classique... Leur spécialité, le Gemüse Kebab : un mélange de viande grillée, de légumes rôtis (pommes de terre, poivrons…), de crudités ultra fraîches, de feta, d’une sauce maison à l’ail et épicée, le tout dans un pain croustillant !</p>
+            <p>Il est 15 heures quand nous débarquons dans le quartier de <strong>Prenzlauer Berg</strong> pour rejoindre notre hôtel. Nous n’avons toujours pas déjeuné. En chemin, nous tombons sur <strong>Rüyam Gemüse Kebab</strong>. Une véritable institution à Berlin ! Pas le choix que de s’y arrêter...</p>
+            <p>Ici, on ne parle pas d’un kebab classique. Leur spécialité, le Gemüse Kebab : un mélange de viande grillée, de légumes rôtis (pommes de terre, poivrons…), de crudités ultra fraîches, de feta, d’une sauce maison à l’ail et épicée, le tout dans un pain croustillant !</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -169,7 +169,7 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <p>Kebab avalé, nous poursuivons notre chemin vers l’hôtel. Nous sommes dans le quartier de <strong>Prenzlauer Berg</strong> et c’est là que se trouve notre hôtel.</p>
+            <p>Kebab avalé, nous poursuivons notre chemin vers l’hôtel.</p>
             <p>Ce quartier est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
             <p>Aujourd’hui, c’est souvent considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve un mélange assez réussi entre ambiance locale et vie de quartier : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
             <h4>Hôtel Oderberger, un ancien bain public transformé</h4>
