@@ -136,7 +136,7 @@ export default function VisiterBerlinPage() {
           {/* INTRO */}
           <section className="article-section">
           <p className="article-intro">Pour mes 40 ans, ma femme m’a offert un cadeau dont je me souviendrai longtemps : un week-end surprise à Berlin. Je ne savais rien. Absolument rien. Elle avait tout organisé, tout anticipé : les valises, les sacs, les trajets en train et en avion, l’hôtel.</p>
-          <p>Depuis quelque temps, on parlait de découvrir Berlin, intriguées par cette ville à la réputation si particulière. Mais on était très loin de s’attendre à ça. Berlin nous a complètement happées. Une ville libre, contrastée, surprenante… et franchement incroyable. Berlin nous a surprises, bousculées, fascinées. Une ville brute, vibrante, profondément marquante.</p>
+          <p>Depuis quelque temps, on parlait de découvrir Berlin, intriguées par cette ville à la réputation si particulière. Mais on était très loin de s’attendre à ça. Berlin nous a complètement happées, bousculées, fascinées. Une ville libre, contrastée, surprenante, brute, vibrante… et profondément marquante !</p>
           </section>
 
           {/* JOUR 1 */}
