@@ -158,6 +158,7 @@ export default function VisiterBerlinPage() {
             <h4>Rüyam Gemüse Kebab, le meilleur de Berlin</h4>
             <p>Il est 15 heures quand nous débarquons dans le quartier de <strong>Prenzlauer Berg</strong> pour rejoindre notre hôtel. Nous n’avons toujours pas déjeuné. En chemin, nous tombons sur <strong>Rüyam Gemüse Kebab</strong>. Une véritable institution à Berlin ! Pas le choix que de s’y arrêter...</p>
             <p>Ici, on ne parle pas d’un kebab classique. Leur spécialité, le Gemüse Kebab : un mélange de viande grillée, de légumes rôtis (pommes de terre, poivrons…), de crudités ultra fraîches, de feta, d’une sauce maison à l’ail et épicée, le tout dans un pain croustillant !</p>
+            <p>Kebabs avalés, nous poursuivons notre chemin vers l’hôtel.</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -171,7 +172,6 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <p>Kebabs avalés, nous poursuivons notre chemin vers l’hôtel.</p>
             <h4>Hôtel Oderberger, notre coup de cœur</h4>
             <p>Wouahou… Mon Amour, c’est là qu’on va dormir ?</p>
             <p>En arrivant devant l’hôtel, on est tout de suite surprises par le bâtiment. La façade de l’<strong>Oderberger</strong> a beaucoup de charme, avec son style ancien et son côté hors du temps. Un charme berlinois un peu brut mais raffiné à la fois. On sent immédiatement le cachet du lieu et l’histoire qui l’accompagne.</p>
