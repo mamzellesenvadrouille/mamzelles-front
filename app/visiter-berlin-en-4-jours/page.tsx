@@ -154,7 +154,7 @@ export default function VisiterBerlinPage() {
             <p>En sortant du tram, dans ce quartier, on est tout de suite plongées dans l’ambiance. Il y a du monde partout, des vélos, des trams, des bus qui passent sans arrêt… ça bouge dans tous les sens. On ressent immédiatement l’énergie de Berlin !</p>
             <h3>Premier arrêt gourmand : le Gemüse Kebab</h3>
             <p>Il est 15 heures et on n’a toujours pas mangé. On se dirige vers l’hôtel, mais en chemin, premier arrêt gourmand obligatoire à <strong>Rüyam Gemüse Kebab</strong>. Une véritable institution à Berlin !</p>
-            <p>Ici, on ne parle pas d’un kebab classique... Leur spécialité, le Gemüse Kebab : un mélange de viande grillée, de légumes rôtis (pommes de terre, poivrons…), de crudités ultra fraîches, de feta, d’une sauce maison à l’ail et épicée, et le tout dans un pain croustillant !</p>
+            <p>Ici, on ne parle pas d’un kebab classique... Leur spécialité, le Gemüse Kebab : un mélange de viande grillée, de légumes rôtis (pommes de terre, poivrons…), de crudités ultra fraîches, de feta, d’une sauce maison à l’ail et épicée, le tout dans un pain croustillant !</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -164,7 +164,7 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name">Rüyam Gemüse Kebab</p>
                   <p className="article-resto-sub">Kebab légendaire · Prenzlauer Berg</p>
-                  <p>Assez copieux, Laurie n’a pas su le terminer mais tellement bon. À goûter absolument. Bien évidemment, c’est le genre d’adresse où il y a souvent du monde, mais où l’attente fait presque partie de l’expérience.</p>
+                  <p>Copieux — Laurie n’a même pas réussi à finir le sien. Tellement bon, à tester absolument ! C’est le genre d’adresse où il y a souvent la queue, mais où l’attente fait presque partie de l’expérience.</p>
                 </div>
               </div>
             </div>
