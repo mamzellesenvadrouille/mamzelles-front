@@ -152,6 +152,19 @@ export default function VisiterBerlinPage() {
             <p>Une fois arrivées à l’aéroport de Berlin, il faut encore rejoindre le centre-ville. Direction le terminal 1 pour prendre le train <strong>S-Bahn</strong> vers la gare centrale, la <strong>Hauptbahnhof (HBF)</strong>. Comptez 5 € par personne pour un ticket valable deux heures, largement suffisant pour rejoindre le centre.</p>
             <p>À ce moment-là, je me laisse complètement porter, je ne sais absolument pas où nous allons. Ma femme me laisse simplement entendre qu’elle nous a réservé un petit hôtel. En sortant de la gare côté Europaplatz, nous prenons le tram M10, qui se trouve juste en face (S+U Berlin Hauptbahnhof), direction U Eberswalder Straße, le nord-est de Berlin.</p>
             <p>En sortant du tram, dans ce quartier, on est tout de suite plongées dans l’ambiance. Il y a du monde partout, des vélos, des trams, des bus qui passent sans arrêt… ça bouge dans tous les sens. On ressent immédiatement l’énergie de Berlin !</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Depuis le terminal 1 de l’aéroport, jusqu’à la station Hauptbahnhof (5 € / pers., ticket valable 2 h).</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">Tram</span><p>Ligne M10 depuis Europaplatz, jusqu’à la station Eberswalder Straße.</p></div>
+                </div>
+              </div>
+            </div>
             <h3>Prenzlauer Berg</h3>
             <p><strong>Prenzlauer Berg</strong> est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
             <p>Aujourd’hui, il est considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve une ambiance locale et une vie de quartier authentiques : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
@@ -267,19 +280,6 @@ export default function VisiterBerlinPage() {
             <h4>Retour à l’hôtel</h4>
             <p>C’est incroyable, à Berlin, la vie ne s’arrête jamais vraiment. La ville reste animée à toute heure. La nuit offre une toute autre ambiance. Les restaurants et les bars restent ouverts tard, certains commerces tournent même quasiment en continu. On peut trouver de quoi grignoter, de l’alcool, du tabac… bref, tout ce qu’il faut pour prolonger la soirée sans contrainte. Une ville qui semble vivre au rythme de ceux qui ont envie de profiter jusqu’au bout de la nuit.</p>
             <p>En ce qui nous concerne, il est temps d’aller se coucher après cette première journée bien chargée, mais déjà hâte d’être à demain !</p>
-            <div className="article-rendre">
-              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
-              <div className="article-rendre-timeline">
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Depuis l’aéroport</span><p>S-Bahn depuis le terminal 1 jusqu’à la Hauptbahnhof (5 € / pers., ticket valable 2 h).</p></div>
-                </div>
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Tram M10</span><p>Depuis Europaplatz (côté gare), direction U Eberswalder Straße pour rejoindre Prenzlauer Berg.</p></div>
-                </div>
-              </div>
-            </div>
           </section>
 
           {/* JOUR 2 */}
