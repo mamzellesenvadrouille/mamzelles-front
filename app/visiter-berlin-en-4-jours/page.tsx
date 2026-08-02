@@ -216,12 +216,12 @@ export default function VisiterBerlinPage() {
             <h3>L’île aux Musées</h3>
             <h4>Coucher de soleil sur la Spree</h4>
             <p>Nous sommes à quelques minutes à pied de James-Simon-Park et Monbijou Park. Ils sont côte à côte. Ces deux parcs sont au bord de la Spree, la rivière qui traverse Berlin.</p>
-            <p>L’endroit est super sympa. Ambiance détendue, locale, avec des gens qui traînent en groupe, qui jouent, qui dansent, qui boivent un coup. Ah oui, c’est assez surprenant au début mais à Berlin (et plus largement en Allemagne), on peut légalement boire de l’alcool dans la rue et dans les parcs.</p>
+            <p>L’endroit est super sympa. Ambiance détendue, locale, avec des gens qui traînent en groupe, qui jouent, qui dansent, qui boivent un coup.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Vous verrez souvent des gens avec une bière à la main sur un banc, un verre posé sur l’herbe, ou un apéro improvisé au bord de la Spree. Une habitude bien ancrée dans le quotidien berlinois.</p></div>
+              <div><strong>Bon à savoir</strong><p>C’est assez surprenant au début, mais à Berlin (et plus largement en Allemagne), on peut légalement boire de l’alcool dans la rue et dans les parcs. Vous verrez souvent des gens avec une bière à la main sur un banc, un verre posé sur l’herbe, ou un apéro improvisé au bord de la Spree. Une habitude bien ancrée dans le quotidien berlinois.</p></div>
             </div>
-            <p>Alors on se l’est jouée Berlinoises. On s’installe dans l’herbe du côté de James-Simon-Park et on profite du moment. De là, on a une vue plongeante sur l’île aux Musées.</p>
+            <p>Alors, on se la joue Berlinoises. On s’installe dans l’herbe du côté de James-Simon-Park et on profite du moment. De là, on a une vue plongeante sur l’île aux Musées.</p>
             <p><strong>Un peu d’histoire.</strong> L’île aux Musées est l’un des ensembles culturels les plus importants d’Europe. Plusieurs grands musées historiques y sont regroupés, construits entre le XIXe et le début du XXe siècle, sur une île entourée par la Spree. Le site est classé au patrimoine mondial de l’UNESCO.</p>
             <p>Vous l’aurez compris, cet endroit fait partie des incontournables. Le gros atout du lieu, c’est l’ambiance, mais aussi la vue. On a un très beau panorama sur la rivière, les péniches, et surtout sur la magnifique cathédrale qui s’illumine à la tombée de la nuit : le Berliner Dom, avec son immense dôme vert qu’on peut voir de loin. Ici, c’est clairement un spot idéal pour le coucher de soleil, alors on en profite. La lumière dorée sur l’île aux Musées, c’est magnifique.</p>
             <h4>Retour à l’hôtel &amp; Currywurst</h4>
