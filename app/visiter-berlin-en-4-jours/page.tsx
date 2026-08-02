@@ -169,7 +169,7 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <p>Kebab avalé, nous poursuivons notre chemin vers l’hôtel.</p>
+            <p>Kebabs avalés, nous poursuivons notre chemin vers l’hôtel.</p>
             <p><strong>Prenzlauer Berg</strong> est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
             <p>Aujourd’hui, il est considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve une ambiance locale et une vie de quartier authentiques : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
             <h4>Hôtel Oderberger, un ancien bain public transformé</h4>
