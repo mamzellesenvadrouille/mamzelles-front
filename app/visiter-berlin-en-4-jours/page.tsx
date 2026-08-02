@@ -153,6 +153,8 @@ export default function VisiterBerlinPage() {
             <p>À ce moment-là, je me laisse complètement porter, je ne sais absolument pas où nous allons. Ma femme me laisse simplement entendre qu’elle nous a réservé un petit hôtel. En sortant de la gare côté Europaplatz, nous prenons le tram M10, qui se trouve juste en face (S+U Berlin Hauptbahnhof), direction U Eberswalder Straße, le nord-est de Berlin.</p>
             <p>En sortant du tram, dans ce quartier, on est tout de suite plongées dans l’ambiance. Il y a du monde partout, des vélos, des trams, des bus qui passent sans arrêt… ça bouge dans tous les sens. On ressent immédiatement l’énergie de Berlin !</p>
             <h3>Prenzlauer Berg</h3>
+            <p><strong>Prenzlauer Berg</strong> est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
+            <p>Aujourd’hui, il est considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve une ambiance locale et une vie de quartier authentiques : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
             <h4>Rüyam Gemüse Kebab, le meilleur de Berlin</h4>
             <p>Il est 15 heures quand nous débarquons dans le quartier de <strong>Prenzlauer Berg</strong> pour rejoindre notre hôtel. Nous n’avons toujours pas déjeuné. En chemin, nous tombons sur <strong>Rüyam Gemüse Kebab</strong>. Une véritable institution à Berlin ! Pas le choix que de s’y arrêter...</p>
             <p>Ici, on ne parle pas d’un kebab classique. Leur spécialité, le Gemüse Kebab : un mélange de viande grillée, de légumes rôtis (pommes de terre, poivrons…), de crudités ultra fraîches, de feta, d’une sauce maison à l’ail et épicée, le tout dans un pain croustillant !</p>
@@ -170,9 +172,7 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <p>Kebabs avalés, nous poursuivons notre chemin vers l’hôtel.</p>
-            <p><strong>Prenzlauer Berg</strong> est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
-            <p>Aujourd’hui, il est considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve une ambiance locale et une vie de quartier authentiques : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
-            <h4>Hôtel Oderberger, un ancien bain public transformé</h4>
+            <h4>Hôtel Oderberger, notre coup de cœur</h4>
             <p>Wouahou… Mon Amour, c’est là qu’on va dormir ?</p>
             <p>En arrivant devant l’hôtel, on est tout de suite surprises par le bâtiment. La façade de l’<strong>Oderberger</strong> a beaucoup de charme, avec son style ancien et son côté hors du temps. Un charme berlinois un peu brut mais raffiné à la fois. On sent immédiatement le cachet du lieu et l’histoire qui l’accompagne.</p>
             <p>En y entrant, on a l’impression d’être dans un ancien bâtiment public majestueux, transformé en un lieu design, sans qu’il ait perdu son âme. Les murs et éléments historiques ont été conservés. Les chambres et les espaces communs sont très contemporains : bois, lignes épurées, lumière tamisée, minimalisme chic sans être prétentieux. On est loin du palace classique... C’est un luxe discret, presque industriel, avec un mélange d’histoire et de modernité. Ça donne déjà le ton du séjour !</p>
