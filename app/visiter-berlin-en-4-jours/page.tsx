@@ -152,7 +152,8 @@ export default function VisiterBerlinPage() {
             <p>Une fois arrivées à l’aéroport de Berlin, il faut encore rejoindre le centre-ville. Direction le terminal 1 pour prendre le train <strong>S-Bahn</strong> vers la gare centrale, la <strong>Hauptbahnhof (HBF)</strong>. Comptez 5 € par personne pour un ticket valable deux heures, largement suffisant pour rejoindre le centre.</p>
             <p>À ce moment-là, je me laisse complètement porter, je ne sais absolument pas où nous allons. Ma femme me laisse simplement entendre qu’elle nous a réservé un petit hôtel. En sortant de la gare côté Europaplatz, nous prenons le tram M10, qui se trouve juste en face (S+U Berlin Hauptbahnhof), direction U Eberswalder Straße, le nord-est de Berlin.</p>
             <p>En sortant du tram, dans ce quartier, on est tout de suite plongées dans l’ambiance. Il y a du monde partout, des vélos, des trams, des bus qui passent sans arrêt… ça bouge dans tous les sens. On ressent immédiatement l’énergie de Berlin !</p>
-            <h3>Premier arrêt gourmand : le Gemüse Kebab</h3>
+            <h3>Prenzlauer Berg</h3>
+            <h4>Rüyam Gemüse Kebab, notre premier repas</h4>
             <p>Il est 15 heures et on n’a toujours pas mangé. On se dirige vers l’hôtel, mais en chemin, premier arrêt gourmand obligatoire à <strong>Rüyam Gemüse Kebab</strong>. Une véritable institution à Berlin !</p>
             <p>Ici, on ne parle pas d’un kebab classique... Leur spécialité, le Gemüse Kebab : un mélange de viande grillée, de légumes rôtis (pommes de terre, poivrons…), de crudités ultra fraîches, de feta, d’une sauce maison à l’ail et épicée, le tout dans un pain croustillant !</p>
             <div className="article-resto">
@@ -169,10 +170,9 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <p>Kebab avalé, nous poursuivons notre chemin vers l’hôtel. Nous sommes dans le quartier de <strong>Prenzlauer Berg</strong> et c’est là que se trouve notre hôtel.</p>
-            <h2>Prenzlauer Berg</h2>
             <p>Ce quartier est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
             <p>Aujourd’hui, c’est souvent considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve un mélange assez réussi entre ambiance locale et vie de quartier : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
-            <h3>Hôtel Oderberger, un ancien bain public transformé</h3>
+            <h4>Hôtel Oderberger, un ancien bain public transformé</h4>
             <p>Wouahou… Mon Amour, c’est là qu’on va dormir ?</p>
             <p>En arrivant devant l’hôtel, on est tout de suite surprises par le bâtiment. La façade de l’Oderberger a beaucoup de charme, avec son style ancien et son côté presque hors du temps. Un charme berlinois un peu brut mais raffiné à la fois. On sent immédiatement le cachet du lieu et l’histoire qui l’accompagne.</p>
             <p>En entrant, on a l’impression d’être dans un ancien bâtiment public majestueux, transformé en lieu très design, sans pour autant perdre son âme. Les murs et éléments historiques ont été conservés, mais le mobilier, les chambres et les espaces communs sont très contemporains : bois, lignes épurées, lumière tamisée, minimalisme chic sans être prétentieux. On est loin du palace classique, c’est plus un luxe discret, un peu brut, avec ce mélange d’histoire et de modernité. Ça donne déjà le ton du séjour.</p>
@@ -192,8 +192,7 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <h3>Balade dans Prenzlauer Berg</h3>
-            <h3>Balade dans le quartier</h3>
+            <h4>Balade dans le quartier</h4>
             <p>Après notre installation dans notre magnifique chambre, trop excitées de découvrir cette ville, nous partons directement pour une petite balade dans le quartier autour de l’hôtel, avant de rejoindre tranquillement le centre de Berlin.</p>
             <p>Nous commençons notre balade par le Kulturbrauerei, qui se trouve à deux pas de l’hôtel. C’est un immense ancien complexe de brasserie en briques rouges reconverti en lieu culturel. Derrière ses façades industrielles se cache un lieu vivant, très berlinois, où se mêlent bars, restaurants, supérettes, cinéma et parfois même marchés ou événements en plein air, concerts, selon les jours. L’endroit est franchement sympa pour boire un verre dans une ambiance locale, un peu industrielle-chic, entouré de Berlinois, loin du Berlin trop « carte postale » de certains quartiers plus touristiques.</p>
             <p>Nous continuons ensuite vers Kastanienallee, l’une des rues les plus agréables du quartier de Prenzlauer Berg, également à quelques minutes de notre hôtel. Cafés cool, jolies boutiques, friperies, restos et terrasses se succèdent dans une ambiance berlinoise à la fois branchée et décontractée. Un petit côté bobo-chic mais franchement sympa pour se balader sans regarder l’heure.</p>
@@ -203,14 +202,14 @@ export default function VisiterBerlinPage() {
               <div><strong>Ouvrez l’œil</strong><p>En se promenant dans Berlin, on remarque parfois de petites plaques en laiton incrustées dans le sol, devant certaines maisons. Elles sont appelées Stolpersteine. C’est assez touchant de savoir qu’elles sont là pour rendre hommage aux victimes du nazisme ayant vécu à ces adresses avant d’être déportées ou persécutées. Sur chaque plaque figurent un nom, une date ainsi que quelques informations sur son destin. Une façon discrète mais profondément émouvante de faire vivre la mémoire, directement dans les rues de la ville. Elles sont présentes notamment à Prenzlauer Berg, à Mitte ou encore Kreuzberg et Charlottenburg.</p></div>
             </div>
             <p>Nous poursuivons ensuite vers Kollwitzplatz, une charmante place au cœur de Prenzlauer Berg. Ici, l’ambiance est plus douce. C’est une place arborée, il y a quelques espaces verts, des terrasses pleines de vie et on y trouve de jolies façades tout autour. Entre cafés, restaurants et familles berlinoises installées sur les bancs ou dans le petit parc, on découvre un Berlin plus calme, presque un esprit de village au cœur de la ville. Attention, allergiques s’abstenir. On a rarement autant de pollen au mètre carré qu’ici !</p>
-            <h2>Mitte</h2>
-            <h3>Haus Schwarzenberg, l’esprit alternatif</h3>
+            <h3>Mitte</h3>
+            <h4>Haus Schwarzenberg, l’esprit alternatif</h4>
             <p>En descendant vers le centre-ville, nous tombons sur Haus Schwarzenberg. Et là, changement total d’ambiance. Une cour cachée derrière un porche, une entrée discrète. Un petit bar se trouve sur la gauche. L’atmosphère est immédiatement plus alternative, très Berlin underground. Les murs sont couverts de street art, de graffitis, de collages. Ici on ressent un esprit brut et alternatif. En avançant dans la cour, sur la droite, on trouve un distributeur appelé un art-o-mat. Contre quelques euros tu reçois une mini œuvre artistique (illustration, photo, badge, mini sculpture, etc.), souvent unique ou en série limitée. Ce sont souvent des vieux distributeurs à cigarettes qui sont reconvertis en distributeurs d’art. Ils sont très répandus à Berlin, surtout dans les quartiers alternatifs.</p>
             <p>On s’installe en terrasse pour boire un verre et prendre le temps de profiter de cette ambiance hors du temps, en plein cœur de la ville. Au fond de la cour, encore un bar et quelques petites boutiques. C’est comme un petit monde à part en plein centre.</p>
-            <h3>Hackescher Markt</h3>
+            <h4>Hackescher Markt</h4>
             <p>C’est reparti… Non loin de là, nous rejoignons et traversons Hackescher Markt qui se situe dans le quartier de Mitte. C’est un coin très vivant du centre de Berlin. Un véritable lieu de vie où se mêlent habitants, artistes, touristes et Berlinois venus profiter des nombreux cafés, restaurants et boutiques. Le quartier est surtout connu pour les Hackesche Höfe. Bon, on ne va pas vous le cacher, on les a loupées. C’est en rédigeant cet article qu’on a découvert leur existence. C’est un ensemble de cours intérieures restaurées parmi les plus belles de la ville. Derrière les façades discrètes se cachent des galeries d’art, des ateliers, des boutiques originales et de charmants cafés visiblement. En même temps, il y a tellement de choses à voir dans cette ville !</p>
-            <h2>L’île aux Musées</h2>
-            <h3>Coucher de soleil sur la Spree</h3>
+            <h3>L’île aux Musées</h3>
+            <h4>Coucher de soleil sur la Spree</h4>
             <p>D’ici nous sommes à quelques minutes à pied de James-Simon-Park et Monbijou Park. Ils sont côte à côte. Ces deux parcs sont au bord de la Spree, la rivière qui traverse Berlin.</p>
             <p>L’endroit est super sympa. Ambiance détendue, locale, avec des gens qui traînent en groupe, qui jouent, qui dansent, qui boivent un coup. Ah oui, c’est assez surprenant au début mais à Berlin (et plus largement en Allemagne), on peut légalement boire de l’alcool dans la rue et dans les parcs.</p>
             <div className="article-tip">
@@ -220,7 +219,7 @@ export default function VisiterBerlinPage() {
             <p>Alors on se l’est jouée Berlinoises. On s’installe dans l’herbe du côté de James-Simon-Park et on profite du moment. De là, on a une vue plongeante sur l’île aux Musées.</p>
             <p>Pour l’histoire : l’île aux Musées est l’un des ensembles culturels les plus importants d’Europe. En gros, c’est une île sur la Spree où sont regroupés plusieurs grands musées historiques, construits entre le XIXe et le début du XXe siècle. Ce site est classé au patrimoine mondial de l’UNESCO. En résumé, c’est un concentré de culture et d’architecture au milieu de la rivière, en plein Berlin, mais on y reviendra plus tard.</p>
             <p>Vous l’aurez compris, cet endroit fait partie des incontournables. Le gros atout du lieu c’est l’ambiance mais aussi la vue. On a un très beau panorama sur la rivière, les péniches, et surtout sur la magnifique Berliner Dom qui s’illumine à la tombée de la nuit. Le Berliner Dom, c’est la grande cathédrale emblématique de Berlin, avec son immense dôme vert qu’on peut voir de loin. Ici, c’est clairement un spot idéal pour le coucher de soleil, alors on en profite. La lumière dorée sur l’île aux Musées, c’est magnifique.</p>
-            <h3>Retour à l’hôtel &amp; Currywurst</h3>
+            <h4>Retour à l’hôtel &amp; Currywurst</h4>
             <p>Le temps passe bien trop vite, il est déjà passé 22h. Après avoir bien profité du moment et du lieu, nous reprenons le chemin de l’hôtel à pied, en passant par un itinéraire différent, histoire de prolonger encore un peu la découverte.</p>
             <p>C’est incroyable, à Berlin, la vie ne s’arrête jamais vraiment. La ville reste animée à toute heure. La nuit offre une toute autre ambiance. Les restaurants et les bars restent ouverts tard, certains commerces tournent même quasiment en continu. On peut trouver de quoi grignoter, de l’alcool, du tabac… bref, tout ce qu’il faut pour prolonger la soirée sans contrainte. Une ville qui semble vivre au rythme de ceux qui ont envie de profiter jusqu’au bout de la nuit.</p>
             <p>Sur le retour, on passe devant une adresse incontournable pour goûter la Currywurst. C’est la spécialité street food emblématique de Berlin, un peu le « snack national » de la ville.</p>

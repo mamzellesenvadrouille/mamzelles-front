@@ -297,9 +297,6 @@
 
 .article-section h3 { font-family: "Cormorant Garamond", serif; font-size: 24px; font-weight: 600; color: var(--dark); margin: 32px 0 16px; }
 
-.article-berlin .article-section > h2 { font-family: "Cormorant Garamond", serif; font-size: 30px; font-weight: 600; color: var(--dark); margin: 44px 0 18px; padding-top: 28px; border-top: 1px solid rgba(200,149,108,0.25); }
-.article-berlin .article-section > h2:first-of-type { margin-top: 32px; }
-
 .article-section p { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 14px; }
 
 .article-section ul { padding-left: 20px; margin-bottom: 14px; }
