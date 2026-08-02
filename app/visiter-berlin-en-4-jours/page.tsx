@@ -224,6 +224,7 @@ export default function VisiterBerlinPage() {
             <p>Alors, on se la joue Berlinoises. On s’installe dans l’herbe du côté de <strong>James-Simon-Park</strong> et on profite du moment. De là, on a une vue plongeante sur l’<strong>île aux Musées</strong>.</p>
             <p><strong>Un peu d’histoire.</strong> L’île aux Musées est l’un des ensembles culturels les plus importants d’Europe. Plusieurs grands musées historiques y sont regroupés, construits entre le XIXe et le début du XXe siècle, sur une île entourée par la Spree. Le site est classé au patrimoine mondial de l’UNESCO.</p>
             <p>Vous l’aurez compris, cet endroit fait partie des incontournables. Le gros atout du lieu, c’est l’ambiance, mais aussi la vue. On a un très beau panorama sur la rivière, les péniches, et surtout sur la magnifique cathédrale qui s’illumine à la tombée de la nuit : le <strong>Berliner Dom</strong>, avec son immense dôme vert qu’on peut voir de loin. Ici, c’est clairement un spot idéal pour le coucher de soleil, alors on en profite. La lumière dorée sur l’île aux Musées, c’est magnifique !</p>
+            <h3>Retour à Prenzlauer Berg</h3>
             <h4>Petit détour par la Currywurst</h4>
             <p>Le temps passe bien trop vite, il est déjà passé 22h. Après avoir bien profité du moment, nous reprenons le chemin de l’hôtel à pied, par un itinéraire différent, histoire de prolonger encore un peu la découverte.</p>
             <p>On passe alors devant une adresse incontournable pour goûter la Currywurst, la spécialité street food emblématique de Berlin, un peu le « snack national » de la ville. Allez, on se laisse tenter !</p>
@@ -260,14 +261,15 @@ export default function VisiterBerlinPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Avant même d’y arriver, un détail attire notre attention : ces fameux tuyaux roses qui serpentent un peu partout, surgissant du sol de manière presque improbable. Nous découvrons qu’ils ne sont pas là par hasard ou pour faire beau. Berlin ayant été construite sur d’anciens marécages, ils servent à pomper les eaux souterraines afin d’éviter les infiltrations, notamment lors des travaux. Une curiosité urbaine devenue presque une signature visuelle de la ville.</p></div>
             </div>
-            <h3>Holzmarkt 25, le village bohème au bord de la Spree</h3>
+            <h3>Friedrichshain</h3>
+            <h4>Holzmarkt 25, le village bohème au bord de la Spree</h4>
             <p>À notre arrivée au Holzmarkt 25, on comprend rapidement pourquoi cet endroit est souvent décrit comme l’un des lieux les plus « Berlin » de Berlin. Installé au bord de la Spree, ce lieu à l’esprit bohème, alternatif et artistique dégage une atmosphère unique. On a presque l’impression d’avoir découvert un petit village caché, à mille lieues de l’agitation urbaine, alors que la ville continue de vibrer tout autour. On déambule entre les cabanes en bois, sous les guirlandes suspendues, entre les terrasses improvisées et ces nombreux petits endroits où s’installer tranquillement. Tout semble nous inviter à ralentir. Alors on ralentit. On prend une bière bien fraîche dans l’une de ces cabanes. On nous donne un jeton avec, car les bouteilles sont consignées. Tu ramènes ta bouteille, tu récupères 1 €. On s’installe au bord de l’eau et on profite du moment, presque les pieds dans l’eau. L’ambiance est décontractée, libre, sans artifices ni prise de tête. Côté food c’est simple et convivial : street food, pizzas, burgers, options veggie… Même si l’envie ne se fait pas sentir, on vous invite à passer voir les toilettes.</p>
-            <h3>East Side Gallery, le mur devenu galerie à ciel ouvert</h3>
+            <h4>East Side Gallery, le mur devenu galerie à ciel ouvert</h4>
             <p>Après ce moment suspendu, non loin d’ici, à environ 20 minutes en marchant tranquillement se trouve un lieu impossible à manquer quand on visite Berlin. La East Side Gallery. C’est en fait le plus long tronçon encore debout du mur de Berlin, transformé aujourd’hui en immense galerie d’art à ciel ouvert.</p>
             <p>Sur près d’1,3 kilomètre, des artistes du monde entier ont recouvert ce vestige de la séparation entre l’Est et l’Ouest avec des fresques colorées, engagées, parfois poétiques, parfois politiques. Ici, le béton chargé d’histoire est devenu un symbole de liberté et d’expression.</p>
             <p>Impossible de ne pas s’arrêter devant certaines œuvres devenues iconiques, comme le célèbre baiser entre dirigeants communistes, souvent surnommé le baiser fraternel, ou encore les peintures pleines d’espoir qui parlent d’un monde sans frontières.</p>
             <p>Ce qui marque surtout ici, c’est le contraste. D’un côté, des œuvres colorées, pleines de vie et de messages. De l’autre, on se rappelle qu’à cet endroit même, un mur séparait autrefois une ville entière, des familles et des proches pendant presque 30 ans. En longeant l’East Side Gallery, on passe entre art, mémoire et histoire.</p>
-            <h3>RAW-Gelände &amp; Oberbaumbrücke</h3>
+            <h4>RAW-Gelände &amp; Oberbaumbrücke</h4>
             <p>Nous continuons notre parcours découverte, et à même pas 15 minutes à pied de là, le RAW-Gelände. C’est un immense ancien site industriel reconverti, dans le quartier de Friedrichshain.</p>
             <p>À l’origine, c’était un ancien dépôt de réparation ferroviaire (Reichsbahnausbesserungswerk, d’où « RAW »). L’ambiance ici est volontairement un peu « chaotique Berlin » : industrielle, underground, arty, parfois un peu déjantée. Si vous venez comme nous en journée, vous pourrez y flâner pour voir les fresques, boire un verre ou passer dans certains espaces culturels. Le soir, apparemment c’est une toute autre ambiance. Le lieu se transforme davantage en spot de fête avec ses bars et ses clubs.</p>
             <div className="article-tip">
@@ -275,7 +277,8 @@ export default function VisiterBerlinPage() {
               <div><strong>Curiosité berlinoise</strong><p>Ici, on a découvert un truc assez sympa qui fait partie des curiosités berlinoises : les distributeurs de colis mystères. Pour quelques euros, on tente sa chance. Le concept est simple : acheter un colis non réclamé sans savoir ce qu’il contient. Entre chasse au trésor moderne et coup de chance, ces colis mystères attirent de nombreux curieux. Une idée originale et insolite qui reflète bien l’esprit créatif de Berlin.</p></div>
             </div>
             <p>Après ça et non loin de là, direction un pont iconique de Berlin, le Oberbaum Bridge (Oberbaumbrücke). C’est l’un des ponts les plus emblématiques de Berlin, reconnaissable à ses tours en briques rouges et son allure presque de château. Il relie les quartiers de Friedrichshain et Kreuzberg au-dessus de la Spree et symbolise aussi la réunification, puisqu’il marquait autrefois une frontière entre Berlin-Est et Berlin-Ouest.</p>
-            <h3>Kreuzberg, l’esprit rebelle</h3>
+            <h3>Kreuzberg</h3>
+            <h4>Esprit rebelle et street art</h4>
             <p>Nous traversons l’Oberbaum Bridge et nous poursuivons notre balade à pied jusqu’au cœur de Kreuzberg, l’un des quartiers emblématiques de Berlin. Ici, l’ambiance a quelque chose de particulier. C’est un mélange d’énergie alternative, de diversité culturelle et de créativité, avec ce petit côté rebelle qui fait tout son charme. Entre le street art (notamment le fameux astronaute), les terrasses animées et les façades parfois brutes, Kreuzberg dégage une vraie personnalité, entre esprit un peu punk et quartier devenu aujourd’hui très tendance.</p>
             <p>Après avoir déambulé dans le quartier, histoire de faire une petite pause, nous nous arrêtons boire un verre chez Südblock, un lieu bien vivant qui s’intègre parfaitement à l’atmosphère du quartier.</p>
             <div className="article-resto">
@@ -290,18 +293,22 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <h3>Tempelhofer Feld, l’ancien aéroport transformé en parc</h3>
+            <h3>Tempelhof-Schöneberg</h3>
+            <h4>Tempelhofer Feld, l’ancien aéroport transformé en parc</h4>
             <p>Pour le sunset, direction un endroit assez insolite. Un ancien aéroport transformé en immense parc public en plein Berlin. Tempelhofer Feld.</p>
             <p>L’ancien aéroport de Tempelhofer Feld se situe au sud du centre de Berlin, au cœur du quartier de Tempelhof-Schöneberg. Il faisait autrefois partie de l’énorme aéroport de Tempelhof, fermé en 2008. Depuis 2010, l’espace est ouvert au public et c’est devenu l’un des plus grands espaces urbains ouverts au monde, avec plus de 300 hectares.</p>
             <p>Depuis les stations Boddinstraße ou Leinestraße, l’entrée est juste à côté de la sortie. On entre dans le Tempelhofer Feld par son côté le plus sauvage. On suit un chemin à travers la forêt avant de déboucher sur l’immensité des anciennes pistes d’aviation.</p>
             <p>Ce qui est fou, c’est que les anciennes pistes d’atterrissage sont restées. On peut littéralement marcher dessus, faire du vélo, du roller ou s’asseoir au milieu d’une piste où des avions décollaient avant. Sur place vous trouverez également de quoi boire et manger.</p>
-            <h3>Klunkerkranich, le rooftop bohème</h3>
+            <h3>Neukölln</h3>
+            <h4>Klunkerkranich, le rooftop bohème</h4>
             <p>Pour terminer la soirée, on a choisi le rooftop Klunkerkranich, un spot très berlinois perché au-dessus d’un centre commercial à Neukölln. Et c’est justement ce contraste qui fait son charme. On prend l’ascenseur jusqu’en haut, on traverse un parking un peu banal, sans trop savoir à quoi s’attendre, puis après avoir emprunté l’ancienne rampe qui permettait aux voitures d’accéder au toit, on arrive dans un lieu presque caché, avec une vraie atmosphère à part.</p>
             <p>Ici, pas de rooftop ultra-luxueux ou trop lisse, l’ambiance est bohème, un peu arty, avec des plantes, des lumières suspendues, du mobilier récupéré, une voiture abandonnée dans laquelle on peut s’installer. L’énergie y est décontractée. Certains soirs, un DJ ou de la musique live accompagne le coucher du soleil, avec une jolie vue sur les toits de Berlin. Un endroit simple, vivant et authentique, parfait pour finir la journée dans une ambiance locale.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Petit point à savoir</strong><p>Il peut y avoir un peu d’attente au Klunkerkranich, surtout le week-end ou quand il fait beau.</p></div>
             </div>
+            <h3>Retour à Prenzlauer Berg</h3>
+            <h4>Les meilleurs burgers de Berlin</h4>
             <p>On prend la direction de l’hôtel, il n’est pas loin de minuit et comme la vie ici ne s’arrête jamais et qu’on n’a pas mangé, passage obligé par Burgermeister. Fondé en 2006, c’est l’adresse historique et la plus réputée pour les amateurs de burgers à Berlin. On se laisse tenter !</p>
             <p>L’adresse la plus connue mais aussi la plus touristique se trouve à Kreuzberg. Ce lieu emblématique se situe sous le pont de la ligne U1, dans d’anciennes toilettes publiques de 1920. Bon, on ne va pas retraverser Berlin. Par chance, il y en a un dans le quartier de Prenzlauer Berg, à quelques pas de notre hôtel Oderberger.</p>
             <p>On a goûté le burger signature, le Burgermeister. Du bœuf, des oignons grillés, du bacon, de la sauce barbecue et de la moutarde. Un délice ! On ne regrette pas de nous y être arrêtées.</p>
