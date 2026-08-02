@@ -275,8 +275,8 @@ export default function VisiterBerlinPage() {
               <span className="article-day-badge">Jour 2</span>
               <h2>Une journée dans l’âme de Berlin-Est : entre histoire, street art et contre-culture</h2>
             </div>
-            <p>Après une nuit bien méritée... Premier réveil et premier petit-déjeuner dans le magnifique hôtel Oderberger. Un buffet très complet, autant salé que sucré, de quoi prendre des forces avant d’arpenter cette ville qui nous réserve encore bien des surprises...</p>
-            <p>Direction l’Est de Berlin ! Ma femme nous avait organisé tout un programme, une vraie travel planner. Nous prenons le métro pour nous en approcher : premier spot à découvrir, le Holzmarkt 25.</p>
+            <p>Après une nuit bien méritée, premier réveil et premier petit-déjeuner dans le magnifique hôtel <strong>Oderberger</strong>. Un buffet très complet, autant salé que sucré, de quoi prendre des forces avant d’arpenter cette ville qui nous réserve encore bien des surprises...</p>
+            <p>Direction l’<strong>Est de Berlin</strong> ! Ma femme nous avait organisé tout un programme, une vraie travel planner. Nous prenons le métro pour nous y rendre : premier spot à découvrir, le <strong>Holzmarkt 25</strong>.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Avant même d’y arriver, un détail attire notre attention : ces fameux tuyaux roses qui serpentent un peu partout, surgissant du sol de manière presque improbable. Nous découvrons qu’ils ne sont pas là par hasard ou pour faire beau. Berlin ayant été construite sur d’anciens marécages, ils servent à pomper les eaux souterraines afin d’éviter les infiltrations, notamment lors des travaux. Une curiosité urbaine devenue presque une signature visuelle de la ville.</p></div>
