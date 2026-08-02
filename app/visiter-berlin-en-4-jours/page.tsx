@@ -272,11 +272,11 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name">Curry 61</p>
                   <p className="article-resto-sub">Currywurst culte · Mitte</p>
-                  <p>Une institution berlinoise, réputée pour sa Currywurst généreuse et sa version végane tout aussi bluffante. Idéal pour un dernier arrêt gourmand avant de rentrer.</p>
+                  <p>Une institution berlinoise, réputée pour sa Currywurst généreuse et sa version végane tout aussi bluffante. Idéal pour un petit creux, à n’importe quel moment de la journée.</p>
                 </div>
               </div>
             </div>
-            <p>C’est très simple : une saucisse coupée en morceaux, recouverte d’une sauce tomate-ketchup épicée au curry, souvent servie avec des frites ou un petit pain, le tout dans une barquette en carton à manger debout dans la rue. Ce n’est pas de la grande gastronomie, mais plutôt un rituel berlinois du quotidien, rapide, pas cher, et qui se trouve partout. Currywurst avalé et validé : un peu gras, mais efficace pour caler une petite faim.</p>
+            <p>C’est très simple : une saucisse coupée en morceaux, recouverte d’une sauce tomate-ketchup épicée au curry, souvent servie avec des frites ou un petit pain, le tout dans une barquette en carton à manger debout dans la rue. Ce n’est pas de la grande gastronomie, mais plutôt un rituel berlinois du quotidien, rapide, pas cher, et qui se trouve partout.</p>
             <h4>Retour à l’hôtel</h4>
             <p>C’est incroyable, à Berlin, la vie ne s’arrête jamais vraiment. La ville reste animée à toute heure. La nuit offre une toute autre ambiance. Les restaurants et les bars restent ouverts tard, certains commerces tournent même quasiment en continu. On peut trouver de quoi grignoter, de l’alcool, du tabac… bref, tout ce qu’il faut pour prolonger la soirée sans contrainte. Une ville qui semble vivre au rythme de ceux qui ont envie de profiter jusqu’au bout de la nuit.</p>
             <p>En ce qui nous concerne, il est temps d’aller se coucher après cette première journée bien chargée, mais déjà hâte d’être à demain !</p>
