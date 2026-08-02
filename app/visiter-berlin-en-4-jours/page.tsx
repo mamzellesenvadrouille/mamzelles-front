@@ -11,11 +11,11 @@ import Footer from '../components/Footer';
 export const metadata: Metadata = {
   title: "Visiter Berlin en 4 jours : itinéraire complet et bonnes adresses",
   description: "Que faire à Berlin en 4 jours ? Prenzlauer Berg, East Side Gallery, Kreuzberg, Teufelsberg… notre itinéraire complet avec toutes nos adresses et bons plans.",
-  alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-berlin-4-jours' },
+  alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-berlin-en-4-jours' },
   openGraph: {
     title: "Visiter Berlin en 4 jours : itinéraire complet et bonnes adresses",
     description: "Notre itinéraire complet pour visiter Berlin en 4 jours, entre mémoire, histoire, street art et contre-culture, avec tous nos bons plans pratiques.",
-    url: 'https://mamzellesenvadrouille.com/visiter-berlin-4-jours',
+    url: 'https://mamzellesenvadrouille.com/visiter-berlin-en-4-jours',
     siteName: 'MamZelles en vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/Berlin.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
@@ -48,7 +48,7 @@ export default function VisiterBerlinPage() {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://mamzellesenvadrouille.com/visiter-berlin-4-jours',
+      '@id': 'https://mamzellesenvadrouille.com/visiter-berlin-en-4-jours',
     },
   };
 
@@ -66,9 +66,9 @@ export default function VisiterBerlinPage() {
         <img className="hero-bg" src="/Berlin.webp" alt="Visiter Berlin en 4 jours" style={{objectPosition: 'center 43%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>Berlin<br /><em>Entre mémoire et liberté</em></h1>
+          <h1>4 jours à Berlin<br /><em>Entre mémoire, liberté et contre-culture</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Quatre jours, trois nuits, pour se laisser<br className="desktop-only-br" /> surprendre par une capitale hors normes.</p>
+          <p className="hero-desc">Une capitale libre, brute et vibrante qui bouscule<br className="desktop-only-br" /> toutes les idées reçues. Notre itinéraire complet, jour par jour.</p>
         </div>
       </section>
 
@@ -78,7 +78,7 @@ export default function VisiterBerlinPage() {
       <div className="article-bref-bar">
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <span>4 jours, 3 nuits</span>
+          <span>4 jours</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -582,7 +582,7 @@ export default function VisiterBerlinPage() {
             <CommentsList comments={[]} />
             <CommentForm
               articleTitle={"Visiter Berlin en 4 jours : itinéraire complet et bonnes adresses"}
-              articleUrl="https://mamzellesenvadrouille.com/visiter-berlin-4-jours"
+              articleUrl="https://mamzellesenvadrouille.com/visiter-berlin-en-4-jours"
             />
           </section>
 
