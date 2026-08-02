@@ -201,6 +201,19 @@ export default function VisiterBerlinPage() {
             <p>Non loin de là, nous prenons la direction du <strong>Wasserturm</strong>, le <strong>plus ancien château d’eau</strong> de Berlin, construit au XIXe siècle. Véritable symbole du quartier, il veille sur les jolies rues résidentielles environnantes et apporte une ambiance plus calme, presque village, au cœur de la ville. Juste derrière, se trouve un petit parc. Comme des gosses, un petit tour de tourniquet et c’est reparti !</p>
             <h4>Pause douceur à Kollwitzplatz</h4>
             <p>Nous poursuivons ensuite vers <strong>Kollwitzplatz</strong>, une charmante place au cœur de Prenzlauer Berg. Ici, l’ambiance est plus douce. C’est une place arborée, bordée de jolies façades, avec des terrasses pleines de vie et un petit parc où traînent familles et Berlinois. On découvre ici un Berlin plus calme, presque un esprit de village au cœur de la ville. Attention, allergiques s’abstenir... On a rarement vu autant de pollen au mètre carré qu’ici !</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3, S5, S7 ou S9 jusqu’à la station Hackescher Markt.</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U8 jusqu’à la station Weinmeisterstraße.</p></div>
+                </div>
+              </div>
+            </div>
             <h3>Mitte</h3>
             <h4>Haus Schwarzenberg, l’esprit alternatif</h4>
             <p>En descendant vers le centre-ville, nous tombons sur <strong>Haus Schwarzenberg</strong>. Et là, changement total d’ambiance : une cour cachée derrière un porche discret, avec un petit bar sur la gauche. L’atmosphère est immédiatement plus alternative, très Berlin underground. Les murs sont couverts de street art, de graffitis, de collages.</p>
@@ -213,6 +226,19 @@ export default function VisiterBerlinPage() {
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À ne pas manquer</strong><p>En se promenant dans Berlin, on remarque parfois de petites plaques en laiton incrustées dans le sol, devant certaines maisons. Elles sont appelées <strong>Stolpersteine</strong>. C’est assez touchant de savoir qu’elles sont là pour rendre hommage aux victimes du nazisme ayant vécu à ces adresses avant d’être déportées ou persécutées. Sur chaque plaque figurent un nom, une date ainsi que quelques informations sur son destin. Une façon discrète mais profondément émouvante de faire vivre la mémoire, directement dans les rues de la ville. Elles sont présentes notamment à Prenzlauer Berg, à Mitte ou encore Kreuzberg et Charlottenburg.</p></div>
             </div>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U5 jusqu’à la station Museumsinsel.</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3, S5, S7 ou S9 jusqu’à la station Hackescher Markt.</p></div>
+                </div>
+              </div>
+            </div>
             <h3>L’île aux Musées</h3>
             <h4>Coucher de soleil sur la Spree</h4>
             <p>Nous sommes à quelques minutes à pied de <strong>James-Simon-Park</strong> et <strong>Monbijou Park</strong>. Ils sont côte à côte. Ces deux parcs sont au bord de la <strong>Spree</strong>, la rivière qui traverse Berlin.</p>
@@ -224,6 +250,15 @@ export default function VisiterBerlinPage() {
             <p>Alors, on se la joue Berlinoises. On s’installe dans l’herbe du côté de <strong>James-Simon-Park</strong> et on profite du moment. De là, on a une vue plongeante sur l’<strong>île aux Musées</strong>.</p>
             <p><strong>Un peu d’histoire.</strong> L’île aux Musées est l’un des ensembles culturels les plus importants d’Europe. Plusieurs grands musées historiques y sont regroupés, construits entre le XIXe et le début du XXe siècle, sur une île entourée par la Spree. Le site est classé au patrimoine mondial de l’UNESCO.</p>
             <p>Vous l’aurez compris, cet endroit fait partie des incontournables. Le gros atout du lieu, c’est l’ambiance, mais aussi la vue. On a un très beau panorama sur la rivière, les péniches, et surtout sur la magnifique cathédrale qui s’illumine à la tombée de la nuit : le <strong>Berliner Dom</strong>, avec son immense dôme vert qu’on peut voir de loin. Ici, c’est clairement un spot idéal pour le coucher de soleil, alors on en profite. La lumière dorée sur l’île aux Musées, c’est magnifique !</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U2 jusqu’à la station Eberswalder Straße.</p></div>
+                </div>
+              </div>
+            </div>
             <h3>Retour à Prenzlauer Berg</h3>
             <h4>Petit détour par la Currywurst</h4>
             <p>Le temps passe bien trop vite, il est déjà passé 22h. Après avoir bien profité du moment, nous reprenons le chemin de l’hôtel à pied, par un itinéraire différent, histoire de prolonger encore un peu la découverte.</p>
@@ -253,11 +288,24 @@ export default function VisiterBerlinPage() {
               <span className="article-day-badge">Jour 2</span>
               <h2>Une journée dans l’âme de Berlin-Est : entre histoire, street art et contre-culture</h2>
             </div>
-            <p>Premier réveil et premier petit-déjeuner dans le magnifique hôtel Oderberger. Un buffet très complet, autant salé que sucré, de quoi prendre des forces avant d’arpenter cette ville qui nous réserve encore bien des surprises...</p>
+            <p>Après une nuit bien méritée... Premier réveil et premier petit-déjeuner dans le magnifique hôtel Oderberger. Un buffet très complet, autant salé que sucré, de quoi prendre des forces avant d’arpenter cette ville qui nous réserve encore bien des surprises...</p>
             <p>Direction l’Est de Berlin ! Ma femme nous avait organisé tout un programme, une vraie travel planner. Nous prenons le métro pour nous en approcher : premier spot à découvrir, le Holzmarkt 25.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Avant même d’y arriver, un détail attire notre attention : ces fameux tuyaux roses qui serpentent un peu partout, surgissant du sol de manière presque improbable. Nous découvrons qu’ils ne sont pas là par hasard ou pour faire beau. Berlin ayant été construite sur d’anciens marécages, ils servent à pomper les eaux souterraines afin d’éviter les infiltrations, notamment lors des travaux. Une curiosité urbaine devenue presque une signature visuelle de la ville.</p></div>
+            </div>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3, S5, S7 ou S9 jusqu’à la station Ostbahnhof.</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U1 jusqu’à la station Warschauer Straße.</p></div>
+                </div>
+              </div>
             </div>
             <h3>Friedrichshain</h3>
             <h4>Holzmarkt 25, le village bohème au bord de la Spree</h4>
@@ -275,6 +323,15 @@ export default function VisiterBerlinPage() {
               <div><strong>Curiosité berlinoise</strong><p>Ici, on a découvert un truc assez sympa qui fait partie des curiosités berlinoises : les distributeurs de colis mystères. Pour quelques euros, on tente sa chance. Le concept est simple : acheter un colis non réclamé sans savoir ce qu’il contient. Entre chasse au trésor moderne et coup de chance, ces colis mystères attirent de nombreux curieux. Une idée originale et insolite qui reflète bien l’esprit créatif de Berlin.</p></div>
             </div>
             <p>Après ça et non loin de là, direction un pont iconique de Berlin, le Oberbaum Bridge (Oberbaumbrücke). C’est l’un des ponts les plus emblématiques de Berlin, reconnaissable à ses tours en briques rouges et son allure presque de château. Il relie les quartiers de Friedrichshain et Kreuzberg au-dessus de la Spree et symbolise aussi la réunification, puisqu’il marquait autrefois une frontière entre Berlin-Est et Berlin-Ouest.</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Lignes U1, U3 ou U8 jusqu’à la station Kottbusser Tor.</p></div>
+                </div>
+              </div>
+            </div>
             <h3>Kreuzberg</h3>
             <h4>Esprit rebelle et street art</h4>
             <p>Nous traversons l’Oberbaum Bridge et nous poursuivons notre balade à pied jusqu’au cœur de Kreuzberg, l’un des quartiers emblématiques de Berlin. Ici, l’ambiance a quelque chose de particulier. C’est un mélange d’énergie alternative, de diversité culturelle et de créativité, avec ce petit côté rebelle qui fait tout son charme. Entre le street art (notamment le fameux astronaute), les terrasses animées et les façades parfois brutes, Kreuzberg dégage une vraie personnalité, entre esprit un peu punk et quartier devenu aujourd’hui très tendance.</p>
@@ -291,12 +348,30 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U8 jusqu’à la station Boddinstraße ou Leinestraße.</p></div>
+                </div>
+              </div>
+            </div>
             <h3>Tempelhof-Schöneberg</h3>
             <h4>Tempelhofer Feld, l’ancien aéroport transformé en parc</h4>
             <p>Pour le sunset, direction un endroit assez insolite. Un ancien aéroport transformé en immense parc public en plein Berlin. Tempelhofer Feld.</p>
             <p>L’ancien aéroport de Tempelhofer Feld se situe au sud du centre de Berlin, au cœur du quartier de Tempelhof-Schöneberg. Il faisait autrefois partie de l’énorme aéroport de Tempelhof, fermé en 2008. Depuis 2010, l’espace est ouvert au public et c’est devenu l’un des plus grands espaces urbains ouverts au monde, avec plus de 300 hectares.</p>
             <p>Depuis les stations Boddinstraße ou Leinestraße, l’entrée est juste à côté de la sortie. On entre dans le Tempelhofer Feld par son côté le plus sauvage. On suit un chemin à travers la forêt avant de déboucher sur l’immensité des anciennes pistes d’aviation.</p>
             <p>Ce qui est fou, c’est que les anciennes pistes d’atterrissage sont restées. On peut littéralement marcher dessus, faire du vélo, du roller ou s’asseoir au milieu d’une piste où des avions décollaient avant. Sur place vous trouverez également de quoi boire et manger.</p>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U7 jusqu’à la station Rathaus Neukölln.</p></div>
+                </div>
+              </div>
+            </div>
             <h3>Neukölln</h3>
             <h4>Klunkerkranich, le rooftop bohème</h4>
             <p>Pour terminer la soirée, on a choisi le rooftop Klunkerkranich, un spot très berlinois perché au-dessus d’un centre commercial à Neukölln. Et c’est justement ce contraste qui fait son charme. On prend l’ascenseur jusqu’en haut, on traverse un parking un peu banal, sans trop savoir à quoi s’attendre, puis après avoir emprunté l’ancienne rampe qui permettait aux voitures d’accéder au toit, on arrive dans un lieu presque caché, avec une vraie atmosphère à part.</p>
@@ -304,6 +379,15 @@ export default function VisiterBerlinPage() {
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Petit point à savoir</strong><p>Il peut y avoir un peu d’attente au Klunkerkranich, surtout le week-end ou quand il fait beau.</p></div>
+            </div>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U2 jusqu’à la station Eberswalder Straße.</p></div>
+                </div>
+              </div>
             </div>
             <h3>Retour à Prenzlauer Berg</h3>
             <h4>Les meilleurs burgers de Berlin</h4>
@@ -319,19 +403,6 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name">Burgermeister</p>
                   <p className="article-resto-sub">Adresse historique · Prenzlauer Berg</p>
-                </div>
-              </div>
-            </div>
-            <div className="article-rendre">
-              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
-              <div className="article-rendre-timeline">
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Métro</span><p>Prenez le U-Bahn depuis Prenzlauer Berg pour vous rapprocher du Holzmarkt 25 et de l’East Side Gallery.</p></div>
-                </div>
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Tempelhofer Feld</span><p>Stations Boddinstraße ou Leinestraße, l’entrée est juste à côté de la sortie.</p></div>
                 </div>
               </div>
             </div>
