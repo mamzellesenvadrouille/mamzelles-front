@@ -108,7 +108,7 @@ export default function VisiterBerlinPage() {
           <span className="article-cdcr-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="#c8956c" stroke="#c8956c" strokeWidth="1"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
           </span>
-          <h2>Pourquoi on adore Berlin</h2>
+          <h2>Pourquoi nous avons adoré Berlin</h2>
         </div>
         <div className="article-cdcr-grid">
           <div className="article-cdcr-item"><span className="article-cdcr-label">Notre quartier coup de cœur</span><span className="article-cdcr-value">→ Prenzlauer Berg</span></div>
