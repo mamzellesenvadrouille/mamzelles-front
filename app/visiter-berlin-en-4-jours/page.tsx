@@ -171,7 +171,7 @@ export default function VisiterBerlinPage() {
             </div>
             <p>Kebab avalé, nous poursuivons notre chemin vers l’hôtel.</p>
             <p><strong>Prenzlauer Berg</strong> est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
-            <p>Aujourd’hui, il est considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve un mélange assez réussi entre ambiance locale et vie de quartier : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
+            <p>Aujourd’hui, il est considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve une ambiance locale et une vie de quartier authentiques : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
             <h4>Hôtel Oderberger, un ancien bain public transformé</h4>
             <p>Wouahou… Mon Amour, c’est là qu’on va dormir ?</p>
             <p>En arrivant devant l’hôtel, on est tout de suite surprises par le bâtiment. La façade de l’Oderberger a beaucoup de charme, avec son style ancien et son côté presque hors du temps. Un charme berlinois un peu brut mais raffiné à la fois. On sent immédiatement le cachet du lieu et l’histoire qui l’accompagne.</p>
