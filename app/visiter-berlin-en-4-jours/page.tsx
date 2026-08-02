@@ -152,19 +152,6 @@ export default function VisiterBerlinPage() {
             <p>Une fois arrivées à l’aéroport de Berlin, il faut encore rejoindre le centre-ville. Direction le terminal 1 pour prendre le train <strong>S-Bahn</strong> vers la gare centrale, la <strong>Hauptbahnhof (HBF)</strong>. Comptez 5 € par personne pour un ticket valable deux heures, largement suffisant pour rejoindre le centre.</p>
             <p>À ce moment-là, je me laisse complètement porter, je ne sais absolument pas où nous allons. Ma femme me laisse simplement entendre qu’elle nous a réservé un petit hôtel. En sortant de la gare côté Europaplatz, nous prenons le tram M10, qui se trouve juste en face (S+U Berlin Hauptbahnhof), direction U Eberswalder Straße, le nord-est de Berlin.</p>
             <p>En sortant du tram, dans ce quartier, on est tout de suite plongées dans l’ambiance. Il y a du monde partout, des vélos, des trams, des bus qui passent sans arrêt… ça bouge dans tous les sens. On ressent immédiatement l’énergie de Berlin !</p>
-            <div className="article-rendre">
-              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
-              <div className="article-rendre-timeline">
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Depuis le terminal 1 de l’aéroport, jusqu’à la station Hauptbahnhof (5 € / pers., ticket valable 2 h).</p></div>
-                </div>
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Tram</span><p>Ligne M10 depuis Europaplatz, jusqu’à la station Eberswalder Straße.</p></div>
-                </div>
-              </div>
-            </div>
             <h3>Prenzlauer Berg</h3>
             <p><strong>Prenzlauer Berg</strong> est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
             <p>Aujourd’hui, il est considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve une ambiance locale et une vie de quartier authentiques : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
@@ -219,11 +206,7 @@ export default function VisiterBerlinPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3, S5, S7 ou S9 jusqu’à la station Hackescher Markt.</p></div>
-                </div>
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U8 jusqu’à la station Weinmeisterstraße.</p></div>
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U2 jusqu’à la station Eberswalder Straße.</p></div>
                 </div>
               </div>
             </div>
@@ -244,11 +227,11 @@ export default function VisiterBerlinPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U5 jusqu’à la station Museumsinsel.</p></div>
+                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3, S5, S7 ou S9 jusqu’à la station Hackescher Markt.</p></div>
                 </div>
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3, S5, S7 ou S9 jusqu’à la station Hackescher Markt.</p></div>
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U8 jusqu’à la station Weinmeisterstraße.</p></div>
                 </div>
               </div>
             </div>
@@ -268,7 +251,11 @@ export default function VisiterBerlinPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U2 jusqu’à la station Eberswalder Straße.</p></div>
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U5 jusqu’à la station Museumsinsel.</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3, S5, S7 ou S9 jusqu’à la station Hackescher Markt.</p></div>
                 </div>
               </div>
             </div>
@@ -294,19 +281,6 @@ export default function VisiterBerlinPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Avant même d’y arriver, un détail attire notre attention : ces fameux tuyaux roses qui serpentent un peu partout, surgissant du sol de manière presque improbable. Nous découvrons qu’ils ne sont pas là par hasard ou pour faire beau. Berlin ayant été construite sur d’anciens marécages, ils servent à pomper les eaux souterraines afin d’éviter les infiltrations, notamment lors des travaux. Une curiosité urbaine devenue presque une signature visuelle de la ville.</p></div>
             </div>
-            <div className="article-rendre">
-              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
-              <div className="article-rendre-timeline">
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3, S5, S7 ou S9 jusqu’à la station Ostbahnhof.</p></div>
-                </div>
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U1 jusqu’à la station Warschauer Straße.</p></div>
-                </div>
-              </div>
-            </div>
             <h3>Friedrichshain</h3>
             <h4>Holzmarkt 25, le village bohème au bord de la Spree</h4>
             <p>On comprend rapidement pourquoi cet endroit est souvent décrit comme l’un des lieux les plus « Berlin » de Berlin. Installé au bord de la Spree, ce lieu à l’esprit bohème, alternatif et artistique dégage une atmosphère unique. On a presque l’impression d’avoir découvert un petit village caché, à mille lieues de l’agitation urbaine, alors que la ville continue de vibrer tout autour. On déambule entre les cabanes en bois, sous les guirlandes suspendues, entre les terrasses improvisées et ces nombreux petits endroits où s’installer tranquillement. Tout semble nous inviter à ralentir. Alors on ralentit. On prend une bière bien fraîche dans l’une de ces cabanes. On nous donne un jeton avec, car les bouteilles sont consignées. Tu ramènes ta bouteille, tu récupères 1 €. On s’installe au bord de l’eau et on profite du moment, presque les pieds dans l’eau. L’ambiance est décontractée, libre, sans artifices ni prise de tête. Côté food c’est simple et convivial : street food, pizzas, burgers, options veggie… Même si l’envie ne se fait pas sentir, on vous invite à passer voir les toilettes.</p>
@@ -328,7 +302,11 @@ export default function VisiterBerlinPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Lignes U1, U3 ou U8 jusqu’à la station Kottbusser Tor.</p></div>
+                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3, S5, S7 ou S9 jusqu’à la station Ostbahnhof.</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U1 jusqu’à la station Warschauer Straße.</p></div>
                 </div>
               </div>
             </div>
@@ -353,7 +331,7 @@ export default function VisiterBerlinPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U8 jusqu’à la station Boddinstraße ou Leinestraße.</p></div>
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Lignes U1, U3 ou U8 jusqu’à la station Kottbusser Tor.</p></div>
                 </div>
               </div>
             </div>
@@ -368,7 +346,7 @@ export default function VisiterBerlinPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U7 jusqu’à la station Rathaus Neukölln.</p></div>
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U8 jusqu’à la station Boddinstraße ou Leinestraße.</p></div>
                 </div>
               </div>
             </div>
@@ -385,7 +363,7 @@ export default function VisiterBerlinPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U2 jusqu’à la station Eberswalder Straße.</p></div>
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U7 jusqu’à la station Rathaus Neukölln.</p></div>
                 </div>
               </div>
             </div>
