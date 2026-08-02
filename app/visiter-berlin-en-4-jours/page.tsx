@@ -262,7 +262,20 @@ export default function VisiterBerlinPage() {
             <h3>Retour à Prenzlauer Berg</h3>
             <h4>Petit détour par la Currywurst</h4>
             <p>Le temps passe bien trop vite, il est déjà passé 22h. Après avoir bien profité du moment, nous reprenons le chemin de l’hôtel à pied, par un itinéraire différent, histoire de prolonger encore un peu la découverte.</p>
-            <p>On passe alors devant une adresse incontournable pour goûter la Currywurst, la spécialité street food emblématique de Berlin, un peu le « snack national » de la ville. Allez, on se laisse tenter !</p>
+            <p>On passe alors devant <strong>Curry 61</strong>, une adresse incontournable pour goûter la Currywurst, la spécialité street food emblématique de Berlin, un peu le « snack national » de la ville. Allez, on se laisse tenter !</p>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
+                  <span className="article-resto-tag">Street-food</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name">Curry 61</p>
+                  <p className="article-resto-sub">Currywurst culte · Mitte</p>
+                  <p>Une institution berlinoise, réputée pour sa Currywurst généreuse et sa version végane tout aussi bluffante. Idéal pour un dernier arrêt gourmand avant de rentrer.</p>
+                </div>
+              </div>
+            </div>
             <p>C’est très simple : une saucisse coupée en morceaux, recouverte d’une sauce tomate-ketchup épicée au curry, souvent servie avec des frites ou un petit pain, le tout dans une barquette en carton à manger debout dans la rue. Ce n’est pas de la grande gastronomie, mais plutôt un rituel berlinois du quotidien, rapide, pas cher, et qui se trouve partout. Currywurst avalé et validé : un peu gras, mais efficace pour caler une petite faim.</p>
             <h4>Retour à l’hôtel</h4>
             <p>C’est incroyable, à Berlin, la vie ne s’arrête jamais vraiment. La ville reste animée à toute heure. La nuit offre une toute autre ambiance. Les restaurants et les bars restent ouverts tard, certains commerces tournent même quasiment en continu. On peut trouver de quoi grignoter, de l’alcool, du tabac… bref, tout ce qu’il faut pour prolonger la soirée sans contrainte. Une ville qui semble vivre au rythme de ceux qui ont envie de profiter jusqu’au bout de la nuit.</p>
