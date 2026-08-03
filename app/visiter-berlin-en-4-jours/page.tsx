@@ -396,12 +396,11 @@ export default function VisiterBerlinPage() {
             <h3>Retour à Prenzlauer Berg</h3>
             <h4>Burgermeister, la référence burger de Berlin</h4>
             <p>On prend la direction de l’hôtel, il n’est pas loin de minuit et comme la vie ici ne s’arrête jamais et qu’on n’a pas mangé, passage obligé par <strong>Burgermeister</strong>. Fondé en 2006, c’est l’adresse historique et la plus réputée pour les amateurs de burgers à Berlin. On se laisse tenter !</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>L’adresse la plus connue mais aussi la plus touristique se trouve à Kreuzberg. Ce lieu emblématique se situe sous le pont de la ligne U1, dans d’anciennes toilettes publiques de 1920.</p></div>
+            <p>On a goûté le burger signature, le Burgermeister. Du bœuf, des oignons grillés, du bacon, de la sauce barbecue et de la moutarde. Un délice ! On ne regrette pas de nous y être arrêtées.</p>
+            <div className="article-must">
+              <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
+              <div><strong>À ne pas manquer</strong><p>L’adresse la plus connue mais aussi la plus touristique se trouve à Kreuzberg. Ce lieu emblématique se situe sous le pont de la ligne U1, dans d’anciennes toilettes publiques de 1920.</p></div>
             </div>
-            <p>Bon, on ne va pas retraverser Berlin. Par chance, il y en a un dans le quartier de <strong>Prenzlauer Berg</strong>, à quelques pas de notre hôtel <strong>Oderberger</strong>.</p>
-            <p>On a goûté le burger signature, le <strong>Burgermeister</strong>. Du bœuf, des oignons grillés, du bacon, de la sauce barbecue et de la moutarde. Un délice ! On ne regrette pas de nous y être arrêtées.</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
