@@ -525,7 +525,7 @@ export default function VisiterBerlinPage() {
             <h4>Club der Visionäre, l’institution berlinoise</h4>
             <p>Nous prenons la direction de Kreuzberg pour nous rendre au <strong>Club der Visionäre</strong>, l’un des clubs les plus réputés de la ville. Il se trouve à seulement quelques minutes à pied de la gare Schlesisches Tor. Pour y entrer, comptez généralement entre 5 et 10 € (cela dépend de la programmation). Pour nous ce soir, c’est 8 € par personne. Un petit tampon sur la main et c’est parti !</p>
             <p>L’endroit est très sympa. Ce club à ciel ouvert se situe au bord du canal du <strong>Flutgraben</strong>. L’ambiance y est décontractée et le cadre est trop joli. Nous sommes sur une grande terrasse en bois qui surplombe le canal. Ici, les personnes viennent autant pour écouter de la bonne musique que pour profiter d’un verre entre amis. House, minimal et techno rythment la journée et la soirée, dans une atmosphère plus intimiste que celle des grands clubs berlinois. Ici pas de prise de tête, les gens veulent juste se détendre, danser et faire la fête.</p>
-            <p>Pour info, pas de photo, c’est interdit. Niveau hydratation, vous trouverez sur place un bar proposant bières, cocktails et boissons fraîches. Il y a également une pizzeria sur place si une petite faim se fait sentir.</p>
+            <p>Pour info, pas de photo, c’est interdit. Niveau hydratation, vous trouverez sur place un bar proposant bières, cocktails et boissons fraîches. Il y a également une pizzeria si une petite faim se fait sentir.</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
