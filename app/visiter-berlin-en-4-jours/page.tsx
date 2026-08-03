@@ -507,16 +507,18 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h3>Kreuzberg</h3>
-            <p>Pour notre dernière soirée, notre dernière nuit, on a décidé de jouer les prolongations et d’en profiter à fond. Après une journée bien chargée, une bonne marche en forêt en fin de journée, retour express à l’hôtel pour se changer avant de partir en quête d’un resto. Même à 23h, la ville vit encore à 100 à l’heure. On a jeté notre dévolu sur Pasta &amp; Passione, un petit établissement à deux pas de notre hôtel. Si vous y passez, testez leurs gnocchis maison, ils sont délicieux.</p>
+            <p>Pour notre dernière soirée, notre dernière nuit, on a décidé de jouer les prolongations et d’en profiter à fond. Après une journée bien chargée, une bonne marche en forêt en fin de journée, retour express à l’hôtel pour se changer avant de partir en quête d’un resto.</p>
+            <p>Même à 23h, la ville vit encore à 100 à l’heure. On a jeté notre dévolu sur Pasta &amp; Passione, un petit établissement à deux pas de notre hôtel. Si vous y passez, testez leurs gnocchis maison, ils sont délicieux.</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour dîner</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
                   <span className="article-resto-tag">Italien</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Pasta &amp; Passione</p>
                   <p className="article-resto-sub">Restaurant italien · Prenzlauer Berg</p>
+                  <p>Une cuisine italienne simple dans un cadre chaleureux. Les pâtes sont faites maison chaque jour, et les portions sont généreuses.</p>
                 </div>
               </div>
             </div>
