@@ -395,7 +395,7 @@ export default function VisiterBerlinPage() {
             </div>
             <h3>Retour à Prenzlauer Berg</h3>
             <h4>Burgermeister, la référence burger de Berlin</h4>
-            <p>On prend la direction de l’hôtel, il n’est pas loin de minuit et comme la vie ici ne s’arrête jamais et qu’on n’a pas mangé, passage obligé par <strong>Burgermeister</strong>. Fondé en 2006, c’est l’adresse historique et la plus réputée pour les amateurs de burgers à Berlin. On se laisse tenter !</p>
+            <p>On prend la direction de l’hôtel, il n’est pas loin de minuit. Mais à Berlin, la vie ne s’arrête jamais, et comme on n’a pas mangé, passage obligé par <strong>Burgermeister</strong>. Fondé en 2006, c’est l’adresse historique et la plus réputée pour les amateurs de burgers à Berlin. On se laisse tenter !</p>
             <p>On a goûté le burger signature, le Burgermeister. Du bœuf, des oignons grillés, du bacon, de la sauce barbecue et de la moutarde. Un délice ! On ne regrette pas de nous y être arrêtées.</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
