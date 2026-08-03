@@ -457,19 +457,21 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h3>Le quartier du gouvernement</h3>
-            <h4>Porte de Brandebourg &amp; Reichstag</h4>
+            <h4>Porte de Brandebourg</h4>
             <p>Nous continuons notre balade et nous voici arrivées à la <strong>Porte de Brandebourg</strong>, symbole de Berlin et de l’Allemagne réunifiée. Cette ancienne porte monumentale a traversé les époques, de la division de Berlin à la chute du Mur. Aujourd’hui, elle accueille les visiteurs au rythme des musiciens et des animations de rue.</p>
             <p>Depuis le début de notre parcours, et jusqu’ici, il faut compter une bonne quarantaine de minutes, sans compter les stops contemplation-photos, et faut dire qu’il y en a pas mal !</p>
+            <h4>Reichstag</h4>
             <p>Après avoir admiré la Porte de Brandebourg, il suffit de quelques minutes à pied pour rejoindre le Bâtiment du <strong>Reichstag</strong>, siège du Parlement allemand.</p>
             <p>Derrière sa façade historique se cache une impressionnante coupole de verre qui est devenue l’un des symboles de Berlin. Détruit puis reconstruit au fil des événements qui ont marqué l’histoire de l’Allemagne, le bâtiment représente aujourd’hui la démocratie allemande. Nous n’avons pas visité le bâtiment mais apparemment la vue depuis la coupole offre un magnifique panorama sur la ville.</p>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-              <div><strong>Le conseil des MamZelles</strong><p>La visite du Reichstag est gratuite, mais la réservation est obligatoire, aucune visite spontanée n’est possible. Réservez au moins 2 à 3 semaines à l’avance (encore plus en été), muni d’une pièce d’identité qui devra correspondre exactement à celle enregistrée en ligne. Si vous n’avez pas réservé, un guichet sur place (à 150 m du Reichstag) propose parfois des créneaux de dernière minute, selon les disponibilités.</p></div>
+              <div><strong>Le conseil des MamZelles</strong><p>La visite du Reichstag est gratuite, mais la réservation est obligatoire. Réservez au moins 2 à 3 semaines à l’avance (encore plus en été), muni d’une pièce d’identité qui devra correspondre exactement à celle enregistrée en ligne. Si vous n’avez pas réservé, un guichet sur place (à 150 m du Reichstag) propose parfois des créneaux de dernière minute, selon les disponibilités.</p></div>
             </div>
             <h4>Mémorial de l’Holocauste</h4>
-            <p>Après notre visite du Reichstag, nous avons poursuivi notre découverte de Berlin en nous rendant au Mémorial de l’Holocauste, situé à seulement quelques minutes de marche. Ce lieu de mémoire impressionne par son immensité. 2 711 stèles de béton de différentes hauteurs s’étendent sur une immense place, formant un véritable labyrinthe. En s’aventurant au milieu, le bruit de la ville s’efface peu à peu, ce qui laisse place à une atmosphère particulière. On se sent toutes petites, un peu perturbées et émues à la fois. Conçu en hommage aux millions de Juifs victimes du génocide nazi, ce mémorial invite naturellement au recueillement et à la réflexion.</p>
-            <h4>Topographie de la Terreur</h4>
+            <p>Après notre visite du Reichstag, nous avons poursuivi notre découverte de Berlin en nous rendant au Mémorial de l’Holocauste, situé à seulement quelques minutes de marche. Ce lieu de mémoire impressionne par son immensité. 2 711 stèles de béton de différentes hauteurs s’étendent sur une immense place, formant un véritable labyrinthe.</p>
+            <p>En s’aventurant au milieu, le bruit de la ville s’efface peu à peu, ce qui laisse place à une atmosphère particulière. On se sent toutes petites, un peu perturbées et émues à la fois. Conçu en hommage aux millions de Juifs victimes du génocide nazi, ce mémorial invite naturellement au recueillement et à la réflexion.</p>
             <p>C’est un peu déboussolées que nous quittons cet endroit, direction Topography of Terror qui se trouve à environ 10 minutes de marche d’ici.</p>
+            <h4>Topographie de la Terreur</h4>
             <p>Le premier élément marquant du site qu’on voit directement en arrivant, c’est l’un des plus longs vestiges encore visibles du Mur de Berlin.</p>
             <p>La Topographie de la Terreur est un lieu qui permet de mieux comprendre l’histoire de l’Allemagne sous le régime nazi. (Encore faut-il être doué en anglais.) Installé sur le site des anciens quartiers généraux de la Gestapo et des SS, ce centre de documentation présente de nombreuses photos, archives et témoignages. Une visite passionnante, un peu bouleversante, qui aide à mieux comprendre cette période de l’histoire et ses conséquences sur Berlin et l’Europe.</p>
             <div className="article-rendre">
