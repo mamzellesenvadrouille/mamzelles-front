@@ -380,7 +380,7 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name">Klunkerkranich</p>
                   <p className="article-resto-sub">Rooftop bohème · Neukölln</p>
-                  <p>Un rooftop planté de guirlandes et de mobilier récupéré, pour un coucher de soleil sur les toits de Berlin. Prévoyez un peu d’attente, surtout le week-end ou quand il fait beau.</p>
+                  <p>Comptez une petite entrée de 3 à 5 € en soirée (souvent gratuit plus tôt dans la journée), et prévoyez un peu d’attente, surtout le week-end ou quand il fait beau.</p>
                 </div>
               </div>
             </div>
