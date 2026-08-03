@@ -220,7 +220,7 @@ export default function VisiterBerlinPage() {
             <p>Le quartier est surtout connu pour les <strong>Hackesche Höfe</strong>. Bon, on ne va pas vous le cacher, on les a loupées. C’est en rédigeant cet article qu’on a découvert leur existence. C’est un ensemble de cours intérieures restaurées parmi les plus belles de la ville. Derrière les façades discrètes se cacheraient des galeries d’art, des ateliers, des boutiques originales et de charmants cafés. En même temps, il y a tellement de choses à voir à Berlin !</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>En se promenant dans Berlin, on remarque parfois de petites plaques en laiton incrustées dans le sol, devant certaines maisons. Elles sont appelées <strong>Stolpersteine</strong>. C’est assez touchant de savoir qu’elles sont là pour rendre hommage aux victimes du nazisme ayant vécu à ces adresses avant d’être déportées ou persécutées. Sur chaque plaque figurent un nom, une date ainsi que quelques informations sur son destin. Une façon discrète mais profondément émouvante de faire vivre la mémoire, directement dans les rues de la ville. Elles sont présentes notamment à Prenzlauer Berg, à Mitte ou encore Kreuzberg et Charlottenburg.</p></div>
+              <div><strong>À ne pas manquer</strong><p>En se promenant dans Berlin, on remarque parfois de petites plaques en laiton incrustées dans le sol, devant certaines maisons. Elles sont appelées <strong>Stolpersteine</strong>. C’est assez touchant de savoir qu’elles sont là pour rendre hommage aux victimes du nazisme ayant vécu à ces adresses avant d’être déportées ou persécutées. Sur chaque plaque figurent un nom, une date ainsi que quelques informations sur son destin. Une façon discrète mais profondément émouvante de faire vivre la mémoire, directement dans les rues de la ville. Elles sont présentes notamment à Prenzlauer Berg, Mitte, Kreuzberg, ou encore Charlottenburg.</p></div>
             </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
@@ -235,7 +235,7 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <h3>L’île aux Musées</h3>
+            <h3>James-Simon-Park</h3>
             <h4>Coucher de soleil sur la Spree</h4>
             <p>Nous sommes à quelques minutes à pied de <strong>James-Simon-Park</strong> et <strong>Monbijou Park</strong>. Ils sont côte à côte. Ces deux parcs sont au bord de la <strong>Spree</strong>, la rivière qui traverse Berlin.</p>
             <p>L’endroit est super sympa. Ambiance détendue, locale, avec des gens qui traînent en groupe, qui jouent de la gratte, qui dansent, qui boivent un coup...</p>
@@ -381,7 +381,7 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h3>Retour à Prenzlauer Berg</h3>
-            <h4>Les meilleurs burgers de Berlin</h4>
+            <h4>Burgermeister, la référence burger de Berlin</h4>
             <p>On prend la direction de l’hôtel, il n’est pas loin de minuit et comme la vie ici ne s’arrête jamais et qu’on n’a pas mangé, passage obligé par Burgermeister. Fondé en 2006, c’est l’adresse historique et la plus réputée pour les amateurs de burgers à Berlin. On se laisse tenter !</p>
             <p>L’adresse la plus connue mais aussi la plus touristique se trouve à Kreuzberg. Ce lieu emblématique se situe sous le pont de la ligne U1, dans d’anciennes toilettes publiques de 1920. Bon, on ne va pas retraverser Berlin. Par chance, il y en a un dans le quartier de Prenzlauer Berg, à quelques pas de notre hôtel Oderberger.</p>
             <p>On a goûté le burger signature, le Burgermeister. Du bœuf, des oignons grillés, du bacon, de la sauce barbecue et de la moutarde. Un délice ! On ne regrette pas de nous y être arrêtées.</p>
