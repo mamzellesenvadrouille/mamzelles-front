@@ -565,7 +565,6 @@ export default function VisiterBerlinPage() {
             <h4>Une dernière brocante avant de partir</h4>
             <p>Dernier petit-déjeuner englouti, chambre libérée et bagages déposés à la réception… Il nous reste encore quelques heures pour profiter de Berlin. On a tellement de chance, on aura beau temps jusqu’à la fin.</p>
             <p>On quitte l’hôtel à pied, on marche 5 minutes, direction une petite brocante de bric et de broc. Sur une petite place entourée d’arbres, des stands sur plusieurs allées. Il y a peu de touristes. L’ambiance est authentique et on se fond facilement dans le décor. On déambule entre les stands, on flâne, on s’inspire et on savoure simplement chaque moment.</p>
-            <h3>Mauerpark</h3>
             <h4>Mauerpark Flohmarkt, le marché aux puces emblématique</h4>
             <p>Nous continuons notre chemin pour nous rendre au fameux Mauerpark, connu pour son marché aux puces. L’entrée y est gratuite.</p>
             <p>Ici c’est un concentré de Berlin dans un parc. C’est un incontournable, mais il faut aimer la foule. Ce lieu attire beaucoup de monde. C’est un lieu de balade, de culture et de rencontres.</p>
@@ -579,10 +578,7 @@ export default function VisiterBerlinPage() {
             <p>Le Mauerpark est bien plus qu’un simple marché aux puces, c’est une scène à ciel ouvert.</p>
             <p>L’amphithéâtre du parc. Nous sommes malheureusement passées à côté, au grand désarroi de Laurie. C’est là que se déroule le karaoké géant du Mauerpark. Des inconnus montent sur scène devant une foule venue les encourager dans une ambiance joyeuse et complètement décomplexée. Dommage, on aurait pu vivre un grand moment.</p>
             <h4>Pause gourmande à Schönwetter</h4>
-            <p>Il n’est pas loin de 12h30, une pause rafraîchissante et gourmande est bien méritée.</p>
-            <p>Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servies ! On y trouve des saveurs venues des quatre coins du monde.</p>
-            <p>Spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand.</p>
-            <p>Au-delà des stands de street food du dimanche, il y a aussi des bars, cafés et restaurants ouverts toute l’année. On a voulu en tester un.</p>
+            <p>Il n’est pas loin de 12h30, une pause rafraîchissante et gourmande est bien méritée. Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servis ! On y trouve des saveurs venues des quatre coins du monde. Spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand. Au-delà des stands de street food du dimanche, il y a aussi des bars, cafés et restaurants ouverts toute l’année.</p>
             <p>Notre choix s’est porté sur Schönwetter. C’est un lieu détendu, qui sert des cocktails rafraîchissants et de savoureuses grillades. Ce qui nous a attiré, ce sont les transats et le sable fin, bon, et un peu l’odeur des grillades aussi.</p>
             <div className="article-resto">
               <div className="article-resto-item">
@@ -607,7 +603,6 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <h3>Retour à Prenzlauer Berg</h3>
             <h4>Bye bye l’hôtel Oderberger !</h4>
             <p>Direction l’hôtel Oderberger pour récupérer nos affaires. Surprise, l’équipe nous offre un petit canard en plastique. En référence à son histoire d’ancien bain public, le canard en plastique est devenu un véritable clin d’œil de l’Hôtel Oderberger. Un souvenir simple, mais qui nous a fait énormément plaisir.</p>
             <p>Tout au long de notre séjour, nous avons été touchées par la gentillesse, la bienveillance et le professionnalisme de toute l’équipe. Discrète mais toujours disponible, attentionnée et souriante, elle a contribué à rendre cette parenthèse berlinoise encore plus agréable.</p>
