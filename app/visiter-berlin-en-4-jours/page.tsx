@@ -333,7 +333,7 @@ export default function VisiterBerlinPage() {
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M8 22h8M12 15v7M5 3h14l-1.5 9.5a5.5 5.5 0 0 1-11 0Z"/><path d="M12 15a5.5 5.5 0 0 0 5.5-5.5"/></svg>Pour boire un verre</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M8 22h8"/><path d="M12 11v11"/><path d="m19 3-7 8-7-8Z"/></svg>Pour boire un verre</span>
                   <span className="article-resto-tag">Kreuzberg</span>
                 </div>
                 <div className="article-resto-body">
