@@ -354,10 +354,10 @@ export default function VisiterBerlinPage() {
             </div>
             <h3>Tempelhof-Schöneberg</h3>
             <h4>Tempelhofer Feld, l’ancien aéroport transformé en parc</h4>
-            <p>Pour le sunset, direction un endroit assez insolite. Un ancien aéroport transformé en immense parc public en plein Berlin. Tempelhofer Feld.</p>
-            <p>L’ancien aéroport de Tempelhofer Feld se situe au sud du centre de Berlin, au cœur du quartier de Tempelhof-Schöneberg. Il faisait autrefois partie de l’énorme aéroport de Tempelhof, fermé en 2008. Depuis 2010, l’espace est ouvert au public et c’est devenu l’un des plus grands espaces urbains ouverts au monde, avec plus de 300 hectares.</p>
-            <p>Depuis les stations Boddinstraße ou Leinestraße, l’entrée est juste à côté de la sortie. On entre dans le Tempelhofer Feld par son côté le plus sauvage. On suit un chemin à travers la forêt avant de déboucher sur l’immensité des anciennes pistes d’aviation.</p>
-            <p>Ce qui est fou, c’est que les anciennes pistes d’atterrissage sont restées. On peut littéralement marcher dessus, faire du vélo, du roller ou s’asseoir au milieu d’une piste où des avions décollaient avant. Sur place vous trouverez également de quoi boire et manger.</p>
+            <p>Pour le sunset, direction un endroit assez insolite... Un ancien aéroport transformé en immense parc public en plein Berlin : <strong>Tempelhofer Feld</strong>.</p>
+            <p>L’ancien aéroport de Tempelhofer Feld se situe au sud du centre de Berlin, au cœur du quartier de <strong>Tempelhof-Schöneberg</strong>. Il faisait autrefois partie de l’énorme aéroport de Tempelhof, fermé en 2008. Depuis 2010, l’espace est ouvert au public et c’est devenu l’un des plus grands espaces urbains ouverts au monde, avec plus de 300 hectares.</p>
+            <p>Depuis les stations <strong>Boddinstraße</strong> ou <strong>Leinestraße</strong>, comptez 5 à 7 minutes de marche jusqu’aux entrées. On entre dans le Tempelhofer Feld par son côté le plus sauvage. On suit un chemin à travers la forêt avant de déboucher sur l’immensité des anciennes pistes d’aviation.</p>
+            <p>Ce qui est fou, c’est que les anciennes pistes d’atterrissage sont restées. On peut littéralement marcher dessus, faire du vélo, du roller ou s’asseoir au milieu d’une piste où des avions décollaient avant. Sur place, vous trouverez également de quoi boire et manger.</p>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
