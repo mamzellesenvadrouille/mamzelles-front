@@ -422,19 +422,42 @@ export default function VisiterBerlinPage() {
               <span className="article-day-badge">Jour 3</span>
               <h2>Une journée, toute une histoire : le cœur historique et politique de Berlin</h2>
             </div>
+            <h3>Nikolaiviertel</h3>
+            <h4>Le plus vieux quartier de Berlin</h4>
             <p>On commence la journée au Nikolaiviertel, le plus vieux quartier de Berlin. Situé dans le centre (Mitte), entre Alexanderplatz et l’île aux Musées, c’est l’endroit parfait pour démarrer la journée.</p>
             <p>Ici c’est un changement d’ambiance immédiat. On quitte le tumulte de la ville pour de petites ruelles pavées et des façades colorées. Au cœur du quartier se dresse l’église Saint-Nicolas, reconnaissable à ses deux tours qui dominent les alentours. C’est le symbole du Nikolaiviertel, cette église rappelle les origines médiévales de Berlin.</p>
             <p>Le Nikolaiviertel est relativement calme, idéal pour flâner, déambuler et profiter de belles vues sur la Spree. Alors on s’installe en terrasse histoire de se rafraîchir un peu parce qu’il fait quand même super chaud. Ok, on ne se plaint pas, visiter Berlin sous le soleil et la chaleur, c’est quand même plus sympa qu’en hiver à -5 degrés.</p>
-            <h3>Berliner Dom &amp; Unter den Linden</h3>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U5 jusqu’à la station Rotes Rathaus, ou ligne U2 jusqu’à Klosterstraße.</p></div>
+                </div>
+              </div>
+            </div>
+            <h3>Île aux Musées &amp; Unter den Linden</h3>
+            <h4>Berliner Dom</h4>
             <p>Après cette pause fraîcheur, c’est reparti ! Au passage, nous sommes tout près de l’emblématique tour de Berlin, aussi appelée la tour de télévision de Berlin. Elle mesure 368 mètres, ce qui en fait le plus haut monument d’Allemagne.</p>
             <p>Puis à seulement une dizaine de minutes d’ici, nous rejoignons le Berliner Dom, l’un des monuments les plus impressionnants de Berlin avec son immense dôme vert qui domine le paysage. Il se trouve sur l’île aux Musées. C’est la plus grande église protestante de Berlin. Construite entre 1894 et 1905 pour la famille impériale allemande, elle impressionne autant par sa taille que par son élégance. Elle témoigne de la grandeur de l’ancien Empire allemand et constitue aujourd’hui l’un des symboles incontournables de la capitale.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Pour 10 € il est possible de visiter le Berliner Dom. Vous aurez accès à l’intérieur de l’église, à la crypte des Hohenzollern, au musée et à la galerie panoramique située sous le dôme, qui offre une belle vue sur Berlin.</p></div>
             </div>
+            <h4>Unter den Linden &amp; Bebelplatz</h4>
             <p>En quittant le Berliner Dom, on rejoint Unter den Linden, la célèbre avenue bordée de tilleuls qui traverse le centre historique. On y trouve de nombreux bâtiments prestigieux, ambassades, universités et monuments qui témoignent du passé royal et impérial de la ville.</p>
             <p>Nous arrivons place Bebelplatz. C’est ici qu’en 1933, des milliers de livres furent brûlés par les nazis. Aujourd’hui, une plaque de verre assez discrète, posée au sol, au milieu de la place, nous invite à regarder sous nos pieds. Nous découvrons une pièce souterraine, toute blanche, une bibliothèque totalement vide. Un silence visuel qui en dit long sur le vide laissé par la censure.</p>
-            <h3>Porte de Brandebourg &amp; Reichstag</h3>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn / S-Bahn</span><p>Ligne U5 ou S-Bahn (S1, S2, S25, S26) jusqu’à la station Brandenburger Tor.</p></div>
+                </div>
+              </div>
+            </div>
+            <h3>Le quartier du gouvernement</h3>
+            <h4>Porte de Brandebourg &amp; Reichstag</h4>
             <p>Nous continuons notre balade et nous voici arrivées à la Porte de Brandebourg, symbole de Berlin et de l’Allemagne réunifiée. Cette ancienne porte monumentale a traversé les époques, de la division de Berlin à la chute du Mur. Aujourd’hui, elle accueille les visiteurs au rythme des musiciens et des animations de rue.</p>
             <p>Depuis le début de notre parcours, et jusqu’ici, il faut compter une bonne quarantaine de minutes, sans compter les stops contemplation-photos, et faut dire qu’il y en a pas mal !</p>
             <p>Après avoir admiré la Porte de Brandebourg, il suffit de quelques minutes à pied pour rejoindre le Bâtiment du Reichstag, siège du Parlement allemand.</p>
@@ -443,21 +466,45 @@ export default function VisiterBerlinPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>La visite du Reichstag est gratuite, mais il est conseillé de réserver à l’avance.</p></div>
             </div>
-            <h3>Mémorial de l’Holocauste &amp; Topographie de la Terreur</h3>
+            <h4>Mémorial de l’Holocauste</h4>
             <p>Après notre visite du Reichstag, nous avons poursuivi notre découverte de Berlin en nous rendant au Mémorial de l’Holocauste, situé à seulement quelques minutes de marche. Ce lieu de mémoire impressionne par son immensité. 2 711 stèles de béton de différentes hauteurs s’étendent sur une immense place, formant un véritable labyrinthe. En s’aventurant au milieu, le bruit de la ville s’efface peu à peu, ce qui laisse place à une atmosphère particulière. On se sent toutes petites, un peu perturbées et émues à la fois. Conçu en hommage aux millions de Juifs victimes du génocide nazi, ce mémorial invite naturellement au recueillement et à la réflexion.</p>
+            <h4>Topographie de la Terreur</h4>
             <p>C’est un peu déboussolées que nous quittons cet endroit, direction Topography of Terror qui se trouve à environ 10 minutes de marche d’ici.</p>
             <p>Le premier élément marquant du site qu’on voit directement en arrivant, c’est l’un des plus longs vestiges encore visibles du Mur de Berlin.</p>
             <p>La Topographie de la Terreur est un lieu qui permet de mieux comprendre l’histoire de l’Allemagne sous le régime nazi. (Encore faut-il être doué en anglais.) Installé sur le site des anciens quartiers généraux de la Gestapo et des SS, ce centre de documentation présente de nombreuses photos, archives et témoignages. Une visite passionnante, un peu bouleversante, qui aide à mieux comprendre cette période de l’histoire et ses conséquences sur Berlin et l’Europe.</p>
-            <h3>Teufelsberg, le sunset qui vaut le détour</h3>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S1, S2, S25 ou S26 jusqu’à la station Anhalter Bahnhof.</p></div>
+                </div>
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U2 jusqu’à la station Potsdamer Platz.</p></div>
+                </div>
+              </div>
+            </div>
+            <h3>Grunewald</h3>
+            <h4>Teufelsberg, notre coup de cœur</h4>
             <p>Pour clôturer cette journée riche en histoire et en émotions, direction Teufelsberg, la célèbre « montagne du Diable ». On nous a dit que le coucher de soleil y était magique… et on confirme, le détour en vaut largement la peine.</p>
-            <p>Teufelsberg est une colline artificielle construite après la Seconde Guerre mondiale à partir des millions de tonnes de gravats laissés par la destruction de Berlin. Pour vous y rendre en transports en commun, prenez le S-Bahn S3 ou S9 en direction de Spandau, puis descendez à la station Berlin-Heerstraße. Rejoignez ensuite l’entrée de la forêt et suivez le sentier. Après avoir traversé la route, le chemin balisé vous conduira jusqu’au sommet.</p>
+            <p>Teufelsberg est une colline artificielle construite après la Seconde Guerre mondiale à partir des millions de tonnes de gravats laissés par la destruction de Berlin. Rejoignez ensuite l’entrée de la forêt et suivez le sentier. Après avoir traversé la route, le chemin balisé vous conduira jusqu’au sommet.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>L’entrée du site est payante. Comptez 12 € par personne. Pensez également à arriver suffisamment tôt, car le site ferme à 21 h.</p></div>
             </div>
             <p>À notre arrivée, un plan nous est remis. Vous pouvez explorer librement les lieux, déambuler entre les bâtiments, grimper dans certains d’entre eux et prendre le temps d’admirer les nombreux points de vue. Au sommet se dressent les vestiges d’une ancienne station d’écoute américaine datant de la Guerre froide.</p>
             <p>L’endroit est tout simplement fascinant. Entre les immenses radômes blancs, les fresques de street art qui recouvrent chaque mur et la vue panoramique sur Berlin, l’atmosphère est hors du temps. C’est un lieu insolite où l’histoire rencontre l’art urbain, offrant une expérience complètement différente de celle des monuments emblématiques du centre-ville. Un véritable coup de cœur pour nous.</p>
-            <h3>Dernière soirée : Kreuzberg &amp; Club der Visionäre</h3>
+            <div className="article-rendre">
+              <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
+              <div className="article-rendre-timeline">
+                <div className="article-rendre-stop">
+                  <div className="article-rendre-dot" />
+                  <div><span className="article-rendre-stop-title">S-Bahn</span><p>Lignes S3 ou S9 direction Spandau, arrêt Berlin-Heerstraße.</p></div>
+                </div>
+              </div>
+            </div>
+            <h3>Kreuzberg</h3>
             <p>Pour notre dernière soirée, notre dernière nuit, on a décidé de jouer les prolongations et d’en profiter à fond. Après une journée bien chargée, une bonne marche en forêt en fin de journée, retour express à l’hôtel pour se changer avant de partir en quête d’un resto. Même à 23h, la ville vit encore à 100 à l’heure. On a jeté notre dévolu sur Pasta &amp; Passione, un petit établissement à deux pas de notre hôtel. Si vous y passez, testez leurs gnocchis maison, ils sont délicieux.</p>
             <div className="article-resto">
               <div className="article-resto-item">
@@ -471,6 +518,7 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
+            <h4>Club der Visionäre, l’institution berlinoise</h4>
             <p>Nous prenons la direction de Kreuzberg pour nous rendre au Club der Visionäre, l’un des clubs les plus réputés de la ville. Il se trouve à seulement quelques minutes à pied de la gare Schlesisches Tor. Pour y entrer, comptez généralement entre 5 et 10 € (cela dépend de la programmation). Pour nous ce soir c’est 8 € par personne. Un petit tampon sur la main et c’est parti !</p>
             <p>L’endroit est très sympa. Ce club à ciel ouvert se situe au bord du canal du Flutgraben. L’ambiance y est décontractée et le cadre est trop joli. Nous sommes sur une grande terrasse en bois qui surplombe le canal. Ici, les personnes viennent autant pour écouter de la bonne musique que pour profiter d’un verre entre amis. House, minimal et techno rythment la journée et la soirée, dans une atmosphère plus intimiste que celle des grands clubs berlinois. Ici pas de prise de tête, les gens veulent juste se détendre, danser et faire la fête. Pour info, pas de photo, c’est interdit. Niveau hydratation, vous trouverez sur place un bar proposant bières, cocktails et boissons fraîches. Il y a également une pizzeria juste à côté si une petite faim se fait sentir.</p>
             <div className="article-tip">
@@ -483,15 +531,11 @@ export default function VisiterBerlinPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Nikolaiviertel</span><p>Depuis l’hôtel à Prenzlauer Berg, comptez environ 20 minutes en U-Bahn ou en tram + une courte marche pour rejoindre le quartier, au cœur de Mitte.</p></div>
+                  <div><span className="article-rendre-stop-title">U-Bahn</span><p>Ligne U1 jusqu’à la station Schlesisches Tor.</p></div>
                 </div>
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Teufelsberg</span><p>S-Bahn S3 ou S9 direction Spandau, arrêt Berlin-Heerstraße, puis suivez le sentier balisé jusqu’au sommet.</p></div>
-                </div>
-                <div className="article-rendre-stop">
-                  <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Club der Visionäre</span><p>À quelques minutes à pied de la gare Schlesisches Tor (U-Bahn).</p></div>
+                  <div><span className="article-rendre-stop-title">Pour le retour</span><p>Passé 1h-1h30 en semaine, le métro ne circule plus : direction les bus de nuit (lettre « N »). Le week-end en revanche, l’U1 circule toute la nuit.</p></div>
                 </div>
               </div>
             </div>
