@@ -156,7 +156,7 @@ export default function VisiterBerlinPage() {
             <p><strong>Prenzlauer Berg</strong> est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
             <p>Aujourd’hui, il est considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve une ambiance locale et une vie de quartier authentiques : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
             <h4>Rüyam Gemüse Kebab, le meilleur de Berlin</h4>
-            <p>Il est 15 heures quand nous débarquons dans le quartier de <strong>Prenzlauer Berg</strong> pour rejoindre notre hôtel. Nous n’avons toujours pas déjeuné. En chemin, nous tombons sur Rüyam Gemüse Kebab. Une véritable institution à Berlin ! Pas le choix que de s’y arrêter...</p>
+            <p>Il est 15 heures quand nous débarquons dans le quartier de <strong>Prenzlauer Berg</strong> pour rejoindre notre hôtel. Nous n’avons toujours pas déjeuné. En chemin, nous tombons sur <strong>Rüyam Gemüse Kebab</strong>. Une véritable institution à Berlin ! Pas le choix que de s’y arrêter...</p>
             <p>Ici, on ne parle pas d’un kebab classique. Leur spécialité, le Gemüse Kebab : un mélange de viande grillée, de légumes rôtis (pommes de terre, poivrons…), de crudités ultra fraîches, de feta, d’une sauce maison à l’ail et épicée, le tout dans un pain croustillant !</p>
             <p>Kebabs avalés, nous poursuivons notre chemin vers l’hôtel.</p>
             <div className="article-resto">
@@ -260,9 +260,9 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h3>Retour à Prenzlauer Berg</h3>
-            <h4>Petit détour par la Currywurst</h4>
+            <h4>Un Currywurst pour la route, le rituel berlinois</h4>
             <p>Le temps passe bien trop vite, il est déjà passé 22h. Après avoir bien profité du moment, nous reprenons le chemin de l’hôtel à pied, par un itinéraire différent, histoire de prolonger encore un peu la découverte.</p>
-            <p>On passe alors devant Curry 61, une adresse incontournable pour goûter la Currywurst, la spécialité street food emblématique de Berlin, un peu le « snack national » de la ville. Allez, on se laisse tenter !</p>
+            <p>On passe alors devant <strong>Curry 61</strong>, une adresse incontournable pour goûter la Currywurst, la spécialité street food emblématique de Berlin, un peu le « snack national » de la ville. Allez, on se laisse tenter !</p>
             <p>C’est très simple : une saucisse coupée en morceaux, recouverte d’une sauce tomate-ketchup épicée au curry, souvent servie avec des frites ou un petit pain, le tout dans une barquette en carton à manger debout dans la rue. Ce n’est pas de la grande gastronomie, mais plutôt un rituel berlinois du quotidien, rapide, pas cher, et qui se trouve partout. Pour nous, c’est clairement validé !</p>
             <div className="article-resto">
               <div className="article-resto-item">
@@ -312,7 +312,7 @@ export default function VisiterBerlinPage() {
               <div><strong>Curiosité berlinoise</strong><p>Ici, on a découvert un truc assez sympa qui fait partie des curiosités berlinoises : les distributeurs de colis mystères. Pour quelques euros, on tente sa chance. Le concept est simple : acheter un colis non réclamé sans savoir ce qu’il contient. Entre chasse au trésor moderne et coup de chance, ces colis mystères attirent de nombreux curieux. Une idée originale et insolite qui reflète bien l’esprit créatif de Berlin.</p></div>
             </div>
             <h4>Oberbaumbrücke, le pont de la réunification</h4>
-            <p>Après ça et non loin de là, direction le pont iconique de Berlin, le Oberbaum Bridge (<strong>Oberbaumbrücke</strong>). C’est l’un des ponts les plus emblématiques de Berlin, reconnaissable à ses tours en briques rouges et son allure presque de château. Il relie les quartiers de <strong>Friedrichshain</strong> et <strong>Kreuzberg</strong> au-dessus de la <strong>Spree</strong> et symbolise surtout la réunification, puisqu’il marquait autrefois une frontière entre Berlin-Est et Berlin-Ouest.</p>
+            <p>Après ça et non loin de là, direction le pont iconique de Berlin, le <strong>Oberbaum Bridge</strong> (<strong>Oberbaumbrücke</strong>). C’est l’un des ponts les plus emblématiques de Berlin, reconnaissable à ses tours en briques rouges et son allure presque de château. Il relie les quartiers de <strong>Friedrichshain</strong> et <strong>Kreuzberg</strong> au-dessus de la <strong>Spree</strong> et symbolise surtout la réunification, puisqu’il marquait autrefois une frontière entre Berlin-Est et Berlin-Ouest.</p>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
