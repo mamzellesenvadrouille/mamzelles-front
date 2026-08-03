@@ -369,11 +369,20 @@ export default function VisiterBerlinPage() {
             </div>
             <h3>Neukölln</h3>
             <h4>Klunkerkranich, le rooftop bohème</h4>
-            <p>Pour terminer la soirée, on a choisi le rooftop Klunkerkranich, un spot très berlinois perché au-dessus d’un centre commercial à Neukölln. Et c’est justement ce contraste qui fait son charme. On prend l’ascenseur jusqu’en haut, on traverse un parking un peu banal, sans trop savoir à quoi s’attendre, puis après avoir emprunté l’ancienne rampe qui permettait aux voitures d’accéder au toit, on arrive dans un lieu presque caché, avec une vraie atmosphère à part.</p>
+            <p>Pour terminer la soirée, on a choisi le rooftop <strong>Klunkerkranich</strong>, un spot très berlinois perché au-dessus d’un centre commercial à <strong>Neukölln</strong>. Et c’est justement ce contraste qui fait son charme. On prend l’ascenseur jusqu’en haut, on traverse un parking un peu banal, sans trop savoir à quoi s’attendre, puis après avoir emprunté l’ancienne rampe qui permettait aux voitures d’accéder au toit, on arrive dans un lieu presque caché, avec une vraie atmosphère à part.</p>
             <p>Ici, pas de rooftop ultra-luxueux ou trop lisse, l’ambiance est bohème, un peu arty, avec des plantes, des lumières suspendues, du mobilier récupéré, une voiture abandonnée dans laquelle on peut s’installer. L’énergie y est décontractée. Certains soirs, un DJ ou de la musique live accompagne le coucher du soleil, avec une jolie vue sur les toits de Berlin. Un endroit simple, vivant et authentique, parfait pour finir la journée dans une ambiance locale.</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Petit point à savoir</strong><p>Il peut y avoir un peu d’attente au Klunkerkranich, surtout le week-end ou quand il fait beau.</p></div>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M8 22h8"/><path d="M12 11v11"/><path d="m19 3-7 8-7-8Z"/></svg>Pour boire un verre</span>
+                  <span className="article-resto-tag">Neukölln</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name">Klunkerkranich</p>
+                  <p className="article-resto-sub">Rooftop bohème · Neukölln</p>
+                  <p>Un rooftop planté de guirlandes et de mobilier récupéré, pour un coucher de soleil sur les toits de Berlin. Prévoyez un peu d’attente, surtout le week-end ou quand il fait beau.</p>
+                </div>
+              </div>
             </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
