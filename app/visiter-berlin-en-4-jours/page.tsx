@@ -521,9 +521,18 @@ export default function VisiterBerlinPage() {
             <h4>Club der Visionäre, l’institution berlinoise</h4>
             <p>Nous prenons la direction de Kreuzberg pour nous rendre au Club der Visionäre, l’un des clubs les plus réputés de la ville. Il se trouve à seulement quelques minutes à pied de la gare Schlesisches Tor. Pour y entrer, comptez généralement entre 5 et 10 € (cela dépend de la programmation). Pour nous ce soir c’est 8 € par personne. Un petit tampon sur la main et c’est parti !</p>
             <p>L’endroit est très sympa. Ce club à ciel ouvert se situe au bord du canal du Flutgraben. L’ambiance y est décontractée et le cadre est trop joli. Nous sommes sur une grande terrasse en bois qui surplombe le canal. Ici, les personnes viennent autant pour écouter de la bonne musique que pour profiter d’un verre entre amis. House, minimal et techno rythment la journée et la soirée, dans une atmosphère plus intimiste que celle des grands clubs berlinois. Ici pas de prise de tête, les gens veulent juste se détendre, danser et faire la fête. Pour info, pas de photo, c’est interdit. Niveau hydratation, vous trouverez sur place un bar proposant bières, cocktails et boissons fraîches. Il y a également une pizzeria juste à côté si une petite faim se fait sentir.</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>L’entrée au Club der Visionäre coûte généralement entre 5 et 10 € selon la programmation. Les photos y sont interdites.</p></div>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M8 22h8"/><path d="M12 11v11"/><path d="m19 3-7 8-7-8Z"/></svg>Pour boire un verre</span>
+                  <span className="article-resto-tag">Kreuzberg</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name">Club der Visionäre</p>
+                  <p className="article-resto-sub">Club à ciel ouvert · Kreuzberg</p>
+                  <p>Une terrasse en bois au bord du canal du Flutgraben, entre house et techno. Comptez 5 à 10 € l’entrée selon la programmation, et laissez l’appareil photo au vestiaire : c’est interdit ici.</p>
+                </div>
+              </div>
             </div>
             <p>Cette journée bien chargée nous a quand même épuisées. Il est 3h du matin bien tassé, direction l’hôtel pour une courte nuit. Départ demain, il faut plier bagage et libérer la chambre avant 11h...</p>
             <div className="article-rendre">
