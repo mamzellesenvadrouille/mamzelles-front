@@ -566,12 +566,11 @@ export default function VisiterBerlinPage() {
             <h4>Une dernière brocante avant de partir</h4>
             <p>Après avoir quitté l’hôtel, 5 minutes de marche suffisent pour rejoindre une petite brocante de bric et de broc, installée sur une petite place entourée d’arbres, avec des stands répartis sur plusieurs allées. Il y a peu de touristes. L’ambiance est authentique et on se fond facilement dans le décor. On déambule entre les stands, on flâne, on s’inspire et on savoure simplement chaque moment.</p>
             <h4>Mauerpark Flohmarkt, le marché aux puces emblématique</h4>
-            <p>Nous continuons notre chemin pour nous rendre au fameux <strong>Mauerpark</strong>, connu pour son marché aux puces. L’entrée y est gratuite.</p>
-            <p>Ici, c’est un concentré de Berlin dans un parc, un incontournable qui attire beaucoup de monde. C’est un lieu de balade, de culture et de rencontres.</p>
+            <p>Nous continuons notre chemin pour nous rendre au fameux <strong>Mauerpark</strong>, un incontournable toujours plein de monde. On y vient pour flâner, pour la culture, pour les rencontres, et surtout pour son marché aux puces.</p>
             <p>En entrant, nous tombons directement sur le <strong>Mauerpark Flohmarkt</strong>, l’un des rendez-vous les plus emblématiques de la ville, surtout si vous aimez l’ambiance bohème, vintage et typiquement berlinoise. On s’y balade sans but précis. C’est le genre d’endroit où tu repars avec un truc dont tu n’avais absolument pas besoin à la base, mais qui devient tout d’un coup indispensable... Bah, ça n’a pas loupé pour nous non plus ! On y trouve de tout : friperie, bijoux, lunettes, vinyles, créations d’artistes, objets en tout genre… C’est un véritable terrain de chasse pour les amateurs de vintage et d’objets insolites.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Ce marché est ouvert tous les dimanches, de 10 h à 18 h.</p></div>
+              <div><strong>Bon à savoir</strong><p>Ce marché est ouvert tous les dimanches, de 10 h à 18 h, et l’entrée est gratuite.</p></div>
             </div>
             <h4>Le parc et son karaoké géant</h4>
             <p>Derrière le marché, un immense parc. Des familles et groupes d’amis sont installés dans la pelouse. Il y a des barbecues à disposition, des terrains de volley sont installés. L’ambiance y est très décontractée et très familiale. En se baladant, on tombe sur des musiciens, des artistes de rue.</p>
