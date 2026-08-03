@@ -562,9 +562,9 @@ export default function VisiterBerlinPage() {
               <h2>Le dernier chapitre de notre escapade berlinoise</h2>
             </div>
             <h3>Prenzlauer Berg</h3>
-            <h4>Une dernière brocante avant de partir</h4>
             <p>Dernier petit-déjeuner englouti, chambre libérée et bagages déposés à la réception… Il nous reste encore quelques heures pour profiter de Berlin. On a tellement de chance, on aura beau temps jusqu’à la fin.</p>
-            <p>On quitte l’hôtel à pied, on marche 5 minutes, direction une petite brocante de bric et de broc. Sur une petite place entourée d’arbres, des stands sur plusieurs allées. Il y a peu de touristes. L’ambiance est authentique et on se fond facilement dans le décor. On déambule entre les stands, on flâne, on s’inspire et on savoure simplement chaque moment.</p>
+            <h4>Une dernière brocante avant de partir</h4>
+            <p>On quitte l’hôtel à pied, on marche 5 minutes, direction une petite brocante de bric et de broc, installée sur une petite place entourée d’arbres, avec des stands répartis sur plusieurs allées. Il y a peu de touristes. L’ambiance est authentique et on se fond facilement dans le décor. On déambule entre les stands, on flâne, on s’inspire et on savoure simplement chaque moment.</p>
             <h4>Mauerpark Flohmarkt, le marché aux puces emblématique</h4>
             <p>Nous continuons notre chemin pour nous rendre au fameux Mauerpark, connu pour son marché aux puces. L’entrée y est gratuite.</p>
             <p>Ici c’est un concentré de Berlin dans un parc. C’est un incontournable, mais il faut aimer la foule. Ce lieu attire beaucoup de monde. C’est un lieu de balade, de culture et de rencontres.</p>
