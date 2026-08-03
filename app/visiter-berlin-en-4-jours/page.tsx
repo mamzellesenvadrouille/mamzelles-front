@@ -562,13 +562,13 @@ export default function VisiterBerlinPage() {
               <h2>Le dernier chapitre de notre escapade berlinoise</h2>
             </div>
             <h3>Prenzlauer Berg</h3>
-            <p>Dernier petit-déjeuner englouti, chambre libérée et bagages déposés à la réception… Il nous reste encore quelques heures pour profiter de Berlin. On a tellement de chance, on aura beau temps jusqu’à la fin.</p>
+            <p>Dernier petit-déjeuner englouti, chambre libérée et bagages déposés à la réception… Il nous reste encore quelques heures pour profiter de Berlin. On a tellement de chance, on aura eu du beau temps jusqu’à la fin !</p>
             <h4>Une dernière brocante avant de partir</h4>
-            <p>On quitte l’hôtel à pied, on marche 5 minutes, direction une petite brocante de bric et de broc, installée sur une petite place entourée d’arbres, avec des stands répartis sur plusieurs allées. Il y a peu de touristes. L’ambiance est authentique et on se fond facilement dans le décor. On déambule entre les stands, on flâne, on s’inspire et on savoure simplement chaque moment.</p>
+            <p>Après avoir quitté l’hôtel, 5 minutes de marche suffisent pour rejoindre une petite brocante de bric et de broc, installée sur une petite place entourée d’arbres, avec des stands répartis sur plusieurs allées. Il y a peu de touristes. L’ambiance est authentique et on se fond facilement dans le décor. On déambule entre les stands, on flâne, on s’inspire et on savoure simplement chaque moment.</p>
             <h4>Mauerpark Flohmarkt, le marché aux puces emblématique</h4>
-            <p>Nous continuons notre chemin pour nous rendre au fameux Mauerpark, connu pour son marché aux puces. L’entrée y est gratuite.</p>
-            <p>Ici c’est un concentré de Berlin dans un parc. C’est un incontournable, mais il faut aimer la foule. Ce lieu attire beaucoup de monde. C’est un lieu de balade, de culture et de rencontres.</p>
-            <p>En entrant, nous tombons directement sur le Mauerpark Flohmarkt. C’est le marché aux puces emblématique de Berlin, surtout si vous aimez l’ambiance bohème, vintage et un peu Berlin alternatif. On s’y balade sans but précis mais c’est le genre d’endroit où tu repars avec un truc dont tu n’avais absolument pas besoin mais que tu trouves trop cool et qui devient soudain indispensable. Bah ça n’a pas loupé ! On y trouve de tout. Friperie, bijoux, lunettes, vinyles, créations d’artistes, objets en tout genre… C’est un véritable terrain de chasse pour les amateurs de vintage et d’objets insolites.</p>
+            <p>Nous continuons notre chemin pour nous rendre au fameux <strong>Mauerpark</strong>, connu pour son marché aux puces. L’entrée y est gratuite.</p>
+            <p>Ici, c’est un concentré de Berlin dans un parc, un incontournable qui attire beaucoup de monde. C’est un lieu de balade, de culture et de rencontres.</p>
+            <p>En entrant, nous tombons directement sur le <strong>Mauerpark Flohmarkt</strong>, l’un des rendez-vous les plus emblématiques de la ville, surtout si vous aimez l’ambiance bohème, vintage et typiquement berlinoise. On s’y balade sans but précis. C’est le genre d’endroit où tu repars avec un truc dont tu n’avais absolument pas besoin à la base, mais qui devient tout d’un coup indispensable... Bah, ça n’a pas loupé pour nous non plus ! On y trouve de tout : friperie, bijoux, lunettes, vinyles, créations d’artistes, objets en tout genre… C’est un véritable terrain de chasse pour les amateurs de vintage et d’objets insolites.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Ce marché est ouvert tous les dimanches, de 10 h à 18 h.</p></div>
@@ -576,10 +576,10 @@ export default function VisiterBerlinPage() {
             <h4>Le parc et son karaoké géant</h4>
             <p>Derrière le marché, un immense parc. Des familles et groupes d’amis sont installés dans la pelouse. Il y a des barbecues à disposition, des terrains de volley sont installés. L’ambiance y est très décontractée et très familiale. En se baladant, on tombe sur des musiciens, des artistes de rue.</p>
             <p>Le Mauerpark est bien plus qu’un simple marché aux puces, c’est une scène à ciel ouvert.</p>
-            <p>L’amphithéâtre du parc. Nous sommes malheureusement passées à côté, au grand désarroi de Laurie. C’est là que se déroule le karaoké géant du Mauerpark. Des inconnus montent sur scène devant une foule venue les encourager dans une ambiance joyeuse et complètement décomplexée. Dommage, on aurait pu vivre un grand moment.</p>
+            <p>L’amphithéâtre du parc. Nous sommes malheureusement passées à côté, au grand désarroi de Laurie. C’est là que se déroule le karaoké géant du <strong>Mauerpark</strong>. Des inconnus montent sur scène devant une foule venue les encourager dans une ambiance joyeuse et complètement décomplexée. Dommage, on aurait pu vivre un grand moment.</p>
             <h4>Pause gourmande à Schönwetter</h4>
             <p>Il n’est pas loin de 12h30, une pause rafraîchissante et gourmande est bien méritée. Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servis ! On y trouve des saveurs venues des quatre coins du monde. Spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand. Au-delà des stands de street food du dimanche, il y a aussi des bars, cafés et restaurants ouverts toute l’année.</p>
-            <p>Notre choix s’est porté sur Schönwetter. C’est un lieu détendu, qui sert des cocktails rafraîchissants et de savoureuses grillades. Ce qui nous a attiré, ce sont les transats et le sable fin, bon, et un peu l’odeur des grillades aussi.</p>
+            <p>Notre choix s’est porté sur <strong>Schönwetter</strong>. C’est un lieu détendu, qui sert des cocktails rafraîchissants et de savoureuses grillades. Ce qui nous a attiré, ce sont les transats et le sable fin, bon, et un peu l’odeur des grillades aussi.</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -592,7 +592,7 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <p>Il est temps de rentrer. Ici, à Mauerpark, on a encore découvert un endroit authentique, un endroit où on prend le temps de flâner, d’écouter, de goûter… et surtout de profiter d’une atmosphère unique où chacun semble trouver sa place.</p>
+            <p>Il est temps de rentrer. Ici, à <strong>Mauerpark</strong>, on a encore découvert un endroit authentique, un endroit où on prend le temps de flâner, d’écouter, de goûter… et surtout de profiter d’une atmosphère unique où chacun semble trouver sa place.</p>
             <p>C’est un lieu vivant, un brin décalé, qui laisse derrière lui bien plus que quelques photos… un vrai souvenir de voyage.</p>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
@@ -604,7 +604,7 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h4>Bye bye l’hôtel Oderberger !</h4>
-            <p>Direction l’hôtel Oderberger pour récupérer nos affaires. Surprise, l’équipe nous offre un petit canard en plastique. En référence à son histoire d’ancien bain public, le canard en plastique est devenu un véritable clin d’œil de l’Hôtel Oderberger. Un souvenir simple, mais qui nous a fait énormément plaisir.</p>
+            <p>Direction l’hôtel <strong>Oderberger</strong> pour récupérer nos affaires. Surprise, l’équipe nous offre un petit canard en plastique. En référence à son histoire d’ancien bain public, le canard en plastique est devenu un véritable clin d’œil de l’Hôtel Oderberger. Un souvenir simple, mais qui nous a fait énormément plaisir.</p>
             <p>Tout au long de notre séjour, nous avons été touchées par la gentillesse, la bienveillance et le professionnalisme de toute l’équipe. Discrète mais toujours disponible, attentionnée et souriante, elle a contribué à rendre cette parenthèse berlinoise encore plus agréable.</p>
             <p>C’est maintenant l’heure du départ. Il est temps de rentrer. Pas besoin de vous refaire tout le trajet : imaginez exactement le même qu’à l’aller mais dans l’autre sens ! Nous reprenons donc la route vers la France, la tête remplie de souvenirs et déjà nostalgiques de ce magnifique week-end berlinois.</p>
           </section>
