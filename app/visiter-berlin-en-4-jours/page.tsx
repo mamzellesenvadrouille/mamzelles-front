@@ -328,17 +328,18 @@ export default function VisiterBerlinPage() {
             </div>
             <h3>Kreuzberg</h3>
             <h4>Esprit rebelle et street art</h4>
-            <p>Nous traversons l’Oberbaum Bridge et nous poursuivons notre balade à pied jusqu’au cœur de Kreuzberg, l’un des quartiers emblématiques de Berlin. Ici, l’ambiance a quelque chose de particulier. C’est un mélange d’énergie alternative, de diversité culturelle et de créativité, avec ce petit côté rebelle qui fait tout son charme. Entre le street art (notamment le fameux astronaute), les terrasses animées et les façades parfois brutes, Kreuzberg dégage une vraie personnalité, entre esprit un peu punk et quartier devenu aujourd’hui très tendance.</p>
-            <p>Après avoir déambulé dans le quartier, histoire de faire une petite pause, nous nous arrêtons boire un verre chez Südblock, un lieu bien vivant qui s’intègre parfaitement à l’atmosphère du quartier.</p>
+            <p>Nous traversons l’<strong>Oberbaum Bridge</strong> et nous poursuivons notre balade à pied jusqu’au cœur de <strong>Kreuzberg</strong>, l’un des quartiers emblématiques de Berlin. Ici, l’ambiance a quelque chose de particulier. C’est un mélange d’énergie alternative, de diversité culturelle et de créativité, avec ce petit côté rebelle qui fait tout son charme. Entre le street art, les terrasses animées et les façades parfois brutes, Kreuzberg dégage une vraie personnalité, entre esprit un peu punk et quartier devenu aujourd’hui très tendance. Impossible de manquer le fameux <strong>astronaute</strong>, une fresque signée Victor Ash intitulée <strong>« Astronaut/Cosmonaut »</strong> : peinte en 2007, ses 22x14 mètres en font l’une des plus grandes œuvres au pochoir au monde.</p>
+            <p>Après avoir déambulé dans le quartier, histoire de faire une petite pause, nous nous arrêtons boire un verre chez <strong>Südblock</strong>, un lieu bien vivant qui s’intègre parfaitement à l’atmosphère du quartier.</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour boire un verre</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M8 22h8M12 15v7M5 3h14l-1.5 9.5a5.5 5.5 0 0 1-11 0Z"/><path d="M12 15a5.5 5.5 0 0 0 5.5-5.5"/></svg>Pour boire un verre</span>
                   <span className="article-resto-tag">Kreuzberg</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Südblock</p>
                   <p className="article-resto-sub">Bar animé · Kreuzberg</p>
+                  <p>Juste en face de Kottbusser Tor, sa grande terrasse arborée et son ambiance conviviale et inclusive en font un incontournable pour boire un verre à toute heure de la journée.</p>
                 </div>
               </div>
             </div>
