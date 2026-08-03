@@ -596,6 +596,8 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
+            <p>Il est temps de rentrer. Ici, à Mauerpark, on a encore découvert un endroit authentique, un endroit où on prend le temps de flâner, d’écouter, de goûter… et surtout de profiter d’une atmosphère unique où chacun semble trouver sa place.</p>
+            <p>C’est un lieu vivant, un brin décalé, qui laisse derrière lui bien plus que quelques photos… un vrai souvenir de voyage.</p>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
@@ -607,8 +609,6 @@ export default function VisiterBerlinPage() {
             </div>
             <h3>Retour à Prenzlauer Berg</h3>
             <h4>Bye bye l’hôtel Oderberger !</h4>
-            <p>Il est temps de rentrer. Ici, à Mauerpark, on a encore découvert un endroit authentique, un endroit où on prend le temps de flâner, d’écouter, de goûter… et surtout de profiter d’une atmosphère unique où chacun semble trouver sa place.</p>
-            <p>C’est un lieu vivant, un brin décalé, qui laisse derrière lui bien plus que quelques photos… un vrai souvenir de voyage.</p>
             <p>Direction l’hôtel Oderberger pour récupérer nos affaires. Surprise, l’équipe nous offre un petit canard en plastique. En référence à son histoire d’ancien bain public, le canard en plastique est devenu un véritable clin d’œil de l’Hôtel Oderberger. Un souvenir simple, mais qui nous a fait énormément plaisir.</p>
             <p>Tout au long de notre séjour, nous avons été touchées par la gentillesse, la bienveillance et le professionnalisme de toute l’équipe. Discrète mais toujours disponible, attentionnée et souriante, elle a contribué à rendre cette parenthèse berlinoise encore plus agréable.</p>
             <p>C’est maintenant l’heure du départ. Il est temps de rentrer. Pas besoin de vous refaire tout le trajet : imaginez exactement le même qu’à l’aller mais dans l’autre sens ! Nous reprenons donc la route vers la France, la tête remplie de souvenirs et déjà nostalgiques de ce magnifique week-end berlinois.</p>
