@@ -525,7 +525,7 @@ export default function VisiterBerlinPage() {
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>L’entrée au Club der Visionäre coûte généralement entre 5 et 10 € selon la programmation. Les photos y sont interdites.</p></div>
             </div>
-            <p>Cette journée bien chargée nous a quand même épuisées. Il est 3h du matin bien tassé, direction l’hôtel pour une bonne sieste. Départ demain, il faut plier bagage et libérer la chambre.</p>
+            <p>Cette journée bien chargée nous a quand même épuisées. Il est 3h du matin bien tassé, direction l’hôtel pour une courte nuit. Départ demain, il faut plier bagage et libérer la chambre avant 11h...</p>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
