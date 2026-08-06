@@ -603,10 +603,12 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <h4>Bye bye l’hôtel Oderberger !</h4>
-            <p>Direction l’hôtel <strong>Oderberger</strong> pour récupérer nos affaires. Surprise, l’équipe nous offre un petit canard en plastique. En référence à son histoire d’ancien bain public, le canard en plastique est devenu un véritable clin d’œil de l’Hôtel Oderberger. Un souvenir simple, mais qui nous a fait énormément plaisir.</p>
+            <h4>Merci l’hôtel Oderberger</h4>
+            <p>Au moment de récupérer nos valises, surprise ! L’équipe nous offre un petit canard en plastique. En référence à son histoire d’ancien bain public, le canard en plastique est devenu un véritable clin d’œil de l’Hôtel Oderberger. Un souvenir simple, mais qui nous fait énormément plaisir.</p>
             <p>Tout au long de notre séjour, nous avons été touchées par la gentillesse, la bienveillance et le professionnalisme de toute l’équipe. Discrète mais toujours disponible, attentionnée et souriante, elle a contribué à rendre cette parenthèse berlinoise encore plus agréable.</p>
-            <p>C’est maintenant l’heure du départ. Il est temps de rentrer. Pas besoin de vous refaire tout le trajet : imaginez exactement le même qu’à l’aller mais dans l’autre sens ! Nous reprenons donc la route vers la France, la tête remplie de souvenirs et déjà nostalgiques de ce magnifique week-end berlinois.</p>
+            <h4>Bye bye Berlin !</h4>
+            <p>C’est maintenant l’heure du départ, il est temps de rentrer.</p>
+            <p>Pas besoin de vous refaire tout le trajet : imaginez exactement le même qu’à l’aller mais dans l’autre sens ! Nous reprenons donc la route vers la France, la tête remplie de souvenirs et déjà nostalgiques de ce magnifique week-end berlinois.</p>
           </section>
 
           {/* INFOS PRATIQUES */}
