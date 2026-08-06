@@ -573,12 +573,12 @@ export default function VisiterBerlinPage() {
               <div><strong>Bon à savoir</strong><p>Ce marché est ouvert tous les dimanches, de 10 h à 18 h, et l’entrée est gratuite.</p></div>
             </div>
             <h4>Le parc et son karaoké géant</h4>
-            <p>Derrière le marché, un immense parc. Des familles et groupes d’amis sont installés dans la pelouse. Il y a des barbecues à disposition, des terrains de volley sont installés. L’ambiance y est très décontractée et très familiale. En se baladant, on tombe sur des musiciens, des artistes de rue.</p>
+            <p>Derrière le marché, le parc est immense. Des familles et groupes d’amis sont installés dans la pelouse. Il y a des barbecues à disposition, des terrains de volley sont installés. L’ambiance y est très décontractée et très familiale. En se baladant, on tombe sur des musiciens et des artistes de rue.</p>
             <p>Le Mauerpark est bien plus qu’un simple marché aux puces, c’est une scène à ciel ouvert.</p>
-            <p>L’amphithéâtre du parc. Nous sommes malheureusement passées à côté, au grand désarroi de Laurie. C’est là que se déroule le karaoké géant du <strong>Mauerpark</strong>. Des inconnus montent sur scène devant une foule venue les encourager dans une ambiance joyeuse et complètement décomplexée. Dommage, on aurait pu vivre un grand moment.</p>
+            <p>Nous sommes malheureusement passées à côté de l’amphithéâtre du parc, au grand désarroi de Laurie. C’est là que se déroule le karaoké géant du <strong>Mauerpark</strong> le dimanche. Des inconnus montent sur scène devant une foule venue les encourager dans une ambiance joyeuse et complètement décomplexée. Dommage, on aurait pu vivre un grand moment !</p>
             <h4>Pause gourmande à Schönwetter</h4>
-            <p>Il n’est pas loin de 12h30, une pause rafraîchissante et gourmande est bien méritée. Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servis ! On y trouve des saveurs venues des quatre coins du monde. Spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand. Au-delà des stands de street food du dimanche, il y a aussi des bars, cafés et restaurants ouverts toute l’année.</p>
-            <p>Notre choix s’est porté sur <strong>Schönwetter</strong>. C’est un lieu détendu, qui sert des cocktails rafraîchissants et de savoureuses grillades. Ce qui nous a attiré, ce sont les transats et le sable fin, bon, et un peu l’odeur des grillades aussi.</p>
+            <p>Il n’est pas loin de 12h30, une pause rafraîchissante et gourmande s’impose. Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servis ! On y trouve des saveurs venues des quatre coins du monde : spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand. Au-delà des stands de street food, il y a aussi des bars, cafés et restaurants ouverts toute l’année.</p>
+            <p>Notre choix s’est porté sur <strong>Schönwetter</strong>. C’est un lieu détendu, qui sert des cocktails rafraîchissants et de savoureuses grillades. Ce qui nous a attiré, ce sont les transats et le sable fin, bon, et faut l’avouer, l’odeur des grillades aussi !</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -588,6 +588,7 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name">Schönwetter</p>
                   <p className="article-resto-sub">Bar &amp; grillades · Mauerpark</p>
+                  <p>Le lieu fournit barbecue, grill et charbon : il suffit d’apporter sa propre nourriture. Ouvert d’avril à octobre, et uniquement le dimanche en hiver pour coïncider avec le marché.</p>
                 </div>
               </div>
             </div>
