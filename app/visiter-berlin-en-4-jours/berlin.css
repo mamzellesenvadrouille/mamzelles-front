@@ -261,7 +261,7 @@
 
 .hero-article { height: 70vh; }
 
-.hero-article .hero-content { bottom: 0;
+.hero-article .hero-content { bottom: 60px;
   top: auto;
   transform: none;
   padding: 0 80px 0px; }
