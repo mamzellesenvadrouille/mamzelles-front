@@ -1001,14 +1001,14 @@
   flex-shrink: 0;
 }
 
-.article-madrid .article-section p a,
+.article-madrid .article-section p:not(.article-resto-name) a,
 .article-madrid .article-resto-body p:not(.article-resto-name) a {
   color: var(--gold);
   text-decoration: underline;
   font-weight: 700;
 }
 
-.article-madrid .article-section p a:hover,
+.article-madrid .article-section p:not(.article-resto-name) a:hover,
 .article-madrid .article-resto-body p:not(.article-resto-name) a:hover {
   color: var(--dark);
 }
