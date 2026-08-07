@@ -646,7 +646,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div>
                   <strong>S-Bahn (terminal 1)</strong>
-                  <span>5 € · env. 30 min jusqu’à la Hauptbahnhof · Ticket valable 2 h, achetable aux distributeurs de la station.</span>
+                  <span>5 € · 23 à 45 min selon la ligne (FEX express ou S9) jusqu’à la Hauptbahnhof · Ticket zone ABC, achetable aux distributeurs de la station.</span>
                 </div>
               </div>
               <div className="article-transport-item">
@@ -654,8 +654,8 @@ export default function VisiterBerlinPage() {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--gold)" stroke="none"/></svg>
                 </div>
                 <div>
-                  <strong>Bus express (BER2/BER3)</strong>
-                  <span>~4 € · env. 30-40 min · Bonne alternative si le S-Bahn est bondé aux heures de pointe.</span>
+                  <strong>Bus X7 + U-Bahn</strong>
+                  <span>5 € · Même tarif (zone ABC). Relie l’aéroport à la station U Rudow (ligne U7) en 15 min, pratique si votre hôtel est proche du sud ou de l’ouest de Berlin.</span>
                 </div>
               </div>
               <div className="article-transport-item">
@@ -664,7 +664,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div>
                   <strong>Taxi</strong>
-                  <span>~40-50 € · Option pratique si vous êtes en groupe ou très chargé·e·s. Pas notre recommandation en solo.</span>
+                  <span>60 à 70 € · Option pratique si vous êtes en groupe ou très chargé·e·s. Pas notre recommandation en solo.</span>
                 </div>
               </div>
               <div className="article-transport-item">
@@ -673,7 +673,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div>
                   <strong>Uber</strong>
-                  <span>Zone de prise en charge dédiée à l’aéroport, tarifs proches de ceux du taxi selon l’affluence.</span>
+                  <span>Zone de prise en charge dédiée à l’aéroport, tarifs similaires au taxi (60-80 €), parfois plus en heure de pointe.</span>
                 </div>
               </div>
             </div>
@@ -724,7 +724,8 @@ export default function VisiterBerlinPage() {
                 ]} />
             </div>
             <h4>Tickets</h4>
-            <p>L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Ces tickets sont valables 2 heures.</p>
+            <p>L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Comptez 4 € pour un ticket zone AB, valable 2 heures.</p>
+            <p>Pour les acheter directement depuis votre téléphone (et éviter la queue aux distributeurs), téléchargez l’appli officielle <a href="https://www.bvg.de/en/subscriptions-and-tickets/all-apps" target="_blank" rel="noopener noreferrer">BVG Fahrinfo</a>, qui permet aussi de planifier vos trajets en temps réel.</p>
             <h4>Horaires</h4>
             <ul className="article-pratique-list-gold">
               <li><strong>Le jour :</strong> en journée, les transports sont extrêmement réguliers, avec des passages fréquents, souvent toutes les cinq à dix minutes sur les lignes principales, ce qui rend les déplacements fluides et spontanés.</li>
