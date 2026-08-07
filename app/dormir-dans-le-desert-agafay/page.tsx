@@ -7,6 +7,7 @@ import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 import PratiqueOnglets from '../components/PratiqueOnglets';
 import Footer from '../components/Footer';
+import ArticlesLies from '../components/ArticlesLies';
 
 export const metadata: Metadata = {
   title: "Agafay : dormir dans le désert, notre expérience inoubliable",
@@ -95,7 +96,7 @@ export default function MarrakechPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>120-140 €/j/pers.</span>
+          <span>120-140 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -141,8 +142,8 @@ export default function MarrakechPage() {
           </nav>
 
           <section className="article-section">
-              <p><strong>Loin de l’effervescence et du tumulte de Marrakech, nous vous conseillons de vivre une expérience complètement magique </strong><strong>Celle de passer une nuit inoubliable dans le désert d’Agafay !</strong></p>
-              <p><strong>En amoureux ou entre amis, c'est certain, ce souvenir restera à jamais gravé dans vos mémoires ! </strong></p>
+              <p><strong>Loin de l’effervescence et du tumulte de Marrakech, nous vous conseillons de vivre une expérience complètement magique </strong><strong>Celle de passer une nuit inoubliable dans le désert d’Agafay !</strong></p>
+              <p><strong>En amoureux ou entre amis, c'est certain, ce souvenir restera à jamais gravé dans vos mémoires ! </strong></p>
               <p><strong>Vous êtes tenté ? Voici tous nos conseils et notre récit de voyage pour vous inspirer et vivre à votre tour cette incroyable expérience !</strong></p>
                             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5395.jpg" alt="Désert d'Agafay" className="article-img-full" loading="lazy" />
           </section>
@@ -151,7 +152,7 @@ export default function MarrakechPage() {
               <div className="article-day-header">
               <h2>Le désert d'Agafay, aux portes de Marrakech</h2>
             </div>
-              <p><strong>Le désert se situe à une trentaine de kilomètres de Marrakech</strong> (environ 40 min en voiture), sur les premières hauteurs du massif du Haut Atlas.</p>
+              <p><strong>Le désert se situe à une trentaine de kilomètres de Marrakech</strong> (environ 40 min en voiture), sur les premières hauteurs du massif du Haut Atlas.</p>
               <div className="article-tip">
                 <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
                 <div><strong>Bon à savoir</strong><p>Un erg est un désert de sable, tandis qu&apos;un reg est un désert de pierre. Agafay est donc un désert rocailleux, à ne pas confondre avec les dunes de Merzouga dans le Sahara.</p></div>
@@ -169,8 +170,8 @@ export default function MarrakechPage() {
             </div>
               <p>Après avoir épluché de nombreuses adresses de camps dans le désert d'Agafay, que ce soit sur internet, des blogs ou les réseaux sociaux, notre choix s’est finalement porté sur le <strong>Scarabeo Camp</strong>.</p>
               <p>Il semblait correspondre en tout point à ce que l'on recherchait pour notre séjour... Un endroit de rêve isolé avec piscine, un bon rapport qualité / prix, et de très bons retours quant à l'accueil chaleureux du personnel et de la qualité des repas.</p>
-              <p>Ce camp est l'un des premiers dans la région qui eut ouvert. <strong>Un vrai bivouac composé de tentes berbères.</strong> Rien qu'à voir les photos de cet endroit, on était déjà sous le charme !</p>
-              <p>Et quelle surprise ce fut en découvrant ce lieu à notre arrivée ! Le Scarabeo Camp est juste magique ! C'est un <strong>dépaysement total, hors du temps</strong>. Le camp a préservé son authenticité tout en offrant un confort moderne.</p>
+              <p>Ce camp est l'un des premiers dans la région qui eut ouvert. <strong>Un vrai bivouac composé de tentes berbères.</strong> Rien qu'à voir les photos de cet endroit, on était déjà sous le charme !</p>
+              <p>Et quelle surprise ce fut en découvrant ce lieu à notre arrivée ! Le Scarabeo Camp est juste magique ! C'est un <strong>dépaysement total, hors du temps</strong>. Le camp a préservé son authenticité tout en offrant un confort moderne.</p>
                             <div className="article-gallery-2">
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5301.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2023/01/IMG_5332_jpg.jpg" alt="Désert d'Agafay" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -233,7 +234,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               </div>
               </div>
               <p>Le matin, un petit déjeuner copieux nous attend sous une tente. Un grand buffet est proposé avec du thé, du café, des jus de fruit, des céréales, des œufs, du pain, et surtout avec les fameuses crêpes aux 1000 trous marocaines ! Un vrai régal ! Il y en a vraiment pour tous les goûts.</p>
-              <p>Il est généralement demandé de <strong>quitter la tente entre 10 h et 11 h, mais le personnel nous a gentiment proposé de passer plus de temps sans frais supplémentaire </strong>au sein de leur établissement. Nous profiterons donc de ce cadre exceptionnel jusqu'à 17 h ! Autant dire que nous ne nous sommes pas faites prier !</p>
+              <p>Il est généralement demandé de <strong>quitter la tente entre 10 h et 11 h, mais le personnel nous a gentiment proposé de passer plus de temps sans frais supplémentaire </strong>au sein de leur établissement. Nous profiterons donc de ce cadre exceptionnel jusqu'à 17 h ! Autant dire que nous ne nous sommes pas faites prier !</p>
               <p>Comme vous l'avez compris, vous pouvez ainsi continuer à profiter de ce cadre magnifique, de la piscine, mais également des activités proposées après avoir rendu la tente.</p>
               <div className="article-gallery-2">
                               <div className="article-gallery-2">
@@ -272,9 +273,9 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
               <h2>Tout savoir pour organiser son expérience</h2>
             </div>
               <h3 className="article-h3">Comment s&apos;y rendre ?</h3>
-              <p>Pour rappel, le désert d&apos;Agafay se situe à 40 min environ du centre-ville de Marrakech.</p>
-              <p><strong>Vous avez la possibilité de vous rendre au Scarabeo Camp en utilisant un grand taxi ou un taxi privé.</strong> Il faut compter 400 Dh (40 €) par trajet en moyenne pour 4 personnes.</p>
-              <p>Autrement, <strong>il est possible de réserver directement votre transport via le camp</strong>. Dans ce cas, c&apos;est bien plus onéreux... Il faut compter 550 Dh (55 €) par trajet pour 1 à 4 personnes.</p>
+              <p>Pour rappel, le désert d&apos;Agafay se situe à 40 min environ du centre-ville de Marrakech.</p>
+              <p><strong>Vous avez la possibilité de vous rendre au Scarabeo Camp en utilisant un grand taxi ou un taxi privé.</strong> Il faut compter 400 Dh (40 €) par trajet en moyenne pour 4 personnes.</p>
+              <p>Autrement, <strong>il est possible de réserver directement votre transport via le camp</strong>. Dans ce cas, c&apos;est bien plus onéreux... Il faut compter 550 Dh (55 €) par trajet pour 1 à 4 personnes.</p>
 
               <h3 className="article-h3">Quel budget ?</h3>
 
@@ -287,8 +288,8 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                   </div>
                   <p>Honnêtement, passer une nuit dans le désert d&apos;Agafay nécessite de <strong>prévoir une bonne petite enveloppe</strong>... !</p>
                   <div className="agafay-tarif-list">
-                    <div className="agafay-tarif-list-item"><strong>Tente 2 personnes</strong> — demi-pension comprise<br />2650 Dh (265 €)</div>
-                    <div className="agafay-tarif-list-item"><strong>Suite familiale 4 personnes</strong><br />3250 Dh (325 €)</div>
+                    <div className="agafay-tarif-list-item"><strong>Tente 2 personnes</strong> — demi-pension comprise<br />2650 Dh (265 €)</div>
+                    <div className="agafay-tarif-list-item"><strong>Suite familiale 4 personnes</strong><br />3250 Dh (325 €)</div>
                   </div>
                   <p className="agafay-tarif-note">Plus vous serez nombreux, moins ce sera cher !</p>
                 </div>
@@ -304,16 +305,16 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                   <div className="agafay-tarif-subblock">
                     <p className="agafay-tarif-camp-label"><a href="https://www.scarabeocamp.com" target="_blank" rel="noopener noreferrer">Scarabeo Camp</a></p>
                     <div className="agafay-tarif-list">
-                      <div className="agafay-tarif-list-item"><strong>Adulte</strong> — 450 Dh (45 €)</div>
-                      <div className="agafay-tarif-list-item"><strong>Enfant (4-10 ans)</strong> — 225 Dh (22,50 €)</div>
+                      <div className="agafay-tarif-list-item"><strong>Adulte</strong> — 450 Dh (45 €)</div>
+                      <div className="agafay-tarif-list-item"><strong>Enfant (4-10 ans)</strong> — 225 Dh (22,50 €)</div>
                     </div>
                     <p className="agafay-tarif-note">Accès piscine + déjeuner inclus !</p>
                   </div>
                   <div className="agafay-tarif-subblock">
                     <p className="agafay-tarif-camp-label"><a href="https://boheme-marrakech.com" target="_blank" rel="noopener noreferrer">La Bohème</a></p>
                     <div className="agafay-tarif-list">
-                      <div className="agafay-tarif-list-item"><strong>Adulte</strong> — 450 Dh (45 €)</div>
-                      <div className="agafay-tarif-list-item"><strong>Enfant</strong> — 250 Dh (25 €)</div>
+                      <div className="agafay-tarif-list-item"><strong>Adulte</strong> — 450 Dh (45 €)</div>
+                      <div className="agafay-tarif-list-item"><strong>Enfant</strong> — 250 Dh (25 €)</div>
                     </div>
                     <p className="agafay-tarif-note">Piscine + déjeuner + transferts inclus !</p>
                   </div>
@@ -386,39 +387,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
           <NewsletterForm />
 
           {/* ARTICLES LIES */}
-          <div className="article-related">
-            <h3 className="article-related-title">À lire aussi</h3>
-            <div className="article-related-grid">
-              <a href="/visiter-marrakech" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Marrakech-Blog.jpg" alt="Visiter Marrakech" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Maroc</span>
-                  <p className="article-related-title-card">Visiter Marrakech : que faire dans la ville rouge</p>
-                </div>
-              </a>
-              <a href="/visiter-londres" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres.jpg" alt="Londres" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Angleterre</span>
-                  <p className="article-related-title-card">Visiter Londres : notre guide complet</p>
-                </div>
-              </a>
-              <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Itinéraire Philippines 3 semaines" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Voyage aux Philippines : itinéraire de 3 semaines</p>
-                </div>
-              </a>
-            </div>
-            <a href="/blog" className="article-related-link">Voir tous nos articles →</a>
-          </div>
+          <ArticlesLies currentSlug="dormir-dans-le-desert-agafay" />
 
         </main>
 
