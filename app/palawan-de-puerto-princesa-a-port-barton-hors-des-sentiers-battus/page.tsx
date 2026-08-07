@@ -150,7 +150,7 @@ export default function PalawanPortBartonPage() {
               <h3>Comment se rendre à Palawan ?</h3>
             </div>
             <p>Ne manquez pas notre autre article sur Palawan. Vous y trouverez des infos pratiques, notamment sur les aéroports et les transports à privilégier pour rejoindre facilement l’archipel.</p>
-            <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Palawan-1024x819.jpg" alt="Palawan El Nido Coron" className="article-img-full" loading="lazy" /></a>
+            <a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" style={{display: 'block', margin: '24px 0'}}><img src="/related/Palawan-article.webp" alt="Palawan El Nido Coron" className="article-img-full" loading="lazy" /></a>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À LIRE AUSSI</strong><p><a href="/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines" className="article-link">⋙ PALAWAN : Entre El Nido &amp; Coron, découvrez le joyau des Philippines !</a></p></div>
@@ -1184,7 +1184,7 @@ Via le site <strong>Agoda</strong> (très utilisé pour les réservations d’h�
               <h2>Autre itinéraire de 3 semaines aux Philippines</h2>
             </div>
             <p>Si vous souhaitez découvrir un autre <strong>itinéraire de 3 semaines</strong> à travers les Philippines et trouver toutes les infos pour préparer votre voyage (formalités, santé, météo, etc.), <strong>n'hésitez pas à lire cet article</strong>, on vous partage tout !</p>
-            <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" style={{display: 'block', margin: '24px 0'}}><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Les Philippines Blog" className="article-img-full" loading="lazy" /></a>
+            <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" style={{display: 'block', margin: '24px 0'}}><img src="/related/Philippines-articles.webp" alt="Les Philippines Blog" className="article-img-full" loading="lazy" /></a>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À LIRE AUSSI</strong><p><a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-link">⋙ ITINÉRAIRE PHILIPPINES : 3 semaines pour découvrir la perle de l'Orient !</a></p></div>

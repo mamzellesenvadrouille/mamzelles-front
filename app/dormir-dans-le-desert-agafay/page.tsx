@@ -336,7 +336,7 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
             </div>
               <p>Il est possible que vous soyez passées à côté de certaines visites, pourtant incontournables pour nous à Marrakech ! N&apos;hésitez pas à lire notre article pour découvrir tous les secrets de la ville rouge par quartier, ainsi que tous nos conseils !</p>
 
-              <a href="/visiter-marrakech"><img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Marrakech-Blog.jpg" alt="Visiter Marrakech" className="article-img-full" loading="lazy" /></a>
+              <a href="/visiter-marrakech"><img src="/related/Marrakech-article.webp" alt="Visiter Marrakech" className="article-img-full" loading="lazy" /></a>
 
               <div className="article-must">
                 <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
