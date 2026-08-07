@@ -47,10 +47,8 @@ export const articles: Article[] = [
     title: "Itinéraire Philippines : 3 semaines pour découvrir la perle de l'Orient",
     category: 'Philippines',
     image: '/related/Philippines-articles.webp',
-    excludedWith: [
-      'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
-      'palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-    ],
+    pinnedWith: ['palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus'],
+    excludedWith: ['palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines'],
   },
   {
     slug: 'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
@@ -65,8 +63,10 @@ export const articles: Article[] = [
     title: 'Palawan : de Puerto Princesa à Port Barton, hors des sentiers battus',
     category: 'Philippines',
     image: '/related/Port-Barton-article.webp',
-    pinnedWith: ['palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines'],
-    excludedWith: ['itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient'],
+    excludedWith: [
+      'palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
+      'itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+    ],
   },
   {
     slug: 'visiter-berlin-en-4-jours',
