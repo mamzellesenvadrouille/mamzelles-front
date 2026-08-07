@@ -83,7 +83,7 @@ export default function VisiterBerlinPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <span>Avr. à sept.</span>
+          <span>Mai à sept.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -704,7 +704,7 @@ export default function VisiterBerlinPage() {
                   {
                     id: 'tram',
                     label: 'Tram',
-                    icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="4" y="4" width="16" height="12" rx="2"/><line x1="4" y1="9" x2="20" y2="9"/><circle cx="8" cy="12.5" r="1"/><circle cx="16" cy="12.5" r="1"/><line x1="7" y1="20" x2="7" y2="16"/><line x1="17" y1="20" x2="17" y2="16"/><line x1="10" y1="1" x2="10" y2="4"/></svg>,
+                    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--dark)" strokeWidth="2"><rect x="3" y="3" width="18" height="13" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="7.5" cy="13" r="1.2"/><circle cx="16.5" cy="13" r="1.2"/><line x1="6" y1="21" x2="6" y2="16"/><line x1="18" y1="21" x2="18" y2="16"/><line x1="9" y1="0.5" x2="9" y2="3"/></svg>,
                     content: (
                       <>
                         <p>Les <strong>tramways</strong> sont omniprésents dans l’ancien Berlin-Est, notamment dans des quartiers comme Prenzlauer Berg ou Friedrichshain, où ils font presque partie du décor.</p>
@@ -731,14 +731,17 @@ export default function VisiterBerlinPage() {
               <li><strong>Le jour :</strong> en journée, les transports sont extrêmement réguliers, avec des passages fréquents, souvent toutes les cinq à dix minutes sur les lignes principales, ce qui rend les déplacements fluides et spontanés.</li>
               <li><strong>La nuit :</strong> Berlin pense aussi aux personnes qui vivent la nuit. En semaine, du dimanche au jeudi, les métros et S-Bahn s’arrêtent généralement autour d’1h à 1h30 du matin, mais la ville ne s’endort pas complètement : des bus de nuit, reconnaissables à leur lettre « N », prennent le relais. Le week-end, Berlin révèle encore davantage son tempérament nocturne : U-Bahn et S-Bahn circulent toute la nuit, largement suffisant pour rentrer sereinement après une longue soirée berlinoise. Ici, la ville semble avoir parfaitement compris qu’à Berlin, la nuit fait aussi partie du voyage.</li>
             </ul>
-            <h3 style={{marginTop:'32px'}}>Savoir-vivre</h3>
+            <h3 style={{marginTop:'32px'}}>Petites choses à savoir</h3>
             <p>Berlin est une ville libre et décontractée, mais quelques repères sont bons à connaître :</p>
             <ul className="article-pratique-list-gold">
               <li>La consommation d’alcool dans l’espace public (rue, parcs) est légale et courante.</li>
-              <li>Dans le métro, laissez descendre les passagers avant de monter.</li>
               <li>Le dimanche, la quasi-totalité des commerces sont fermés (hors restaurants et marchés type Mauerpark).</li>
               <li>Dans certains lieux alternatifs et clubs (comme le Club der Visionäre), les photos sont interdites : respectez la consigne.</li>
             </ul>
+            <h3 style={{marginTop:'32px'}}>Quand partir ?</h3>
+            <p>Berlin possède un climat continental, avec des étés chauds et des hivers plutôt froids et gris. La ville se visite idéalement de <strong>mai à septembre</strong>, quand les températures sont les plus agréables (autour de 20-24°C) et que la vie en extérieur bat son plein : terrasses, parcs, marchés en plein air.</p>
+            <p><strong>Juin</strong> est particulièrement agréable, avec des journées longues et un ensoleillement optimal. Les mois de <strong>mai et septembre</strong> restent une bonne alternative, avec moins de foule qu’en plein été.</p>
+            <p>Nous vous conseillons d’éviter les mois de <strong>novembre à février</strong>, où les températures peuvent descendre sous 0°C et le ciel reste souvent gris, même si la ville garde son charme, notamment avec ses marchés de Noël en décembre.</p>
           </section>
 
           <section className="article-comments-section">
