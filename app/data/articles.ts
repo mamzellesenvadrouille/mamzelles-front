@@ -68,10 +68,4 @@ export const articles: Article[] = [
       'itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
     ],
   },
-  {
-    slug: 'visiter-berlin-en-4-jours',
-    title: 'Visiter Berlin en 4 jours : itinéraire complet et bonnes adresses',
-    category: 'Allemagne',
-    image: '/related/Berlin-article.webp',
-  },
 ];
