@@ -718,18 +718,18 @@ export default function VisiterBerlinPage() {
                     content: (
                       <>
                         <p>Les <strong>bus</strong> complètent parfaitement le réseau, très utiles pour certains trajets ou lorsque les autres transports ne circulent plus.</p>
-                        <div className="article-tip" style={{marginTop:'20px'}}>
-                          <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-                          <div>
-                            <strong>Bon à savoir</strong>
-                            <p><strong>Tickets</strong> — L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Ces tickets sont valables 2 heures.</p>
-                            <p><strong>Horaires</strong> — Berlin pense aussi aux personnes qui vivent la nuit. En journée, les transports sont extrêmement réguliers, avec des passages fréquents, souvent toutes les cinq à dix minutes sur les lignes principales, ce qui rend les déplacements fluides et spontanés. En semaine, du dimanche au jeudi, les métros et S-Bahn s’arrêtent généralement autour d’1h à 1h30 du matin, mais la ville ne s’endort pas complètement : des bus de nuit, reconnaissables à leur lettre « N », prennent le relais. Le week-end, U-Bahn et S-Bahn circulent toute la nuit, largement suffisant pour rentrer sereinement après une longue soirée berlinoise.</p>
-                          </div>
-                        </div>
                       </>
                     ),
                   },
                 ]} />
+            </div>
+            <div className="article-tip" style={{marginTop:'20px'}}>
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div>
+                <strong>Bon à savoir</strong>
+                <p><strong>Tickets :</strong> l’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Ces tickets sont valables 2 heures.</p>
+                <p><strong>Horaires :</strong> Berlin pense aussi aux personnes qui vivent la nuit. En journée, les transports sont extrêmement réguliers, avec des passages fréquents, souvent toutes les cinq à dix minutes sur les lignes principales, ce qui rend les déplacements fluides et spontanés. En semaine, du dimanche au jeudi, les métros et S-Bahn s’arrêtent généralement autour d’1h à 1h30 du matin, mais la ville ne s’endort pas complètement : des bus de nuit, reconnaissables à leur lettre « N », prennent le relais. Le week-end, U-Bahn et S-Bahn circulent toute la nuit, largement suffisant pour rentrer sereinement après une longue soirée berlinoise.</p>
+              </div>
             </div>
             <h3 style={{marginTop:'32px'}}>Savoir-vivre</h3>
             <p>Berlin est une ville libre et décontractée, mais quelques repères sont bons à connaître :</p>
