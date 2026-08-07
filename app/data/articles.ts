@@ -1,5 +1,6 @@
 export type Article = {
   slug: string;
+  wpSlug?: string; // slug WordPress d'origine, si différent du slug Next.js
   title: string;
   category: string;
   image: string;
@@ -18,6 +19,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'visiter-londres',
+    wpSlug: 'visiter-londres-en-1-semaine',
     title: 'Visiter Londres : que faire en 7 jours par quartier',
     category: 'Angleterre',
     image: '/Londres.webp',

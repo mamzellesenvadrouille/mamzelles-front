@@ -60,7 +60,14 @@ async function getWpImages(slugs: string[]): Promise<Record<string, string>> {
 
 export default async function ArticlesLies({ currentSlug }: { currentSlug: string }) {
   const related = pickRelated(currentSlug, 3);
-  const wpImages = await getWpImages(related.map(a => a.slug));
+  const wpSlugs = related.map(a => a.wpSlug || a.slug);
+  const wpImagesBySlug = await getWpImages(wpSlugs);
+  // Reconstruire un map indexé par le slug Next.js (pas le wpSlug)
+  const wpImages: Record<string, string> = {};
+  related.forEach(a => {
+    const key = a.wpSlug || a.slug;
+    if (wpImagesBySlug[key]) wpImages[a.slug] = wpImagesBySlug[key];
+  });
 
   return (
     <div className="article-related">
