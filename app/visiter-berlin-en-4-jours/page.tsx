@@ -704,7 +704,7 @@ export default function VisiterBerlinPage() {
                   {
                     id: 'tram',
                     label: 'Tram',
-                    icon: <i className="ti ti-bus-stop" style={{fontSize:'18px'}}></i>,
+                    icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="4" y="4" width="16" height="12" rx="2"/><line x1="4" y1="9" x2="20" y2="9"/><circle cx="8" cy="12.5" r="1"/><circle cx="16" cy="12.5" r="1"/><line x1="7" y1="20" x2="7" y2="16"/><line x1="17" y1="20" x2="17" y2="16"/><line x1="10" y1="1" x2="10" y2="4"/></svg>,
                     content: (
                       <>
                         <p>Les <strong>tramways</strong> sont omniprésents dans l’ancien Berlin-Est, notamment dans des quartiers comme Prenzlauer Berg ou Friedrichshain, où ils font presque partie du décor.</p>
