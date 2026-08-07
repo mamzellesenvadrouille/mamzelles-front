@@ -7,6 +7,7 @@ import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 import PratiqueOnglets from '../components/PratiqueOnglets';
 import Footer from '../components/Footer';
+import ArticlesLies from '../components/ArticlesLies';
 
 export const metadata: Metadata = {
   title: "Visiter Marrakech : que faire dans la ville rouge",
@@ -745,39 +746,7 @@ export default function MarrakechPage() {
           <NewsletterForm />
 
           {/* ARTICLES LIES */}
-          <div className="article-related">
-            <h3 className="article-related-title">À lire aussi</h3>
-            <div className="article-related-grid">
-              <a href="/visiter-madrid-en-3-jours" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid-1536x1229.jpeg.webp" alt="Madrid" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Visiter Madrid en 3 jours : itinéraire et bons plans</p>
-                </div>
-              </a>
-              <a href="/visiter-londres" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres.jpg" alt="Londres" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Angleterre</span>
-                  <p className="article-related-title-card">Visiter Londres : notre guide complet</p>
-                </div>
-              </a>
-              <a href="/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2024/09/Les-Philippines-1024x819.jpg" alt="Itinéraire Philippines 3 semaines" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Philippines</span>
-                  <p className="article-related-title-card">Voyage aux Philippines : itinéraire de 3 semaines</p>
-                </div>
-              </a>
-            </div>
-            <a href="/blog" className="article-related-link">Voir tous nos articles →</a>
-          </div>
+          <ArticlesLies currentSlug="visiter-marrakech" />
 
         </main>
 
