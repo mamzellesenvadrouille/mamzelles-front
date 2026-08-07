@@ -449,8 +449,8 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h3>Île aux Musées &amp; Unter den Linden</h3>
-            <p>Après cette pause fraîcheur, c’est reparti !</p>
             <h4>Tour de télévision &amp; High Swing Berlin</h4>
+            <p>Après cette pause fraîcheur, c’est reparti !</p>
             <p>Nous sommes d’ailleurs tout près de l’emblématique <strong>tour de télévision de Berlin</strong> (<strong>Fernsehturm</strong>). Elle mesure 368 mètres, ce qui en fait le plus haut monument d’Allemagne.</p>
             <div className="article-book">
               <div className="article-resto-item">
