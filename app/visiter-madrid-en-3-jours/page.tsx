@@ -166,7 +166,7 @@ export default function MadridPage() {
                   <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Billet pour le Palais Royal</p>
+                  <p className="article-resto-name"><a href="https://gyg.me/NCm0BYcb" target="_blank" rel="noopener noreferrer">Billet pour le Palais Royal</a></p>
                   <p className="article-resto-sub">Coupe-file · À partir de 22 €</p>
                   <p>Un peu plus cher que le tarif officiel (18 €), mais si les billets sont épuisés ou que vous voulez éviter l'attente, cette <a href="https://gyg.me/NCm0BYcb" target="_blank" rel="noopener noreferrer">option coupe-file</a> est une bonne alternative.</p>
                 </div>
@@ -312,7 +312,7 @@ export default function MadridPage() {
                   <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Billet pour le musée du Prado</p>
+                  <p className="article-resto-name"><a href="https://gyg.me/C7TTgdck" target="_blank" rel="noopener noreferrer">Billet pour le musée du Prado</a></p>
                   <p className="article-resto-sub">Coupe-file</p>
                   <p>L'affluence y est énorme, souvent complet sur place. Ce <a href="https://gyg.me/C7TTgdck" target="_blank" rel="noopener noreferrer">billet coupe-file</a> évite la queue devant l'un des plus grands musées d'art au monde.</p>
                 </div>
