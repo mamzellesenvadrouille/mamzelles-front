@@ -1038,6 +1038,7 @@
 
 .article-berlin .article-book .article-resto-head-label {
   color: var(--dark);
+  font-weight: 600;
 }
 
 .article-berlin .article-book .article-resto-head-label svg {
