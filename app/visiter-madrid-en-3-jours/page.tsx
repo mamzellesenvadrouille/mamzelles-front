@@ -7,6 +7,7 @@ import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 import PratiqueOnglets from '../components/PratiqueOnglets';
 import Footer from '../components/Footer';
+import ArticlesLies from '../components/ArticlesLies';
 
 export const metadata: Metadata = {
   title: 'Visiter Madrid en 3 jours : itinéraire et bons plans',
@@ -567,39 +568,7 @@ export default function MadridPage() {
 
           <NewsletterForm />
 
-          <div className="article-related">
-            <h3 className="article-related-title">À lire aussi</h3>
-            <div className="article-related-grid">
-              <a href="/visiter-marrakech" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Marrakech-Blog.jpg" alt="Marrakech" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Maroc</span>
-                  <p className="article-related-title-card">Marrakech : tous les secrets pour découvrir la ville rouge</p>
-                </div>
-              </a>
-              <a href="/visiter-londres-en-1-semaine" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/Londres.jpg" alt="Londres" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Angleterre</span>
-                  <p className="article-related-title-card">Visiter Londres : que faire en 7 jours par quartier</p>
-                </div>
-              </a>
-              <a href="/road-trip-a-lanzarote" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Lanzarote.jpeg" alt="Lanzarote" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Que faire à Lanzarote ? Road trip d&apos;une semaine</p>
-                </div>
-              </a>
-            </div>
-            <a href="/blog" className="article-related-link">Voir tous nos articles →</a>
-          </div>
+          <ArticlesLies currentSlug="visiter-madrid-en-3-jours" />
 
         </main>
 
