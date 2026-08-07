@@ -158,7 +158,7 @@ export default function MadridPage() {
             <p>Comme son nom le laisse entendre, il s&apos;agit là du centre historique de Madrid. C&apos;est dans ce barrio que vous trouverez les <strong>attractions principales</strong> de la capitale.</p>
             <h3>Le Palais Royal</h3>
             <p>Tout d&apos;abord, découvrez le <strong>Palais Royal</strong> de Madrid. Il fait partie des plus grands palais d&apos;Europe, mais aussi des plus beaux !</p>
-            <p>Bien qu&apos;il ne soit plus habité par la famille royale, il reste un lieu symbolique du pouvoir qu&apos;il est possible de visiter. Comptez 18 € l&apos;entrée (7 € en tarif réduit), et nous vous conseillons vivement d&apos;acheter vos billets à l&apos;avance, l&apos;affluence y est énorme !</p>
+            <p>Bien qu&apos;il ne soit plus habité par la famille royale, il reste un lieu symbolique du pouvoir qu&apos;il est possible de visiter. Comptez 18 € l&apos;entrée (7 € en tarif réduit). Nous vous conseillons vivement d&apos;acheter vos billets à l&apos;avance, l&apos;affluence y est énorme !</p>
             <p>Notez qu&apos;il est possible de voir la relève de la garde du Palais Royal de Madrid. Cela se passe tous les mercredis et samedis à 11 h. Il est aussi possible d&apos;assister à la relève solennelle de la garde les premiers mercredis du mois à 12 h (sauf en janvier, août et septembre). C&apos;est apparemment un spectacle unique à ne pas manquer !</p>
             <div className="article-book">
               <div className="article-resto-item">
