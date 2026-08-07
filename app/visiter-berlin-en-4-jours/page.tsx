@@ -767,13 +767,6 @@ export default function VisiterBerlinPage() {
               <li><strong>Le jour :</strong> en journée, les transports sont extrêmement réguliers, avec des passages fréquents, souvent toutes les cinq à dix minutes sur les lignes principales, ce qui rend les déplacements fluides et spontanés.</li>
               <li><strong>La nuit :</strong> Berlin pense aussi aux personnes qui vivent la nuit. En semaine, du dimanche au jeudi, les métros et S-Bahn s’arrêtent généralement autour d’1h à 1h30 du matin, mais la ville ne s’endort pas complètement : des bus de nuit, reconnaissables à leur lettre « N », prennent le relais. Le week-end, Berlin révèle encore davantage son tempérament nocturne : U-Bahn et S-Bahn circulent toute la nuit, largement suffisant pour rentrer sereinement après une longue soirée berlinoise. Ici, la ville semble avoir parfaitement compris qu’à Berlin, la nuit fait aussi partie du voyage.</li>
             </ul>
-            <h3 style={{marginTop:'32px'}}>Petites choses à savoir</h3>
-            <p>Berlin est une ville libre et décontractée, mais quelques repères sont bons à connaître :</p>
-            <ul className="article-pratique-list-gold">
-              <li>La consommation d’alcool dans l’espace public (rue, parcs) est légale et courante.</li>
-              <li>Le dimanche, la quasi-totalité des commerces sont fermés (hors restaurants et marchés type Mauerpark).</li>
-              <li>Dans certains lieux alternatifs et clubs (comme le Club der Visionäre), les photos sont interdites : respectez la consigne.</li>
-            </ul>
             <h3 style={{marginTop:'32px'}}>Quand partir ?</h3>
             <p>Berlin possède un climat continental, avec des étés chauds et des hivers plutôt froids et gris. La ville se visite idéalement de <strong>mai à septembre</strong>, quand les températures sont les plus agréables (autour de 20-24°C) et que la vie en extérieur bat son plein : terrasses, parcs, marchés en plein air.</p>
             <p><strong>Juin</strong> est particulièrement agréable, avec des journées longues et un ensoleillement optimal. Les mois de <strong>mai et septembre</strong> restent une bonne alternative, avec moins de foule qu’en plein été.</p>
@@ -781,8 +774,6 @@ export default function VisiterBerlinPage() {
           </section>
 
           <section className="article-comments-section">
-            <h2 className="article-comments-title">Commentaires</h2>
-
             <CommentsList comments={[]} />
             <CommentForm
               articleTitle={"Visiter Berlin en 4 jours : itinéraire complet et bonnes adresses"}
