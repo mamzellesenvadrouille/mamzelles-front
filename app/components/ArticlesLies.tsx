@@ -39,39 +39,8 @@ function pickRelated(currentSlug: string, count: number = 3): Article[] {
   return result.slice(0, count);
 }
 
-async function getWpImages(slugs: string[]): Promise<Record<string, string>> {
-  try {
-    const res = await fetch(
-      `https://blog.mamzellesenvadrouille.com/wp-json/wp/v2/posts?slug=${slugs.join(',')}&_embed&per_page=10`,
-      { next: { revalidate: 3600 } }
-    );
-    if (!res.ok) return {};
-    const posts = await res.json();
-    const map: Record<string, string> = {};
-    for (const post of posts) {
-      const media = post._embedded?.['wp:featuredmedia']?.[0];
-      const img =
-        media?.media_details?.sizes?.medium_large?.source_url ||
-        media?.media_details?.sizes?.large?.source_url ||
-        media?.source_url;
-      if (img && post.slug) map[post.slug] = img;
-    }
-    return map;
-  } catch {
-    return {};
-  }
-}
-
-export default async function ArticlesLies({ currentSlug }: { currentSlug: string }) {
+export default function ArticlesLies({ currentSlug }: { currentSlug: string }) {
   const related = pickRelated(currentSlug, 3);
-  const wpSlugs = related.map(a => a.wpSlug || a.slug);
-  const wpImagesBySlug = await getWpImages(wpSlugs);
-  // Reconstruire un map indexé par le slug Next.js (pas le wpSlug)
-  const wpImages: Record<string, string> = {};
-  related.forEach(a => {
-    const key = a.wpSlug || a.slug;
-    if (wpImagesBySlug[key]) wpImages[a.slug] = wpImagesBySlug[key];
-  });
 
   return (
     <div className="article-related">
@@ -80,7 +49,7 @@ export default async function ArticlesLies({ currentSlug }: { currentSlug: strin
         {related.map(article => (
           <a href={`/${article.slug}`} className="article-related-card" key={article.slug}>
             <div className="article-related-img-wrap">
-              <img src={wpImages[article.slug] || article.image} alt={article.category} className="article-related-img" />
+              <img src={article.image} alt={article.category} className="article-related-img" />
             </div>
             <div className="article-related-body">
               <span className="article-related-cat">{article.category}</span>
