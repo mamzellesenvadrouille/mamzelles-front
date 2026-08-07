@@ -246,6 +246,18 @@ export default function VisiterBerlinPage() {
             <p>Alors, on se la joue Berlinoises. On s’installe dans l’herbe du côté de <strong>James-Simon-Park</strong> et on profite du moment. De là, on a une vue plongeante sur l’<strong>île aux Musées</strong>.</p>
             <p><strong>Un peu d’histoire.</strong> L’<strong>île aux Musées</strong> est l’un des ensembles culturels les plus importants d’Europe. Plusieurs grands musées historiques y sont regroupés, construits entre le XIXe et le début du XXe siècle, sur une île entourée par la Spree. Le site est classé au patrimoine mondial de l’UNESCO.</p>
             <p>Vous l’aurez compris, cet endroit fait partie des incontournables. Le gros atout du lieu, c’est l’ambiance, mais aussi la vue. On a un très beau panorama sur la rivière, les péniches, et surtout sur la magnifique cathédrale qui s’illumine à la tombée de la nuit : le <strong>Berliner Dom</strong>, avec son immense dôme vert qu’on peut voir de loin. Ici, c’est clairement un spot idéal pour le coucher de soleil, alors on en profite. La lumière dorée sur l’<strong>île aux Musées</strong>, c’est magnifique !</p>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.5 0 2.5 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M4 18l1-9h14l1 9"/><path d="M12 3v6"/><path d="M9 6h6"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name">Croisière d’une heure sur la Spree</p>
+                  <p className="article-resto-sub">En français · 22 €</p>
+                  <p>Envie d'admirer le Berliner Dom et l'île aux Musées depuis l'eau ? Cette <a href="https://gyg.me/P0FuQWIe" target="_blank" rel="noopener noreferrer">croisière d'une heure sur la Spree</a> permet de voir la ville sous un autre angle.</p>
+                </div>
+              </div>
+            </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
@@ -439,6 +451,22 @@ export default function VisiterBerlinPage() {
             <h3>Île aux Musées &amp; Unter den Linden</h3>
             <h4>Berliner Dom</h4>
             <p>Après cette pause fraîcheur, c’est reparti ! Nous sommes d’ailleurs tout près de l’emblématique <strong>tour de télévision de Berlin</strong> (<strong>Fernsehturm</strong>). Elle mesure 368 mètres, ce qui en fait le plus haut monument d’Allemagne.</p>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="4" y="14" width="4" height="6"/><rect x="10" y="9" width="4" height="11"/><rect x="16" y="4" width="4" height="16"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name">Billet coupe-file pour la Fernsehturm</p>
+                  <p className="article-resto-sub">À partir de 20 €</p>
+                  <p>Depuis la plateforme panoramique à 203 mètres de haut, la vue à 360° sur Berlin est saisissante. Le <a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer">billet coupe-file</a> permet d'éviter la queue à la billetterie.</p>
+                </div>
+              </div>
+            </div>
+            <div className="article-tip">
+              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+              <div><strong>Insolite</strong><p>Le <a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer">High Swing Berlin</a> propose de se balancer à 120 mètres au-dessus d’Alexanderplatz, depuis le toit du Park Inn Hotel : la balançoire la plus haute d’Europe. Comptez environ 70 marches pour rejoindre la plateforme (pas d’ascenseur), et prévoyez une petite laine, le vent souffle plus fort en altitude. Réservé aux plus téméraires !</p></div>
+            </div>
             <p>Puis à seulement une dizaine de minutes d’ici, nous rejoignons le <strong>Berliner Dom</strong>, l’un des monuments les plus impressionnants de Berlin avec son immense dôme vert qui domine le paysage. Il se trouve sur l’<strong>île aux Musées</strong>. C’est la plus grande église protestante de la ville. Construite entre 1894 et 1905 pour la famille impériale allemande, elle impressionne autant par sa taille que par son élégance. Elle témoigne de la grandeur de l’ancien Empire allemand et constitue aujourd’hui l’un des symboles incontournables de la capitale.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
@@ -492,9 +520,17 @@ export default function VisiterBerlinPage() {
             <p>Pour clôturer cette journée riche en histoire et en émotions, direction <strong>Teufelsberg</strong>, la célèbre « montagne du Diable ». On nous a dit que le coucher de soleil y était magique… et on confirme, le détour en vaut largement la peine !</p>
             <p><strong>Teufelsberg</strong> est une colline artificielle construite après la Seconde Guerre mondiale à partir des millions de tonnes de gravats laissés par la destruction de Berlin. Depuis la station <strong>Berlin-Heerstraße</strong>, il faut rejoindre l’entrée de la forêt et suivre le sentier balisé, qui traverse une petite route avant de grimper jusqu’au sommet.</p>
             <p>À notre arrivée sur le site, un plan nous est remis. Vous pouvez explorer librement les lieux, déambuler entre les bâtiments, grimper dans certains d’entre eux et prendre le temps d’admirer les nombreux points de vue. Au sommet se dressent les vestiges d’une ancienne station d’écoute américaine datant de la Guerre froide.</p>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>L’entrée Teufelsberg est payante : comptez 12 € par personne. Comptez 2 à 3 heures sur place pour profiter pleinement des lieux, et pensez à arriver suffisamment tôt, car le site ferme au coucher du soleil.</p></div>
+            <div className="article-resto">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="4" y="14" width="4" height="6"/><rect x="10" y="9" width="4" height="11"/><rect x="16" y="4" width="4" height="16"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name">Billet d'entrée Teufelsberg</p>
+                  <p className="article-resto-sub">À partir de 12 €</p>
+                  <p>Comptez 2 à 3 heures sur place pour profiter pleinement des lieux, et pensez à arriver suffisamment tôt, car le site ferme au coucher du soleil. <a href="https://gyg.me/dJt9YbQe" target="_blank" rel="noopener noreferrer">Réserver son billet</a>.</p>
+                </div>
+              </div>
             </div>
             <p>L’endroit est tout simplement fascinant. Entre les immenses radômes blancs, les fresques de street art qui recouvrent chaque mur et la vue panoramique sur Berlin, l’atmosphère est hors du temps. C’est un lieu insolite où l’histoire rencontre l’art urbain, offrant une expérience complètement différente de celle des monuments emblématiques du centre-ville. Un véritable coup de cœur pour nous.</p>
             <div className="article-rendre">
