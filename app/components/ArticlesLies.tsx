@@ -49,7 +49,11 @@ async function getWpImages(slugs: string[]): Promise<Record<string, string>> {
     const posts = await res.json();
     const map: Record<string, string> = {};
     for (const post of posts) {
-      const img = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+      const media = post._embedded?.['wp:featuredmedia']?.[0];
+      const img =
+        media?.media_details?.sizes?.medium_large?.source_url ||
+        media?.media_details?.sizes?.large?.source_url ||
+        media?.source_url;
       if (img && post.slug) map[post.slug] = img;
     }
     return map;
