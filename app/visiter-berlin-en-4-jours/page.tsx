@@ -249,7 +249,7 @@ export default function VisiterBerlinPage() {
             <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.5a1.5 1.5 0 0 0 0 3V15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.5a1.5 1.5 0 0 0 0-3z"/><line x1="13" y1="7.5" x2="13" y2="9" strokeDasharray="1.5 1.5"/><line x1="13" y1="15" x2="13" y2="16.5" strokeDasharray="1.5 1.5"/></svg>Pour réserver</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Croisière d’une heure sur la Spree</p>
@@ -449,12 +449,11 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h3>Île aux Musées &amp; Unter den Linden</h3>
-            <h4>Berliner Dom</h4>
             <p>Après cette pause fraîcheur, c’est reparti ! Nous sommes d’ailleurs tout près de l’emblématique <strong>tour de télévision de Berlin</strong> (<strong>Fernsehturm</strong>). Elle mesure 368 mètres, ce qui en fait le plus haut monument d’Allemagne.</p>
             <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.5a1.5 1.5 0 0 0 0 3V15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.5a1.5 1.5 0 0 0 0-3z"/><line x1="13" y1="7.5" x2="13" y2="9" strokeDasharray="1.5 1.5"/><line x1="13" y1="15" x2="13" y2="16.5" strokeDasharray="1.5 1.5"/></svg>Pour réserver</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Billet coupe-file pour la Fernsehturm</p>
@@ -463,10 +462,20 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Insolite</strong><p>Le <a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer">High Swing Berlin</a> propose de se balancer à 120 mètres au-dessus d’Alexanderplatz, depuis le toit du Park Inn Hotel : la balançoire la plus haute d’Europe. Comptez environ 70 marches pour rejoindre la plateforme (pas d’ascenseur), et prévoyez une petite laine, le vent souffle plus fort en altitude. Réservé aux plus téméraires !</p></div>
+            <p>Juste à côté, sur le toit du Park Inn Hotel donnant sur Alexanderplatz, se cache une expérience assez inattendue. Le <strong>High Swing Berlin</strong> propose de se balancer à 120 mètres au-dessus de la ville, sur la balançoire la plus haute d’Europe. Il faut grimper environ 70 marches pour rejoindre la plateforme (pas d’ascenseur), et prévoir une petite laine puisque le vent souffle plus fort en altitude. Réservé aux plus téméraires !</p>
+            <div className="article-book">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name">High Swing Berlin</p>
+                  <p className="article-resto-sub">À partir de 30 €</p>
+                  <p>Sensations garanties à 120 mètres de haut. <a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer">Réserver son créneau</a>.</p>
+                </div>
+              </div>
             </div>
+            <h4>Berliner Dom</h4>
             <p>Puis à seulement une dizaine de minutes d’ici, nous rejoignons le <strong>Berliner Dom</strong>, l’un des monuments les plus impressionnants de Berlin avec son immense dôme vert qui domine le paysage. Il se trouve sur l’<strong>île aux Musées</strong>. C’est la plus grande église protestante de la ville. Construite entre 1894 et 1905 pour la famille impériale allemande, elle impressionne autant par sa taille que par son élégance. Elle témoigne de la grandeur de l’ancien Empire allemand et constitue aujourd’hui l’un des symboles incontournables de la capitale.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
@@ -523,7 +532,7 @@ export default function VisiterBerlinPage() {
             <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.5a1.5 1.5 0 0 0 0 3V15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.5a1.5 1.5 0 0 0 0-3z"/><line x1="13" y1="7.5" x2="13" y2="9" strokeDasharray="1.5 1.5"/><line x1="13" y1="15" x2="13" y2="16.5" strokeDasharray="1.5 1.5"/></svg>Pour réserver</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Billet d'entrée Teufelsberg</p>
