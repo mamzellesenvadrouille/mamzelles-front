@@ -626,7 +626,7 @@ export default function VisiterBerlinPage() {
             </div>
             <h3>Où dormir ?</h3>
             <p>Nous avons logé à l’<a href="https://www.hotel-oderberger.berlin/en/" target="_blank" rel="noopener noreferrer"><strong>Hôtel Oderberger</strong></a>, dans le quartier de Prenzlauer Berg, un ancien bain public du début du XXe siècle transformé en hôtel design 4 étoiles, avec sa spectaculaire piscine néo-Renaissance. Une adresse que nous recommandons sans hésiter, idéalement située pour rayonner dans le nord-est de Berlin.</p>
-            <p>Dans tous les cas, privilégiez Prenzlauer Berg ou Mitte pour être bien situées et que tout soit accessible à pied ou en tram.</p>
+            <p>Dans tous les cas, privilégiez Prenzlauer Berg ou Mitte pour être bien situés et que tout soit accessible à pied ou en tram.</p>
             <h3>Quel budget prévoir ?</h3>
             <p>Berlin reste une capitale très accessible. Comptez environ <strong>90 à 120 € par personne et par jour</strong> en incluant l’hébergement, les repas et les activités. La street food (Currywurst, Gemüse Kebab) permet de manger bien et pas cher, pour 5 à 8 € en moyenne.</p>
             <div className="article-tip">
