@@ -618,10 +618,11 @@ export default function VisiterBerlinPage() {
               <h2 className="article-section-h2">4 jours à Berlin, tout savoir pour organiser votre voyage</h2>
             </div>
             <div className="article-pratique-intro">
-              <p>Quelques mots pour décrire cette capitale incroyable : elle est libre, brute, créative, décontractée, un peu chaotique… mais terriblement vivante.</p>
+              <h3>L’avis des MamZelles sur cette capitale hors norme</h3>
+              <p>Quelques mots pour décrire cette capitale incroyable : libre, brute, créative, décontractée, un peu chaotique… mais terriblement vivante !</p>
               <p>L’ambiance qui y règne est difficile à comparer à d’autres capitales européennes. Ce n’est pas une ville « carte postale » comme Paris ou Rome. Elle est parfois un peu grise, parfois industrielle, souvent imparfaite… mais c’est justement ce qui fait son charme. Personne ne regarde personne. Tout le monde peut y être lui-même sans être jugé.</p>
               <p>Berlin donne souvent une impression de liberté. Les gens semblent moins pressés, plus relax, parfois un peu « je fais ma vie comme j’ai envie ». Il y a un côté artistique et anticonformiste, mais aussi très quotidien, simple, sans chichi.</p>
-              <p>Selon les quartiers, l’énergie change énormément : vers Prenzlauer Berg c’est plus doux et bobo, autour de Kreuzberg plus alternatif et multiculturel, tandis que Mitte mélange histoire, touristes et vie urbaine. Berlin, une ville qui se vit autant qu’elle se visite.</p>
+              <p>Selon les quartiers, l’énergie change énormément : vers Prenzlauer Berg c’est plus doux et bobo, autour de Kreuzberg plus alternatif et multiculturel, tandis que Mitte mélange histoire, touristes et vie urbaine. Berlin est une ville qui se vit autant qu’elle se visite !</p>
             </div>
             <h3>Où dormir ?</h3>
             <p>Nous avons logé à l’<a href="https://www.hotel-oderberger.berlin/en/" target="_blank" rel="noopener noreferrer"><strong>Hôtel Oderberger</strong></a>, dans le quartier de Prenzlauer Berg, un ancien bain public du début du XXe siècle transformé en hôtel design 4 étoiles, avec sa spectaculaire piscine néo-Renaissance. Une adresse que nous recommandons sans hésiter, idéalement située pour rayonner dans le nord-est de Berlin.</p>
