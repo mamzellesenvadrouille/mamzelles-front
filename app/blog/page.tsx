@@ -28,56 +28,56 @@ const articles = [
     titre: "Itinéraire Philippines — 3 semaines pour découvrir la perle de l'Orient",
     url: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
     image: null,
-    localImage: '/Philippines.webp',
+    localImage: '/related/Philippines-articles.webp',
     categorie: 'Philippines',
   },
   {
     titre: 'Palawan — El Nido & Coron, le joyau des Philippines',
     url: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
     image: null,
-    localImage: '/El-Nido-Coron.webp',
+    localImage: '/related/Palawan-article.webp',
     categorie: 'Philippines',
   },
   {
     titre: 'Palawan — De Puerto Princesa à Port Barton',
     url: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
     image: null,
-    localImage: '/Puerto-Princesa-Port-Barton.webp',
+    localImage: '/related/Port-Barton-article.webp',
     categorie: 'Philippines',
   },
   {
     titre: "Agafay — Une nuit dans le désert",
     url: '/dormir-dans-le-desert-agafay',
     image: null,
-    localImage: '/Agafay.webp',
+    localImage: '/related/Agafay-article.webp',
     categorie: 'Maroc',
   },
   {
     titre: 'Marrakech — Que faire dans la ville rouge',
     url: '/visiter-marrakech',
     image: null,
-    localImage: '/Marrakech.webp',
+    localImage: '/related/Marrakech-article.webp',
     categorie: 'Maroc',
   },
   {
     titre: "Lanzarote — L'île aux 300 volcans",
     url: '/road-trip-a-lanzarote',
     image: null,
-    localImage: '/Lanzarote.webp',
+    localImage: '/related/Lanzarote-article.webp',
     categorie: 'Espagne',
   },
   {
     titre: '3 jours à Madrid — Les incontournables de la capitale espagnole',
     url: '/visiter-madrid-en-3-jours',
     image: null,
-    localImage: '/Madrid.webp',
+    localImage: '/related/Madrid-article.webp',
     categorie: 'Espagne',
   },
   {
     titre: "Londres — L'essentiel en une semaine",
     url: '/visiter-londres',
     image: null,
-    localImage: '/Londres.webp',
+    localImage: '/related/Londres-article.webp',
     categorie: 'Europe',
   },
 ];
@@ -197,7 +197,6 @@ export default async function BlogPage() {
               >
                 <div className="blog-card-img-wrap">
                   <img src={imgSrc} alt={article.titre} className={`blog-card-img${article.localImage === '/Madrid.webp' ? ' madrid' : ''}`} loading="lazy" />
-                  <span className="blog-card-cat">{article.categorie}</span>
                 </div>
                 <div className="blog-card-body">
                   <h3 className="blog-card-title">{article.titre}</h3>
