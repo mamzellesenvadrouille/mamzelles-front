@@ -6,6 +6,7 @@ import CommentForm from '../components/CommentForm';
 import CommentsList from '../components/CommentsList';
 import NewsletterForm from '../components/NewsletterForm';
 import Footer from '../components/Footer';
+import ArticlesLies from '../components/ArticlesLies';
 
 export const metadata: Metadata = {
   title: "Que faire à Lanzarote ? Road trip d'une semaine",
@@ -605,39 +606,7 @@ export default function LanzarotePage() {
           <NewsletterForm />
 
           {/* ARTICLES LIES */}
-          <div className="article-related">
-            <h3 className="article-related-title">À lire aussi</h3>
-            <div className="article-related-grid">
-              <a href="/visiter-madrid-en-3-jours" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/10/Madrid-1536x1229.jpeg.webp" alt="Madrid" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Espagne</span>
-                  <p className="article-related-title-card">Visiter Madrid en 3 jours : itinéraire et bons plans</p>
-                </div>
-              </a>
-              <a href="/visiter-marrakech" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="/Marrakech.webp" alt="Marrakech" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Maroc</span>
-                  <p className="article-related-title-card">Visiter Marrakech : que faire dans la ville rouge</p>
-                </div>
-              </a>
-              <a href="/visiter-londres" className="article-related-card">
-                <div className="article-related-img-wrap">
-                  <img src="/Londres.webp" alt="Londres" className="article-related-img" />
-                </div>
-                <div className="article-related-body">
-                  <span className="article-related-cat">Europe</span>
-                  <p className="article-related-title-card">Visiter Londres : que faire en 7 jours par quartier</p>
-                </div>
-              </a>
-            </div>
-            <a href="/blog" className="article-related-link">Voir tous nos articles →</a>
-          </div>
+          <ArticlesLies currentSlug="road-trip-a-lanzarote" />
 
         </main>
 
