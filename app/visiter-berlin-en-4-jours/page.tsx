@@ -88,7 +88,7 @@ export default function VisiterBerlinPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>90-120 €/j/pers.</span>
+          <span>120-160 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -628,10 +628,11 @@ export default function VisiterBerlinPage() {
             <p>Nous avons logé à l’<a href="https://www.hotel-oderberger.berlin/en/" target="_blank" rel="noopener noreferrer"><strong>Hôtel Oderberger</strong></a>, dans le quartier de Prenzlauer Berg, un ancien bain public du début du XXe siècle transformé en hôtel design 4 étoiles, avec sa spectaculaire piscine néo-Renaissance. Une adresse que nous recommandons sans hésiter, idéalement située pour rayonner dans le nord-est de Berlin.</p>
             <p>Dans tous les cas, privilégiez Prenzlauer Berg ou Mitte pour être bien situés et que tout soit accessible à pied ou en tram.</p>
             <h3>Quel budget prévoir ?</h3>
-            <p>Berlin reste une capitale très accessible. Comptez environ <strong>90 à 120 € par personne et par jour</strong> en incluant l’hébergement, les repas et les activités. La street food (Currywurst, Gemüse Kebab) permet de manger bien et pas cher, pour 5 à 8 € en moyenne.</p>
+            <p>Berlin reste une capitale accessible comparée à d’autres capitales européennes. Comptez environ <strong>120 à 160 € par personne et par jour</strong> pour un voyageur moyen (hébergement, repas et activités inclus).</p>
+            <p>Les petits budgets peuvent s’en sortir dès 60 à 90 €/jour en misant sur les auberges de jeunesse et la street food, qui permet justement de manger bien et pas cher (Currywurst, Gemüse Kebab... pour 5 à 8 € en moyenne).</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Les musées de l’île aux Musées et de nombreux lieux culturels berlinois proposent des tarifs réduits en fin de journée ou des créneaux gratuits certains jours — renseignez-vous sur place ou en ligne avant votre visite.</p></div>
+              <div><strong>Bon à savoir</strong><p>Les musées de l’île aux Musées et de nombreux lieux culturels berlinois proposent des tarifs réduits en fin de journée ou des créneaux gratuits certains jours. Renseignez-vous sur place ou en ligne avant votre visite.</p></div>
             </div>
             <h3 id="arriver-avion">Arriver en avion</h3>
             <p>Il est désormais facile de trouver des vols directs à destination de Berlin à moindre coût. De <strong>nombreuses compagnies low-cost</strong> desservent la capitale allemande depuis la plupart des aéroports français.</p>
