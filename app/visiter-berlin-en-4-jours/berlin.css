@@ -299,6 +299,9 @@
 
 .article-section p { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 14px; }
 
+.article-berlin .article-section p a { color: var(--gold); text-decoration: underline; font-weight: 500; }
+.article-berlin .article-section p a:hover { color: var(--dark); }
+
 .article-section ul { padding-left: 20px; margin-bottom: 14px; }
 
 .article-section li { font-size: 15px; line-height: 1.85; color: #444; font-weight: 300; margin-bottom: 6px; }
