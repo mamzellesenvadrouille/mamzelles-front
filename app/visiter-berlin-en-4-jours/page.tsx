@@ -246,10 +246,10 @@ export default function VisiterBerlinPage() {
             <p>Alors, on se la joue Berlinoises. On s’installe dans l’herbe du côté de <strong>James-Simon-Park</strong> et on profite du moment. De là, on a une vue plongeante sur l’<strong>île aux Musées</strong>.</p>
             <p><strong>Un peu d’histoire.</strong> L’<strong>île aux Musées</strong> est l’un des ensembles culturels les plus importants d’Europe. Plusieurs grands musées historiques y sont regroupés, construits entre le XIXe et le début du XXe siècle, sur une île entourée par la Spree. Le site est classé au patrimoine mondial de l’UNESCO.</p>
             <p>Vous l’aurez compris, cet endroit fait partie des incontournables. Le gros atout du lieu, c’est l’ambiance, mais aussi la vue. On a un très beau panorama sur la rivière, les péniches, et surtout sur la magnifique cathédrale qui s’illumine à la tombée de la nuit : le <strong>Berliner Dom</strong>, avec son immense dôme vert qu’on peut voir de loin. Ici, c’est clairement un spot idéal pour le coucher de soleil, alors on en profite. La lumière dorée sur l’<strong>île aux Musées</strong>, c’est magnifique !</p>
-            <div className="article-resto">
+            <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.5 0 2.5 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M4 18l1-9h14l1 9"/><path d="M12 3v6"/><path d="M9 6h6"/></svg>Pour réserver</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.5a1.5 1.5 0 0 0 0 3V15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.5a1.5 1.5 0 0 0 0-3z"/><line x1="13" y1="7.5" x2="13" y2="9" strokeDasharray="1.5 1.5"/><line x1="13" y1="15" x2="13" y2="16.5" strokeDasharray="1.5 1.5"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Croisière d’une heure sur la Spree</p>
@@ -451,10 +451,10 @@ export default function VisiterBerlinPage() {
             <h3>Île aux Musées &amp; Unter den Linden</h3>
             <h4>Berliner Dom</h4>
             <p>Après cette pause fraîcheur, c’est reparti ! Nous sommes d’ailleurs tout près de l’emblématique <strong>tour de télévision de Berlin</strong> (<strong>Fernsehturm</strong>). Elle mesure 368 mètres, ce qui en fait le plus haut monument d’Allemagne.</p>
-            <div className="article-resto">
+            <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="4" y="14" width="4" height="6"/><rect x="10" y="9" width="4" height="11"/><rect x="16" y="4" width="4" height="16"/></svg>Pour réserver</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.5a1.5 1.5 0 0 0 0 3V15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.5a1.5 1.5 0 0 0 0-3z"/><line x1="13" y1="7.5" x2="13" y2="9" strokeDasharray="1.5 1.5"/><line x1="13" y1="15" x2="13" y2="16.5" strokeDasharray="1.5 1.5"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Billet coupe-file pour la Fernsehturm</p>
@@ -520,10 +520,10 @@ export default function VisiterBerlinPage() {
             <p>Pour clôturer cette journée riche en histoire et en émotions, direction <strong>Teufelsberg</strong>, la célèbre « montagne du Diable ». On nous a dit que le coucher de soleil y était magique… et on confirme, le détour en vaut largement la peine !</p>
             <p><strong>Teufelsberg</strong> est une colline artificielle construite après la Seconde Guerre mondiale à partir des millions de tonnes de gravats laissés par la destruction de Berlin. Depuis la station <strong>Berlin-Heerstraße</strong>, il faut rejoindre l’entrée de la forêt et suivre le sentier balisé, qui traverse une petite route avant de grimper jusqu’au sommet.</p>
             <p>À notre arrivée sur le site, un plan nous est remis. Vous pouvez explorer librement les lieux, déambuler entre les bâtiments, grimper dans certains d’entre eux et prendre le temps d’admirer les nombreux points de vue. Au sommet se dressent les vestiges d’une ancienne station d’écoute américaine datant de la Guerre froide.</p>
-            <div className="article-resto">
+            <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="4" y="14" width="4" height="6"/><rect x="10" y="9" width="4" height="11"/><rect x="16" y="4" width="4" height="16"/></svg>Pour réserver</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.5a1.5 1.5 0 0 0 0 3V15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.5a1.5 1.5 0 0 0 0-3z"/><line x1="13" y1="7.5" x2="13" y2="9" strokeDasharray="1.5 1.5"/><line x1="13" y1="15" x2="13" y2="16.5" strokeDasharray="1.5 1.5"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Billet d'entrée Teufelsberg</p>

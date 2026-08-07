@@ -1024,6 +1024,30 @@
   margin: 24px 0;
 }
 
+.article-berlin .article-book {
+  margin: 24px 0;
+}
+
+.article-berlin .article-book .article-resto-item {
+  border: 1px solid var(--gold);
+}
+
+.article-berlin .article-book .article-resto-head {
+  background: var(--gold);
+}
+
+.article-berlin .article-book .article-resto-head-label {
+  color: var(--dark);
+}
+
+.article-berlin .article-book .article-resto-head-label svg {
+  stroke: var(--dark);
+}
+
+.article-berlin .article-book .article-resto-name a {
+  color: var(--gold);
+}
+
 .article-berlin .article-resto-item {
   background: #fff;
   border: 1px solid var(--line);
