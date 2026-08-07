@@ -449,8 +449,9 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h3>Île aux Musées &amp; Unter den Linden</h3>
+            <p>Après cette pause fraîcheur, c’est reparti !</p>
             <h4>Tour de télévision &amp; High Swing Berlin</h4>
-            <p>Après cette pause fraîcheur, c’est reparti ! Nous sommes d’ailleurs tout près de l’emblématique <strong>tour de télévision de Berlin</strong> (<strong>Fernsehturm</strong>). Elle mesure 368 mètres, ce qui en fait le plus haut monument d’Allemagne.</p>
+            <p>Nous sommes d’ailleurs tout près de l’emblématique <strong>tour de télévision de Berlin</strong> (<strong>Fernsehturm</strong>). Elle mesure 368 mètres, ce qui en fait le plus haut monument d’Allemagne.</p>
             <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -750,7 +751,7 @@ export default function VisiterBerlinPage() {
                   {
                     id: 'tram',
                     label: 'Tram',
-                    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--dark)" strokeWidth="2"><rect x="3" y="3" width="18" height="13" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="7.5" cy="13" r="1.2"/><circle cx="16.5" cy="13" r="1.2"/><line x1="6" y1="21" x2="6" y2="16"/><line x1="18" y1="21" x2="18" y2="16"/><line x1="9" y1="0.5" x2="9" y2="3"/></svg>,
+                    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style={{stroke:'var(--dark)'}} strokeWidth="2"><rect x="3" y="3" width="18" height="13" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="7.5" cy="13" r="1.2"/><circle cx="16.5" cy="13" r="1.2"/><line x1="6" y1="21" x2="6" y2="16"/><line x1="18" y1="21" x2="18" y2="16"/><line x1="9" y1="0.5" x2="9" y2="3"/></svg>,
                     content: (
                       <>
                         <p>Les <strong>tramways</strong> sont omniprésents dans l’ancien Berlin-Est, notamment dans des quartiers comme Prenzlauer Berg ou Friedrichshain, où ils font presque partie du décor.</p>
