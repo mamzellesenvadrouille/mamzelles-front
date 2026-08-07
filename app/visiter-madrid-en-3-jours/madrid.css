@@ -1003,3 +1003,15 @@
   stroke: var(--gold);
   flex-shrink: 0;
 }
+
+.article-madrid .article-section p a,
+.article-madrid .article-resto-body p a {
+  color: var(--gold);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.article-madrid .article-section p a:hover,
+.article-madrid .article-resto-body p a:hover {
+  color: var(--dark);
+}

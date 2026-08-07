@@ -168,7 +168,7 @@ export default function MadridPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name">Billet pour le Palais Royal</p>
                   <p className="article-resto-sub">Coupe-file · À partir de 22 €</p>
-                  <p>Un peu plus cher que le tarif officiel (18 €), mais si les billets sont épuisés ou que vous voulez éviter l'attente, cette <a href="https://gyg.me/NCm0BYcb" target="_blank" rel="noopener noreferrer">option coupe-file</a> reste une bonne alternative.</p>
+                  <p>Un peu plus cher que le tarif officiel (18 €), mais si les billets sont épuisés ou que vous voulez éviter l'attente, cette <a href="https://gyg.me/NCm0BYcb" target="_blank" rel="noopener noreferrer">option coupe-file</a> est une bonne alternative.</p>
                 </div>
               </div>
             </div>
