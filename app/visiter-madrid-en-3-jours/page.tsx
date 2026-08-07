@@ -160,6 +160,18 @@ export default function MadridPage() {
             <p>Tout d&apos;abord, découvrez le <strong>Palais Royal</strong> de Madrid. Il fait partie des plus grands palais d&apos;Europe, mais aussi des plus beaux !</p>
             <p>Bien qu&apos;il ne soit plus habité par la famille royale, il reste un lieu symbolique du pouvoir qu&apos;il est possible de visiter. Pour cela, nous vous conseillons d&apos;acheter vos <a href="https://tickets.patrimonionacional.es/fr-FR/venta-de-entradas" target="_blank" rel="noopener noreferrer" className="article-link">billets</a> à l&apos;avance.</p>
             <p>Notez qu&apos;il est possible de voir la relève de la garde du Palais Royal de Madrid. Cela se passe tous les mercredis et samedis à 11 h. Il est aussi possible d&apos;assister à la relève solennelle de la garde les premiers mercredis du mois à 12 h (sauf en janvier, août et septembre). C&apos;est apparemment un spectacle unique à ne pas manquer !</p>
+            <div className="article-book">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name">Billet pour le Palais Royal</p>
+                  <p className="article-resto-sub">Coupe-file</p>
+                  <p>Si les billets officiels sont épuisés, cette <a href="https://gyg.me/NCm0BYcb" target="_blank" rel="noopener noreferrer">option coupe-file</a> permet de visiter le Palais Royal sans mauvaise surprise.</p>
+                </div>
+              </div>
+            </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2446-scaled-1024x768.jpeg" alt="Palais Royal Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2456-scaled-768x1024.jpeg" alt="Palais Royal Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -294,6 +306,18 @@ export default function MadridPage() {
             <h3>El Retiro</h3>
             <p>Depuis le « Circulo de Belles Artes », direction la <strong>Plaza de Cibeles</strong> en passant par la banque d&apos;Espagne. Sur cette place se dressent d&apos;imposants bâtiments, tel que le <strong>Palacio de Comunicaciones</strong>. Celui-ci fait désormais office d&apos;Hôtel de ville, et accueille un centre culturel. Il possède également un rooftop qui offre un beau panorama sur la ville.</p>
             <p>Si vous avez envie de visiter de jolis musées, c&apos;est dans ce quartier que vous trouverez votre bonheur ! Le <strong>musée du Prado</strong>, le <strong>musée Thyssen-Bornemisza</strong> et le <strong>Centro de Arte Reina Sofia</strong> se trouvent à proximité du <strong>Parque del Retiro</strong>.</p>
+            <div className="article-book">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name">Billet pour le musée du Prado</p>
+                  <p className="article-resto-sub">Coupe-file</p>
+                  <p>L'affluence y est énorme, souvent complet sur place. Ce <a href="https://gyg.me/C7TTgdck" target="_blank" rel="noopener noreferrer">billet coupe-file</a> évite la queue devant l'un des plus grands musées d'art au monde.</p>
+                </div>
+              </div>
+            </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2116-scaled-1024x768.jpeg" alt="Banque d'Espagne Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2062-scaled-1024x768.jpeg" alt="Vue banque d'Espagne Madrid" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
