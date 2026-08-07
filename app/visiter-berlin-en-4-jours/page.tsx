@@ -253,7 +253,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name">Croisière d’une heure sur la Spree</p>
-                  <p className="article-resto-sub">En français · 22 €</p>
+                  <p className="article-resto-sub">En français · À partir de 22 €</p>
                   <p>Envie d'admirer le Berliner Dom et l'île aux Musées depuis l'eau ? Cette <a href="https://gyg.me/P0FuQWIe" target="_blank" rel="noopener noreferrer">croisière d'une heure sur la Spree</a> permet de voir la ville sous un autre angle.</p>
                 </div>
               </div>
@@ -449,6 +449,7 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h3>Île aux Musées &amp; Unter den Linden</h3>
+            <h4>Tour de télévision &amp; High Swing Berlin</h4>
             <p>Après cette pause fraîcheur, c’est reparti ! Nous sommes d’ailleurs tout près de l’emblématique <strong>tour de télévision de Berlin</strong> (<strong>Fernsehturm</strong>). Elle mesure 368 mètres, ce qui en fait le plus haut monument d’Allemagne.</p>
             <div className="article-book">
               <div className="article-resto-item">
@@ -529,6 +530,7 @@ export default function VisiterBerlinPage() {
             <p>Pour clôturer cette journée riche en histoire et en émotions, direction <strong>Teufelsberg</strong>, la célèbre « montagne du Diable ». On nous a dit que le coucher de soleil y était magique… et on confirme, le détour en vaut largement la peine !</p>
             <p><strong>Teufelsberg</strong> est une colline artificielle construite après la Seconde Guerre mondiale à partir des millions de tonnes de gravats laissés par la destruction de Berlin. Depuis la station <strong>Berlin-Heerstraße</strong>, il faut rejoindre l’entrée de la forêt et suivre le sentier balisé, qui traverse une petite route avant de grimper jusqu’au sommet.</p>
             <p>À notre arrivée sur le site, un plan nous est remis. Vous pouvez explorer librement les lieux, déambuler entre les bâtiments, grimper dans certains d’entre eux et prendre le temps d’admirer les nombreux points de vue. Au sommet se dressent les vestiges d’une ancienne station d’écoute américaine datant de la Guerre froide.</p>
+            <p>L’endroit est tout simplement fascinant. Entre les immenses radômes blancs, les fresques de street art qui recouvrent chaque mur et la vue panoramique sur Berlin, l’atmosphère est hors du temps. C’est un lieu insolite où l’histoire rencontre l’art urbain, offrant une expérience complètement différente de celle des monuments emblématiques du centre-ville. Un véritable coup de cœur pour nous.</p>
             <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -541,7 +543,6 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <p>L’endroit est tout simplement fascinant. Entre les immenses radômes blancs, les fresques de street art qui recouvrent chaque mur et la vue panoramique sur Berlin, l’atmosphère est hors du temps. C’est un lieu insolite où l’histoire rencontre l’art urbain, offrant une expérience complètement différente de celle des monuments emblématiques du centre-ville. Un véritable coup de cœur pour nous.</p>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
