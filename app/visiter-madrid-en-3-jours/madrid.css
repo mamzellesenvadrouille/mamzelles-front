@@ -958,8 +958,8 @@
 }
 
 .article-madrid .article-resto-name a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--dark) !important;
+  text-decoration: none !important;
 }
 
 .article-madrid .article-resto-name a:hover {
