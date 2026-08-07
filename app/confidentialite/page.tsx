@@ -24,7 +24,7 @@ export default function Confidentialite() {
 
       <section style={{ maxWidth: '720px', margin: '0 auto', padding: '56px 24px 80px', fontFamily: 'Inter, sans-serif', color: 'var(--dark)', lineHeight: '1.8', fontSize: '15px' }}>
 
-        <p style={{ color: '#aaa', fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '48px' }}>Dernière mise à jour : juillet 2026</p>
+        <p style={{ color: '#aaa', fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '48px' }}>Dernière mise à jour : août 2026</p>
 
         <div style={{ borderLeft: '2px solid var(--gold)', paddingLeft: '20px', marginBottom: '40px' }}>
           <p style={{ margin: '0 0 4px', color: 'var(--dark)', fontWeight: 600, opacity: 0.85 }}>Responsable du traitement des données</p>
@@ -75,12 +75,15 @@ export default function Confidentialite() {
         <p style={{ marginBottom: '8px' }}>Conformément au RGPD, vous disposez des droits d&rsquo;accès, de rectification, d&rsquo;effacement, d&rsquo;opposition et de portabilité de vos données.</p>
         <p>Pour exercer ces droits : <a href="mailto:contact@mamzellesenvadrouille.com" style={{ color: 'var(--gold)' }}>contact@mamzellesenvadrouille.com</a></p>
 
-        <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Cookies</h2>
-        <p>Notre site utilise <strong>Vercel Analytics</strong> afin de mesurer la fréquentation du site de manière agrégée et anonyme. Aucun cookie publicitaire ou de suivi individuel n&rsquo;est utilisé.</p>
-
-        <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Hébergement & sécurité</h2>
+        <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Hébergement &amp; sécurité</h2>
         <p style={{ marginBottom: '8px' }}>Le site est hébergé par <strong>Vercel</strong> (certifié SOC 2). La newsletter est gérée par <strong>Brevo</strong> (conforme au RGPD), les paiements sont sécurisés par <strong>Stripe</strong> et les carnets de voyage sont stockés via <strong>Upstash</strong>.</p>
         <p>Des mesures techniques et organisationnelles appropriées sont mises en œuvre afin d&rsquo;assurer la confidentialité et la sécurité de vos données personnelles.</p>
+
+        <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Liens partenaires</h2>
+        <p>Certains liens présents sur ce site (réservations d&rsquo;activités, assurance voyage, etc.) sont des liens d&rsquo;affiliation. Cela signifie que nous pouvons percevoir une commission si vous effectuez un achat via ces liens, sans surcoût pour vous. Nous ne recommandons que des partenaires et services que nous utilisons ou avons testés nous-mêmes.</p>
+
+        <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Cookies</h2>
+        <p>Notre site utilise <strong>Vercel Analytics</strong> afin de mesurer la fréquentation du site de manière agrégée et anonyme. Aucun cookie publicitaire ou de suivi individuel n&rsquo;est utilisé.</p>
 
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Réclamation</h2>
         <p>Vous pouvez introduire une réclamation auprès de la <strong>CNIL</strong> : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)' }}>www.cnil.fr</a></p>
