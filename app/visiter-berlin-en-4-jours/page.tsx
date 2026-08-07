@@ -681,59 +681,64 @@ export default function VisiterBerlinPage() {
             <div style={{marginTop: '16px'}}>
                 <PratiqueOnglets onglets={[
                   {
-                    id: 'transports',
-                    label: 'Transports',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="16" height="14" rx="2"/><path d="M4 11h16"/><path d="M8 18v2"/><path d="M16 18v2"/></svg>,
+                    id: 'ubahn',
+                    label: 'U-Bahn',
+                    icon: <i className="ti ti-train" style={{fontSize:'18px'}}></i>,
                     content: (
                       <>
-                        <p>À Berlin, se déplacer est presque un jeu d’enfant. La ville est remarquablement bien desservie et il est tout à fait possible, voire souvent plus pratique, de s’y passer complètement de voiture. Le réseau de transports est vaste, rapide et particulièrement efficace, couvrant aussi bien les quartiers centraux que les zones plus alternatives ou excentrées de la capitale allemande.</p>
-                        <p>Pour se déplacer, quatre grands moyens de transport structurent la ville. Il y a d’abord l’U-Bahn, le métro berlinois, rapide et fréquent, idéal pour circuler facilement dans le centre. Ensuite le S-Bahn, une sorte de RER urbain, particulièrement pratique pour traverser Berlin de part en part, rejoindre des quartiers plus éloignés et même l’aéroport. Les tramways, eux, sont omniprésents dans l’ancien Berlin-Est, notamment dans des quartiers comme Prenzlauer Berg ou Friedrichshain, où ils font presque partie du décor. Enfin, les bus complètent parfaitement le réseau, très utiles pour certains trajets ou lorsque les autres transports ne circulent plus.</p>
-                        <p>L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Ces tickets sont valables 2 heures.</p>
-                        <p>Et côté horaires… Berlin pense aussi aux personnes qui vivent la nuit. En journée, les transports sont extrêmement réguliers, avec des passages fréquents, souvent toutes les cinq à dix minutes sur les lignes principales, ce qui rend les déplacements fluides et spontanés.</p>
-                        <p>En semaine, du dimanche au jeudi, les métros et S-Bahn s’arrêtent généralement autour d’1h à 1h30 du matin. Mais la ville ne s’endort pas complètement : des bus de nuit, reconnaissables à leur lettre « N », prennent le relais pour maintenir les grands axes accessibles.</p>
-                        <p>Le week-end, Berlin révèle encore davantage son tempérament nocturne. Les vendredis et samedis soir, U-Bahn et S-Bahn circulent toute la nuit, certes avec une fréquence un peu réduite, mais largement suffisante pour rentrer sereinement après un dîner tardif, un concert, un bar ou une longue soirée berlinoise. Ici, la ville semble avoir parfaitement compris qu’à Berlin, la nuit fait aussi partie du voyage.</p>
+                        <p>À Berlin, se déplacer est presque un jeu d’enfant, la ville étant remarquablement bien desservie. Le réseau de transports est vaste, rapide et particulièrement efficace, couvrant aussi bien les quartiers centraux que les zones plus alternatives ou excentrées de la capitale allemande.</p>
+                        <p>L’<strong>U-Bahn</strong>, le métro berlinois, est rapide et fréquent, idéal pour circuler facilement dans le centre.</p>
                       </>
                     ),
                   },
                   {
-                    id: 'monnaie',
-                    label: 'Monnaie',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 9a2 2 0 0 0-2-1.5h-1.6a2 2 0 0 0 0 4h1.6a2 2 0 0 1 0 4H11a2 2 0 0 1-2-1.5"/><line x1="12" y1="6" x2="12" y2="18"/></svg>,
+                    id: 'sbahn',
+                    label: 'S-Bahn',
+                    icon: <i className="ti ti-train" style={{fontSize:'18px'}}></i>,
                     content: (
                       <>
-                        <p>L’Allemagne fait partie de la zone euro : pas de change à prévoir si vous venez de France.</p>
-                        <p>La carte bancaire est largement acceptée à Berlin, mais gardez un peu de liquide sur vous : certains petits commerces, bars et marchés fonctionnent encore uniquement en espèces.</p>
+                        <p>Le <strong>S-Bahn</strong> est une sorte de RER urbain, particulièrement pratique pour traverser Berlin de part en part, rejoindre des quartiers plus éloignés et même l’aéroport.</p>
                       </>
                     ),
                   },
                   {
-                    id: 'prises',
-                    label: 'Prises',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M7 12l5 5l-1.5 1.5a3.536 3.536 0 1 1 -5 -5l1.5 -1.5"/><path d="M17 12l-5 -5l1.5 -1.5a3.536 3.536 0 1 1 5 5l-1.5 1.5"/><path d="M3 21l2.5 -2.5"/><path d="M18.5 5.5l2.5 -2.5"/><path d="M10 11l-2 2"/><path d="M13 14l-2 2"/></svg>,
+                    id: 'tram',
+                    label: 'Tram',
+                    icon: <i className="ti ti-bus-stop" style={{fontSize:'18px'}}></i>,
                     content: (
                       <>
-                        <p>Bonne nouvelle : l’Allemagne utilise le même type de prises électriques que la France (type C/F). Aucun adaptateur n’est nécessaire.</p>
+                        <p>Les <strong>tramways</strong> sont omniprésents dans l’ancien Berlin-Est, notamment dans des quartiers comme Prenzlauer Berg ou Friedrichshain, où ils font presque partie du décor.</p>
                       </>
                     ),
                   },
                   {
-                    id: 'savoir-vivre',
-                    label: 'Savoir-vivre',
-                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"/></svg>,
+                    id: 'bus',
+                    label: 'Bus',
+                    icon: <i className="ti ti-bus" style={{fontSize:'18px'}}></i>,
                     content: (
                       <>
-                        <p>Berlin est une ville libre et décontractée, mais quelques repères sont bons à connaître :</p>
-                        <ul className="article-pratique-list-gold">
-                          <li>La consommation d’alcool dans l’espace public (rue, parcs) est légale et courante.</li>
-                          <li>Dans le métro, laissez descendre les passagers avant de monter.</li>
-                          <li>Le dimanche, la quasi-totalité des commerces sont fermés (hors restaurants et marchés type Mauerpark).</li>
-                          <li>Dans certains lieux alternatifs et clubs (comme le Club der Visionäre), les photos sont interdites : respectez la consigne.</li>
-                        </ul>
+                        <p>Les <strong>bus</strong> complètent parfaitement le réseau, très utiles pour certains trajets ou lorsque les autres transports ne circulent plus.</p>
+                        <div className="article-tip" style={{marginTop:'20px'}}>
+                          <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                          <div>
+                            <strong>Bon à savoir</strong>
+                            <p><strong>Tickets</strong> — L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Ces tickets sont valables 2 heures.</p>
+                            <p><strong>Horaires</strong> — Berlin pense aussi aux personnes qui vivent la nuit. En journée, les transports sont extrêmement réguliers, avec des passages fréquents, souvent toutes les cinq à dix minutes sur les lignes principales, ce qui rend les déplacements fluides et spontanés. En semaine, du dimanche au jeudi, les métros et S-Bahn s’arrêtent généralement autour d’1h à 1h30 du matin, mais la ville ne s’endort pas complètement : des bus de nuit, reconnaissables à leur lettre « N », prennent le relais. Le week-end, U-Bahn et S-Bahn circulent toute la nuit, largement suffisant pour rentrer sereinement après une longue soirée berlinoise.</p>
+                          </div>
+                        </div>
                       </>
                     ),
                   },
                 ]} />
             </div>
+            <h3 style={{marginTop:'32px'}}>Savoir-vivre</h3>
+            <p>Berlin est une ville libre et décontractée, mais quelques repères sont bons à connaître :</p>
+            <ul className="article-pratique-list-gold">
+              <li>La consommation d’alcool dans l’espace public (rue, parcs) est légale et courante.</li>
+              <li>Dans le métro, laissez descendre les passagers avant de monter.</li>
+              <li>Le dimanche, la quasi-totalité des commerces sont fermés (hors restaurants et marchés type Mauerpark).</li>
+              <li>Dans certains lieux alternatifs et clubs (comme le Club der Visionäre), les photos sont interdites : respectez la consigne.</li>
+            </ul>
           </section>
 
           <section className="article-comments-section">
