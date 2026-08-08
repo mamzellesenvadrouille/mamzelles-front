@@ -177,7 +177,7 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">Billet pour l'Abbaye de Westminster</a></p>
                   <p className="article-resto-sub">À partir de 36 €</p>
-                  <p>Si vous souhaitez visiter l'Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, <a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">réservez votre entrée en ligne</a>.</p>
+                  <p>Pour découvrir les merveilles architecturales et décoratives de l'un des monuments les plus visités de Londres, <a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">réservez votre créneau</a>.</p>
                 </div>
               </div>
             </div>
@@ -223,7 +223,7 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/pLqraxkS" target="_blank" rel="noopener noreferrer">Billet pour le London Eye</a></p>
                   <p className="article-resto-sub">À partir de 34 €</p>
-                  <p>Billet standard ou coupe-file (Fast Track) au choix, avec annulation gratuite jusqu'à 24h avant votre créneau.</p>
+                  <p>Billet standard ou coupe-file (Fast Track) au choix, avec annulation gratuite jusqu'à 24h avant votre créneau. <a href="https://gyg.me/pLqraxkS" target="_blank" rel="noopener noreferrer">Réservez votre créneau.</a></p>
                 </div>
               </div>
             </div>
@@ -243,7 +243,7 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/A6ttjzxQ" target="_blank" rel="noopener noreferrer">Billet pour The Shard</a></p>
                   <p className="article-resto-sub">À partir de 28 €</p>
-                  <p>Accédez à la plus haute plateforme d'observation d'Europe de l'Ouest, avec annulation gratuite jusqu'à 24h avant votre créneau.</p>
+                  <p>Accédez à la plus haute plateforme d'observation d'Europe de l'Ouest, avec annulation gratuite jusqu'à 24h avant votre créneau. <a href="https://gyg.me/A6ttjzxQ" target="_blank" rel="noopener noreferrer">Réservez votre créneau.</a></p>
                 </div>
               </div>
             </div>
@@ -303,7 +303,7 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/35D2szEt" target="_blank" rel="noopener noreferrer">Billet pour Tower Bridge Glass Floor</a></p>
                   <p className="article-resto-sub">À partir de 21 €</p>
-                  <p>L'entrée inclut aussi l'accès aux salles des machines victoriennes, avec annulation gratuite jusqu'à 24h avant votre créneau.</p>
+                  <p>L'entrée inclut aussi l'accès aux salles des machines victoriennes, avec annulation gratuite jusqu'à 24h avant votre créneau. <a href="https://gyg.me/35D2szEt" target="_blank" rel="noopener noreferrer">Réservez votre créneau.</a></p>
                 </div>
               </div>
             </div>
@@ -683,7 +683,7 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/vN2S4PL3" target="_blank" rel="noopener noreferrer">Billet pour le toboggan de l'ArcelorMittal Orbit</a></p>
                   <p className="article-resto-sub">À partir de 23 €</p>
-                  <p>Annulation gratuite possible, mais attention : il faut annuler au moins 7 jours avant votre créneau pour être remboursé.</p>
+                  <p>Annulation gratuite possible, mais attention : il faut annuler au moins 7 jours avant votre créneau pour être remboursé. <a href="https://gyg.me/vN2S4PL3" target="_blank" rel="noopener noreferrer">Réservez votre créneau.</a></p>
                 </div>
               </div>
             </div>
