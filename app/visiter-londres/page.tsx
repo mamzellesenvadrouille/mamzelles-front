@@ -126,13 +126,13 @@ export default function VisiterLondresPage() {
           <nav className="article-toc">
             <h2 className="article-toc-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l’article</h2>
             <ul className="article-toc-list">
-              <li><a href="#jour-1-westminster">Jour 1 — Westminster</a></li>
-              <li><a href="#jour-2-southwark">Jour 2 — Southwark &amp; South Bank, La City</a></li>
-              <li><a href="#jour-3-notting">Jour 3 — Notting Hill</a></li>
-              <li><a href="#jour-4-brick">Jour 4 — Brick Lane, Shoreditch &amp; Spitalfields</a></li>
-              <li><a href="#jour-5-covent">Jour 5 — Covent Garden, Soho, Chinatown &amp; Piccadilly</a></li>
-              <li><a href="#jour-6-camden">Jour 6 — Camden Town, Stratford</a></li>
-              <li><a href="#jour-7-brighton">Jour 7 — Brighton, à 1 h de train de Londres</a></li>
+              <li><a href="#jour-1-westminster">Jour 1 - Westminster</a></li>
+              <li><a href="#jour-2-southwark">Jour 2 - Southwark &amp; South Bank, La City</a></li>
+              <li><a href="#jour-3-notting">Jour 3 - Notting Hill</a></li>
+              <li><a href="#jour-4-brick">Jour 4 - Brick Lane, Shoreditch &amp; Spitalfields</a></li>
+              <li><a href="#jour-5-covent">Jour 5 - Covent Garden, Soho, Chinatown &amp; Piccadilly</a></li>
+              <li><a href="#jour-6-camden">Jour 6 - Camden Town, Stratford</a></li>
+              <li><a href="#jour-7-brighton">Jour 7 - Brighton, à 1 h de train de Londres</a></li>
               <li><a href="#pratique">Informations pratiques</a></li>
             </ul>
           </nav>
@@ -294,7 +294,19 @@ export default function VisiterLondresPage() {
             <h3>La City</h3>
             <p>La City est l’un des quartiers les plus anciens de la capitale où se côtoient des édifices historiques majestueux, tels que le <strong>Tower Bridge</strong> et d’immenses gratte-ciel. En effet, il est à la fois le centre historique et le plus gros quartier des affaires de la ville. Le contraste des paysages est ici incroyable !</p>
             <p>Dans ce quartier, nous aimons nous balader le long de la Tamise jusqu’au <strong>Tower Bridge</strong>, le pont le plus célèbre de Londres et notre gros coup de coeur ! Profitez alors de la traversée du pont à pied pour admirer la vue !</p>
-            <p>Pour les plus téméraires, et moyennant £13.40 (15,80 €), vous pouvez emprunter la passerelle en verre (<a href="https://www.towerbridge.org.uk" target="_blank" rel="noopener noreferrer" className="article-link">The Tower Bridge Glass</a>) qui s’élève à 42 m du sol. Sensations garanties !</p>
+            <p>Pour les plus téméraires, et moyennant £13.40 (15,80 €), vous pouvez emprunter la passerelle en verre (Tower Bridge Glass Floor) qui s’élève à 42 m du sol. Sensations garanties !</p>
+            <div className="article-book">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://gyg.me/35D2szEt" target="_blank" rel="noopener noreferrer">Billet pour Tower Bridge Glass Floor</a></p>
+                  <p className="article-resto-sub">À partir de 21 €</p>
+                  <p>L'entrée inclut aussi l'accès aux salles des machines victoriennes, avec annulation gratuite jusqu'à 24h avant votre créneau.</p>
+                </div>
+              </div>
+            </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3214-scaled-768x1024.jpeg" alt="Tower Bridge 2" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9962-scaled-1024x768.jpeg" alt="Tower Bridge nuit" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
@@ -331,7 +343,7 @@ export default function VisiterLondresPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Station Monument</span><p>Pour commencer votre journée dans le quartier de La City — une station assez centrale.</p></div>
+                  <div><span className="article-rendre-stop-title">Station Monument</span><p>Pour commencer votre journée dans le quartier de La City, une station assez centrale.</p></div>
                 </div>
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
@@ -370,7 +382,7 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJdwn8yacPdkgRK_hk82Ttt5o" target="_blank" className="article-resto-link-desktop">Cheeky Scone</a><a href="https://maps.app.goo.gl/5CkDbw8M79UMeUtR8" target="_blank" className="article-resto-link-mobile">Cheeky Scone</a></p>
                   <p className="article-resto-sub">Spécialistes des scones · Notting Hill</p>
-                  <p>À deux pas de Portobello Road, ce café artisanal propose des scones fraîchement préparés chaque jour dans des dizaines de parfums originaux — lemon blueberry, toffee apple, cheese tomato... Avec clotted cream et jam, bien sûr. Un incontournable !</p>
+                  <p>À deux pas de Portobello Road, ce café artisanal propose des scones fraîchement préparés chaque jour dans des dizaines de parfums originaux (lemon blueberry, toffee apple, cheese tomato...) avec clotted cream et jam, bien sûr. Un incontournable !</p>
                 </div>
               </div>
             </div>
@@ -461,7 +473,7 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJibKTL7ccdkgRQF8h6shQij0" target="_blank" className="article-resto-link-desktop">Black Bear Burger</a><a href="https://maps.app.goo.gl/nXhYxTivYRvXaoJQ9" target="_blank" className="article-resto-link-mobile">Black Bear Burger</a></p>
                   <p className="article-resto-sub">Burgers primés · Boxpark Shoreditch</p>
-                  <p>Élu parmi les meilleurs burgers du monde, le Black Bear Burger au Boxpark de Shoreditch est une adresse à ne pas manquer si vous aimez les burgers. Le double Miso Bacon Burger est leur spécialité — juteux, savoureux, inoubliable.</p>
+                  <p>Élu parmi les meilleurs burgers du monde, le Black Bear Burger au Boxpark de Shoreditch est une adresse à ne pas manquer si vous aimez les burgers. Le double Miso Bacon Burger est leur spécialité : juteux, savoureux, inoubliable.</p>
                 </div>
               </div>
             </div>
@@ -484,7 +496,7 @@ export default function VisiterLondresPage() {
               <div className="article-rendre-timeline">
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Station Liverpool Street</span><p>Pour déjeuner au Old Spitalfields Market, commencez par visiter <strong>Spitalfields</strong> — l’une des plus grandes stations du centre de Londres.</p></div>
+                  <div><span className="article-rendre-stop-title">Station Liverpool Street</span><p>Pour déjeuner au Old Spitalfields Market, commencez par visiter <strong>Spitalfields</strong>, l’une des plus grandes stations du centre de Londres.</p></div>
                 </div>
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
@@ -561,7 +573,7 @@ export default function VisiterLondresPage() {
                   <p>The Breakfast Club est LA référence du brunch à Londres. Pancakes, eggs benedict, granola bowls... Le menu est généreux et les produits sont frais.</p>
                   <div className="article-resto-note">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    Comptez un peu d'attente aux heures de pointe — ça vaut vraiment le détour !
+                    Comptez un peu d'attente aux heures de pointe. Ça vaut vraiment le détour !
                   </div>
                 </div>
               </div>
@@ -586,7 +598,7 @@ export default function VisiterLondresPage() {
                   <span className="article-resto-tag">Afternoon tea</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJk3umitYEdkgRdi1T77lCf78" target="_blank" className="article-resto-link-desktop">Fortnum &amp; Mason — Diamond Jubilee Tea Salon</a><a href="https://maps.app.goo.gl/TEV9xsrDgPnSJGkC9" target="_blank" className="article-resto-link-mobile">Fortnum &amp; Mason Tea Salon</a></p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/place/?q=place_id:ChIJk3umitYEdkgRdi1T77lCf78" target="_blank" className="article-resto-link-desktop">Fortnum &amp; Mason, Diamond Jubilee Tea Salon</a><a href="https://maps.app.goo.gl/TEV9xsrDgPnSJGkC9" target="_blank" className="article-resto-link-mobile">Fortnum &amp; Mason Tea Salon</a></p>
                   <p className="article-resto-sub">Afternoon tea · Piccadilly</p>
                   <p>Pour une expérience typiquement britannique, le Diamond Jubilee Tea Salon de Fortnum &amp; Mason est une adresse de rêve. Scones, sandwichs et pâtisseries raffinées dans un cadre élégant.</p>
                   <div className="article-resto-note">
@@ -662,12 +674,24 @@ export default function VisiterLondresPage() {
             <p>Nous avons été très agréablement surprises par ce <strong>nouveau quartier</strong> que nous ne connaissions pas et que nous avons découvert lors de notre dernier séjour. Il est idéalement situé puisque tous les lieux incontournables à visiter de la capitale sont à plus ou moins 30 min de métro.</p>
             <p>Notamment connu pour son centre commercial le plus grand d'Europe (<strong>Westfield</strong>), ce quartier de l'est de Londres est également célèbre depuis 2012 grâce aux Jeux Olympiques d'été qui s'y sont déroulés. Le quartier réaménagé pour l'occasion accueillait le village olympique ainsi que diverses infrastructures : stades, piscine, vélodrome, le parc olympique Queen Elizabeth et l'<strong>ArcelorMittal Orbit</strong> (emblème des J.O 2012).</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9510-scaled-1024x768.jpeg" alt="Stratford Londres" className="article-img-full" loading="lazy" />
-            <p>Cette étrange tour métallique de 115 m vous offrira une vue imprenable sur l'ensemble du parc. Depuis 2016, une attraction a été ajoutée à la tour : un toboggan long de 178 m, le plus long du monde ! Une <a href="https://arcelormittalorbit.com" target="_blank" rel="noopener noreferrer" className="article-link">activité</a> bien sympathique à faire en famille ou entre amis.</p>
+            <p>Cette étrange tour métallique de 115 m vous offrira une vue imprenable sur l'ensemble du parc. Depuis 2016, une attraction a été ajoutée à la tour : un toboggan long de 178 m, le plus long du monde ! Une activité bien sympathique à faire en famille ou entre amis.</p>
+            <div className="article-book">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://gyg.me/vN2S4PL3" target="_blank" rel="noopener noreferrer">Billet pour le toboggan de l'ArcelorMittal Orbit</a></p>
+                  <p className="article-resto-sub">À partir de 23 €</p>
+                  <p>Annulation gratuite jusqu'à 7 jours avant votre créneau, pratique pour ajuster vos plans si le temps change.</p>
+                </div>
+              </div>
+            </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9788-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit Londres" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9795-scaled-768x1024.jpeg" alt="ArcelorMittal Orbit 1" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
-            <p>Aujourd'hui, le quartier continue de se développer et les londoniens ont bien investi les lieux. Le village olympique a été reconverti en logements, hôtels et espaces de travail. Vous trouverez de nombreux parcs fleuris et très bien entretenus — c'était l'endroit rêvé pour nous avec Aladdin&nbsp;!</p>
+            <p>Aujourd'hui, le quartier continue de se développer et les londoniens ont bien investi les lieux. Le village olympique a été reconverti en logements, hôtels et espaces de travail. Vous trouverez de nombreux parcs fleuris et très bien entretenus. C'était l'endroit rêvé pour nous avec Aladdin&nbsp;!</p>
             <p>Dans le coin, vous pouvez également vous balader le long de <strong>rives aménagées</strong>, où des péniches à la décoration bohème sont amarrées et de <strong>nombreux bars et restaurants</strong> typiquement anglais sont implantés. On vous conseille d'y faire un tour&nbsp;!</p>
             <div className="article-gallery-2 article-gallery-equal">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_0007-scaled-1024x764.jpeg" alt="Stratford Londres 2" loading="lazy" style={{flex: '1.340', minWidth: 0}} />
@@ -839,7 +863,7 @@ export default function VisiterLondresPage() {
                 <p>Pour loger à l’appart’hôtel <a href="https://www.adagio-city.com/fr/hotel-9721-aparthotel-adagio-london-stratford.shtml" target="_blank" rel="noopener noreferrer" className="article-link">Adagio Stratford</a>, il faut compter 110 € la nuit pour un studio récent et très bien équipé au 12ème étage (avec une vue incroyable sur la ville !).</p>
                 <div className="article-avis">
                   <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-                  <div><strong>Le conseil des MamZelles</strong><p>Quel que soit le type d’hébergement choisi, réservez à l’avance — vous obtiendrez de meilleurs tarifs et aurez le temps de bien choisir votre quartier. Notre conseil : privilégiez un logement proche d’une station de métro, ça change vraiment la vie sur place !</p></div>
+                  <div><strong>Le conseil des MamZelles</strong><p>Quel que soit le type d’hébergement choisi, réservez à l’avance : vous obtiendrez de meilleurs tarifs et aurez le temps de bien choisir votre quartier. Notre conseil : privilégiez un logement proche d’une station de métro, ça change vraiment la vie sur place !</p></div>
                 </div>
                 <div className="article-gallery-2">
                   <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_9297-scaled-1024x768.jpeg" alt="Stratford Street Londres" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
