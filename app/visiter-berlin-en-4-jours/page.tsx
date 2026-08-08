@@ -234,8 +234,21 @@ export default function VisiterBerlinPage() {
             <h3>Mitte</h3>
             <h4>Haus Schwarzenberg, l’esprit alternatif</h4>
             <p>En descendant vers le centre-ville, nous tombons sur <strong>Haus Schwarzenberg</strong>. Et là, changement total d’ambiance : une cour cachée derrière un porche discret, avec un petit bar sur la gauche. L’atmosphère est immédiatement plus alternative, très Berlin underground. Les murs sont couverts de street art, de graffitis, de collages.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/011.webp" alt="Haus Schwarzenberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/012.webp" alt="Haus Schwarzenberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>En avançant dans la cour, sur la droite, on trouve un distributeur appelé <strong>art-o-mat</strong>. Contre quelques euros, on repart avec une mini œuvre artistique (illustration, photo, badge, mini sculpture, etc.), souvent unique ou en série limitée. Ce sont d’anciens distributeurs à cigarettes reconvertis, très répandus à Berlin dans les quartiers alternatifs.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/013.webp" alt="Art-o-mat Haus Schwarzenberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/014.webp" alt="Art-o-mat Haus Schwarzenberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/015.webp" alt="Art-o-mat Haus Schwarzenberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>On s’installe en terrasse pour boire un verre et prendre le temps de profiter de cette ambiance hors du temps. Au fond de la cour, un autre bar et quelques petites boutiques : un petit monde à part, en plein centre-ville.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/016.webp" alt="Haus Schwarzenberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/017.webp" alt="Haus Schwarzenberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <h4>Direction Hackescher Markt</h4>
             <p>C’est reparti ! Nous rejoignons et traversons <strong>Hackescher Markt</strong>. C’est un coin très vivant du centre de Berlin. Un véritable lieu de vie où se mêlent habitants, artistes, touristes et Berlinois venus profiter des nombreux cafés, restaurants et boutiques.</p>
             <p>Le quartier est surtout connu pour les <strong>Hackesche Höfe</strong>. Bon, on ne va pas vous le cacher, on les a loupées. C’est en rédigeant cet article qu’on a découvert leur existence. C’est un ensemble de cours intérieures restaurées parmi les plus belles de la ville. Derrière les façades discrètes se cacheraient des galeries d’art, des ateliers, des boutiques originales et de charmants cafés. En même temps, il y a tellement de choses à voir à Berlin !</p>
