@@ -313,7 +313,7 @@ export default function MadridPage() {
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/C7TTgdck" target="_blank" rel="noopener noreferrer">Billet pour le musée du Prado</a></p>
-                  <p className="article-resto-sub">Coupe-file</p>
+                  <p className="article-resto-sub">Coupe-file · À partir de 18 €</p>
                   <p>L'affluence y est énorme, souvent complet sur place. Ce <a href="https://gyg.me/C7TTgdck" target="_blank" rel="noopener noreferrer">billet coupe-file</a> évite la queue devant l'un des plus grands musées d'art au monde.</p>
                 </div>
               </div>
