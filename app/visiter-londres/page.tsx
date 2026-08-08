@@ -683,7 +683,7 @@ export default function VisiterLondresPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/vN2S4PL3" target="_blank" rel="noopener noreferrer">Billet pour le toboggan de l'ArcelorMittal Orbit</a></p>
                   <p className="article-resto-sub">À partir de 23 €</p>
-                  <p>Annulation gratuite jusqu'à 7 jours avant votre créneau, pratique pour ajuster vos plans si le temps change.</p>
+                  <p>Annulation gratuite possible, mais attention : il faut annuler au moins 7 jours avant votre créneau pour être remboursé.</p>
                 </div>
               </div>
             </div>
