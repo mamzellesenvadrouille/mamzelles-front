@@ -170,6 +170,18 @@ export default function VisiterLondresPage() {
             <p>C’est à Westminster, au bord de la Tamise, que se dresse la tour d’horloge la plus célèbre au monde, <strong>Big Ben</strong> ! Elle domine le <strong>Palace of Westminster</strong>, là où siège le parlement.</p>
             <p>À quelques minutes à pied, vous trouverez la somptueuse <strong>Abbaye de Westminster</strong>. Cela fait plus de 700 ans qu’elle accueille les plus grands monarques, que ce soit pour des couronnements, des mariages ou des funérailles.</p>
             <p>Si vous souhaitez visiter l’Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, vous devrez payer £31 (36,50 €) l’entrée par personne en réservant en ligne.</p>
+            <div className="article-book">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">Billet pour l'Abbaye de Westminster</a></p>
+                  <p className="article-resto-sub">36,50 €</p>
+                  <p>Réservez votre <a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">créneau à l'avance</a> pour éviter la queue devant l'un des monuments les plus visités de Londres.</p>
+                </div>
+              </div>
+            </div>
             <p>Pour autant, il existe un <strong>bon plan pour la visiter gratuitement</strong> ! Il suffit de se présenter lors des cérémonies religieuses. Celles-ci ont lieu tous les jours, sont ouvertes à tous, et aucune participation financière n’est demandée !</p>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/DSC_3752-1-scaled-1024x686.jpeg" alt="Big Ben Londres 1" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">

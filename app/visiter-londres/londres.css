@@ -1353,3 +1353,40 @@
 @media (max-width: 768px) {
   .article-gallery-equal img { height: 140px !important; min-height: 140px !important; }
 }
+
+/* ============================================
+   BLOC "POUR RESERVER" (doré, distinct de Pour manger/dormir)
+   ============================================ */
+.article-londres .article-book {
+  margin: 24px 0;
+}
+
+.article-londres .article-book .article-resto-item {
+  border: 1px solid var(--gold);
+}
+
+.article-londres .article-book .article-resto-head {
+  background: var(--gold);
+}
+
+.article-londres .article-book .article-resto-head-label {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.article-londres .article-book .article-resto-head-label svg {
+  stroke: var(--dark);
+}
+
+/* Liens dorés dans le corps de texte (hors titres de blocs resto) */
+.article-londres .article-section p:not(.article-resto-name) a,
+.article-londres .article-resto-body p:not(.article-resto-name) a {
+  color: var(--gold);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.article-londres .article-section p:not(.article-resto-name) a:hover,
+.article-londres .article-resto-body p:not(.article-resto-name) a:hover {
+  color: var(--dark);
+}
