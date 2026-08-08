@@ -169,7 +169,6 @@ export default function VisiterLondresPage() {
             </div>
             <p>C’est à Westminster, au bord de la Tamise, que se dresse la tour d’horloge la plus célèbre au monde, <strong>Big Ben</strong> ! Elle domine le <strong>Palace of Westminster</strong>, là où siège le parlement.</p>
             <p>À quelques minutes à pied, vous trouverez la somptueuse <strong>Abbaye de Westminster</strong>. Cela fait plus de 700 ans qu’elle accueille les plus grands monarques, que ce soit pour des couronnements, des mariages ou des funérailles.</p>
-            <p>Si vous souhaitez visiter l’Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, vous devrez payer £31 (36,50 €) l’entrée par personne en réservant en ligne.</p>
             <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -177,8 +176,8 @@ export default function VisiterLondresPage() {
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">Billet pour l'Abbaye de Westminster</a></p>
-                  <p className="article-resto-sub">36,50 €</p>
-                  <p>Réservez votre <a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">créneau à l'avance</a> pour éviter la queue devant l'un des monuments les plus visités de Londres.</p>
+                  <p className="article-resto-sub">À partir de 36,50 €</p>
+                  <p>Si vous souhaitez visiter l'Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, <a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">réservez votre entrée en ligne</a>.</p>
                 </div>
               </div>
             </div>
