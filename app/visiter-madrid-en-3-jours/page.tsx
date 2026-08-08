@@ -127,9 +127,9 @@ export default function MadridPage() {
             <h2 className="article-toc-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l&apos;article</h2>
             <ol className="article-toc-list">
               <li><a href="#que-faire">3 jours à Madrid, que faire ?</a></li>
-              <li><a href="#jour1">Jour 1 — El Centro</a></li>
-              <li><a href="#jour2">Jour 2 — Malasaña, Salamanca, El Retiro</a></li>
-              <li><a href="#jour3">Jour 3 — Lavapiès - Rastro, Atocha, Barrio de Las Letras - Huertas</a></li>
+              <li><a href="#jour1">Jour 1 - El Centro</a></li>
+              <li><a href="#jour2">Jour 2 - Malasaña, Salamanca, El Retiro</a></li>
+              <li><a href="#jour3">Jour 3 - Lavapiès - Rastro, Atocha, Barrio de Las Letras - Huertas</a></li>
               <li><a href="#pratique">Tout savoir pour organiser votre voyage</a></li>
             </ol>
           </nav>
@@ -199,7 +199,7 @@ export default function MadridPage() {
             </div>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne surtout pas manquer</strong><p>Le Mercado de San Miguel est ouvert tous les jours de 10 h à minuit. Le meilleur moment ? En fin d&apos;après-midi, à l&apos;heure de l&apos;apéro, quand les Madrilènes s&apos;y retrouvent après le travail — c&apos;est là que Madrid se révèle vraiment !</p></div>
+              <div><strong>À ne surtout pas manquer</strong><p>Le Mercado de San Miguel est ouvert tous les jours de 10 h à minuit. Le meilleur moment ? En fin d&apos;après-midi, à l&apos;heure de l&apos;apéro, quand les Madrilènes s&apos;y retrouvent après le travail. C&apos;est là que Madrid se révèle vraiment !</p></div>
             </div>
             <h3>La Plaza Mayor</h3>
             <p>Continuez ensuite votre vadrouille en direction de la <strong>Plaza Mayor</strong>, cette fameuse place rectangulaire où les Madrilènes apprécient se retrouver pour y boire un café.</p>
@@ -258,7 +258,7 @@ export default function MadridPage() {
             </div>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
-              <div><strong>L&apos;avis des MamZelles</strong><p>El Centro est dense, mais chaque rue réserve une surprise. Notre conseil : ne vous fixez pas un programme trop rigide pour cette journée — laissez-vous porter par l&apos;ambiance et les découvertes au fil des ruelles.</p></div>
+              <div><strong>L&apos;avis des MamZelles</strong><p>El Centro est dense, mais chaque rue réserve une surprise. Notre conseil : ne vous fixez pas un programme trop rigide pour cette journée. Laissez-vous porter par l&apos;ambiance et les découvertes au fil des ruelles.</p></div>
             </div>
           </section>
 
@@ -364,7 +364,7 @@ export default function MadridPage() {
             <p>C&apos;est aussi le paradis des brocanteurs… En effet, dans les petites boutiques qui longent le marché, ou encore dans celles des petites rues perpendiculaires, vous trouverez toutes sortes d&apos;objets à chiner. Dans ce coin, se trouve également tout un secteur dédié aux antiquités, où vous pourrez notamment dégoter des tableaux anciens, et un autre dédié aux fripes (vêtements vintages).</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne surtout pas manquer</strong><p>El Rastro n&apos;a lieu que le dimanche et les jours fériés de 8 h 30 à 15 h. Organisez votre séjour pour que votre 3ème jour tombe un dimanche — vous ne le regretterez pas !</p></div>
+              <div><strong>À ne surtout pas manquer</strong><p>El Rastro n&apos;a lieu que le dimanche et les jours fériés de 8 h 30 à 15 h. Organisez votre séjour pour que votre 3ème jour tombe un dimanche. Vous ne le regretterez pas !</p></div>
             </div>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_1870-scaled-768x1024.jpeg" alt="El Rastro Madrid" loading="lazy" style={{flex: '0.750', minWidth: 0}} />
@@ -394,7 +394,7 @@ export default function MadridPage() {
             </div>
 
             <h3>Barrio de Las Letras - Huertas</h3>
-            <p>En face du <strong>musée Thyssen-Bornemisza</strong> se trouve le quartier des Lettres. Il tient son nom de son passé littéraire — de nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol. Des citations gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong> en témoignent encore.</p>
+            <p>En face du <strong>musée Thyssen-Bornemisza</strong> se trouve le quartier des Lettres. Il tient son nom de son passé littéraire. De nombreux écrivains y vécurent durant le Siècle d&apos;or espagnol. Des citations gravées en lettres d&apos;or sur les pavés de la <strong>Calle de la Huertas</strong> en témoignent encore.</p>
             <p>Ces quartiers font partie des plus anciens de Madrid et des plus animés le soir. La Plaza Santa Ana, bordée de cafés et de restaurants, est le lieu idéal pour une petite pause.</p>
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/01/IMG_2299-scaled-768x1024.jpeg" alt="Barrio de las Letras Madrid" loading="lazy" />
@@ -409,9 +409,9 @@ export default function MadridPage() {
               <h2 className="article-section-h2">3 jours à Madrid, tout savoir pour organiser votre voyage</h2>
             </div>
             <h3>Où dormir ?</h3>
-            <p>Nous avons logé à l&apos;<a href="https://www.google.com/maps/place/?q=place_id:ChIJGbpsLGMoQg0RLmDZRucihwY" target="_blank" className="article-link article-resto-link-desktop">Hostal Goyal Pizzaro</a><a href="https://maps.app.goo.gl/p34xCNUWF6PNNAy17" target="_blank" className="article-link article-resto-link-mobile">Hostal Goyal Pizzaro</a> dans le quartier de Malasaña — idéalement situé, propre et spacieux, c&apos;est une adresse que nous recommandons sans hésiter. Dans tous les cas, privilégiez Malasaña ou El Centro pour être au cœur de tout : quartiers animés, bien situés et accessibles à pied.</p>
+            <p>Nous avons logé à l&apos;<a href="https://www.google.com/maps/place/?q=place_id:ChIJGbpsLGMoQg0RLmDZRucihwY" target="_blank" className="article-link article-resto-link-desktop">Hostal Goyal Pizzaro</a><a href="https://maps.app.goo.gl/p34xCNUWF6PNNAy17" target="_blank" className="article-link article-resto-link-mobile">Hostal Goyal Pizzaro</a> dans le quartier de Malasaña, idéalement situé, propre et spacieux, c&apos;est une adresse que nous recommandons sans hésiter. Dans tous les cas, privilégiez Malasaña ou El Centro pour être au cœur de tout : quartiers animés, bien situés et accessibles à pied.</p>
             <h3>Quel budget prévoir ?</h3>
-            <p>Madrid est une capitale accessible. Comptez environ <strong>90 à 120 € par personne et par jour</strong> en incluant l&apos;hébergement, les repas et les activités. Les tapas permettent de manger bien et pas cher — une bière + 2 tapas tourne autour de 4 à 6 € dans les bars du centre.</p>
+            <p>Madrid est une capitale accessible. Comptez environ <strong>90 à 120 € par personne et par jour</strong> en incluant l&apos;hébergement, les repas et les activités. Les tapas permettent de manger bien et pas cher : une bière + 2 tapas tourne autour de 4 à 6 € dans les bars du centre.</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Les musées nationaux (Prado, Reina Sofia) sont gratuits certains soirs.</p></div>
@@ -508,7 +508,7 @@ export default function MadridPage() {
                 icon: <i className="ti ti-bus-stop" style={{fontSize:'18px'}}></i>,
                 content: (
                   <>
-                    <p>Le bus panoramique à toit décapotable propose <strong>2 circuits</strong> avec arrêts aux principaux sites touristiques. Parfait pour une première découverte sans effort — vous pouvez monter et descendre à chaque arrêt.</p>
+                    <p>Le bus panoramique à toit décapotable propose <strong>2 circuits</strong> avec arrêts aux principaux sites touristiques. Parfait pour une première découverte sans effort. Vous pouvez monter et descendre à chaque arrêt.</p>
                   </>
                 ),
               },
@@ -526,7 +526,7 @@ export default function MadridPage() {
             <h3 style={{marginTop:'32px'}}>Quand partir ?</h3>
             <p>Madrid est marquée par un <strong>climat méditerranéen</strong> plutôt sec, avec des étés chauds et des hivers assez frais. Son ensoleillement étant important même en hiver, la capitale espagnole peut se visiter toute l&apos;année !</p>
             <p>Les mois de <strong>mai, juin et septembre</strong> restent les plus agréables : températures douces, pluies inexistantes, et les nombreux parcs explosent de mille couleurs.</p>
-            <p>Nous vous conseillons d&apos;éviter <strong>juillet et août</strong> qui peuvent être très chauds — et très fréquentés !</p>
+            <p>Nous vous conseillons d&apos;éviter <strong>juillet et août</strong> qui peuvent être très chauds, et très fréquentés !</p>
           </section>
 
 
