@@ -155,11 +155,19 @@ export default function VisiterBerlinPage() {
             <p>En sortant du tram, dans ce quartier, on est tout de suite plongées dans l’ambiance. Il y a du monde partout, des vélos, des trams, des bus qui passent sans arrêt… ça bouge dans tous les sens. On ressent immédiatement l’énergie de Berlin !</p>
             <h3>Prenzlauer Berg</h3>
             <p><strong>Prenzlauer Berg</strong> est situé dans l’ancien Berlin-Est. Il a gardé son architecture historique avec ses beaux immeubles anciens, ses grandes avenues bordées de grands arbres et ses places pleines de cafés et de terrasses.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/005.webp" alt="Prenzlauer Berg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/006.webp" alt="Prenzlauer Berg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>Aujourd’hui, il est considéré comme l’un des quartiers les plus agréables où séjourner à Berlin. On y trouve une ambiance locale et une vie de quartier authentiques : des petits restaurants, des coffee shops, des boutiques indépendantes, des marchés, mais aussi une vraie énergie urbaine.</p>
             <h4>Rüyam Gemüse Kebab, le meilleur de Berlin</h4>
             <p>Il est 15 heures quand nous débarquons dans le quartier de <strong>Prenzlauer Berg</strong> pour rejoindre notre hôtel. Nous n’avons toujours pas déjeuné. En chemin, nous tombons sur <strong>Rüyam Gemüse Kebab</strong>. Une véritable institution à Berlin ! Pas le choix que de s’y arrêter...</p>
             <p>Ici, on ne parle pas d’un kebab classique. Leur spécialité, le Gemüse Kebab : un mélange de viande grillée, de légumes rôtis (pommes de terre, poivrons…), de crudités ultra fraîches, de feta, d’une sauce maison à l’ail et épicée, le tout dans un pain croustillant !</p>
             <p>Kebabs avalés, nous poursuivons notre chemin vers l’hôtel.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/001.webp" alt="Rüyam Gemüse Kebab Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/002.webp" alt="Rüyam Gemüse Kebab Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -196,10 +204,22 @@ export default function VisiterBerlinPage() {
             <p>Après notre installation dans notre magnifique chambre, trop excitées de découvrir cette ville, nous partons directement pour une petite balade dans le quartier autour de l’hôtel, avant de rejoindre tranquillement le centre de Berlin.</p>
             <h4>Un détour par le Kulturbrauerei</h4>
             <p>Nous commençons notre balade par le <strong>Kulturbrauerei</strong>, qui se trouve à deux pas de l’hôtel. C’est un immense ancien complexe de brasserie en briques rouges reconverti en lieu culturel. Derrière ses façades industrielles se cache un lieu vivant, très berlinois où se mêlent bars, restaurants, supérettes, cinéma, et marchés ou concerts en plein air selon les jours. L’endroit est franchement sympa pour boire un verre dans une ambiance locale, un peu industrielle-chic, loin du Berlin trop « carte postale » des quartiers touristiques.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/003.webp" alt="Kulturbrauerei Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/004.webp" alt="Kulturbrauerei Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <h4>Flânerie sur Kastanienallee</h4>
             <p>Nous continuons ensuite vers <strong>Kastanienallee</strong>, l’une des rues les plus agréables du quartier de Prenzlauer Berg, également à quelques minutes à pied de notre hôtel. Cafés cool, jolies boutiques, friperies, restos et terrasses se succèdent dans une ambiance berlinoise à la fois branchée et décontractée. Un petit côté bobo-chic mais franchement sympa pour se balader sans regarder l’heure.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/007.webp" alt="Kastanienallee Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/008.webp" alt="Kastanienallee Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <h4>Au pied du Wasserturm</h4>
             <p>Non loin de là, nous prenons la direction du <strong>Wasserturm</strong>, le <strong>plus ancien château d’eau</strong> de Berlin, construit au XIXe siècle. Véritable symbole du quartier, il veille sur les jolies rues résidentielles environnantes et apporte une ambiance plus calme, presque village, au cœur de la ville. Juste derrière, se trouve un petit parc. Comme des gosses, un petit tour de tourniquet et c’est reparti !</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/009.webp" alt="Wasserturm Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/010.webp" alt="Wasserturm Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <h4>Pause douceur à Kollwitzplatz</h4>
             <p>Nous poursuivons ensuite vers <strong>Kollwitzplatz</strong>, une charmante place au cœur de Prenzlauer Berg. Ici, l’ambiance est plus douce. C’est une place arborée, bordée de jolies façades, avec des terrasses pleines de vie et un petit parc où traînent familles et Berlinois. On découvre ici un Berlin plus calme, presque un esprit de village au cœur de la ville. Attention, allergiques s’abstenir... On a rarement vu autant de pollen au mètre carré qu’ici !</p>
             <div className="article-rendre">
