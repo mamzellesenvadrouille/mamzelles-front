@@ -176,7 +176,7 @@ export default function VisiterLondresPage() {
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">Billet pour l'Abbaye de Westminster</a></p>
-                  <p className="article-resto-sub">À partir de 36,50 €</p>
+                  <p className="article-resto-sub">À partir de 36 €</p>
                   <p>Si vous souhaitez visiter l'Abbaye pour découvrir ses merveilles architecturales et décoratives conservées à travers les siècles, <a href="https://gyg.me/wlB1Ix7B" target="_blank" rel="noopener noreferrer">réservez votre entrée en ligne</a>.</p>
                 </div>
               </div>
@@ -214,7 +214,19 @@ export default function VisiterLondresPage() {
             </div>
             <h3>Southwark &amp; South Bank</h3>
             <p>Modernes et historiques à la fois, ils font partie des quartiers incontournables de Londres. Situés sur les bords de la Tamise, ils offrent une multitude d’attractions.</p>
-            <p>Commencez par prendre de la hauteur en montant dans le <strong>London Eye</strong> à 135 m ! Vous profiterez d’une vue panoramique à couper le souffle sur la ville. Pour réserver vos tickets, c’est <a href="https://www.londoneye.com/fr/" target="_blank" rel="noopener noreferrer" className="article-link">ici</a>.</p>
+            <p>Commencez par prendre de la hauteur en montant dans le <strong>London Eye</strong> à 135 m ! Vous profiterez d’une vue panoramique à couper le souffle sur la ville.</p>
+            <div className="article-book">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://gyg.me/pLqraxkS" target="_blank" rel="noopener noreferrer">Billet pour le London Eye</a></p>
+                  <p className="article-resto-sub">À partir de 34 €</p>
+                  <p>Billet standard ou coupe-file (Fast Track) au choix, avec annulation gratuite jusqu'à 24h avant votre créneau.</p>
+                </div>
+              </div>
+            </div>
             <p>Puis, découvrez le <strong>Millenium Bridge</strong>, un pont piéton en acier, qui parait être suspendu au-dessus du fleuve. Il relie le quartier de Southwark à La City.</p>
             <p>La <strong>Cathédrale St. Paul</strong> d’un côté, le <strong>Tate Museum</strong> de l’autre, profitez de ce sublime paysage pour faire de magnifiques clichés !</p>
             <div className="article-gallery-2">
@@ -222,7 +234,19 @@ export default function VisiterLondresPage() {
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3138-scaled-1024x768.jpeg" alt="The Anchor Bankside" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>Amateur d’art ? Le célèbre <strong>Tate Museum</strong>, plus connu sous le nom de Tate Modern, est le musée d’art moderne le plus visité au monde. Plus de 7000 oeuvres y sont exposées, représentant différents mouvements comme le surréalisme, l’expressionnisme, l’abstrait, le pop art, etc... Et <strong>la visite est gratuite</strong> !</p>
-            <p>Enfin, dans ce quartier, le <strong>SHARD</strong> (= l’Éclat de verre en français), impressionnant avec ses 87 étages, ne passera pas inaperçu... La nuit, il éclaire le ciel ! Magique ! Deux étages (au 68ème et au 69ème), ainsi que la terrasse (au 72ème), sont réservés au public et offrent une des plus belles vues sur la capitale britannique. Nous vous conseillons vivement de réserver vos <a href="https://www.theviewfromtheshard.com" target="_blank" rel="noopener noreferrer" className="article-link">billets</a>.</p>
+            <p>Enfin, dans ce quartier, le <strong>SHARD</strong> (= l’Éclat de verre en français), impressionnant avec ses 87 étages, ne passera pas inaperçu... La nuit, il éclaire le ciel ! Magique ! Deux étages (au 68ème et au 69ème), ainsi que la terrasse (au 72ème), sont réservés au public et offrent une des plus belles vues sur la capitale britannique.</p>
+            <div className="article-book">
+              <div className="article-resto-item">
+                <div className="article-resto-head">
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
+                </div>
+                <div className="article-resto-body">
+                  <p className="article-resto-name"><a href="https://gyg.me/A6ttjzxQ" target="_blank" rel="noopener noreferrer">Billet pour The Shard</a></p>
+                  <p className="article-resto-sub">À partir de 28 €</p>
+                  <p>Accédez à la plus haute plateforme d'observation d'Europe de l'Ouest, avec annulation gratuite jusqu'à 24h avant votre créneau.</p>
+                </div>
+              </div>
+            </div>
             <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3603-1024x520.jpeg" alt="London Eye Londres" className="article-img-full" loading="lazy" />
             <div className="article-gallery-2">
               <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2021/11/IMG_3554-1024x520.jpeg" alt="Millenium Bridge" loading="lazy" style={{flex: '1.969', minWidth: 0}} />
