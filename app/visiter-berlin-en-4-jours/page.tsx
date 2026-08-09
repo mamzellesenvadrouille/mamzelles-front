@@ -532,7 +532,15 @@ export default function VisiterBerlinPage() {
             <h4>Le plus vieux quartier de Berlin</h4>
             <p>On commence la journée au <strong>Nikolaiviertel</strong>, le plus vieux quartier de Berlin. Situé dans le centre-ville, entre <strong>Alexanderplatz</strong> et l’<strong>île aux Musées</strong>, c’est l’endroit parfait pour démarrer la journée.</p>
             <p>Ici, c’est un changement d’ambiance immédiat. On quitte le tumulte de la ville pour de petites ruelles pavées et des façades colorées. Au cœur du quartier se dresse l’<strong>église Saint-Nicolas</strong>, reconnaissable à ses deux tours qui dominent les alentours. Symbole du <strong>Nikolaiviertel</strong>, cette église rappelle les origines médiévales de Berlin.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/050.webp" alt="Église Saint-Nicolas Nikolaiviertel Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/051.webp" alt="Église Saint-Nicolas Nikolaiviertel Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>Le <strong>Nikolaiviertel</strong> est relativement calme, idéal pour flâner, déambuler et profiter de belles vues sur la <strong>Spree</strong>. Alors, on s’installe en terrasse histoire de se rafraîchir un peu parce qu’il fait quand même super chaud. Ok, on ne se plaint pas, visiter Berlin sous le soleil et la chaleur, c’est quand même plus sympa qu’en hiver à -5 degrés !</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/052.webp" alt="Nikolaiviertel Spree Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="/berlin-photos/053.webp" alt="Nikolaiviertel Spree Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
@@ -592,17 +600,30 @@ export default function VisiterBerlinPage() {
             <h3>Le quartier du gouvernement</h3>
             <h4>Porte de Brandebourg</h4>
             <p>Nous continuons notre balade et nous voici arrivées à la <strong>Porte de Brandebourg</strong>, symbole de Berlin et de l’Allemagne réunifiée. Cette ancienne porte monumentale a traversé les époques, de la division de Berlin à la chute du Mur. Aujourd’hui, elle accueille les visiteurs au rythme des musiciens et des animations de rue.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/059.webp" alt="Porte de Brandebourg Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="/berlin-photos/060.webp" alt="Porte de Brandebourg Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <p>Depuis le début de notre parcours, et jusqu’ici, il faut compter une bonne quarantaine de minutes, sans compter les stops contemplation-photos, et faut dire qu’il y en a pas mal !</p>
             <h4>Reichstag</h4>
             <p>Après avoir admiré la Porte de Brandebourg, il suffit de quelques minutes à pied pour rejoindre le Bâtiment du <strong>Reichstag</strong>, siège du Parlement allemand.</p>
             <p>Derrière sa façade historique se cache une impressionnante coupole de verre qui est devenue l’un des symboles de Berlin. Détruit puis reconstruit au fil des événements qui ont marqué l’histoire de l’Allemagne, le bâtiment représente aujourd’hui la démocratie allemande. Nous n’avons pas visité le bâtiment mais apparemment la vue depuis la coupole offre un magnifique panorama sur la ville.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/054.webp" alt="Reichstag coupole Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="/berlin-photos/055.webp" alt="Reichstag coupole Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <div className="article-avis">
               <span className="article-avis-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
               <div><strong>Le conseil des MamZelles</strong><p>La visite du Reichstag est gratuite, mais la réservation est obligatoire. Réservez au moins 2 à 3 semaines à l’avance (encore plus en été), muni d’une pièce d’identité qui devra correspondre exactement à celle enregistrée en ligne. Si vous n’avez pas réservé, un guichet sur place (à 150 m du Reichstag) propose parfois des créneaux de dernière minute, selon les disponibilités.</p></div>
             </div>
             <h4>Mémorial de l’Holocauste</h4>
             <p>Après notre visite du Reichstag, nous avons poursuivi notre découverte de Berlin en nous rendant au <strong>Mémorial de l’Holocauste</strong>, situé à seulement quelques minutes de marche. Ce lieu de mémoire impressionne par son immensité. 2 711 stèles de béton de différentes hauteurs s’étendent sur une immense place, formant un véritable labyrinthe.</p>
+            <img src="/berlin-photos/056.webp" alt="Mémorial de l’Holocauste Berlin" className="article-img-full" loading="lazy" />
             <p>En s’aventurant au milieu, le bruit de la ville s’efface peu à peu, ce qui laisse place à une atmosphère particulière. On se sent toutes petites, un peu perturbées et émues à la fois. Conçu en hommage aux millions de Juifs victimes du génocide nazi, ce mémorial invite naturellement au recueillement et à la réflexion.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/057.webp" alt="Mémorial de l’Holocauste Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/058.webp" alt="Mémorial de l’Holocauste Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>C’est un peu déboussolées que nous quittons cet endroit, direction <strong>Topography of Terror</strong> qui se trouve à environ 10 minutes de marche d’ici.</p>
             <h4>Topographie de la Terreur</h4>
             <p>Le premier élément marquant du site qu’on voit directement en arrivant, c’est l’un des plus longs vestiges encore visibles du <strong>Mur de Berlin</strong>.</p>
