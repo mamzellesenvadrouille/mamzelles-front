@@ -361,15 +361,36 @@ export default function VisiterBerlinPage() {
             <h4>Holzmarkt 25, le village bohème au bord de la Spree</h4>
             <p>On comprend rapidement pourquoi cet endroit est souvent décrit comme l’un des lieux les plus « Berlin » de Berlin. Installé au bord de la <strong>Spree</strong>, ce lieu à l’esprit bohème, alternatif et artistique dégage une atmosphère unique. On a presque l’impression d’avoir découvert un petit village caché, à mille lieues de l’agitation urbaine, alors que la ville continue de vibrer tout autour.</p>
             <p>On déambule entre les cabanes en bois, sous les guirlandes suspendues, entre les terrasses improvisées et ces nombreux petits endroits où s’installer tranquillement. Tout semble nous inviter à ralentir. Alors on ralentit. On prend une bière bien fraîche dans l’une de ces cabanes et on s’installe au bord de l’eau. On profite du moment, presque les pieds dans l’eau.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/027.webp" alt="Holzmarkt Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/028.webp" alt="Holzmarkt Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/029.webp" alt="Holzmarkt Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>L’ambiance est décontractée, libre, sans artifices ni prise de tête. Côté food c’est simple et convivial : street food, pizzas, burgers, options veggie… Même si l’envie ne se fait pas sentir, on vous invite à passer voir les toilettes !</p>
             <h4>East Side Gallery, le mur devenu galerie à ciel ouvert</h4>
             <p>Après ce moment suspendu, à une vingtaine de minutes de marche, se trouve un lieu impossible à manquer quand on visite Berlin : la <strong>East Side Gallery</strong>. C’est en fait le plus long tronçon encore debout du mur de Berlin, transformé aujourd’hui en immense galerie d’art à ciel ouvert.</p>
             <p>Sur près d’1,3 kilomètre, des artistes du monde entier ont recouvert ce vestige de la séparation entre l’Est et l’Ouest avec des fresques colorées, engagées, parfois poétiques, parfois politiques. Ici, le béton chargé d’histoire est devenu un symbole de liberté et d’expression.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/030.webp" alt="East Side Gallery Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="/berlin-photos/031.webp" alt="East Side Gallery Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+            </div>
             <p>Impossible de ne pas s’arrêter devant certaines œuvres devenues iconiques, comme le célèbre baiser entre dirigeants communistes, souvent surnommé le baiser fraternel, ou encore les peintures pleines d’espoir qui parlent d’un monde sans frontières...</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/032.webp" alt="East Side Gallery fresques Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="/berlin-photos/033.webp" alt="East Side Gallery fresques Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <p>Ce qui marque ici, c’est le contraste. D’un côté, des œuvres colorées, pleines de vie et de messages. De l’autre, on se rappelle qu’à cet endroit même, un mur séparait autrefois une ville entière, des familles et des proches pendant presque 30 ans. En longeant l’<strong>East Side Gallery</strong>, on passe entre art, mémoire et histoire.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/034.webp" alt="East Side Gallery Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/035.webp" alt="East Side Gallery Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <h4>RAW-Gelände, l’esprit chaotique de Berlin</h4>
             <p>Nous continuons notre parcours découverte, et à même pas 15 minutes à pied de là, se trouve le <strong>RAW-Gelände</strong>. C’est un immense ancien site industriel reconverti, dans le quartier de <strong>Friedrichshain</strong>.</p>
             <p>À l’origine, c’était un ancien dépôt de réparation ferroviaire (Reichsbahnausbesserungswerk, d’où « RAW »). L’ambiance ici est volontairement un peu « chaotique Berlin » : industrielle, underground, arty, parfois un peu déjantée. Si vous venez comme nous en journée, vous pourrez y flâner pour voir les fresques, boire un verre ou passer dans certains espaces culturels. Le soir, apparemment c’est une toute autre ambiance. Le lieu se transforme davantage en spot de fête avec ses bars et ses clubs.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/036.webp" alt="RAW-Gelände Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/037.webp" alt="RAW-Gelände Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Curiosité berlinoise</strong><p>Ici, on a découvert un truc assez sympa qui fait partie des curiosités berlinoises : les distributeurs de colis mystères. Pour quelques euros, on tente sa chance. Le concept est simple : acheter un colis non réclamé sans savoir ce qu’il contient. Entre chasse au trésor moderne et coup de chance, ces colis mystères attirent de nombreux curieux. Une idée originale et insolite qui reflète bien l’esprit créatif de Berlin.</p></div>
