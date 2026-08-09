@@ -256,6 +256,10 @@ export default function VisiterBerlinPage() {
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
               <div><strong>À ne pas manquer</strong><p>En se promenant dans Berlin, on remarque parfois de petites plaques en laiton incrustées dans le sol, devant certaines maisons. Elles sont appelées <strong>Stolpersteine</strong>. C’est assez touchant de savoir qu’elles sont là pour rendre hommage aux victimes du nazisme ayant vécu à ces adresses avant d’être déportées ou persécutées. Sur chaque plaque figurent un nom, une date ainsi que quelques informations sur son destin. Une façon discrète mais profondément émouvante de faire vivre la mémoire, directement dans les rues de la ville. Elles sont présentes notamment à Prenzlauer Berg, Mitte, Kreuzberg, ou encore Charlottenburg.</p></div>
             </div>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/018.webp" alt="Stolpersteine Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/019.webp" alt="Stolpersteine Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
@@ -279,6 +283,11 @@ export default function VisiterBerlinPage() {
             </div>
             <p>Alors, on se la joue Berlinoises. On s’installe dans l’herbe du côté de <strong>James-Simon-Park</strong> et on profite du moment. De là, on a une vue plongeante sur l’<strong>île aux Musées</strong>.</p>
             <p><strong>Un peu d’histoire.</strong> L’<strong>île aux Musées</strong> est l’un des ensembles culturels les plus importants d’Europe. Plusieurs grands musées historiques y sont regroupés, construits entre le XIXe et le début du XXe siècle, sur une île entourée par la Spree. Le site est classé au patrimoine mondial de l’UNESCO.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/020.webp" alt="Île aux Musées Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/021.webp" alt="Île aux Musées Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/022.webp" alt="Île aux Musées Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>Vous l’aurez compris, cet endroit fait partie des incontournables. Le gros atout du lieu, c’est l’ambiance, mais aussi la vue. On a un très beau panorama sur la rivière, les péniches, et surtout sur la magnifique cathédrale qui s’illumine à la tombée de la nuit : le <strong>Berliner Dom</strong>, avec son immense dôme vert qu’on peut voir de loin. Ici, c’est clairement un spot idéal pour le coucher de soleil, alors on en profite. La lumière dorée sur l’<strong>île aux Musées</strong>, c’est magnifique !</p>
             <div className="article-book">
               <div className="article-resto-item">
@@ -309,6 +318,10 @@ export default function VisiterBerlinPage() {
             <h4>Un Currywurst pour la route, le rituel berlinois</h4>
             <p>Le temps passe bien trop vite, il est déjà passé 22h. Après avoir bien profité du moment, nous reprenons le chemin de l’hôtel à pied, par un itinéraire différent, histoire de prolonger encore un peu la découverte.</p>
             <p>On passe alors devant <strong>Curry 61</strong>, une adresse incontournable pour goûter la Currywurst, la spécialité street food emblématique de Berlin, un peu le « snack national » de la ville. Allez, on se laisse tenter !</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/023.webp" alt="Curry 61 Currywurst Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/024.webp" alt="Curry 61 Currywurst Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>C’est très simple : une saucisse coupée en morceaux, recouverte d’une sauce tomate-ketchup épicée au curry, souvent servie avec des frites ou un petit pain, le tout dans une barquette en carton à manger debout dans la rue. Ce n’est pas de la grande gastronomie, mais plutôt un rituel berlinois du quotidien, rapide, pas cher, et qui se trouve partout. Pour nous, c’est clairement validé !</p>
             <div className="article-resto">
               <div className="article-resto-item">
@@ -339,6 +352,10 @@ export default function VisiterBerlinPage() {
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Avant même d’y arriver, un détail attire notre attention : ces fameux tuyaux roses qui serpentent un peu partout, surgissant du sol de manière presque improbable. Nous découvrons qu’ils ne sont pas là par hasard ou pour faire beau. Berlin ayant été construite sur d’anciens marécages, ils servent à pomper les eaux souterraines afin d’éviter les infiltrations, notamment lors des travaux. Une curiosité urbaine devenue presque une signature visuelle de la ville.</p></div>
+            </div>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/025.webp" alt="Tuyaux roses Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="/berlin-photos/026.webp" alt="Tuyaux roses Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <h3>Friedrichshain</h3>
             <h4>Holzmarkt 25, le village bohème au bord de la Spree</h4>
