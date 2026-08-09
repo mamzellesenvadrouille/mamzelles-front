@@ -126,10 +126,10 @@ export default function VisiterBerlinPage() {
           <nav className="article-toc">
             <h2 className="article-toc-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none" style={{marginRight:'8px', verticalAlign:'middle'}}><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Sommaire de l’article</h2>
             <ul className="article-toc-list">
-              <li><a href="#jour-1-prenzlauer-berg">Jour 1 — Prenzlauer Berg &amp; l’île aux Musées</a></li>
-              <li><a href="#jour-2-berlin-est">Jour 2 — Holzmarkt, East Side Gallery, Kreuzberg &amp; Tempelhof</a></li>
-              <li><a href="#jour-3-centre-historique">Jour 3 — Cœur historique et politique, jusqu’à Teufelsberg</a></li>
-              <li><a href="#jour-4-mauerpark">Jour 4 — Mauerpark &amp; derniers instants</a></li>
+              <li><a href="#jour-1-prenzlauer-berg">Jour 1 - Prenzlauer Berg &amp; l’île aux Musées</a></li>
+              <li><a href="#jour-2-berlin-est">Jour 2 - Holzmarkt, East Side Gallery, Kreuzberg &amp; Tempelhof</a></li>
+              <li><a href="#jour-3-centre-historique">Jour 3 - Cœur historique et politique, jusqu’à Teufelsberg</a></li>
+              <li><a href="#jour-4-mauerpark">Jour 4 - Mauerpark &amp; derniers instants</a></li>
               <li><a href="#pratique">Informations pratiques</a></li>
             </ul>
           </nav>
@@ -177,7 +177,7 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name">Rüyam Gemüse Kebab</p>
                   <p className="article-resto-sub">Kebab légendaire · Prenzlauer Berg</p>
-                  <p>Copieux — Laurie n’a même pas réussi à finir le sien. Tellement bon, à tester absolument ! C’est le genre d’adresse où il y a souvent la queue, mais où l’attente fait presque partie de l’expérience.</p>
+                  <p>Copieux. Laurie n’a même pas réussi à finir le sien. Tellement bon, à tester absolument ! C’est le genre d’adresse où il y a souvent la queue, mais où l’attente fait presque partie de l’expérience.</p>
                 </div>
               </div>
             </div>
