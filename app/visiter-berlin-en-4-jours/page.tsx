@@ -499,8 +499,8 @@ export default function VisiterBerlinPage() {
             <h4>Burgermeister, la référence burger de Berlin</h4>
             <p>On prend la direction de l’hôtel, il n’est pas loin de minuit. Mais à Berlin, la vie ne s’arrête jamais, et comme on n’a pas mangé, passage obligé par <strong>Burgermeister</strong>. Fondé en 2006, c’est l’adresse historique et la plus réputée pour les amateurs de burgers à Berlin. On se laisse tenter !</p>
             <div className="article-gallery-2">
-              <img src="/berlin-photos/048.webp" alt="Burgermeister Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
-              <img src="/berlin-photos/049.webp" alt="Burgermeister Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/048.webp" alt="Burgermeister Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+              <img src="/berlin-photos/049.webp" alt="Burgermeister Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
             </div>
             <p>On a goûté le burger signature, le Burgermeister. Du bœuf, des oignons grillés, du bacon, de la sauce barbecue et de la moutarde. Un délice ! On ne regrette pas de nous y être arrêtées.</p>
             <div className="article-must">
