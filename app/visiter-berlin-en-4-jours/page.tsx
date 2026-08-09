@@ -915,7 +915,7 @@ export default function VisiterBerlinPage() {
                   },
                 ]} />
             </div>
-            <div className="article-gallery-2">
+            <div className="article-gallery-2" style={{marginTop: '24px'}}>
               <img src="/berlin-photos/078.webp" alt="Berlin transports" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/079.webp" alt="Berlin transports" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
