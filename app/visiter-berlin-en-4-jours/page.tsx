@@ -765,7 +765,11 @@ export default function VisiterBerlinPage() {
             </div>
             <p>Nous sommes malheureusement passées à côté de l’amphithéâtre du parc, au grand désarroi de Laurie. C’est là que se déroule le karaoké géant du <strong>Mauerpark</strong> le dimanche. Des inconnus montent sur scène devant une foule venue les encourager dans une ambiance joyeuse et complètement décomplexée. Dommage, on aurait pu vivre un grand moment !</p>
             <h4>Pause gourmande à Schönwetter</h4>
-            <p>Il n’est pas loin de 12h30, une pause rafraîchissante et gourmande s’impose. Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servis ! On y trouve des saveurs venues des quatre coins du monde : spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand. Au-delà des stands de street food, il y a aussi des bars, cafés et restaurants ouverts toute l’année.</p>
+            <p>Il n’est pas loin de 12h30, une pause rafraîchissante et gourmande s’impose. Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servis ! On y trouve des saveurs venues des quatre coins du monde : spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand. Au-delà des stands de street food, il y a aussi des bars, cafés et restaurants.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/076.webp" alt="Street food Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/077.webp" alt="Street food Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>Notre choix s’est porté sur <strong>Schönwetter</strong>. C’est un lieu détendu, qui sert des cocktails rafraîchissants et de savoureuses grillades. Ce qui nous a attiré, ce sont les transats et le sable fin, bon, et faut l’avouer, l’odeur des grillades aussi !</p>
             <div className="article-resto">
               <div className="article-resto-item">
@@ -910,6 +914,10 @@ export default function VisiterBerlinPage() {
                     ),
                   },
                 ]} />
+            </div>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/078.webp" alt="Berlin transports" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/079.webp" alt="Berlin transports" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
             <h4>Tickets</h4>
             <p>L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Comptez 4 € pour un ticket zone AB, valable 2 heures.</p>
