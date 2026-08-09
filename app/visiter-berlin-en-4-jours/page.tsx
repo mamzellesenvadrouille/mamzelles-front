@@ -741,16 +741,28 @@ export default function VisiterBerlinPage() {
             <p>Dernier petit-déjeuner englouti, chambre libérée et bagages déposés à la réception… Il nous reste encore quelques heures pour profiter de Berlin. On a tellement de chance, on aura eu du beau temps jusqu’à la fin !</p>
             <h4>Une dernière brocante avant de partir</h4>
             <p>Après avoir quitté l’hôtel, 5 minutes de marche suffisent pour rejoindre une petite brocante de bric et de broc, installée sur une petite place entourée d’arbres, avec des stands répartis sur plusieurs allées. Il y a peu de touristes. L’ambiance est authentique et on se fond facilement dans le décor. On déambule entre les stands, on flâne, on s’inspire et on savoure simplement chaque moment.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/069.webp" alt="Brocante Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/070.webp" alt="Brocante Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/071.webp" alt="Brocante Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>Nous continuons notre chemin pour nous rendre au fameux <strong>Mauerpark</strong>, un incontournable toujours plein de monde. On y vient pour flâner, pour la culture, pour les rencontres, et surtout pour son marché aux puces.</p>
             <h4>Mauerpark Flohmarkt, le marché aux puces emblématique</h4>
             <p>En entrant dans le parc, on tombe directement sur le <strong>Mauerpark Flohmarkt</strong>, l’un des rendez-vous les plus emblématiques de la ville, surtout si vous aimez l’ambiance bohème, vintage et typiquement berlinoise. On s’y balade sans but précis. C’est le genre d’endroit où tu repars avec un truc dont tu n’avais absolument pas besoin à la base, mais qui devient tout d’un coup indispensable... Bah, ça n’a pas loupé pour nous non plus ! On y trouve de tout : friperie, bijoux, lunettes, vinyles, créations d’artistes, objets en tout genre… C’est un véritable terrain de chasse pour les amateurs de vintage et d’objets insolites.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/072.webp" alt="Mauerpark Flohmarkt Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="/berlin-photos/073.webp" alt="Mauerpark Flohmarkt Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Ce marché est ouvert tous les dimanches, de 10 h à 18 h, et l’entrée est gratuite.</p></div>
             </div>
             <h4>Le parc et son karaoké géant</h4>
-            <p>Derrière le marché, le parc est immense. Des familles et groupes d’amis sont installés dans la pelouse. Il y a des barbecues à disposition, des terrains de volley sont installés. L’ambiance y est très décontractée et très familiale. En se baladant, on tombe sur des musiciens et des artistes de rue.</p>
-            <p>Le Mauerpark est bien plus qu’un simple marché aux puces, c’est une scène à ciel ouvert.</p>
+            <p>Derrière le marché, le parc est immense. Des familles et groupes d’amis sont installés dans la pelouse. Il y a des barbecues à disposition, des terrains de volley sont installés. L’ambiance y est très décontractée et très familiale. En se baladant, on tombe sur des musiciens et des artistes de rue. Le Mauerpark est bien plus qu’un simple marché aux puces, c’est une scène à ciel ouvert.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/074.webp" alt="Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/075.webp" alt="Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>Nous sommes malheureusement passées à côté de l’amphithéâtre du parc, au grand désarroi de Laurie. C’est là que se déroule le karaoké géant du <strong>Mauerpark</strong> le dimanche. Des inconnus montent sur scène devant une foule venue les encourager dans une ambiance joyeuse et complètement décomplexée. Dommage, on aurait pu vivre un grand moment !</p>
             <h4>Pause gourmande à Schönwetter</h4>
             <p>Il n’est pas loin de 12h30, une pause rafraîchissante et gourmande s’impose. Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servis ! On y trouve des saveurs venues des quatre coins du monde : spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand. Au-delà des stands de street food, il y a aussi des bars, cafés et restaurants ouverts toute l’année.</p>
