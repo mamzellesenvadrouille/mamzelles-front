@@ -397,6 +397,10 @@ export default function VisiterBerlinPage() {
             </div>
             <h4>Oberbaumbrücke, le pont de la réunification</h4>
             <p>Après ça et non loin de là, direction le pont iconique de Berlin, le <strong>Oberbaum Bridge</strong> (<strong>Oberbaumbrücke</strong>). C’est l’un des ponts les plus emblématiques de Berlin, reconnaissable à ses tours en briques rouges et son allure presque de château. Il relie les quartiers de <strong>Friedrichshain</strong> et <strong>Kreuzberg</strong> au-dessus de la <strong>Spree</strong> et symbolise surtout la réunification, puisqu’il marquait autrefois une frontière entre Berlin-Est et Berlin-Ouest.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/038.webp" alt="Oberbaumbrücke Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="/berlin-photos/039.webp" alt="Oberbaumbrücke Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
@@ -413,6 +417,10 @@ export default function VisiterBerlinPage() {
             <h3>Kreuzberg</h3>
             <h4>Esprit rebelle et street art</h4>
             <p>Nous traversons l’<strong>Oberbaum Bridge</strong> et nous poursuivons notre balade à pied jusqu’au cœur de <strong>Kreuzberg</strong>, l’un des quartiers emblématiques de Berlin. Ici, l’ambiance a quelque chose de particulier. C’est un mélange d’énergie alternative, de diversité culturelle et de créativité, avec ce petit côté rebelle qui fait tout son charme. Entre le street art, les terrasses animées et les façades parfois brutes, Kreuzberg dégage une vraie personnalité, entre esprit un peu punk et quartier devenu aujourd’hui très tendance. Impossible de manquer le fameux <strong>astronaute</strong>, une fresque signée Victor Ash intitulée <strong>« Astronaut/Cosmonaut »</strong> : peinte en 2007, ses 22x14 mètres en font l’une des plus grandes œuvres au pochoir au monde.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/040.webp" alt="Astronaut Cosmonaut fresque Kreuzberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/041.webp" alt="Astronaut Cosmonaut fresque Kreuzberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>Après avoir déambulé dans le quartier, histoire de faire une petite pause, nous nous arrêtons boire un verre chez <strong>Südblock</strong>, un lieu bien vivant qui s’intègre parfaitement à l’atmosphère du quartier.</p>
             <div className="article-resto">
               <div className="article-resto-item">
@@ -441,6 +449,11 @@ export default function VisiterBerlinPage() {
             <p>Pour le sunset, direction un endroit assez insolite... Un ancien aéroport transformé en immense parc public en plein Berlin : <strong>Tempelhofer Feld</strong>.</p>
             <p>L’ancien aéroport de Tempelhofer Feld se situe au sud du centre de Berlin, au cœur du quartier de <strong>Tempelhof-Schöneberg</strong>. Il faisait autrefois partie de l’énorme aéroport de Tempelhof, fermé en 2008. Depuis 2010, l’espace est ouvert au public et c’est devenu l’un des plus grands espaces urbains ouverts au monde, avec plus de 300 hectares.</p>
             <p>Depuis les stations <strong>Boddinstraße</strong> ou <strong>Leinestraße</strong>, comptez 5 à 7 minutes de marche jusqu’aux entrées. On entre alors dans le Tempelhofer Feld par son côté le plus sauvage. On suit un chemin à travers la forêt avant de déboucher sur l’immensité des anciennes pistes d’aviation.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/042.webp" alt="Tempelhofer Feld Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/043.webp" alt="Tempelhofer Feld Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/044.webp" alt="Tempelhofer Feld Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>Ce qui est fou, c’est que les anciennes pistes d’atterrissage sont restées telles qu’à l’époque. On peut littéralement marcher dessus, faire du vélo, du roller ou s’asseoir au milieu d’une piste où des avions décollaient avant. Les familles adorent s’y retrouver le week-end pour des barbecues improvisés. Le parc accueille aussi régulièrement des concerts et des festivals en plein air. Sur place, vous trouverez également de quoi boire et manger.</p>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
@@ -454,7 +467,12 @@ export default function VisiterBerlinPage() {
             <h3>Neukölln</h3>
             <h4>Klunkerkranich, le rooftop bohème</h4>
             <p>Pour terminer la soirée, on a choisi le rooftop <strong>Klunkerkranich</strong>, un spot très berlinois perché au-dessus d’un centre commercial à <strong>Neukölln</strong>. Et c’est justement ce contraste qui fait son charme. On prend l’ascenseur jusqu’en haut, on traverse un parking un peu banal, sans trop savoir à quoi s’attendre, puis après avoir emprunté l’ancienne rampe qui permettait aux voitures d’accéder au toit, on arrive dans un lieu presque caché, avec une vraie atmosphère à part.</p>
+            <img src="/berlin-photos/045.webp" alt="Klunkerkranich rooftop Berlin" className="article-img-full" loading="lazy" />
             <p>Ici, pas de rooftop ultra-luxueux ou trop lisse, l’ambiance est bohème, un peu arty, avec des plantes, des lumières suspendues, du mobilier récupéré, une voiture abandonnée dans laquelle on peut s’installer. L’énergie y est décontractée. Certains soirs, un DJ ou de la musique live accompagne le coucher du soleil, avec une jolie vue sur les toits de Berlin. Un endroit simple, vivant et authentique, parfait pour finir la journée dans une ambiance locale.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/046.webp" alt="Klunkerkranich rooftop Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/047.webp" alt="Klunkerkranich rooftop Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
