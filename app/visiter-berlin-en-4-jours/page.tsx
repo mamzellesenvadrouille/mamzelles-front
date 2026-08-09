@@ -533,8 +533,8 @@ export default function VisiterBerlinPage() {
             <p>On commence la journée au <strong>Nikolaiviertel</strong>, le plus vieux quartier de Berlin. Situé dans le centre-ville, entre <strong>Alexanderplatz</strong> et l’<strong>île aux Musées</strong>, c’est l’endroit parfait pour démarrer la journée.</p>
             <p>Ici, c’est un changement d’ambiance immédiat. On quitte le tumulte de la ville pour de petites ruelles pavées et des façades colorées. Au cœur du quartier se dresse l’<strong>église Saint-Nicolas</strong>, reconnaissable à ses deux tours qui dominent les alentours. Symbole du <strong>Nikolaiviertel</strong>, cette église rappelle les origines médiévales de Berlin.</p>
             <div className="article-gallery-2">
-              <img src="/berlin-photos/050.webp" alt="Église Saint-Nicolas Nikolaiviertel Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/051.webp" alt="Église Saint-Nicolas Nikolaiviertel Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/050.webp" alt="Église Saint-Nicolas Nikolaiviertel Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
             <p>Le <strong>Nikolaiviertel</strong> est relativement calme, idéal pour flâner, déambuler et profiter de belles vues sur la <strong>Spree</strong>. Alors, on s’installe en terrasse histoire de se rafraîchir un peu parce qu’il fait quand même super chaud. Ok, on ne se plaint pas, visiter Berlin sous le soleil et la chaleur, c’est quand même plus sympa qu’en hiver à -5 degrés !</p>
             <div className="article-gallery-2">
@@ -628,6 +628,10 @@ export default function VisiterBerlinPage() {
             <h4>Topographie de la Terreur</h4>
             <p>Le premier élément marquant du site qu’on voit directement en arrivant, c’est l’un des plus longs vestiges encore visibles du <strong>Mur de Berlin</strong>.</p>
             <p>La <strong>Topographie de la Terreur</strong> est un lieu qui permet de mieux comprendre l’histoire de l’Allemagne sous le régime nazi. Installé sur le site des anciens quartiers généraux de la Gestapo et des SS, ce centre de documentation présente de nombreuses photos, archives et témoignages. Une visite passionnante, un peu bouleversante, qui aide à mieux comprendre cette période de l’histoire et ses conséquences sur Berlin et l’Europe. Seul bémol : les panneaux et documents sont uniquement en allemand et en anglais, pas de version française.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/061.webp" alt="Topographie de la Terreur Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/062.webp" alt="Topographie de la Terreur Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
@@ -646,7 +650,17 @@ export default function VisiterBerlinPage() {
             <p>Pour clôturer cette journée riche en histoire et en émotions, direction <strong>Teufelsberg</strong>, la célèbre « montagne du Diable ». On nous a dit que le coucher de soleil y était magique… et on confirme, le détour en vaut largement la peine !</p>
             <p><strong>Teufelsberg</strong> est une colline artificielle construite après la Seconde Guerre mondiale à partir des millions de tonnes de gravats laissés par la destruction de Berlin. Depuis la station <strong>Berlin-Heerstraße</strong>, il faut rejoindre l’entrée de la forêt et suivre le sentier balisé, qui traverse une petite route avant de grimper jusqu’au sommet.</p>
             <p>À notre arrivée sur le site, un plan nous est remis. Vous pouvez explorer librement les lieux, déambuler entre les bâtiments, grimper dans certains d’entre eux et prendre le temps d’admirer les nombreux points de vue. Au sommet se dressent les vestiges d’une ancienne station d’écoute américaine datant de la Guerre froide.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/063.webp" alt="Teufelsberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/064.webp" alt="Teufelsberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/065.webp" alt="Teufelsberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>L’endroit est tout simplement fascinant. Entre les immenses radômes blancs, les fresques de street art qui recouvrent chaque mur et la vue panoramique sur Berlin, l’atmosphère est hors du temps. C’est un lieu insolite où l’histoire rencontre l’art urbain, offrant une expérience complètement différente de celle des monuments emblématiques du centre-ville. Un véritable coup de cœur pour nous.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/066.webp" alt="Teufelsberg street art Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/067.webp" alt="Teufelsberg street art Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/068.webp" alt="Teufelsberg street art Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
