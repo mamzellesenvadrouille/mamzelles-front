@@ -538,8 +538,8 @@ export default function VisiterBerlinPage() {
             </div>
             <p>Le <strong>Nikolaiviertel</strong> est relativement calme, idéal pour flâner, déambuler et profiter de belles vues sur la <strong>Spree</strong>. Alors, on s’installe en terrasse histoire de se rafraîchir un peu parce qu’il fait quand même super chaud. Ok, on ne se plaint pas, visiter Berlin sous le soleil et la chaleur, c’est quand même plus sympa qu’en hiver à -5 degrés !</p>
             <div className="article-gallery-2">
-              <img src="/berlin-photos/053.webp" alt="Nikolaiviertel Spree Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
               <img src="/berlin-photos/052.webp" alt="Nikolaiviertel Spree Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="/berlin-photos/053.webp" alt="Nikolaiviertel Spree Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
             </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
