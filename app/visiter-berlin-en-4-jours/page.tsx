@@ -194,9 +194,20 @@ export default function VisiterBerlinPage() {
             <p>Wouahou… Mon Amour, c’est là qu’on va dormir ?</p>
             <p>En arrivant devant l’hôtel, on est tout de suite surprises par le bâtiment. La façade de l’<strong>Oderberger</strong> a beaucoup de charme, avec son style ancien et son côté hors du temps. Un charme berlinois un peu brut mais raffiné à la fois. On sent immédiatement le cachet du lieu et l’histoire qui l’accompagne.</p>
             <p>En y entrant, on a l’impression d’être dans un ancien bâtiment public majestueux, transformé en un lieu design, sans qu’il ait perdu son âme. Les murs et éléments historiques ont été conservés. Les chambres et les espaces communs sont très contemporains : bois, lignes épurées, lumière tamisée, minimalisme chic sans être prétentieux. On est loin du palace classique... C’est un luxe discret, presque industriel, avec un mélange d’histoire et de modernité. Ça donne déjà le ton du séjour !</p>
+            <div className="article-gallery-4">
+              <img src="/berlin-photos/095.webp" alt="Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/096.webp" alt="Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/097.webp" alt="Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/098.webp" alt="Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>L’hôtel est installé dans un ancien bain public du début des années 1900, à une époque où beaucoup d’appartements n’avaient pas encore de salle de bain. Fermé en 1986, il est resté abandonné pendant des décennies avant une restauration monumentale.</p><p>Aujourd’hui, le joyau de l’hôtel Oderberger, c’est son <strong>bassin néo-Renaissance</strong>, avec ses mosaïques, ses colonnes, et surtout sa verrière.</p><p>La piscine est accessible à tous (même sans être client) : vous pouvez <a href="https://pretix.eu/oderberger/oderberger/" target="_blank" rel="noopener noreferrer">réserver un créneau</a> pour y venir nager mais aussi pour privatiser l’endroit.</p></div>
+              <div><strong>Bon à savoir</strong><p>L’hôtel est installé dans un ancien bain public du début des années 1900, à une époque où beaucoup d’appartements n’avaient pas encore de salle de bain. Fermé en 1986, il est resté abandonné pendant des décennies avant une restauration monumentale. Aujourd’hui, le joyau de l’hôtel Oderberger, c’est son <strong>bassin néo-Renaissance</strong>, avec ses mosaïques, ses colonnes, et surtout sa verrière.</p>
+              <div className="article-gallery-2">
+                <img src="/berlin-photos/093.webp" alt="Piscine Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="/berlin-photos/094.webp" alt="Piscine Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              </div>
+              <p>La piscine est accessible à tous (même sans être client) : vous pouvez <a href="https://pretix.eu/oderberger/oderberger/" target="_blank" rel="noopener noreferrer">réserver un créneau</a> pour y venir nager mais aussi pour privatiser l’endroit.</p></div>
             </div>
             <div className="article-resto">
               <div className="article-resto-item">
@@ -837,6 +848,11 @@ export default function VisiterBerlinPage() {
             </div>
             <h3>Où dormir ?</h3>
             <p>Nous avons logé à l’<a href="https://www.hotel-oderberger.berlin/en/" target="_blank" rel="noopener noreferrer"><strong>Hôtel Oderberger</strong></a>, dans le quartier de Prenzlauer Berg, un ancien bain public du début du XXe siècle transformé en hôtel design 4 étoiles, avec sa spectaculaire piscine néo-Renaissance. Une adresse que nous recommandons sans hésiter, idéalement située pour rayonner dans le nord-est de Berlin.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/099.webp" alt="Hôtel Oderberger Prenzlauer Berg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/100.webp" alt="Hôtel Oderberger Prenzlauer Berg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/101.webp" alt="Hôtel Oderberger Prenzlauer Berg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>Dans tous les cas, privilégiez Prenzlauer Berg ou Mitte pour être bien situés et que tout soit accessible à pied ou en tram.</p>
             <h3>Quel budget prévoir ?</h3>
             <p>Berlin reste une capitale accessible comparée à d’autres capitales européennes. Comptez environ <strong>120 à 160 € par personne et par jour</strong> pour un voyageur moyen (hébergement, repas et activités inclus).</p>
