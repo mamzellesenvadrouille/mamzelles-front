@@ -184,7 +184,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Street-food</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Rüyam Gemüse Kebab</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=R%C3%BCyam+Gem%C3%BCse+Kebab+Sch%C3%B6nhauser+Allee+44A+Berlin" target="_blank" rel="noopener noreferrer">Rüyam Gemüse Kebab</a></p>
                   <p className="article-resto-sub">Kebab légendaire · Prenzlauer Berg</p>
                   <p>Copieux. Laurie n’a même pas réussi à finir le sien. Tellement bon, à tester absolument ! C’est le genre d’adresse où il y a souvent la queue, mais où l’attente fait presque partie de l’expérience.</p>
                 </div>
@@ -211,7 +211,7 @@ export default function VisiterBerlinPage() {
               </div>
               <div className="article-tip-with-gallery-row" style={{marginTop: '16px'}}>
                 <span className="article-tip-icon" style={{visibility: 'hidden'}}><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2"/></svg></span>
-                <p style={{fontSize: '13px', color: '#555', lineHeight: '1.9', margin: 0}}>La piscine est accessible à tous (même sans être client) : vous pouvez <a href="https://pretix.eu/oderberger/oderberger/" target="_blank" rel="noopener noreferrer">réserver un créneau</a> pour y venir nager mais aussi pour privatiser l’endroit.</p>
+                <p style={{fontSize: '13px', color: '#555', lineHeight: '1.9', margin: 0}}>La piscine est accessible à tous (même sans être client) : vous pouvez <a href="https://pretix.eu/oderberger/oderberger/" target="_blank" rel="noopener noreferrer" className="article-link">réserver un créneau</a> pour y venir nager mais aussi pour privatiser l’endroit.</p>
               </div>
             </div>
             <div className="article-resto">
@@ -221,7 +221,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">★★★★</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Hôtel Oderberger</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Oderberger+Oderberger+Stra%C3%9Fe+57+Berlin" target="_blank" rel="noopener noreferrer">Hôtel Oderberger</a></p>
                   <p className="article-resto-sub">Oderberger Straße 57, 10435 Berlin · Prenzlauer Berg</p>
                 </div>
               </div>
@@ -322,7 +322,7 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/P0FuQWIe" target="_blank" rel="noopener noreferrer">Croisière d’une heure sur la Spree</a></p>
                   <p className="article-resto-sub">En français · À partir de 22 €</p>
-                  <p>Envie d'admirer le Berliner Dom et l'île aux Musées depuis l'eau ? Cette <a href="https://gyg.me/P0FuQWIe" target="_blank" rel="noopener noreferrer">croisière d'une heure sur la Spree</a> permet de voir la ville sous un autre angle.</p>
+                  <p>Envie d'admirer le Berliner Dom et l'île aux Musées depuis l'eau ? Cette <a href="https://gyg.me/P0FuQWIe" target="_blank" rel="noopener noreferrer" className="article-link">croisière d'une heure sur la Spree</a> permet de voir la ville sous un autre angle.</p>
                 </div>
               </div>
             </div>
@@ -355,7 +355,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Street-food</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Curry 61</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Curry+61+Oranienburger+Stra%C3%9Fe+6+Berlin" target="_blank" rel="noopener noreferrer">Curry 61</a></p>
                   <p className="article-resto-sub">Currywurst culte · Mitte</p>
                   <p>Une institution berlinoise, réputée pour sa Currywurst généreuse et sa version végane tout aussi bluffante. Idéal pour un petit creux, à n’importe quel moment de la journée.</p>
                 </div>
@@ -459,7 +459,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Kreuzberg</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Südblock</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=S%C3%BCdblock+Admiralstra%C3%9Fe+1+Berlin" target="_blank" rel="noopener noreferrer">Südblock</a></p>
                   <p className="article-resto-sub">Bar animé · Kreuzberg</p>
                   <p>Juste en face de Kottbusser Tor, sa grande terrasse arborée et son ambiance conviviale et inclusive en font un incontournable pour boire un verre à toute heure de la journée.</p>
                 </div>
@@ -510,7 +510,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Neukölln</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Klunkerkranich</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Klunkerkranich+Karl-Marx-Stra%C3%9Fe+66+Berlin" target="_blank" rel="noopener noreferrer">Klunkerkranich</a></p>
                   <p className="article-resto-sub">Rooftop bohème · Neukölln</p>
                   <p>Comptez une petite entrée de 3 à 5 € en soirée (souvent gratuit plus tôt dans la journée), et prévoyez un peu d’attente, surtout le week-end ou quand il fait beau.</p>
                 </div>
@@ -544,7 +544,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Burger</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Burgermeister</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Burgermeister+Schlesisches+Tor+Berlin" target="_blank" rel="noopener noreferrer">Burgermeister</a></p>
                   <p className="article-resto-sub">Adresse historique · Prenzlauer Berg</p>
                   <p>Un choix de burgers gourmands, ouvert à toute heure, avec aussi de bonnes options végétariennes.</p>
                 </div>
@@ -596,7 +596,7 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer">Billet coupe-file pour la Fernsehturm</a></p>
                   <p className="article-resto-sub">À partir de 20 €</p>
-                  <p>Depuis la plateforme panoramique à 203 mètres de haut, la vue à 360° sur Berlin est saisissante. Le <a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer">billet coupe-file</a> permet d'éviter la queue à la billetterie.</p>
+                  <p>Depuis la plateforme panoramique à 203 mètres de haut, la vue à 360° sur Berlin est saisissante. Le <a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer" className="article-link">billet coupe-file</a> permet d'éviter la queue à la billetterie.</p>
                 </div>
               </div>
             </div>
@@ -609,7 +609,7 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer">High Swing Berlin</a></p>
                   <p className="article-resto-sub">À partir de 30 €</p>
-                  <p>Sensations garanties à 120 mètres de haut. <a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer">Réserver son créneau</a>.</p>
+                  <p>Sensations garanties à 120 mètres de haut. <a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer" className="article-link">Réserver son créneau</a>.</p>
                 </div>
               </div>
             </div>
@@ -707,7 +707,7 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/dJt9YbQe" target="_blank" rel="noopener noreferrer">Billet d'entrée Teufelsberg</a></p>
                   <p className="article-resto-sub">À partir de 12 €</p>
-                  <p>Comptez 2 à 3 heures sur place pour profiter pleinement des lieux, et pensez à arriver suffisamment tôt, car le site ferme au coucher du soleil. <a href="https://gyg.me/dJt9YbQe" target="_blank" rel="noopener noreferrer">Réserver son billet</a>.</p>
+                  <p>Comptez 2 à 3 heures sur place pour profiter pleinement des lieux, et pensez à arriver suffisamment tôt, car le site ferme au coucher du soleil. <a href="https://gyg.me/dJt9YbQe" target="_blank" rel="noopener noreferrer" className="article-link">Réserver son billet</a>.</p>
                 </div>
               </div>
             </div>
@@ -730,7 +730,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Italien</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Pasta &amp; Passione</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Pasta+%26+Passione+Kastanienallee+94+Berlin" target="_blank" rel="noopener noreferrer">Pasta &amp; Passione</a></p>
                   <p className="article-resto-sub">Restaurant italien · Prenzlauer Berg</p>
                   <p>Une cuisine italienne simple dans un cadre chaleureux. Les pâtes sont faites maison chaque jour, et les portions sont généreuses.</p>
                 </div>
@@ -747,7 +747,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Kreuzberg</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Club der Visionäre</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Club+der+Vision%C3%A4re+Am+Flutgraben+1+Berlin" target="_blank" rel="noopener noreferrer">Club der Visionäre</a></p>
                   <p className="article-resto-sub">Club à ciel ouvert · Kreuzberg</p>
                   <p>Ouvert depuis 2002, c’est une référence de la scène techno et minimale berlinoise. Le lieu est en plein air, donc n’ouvre que quand la météo le permet, grosso modo d’avril à septembre.</p>
                 </div>
@@ -816,7 +816,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Mauerpark</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Schönwetter</p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Sch%C3%B6nwetter+Bernauer+Stra%C3%9Fe+63+Berlin" target="_blank" rel="noopener noreferrer">Schönwetter</a></p>
                   <p className="article-resto-sub">Bar &amp; grillades · Mauerpark</p>
                   <p>Le lieu fournit barbecue, grill et charbon : il suffit d’apporter sa propre nourriture. Ouvert d’avril à octobre, et uniquement le dimanche en hiver pour coïncider avec le marché.</p>
                 </div>
@@ -856,7 +856,7 @@ export default function VisiterBerlinPage() {
               <p>Selon les quartiers, l’énergie change énormément : vers <strong>Prenzlauer Berg</strong> c’est plus doux et bobo, autour de <strong>Kreuzberg</strong> plus alternatif et multiculturel, tandis que <strong>Mitte</strong> mélange histoire, touristes et vie urbaine. Berlin est une ville qui se vit autant qu’elle se visite !</p>
             </div>
             <h3>Où dormir ?</h3>
-            <p>Nous avons logé à l’<a href="https://www.hotel-oderberger.berlin/en/" target="_blank" rel="noopener noreferrer"><strong>Hôtel Oderberger</strong></a>, dans le quartier de Prenzlauer Berg, un ancien bain public du début du XXe siècle transformé en hôtel design 4 étoiles, avec sa spectaculaire piscine néo-Renaissance. Une adresse que nous recommandons sans hésiter, idéalement située pour rayonner dans le nord-est de Berlin.</p>
+            <p>Nous avons logé à l’<a href="https://www.hotel-oderberger.berlin/en/" target="_blank" rel="noopener noreferrer" className="article-link"><strong>Hôtel Oderberger</strong></a>, dans le quartier de Prenzlauer Berg, un ancien bain public du début du XXe siècle transformé en hôtel design 4 étoiles, avec sa spectaculaire piscine néo-Renaissance. Une adresse que nous recommandons sans hésiter, idéalement située pour rayonner dans le nord-est de Berlin.</p>
             <div className="article-gallery-3">
               <img src="/berlin-photos/099.webp" alt="Hôtel Oderberger Prenzlauer Berg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/100.webp" alt="Hôtel Oderberger Prenzlauer Berg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
@@ -869,9 +869,9 @@ export default function VisiterBerlinPage() {
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong>
-              <ul className="article-pratique-list-gold">
-                <li>Berlin reste assez à l’ancienne côté paiement : beaucoup de petits commerces, visites, bars et restaurants n’acceptent que les espèces. Pensez à toujours avoir du liquide sur vous.</li>
-                <li>Les musées de l’île aux Musées et de nombreux lieux culturels berlinois proposent des tarifs réduits en fin de journée ou des créneaux gratuits certains jours. Renseignez-vous sur place ou en ligne avant votre visite.</li>
+              <ul className="article-pratique-list-gold" style={{margin: '8px 0 0 0'}}>
+                <li style={{fontSize: '13px', color: '#555', lineHeight: '1.9'}}>Berlin reste assez à l’ancienne côté paiement : beaucoup de petits commerces, visites, bars et restaurants n’acceptent que les espèces. Pensez à toujours avoir du liquide sur vous.</li>
+                <li style={{fontSize: '13px', color: '#555', lineHeight: '1.9'}}>Les musées de l’île aux Musées et de nombreux lieux culturels berlinois proposent des tarifs réduits en fin de journée ou des créneaux gratuits certains jours. Renseignez-vous sur place ou en ligne avant votre visite.</li>
               </ul>
               </div>
             </div>
@@ -971,7 +971,7 @@ export default function VisiterBerlinPage() {
             </div>
             <h4>Tickets</h4>
             <p>L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Comptez 4 € pour un ticket zone AB, valable 2 heures.</p>
-            <p>Pour les acheter directement depuis votre téléphone (et éviter la queue aux distributeurs), téléchargez l’appli officielle <a href="https://www.bvg.de/en/subscriptions-and-tickets/all-apps" target="_blank" rel="noopener noreferrer">BVG Fahrinfo</a>, qui permet aussi de planifier vos trajets en temps réel.</p>
+            <p>Pour les acheter directement depuis votre téléphone (et éviter la queue aux distributeurs), téléchargez l’appli officielle <a href="https://www.bvg.de/en/subscriptions-and-tickets/all-apps" target="_blank" rel="noopener noreferrer" className="article-link">BVG Fahrinfo</a>, qui permet aussi de planifier vos trajets en temps réel.</p>
             <h4>Horaires</h4>
             <ul className="article-pratique-list-gold">
               <li><strong>Le jour :</strong> en journée, les transports sont extrêmement réguliers, avec des passages fréquents, souvent toutes les cinq à dix minutes sur les lignes principales, ce qui rend les déplacements fluides et spontanés.</li>
