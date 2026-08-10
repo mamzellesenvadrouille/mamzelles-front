@@ -1133,7 +1133,7 @@
 }
 
 .article-berlin .article-resto-name a:hover {
-  color: var(--gold);
+  color: var(--gold) !important;
 }
 
 .article-berlin .article-resto-sub {
