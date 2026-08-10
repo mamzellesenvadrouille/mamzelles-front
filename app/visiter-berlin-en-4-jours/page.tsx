@@ -822,8 +822,12 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <p>Il est temps de rentrer. Ici, à <strong>Mauerpark</strong>, on a encore découvert un endroit authentique, un endroit où on prend le temps de flâner, d’écouter, de goûter… et surtout de profiter d’une atmosphère unique où chacun semble trouver sa place.</p>
-            <p>C’est un lieu vivant, un brin décalé, qui laisse derrière lui bien plus que quelques photos… un vrai souvenir de voyage.</p>
+            <p>Il est temps de rentrer. Ici, à <strong>Mauerpark</strong>, on a encore découvert un endroit authentique, un endroit où on prend le temps de flâner, d’écouter, de goûter… et surtout de profiter d’une atmosphère unique où chacun semble trouver sa place. C’est un lieu vivant, un brin décalé, qui laisse derrière lui bien plus que quelques photos… un vrai souvenir de voyage.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/102.webp" alt="Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/103.webp" alt="Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/104.webp" alt="Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
