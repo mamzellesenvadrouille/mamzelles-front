@@ -551,6 +551,7 @@
 .sidebar-cta-text { font-size: 13px !important; color: #666 !important; line-height: 1.8; font-weight: 300; margin-bottom: 16px; }
 
 .article-tip div p strong,
+.article-tip-with-gallery div p strong,
 .article-avis div p strong,
 .article-must div p strong { display: inline; text-transform: none; letter-spacing: normal; font-size: inherit; color: var(--dark); }
 
