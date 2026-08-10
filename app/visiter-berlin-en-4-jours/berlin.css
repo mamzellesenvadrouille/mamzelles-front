@@ -453,7 +453,7 @@
 
 .article-tip p:last-child { margin-bottom: 0 !important; }
 
-.article-tip-with-gallery strong { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.article-tip-with-gallery strong:first-child { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
 
 .article-tip-with-gallery strong:first-child { margin-bottom: 8px; }
 
