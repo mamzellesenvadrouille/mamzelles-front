@@ -1064,9 +1064,6 @@
   stroke: var(--dark);
 }
 
-.article-berlin .article-book .article-resto-name a {
-  color: var(--gold);
-}
 
 .article-berlin .article-resto-item {
   background: #fff;
@@ -1397,6 +1394,16 @@
   left: 0;
   top: 0;
   line-height: 1.65;
+}
+
+.article-berlin .article-tip .article-pratique-list-gold {
+  margin: 8px 0 0 0;
+}
+
+.article-berlin .article-tip .article-pratique-list-gold li {
+  font-size: 13px !important;
+  color: #555 !important;
+  line-height: 1.9 !important;
 }
 
 /* Gallery equal : hauteur fixe sur mobile */
