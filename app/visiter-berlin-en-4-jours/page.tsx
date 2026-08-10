@@ -151,10 +151,9 @@ export default function VisiterBerlinPage() {
             <p>C’est parti pour quatre jours et trois nuits dans une ville qui allait nous surprendre bien plus que nous l’imaginions.</p>
             <h3>Arrivée à Berlin</h3>
             <p>Une fois arrivées à l’aéroport de Berlin, il faut encore rejoindre le centre-ville. Direction le terminal 1 pour prendre le train <strong>S-Bahn</strong> vers la gare centrale, la <strong>Hauptbahnhof (HBF)</strong>. Comptez 5 € par personne pour un ticket valable deux heures, largement suffisant pour rejoindre le centre.</p>
-            <div className="article-gallery-3">
+            <div className="article-gallery-2">
               <img src="/berlin-photos/080.webp" alt="Arrivée à Berlin S-Bahn" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/081.webp" alt="Arrivée à Berlin S-Bahn" loading="lazy" style={{flex: '1', minWidth: 0}} />
-              <img src="/berlin-photos/091.webp" alt="Arrivée à Berlin S-Bahn" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
             <p>À ce moment-là, je me laisse complètement porter, je ne sais absolument pas où nous allons. Ma femme me laisse simplement entendre qu’elle nous a réservé un petit hôtel. En sortant de la gare côté <strong>Europaplatz</strong>, nous prenons le tram <strong>M10</strong>, qui se trouve juste en face (S+U Berlin Hauptbahnhof), direction U <strong>Eberswalder Straße</strong>, le nord-est de Berlin.</p>
             <div className="article-gallery-2">
@@ -347,6 +346,11 @@ export default function VisiterBerlinPage() {
             </div>
             <h4>Retour à l’hôtel Oderberger</h4>
             <p>C’est incroyable, à Berlin, la vie ne s’arrête jamais vraiment. La ville reste animée à toute heure. La nuit offre une toute autre ambiance. Les restaurants et les bars restent ouverts tard, certains commerces tournent même quasiment en continu. On peut trouver de quoi grignoter, de l’alcool, du tabac… bref, tout ce qu’il faut pour prolonger la soirée sans contrainte. Une ville qui semble vivre au rythme de ceux qui ont envie de profiter jusqu’au bout de la nuit.</p>
+            <div className="article-gallery-3">
+              <img src="/berlin-photos/089.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/090.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/091.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <p>En ce qui nous concerne, il est temps d’aller se coucher après cette première journée bien chargée, mais déjà hâte d’être à demain !</p>
           </section>
 
@@ -829,10 +833,6 @@ export default function VisiterBerlinPage() {
               <p>L’ambiance qui y règne est difficile à comparer à d’autres capitales européennes. Ce n’est pas une ville « carte postale » comme Paris ou Rome. Elle est parfois un peu grise, parfois industrielle, souvent imparfaite… mais c’est justement ce qui fait son charme. Personne ne regarde personne. Tout le monde peut y être lui-même sans être jugé.</p>
               <p>Berlin donne souvent une impression de liberté. Les gens semblent moins pressés, plus relax, parfois un peu « je fais ma vie comme j’ai envie ». Il y a un côté artistique et anticonformiste, mais aussi très quotidien, simple, sans chichi.</p>
               <p>Selon les quartiers, l’énergie change énormément : vers <strong>Prenzlauer Berg</strong> c’est plus doux et bobo, autour de <strong>Kreuzberg</strong> plus alternatif et multiculturel, tandis que <strong>Mitte</strong> mélange histoire, touristes et vie urbaine. Berlin est une ville qui se vit autant qu’elle se visite !</p>
-            </div>
-            <div className="article-gallery-2">
-              <img src="/berlin-photos/089.webp" alt="Berlin ambiance" loading="lazy" style={{flex: '1', minWidth: 0}} />
-              <img src="/berlin-photos/090.webp" alt="Berlin ambiance" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
             <h3>Où dormir ?</h3>
             <p>Nous avons logé à l’<a href="https://www.hotel-oderberger.berlin/en/" target="_blank" rel="noopener noreferrer"><strong>Hôtel Oderberger</strong></a>, dans le quartier de Prenzlauer Berg, un ancien bain public du début du XXe siècle transformé en hôtel design 4 étoiles, avec sa spectaculaire piscine néo-Renaissance. Une adresse que nous recommandons sans hésiter, idéalement située pour rayonner dans le nord-est de Berlin.</p>
