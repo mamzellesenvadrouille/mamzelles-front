@@ -200,14 +200,20 @@ export default function VisiterBerlinPage() {
               <img src="/berlin-photos/097.webp" alt="Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/098.webp" alt="Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>L’hôtel est installé dans un ancien bain public du début des années 1900, à une époque où beaucoup d’appartements n’avaient pas encore de salle de bain. Fermé en 1986, il est resté abandonné pendant des décennies avant une restauration monumentale. Aujourd’hui, le joyau de l’hôtel Oderberger, c’est son <strong>bassin néo-Renaissance</strong>, avec ses mosaïques, ses colonnes, et surtout sa verrière.</p>
-              <div className="article-gallery-2">
+            <div className="article-tip-with-gallery">
+              <div className="article-tip-with-gallery-row">
+                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                <div><strong>Bon à savoir</strong><p>L’hôtel est installé dans un ancien bain public du début des années 1900, à une époque où beaucoup d’appartements n’avaient pas encore de salle de bain. Fermé en 1986, il est resté abandonné pendant des décennies avant une restauration monumentale.</p>
+                <p>Aujourd’hui, le joyau de l’hôtel Oderberger, c’est son <strong>bassin néo-Renaissance</strong>, avec ses mosaïques, ses colonnes, et surtout sa verrière.</p></div>
+              </div>
+              <div className="article-gallery-2" style={{marginTop: '16px'}}>
                 <img src="/berlin-photos/093.webp" alt="Piscine Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
                 <img src="/berlin-photos/094.webp" alt="Piscine Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
               </div>
-              <p>La piscine est accessible à tous (même sans être client) : vous pouvez <a href="https://pretix.eu/oderberger/oderberger/" target="_blank" rel="noopener noreferrer">réserver un créneau</a> pour y venir nager mais aussi pour privatiser l’endroit.</p></div>
+              <div className="article-tip-with-gallery-row" style={{marginTop: '16px'}}>
+                <span className="article-tip-icon" style={{visibility: 'hidden'}}><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2"/></svg></span>
+                <p style={{fontSize: '13px', color: '#555', lineHeight: '1.9', margin: 0}}>La piscine est accessible à tous (même sans être client) : vous pouvez <a href="https://pretix.eu/oderberger/oderberger/" target="_blank" rel="noopener noreferrer">réserver un créneau</a> pour y venir nager mais aussi pour privatiser l’endroit.</p>
+              </div>
             </div>
             <div className="article-resto">
               <div className="article-resto-item">

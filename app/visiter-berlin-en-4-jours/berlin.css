@@ -436,7 +436,9 @@
 
 .article-tip { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 28px 0; }
 
-.article-tip > div { flex: 1; min-width: 0; }
+.article-tip-with-gallery { display: block; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 28px 0; }
+
+.article-tip-with-gallery-row { display: flex; gap: 16px; }
 
 .article-tip-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
 
