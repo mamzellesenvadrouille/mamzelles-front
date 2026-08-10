@@ -453,9 +453,7 @@
 
 .article-tip p:last-child { margin-bottom: 0 !important; }
 
-.article-tip-with-gallery strong:first-child { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
-
-.article-tip-with-gallery strong:first-child { margin-bottom: 8px; }
+.article-tip-with-gallery-title { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
 
 .article-tip-with-gallery p { font-size: 13px !important; color: #555 !important; line-height: 1.9 !important; margin-bottom: 6px !important; }
 
@@ -551,7 +549,6 @@
 .sidebar-cta-text { font-size: 13px !important; color: #666 !important; line-height: 1.8; font-weight: 300; margin-bottom: 16px; }
 
 .article-tip div p strong,
-.article-tip-with-gallery div p strong,
 .article-avis div p strong,
 .article-must div p strong { display: inline; text-transform: none; letter-spacing: normal; font-size: inherit; color: var(--dark); }
 
