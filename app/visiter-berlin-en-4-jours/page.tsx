@@ -562,6 +562,10 @@ export default function VisiterBerlinPage() {
             <h4>Tour de télévision &amp; High Swing Berlin</h4>
             <p>Après cette pause fraîcheur, c’est reparti !</p>
             <p>Nous sommes d’ailleurs tout près de l’emblématique <strong>tour de télévision de Berlin</strong> (<strong>Fernsehturm</strong>). Elle mesure 368 mètres, ce qui en fait le plus haut monument d’Allemagne.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/085.webp" alt="Fernsehturm Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/086.webp" alt="Fernsehturm Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+            </div>
             <div className="article-book">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -589,6 +593,10 @@ export default function VisiterBerlinPage() {
             </div>
             <h4>Berliner Dom</h4>
             <p>Puis à seulement une dizaine de minutes d’ici, nous rejoignons le <strong>Berliner Dom</strong>, l’un des monuments les plus impressionnants de Berlin avec son immense dôme vert qui domine le paysage. Il se trouve sur l’<strong>île aux Musées</strong>. C’est la plus grande église protestante de la ville. Construite entre 1894 et 1905 pour la famille impériale allemande, elle impressionne autant par sa taille que par son élégance. Elle témoigne de la grandeur de l’ancien Empire allemand et constitue aujourd’hui l’un des symboles incontournables de la capitale.</p>
+            <div className="article-gallery-2">
+              <img src="/berlin-photos/087.webp" alt="Berliner Dom Berlin" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              <img src="/berlin-photos/088.webp" alt="Berliner Dom Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
+            </div>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong><p>Pour 15 € il est possible de visiter le Berliner Dom (audioguide inclus). Vous aurez accès à l’intérieur de l’église, à la crypte des Hohenzollern, au musée et à la galerie panoramique située sous le dôme, qui offre une belle vue sur Berlin.</p></div>
@@ -923,9 +931,10 @@ export default function VisiterBerlinPage() {
                   },
                 ]} />
             </div>
-            <div className="article-gallery-2" style={{marginTop: '24px'}}>
+            <div className="article-gallery-3" style={{marginTop: '24px'}}>
               <img src="/berlin-photos/078.webp" alt="Berlin transports" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/079.webp" alt="Berlin transports" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/084.webp" alt="Berlin transports" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
             <h4>Tickets</h4>
             <p>L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Comptez 4 € pour un ticket zone AB, valable 2 heures.</p>
