@@ -99,7 +99,7 @@ export default function VisiterBerlinPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          <span>Allemand</span>
+          <span>Allemand, Anglais</span>
         </div>
       </div>
 
@@ -868,7 +868,12 @@ export default function VisiterBerlinPage() {
             <p>Les petits budgets peuvent s’en sortir dès 60 à 90 €/jour en misant sur les auberges de jeunesse et la street food, qui permet justement de manger bien et pas cher (Currywurst, Gemüse Kebab... pour 5 à 8 € en moyenne).</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Les musées de l’île aux Musées et de nombreux lieux culturels berlinois proposent des tarifs réduits en fin de journée ou des créneaux gratuits certains jours. Renseignez-vous sur place ou en ligne avant votre visite.</p></div>
+              <div><strong>Bon à savoir</strong>
+              <ul className="article-pratique-list-gold">
+                <li>Berlin reste assez à l’ancienne côté paiement : beaucoup de petits commerces, visites, bars et restaurants n’acceptent que les espèces. Pensez à toujours avoir du liquide sur vous.</li>
+                <li>Les musées de l’île aux Musées et de nombreux lieux culturels berlinois proposent des tarifs réduits en fin de journée ou des créneaux gratuits certains jours. Renseignez-vous sur place ou en ligne avant votre visite.</li>
+              </ul>
+              </div>
             </div>
             <h3 id="arriver-avion">Arriver en avion</h3>
             <p>Il est désormais facile de trouver des vols directs à destination de Berlin à moindre coût. De <strong>nombreuses compagnies low-cost</strong> desservent la capitale allemande depuis la plupart des aéroports français.</p>
