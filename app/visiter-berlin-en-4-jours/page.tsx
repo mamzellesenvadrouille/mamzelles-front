@@ -151,9 +151,10 @@ export default function VisiterBerlinPage() {
             <p>C’est parti pour quatre jours et trois nuits dans une ville qui allait nous surprendre bien plus que nous l’imaginions.</p>
             <h3>Arrivée à Berlin</h3>
             <p>Une fois arrivées à l’aéroport de Berlin, il faut encore rejoindre le centre-ville. Direction le terminal 1 pour prendre le train <strong>S-Bahn</strong> vers la gare centrale, la <strong>Hauptbahnhof (HBF)</strong>. Comptez 5 € par personne pour un ticket valable deux heures, largement suffisant pour rejoindre le centre.</p>
-            <div className="article-gallery-2">
+            <div className="article-gallery-3">
               <img src="/berlin-photos/080.webp" alt="Arrivée à Berlin S-Bahn" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/081.webp" alt="Arrivée à Berlin S-Bahn" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/091.webp" alt="Arrivée à Berlin S-Bahn" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
             <p>À ce moment-là, je me laisse complètement porter, je ne sais absolument pas où nous allons. Ma femme me laisse simplement entendre qu’elle nous a réservé un petit hôtel. En sortant de la gare côté <strong>Europaplatz</strong>, nous prenons le tram <strong>M10</strong>, qui se trouve juste en face (S+U Berlin Hauptbahnhof), direction U <strong>Eberswalder Straße</strong>, le nord-est de Berlin.</p>
             <div className="article-gallery-2">
@@ -349,7 +350,7 @@ export default function VisiterBerlinPage() {
             <div className="article-gallery-3">
               <img src="/berlin-photos/089.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/090.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
-              <img src="/berlin-photos/091.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <img src="/berlin-photos/092.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
             <p>En ce qui nous concerne, il est temps d’aller se coucher après cette première journée bien chargée, mais déjà hâte d’être à demain !</p>
           </section>
