@@ -348,9 +348,9 @@ export default function VisiterBerlinPage() {
             <h4>Retour à l’hôtel Oderberger</h4>
             <p>C’est incroyable, à Berlin, la vie ne s’arrête jamais vraiment. La ville reste animée à toute heure. La nuit offre une toute autre ambiance. Les restaurants et les bars restent ouverts tard, certains commerces tournent même quasiment en continu. On peut trouver de quoi grignoter, de l’alcool, du tabac… bref, tout ce qu’il faut pour prolonger la soirée sans contrainte. Une ville qui semble vivre au rythme de ceux qui ont envie de profiter jusqu’au bout de la nuit.</p>
             <div className="article-gallery-3">
+              <img src="/berlin-photos/092.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/089.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/090.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
-              <img src="/berlin-photos/092.webp" alt="Berlin de nuit" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
             <p>En ce qui nous concerne, il est temps d’aller se coucher après cette première journée bien chargée, mais déjà hâte d’être à demain !</p>
           </section>
