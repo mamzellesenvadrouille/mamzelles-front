@@ -320,7 +320,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Croisière d’une heure sur la Spree</p>
+                  <p className="article-resto-name"><a href="https://gyg.me/P0FuQWIe" target="_blank" rel="noopener noreferrer">Croisière d’une heure sur la Spree</a></p>
                   <p className="article-resto-sub">En français · À partir de 22 €</p>
                   <p>Envie d'admirer le Berliner Dom et l'île aux Musées depuis l'eau ? Cette <a href="https://gyg.me/P0FuQWIe" target="_blank" rel="noopener noreferrer">croisière d'une heure sur la Spree</a> permet de voir la ville sous un autre angle.</p>
                 </div>
@@ -594,7 +594,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Billet coupe-file pour la Fernsehturm</p>
+                  <p className="article-resto-name"><a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer">Billet coupe-file pour la Fernsehturm</a></p>
                   <p className="article-resto-sub">À partir de 20 €</p>
                   <p>Depuis la plateforme panoramique à 203 mètres de haut, la vue à 360° sur Berlin est saisissante. Le <a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer">billet coupe-file</a> permet d'éviter la queue à la billetterie.</p>
                 </div>
@@ -607,7 +607,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">High Swing Berlin</p>
+                  <p className="article-resto-name"><a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer">High Swing Berlin</a></p>
                   <p className="article-resto-sub">À partir de 30 €</p>
                   <p>Sensations garanties à 120 mètres de haut. <a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer">Réserver son créneau</a>.</p>
                 </div>
@@ -705,7 +705,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name">Billet d'entrée Teufelsberg</p>
+                  <p className="article-resto-name"><a href="https://gyg.me/dJt9YbQe" target="_blank" rel="noopener noreferrer">Billet d'entrée Teufelsberg</a></p>
                   <p className="article-resto-sub">À partir de 12 €</p>
                   <p>Comptez 2 à 3 heures sur place pour profiter pleinement des lieux, et pensez à arriver suffisamment tôt, car le site ferme au coucher du soleil. <a href="https://gyg.me/dJt9YbQe" target="_blank" rel="noopener noreferrer">Réserver son billet</a>.</p>
                 </div>
