@@ -11,7 +11,7 @@ import ArticlesLies from '../components/ArticlesLies';
 
 export const metadata: Metadata = {
   title: "Visiter Berlin en 4 jours : itinéraire complet et bonnes adresses",
-  description: "Que faire à Berlin en 4 jours ? Prenzlauer Berg, East Side Gallery, Kreuzberg, Teufelsberg… notre itinéraire complet avec toutes nos adresses et bons plans.",
+  description: "Que faire à Berlin en 4 jours ? Prenzlauer Berg, East Side Gallery, Kreuzberg, Teufelsberg… notre parcours détaillé, avec toutes nos pépites locales.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/visiter-berlin-en-4-jours' },
   openGraph: {
     title: "Visiter Berlin en 4 jours : itinéraire complet et bonnes adresses",
@@ -30,7 +30,7 @@ export default function VisiterBerlinPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: 'Visiter Berlin en 4 jours : itinéraire complet et bonnes adresses',
-    description: "Que faire à Berlin en 4 jours ? Prenzlauer Berg, East Side Gallery, Kreuzberg, Teufelsberg… notre itinéraire complet avec toutes nos adresses et bons plans.",
+    description: "Que faire à Berlin en 4 jours ? Prenzlauer Berg, East Side Gallery, Kreuzberg, Teufelsberg… notre parcours détaillé, avec toutes nos pépites locales.",
     image: 'https://mamzellesenvadrouille.com/Berlin.webp',
     datePublished: '2026-08-01',
     dateModified: '2026-08-01',
