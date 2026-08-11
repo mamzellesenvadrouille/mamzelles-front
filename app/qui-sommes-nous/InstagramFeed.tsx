@@ -11,7 +11,7 @@ interface Post {
 export default function InstagramFeed() {
   const [posts, setPosts] = useState<Post[]>([]);
   useEffect(() => {
-    fetch('https://feeds.behold.so/EJW6IH9Z31WBJ6qEwvQc')
+    fetch('https://feeds.behold.so/gTmY4F0WuPmSN00JM1xP')
       .then(r => r.json())
       .then(data => setPosts((data.posts || []).slice(0, 6)));
   }, []);
