@@ -2,16 +2,15 @@
 import { useEffect, useState } from 'react';
 interface Post {
   id: string;
-  thumbnailUrl?: string;
+  thumbnailUrl: string | null;
   mediaUrl: string;
   permalink: string;
-  isReel: boolean;
   mediaType: string;
 }
 export default function InstagramFeed() {
   const [posts, setPosts] = useState<Post[]>([]);
   useEffect(() => {
-    fetch('https://feeds.behold.so/gTmY4F0WuPmSN00JM1xP')
+    fetch('https://feedframer.com/api/v1/me?api_key=1216db17c3a4e34cc0e8a6204dc332d4fcf32af8cce2e8516de57b405fe5b10a')
       .then(r => r.json())
       .then(data => setPosts((data.posts || []).slice(0, 6)));
   }, []);
@@ -36,7 +35,7 @@ export default function InstagramFeed() {
                   if (item) item.style.display = 'none';
                 }}
               />
-              {post.isReel && (
+              {post.mediaType === 'VIDEO' && (
                 <div className="qsn-insta-reel-badge">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
                 </div>
