@@ -69,7 +69,7 @@ export default function VisiterBerlinPage() {
         <div className="hero-content">
           <h1>4 jours à Berlin<br /><em>Entre mémoire, liberté et contre-culture</em></h1>
           <div className="hero-rule" />
-          <p className="hero-desc">Une capitale libre, brute et vibrante qui bouscule<br className="desktop-only-br" /> toutes les idées reçues. Notre itinéraire complet, jour par jour.</p>
+          <p className="hero-desc">Une capitale libre, brute et vibrante qui bouscule<br className="desktop-only-br" /> toutes les idées reçues. Notre itinéraire complet<span className="desktop-only-inline">, jour par jour</span>.</p>
         </div>
       </section>
 
@@ -451,15 +451,19 @@ export default function VisiterBerlinPage() {
               <img src="/berlin-photos/040.webp" alt="Astronaut Cosmonaut fresque Kreuzberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/041.webp" alt="Astronaut Cosmonaut fresque Kreuzberg Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
-            <div className="article-tip">
-              <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>En vous baladant à Berlin, vous croiserez sûrement des personnes fouillant les poubelles à la recherche de bouteilles vides, un caddie à la main ou plusieurs sacs accrochés à leur vélo. C’est le système du <strong>Pfand</strong> : chaque bouteille en verre ou en plastique achetée en Allemagne comprend une petite consigne (15 à 25 centimes selon le contenant), remboursée si on la rapporte dans une machine dédiée en supermarché. Beaucoup de personnes en difficulté (SDF, retraités précaires, étudiants...) collectent ces bouteilles pour arrondir leurs fins de mois.</p>
-              <p><strong>Petit geste de savoir-vivre berlinois :</strong> si vous finissez une bouteille consignée dans la rue, posez-la à côté d’une poubelle plutôt que dedans, ça évite à ces personnes d’avoir à fouiller.</p>
+            <div className="article-tip-with-gallery">
+              <div className="article-tip-with-gallery-row">
+                <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
+                <div><strong className="article-tip-with-gallery-title">Bon à savoir</strong><p>En vous baladant à Berlin, vous croiserez sûrement des personnes fouillant les poubelles à la recherche de bouteilles vides, un caddie à la main ou plusieurs sacs accrochés à leur vélo. C’est le système du <strong style={{color: 'var(--dark)'}}>Pfand</strong> : chaque bouteille en verre ou en plastique achetée en Allemagne comprend une petite consigne (15 à 25 centimes selon le contenant), remboursée si on la rapporte dans une machine dédiée en supermarché. Beaucoup de personnes en difficulté (SDF, retraités précaires, étudiants...) collectent ces bouteilles pour arrondir leurs fins de mois.</p></div>
               </div>
-            </div>
-            <div className="article-gallery-2">
-              <img src="/berlin-photos/105.webp" alt="Pfand Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
-              <img src="/berlin-photos/106.webp" alt="Pfand Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              <div className="article-gallery-2" style={{marginTop: '16px', marginLeft: '32px', marginRight: '32px'}}>
+                <img src="/berlin-photos/105.webp" alt="Pfand Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+                <img src="/berlin-photos/106.webp" alt="Pfand Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
+              </div>
+              <div className="article-tip-with-gallery-row" style={{marginTop: '16px'}}>
+                <span className="article-tip-icon" style={{visibility: 'hidden'}}><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2"/></svg></span>
+                <p style={{fontSize: '13px', color: '#555', lineHeight: '1.9', margin: 0}}><strong style={{color: 'var(--dark)'}}>Petit geste de savoir-vivre berlinois :</strong> si vous finissez une bouteille consignée dans la rue, posez-la à côté d’une poubelle plutôt que dedans, ça évite à ces personnes d’avoir à fouiller.</p>
+              </div>
             </div>
             <p>Après avoir déambulé dans le quartier, histoire de faire une petite pause, nous nous arrêtons boire un verre chez <strong>Südblock</strong>, un lieu bien vivant qui s’intègre parfaitement à l’atmosphère du quartier.</p>
             <div className="article-resto">
