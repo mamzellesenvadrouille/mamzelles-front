@@ -46,7 +46,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .sidebar-cta-title .mobile-only-br { display: none !important; }
   .sidebar-cta-text .mobile-only-br { display: none !important; }
-  .hero-article .hero-content { bottom: 0px !important; }
+  .hero-article .hero-content { bottom: 5px !important; }
 }
 
 .article-layout { display: grid;
