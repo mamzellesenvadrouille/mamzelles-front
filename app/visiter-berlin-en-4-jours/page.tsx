@@ -184,7 +184,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Street-food</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=R%C3%BCyam+Gem%C3%BCse+Kebab+Sch%C3%B6nhauser+Allee+44A+Berlin" target="_blank" rel="noopener noreferrer">Rüyam Gemüse Kebab</a></p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=R%C3%BCyam+Gem%C3%BCse+Kebab+Sch%C3%B6nhauser+Allee+44A+Berlin" target="_blank" className="article-resto-link-desktop">Rüyam Gemüse Kebab</a><a href="https://maps.app.goo.gl/jSrAKK6pASg2ErYn8?g_st=ic" target="_blank" className="article-resto-link-mobile">Rüyam Gemüse Kebab</a></p>
                   <p className="article-resto-sub">Kebab légendaire · Prenzlauer Berg</p>
                   <p>Copieux. Laurie n’a même pas réussi à finir le sien. Tellement bon, à tester absolument ! C’est le genre d’adresse où il y a souvent la queue, mais où l’attente fait presque partie de l’expérience.</p>
                 </div>
@@ -221,7 +221,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">★★★★</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Oderberger+Oderberger+Stra%C3%9Fe+57+Berlin" target="_blank" rel="noopener noreferrer">Hôtel Oderberger</a></p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Oderberger+Oderberger+Stra%C3%9Fe+57+Berlin" target="_blank" className="article-resto-link-desktop">Hôtel Oderberger</a><a href="https://maps.app.goo.gl/GrimFYRiRZyooVA27?g_st=ic" target="_blank" className="article-resto-link-mobile">Hôtel Oderberger</a></p>
                   <p className="article-resto-sub">Oderberger Straße 57, 10435 Berlin · Prenzlauer Berg</p>
                 </div>
               </div>
@@ -355,7 +355,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Street-food</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Curry+61+Oranienburger+Stra%C3%9Fe+6+Berlin" target="_blank" rel="noopener noreferrer">Curry 61</a></p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Curry+61+Oranienburger+Stra%C3%9Fe+6+Berlin" target="_blank" className="article-resto-link-desktop">Curry 61</a><a href="https://maps.app.goo.gl/4mLX9xVmg7Kb1Bik7?g_st=ic" target="_blank" className="article-resto-link-mobile">Curry 61</a></p>
                   <p className="article-resto-sub">Currywurst culte · Mitte</p>
                   <p>Une institution berlinoise, réputée pour sa Currywurst généreuse et sa version végane tout aussi bluffante. Idéal pour un petit creux, à n’importe quel moment de la journée.</p>
                 </div>
@@ -459,7 +459,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Kreuzberg</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=S%C3%BCdblock+Admiralstra%C3%9Fe+1+Berlin" target="_blank" rel="noopener noreferrer">Südblock</a></p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=S%C3%BCdblock+Admiralstra%C3%9Fe+1+Berlin" target="_blank" className="article-resto-link-desktop">Südblock</a><a href="https://maps.app.goo.gl/oqzQC7pvfzTMonRA9?g_st=ic" target="_blank" className="article-resto-link-mobile">Südblock</a></p>
                   <p className="article-resto-sub">Bar animé · Kreuzberg</p>
                   <p>Juste en face de Kottbusser Tor, sa grande terrasse arborée et son ambiance conviviale et inclusive en font un incontournable pour boire un verre à toute heure de la journée.</p>
                 </div>
@@ -510,7 +510,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Neukölln</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Klunkerkranich+Karl-Marx-Stra%C3%9Fe+66+Berlin" target="_blank" rel="noopener noreferrer">Klunkerkranich</a></p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Klunkerkranich+Karl-Marx-Stra%C3%9Fe+66+Berlin" target="_blank" className="article-resto-link-desktop">Klunkerkranich</a><a href="https://maps.app.goo.gl/HkdtMSpumzfi5o6Q8?g_st=ic" target="_blank" className="article-resto-link-mobile">Klunkerkranich</a></p>
                   <p className="article-resto-sub">Rooftop bohème · Neukölln</p>
                   <p>Comptez une petite entrée de 3 à 5 € en soirée (souvent gratuit plus tôt dans la journée), et prévoyez un peu d’attente, surtout le week-end ou quand il fait beau.</p>
                 </div>
@@ -535,7 +535,7 @@ export default function VisiterBerlinPage() {
             <p>On a goûté le burger signature, le Burgermeister. Du bœuf, des oignons grillés, du bacon, de la sauce barbecue et de la moutarde. Un délice ! On ne regrette pas de nous y être arrêtées.</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>L’adresse la plus connue mais aussi la plus touristique se trouve à Kreuzberg. Ce lieu emblématique se situe sous le pont de la ligne U1, dans d’anciennes toilettes publiques de 1920.</p></div>
+              <div><strong>À ne pas manquer</strong><p>L’adresse la plus connue mais aussi la plus touristique se trouve à Kreuzberg. Ce lieu emblématique se situe <a href="https://www.google.com/maps/search/?api=1&query=Burgermeister+Schlesisches+Tor+Berlin" target="_blank" rel="noopener noreferrer" className="article-link">sous le pont de la ligne U1, dans d’anciennes toilettes publiques de 1920</a>.</p></div>
             </div>
             <div className="article-resto">
               <div className="article-resto-item">
@@ -544,7 +544,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Burger</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Burgermeister+Schlesisches+Tor+Berlin" target="_blank" rel="noopener noreferrer">Burgermeister</a></p>
+                  <p className="article-resto-name"><a href="https://maps.app.goo.gl/zAeHKLhGQLSdM5E47" target="_blank" className="article-resto-link-desktop">Burgermeister</a><a href="https://maps.app.goo.gl/V8jCJodC34CG1f4v9?g_st=ic" target="_blank" className="article-resto-link-mobile">Burgermeister</a></p>
                   <p className="article-resto-sub">Adresse historique · Prenzlauer Berg</p>
                   <p>Un choix de burgers gourmands, ouvert à toute heure, avec aussi de bonnes options végétariennes.</p>
                 </div>
@@ -730,7 +730,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Italien</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Pasta+%26+Passione+Kastanienallee+94+Berlin" target="_blank" rel="noopener noreferrer">Pasta &amp; Passione</a></p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Pasta+%26+Passione+Kastanienallee+94+Berlin" target="_blank" className="article-resto-link-desktop">Pasta &amp; Passione</a><a href="https://maps.app.goo.gl/Z6x2xEA3Fa5tPJbw8?g_st=ic" target="_blank" className="article-resto-link-mobile">Pasta &amp; Passione</a></p>
                   <p className="article-resto-sub">Restaurant italien · Prenzlauer Berg</p>
                   <p>Une cuisine italienne simple dans un cadre chaleureux. Les pâtes sont faites maison chaque jour, et les portions sont généreuses.</p>
                 </div>
@@ -747,7 +747,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Kreuzberg</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Club+der+Vision%C3%A4re+Am+Flutgraben+1+Berlin" target="_blank" rel="noopener noreferrer">Club der Visionäre</a></p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Club+der+Vision%C3%A4re+Am+Flutgraben+1+Berlin" target="_blank" className="article-resto-link-desktop">Club der Visionäre</a><a href="https://maps.app.goo.gl/XnqivwMgwk3ffAtk6?g_st=ic" target="_blank" className="article-resto-link-mobile">Club der Visionäre</a></p>
                   <p className="article-resto-sub">Club à ciel ouvert · Kreuzberg</p>
                   <p>Ouvert depuis 2002, c’est une référence de la scène techno et minimale berlinoise. Le lieu est en plein air, donc n’ouvre que quand la météo le permet, grosso modo d’avril à septembre.</p>
                 </div>
@@ -816,7 +816,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-tag">Mauerpark</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Sch%C3%B6nwetter+Bernauer+Stra%C3%9Fe+63+Berlin" target="_blank" rel="noopener noreferrer">Schönwetter</a></p>
+                  <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Sch%C3%B6nwetter+Bernauer+Stra%C3%9Fe+63+Berlin" target="_blank" className="article-resto-link-desktop">Schönwetter</a><a href="https://maps.app.goo.gl/HYogWgvhZJQXRVR49?g_st=ic" target="_blank" className="article-resto-link-mobile">Schönwetter</a></p>
                   <p className="article-resto-sub">Bar &amp; grillades · Mauerpark</p>
                   <p>Le lieu fournit barbecue, grill et charbon : il suffit d’apporter sa propre nourriture. Ouvert d’avril à octobre, et uniquement le dimanche en hiver pour coïncider avec le marché.</p>
                 </div>
