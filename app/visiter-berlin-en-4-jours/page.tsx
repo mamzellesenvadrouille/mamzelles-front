@@ -205,7 +205,7 @@ export default function VisiterBerlinPage() {
                 <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
                 <div><strong className="article-tip-with-gallery-title">Bon à savoir</strong><p>L’hôtel est installé dans un ancien bain public du début des années 1900, à une époque où beaucoup d’appartements n’avaient pas encore de salle de bain. Fermé en 1986, il est resté abandonné pendant des décennies avant une restauration monumentale. Aujourd’hui, le joyau de l’hôtel Oderberger, c’est son bassin <strong style={{whiteSpace: 'nowrap', color: 'var(--dark)'}}>néo-Renaissance</strong>, avec ses mosaïques, ses colonnes, et surtout sa verrière.</p></div>
               </div>
-              <div className="article-gallery-2" style={{marginTop: '16px', marginLeft: '36px', marginRight: '36px'}}>
+              <div className="article-gallery-2" style={{marginTop: '16px', marginLeft: '34px', marginRight: '34px'}}>
                 <img src="/berlin-photos/093.webp" alt="Piscine Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
                 <img src="/berlin-photos/094.webp" alt="Piscine Hôtel Oderberger Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
               </div>
