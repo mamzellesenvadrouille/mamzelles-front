@@ -5,7 +5,7 @@
 
 @media (max-width: 768px) {
   .hero-article .hero-overlay { background: linear-gradient(to bottom, rgba(10,5,2,0.45) 0%, rgba(10,5,2,0.75) 100%) !important; }
-  .hero-article .hero-bg { transform: scale(1.15); }
+  .hero-article .hero-bg { transform: scale(1.35); }
   .hero-article .hero-desc { font-size: 13px !important; line-height: 1.7 !important; margin-bottom: 20px !important; }
   .hero-article { height: 45vh !important; min-height: 280px !important; }
   .hero-article .hero-content { padding: 0 24px 36px !important; bottom: 0px !important; }
@@ -47,7 +47,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .sidebar-cta-title .mobile-only-br { display: none !important; }
   .sidebar-cta-text .mobile-only-br { display: none !important; }
-  .hero-article .hero-content { bottom: 5px !important; }
+  .hero-article .hero-content { bottom: 12px !important; }
 }
 
 .article-layout { display: grid;
