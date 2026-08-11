@@ -322,6 +322,12 @@
 
 .article-gallery-3 img { width: 100%; height: auto; display: block; transition: transform .4s; min-width: 0; }
 
+.article-gallery-4 { display: flex; align-items: flex-start; gap: 8px; margin: 8px 0; }
+
+.article-gallery-4 img { width: 100%; height: auto; display: block; transition: transform .4s; min-width: 0; }
+
+.article-gallery-4 img:hover { transform: scale(1.03); }
+
 .article-gallery-3 img:hover { transform: scale(1.03); }
 
 .article-gallery-2 { display: flex; align-items: flex-start; gap: 8px; margin: 8px 0; }
@@ -1045,9 +1051,6 @@
   stroke: var(--dark);
 }
 
-.article-berlin .article-book .article-resto-name a {
-  color: var(--gold);
-}
 
 .article-berlin .article-resto-item {
   background: #fff;
