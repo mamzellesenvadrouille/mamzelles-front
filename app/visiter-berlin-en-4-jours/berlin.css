@@ -436,6 +436,19 @@
 
 .article-tip { display: flex; gap: 16px; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 28px 0; }
 
+.article-tip-with-gallery { display: block; background: #fdf4ee; border: 1px solid var(--gold); border-radius: 8px; padding: 18px 24px; margin: 28px 0; }
+
+.article-tip-with-gallery-row { display: flex; gap: 16px; }
+
+.article-tip-with-gallery-title { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+
+.article-tip-with-gallery p { font-size: 13px !important; color: #555 !important; line-height: 1.9 !important; margin-bottom: 6px !important; }
+
+.article-tip-with-gallery a { color: var(--gold); text-decoration: underline; font-weight: 600; }
+.article-tip-with-gallery a:hover { color: var(--dark); }
+
+.article-tip-with-gallery p:last-child { margin-bottom: 0 !important; }
+
 .article-tip-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
 
 .article-tip strong { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
