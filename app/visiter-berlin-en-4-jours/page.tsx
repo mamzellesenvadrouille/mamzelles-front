@@ -535,7 +535,7 @@ export default function VisiterBerlinPage() {
             <p>On a goûté le burger signature, le Burgermeister. Du bœuf, des oignons grillés, du bacon, de la sauce barbecue et de la moutarde. Un délice ! On ne regrette pas de nous y être arrêtées.</p>
             <div className="article-must">
               <span className="article-must-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.7l-6.2 3.3L7 14.2 2 9.3l7.1-1L12 2z"/></svg></span>
-              <div><strong>À ne pas manquer</strong><p>L’adresse la plus connue mais aussi la plus touristique se trouve à Kreuzberg. Ce lieu emblématique se situe sous <a href="https://www.google.com/maps/search/?api=1&query=Burgermeister+Schlesisches+Tor+Berlin" target="_blank" rel="noopener noreferrer" className="article-link" style={{textDecoration: 'none'}}>le pont de la ligne U1</a>, dans d’anciennes toilettes publiques de 1920.</p></div>
+              <div><strong>À ne pas manquer</strong><p>L’adresse la plus connue mais aussi la plus touristique se trouve à Kreuzberg. Ce lieu emblématique se situe <a href="https://www.google.com/maps/search/?api=1&query=Burgermeister+Schlesisches+Tor+Berlin" target="_blank" rel="noopener noreferrer" className="article-link">sous le pont de la ligne U1</a>, dans d’anciennes toilettes publiques de 1920.</p></div>
             </div>
             <div className="article-resto">
               <div className="article-resto-item">
