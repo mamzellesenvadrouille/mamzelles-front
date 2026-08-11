@@ -1,26 +1,21 @@
 'use client';
-
 import { useEffect, useState } from 'react';
-
 interface Post {
   id: string;
-  thumbnailUrl: string;
+  thumbnailUrl?: string;
+  mediaUrl: string;
   permalink: string;
   isReel: boolean;
   mediaType: string;
 }
-
 export default function InstagramFeed() {
   const [posts, setPosts] = useState<Post[]>([]);
-
   useEffect(() => {
     fetch('https://feeds.behold.so/EJW6IH9Z31WBJ6qEwvQc')
       .then(r => r.json())
       .then(data => setPosts((data.posts || []).slice(0, 6)));
   }, []);
-
   if (posts.length === 0) return null;
-
   return (
     <section className="qsn-insta">
       <div className="qsn-insta-header">
@@ -32,7 +27,15 @@ export default function InstagramFeed() {
         <div className="qsn-insta-grid">
           {posts.map(post => (
             <a key={post.id} href="https://www.instagram.com/mamzellesenvadrouille" target="_blank" rel="noopener noreferrer" className="qsn-insta-item">
-              <img src={post.thumbnailUrl} alt="" className="qsn-insta-img" />
+              <img
+                src={post.thumbnailUrl || post.mediaUrl}
+                alt=""
+                className="qsn-insta-img"
+                onError={(e) => {
+                  const item = e.currentTarget.closest('.qsn-insta-item') as HTMLElement;
+                  if (item) item.style.display = 'none';
+                }}
+              />
               {post.isReel && (
                 <div className="qsn-insta-reel-badge">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
