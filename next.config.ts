@@ -1,6 +1,17 @@
 import type { NextConfig } from "next";
-
 const nextConfig: NextConfig = {
+  async headers() {
+    return [
+      {
+        // Le Service Worker ne doit JAMAIS être mis en cache par le navigateur,
+        // sinon les mises à jour du fichier ne sont jamais vues par les visiteurs.
+        source: '/sw.js',
+        headers: [
+          { key: 'Cache-Control', value: 'no-cache, no-store, must-revalidate' },
+        ],
+      },
+    ]
+  },
   async redirects() {
     return [
       { source: '/visiter-londres-en-1-semaine', destination: '/visiter-londres', permanent: true },
@@ -21,5 +32,4 @@ const nextConfig: NextConfig = {
     ]
   }
 };
-
 export default nextConfig;
