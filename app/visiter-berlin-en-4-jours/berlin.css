@@ -17,7 +17,7 @@
   .desktop-only-inline { display: none; }
   .article-resto-link-desktop { display: none; }
   .article-berlin .article-section h3 { line-height: 1.1 !important; font-size: 28px !important; margin-bottom: 16px !important; }
-  .article-berlin .article-section h3:has(+ h4) { margin-bottom: 8px !important; }
+  .article-berlin .article-section h3:has(+ h4) { margin-bottom: 12px !important; }
   .article-day-header h2 { font-size: 32px !important; }
   .article-berlin .article-section h4 { line-height: 1.1 !important; font-size: 25px !important; }
   .article-berlin .article-section h3.budget-h3 { font-size: 18px !important; }
