@@ -6,8 +6,7 @@ const CACHE_NAME = "mamzelles-carnet-cache-v1";
 
 // Domaines Google Maps dont on veut garder les tuiles/scripts en cache
 const DOMAINES_MAPS = [
-  "maps.googleapis.com",
-  "maps.gstatic.com",
+  "api.maptiler.com",
   "fonts.googleapis.com",
   "fonts.gstatic.com",
 ];
