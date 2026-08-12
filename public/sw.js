@@ -2,7 +2,7 @@
 // Service Worker : met en cache les tuiles Google Maps et les pages de carnet
 // déjà visitées, pour qu'elles restent consultables sans connexion réseau.
 
-const CACHE_NAME = "mamzelles-carnet-cache-v1";
+const CACHE_NAME = "mamzelles-carnet-cache-v2";
 
 // Domaines Google Maps dont on veut garder les tuiles/scripts en cache
 const DOMAINES_MAPS = [
@@ -37,12 +37,17 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   const estDomaineMaps = DOMAINES_MAPS.some((d) => url.hostname.includes(d));
   const estPageCarnet = url.pathname.startsWith("/voyage/");
+  const vientDuCarnet = request.referrer && request.referrer.includes("/voyage/");
   const estMemeOrigine = url.origin === self.location.origin;
 
-  // On ne s'occupe que des tuiles Maps et des pages/ressources du carnet
-  if (!estDomaineMaps && !(estMemeOrigine && (estPageCarnet || request.destination === "image" || request.destination === "script" || request.destination === "style"))) {
-    return;
-  }
+  // On ne s'occupe QUE des tuiles Maps, et des ressources (scripts/styles/images)
+  // demandées DEPUIS une page carnet précisément — jamais du reste du site.
+  const doitEtreGere =
+    estDomaineMaps ||
+    (estMemeOrigine && estPageCarnet) ||
+    (estMemeOrigine && vientDuCarnet && (request.destination === "image" || request.destination === "script" || request.destination === "style"));
+
+  if (!doitEtreGere) return;
 
   event.respondWith(
     caches.open(CACHE_NAME).then(async (cache) => {
