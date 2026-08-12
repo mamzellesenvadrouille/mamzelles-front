@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import ServiceWorkerRegister from "./ServiceWorkerRegister";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -31,6 +32,8 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        {/* Service Worker : cache hors-ligne pour les carnets de voyage (cartes, pages, checklists) */}
+        <ServiceWorkerRegister />
         {/* Vercel Analytics : cookieless, données agrégées et anonymes, aucun consentement requis. */}
         <Analytics />
       </body>
