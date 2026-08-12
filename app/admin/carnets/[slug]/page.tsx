@@ -318,7 +318,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
         <div style={adminStyles.card}>
           <div style={adminStyles.header}>
             <div>
-              <div style={adminStyles.logo}>MamZelles en vadrouille</div>
+              <div style={adminStyles.logo}>MamZelles en Vadrouille</div>
               <div style={adminStyles.title}>{isNew ? "Nouveau carnet" : `Éditer : ${carnet.client.prenoms}`}</div>
             </div>
           </div>

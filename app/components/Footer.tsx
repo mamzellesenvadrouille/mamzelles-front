@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer-top">
         <div className="footer-col">
           <div className="footer-logo-wrap">
-            <span className="footer-logo-main">MamZelles en vadrouille</span>
+            <span className="footer-logo-main">MamZelles en Vadrouille</span>
             <span className="footer-logo-sub">Créatrices de voyages sur mesure</span>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        © 2026 MamZelles en vadrouille — Tous droits réservés · <a href="/confidentialite" style={{ color: 'rgba(26,21,18,0.5)', fontSize: '12px', textDecoration: 'underline' }}>Politique de confidentialité</a> · <a href="/cgv" style={{ color: 'rgba(26,21,18,0.5)', fontSize: '12px', textDecoration: 'underline' }}>CGV</a>
+        © 2026 MamZelles en Vadrouille — Tous droits réservés · <a href="/confidentialite" style={{ color: 'rgba(26,21,18,0.5)', fontSize: '12px', textDecoration: 'underline' }}>Politique de confidentialité</a> · <a href="/cgv" style={{ color: 'rgba(26,21,18,0.5)', fontSize: '12px', textDecoration: 'underline' }}>CGV</a>
       </div>
     </footer>
   );

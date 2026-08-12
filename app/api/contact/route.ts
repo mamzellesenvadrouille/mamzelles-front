@@ -20,14 +20,14 @@ export async function POST(req: NextRequest) {
     await redis.lpush('demandes:index', id);
 
     await resend.emails.send({
-      from: 'MamZelles en vadrouille <noreply@mamzellesenvadrouille.com>',
+      from: 'MamZelles en Vadrouille <noreply@mamzellesenvadrouille.com>',
       to: process.env.CONTACT_EMAIL || 'contact@mamzellesenvadrouille.com',
       replyTo: email,
       subject: `✈️ Nouvelle demande de devis — ${prenom}`,
       html: `
         <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; color: #1a1208;">
           <div style="background: #2a1f14; padding: 24px 32px;">
-            <h1 style="color: #c8a96e; font-size: 20px; margin: 0;">MamZelles en vadrouille</h1>
+            <h1 style="color: #c8a96e; font-size: 20px; margin: 0;">MamZelles en Vadrouille</h1>
             <p style="color: #a89070; margin: 4px 0 0; font-size: 13px;">Nouvelle demande de devis</p>
           </div>
           <div style="padding: 32px; background: #faf6f0; border: 1px solid #e8e0d4;">
@@ -71,7 +71,7 @@ export async function POST(req: NextRequest) {
             </div>
           </div>
           <div style="padding: 16px 32px; background: #2a1f14; text-align: center;">
-            <p style="color: #a89070; font-size: 12px; margin: 0;">MamZelles en vadrouille © 2026</p>
+            <p style="color: #a89070; font-size: 12px; margin: 0;">MamZelles en Vadrouille © 2026</p>
           </div>
         </div>
       `,

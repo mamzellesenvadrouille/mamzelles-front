@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "Visiter Londres : que faire en 7 jours par quartier",
     description: "Notre itinéraire complet pour visiter Londres en 7 jours, quartier par quartier, avec tous nos bons plans pratiques.",
     url: 'https://mamzellesenvadrouille.com/visiter-londres',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/Londres.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
-    authors: ['MamZelles en vadrouille'],
+    authors: ['MamZelles en Vadrouille'],
   },
 };
 
@@ -36,12 +36,12 @@ export default function VisiterLondresPage() {
     dateModified: '2026-06-21',
     author: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       logo: {
         '@type': 'ImageObject',
         url: 'https://mamzellesenvadrouille.com/icon.png',
@@ -1050,14 +1050,14 @@ export default function VisiterLondresPage() {
                 author: 'le dent longue',
                 date: '30 oct. 2025',
                 text: "Salut les filles,\nMerci pour toutes ces infos. Je pense que je vais lâchement... copier le parcours !!\nOn en reparlera bientôt",
-                reply: { author: 'MamZelles en vadrouille', date: '7 nov. 2025', text: "Coucou !\nHaha, C'est fait pour ça en même temps ! 😉👌🏼\nHâte que vous nous racontiez votre petit séjour... Bons préparatifs en attendant ! 🤗" }
+                reply: { author: 'MamZelles en Vadrouille', date: '7 nov. 2025', text: "Coucou !\nHaha, C'est fait pour ça en même temps ! 😉👌🏼\nHâte que vous nous racontiez votre petit séjour... Bons préparatifs en attendant ! 🤗" }
               },
               {
                 id: '4',
                 author: 'Fabien',
                 date: '16 janv. 2023',
                 text: "Salut les filles, \nJuste pour vous dire que je suis un fan de Londres (et que j ai réussi à transmettre le virus à ma petite famille) et que nous nous partons souvent en weekend londonnien from Biarritz, je trouve votre visite guidée de Londres au top!!  Félicitations pour votre site web 👍 Take Care girls & keep travelling 👌🌎 Fabien.",
-                reply: { author: 'MamZelles en vadrouille', date: '27 janv. 2023', text: "Hey coucou !\nOn comprend carrément cette fièvre pour Londres ! On est aussi tellement fan de cette incroyable ville...\nUn grand merci pour votre retour sur notre blog et notre article, ça nous fait tellement plaisir ! 🥰\nOn vous souhaite encore plein de séjours londoniens, mais aussi tout plein d'autres voyages ! \nBelle journée et à bientôt,\nAmélie & Laurie\n😙😙" }
+                reply: { author: 'MamZelles en Vadrouille', date: '27 janv. 2023', text: "Hey coucou !\nOn comprend carrément cette fièvre pour Londres ! On est aussi tellement fan de cette incroyable ville...\nUn grand merci pour votre retour sur notre blog et notre article, ça nous fait tellement plaisir ! 🥰\nOn vous souhaite encore plein de séjours londoniens, mais aussi tout plein d'autres voyages ! \nBelle journée et à bientôt,\nAmélie & Laurie\n😙😙" }
               },
             ]} />
             <CommentForm

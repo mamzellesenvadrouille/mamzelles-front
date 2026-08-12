@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "Visiter Berlin en 4 jours : itinéraire complet et bonnes adresses",
     description: "Notre itinéraire complet pour visiter Berlin en 4 jours, entre mémoire, histoire, street art et contre-culture, avec tous nos bons plans pratiques.",
     url: 'https://mamzellesenvadrouille.com/visiter-berlin-en-4-jours',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/Berlin.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
-    authors: ['MamZelles en vadrouille'],
+    authors: ['MamZelles en Vadrouille'],
   },
 };
 
@@ -36,12 +36,12 @@ export default function VisiterBerlinPage() {
     dateModified: '2026-08-01',
     author: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       logo: {
         '@type': 'ImageObject',
         url: 'https://mamzellesenvadrouille.com/icon.png',

@@ -4,21 +4,21 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 export const metadata: Metadata = {
-  title: 'MamZelles en vadrouille | Voyage sur mesure',
+  title: 'MamZelles en Vadrouille | Voyage sur mesure',
   description: "Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com' },
   openGraph: {
-    title: 'MamZelles en vadrouille | Voyage sur mesure',
+    title: 'MamZelles en Vadrouille | Voyage sur mesure',
     description: "Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.",
     url: 'https://mamzellesenvadrouille.com',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/og-home.png', width: 1200, height: 630 }],
     locale: 'fr_FR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MamZelles en vadrouille | Voyage sur mesure',
+    title: 'MamZelles en Vadrouille | Voyage sur mesure',
     description: "Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.",
     images: ['https://mamzellesenvadrouille.com/og-home.png'],
   },
@@ -28,7 +28,7 @@ export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'TravelAgency',
-    name: 'MamZelles en vadrouille',
+    name: 'MamZelles en Vadrouille',
     description: "Vous l'imaginez, on le réalise. Amélie et Laurie créent votre voyage 100% sur mesure, pensé pour découvrir, ressentir et ralentir, en toute sérénité.",
     url: 'https://mamzellesenvadrouille.com',
     image: 'https://mamzellesenvadrouille.com/og-home.png',

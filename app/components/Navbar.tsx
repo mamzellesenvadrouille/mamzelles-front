@@ -46,7 +46,7 @@ export default function Navbar({ activePage, contactHref = '/formules#formulaire
     <>
       <nav className="nav">
         <div className="logo">
-          <span className="logo-main">MamZelles en vadrouille</span>
+          <span className="logo-main">MamZelles en Vadrouille</span>
           <span className="logo-sub">Créatrices de voyages sur mesure</span>
         </div>
         <div className="nav-links">

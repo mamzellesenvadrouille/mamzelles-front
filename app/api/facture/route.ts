@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
       collection_method: 'charge_automatically',
       auto_advance: false,
       pending_invoice_items_behavior: 'include',
-      footer: 'MamZelles en vadrouille — SIRET 10290092500011 — Merci pour votre confiance.',
+      footer: 'MamZelles en Vadrouille — SIRET 10290092500011 — Merci pour votre confiance.',
       metadata: {
         clientName,
         formule,

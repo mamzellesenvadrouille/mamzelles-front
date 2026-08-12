@@ -151,9 +151,9 @@ export default async function PropositionPage({ params }: { params: Promise<{ id
       <div className="prop-wrap">
 
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
-          <img src="/icon.png" alt="MamZelles en vadrouille" style={{ width: 56, height: 56, marginBottom: 16, marginLeft: 'auto', marginRight: 'auto', display: 'block' }} />
+          <img src="/icon.png" alt="MamZelles en Vadrouille" style={{ width: 56, height: 56, marginBottom: 16, marginLeft: 'auto', marginRight: 'auto', display: 'block' }} />
           <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 28, color: '#1a1512', letterSpacing: '0.02em' }}>
-            MamZelles en vadrouille
+            MamZelles en Vadrouille
           </div>
           <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#c8956c', marginTop: 8 }}>
             Votre proposition de voyage

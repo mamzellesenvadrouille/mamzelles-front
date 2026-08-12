@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     title: "Philippines 3 semaines : Palawan Banaue Bohol Siquijor & Siargao",
     description: '3 semaines aux Philippines : Palawan, Banaue, Bohol, Siquijor, Siargao… notre itinéraire complet, nos conseils pratiques & nos coups de cœur.',
     url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/Philippines.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
     publishedTime: '2024-09-01T00:00:00.000Z',
-    authors: ['MamZelles en vadrouille'],
+    authors: ['MamZelles en Vadrouille'],
   },
 };
 
@@ -37,12 +37,12 @@ export default function PhilippinesPage() {
     dateModified: '2026-06-21',
     author: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       logo: {
         '@type': 'ImageObject',
         url: 'https://mamzellesenvadrouille.com/icon.png',
@@ -1032,49 +1032,49 @@ export default function PhilippinesPage() {
                 author: 'JOËLLE JEUNET',
                 date: '7 juin 2026',
                 text: "Bravo et merci !\nJ’ai vu et lu beaucoup de choses, mais il me semble que votre blog est le mieux en tout ! Je vais donc m’appuyer dessus pour… TOUT !\nJ’espérais un voyage en septembre, au vu de la météo, je pense pousser a Novembre comme vous, pour 1 mois.\nJe vais donc étudier de plus près et reviendrai vers vous sûrement !",
-                reply: { author: 'MamZelles en vadrouille', date: '9 juin 2026', text: "Oooohh !!! Quel bonheur de lire ce petit message ! 🥰 Ça nous fait tellement plaisir ! 😄\nNovembre est parfait pour découvrir la majorité des îles. Après, la météo aux Philippines, c’est un vrai sujet ! 😅 D’une année à l’autre, ça n’a parfois rien à voir...\nEn tout cas, n’hésitez pas si vous avez besoin de conseils 😉👌\nÀ très bientôt ! ☀️🌴" }
+                reply: { author: 'MamZelles en Vadrouille', date: '9 juin 2026', text: "Oooohh !!! Quel bonheur de lire ce petit message ! 🥰 Ça nous fait tellement plaisir ! 😄\nNovembre est parfait pour découvrir la majorité des îles. Après, la météo aux Philippines, c’est un vrai sujet ! 😅 D’une année à l’autre, ça n’a parfois rien à voir...\nEn tout cas, n’hésitez pas si vous avez besoin de conseils 😉👌\nÀ très bientôt ! ☀️🌴" }
               },
               {
                 id: '44',
                 author: 'Annaka',
                 date: '22 nov. 2025',
                 text: "Bonjour, quand y etes vous allées ?\n\na bientôt :)",
-                reply: { author: 'MamZelles en vadrouille', date: '30 nov. 2025', text: "Bonjour,\nNous étions parties en novembre. 😉👌🏼\nN’hésitez pas si vous avez d’autres questions... 🤗☀️" }
+                reply: { author: 'MamZelles en Vadrouille', date: '30 nov. 2025', text: "Bonjour,\nNous étions parties en novembre. 😉👌🏼\nN’hésitez pas si vous avez d’autres questions... 🤗☀️" }
               },
               {
                 id: '43',
                 author: 'Val',
                 date: '14 nov. 2025',
                 text: "Au top les filles !! ..on pars 2 mois aux Philippines début décembre ..merci pour toutes vos bonnes vibes et conseils qui ont aiguillés nos pistes d’atterrissage :)",
-                reply: { author: 'MamZelles en vadrouille', date: '30 nov. 2025', text: "Avec plaisir ! 😍\nBon voyage !!! ✈️☀️🌴" }
+                reply: { author: 'MamZelles en Vadrouille', date: '30 nov. 2025', text: "Avec plaisir ! 😍\nBon voyage !!! ✈️☀️🌴" }
               },
               {
                 id: '37',
                 author: 'Baptiste',
                 date: '10 sept. 2025',
                 text: "Bonjour et merci pour votre partage. A quelle période étiez vous parties ? Nous souhaiterions faire un itinéraire semblable au votre du 6 au 26 novembre cela semble un peu tôt vis à vis de la saison sèche... ce qui nous fait hésiter.",
-                reply: { author: 'MamZelles en vadrouille', date: '15 sept. 2025', text: "Bonjour,\nAvec plaisir pour le partage ! 🤗\nPour ce voyage, nous étions également parties en novembre. Pour explorer Palawan, la période est idéale ! Pour les autres îles, c’est un peu aléatoire... En réalité, il n’existe pas de période parfaite si vous souhaitez visiter plusieurs îles, chacune ayant son propre microclimat.\nN’hésitez pas si vous avez besoin d’autres informations. On vous souhaite en tout cas de bons préparatifs et un beau voyage ! ☀️🏝️" }
+                reply: { author: 'MamZelles en Vadrouille', date: '15 sept. 2025', text: "Bonjour,\nAvec plaisir pour le partage ! 🤗\nPour ce voyage, nous étions également parties en novembre. Pour explorer Palawan, la période est idéale ! Pour les autres îles, c’est un peu aléatoire... En réalité, il n’existe pas de période parfaite si vous souhaitez visiter plusieurs îles, chacune ayant son propre microclimat.\nN’hésitez pas si vous avez besoin d’autres informations. On vous souhaite en tout cas de bons préparatifs et un beau voyage ! ☀️🏝️" }
               },
               {
                 id: '35',
                 author: 'Tessier',
                 date: '25 août 2025',
                 text: "d’accord merci beaucoup. Vous m’avez convaincue, c’est magnifique!",
-                reply: { author: 'MamZelles en vadrouille', date: '28 août 2025', text: "Bonjour,\nTrop heureuses de vous lire ! ☀️🤗\nOn vous souhaite donc un merveilleux voyage dans ce fabuleux pays." }
+                reply: { author: 'MamZelles en Vadrouille', date: '28 août 2025', text: "Bonjour,\nTrop heureuses de vous lire ! ☀️🤗\nOn vous souhaite donc un merveilleux voyage dans ce fabuleux pays." }
               },
               {
                 id: '33',
                 author: 'Tessier',
                 date: '22 août 2025',
                 text: "Bonjour, merci pour toutes ces informations. Je me pose une question concernant les deux jours à Banaue, aviez vous pris vos bagages depuis Manille dans le bus? Nous aurons chacun une grosse valise. merci",
-                reply: { author: 'MamZelles en vadrouille', date: '25 août 2025', text: "Bonjour,\nNous étions en sacs à dos donc pas de problématique de valises pour nous.\nPour autant, sachez qu’il est possible de vous organiser avec votre hôtel à Manille, avec un petit supplément, pour qu’ils vous gardent vos valises.\nOn vous souhaite un bon séjour dans l’un des plus beaux pays au monde ! ☀️🏝️🤩" }
+                reply: { author: 'MamZelles en Vadrouille', date: '25 août 2025', text: "Bonjour,\nNous étions en sacs à dos donc pas de problématique de valises pour nous.\nPour autant, sachez qu’il est possible de vous organiser avec votre hôtel à Manille, avec un petit supplément, pour qu’ils vous gardent vos valises.\nOn vous souhaite un bon séjour dans l’un des plus beaux pays au monde ! ☀️🏝️🤩" }
               },
               {
                 id: '21',
                 author: 'Mimi des iles',
                 date: '21 janv. 2025',
                 text: "Merci bc pour ce partage qui va bc m aider pour mon voyage prévu en avril",
-                reply: { author: 'MamZelles en vadrouille', date: '23 févr. 2025', text: "Avec grand plaisir ! 😊 On serait heureuses d’avoir un petit retour sur ce voyage de rêve ! ☀️🏝️\nBons préparatifs en attendant. 🤗🤗" }
+                reply: { author: 'MamZelles en Vadrouille', date: '23 févr. 2025', text: "Avec grand plaisir ! 😊 On serait heureuses d’avoir un petit retour sur ce voyage de rêve ! ☀️🏝️\nBons préparatifs en attendant. 🤗🤗" }
               },
             ]} />
             <CommentForm

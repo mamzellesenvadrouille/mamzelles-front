@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     title: "Que faire à Lanzarote ? Road trip d'une semaine",
     description: "Road trip d'une semaine à Lanzarote : La Geria, Playa Papagayo, volcans, plages sauvages et piscines naturelles… Notre itinéraire complet jour par jour.",
     url: 'https://mamzellesenvadrouille.com/road-trip-a-lanzarote',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/Lanzarote.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
     publishedTime: '2022-10-22T15:44:25.000Z',
-    authors: ['MamZelles en vadrouille'],
+    authors: ['MamZelles en Vadrouille'],
   },
   twitter: {
     card: 'summary_large_image',
@@ -42,12 +42,12 @@ export default function LanzarotePage() {
     dateModified: '2026-06-30',
     author: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       logo: {
         '@type': 'ImageObject',
         url: 'https://mamzellesenvadrouille.com/icon.png',
@@ -573,28 +573,28 @@ export default function LanzarotePage() {
                 author: 'TITI',
                 date: '9 mars 2023',
                 text: "Bravo les filles pour votre site !! Les articles sont complets et les photos trop canons. 🤩 J'adore ! 👏🏼",
-                reply: { author: 'MamZelles en vadrouille', date: '10 mars 2023', text: "Un grand merci pour ce gentil commentaire... Ça nous fait tellement plaisir ! 😍😍✨" }
+                reply: { author: 'MamZelles en Vadrouille', date: '10 mars 2023', text: "Un grand merci pour ce gentil commentaire... Ça nous fait tellement plaisir ! 😍😍✨" }
               },
               {
                 id: '2',
                 author: 'Laurence',
                 date: '9 nov. 2024',
                 text: "Merciiîi pour ce partage Fabuleux, magnifique, hâte d'y être, encore quelques jours de patience pour découvrir cette île mystérieuse",
-                reply: { author: 'MamZelles en vadrouille', date: '9 nov. 2024', text: "Avec grand plaisir ! 😊 On vous souhaite un beau voyage sur cette magnifique île lunaire. Profitez de chaque moment... 🤗" }
+                reply: { author: 'MamZelles en Vadrouille', date: '9 nov. 2024', text: "Avec grand plaisir ! 😊 On vous souhaite un beau voyage sur cette magnifique île lunaire. Profitez de chaque moment... 🤗" }
               },
               {
                 id: '3',
                 author: 'Piat',
                 date: '18 janv. 2025',
                 text: "Merci pour vos chouettes articles qui nous donnent envie de découvrir ces coins et recoins de l'île. 🫶 Pour nous, ce sera mi-mars. Par contre, nous avons déjà loué et ce sera une Fiat 500 😥😉. Nous serons prudents et éviterons (tant pis) certains spots. Cordialement. Martine et Etienne",
-                reply: { author: 'MamZelles en vadrouille', date: '23 fév. 2025', text: "Heureuses de savoir qu'on a pu vous aider à y voir plus clair sur l'organisation de votre voyage ! 😍😍 Bons préparatifs et bon voyage à vous ! Vous allez voir, cette île est magique ! 🌑🌴🤩" }
+                reply: { author: 'MamZelles en Vadrouille', date: '23 fév. 2025', text: "Heureuses de savoir qu'on a pu vous aider à y voir plus clair sur l'organisation de votre voyage ! 😍😍 Bons préparatifs et bon voyage à vous ! Vous allez voir, cette île est magique ! 🌑🌴🤩" }
               },
               {
                 id: '4',
                 author: 'Sylvie Figueiredo',
                 date: '4 mai 2025',
                 text: "Wow les filles ! Trop hâte d'y être, dans quelques jours. Merci pour le partage. Canon les photos ! Nous avons loué une Jeep 😅",
-                reply: { author: 'MamZelles en vadrouille', date: '7 mai 2025', text: "Hey bonjour ! À bientôt ! 😊" }
+                reply: { author: 'MamZelles en Vadrouille', date: '7 mai 2025', text: "Hey bonjour ! À bientôt ! 😊" }
               },
             ]} />
             <CommentForm

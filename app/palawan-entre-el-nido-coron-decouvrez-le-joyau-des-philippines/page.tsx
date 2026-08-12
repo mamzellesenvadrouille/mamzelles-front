@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     title: "Palawan : Coron et El Nido, le joyau des Philippines",
     description: 'De ses lagons turquoise à El Nido aux récifs spectaculaires de Coron, plongez dans le joyau des Philippines.',
     url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/El-Nido-Coron.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
     publishedTime: '2024-10-17T19:10:35.000Z',
-    authors: ['MamZelles en vadrouille'],
+    authors: ['MamZelles en Vadrouille'],
   },
 };
 
@@ -36,12 +36,12 @@ export default function PalawanElNidoCoronPage() {
     dateModified: '2026-06-21',
     author: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       logo: {
         '@type': 'ImageObject',
         url: 'https://mamzellesenvadrouille.com/icon.png',

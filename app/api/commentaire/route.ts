@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     }
 
     await resend.emails.send({
-      from: 'MamZelles en vadrouille <contact@mamzellesenvadrouille.com>',
+      from: 'MamZelles en Vadrouille <contact@mamzellesenvadrouille.com>',
       to: 'contact@mamzellesenvadrouille.com',
       replyTo: email,
       subject: `💬 Nouveau commentaire — ${articleTitle}`,

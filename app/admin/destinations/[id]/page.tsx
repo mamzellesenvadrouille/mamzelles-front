@@ -123,7 +123,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
         <div style={adminStyles.card}>
           <div style={adminStyles.header}>
             <div>
-              <div style={adminStyles.logo}>MamZelles en vadrouille</div>
+              <div style={adminStyles.logo}>MamZelles en Vadrouille</div>
               <div style={adminStyles.title}>{isNew ? "Nouvelle destination" : `Éditer : ${dest.nom}`}</div>
             </div>
           </div>

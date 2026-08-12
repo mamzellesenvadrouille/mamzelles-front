@@ -35,7 +35,7 @@ export default function AdminDestinationsPage() {
         <div style={{ ...adminStyles.card, maxWidth: 900 }}>
           <div style={adminStyles.header}>
             <div>
-              <div style={adminStyles.logo}>MamZelles en vadrouille</div>
+              <div style={adminStyles.logo}>MamZelles en Vadrouille</div>
               <div style={adminStyles.title}>Destinations</div>
             </div>
             <Link

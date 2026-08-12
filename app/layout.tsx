@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mamzellesenvadrouille.com"),
-  title: "MamZelles en vadrouille",
+  title: "MamZelles en Vadrouille",
   description: "Votre travel planner sur-mesure",
   alternates: {
     canonical: "https://mamzellesenvadrouille.com",

@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     title: "Agafay : dormir dans le désert, notre expérience inoubliable",
     description: "Dormir dans le désert d'Agafay, à 40 min de Marrakech : notre expérience au Scarabeo Camp et nos conseils pour organiser votre nuit inoubliable.",
     url: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: '/Agafay.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
     publishedTime: '2023-01-13T18:03:40.000Z',
-    authors: ['MamZelles en vadrouille'],
+    authors: ['MamZelles en Vadrouille'],
   },
   twitter: {
     card: 'summary_large_image',
@@ -43,12 +43,12 @@ export default function MarrakechPage() {
     dateModified: '2026-06-22',
     author: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       logo: {
         '@type': 'ImageObject',
         url: 'https://mamzellesenvadrouille.com/icon.png',
@@ -354,28 +354,28 @@ Tapis berbères au sol, poêle à bois, robinetterie en cuivre, etc., la décora
                 author: 'Aurélie',
                 date: '3 mois il y a',
                 text: "Bonjour, j\'aimerais savoir quel camp vous avez choisi. Le Stone camp ou les Roches Noires. Est-ce qu\'il y a une animation le soir ou des activités possibles (chameau, quad,…) ? Les photos sont magnifiques. Merci",
-                reply: { author: 'MamZelles en vadrouille', date: '2 mois il y a', text: "Bonjour, nous avions passé notre séjour au Scarabeo Camp que nous avions validé à 100% ! Nous avons aussi visité La Bohème, mais nous avons moins apprécié l\'endroit. Bonne continuation pour la réservation de votre séjour. ☀️🐪" }
+                reply: { author: 'MamZelles en Vadrouille', date: '2 mois il y a', text: "Bonjour, nous avions passé notre séjour au Scarabeo Camp que nous avions validé à 100% ! Nous avons aussi visité La Bohème, mais nous avons moins apprécié l\'endroit. Bonne continuation pour la réservation de votre séjour. ☀️🐪" }
               },
               {
                 id: '3',
                 author: 'Pouget',
                 date: '1 année il y a',
                 text: "Merci pour toutes ces informations très utiles. Peut-on y aller seul en voiture ? Merci pour votre réponse.",
-                reply: { author: 'MamZelles en vadrouille', date: '1 année il y a', text: "Bonjour, oui absolument ! 👍🏼 Bon voyage. ☀️" }
+                reply: { author: 'MamZelles en Vadrouille', date: '1 année il y a', text: "Bonjour, oui absolument ! 👍🏼 Bon voyage. ☀️" }
               },
               {
                 id: '2',
                 author: 'Claudia',
                 date: '1 année il y a',
                 text: "Bonjour, merci pour cet article ! Vous y êtes allé à quelle période ? Je devrais y être en fin octobre. Je m\'interroge sur la température de l\'eau de la piscine.",
-                reply: { author: 'MamZelles en vadrouille', date: '1 année il y a', text: "Coucou ! Avec grand plaisir ! 🤗 Nous y étions allées en avril, on avait eu un temps magnifique. ☀️ On espère que vous aurez aussi une belle météo, ce qui chauffera la piscine… 😉 On vous souhaite de bonnes vacances ! 🌴" }
+                reply: { author: 'MamZelles en Vadrouille', date: '1 année il y a', text: "Coucou ! Avec grand plaisir ! 🤗 Nous y étions allées en avril, on avait eu un temps magnifique. ☀️ On espère que vous aurez aussi une belle météo, ce qui chauffera la piscine… 😉 On vous souhaite de bonnes vacances ! 🌴" }
               },
               {
                 id: '1',
                 author: 'Bouteloup',
                 date: '3 années il y a',
                 text: "Félicitations les filles pour votre blog, vous y avez mis beaucoup de vous et on ressent tout l\'amour qu\'il y a entre vous. Je ne connaissais pas le principe du glamping et j\'adore, ce lieu est magique pour une escapade en amoureux. Quelles seront vos prochaines destinations ? Est-ce que l\'aménagement d\'Elisabeth avance ? Merci encore de nous faire partager tout cela et merci pour les bons plans 😘",
-                reply: { author: 'MamZelles en vadrouille', date: '3 années il y a', text: "Mille mercis pour ce petit message qui nous fait très plaisir ! C\'est tellement encourageant pour nous… 🥰 Contentes en tout cas que l\'article sur Agafay vous ai plu ! 🤩 Notre prochain gros voyage est prévu dans peu de temps…, on a trop hâte ! ☀️🌴 Du coup, Élisabeth (notre camion que l\'on aménage toutes les deux) est mise pour l\'instant en pause… 🚐 Bref, on a plein de beaux projets à venir et on est au taquet !!! On espère que vous allez bien. Belle journée à vous & à bientôt ! Amélie, Laurie & Aladdin 😘😘🐶" }
+                reply: { author: 'MamZelles en Vadrouille', date: '3 années il y a', text: "Mille mercis pour ce petit message qui nous fait très plaisir ! C\'est tellement encourageant pour nous… 🥰 Contentes en tout cas que l\'article sur Agafay vous ai plu ! 🤩 Notre prochain gros voyage est prévu dans peu de temps…, on a trop hâte ! ☀️🌴 Du coup, Élisabeth (notre camion que l\'on aménage toutes les deux) est mise pour l\'instant en pause… 🚐 Bref, on a plein de beaux projets à venir et on est au taquet !!! On espère que vous allez bien. Belle journée à vous & à bientôt ! Amélie, Laurie & Aladdin 😘😘🐶" }
               }
             ]} />
             <CommentForm

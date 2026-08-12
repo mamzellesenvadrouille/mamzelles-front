@@ -5,21 +5,21 @@ import ContactForm from '../ContactForm';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Carnet de Voyage Sur Mesure | MamZelles en vadrouille',
+  title: 'Carnet de Voyage Sur Mesure | MamZelles en Vadrouille',
   description: "Votre carnet de voyage 100% sur mesure, selon vos envies, votre rythme et votre budget. Appel découverte gratuit, devis sous 48h et sans engagement.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/formules' },
   openGraph: {
-    title: 'Carnet de Voyage Sur Mesure | MamZelles en vadrouille',
+    title: 'Carnet de Voyage Sur Mesure | MamZelles en Vadrouille',
     description: "Votre carnet de voyage 100% sur mesure, selon vos envies, votre rythme et votre budget. Appel découverte gratuit, devis sous 48h et sans engagement.",
     url: 'https://mamzellesenvadrouille.com/formules',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/og-home.png', width: 1200, height: 630 }],
     locale: 'fr_FR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Carnet de Voyage Sur Mesure | MamZelles en vadrouille',
+    title: 'Carnet de Voyage Sur Mesure | MamZelles en Vadrouille',
     description: 'Votre carnet de voyage 100% sur mesure, selon vos envies, votre rythme et votre budget. Appel découverte gratuit, devis sous 48h et sans engagement.',
     images: ['https://mamzellesenvadrouille.com/og-home.png'],
   },
@@ -29,11 +29,11 @@ export default function Formules() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Carnet de Voyage Sur Mesure | MamZelles en vadrouille',
+    name: 'Carnet de Voyage Sur Mesure | MamZelles en Vadrouille',
     description: "Votre carnet de voyage 100% sur mesure, selon vos envies, votre rythme et votre budget. Appel découverte gratuit, devis sous 48h et sans engagement.",
     provider: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
       logo: {
         '@type': 'ImageObject',
@@ -96,7 +96,7 @@ export default function Formules() {
       {/* HERO */}
       <section className="hero hero-formules">
         <Navbar activePage="formules" contactHref="#formulaire" />
-        <img className="hero-bg" src="/hero.webp" alt="Voyage sur mesure MamZelles en vadrouille" />
+        <img className="hero-bg" src="/hero.webp" alt="Voyage sur mesure MamZelles en Vadrouille" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Votre voyage,<br /><em>vos envies,</em><br />votre budget.</h1>
@@ -375,7 +375,7 @@ export default function Formules() {
           <div className="disclaimer-divider" />
           <div className="disclaimer-content">
             <p className="disclaimer-eyebrow">Information importante</p>
-            <p>MamZelles en vadrouille est un service de conseil et de planification de voyage. Nous ne procédons à aucune réservation en votre nom. Les liens fournis vous permettent d&apos;effectuer vos réservations en toute liberté et autonomie.</p>
+            <p>MamZelles en Vadrouille est un service de conseil et de planification de voyage. Nous ne procédons à aucune réservation en votre nom. Les liens fournis vous permettent d&apos;effectuer vos réservations en toute liberté et autonomie.</p>
           </div>
         </div>
       </section>

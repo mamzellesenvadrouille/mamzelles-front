@@ -423,7 +423,7 @@ export default function AdminDevis() {
     return (
       <div style={styles.authWrap}>
         <form onSubmit={handleAuth} style={styles.authCard}>
-          <div style={styles.logo}>MamZelles en vadrouille</div>
+          <div style={styles.logo}>MamZelles en Vadrouille</div>
           <div style={styles.authTitle}>Espace admin — Devis</div>
           <input
             type="password"
@@ -445,7 +445,7 @@ export default function AdminDevis() {
       <style>{RESPONSIVE_STYLES}</style>
       <div className="admin-card" style={styles.card}>
         <div style={styles.header}>
-          <div style={styles.logo}>MamZelles en vadrouille</div>
+          <div style={styles.logo}>MamZelles en Vadrouille</div>
           <div style={styles.title}>Générer un devis</div>
         </div>
 

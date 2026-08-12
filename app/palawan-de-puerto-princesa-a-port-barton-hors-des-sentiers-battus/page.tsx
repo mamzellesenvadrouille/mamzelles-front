@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     title: "Palawan : de Puerto Princesa à Port Barton, loin des foules",
     description: "Un mois loin des foules à Palawan, de Puerto Princesa à Port Barton.",
     url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/Puerto-Princesa-Port-Barton.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
     publishedTime: '2025-03-14T19:11:45.000Z',
-    authors: ['MamZelles en vadrouille'],
+    authors: ['MamZelles en Vadrouille'],
   },
 };
 
@@ -36,12 +36,12 @@ export default function PalawanPortBartonPage() {
     dateModified: '2026-06-21',
     author: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       logo: {
         '@type': 'ImageObject',
         url: 'https://mamzellesenvadrouille.com/icon.png',

@@ -4,21 +4,21 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Travel Planners & Voyage sur Mesure | MamZelles en vadrouille',
+  title: 'Travel Planners & Voyage sur Mesure | MamZelles en Vadrouille',
   description: "Amélie & Laurie, travel planners et créatrices de voyages sur mesure. Vanlife et escapades autour du monde — le voyage comme une façon de vivre.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/qui-sommes-nous' },
   openGraph: {
-    title: 'Travel Planners & Voyage sur Mesure | MamZelles en vadrouille',
+    title: 'Travel Planners & Voyage sur Mesure | MamZelles en Vadrouille',
     description: "Amélie & Laurie, travel planners et créatrices de voyages sur mesure. Vanlife et escapades autour du monde — le voyage comme une façon de vivre.",
     url: 'https://mamzellesenvadrouille.com/qui-sommes-nous',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/hero-nous.webp', width: 1200, height: 630 }],
     locale: 'fr_FR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Travel Planners & Voyage sur Mesure | MamZelles en vadrouille',
+    title: 'Travel Planners & Voyage sur Mesure | MamZelles en Vadrouille',
     description: "Amélie & Laurie, travel planners et créatrices de voyages sur mesure. Vanlife et escapades autour du monde — le voyage comme une façon de vivre.",
     images: ['https://mamzellesenvadrouille.com/hero-nous.webp'],
   },
@@ -28,12 +28,12 @@ export default function QuiSommesNous() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: 'Travel Planners & Voyage sur Mesure | MamZelles en vadrouille',
+    name: 'Travel Planners & Voyage sur Mesure | MamZelles en Vadrouille',
     description: "Amélie & Laurie, travel planners et créatrices de voyages sur mesure. Vanlife et escapades autour du monde — le voyage comme une façon de vivre.",
     url: 'https://mamzellesenvadrouille.com/qui-sommes-nous',
     mainEntity: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
       foundingLocation: 'Antibes, France',
       logo: {
@@ -53,12 +53,12 @@ export default function QuiSommesNous() {
       {/* HERO */}
       <section className="hero qsn-hero">
         <Navbar activePage="qui-sommes-nous" />
-        <img className="hero-bg" src="/hero-nous.webp" alt="Amélie et Laurie, travel planners MamZelles en vadrouille" loading="eager" />
+        <img className="hero-bg" src="/hero-nous.webp" alt="Amélie et Laurie, travel planners MamZelles en Vadrouille" loading="eager" />
         <div className="hero-overlay" />
         <div className="qsn-hero-content">
           <h1 className="qsn-hero-h1">Le voyage<br />comme une façon<br /><em>de vivre.</em></h1>
           <div className="hero-rule" />
-          <p className="qsn-hero-sub">MamZelles en vadrouille, c&apos;est avant tout<span className="qsn-m-br"></span>une histoire de vie,<span className="qsn-dt-br"></span> de voyages et de moments<span className="qsn-m-br"></span>partagés depuis plus de 13 ans.</p>
+          <p className="qsn-hero-sub">MamZelles en Vadrouille, c&apos;est avant tout<span className="qsn-m-br"></span>une histoire de vie,<span className="qsn-dt-br"></span> de voyages et de moments<span className="qsn-m-br"></span>partagés depuis plus de 13 ans.</p>
         </div>
       </section>
 

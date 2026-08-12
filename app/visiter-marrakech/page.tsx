@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     title: "Visiter Marrakech : que faire dans la ville rouge",
     description: "Marrakech : médina, jardins, riads et souks… notre guide complet par quartier avec nos coups de cœur et tous nos conseils pour un séjour inoubliable.",
     url: 'https://mamzellesenvadrouille.com/visiter-marrakech',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: '/Marrakech.webp', width: 1920, height: 1080 }],
     locale: 'fr_FR',
     type: 'article',
     publishedTime: '2022-12-27T13:46:02.000Z',
-    authors: ['MamZelles en vadrouille'],
+    authors: ['MamZelles en Vadrouille'],
   },
   twitter: {
     card: 'summary_large_image',
@@ -43,12 +43,12 @@ export default function MarrakechPage() {
     dateModified: '2026-06-22',
     author: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       logo: {
         '@type': 'ImageObject',
         url: 'https://mamzellesenvadrouille.com/icon.png',
@@ -734,7 +734,7 @@ export default function MarrakechPage() {
                 author: 'Alexandre Le Bris',
                 date: '1 année il y a',
                 text: "Merci pour ces bons conseils ! Nous avons été surpris de voir que les tarifs d\'entrées avaient pas mal augmentés. 10€ pour visiter la jardin secret par personne, ça commence. à faire !",
-                reply: { author: 'MamZelles en vadrouille', date: '1 année il y a', text: "Merci beaucoup pour votre retour ! 😊 C'est vrai que sur ces dernières années, les tarifs d'entrée des musées se sont envolés... On espère malgré tout que vous avez passé un beau séjour au soleil et que vous avez aimé l'ambiance unique de Marrakech ! 😍" }
+                reply: { author: 'MamZelles en Vadrouille', date: '1 année il y a', text: "Merci beaucoup pour votre retour ! 😊 C'est vrai que sur ces dernières années, les tarifs d'entrée des musées se sont envolés... On espère malgré tout que vous avez passé un beau séjour au soleil et que vous avez aimé l'ambiance unique de Marrakech ! 😍" }
               }
             ]} />
             <CommentForm

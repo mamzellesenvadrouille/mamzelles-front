@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Navbar from '../../components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Paiement confirmé — MamZelles en vadrouille',
+  title: 'Paiement confirmé — MamZelles en Vadrouille',
   robots: { index: false },
 };
 
@@ -11,12 +11,12 @@ export default function Confirmation() {
     <div style={{ width: '100%', overflowX: 'hidden' }}>
       <nav style={{ padding: '20px 40px', borderBottom: '1px solid #e8e0d6' }}>
         <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 20, color: '#c8956c' }}>
-          MamZelles en vadrouille
+          MamZelles en Vadrouille
         </span>
       </nav>
       <div style={{ minHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 20px' }}>
         <div style={{ textAlign: 'center', maxWidth: 520 }}>
-          <img src="/icon.png" alt="MamZelles en vadrouille" style={{ width: 70, height: 70, objectFit: 'contain', marginBottom: 24, opacity: 0.85, display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+          <img src="/icon.png" alt="MamZelles en Vadrouille" style={{ width: 70, height: 70, objectFit: 'contain', marginBottom: 24, opacity: 0.85, display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
           <h1 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 36, color: '#1a1512', marginBottom: 16, fontWeight: 600 }}>
             Paiement confirmé !
           </h1>

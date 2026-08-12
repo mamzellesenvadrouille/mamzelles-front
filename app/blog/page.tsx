@@ -3,21 +3,21 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Blog Voyage — MamZelles en vadrouille',
+  title: 'Blog Voyage — MamZelles en Vadrouille',
   description: "Blog voyage de deux amoureuses du monde : guides complets en Europe et en Asie, bons plans, adresses coups de cœur et conseils pour préparer vos voyages.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/blog' },
   openGraph: {
-    title: 'Blog Voyage — MamZelles en vadrouille',
+    title: 'Blog Voyage — MamZelles en Vadrouille',
     description: "Blog voyage de deux amoureuses du monde : guides complets en Europe et en Asie, bons plans, adresses coups de cœur et conseils pour préparer vos voyages.",
     url: 'https://mamzellesenvadrouille.com/blog',
-    siteName: 'MamZelles en vadrouille',
+    siteName: 'MamZelles en Vadrouille',
     images: [{ url: 'https://mamzellesenvadrouille.com/hero-blog.webp', width: 1200, height: 630 }],
     locale: 'fr_FR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog Voyage — MamZelles en vadrouille',
+    title: 'Blog Voyage — MamZelles en Vadrouille',
     description: 'Blog voyage de deux amoureuses du monde : guides complets en Europe et en Asie, bons plans, adresses coups de cœur et conseils pour préparer vos voyages.',
     images: ['https://mamzellesenvadrouille.com/hero-blog.webp'],
   },
@@ -87,17 +87,17 @@ export default async function BlogPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Blog Voyage — MamZelles en vadrouille',
+    name: 'Blog Voyage — MamZelles en Vadrouille',
     description: "Blog voyage de deux amoureuses du monde : guides complets en Europe et en Asie, bons plans, adresses coups de cœur et conseils pour préparer vos voyages.",
     url: 'https://mamzellesenvadrouille.com/blog',
     isPartOf: {
       '@type': 'WebSite',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'MamZelles en vadrouille',
+      name: 'MamZelles en Vadrouille',
       url: 'https://mamzellesenvadrouille.com',
       logo: {
         '@type': 'ImageObject',
@@ -169,7 +169,7 @@ export default async function BlogPage() {
       {/* NAV */}
       <section className="hero hero-blog">
         <Navbar activePage="blog" />
-        <img className="hero-bg" src="/hero-blog.webp" alt="Blog voyages MamZelles en vadrouille" />
+        <img className="hero-bg" src="/hero-blog.webp" alt="Blog voyages MamZelles en Vadrouille" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Notre blog<br /><em>voyages</em></h1>

@@ -308,7 +308,7 @@ export default function NouveauCarnetPage() {
         <div style={adminStyles.card}>
           <div style={adminStyles.header}>
             <div>
-              <div style={adminStyles.logo}>MamZelles en vadrouille</div>
+              <div style={adminStyles.logo}>MamZelles en Vadrouille</div>
               <div style={adminStyles.title}>Nouveau carnet</div>
             </div>
           </div>

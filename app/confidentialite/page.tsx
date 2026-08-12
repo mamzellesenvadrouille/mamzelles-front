@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Politique de confidentialité | MamZelles en vadrouille',
-  description: "Politique de confidentialité et protection des données personnelles de MamZelles en vadrouille, conformément au RGPD.",
+  title: 'Politique de confidentialité | MamZelles en Vadrouille',
+  description: "Politique de confidentialité et protection des données personnelles de MamZelles en Vadrouille, conformément au RGPD.",
   alternates: { canonical: 'https://mamzellesenvadrouille.com/confidentialite' },
 };
 
@@ -14,7 +14,7 @@ export default function Confidentialite() {
 
       <section className="hero hero-confidentialite">
         <Navbar />
-        <img className="hero-bg" src="/home-hero.webp" alt="Politique de confidentialité MamZelles en vadrouille" />
+        <img className="hero-bg" src="/home-hero.webp" alt="Politique de confidentialité MamZelles en Vadrouille" />
         <div className="hero-overlay" />
         <div className="hero-content" style={{ paddingBottom: '32px' }}>
           <p className="eyebrow" style={{ marginBottom: '8px', fontSize: '10px' }}>Informations légales</p>

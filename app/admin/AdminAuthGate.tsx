@@ -63,7 +63,7 @@ export default function AdminAuthGate({
     return (
       <div style={adminStyles.authWrap}>
         <form onSubmit={handleAuth} style={adminStyles.authCard}>
-          <div style={adminStyles.logo}>MamZelles en vadrouille</div>
+          <div style={adminStyles.logo}>MamZelles en Vadrouille</div>
           <div style={adminStyles.authTitle}>Espace admin{label ? ` — ${label}` : ""}</div>
           <input
             type="password"
