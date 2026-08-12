@@ -112,6 +112,9 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
           if (annule) return;
           mapInstance.current = map;
 
+          // Correctif : force MapLibre à recalculer la taille de son conteneur.
+          setTimeout(() => map.resize(), 100);
+
           const bounds = new maplibregl.LngLatBounds();
           etapes.forEach((e) => bounds.extend([e.lng, e.lat]));
           map.fitBounds(bounds, { padding: 40 });

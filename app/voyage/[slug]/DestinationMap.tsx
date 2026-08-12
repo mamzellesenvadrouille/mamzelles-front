@@ -154,6 +154,10 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           vueGeneraleRef.current = () => map.flyTo({ center: [centre.lng, centre.lat], zoom: 13 });
           setPret(true);
 
+          // Correctif : force MapLibre à recalculer la taille de son conteneur,
+          // au cas où celui-ci n'avait pas encore sa taille finale au moment de l'init.
+          setTimeout(() => map.resize(), 100);
+
           // Dès que la carte est chargée avec du réseau, on télécharge en arrière-plan
           // toutes les tuiles de la zone pour qu'elles restent dispo hors connexion.
           precacherTuiles(centre);
