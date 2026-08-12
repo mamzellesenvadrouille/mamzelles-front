@@ -61,7 +61,21 @@ self.addEventListener("fetch", (event) => {
         })
         .catch(() => reponseEnCache); // pas de réseau : on retombe sur le cache
 
-      return reponseEnCache || fetchPromise;
+      if (reponseEnCache) return reponseEnCache;
+
+      // Ni cache, ni réseau disponible : on renvoie une vraie réponse d'erreur
+      // (jamais "undefined", pour éviter que le navigateur plante)
+      try {
+        const resultat = await fetchPromise;
+        if (resultat) return resultat;
+      } catch (e) {
+        // on tombe dans le retour ci-dessous
+      }
+      return new Response("Page non disponible hors connexion.", {
+        status: 503,
+        statusText: "Service Unavailable",
+        headers: { "Content-Type": "text/plain; charset=utf-8" },
+      });
     })
   );
 });
