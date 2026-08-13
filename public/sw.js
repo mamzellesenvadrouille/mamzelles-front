@@ -41,8 +41,6 @@ self.addEventListener("fetch", (event) => {
   const vientDuCarnet = request.referrer && request.referrer.includes("/voyage/");
   const estMemeOrigine = url.origin === self.location.origin;
 
-  // On ne s'occupe QUE des tuiles Maps, et des ressources (scripts/styles/images)
-  // demandées DEPUIS une page carnet précisément — jamais du reste du site.
   const doitEtreGere =
     estDomaineMaps ||
     (estMemeOrigine && estPageCarnet) ||
@@ -50,11 +48,35 @@ self.addEventListener("fetch", (event) => {
 
   if (!doitEtreGere) return;
 
+  // Pour les tuiles de carte : réseau en priorité (toujours la carte la plus à jour
+  // quand on a du réseau), le cache ne sert que de secours si le réseau échoue.
+  if (estDomaineMaps) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(async (cache) => {
+        try {
+          const reponseReseau = await fetch(request);
+          if (reponseReseau && (reponseReseau.status === 200 || reponseReseau.type === "opaque")) {
+            cache.put(request, reponseReseau.clone());
+          }
+          return reponseReseau;
+        } catch (e) {
+          const reponseEnCache = await cache.match(request);
+          if (reponseEnCache) return reponseEnCache;
+          return new Response("Tuile non disponible hors connexion.", {
+            status: 503,
+            statusText: "Service Unavailable",
+          });
+        }
+      })
+    );
+    return;
+  }
+
   event.respondWith(
     caches.open(CACHE_NAME).then(async (cache) => {
       const reponseEnCache = await cache.match(request);
 
-      // Stratégie "stale-while-revalidate" :
+      // Stratégie "stale-while-revalidate" pour le reste (pages, scripts, images) :
       // on sert immédiatement la version en cache si elle existe,
       // tout en allant chercher une version fraîche en arrière-plan pour la prochaine fois.
       const fetchPromise = fetch(request)
@@ -68,8 +90,6 @@ self.addEventListener("fetch", (event) => {
 
       if (reponseEnCache) return reponseEnCache;
 
-      // Ni cache, ni réseau disponible : on renvoie une vraie réponse d'erreur
-      // (jamais "undefined", pour éviter que le navigateur plante)
       try {
         const resultat = await fetchPromise;
         if (resultat) return resultat;
