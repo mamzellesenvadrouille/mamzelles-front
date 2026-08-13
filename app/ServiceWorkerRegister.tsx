@@ -12,6 +12,16 @@ export default function ServiceWorkerRegister() {
     if (typeof window === "undefined") return;
     if (!("serviceWorker" in navigator)) return;
 
+    // On n'active JAMAIS le Service Worker en local (localhost) :
+    // ça évite toute interférence pendant le développement/débogage.
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      // On désenregistre aussi tout ancien Service Worker qui traînerait de tests précédents
+      navigator.serviceWorker.getRegistrations().then((regs) => {
+        regs.forEach((reg) => reg.unregister());
+      });
+      return;
+    }
+
     navigator.serviceWorker.register("/sw.js").catch(() => {
       // échec silencieux : le site continue de fonctionner normalement,
       // simplement sans le cache hors-ligne

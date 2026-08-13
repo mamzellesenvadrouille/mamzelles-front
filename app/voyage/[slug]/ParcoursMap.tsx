@@ -3,19 +3,24 @@
 //
 // Carte du trajet global du voyage (départ → destination 1 → destination 2 → retour),
 // avec un tracé visuel entre les étapes. Les distances affichées sont "à vol d'oiseau" :
-// Google Maps ne calcule pas de vrais temps de trajet en avion, seulement en
-// voiture/marche/transports en commun — donc pas de durée réelle affichée ici.
-//
-// Expose une méthode centrerSur(index) via ref, pour que la liste de gauche
-// (dans ParcoursSection) puisse zoomer sur le pin correspondant au clic.
+// pas de vraie durée de trajet en avion affichée ici.
 "use client";
 
 import { useEffect, useImperativeHandle, useRef, useState, forwardRef } from "react";
+import { Map as MapLibreMap, NavigationControl, Marker, Popup, LngLatBounds, setWorkerUrl } from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
 import type { EtapeParcours } from "@/lib/carnets";
 import styles from "./carnet.module.css";
-import { chargerGoogleMaps } from "./googleMapsLoader";
 
-// Distance à vol d'oiseau entre deux points (formule de Haversine), en km
+// Fix : même correction que DestinationMap.tsx (voir ce fichier pour l'explication complète).
+if (typeof window !== "undefined") {
+  setWorkerUrl("/maplibre-gl-worker.mjs");
+}
+
+const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
+const STYLE_URL = `https://api.maptiler.com/maps/streets-v2/style.json?key=${MAPTILER_KEY}`;
+const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`;
+
 function distanceKm(a: EtapeParcours, b: EtapeParcours): number {
   const R = 6371;
   const dLat = ((b.lat - a.lat) * Math.PI) / 180;
@@ -33,17 +38,48 @@ function contenuBulle(nom: string): string {
   </div>`;
 }
 
+function latLngVersTuile(lat: number, lng: number, zoom: number) {
+  const n = Math.pow(2, zoom);
+  const x = Math.floor(((lng + 180) / 360) * n);
+  const latRad = (lat * Math.PI) / 180;
+  const y = Math.floor(
+    ((1 - Math.log(Math.tan(latRad) + 1 / Math.cos(latRad)) / Math.PI) / 2) * n
+  );
+  return { x, y };
+}
+
+// Pré-télécharge les tuiles autour de CHAQUE étape du parcours (pas juste le centre global),
+// pour que toute la zone de chaque destination soit disponible hors-ligne.
+function precacherTuiles(etapes: EtapeParcours[]) {
+  const zooms = [5, 6, 11, 13];
+  const rayonTuiles = 2;
+
+  etapes.forEach((etape) => {
+    zooms.forEach((zoom) => {
+      const { x: cx, y: cy } = latLngVersTuile(etape.lat, etape.lng, zoom);
+      for (let dx = -rayonTuiles; dx <= rayonTuiles; dx++) {
+        for (let dy = -rayonTuiles; dy <= rayonTuiles; dy++) {
+          const url = TILE_URL_TEMPLATE.replace("{z}", String(zoom))
+            .replace("{x}", String(cx + dx))
+            .replace("{y}", String(cy + dy));
+          fetch(url, { mode: "cors" }).catch(() => {});
+        }
+      }
+    });
+  });
+}
+
 export interface ParcoursMapHandle {
   centrerSur: (index: number) => void;
 }
 
-const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; apiKey: string }>(
-  function ParcoursMap({ etapes, apiKey }, ref) {
+const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; apiKey?: string }>(
+  function ParcoursMap({ etapes }, ref) {
     const wrapRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<HTMLDivElement>(null);
-    const mapInstance = useRef<any>(null); // eslint-disable-line @typescript-eslint/no-explicit-any
-    const markersRef = useRef<any[]>([]); // eslint-disable-line @typescript-eslint/no-explicit-any
-    const infoWindowRef = useRef<any>(null); // eslint-disable-line @typescript-eslint/no-explicit-any
+    const mapInstance = useRef<MapLibreMap | null>(null);
+    const markersRef = useRef<Marker[]>([]);
+    const popupRef = useRef<Popup | null>(null);
     const vueGeneraleRef = useRef<() => void>(() => {});
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
@@ -51,48 +87,64 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
     useImperativeHandle(ref, () => ({
       centrerSur(index: number) {
         const e = etapes[index];
-        if (!e || !mapInstance.current || !window.google) return;
-        mapInstance.current.panTo({ lat: e.lat, lng: e.lng });
-        mapInstance.current.setZoom(6);
-        if (infoWindowRef.current) infoWindowRef.current.close();
-        infoWindowRef.current = new window.google.maps.InfoWindow({
-          position: { lat: e.lat, lng: e.lng },
-          content: contenuBulle(e.nom),
-        });
-        infoWindowRef.current.addListener("closeclick", () => vueGeneraleRef.current());
-        infoWindowRef.current.open(mapInstance.current);
+        if (!e || !mapInstance.current) return;
+        mapInstance.current.flyTo({ center: [e.lng, e.lat], zoom: 6 });
+        if (popupRef.current) popupRef.current.remove();
+        popupRef.current = new Popup({ closeOnClick: true })
+          .setLngLat([e.lng, e.lat])
+          .setHTML(contenuBulle(e.nom))
+          .addTo(mapInstance.current);
+        popupRef.current.on("close", () => vueGeneraleRef.current());
         wrapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
       },
     }));
 
     useEffect(() => {
-      if (!apiKey || etapes.length < 2) return;
+      if (etapes.length < 2 || !mapRef.current) return;
       let annule = false;
 
-      chargerGoogleMaps(apiKey)
-        .then(() => {
-          if (annule || !mapRef.current || !window.google) return;
+      try {
+        const map = new MapLibreMap({
+          container: mapRef.current,
+          style: STYLE_URL,
+          center: [etapes[0].lng, etapes[0].lat],
+          zoom: 3,
+          attributionControl: false,
+        });
+        map.addControl(new NavigationControl({ showCompass: false }), "top-right");
 
-          const bounds = new window.google.maps.LatLngBounds();
-          etapes.forEach((e) => bounds.extend({ lat: e.lat, lng: e.lng }));
-
-          const map = new window.google.maps.Map(mapRef.current, {
-            mapId: "mamzelles-parcours-map",
-            disableDefaultUI: true,
-            zoomControl: true,
-          });
-          map.fitBounds(bounds, 40);
+        map.on("load", () => {
+          if (annule) return;
           mapInstance.current = map;
-          vueGeneraleRef.current = () => map.fitBounds(bounds, 40);
 
-          new window.google.maps.Polyline({
-            path: etapes.map((e) => ({ lat: e.lat, lng: e.lng })),
-            geodesic: true,
-            strokeOpacity: 0,
-            icons: [
-              { icon: { path: "M 0,-1 0,1", strokeOpacity: 1, scale: 3 }, offset: "0", repeat: "12px" },
-            ],
-            map,
+          // Correctif : force MapLibre à recalculer la taille de son conteneur.
+          setTimeout(() => map.resize(), 100);
+
+          const bounds = new LngLatBounds();
+          etapes.forEach((e) => bounds.extend([e.lng, e.lat]));
+          map.fitBounds(bounds, { padding: 40 });
+          vueGeneraleRef.current = () => map.fitBounds(bounds, { padding: 40 });
+
+          map.addSource("trajet", {
+            type: "geojson",
+            data: {
+              type: "Feature",
+              properties: {},
+              geometry: {
+                type: "LineString",
+                coordinates: etapes.map((e) => [e.lng, e.lat]),
+              },
+            },
+          });
+          map.addLayer({
+            id: "trajet-ligne",
+            type: "line",
+            source: "trajet",
+            paint: {
+              "line-color": "#c8956c",
+              "line-width": 2,
+              "line-dasharray": [2, 2],
+            },
           });
 
           etapes.forEach((e, i) => {
@@ -100,31 +152,37 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
             pin.style.cssText =
               "background:#c8956c;color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Inter,sans-serif;font-style:normal;font-size:12px;font-weight:600;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);cursor:pointer;";
             pin.textContent = String(i + 1);
-            const marker = new window.google.maps.marker.AdvancedMarkerElement({
-              map,
-              position: { lat: e.lat, lng: e.lng },
-              content: pin,
-              title: e.nom,
+
+            const marker = new Marker({ element: pin, anchor: "center" })
+              .setLngLat([e.lng, e.lat])
+              .addTo(map);
+
+            pin.addEventListener("click", () => {
+              map.flyTo({ center: [e.lng, e.lat] });
+              if (popupRef.current) popupRef.current.remove();
+              popupRef.current = new Popup({ closeOnClick: true })
+                .setLngLat([e.lng, e.lat])
+                .setHTML(contenuBulle(e.nom))
+                .addTo(map);
+              popupRef.current.on("close", () => vueGeneraleRef.current());
             });
-            marker.addListener("gmp-click", () => {
-              map.panTo({ lat: e.lat, lng: e.lng });
-              if (infoWindowRef.current) infoWindowRef.current.close();
-              infoWindowRef.current = new window.google.maps.InfoWindow({
-                position: { lat: e.lat, lng: e.lng },
-                content: contenuBulle(e.nom),
-              });
-              infoWindowRef.current.addListener("closeclick", () => vueGeneraleRef.current());
-              infoWindowRef.current.open(map);
-            });
+
             markersRef.current.push(marker);
           });
 
           setPret(true);
-        })
-        .catch(() => setErreur(true));
+          precacherTuiles(etapes);
+        });
+
+        map.on("error", () => setErreur(true));
+      } catch {
+        setErreur(true);
+      }
 
       return () => {
         annule = true;
+        mapInstance.current?.remove();
+        mapInstance.current = null;
       };
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [etapes.map((e) => e.nom).join("-")]);
@@ -139,7 +197,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
 
     return (
       <div style={{ marginTop: 24 }} ref={wrapRef}>
-        <div ref={mapRef} style={{ width: "100%", height: 260, borderRadius: 4, background: "#f0ebe4", marginBottom: 16 }} />
+        <div ref={mapRef} style={{ width: "100%", height: 260, borderRadius: 4, background: "#f0ebe4", marginBottom: 16, position: "relative", overflow: "hidden" }} />
         {erreur && (
           <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#c0392b", marginBottom: 12 }}>
             La carte n&apos;a pas pu se charger.
