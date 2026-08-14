@@ -9,10 +9,9 @@ interface NavbarProps {
 
 const destinations = [
   {
-    pays: 'Espagne',
+    pays: 'Allemagne',
     liens: [
-      { label: 'Madrid', href: '/visiter-madrid-en-3-jours' },
-      { label: 'Lanzarote', href: '/road-trip-a-lanzarote' },
+      { label: 'Berlin', href: '/visiter-berlin-en-4-jours' },
     ]
   },
   {
@@ -22,24 +21,25 @@ const destinations = [
     ]
   },
   {
-    pays: 'Maroc',
-    liens: [
-      { label: 'Marrakech', href: '/visiter-marrakech' },
-      { label: 'Désert d\'Agafay', href: '/dormir-dans-le-desert-agafay' },
-    ]
-  },
-  {
-    pays: 'Allemagne',
-    liens: [
-      { label: 'Berlin', href: '/visiter-berlin-en-4-jours' },
-    ]
-  },
-  {
     pays: 'Asie',
     liens: [
       { label: 'Itinéraire Philippines', href: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient' },
       { label: 'Palawan – El Nido & Coron', href: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines' },
       { label: 'Palawan – De Puerto à Port Barton', href: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus' },
+    ]
+  },
+  {
+    pays: 'Espagne',
+    liens: [
+      { label: 'Madrid', href: '/visiter-madrid-en-3-jours' },
+      { label: 'Lanzarote', href: '/road-trip-a-lanzarote' },
+    ]
+  },
+  {
+    pays: 'Maroc',
+    liens: [
+      { label: 'Marrakech', href: '/visiter-marrakech' },
+      { label: 'Désert d\'Agafay', href: '/dormir-dans-le-desert-agafay' },
     ]
   },
 ];
