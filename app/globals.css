@@ -483,7 +483,7 @@ a { text-decoration: none; color: inherit; }
 .hero-blog .hero-overlay { background: linear-gradient(to right, rgba(10,5,2,0.78) 0%, rgba(10,5,2,0.32) 50%, rgba(10,5,2,0.02) 100%); }
 .hero-blog .hero-bg { object-position: center 50%; }
 
-.blog-section { background: var(--bg); padding: 64px 52px 80px; border-top: 1px solid var(--line); }
+.blog-section { background: var(--bg); padding: 64px 52px 56px; border-top: 1px solid var(--line); }
 .blog-intro { text-align: center; margin-bottom: 48px; }
 .blog-intro .eyebrow-dark { display: block; text-align: center; }
 .blog-intro .home-h2 { margin-top: 14px; }
