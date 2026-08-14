@@ -25,14 +25,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
-    titre: '4 jours à Berlin - Entre mémoire, liberté et contre-culture',
+    titre: '4 jours à Berlin — Entre mémoire, liberté et contre-culture',
     url: '/visiter-berlin-en-4-jours',
     image: null,
     localImage: '/related/Berlin-article.webp',
     categorie: 'Allemagne',
   },
   {
-    titre: "Lanzarote — L'île aux 300 volcans",
+    titre: "Lanzarote — Une semaine sur l'île aux 300 volcans",
     url: '/road-trip-a-lanzarote',
     image: null,
     localImage: '/related/Lanzarote-article.webp',
