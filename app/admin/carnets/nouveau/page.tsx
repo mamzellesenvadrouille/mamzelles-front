@@ -48,6 +48,7 @@ const carnetVide: Carnet = {
     { label: "Trousse à pharmacie de base (antidouleur, pansements...)", coche: false },
     { label: "Crème solaire indice élevé", coche: false },
     { label: "Répulsif anti-moustiques", coche: false },
+    { label: "Gourde filtrante", coche: false },
     { label: "Maillots de bain", coche: false },
     { label: "Tenues légères et confortables", coche: false },
     { label: "Une tenue plus habillée pour le soir", coche: false },
