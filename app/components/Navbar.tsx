@@ -29,6 +29,12 @@ const destinations = [
     ]
   },
   {
+    pays: 'Allemagne',
+    liens: [
+      { label: 'Berlin', href: '/visiter-berlin-en-4-jours' },
+    ]
+  },
+  {
     pays: 'Asie',
     liens: [
       { label: 'Itinéraire Philippines', href: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient' },

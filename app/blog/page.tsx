@@ -80,6 +80,13 @@ const articles = [
     localImage: '/related/Londres-article.webp',
     categorie: 'Europe',
   },
+  {
+    titre: 'Visiter Berlin en 4 jours — Itinéraire complet et bonnes adresses',
+    url: '/visiter-berlin-en-4-jours',
+    image: null,
+    localImage: '/related/Berlin-article.webp',
+    categorie: 'Allemagne',
+  },
 ];
 
 export default async function BlogPage() {
@@ -154,6 +161,12 @@ export default async function BlogPage() {
           position: 8,
           url: 'https://mamzellesenvadrouille.com/visiter-londres',
           name: "Londres — L'essentiel en une semaine",
+        },
+        {
+          '@type': 'ListItem',
+          position: 9,
+          url: 'https://mamzellesenvadrouille.com/visiter-berlin-en-4-jours',
+          name: 'Visiter Berlin en 4 jours — Itinéraire complet et bonnes adresses',
         },
       ],
     },

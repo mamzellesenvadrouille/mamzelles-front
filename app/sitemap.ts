@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://mamzellesenvadrouille.com/visiter-berlin-en-4-jours',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://mamzellesenvadrouille.com/road-trip-a-lanzarote',
       lastModified: new Date(),
       changeFrequency: 'monthly',
