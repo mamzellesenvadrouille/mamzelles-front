@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
   title: 'Blog Voyage — MamZelles en Vadrouille',
@@ -171,9 +170,6 @@ export default async function BlogPage() {
           })}
         </div>
       </section>
-
-      {/* NEWSLETTER */}
-      <NewsletterForm />
 
       {/* CTA */}
       <section className="home-cta">
