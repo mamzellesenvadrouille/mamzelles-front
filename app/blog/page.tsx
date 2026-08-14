@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata: Metadata = {
   title: 'Blog Voyage — MamZelles en Vadrouille',
@@ -113,62 +114,12 @@ export default async function BlogPage() {
     },
     mainEntity: {
       '@type': 'ItemList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          url: 'https://mamzellesenvadrouille.com/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
-          name: "Itinéraire Philippines — 3 semaines pour découvrir la perle de l'Orient",
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          url: 'https://mamzellesenvadrouille.com/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
-          name: 'Palawan — El Nido & Coron, le joyau des Philippines',
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          url: 'https://mamzellesenvadrouille.com/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-          name: 'Palawan — De Puerto Princesa à Port Barton',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          url: 'https://mamzellesenvadrouille.com/dormir-dans-le-desert-agafay',
-          name: "Agafay — Une nuit dans le désert",
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          url: 'https://mamzellesenvadrouille.com/visiter-marrakech',
-          name: 'Marrakech — Que faire dans la ville rouge',
-        },
-        {
-          '@type': 'ListItem',
-          position: 6,
-          url: 'https://mamzellesenvadrouille.com/road-trip-a-lanzarote',
-          name: "Lanzarote — L'île aux 300 volcans",
-        },
-        {
-          '@type': 'ListItem',
-          position: 7,
-          url: 'https://mamzellesenvadrouille.com/visiter-madrid-en-3-jours',
-          name: '3 jours à Madrid — Les incontournables de la capitale espagnole',
-        },
-        {
-          '@type': 'ListItem',
-          position: 8,
-          url: 'https://mamzellesenvadrouille.com/visiter-londres',
-          name: "Londres — L'essentiel en une semaine",
-        },
-        {
-          '@type': 'ListItem',
-          position: 9,
-          url: 'https://mamzellesenvadrouille.com/visiter-berlin-en-4-jours',
-          name: 'Visiter Berlin en 4 jours — Itinéraire complet et bonnes adresses',
-        },
-      ],
+      itemListElement: articles.map((a, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: `https://mamzellesenvadrouille.com${a.url}`,
+        name: a.titre,
+      })),
     },
   };
 
@@ -220,6 +171,9 @@ export default async function BlogPage() {
           })}
         </div>
       </section>
+
+      {/* NEWSLETTER */}
+      <NewsletterForm />
 
       {/* CTA */}
       <section className="home-cta">
