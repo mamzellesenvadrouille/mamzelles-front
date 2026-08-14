@@ -146,7 +146,7 @@ export default function VisiterBerlinPage() {
               <span className="article-day-badge">Jour 1</span>
               <h2>Une journée pleine de surprises et de belles découvertes</h2>
             </div>
-            <p>Nous sommes parties à 8h du matin. Ma femme m’a fait croire que nous prenions la voiture pour deux heures de route, mais en réalité, elle avait tout prévu...</p>
+            <p>Nous sommes parties à 8 h du matin. Ma femme m’a fait croire que nous prenions la voiture pour deux heures de route, mais en réalité, elle avait tout prévu...</p>
             <p>Direction la gare d’Antibes. Nous montons dans le train, cap vers l’Italie, sans que je sache encore où nous allons. En arrivant à la gare Nice Saint-Augustin, je comprends enfin : nous allons prendre l’avion. Une fois à l’aéroport, elle me révèle la destination surprise en m’offrant le guide de Berlin. Une annonce aussi inattendue qu’excitante !</p>
             <p>C’est parti pour quatre jours et trois nuits dans une ville qui allait nous surprendre bien plus que nous l’imaginions.</p>
             <h3>Arrivée à Berlin</h3>
@@ -341,7 +341,7 @@ export default function VisiterBerlinPage() {
             </div>
             <h3>Retour à Prenzlauer Berg</h3>
             <h4>Un Currywurst pour la route, le rituel berlinois</h4>
-            <p>Le temps passe bien trop vite, il est déjà passé 22h. Après avoir bien profité du moment, nous reprenons le chemin de l’hôtel à pied, par un itinéraire différent, histoire de prolonger encore un peu la découverte.</p>
+            <p>Le temps passe bien trop vite, il est déjà passé 22 h. Après avoir bien profité du moment, nous reprenons le chemin de l’hôtel à pied, par un itinéraire différent, histoire de prolonger encore un peu la découverte.</p>
             <p>On passe alors devant <strong>Curry 61</strong>, une adresse incontournable pour goûter la Currywurst, la spécialité street food emblématique de Berlin, un peu le « snack national » de la ville. Allez, on se laisse tenter !</p>
             <div className="article-gallery-2">
               <img src="/berlin-photos/023.webp" alt="Curry 61 Currywurst Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
@@ -398,7 +398,7 @@ export default function VisiterBerlinPage() {
             </div>
             <p>L’ambiance est décontractée, libre, sans artifices ni prise de tête. Côté food c’est simple et convivial : street food, pizzas, burgers, options veggie… Même si l’envie ne se fait pas sentir, on vous invite à passer voir les toilettes !</p>
             <h4>East Side Gallery, le mur devenu galerie à ciel ouvert</h4>
-            <p>Après ce moment suspendu, à une vingtaine de minutes de marche, se trouve un lieu impossible à manquer quand on visite Berlin : la <strong>East Side Gallery</strong>. C’est en fait le plus long tronçon encore debout du mur de Berlin, transformé aujourd’hui en immense galerie d’art à ciel ouvert.</p>
+            <p>Après ce moment suspendu, à une vingtaine de minutes de marche, se trouve un lieu impossible à manquer quand on visite Berlin : la <strong>East Side Gallery</strong>. C’est en fait le plus long tronçon encore debout du Mur de Berlin, transformé aujourd’hui en immense galerie d’art à ciel ouvert.</p>
             <p>Sur près d’1,3 kilomètre, des artistes du monde entier ont recouvert ce vestige de la séparation entre l’Est et l’Ouest avec des fresques colorées, engagées, parfois poétiques, parfois politiques. Ici, le béton chargé d’histoire est devenu un symbole de liberté et d’expression.</p>
             <div className="article-gallery-2">
               <img src="/berlin-photos/030.webp" alt="East Side Gallery Berlin" loading="lazy" style={{flex: '0.75', minWidth: 0}} />
@@ -635,7 +635,7 @@ export default function VisiterBerlinPage() {
             </div>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Pour 15 € il est possible de visiter le Berliner Dom (audioguide inclus). Vous aurez accès à l’intérieur de l’église, à la crypte des Hohenzollern, au musée et à la galerie panoramique située sous le dôme, qui offre une belle vue sur Berlin.</p></div>
+              <div><strong>Bon à savoir</strong><p>Pour 15 €, il est possible de visiter le Berliner Dom (audioguide inclus). Vous aurez accès à l’intérieur de l’église, à la crypte des Hohenzollern, au musée et à la galerie panoramique située sous le dôme, qui offre une belle vue sur Berlin.</p></div>
             </div>
             <h4>Unter den Linden &amp; Bebelplatz</h4>
             <p>En quittant le <strong>Berliner Dom</strong>, on rejoint <strong>Unter den Linden</strong>, la célèbre avenue bordée de tilleuls qui traverse le centre historique. On y trouve de nombreux bâtiments prestigieux, ambassades, universités et monuments qui témoignent du passé royal et impérial de Berlin.</p>
@@ -669,7 +669,7 @@ export default function VisiterBerlinPage() {
               <div><strong>Le conseil des MamZelles</strong><p>La visite du Reichstag est gratuite, mais la réservation est obligatoire. Réservez au moins 2 à 3 semaines à l’avance (encore plus en été), muni d’une pièce d’identité qui devra correspondre exactement à celle enregistrée en ligne. Si vous n’avez pas réservé, un guichet sur place (à 150 m du Reichstag) propose parfois des créneaux de dernière minute, selon les disponibilités.</p></div>
             </div>
             <h4>Mémorial de l’Holocauste</h4>
-            <p>Après notre visite du Reichstag, nous avons poursuivi notre découverte de Berlin en nous rendant au <strong>Mémorial de l’Holocauste</strong>, situé à seulement quelques minutes de marche. Ce lieu de mémoire impressionne par son immensité. 2 711 stèles de béton de différentes hauteurs s’étendent sur une immense place, formant un véritable labyrinthe.</p>
+            <p>Après notre visite du Reichstag, nous avons poursuivi notre découverte de Berlin en nous rendant au <strong>Mémorial de l’Holocauste</strong>, situé à seulement quelques minutes de marche. Ce lieu de mémoire impressionne par son immensité. 2 711 stèles de béton de différentes hauteurs s’étendent sur une immense place, formant un véritable labyrinthe.</p>
             <img src="/berlin-photos/056.webp" alt="Mémorial de l’Holocauste Berlin" className="article-img-full" loading="lazy" />
             <p>En s’aventurant au milieu, le bruit de la ville s’efface peu à peu, ce qui laisse place à une atmosphère particulière. On se sent toutes petites, un peu perturbées et émues à la fois. Conçu en hommage aux millions de Juifs victimes du génocide nazi, ce mémorial invite naturellement au recueillement et à la réflexion.</p>
             <div className="article-gallery-2">
@@ -736,7 +736,7 @@ export default function VisiterBerlinPage() {
             </div>
             <h3>Kreuzberg</h3>
             <p>Pour notre dernière soirée, notre dernière nuit, on a décidé de jouer les prolongations et d’en profiter à fond. Après une journée bien chargée, une bonne marche en forêt en fin de journée, retour express à l’hôtel pour se changer avant de partir en quête d’un resto.</p>
-            <p>Même à 23h, la ville vit encore à 100 à l’heure. On a jeté notre dévolu sur Pasta &amp; Passione, un petit établissement à deux pas de notre hôtel. Si vous y passez, testez leurs gnocchis maison, ils sont délicieux.</p>
+            <p>Même à 23 h, la ville vit encore à 100 à l’heure. On a jeté notre dévolu sur Pasta &amp; Passione, un petit établissement à deux pas de notre hôtel. Si vous y passez, testez leurs gnocchis maison, ils sont délicieux.</p>
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
@@ -767,7 +767,7 @@ export default function VisiterBerlinPage() {
                 </div>
               </div>
             </div>
-            <p>Cette journée bien chargée nous a quand même épuisées. Il est 3h du matin bien tassé, direction l’hôtel pour une courte nuit. Départ demain, il faut plier bagage et libérer la chambre avant 11h...</p>
+            <p>Cette journée bien chargée nous a quand même épuisées. Il est 3 h du matin bien tassé, direction l’hôtel pour une courte nuit. Départ demain, il faut plier bagage et libérer la chambre avant 11 h...</p>
             <div className="article-rendre">
               <div className="article-rendre-label"><div className="article-rendre-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/></svg></div><span>Pour s’y rendre</span></div>
               <div className="article-rendre-timeline">
@@ -992,7 +992,7 @@ export default function VisiterBerlinPage() {
               <li><strong>La nuit :</strong> Berlin pense aussi aux personnes qui vivent la nuit. En semaine, du dimanche au jeudi, les métros et S-Bahn s’arrêtent généralement autour d’1 h à 1 h 30 du matin, mais la ville ne s’endort pas complètement : des bus de nuit, reconnaissables à leur lettre « N », prennent le relais. Le week-end, Berlin révèle encore davantage son tempérament nocturne : U-Bahn et S-Bahn circulent toute la nuit, largement suffisant pour rentrer sereinement après une longue soirée berlinoise. Ici, la ville semble avoir parfaitement compris qu’à Berlin, la nuit fait aussi partie du voyage.</li>
             </ul>
             <h3 style={{marginTop:'32px'}}>Quand partir ?</h3>
-            <p>Berlin possède un climat continental, avec des étés chauds et des hivers plutôt froids et gris. La ville se visite idéalement de <strong>mai à septembre</strong>, quand les températures sont les plus agréables (autour de 20-24°C) et que la vie en extérieur bat son plein : terrasses, parcs, marchés en plein air.</p>
+            <p>Berlin possède un climat continental, avec des étés chauds et des hivers plutôt froids et gris. La ville se visite idéalement de <strong>mai à septembre</strong>, quand les températures sont les plus agréables (autour de 20-24 °C) et que la vie en extérieur bat son plein : terrasses, parcs, marchés en plein air.</p>
             <p><strong>Juin</strong> est particulièrement agréable, avec des journées longues et un ensoleillement optimal. Les mois de <strong>mai et septembre</strong> restent une bonne alternative, avec moins de foule qu’en plein été.</p>
             <p>Nous vous conseillons d’éviter les mois de <strong>novembre à février</strong>, où les températures peuvent descendre sous 0°C et le ciel reste souvent gris, même si la ville garde son charme, notamment avec ses marchés de Noël en décembre.</p>
           </section>
