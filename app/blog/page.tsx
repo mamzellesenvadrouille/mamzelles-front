@@ -46,14 +46,14 @@ const articles = [
     categorie: 'Philippines',
   },
   {
-    titre: "Agafay — Une nuit dans le désert",
+    titre: "Agafay — Une nuit dans le désert de Marrakech",
     url: '/dormir-dans-le-desert-agafay',
     image: null,
     localImage: '/related/Agafay-article.webp',
     categorie: 'Maroc',
   },
   {
-    titre: 'Marrakech — Que faire dans la ville rouge',
+    titre: 'Marrakech — La ville rouge, entre tradition et effervescence',
     url: '/visiter-marrakech',
     image: null,
     localImage: '/related/Marrakech-article.webp',
@@ -81,7 +81,7 @@ const articles = [
     categorie: 'Europe',
   },
   {
-    titre: 'Visiter Berlin en 4 jours — Itinéraire complet et bonnes adresses',
+    titre: '4 jours à Berlin - Entre mémoire, liberté et contre-culture',
     url: '/visiter-berlin-en-4-jours',
     image: null,
     localImage: '/related/Berlin-article.webp',
