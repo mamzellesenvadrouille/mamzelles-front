@@ -826,7 +826,7 @@ export default function VisiterBerlinPage() {
             <div className="article-resto">
               <div className="article-resto-item">
                 <div className="article-resto-head">
-                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour une pause gourmande</span>
+                  <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2M5 9v13M19 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5"/></svg>Pour manger</span>
                   <span className="article-resto-tag">Mauerpark</span>
                 </div>
                 <div className="article-resto-body">
