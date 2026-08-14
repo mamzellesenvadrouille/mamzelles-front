@@ -493,7 +493,7 @@ a { text-decoration: none; color: inherit; }
 .blog-card { border-radius: 8px; overflow: hidden; border: 1px solid var(--line); text-decoration: none; display: block; background: #fff; transition: .3s; }
 .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
 
-.blog-card-img-wrap { position: relative; height: 220px; overflow: hidden; }
+.blog-card-img-wrap { position: relative; height: 260px; overflow: hidden; }
 .blog-card-img { width: 100%; height: 100%; object-fit: cover; object-position: center center; transition: transform .4s; }
 .blog-card:hover .blog-card-img { transform: scale(1.04); }
 .blog-card-cat { position: absolute; top: 14px; left: 14px; background: var(--gold); color: #fff; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; }
@@ -514,7 +514,7 @@ a { text-decoration: none; color: inherit; }
 .blog-grid { grid-template-columns: 1fr; }
 
   
-.blog-section { padding: 48px 20px 60px; }
+.blog-section { padding: 48px 20px 48px; }
 
 }
 
@@ -865,7 +865,7 @@ a { text-decoration: none; color: inherit; }
 /* BLOG PAGE */
 
   
-.blog-section { padding: 40px 24px 60px !important; }
+.blog-section { padding: 40px 24px 48px !important; }
 
   
 .blog-grid { grid-template-columns: 1fr !important; }
@@ -1601,7 +1601,7 @@ html body .form-right-card h2.form-right-h2 {
 /* BLOG PAGE - 4 colonnes */
 
   
-.blog-section { padding: 48px 40px 64px !important; }
+.blog-section { padding: 48px 40px 52px !important; }
 
   
 .blog-grid { grid-template-columns: repeat(3, 1fr) !important; }
