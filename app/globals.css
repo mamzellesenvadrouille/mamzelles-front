@@ -866,6 +866,7 @@ a { text-decoration: none; color: inherit; }
 
   
 .blog-section { padding: 40px 24px 48px !important; }
+.blog-card-img-wrap { height: 260px !important; }
 
   
 .blog-grid { grid-template-columns: 1fr !important; }
