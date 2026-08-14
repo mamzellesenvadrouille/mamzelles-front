@@ -25,39 +25,11 @@ export const metadata: Metadata = {
 
 const articles = [
   {
-    titre: "Itinéraire Philippines — 3 semaines pour découvrir la perle de l'Orient",
-    url: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+    titre: '4 jours à Berlin - Entre mémoire, liberté et contre-culture',
+    url: '/visiter-berlin-en-4-jours',
     image: null,
-    localImage: '/related/Philippines-articles.webp',
-    categorie: 'Philippines',
-  },
-  {
-    titre: 'Palawan — El Nido & Coron, le joyau des Philippines',
-    url: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
-    image: null,
-    localImage: '/related/Palawan-article.webp',
-    categorie: 'Philippines',
-  },
-  {
-    titre: 'Palawan — De Puerto Princesa à Port Barton',
-    url: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
-    image: null,
-    localImage: '/related/Port-Barton-article.webp',
-    categorie: 'Philippines',
-  },
-  {
-    titre: "Agafay — Une nuit dans le désert de Marrakech",
-    url: '/dormir-dans-le-desert-agafay',
-    image: null,
-    localImage: '/related/Agafay-article.webp',
-    categorie: 'Maroc',
-  },
-  {
-    titre: 'Marrakech — La ville rouge, entre tradition et effervescence',
-    url: '/visiter-marrakech',
-    image: null,
-    localImage: '/related/Marrakech-article.webp',
-    categorie: 'Maroc',
+    localImage: '/related/Berlin-article.webp',
+    categorie: 'Allemagne',
   },
   {
     titre: "Lanzarote — L'île aux 300 volcans",
@@ -81,11 +53,39 @@ const articles = [
     categorie: 'Europe',
   },
   {
-    titre: '4 jours à Berlin - Entre mémoire, liberté et contre-culture',
-    url: '/visiter-berlin-en-4-jours',
+    titre: "Agafay — Une nuit dans le désert de Marrakech",
+    url: '/dormir-dans-le-desert-agafay',
     image: null,
-    localImage: '/related/Berlin-article.webp',
-    categorie: 'Allemagne',
+    localImage: '/related/Agafay-article.webp',
+    categorie: 'Maroc',
+  },
+  {
+    titre: 'Marrakech — La ville rouge, entre tradition et effervescence',
+    url: '/visiter-marrakech',
+    image: null,
+    localImage: '/related/Marrakech-article.webp',
+    categorie: 'Maroc',
+  },
+  {
+    titre: "Itinéraire Philippines — 3 semaines pour découvrir la perle de l'Orient",
+    url: '/itineraire-philippines-3-semaines-pour-decouvrir-la-perle-de-lorient',
+    image: null,
+    localImage: '/related/Philippines-articles.webp',
+    categorie: 'Philippines',
+  },
+  {
+    titre: 'Palawan — El Nido & Coron, le joyau des Philippines',
+    url: '/palawan-entre-el-nido-coron-decouvrez-le-joyau-des-philippines',
+    image: null,
+    localImage: '/related/Palawan-article.webp',
+    categorie: 'Philippines',
+  },
+  {
+    titre: 'Palawan — De Puerto Princesa à Port Barton',
+    url: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus',
+    image: null,
+    localImage: '/related/Port-Barton-article.webp',
+    categorie: 'Philippines',
   },
 ];
 
