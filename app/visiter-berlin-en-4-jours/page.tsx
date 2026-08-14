@@ -608,7 +608,7 @@ export default function VisiterBerlinPage() {
                   <span className="article-resto-head-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>Pour réserver</span>
                 </div>
                 <div className="article-resto-body">
-                  <p className="article-resto-name"><a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer">Billet coupe-file pour la Fernsehturm</a></p>
+                  <p className="article-resto-name"><a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer">Billet pour la Fernsehturm</a></p>
                   <p className="article-resto-sub">À partir de 20 €</p>
                   <p>Depuis la plateforme panoramique à 203 mètres de haut, la vue à 360° sur Berlin est saisissante. Le <a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer" className="article-link">billet coupe-file</a> permet d'éviter la queue à la billetterie.</p>
                 </div>
