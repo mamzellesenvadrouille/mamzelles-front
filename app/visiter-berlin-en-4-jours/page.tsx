@@ -89,7 +89,7 @@ export default function VisiterBerlinPage() {
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/><path d="M16 12h6v4h-6a2 2 0 0 1 0-4z"/></svg>
-          <span>120-160 €/j/pers.</span>
+          <span>120-160 €/j/pers.</span>
         </div>
         <span className="article-bref-bar-sep">•</span>
         <div className="article-bref-bar-item">
@@ -150,7 +150,7 @@ export default function VisiterBerlinPage() {
             <p>Direction la gare d’Antibes. Nous montons dans le train, cap vers l’Italie, sans que je sache encore où nous allons. En arrivant à la gare Nice Saint-Augustin, je comprends enfin : nous allons prendre l’avion. Une fois à l’aéroport, elle me révèle la destination surprise en m’offrant le guide de Berlin. Une annonce aussi inattendue qu’excitante !</p>
             <p>C’est parti pour quatre jours et trois nuits dans une ville qui allait nous surprendre bien plus que nous l’imaginions.</p>
             <h3>Arrivée à Berlin</h3>
-            <p>Une fois arrivées à l’aéroport de Berlin, il faut encore rejoindre le centre-ville. Direction le terminal 1 pour prendre le train <strong>S-Bahn</strong> vers la gare centrale, la <strong>Hauptbahnhof (HBF)</strong>. Comptez 5 € par personne pour un ticket valable deux heures, largement suffisant pour rejoindre le centre.</p>
+            <p>Une fois arrivées à l’aéroport de Berlin, il faut encore rejoindre le centre-ville. Direction le terminal 1 pour prendre le train <strong>S-Bahn</strong> vers la gare centrale, la <strong>Hauptbahnhof (HBF)</strong>. Comptez 5 € par personne pour un ticket valable deux heures, largement suffisant pour rejoindre le centre.</p>
             <div className="article-gallery-3">
               <img src="/berlin-photos/080.webp" alt="Arrivée à Berlin S-Bahn" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/081.webp" alt="Arrivée à Berlin S-Bahn" loading="lazy" style={{flex: '1', minWidth: 0}} />
@@ -321,7 +321,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/P0FuQWIe" target="_blank" rel="noopener noreferrer">Croisière d’une heure sur la Spree</a></p>
-                  <p className="article-resto-sub">En français · À partir de 22 €</p>
+                  <p className="article-resto-sub">En français · À partir de 22 €</p>
                   <p>Envie d'admirer le Berliner Dom et l'île aux Musées depuis l'eau ? Cette <a href="https://gyg.me/P0FuQWIe" target="_blank" rel="noopener noreferrer" className="article-link">croisière d'une heure sur la Spree</a> permet de voir la ville sous un autre angle.</p>
                 </div>
               </div>
@@ -526,7 +526,7 @@ export default function VisiterBerlinPage() {
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://www.google.com/maps/search/?api=1&query=Klunkerkranich+Karl-Marx-Stra%C3%9Fe+66+Berlin" target="_blank" className="article-resto-link-desktop">Klunkerkranich</a><a href="https://maps.app.goo.gl/HkdtMSpumzfi5o6Q8?g_st=ic" target="_blank" className="article-resto-link-mobile">Klunkerkranich</a></p>
                   <p className="article-resto-sub">Rooftop bohème · Neukölln</p>
-                  <p>Comptez une petite entrée de 3 à 5 € en soirée (souvent gratuit plus tôt dans la journée), et prévoyez un peu d’attente, surtout le week-end ou quand il fait beau.</p>
+                  <p>Comptez une petite entrée de 3 à 5 € en soirée (souvent gratuit plus tôt dans la journée), et prévoyez un peu d’attente, surtout le week-end ou quand il fait beau.</p>
                 </div>
               </div>
             </div>
@@ -609,7 +609,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer">Billet coupe-file pour la Fernsehturm</a></p>
-                  <p className="article-resto-sub">À partir de 20 €</p>
+                  <p className="article-resto-sub">À partir de 20 €</p>
                   <p>Depuis la plateforme panoramique à 203 mètres de haut, la vue à 360° sur Berlin est saisissante. Le <a href="https://gyg.me/SIbW9WGJ" target="_blank" rel="noopener noreferrer" className="article-link">billet coupe-file</a> permet d'éviter la queue à la billetterie.</p>
                 </div>
               </div>
@@ -622,7 +622,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer">High Swing Berlin</a></p>
-                  <p className="article-resto-sub">À partir de 30 €</p>
+                  <p className="article-resto-sub">À partir de 30 €</p>
                   <p>Sensations garanties à 120 mètres de haut. <a href="https://gyg.me/FKU6Qp5A" target="_blank" rel="noopener noreferrer" className="article-link">Réserver son créneau</a>.</p>
                 </div>
               </div>
@@ -635,7 +635,7 @@ export default function VisiterBerlinPage() {
             </div>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
-              <div><strong>Bon à savoir</strong><p>Pour 15 € il est possible de visiter le Berliner Dom (audioguide inclus). Vous aurez accès à l’intérieur de l’église, à la crypte des Hohenzollern, au musée et à la galerie panoramique située sous le dôme, qui offre une belle vue sur Berlin.</p></div>
+              <div><strong>Bon à savoir</strong><p>Pour 15 € il est possible de visiter le Berliner Dom (audioguide inclus). Vous aurez accès à l’intérieur de l’église, à la crypte des Hohenzollern, au musée et à la galerie panoramique située sous le dôme, qui offre une belle vue sur Berlin.</p></div>
             </div>
             <h4>Unter den Linden &amp; Bebelplatz</h4>
             <p>En quittant le <strong>Berliner Dom</strong>, on rejoint <strong>Unter den Linden</strong>, la célèbre avenue bordée de tilleuls qui traverse le centre historique. On y trouve de nombreux bâtiments prestigieux, ambassades, universités et monuments qui témoignent du passé royal et impérial de Berlin.</p>
@@ -720,7 +720,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div className="article-resto-body">
                   <p className="article-resto-name"><a href="https://gyg.me/dJt9YbQe" target="_blank" rel="noopener noreferrer">Billet d'entrée Teufelsberg</a></p>
-                  <p className="article-resto-sub">À partir de 12 €</p>
+                  <p className="article-resto-sub">À partir de 12 €</p>
                   <p>Comptez 2 à 3 heures sur place pour profiter pleinement des lieux, et pensez à arriver suffisamment tôt, car le site ferme au coucher du soleil. <a href="https://gyg.me/dJt9YbQe" target="_blank" rel="noopener noreferrer" className="article-link">Réserver son billet</a>.</p>
                 </div>
               </div>
@@ -751,7 +751,7 @@ export default function VisiterBerlinPage() {
               </div>
             </div>
             <h4>Club der Visionäre, l’institution berlinoise</h4>
-            <p>Nous prenons la direction de Kreuzberg pour nous rendre au <strong>Club der Visionäre</strong>, l’un des clubs les plus réputés de la ville. Il se trouve à seulement quelques minutes à pied de la gare Schlesisches Tor. Pour y entrer, comptez généralement entre 5 et 10 € (cela dépend de la programmation). Pour nous ce soir, c’est 8 € par personne. Un petit tampon sur la main et c’est parti !</p>
+            <p>Nous prenons la direction de Kreuzberg pour nous rendre au <strong>Club der Visionäre</strong>, l’un des clubs les plus réputés de la ville. Il se trouve à seulement quelques minutes à pied de la gare Schlesisches Tor. Pour y entrer, comptez généralement entre 5 et 10 € (cela dépend de la programmation). Pour nous ce soir, c’est 8 € par personne. Un petit tampon sur la main et c’est parti !</p>
             <p>L’endroit est très sympa. Ce club à ciel ouvert se situe au bord du canal du <strong>Flutgraben</strong>. L’ambiance y est décontractée et le cadre est trop joli. Nous sommes sur une grande terrasse en bois qui surplombe le canal. Ici, les personnes viennent autant pour écouter de la bonne musique que pour profiter d’un verre entre amis. House, minimal et techno rythment la journée et la soirée, dans une atmosphère plus intimiste que celle des grands clubs berlinois. Ici pas de prise de tête, les gens veulent juste se détendre, danser et faire la fête.</p>
             <p>Pour info, pas de photo, c’est interdit. Niveau hydratation, vous trouverez sur place un bar proposant bières, cocktails et boissons fraîches. Il y a également une pizzeria si une petite faim se fait sentir.</p>
             <div className="article-resto">
@@ -777,7 +777,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div className="article-rendre-stop">
                   <div className="article-rendre-dot" />
-                  <div><span className="article-rendre-stop-title">Pour le retour</span><p>Passé 1h-1h30 en semaine, le bus N1 prend le relais à l’arrêt Schlesisches Tor, exactement au même endroit que la station de métro. Le week-end en revanche, l’U1 circule toute la nuit.</p></div>
+                  <div><span className="article-rendre-stop-title">Pour le retour</span><p>Passé 1 h à 1 h 30 en semaine, le bus N1 prend le relais à l’arrêt Schlesisches Tor, exactement au même endroit que la station de métro. Le week-end en revanche, l’U1 circule toute la nuit.</p></div>
                 </div>
               </div>
             </div>
@@ -817,7 +817,7 @@ export default function VisiterBerlinPage() {
             </div>
             <p>Nous sommes malheureusement passées à côté de l’amphithéâtre du parc, au grand désarroi de Laurie. C’est là que se déroule le karaoké géant du <strong>Mauerpark</strong> le dimanche. Des inconnus montent sur scène devant une foule venue les encourager dans une ambiance joyeuse et complètement décomplexée. Dommage, on aurait pu vivre un grand moment !</p>
             <h4>Pause gourmande à Schönwetter</h4>
-            <p>Il n’est pas loin de 12h30, une pause rafraîchissante et gourmande s’impose. Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servis ! On y trouve des saveurs venues des quatre coins du monde : spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand. Au-delà des stands de street food, il y a aussi des bars, cafés et restaurants.</p>
+            <p>Il n’est pas loin de 12 h 30, une pause rafraîchissante et gourmande s’impose. Les abords du marché se transforment en un véritable voyage culinaire. Si vous aimez la street food, vous allez être servis ! On y trouve des saveurs venues des quatre coins du monde : spécialités locales, cuisine asiatique, italienne… sandwichs et en-cas gourmands, plats végétariens et vegan, douceurs sucrées, boissons originales et rafraîchissantes. Le choix est grand. Au-delà des stands de street food, il y a aussi des bars, cafés et restaurants.</p>
             <div className="article-gallery-2">
               <img src="/berlin-photos/076.webp" alt="Street food Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
               <img src="/berlin-photos/077.webp" alt="Street food Mauerpark Berlin" loading="lazy" style={{flex: '1', minWidth: 0}} />
@@ -878,8 +878,8 @@ export default function VisiterBerlinPage() {
             </div>
             <p>Dans tous les cas, privilégiez Prenzlauer Berg ou Mitte pour être bien situés et que tout soit accessible à pied ou en tram.</p>
             <h3>Quel budget prévoir ?</h3>
-            <p>Berlin reste une capitale accessible comparée à d’autres capitales européennes. Comptez environ <strong>120 à 160 € par personne et par jour</strong> pour un voyageur moyen (hébergement, repas et activités inclus).</p>
-            <p>Les petits budgets peuvent s’en sortir dès 60 à 90 €/jour en misant sur les auberges de jeunesse et la street food, qui permet justement de manger bien et pas cher (Currywurst, Gemüse Kebab... pour 5 à 8 € en moyenne).</p>
+            <p>Berlin reste une capitale accessible comparée à d’autres capitales européennes. Comptez environ <strong>120 à 160 € par personne et par jour</strong> pour un voyageur moyen (hébergement, repas et activités inclus).</p>
+            <p>Les petits budgets peuvent s’en sortir dès 60 à 90 €/jour en misant sur les auberges de jeunesse et la street food, qui permet justement de manger bien et pas cher (Currywurst, Gemüse Kebab... pour 5 à 8 € en moyenne).</p>
             <div className="article-tip">
               <span className="article-tip-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5"><path d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="23" x2="14" y2="23"/></svg></span>
               <div><strong>Bon à savoir</strong>
@@ -891,7 +891,7 @@ export default function VisiterBerlinPage() {
             </div>
             <h3 id="arriver-avion">Arriver en avion</h3>
             <p>Il est désormais facile de trouver des vols directs à destination de Berlin à moindre coût. De <strong>nombreuses compagnies low-cost</strong> desservent la capitale allemande depuis la plupart des aéroports français.</p>
-            <p>Pour notre part, nous avons voyagé avec la compagnie <strong>easyJet</strong> depuis Nice, en vol direct. Les billets nous sont revenus à <strong>200 € pour deux</strong>, avec un temps de vol d’environ 2 h.</p>
+            <p>Pour notre part, nous avons voyagé avec la compagnie <strong>easyJet</strong> depuis Nice, en vol direct. Les billets nous sont revenus à <strong>200 € pour deux</strong>, avec un temps de vol d’environ 2 h.</p>
             <h3>Aéroport ↔︎ Centre-ville</h3>
             <p>Quelle que soit la compagnie choisie, vous atterrirez la plupart du temps à l’<strong>aéroport de Berlin Brandenburg (BER)</strong>. Plusieurs options s’offrent à vous pour rejoindre le centre :</p>
             <div className="article-transport-grid">
@@ -901,7 +901,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div>
                   <strong>S-Bahn (terminal 1)</strong>
-                  <span>5 € · 23 à 45 min selon la ligne (FEX express ou S9) jusqu’à la Hauptbahnhof · Ticket zone ABC, achetable aux distributeurs de la station.</span>
+                  <span>5 € · 23 à 45 min selon la ligne (FEX express ou S9) jusqu’à la Hauptbahnhof · Ticket zone ABC, achetable aux distributeurs de la station.</span>
                 </div>
               </div>
               <div className="article-transport-item">
@@ -910,7 +910,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div>
                   <strong>Bus X7 + U-Bahn</strong>
-                  <span>5 € · Même tarif (zone ABC). Relie l’aéroport à la station U Rudow (ligne U7) en 15 min, pratique si votre hôtel est proche du sud ou de l’ouest de Berlin.</span>
+                  <span>5 € · Même tarif (zone ABC). Relie l’aéroport à la station U Rudow (ligne U7) en 15 min, pratique si votre hôtel est proche du sud ou de l’ouest de Berlin.</span>
                 </div>
               </div>
               <div className="article-transport-item">
@@ -919,7 +919,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div>
                   <strong>Taxi</strong>
-                  <span>60 à 70 € · Option pratique si vous êtes en groupe ou très chargé·e·s. Pas notre recommandation en solo.</span>
+                  <span>60 à 70 € · Option pratique si vous êtes en groupe ou très chargé·e·s. Pas notre recommandation en solo.</span>
                 </div>
               </div>
               <div className="article-transport-item">
@@ -928,7 +928,7 @@ export default function VisiterBerlinPage() {
                 </div>
                 <div>
                   <strong>Uber</strong>
-                  <span>Zone de prise en charge dédiée à l’aéroport, tarifs similaires au taxi (60-80 €), parfois plus en heure de pointe.</span>
+                  <span>Zone de prise en charge dédiée à l’aéroport, tarifs similaires au taxi (60-80 €), parfois plus en heure de pointe.</span>
                 </div>
               </div>
             </div>
@@ -984,12 +984,12 @@ export default function VisiterBerlinPage() {
               <img src="/berlin-photos/084.webp" alt="Berlin transports" loading="lazy" style={{flex: '1', minWidth: 0}} />
             </div>
             <h4>Tickets</h4>
-            <p>L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Comptez 4 € pour un ticket zone AB, valable 2 heures.</p>
+            <p>L’un des grands avantages du système berlinois, c’est sa simplicité : un seul ticket permet d’emprunter métro, S-Bahn, tram et bus, sans avoir à se poser mille questions à chaque correspondance. Une vraie liberté de mouvement, particulièrement appréciable lorsqu’on découvre la ville. Comptez 4 € pour un ticket zone AB, valable 2 heures.</p>
             <p>Pour les acheter directement depuis votre téléphone (et éviter la queue aux distributeurs), téléchargez l’appli officielle <a href="https://www.bvg.de/en/subscriptions-and-tickets/all-apps" target="_blank" rel="noopener noreferrer" className="article-link">BVG Fahrinfo</a>, qui permet aussi de planifier vos trajets en temps réel.</p>
             <h4>Horaires</h4>
             <ul className="article-pratique-list-gold">
               <li><strong>Le jour :</strong> en journée, les transports sont extrêmement réguliers, avec des passages fréquents, souvent toutes les cinq à dix minutes sur les lignes principales, ce qui rend les déplacements fluides et spontanés.</li>
-              <li><strong>La nuit :</strong> Berlin pense aussi aux personnes qui vivent la nuit. En semaine, du dimanche au jeudi, les métros et S-Bahn s’arrêtent généralement autour d’1h à 1h30 du matin, mais la ville ne s’endort pas complètement : des bus de nuit, reconnaissables à leur lettre « N », prennent le relais. Le week-end, Berlin révèle encore davantage son tempérament nocturne : U-Bahn et S-Bahn circulent toute la nuit, largement suffisant pour rentrer sereinement après une longue soirée berlinoise. Ici, la ville semble avoir parfaitement compris qu’à Berlin, la nuit fait aussi partie du voyage.</li>
+              <li><strong>La nuit :</strong> Berlin pense aussi aux personnes qui vivent la nuit. En semaine, du dimanche au jeudi, les métros et S-Bahn s’arrêtent généralement autour d’1 h à 1 h 30 du matin, mais la ville ne s’endort pas complètement : des bus de nuit, reconnaissables à leur lettre « N », prennent le relais. Le week-end, Berlin révèle encore davantage son tempérament nocturne : U-Bahn et S-Bahn circulent toute la nuit, largement suffisant pour rentrer sereinement après une longue soirée berlinoise. Ici, la ville semble avoir parfaitement compris qu’à Berlin, la nuit fait aussi partie du voyage.</li>
             </ul>
             <h3 style={{marginTop:'32px'}}>Quand partir ?</h3>
             <p>Berlin possède un climat continental, avec des étés chauds et des hivers plutôt froids et gris. La ville se visite idéalement de <strong>mai à septembre</strong>, quand les températures sont les plus agréables (autour de 20-24°C) et que la vie en extérieur bat son plein : terrasses, parcs, marchés en plein air.</p>
