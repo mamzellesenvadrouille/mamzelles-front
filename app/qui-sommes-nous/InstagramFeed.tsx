@@ -1,20 +1,24 @@
 'use client';
 import { useEffect, useState } from 'react';
+
 interface Post {
   id: string;
-  thumbnailUrl: string | null;
-  mediaUrl: string;
+  imageUrl: string;
   permalink: string;
   mediaType: string;
 }
+
 export default function InstagramFeed() {
   const [posts, setPosts] = useState<Post[]>([]);
+
   useEffect(() => {
-    fetch('https://feedframer.com/api/v1/me?api_key=1216db17c3a4e34cc0e8a6204dc332d4fcf32af8cce2e8516de57b405fe5b10a')
+    fetch('/api/instagram-feed')
       .then(r => r.json())
       .then(data => setPosts((data.posts || []).slice(0, 6)));
   }, []);
+
   if (posts.length === 0) return null;
+
   return (
     <section className="qsn-insta">
       <div className="qsn-insta-header">
@@ -25,9 +29,9 @@ export default function InstagramFeed() {
       <div className="qsn-insta-bottom">
         <div className="qsn-insta-grid">
           {posts.map(post => (
-            <a key={post.id} href="https://www.instagram.com/mamzellesenvadrouille" target="_blank" rel="noopener noreferrer" className="qsn-insta-item">
+            <a key={post.id} href={post.permalink} target="_blank" rel="noopener noreferrer" className="qsn-insta-item">
               <img
-                src={post.thumbnailUrl || post.mediaUrl}
+                src={post.imageUrl}
                 alt=""
                 className="qsn-insta-img"
                 onError={(e) => {
