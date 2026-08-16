@@ -1,20 +1,34 @@
 // app/api/instagram-feed/route.ts
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/api/instagram-feed/route.ts
 //
-// Récupère les derniers posts Instagram directement depuis l'API officielle Meta,
-// avec mise en cache de 30 min pour éviter de spammer l'API à chaque visite.
+// Récupère les derniers posts Instagram. Le token est lu depuis Redis en priorité
+// (mis à jour automatiquement tous les mois), avec la variable d'environnement
+// comme solution de secours pour le tout premier appel.
 
 import { NextResponse } from "next/server";
+import { Redis } from "@upstash/redis";
 
 export const revalidate = 1800; // cache 30 minutes
 
+const redis = Redis.fromEnv();
+const TOKEN_KEY = "instagram:access_token";
+
 export async function GET() {
-  const token = process.env.INSTAGRAM_ACCESS_TOKEN;
   const userId = process.env.INSTAGRAM_USER_ID;
 
-  if (!token || !userId) {
+  if (!userId) {
     return NextResponse.json(
-      { error: "Configuration Instagram manquante" },
+      { error: "Configuration Instagram manquante (INSTAGRAM_USER_ID)" },
+      { status: 500 }
+    );
+  }
+
+  const token =
+    (await redis.get<string>(TOKEN_KEY)) || process.env.INSTAGRAM_ACCESS_TOKEN;
+
+  if (!token) {
+    return NextResponse.json(
+      { error: "Configuration Instagram manquante (token)" },
       { status: 500 }
     );
   }
@@ -36,27 +50,22 @@ export async function GET() {
 
     const data = await res.json();
 
-    // On ne garde que les posts avec une image/vidéo affichable
-    const posts = (data.data || [])
-      .filter((p: { media_type: string }) => p.media_type !== "VIDEO" || true) // les vidéos passent aussi via thumbnail
-      .map((p: {
-        id: string;
-        caption?: string;
-        media_type: string;
-        media_url: string;
-        thumbnail_url?: string;
-        permalink: string;
-        timestamp: string;
-      }) => ({
-        id: p.id,
-        caption: p.caption ?? "",
-        mediaType: p.media_type,
-        // Pour les vidéos/reels, media_url pointe vers la vidéo elle-même :
-        // on utilise thumbnail_url si dispo pour l'affichage en grille.
-        imageUrl: p.media_type === "VIDEO" ? (p.thumbnail_url ?? p.media_url) : p.media_url,
-        permalink: p.permalink,
-        timestamp: p.timestamp,
-      }));
+    const posts = (data.data || []).map((p: {
+      id: string;
+      caption?: string;
+      media_type: string;
+      media_url: string;
+      thumbnail_url?: string;
+      permalink: string;
+      timestamp: string;
+    }) => ({
+      id: p.id,
+      caption: p.caption ?? "",
+      mediaType: p.media_type,
+      imageUrl: p.media_type === "VIDEO" ? (p.thumbnail_url ?? p.media_url) : p.media_url,
+      permalink: p.permalink,
+      timestamp: p.timestamp,
+    }));
 
     return NextResponse.json({ posts });
   } catch (err) {
