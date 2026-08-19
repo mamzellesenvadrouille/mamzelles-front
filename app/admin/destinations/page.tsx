@@ -92,7 +92,7 @@ export default function AdminDestinationsPage() {
                           </tr>
                         </thead>
                         <tbody>
-                          {parPays.get(pays)!.map((d, i) => (
+                          {[...parPays.get(pays)!].sort((a, b) => a.nom.localeCompare(b.nom)).map((d, i) => (
                             <tr key={d.id} style={i % 2 === 0 ? adminStyles.trOdd : adminStyles.trEven}>
                               <td style={adminStyles.td}>{d.nom}</td>
                               <td style={adminStyles.td}>{d.hebergements?.length ?? 0}</td>
