@@ -284,22 +284,10 @@ export default function DestinationTabs({
             <div className={styles.miniGrid}>
               {(dest.hebergements ?? []).map((h, i) => {
                 const aCoords = typeof h.lat === "number" && typeof h.lng === "number";
-                // Correctif : quand il n'y a qu'un seul hébergement, sa carte occupe
-                // toute la largeur (comme la photo de destination juste au-dessus),
-                // au lieu de rester coincée dans une seule colonne de la grille à 2.
-                const styleUnique: React.CSSProperties | undefined =
-                  (dest.hebergements ?? []).length === 1
-                    ? { gridColumn: "1 / -1" }
-                    : undefined;
                 const contenu = (
                   <>
                     {h.photo ? (
-                      <img
-                        src={h.photo}
-                        alt={h.nom}
-                        style={styleUnique ? { height: 220 } : undefined}
-                        onError={(e) => (e.currentTarget.style.display = "none")}
-                      />
+                      <img src={h.photo} alt={h.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
                     ) : (
                       <div className={styles.miniCardPlaceholder} />
                     )}
@@ -320,17 +308,22 @@ export default function DestinationTabs({
                     onClick={() => centrerSurLeLieu(h.lat, h.lng, h.nom)}
                     onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(h.lat, h.lng, h.nom)}
                     className={styles.miniCard}
-                    style={styleUnique}
                     key={i}
                   >
                     {contenu}
                   </div>
                 ) : (
-                  <div className={styles.miniCard} style={styleUnique} key={i}>
+                  <div className={styles.miniCard} key={i}>
                     {contenu}
                   </div>
                 );
               })}
+              {(dest.hebergements ?? []).length === 1 && (
+                // Case vide invisible : force la grille à vraiment se comporter en
+                // 2 colonnes (comme pour les activités/restaurants), au lieu de laisser
+                // l'unique carte s'étirer de façon imprévisible.
+                <div aria-hidden="true" />
+              )}
             </div>
           </>
         )}
