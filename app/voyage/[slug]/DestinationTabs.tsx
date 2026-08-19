@@ -318,12 +318,6 @@ export default function DestinationTabs({
                   </div>
                 );
               })}
-              {(dest.hebergements ?? []).length === 1 && (
-                // Case vide invisible : force la grille à vraiment se comporter en
-                // 2 colonnes (comme pour les activités/restaurants), au lieu de laisser
-                // l'unique carte s'étirer de façon imprévisible.
-                <div aria-hidden="true" />
-              )}
             </div>
           </>
         )}
