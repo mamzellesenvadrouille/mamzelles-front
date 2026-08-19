@@ -81,20 +81,45 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
     const markersRef = useRef<Marker[]>([]);
     const popupRef = useRef<Popup | null>(null);
     const vueGeneraleRef = useRef<() => void>(() => {});
+    const activeIndexRef = useRef<number | null>(null);
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
 
+    // Comportement unique, quel que soit le point d'entrée (liste ou pin direct) :
+    // - clic sur une étape différente de celle déjà active → zoome dessus (zoom 6)
+    // - clic sur l'étape déjà active → revient à la vue d'ensemble
+    function basculerEtape(index: number) {
+      const e = etapes[index];
+      if (!e || !mapInstance.current) return;
+
+      if (popupRef.current) {
+        popupRef.current.remove();
+        popupRef.current = null;
+      }
+
+      if (activeIndexRef.current === index) {
+        // Déjà sur cette étape : on revient à la vue d'ensemble
+        activeIndexRef.current = null;
+        vueGeneraleRef.current();
+        return;
+      }
+
+      activeIndexRef.current = index;
+      mapInstance.current.flyTo({ center: [e.lng, e.lat], zoom: 6 });
+      popupRef.current = new Popup({ closeOnClick: true })
+        .setLngLat([e.lng, e.lat])
+        .setHTML(contenuBulle(e.nom))
+        .addTo(mapInstance.current);
+      popupRef.current.on("close", () => {
+        // Fermeture manuelle de la bulle (clic ailleurs sur la carte) : on considère
+        // qu'on n'est plus "focus" sur cette étape, sans forcer de dézoom automatique.
+        activeIndexRef.current = null;
+      });
+    }
+
     useImperativeHandle(ref, () => ({
       centrerSur(index: number) {
-        const e = etapes[index];
-        if (!e || !mapInstance.current) return;
-        mapInstance.current.flyTo({ center: [e.lng, e.lat], zoom: 6 });
-        if (popupRef.current) popupRef.current.remove();
-        popupRef.current = new Popup({ closeOnClick: true })
-          .setLngLat([e.lng, e.lat])
-          .setHTML(contenuBulle(e.nom))
-          .addTo(mapInstance.current);
-        popupRef.current.on("close", () => vueGeneraleRef.current());
+        basculerEtape(index);
         wrapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
       },
     }));
@@ -158,13 +183,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
               .addTo(map);
 
             pin.addEventListener("click", () => {
-              map.flyTo({ center: [e.lng, e.lat] });
-              if (popupRef.current) popupRef.current.remove();
-              popupRef.current = new Popup({ closeOnClick: true })
-                .setLngLat([e.lng, e.lat])
-                .setHTML(contenuBulle(e.nom))
-                .addTo(map);
-              popupRef.current.on("close", () => vueGeneraleRef.current());
+              basculerEtape(i);
             });
 
             markersRef.current.push(marker);
