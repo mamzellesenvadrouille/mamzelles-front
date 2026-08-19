@@ -23,7 +23,6 @@ async function sauvegarderDerouleCustom(slug: string, derouleCustom: (DeroulePoi
   }
 }
 
-// Extrait un numéro de jour depuis un texte libre (ex: "Jour 3" → 3). Sinon, poussé à la fin.
 function extraireJour(texte: string): number {
   const m = texte.match(/\d+/);
   return m ? parseInt(m[0], 10) : Infinity;
@@ -102,8 +101,6 @@ export default function DestinationTabs({
   const [nTitre, setNTitre] = useState("");
   const [nNote, setNNote] = useState("");
 
-  // Calcule les dates d'arrivée/départ de chaque étape à partir de la date de
-  // début du voyage et du nombre de nuits cumulé des étapes précédentes.
   const datesParDestination = (() => {
     if (!dateDebutVoyage) return [];
     let curseur = new Date(dateDebutVoyage);
@@ -287,6 +284,13 @@ export default function DestinationTabs({
             <div className={styles.miniGrid}>
               {(dest.hebergements ?? []).map((h, i) => {
                 const aCoords = typeof h.lat === "number" && typeof h.lng === "number";
+                // Correctif : quand il n'y a qu'un seul hébergement, on force sa largeur
+                // à occuper une seule colonne (comme les autres cartes), au lieu de
+                // s'étirer sur toute la ligne — comportement observé mais non voulu.
+                const styleUnique: React.CSSProperties | undefined =
+                  (dest.hebergements ?? []).length === 1
+                    ? { maxWidth: "calc(50% - 8px)" }
+                    : undefined;
                 const contenu = (
                   <>
                     {h.photo ? (
@@ -311,12 +315,13 @@ export default function DestinationTabs({
                     onClick={() => centrerSurLeLieu(h.lat, h.lng, h.nom)}
                     onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(h.lat, h.lng, h.nom)}
                     className={styles.miniCard}
+                    style={styleUnique}
                     key={i}
                   >
                     {contenu}
                   </div>
                 ) : (
-                  <div className={styles.miniCard} key={i}>
+                  <div className={styles.miniCard} style={styleUnique} key={i}>
                     {contenu}
                   </div>
                 );
