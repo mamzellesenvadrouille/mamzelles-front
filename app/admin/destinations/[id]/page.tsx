@@ -164,8 +164,11 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   </div>
                 </div>
                 <div style={adminStyles.field}>
-                  <label style={adminStyles.label}>Photo (URL)</label>
-                  <input style={adminStyles.input} value={dest.photo} onChange={(e) => update("photo", e.target.value)} />
+                  <label style={adminStyles.label}>Photo</label>
+                  <PhotoField
+                    value={dest.photo}
+                    onChange={(url) => update("photo", url)}
+                  />
                 </div>
                 <div style={adminStyles.field}>
                   <label style={adminStyles.label}>Résumé de l&apos;étape (optionnel)</label>
