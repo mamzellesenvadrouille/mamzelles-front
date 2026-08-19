@@ -185,7 +185,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       <div
                         style={{
                           width: "100%",
-                          height: 120,
+                          height: 220,
                           borderRadius: 4,
                           marginTop: 6,
                           backgroundImage: `url('${dest.photo}')`,
