@@ -42,7 +42,6 @@ function escapeHtml(texte: string): string {
     .replace(/"/g, "&quot;");
 }
 
-// Convertit lat/lng + niveau de zoom en coordonnées de tuile (x, y), standard slippy map
 function latLngVersTuile(lat: number, lng: number, zoom: number) {
   const n = Math.pow(2, zoom);
   const x = Math.floor(((lng + 180) / 360) * n);
@@ -53,12 +52,9 @@ function latLngVersTuile(lat: number, lng: number, zoom: number) {
   return { x, y };
 }
 
-// Pré-télécharge (donc met en cache via le Service Worker) toutes les tuiles
-// dans un rayon fixe autour du centre, pour plusieurs niveaux de zoom.
-// Se lance automatiquement dès que la page est ouverte avec du réseau.
 function precacherTuiles(centre: { lat: number; lng: number }) {
   const zooms = [11, 12, 13, 14, 15];
-  const rayonTuiles = 2; // nombre de tuiles autour du centre à chaque niveau
+  const rayonTuiles = 2;
 
   zooms.forEach((zoom) => {
     const { x: cx, y: cy } = latLngVersTuile(centre.lat, centre.lng, zoom);
@@ -69,10 +65,7 @@ function precacherTuiles(centre: { lat: number; lng: number }) {
         const url = TILE_URL_TEMPLATE.replace("{z}", String(zoom))
           .replace("{x}", String(x))
           .replace("{y}", String(y));
-        // Simple fetch : le Service Worker intercepte et met en cache automatiquement
-        fetch(url, { mode: "cors" }).catch(() => {
-          // pas grave si une tuile échoue, on continue les autres
-        });
+        fetch(url, { mode: "cors" }).catch(() => {});
       }
     }
   });
@@ -161,12 +154,8 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           vueGeneraleRef.current = () => map.flyTo({ center: [centre.lng, centre.lat], zoom: 13 });
           setPret(true);
 
-          // Correctif : force MapLibre à recalculer la taille de son conteneur,
-          // au cas où celui-ci n'avait pas encore sa taille finale au moment de l'init.
           setTimeout(() => map.resize(), 100);
 
-          // Dès que la carte est chargée avec du réseau, on télécharge en arrière-plan
-          // toutes les tuiles de la zone pour qu'elles restent dispo hors connexion.
           precacherTuiles(centre);
         });
 
@@ -196,14 +185,15 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           if (typeof lieu.lat !== "number" || typeof lieu.lng !== "number") return;
           const lat = lieu.lat;
           const lng = lieu.lng;
-          const pin = document.createElement("div");
-          pin.style.cssText = `background:${color};width:30px;height:30px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.3);border:2px solid #fff;cursor:pointer;`;
-          const inner = document.createElement("div");
-          inner.style.cssText = "transform:rotate(45deg);display:flex;";
-          pin.appendChild(inner);
-          createRoot(inner).render(<Icon color="#fff" size={15} strokeWidth={2} />);
 
-          const marker = new Marker({ element: pin, anchor: "bottom" })
+          // Pin rond droit, sans rotation : évite tout risque d'icône penchée
+          // (contrairement à l'ancienne forme "goutte" qui nécessitait une
+          // double rotation -45°/+45° pour rester droite).
+          const pin = document.createElement("div");
+          pin.style.cssText = `background:${color};width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.3);border:2px solid #fff;cursor:pointer;`;
+          createRoot(pin).render(<Icon color="#fff" size={15} strokeWidth={2} />);
+
+          const marker = new Marker({ element: pin, anchor: "center" })
             .setLngLat([lng, lat])
             .addTo(mapInstance.current!);
 
@@ -247,9 +237,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             .setLngLat([position.coords.longitude, position.coords.latitude])
             .addTo(mapInstance.current);
         },
-        () => {
-          // permission refusée ou position indisponible : on ignore silencieusement
-        },
+        () => {},
         { enableHighAccuracy: true, timeout: 8000 }
       );
       // eslint-disable-next-line react-hooks/exhaustive-deps
