@@ -284,17 +284,22 @@ export default function DestinationTabs({
             <div className={styles.miniGrid}>
               {(dest.hebergements ?? []).map((h, i) => {
                 const aCoords = typeof h.lat === "number" && typeof h.lng === "number";
-                // Correctif : quand il n'y a qu'un seul hébergement, on force sa largeur
-                // à occuper une seule colonne (comme les autres cartes), au lieu de
-                // s'étirer sur toute la ligne — comportement observé mais non voulu.
+                // Correctif : quand il n'y a qu'un seul hébergement, sa carte occupe
+                // toute la largeur (comme la photo de destination juste au-dessus),
+                // au lieu de rester coincée dans une seule colonne de la grille à 2.
                 const styleUnique: React.CSSProperties | undefined =
                   (dest.hebergements ?? []).length === 1
-                    ? { maxWidth: "calc(50% - 8px)" }
+                    ? { gridColumn: "1 / -1" }
                     : undefined;
                 const contenu = (
                   <>
                     {h.photo ? (
-                      <img src={h.photo} alt={h.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                      <img
+                        src={h.photo}
+                        alt={h.nom}
+                        style={styleUnique ? { height: 220 } : undefined}
+                        onError={(e) => (e.currentTarget.style.display = "none")}
+                      />
                     ) : (
                       <div className={styles.miniCardPlaceholder} />
                     )}
