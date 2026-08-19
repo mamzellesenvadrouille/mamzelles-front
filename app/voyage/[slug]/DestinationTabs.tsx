@@ -170,7 +170,10 @@ export default function DestinationTabs({
 
         <div
           className={styles.destPhoto}
-          style={{ backgroundImage: `url('${dest.photo}')` }}
+          style={{
+            backgroundImage: `url('${dest.photo}')`,
+            backgroundPosition: `center ${dest.photoPosition ?? 50}%`,
+          }}
         />
 
         <div className={styles.destInfoRow}>

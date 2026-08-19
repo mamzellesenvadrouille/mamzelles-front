@@ -169,6 +169,32 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     value={dest.photo}
                     onChange={(url) => update("photo", url)}
                   />
+                  {dest.photo && (
+                    <div style={{ marginTop: 8 }}>
+                      <label style={{ ...adminStyles.label, fontSize: 12 }}>
+                        Cadrage vertical de la photo ({dest.photoPosition ?? 50}%)
+                      </label>
+                      <input
+                        type="range"
+                        min={0}
+                        max={100}
+                        value={dest.photoPosition ?? 50}
+                        onChange={(e) => update("photoPosition", Number(e.target.value))}
+                        style={{ width: "100%" }}
+                      />
+                      <div
+                        style={{
+                          width: "100%",
+                          height: 120,
+                          borderRadius: 4,
+                          marginTop: 6,
+                          backgroundImage: `url('${dest.photo}')`,
+                          backgroundSize: "cover",
+                          backgroundPosition: `center ${dest.photoPosition ?? 50}%`,
+                        }}
+                      />
+                    </div>
+                  )}
                 </div>
                 <div style={adminStyles.field}>
                   <label style={adminStyles.label}>Résumé de l&apos;étape (optionnel)</label>
