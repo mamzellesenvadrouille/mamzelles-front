@@ -67,7 +67,7 @@ export default function VisiterBerlinPage() {
         <img className="hero-bg" src="/Berlin.webp" alt="Visiter Berlin en 4 jours" style={{objectPosition: 'center 43%'}} />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>4 jours à Berlin, <em>entre mémoire, liberté et contre-culture</em></h1>
+          <h1>4 jours à Berlin : <em>entre mémoire et contre-culture</em></h1>
           <div className="hero-rule" />
           <p className="hero-desc">Une capitale libre, brute et vibrante qui bouscule<br className="desktop-only-br" /> toutes les idées reçues. Notre itinéraire complet<span className="desktop-only-inline">, jour par jour</span>.</p>
         </div>
