@@ -61,28 +61,6 @@ const microLabel: React.CSSProperties = {
 };
 const fieldBox: React.CSSProperties = { marginBottom: 10 };
 
-// Boutons ▲▼ pour réordonner une ligne du déroulé
-const btnReorder: React.CSSProperties = {
-  width: 26,
-  height: 22,
-  border: "1px solid #e8e0d6",
-  background: "#fff",
-  borderRadius: 3,
-  cursor: "pointer",
-  color: "#1a1512",
-  fontSize: 11,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  padding: 0,
-  lineHeight: 1,
-};
-const btnReorderDisabled: React.CSSProperties = {
-  ...btnReorder,
-  opacity: 0.3,
-  cursor: "default",
-};
-
 export default function EditDestinationPage({ params }: { params: Promise<{ id: string }> }) {
   const { id: routeId } = use(params);
   const isNew = routeId === "nouvelle";
@@ -106,15 +84,6 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
 
   function update<K extends keyof typeof destinationVide>(key: K, value: (typeof destinationVide)[K]) {
     setDest((prev) => ({ ...prev, [key]: value }));
-  }
-
-  // Déplace la ligne à l'index i d'une position vers le haut (-1) ou le bas (+1)
-  function deplacerDeroule(i: number, direction: -1 | 1) {
-    const j = i + direction;
-    if (j < 0 || j >= dest.deroule.length) return;
-    const copy = [...dest.deroule];
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-    update("deroule", copy);
   }
 
   // Déplace la ligne glissée (dragIndex) directement à la position de la ligne survolée (i)
@@ -318,24 +287,6 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       title="Glisser pour réordonner"
                     >
                       ⠿
-                    </div>
-                    <div style={{ display: "flex", flexDirection: "column", gap: 3, marginTop: 1 }}>
-                      <button
-                        onClick={() => deplacerDeroule(i, -1)}
-                        disabled={i === 0}
-                        style={i === 0 ? btnReorderDisabled : btnReorder}
-                        title="Monter cette étape"
-                      >
-                        ▲
-                      </button>
-                      <button
-                        onClick={() => deplacerDeroule(i, 1)}
-                        disabled={i === dest.deroule.length - 1}
-                        style={i === dest.deroule.length - 1 ? btnReorderDisabled : btnReorder}
-                        title="Descendre cette étape"
-                      >
-                        ▼
-                      </button>
                     </div>
                     <input
                       style={{ ...adminStyles.input, width: 100 }}
