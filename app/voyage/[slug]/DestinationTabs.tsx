@@ -23,9 +23,13 @@ async function sauvegarderDerouleCustom(slug: string, derouleCustom: (DeroulePoi
   }
 }
 
+// Extrait une valeur triable depuis une date au format "JJ/MM" (ex: "12/08" → 812).
 function extraireJour(texte: string): number {
-  const m = texte.match(/\d+/);
-  return m ? parseInt(m[0], 10) : Infinity;
+  const dateMatch = texte.match(/^(\d{1,2})\s*\/\s*(\d{1,2})/);
+  if (!dateMatch) return Infinity;
+  const jour = parseInt(dateMatch[1], 10);
+  const mois = parseInt(dateMatch[2], 10);
+  return mois * 100 + jour;
 }
 function extraireMinutes(texte: string): number {
   const m = texte.match(/(\d{1,2})\s*[h:]\s*(\d{0,2})/i);
@@ -244,7 +248,7 @@ export default function DestinationTabs({
                   Ajouter une note personnelle à votre mémento pour {dest.nom}
                 </div>
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
-                  <input placeholder="Jour" value={nJour} onChange={(e) => setNJour(e.target.value)} style={inputMemento} />
+                  <input placeholder="Date (JJ/MM)" value={nJour} onChange={(e) => setNJour(e.target.value)} style={inputMemento} />
                   <input
                     placeholder="Heure"
                     value={nHeure}

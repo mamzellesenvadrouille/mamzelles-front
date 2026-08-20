@@ -91,6 +91,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
   const [dest, setDest] = useState<typeof destinationVide>(destinationVide);
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
+  const [dragIndex, setDragIndex] = useState<number | null>(null);
 
   function charger() {
     if (isNew) return;
@@ -114,6 +115,19 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
     const copy = [...dest.deroule];
     [copy[i], copy[j]] = [copy[j], copy[i]];
     update("deroule", copy);
+  }
+
+  // Déplace la ligne glissée (dragIndex) directement à la position de la ligne survolée (i)
+  function deposerDeroule(i: number) {
+    if (dragIndex === null || dragIndex === i) {
+      setDragIndex(null);
+      return;
+    }
+    const copy = [...dest.deroule];
+    const [ligne] = copy.splice(dragIndex, 1);
+    copy.splice(i, 0, ligne);
+    update("deroule", copy);
+    setDragIndex(null);
   }
 
   async function enregistrer() {
@@ -274,7 +288,37 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   Réutilisé tel quel dans chaque carnet qui inclut cette destination. Le client peut aussi ajouter ses propres notes en mémento sur sa page.
                 </p>
                 {dest.deroule.map((point, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
+                  <div
+                    key={i}
+                    draggable
+                    onDragStart={() => setDragIndex(i)}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerDeroule(i)}
+                    onDragEnd={() => setDragIndex(null)}
+                    style={{
+                      display: "flex",
+                      gap: 8,
+                      marginBottom: 10,
+                      alignItems: "flex-start",
+                      opacity: dragIndex === i ? 0.4 : 1,
+                      background: dragIndex !== null && dragIndex !== i ? "#faf7f2" : "transparent",
+                      borderRadius: 4,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <div
+                      style={{
+                        cursor: "grab",
+                        color: "#c8c2b6",
+                        fontSize: 16,
+                        userSelect: "none",
+                        padding: "6px 2px",
+                        lineHeight: 1,
+                      }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: 3, marginTop: 1 }}>
                       <button
                         onClick={() => deplacerDeroule(i, -1)}
@@ -295,7 +339,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     </div>
                     <input
                       style={{ ...adminStyles.input, width: 100 }}
-                      placeholder="Jour"
+                      placeholder="Date (JJ/MM)"
                       value={point.jour}
                       onChange={(e) => {
                         const copy = [...dest.deroule];
