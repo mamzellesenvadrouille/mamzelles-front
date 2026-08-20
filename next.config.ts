@@ -30,6 +30,9 @@ const nextConfig: NextConfig = {
       { source: '/palawan-autrement-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus', destination: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus', permanent: true },
       { source: '/palawan-autrement-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus/', destination: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus', permanent: true },
       { source: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus/', destination: '/palawan-de-puerto-princesa-a-port-barton-hors-des-sentiers-battus', permanent: true },
+      { source: '/destinations', destination: '/blog', permanent: true },
+      { source: '/destinations/', destination: '/blog', permanent: true },
+      { source: '/destinations/:path*', destination: '/blog', permanent: true },
     ]
   }
 };
