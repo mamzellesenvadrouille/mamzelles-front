@@ -69,12 +69,18 @@ function formaterDateJJMM(saisie: string): string {
   return `${chiffres.slice(0, 2)}/${chiffres.slice(2)}`;
 }
 
-// Même principe pour l'heure : ne garde que les chiffres, insère le "h" tout
-// seul après le 2ème chiffre, limite à 4 chiffres (HHMM). Ex: "0935" → "09h35".
+// Même principe pour l'heure, mais plus malin : si le 1er chiffre tapé ne peut
+// être que le début d'une heure à un seul chiffre (3 à 9, ex: "9h"), le "h"
+// s'insère tout de suite. Si c'est 0, 1 ou 2, on attend un 2ème chiffre avant
+// d'insérer le "h", car l'heure peut aller jusqu'à 2 chiffres (ex: "19h", "23h").
 function formaterHeureSaisie(saisie: string): string {
-  const chiffres = saisie.replace(/\D/g, "").slice(0, 4);
-  if (chiffres.length <= 2) return chiffres;
-  return `${chiffres.slice(0, 2)}h${chiffres.slice(2)}`;
+  const chiffres = saisie.replace(/\D/g, "");
+  if (chiffres.length === 0) return "";
+  const heureCourte = chiffres[0] >= "3" && chiffres[0] <= "9";
+  const tailleHeure = heureCourte ? 1 : 2;
+  const limites = chiffres.slice(0, tailleHeure + 2);
+  if (limites.length < tailleHeure) return limites;
+  return `${limites.slice(0, tailleHeure)}h${limites.slice(tailleHeure)}`;
 }
 
 export default function EditDestinationPage({ params }: { params: Promise<{ id: string }> }) {
