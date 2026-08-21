@@ -96,7 +96,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     useImperativeHandle(ref, () => ({
       centrerSur(lat: number, lng: number, nom: string) {
         if (!mapInstance.current) return;
-        mapInstance.current.resize();
         mapInstance.current.flyTo({ center: [lng, lat], zoom: 16 });
         if (popupRef.current) popupRef.current.remove();
 
@@ -154,6 +153,18 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           mapInstance.current = map;
           vueGeneraleRef.current = () => map.flyTo({ center: [centre.lng, centre.lat], zoom: 13 });
           precacherTuiles(centre);
+
+          // Le style MapTiler affiche par défaut ses propres labels de POI
+          // (ex: sites touristiques reconnus comme "Twin Lagoon"), avec leur
+          // propre position, indépendante de nos coordonnées. Ça crée un
+          // doublon visuel qui donne l'impression que notre pin est mal
+          // placé. On masque tous ces layers natifs pour ne garder que nos
+          // propres pins à l'écran.
+          map.getStyle().layers?.forEach((layer) => {
+            if (layer.id.toLowerCase().includes("poi")) {
+              map.setLayoutProperty(layer.id, "visibility", "none");
+            }
+          });
         });
 
         // "idle" ne se déclenche qu'une fois la carte totalement stabilisée
@@ -213,7 +224,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             .addTo(mapInstance.current!);
 
           pin.addEventListener("click", () => {
-            mapInstance.current!.resize();
             mapInstance.current!.flyTo({ center: [lng, lat], zoom: 16 });
             if (popupRef.current) popupRef.current.remove();
             const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
@@ -236,6 +246,17 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
           markersRef.current.push(marker);
         });
+      });
+
+      // Filet de sécurité : quel que soit l'événement qui a déclenché la
+      // création des pins, on force MapLibre à recalculer leur position
+      // réelle à l'écran juste après coup, en simulant un micro-déplacement
+      // nul de la carte. Ça élimine tout décalage résiduel entre la goutte
+      // et l'encadré, sans dépendre d'un timing particulier.
+      requestAnimationFrame(() => {
+        if (!mapInstance.current) return;
+        mapInstance.current.resize();
+        mapInstance.current.panBy([0, 0], { duration: 0 });
       });
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, filtres, destination.id]);
