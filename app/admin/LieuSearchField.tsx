@@ -33,15 +33,21 @@ interface Resultat {
 export default function LieuSearchField({
   onSelect,
   placeholder,
+  lat,
+  lng,
 }: {
   onSelect: (lieu: Resultat) => void;
   placeholder?: string;
+  lat?: number;
+  lng?: number;
 }) {
   const [saisie, setSaisie] = useState("");
   const [resultats, setResultats] = useState<Resultat[]>([]);
   const [recherche, setRecherche] = useState(false);
   const [ouvert, setOuvert] = useState(false);
-  const [lieuChoisi, setLieuChoisi] = useState<Resultat | null>(null);
+  const [lieuChoisi, setLieuChoisi] = useState<Resultat | null>(
+    typeof lat === "number" && typeof lng === "number" ? { nom: "Position enregistrée", lat, lng } : null
+  );
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<HTMLDivElement>(null);
@@ -200,7 +206,7 @@ export default function LieuSearchField({
       {lieuChoisi && (
         <div style={{ marginTop: 8 }}>
           <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginBottom: 6 }}>
-            📍 Vérifie que le pin est bien sur le bâtiment — fais-le glisser si besoin.
+            📍 {lieuChoisi.nom === "Position enregistrée" ? "Position actuelle — vérifie qu'elle est bien placée, ou fais-la glisser pour ajuster." : "Vérifie que le pin est bien sur le bâtiment — fais-le glisser si besoin."}
           </p>
           <div
             ref={mapRef}

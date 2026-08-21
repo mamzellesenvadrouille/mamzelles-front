@@ -264,6 +264,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   Ces coordonnées servent à afficher la météo en temps réel de cette destination, et à la positionner automatiquement sur la carte du parcours de chaque carnet qui l&apos;utilise.
                 </p>
                 <LieuSearchField
+                  lat={dest.lat}
+                  lng={dest.lng}
                   onSelect={(lieu) => {
                     update("lat", lieu.lat);
                     update("lng", lieu.lng);
@@ -448,6 +450,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     </div>
 
                     <LieuSearchField
+                      lat={h.lat}
+                      lng={h.lng}
                       onSelect={(lieu) => {
                         const copy = [...(dest.hebergements ?? [])];
                         copy[i] = { ...copy[i], lat: lieu.lat, lng: lieu.lng };
@@ -577,6 +581,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     </div>
 
                     <LieuSearchField
+                      lat={a.lat}
+                      lng={a.lng}
                       onSelect={(lieu) => {
                         const copy = [...dest.activites];
                         copy[i] = { ...copy[i], lat: lieu.lat, lng: lieu.lng };
@@ -693,6 +699,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     </div>
 
                     <LieuSearchField
+                      lat={r.lat}
+                      lng={r.lng}
                       onSelect={(lieu) => {
                         const copy = [...dest.restaurants];
                         copy[i] = { ...copy[i], lat: lieu.lat, lng: lieu.lng };
