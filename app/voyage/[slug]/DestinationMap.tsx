@@ -186,14 +186,15 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           const lat = lieu.lat;
           const lng = lieu.lng;
 
-          // Pin en forme de goutte, sans aucune rotation (donc l'icône à
-          // l'intérieur reste toujours droite) : un cercle avec une petite
-          // pointe triangulaire en dessous, dessinée en CSS pur.
+          // Pin en forme de goutte classique, dessiné en SVG (contour net,
+          // sans le bricolage cercle+triangle en CSS). Aucune rotation
+          // nulle part, donc l'icône à l'intérieur reste toujours droite.
           const pin = document.createElement("div");
-          pin.style.cssText = "position:relative;width:30px;height:38px;cursor:pointer;";
+          pin.style.cssText = "position:relative;width:30px;height:40px;cursor:pointer;";
           pin.innerHTML = `
-            <div style="position:absolute;top:0;left:0;width:30px;height:30px;border-radius:50%;background:${color};border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;"></div>
-            <div style="position:absolute;top:26px;left:11px;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:9px solid ${color};"></div>
+            <svg width="30" height="40" viewBox="0 0 30 40" style="position:absolute;top:0;left:0;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));">
+              <path d="M15 0C6.7 0 0 6.7 0 15c0 10.5 15 25 15 25s15-14.5 15-25C30 6.7 23.3 0 15 0z" fill="${color}" stroke="#fff" stroke-width="2"/>
+            </svg>
           `;
           const iconSlot = document.createElement("div");
           iconSlot.style.cssText = "position:absolute;top:0;left:0;width:30px;height:30px;display:flex;align-items:center;justify-content:center;pointer-events:none;";
