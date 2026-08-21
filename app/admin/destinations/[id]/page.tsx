@@ -438,6 +438,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           <label style={{ ...microLabel, marginBottom: 4 }}>
                             Cadrage vertical ({h.photoPosition ?? 50}%)
                           </label>
+                          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10.5, color: "#aaa", marginTop: -2, marginBottom: 4 }}>
+                            Utile surtout pour les photos au format portrait.
+                          </p>
                           <input
                             type="range"
                             min={0}
@@ -452,8 +455,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           />
                           <div
                             style={{
-                              width: "100%",
-                              height: 100,
+
+                              width: 200,
+                              aspectRatio: "4 / 3",
                               borderRadius: 4,
                               marginTop: 6,
                               backgroundImage: `url('${h.photo}')`,
@@ -571,6 +575,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           <label style={{ ...microLabel, marginBottom: 4 }}>
                             Cadrage vertical ({a.photoPosition ?? 50}%)
                           </label>
+                          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10.5, color: "#aaa", marginTop: -2, marginBottom: 4 }}>
+                            Utile surtout pour les photos au format portrait.
+                          </p>
                           <input
                             type="range"
                             min={0}
@@ -585,8 +592,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           />
                           <div
                             style={{
-                              width: "100%",
-                              height: 100,
+
+                              width: 200,
+                              aspectRatio: "4 / 3",
                               borderRadius: 4,
                               marginTop: 6,
                               backgroundImage: `url('${a.photo}')`,
@@ -729,6 +737,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           <label style={{ ...microLabel, marginBottom: 4 }}>
                             Cadrage vertical ({r.photoPosition ?? 50}%)
                           </label>
+                          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10.5, color: "#aaa", marginTop: -2, marginBottom: 4 }}>
+                            Utile surtout pour les photos au format portrait.
+                          </p>
                           <input
                             type="range"
                             min={0}
@@ -743,8 +754,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           />
                           <div
                             style={{
-                              width: "100%",
-                              height: 100,
+
+                              width: 200,
+                              aspectRatio: "4 / 3",
                               borderRadius: 4,
                               marginTop: 6,
                               backgroundImage: `url('${r.photo}')`,
