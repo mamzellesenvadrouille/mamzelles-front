@@ -24,6 +24,22 @@ async function sauvegarderDerouleCustom(slug: string, derouleCustom: (DeroulePoi
 }
 
 // Extrait une valeur triable depuis une date au format "JJ/MM" (ex: "12/08" → 812).
+// Formate automatiquement une saisie en "JJ/MM" : ne garde que les chiffres,
+// insère le "/" tout seul après le 2ème chiffre, limite à 4 chiffres (JJMM).
+function formaterDateJJMM(saisie: string): string {
+  const chiffres = saisie.replace(/\D/g, "").slice(0, 4);
+  if (chiffres.length <= 2) return chiffres;
+  return `${chiffres.slice(0, 2)}/${chiffres.slice(2)}`;
+}
+
+// Même principe pour l'heure : ne garde que les chiffres, insère le "h" tout
+// seul après le 2ème chiffre, limite à 4 chiffres (HHMM). Ex: "0935" → "09h35".
+function formaterHeureSaisie(saisie: string): string {
+  const chiffres = saisie.replace(/\D/g, "").slice(0, 4);
+  if (chiffres.length <= 2) return chiffres;
+  return `${chiffres.slice(0, 2)}h${chiffres.slice(2)}`;
+}
+
 function extraireJour(texte: string): number {
   const dateMatch = texte.match(/^(\d{1,2})\s*\/\s*(\d{1,2})/);
   if (!dateMatch) return Infinity;
@@ -248,11 +264,11 @@ export default function DestinationTabs({
                   Ajouter une note personnelle à votre mémento pour {dest.nom}
                 </div>
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
-                  <input placeholder="Date (JJ/MM)" value={nJour} onChange={(e) => setNJour(e.target.value)} style={inputMemento} />
+                  <input placeholder="JJ/MM" value={nJour} onChange={(e) => setNJour(formaterDateJJMM(e.target.value))} style={inputMemento} />
                   <input
                     placeholder="Heure"
                     value={nHeure}
-                    onChange={(e) => setNHeure(e.target.value)}
+                    onChange={(e) => setNHeure(formaterHeureSaisie(e.target.value))}
                     onBlur={(e) => setNHeure(normaliserHeure(e.target.value))}
                     style={{ ...inputMemento, width: 80 }}
                   />
@@ -265,7 +281,7 @@ export default function DestinationTabs({
                 </div>
                 <div style={{ display: "flex", gap: 8 }}>
                   <input
-                    placeholder="Note (optionnel)"
+                    placeholder="Note"
                     value={nNote}
                     onChange={(e) => setNNote(e.target.value)}
                     onKeyDown={(e) => e.key === "Enter" && ajouterNoteDeroule(dest.id)}

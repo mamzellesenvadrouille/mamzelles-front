@@ -61,6 +61,22 @@ const microLabel: React.CSSProperties = {
 };
 const fieldBox: React.CSSProperties = { marginBottom: 10 };
 
+// Formate automatiquement une saisie en "JJ/MM" : ne garde que les chiffres,
+// insère le "/" tout seul après le 2ème chiffre, limite à 4 chiffres (JJMM).
+function formaterDateJJMM(saisie: string): string {
+  const chiffres = saisie.replace(/\D/g, "").slice(0, 4);
+  if (chiffres.length <= 2) return chiffres;
+  return `${chiffres.slice(0, 2)}/${chiffres.slice(2)}`;
+}
+
+// Même principe pour l'heure : ne garde que les chiffres, insère le "h" tout
+// seul après le 2ème chiffre, limite à 4 chiffres (HHMM). Ex: "0935" → "09h35".
+function formaterHeureSaisie(saisie: string): string {
+  const chiffres = saisie.replace(/\D/g, "").slice(0, 4);
+  if (chiffres.length <= 2) return chiffres;
+  return `${chiffres.slice(0, 2)}h${chiffres.slice(2)}`;
+}
+
 export default function EditDestinationPage({ params }: { params: Promise<{ id: string }> }) {
   const { id: routeId } = use(params);
   const isNew = routeId === "nouvelle";
@@ -290,11 +306,11 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     </div>
                     <input
                       style={{ ...adminStyles.input, width: 100 }}
-                      placeholder="Date (JJ/MM)"
+                      placeholder="JJ/MM"
                       value={point.jour}
                       onChange={(e) => {
                         const copy = [...dest.deroule];
-                        copy[i] = { ...copy[i], jour: e.target.value };
+                        copy[i] = { ...copy[i], jour: formaterDateJJMM(e.target.value) };
                         update("deroule", copy);
                       }}
                     />
@@ -304,7 +320,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       value={point.heure}
                       onChange={(e) => {
                         const copy = [...dest.deroule];
-                        copy[i] = { ...copy[i], heure: e.target.value };
+                        copy[i] = { ...copy[i], heure: formaterHeureSaisie(e.target.value) };
                         update("deroule", copy);
                       }}
                       onBlur={(e) => {
