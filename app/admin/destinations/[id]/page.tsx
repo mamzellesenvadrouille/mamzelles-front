@@ -490,7 +490,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                 ))}
                 <button onClick={ajouterHebergement} style={smallLink}>+ Ajouter un hébergement</button>
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12, color: "#aaa", marginTop: 6 }}>
-                  Astuce : clic droit sur un lieu dans Google Maps → les coordonnées s&apos;affichent en haut du menu, clique dessus pour les copier.
+                  Astuce : si la recherche ci-dessus ne trouve pas le lieu, tu peux toujours faire un clic droit sur Google Maps pour récupérer les coordonnées manuellement.
                 </p>
               </div>
 
