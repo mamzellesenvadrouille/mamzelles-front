@@ -73,7 +73,9 @@ export default function BudgetSection({
                   )}
                 </span>
                 <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <span className={styles.amount}>{ligne.montant.toLocaleString("fr-FR")} €</span>
+                  <span className={styles.amount} style={{ whiteSpace: "nowrap" }}>
+                    {ligne.montant.toLocaleString("fr-FR")}{"\u00A0"}€
+                  </span>
                   {ligne.ajoutee && (
                     <button
                       onClick={() => supprimer(indexCustom)}
@@ -98,7 +100,9 @@ export default function BudgetSection({
 
       <div className={styles.budgetTotal}>
         <span className={styles.label}>Total</span>
-        <span className={styles.amount}>{total.toLocaleString("fr-FR")} €</span>
+        <span className={styles.amount} style={{ whiteSpace: "nowrap" }}>
+          {total.toLocaleString("fr-FR")}{"\u00A0"}€
+        </span>
       </div>
 
       <div style={{ marginTop: 24, display: "flex", gap: 8, flexWrap: "wrap" }}>
