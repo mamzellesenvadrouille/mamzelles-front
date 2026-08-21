@@ -153,18 +153,17 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           if (annule) return;
           mapInstance.current = map;
           vueGeneraleRef.current = () => map.flyTo({ center: [centre.lng, centre.lat], zoom: 13 });
-
-          // On force le recalcul de la taille AVANT de créer les pins : sinon
-          // ils sont positionnés sur une taille de conteneur pas encore
-          // stabilisée, et ne se recalent qu'en zoomant/déplaçant la carte.
-          map.resize();
-          requestAnimationFrame(() => {
-            if (annule) return;
-            map.resize();
-            setPret(true);
-          });
-
           precacherTuiles(centre);
+        });
+
+        // "idle" ne se déclenche qu'une fois la carte totalement stabilisée
+        // (style chargé, tuiles rendues, projection interne correcte) —
+        // contrairement à "load", qui peut se déclencher trop tôt et faire
+        // apparaître les pins mal placés jusqu'à ce qu'on zoome.
+        map.once("idle", () => {
+          if (annule) return;
+          map.resize();
+          setPret(true);
         });
 
         map.on("error", () => setErreur(true));
