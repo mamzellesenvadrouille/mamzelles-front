@@ -6,7 +6,7 @@ import { useEffect, useImperativeHandle, useRef, useState, forwardRef } from "re
 import { createRoot } from "react-dom/client";
 import { Map as MapLibreMap, NavigationControl, Marker, Popup, setWorkerUrl } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { Bed, Utensils, Camera } from "lucide-react";
+import { Bed, Utensils, Camera, Compass } from "lucide-react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 
@@ -22,6 +22,7 @@ const STYLE_URL = `https://api.maptiler.com/maps/streets-v2/style.json?key=${MAP
 const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`;
 
 type Categorie = "hebergements" | "restaurants" | "activites";
+type Lieu = { nom: string; lat?: number; lng?: number; infosPratiques?: string };
 
 const CATEGORIES: { key: Categorie; label: string; Icon: typeof Bed; color: string }[] = [
   { key: "hebergements", label: "Hôtels", Icon: Bed, color: "#7d4e6b" },
@@ -30,7 +31,7 @@ const CATEGORIES: { key: Categorie; label: string; Icon: typeof Bed; color: stri
 ];
 
 export interface DestinationMapHandle {
-  centrerSur: (lat: number, lng: number, nom: string) => void;
+  centrerSur: (lat: number, lng: number, nom?: string) => void;
   scrollIntoView: () => void;
 }
 
@@ -40,6 +41,24 @@ function escapeHtml(texte: string): string {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+// Une position est valide si c'est un vrai nombre, pas NaN, et dans les
+// bornes géographiques réelles. typeof NaN === "number", donc on doit
+// exclure NaN explicitement.
+function positionValide(l: Lieu): l is { nom: string; lat: number; lng: number; infosPratiques?: string } {
+  return (
+    typeof l.lat === "number" &&
+    typeof l.lng === "number" &&
+    !Number.isNaN(l.lat) &&
+    !Number.isNaN(l.lng) &&
+    Math.abs(l.lat) <= 90 &&
+    Math.abs(l.lng) <= 180
+  );
+}
+
+function clePourLieu(lat: number, lng: number) {
+  return `${lat},${lng}`;
 }
 
 function latLngVersTuile(lat: number, lng: number, zoom: number) {
@@ -76,93 +95,70 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     const wrapRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<HTMLDivElement>(null);
     const mapInstance = useRef<MapLibreMap | null>(null);
-    const markersRef = useRef<Marker[]>([]);
-    const popupRef = useRef<Popup | null>(null);
-    const fermetureProgrammatiqueRef = useRef(false);
-    const vueGeneraleRef = useRef<() => void>(() => {});
+    // Une seule Marker par lieu, chacune avec SA PROPRE bulle attachée une
+    // fois pour toutes (pattern officiel MapLibre : marker.setPopup()).
+    // Plus de bulle partagée recréée à chaque clic.
+    const markersParCle = useRef<Map<string, Marker>>(new Map());
+    const centreGeneralRef = useRef<{ lat: number; lng: number } | null>(null);
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
     const [filtres, setFiltres] = useState<Set<Categorie>>(new Set(["hebergements", "restaurants", "activites"]));
 
-    const lieuxParCategorie: Record<Categorie, { nom: string; lat?: number; lng?: number; infosPratiques?: string }[]> = {
+    const lieuxParCategorie: Record<Categorie, Lieu[]> = {
       hebergements: destination.hebergements ?? [],
       restaurants: destination.restaurants ?? [],
       activites: destination.activites ?? [],
     };
 
-    if (typeof window !== "undefined") {
-      console.log(`%c[Carte] Coordonnées de "${destination.nom ?? destination.id}"`, "font-weight:bold;color:#c8956c;");
-      (Object.keys(lieuxParCategorie) as Categorie[]).forEach((cat) => {
-        lieuxParCategorie[cat].forEach((l) => {
-          console.log(`  ${cat} · ${l.nom} → lat=${l.lat} lng=${l.lng}`);
-        });
+    const aDesCoordonnees = Object.values(lieuxParCategorie).some((liste) => liste.some(positionValide));
+
+    // Vole vers un lieu et ouvre SA bulle (déjà attachée à son marker).
+    // Ferme d'abord toute autre bulle ouverte, sans jamais déclencher de
+    // recentrage automatique — ça, c'est désormais le rôle exclusif du
+    // bouton "Vue générale".
+    function allerVers(lat: number, lng: number) {
+      const map = mapInstance.current;
+      const marker = markersParCle.current.get(clePourLieu(lat, lng));
+      if (!map || !marker) return;
+
+      markersParCle.current.forEach((m) => {
+        if (m !== marker) m.getPopup()?.isOpen() && m.togglePopup();
       });
+
+      map.flyTo({ center: [lng, lat], zoom: 16 });
+      if (!marker.getPopup()?.isOpen()) marker.togglePopup();
     }
 
-    const aDesCoordonnees = Object.values(lieuxParCategorie).some((liste) =>
-      liste.some((l) => typeof l.lat === "number" && typeof l.lng === "number")
-    );
+    function vueGenerale() {
+      const map = mapInstance.current;
+      const centre = centreGeneralRef.current;
+      if (!map || !centre) return;
+      markersParCle.current.forEach((m) => m.getPopup()?.isOpen() && m.togglePopup());
+      map.flyTo({ center: [centre.lng, centre.lat], zoom: 13 });
+    }
 
     useImperativeHandle(ref, () => ({
-      centrerSur(lat: number, lng: number, nom: string) {
-        console.log(`%c[Carte] centrerSur appelé pour "${nom}" → lat=${lat} lng=${lng}`, "font-weight:bold;color:#7a9e7e;");
-        if (!mapInstance.current) return;
-        mapInstance.current.flyTo({ center: [lng, lat], zoom: 16 });
-        if (popupRef.current) {
-          fermetureProgrammatiqueRef.current = true;
-          popupRef.current.remove();
-        }
-
-        const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-        const activiteCorrespondante = lieuxParCategorie.activites.find(
-          (a) => a.lat === lat && a.lng === lng
-        );
-        const infosHtml = activiteCorrespondante?.infosPratiques
-          ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(activiteCorrespondante.infosPratiques)}</div>`
-          : "";
-        popupRef.current = new Popup({ closeOnClick: true })
-          .setLngLat([lng, lat])
-          .setHTML(
-            `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
-              <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${nom}</div>
-              ${infosHtml}
-              <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
-            </div>`
-          )
-          .addTo(mapInstance.current);
-        fermetureProgrammatiqueRef.current = false;
-        popupRef.current.on("close", () => {
-          if (fermetureProgrammatiqueRef.current) return;
-          vueGeneraleRef.current();
-        });
+      centrerSur(lat: number, lng: number) {
+        allerVers(lat, lng);
       },
       scrollIntoView() {
         wrapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
       },
     }));
 
+    // Création de la carte (une seule fois par destination)
     useEffect(() => {
       if (!aDesCoordonnees || !mapRef.current) return;
       let annule = false;
 
-      const tousLesPoints = Object.values(lieuxParCategorie)
-        .flat()
-        .filter(
-          (l): l is { nom: string; lat: number; lng: number } =>
-            typeof l.lat === "number" &&
-            typeof l.lng === "number" &&
-            !Number.isNaN(l.lat) &&
-            !Number.isNaN(l.lng) &&
-            Math.abs(l.lat) <= 90 &&
-            Math.abs(l.lng) <= 180
-        );
-
+      const tousLesPoints = Object.values(lieuxParCategorie).flat().filter(positionValide);
       if (tousLesPoints.length === 0) return;
 
       const centre = {
         lat: tousLesPoints.reduce((s, p) => s + p.lat, 0) / tousLesPoints.length,
         lng: tousLesPoints.reduce((s, p) => s + p.lng, 0) / tousLesPoints.length,
       };
+      centreGeneralRef.current = centre;
 
       try {
         const map = new MapLibreMap({
@@ -177,32 +173,15 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         map.on("load", () => {
           if (annule) return;
           mapInstance.current = map;
-          vueGeneraleRef.current = () => map.flyTo({ center: [centre.lng, centre.lat], zoom: 13 });
           precacherTuiles(centre);
-
-          // Le style MapTiler affiche par défaut ses propres icônes/labels de
-          // POI touristiques (ex: "Twin Lagoon"), avec leur propre position,
-          // indépendante de nos coordonnées. On masque uniquement ces
-          // couches-là — jamais les rues, quartiers ou villes.
-          map.getStyle().layers?.forEach((layer) => {
-            const id = layer.id.toLowerCase();
-            if (id.includes("poi") || id.includes("attraction")) {
-              try {
-                map.setLayoutProperty(layer.id, "visibility", "none");
-              } catch {
-                // certaines couches n'ont pas de visibility, on ignore
-              }
-            }
-          });
         });
 
-        // "idle" ne se déclenche qu'une fois la carte totalement stabilisée
-        // (style chargé, tuiles rendues, projection interne correcte) —
-        // contrairement à "load", qui peut se déclencher trop tôt et faire
-        // apparaître les pins mal placés jusqu'à ce qu'on zoome.
+        // "idle" garantit que la carte est totalement stabilisée (style
+        // chargé, tuiles rendues, projection correcte) avant qu'on pose les
+        // pins — sinon ils peuvent apparaître décalés jusqu'au premier
+        // zoom/déplacement.
         map.once("idle", () => {
           if (annule) return;
-          map.resize();
           setPret(true);
         });
 
@@ -219,35 +198,25 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [destination.id]);
 
-    // (re)dessine les markers selon les filtres actifs
+    // (re)dessine les pins selon les filtres actifs — chaque pin porte sa
+    // propre bulle, attachée une seule fois via setPopup (pattern officiel).
     useEffect(() => {
       if (!pret || !mapInstance.current) return;
 
-      markersRef.current.forEach((m) => m.remove());
-      markersRef.current = [];
+      markersParCle.current.forEach((m) => m.remove());
+      markersParCle.current = new Map();
 
       CATEGORIES.forEach(({ key, Icon, color }) => {
         if (!filtres.has(key)) return;
         lieuxParCategorie[key].forEach((lieu) => {
-          if (
-            typeof lieu.lat !== "number" ||
-            typeof lieu.lng !== "number" ||
-            Number.isNaN(lieu.lat) ||
-            Number.isNaN(lieu.lng) ||
-            Math.abs(lieu.lat) > 90 ||
-            Math.abs(lieu.lng) > 180
-          ) {
+          if (!positionValide(lieu)) {
             if (lieu.lat !== undefined || lieu.lng !== undefined) {
               console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
             }
             return;
           }
-          const lat = lieu.lat;
-          const lng = lieu.lng;
+          const { lat, lng } = lieu;
 
-          // Pin en forme de goutte classique, dessiné en SVG (contour net,
-          // sans le bricolage cercle+triangle en CSS). Aucune rotation
-          // nulle part, donc l'icône à l'intérieur reste toujours droite.
           const pin = document.createElement("div");
           pin.style.cssText = "position:relative;width:30px;height:39px;cursor:pointer;";
           pin.innerHTML = `
@@ -260,51 +229,30 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           pin.appendChild(iconSlot);
           createRoot(iconSlot).render(<Icon color="#fff" size={15} strokeWidth={2} />);
 
+          const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+          const infosHtml =
+            key === "activites" && lieu.infosPratiques
+              ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
+              : "";
+          const popup = new Popup({ closeOnClick: false, offset: 18 }).setHTML(
+            `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
+              <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
+              ${infosHtml}
+              <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
+            </div>`
+          );
+
           const marker = new Marker({ element: pin, anchor: "bottom" })
             .setLngLat([lng, lat])
+            .setPopup(popup)
             .addTo(mapInstance.current!);
 
-          pin.addEventListener("click", () => {
-            mapInstance.current!.flyTo({ center: [lng, lat], zoom: 16 });
-            if (popupRef.current) {
-              fermetureProgrammatiqueRef.current = true;
-              popupRef.current.remove();
-            }
-            const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-            const infosHtml =
-              key === "activites" && lieu.infosPratiques
-                ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
-                : "";
-            popupRef.current = new Popup({ closeOnClick: true })
-              .setLngLat([lng, lat])
-              .setHTML(
-                `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
-                  <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${lieu.nom}</div>
-                  ${infosHtml}
-                  <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
-                </div>`
-              )
-              .addTo(mapInstance.current!);
-            fermetureProgrammatiqueRef.current = false;
-            popupRef.current.on("close", () => {
-              if (fermetureProgrammatiqueRef.current) return;
-              vueGeneraleRef.current();
-            });
-          });
+          // Le clic sur le pin ouvre sa bulle ET vole dessus — comportement
+          // identique au clic sur la fiche correspondante (allerVers).
+          pin.addEventListener("click", () => allerVers(lat, lng));
 
-          markersRef.current.push(marker);
+          markersParCle.current.set(clePourLieu(lat, lng), marker);
         });
-      });
-
-      // Filet de sécurité : quel que soit l'événement qui a déclenché la
-      // création des pins, on force MapLibre à recalculer leur position
-      // réelle à l'écran juste après coup, en simulant un micro-déplacement
-      // nul de la carte. Ça élimine tout décalage résiduel entre la goutte
-      // et l'encadré, sans dépendre d'un timing particulier.
-      requestAnimationFrame(() => {
-        if (!mapInstance.current) return;
-        mapInstance.current.resize();
-        mapInstance.current.panBy([0, 0], { duration: 0 });
       });
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, filtres, destination.id]);
@@ -342,7 +290,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     return (
       <div style={{ marginTop: 40 }} ref={wrapRef}>
         <div className={styles.subEyebrow} style={{ marginBottom: 20 }}>Carte interactive</div>
-        <div style={{ display: "flex", gap: 8, marginBottom: 24, flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: 8, marginBottom: 24, flexWrap: "wrap", alignItems: "center" }}>
           {CATEGORIES.map((c) => {
             const actif = filtres.has(c.key);
             return (
@@ -383,6 +331,29 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               </button>
             );
           })}
+          {/* Retour explicite à la vue générale : plus aucun effet de bord
+              caché lié à la fermeture d'une bulle, on demande clairement. */}
+          <button
+            onClick={vueGenerale}
+            title="Revenir à la vue générale"
+            style={{
+              marginLeft: "auto",
+              fontFamily: "Inter, sans-serif",
+              fontSize: 13,
+              padding: "8px 14px",
+              borderRadius: 24,
+              border: "1px solid #d8d2c6",
+              background: "none",
+              color: "#6b6459",
+              cursor: "pointer",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 6,
+            }}
+          >
+            <Compass size={13} strokeWidth={2} />
+            Vue générale
+          </button>
         </div>
         <div
           ref={mapRef}
