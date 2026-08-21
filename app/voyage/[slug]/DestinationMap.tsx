@@ -18,12 +18,8 @@ if (typeof window !== "undefined") {
 }
 
 const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
-// "hybrid" = vraie photo satellite avec les noms de lieux/routes en
-// superposition — contrairement au fond vectoriel "streets", il n'y a plus
-// de contour terre/mer simplifié qui peut se tromper : c'est une vraie
-// photo aérienne, donc plus jamais de pin qui "tombe dans l'eau" à tort.
-const STYLE_URL = `https://api.maptiler.com/maps/hybrid/style.json?key=${MAPTILER_KEY}`;
-const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=${MAPTILER_KEY}`;
+const STYLE_URL = `https://api.maptiler.com/maps/streets-v2/style.json?key=${MAPTILER_KEY}`;
+const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`;
 
 type Categorie = "hebergements" | "restaurants" | "activites";
 type Lieu = { nom: string; lat?: number; lng?: number; infosPratiques?: string };
