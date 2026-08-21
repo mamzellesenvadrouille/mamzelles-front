@@ -186,14 +186,21 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           const lat = lieu.lat;
           const lng = lieu.lng;
 
-          // Pin rond droit, sans rotation : évite tout risque d'icône penchée
-          // (contrairement à l'ancienne forme "goutte" qui nécessitait une
-          // double rotation -45°/+45° pour rester droite).
+          // Pin en forme de goutte, sans aucune rotation (donc l'icône à
+          // l'intérieur reste toujours droite) : un cercle avec une petite
+          // pointe triangulaire en dessous, dessinée en CSS pur.
           const pin = document.createElement("div");
-          pin.style.cssText = `background:${color};width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.3);border:2px solid #fff;cursor:pointer;`;
-          createRoot(pin).render(<Icon color="#fff" size={15} strokeWidth={2} />);
+          pin.style.cssText = "position:relative;width:30px;height:38px;cursor:pointer;";
+          pin.innerHTML = `
+            <div style="position:absolute;top:0;left:0;width:30px;height:30px;border-radius:50%;background:${color};border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;"></div>
+            <div style="position:absolute;top:26px;left:11px;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:9px solid ${color};"></div>
+          `;
+          const iconSlot = document.createElement("div");
+          iconSlot.style.cssText = "position:absolute;top:0;left:0;width:30px;height:30px;display:flex;align-items:center;justify-content:center;pointer-events:none;";
+          pin.appendChild(iconSlot);
+          createRoot(iconSlot).render(<Icon color="#fff" size={15} strokeWidth={2} />);
 
-          const marker = new Marker({ element: pin, anchor: "center" })
+          const marker = new Marker({ element: pin, anchor: "bottom" })
             .setLngLat([lng, lat])
             .addTo(mapInstance.current!);
 
