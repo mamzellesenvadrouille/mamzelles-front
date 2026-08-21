@@ -207,9 +207,11 @@ export default function LieuSearchField({
       )}
       {lieuChoisi && (
         <div style={{ marginTop: 8 }}>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginBottom: 6 }}>
-            📍 {lieuChoisi.nom === "Position enregistrée" ? "Position actuelle — vérifie qu'elle est bien placée, ou fais-la glisser pour ajuster." : "Vérifie que le pin est bien sur le bâtiment — fais-le glisser si besoin."}
-          </p>
+          {lieuChoisi.nom !== "Position enregistrée" && (
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginBottom: 6 }}>
+              📍 Vérifie que le pin est bien sur le bâtiment — fais-le glisser si besoin.
+            </p>
+          )}
           <div
             ref={mapRef}
             style={{ width: "100%", height: 180, borderRadius: 4, background: "#f0ebe4", position: "relative", overflow: "hidden" }}
