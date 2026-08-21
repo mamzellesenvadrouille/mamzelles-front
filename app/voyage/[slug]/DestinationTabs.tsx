@@ -318,7 +318,7 @@ export default function DestinationTabs({
                 const contenu = (
                   <>
                     {h.photo ? (
-                      <img src={h.photo} alt={h.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                      <img src={h.photo} alt={h.nom} style={{ objectPosition: `center ${h.photoPosition ?? 50}%` }} onError={(e) => (e.currentTarget.style.display = "none")} />
                     ) : (
                       <div className={styles.miniCardPlaceholder} />
                     )}
@@ -372,7 +372,7 @@ export default function DestinationTabs({
                   <>
                     <div>
                       {a.photo ? (
-                        <img src={a.photo} alt={a.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                        <img src={a.photo} alt={a.nom} style={{ objectPosition: `center ${a.photoPosition ?? 50}%` }} onError={(e) => (e.currentTarget.style.display = "none")} />
                       ) : (
                         <div className={styles.miniCardPlaceholder} />
                       )}
@@ -451,7 +451,7 @@ export default function DestinationTabs({
                 const contenu = (
                   <>
                     {r.photo ? (
-                      <img src={r.photo} alt={r.nom} onError={(e) => (e.currentTarget.style.display = "none")} />
+                      <img src={r.photo} alt={r.nom} style={{ objectPosition: `center ${r.photoPosition ?? 50}%` }} onError={(e) => (e.currentTarget.style.display = "none")} />
                     ) : (
                       <div className={styles.miniCardPlaceholder} />
                     )}

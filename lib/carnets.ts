@@ -20,6 +20,7 @@ export interface DeroulePoint {
 export interface Restaurant {
   nom: string;
   photo: string;
+  photoPosition?: number; // cadrage vertical (0-100, défaut 50)
   cuisine: string; // ex: "Fruits de mer"
   prix: "€" | "€€" | "€€€";
   lat?: number;
@@ -29,6 +30,7 @@ export interface Restaurant {
 export interface Activite {
   nom: string;
   photo: string;
+  photoPosition?: number; // cadrage vertical (0-100, défaut 50)
   description: string;
   lat?: number;
   lng?: number;
@@ -39,6 +41,7 @@ export interface Activite {
 export interface Hebergement {
   nom: string;
   photo: string;
+  photoPosition?: number; // cadrage vertical (0-100, défaut 50)
   description: string;
   lat?: number;
   lng?: number;

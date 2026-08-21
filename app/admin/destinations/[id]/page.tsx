@@ -433,6 +433,36 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           update("hebergements", copy);
                         }}
                       />
+                      {h.photo && (
+                        <div style={{ marginTop: 8 }}>
+                          <label style={{ ...microLabel, marginBottom: 4 }}>
+                            Cadrage vertical ({h.photoPosition ?? 50}%)
+                          </label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={h.photoPosition ?? 50}
+                            onChange={(e) => {
+                              const copy = [...(dest.hebergements ?? [])];
+                              copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
+                              update("hebergements", copy);
+                            }}
+                            style={{ width: "100%" }}
+                          />
+                          <div
+                            style={{
+                              width: "100%",
+                              height: 100,
+                              borderRadius: 4,
+                              marginTop: 6,
+                              backgroundImage: `url('${h.photo}')`,
+                              backgroundSize: "cover",
+                              backgroundPosition: `center ${h.photoPosition ?? 50}%`,
+                            }}
+                          />
+                        </div>
+                      )}
                     </div>
 
                     <div style={fieldBox}>
@@ -536,6 +566,36 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           update("activites", copy);
                         }}
                       />
+                      {a.photo && (
+                        <div style={{ marginTop: 8 }}>
+                          <label style={{ ...microLabel, marginBottom: 4 }}>
+                            Cadrage vertical ({a.photoPosition ?? 50}%)
+                          </label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={a.photoPosition ?? 50}
+                            onChange={(e) => {
+                              const copy = [...dest.activites];
+                              copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
+                              update("activites", copy);
+                            }}
+                            style={{ width: "100%" }}
+                          />
+                          <div
+                            style={{
+                              width: "100%",
+                              height: 100,
+                              borderRadius: 4,
+                              marginTop: 6,
+                              backgroundImage: `url('${a.photo}')`,
+                              backgroundSize: "cover",
+                              backgroundPosition: `center ${a.photoPosition ?? 50}%`,
+                            }}
+                          />
+                        </div>
+                      )}
                     </div>
 
                     <div style={fieldBox}>
@@ -664,6 +724,36 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           update("restaurants", copy);
                         }}
                       />
+                      {r.photo && (
+                        <div style={{ marginTop: 8 }}>
+                          <label style={{ ...microLabel, marginBottom: 4 }}>
+                            Cadrage vertical ({r.photoPosition ?? 50}%)
+                          </label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={r.photoPosition ?? 50}
+                            onChange={(e) => {
+                              const copy = [...dest.restaurants];
+                              copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
+                              update("restaurants", copy);
+                            }}
+                            style={{ width: "100%" }}
+                          />
+                          <div
+                            style={{
+                              width: "100%",
+                              height: 100,
+                              borderRadius: 4,
+                              marginTop: 6,
+                              backgroundImage: `url('${r.photo}')`,
+                              backgroundSize: "cover",
+                              backgroundPosition: `center ${r.photoPosition ?? 50}%`,
+                            }}
+                          />
+                        </div>
+                      )}
                     </div>
 
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 90px", gap: 10, marginBottom: 10 }}>
