@@ -228,16 +228,20 @@ export default function DestinationTabs({
           ]);
           return (
             <>
-              <div className={styles.subEyebrow}>Déroulé</div>
+              <div className={styles.subEyebrow}>Planning de votre séjour à {dest.nom}</div>
               <div className={styles.dayList}>
-                {tousLesPoints.map((point, i) => (
+                {tousLesPoints.map((point, i) => {
+                  // La date n'apparaît en gras qu'au premier point du jour concerné,
+                  // pour marquer visuellement le changement de journée dans la liste.
+                  const nouveauJour = i === 0 || tousLesPoints[i - 1].jour !== point.jour;
+                  return (
                   <div
                     className={styles.dayItem}
                     key={i}
                     style={undefined}
                   >
                     <div className={styles.time}>
-                      {point.jour}
+                      <span style={nouveauJour ? { fontWeight: 700 } : undefined}>{point.jour}</span>
                       {point.jour && point.heure ? " · " : ""}
                       {point.heure}
                     </div>
@@ -256,7 +260,8 @@ export default function DestinationTabs({
                       </button>
                     )}
                   </div>
-                ))}
+                  );
+                })}
               </div>
 
               <div style={{ marginTop: 16, marginBottom: 8 }}>
