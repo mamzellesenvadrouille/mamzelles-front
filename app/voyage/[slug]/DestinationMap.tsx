@@ -89,12 +89,22 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       activites: destination.activites ?? [],
     };
 
+    if (typeof window !== "undefined") {
+      console.log(`%c[Carte] Coordonnées de "${destination.nom ?? destination.id}"`, "font-weight:bold;color:#c8956c;");
+      (Object.keys(lieuxParCategorie) as Categorie[]).forEach((cat) => {
+        lieuxParCategorie[cat].forEach((l) => {
+          console.log(`  ${cat} · ${l.nom} → lat=${l.lat} lng=${l.lng}`);
+        });
+      });
+    }
+
     const aDesCoordonnees = Object.values(lieuxParCategorie).some((liste) =>
       liste.some((l) => typeof l.lat === "number" && typeof l.lng === "number")
     );
 
     useImperativeHandle(ref, () => ({
       centrerSur(lat: number, lng: number, nom: string) {
+        console.log(`%c[Carte] centrerSur appelé pour "${nom}" → lat=${lat} lng=${lng}`, "font-weight:bold;color:#7a9e7e;");
         if (!mapInstance.current) return;
         mapInstance.current.flyTo({ center: [lng, lat], zoom: 16 });
         if (popupRef.current) popupRef.current.remove();
