@@ -129,7 +129,15 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
       const tousLesPoints = Object.values(lieuxParCategorie)
         .flat()
-        .filter((l): l is { nom: string; lat: number; lng: number } => typeof l.lat === "number" && typeof l.lng === "number");
+        .filter(
+          (l): l is { nom: string; lat: number; lng: number } =>
+            typeof l.lat === "number" &&
+            typeof l.lng === "number" &&
+            !Number.isNaN(l.lat) &&
+            !Number.isNaN(l.lng) &&
+            Math.abs(l.lat) <= 90 &&
+            Math.abs(l.lng) <= 180
+        );
 
       if (tousLesPoints.length === 0) return;
 
@@ -200,7 +208,19 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       CATEGORIES.forEach(({ key, Icon, color }) => {
         if (!filtres.has(key)) return;
         lieuxParCategorie[key].forEach((lieu) => {
-          if (typeof lieu.lat !== "number" || typeof lieu.lng !== "number") return;
+          if (
+            typeof lieu.lat !== "number" ||
+            typeof lieu.lng !== "number" ||
+            Number.isNaN(lieu.lat) ||
+            Number.isNaN(lieu.lng) ||
+            Math.abs(lieu.lat) > 90 ||
+            Math.abs(lieu.lng) > 180
+          ) {
+            if (lieu.lat !== undefined || lieu.lng !== undefined) {
+              console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
+            }
+            return;
+          }
           const lat = lieu.lat;
           const lng = lieu.lng;
 
