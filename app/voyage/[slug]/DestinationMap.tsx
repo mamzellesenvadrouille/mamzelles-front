@@ -78,6 +78,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     const mapInstance = useRef<MapLibreMap | null>(null);
     const markersRef = useRef<Marker[]>([]);
     const popupRef = useRef<Popup | null>(null);
+    const fermetureProgrammatiqueRef = useRef(false);
     const vueGeneraleRef = useRef<() => void>(() => {});
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
@@ -107,7 +108,10 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         console.log(`%c[Carte] centrerSur appelé pour "${nom}" → lat=${lat} lng=${lng}`, "font-weight:bold;color:#7a9e7e;");
         if (!mapInstance.current) return;
         mapInstance.current.flyTo({ center: [lng, lat], zoom: 16 });
-        if (popupRef.current) popupRef.current.remove();
+        if (popupRef.current) {
+          fermetureProgrammatiqueRef.current = true;
+          popupRef.current.remove();
+        }
 
         const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
         const activiteCorrespondante = lieuxParCategorie.activites.find(
@@ -126,7 +130,11 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             </div>`
           )
           .addTo(mapInstance.current);
-        popupRef.current.on("close", () => vueGeneraleRef.current());
+        fermetureProgrammatiqueRef.current = false;
+        popupRef.current.on("close", () => {
+          if (fermetureProgrammatiqueRef.current) return;
+          vueGeneraleRef.current();
+        });
       },
       scrollIntoView() {
         wrapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -258,7 +266,10 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
           pin.addEventListener("click", () => {
             mapInstance.current!.flyTo({ center: [lng, lat], zoom: 16 });
-            if (popupRef.current) popupRef.current.remove();
+            if (popupRef.current) {
+              fermetureProgrammatiqueRef.current = true;
+              popupRef.current.remove();
+            }
             const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
             const infosHtml =
               key === "activites" && lieu.infosPratiques
@@ -274,7 +285,11 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                 </div>`
               )
               .addTo(mapInstance.current!);
-            popupRef.current.on("close", () => vueGeneraleRef.current());
+            fermetureProgrammatiqueRef.current = false;
+            popupRef.current.on("close", () => {
+              if (fermetureProgrammatiqueRef.current) return;
+              vueGeneraleRef.current();
+            });
           });
 
           markersRef.current.push(marker);
