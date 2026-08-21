@@ -61,6 +61,17 @@ const microLabel: React.CSSProperties = {
 };
 const fieldBox: React.CSSProperties = { marginBottom: 10 };
 
+// Convertit une saisie de coordonnée GPS en nombre, sans jamais produire NaN.
+// Autorise les états intermédiaires normaux pendant la frappe (juste "-", juste
+// ".", champ vide) sans planter le champ. Toute frappe invalide (une lettre,
+// par exemple) est simplement ignorée — le champ garde sa dernière valeur valide.
+const IGNORER = Symbol("ignorer");
+function parseCoordonnee(saisie: string): number | undefined | typeof IGNORER {
+  if (!/^-?\d*\.?\d*$/.test(saisie)) return IGNORER;
+  if (saisie === "" || saisie === "-" || saisie === ".") return undefined;
+  return Number(saisie);
+}
+
 // Formate automatiquement une saisie en "JJ/MM" : ne garde que les chiffres,
 // insère le "/" tout seul après le 2ème chiffre, limite à 4 chiffres (JJMM).
 function formaterDateJJMM(saisie: string): string {
@@ -258,7 +269,10 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       style={adminStyles.input}
                       placeholder="ex : 5.3320"
                       value={dest.lat ?? ""}
-                      onChange={(e) => update("lat", e.target.value ? Number(e.target.value) : undefined)}
+                      onChange={(e) => {
+                        const v = parseCoordonnee(e.target.value);
+                        if (v !== IGNORER) update("lat", v);
+                      }}
                     />
                   </div>
                   <div>
@@ -267,7 +281,10 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       style={adminStyles.input}
                       placeholder="ex : 73.0708"
                       value={dest.lng ?? ""}
-                      onChange={(e) => update("lng", e.target.value ? Number(e.target.value) : undefined)}
+                      onChange={(e) => {
+                        const v = parseCoordonnee(e.target.value);
+                        if (v !== IGNORER) update("lng", v);
+                      }}
                     />
                   </div>
                 </div>
@@ -432,7 +449,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           value={h.lat ?? ""}
                           onChange={(e) => {
                             const copy = [...(dest.hebergements ?? [])];
-                            copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
+                            const v = parseCoordonnee(e.target.value);
+                            if (v === IGNORER) return;
+                            copy[i] = { ...copy[i], lat: v };
                             update("hebergements", copy);
                           }}
                         />
@@ -445,7 +464,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           value={h.lng ?? ""}
                           onChange={(e) => {
                             const copy = [...(dest.hebergements ?? [])];
-                            copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
+                            const v = parseCoordonnee(e.target.value);
+                            if (v === IGNORER) return;
+                            copy[i] = { ...copy[i], lng: v };
                             update("hebergements", copy);
                           }}
                         />
@@ -550,7 +571,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           value={a.lat ?? ""}
                           onChange={(e) => {
                             const copy = [...dest.activites];
-                            copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
+                            const v = parseCoordonnee(e.target.value);
+                            if (v === IGNORER) return;
+                            copy[i] = { ...copy[i], lat: v };
                             update("activites", copy);
                           }}
                         />
@@ -563,7 +586,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           value={a.lng ?? ""}
                           onChange={(e) => {
                             const copy = [...dest.activites];
-                            copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
+                            const v = parseCoordonnee(e.target.value);
+                            if (v === IGNORER) return;
+                            copy[i] = { ...copy[i], lng: v };
                             update("activites", copy);
                           }}
                         />
@@ -655,7 +680,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           value={r.lat ?? ""}
                           onChange={(e) => {
                             const copy = [...dest.restaurants];
-                            copy[i] = { ...copy[i], lat: e.target.value ? Number(e.target.value) : undefined };
+                            const v = parseCoordonnee(e.target.value);
+                            if (v === IGNORER) return;
+                            copy[i] = { ...copy[i], lat: v };
                             update("restaurants", copy);
                           }}
                         />
@@ -668,7 +695,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           value={r.lng ?? ""}
                           onChange={(e) => {
                             const copy = [...dest.restaurants];
-                            copy[i] = { ...copy[i], lng: e.target.value ? Number(e.target.value) : undefined };
+                            const v = parseCoordonnee(e.target.value);
+                            if (v === IGNORER) return;
+                            copy[i] = { ...copy[i], lng: v };
                             update("restaurants", copy);
                           }}
                         />
