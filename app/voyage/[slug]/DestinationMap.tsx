@@ -190,14 +190,14 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           // sans le bricolage cercle+triangle en CSS). Aucune rotation
           // nulle part, donc l'icône à l'intérieur reste toujours droite.
           const pin = document.createElement("div");
-          pin.style.cssText = "position:relative;width:30px;height:40px;cursor:pointer;";
+          pin.style.cssText = "position:relative;width:30px;height:39px;cursor:pointer;";
           pin.innerHTML = `
-            <svg width="30" height="40" viewBox="0 0 30 40" style="position:absolute;top:0;left:0;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));">
-              <path d="M15 0C6.7 0 0 6.7 0 15c0 10.5 15 25 15 25s15-14.5 15-25C30 6.7 23.3 0 15 0z" fill="${color}" stroke="#fff" stroke-width="2"/>
+            <svg width="30" height="39" viewBox="0 0 30 39" style="position:absolute;top:0;left:0;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));">
+              <path d="M15 1C7.8 1 2 6.8 2 14c0 10.5 13 24 13 24s13-13.5 13-24C28 6.8 22.2 1 15 1z" fill="${color}" stroke="#fff" stroke-width="2"/>
             </svg>
           `;
           const iconSlot = document.createElement("div");
-          iconSlot.style.cssText = "position:absolute;top:0;left:0;width:30px;height:30px;display:flex;align-items:center;justify-content:center;pointer-events:none;";
+          iconSlot.style.cssText = "position:absolute;top:0;left:0;width:30px;height:28px;display:flex;align-items:center;justify-content:center;pointer-events:none;";
           pin.appendChild(iconSlot);
           createRoot(iconSlot).render(<Icon color="#fff" size={15} strokeWidth={2} />);
 
