@@ -13,6 +13,15 @@ import NotesSection from "./NotesSection";
 import ScrollToTop from "./ScrollToTop";
 import styles from "./carnet.module.css";
 
+// Sans ça, Next.js génère cette page une seule fois au build et la sert
+// figée à tout le monde jusqu'au prochain déploiement — donc toute
+// modification faite dans l'admin (coordonnées, textes, photos...)
+// n'apparaît jamais sur le site tant qu'on n'a pas redéployé. Le carnet
+// contient aussi des données propres à chaque visite (météo, taux de
+// change, progression client), donc il doit de toute façon être recalculé
+// à chaque requête plutôt que mis en cache.
+export const dynamic = "force-dynamic";
+
 export default async function CarnetPage({
   params,
 }: {
