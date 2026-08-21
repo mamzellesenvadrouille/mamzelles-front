@@ -2,14 +2,15 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/admin/LieuSearchField.tsx
 //
 // Champ de recherche de lieu : tape un nom d'établissement, une liste de
-// résultats apparaît (via l'API de géocodage MapTiler), clique sur le bon
-// résultat et les coordonnées GPS se remplissent automatiquement — plus besoin
-// d'aller chercher les coordonnées manuellement sur Google Maps.
+// résultats apparaît (via l'API Places de Google, la plus complète pour les
+// petits établissements locaux type hôtels/restaurants), clique sur le bon
+// résultat et les coordonnées GPS se remplissent automatiquement.
 "use client";
 
 import { useState, useRef, useEffect } from "react";
 
-const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
+// Clé restreinte au domaine mamzellesenvadrouille.com (voir Google Cloud Console).
+const GOOGLE_PLACES_KEY = "AIzaSyB4ayGRaJDFwtqpuQ84PKE_vjYz5gbREAY";
 
 interface Resultat {
   nom: string;
@@ -32,7 +33,6 @@ export default function LieuSearchField({
   const wrapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Ferme la liste de résultats si on clique en dehors du champ
     function onClickDehors(e: MouseEvent) {
       if (wrapRef.current && !wrapRef.current.contains(e.target as Node)) {
         setOuvert(false);
@@ -57,14 +57,29 @@ export default function LieuSearchField({
     timerRef.current = setTimeout(async () => {
       setRecherche(true);
       try {
-        const url = `https://api.maptiler.com/geocoding/${encodeURIComponent(valeur)}.json?key=${MAPTILER_KEY}&limit=5`;
-        const res = await fetch(url);
+        const res = await fetch("https://places.googleapis.com/v1/places:searchText", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-Goog-Api-Key": GOOGLE_PLACES_KEY,
+            "X-Goog-FieldMask": "places.displayName,places.location,places.formattedAddress",
+          },
+          body: JSON.stringify({ textQuery: valeur }),
+        });
         const data = await res.json();
-        const items: Resultat[] = (data.features ?? []).map((f: { place_name: string; center: [number, number] }) => ({
-          nom: f.place_name,
-          lng: f.center[0],
-          lat: f.center[1],
-        }));
+        const items: Resultat[] = (data.places ?? [])
+          .filter((p: { location?: { latitude: number; longitude: number } }) => p.location)
+          .map((p: {
+            displayName?: { text: string };
+            formattedAddress?: string;
+            location: { latitude: number; longitude: number };
+          }) => ({
+            nom: p.formattedAddress
+              ? `${p.displayName?.text ?? ""} — ${p.formattedAddress}`
+              : p.displayName?.text ?? "",
+            lat: p.location.latitude,
+            lng: p.location.longitude,
+          }));
         setResultats(items);
         setOuvert(items.length > 0);
       } catch {
