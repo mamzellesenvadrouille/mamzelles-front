@@ -41,7 +41,9 @@ export default function LieuSearchField({
   lat?: number;
   lng?: number;
 }) {
-  const [saisie, setSaisie] = useState("");
+  const [saisie, setSaisie] = useState(
+    typeof lat === "number" && typeof lng === "number" ? "Position enregistrée" : ""
+  );
   const [resultats, setResultats] = useState<Resultat[]>([]);
   const [recherche, setRecherche] = useState(false);
   const [ouvert, setOuvert] = useState(false);
