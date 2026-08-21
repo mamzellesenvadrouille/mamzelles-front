@@ -209,7 +209,7 @@ export default function LieuSearchField({
         <div style={{ marginTop: 8 }}>
           {lieuChoisi.nom !== "Position enregistrée" && (
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginBottom: 6 }}>
-              📍 Vérifie que le pin est bien sur le bâtiment — fais-le glisser si besoin.
+              📍 Vérifie que le pin est bien placé — fais-le glisser si besoin.
             </p>
           )}
           <div
