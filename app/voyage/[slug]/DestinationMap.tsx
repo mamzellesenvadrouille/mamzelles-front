@@ -107,7 +107,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         const infosHtml = activiteCorrespondante?.infosPratiques
           ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(activiteCorrespondante.infosPratiques)}</div>`
           : "";
-        popupRef.current = new Popup({ closeOnClick: true, offset: 16 })
+        popupRef.current = new Popup({ closeOnClick: true })
           .setLngLat([lng, lat])
           .setHTML(
             `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
@@ -153,9 +153,16 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           if (annule) return;
           mapInstance.current = map;
           vueGeneraleRef.current = () => map.flyTo({ center: [centre.lng, centre.lat], zoom: 13 });
-          setPret(true);
 
-          setTimeout(() => map.resize(), 100);
+          // On force le recalcul de la taille AVANT de créer les pins : sinon
+          // ils sont positionnés sur une taille de conteneur pas encore
+          // stabilisée, et ne se recalent qu'en zoomant/déplaçant la carte.
+          map.resize();
+          requestAnimationFrame(() => {
+            if (annule) return;
+            map.resize();
+            setPret(true);
+          });
 
           precacherTuiles(centre);
         });
@@ -215,7 +222,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               key === "activites" && lieu.infosPratiques
                 ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
                 : "";
-            popupRef.current = new Popup({ closeOnClick: true, offset: 16 })
+            popupRef.current = new Popup({ closeOnClick: true })
               .setLngLat([lng, lat])
               .setHTML(
                 `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
