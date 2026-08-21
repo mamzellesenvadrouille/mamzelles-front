@@ -107,7 +107,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         const infosHtml = activiteCorrespondante?.infosPratiques
           ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(activiteCorrespondante.infosPratiques)}</div>`
           : "";
-        popupRef.current = new Popup({ closeOnClick: true })
+        popupRef.current = new Popup({ closeOnClick: true, offset: 16 })
           .setLngLat([lng, lat])
           .setHTML(
             `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
@@ -215,7 +215,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               key === "activites" && lieu.infosPratiques
                 ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
                 : "";
-            popupRef.current = new Popup({ closeOnClick: true })
+            popupRef.current = new Popup({ closeOnClick: true, offset: 16 })
               .setLngLat([lng, lat])
               .setHTML(
                 `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
