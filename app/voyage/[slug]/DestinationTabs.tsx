@@ -271,7 +271,7 @@ export default function DestinationTabs({
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
                   <input placeholder="JJ/MM" value={nJour} onChange={(e) => setNJour(formaterDateJJMM(e.target.value))} style={inputMemento} />
                   <input
-                    placeholder="Heure"
+                    placeholder="00h00"
                     value={nHeure}
                     onChange={(e) => setNHeure(formaterHeureSaisie(e.target.value))}
                     onBlur={(e) => setNHeure(normaliserHeure(e.target.value))}

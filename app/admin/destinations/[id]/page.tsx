@@ -316,7 +316,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     />
                     <input
                       style={{ ...adminStyles.input, width: 80 }}
-                      placeholder="Heure"
+                      placeholder="00h00"
                       value={point.heure}
                       onChange={(e) => {
                         const copy = [...dest.deroule];
