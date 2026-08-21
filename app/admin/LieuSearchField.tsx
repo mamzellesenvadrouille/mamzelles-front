@@ -2,15 +2,15 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/admin/LieuSearchField.tsx
 //
 // Champ de recherche de lieu : tape un nom d'établissement, une liste de
-// résultats apparaît (via l'API Places de Google, la plus complète pour les
-// petits établissements locaux type hôtels/restaurants), clique sur le bon
-// résultat et les coordonnées GPS se remplissent automatiquement.
+// résultats apparaît (via Google Places, la plus complète pour les petits
+// établissements locaux type hôtels/restaurants), clique sur le bon résultat
+// et les coordonnées GPS se remplissent automatiquement.
+//
+// La recherche passe par la route interne /api/lieu-search : la clé Google
+// reste entièrement côté serveur, jamais visible dans le code du navigateur.
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-
-// Clé restreinte au domaine mamzellesenvadrouille.com (voir Google Cloud Console).
-const GOOGLE_PLACES_KEY = "AIzaSyB4ayGRaJDFwtqpuQ84PKE_vjYz5gbREAY";
 
 interface Resultat {
   nom: string;
@@ -57,29 +57,9 @@ export default function LieuSearchField({
     timerRef.current = setTimeout(async () => {
       setRecherche(true);
       try {
-        const res = await fetch("https://places.googleapis.com/v1/places:searchText", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-Goog-Api-Key": GOOGLE_PLACES_KEY,
-            "X-Goog-FieldMask": "places.displayName,places.location,places.formattedAddress",
-          },
-          body: JSON.stringify({ textQuery: valeur }),
-        });
+        const res = await fetch(`/api/lieu-search?q=${encodeURIComponent(valeur)}`);
         const data = await res.json();
-        const items: Resultat[] = (data.places ?? [])
-          .filter((p: { location?: { latitude: number; longitude: number } }) => p.location)
-          .map((p: {
-            displayName?: { text: string };
-            formattedAddress?: string;
-            location: { latitude: number; longitude: number };
-          }) => ({
-            nom: p.formattedAddress
-              ? `${p.displayName?.text ?? ""} — ${p.formattedAddress}`
-              : p.displayName?.text ?? "",
-            lat: p.location.latitude,
-            lng: p.location.longitude,
-          }));
+        const items: Resultat[] = data.resultats ?? [];
         setResultats(items);
         setOuvert(items.length > 0);
       } catch {
