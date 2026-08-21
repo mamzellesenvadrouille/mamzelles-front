@@ -3,14 +3,26 @@
 //
 // Champ de recherche de lieu : tape un nom d'établissement, une liste de
 // résultats apparaît (via Google Places, la plus complète pour les petits
-// établissements locaux type hôtels/restaurants), clique sur le bon résultat
-// et les coordonnées GPS se remplissent automatiquement.
+// établissements locaux type hôtels/restaurants). Une fois un résultat choisi,
+// une petite carte de vérification apparaît avec un pin déplaçable — Google
+// Places renvoie parfois une position légèrement décalée (adresse
+// administrative plutôt que position réelle du bâtiment), donc on laisse
+// toujours la possibilité d'ajuster visuellement avant validation.
 //
 // La recherche passe par la route interne /api/lieu-search : la clé Google
 // reste entièrement côté serveur, jamais visible dans le code du navigateur.
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { Map as MapLibreMap, Marker, setWorkerUrl } from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
+
+if (typeof window !== "undefined") {
+  setWorkerUrl("/maplibre-gl-worker.mjs");
+}
+
+const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
+const STYLE_URL = `https://api.maptiler.com/maps/streets-v2/style.json?key=${MAPTILER_KEY}`;
 
 interface Resultat {
   nom: string;
@@ -29,8 +41,12 @@ export default function LieuSearchField({
   const [resultats, setResultats] = useState<Resultat[]>([]);
   const [recherche, setRecherche] = useState(false);
   const [ouvert, setOuvert] = useState(false);
+  const [lieuChoisi, setLieuChoisi] = useState<Resultat | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
+  const mapInstance = useRef<MapLibreMap | null>(null);
+  const markerInstance = useRef<Marker | null>(null);
 
   useEffect(() => {
     function onClickDehors(e: MouseEvent) {
@@ -42,8 +58,46 @@ export default function LieuSearchField({
     return () => document.removeEventListener("mousedown", onClickDehors);
   }, []);
 
+  // Initialise la petite carte de vérification dès qu'un lieu est choisi
+  useEffect(() => {
+    if (!lieuChoisi || !mapRef.current) return;
+
+    const map = new MapLibreMap({
+      container: mapRef.current,
+      style: STYLE_URL,
+      center: [lieuChoisi.lng, lieuChoisi.lat],
+      zoom: 16,
+      attributionControl: false,
+    });
+    mapInstance.current = map;
+
+    map.on("load", () => {
+      setTimeout(() => map.resize(), 50);
+    });
+
+    const marker = new Marker({ color: "#c8956c", draggable: true })
+      .setLngLat([lieuChoisi.lng, lieuChoisi.lat])
+      .addTo(map);
+
+    marker.on("dragend", () => {
+      const pos = marker.getLngLat();
+      const miseAJour = { nom: lieuChoisi.nom, lat: pos.lat, lng: pos.lng };
+      setLieuChoisi(miseAJour);
+      onSelect(miseAJour);
+    });
+
+    markerInstance.current = marker;
+
+    return () => {
+      map.remove();
+      mapInstance.current = null;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lieuChoisi?.nom]);
+
   function handleChange(valeur: string) {
     setSaisie(valeur);
+    setLieuChoisi(null);
     if (timerRef.current) clearTimeout(timerRef.current);
 
     if (valeur.trim().length < 3) {
@@ -72,7 +126,8 @@ export default function LieuSearchField({
 
   function choisir(r: Resultat) {
     onSelect(r);
-    setSaisie("");
+    setSaisie(r.nom);
+    setLieuChoisi(r);
     setResultats([]);
     setOuvert(false);
   }
@@ -92,7 +147,7 @@ export default function LieuSearchField({
           background: "#fffaf3",
           boxSizing: "border-box",
         }}
-        placeholder={placeholder ?? "🔍 Rechercher un lieu (nom + ville)..."}
+        placeholder={placeholder ?? "🔍 Rechercher un lieu..."}
         value={saisie}
         onChange={(e) => handleChange(e.target.value)}
         onFocus={() => resultats.length > 0 && setOuvert(true)}
@@ -140,6 +195,17 @@ export default function LieuSearchField({
               {r.nom}
             </button>
           ))}
+        </div>
+      )}
+      {lieuChoisi && (
+        <div style={{ marginTop: 8 }}>
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginBottom: 6 }}>
+            📍 Vérifie que le pin est bien sur le bâtiment — fais-le glisser si besoin.
+          </p>
+          <div
+            ref={mapRef}
+            style={{ width: "100%", height: 180, borderRadius: 4, background: "#f0ebe4", position: "relative", overflow: "hidden" }}
+          />
         </div>
       )}
     </div>
