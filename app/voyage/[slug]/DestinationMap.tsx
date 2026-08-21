@@ -172,15 +172,18 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           vueGeneraleRef.current = () => map.flyTo({ center: [centre.lng, centre.lat], zoom: 13 });
           precacherTuiles(centre);
 
-          // Le style MapTiler affiche par défaut ses propres labels de POI
-          // (ex: sites touristiques reconnus comme "Twin Lagoon"), avec leur
-          // propre position, indépendante de nos coordonnées. Ça crée un
-          // doublon visuel qui donne l'impression que notre pin est mal
-          // placé. On masque tous ces layers natifs pour ne garder que nos
-          // propres pins à l'écran.
+          // Le style MapTiler affiche par défaut ses propres icônes/labels de
+          // POI touristiques (ex: "Twin Lagoon"), avec leur propre position,
+          // indépendante de nos coordonnées. On masque uniquement ces
+          // couches-là — jamais les rues, quartiers ou villes.
           map.getStyle().layers?.forEach((layer) => {
-            if (layer.id.toLowerCase().includes("poi")) {
-              map.setLayoutProperty(layer.id, "visibility", "none");
+            const id = layer.id.toLowerCase();
+            if (id.includes("poi") || id.includes("attraction")) {
+              try {
+                map.setLayoutProperty(layer.id, "visibility", "none");
+              } catch {
+                // certaines couches n'ont pas de visibility, on ignore
+              }
             }
           });
         });
