@@ -12,6 +12,7 @@ import { normaliserHeure, deviseDepuisPays } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
 import PhotoField from "../../PhotoField";
+import LieuSearchField from "../../LieuSearchField";
 
 const destinationVide: Omit<Destination, "id" | "updatedAt"> & { id?: string } = {
   nom: "",
@@ -262,6 +263,12 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
                   Ces coordonnées servent à afficher la météo en temps réel de cette destination, et à la positionner automatiquement sur la carte du parcours de chaque carnet qui l&apos;utilise.
                 </p>
+                <LieuSearchField
+                  onSelect={(lieu) => {
+                    update("lat", lieu.lat);
+                    update("lng", lieu.lng);
+                  }}
+                />
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                   <div>
                     <label style={microLabel}>Latitude</label>
@@ -440,6 +447,13 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                     </div>
 
+                    <LieuSearchField
+                      onSelect={(lieu) => {
+                        const copy = [...(dest.hebergements ?? [])];
+                        copy[i] = { ...copy[i], lat: lieu.lat, lng: lieu.lng };
+                        update("hebergements", copy);
+                      }}
+                    />
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                       <div>
                         <label style={microLabel}>Latitude</label>
@@ -562,6 +576,13 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                     </div>
 
+                    <LieuSearchField
+                      onSelect={(lieu) => {
+                        const copy = [...dest.activites];
+                        copy[i] = { ...copy[i], lat: lieu.lat, lng: lieu.lng };
+                        update("activites", copy);
+                      }}
+                    />
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                       <div>
                         <label style={microLabel}>Latitude</label>
@@ -671,6 +692,13 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       </div>
                     </div>
 
+                    <LieuSearchField
+                      onSelect={(lieu) => {
+                        const copy = [...dest.restaurants];
+                        copy[i] = { ...copy[i], lat: lieu.lat, lng: lieu.lng };
+                        update("restaurants", copy);
+                      }}
+                    />
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                       <div>
                         <label style={microLabel}>Latitude</label>
