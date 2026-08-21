@@ -96,6 +96,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     useImperativeHandle(ref, () => ({
       centrerSur(lat: number, lng: number, nom: string) {
         if (!mapInstance.current) return;
+        mapInstance.current.resize();
         mapInstance.current.flyTo({ center: [lng, lat], zoom: 16 });
         if (popupRef.current) popupRef.current.remove();
 
@@ -206,6 +207,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             .addTo(mapInstance.current!);
 
           pin.addEventListener("click", () => {
+            mapInstance.current!.resize();
             mapInstance.current!.flyTo({ center: [lng, lat], zoom: 16 });
             if (popupRef.current) popupRef.current.remove();
             const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
