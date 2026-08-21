@@ -347,7 +347,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     />
                     <input
                       style={adminStyles.input}
-                      placeholder="Note"
+                      placeholder="Notes"
                       value={point.note}
                       onChange={(e) => {
                         const copy = [...dest.deroule];

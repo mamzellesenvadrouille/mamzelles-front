@@ -249,7 +249,7 @@ export default function DestinationTabs({
                     <div className={styles.time}>
                       <span style={nouveauJour ? { fontWeight: 700 } : undefined}>{point.jour}</span>
                       {point.jour && point.heure ? " · " : ""}
-                      {point.heure}
+                      <span style={nouveauJour ? { fontWeight: 700 } : undefined}>{point.heure}</span>
                     </div>
                     <div className={styles.desc} style={{ flex: 1 }}>
                       <strong>{point.titre}</strong>
@@ -292,7 +292,7 @@ export default function DestinationTabs({
                 </div>
                 <div style={{ display: "flex", gap: 8 }}>
                   <input
-                    placeholder="Note"
+                    placeholder="Notes"
                     value={nNote}
                     onChange={(e) => setNNote(e.target.value)}
                     onKeyDown={(e) => e.key === "Enter" && ajouterNoteDeroule(dest.id)}
