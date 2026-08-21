@@ -198,6 +198,33 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [destination.id]);
 
+    // Le reste de la page (photos qui chargent, etc.) peut légèrement
+    // déplacer/redimensionner le conteneur de la carte APRÈS son
+    // initialisation. Sans resynchronisation continue, les pins restent
+    // calés sur l'ancienne position du conteneur et semblent "décalés",
+    // alors que les bulles (recalculées à chaque ouverture) restent
+    // justes. On observe le conteneur en continu et on resynchronise
+    // MapLibre à chaque changement réel.
+    useEffect(() => {
+      if (!mapRef.current) return;
+      const observer = new ResizeObserver(() => {
+        mapInstance.current?.resize();
+      });
+      observer.observe(mapRef.current);
+
+      // Filet de sécurité supplémentaire : si des images plus haut sur la
+      // page finissent de charger et poussent la carte vers le bas sans
+      // changer sa taille, ResizeObserver ne le détecte pas. On force une
+      // dernière resynchronisation quand toute la page est chargée.
+      const surChargementComplet = () => mapInstance.current?.resize();
+      window.addEventListener("load", surChargementComplet);
+
+      return () => {
+        observer.disconnect();
+        window.removeEventListener("load", surChargementComplet);
+      };
+    }, []);
+
     // (re)dessine les pins selon les filtres actifs — chaque pin porte sa
     // propre bulle, attachée une seule fois via setPopup (pattern officiel).
     useEffect(() => {
