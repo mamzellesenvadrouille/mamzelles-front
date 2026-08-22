@@ -6,7 +6,7 @@ import { useEffect, useImperativeHandle, useRef, useState, forwardRef } from "re
 import { createRoot } from "react-dom/client";
 import type L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import { Bed, Utensils, Camera, Compass } from "lucide-react";
+import { Bed, Utensils, Camera } from "lucide-react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 
@@ -118,7 +118,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     const mapInstance = useRef<import("leaflet").Map | null>(null);
     const markersParCle = useRef<Map<string, import("leaflet").Marker>>(new Map());
     const leafletRef = useRef<typeof import("leaflet") | null>(null);
-    const centreGeneralRef = useRef<{ lat: number; lng: number } | null>(null);
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
     const [filtres, setFiltres] = useState<Set<Categorie>>(new Set(["hebergements", "restaurants", "activites"]));
@@ -132,8 +131,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     const aDesCoordonnees = Object.values(lieuxParCategorie).some((liste) => liste.some(positionValide));
 
     // Vole vers un lieu et ouvre sa bulle. Ferme d'abord toute autre bulle
-    // ouverte. Le retour à la vue générale reste exclusivement le rôle du
-    // bouton "Vue générale" — jamais un effet de bord caché.
+    // ouverte.
     function allerVers(lat: number, lng: number) {
       const map = mapInstance.current;
       const marker = markersParCle.current.get(clePourLieu(lat, lng));
@@ -145,14 +143,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
       map.flyTo([lat, lng], 16);
       marker.openPopup();
-    }
-
-    function vueGenerale() {
-      const map = mapInstance.current;
-      const centre = centreGeneralRef.current;
-      if (!map || !centre) return;
-      markersParCle.current.forEach((m) => m.closePopup());
-      map.flyTo([centre.lat, centre.lng], 13);
     }
 
     useImperativeHandle(ref, () => ({
@@ -171,11 +161,16 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       const tousLesPoints = Object.values(lieuxParCategorie).flat().filter(positionValide);
       if (tousLesPoints.length === 0) return;
 
-      const centre = {
-        lat: tousLesPoints.reduce((s, p) => s + p.lat, 0) / tousLesPoints.length,
-        lng: tousLesPoints.reduce((s, p) => s + p.lng, 0) / tousLesPoints.length,
-      };
-      centreGeneralRef.current = centre;
+      // Par défaut, la carte s'ouvre centrée sur l'hébergement plutôt que
+      // sur la moyenne de tous les lieux — c'est le point de repère le
+      // plus utile pour se situer en arrivant sur la carte.
+      const hebergementValide = lieuxParCategorie.hebergements.find(positionValide);
+      const centre = hebergementValide
+        ? { lat: hebergementValide.lat, lng: hebergementValide.lng }
+        : {
+            lat: tousLesPoints.reduce((s, p) => s + p.lat, 0) / tousLesPoints.length,
+            lng: tousLesPoints.reduce((s, p) => s + p.lng, 0) / tousLesPoints.length,
+          };
       let annule = false;
 
       import("leaflet")
@@ -186,7 +181,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
           const map = L.map(mapRef.current, {
             center: [centre.lat, centre.lng],
-            zoom: 13,
+            zoom: 14,
             attributionControl: false,
             zoomControl: true,
           });
@@ -356,27 +351,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               </button>
             );
           })}
-          <button
-            onClick={vueGenerale}
-            title="Revenir à la vue générale"
-            style={{
-              marginLeft: "auto",
-              fontFamily: "Inter, sans-serif",
-              fontSize: 13,
-              padding: "8px 14px",
-              borderRadius: 24,
-              border: "1px solid #d8d2c6",
-              background: "none",
-              color: "#6b6459",
-              cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 6,
-            }}
-          >
-            <Compass size={13} strokeWidth={2} />
-            Vue générale
-          </button>
         </div>
         <div
           ref={mapRef}
