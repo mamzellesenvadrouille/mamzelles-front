@@ -316,6 +316,33 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, filtres, destination.id]);
 
+    // Bug officiel et reconnu de MapLibre GL JS (issues GitHub #2190 et
+    // #6925) : les pins peuvent perdre leur position correcte pendant un
+    // zoom/déplacement et ne se resynchronisent pas toujours tout seuls.
+    // Contournement recommandé : forcer nous-mêmes la resynchronisation de
+    // tous les pins à chaque mouvement de la carte, pas juste une fois à
+    // leur création.
+    useEffect(() => {
+      const map = mapInstance.current;
+      if (!pret || !map) return;
+
+      function resynchroniserTousLesPins() {
+        markersParCle.current.forEach((m) => m.setLngLat(m.getLngLat()));
+      }
+
+      map.on("zoom", resynchroniserTousLesPins);
+      map.on("move", resynchroniserTousLesPins);
+      map.on("zoomend", resynchroniserTousLesPins);
+      map.on("moveend", resynchroniserTousLesPins);
+
+      return () => {
+        map.off("zoom", resynchroniserTousLesPins);
+        map.off("move", resynchroniserTousLesPins);
+        map.off("zoomend", resynchroniserTousLesPins);
+        map.off("moveend", resynchroniserTousLesPins);
+      };
+    }, [pret]);
+
     // Localise le visiteur (avec sa permission) et affiche un point bleu sur la carte
     useEffect(() => {
       if (!pret || !mapInstance.current || !navigator.geolocation) return;
