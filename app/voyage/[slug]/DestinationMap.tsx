@@ -174,6 +174,36 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           if (annule) return;
           mapInstance.current = map;
           precacherTuiles(centre);
+
+          if (typeof window !== "undefined") {
+            console.log(
+              "%c[Carte] Toutes les couches du style :",
+              "font-weight:bold;color:#c8956c;",
+              map.getStyle().layers?.map((l) => l.id)
+            );
+          }
+
+          // Le fond de carte affiche ses propres icônes/labels pour les
+          // sites touristiques et plans d'eau connus (ex: "Twin Lagoon"),
+          // très proches visuellement de nos propres pins et créant une
+          // confusion ("est-ce mon pin ou celui du fond de carte ?"). On
+          // masque uniquement ces couches précises — jamais les rues,
+          // quartiers ou villes.
+          map.getStyle().layers?.forEach((layer) => {
+            const id = layer.id.toLowerCase();
+            const motsClesAMasquer = [
+              "poi", "attraction", "water_name", "waterway-label",
+              "place_other", "place-other", "natural_label", "natural-label",
+              "landmark", "point_of_interest",
+            ];
+            if (motsClesAMasquer.some((mot) => id.includes(mot))) {
+              try {
+                map.setLayoutProperty(layer.id, "visibility", "none");
+              } catch {
+                // couche sans propriété visibility : on ignore
+              }
+            }
+          });
         });
 
         // "idle" garantit que la carte est totalement stabilisée (style
