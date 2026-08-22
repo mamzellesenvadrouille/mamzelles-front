@@ -183,36 +183,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           if (annule) return;
           mapInstance.current = map;
           precacherTuiles(centre);
-
-          if (typeof window !== "undefined") {
-            console.log(
-              "%c[Carte] Toutes les couches du style :",
-              "font-weight:bold;color:#c8956c;",
-              map.getStyle().layers?.map((l) => l.id)
-            );
-          }
-
-          // Le fond de carte affiche ses propres icônes/labels pour les
-          // sites touristiques et plans d'eau connus (ex: "Twin Lagoon"),
-          // très proches visuellement de nos propres pins et créant une
-          // confusion ("est-ce mon pin ou celui du fond de carte ?"). On
-          // masque uniquement ces couches précises — jamais les rues,
-          // quartiers ou villes.
-          map.getStyle().layers?.forEach((layer) => {
-            const id = layer.id.toLowerCase();
-            const motsClesAMasquer = [
-              "poi", "attraction", "water_name", "waterway-label",
-              "place_other", "place-other", "natural_label", "natural-label",
-              "landmark", "point_of_interest",
-            ];
-            if (motsClesAMasquer.some((mot) => id.includes(mot))) {
-              try {
-                map.setLayoutProperty(layer.id, "visibility", "none");
-              } catch {
-                // couche sans propriété visibility : on ignore
-              }
-            }
-          });
         });
 
         // "idle" garantit que la carte est totalement stabilisée (style
@@ -430,6 +400,22 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             La carte n&apos;a pas pu se charger.
           </p>
         )}
+        {/* Panneau de debug temporaire : liste brute des coordonnées reçues
+            par ce composant, pour vérifier facilement (sans console) si des
+            lieux différents partagent des coordonnées identiques ou
+            erronées. À retirer une fois le diagnostic terminé. */}
+        <details style={{ marginTop: 16, fontFamily: "monospace", fontSize: 11, color: "#8a8074" }}>
+          <summary style={{ cursor: "pointer" }}>Debug coordonnées (temporaire)</summary>
+          <div style={{ marginTop: 8, whiteSpace: "pre-wrap", background: "#fff", padding: 12, borderRadius: 4 }}>
+            {(Object.keys(lieuxParCategorie) as Categorie[]).map((cat) =>
+              lieuxParCategorie[cat].map((l, i) => (
+                <div key={`${cat}-${i}`}>
+                  {cat} · {l.nom} → lat={String(l.lat)} lng={String(l.lng)}
+                </div>
+              ))
+            )}
+          </div>
+        </details>
       </div>
     );
   }
