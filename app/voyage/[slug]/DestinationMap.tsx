@@ -4,7 +4,7 @@
 
 import { useEffect, useImperativeHandle, useRef, useState, forwardRef } from "react";
 import { createRoot } from "react-dom/client";
-import L from "leaflet";
+import type L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { Bed, Utensils, Camera, Compass } from "lucide-react";
 import type { DestinationResolue } from "@/lib/carnets";
@@ -86,7 +86,7 @@ function precacherTuiles(centre: { lat: number; lng: number }) {
   });
 }
 
-function creerIconePin(Icon: typeof Bed, color: string) {
+function creerIconePin(L: typeof import("leaflet"), Icon: typeof Bed, color: string) {
   const container = document.createElement("div");
   container.style.cssText = "width:30px;height:39px;";
   container.innerHTML = `
@@ -115,8 +115,9 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
   function DestinationMap({ destination }, ref) {
     const wrapRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<HTMLDivElement>(null);
-    const mapInstance = useRef<L.Map | null>(null);
-    const markersParCle = useRef<Map<string, L.Marker>>(new Map());
+    const mapInstance = useRef<import("leaflet").Map | null>(null);
+    const markersParCle = useRef<Map<string, import("leaflet").Marker>>(new Map());
+    const leafletRef = useRef<typeof import("leaflet") | null>(null);
     const centreGeneralRef = useRef<{ lat: number; lng: number } | null>(null);
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
@@ -175,25 +176,31 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         lng: tousLesPoints.reduce((s, p) => s + p.lng, 0) / tousLesPoints.length,
       };
       centreGeneralRef.current = centre;
+      let annule = false;
 
-      try {
-        const map = L.map(mapRef.current, {
-          center: [centre.lat, centre.lng],
-          zoom: 13,
-          attributionControl: false,
-          zoomControl: true,
-        });
+      import("leaflet")
+        .then((mod) => {
+          if (annule || !mapRef.current) return;
+          const L = mod.default;
+          leafletRef.current = L;
 
-        L.tileLayer(TILE_URL_TEMPLATE, { maxZoom: 19, tileSize: 512, zoomOffset: -1 }).addTo(map);
+          const map = L.map(mapRef.current, {
+            center: [centre.lat, centre.lng],
+            zoom: 13,
+            attributionControl: false,
+            zoomControl: true,
+          });
 
-        precacherTuiles(centre);
-        mapInstance.current = map;
-        setPret(true);
-      } catch {
-        setErreur(true);
-      }
+          L.tileLayer(TILE_URL_TEMPLATE, { maxZoom: 19, tileSize: 512, zoomOffset: -1 }).addTo(map);
+
+          precacherTuiles(centre);
+          mapInstance.current = map;
+          setPret(true);
+        })
+        .catch(() => setErreur(true));
 
       return () => {
+        annule = true;
         mapInstance.current?.remove();
         mapInstance.current = null;
       };
@@ -222,8 +229,9 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
     // (re)dessine les pins selon les filtres actifs
     useEffect(() => {
-      if (!pret || !mapInstance.current) return;
+      if (!pret || !mapInstance.current || !leafletRef.current) return;
       const map = mapInstance.current;
+      const L = leafletRef.current;
 
       markersParCle.current.forEach((m) => m.remove());
       markersParCle.current = new Map();
@@ -245,7 +253,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
               : "";
 
-          const marker = L.marker([lat, lng], { icon: creerIconePin(Icon, color) })
+          const marker = L.marker([lat, lng], { icon: creerIconePin(L, Icon, color) })
             .addTo(map)
             .bindPopup(
               `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
@@ -269,7 +277,8 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          if (!mapInstance.current) return;
+          if (!mapInstance.current || !leafletRef.current) return;
+          const L = leafletRef.current;
           const icone = L.divIcon({
             html: `<div style="width:16px;height:16px;border-radius:50%;background:#4285F4;border:2px solid #fff;box-shadow:0 0 0 4px rgba(66,133,244,0.25),0 1px 4px rgba(0,0,0,.3);"></div>`,
             className: "",
