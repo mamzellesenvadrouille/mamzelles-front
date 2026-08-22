@@ -4,21 +4,17 @@
 
 import { useEffect, useImperativeHandle, useRef, useState, forwardRef } from "react";
 import { createRoot } from "react-dom/client";
-import { Map as MapLibreMap, NavigationControl, Marker, Popup, setWorkerUrl } from "maplibre-gl";
-import "maplibre-gl/dist/maplibre-gl.css";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 import { Bed, Utensils, Camera, Compass } from "lucide-react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 
-// Fix : le worker interne de MapLibre a besoin de son fichier compagnon
-// (maplibre-gl-shared.mjs) juste à côté de lui. On les sert tous les deux
-// depuis /public, à un chemin statique fixe, pour qu'ils restent toujours ensemble.
-if (typeof window !== "undefined") {
-  setWorkerUrl("/maplibre-gl-worker.mjs");
-}
-
 const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
-const STYLE_URL = `https://api.maptiler.com/maps/streets-v2/style.json?key=${MAPTILER_KEY}`;
+// Même fond de carte MapTiler qu'avant (mêmes couleurs, même style) — seul
+// le moteur qui positionne les pins change (Leaflet au lieu de MapLibre),
+// pour corriger un bug de repositionnement reconnu et non résolu côté
+// MapLibre (issues GitHub #2190 et #6925).
 const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`;
 
 type Categorie = "hebergements" | "restaurants" | "activites";
@@ -90,15 +86,37 @@ function precacherTuiles(centre: { lat: number; lng: number }) {
   });
 }
 
+function creerIconePin(Icon: typeof Bed, color: string) {
+  const container = document.createElement("div");
+  container.style.cssText = "width:30px;height:39px;";
+  container.innerHTML = `
+    <svg width="30" height="39" viewBox="0 0 30 39" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));">
+      <path d="M15 1C7.8 1 2 6.8 2 14c0 10.5 13 24 13 24s13-13.5 13-24C28 6.8 22.2 1 15 1z" fill="${color}" stroke="#fff" stroke-width="2"/>
+    </svg>
+  `;
+  const iconSlot = document.createElement("div");
+  iconSlot.style.cssText = "position:absolute;top:0;left:0;width:30px;height:28px;display:flex;align-items:center;justify-content:center;pointer-events:none;";
+  container.style.position = "relative";
+  container.appendChild(iconSlot);
+  createRoot(iconSlot).render(<Icon color="#fff" size={15} strokeWidth={2} />);
+
+  return L.divIcon({
+    html: container,
+    className: "",
+    iconSize: [30, 39],
+    // Ancre en bas-centre : la pointe de la goutte touche exactement la
+    // coordonnée, comme anchor:"bottom" sous MapLibre.
+    iconAnchor: [15, 39],
+    popupAnchor: [0, -39],
+  });
+}
+
 const DestinationMap = forwardRef<DestinationMapHandle, { destination: DestinationResolue; apiKey?: string }>(
   function DestinationMap({ destination }, ref) {
     const wrapRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<HTMLDivElement>(null);
-    const mapInstance = useRef<MapLibreMap | null>(null);
-    // Une seule Marker par lieu, chacune avec SA PROPRE bulle attachée une
-    // fois pour toutes (pattern officiel MapLibre : marker.setPopup()).
-    // Plus de bulle partagée recréée à chaque clic.
-    const markersParCle = useRef<Map<string, Marker>>(new Map());
+    const mapInstance = useRef<L.Map | null>(null);
+    const markersParCle = useRef<Map<string, L.Marker>>(new Map());
     const centreGeneralRef = useRef<{ lat: number; lng: number } | null>(null);
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
@@ -110,40 +128,30 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       activites: destination.activites ?? [],
     };
 
-    if (typeof window !== "undefined") {
-      console.log(`%c[Carte] Coordonnées brutes reçues pour "${destination.nom ?? destination.id}"`, "font-weight:bold;color:#c8956c;");
-      (Object.keys(lieuxParCategorie) as Categorie[]).forEach((cat) => {
-        lieuxParCategorie[cat].forEach((l) => {
-          console.log(`  ${cat} · ${l.nom} → lat=${l.lat} lng=${l.lng}`);
-        });
-      });
-    }
-
     const aDesCoordonnees = Object.values(lieuxParCategorie).some((liste) => liste.some(positionValide));
 
-    // Vole vers un lieu et ouvre SA bulle (déjà attachée à son marker).
-    // Ferme d'abord toute autre bulle ouverte, sans jamais déclencher de
-    // recentrage automatique — ça, c'est désormais le rôle exclusif du
-    // bouton "Vue générale".
+    // Vole vers un lieu et ouvre sa bulle. Ferme d'abord toute autre bulle
+    // ouverte. Le retour à la vue générale reste exclusivement le rôle du
+    // bouton "Vue générale" — jamais un effet de bord caché.
     function allerVers(lat: number, lng: number) {
       const map = mapInstance.current;
       const marker = markersParCle.current.get(clePourLieu(lat, lng));
       if (!map || !marker) return;
 
       markersParCle.current.forEach((m) => {
-        if (m !== marker) m.getPopup()?.isOpen() && m.togglePopup();
+        if (m !== marker) m.closePopup();
       });
 
-      map.flyTo({ center: [lng, lat], zoom: 16 });
-      if (!marker.getPopup()?.isOpen()) marker.togglePopup();
+      map.flyTo([lat, lng], 16);
+      marker.openPopup();
     }
 
     function vueGenerale() {
       const map = mapInstance.current;
       const centre = centreGeneralRef.current;
       if (!map || !centre) return;
-      markersParCle.current.forEach((m) => m.getPopup()?.isOpen() && m.togglePopup());
-      map.flyTo({ center: [centre.lng, centre.lat], zoom: 13 });
+      markersParCle.current.forEach((m) => m.closePopup());
+      map.flyTo([centre.lat, centre.lng], 13);
     }
 
     useImperativeHandle(ref, () => ({
@@ -158,7 +166,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     // Création de la carte (une seule fois par destination)
     useEffect(() => {
       if (!aDesCoordonnees || !mapRef.current) return;
-      let annule = false;
 
       const tousLesPoints = Object.values(lieuxParCategorie).flat().filter(positionValide);
       if (tousLesPoints.length === 0) return;
@@ -170,62 +177,41 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       centreGeneralRef.current = centre;
 
       try {
-        const map = new MapLibreMap({
-          container: mapRef.current,
-          style: STYLE_URL,
-          center: [centre.lng, centre.lat],
+        const map = L.map(mapRef.current, {
+          center: [centre.lat, centre.lng],
           zoom: 13,
           attributionControl: false,
-        });
-        map.addControl(new NavigationControl({ showCompass: false }), "top-right");
-
-        map.on("load", () => {
-          if (annule) return;
-          mapInstance.current = map;
-          precacherTuiles(centre);
+          zoomControl: true,
         });
 
-        // "idle" garantit que la carte est totalement stabilisée (style
-        // chargé, tuiles rendues, projection correcte) avant qu'on pose les
-        // pins — sinon ils peuvent apparaître décalés jusqu'au premier
-        // zoom/déplacement.
-        map.once("idle", () => {
-          if (annule) return;
-          setPret(true);
-        });
+        L.tileLayer(TILE_URL_TEMPLATE, { maxZoom: 19, tileSize: 512, zoomOffset: -1 }).addTo(map);
 
-        map.on("error", () => setErreur(true));
+        precacherTuiles(centre);
+        mapInstance.current = map;
+        setPret(true);
       } catch {
         setErreur(true);
       }
 
       return () => {
-        annule = true;
         mapInstance.current?.remove();
         mapInstance.current = null;
       };
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [destination.id]);
 
-    // Le reste de la page (photos qui chargent, etc.) peut légèrement
-    // déplacer/redimensionner le conteneur de la carte APRÈS son
-    // initialisation. Sans resynchronisation continue, les pins restent
-    // calés sur l'ancienne position du conteneur et semblent "décalés",
-    // alors que les bulles (recalculées à chaque ouverture) restent
-    // justes. On observe le conteneur en continu et on resynchronise
-    // MapLibre à chaque changement réel.
+    // Leaflet a besoin d'être prévenu explicitement si son conteneur change
+    // de taille après l'initialisation (ex : des photos plus haut sur la
+    // page finissent de charger et déplacent la carte) — sinon les calculs
+    // de position internes restent basés sur l'ancienne taille.
     useEffect(() => {
       if (!mapRef.current) return;
       const observer = new ResizeObserver(() => {
-        mapInstance.current?.resize();
+        mapInstance.current?.invalidateSize();
       });
       observer.observe(mapRef.current);
 
-      // Filet de sécurité supplémentaire : si des images plus haut sur la
-      // page finissent de charger et poussent la carte vers le bas sans
-      // changer sa taille, ResizeObserver ne le détecte pas. On force une
-      // dernière resynchronisation quand toute la page est chargée.
-      const surChargementComplet = () => mapInstance.current?.resize();
+      const surChargementComplet = () => mapInstance.current?.invalidateSize();
       window.addEventListener("load", surChargementComplet);
 
       return () => {
@@ -234,114 +220,48 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       };
     }, []);
 
-    // (re)dessine les pins selon les filtres actifs — chaque pin porte sa
-    // propre bulle, attachée une seule fois via setPopup (pattern officiel).
+    // (re)dessine les pins selon les filtres actifs
     useEffect(() => {
       if (!pret || !mapInstance.current) return;
+      const map = mapInstance.current;
 
       markersParCle.current.forEach((m) => m.remove());
       markersParCle.current = new Map();
 
-      function creerPin(key: Categorie, Icon: typeof Bed, color: string, lieu: Lieu) {
-        if (!positionValide(lieu)) {
-          if (lieu.lat !== undefined || lieu.lng !== undefined) {
-            console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
-          }
-          return;
-        }
-        const { lat, lng } = lieu;
-
-        const pin = document.createElement("div");
-        pin.style.cssText = "position:relative;width:30px;height:39px;cursor:pointer;";
-        pin.innerHTML = `
-          <svg width="30" height="39" viewBox="0 0 30 39" style="position:absolute;top:0;left:0;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));">
-            <path d="M15 1C7.8 1 2 6.8 2 14c0 10.5 13 24 13 24s13-13.5 13-24C28 6.8 22.2 1 15 1z" fill="${color}" stroke="#fff" stroke-width="2"/>
-          </svg>
-        `;
-        const iconSlot = document.createElement("div");
-        iconSlot.style.cssText = "position:absolute;top:0;left:0;width:30px;height:28px;display:flex;align-items:center;justify-content:center;pointer-events:none;";
-        pin.appendChild(iconSlot);
-        createRoot(iconSlot).render(<Icon color="#fff" size={15} strokeWidth={2} />);
-
-        const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-        const infosHtml =
-          key === "activites" && lieu.infosPratiques
-            ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
-            : "";
-        const popup = new Popup({ closeOnClick: false }).setHTML(
-          `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
-            <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
-            ${infosHtml}
-            <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
-          </div>`
-        );
-
-        const marker = new Marker({ element: pin, anchor: "bottom" })
-          .setLngLat([lng, lat])
-          .setPopup(popup)
-          .addTo(mapInstance.current!);
-
-        pin.addEventListener("click", () => allerVers(lat, lng));
-
-        markersParCle.current.set(clePourLieu(lat, lng), marker);
-
-        // Force une seconde fois la position juste après l'insertion : bug
-        // connu de MapLibre où un pin ajouté peut recevoir une position
-        // d'écran incorrecte à sa création (indépendamment de coordonnées
-        // par ailleurs justes), corrigé en rappelant setLngLat.
-        requestAnimationFrame(() => marker.setLngLat(marker.getLngLat()));
-      }
-
-      // On crée les pins un par un, avec un léger délai entre chacun, au
-      // lieu de tous les créer dans la même fraction de seconde — les
-      // créer en rafale semblait perturber le calcul de position de
-      // MapLibre pour tout pin ajouté après le tout premier.
-      const tousLesLieux: { key: Categorie; Icon: typeof Bed; color: string; lieu: Lieu }[] = [];
       CATEGORIES.forEach(({ key, Icon, color }) => {
         if (!filtres.has(key)) return;
-        lieuxParCategorie[key].forEach((lieu) => tousLesLieux.push({ key, Icon, color, lieu }));
-      });
+        lieuxParCategorie[key].forEach((lieu) => {
+          if (!positionValide(lieu)) {
+            if (lieu.lat !== undefined || lieu.lng !== undefined) {
+              console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
+            }
+            return;
+          }
+          const { lat, lng } = lieu;
 
-      let annuleCreation = false;
-      tousLesLieux.forEach((item, index) => {
-        setTimeout(() => {
-          if (annuleCreation || !mapInstance.current) return;
-          creerPin(item.key, item.Icon, item.color, item.lieu);
-        }, index * 40);
-      });
+          const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+          const infosHtml =
+            key === "activites" && lieu.infosPratiques
+              ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
+              : "";
 
-      return () => {
-        annuleCreation = true;
-      };
+          const marker = L.marker([lat, lng], { icon: creerIconePin(Icon, color) })
+            .addTo(map)
+            .bindPopup(
+              `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
+                <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
+                ${infosHtml}
+                <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
+              </div>`
+            );
+
+          marker.on("click", () => allerVers(lat, lng));
+
+          markersParCle.current.set(clePourLieu(lat, lng), marker);
+        });
+      });
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, filtres, destination.id]);
-
-    // Bug officiel et reconnu de MapLibre GL JS (issues GitHub #2190 et
-    // #6925) : les pins peuvent perdre leur position correcte pendant un
-    // zoom/déplacement et ne se resynchronisent pas toujours tout seuls.
-    // Contournement recommandé : forcer nous-mêmes la resynchronisation de
-    // tous les pins à chaque mouvement de la carte, pas juste une fois à
-    // leur création.
-    useEffect(() => {
-      const map = mapInstance.current;
-      if (!pret || !map) return;
-
-      function resynchroniserTousLesPins() {
-        markersParCle.current.forEach((m) => m.setLngLat(m.getLngLat()));
-      }
-
-      map.on("zoom", resynchroniserTousLesPins);
-      map.on("move", resynchroniserTousLesPins);
-      map.on("zoomend", resynchroniserTousLesPins);
-      map.on("moveend", resynchroniserTousLesPins);
-
-      return () => {
-        map.off("zoom", resynchroniserTousLesPins);
-        map.off("move", resynchroniserTousLesPins);
-        map.off("zoomend", resynchroniserTousLesPins);
-        map.off("moveend", resynchroniserTousLesPins);
-      };
-    }, [pret]);
 
     // Localise le visiteur (avec sa permission) et affiche un point bleu sur la carte
     useEffect(() => {
@@ -350,11 +270,13 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       navigator.geolocation.getCurrentPosition(
         (position) => {
           if (!mapInstance.current) return;
-          const dot = document.createElement("div");
-          dot.style.cssText = "width:16px;height:16px;border-radius:50%;background:#4285F4;border:2px solid #fff;box-shadow:0 0 0 4px rgba(66,133,244,0.25),0 1px 4px rgba(0,0,0,.3);";
-          new Marker({ element: dot })
-            .setLngLat([position.coords.longitude, position.coords.latitude])
-            .addTo(mapInstance.current);
+          const icone = L.divIcon({
+            html: `<div style="width:16px;height:16px;border-radius:50%;background:#4285F4;border:2px solid #fff;box-shadow:0 0 0 4px rgba(66,133,244,0.25),0 1px 4px rgba(0,0,0,.3);"></div>`,
+            className: "",
+            iconSize: [16, 16],
+            iconAnchor: [8, 8],
+          });
+          L.marker([position.coords.latitude, position.coords.longitude], { icon: icone }).addTo(mapInstance.current);
         },
         () => {},
         { enableHighAccuracy: true, timeout: 8000 }
@@ -417,8 +339,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               </button>
             );
           })}
-          {/* Retour explicite à la vue générale : plus aucun effet de bord
-              caché lié à la fermeture d'une bulle, on demande clairement. */}
           <button
             onClick={vueGenerale}
             title="Revenir à la vue générale"
@@ -450,22 +370,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             La carte n&apos;a pas pu se charger.
           </p>
         )}
-        {/* Panneau de debug temporaire : liste brute des coordonnées reçues
-            par ce composant, pour vérifier facilement (sans console) si des
-            lieux différents partagent des coordonnées identiques ou
-            erronées. À retirer une fois le diagnostic terminé. */}
-        <details style={{ marginTop: 16, fontFamily: "monospace", fontSize: 11, color: "#8a8074" }}>
-          <summary style={{ cursor: "pointer" }}>Debug coordonnées (temporaire)</summary>
-          <div style={{ marginTop: 8, whiteSpace: "pre-wrap", background: "#fff", padding: 12, borderRadius: 4 }}>
-            {(Object.keys(lieuxParCategorie) as Categorie[]).map((cat) =>
-              lieuxParCategorie[cat].map((l, i) => (
-                <div key={`${cat}-${i}`}>
-                  {cat} · {l.nom} → lat={String(l.lat)} lng={String(l.lng)}
-                </div>
-              ))
-            )}
-          </div>
-        </details>
       </div>
     );
   }
