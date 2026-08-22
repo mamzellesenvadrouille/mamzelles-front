@@ -191,7 +191,15 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             zoomControl: true,
           });
 
-          L.tileLayer(TILE_URL_TEMPLATE, { maxZoom: 19, tileSize: 512, zoomOffset: -1 }).addTo(map);
+          L.tileLayer(TILE_URL_TEMPLATE, {
+            maxZoom: 19,
+            tileSize: 512,
+            zoomOffset: -1,
+            crossOrigin: true,
+            // Garde plus de tuiles voisines en mémoire pendant le zoom,
+            // pour réduire les zones vides/floues pendant le chargement.
+            keepBuffer: 4,
+          }).addTo(map);
 
           precacherTuiles(centre);
           mapInstance.current = map;
