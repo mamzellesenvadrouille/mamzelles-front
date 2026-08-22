@@ -242,54 +242,77 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       markersParCle.current.forEach((m) => m.remove());
       markersParCle.current = new Map();
 
+      function creerPin(key: Categorie, Icon: typeof Bed, color: string, lieu: Lieu) {
+        if (!positionValide(lieu)) {
+          if (lieu.lat !== undefined || lieu.lng !== undefined) {
+            console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
+          }
+          return;
+        }
+        const { lat, lng } = lieu;
+
+        const pin = document.createElement("div");
+        pin.style.cssText = "position:relative;width:30px;height:39px;cursor:pointer;";
+        pin.innerHTML = `
+          <svg width="30" height="39" viewBox="0 0 30 39" style="position:absolute;top:0;left:0;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));">
+            <path d="M15 1C7.8 1 2 6.8 2 14c0 10.5 13 24 13 24s13-13.5 13-24C28 6.8 22.2 1 15 1z" fill="${color}" stroke="#fff" stroke-width="2"/>
+          </svg>
+        `;
+        const iconSlot = document.createElement("div");
+        iconSlot.style.cssText = "position:absolute;top:0;left:0;width:30px;height:28px;display:flex;align-items:center;justify-content:center;pointer-events:none;";
+        pin.appendChild(iconSlot);
+        createRoot(iconSlot).render(<Icon color="#fff" size={15} strokeWidth={2} />);
+
+        const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+        const infosHtml =
+          key === "activites" && lieu.infosPratiques
+            ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
+            : "";
+        const popup = new Popup({ closeOnClick: false }).setHTML(
+          `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
+            <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
+            ${infosHtml}
+            <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
+          </div>`
+        );
+
+        const marker = new Marker({ element: pin, anchor: "bottom" })
+          .setLngLat([lng, lat])
+          .setPopup(popup)
+          .addTo(mapInstance.current!);
+
+        pin.addEventListener("click", () => allerVers(lat, lng));
+
+        markersParCle.current.set(clePourLieu(lat, lng), marker);
+
+        // Force une seconde fois la position juste après l'insertion : bug
+        // connu de MapLibre où un pin ajouté peut recevoir une position
+        // d'écran incorrecte à sa création (indépendamment de coordonnées
+        // par ailleurs justes), corrigé en rappelant setLngLat.
+        requestAnimationFrame(() => marker.setLngLat(marker.getLngLat()));
+      }
+
+      // On crée les pins un par un, avec un léger délai entre chacun, au
+      // lieu de tous les créer dans la même fraction de seconde — les
+      // créer en rafale semblait perturber le calcul de position de
+      // MapLibre pour tout pin ajouté après le tout premier.
+      const tousLesLieux: { key: Categorie; Icon: typeof Bed; color: string; lieu: Lieu }[] = [];
       CATEGORIES.forEach(({ key, Icon, color }) => {
         if (!filtres.has(key)) return;
-        lieuxParCategorie[key].forEach((lieu) => {
-          if (!positionValide(lieu)) {
-            if (lieu.lat !== undefined || lieu.lng !== undefined) {
-              console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
-            }
-            return;
-          }
-          const { lat, lng } = lieu;
-
-          const pin = document.createElement("div");
-          pin.style.cssText = "position:relative;width:30px;height:39px;cursor:pointer;";
-          pin.innerHTML = `
-            <svg width="30" height="39" viewBox="0 0 30 39" style="position:absolute;top:0;left:0;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));">
-              <path d="M15 1C7.8 1 2 6.8 2 14c0 10.5 13 24 13 24s13-13.5 13-24C28 6.8 22.2 1 15 1z" fill="${color}" stroke="#fff" stroke-width="2"/>
-            </svg>
-          `;
-          const iconSlot = document.createElement("div");
-          iconSlot.style.cssText = "position:absolute;top:0;left:0;width:30px;height:28px;display:flex;align-items:center;justify-content:center;pointer-events:none;";
-          pin.appendChild(iconSlot);
-          createRoot(iconSlot).render(<Icon color="#fff" size={15} strokeWidth={2} />);
-
-          const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-          const infosHtml =
-            key === "activites" && lieu.infosPratiques
-              ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
-              : "";
-          const popup = new Popup({ closeOnClick: false }).setHTML(
-            `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
-              <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
-              ${infosHtml}
-              <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
-            </div>`
-          );
-
-          const marker = new Marker({ element: pin, anchor: "bottom" })
-            .setLngLat([lng, lat])
-            .setPopup(popup)
-            .addTo(mapInstance.current!);
-
-          // Le clic sur le pin ouvre sa bulle ET vole dessus — comportement
-          // identique au clic sur la fiche correspondante (allerVers).
-          pin.addEventListener("click", () => allerVers(lat, lng));
-
-          markersParCle.current.set(clePourLieu(lat, lng), marker);
-        });
+        lieuxParCategorie[key].forEach((lieu) => tousLesLieux.push({ key, Icon, color, lieu }));
       });
+
+      let annuleCreation = false;
+      tousLesLieux.forEach((item, index) => {
+        setTimeout(() => {
+          if (annuleCreation || !mapInstance.current) return;
+          creerPin(item.key, item.Icon, item.color, item.lieu);
+        }, index * 40);
+      });
+
+      return () => {
+        annuleCreation = true;
+      };
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, filtres, destination.id]);
 
