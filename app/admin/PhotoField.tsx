@@ -13,9 +13,16 @@ import adminStyles from "./adminStyles";
 // pour rester bien sous la limite de taille de requête de Vercel (qui bloque
 // les uploads trop lourds avant même d'atteindre notre code, avec une erreur
 // en texte brut plutôt qu'en JSON — d'où l'importance d'anticiper côté client).
-async function compresserImage(file: File, maxLargeur = 1920, qualite = 0.82): Promise<File> {
+async function compresserImage(
+  file: File,
+  maxLargeur = 1920,
+  qualite = 0.82
+): Promise<{ fichier: File; largeur: number; hauteur: number }> {
   // On ne touche pas aux formats déjà légers ou non compatibles canvas (ex: gif animé)
-  if (file.type === "image/gif") return file;
+  if (file.type === "image/gif") {
+    const bitmap = await createImageBitmap(file);
+    return { fichier: file, largeur: bitmap.width, hauteur: bitmap.height };
+  }
 
   const bitmap = await createImageBitmap(file);
   const ratio = Math.min(1, maxLargeur / bitmap.width);
@@ -26,16 +33,16 @@ async function compresserImage(file: File, maxLargeur = 1920, qualite = 0.82): P
   canvas.width = largeur;
   canvas.height = hauteur;
   const ctx = canvas.getContext("2d");
-  if (!ctx) return file;
+  if (!ctx) return { fichier: file, largeur: bitmap.width, hauteur: bitmap.height };
   ctx.drawImage(bitmap, 0, 0, largeur, hauteur);
 
   const blob: Blob | null = await new Promise((resolve) =>
     canvas.toBlob(resolve, "image/jpeg", qualite)
   );
-  if (!blob) return file;
+  if (!blob) return { fichier: file, largeur: bitmap.width, hauteur: bitmap.height };
 
   const nomCompresse = file.name.replace(/\.[^.]+$/, "") + ".jpg";
-  return new File([blob], nomCompresse, { type: "image/jpeg" });
+  return { fichier: new File([blob], nomCompresse, { type: "image/jpeg" }), largeur, hauteur };
 }
 
 export default function PhotoField({
@@ -45,7 +52,7 @@ export default function PhotoField({
   style,
 }: {
   value: string;
-  onChange: (url: string) => void;
+  onChange: (url: string, orientation?: "portrait" | "paysage") => void;
   placeholder?: string;
   style?: React.CSSProperties;
 }) {
@@ -60,7 +67,8 @@ export default function PhotoField({
     setUploading(true);
     setErreur("");
     try {
-      const fichierCompresse = await compresserImage(file);
+      const { fichier: fichierCompresse, largeur, hauteur } = await compresserImage(file);
+      const orientation: "portrait" | "paysage" = hauteur > largeur ? "portrait" : "paysage";
 
       const formData = new FormData();
       formData.append("file", fichierCompresse);
@@ -82,7 +90,7 @@ export default function PhotoField({
 
       if (!res.ok) throw new Error(data.error || "Erreur d'upload");
       if (!data.url) throw new Error("Réponse invalide du serveur");
-      onChange(data.url);
+      onChange(data.url, orientation);
     } catch (err) {
       setErreur(err instanceof Error ? err.message : "Erreur d'upload");
     } finally {

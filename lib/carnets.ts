@@ -20,7 +20,9 @@ export interface DeroulePoint {
 export interface Restaurant {
   nom: string;
   photo: string;
-  photoPosition?: number; // cadrage vertical (0-100, défaut 50)
+  photoPosition?: number; // cadrage vertical (0-100, défaut 50) — utilisé pour les photos paysage
+  photoPositionX?: number; // cadrage horizontal (0-100, défaut 50) — utilisé pour les photos portrait
+  photoOrientation?: "portrait" | "paysage"; // détectée automatiquement à l'upload
   cuisine: string; // ex: "Fruits de mer"
   prix: "€" | "€€" | "€€€";
   lat?: number;
@@ -30,7 +32,9 @@ export interface Restaurant {
 export interface Activite {
   nom: string;
   photo: string;
-  photoPosition?: number; // cadrage vertical (0-100, défaut 50)
+  photoPosition?: number; // cadrage vertical (0-100, défaut 50) — utilisé pour les photos paysage
+  photoPositionX?: number; // cadrage horizontal (0-100, défaut 50) — utilisé pour les photos portrait
+  photoOrientation?: "portrait" | "paysage"; // détectée automatiquement à l'upload
   description: string;
   lat?: number;
   lng?: number;
@@ -41,7 +45,9 @@ export interface Activite {
 export interface Hebergement {
   nom: string;
   photo: string;
-  photoPosition?: number; // cadrage vertical (0-100, défaut 50)
+  photoPosition?: number; // cadrage vertical (0-100, défaut 50) — utilisé pour les photos paysage
+  photoPositionX?: number; // cadrage horizontal (0-100, défaut 50) — utilisé pour les photos portrait
+  photoOrientation?: "portrait" | "paysage"; // détectée automatiquement à l'upload
   description: string;
   lat?: number;
   lng?: number;
@@ -51,7 +57,9 @@ export interface Destination {
   id: string; // slug normalisé, ex: "baa-atoll"
   nom: string;
   photo: string;
-  photoPosition?: number; // position verticale de la photo (0 = haut, 50 = centre, 100 = bas), défaut 50
+  photoPosition?: number; // position verticale de la photo (0 = haut, 50 = centre, 100 = bas), défaut 50 — utilisé pour les photos paysage
+  photoPositionX?: number; // position horizontale (0-100, défaut 50) — utilisé pour les photos portrait
+  photoOrientation?: "portrait" | "paysage"; // détectée automatiquement à l'upload
   continent?: string; // ex: "Asie", pour ranger la bibliothèque de destinations
   pays?: string; // ex: "Maldives"
   lat?: number; // coordonnée GPS de la destination elle-même (météo + carte du parcours)
