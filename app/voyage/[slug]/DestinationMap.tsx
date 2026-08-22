@@ -110,6 +110,15 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       activites: destination.activites ?? [],
     };
 
+    if (typeof window !== "undefined") {
+      console.log(`%c[Carte] Coordonnées brutes reçues pour "${destination.nom ?? destination.id}"`, "font-weight:bold;color:#c8956c;");
+      (Object.keys(lieuxParCategorie) as Categorie[]).forEach((cat) => {
+        lieuxParCategorie[cat].forEach((l) => {
+          console.log(`  ${cat} · ${l.nom} → lat=${l.lat} lng=${l.lng}`);
+        });
+      });
+    }
+
     const aDesCoordonnees = Object.values(lieuxParCategorie).some((liste) => liste.some(positionValide));
 
     // Vole vers un lieu et ouvre SA bulle (déjà attachée à son marker).
