@@ -186,11 +186,18 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             zoomControl: true,
           });
 
-          L.tileLayer(TILE_URL_TEMPLATE, {
+          // Sur les écrans Retina/HiDPI (Mac, iPhone récents...), une tuile
+          // normale est affichée agrandie par le système, donc légèrement
+          // floue. MapTiler fournit des tuiles "@2x" en haute résolution
+          // spécialement conçues pour ces écrans — Leaflet sait détecter
+          // automatiquement ce type d'écran via L.Browser.retina.
+          const suffixeRetina = L.Browser.retina ? "@2x" : "";
+          L.tileLayer(TILE_URL_TEMPLATE.replace("{z}/{x}/{y}.png", `{z}/{x}/{y}${suffixeRetina}.png`), {
             maxZoom: 19,
             tileSize: 512,
             zoomOffset: -1,
             crossOrigin: true,
+            detectRetina: false, // on gère nous-mêmes le suffixe @2x ci-dessus
             // Garde plus de tuiles voisines en mémoire pendant le zoom,
             // pour réduire les zones vides/floues pendant le chargement.
             keepBuffer: 4,
