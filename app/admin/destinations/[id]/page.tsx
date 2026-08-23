@@ -222,35 +222,28 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   />
                   {dest.photo && (
                     <div style={{ marginTop: 8 }}>
-                      {dest.photoOrientation === "portrait" ? (
-                        <>
-                          <label style={{ ...adminStyles.label, fontSize: 12 }}>
-                            Cadrage horizontal de la photo ({dest.photoPositionX ?? 50}%)
-                          </label>
-                          <input
-                            type="range"
-                            min={0}
-                            max={100}
-                            value={dest.photoPositionX ?? 50}
-                            onChange={(e) => update("photoPositionX", Number(e.target.value))}
-                            style={{ width: "100%" }}
-                          />
-                        </>
-                      ) : (
-                        <>
-                          <label style={{ ...adminStyles.label, fontSize: 12 }}>
-                            Cadrage vertical de la photo ({dest.photoPosition ?? 50}%)
-                          </label>
-                          <input
-                            type="range"
-                            min={0}
-                            max={100}
-                            value={dest.photoPosition ?? 50}
-                            onChange={(e) => update("photoPosition", Number(e.target.value))}
-                            style={{ width: "100%" }}
-                          />
-                        </>
-                      )}
+                      <label style={{ ...adminStyles.label, fontSize: 12 }}>
+                        Cadrage horizontal ({dest.photoPositionX ?? 50}%)
+                      </label>
+                      <input
+                        type="range"
+                        min={0}
+                        max={100}
+                        value={dest.photoPositionX ?? 50}
+                        onChange={(e) => update("photoPositionX", Number(e.target.value))}
+                        style={{ width: "100%" }}
+                      />
+                      <label style={{ ...adminStyles.label, fontSize: 12, marginTop: 8 }}>
+                        Cadrage vertical ({dest.photoPosition ?? 50}%)
+                      </label>
+                      <input
+                        type="range"
+                        min={0}
+                        max={100}
+                        value={dest.photoPosition ?? 50}
+                        onChange={(e) => update("photoPosition", Number(e.target.value))}
+                        style={{ width: "100%" }}
+                      />
                       <div
                         style={{
                           width: "100%",
@@ -259,10 +252,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           marginTop: 6,
                           backgroundImage: `url('${dest.photo}')`,
                           backgroundSize: "cover",
-                          backgroundPosition:
-                            dest.photoOrientation === "portrait"
-                              ? `${dest.photoPositionX ?? 50}% center`
-                              : `center ${dest.photoPosition ?? 50}%`,
+                          backgroundPosition: `${dest.photoPositionX ?? 50}% ${dest.photoPosition ?? 50}%`,
                         }}
                       />
                     </div>
@@ -463,49 +453,36 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                       {h.photo && (
                         <div style={{ marginTop: 8 }}>
-                          {h.photoOrientation === "portrait" ? (
-                            <>
-                              <label style={{ ...microLabel, marginBottom: 4 }}>
-                                Cadrage horizontal ({h.photoPositionX ?? 50}%)
-                              </label>
-                              <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10.5, color: "#aaa", marginTop: -2, marginBottom: 4 }}>
-                                Photo portrait détectée — déplace le cadrage de gauche à droite.
-                              </p>
-                              <input
-                                type="range"
-                                min={0}
-                                max={100}
-                                value={h.photoPositionX ?? 50}
-                                onChange={(e) => {
-                                  const copy = [...(dest.hebergements ?? [])];
-                                  copy[i] = { ...copy[i], photoPositionX: Number(e.target.value) };
-                                  update("hebergements", copy);
-                                }}
-                                style={{ width: "100%" }}
-                              />
-                            </>
-                          ) : (
-                            <>
-                              <label style={{ ...microLabel, marginBottom: 4 }}>
-                                Cadrage vertical ({h.photoPosition ?? 50}%)
-                              </label>
-                              <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10.5, color: "#aaa", marginTop: -2, marginBottom: 4 }}>
-                                Photo paysage détectée — déplace le cadrage de haut en bas.
-                              </p>
-                              <input
-                                type="range"
-                                min={0}
-                                max={100}
-                                value={h.photoPosition ?? 50}
-                                onChange={(e) => {
-                                  const copy = [...(dest.hebergements ?? [])];
-                                  copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
-                                  update("hebergements", copy);
-                                }}
-                                style={{ width: "100%" }}
-                              />
-                            </>
-                          )}
+                          <label style={{ ...microLabel, marginBottom: 4 }}>
+                            Cadrage horizontal ({h.photoPositionX ?? 50}%)
+                          </label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={h.photoPositionX ?? 50}
+                            onChange={(e) => {
+                              const copy = [...(dest.hebergements ?? [])];
+                              copy[i] = { ...copy[i], photoPositionX: Number(e.target.value) };
+                              update("hebergements", copy);
+                            }}
+                            style={{ width: "100%" }}
+                          />
+                          <label style={{ ...microLabel, marginBottom: 4, marginTop: 8 }}>
+                            Cadrage vertical ({h.photoPosition ?? 50}%)
+                          </label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={h.photoPosition ?? 50}
+                            onChange={(e) => {
+                              const copy = [...(dest.hebergements ?? [])];
+                              copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
+                              update("hebergements", copy);
+                            }}
+                            style={{ width: "100%" }}
+                          />
                           <div
                             style={{
                               // Ratio exact du vrai cadre affiché dans le carnet
@@ -518,10 +495,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                               marginTop: 6,
                               backgroundImage: `url('${h.photo}')`,
                               backgroundSize: "cover",
-                              backgroundPosition:
-                                h.photoOrientation === "portrait"
-                                  ? `${h.photoPositionX ?? 50}% center`
-                                  : `center ${h.photoPosition ?? 50}%`,
+                              backgroundPosition: `${h.photoPositionX ?? 50}% ${h.photoPosition ?? 50}%`,
                             }}
                           />
                         </div>
@@ -635,49 +609,36 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                       {a.photo && (
                         <div style={{ marginTop: 8 }}>
-                          {a.photoOrientation === "portrait" ? (
-                            <>
-                              <label style={{ ...microLabel, marginBottom: 4 }}>
-                                Cadrage horizontal ({a.photoPositionX ?? 50}%)
-                              </label>
-                              <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10.5, color: "#aaa", marginTop: -2, marginBottom: 4 }}>
-                                Photo portrait détectée — déplace le cadrage de gauche à droite.
-                              </p>
-                              <input
-                                type="range"
-                                min={0}
-                                max={100}
-                                value={a.photoPositionX ?? 50}
-                                onChange={(e) => {
-                                  const copy = [...dest.activites];
-                                  copy[i] = { ...copy[i], photoPositionX: Number(e.target.value) };
-                                  update("activites", copy);
-                                }}
-                                style={{ width: "100%" }}
-                              />
-                            </>
-                          ) : (
-                            <>
-                              <label style={{ ...microLabel, marginBottom: 4 }}>
-                                Cadrage vertical ({a.photoPosition ?? 50}%)
-                              </label>
-                              <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10.5, color: "#aaa", marginTop: -2, marginBottom: 4 }}>
-                                Photo paysage détectée — déplace le cadrage de haut en bas.
-                              </p>
-                              <input
-                                type="range"
-                                min={0}
-                                max={100}
-                                value={a.photoPosition ?? 50}
-                                onChange={(e) => {
-                                  const copy = [...dest.activites];
-                                  copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
-                                  update("activites", copy);
-                                }}
-                                style={{ width: "100%" }}
-                              />
-                            </>
-                          )}
+                          <label style={{ ...microLabel, marginBottom: 4 }}>
+                            Cadrage horizontal ({a.photoPositionX ?? 50}%)
+                          </label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={a.photoPositionX ?? 50}
+                            onChange={(e) => {
+                              const copy = [...dest.activites];
+                              copy[i] = { ...copy[i], photoPositionX: Number(e.target.value) };
+                              update("activites", copy);
+                            }}
+                            style={{ width: "100%" }}
+                          />
+                          <label style={{ ...microLabel, marginBottom: 4, marginTop: 8 }}>
+                            Cadrage vertical ({a.photoPosition ?? 50}%)
+                          </label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={a.photoPosition ?? 50}
+                            onChange={(e) => {
+                              const copy = [...dest.activites];
+                              copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
+                              update("activites", copy);
+                            }}
+                            style={{ width: "100%" }}
+                          />
                           <div
                             style={{
                               width: 200,
@@ -686,10 +647,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                               marginTop: 6,
                               backgroundImage: `url('${a.photo}')`,
                               backgroundSize: "cover",
-                              backgroundPosition:
-                                a.photoOrientation === "portrait"
-                                  ? `${a.photoPositionX ?? 50}% center`
-                                  : `center ${a.photoPosition ?? 50}%`,
+                              backgroundPosition: `${a.photoPositionX ?? 50}% ${a.photoPosition ?? 50}%`,
                             }}
                           />
                         </div>
@@ -828,49 +786,36 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                       {r.photo && (
                         <div style={{ marginTop: 8 }}>
-                          {r.photoOrientation === "portrait" ? (
-                            <>
-                              <label style={{ ...microLabel, marginBottom: 4 }}>
-                                Cadrage horizontal ({r.photoPositionX ?? 50}%)
-                              </label>
-                              <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10.5, color: "#aaa", marginTop: -2, marginBottom: 4 }}>
-                                Photo portrait détectée — déplace le cadrage de gauche à droite.
-                              </p>
-                              <input
-                                type="range"
-                                min={0}
-                                max={100}
-                                value={r.photoPositionX ?? 50}
-                                onChange={(e) => {
-                                  const copy = [...dest.restaurants];
-                                  copy[i] = { ...copy[i], photoPositionX: Number(e.target.value) };
-                                  update("restaurants", copy);
-                                }}
-                                style={{ width: "100%" }}
-                              />
-                            </>
-                          ) : (
-                            <>
-                              <label style={{ ...microLabel, marginBottom: 4 }}>
-                                Cadrage vertical ({r.photoPosition ?? 50}%)
-                              </label>
-                              <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10.5, color: "#aaa", marginTop: -2, marginBottom: 4 }}>
-                                Photo paysage détectée — déplace le cadrage de haut en bas.
-                              </p>
-                              <input
-                                type="range"
-                                min={0}
-                                max={100}
-                                value={r.photoPosition ?? 50}
-                                onChange={(e) => {
-                                  const copy = [...dest.restaurants];
-                                  copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
-                                  update("restaurants", copy);
-                                }}
-                                style={{ width: "100%" }}
-                              />
-                            </>
-                          )}
+                          <label style={{ ...microLabel, marginBottom: 4 }}>
+                            Cadrage horizontal ({r.photoPositionX ?? 50}%)
+                          </label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={r.photoPositionX ?? 50}
+                            onChange={(e) => {
+                              const copy = [...dest.restaurants];
+                              copy[i] = { ...copy[i], photoPositionX: Number(e.target.value) };
+                              update("restaurants", copy);
+                            }}
+                            style={{ width: "100%" }}
+                          />
+                          <label style={{ ...microLabel, marginBottom: 4, marginTop: 8 }}>
+                            Cadrage vertical ({r.photoPosition ?? 50}%)
+                          </label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={r.photoPosition ?? 50}
+                            onChange={(e) => {
+                              const copy = [...dest.restaurants];
+                              copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
+                              update("restaurants", copy);
+                            }}
+                            style={{ width: "100%" }}
+                          />
                           <div
                             style={{
                               width: 200,
@@ -879,10 +824,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                               marginTop: 6,
                               backgroundImage: `url('${r.photo}')`,
                               backgroundSize: "cover",
-                              backgroundPosition:
-                                r.photoOrientation === "portrait"
-                                  ? `${r.photoPositionX ?? 50}% center`
-                                  : `center ${r.photoPosition ?? 50}%`,
+                              backgroundPosition: `${r.photoPositionX ?? 50}% ${r.photoPosition ?? 50}%`,
                             }}
                           />
                         </div>

@@ -195,10 +195,7 @@ export default function DestinationTabs({
           className={styles.destPhoto}
           style={{
             backgroundImage: `url('${dest.photo}')`,
-            backgroundPosition:
-              dest.photoOrientation === "portrait"
-                ? `${dest.photoPositionX ?? 50}% center`
-                : `center ${dest.photoPosition ?? 50}%`,
+            backgroundPosition: `${dest.photoPositionX ?? 50}% ${dest.photoPosition ?? 50}%`,
           }}
         />
 
@@ -324,12 +321,7 @@ export default function DestinationTabs({
                       <img
                         src={h.photo}
                         alt={h.nom}
-                        style={{
-                          objectPosition:
-                            h.photoOrientation === "portrait"
-                              ? `${h.photoPositionX ?? 50}% center`
-                              : `center ${h.photoPosition ?? 50}%`,
-                        }}
+                        style={{ objectPosition: `${h.photoPositionX ?? 50}% ${h.photoPosition ?? 50}%` }}
                         onError={(e) => (e.currentTarget.style.display = "none")}
                       />
                     ) : (
@@ -388,12 +380,7 @@ export default function DestinationTabs({
                         <img
                           src={a.photo}
                           alt={a.nom}
-                          style={{
-                            objectPosition:
-                              a.photoOrientation === "portrait"
-                                ? `${a.photoPositionX ?? 50}% center`
-                                : `center ${a.photoPosition ?? 50}%`,
-                          }}
+                          style={{ objectPosition: `${a.photoPositionX ?? 50}% ${a.photoPosition ?? 50}%` }}
                           onError={(e) => (e.currentTarget.style.display = "none")}
                         />
                       ) : (
@@ -477,12 +464,7 @@ export default function DestinationTabs({
                       <img
                         src={r.photo}
                         alt={r.nom}
-                        style={{
-                          objectPosition:
-                            r.photoOrientation === "portrait"
-                              ? `${r.photoPositionX ?? 50}% center`
-                              : `center ${r.photoPosition ?? 50}%`,
-                        }}
+                        style={{ objectPosition: `${r.photoPositionX ?? 50}% ${r.photoPosition ?? 50}%` }}
                         onError={(e) => (e.currentTarget.style.display = "none")}
                       />
                     ) : (
