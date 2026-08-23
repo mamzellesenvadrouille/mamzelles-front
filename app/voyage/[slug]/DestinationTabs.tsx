@@ -497,9 +497,12 @@ export default function DestinationTabs({
                       </div>
                     )}
                     {r.commentaire && (
-                      <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12.5, color: "#5a5248", lineHeight: 1.5, margin: "4px 0 0", whiteSpace: "pre-line" }}>
+                      <div
+                        className={styles.meta}
+                        style={{ whiteSpace: "pre-line", overflow: "visible", textOverflow: "clip" }}
+                      >
                         {r.commentaire}
-                      </p>
+                      </div>
                     )}
                     {aCoords && (
                       <span className={styles.mapsLink} style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
@@ -530,7 +533,7 @@ export default function DestinationTabs({
           </>
         )}
 
-        <DestinationMap ref={mapHandleRef} destination={dest} apiKey={googleMapsApiKey} />
+        <DestinationMap key={dest.id} ref={mapHandleRef} destination={dest} apiKey={googleMapsApiKey} />
       </div>
     </div>
   );
