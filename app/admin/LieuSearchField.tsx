@@ -14,7 +14,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Map as MapLibreMap, Marker, setWorkerUrl } from "maplibre-gl";
+import { Map as MapLibreMap, Marker, NavigationControl, setWorkerUrl } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 if (typeof window !== "undefined") {
@@ -41,9 +41,7 @@ export default function LieuSearchField({
   lat?: number;
   lng?: number;
 }) {
-  const [saisie, setSaisie] = useState(
-    typeof lat === "number" && typeof lng === "number" ? "📍 Position enregistrée" : ""
-  );
+  const [saisie, setSaisie] = useState("");
   const [resultats, setResultats] = useState<Resultat[]>([]);
   const [recherche, setRecherche] = useState(false);
   const [ouvert, setOuvert] = useState(false);
@@ -78,6 +76,11 @@ export default function LieuSearchField({
       attributionControl: false,
     });
     mapInstance.current = map;
+
+    // Boutons +/- pour zoomer/dézoomer, en plus du pin déplaçable — utile
+    // pour affiner visuellement la position avant de valider (zoomer pour
+    // voir précisément le bâtiment, dézoomer pour se repérer dans la rue).
+    map.addControl(new NavigationControl({ showCompass: false }), "top-right");
 
     map.on("load", () => {
       setTimeout(() => map.resize(), 50);
@@ -207,11 +210,11 @@ export default function LieuSearchField({
       )}
       {lieuChoisi && (
         <div style={{ marginTop: 8 }}>
-          {lieuChoisi.nom !== "Position enregistrée" && (
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginBottom: 6 }}>
-              📍 Vérifie que le pin est bien placé — fais-le glisser si besoin.
-            </p>
-          )}
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginBottom: 6 }}>
+            📍 {lieuChoisi.nom === "Position enregistrée"
+              ? "Position actuelle — vérifie qu'elle est bien placée, ou fais-la glisser pour ajuster."
+              : "Vérifie que le pin est bien sur le bâtiment — fais-le glisser si besoin."}
+          </p>
           <div
             ref={mapRef}
             style={{ width: "100%", height: 180, borderRadius: 4, background: "#f0ebe4", position: "relative", overflow: "hidden" }}
