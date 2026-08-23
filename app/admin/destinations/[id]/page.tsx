@@ -5,7 +5,7 @@
 // Pour créer une nouvelle destination, va sur /admin/destinations/nouvelle
 "use client";
 
-import { useState, use } from "react";
+import { useState, useRef, use } from "react";
 import { useRouter } from "next/navigation";
 import type { Destination, DeroulePoint, Hebergement, Restaurant, Activite } from "@/lib/carnets";
 import { normaliserHeure, deviseDepuisPays } from "@/lib/carnets";
@@ -93,6 +93,77 @@ function formaterHeureSaisie(saisie: string): string {
   const limites = chiffres.slice(0, tailleHeure + 2);
   if (limites.length < tailleHeure) return limites;
   return `${limites.slice(0, tailleHeure)}h${limites.slice(tailleHeure)}`;
+}
+
+// Aperçu photo qu'on recadre directement en la faisant glisser à la souris
+// ou au doigt, plutôt que via des curseurs séparés. Le glissement déplace
+// visuellement la photo comme sur Facebook/Instagram : on tire la photo
+// dans la direction où on veut voir davantage de contenu.
+function CadragePhoto({
+  src,
+  x,
+  y,
+  onChange,
+  width,
+  height,
+}: {
+  src: string;
+  x: number;
+  y: number;
+  onChange: (x: number, y: number) => void;
+  width: number | string;
+  height: number;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const dragRef = useRef<{ startX: number; startY: number; startPosX: number; startPosY: number } | null>(null);
+  const [enTrainDeGlisser, setEnTrainDeGlisser] = useState(false);
+
+  function onPointerDown(e: React.PointerEvent<HTMLDivElement>) {
+    e.preventDefault();
+    e.currentTarget.setPointerCapture(e.pointerId);
+    dragRef.current = { startX: e.clientX, startY: e.clientY, startPosX: x, startPosY: y };
+    setEnTrainDeGlisser(true);
+  }
+
+  function onPointerMove(e: React.PointerEvent<HTMLDivElement>) {
+    if (!dragRef.current || !ref.current) return;
+    const rect = ref.current.getBoundingClientRect();
+    const deltaX = e.clientX - dragRef.current.startX;
+    const deltaY = e.clientY - dragRef.current.startY;
+    // On tire la photo elle-même : glisser vers la droite doit donc
+    // déplacer le cadrage vers la gauche (on soustrait le delta).
+    const nouveauX = Math.min(100, Math.max(0, dragRef.current.startPosX - (deltaX / rect.width) * 100));
+    const nouveauY = Math.min(100, Math.max(0, dragRef.current.startPosY - (deltaY / rect.height) * 100));
+    onChange(Math.round(nouveauX), Math.round(nouveauY));
+  }
+
+  function onPointerUp(e: React.PointerEvent<HTMLDivElement>) {
+    dragRef.current = null;
+    setEnTrainDeGlisser(false);
+    e.currentTarget.releasePointerCapture(e.pointerId);
+  }
+
+  return (
+    <div
+      ref={ref}
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={onPointerUp}
+      style={{
+        width,
+        height,
+        borderRadius: 4,
+        marginTop: 6,
+        backgroundImage: `url('${src}')`,
+        backgroundSize: "cover",
+        backgroundPosition: `${x}% ${y}%`,
+        cursor: enTrainDeGlisser ? "grabbing" : "grab",
+        touchAction: "none",
+        userSelect: "none",
+      }}
+      title="Glisse la photo pour la recadrer"
+    />
+  );
 }
 
 export default function EditDestinationPage({ params }: { params: Promise<{ id: string }> }) {
@@ -222,38 +293,17 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   />
                   {dest.photo && (
                     <div style={{ marginTop: 8 }}>
-                      <label style={{ ...adminStyles.label, fontSize: 12 }}>
-                        Cadrage horizontal ({dest.photoPositionX ?? 50}%)
-                      </label>
-                      <input
-                        type="range"
-                        min={0}
-                        max={100}
-                        value={dest.photoPositionX ?? 50}
-                        onChange={(e) => update("photoPositionX", Number(e.target.value))}
-                        style={{ width: "100%" }}
-                      />
-                      <label style={{ ...adminStyles.label, fontSize: 12, marginTop: 8 }}>
-                        Cadrage vertical ({dest.photoPosition ?? 50}%)
-                      </label>
-                      <input
-                        type="range"
-                        min={0}
-                        max={100}
-                        value={dest.photoPosition ?? 50}
-                        onChange={(e) => update("photoPosition", Number(e.target.value))}
-                        style={{ width: "100%" }}
-                      />
-                      <div
-                        style={{
-                          width: "100%",
-                          height: 220,
-                          borderRadius: 4,
-                          marginTop: 6,
-                          backgroundImage: `url('${dest.photo}')`,
-                          backgroundSize: "cover",
-                          backgroundPosition: `${dest.photoPositionX ?? 50}% ${dest.photoPosition ?? 50}%`,
+                      <label style={{ ...adminStyles.label, fontSize: 12 }}>Recadrage</label>
+                      <CadragePhoto
+                        src={dest.photo}
+                        x={dest.photoPositionX ?? 50}
+                        y={dest.photoPosition ?? 50}
+                        onChange={(x, y) => {
+                          update("photoPositionX", x);
+                          update("photoPosition", y);
                         }}
+                        width="100%"
+                        height={220}
                       />
                     </div>
                   )}
@@ -453,50 +503,20 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                       {h.photo && (
                         <div style={{ marginTop: 8 }}>
-                          <label style={{ ...microLabel, marginBottom: 4 }}>
-                            Cadrage horizontal ({h.photoPositionX ?? 50}%)
-                          </label>
-                          <input
-                            type="range"
-                            min={0}
-                            max={100}
-                            value={h.photoPositionX ?? 50}
-                            onChange={(e) => {
+                          <label style={{ ...microLabel, marginBottom: 4 }}>Recadrage</label>
+                          <CadragePhoto
+                            src={h.photo}
+                            x={h.photoPositionX ?? 50}
+                            y={h.photoPosition ?? 50}
+                            onChange={(x, y) => {
                               const copy = [...(dest.hebergements ?? [])];
-                              copy[i] = { ...copy[i], photoPositionX: Number(e.target.value) };
+                              copy[i] = { ...copy[i], photoPositionX: x, photoPosition: y };
                               update("hebergements", copy);
                             }}
-                            style={{ width: "100%" }}
-                          />
-                          <label style={{ ...microLabel, marginBottom: 4, marginTop: 8 }}>
-                            Cadrage vertical ({h.photoPosition ?? 50}%)
-                          </label>
-                          <input
-                            type="range"
-                            min={0}
-                            max={100}
-                            value={h.photoPosition ?? 50}
-                            onChange={(e) => {
-                              const copy = [...(dest.hebergements ?? [])];
-                              copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
-                              update("hebergements", copy);
-                            }}
-                            style={{ width: "100%" }}
-                          />
-                          <div
-                            style={{
-                              // Ratio exact du vrai cadre affiché dans le carnet
-                              // (colonne ~260px sur hauteur fixe 140px), plutôt
-                              // qu'un 4:3 approximatif qui ne correspondait pas
-                              // au rendu réel.
-                              width: 200,
-                              aspectRatio: "13 / 7",
-                              borderRadius: 4,
-                              marginTop: 6,
-                              backgroundImage: `url('${h.photo}')`,
-                              backgroundSize: "cover",
-                              backgroundPosition: `${h.photoPositionX ?? 50}% ${h.photoPosition ?? 50}%`,
-                            }}
+                            width={200}
+                            // Ratio exact du vrai cadre affiché dans le carnet
+                            // (colonne ~260px sur hauteur fixe 140px).
+                            height={108}
                           />
                         </div>
                       )}
@@ -609,46 +629,18 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                       {a.photo && (
                         <div style={{ marginTop: 8 }}>
-                          <label style={{ ...microLabel, marginBottom: 4 }}>
-                            Cadrage horizontal ({a.photoPositionX ?? 50}%)
-                          </label>
-                          <input
-                            type="range"
-                            min={0}
-                            max={100}
-                            value={a.photoPositionX ?? 50}
-                            onChange={(e) => {
+                          <label style={{ ...microLabel, marginBottom: 4 }}>Recadrage</label>
+                          <CadragePhoto
+                            src={a.photo}
+                            x={a.photoPositionX ?? 50}
+                            y={a.photoPosition ?? 50}
+                            onChange={(x, y) => {
                               const copy = [...dest.activites];
-                              copy[i] = { ...copy[i], photoPositionX: Number(e.target.value) };
+                              copy[i] = { ...copy[i], photoPositionX: x, photoPosition: y };
                               update("activites", copy);
                             }}
-                            style={{ width: "100%" }}
-                          />
-                          <label style={{ ...microLabel, marginBottom: 4, marginTop: 8 }}>
-                            Cadrage vertical ({a.photoPosition ?? 50}%)
-                          </label>
-                          <input
-                            type="range"
-                            min={0}
-                            max={100}
-                            value={a.photoPosition ?? 50}
-                            onChange={(e) => {
-                              const copy = [...dest.activites];
-                              copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
-                              update("activites", copy);
-                            }}
-                            style={{ width: "100%" }}
-                          />
-                          <div
-                            style={{
-                              width: 200,
-                              aspectRatio: "13 / 7",
-                              borderRadius: 4,
-                              marginTop: 6,
-                              backgroundImage: `url('${a.photo}')`,
-                              backgroundSize: "cover",
-                              backgroundPosition: `${a.photoPositionX ?? 50}% ${a.photoPosition ?? 50}%`,
-                            }}
+                            width={200}
+                            height={108}
                           />
                         </div>
                       )}
@@ -786,46 +778,18 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                       {r.photo && (
                         <div style={{ marginTop: 8 }}>
-                          <label style={{ ...microLabel, marginBottom: 4 }}>
-                            Cadrage horizontal ({r.photoPositionX ?? 50}%)
-                          </label>
-                          <input
-                            type="range"
-                            min={0}
-                            max={100}
-                            value={r.photoPositionX ?? 50}
-                            onChange={(e) => {
+                          <label style={{ ...microLabel, marginBottom: 4 }}>Recadrage</label>
+                          <CadragePhoto
+                            src={r.photo}
+                            x={r.photoPositionX ?? 50}
+                            y={r.photoPosition ?? 50}
+                            onChange={(x, y) => {
                               const copy = [...dest.restaurants];
-                              copy[i] = { ...copy[i], photoPositionX: Number(e.target.value) };
+                              copy[i] = { ...copy[i], photoPositionX: x, photoPosition: y };
                               update("restaurants", copy);
                             }}
-                            style={{ width: "100%" }}
-                          />
-                          <label style={{ ...microLabel, marginBottom: 4, marginTop: 8 }}>
-                            Cadrage vertical ({r.photoPosition ?? 50}%)
-                          </label>
-                          <input
-                            type="range"
-                            min={0}
-                            max={100}
-                            value={r.photoPosition ?? 50}
-                            onChange={(e) => {
-                              const copy = [...dest.restaurants];
-                              copy[i] = { ...copy[i], photoPosition: Number(e.target.value) };
-                              update("restaurants", copy);
-                            }}
-                            style={{ width: "100%" }}
-                          />
-                          <div
-                            style={{
-                              width: 200,
-                              aspectRatio: "13 / 7",
-                              borderRadius: 4,
-                              marginTop: 6,
-                              backgroundImage: `url('${r.photo}')`,
-                              backgroundSize: "cover",
-                              backgroundPosition: `${r.photoPositionX ?? 50}% ${r.photoPosition ?? 50}%`,
-                            }}
+                            width={200}
+                            height={108}
                           />
                         </div>
                       )}
