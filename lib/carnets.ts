@@ -25,6 +25,7 @@ export interface Restaurant {
   photoOrientation?: "portrait" | "paysage"; // détectée automatiquement à l'upload
   cuisine: string; // ex: "Fruits de mer"
   prix: "€" | "€€" | "€€€";
+  commentaire?: string; // texte libre : recommandation, plat à essayer, ambiance...
   lat?: number;
   lng?: number;
 }

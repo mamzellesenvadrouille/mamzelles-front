@@ -489,7 +489,18 @@ export default function DestinationTabs({
                       <div className={styles.miniCardPlaceholder} />
                     )}
                     <h4>{r.nom}</h4>
-                    <div className={styles.meta}>{r.cuisine} · {r.prix}</div>
+                    {(r.cuisine || r.prix) && (
+                      <div className={styles.meta}>
+                        {r.cuisine}
+                        {r.cuisine && r.prix ? " · " : ""}
+                        {r.prix}
+                      </div>
+                    )}
+                    {r.commentaire && (
+                      <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12.5, color: "#5a5248", lineHeight: 1.5, margin: "4px 0 0", whiteSpace: "pre-line" }}>
+                        {r.commentaire}
+                      </p>
+                    )}
                     {aCoords && (
                       <span className={styles.mapsLink} style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
                         <MapPin size={12} color="#c8956c" strokeWidth={2} />

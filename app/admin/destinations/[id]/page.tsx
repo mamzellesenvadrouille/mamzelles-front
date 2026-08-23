@@ -921,6 +921,20 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       </div>
                     </div>
 
+                    <div style={fieldBox}>
+                      <label style={microLabel}>Commentaire (optionnel — recommandation, plat à essayer...)</label>
+                      <textarea
+                        style={{ ...adminStyles.input, minHeight: 60, resize: "vertical", fontFamily: "inherit" }}
+                        placeholder="ex : Le tartare de thon est excellent, penser à réserver le soir"
+                        value={r.commentaire ?? ""}
+                        onChange={(e) => {
+                          const copy = [...dest.restaurants];
+                          copy[i] = { ...copy[i], commentaire: e.target.value };
+                          update("restaurants", copy);
+                        }}
+                      />
+                    </div>
+
                     <LieuSearchField
                       lat={r.lat}
                       lng={r.lng}
