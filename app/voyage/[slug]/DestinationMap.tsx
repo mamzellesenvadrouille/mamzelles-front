@@ -120,7 +120,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     const leafletRef = useRef<typeof import("leaflet") | null>(null);
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
-    const [filtres, setFiltres] = useState<Set<Categorie>>(new Set(["hebergements", "restaurants", "activites"]));
+    const [filtreActif, setFiltreActif] = useState<Categorie>("hebergements");
 
     const lieuxParCategorie: Record<Categorie, Lieu[]> = {
       hebergements: destination.hebergements ?? [],
@@ -237,7 +237,10 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       };
     }, []);
 
-    // (re)dessine les pins selon les filtres actifs
+    // (re)dessine les pins de la catégorie active, et recadre la carte pour
+    // bien la montrer dans son ensemble : zoom serré si un seul lieu (ex :
+    // l'hébergement), vue élargie englobant tous les points s'il y en a
+    // plusieurs (ex : les activités éparpillées sur plusieurs îles).
     useEffect(() => {
       if (!pret || !mapInstance.current || !leafletRef.current) return;
       const map = mapInstance.current;
@@ -246,40 +249,51 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       markersParCle.current.forEach((m) => m.remove());
       markersParCle.current = new Map();
 
-      CATEGORIES.forEach(({ key, Icon, color }) => {
-        if (!filtres.has(key)) return;
-        lieuxParCategorie[key].forEach((lieu) => {
-          if (!positionValide(lieu)) {
-            if (lieu.lat !== undefined || lieu.lng !== undefined) {
-              console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
-            }
-            return;
+      const categorieActive = CATEGORIES.find((c) => c.key === filtreActif);
+      if (!categorieActive) return;
+      const { key, Icon, color } = categorieActive;
+
+      const pointsValides: { lat: number; lng: number }[] = [];
+
+      lieuxParCategorie[key].forEach((lieu) => {
+        if (!positionValide(lieu)) {
+          if (lieu.lat !== undefined || lieu.lng !== undefined) {
+            console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
           }
-          const { lat, lng } = lieu;
+          return;
+        }
+        const { lat, lng } = lieu;
+        pointsValides.push({ lat, lng });
 
-          const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-          const infosHtml =
-            key === "activites" && lieu.infosPratiques
-              ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
-              : "";
+        const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+        const infosHtml =
+          key === "activites" && lieu.infosPratiques
+            ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
+            : "";
 
-          const marker = L.marker([lat, lng], { icon: creerIconePin(L, Icon, color) })
-            .addTo(map)
-            .bindPopup(
-              `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
-                <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
-                ${infosHtml}
-                <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
-              </div>`
-            );
+        const marker = L.marker([lat, lng], { icon: creerIconePin(L, Icon, color) })
+          .addTo(map)
+          .bindPopup(
+            `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
+              <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
+              ${infosHtml}
+              <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
+            </div>`
+          );
 
-          marker.on("click", () => allerVers(lat, lng));
+        marker.on("click", () => allerVers(lat, lng));
 
-          markersParCle.current.set(clePourLieu(lat, lng), marker);
-        });
+        markersParCle.current.set(clePourLieu(lat, lng), marker);
       });
+
+      if (pointsValides.length === 1) {
+        map.flyTo([pointsValides[0].lat, pointsValides[0].lng], 15);
+      } else if (pointsValides.length > 1) {
+        const bounds = L.latLngBounds(pointsValides.map((p) => [p.lat, p.lng]));
+        map.flyToBounds(bounds, { padding: [32, 32], maxZoom: 15 });
+      }
       // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [pret, filtres, destination.id]);
+    }, [pret, filtreActif, destination.id]);
 
     // Localise le visiteur (avec sa permission) et affiche un point bleu sur la carte
     useEffect(() => {
@@ -303,15 +317,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, destination.id]);
 
-    function toggleFiltre(cat: Categorie) {
-      setFiltres((prev) => {
-        const next = new Set(prev);
-        if (next.has(cat)) next.delete(cat);
-        else next.add(cat);
-        return next;
-      });
-    }
-
     if (!aDesCoordonnees) return null;
 
     return (
@@ -319,11 +324,11 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         <div className={styles.subEyebrow} style={{ marginBottom: 20 }}>Carte interactive</div>
         <div style={{ display: "flex", gap: 8, marginBottom: 24, flexWrap: "wrap", alignItems: "center" }}>
           {CATEGORIES.map((c) => {
-            const actif = filtres.has(c.key);
+            const actif = filtreActif === c.key;
             return (
               <button
                 key={c.key}
-                onClick={() => toggleFiltre(c.key)}
+                onClick={() => setFiltreActif(c.key)}
                 style={{
                   fontFamily: "Inter, sans-serif",
                   fontSize: 13.5,
