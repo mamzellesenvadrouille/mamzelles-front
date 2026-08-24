@@ -252,6 +252,25 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       };
     }, []);
 
+    // Recadre la carte sur l'ensemble des pins de la catégorie donnée : zoom
+    // serré si un seul lieu, vue élargie englobant tous les points sinon.
+    // Séparée de la création des pins pour pouvoir être appelée directement
+    // au clic sur un bouton de filtre déjà actif (qui ne redéclenche pas le
+    // useEffect ci-dessous, puisque la valeur de filtreActif ne change pas).
+    function recadrerSurCategorie(categorie: Categorie) {
+      const map = mapInstance.current;
+      const L = leafletRef.current;
+      if (!map || !L) return;
+
+      const pointsValides = lieuxParCategorie[categorie].filter(positionValide);
+      if (pointsValides.length === 1) {
+        map.flyTo([pointsValides[0].lat, pointsValides[0].lng], 15);
+      } else if (pointsValides.length > 1) {
+        const bounds = L.latLngBounds(pointsValides.map((p) => [p.lat, p.lng]));
+        map.flyToBounds(bounds, { padding: [32, 32], maxZoom: 15 });
+      }
+    }
+
     // (re)dessine les pins de la catégorie active, et recadre la carte pour
     // bien la montrer dans son ensemble : zoom serré si un seul lieu (ex :
     // l'hébergement), vue élargie englobant tous les points s'il y en a
@@ -268,8 +287,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       if (!categorieActive) return;
       const { key, Icon, color } = categorieActive;
 
-      const pointsValides: { lat: number; lng: number }[] = [];
-
       lieuxParCategorie[key].forEach((lieu) => {
         if (!positionValide(lieu)) {
           if (lieu.lat !== undefined || lieu.lng !== undefined) {
@@ -278,7 +295,6 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
           return;
         }
         const { lat, lng } = lieu;
-        pointsValides.push({ lat, lng });
 
         const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
         const infosHtml =
@@ -305,11 +321,8 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         const { lat, lng } = cibleEnAttenteRef.current;
         cibleEnAttenteRef.current = null;
         allerVers(lat, lng);
-      } else if (pointsValides.length === 1) {
-        map.flyTo([pointsValides[0].lat, pointsValides[0].lng], 15);
-      } else if (pointsValides.length > 1) {
-        const bounds = L.latLngBounds(pointsValides.map((p) => [p.lat, p.lng]));
-        map.flyToBounds(bounds, { padding: [32, 32], maxZoom: 15 });
+      } else {
+        recadrerSurCategorie(filtreActif);
       }
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, filtreActif, destination.id]);
@@ -349,7 +362,11 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                 key={c.key}
                 onClick={() => {
                   cibleEnAttenteRef.current = null;
-                  setFiltreActif(c.key);
+                  if (filtreActif === c.key) {
+                    recadrerSurCategorie(c.key);
+                  } else {
+                    setFiltreActif(c.key);
+                  }
                 }}
                 style={{
                   fontFamily: "Inter, sans-serif",
