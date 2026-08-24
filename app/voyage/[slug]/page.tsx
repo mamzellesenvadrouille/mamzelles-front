@@ -149,7 +149,9 @@ export default async function CarnetPage({
             <div className={styles.lbl}>Décalage horaire</div>
           </div>
           <div className={styles.overviewItem}>
-            <div className={styles.val}>{carnet.overview.dureeJours} jours</div>
+            <div className={styles.val}>
+              {carnet.overview.dureeJours}j / {Math.max(0, carnet.overview.dureeJours - 1)}n
+            </div>
             <div className={styles.lbl}>Durée du séjour</div>
           </div>
           <div className={styles.overviewItem}>
