@@ -23,6 +23,8 @@ export interface Restaurant {
   photoPosition?: number; // cadrage vertical (0-100, défaut 50) — utilisé pour les photos paysage
   photoPositionX?: number; // cadrage horizontal (0-100, défaut 50) — utilisé pour les photos portrait
   photoOrientation?: "portrait" | "paysage"; // détectée automatiquement à l'upload
+  photoPositionMobile?: number; // cadrage vertical spécifique au mobile (0-100, défaut = photoPosition)
+  photoPositionXMobile?: number; // cadrage horizontal spécifique au mobile (0-100, défaut = photoPositionX)
   cuisine: string; // ex: "Fruits de mer"
   prix: "€" | "€€" | "€€€";
   commentaire?: string; // texte libre : recommandation, plat à essayer, ambiance...
@@ -36,6 +38,8 @@ export interface Activite {
   photoPosition?: number; // cadrage vertical (0-100, défaut 50) — utilisé pour les photos paysage
   photoPositionX?: number; // cadrage horizontal (0-100, défaut 50) — utilisé pour les photos portrait
   photoOrientation?: "portrait" | "paysage"; // détectée automatiquement à l'upload
+  photoPositionMobile?: number; // cadrage vertical spécifique au mobile (0-100, défaut = photoPosition)
+  photoPositionXMobile?: number; // cadrage horizontal spécifique au mobile (0-100, défaut = photoPositionX)
   description: string;
   lat?: number;
   lng?: number;
@@ -49,6 +53,8 @@ export interface Hebergement {
   photoPosition?: number; // cadrage vertical (0-100, défaut 50) — utilisé pour les photos paysage
   photoPositionX?: number; // cadrage horizontal (0-100, défaut 50) — utilisé pour les photos portrait
   photoOrientation?: "portrait" | "paysage"; // détectée automatiquement à l'upload
+  photoPositionMobile?: number; // cadrage vertical spécifique au mobile (0-100, défaut = photoPosition)
+  photoPositionXMobile?: number; // cadrage horizontal spécifique au mobile (0-100, défaut = photoPositionX)
   description: string;
   lat?: number;
   lng?: number;
@@ -61,6 +67,8 @@ export interface Destination {
   photoPosition?: number; // position verticale de la photo (0 = haut, 50 = centre, 100 = bas), défaut 50 — utilisé pour les photos paysage
   photoPositionX?: number; // position horizontale (0-100, défaut 50) — utilisé pour les photos portrait
   photoOrientation?: "portrait" | "paysage"; // détectée automatiquement à l'upload
+  photoPositionMobile?: number; // cadrage vertical spécifique au mobile (0-100, défaut = photoPosition)
+  photoPositionXMobile?: number; // cadrage horizontal spécifique au mobile (0-100, défaut = photoPositionX)
   continent?: string; // ex: "Asie", pour ranger la bibliothèque de destinations
   pays?: string; // ex: "Maldives"
   lat?: number; // coordonnée GPS de la destination elle-même (météo + carte du parcours)

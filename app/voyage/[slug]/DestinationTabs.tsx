@@ -200,8 +200,11 @@ export default function DestinationTabs({
           className={styles.destPhoto}
           style={{
             backgroundImage: `url('${dest.photo}')`,
-            backgroundPosition: `${dest.photoPositionX ?? 50}% ${dest.photoPosition ?? 50}%`,
-          }}
+            ["--photo-pos-x" as string]: `${dest.photoPositionX ?? 50}%`,
+            ["--photo-pos-y" as string]: `${dest.photoPosition ?? 50}%`,
+            ["--photo-pos-x-mobile" as string]: `${dest.photoPositionXMobile ?? dest.photoPositionX ?? 50}%`,
+            ["--photo-pos-y-mobile" as string]: `${dest.photoPositionMobile ?? dest.photoPosition ?? 50}%`,
+          } as React.CSSProperties}
         />
 
         <div className={styles.destInfoRow}>
@@ -326,7 +329,12 @@ export default function DestinationTabs({
                       <img
                         src={h.photo}
                         alt={h.nom}
-                        style={{ objectPosition: `${h.photoPositionX ?? 50}% ${h.photoPosition ?? 50}%` }}
+                        style={{
+                          ["--photo-pos-x" as string]: `${h.photoPositionX ?? 50}%`,
+                          ["--photo-pos-y" as string]: `${h.photoPosition ?? 50}%`,
+                          ["--photo-pos-x-mobile" as string]: `${h.photoPositionXMobile ?? h.photoPositionX ?? 50}%`,
+                          ["--photo-pos-y-mobile" as string]: `${h.photoPositionMobile ?? h.photoPosition ?? 50}%`,
+                        } as React.CSSProperties}
                         onError={(e) => (e.currentTarget.style.display = "none")}
                       />
                     ) : (
@@ -385,7 +393,12 @@ export default function DestinationTabs({
                         <img
                           src={a.photo}
                           alt={a.nom}
-                          style={{ objectPosition: `${a.photoPositionX ?? 50}% ${a.photoPosition ?? 50}%` }}
+                          style={{
+                            ["--photo-pos-x" as string]: `${a.photoPositionX ?? 50}%`,
+                            ["--photo-pos-y" as string]: `${a.photoPosition ?? 50}%`,
+                            ["--photo-pos-x-mobile" as string]: `${a.photoPositionXMobile ?? a.photoPositionX ?? 50}%`,
+                            ["--photo-pos-y-mobile" as string]: `${a.photoPositionMobile ?? a.photoPosition ?? 50}%`,
+                          } as React.CSSProperties}
                           onError={(e) => (e.currentTarget.style.display = "none")}
                         />
                       ) : (
@@ -469,7 +482,12 @@ export default function DestinationTabs({
                       <img
                         src={r.photo}
                         alt={r.nom}
-                        style={{ objectPosition: `${r.photoPositionX ?? 50}% ${r.photoPosition ?? 50}%` }}
+                        style={{
+                          ["--photo-pos-x" as string]: `${r.photoPositionX ?? 50}%`,
+                          ["--photo-pos-y" as string]: `${r.photoPosition ?? 50}%`,
+                          ["--photo-pos-x-mobile" as string]: `${r.photoPositionXMobile ?? r.photoPositionX ?? 50}%`,
+                          ["--photo-pos-y-mobile" as string]: `${r.photoPositionMobile ?? r.photoPosition ?? 50}%`,
+                        } as React.CSSProperties}
                         onError={(e) => (e.currentTarget.style.display = "none")}
                       />
                     ) : (

@@ -293,7 +293,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   />
                   {dest.photo && (
                     <div style={{ marginTop: 8 }}>
-                      <label style={{ ...adminStyles.label, fontSize: 12 }}>Recadrage</label>
+                      <label style={{ ...adminStyles.label, fontSize: 12 }}>Recadrage (desktop / tablette)</label>
                       <CadragePhoto
                         src={dest.photo}
                         x={dest.photoPositionX ?? 50}
@@ -304,6 +304,21 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                         }}
                         width="100%"
                         height={220}
+                      />
+                      <label style={{ ...adminStyles.label, fontSize: 12, marginTop: 10 }}>Recadrage (mobile)</label>
+                      <CadragePhoto
+                        src={dest.photo}
+                        x={dest.photoPositionXMobile ?? dest.photoPositionX ?? 50}
+                        y={dest.photoPositionMobile ?? dest.photoPosition ?? 50}
+                        onChange={(x, y) => {
+                          update("photoPositionXMobile", x);
+                          update("photoPositionMobile", y);
+                        }}
+                        // Ratio réel du cadre en mobile : largeur de contenu
+                        // ~327px pour une hauteur fixe de 220px, différent du
+                        // ratio desktop (cadre plus large).
+                        width={220}
+                        height={148}
                       />
                     </div>
                   )}
@@ -503,7 +518,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                       {h.photo && (
                         <div style={{ marginTop: 8 }}>
-                          <label style={{ ...microLabel, marginBottom: 4 }}>Recadrage</label>
+                          <label style={{ ...microLabel, marginBottom: 4 }}>Recadrage (desktop / tablette)</label>
                           <CadragePhoto
                             src={h.photo}
                             x={h.photoPositionX ?? 50}
@@ -517,6 +532,21 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                             // Ratio exact du vrai cadre affiché dans le carnet
                             // (colonne ~260px sur hauteur fixe 140px).
                             height={108}
+                          />
+                          <label style={{ ...microLabel, marginBottom: 4, marginTop: 10 }}>Recadrage (mobile)</label>
+                          <CadragePhoto
+                            src={h.photo}
+                            x={h.photoPositionXMobile ?? h.photoPositionX ?? 50}
+                            y={h.photoPositionMobile ?? h.photoPosition ?? 50}
+                            onChange={(x, y) => {
+                              const copy = [...(dest.hebergements ?? [])];
+                              copy[i] = { ...copy[i], photoPositionXMobile: x, photoPositionMobile: y };
+                              update("hebergements", copy);
+                            }}
+                            // Ratio réel en mobile : une seule colonne pleine
+                            // largeur (~327px) sur hauteur fixe 140px.
+                            width={180}
+                            height={77}
                           />
                         </div>
                       )}
@@ -629,7 +659,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                       {a.photo && (
                         <div style={{ marginTop: 8 }}>
-                          <label style={{ ...microLabel, marginBottom: 4 }}>Recadrage</label>
+                          <label style={{ ...microLabel, marginBottom: 4 }}>Recadrage (desktop / tablette)</label>
                           <CadragePhoto
                             src={a.photo}
                             x={a.photoPositionX ?? 50}
@@ -641,6 +671,19 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                             }}
                             width={200}
                             height={108}
+                          />
+                          <label style={{ ...microLabel, marginBottom: 4, marginTop: 10 }}>Recadrage (mobile)</label>
+                          <CadragePhoto
+                            src={a.photo}
+                            x={a.photoPositionXMobile ?? a.photoPositionX ?? 50}
+                            y={a.photoPositionMobile ?? a.photoPosition ?? 50}
+                            onChange={(x, y) => {
+                              const copy = [...dest.activites];
+                              copy[i] = { ...copy[i], photoPositionXMobile: x, photoPositionMobile: y };
+                              update("activites", copy);
+                            }}
+                            width={180}
+                            height={77}
                           />
                         </div>
                       )}
@@ -778,7 +821,7 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       />
                       {r.photo && (
                         <div style={{ marginTop: 8 }}>
-                          <label style={{ ...microLabel, marginBottom: 4 }}>Recadrage</label>
+                          <label style={{ ...microLabel, marginBottom: 4 }}>Recadrage (desktop / tablette)</label>
                           <CadragePhoto
                             src={r.photo}
                             x={r.photoPositionX ?? 50}
@@ -790,6 +833,19 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                             }}
                             width={200}
                             height={108}
+                          />
+                          <label style={{ ...microLabel, marginBottom: 4, marginTop: 10 }}>Recadrage (mobile)</label>
+                          <CadragePhoto
+                            src={r.photo}
+                            x={r.photoPositionXMobile ?? r.photoPositionX ?? 50}
+                            y={r.photoPositionMobile ?? r.photoPosition ?? 50}
+                            onChange={(x, y) => {
+                              const copy = [...dest.restaurants];
+                              copy[i] = { ...copy[i], photoPositionXMobile: x, photoPositionMobile: y };
+                              update("restaurants", copy);
+                            }}
+                            width={180}
+                            height={77}
                           />
                         </div>
                       )}
