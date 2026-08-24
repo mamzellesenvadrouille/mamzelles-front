@@ -429,15 +429,17 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             title="Vue générale (hôtels, activités et restaurants)"
             style={{
               position: "absolute",
-              bottom: 10,
-              left: 10,
+              // Juste sous les boutons +/- de zoom (en haut à droite), pour
+              // regrouper tous les contrôles de la carte au même endroit.
+              top: 88,
+              right: 10,
               zIndex: 400, // au-dessus des tuiles Leaflet, sous les popups
               width: 34,
               height: 34,
-              borderRadius: "50%",
-              border: "none",
+              borderRadius: 4,
+              border: "2px solid rgba(0,0,0,.2)",
               background: "#fff",
-              boxShadow: "0 2px 6px rgba(0,0,0,.2)",
+              boxShadow: "0 1px 5px rgba(0,0,0,.15)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
