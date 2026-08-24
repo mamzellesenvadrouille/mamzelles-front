@@ -182,7 +182,21 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
       .then((r) => r.json())
       .then((data) => {
         const found = (data.destinations ?? []).find((d: Destination) => d.id === routeId);
-        if (found) setDest({ ...found, hebergements: found.hebergements ?? [] });
+        if (found) {
+          setDest({
+            ...found,
+            hebergements: found.hebergements ?? [],
+            // Certains restaurants ont pu être créés avant qu'un prix par
+            // défaut existe ; sans cette normalisation, le menu déroulant
+            // affiche "€" (premier choix par défaut du navigateur) sans que
+            // ce soit réellement enregistré, ce qui fait "disparaître" le
+            // prix au moment de sauvegarder si on ne touche jamais au menu.
+            restaurants: (found.restaurants ?? []).map((r: Restaurant) => ({
+              ...r,
+              prix: r.prix || "€€",
+            })),
+          });
+        }
         setLoading(false);
       });
   }
@@ -308,8 +322,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       <label style={{ ...adminStyles.label, fontSize: 12, marginTop: 10 }}>Recadrage (mobile)</label>
                       <CadragePhoto
                         src={dest.photo}
-                        x={dest.photoPositionXMobile ?? dest.photoPositionX ?? 50}
-                        y={dest.photoPositionMobile ?? dest.photoPosition ?? 50}
+                        x={dest.photoPositionXMobile ?? 50}
+                        y={dest.photoPositionMobile ?? 50}
                         onChange={(x, y) => {
                           update("photoPositionXMobile", x);
                           update("photoPositionMobile", y);
@@ -536,8 +550,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           <label style={{ ...microLabel, marginBottom: 4, marginTop: 10 }}>Recadrage (mobile)</label>
                           <CadragePhoto
                             src={h.photo}
-                            x={h.photoPositionXMobile ?? h.photoPositionX ?? 50}
-                            y={h.photoPositionMobile ?? h.photoPosition ?? 50}
+                            x={h.photoPositionXMobile ?? 50}
+                            y={h.photoPositionMobile ?? 50}
                             onChange={(x, y) => {
                               const copy = [...(dest.hebergements ?? [])];
                               copy[i] = { ...copy[i], photoPositionXMobile: x, photoPositionMobile: y };
@@ -675,8 +689,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           <label style={{ ...microLabel, marginBottom: 4, marginTop: 10 }}>Recadrage (mobile)</label>
                           <CadragePhoto
                             src={a.photo}
-                            x={a.photoPositionXMobile ?? a.photoPositionX ?? 50}
-                            y={a.photoPositionMobile ?? a.photoPosition ?? 50}
+                            x={a.photoPositionXMobile ?? 50}
+                            y={a.photoPositionMobile ?? 50}
                             onChange={(x, y) => {
                               const copy = [...dest.activites];
                               copy[i] = { ...copy[i], photoPositionXMobile: x, photoPositionMobile: y };
@@ -837,8 +851,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           <label style={{ ...microLabel, marginBottom: 4, marginTop: 10 }}>Recadrage (mobile)</label>
                           <CadragePhoto
                             src={r.photo}
-                            x={r.photoPositionXMobile ?? r.photoPositionX ?? 50}
-                            y={r.photoPositionMobile ?? r.photoPosition ?? 50}
+                            x={r.photoPositionXMobile ?? 50}
+                            y={r.photoPositionMobile ?? 50}
                             onChange={(x, y) => {
                               const copy = [...dest.restaurants];
                               copy[i] = { ...copy[i], photoPositionXMobile: x, photoPositionMobile: y };
