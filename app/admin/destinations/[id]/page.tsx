@@ -174,7 +174,11 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
   const [dest, setDest] = useState<typeof destinationVide>(destinationVide);
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
-  const [dragIndex, setDragIndex] = useState<number | null>(null);
+  // Mémorise à la fois QUELLE liste et QUEL index sont en cours de glisser —
+  // indispensable maintenant qu'il y a 4 listes réorganisables distinctes
+  // (déroulé, hébergements, activités, restaurants), pour ne jamais risquer
+  // de déplacer un élément d'une liste vers une autre par erreur.
+  const [dragInfo, setDragInfo] = useState<{ liste: "deroule" | "hebergements" | "activites" | "restaurants"; index: number } | null>(null);
 
   function charger() {
     if (isNew) return;
@@ -205,17 +209,18 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
     setDest((prev) => ({ ...prev, [key]: value }));
   }
 
-  // Déplace la ligne glissée (dragIndex) directement à la position de la ligne survolée (i)
-  function deposerDeroule(i: number) {
-    if (dragIndex === null || dragIndex === i) {
-      setDragIndex(null);
+  // Déplace l'élément glissé (dragInfo) directement à la position de
+  // l'élément survolé (i), au sein de la même liste uniquement.
+  function deposerLigne(liste: "deroule" | "hebergements" | "activites" | "restaurants", i: number) {
+    if (!dragInfo || dragInfo.liste !== liste || dragInfo.index === i) {
+      setDragInfo(null);
       return;
     }
-    const copy = [...dest.deroule];
-    const [ligne] = copy.splice(dragIndex, 1);
-    copy.splice(i, 0, ligne);
-    update("deroule", copy);
-    setDragIndex(null);
+    const copy = [...(dest[liste] as unknown[])];
+    const [item] = copy.splice(dragInfo.index, 1);
+    copy.splice(i, 0, item);
+    update(liste, copy as (typeof destinationVide)[typeof liste]);
+    setDragInfo(null);
   }
 
   async function enregistrer() {
@@ -405,22 +410,22 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   <div
                     key={i}
                     onDragOver={(e) => e.preventDefault()}
-                    onDrop={() => deposerDeroule(i)}
+                    onDrop={() => deposerLigne("deroule", i)}
                     style={{
                       display: "flex",
                       gap: 8,
                       marginBottom: 10,
                       alignItems: "flex-start",
-                      opacity: dragIndex === i ? 0.4 : 1,
-                      background: dragIndex !== null && dragIndex !== i ? "#faf7f2" : "transparent",
+                      opacity: dragInfo?.liste === "deroule" && dragInfo.index === i ? 0.4 : 1,
+                      background: dragInfo?.liste === "deroule" && dragInfo.index !== i ? "#faf7f2" : "transparent",
                       borderRadius: 4,
                       transition: "opacity .15s, background .15s",
                     }}
                   >
                     <div
                       draggable
-                      onDragStart={() => setDragIndex(i)}
-                      onDragEnd={() => setDragIndex(null)}
+                      onDragStart={() => setDragInfo({ liste: "deroule", index: i })}
+                      onDragEnd={() => setDragInfo(null)}
                       style={{
                         cursor: "grab",
                         color: "#c8c2b6",
@@ -497,7 +502,35 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Hébergements</div>
                 {(dest.hebergements ?? []).map((h, i) => (
-                  <div key={i} style={itemCard}>
+                  <div
+                    key={i}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerLigne("hebergements", i)}
+                    style={{
+                      ...itemCard,
+                      opacity: dragInfo?.liste === "hebergements" && dragInfo.index === i ? 0.4 : 1,
+                      background: dragInfo?.liste === "hebergements" && dragInfo.index !== i ? "#faf7f2" : itemCard.background,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <div
+                      draggable
+                      onDragStart={() => setDragInfo({ liste: "hebergements", index: i })}
+                      onDragEnd={() => setDragInfo(null)}
+                      style={{
+                        position: "absolute",
+                        top: 10,
+                        left: 10,
+                        cursor: "grab",
+                        color: "#c8c2b6",
+                        fontSize: 16,
+                        userSelect: "none",
+                        lineHeight: 1,
+                      }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </div>
                     <button
                       onClick={() => supprimerLigne("hebergements", i)}
                       style={{ ...adminStyles.btnDelete, position: "absolute", top: 10, right: 10 }}
@@ -638,7 +671,35 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   Sites & activités ({dest.activites.length})
                 </div>
                 {dest.activites.map((a, i) => (
-                  <div key={i} style={itemCard}>
+                  <div
+                    key={i}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerLigne("activites", i)}
+                    style={{
+                      ...itemCard,
+                      opacity: dragInfo?.liste === "activites" && dragInfo.index === i ? 0.4 : 1,
+                      background: dragInfo?.liste === "activites" && dragInfo.index !== i ? "#faf7f2" : itemCard.background,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <div
+                      draggable
+                      onDragStart={() => setDragInfo({ liste: "activites", index: i })}
+                      onDragEnd={() => setDragInfo(null)}
+                      style={{
+                        position: "absolute",
+                        top: 10,
+                        left: 10,
+                        cursor: "grab",
+                        color: "#c8c2b6",
+                        fontSize: 16,
+                        userSelect: "none",
+                        lineHeight: 1,
+                      }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </div>
                     <button
                       onClick={() => supprimerLigne("activites", i)}
                       style={{ ...adminStyles.btnDelete, position: "absolute", top: 10, right: 10 }}
@@ -800,7 +861,35 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                   Restaurants ({dest.restaurants.length})
                 </div>
                 {dest.restaurants.map((r, i) => (
-                  <div key={i} style={itemCard}>
+                  <div
+                    key={i}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerLigne("restaurants", i)}
+                    style={{
+                      ...itemCard,
+                      opacity: dragInfo?.liste === "restaurants" && dragInfo.index === i ? 0.4 : 1,
+                      background: dragInfo?.liste === "restaurants" && dragInfo.index !== i ? "#faf7f2" : itemCard.background,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <div
+                      draggable
+                      onDragStart={() => setDragInfo({ liste: "restaurants", index: i })}
+                      onDragEnd={() => setDragInfo(null)}
+                      style={{
+                        position: "absolute",
+                        top: 10,
+                        left: 10,
+                        cursor: "grab",
+                        color: "#c8c2b6",
+                        fontSize: 16,
+                        userSelect: "none",
+                        lineHeight: 1,
+                      }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </div>
                     <button
                       onClick={() => supprimerLigne("restaurants", i)}
                       style={{ ...adminStyles.btnDelete, position: "absolute", top: 10, right: 10 }}
