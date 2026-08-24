@@ -316,7 +316,11 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                           update("photoPositionX", x);
                           update("photoPosition", y);
                         }}
-                        width="100%"
+                        // Largeur fixée à celle du vrai carnet public
+                        // (max-width 600px, moins le padding de 28px de
+                        // chaque côté) — pas la largeur du formulaire admin,
+                        // qui est bien plus large et fausse le ratio réel.
+                        width={544}
                         height={220}
                       />
                       <label style={{ ...adminStyles.label, fontSize: 12, marginTop: 10 }}>Recadrage (mobile)</label>
