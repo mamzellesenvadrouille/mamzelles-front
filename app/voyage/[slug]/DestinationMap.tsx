@@ -183,8 +183,13 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             center: [centre.lat, centre.lng],
             zoom: 14,
             attributionControl: false,
-            zoomControl: true,
+            zoomControl: false,
           });
+
+          // Boutons +/- explicitement en haut à droite, pour rester cohérent
+          // avec la position utilisée sur les autres cartes du site (le
+          // positionnement par défaut de Leaflet est en haut à gauche).
+          L.control.zoom({ position: "topright" }).addTo(map);
 
           // Sur les écrans Retina/HiDPI (Mac, iPhone récents...), une tuile
           // normale est affichée agrandie par le système, donc légèrement
