@@ -160,9 +160,14 @@ export default function DestinationTabs({
     sauvegarderDerouleCustom(slug, next);
   }
 
-  function centrerSurLeLieu(lat?: number, lng?: number, nom?: string) {
+  function centrerSurLeLieu(
+    lat?: number,
+    lng?: number,
+    nom?: string,
+    categorie?: "hebergements" | "restaurants" | "activites"
+  ) {
     if (typeof lat !== "number" || typeof lng !== "number") return;
-    mapHandleRef.current?.centrerSur(lat, lng, nom ?? "");
+    mapHandleRef.current?.centrerSur(lat, lng, nom ?? "", categorie);
     mapHandleRef.current?.scrollIntoView();
   }
 
@@ -346,8 +351,8 @@ export default function DestinationTabs({
                   <div
                     role="button"
                     tabIndex={0}
-                    onClick={() => centrerSurLeLieu(h.lat, h.lng, h.nom)}
-                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(h.lat, h.lng, h.nom)}
+                    onClick={() => centrerSurLeLieu(h.lat, h.lng, h.nom, "hebergements")}
+                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(h.lat, h.lng, h.nom, "hebergements")}
                     className={styles.miniCard}
                     key={i}
                   >
@@ -433,8 +438,8 @@ export default function DestinationTabs({
                   <div
                     role="button"
                     tabIndex={0}
-                    onClick={() => centrerSurLeLieu(a.lat, a.lng, a.nom)}
-                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(a.lat, a.lng, a.nom)}
+                    onClick={() => centrerSurLeLieu(a.lat, a.lng, a.nom, "activites")}
+                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(a.lat, a.lng, a.nom, "activites")}
                     className={styles.miniCard}
                     key={i}
                   >
@@ -498,8 +503,8 @@ export default function DestinationTabs({
                   <div
                     role="button"
                     tabIndex={0}
-                    onClick={() => centrerSurLeLieu(r.lat, r.lng, r.nom)}
-                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(r.lat, r.lng, r.nom)}
+                    onClick={() => centrerSurLeLieu(r.lat, r.lng, r.nom, "restaurants")}
+                    onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(r.lat, r.lng, r.nom, "restaurants")}
                     className={styles.miniCard}
                     key={i}
                   >

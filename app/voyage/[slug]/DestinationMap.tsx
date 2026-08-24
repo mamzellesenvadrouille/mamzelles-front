@@ -27,7 +27,7 @@ const CATEGORIES: { key: Categorie; label: string; Icon: typeof Bed; color: stri
 ];
 
 export interface DestinationMapHandle {
-  centrerSur: (lat: number, lng: number, nom?: string) => void;
+  centrerSur: (lat: number, lng: number, nom?: string, categorie?: "hebergements" | "restaurants" | "activites") => void;
   scrollIntoView: () => void;
 }
 
@@ -121,6 +121,11 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
     const [filtreActif, setFiltreActif] = useState<Categorie>("hebergements");
+    // Mémorise un lieu à atteindre dès que ses pins seront (re)créés — utile
+    // quand on clique sur une fiche d'une catégorie différente de celle
+    // actuellement affichée sur la carte : il faut d'abord basculer le
+    // filtre, laisser les nouveaux pins se dessiner, puis voler dessus.
+    const cibleEnAttenteRef = useRef<{ lat: number; lng: number } | null>(null);
 
     const lieuxParCategorie: Record<Categorie, Lieu[]> = {
       hebergements: destination.hebergements ?? [],
@@ -146,7 +151,12 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     }
 
     useImperativeHandle(ref, () => ({
-      centrerSur(lat: number, lng: number) {
+      centrerSur(lat: number, lng: number, _nom?: string, categorie?: Categorie) {
+        if (categorie && categorie !== filtreActif) {
+          cibleEnAttenteRef.current = { lat, lng };
+          setFiltreActif(categorie);
+          return;
+        }
         allerVers(lat, lng);
       },
       scrollIntoView() {
@@ -291,7 +301,11 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
         markersParCle.current.set(clePourLieu(lat, lng), marker);
       });
 
-      if (pointsValides.length === 1) {
+      if (cibleEnAttenteRef.current) {
+        const { lat, lng } = cibleEnAttenteRef.current;
+        cibleEnAttenteRef.current = null;
+        allerVers(lat, lng);
+      } else if (pointsValides.length === 1) {
         map.flyTo([pointsValides[0].lat, pointsValides[0].lng], 15);
       } else if (pointsValides.length > 1) {
         const bounds = L.latLngBounds(pointsValides.map((p) => [p.lat, p.lng]));
@@ -333,7 +347,10 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             return (
               <button
                 key={c.key}
-                onClick={() => setFiltreActif(c.key)}
+                onClick={() => {
+                  cibleEnAttenteRef.current = null;
+                  setFiltreActif(c.key);
+                }}
                 style={{
                   fontFamily: "Inter, sans-serif",
                   fontSize: 13.5,
