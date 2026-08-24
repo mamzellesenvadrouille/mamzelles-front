@@ -411,6 +411,12 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               </button>
             );
           })}
+        </div>
+        <div style={{ position: "relative" }}>
+          <div
+            ref={mapRef}
+            style={{ width: "100%", height: 320, borderRadius: 4, background: "#f0ebe4", position: "relative", overflow: "hidden" }}
+          />
           <button
             onClick={() => {
               cibleEnAttenteRef.current = null;
@@ -420,44 +426,28 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
                 setFiltreActif("tous");
               }
             }}
+            title="Vue générale (hôtels, activités et restaurants)"
             style={{
-              fontFamily: "Inter, sans-serif",
-              fontSize: 13.5,
-              padding: "8px 16px 8px 10px",
-              borderRadius: 24,
-              border: filtreActif === "tous" ? "1px solid #d8d2c6" : "1px solid #e8e0d6",
-              background: filtreActif === "tous" ? "#fff" : "none",
-              color: filtreActif === "tous" ? "#1a1512" : "#6b6459",
-              fontWeight: filtreActif === "tous" ? 600 : 400,
-              cursor: "pointer",
-              transition: "all .2s",
-              display: "inline-flex",
+              position: "absolute",
+              bottom: 10,
+              left: 10,
+              zIndex: 400, // au-dessus des tuiles Leaflet, sous les popups
+              width: 34,
+              height: 34,
+              borderRadius: "50%",
+              border: "none",
+              background: "#fff",
+              boxShadow: "0 2px 6px rgba(0,0,0,.2)",
+              display: "flex",
               alignItems: "center",
-              gap: 8,
+              justifyContent: "center",
+              cursor: "pointer",
+              color: filtreActif === "tous" ? "#c8956c" : "#6b6459",
             }}
           >
-            <span
-              style={{
-                width: 20,
-                height: 20,
-                borderRadius: "50%",
-                background: "#c8956c",
-                color: "#fff",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-            >
-              <Compass size={11} strokeWidth={2} />
-            </span>
-            Vue générale
+            <Compass size={16} strokeWidth={2} />
           </button>
         </div>
-        <div
-          ref={mapRef}
-          style={{ width: "100%", height: 320, borderRadius: 4, background: "#f0ebe4", position: "relative", overflow: "hidden" }}
-        />
         {erreur && (
           <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#c0392b", marginTop: 8 }}>
             La carte n&apos;a pas pu se charger.

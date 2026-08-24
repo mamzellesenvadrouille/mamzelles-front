@@ -49,6 +49,7 @@ const itemCard: React.CSSProperties = {
   border: "1px solid #f0ebe4",
   borderRadius: 6,
   padding: 16,
+  paddingTop: 28,
   marginBottom: 14,
   position: "relative",
 };
@@ -519,8 +520,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       onDragEnd={() => setDragInfo(null)}
                       style={{
                         position: "absolute",
-                        top: 10,
-                        left: 10,
+                        top: 6,
+                        left: 12,
                         cursor: "grab",
                         color: "#c8c2b6",
                         fontSize: 16,
@@ -688,8 +689,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       onDragEnd={() => setDragInfo(null)}
                       style={{
                         position: "absolute",
-                        top: 10,
-                        left: 10,
+                        top: 6,
+                        left: 12,
                         cursor: "grab",
                         color: "#c8c2b6",
                         fontSize: 16,
@@ -878,8 +879,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                       onDragEnd={() => setDragInfo(null)}
                       style={{
                         position: "absolute",
-                        top: 10,
-                        left: 10,
+                        top: 6,
+                        left: 12,
                         cursor: "grab",
                         color: "#c8c2b6",
                         fontSize: 16,
