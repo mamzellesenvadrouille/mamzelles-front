@@ -404,11 +404,8 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                 {dest.deroule.map((point, i) => (
                   <div
                     key={i}
-                    draggable
-                    onDragStart={() => setDragIndex(i)}
                     onDragOver={(e) => e.preventDefault()}
                     onDrop={() => deposerDeroule(i)}
-                    onDragEnd={() => setDragIndex(null)}
                     style={{
                       display: "flex",
                       gap: 8,
@@ -421,6 +418,9 @@ export default function EditDestinationPage({ params }: { params: Promise<{ id: 
                     }}
                   >
                     <div
+                      draggable
+                      onDragStart={() => setDragIndex(i)}
+                      onDragEnd={() => setDragIndex(null)}
                       style={{
                         cursor: "grab",
                         color: "#c8c2b6",
