@@ -6,7 +6,7 @@ import { useEffect, useImperativeHandle, useRef, useState, forwardRef } from "re
 import { createRoot } from "react-dom/client";
 import type L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import { Bed, Utensils, Camera } from "lucide-react";
+import { Bed, Utensils, Camera, Compass } from "lucide-react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 
@@ -18,6 +18,7 @@ const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
 const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`;
 
 type Categorie = "hebergements" | "restaurants" | "activites";
+type FiltreCarte = Categorie | "tous";
 type Lieu = { nom: string; lat?: number; lng?: number; infosPratiques?: string };
 
 const CATEGORIES: { key: Categorie; label: string; Icon: typeof Bed; color: string }[] = [
@@ -120,7 +121,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     const leafletRef = useRef<typeof import("leaflet") | null>(null);
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
-    const [filtreActif, setFiltreActif] = useState<Categorie>("hebergements");
+    const [filtreActif, setFiltreActif] = useState<FiltreCarte>("hebergements");
     // Mémorise un lieu à atteindre dès que ses pins seront (re)créés — utile
     // quand on clique sur une fiche d'une catégorie différente de celle
     // actuellement affichée sur la carte : il faut d'abord basculer le
@@ -152,7 +153,7 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
 
     useImperativeHandle(ref, () => ({
       centrerSur(lat: number, lng: number, _nom?: string, categorie?: Categorie) {
-        if (categorie && categorie !== filtreActif) {
+        if (categorie && categorie !== filtreActif && filtreActif !== "tous") {
           cibleEnAttenteRef.current = { lat, lng };
           setFiltreActif(categorie);
           return;
@@ -252,17 +253,22 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       };
     }, []);
 
-    // Recadre la carte sur l'ensemble des pins de la catégorie donnée : zoom
-    // serré si un seul lieu, vue élargie englobant tous les points sinon.
-    // Séparée de la création des pins pour pouvoir être appelée directement
-    // au clic sur un bouton de filtre déjà actif (qui ne redéclenche pas le
-    // useEffect ci-dessous, puisque la valeur de filtreActif ne change pas).
-    function recadrerSurCategorie(categorie: Categorie) {
+    // Recadre la carte sur l'ensemble des pins visibles : zoom serré si un
+    // seul lieu, vue élargie englobant tous les points sinon. "tous" prend en
+    // compte les 3 catégories à la fois. Séparée de la création des pins
+    // pour pouvoir être appelée directement au clic sur un bouton de filtre
+    // déjà actif (qui ne redéclenche pas le useEffect ci-dessous, puisque la
+    // valeur de filtreActif ne change pas).
+    function recadrerSurCategorie(filtre: FiltreCarte) {
       const map = mapInstance.current;
       const L = leafletRef.current;
       if (!map || !L) return;
 
-      const pointsValides = lieuxParCategorie[categorie].filter(positionValide);
+      const pointsValides =
+        filtre === "tous"
+          ? Object.values(lieuxParCategorie).flat().filter(positionValide)
+          : lieuxParCategorie[filtre].filter(positionValide);
+
       if (pointsValides.length === 1) {
         map.flyTo([pointsValides[0].lat, pointsValides[0].lng], 15);
       } else if (pointsValides.length > 1) {
@@ -271,10 +277,11 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       }
     }
 
-    // (re)dessine les pins de la catégorie active, et recadre la carte pour
-    // bien la montrer dans son ensemble : zoom serré si un seul lieu (ex :
-    // l'hébergement), vue élargie englobant tous les points s'il y en a
-    // plusieurs (ex : les activités éparpillées sur plusieurs îles).
+    // (re)dessine les pins de la catégorie active (ou des 3 à la fois en
+    // mode "tous"), et recadre la carte pour bien les montrer dans leur
+    // ensemble : zoom serré si un seul lieu (ex : l'hébergement), vue
+    // élargie englobant tous les points s'il y en a plusieurs (ex : les
+    // activités éparpillées sur plusieurs îles).
     useEffect(() => {
       if (!pret || !mapInstance.current || !leafletRef.current) return;
       const map = mapInstance.current;
@@ -283,38 +290,39 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
       markersParCle.current.forEach((m) => m.remove());
       markersParCle.current = new Map();
 
-      const categorieActive = CATEGORIES.find((c) => c.key === filtreActif);
-      if (!categorieActive) return;
-      const { key, Icon, color } = categorieActive;
+      const categoriesAAfficher =
+        filtreActif === "tous" ? CATEGORIES : CATEGORIES.filter((c) => c.key === filtreActif);
 
-      lieuxParCategorie[key].forEach((lieu) => {
-        if (!positionValide(lieu)) {
-          if (lieu.lat !== undefined || lieu.lng !== undefined) {
-            console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
+      categoriesAAfficher.forEach(({ key, Icon, color }) => {
+        lieuxParCategorie[key].forEach((lieu) => {
+          if (!positionValide(lieu)) {
+            if (lieu.lat !== undefined || lieu.lng !== undefined) {
+              console.warn(`[Carte] Coordonnées invalides pour "${lieu.nom}" :`, lieu.lat, lieu.lng);
+            }
+            return;
           }
-          return;
-        }
-        const { lat, lng } = lieu;
+          const { lat, lng } = lieu;
 
-        const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-        const infosHtml =
-          key === "activites" && lieu.infosPratiques
-            ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
-            : "";
+          const lienMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+          const infosHtml =
+            key === "activites" && lieu.infosPratiques
+              ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
+              : "";
 
-        const marker = L.marker([lat, lng], { icon: creerIconePin(L, Icon, color) })
-          .addTo(map)
-          .bindPopup(
-            `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
-              <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
-              ${infosHtml}
-              <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
-            </div>`
-          );
+          const marker = L.marker([lat, lng], { icon: creerIconePin(L, Icon, color) })
+            .addTo(map)
+            .bindPopup(
+              `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
+                <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
+                ${infosHtml}
+                <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
+              </div>`
+            );
 
-        marker.on("click", () => allerVers(lat, lng));
+          marker.on("click", () => allerVers(lat, lng));
 
-        markersParCle.current.set(clePourLieu(lat, lng), marker);
+          markersParCle.current.set(clePourLieu(lat, lng), marker);
+        });
       });
 
       if (cibleEnAttenteRef.current) {
@@ -403,6 +411,48 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
               </button>
             );
           })}
+          <button
+            onClick={() => {
+              cibleEnAttenteRef.current = null;
+              if (filtreActif === "tous") {
+                recadrerSurCategorie("tous");
+              } else {
+                setFiltreActif("tous");
+              }
+            }}
+            style={{
+              fontFamily: "Inter, sans-serif",
+              fontSize: 13.5,
+              padding: "8px 16px 8px 10px",
+              borderRadius: 24,
+              border: filtreActif === "tous" ? "1px solid #d8d2c6" : "1px solid #e8e0d6",
+              background: filtreActif === "tous" ? "#fff" : "none",
+              color: filtreActif === "tous" ? "#1a1512" : "#6b6459",
+              fontWeight: filtreActif === "tous" ? 600 : 400,
+              cursor: "pointer",
+              transition: "all .2s",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+            }}
+          >
+            <span
+              style={{
+                width: 20,
+                height: 20,
+                borderRadius: "50%",
+                background: "#c8956c",
+                color: "#fff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexShrink: 0,
+              }}
+            >
+              <Compass size={11} strokeWidth={2} />
+            </span>
+            Vue générale
+          </button>
         </div>
         <div
           ref={mapRef}
