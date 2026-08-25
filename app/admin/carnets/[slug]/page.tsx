@@ -402,19 +402,10 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     placeholder="ex : Paris"
                     lat={carnet.villeDepart?.lat}
                     lng={carnet.villeDepart?.lng}
+                    nomAffiche={carnet.villeDepart?.nom}
+                    onNomAffiche={(nom) => update("villeDepart", { ...carnet.villeDepart!, nom })}
                     onSelect={(lieu) => update("villeDepart", lieu)}
                   />
-                  {carnet.villeDepart?.lat !== undefined && (
-                    <div style={{ marginTop: 8 }}>
-                      <label style={{ ...microLabel, marginBottom: 4 }}>Nom affiché (modifiable librement)</label>
-                      <input
-                        style={adminStyles.input}
-                        placeholder="ex : Paris"
-                        value={carnet.villeDepart?.nom ?? ""}
-                        onChange={(e) => update("villeDepart", { ...carnet.villeDepart!, nom: e.target.value })}
-                      />
-                    </div>
-                  )}
                 </div>
 
                 <label style={microLabel}>Escales (facultatif)</label>
@@ -425,27 +416,18 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                         placeholder="ex : Dubaï (transit)"
                         lat={etape.lat}
                         lng={etape.lng}
+                        nomAffiche={etape.nom}
+                        onNomAffiche={(nom) => {
+                          const copy = [...(carnet.escales ?? [])];
+                          copy[i] = { ...copy[i], nom };
+                          update("escales", copy);
+                        }}
                         onSelect={(lieu) => {
                           const copy = [...(carnet.escales ?? [])];
                           copy[i] = lieu;
                           update("escales", copy);
                         }}
                       />
-                      {etape.lat !== undefined && (
-                        <div style={{ marginTop: 8 }}>
-                          <label style={{ ...microLabel, marginBottom: 4 }}>Nom affiché (modifiable librement)</label>
-                          <input
-                            style={adminStyles.input}
-                            placeholder="ex : Dubaï (transit)"
-                            value={etape.nom ?? ""}
-                            onChange={(e) => {
-                              const copy = [...(carnet.escales ?? [])];
-                              copy[i] = { ...copy[i], nom: e.target.value };
-                              update("escales", copy);
-                            }}
-                          />
-                        </div>
-                      )}
                     </div>
                     <button
                       onClick={() => update("escales", (carnet.escales ?? []).filter((_, idx) => idx !== i))}

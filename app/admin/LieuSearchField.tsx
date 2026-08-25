@@ -35,11 +35,18 @@ export default function LieuSearchField({
   placeholder,
   lat,
   lng,
+  nomAffiche,
+  onNomAffiche,
 }: {
   onSelect: (lieu: Resultat) => void;
   placeholder?: string;
   lat?: number;
   lng?: number;
+  // Nom affiché librement modifiable, distinct du nom trouvé par la
+  // recherche — permet d'écrire "Paris" plutôt que l'adresse complète
+  // renvoyée par Google Places, sans toucher aux coordonnées.
+  nomAffiche?: string;
+  onNomAffiche?: (nom: string) => void;
 }) {
   const [saisie, setSaisie] = useState("");
   const [resultats, setResultats] = useState<Resultat[]>([]);
@@ -145,6 +152,30 @@ export default function LieuSearchField({
 
   return (
     <div ref={wrapRef} style={{ position: "relative", marginBottom: 10 }}>
+      {onNomAffiche && lieuChoisi && (
+        <div style={{ marginBottom: 10 }}>
+          <label style={{ display: "block", fontSize: 10.5, textTransform: "uppercase", letterSpacing: "0.06em", color: "#8a8074", marginBottom: 4, fontFamily: "Inter, sans-serif" }}>
+            Nom affiché (modifiable librement)
+          </label>
+          <input
+            style={{
+              width: "100%",
+              height: 36,
+              padding: "0 12px",
+              fontSize: 13,
+              borderRadius: 4,
+              fontFamily: "Inter, sans-serif",
+              border: "1px solid #d8cdbc",
+              outline: "none",
+              background: "#fffaf3",
+              boxSizing: "border-box",
+            }}
+            placeholder={placeholder ?? "Nom à afficher"}
+            value={nomAffiche ?? ""}
+            onChange={(e) => onNomAffiche(e.target.value)}
+          />
+        </div>
+      )}
       <input
         style={{
           width: "100%",
