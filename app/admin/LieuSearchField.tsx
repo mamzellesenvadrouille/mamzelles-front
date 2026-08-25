@@ -115,7 +115,6 @@ export default function LieuSearchField({
 
   function handleChange(valeur: string) {
     setSaisie(valeur);
-    setLieuChoisi(null);
     if (timerRef.current) clearTimeout(timerRef.current);
 
     if (valeur.trim().length < 3) {
