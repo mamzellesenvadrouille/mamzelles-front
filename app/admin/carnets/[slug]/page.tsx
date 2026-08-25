@@ -404,7 +404,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     lng={carnet.villeDepart?.lng}
                     nomAffiche={carnet.villeDepart?.nom}
                     onNomAffiche={(nom) => update("villeDepart", { ...carnet.villeDepart!, nom })}
-                    onSelect={(lieu) => update("villeDepart", lieu)}
+                    onSelect={(lieu) => update("villeDepart", { ...lieu, nom: carnet.villeDepart?.nom || lieu.nom })}
                   />
                 </div>
 
@@ -424,7 +424,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                         }}
                         onSelect={(lieu) => {
                           const copy = [...(carnet.escales ?? [])];
-                          copy[i] = lieu;
+                          copy[i] = { ...lieu, nom: copy[i]?.nom || lieu.nom };
                           update("escales", copy);
                         }}
                       />

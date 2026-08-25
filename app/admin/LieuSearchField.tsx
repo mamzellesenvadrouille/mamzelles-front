@@ -170,7 +170,7 @@ export default function LieuSearchField({
               background: "#fffaf3",
               boxSizing: "border-box",
             }}
-            placeholder={placeholder ?? "Nom à afficher"}
+            placeholder="ex : Paris"
             value={nomAffiche ?? ""}
             onChange={(e) => onNomAffiche(e.target.value)}
           />
