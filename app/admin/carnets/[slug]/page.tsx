@@ -444,24 +444,16 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   + Ajouter une escale
                 </button>
 
-                <label style={microLabel}>Ville de retour (si différente du départ — sinon laisser vide)</label>
+                <label style={microLabel}>Ville de retour</label>
                 <div>
                   <LieuSearchField
-                    placeholder="ex : Lyon"
+                    placeholder="ex : Paris"
                     lat={carnet.villeRetour?.lat}
                     lng={carnet.villeRetour?.lng}
                     nomAffiche={carnet.villeRetour?.nom}
                     onNomAffiche={(nom) => update("villeRetour", { ...carnet.villeRetour!, nom })}
                     onSelect={(lieu) => update("villeRetour", { ...lieu, nom: carnet.villeRetour?.nom || lieu.nom })}
                   />
-                  {carnet.villeRetour && (
-                    <button
-                      onClick={() => update("villeRetour", undefined)}
-                      style={{ ...smallLink, marginTop: 6, display: "inline-block" }}
-                    >
-                      Retirer — utiliser la ville de départ pour le retour
-                    </button>
-                  )}
                 </div>
               </div>
 
