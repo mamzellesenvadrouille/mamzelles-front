@@ -144,7 +144,8 @@ export interface Carnet {
   meteoLng?: number;
   parcours: string[]; // ex: ["Paris", "Malé", "Baa Atoll", "Paris"]
   parcoursCoords?: EtapeParcours[]; // repli manuel si "villeDepart" n'est pas renseignée
-  villeDepart?: EtapeParcours; // ville de départ/retour du client — permet de construire les étapes automatiquement à partir des destinations du carnet
+  villeDepart?: EtapeParcours; // ville de départ du client
+  villeRetour?: EtapeParcours; // ville de retour, si différente de la ville de départ (sinon on réutilise villeDepart)
   escales?: EtapeParcours[]; // étapes intermédiaires optionnelles (escale avion, ville de transit...), insérées entre le départ et la première destination
   destinations: CarnetDestinationRef[];
   conseils: ConseilMamZelles[];

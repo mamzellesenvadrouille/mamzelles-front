@@ -60,7 +60,7 @@ export default async function CarnetPage({
   // Si "villeDepart" n'est pas renseignée, on retombe sur la saisie manuelle historique.
   const etapesAuto =
     carnet.villeDepart && typeof carnet.villeDepart.lat === "number" && typeof carnet.villeDepart.lng === "number"
-      ? [carnet.villeDepart, ...(carnet.escales ?? []), carnet.villeDepart]
+      ? [carnet.villeDepart, ...(carnet.escales ?? []), carnet.villeRetour ?? carnet.villeDepart]
       : null;
   const parcoursCoordsAffiche = etapesAuto ?? carnet.parcoursCoords ?? [];
   const parcoursNomsAffiches = etapesAuto ? etapesAuto.map((e) => e.nom) : carnet.parcours;

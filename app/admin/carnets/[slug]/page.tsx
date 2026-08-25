@@ -396,7 +396,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
                   Renseigne la ville de départ/retour du client, et ajoute d&apos;éventuelles escales (transit avion, ville de passage, ou même une destination du carnet si tu veux qu&apos;elle apparaisse sur cette carte). Cette carte du trajet est indépendante des destinations cochées ci-dessous (onglets Hôtels/Activités/Restaurants) — pour qu&apos;un lieu apparaisse ici, ajoute-le explicitement en escale.
                 </p>
-                <label style={microLabel}>Ville de départ / retour</label>
+                <label style={microLabel}>Ville de départ</label>
                 <div style={{ marginBottom: 20 }}>
                   <LieuSearchField
                     placeholder="ex : Paris"
@@ -406,6 +406,26 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     onNomAffiche={(nom) => update("villeDepart", { ...carnet.villeDepart!, nom })}
                     onSelect={(lieu) => update("villeDepart", { ...lieu, nom: carnet.villeDepart?.nom || lieu.nom })}
                   />
+                </div>
+
+                <label style={microLabel}>Ville de retour (si différente du départ — sinon laisser vide)</label>
+                <div style={{ marginBottom: 20 }}>
+                  <LieuSearchField
+                    placeholder="ex : Lyon"
+                    lat={carnet.villeRetour?.lat}
+                    lng={carnet.villeRetour?.lng}
+                    nomAffiche={carnet.villeRetour?.nom}
+                    onNomAffiche={(nom) => update("villeRetour", { ...carnet.villeRetour!, nom })}
+                    onSelect={(lieu) => update("villeRetour", { ...lieu, nom: carnet.villeRetour?.nom || lieu.nom })}
+                  />
+                  {carnet.villeRetour && (
+                    <button
+                      onClick={() => update("villeRetour", undefined)}
+                      style={{ ...smallLink, marginTop: 6, display: "inline-block" }}
+                    >
+                      Retirer — utiliser la ville de départ pour le retour
+                    </button>
+                  )}
                 </div>
 
                 <label style={microLabel}>Escales (facultatif)</label>
