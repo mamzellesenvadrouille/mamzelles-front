@@ -189,7 +189,7 @@ export default function LieuSearchField({
           background: "#fffaf3",
           boxSizing: "border-box",
         }}
-        placeholder={placeholder ?? "🔍 Rechercher un lieu..."}
+        placeholder="📍 Position sur la carte"
         value={saisie}
         onChange={(e) => handleChange(e.target.value)}
         onFocus={() => resultats.length > 0 && setOuvert(true)}
@@ -241,9 +241,6 @@ export default function LieuSearchField({
       )}
       {lieuChoisi && (
         <div style={{ marginTop: 8 }}>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginBottom: 6 }}>
-            📍 Position sur la carte
-          </p>
           <div
             ref={mapRef}
             style={{ width: "100%", height: 180, borderRadius: 4, background: "#f0ebe4", position: "relative", overflow: "hidden" }}
