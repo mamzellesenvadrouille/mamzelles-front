@@ -48,7 +48,7 @@ export default function LieuSearchField({
   nomAffiche?: string;
   onNomAffiche?: (nom: string) => void;
 }) {
-  const [saisie, setSaisie] = useState("");
+  const [saisie, setSaisie] = useState(nomAffiche ?? "");
   const [resultats, setResultats] = useState<Resultat[]>([]);
   const [recherche, setRecherche] = useState(false);
   const [ouvert, setOuvert] = useState(false);
