@@ -52,18 +52,15 @@ export default async function CarnetPage({
     })
   );
 
-  // Étapes du parcours construites automatiquement : ville de départ → chaque destination du carnet → retour.
+  // Étapes du parcours : ville de départ → escales saisies manuellement →
+  // retour. Volontairement indépendant des destinations cochées du carnet
+  // (onglets Hôtels/Activités/Restaurants) — les deux systèmes sont
+  // distincts : pour qu'une destination apparaisse sur cette carte du
+  // trajet, il faut l'ajouter explicitement dans "Escales".
   // Si "villeDepart" n'est pas renseignée, on retombe sur la saisie manuelle historique.
   const etapesAuto =
     carnet.villeDepart && typeof carnet.villeDepart.lat === "number" && typeof carnet.villeDepart.lng === "number"
-      ? [
-          carnet.villeDepart,
-          ...(carnet.escales ?? []),
-          ...carnet.destinationsCompletes
-            .filter((d): d is typeof d & { lat: number; lng: number } => typeof d.lat === "number" && typeof d.lng === "number")
-            .map((d) => ({ nom: d.nom, lat: d.lat, lng: d.lng })),
-          carnet.villeDepart,
-        ]
+      ? [carnet.villeDepart, ...(carnet.escales ?? []), carnet.villeDepart]
       : null;
   const parcoursCoordsAffiche = etapesAuto ?? carnet.parcoursCoords ?? [];
   const parcoursNomsAffiches = etapesAuto ? etapesAuto.map((e) => e.nom) : carnet.parcours;

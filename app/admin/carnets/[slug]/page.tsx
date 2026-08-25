@@ -394,7 +394,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Départ, escales & retour</div>
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
-                  Renseigne la ville de départ/retour du client, et ajoute d&apos;éventuelles escales (transit avion, ville de passage...). Les destinations cochées ci-dessous s&apos;ajoutent ensuite automatiquement entre les deux, dans l&apos;ordre où tu les as cochées — la carte se construit toute seule.
+                  Renseigne la ville de départ/retour du client, et ajoute d&apos;éventuelles escales (transit avion, ville de passage, ou même une destination du carnet si tu veux qu&apos;elle apparaisse sur cette carte). Cette carte du trajet est indépendante des destinations cochées ci-dessous (onglets Hôtels/Activités/Restaurants) — pour qu&apos;un lieu apparaisse ici, ajoute-le explicitement en escale.
                 </p>
                 <label style={microLabel}>Ville de départ / retour</label>
                 <div style={{ marginBottom: 20 }}>
