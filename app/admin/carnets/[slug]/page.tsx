@@ -404,6 +404,17 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     lng={carnet.villeDepart?.lng}
                     onSelect={(lieu) => update("villeDepart", lieu)}
                   />
+                  {carnet.villeDepart?.lat !== undefined && (
+                    <div style={{ marginTop: 8 }}>
+                      <label style={{ ...microLabel, marginBottom: 4 }}>Nom affiché (modifiable librement)</label>
+                      <input
+                        style={adminStyles.input}
+                        placeholder="ex : Paris"
+                        value={carnet.villeDepart?.nom ?? ""}
+                        onChange={(e) => update("villeDepart", { ...carnet.villeDepart!, nom: e.target.value })}
+                      />
+                    </div>
+                  )}
                 </div>
 
                 <label style={microLabel}>Escales (facultatif)</label>
@@ -420,6 +431,21 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                           update("escales", copy);
                         }}
                       />
+                      {etape.lat !== undefined && (
+                        <div style={{ marginTop: 8 }}>
+                          <label style={{ ...microLabel, marginBottom: 4 }}>Nom affiché (modifiable librement)</label>
+                          <input
+                            style={adminStyles.input}
+                            placeholder="ex : Dubaï (transit)"
+                            value={etape.nom ?? ""}
+                            onChange={(e) => {
+                              const copy = [...(carnet.escales ?? [])];
+                              copy[i] = { ...copy[i], nom: e.target.value };
+                              update("escales", copy);
+                            }}
+                          />
+                        </div>
+                      )}
                     </div>
                     <button
                       onClick={() => update("escales", (carnet.escales ?? []).filter((_, idx) => idx !== i))}
