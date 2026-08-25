@@ -408,26 +408,6 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   />
                 </div>
 
-                <label style={microLabel}>Ville de retour (si différente du départ — sinon laisser vide)</label>
-                <div style={{ marginBottom: 20 }}>
-                  <LieuSearchField
-                    placeholder="ex : Lyon"
-                    lat={carnet.villeRetour?.lat}
-                    lng={carnet.villeRetour?.lng}
-                    nomAffiche={carnet.villeRetour?.nom}
-                    onNomAffiche={(nom) => update("villeRetour", { ...carnet.villeRetour!, nom })}
-                    onSelect={(lieu) => update("villeRetour", { ...lieu, nom: carnet.villeRetour?.nom || lieu.nom })}
-                  />
-                  {carnet.villeRetour && (
-                    <button
-                      onClick={() => update("villeRetour", undefined)}
-                      style={{ ...smallLink, marginTop: 6, display: "inline-block" }}
-                    >
-                      Retirer — utiliser la ville de départ pour le retour
-                    </button>
-                  )}
-                </div>
-
                 <label style={microLabel}>Escales (facultatif)</label>
                 {(carnet.escales ?? []).map((etape, i) => (
                   <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
@@ -459,10 +439,30 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 ))}
                 <button
                   onClick={() => update("escales", [...(carnet.escales ?? []), { nom: "", lat: 0, lng: 0 }])}
-                  style={smallLink}
+                  style={{ ...smallLink, marginBottom: 20, display: "inline-block" }}
                 >
                   + Ajouter une escale
                 </button>
+
+                <label style={microLabel}>Ville de retour (si différente du départ — sinon laisser vide)</label>
+                <div>
+                  <LieuSearchField
+                    placeholder="ex : Lyon"
+                    lat={carnet.villeRetour?.lat}
+                    lng={carnet.villeRetour?.lng}
+                    nomAffiche={carnet.villeRetour?.nom}
+                    onNomAffiche={(nom) => update("villeRetour", { ...carnet.villeRetour!, nom })}
+                    onSelect={(lieu) => update("villeRetour", { ...lieu, nom: carnet.villeRetour?.nom || lieu.nom })}
+                  />
+                  {carnet.villeRetour && (
+                    <button
+                      onClick={() => update("villeRetour", undefined)}
+                      style={{ ...smallLink, marginTop: 6, display: "inline-block" }}
+                    >
+                      Retirer — utiliser la ville de départ pour le retour
+                    </button>
+                  )}
+                </div>
               </div>
 
               <div style={sectionWrap}>
