@@ -53,7 +53,9 @@ export default function LieuSearchField({
   const [recherche, setRecherche] = useState(false);
   const [ouvert, setOuvert] = useState(false);
   const [lieuChoisi, setLieuChoisi] = useState<Resultat | null>(
-    typeof lat === "number" && typeof lng === "number" ? { nom: "Position enregistrée", lat, lng } : null
+    typeof lat === "number" && typeof lng === "number" && !(lat === 0 && lng === 0)
+      ? { nom: "Position enregistrée", lat, lng }
+      : null
   );
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
