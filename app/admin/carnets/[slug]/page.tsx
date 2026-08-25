@@ -124,6 +124,19 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   const [destinationsDispo, setDestinationsDispo] = useState<Destination[]>([]);
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
+  const [dragIndexDest, setDragIndexDest] = useState<number | null>(null);
+
+  function deposerDestination(i: number) {
+    if (dragIndexDest === null || dragIndexDest === i) {
+      setDragIndexDest(null);
+      return;
+    }
+    const copy = [...carnet.destinations];
+    const [ref] = copy.splice(dragIndexDest, 1);
+    copy.splice(i, 0, ref);
+    update("destinations", copy);
+    setDragIndexDest(null);
+  }
 
   function chargerDonnees() {
     fetch("/api/destination-list")
@@ -462,6 +475,48 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
                   Sélectionne parmi tes fiches destination existantes.
                 </p>
+
+                {carnet.destinations.length > 0 && (
+                  <div style={{ marginBottom: 20 }}>
+                    <label style={microLabel}>Ordre dans le carnet (glisse pour réordonner)</label>
+                    {carnet.destinations.map((ref, i) => {
+                      const d = destinationsDispo.find((x) => x.id === ref.destinationId);
+                      return (
+                        <div
+                          key={ref.destinationId}
+                          onDragOver={(e) => e.preventDefault()}
+                          onDrop={() => deposerDestination(i)}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 8,
+                            padding: "8px 10px",
+                            marginBottom: 6,
+                            border: "1px solid #f0ebe4",
+                            borderRadius: 4,
+                            opacity: dragIndexDest === i ? 0.4 : 1,
+                            background: dragIndexDest !== null && dragIndexDest !== i ? "#faf7f2" : "#fff",
+                            transition: "opacity .15s, background .15s",
+                          }}
+                        >
+                          <span
+                            draggable
+                            onDragStart={() => setDragIndexDest(i)}
+                            onDragEnd={() => setDragIndexDest(null)}
+                            style={{ cursor: "grab", color: "#c8c2b6", fontSize: 16, userSelect: "none", lineHeight: 1 }}
+                            title="Glisser pour réordonner"
+                          >
+                            ⠿
+                          </span>
+                          <span style={{ fontFamily: "Inter, sans-serif", fontSize: 14 }}>
+                            {i + 1}. {d?.nom ?? ref.destinationId}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+
                 {destinationsDispo.length === 0 && (
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888" }}>Aucune fiche destination pour l&apos;instant.</p>
                 )}
