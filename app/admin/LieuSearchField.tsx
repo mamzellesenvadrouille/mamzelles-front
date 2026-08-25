@@ -242,9 +242,7 @@ export default function LieuSearchField({
       {lieuChoisi && (
         <div style={{ marginTop: 8 }}>
           <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#a8734c", marginBottom: 6 }}>
-            📍 {lieuChoisi.nom === "Position enregistrée"
-              ? "Position actuelle — vérifie qu'elle est bien placée, ou fais-la glisser pour ajuster."
-              : "Vérifie que le pin est bien sur le bâtiment — fais-le glisser si besoin."}
+            📍 Position sur la carte
           </p>
           <div
             ref={mapRef}
