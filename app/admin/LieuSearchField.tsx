@@ -48,7 +48,7 @@ export default function LieuSearchField({
   nomAffiche?: string;
   onNomAffiche?: (nom: string) => void;
 }) {
-  const [saisie, setSaisie] = useState(nomAffiche ?? "");
+  const [saisie, setSaisie] = useState("");
   const [resultats, setResultats] = useState<Resultat[]>([]);
   const [recherche, setRecherche] = useState(false);
   const [ouvert, setOuvert] = useState(false);
@@ -175,46 +175,47 @@ export default function LieuSearchField({
           />
         </div>
       )}
-      <input
-        style={{
-          width: "100%",
-          height: 36,
-          padding: "0 12px",
-          fontSize: 13,
-          borderRadius: 4,
-          fontFamily: "Inter, sans-serif",
-          border: "1px solid #d8cdbc",
-          outline: "none",
-          background: "#fffaf3",
-          boxSizing: "border-box",
-        }}
-        placeholder="📍 Position sur la carte"
-        value={saisie}
-        onChange={(e) => handleChange(e.target.value)}
-        onFocus={() => resultats.length > 0 && setOuvert(true)}
-      />
-      {recherche && (
-        <span style={{ position: "absolute", right: 10, top: 8, fontSize: 11, color: "#aaa", fontFamily: "Inter, sans-serif" }}>
-          ...
-        </span>
-      )}
-      {ouvert && resultats.length > 0 && (
-        <div
+      <div style={{ position: "relative" }}>
+        <input
           style={{
-            position: "absolute",
-            top: "100%",
-            left: 0,
-            right: 0,
-            zIndex: 20,
-            background: "#fff",
-            border: "1px solid #e8e0d6",
+            width: "100%",
+            height: 36,
+            padding: "0 12px",
+            fontSize: 13,
             borderRadius: 4,
-            marginTop: 2,
-            boxShadow: "0 4px 12px rgba(0,0,0,.08)",
-            maxHeight: 220,
-            overflowY: "auto",
+            fontFamily: "Inter, sans-serif",
+            border: "1px solid #d8cdbc",
+            outline: "none",
+            background: "#fffaf3",
+            boxSizing: "border-box",
           }}
-        >
+          placeholder="📍 Position sur la carte"
+          value={saisie}
+          onChange={(e) => handleChange(e.target.value)}
+          onFocus={() => resultats.length > 0 && setOuvert(true)}
+        />
+        {recherche && (
+          <span style={{ position: "absolute", right: 10, top: 8, fontSize: 11, color: "#aaa", fontFamily: "Inter, sans-serif" }}>
+            ...
+          </span>
+        )}
+        {ouvert && resultats.length > 0 && (
+          <div
+            style={{
+              position: "absolute",
+              top: "100%",
+              left: 0,
+              right: 0,
+              zIndex: 20,
+              background: "#fff",
+              border: "1px solid #e8e0d6",
+              borderRadius: 4,
+              marginTop: 2,
+              boxShadow: "0 4px 12px rgba(0,0,0,.08)",
+              maxHeight: 220,
+              overflowY: "auto",
+            }}
+          >
           {resultats.map((r, i) => (
             <button
               key={i}
@@ -238,6 +239,7 @@ export default function LieuSearchField({
           ))}
         </div>
       )}
+      </div>
       {lieuChoisi && (
         <div style={{ marginTop: 8 }}>
           <div
