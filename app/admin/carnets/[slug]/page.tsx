@@ -11,6 +11,7 @@ import type { Carnet, Destination, CarnetDestinationRef, ConseilMamZelles, Budge
 import { normaliserSlug, normaliserSlugEnDirect } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
+import LieuSearchField from "../../LieuSearchField";
 
 const carnetVide: Carnet = {
   slug: "",
@@ -396,60 +397,30 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   Renseigne la ville de départ/retour du client, et ajoute d&apos;éventuelles escales (transit avion, ville de passage...). Les destinations cochées ci-dessous s&apos;ajoutent ensuite automatiquement entre les deux, dans l&apos;ordre où tu les as cochées — la carte se construit toute seule.
                 </p>
                 <label style={microLabel}>Ville de départ / retour</label>
-                <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
-                  <input
-                    style={{ ...adminStyles.input, flex: 2 }}
+                <div style={{ marginBottom: 20 }}>
+                  <LieuSearchField
                     placeholder="ex : Paris"
-                    value={carnet.villeDepart?.nom ?? ""}
-                    onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { lat: 0, lng: 0 }), nom: e.target.value })}
-                  />
-                  <input
-                    style={{ ...adminStyles.input, flex: 1 }}
-                    placeholder="Latitude"
-                    value={carnet.villeDepart?.lat ?? ""}
-                    onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { nom: "", lng: 0 }), lat: Number(e.target.value) })}
-                  />
-                  <input
-                    style={{ ...adminStyles.input, flex: 1 }}
-                    placeholder="Longitude"
-                    value={carnet.villeDepart?.lng ?? ""}
-                    onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { nom: "", lat: 0 }), lng: Number(e.target.value) })}
+                    lat={carnet.villeDepart?.lat}
+                    lng={carnet.villeDepart?.lng}
+                    onSelect={(lieu) => update("villeDepart", lieu)}
                   />
                 </div>
 
                 <label style={microLabel}>Escales (facultatif)</label>
                 {(carnet.escales ?? []).map((etape, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
-                    <input
-                      style={{ ...adminStyles.input, flex: 2 }}
-                      placeholder="ex : Dubaï (transit)"
-                      value={etape.nom}
-                      onChange={(e) => {
-                        const copy = [...(carnet.escales ?? [])];
-                        copy[i] = { ...copy[i], nom: e.target.value };
-                        update("escales", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, flex: 1 }}
-                      placeholder="Latitude"
-                      value={etape.lat ?? ""}
-                      onChange={(e) => {
-                        const copy = [...(carnet.escales ?? [])];
-                        copy[i] = { ...copy[i], lat: Number(e.target.value) };
-                        update("escales", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, flex: 1 }}
-                      placeholder="Longitude"
-                      value={etape.lng ?? ""}
-                      onChange={(e) => {
-                        const copy = [...(carnet.escales ?? [])];
-                        copy[i] = { ...copy[i], lng: Number(e.target.value) };
-                        update("escales", copy);
-                      }}
-                    />
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
+                    <div style={{ flex: 1 }}>
+                      <LieuSearchField
+                        placeholder="ex : Dubaï (transit)"
+                        lat={etape.lat}
+                        lng={etape.lng}
+                        onSelect={(lieu) => {
+                          const copy = [...(carnet.escales ?? [])];
+                          copy[i] = lieu;
+                          update("escales", copy);
+                        }}
+                      />
+                    </div>
                     <button
                       onClick={() => update("escales", (carnet.escales ?? []).filter((_, idx) => idx !== i))}
                       style={adminStyles.btnDelete}
