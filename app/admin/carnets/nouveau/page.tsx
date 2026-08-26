@@ -128,6 +128,8 @@ export default function NouveauCarnetPage() {
   const [dragIndexDest, setDragIndexDest] = useState<number | null>(null);
   const [dragIndexConseil, setDragIndexConseil] = useState<number | null>(null);
   const [dragIndexBudget, setDragIndexBudget] = useState<number | null>(null);
+  const [dragIndexValise, setDragIndexValise] = useState<number | null>(null);
+  const [dragIndexVoyage, setDragIndexVoyage] = useState<number | null>(null);
 
   function deposerDestination(i: number) {
     if (dragIndexDest === null || dragIndexDest === i) {
@@ -163,6 +165,30 @@ export default function NouveauCarnetPage() {
     copy.splice(i, 0, b);
     update("budget", copy);
     setDragIndexBudget(null);
+  }
+
+  function deposerValise(i: number) {
+    if (dragIndexValise === null || dragIndexValise === i) {
+      setDragIndexValise(null);
+      return;
+    }
+    const copy = [...carnet.checklistValise];
+    const [item] = copy.splice(dragIndexValise, 1);
+    copy.splice(i, 0, item);
+    update("checklistValise", copy);
+    setDragIndexValise(null);
+  }
+
+  function deposerVoyage(i: number) {
+    if (dragIndexVoyage === null || dragIndexVoyage === i) {
+      setDragIndexVoyage(null);
+      return;
+    }
+    const copy = [...(carnet.checklistVoyage ?? [])];
+    const [item] = copy.splice(dragIndexVoyage, 1);
+    copy.splice(i, 0, item);
+    update("checklistVoyage", copy);
+    setDragIndexVoyage(null);
   }
 
   function chargerDonnees() {
@@ -781,7 +807,30 @@ export default function NouveauCarnetPage() {
                   Les démarches à faire avant le départ (papiers, banque, maison...), à ne pas confondre avec la valise.
                 </p>
                 {(carnet.checklistVoyage ?? []).map((item, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                  <div
+                    key={i}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerVoyage(i)}
+                    style={{
+                      display: "flex",
+                      gap: 8,
+                      marginBottom: 10,
+                      alignItems: "center",
+                      opacity: dragIndexVoyage === i ? 0.4 : 1,
+                      background: dragIndexVoyage !== null && dragIndexVoyage !== i ? "#faf7f2" : "transparent",
+                      borderRadius: 4,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <span
+                      draggable
+                      onDragStart={() => setDragIndexVoyage(i)}
+                      onDragEnd={() => setDragIndexVoyage(null)}
+                      style={{ cursor: "grab", color: "#c8c2b6", fontSize: 16, userSelect: "none", lineHeight: 1, flexShrink: 0 }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </span>
                     <input
                       style={{ ...adminStyles.input, flex: 1 }}
                       value={item.label}
@@ -805,7 +854,30 @@ export default function NouveauCarnetPage() {
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Checklist valise</div>
                 {carnet.checklistValise.map((item, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                  <div
+                    key={i}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerValise(i)}
+                    style={{
+                      display: "flex",
+                      gap: 8,
+                      marginBottom: 10,
+                      alignItems: "center",
+                      opacity: dragIndexValise === i ? 0.4 : 1,
+                      background: dragIndexValise !== null && dragIndexValise !== i ? "#faf7f2" : "transparent",
+                      borderRadius: 4,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <span
+                      draggable
+                      onDragStart={() => setDragIndexValise(i)}
+                      onDragEnd={() => setDragIndexValise(null)}
+                      style={{ cursor: "grab", color: "#c8c2b6", fontSize: 16, userSelect: "none", lineHeight: 1, flexShrink: 0 }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </span>
                     <input
                       style={{ ...adminStyles.input, flex: 1 }}
                       value={item.label}
