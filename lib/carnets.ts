@@ -154,7 +154,7 @@ export interface Carnet {
   checklistValise: ChecklistItem[];
   checklistVoyage?: ChecklistItem[];
   documents?: DocumentVoyage[];
-  indispensables: { visa: string; passeport: string; vaccins: string; assurance: string; monnaie: string };
+  indispensables: { visa?: string; passeport?: string; vaccins?: string; assurance?: string; monnaie?: string; telephone?: string };
   contactsUrgence?: ContactUrgence[];
   // Gel automatique : une fois le voyage terminé, le contenu des destinations
   // est figé pour toujours, même si les fiches destination évoluent ensuite.

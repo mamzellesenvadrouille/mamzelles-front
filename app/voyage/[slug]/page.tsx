@@ -267,11 +267,24 @@ export default async function CarnetPage({
           </h2>
         </div>
         <div className={styles.practicalBox}>
-          <p><strong>Visa :</strong> {carnet.indispensables.visa}</p>
-          <p><strong>Passeport :</strong> {carnet.indispensables.passeport}</p>
-          <p><strong>Vaccins :</strong> {carnet.indispensables.vaccins}</p>
-          <p><strong>Assurance voyage :</strong> {carnet.indispensables.assurance}</p>
-          <p><strong>Monnaie :</strong> {carnet.indispensables.monnaie}</p>
+          {carnet.indispensables.visa && (
+            <p><strong>Visa :</strong> {carnet.indispensables.visa}</p>
+          )}
+          {carnet.indispensables.passeport && (
+            <p><strong>Passeport :</strong> {carnet.indispensables.passeport}</p>
+          )}
+          {carnet.indispensables.vaccins && (
+            <p><strong>Vaccins :</strong> {carnet.indispensables.vaccins}</p>
+          )}
+          {carnet.indispensables.assurance && (
+            <p><strong>Assurance voyage :</strong> {carnet.indispensables.assurance}</p>
+          )}
+          {carnet.indispensables.monnaie && (
+            <p><strong>Monnaie :</strong> {carnet.indispensables.monnaie}</p>
+          )}
+          {carnet.indispensables.telephone && (
+            <p><strong>Téléphone / Internet :</strong> {carnet.indispensables.telephone}</p>
+          )}
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 20 }}>

@@ -745,10 +745,32 @@ export default function NouveauCarnetPage() {
 
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Indispensables</div>
-                {(["visa", "passeport", "vaccins", "assurance", "monnaie"] as const).map((champ) => (
+                {([
+                  ["visa", "Visa"],
+                  ["passeport", "Passeport"],
+                  ["vaccins", "Vaccins"],
+                  ["assurance", "Assurance"],
+                  ["monnaie", "Monnaie"],
+                  ["telephone", "Téléphone / Internet"],
+                ] as const).map(([champ, label]) => (
                   <div style={adminStyles.field} key={champ}>
-                    <label style={adminStyles.label}>{champ}</label>
-                    <input style={adminStyles.input} value={carnet.indispensables[champ]} onChange={(e) => updateNested("indispensables", champ, e.target.value)} />
+                    <label style={adminStyles.label}>{label}</label>
+                    <div style={{ display: "flex", gap: 8 }}>
+                      <input
+                        style={{ ...adminStyles.input, flex: 1 }}
+                        value={carnet.indispensables[champ] ?? ""}
+                        onChange={(e) => updateNested("indispensables", champ, e.target.value)}
+                      />
+                      {carnet.indispensables[champ] && (
+                        <button
+                          onClick={() => updateNested("indispensables", champ, "")}
+                          style={adminStyles.btnDelete}
+                          title="Vider ce champ — il disparaît alors de l'affichage public"
+                        >
+                          ✕
+                        </button>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
