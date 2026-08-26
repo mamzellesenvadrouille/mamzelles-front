@@ -423,7 +423,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#8a8074", lineHeight: 1.25 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -447,15 +447,17 @@ export default function DestinationTabs({
                   </div>
                 </div>
               ))}
-            <div style={{ marginTop: 20, maxWidth: 320 }}>
+            <div className={styles.miniGrid} style={{ marginTop: 20 }}>
+              <div>
               <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25, marginBottom: 6 }}>
-                Ajouter un hébergement à votre carnet
+                Ajouter un hébergement <em style={{ fontStyle: "italic" }}>à votre carnet</em>
               </div>
               <LieuSearchField
                 placeholder="Rechercher un hôtel..."
                 onSelect={(lieu) => ajouterLieu(dest.id, "hebergements", lieu)}
                 afficherCarte={false}
               />
+              </div>
             </div>
           </>
         )}
@@ -568,7 +570,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#8a8074", lineHeight: 1.25 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -592,15 +594,17 @@ export default function DestinationTabs({
                   </div>
                 </div>
               ))}
-            <div style={{ marginTop: 20, maxWidth: 320 }}>
+            <div className={styles.miniGrid} style={{ marginTop: 20 }}>
+              <div>
               <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25, marginBottom: 6 }}>
-                Ajouter un site ou une activité à votre carnet
+                Ajouter un site ou une activité <em style={{ fontStyle: "italic" }}>à votre carnet</em>
               </div>
               <LieuSearchField
                 placeholder="Rechercher un site ou une activité..."
                 onSelect={(lieu) => ajouterLieu(dest.id, "activites", lieu)}
                 afficherCarte={false}
               />
+              </div>
             </div>
           </>
         )}
@@ -632,7 +636,7 @@ export default function DestinationTabs({
                     )}
                     <h4>{r.nom}</h4>
                     {(r.cuisine || r.prix) && (
-                      <div className={styles.meta}>
+                      <div className={styles.meta} style={{ fontStyle: "italic" }}>
                         {r.cuisine}
                         {r.cuisine && r.prix ? " · " : ""}
                         {r.prix}
@@ -691,7 +695,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#8a8074", lineHeight: 1.25 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -715,15 +719,17 @@ export default function DestinationTabs({
                   </div>
                 </div>
               ))}
-            <div style={{ marginTop: 20, maxWidth: 320 }}>
+            <div className={styles.miniGrid} style={{ marginTop: 20 }}>
+              <div>
               <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25, marginBottom: 6 }}>
-                Ajouter un restaurant à votre carnet
+                Ajouter un restaurant <em style={{ fontStyle: "italic" }}>à votre carnet</em>
               </div>
               <LieuSearchField
                 placeholder="Rechercher un restaurant..."
                 onSelect={(lieu) => ajouterLieu(dest.id, "restaurants", lieu)}
                 afficherCarte={false}
               />
+              </div>
             </div>
           </>
         )}

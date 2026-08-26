@@ -159,7 +159,7 @@ export default function LieuSearchField({
 
   return (
     <div ref={wrapRef} style={{ position: "relative", marginBottom: 10 }}>
-      <style>{`.lieu-search-input::placeholder { color: #8a8074; opacity: 1; }`}</style>
+      <style>{`.lieu-search-input::placeholder { color: #1a1512; opacity: 1; }`}</style>
       {onNomAffiche && lieuChoisi && (
         <div style={{ marginBottom: 10 }}>
           <label style={{ display: "block", fontSize: 10.5, textTransform: "uppercase", letterSpacing: "0.06em", color: "#8a8074", marginBottom: 4, fontFamily: "Inter, sans-serif" }}>
@@ -186,9 +186,10 @@ export default function LieuSearchField({
       )}
       <div style={{ position: "relative" }}>
         <MapPin
-          size={15}
-          strokeWidth={2}
+          size={16}
+          strokeWidth={1.5}
           color="#c8956c"
+          fill="#c8956c"
           style={{ position: "absolute", left: 10, top: "50%", transform: "translateY(-50%)", pointerEvents: "none" }}
         />
         <input
