@@ -447,8 +447,7 @@ export default function DestinationTabs({
                   </div>
                 </div>
               ))}
-            <div className={styles.miniGrid} style={{ marginTop: 20 }}>
-              <div>
+            <div style={{ marginTop: 20 }}>
               <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25, marginBottom: 6 }}>
                 Ajouter un hébergement <em style={{ fontStyle: "italic" }}>à votre carnet</em>
               </div>
@@ -457,7 +456,6 @@ export default function DestinationTabs({
                 onSelect={(lieu) => ajouterLieu(dest.id, "hebergements", lieu)}
                 afficherCarte={false}
               />
-              </div>
             </div>
           </>
         )}
@@ -594,8 +592,7 @@ export default function DestinationTabs({
                   </div>
                 </div>
               ))}
-            <div className={styles.miniGrid} style={{ marginTop: 20 }}>
-              <div>
+            <div style={{ marginTop: 20 }}>
               <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25, marginBottom: 6 }}>
                 Ajouter un site ou une activité <em style={{ fontStyle: "italic" }}>à votre carnet</em>
               </div>
@@ -604,7 +601,6 @@ export default function DestinationTabs({
                 onSelect={(lieu) => ajouterLieu(dest.id, "activites", lieu)}
                 afficherCarte={false}
               />
-              </div>
             </div>
           </>
         )}
@@ -719,8 +715,7 @@ export default function DestinationTabs({
                   </div>
                 </div>
               ))}
-            <div className={styles.miniGrid} style={{ marginTop: 20 }}>
-              <div>
+            <div style={{ marginTop: 20 }}>
               <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25, marginBottom: 6 }}>
                 Ajouter un restaurant <em style={{ fontStyle: "italic" }}>à votre carnet</em>
               </div>
@@ -729,7 +724,6 @@ export default function DestinationTabs({
                 onSelect={(lieu) => ajouterLieu(dest.id, "restaurants", lieu)}
                 afficherCarte={false}
               />
-              </div>
             </div>
           </>
         )}
