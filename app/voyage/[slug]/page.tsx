@@ -397,24 +397,6 @@ export default async function CarnetPage({
         </div>
       </section>
 
-      {carnet.checklistValise.length > 0 && (
-        <section className={styles.wrap}>
-          <div className={styles.sectionHead} style={{ marginBottom: 20 }}>
-            <span className={styles.eyebrow}>Avant de partir</span>
-            <h2 className={styles.display2}>
-              Checklist <em>valise</em>
-            </h2>
-          </div>
-          <CheckList
-            items={carnet.checklistValise}
-            storageKey={`mamzelles-checklist-valise-${carnet.slug}`}
-            slug={carnet.slug}
-            listeType="checklistValise"
-            progressInitiale={progress.checklistValise}
-          />
-        </section>
-      )}
-
       {carnet.checklistVoyage && carnet.checklistVoyage.length > 0 && (
         <section className={styles.wrap}>
           <div className={styles.sectionHead} style={{ marginBottom: 20 }}>
@@ -429,6 +411,24 @@ export default async function CarnetPage({
             slug={carnet.slug}
             listeType="checklistVoyage"
             progressInitiale={progress.checklistVoyage}
+          />
+        </section>
+      )}
+
+      {carnet.checklistValise.length > 0 && (
+        <section className={styles.wrap}>
+          <div className={styles.sectionHead} style={{ marginBottom: 20 }}>
+            <span className={styles.eyebrow}>Ne rien oublier</span>
+            <h2 className={styles.display2}>
+              Checklist <em>valise</em>
+            </h2>
+          </div>
+          <CheckList
+            items={carnet.checklistValise}
+            storageKey={`mamzelles-checklist-valise-${carnet.slug}`}
+            slug={carnet.slug}
+            listeType="checklistValise"
+            progressInitiale={progress.checklistValise}
           />
         </section>
       )}
