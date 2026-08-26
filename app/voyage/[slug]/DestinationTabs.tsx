@@ -432,7 +432,7 @@ export default function DestinationTabs({
                       tabIndex={0}
                       onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
                       onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
-                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 11, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 12, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
                     >
                       <MapPin size={14} strokeWidth={2} />
                       Voir sur la carte
@@ -577,7 +577,7 @@ export default function DestinationTabs({
                       tabIndex={0}
                       onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
                       onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
-                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 11, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 12, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
                     >
                       <MapPin size={14} strokeWidth={2} />
                       Voir sur la carte
@@ -641,7 +641,7 @@ export default function DestinationTabs({
                     {r.commentaire && (
                       <div
                         className={styles.meta}
-                        style={{ whiteSpace: "pre-line", overflow: "visible", textOverflow: "clip" }}
+                        style={{ whiteSpace: "pre-line", overflow: "visible", textOverflow: "clip", marginTop: 8 }}
                       >
                         {r.commentaire}
                       </div>
@@ -700,7 +700,7 @@ export default function DestinationTabs({
                       tabIndex={0}
                       onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
                       onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
-                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 11, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 12, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
                     >
                       <MapPin size={14} strokeWidth={2} />
                       Voir sur la carte
