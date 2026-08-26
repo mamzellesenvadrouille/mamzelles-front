@@ -641,7 +641,7 @@ export default function DestinationTabs({
                     {r.commentaire && (
                       <div
                         className={styles.meta}
-                        style={{ whiteSpace: "pre-line", overflow: "visible", textOverflow: "clip", marginTop: 8 }}
+                        style={{ whiteSpace: "pre-line", overflow: "visible", textOverflow: "clip", marginTop: 6 }}
                       >
                         {r.commentaire}
                       </div>
