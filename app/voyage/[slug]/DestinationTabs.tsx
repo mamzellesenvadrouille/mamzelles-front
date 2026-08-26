@@ -3,7 +3,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Calendar, Ticket, MapPin } from "lucide-react";
+import { Calendar, Ticket, MapPin, X } from "lucide-react";
 import type { DestinationResolue, DeroulePoint } from "@/lib/carnets";
 import { normaliserHeure } from "@/lib/carnets";
 import styles from "./carnet.module.css";
@@ -417,37 +417,50 @@ export default function DestinationTabs({
                   </div>
                 );
               })}
-              {lieuxAjoutes
-                .map((l, idx) => ({ l, idx }))
-                .filter(({ l }) => l.destinationId === dest.id && l.categorie === "hebergements")
-                .map(({ l, idx }) => (
-                  <div key={`ajoute-${idx}`} className={styles.miniCard} style={{ position: "relative" }}>
-                    <div className={styles.miniCardPlaceholder} />
-                    <h4>{l.nom}</h4>
-                    <div style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic", marginTop: 2 }}>Ajouté par vous</div>
-                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 4 }}>
-                      <span
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
-                        onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
-                        className={styles.mapsLink}
-                        style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer" }}
-                      >
-                        <MapPin size={12} color="#c8956c" strokeWidth={2} />
-                        Voir sur la carte
-                      </span>
-                      <button
-                        onClick={() => supprimerLieu(idx)}
-                        style={{ background: "none", border: "none", color: "#c0392b", cursor: "pointer", fontSize: 12 }}
-                        title="Retirer"
-                      >
-                        ✕
-                      </button>
-                    </div>
-                  </div>
-                ))}
             </div>
+            {lieuxAjoutes
+              .map((l, idx) => ({ l, idx }))
+              .filter(({ l }) => l.destinationId === dest.id && l.categorie === "hebergements")
+              .map(({ l, idx }) => (
+                <div
+                  key={`ajoute-${idx}`}
+                  style={{
+                    border: "1px solid rgba(26,21,18,0.09)",
+                    borderRadius: 4,
+                    padding: "12px 14px",
+                    marginTop: 10,
+                    background: "#fff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: 8,
+                  }}
+                >
+                  <div>
+                    <div style={{ fontSize: 15, fontWeight: 500, color: "#1a1512", fontFamily: "Inter, sans-serif" }}>{l.nom}</div>
+                    <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                    <span
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
+                      onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
+                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 12.5, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+                    >
+                      <MapPin size={14} strokeWidth={2} />
+                      Voir sur la carte
+                    </span>
+                    <button
+                      onClick={() => supprimerLieu(idx)}
+                      style={{ background: "none", border: "none", color: "#8a8074", cursor: "pointer", display: "flex" }}
+                      title="Retirer"
+                    >
+                      <X size={16} strokeWidth={2} />
+                    </button>
+                  </div>
+                </div>
+              ))}
             {categorieOuverte === "hebergements" ? (
               <div style={{ marginTop: 10, maxWidth: 320 }}>
                 <LieuSearchField
@@ -557,37 +570,50 @@ export default function DestinationTabs({
                   </div>
                 );
               })}
-              {lieuxAjoutes
-                .map((l, idx) => ({ l, idx }))
-                .filter(({ l }) => l.destinationId === dest.id && l.categorie === "activites")
-                .map(({ l, idx }) => (
-                  <div key={`ajoute-${idx}`} className={styles.miniCard} style={{ position: "relative" }}>
-                    <div className={styles.miniCardPlaceholder} />
-                    <h4>{l.nom}</h4>
-                    <div style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic", marginTop: 2 }}>Ajouté par vous</div>
-                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 4 }}>
-                      <span
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
-                        onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
-                        className={styles.mapsLink}
-                        style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer" }}
-                      >
-                        <MapPin size={12} color="#c8956c" strokeWidth={2} />
-                        Voir sur la carte
-                      </span>
-                      <button
-                        onClick={() => supprimerLieu(idx)}
-                        style={{ background: "none", border: "none", color: "#c0392b", cursor: "pointer", fontSize: 12 }}
-                        title="Retirer"
-                      >
-                        ✕
-                      </button>
-                    </div>
-                  </div>
-                ))}
             </div>
+            {lieuxAjoutes
+              .map((l, idx) => ({ l, idx }))
+              .filter(({ l }) => l.destinationId === dest.id && l.categorie === "activites")
+              .map(({ l, idx }) => (
+                <div
+                  key={`ajoute-${idx}`}
+                  style={{
+                    border: "1px solid rgba(26,21,18,0.09)",
+                    borderRadius: 4,
+                    padding: "12px 14px",
+                    marginTop: 10,
+                    background: "#fff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: 8,
+                  }}
+                >
+                  <div>
+                    <div style={{ fontSize: 15, fontWeight: 500, color: "#1a1512", fontFamily: "Inter, sans-serif" }}>{l.nom}</div>
+                    <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                    <span
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
+                      onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
+                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 12.5, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+                    >
+                      <MapPin size={14} strokeWidth={2} />
+                      Voir sur la carte
+                    </span>
+                    <button
+                      onClick={() => supprimerLieu(idx)}
+                      style={{ background: "none", border: "none", color: "#8a8074", cursor: "pointer", display: "flex" }}
+                      title="Retirer"
+                    >
+                      <X size={16} strokeWidth={2} />
+                    </button>
+                  </div>
+                </div>
+              ))}
             {categorieOuverte === "activites" ? (
               <div style={{ marginTop: 10, maxWidth: 320 }}>
                 <LieuSearchField
@@ -672,37 +698,50 @@ export default function DestinationTabs({
                   </div>
                 );
               })}
-              {lieuxAjoutes
-                .map((l, idx) => ({ l, idx }))
-                .filter(({ l }) => l.destinationId === dest.id && l.categorie === "restaurants")
-                .map(({ l, idx }) => (
-                  <div key={`ajoute-${idx}`} className={styles.miniCard} style={{ position: "relative" }}>
-                    <div className={styles.miniCardPlaceholder} />
-                    <h4>{l.nom}</h4>
-                    <div style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic", marginTop: 2 }}>Ajouté par vous</div>
-                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 4 }}>
-                      <span
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
-                        onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
-                        className={styles.mapsLink}
-                        style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer" }}
-                      >
-                        <MapPin size={12} color="#c8956c" strokeWidth={2} />
-                        Voir sur la carte
-                      </span>
-                      <button
-                        onClick={() => supprimerLieu(idx)}
-                        style={{ background: "none", border: "none", color: "#c0392b", cursor: "pointer", fontSize: 12 }}
-                        title="Retirer"
-                      >
-                        ✕
-                      </button>
-                    </div>
-                  </div>
-                ))}
             </div>
+            {lieuxAjoutes
+              .map((l, idx) => ({ l, idx }))
+              .filter(({ l }) => l.destinationId === dest.id && l.categorie === "restaurants")
+              .map(({ l, idx }) => (
+                <div
+                  key={`ajoute-${idx}`}
+                  style={{
+                    border: "1px solid rgba(26,21,18,0.09)",
+                    borderRadius: 4,
+                    padding: "12px 14px",
+                    marginTop: 10,
+                    background: "#fff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: 8,
+                  }}
+                >
+                  <div>
+                    <div style={{ fontSize: 15, fontWeight: 500, color: "#1a1512", fontFamily: "Inter, sans-serif" }}>{l.nom}</div>
+                    <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                    <span
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
+                      onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
+                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 12.5, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+                    >
+                      <MapPin size={14} strokeWidth={2} />
+                      Voir sur la carte
+                    </span>
+                    <button
+                      onClick={() => supprimerLieu(idx)}
+                      style={{ background: "none", border: "none", color: "#8a8074", cursor: "pointer", display: "flex" }}
+                      title="Retirer"
+                    >
+                      <X size={16} strokeWidth={2} />
+                    </button>
+                  </div>
+                </div>
+              ))}
             {categorieOuverte === "restaurants" ? (
               <div style={{ marginTop: 10, maxWidth: 320 }}>
                 <LieuSearchField
