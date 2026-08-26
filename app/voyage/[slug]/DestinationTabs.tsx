@@ -428,7 +428,7 @@ export default function DestinationTabs({
                     border: "1px solid rgba(26,21,18,0.09)",
                     borderRadius: 4,
                     padding: "12px 14px",
-                    marginTop: 10,
+                    marginTop: 16,
                     background: "#fff",
                     display: "flex",
                     alignItems: "center",
@@ -437,7 +437,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: 15, fontWeight: 500, color: "#1a1512", fontFamily: "Inter, sans-serif" }}>{l.nom}</div>
+                    <div style={{ fontSize: 13.5, fontWeight: 400, color: "#1a1512", fontFamily: "Inter, sans-serif", lineHeight: 1.4 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -581,7 +581,7 @@ export default function DestinationTabs({
                     border: "1px solid rgba(26,21,18,0.09)",
                     borderRadius: 4,
                     padding: "12px 14px",
-                    marginTop: 10,
+                    marginTop: 16,
                     background: "#fff",
                     display: "flex",
                     alignItems: "center",
@@ -590,7 +590,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: 15, fontWeight: 500, color: "#1a1512", fontFamily: "Inter, sans-serif" }}>{l.nom}</div>
+                    <div style={{ fontSize: 13.5, fontWeight: 400, color: "#1a1512", fontFamily: "Inter, sans-serif", lineHeight: 1.4 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -709,7 +709,7 @@ export default function DestinationTabs({
                     border: "1px solid rgba(26,21,18,0.09)",
                     borderRadius: 4,
                     padding: "12px 14px",
-                    marginTop: 10,
+                    marginTop: 16,
                     background: "#fff",
                     display: "flex",
                     alignItems: "center",
@@ -718,7 +718,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: 15, fontWeight: 500, color: "#1a1512", fontFamily: "Inter, sans-serif" }}>{l.nom}</div>
+                    <div style={{ fontSize: 13.5, fontWeight: 400, color: "#1a1512", fontFamily: "Inter, sans-serif", lineHeight: 1.4 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
