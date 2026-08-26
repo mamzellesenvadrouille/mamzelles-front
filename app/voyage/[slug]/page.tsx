@@ -246,6 +246,11 @@ export default async function CarnetPage({
                     <AlertTriangle size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} style={{ marginTop: -3 }} /> À éviter
                   </>
                 )}
+                {c.type === "bon-a-savoir" && (
+                  <>
+                    <Lightbulb size={18} color="#c8956c" strokeWidth={2} className={styles.tagIcon} style={{ marginTop: -3 }} /> Bon à savoir
+                  </>
+                )}
               </div>
               <p className={styles.bodySerif}>{c.texte}</p>
             </div>
