@@ -423,7 +423,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#8a8074", lineHeight: 1.25 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#999999", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -568,7 +568,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#8a8074", lineHeight: 1.25 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#999999", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -691,7 +691,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#8a8074", lineHeight: 1.25 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#999999", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
