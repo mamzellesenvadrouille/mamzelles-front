@@ -762,9 +762,9 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 ] as const).map(([champ, label]) => (
                   <div style={adminStyles.field} key={champ}>
                     <label style={adminStyles.label}>{label}</label>
-                    <div style={{ display: "flex", gap: 8 }}>
-                      <input
-                        style={{ ...adminStyles.input, flex: 1 }}
+                    <div style={{ display: "flex", gap: 8, alignItems: "flex-start" }}>
+                      <textarea
+                        style={{ ...adminStyles.input, flex: 1, minHeight: 60, resize: "vertical", fontFamily: "inherit" }}
                         value={carnet.indispensables[champ] ?? ""}
                         onChange={(e) => updateNested("indispensables", champ, e.target.value)}
                       />
