@@ -98,7 +98,7 @@ export interface CarnetDestinationRef {
 export type DestinationResolue = Destination & { nuits: number };
 
 export interface ConseilMamZelles {
-  type: "conseil" | "coup-de-coeur" | "a-eviter";
+  type: "conseil" | "coup-de-coeur" | "a-eviter" | "bon-a-savoir";
   texte: string;
 }
 
