@@ -418,7 +418,7 @@ export default async function CarnetPage({
       {carnet.checklistValise.length > 0 && (
         <section className={styles.wrap}>
           <div className={styles.sectionHead} style={{ marginBottom: 20 }}>
-            <span className={styles.eyebrow}>Ne rien oublier</span>
+            <span className={styles.eyebrow}>Pour ne rien oublier</span>
             <h2 className={styles.display2}>
               Checklist <em>valise</em>
             </h2>
