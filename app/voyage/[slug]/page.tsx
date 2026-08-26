@@ -267,23 +267,41 @@ export default async function CarnetPage({
           </h2>
         </div>
         <div className={styles.practicalBox}>
-          {carnet.indispensables.visa && (
-            <p><strong>Visa :</strong> {carnet.indispensables.visa}</p>
-          )}
           {carnet.indispensables.passeport && (
-            <p><strong>Passeport :</strong> {carnet.indispensables.passeport}</p>
+            <div className={styles.practicalItem}>
+              <div className={styles.practicalLabel}>Passeport</div>
+              <p>{carnet.indispensables.passeport}</p>
+            </div>
+          )}
+          {carnet.indispensables.visa && (
+            <div className={styles.practicalItem}>
+              <div className={styles.practicalLabel}>Visa</div>
+              <p>{carnet.indispensables.visa}</p>
+            </div>
           )}
           {carnet.indispensables.vaccins && (
-            <p><strong>Vaccins :</strong> {carnet.indispensables.vaccins}</p>
-          )}
-          {carnet.indispensables.assurance && (
-            <p><strong>Assurance voyage :</strong> {carnet.indispensables.assurance}</p>
+            <div className={styles.practicalItem}>
+              <div className={styles.practicalLabel}>Vaccins</div>
+              <p>{carnet.indispensables.vaccins}</p>
+            </div>
           )}
           {carnet.indispensables.monnaie && (
-            <p><strong>Monnaie :</strong> {carnet.indispensables.monnaie}</p>
+            <div className={styles.practicalItem}>
+              <div className={styles.practicalLabel}>Monnaie</div>
+              <p>{carnet.indispensables.monnaie}</p>
+            </div>
+          )}
+          {carnet.indispensables.assurance && (
+            <div className={styles.practicalItem}>
+              <div className={styles.practicalLabel}>Assurance voyage</div>
+              <p>{carnet.indispensables.assurance}</p>
+            </div>
           )}
           {carnet.indispensables.telephone && (
-            <p><strong>Téléphone / Internet :</strong> {carnet.indispensables.telephone}</p>
+            <div className={styles.practicalItem}>
+              <div className={styles.practicalLabel}>Téléphone / Internet</div>
+              <p>{carnet.indispensables.telephone}</p>
+            </div>
           )}
         </div>
 
@@ -342,14 +360,14 @@ export default async function CarnetPage({
           >
             <div>
               <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", marginBottom: 3 }}>
-                Connexion (eSIM) - Holafly
+                Assurance voyage - Chapka
               </div>
               <div style={{ fontSize: 12.5, color: "#8a8074" }}>
-                -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLES</strong>
+                -5% via <strong style={{ color: "#c8956c" }}>NOTRE LIEN</strong>
               </div>
             </div>
             <a
-              href="https://holafly.sjv.io/jR2Ezn"
+              href="https://www.chapkadirect.fr/index.php?action=produit&id=924&app=Mamzellesenvadrouille"
               target="_blank"
               rel="noopener noreferrer sponsored"
               style={{
@@ -382,14 +400,14 @@ export default async function CarnetPage({
           >
             <div>
               <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", marginBottom: 3 }}>
-                Assurance voyage - Chapka
+                Connexion (eSIM) - Holafly
               </div>
               <div style={{ fontSize: 12.5, color: "#8a8074" }}>
-                -5% via <strong style={{ color: "#c8956c" }}>NOTRE LIEN</strong>
+                -5% avec le code <strong style={{ color: "#c8956c" }}>MAMZELLES</strong>
               </div>
             </div>
             <a
-              href="https://www.chapkadirect.fr/index.php?action=produit&id=924&app=Mamzellesenvadrouille"
+              href="https://holafly.sjv.io/jR2Ezn"
               target="_blank"
               rel="noopener noreferrer sponsored"
               style={{

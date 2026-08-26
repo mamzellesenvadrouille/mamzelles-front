@@ -746,11 +746,11 @@ export default function NouveauCarnetPage() {
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Indispensables</div>
                 {([
-                  ["visa", "Visa"],
                   ["passeport", "Passeport"],
+                  ["visa", "Visa"],
                   ["vaccins", "Vaccins"],
-                  ["assurance", "Assurance"],
                   ["monnaie", "Monnaie"],
+                  ["assurance", "Assurance"],
                   ["telephone", "Téléphone / Internet"],
                 ] as const).map(([champ, label]) => (
                   <div style={adminStyles.field} key={champ}>
