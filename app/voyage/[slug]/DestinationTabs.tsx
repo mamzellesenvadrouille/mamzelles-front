@@ -428,7 +428,7 @@ export default function DestinationTabs({
                     border: "1px solid rgba(26,21,18,0.09)",
                     borderRadius: 4,
                     padding: "12px 14px",
-                    marginTop: 16,
+                    marginTop: 24,
                     background: "#fff",
                     display: "flex",
                     alignItems: "center",
@@ -437,7 +437,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#8a8074", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -446,7 +446,7 @@ export default function DestinationTabs({
                       tabIndex={0}
                       onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
                       onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
-                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 12.5, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 11, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
                     >
                       <MapPin size={14} strokeWidth={2} />
                       Voir sur la carte
@@ -581,7 +581,7 @@ export default function DestinationTabs({
                     border: "1px solid rgba(26,21,18,0.09)",
                     borderRadius: 4,
                     padding: "12px 14px",
-                    marginTop: 16,
+                    marginTop: 24,
                     background: "#fff",
                     display: "flex",
                     alignItems: "center",
@@ -590,7 +590,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#8a8074", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -599,7 +599,7 @@ export default function DestinationTabs({
                       tabIndex={0}
                       onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
                       onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
-                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 12.5, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 11, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
                     >
                       <MapPin size={14} strokeWidth={2} />
                       Voir sur la carte
@@ -709,7 +709,7 @@ export default function DestinationTabs({
                     border: "1px solid rgba(26,21,18,0.09)",
                     borderRadius: 4,
                     padding: "12px 14px",
-                    marginTop: 16,
+                    marginTop: 24,
                     background: "#fff",
                     display: "flex",
                     alignItems: "center",
@@ -718,7 +718,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#8a8074", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -727,7 +727,7 @@ export default function DestinationTabs({
                       tabIndex={0}
                       onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
                       onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
-                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 12.5, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
+                      style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", fontSize: 11, fontWeight: 500, color: "#a8734c", fontFamily: "Inter, sans-serif", whiteSpace: "nowrap" }}
                     >
                       <MapPin size={14} strokeWidth={2} />
                       Voir sur la carte
