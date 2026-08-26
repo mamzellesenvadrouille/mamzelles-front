@@ -783,30 +783,6 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
               </div>
 
               <div style={sectionWrap}>
-                <div style={sectionTitle}>Checklist valise</div>
-                {carnet.checklistValise.map((item, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
-                    <input
-                      style={{ ...adminStyles.input, flex: 1 }}
-                      value={item.label}
-                      onChange={(e) => {
-                        const copy = [...carnet.checklistValise];
-                        copy[i] = { ...copy[i], label: e.target.value };
-                        update("checklistValise", copy);
-                      }}
-                    />
-                    <button
-                      onClick={() => update("checklistValise", carnet.checklistValise.filter((_, idx) => idx !== i))}
-                      style={adminStyles.btnDelete}
-                    >
-                      ✕
-                    </button>
-                  </div>
-                ))}
-                <button onClick={() => ajouterCheckItem("checklistValise")} style={smallLink}>+ Ajouter</button>
-              </div>
-
-              <div style={sectionWrap}>
                 <div style={sectionTitle}>Checklist voyage</div>
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
                   Les démarches à faire avant le départ (papiers, banque, maison...), à ne pas confondre avec la valise.
@@ -831,6 +807,30 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   </div>
                 ))}
                 <button onClick={() => ajouterCheckItem("checklistVoyage")} style={smallLink}>+ Ajouter</button>
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Checklist valise</div>
+                {carnet.checklistValise.map((item, i) => (
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                    <input
+                      style={{ ...adminStyles.input, flex: 1 }}
+                      value={item.label}
+                      onChange={(e) => {
+                        const copy = [...carnet.checklistValise];
+                        copy[i] = { ...copy[i], label: e.target.value };
+                        update("checklistValise", copy);
+                      }}
+                    />
+                    <button
+                      onClick={() => update("checklistValise", carnet.checklistValise.filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ))}
+                <button onClick={() => ajouterCheckItem("checklistValise")} style={smallLink}>+ Ajouter</button>
               </div>
 
               <div style={sectionWrap}>
