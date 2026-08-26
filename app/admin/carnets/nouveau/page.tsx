@@ -11,6 +11,7 @@ import type { Carnet, Destination, CarnetDestinationRef, ConseilMamZelles, Budge
 import { normaliserSlug, normaliserSlugEnDirect } from "@/lib/carnets";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
+import LieuSearchField from "../../LieuSearchField";
 
 const carnetVide: Carnet = {
   slug: "",
@@ -124,6 +125,45 @@ export default function NouveauCarnetPage() {
   const [destinationsDispo, setDestinationsDispo] = useState<Destination[]>([]);
   const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [dragIndexDest, setDragIndexDest] = useState<number | null>(null);
+  const [dragIndexConseil, setDragIndexConseil] = useState<number | null>(null);
+  const [dragIndexBudget, setDragIndexBudget] = useState<number | null>(null);
+
+  function deposerDestination(i: number) {
+    if (dragIndexDest === null || dragIndexDest === i) {
+      setDragIndexDest(null);
+      return;
+    }
+    const copy = [...carnet.destinations];
+    const [ref] = copy.splice(dragIndexDest, 1);
+    copy.splice(i, 0, ref);
+    update("destinations", copy);
+    setDragIndexDest(null);
+  }
+
+  function deposerConseil(i: number) {
+    if (dragIndexConseil === null || dragIndexConseil === i) {
+      setDragIndexConseil(null);
+      return;
+    }
+    const copy = [...carnet.conseils];
+    const [c] = copy.splice(dragIndexConseil, 1);
+    copy.splice(i, 0, c);
+    update("conseils", copy);
+    setDragIndexConseil(null);
+  }
+
+  function deposerBudget(i: number) {
+    if (dragIndexBudget === null || dragIndexBudget === i) {
+      setDragIndexBudget(null);
+      return;
+    }
+    const copy = [...carnet.budget];
+    const [b] = copy.splice(dragIndexBudget, 1);
+    copy.splice(i, 0, b);
+    update("budget", copy);
+    setDragIndexBudget(null);
+  }
 
   function chargerDonnees() {
     fetch("/api/destination-list")
@@ -386,63 +426,41 @@ export default function NouveauCarnetPage() {
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Départ, escales & retour</div>
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
-                  Renseigne la ville de départ/retour du client, et ajoute d&apos;éventuelles escales (transit avion, ville de passage...). Les destinations cochées ci-dessous s&apos;ajoutent ensuite automatiquement entre les deux, dans l&apos;ordre où tu les as cochées — la carte se construit toute seule.
+                  Renseigne la ville de départ/retour du client, et ajoute d&apos;éventuelles escales (transit avion, ville de passage, ou même une destination du carnet si tu veux qu&apos;elle apparaisse sur cette carte). Cette carte du trajet est indépendante des destinations cochées ci-dessous (onglets Hôtels/Activités/Restaurants) — pour qu&apos;un lieu apparaisse ici, ajoute-le explicitement en escale.
                 </p>
-                <label style={microLabel}>Ville de départ / retour</label>
-                <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
-                  <input
-                    style={{ ...adminStyles.input, flex: 2 }}
+                <label style={microLabel}>Ville de départ</label>
+                <div style={{ marginBottom: 20 }}>
+                  <LieuSearchField
                     placeholder="ex : Paris"
-                    value={carnet.villeDepart?.nom ?? ""}
-                    onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { lat: 0, lng: 0 }), nom: e.target.value })}
-                  />
-                  <input
-                    style={{ ...adminStyles.input, flex: 1 }}
-                    placeholder="Latitude"
-                    value={carnet.villeDepart?.lat ?? ""}
-                    onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { nom: "", lng: 0 }), lat: Number(e.target.value) })}
-                  />
-                  <input
-                    style={{ ...adminStyles.input, flex: 1 }}
-                    placeholder="Longitude"
-                    value={carnet.villeDepart?.lng ?? ""}
-                    onChange={(e) => update("villeDepart", { ...(carnet.villeDepart ?? { nom: "", lat: 0 }), lng: Number(e.target.value) })}
+                    lat={carnet.villeDepart?.lat}
+                    lng={carnet.villeDepart?.lng}
+                    nomAffiche={carnet.villeDepart?.nom}
+                    onNomAffiche={(nom) => update("villeDepart", { ...carnet.villeDepart!, nom })}
+                    onSelect={(lieu) => update("villeDepart", { ...lieu, nom: carnet.villeDepart?.nom || lieu.nom })}
                   />
                 </div>
 
                 <label style={microLabel}>Escales (facultatif)</label>
                 {(carnet.escales ?? []).map((etape, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
-                    <input
-                      style={{ ...adminStyles.input, flex: 2 }}
-                      placeholder="ex : Dubaï (transit)"
-                      value={etape.nom}
-                      onChange={(e) => {
-                        const copy = [...(carnet.escales ?? [])];
-                        copy[i] = { ...copy[i], nom: e.target.value };
-                        update("escales", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, flex: 1 }}
-                      placeholder="Latitude"
-                      value={etape.lat ?? ""}
-                      onChange={(e) => {
-                        const copy = [...(carnet.escales ?? [])];
-                        copy[i] = { ...copy[i], lat: Number(e.target.value) };
-                        update("escales", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, flex: 1 }}
-                      placeholder="Longitude"
-                      value={etape.lng ?? ""}
-                      onChange={(e) => {
-                        const copy = [...(carnet.escales ?? [])];
-                        copy[i] = { ...copy[i], lng: Number(e.target.value) };
-                        update("escales", copy);
-                      }}
-                    />
+                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "flex-start" }}>
+                    <div style={{ flex: 1 }}>
+                      <LieuSearchField
+                        placeholder="ex : Dubaï (transit)"
+                        lat={etape.lat}
+                        lng={etape.lng}
+                        nomAffiche={etape.nom}
+                        onNomAffiche={(nom) => {
+                          const copy = [...(carnet.escales ?? [])];
+                          copy[i] = { ...copy[i], nom };
+                          update("escales", copy);
+                        }}
+                        onSelect={(lieu) => {
+                          const copy = [...(carnet.escales ?? [])];
+                          copy[i] = { ...lieu, nom: copy[i]?.nom || lieu.nom };
+                          update("escales", copy);
+                        }}
+                      />
+                    </div>
                     <button
                       onClick={() => update("escales", (carnet.escales ?? []).filter((_, idx) => idx !== i))}
                       style={adminStyles.btnDelete}
@@ -453,10 +471,22 @@ export default function NouveauCarnetPage() {
                 ))}
                 <button
                   onClick={() => update("escales", [...(carnet.escales ?? []), { nom: "", lat: 0, lng: 0 }])}
-                  style={smallLink}
+                  style={{ ...smallLink, marginBottom: 20, display: "inline-block" }}
                 >
                   + Ajouter une escale
                 </button>
+
+                <label style={microLabel}>Ville de retour</label>
+                <div>
+                  <LieuSearchField
+                    placeholder="ex : Paris"
+                    lat={carnet.villeRetour?.lat}
+                    lng={carnet.villeRetour?.lng}
+                    nomAffiche={carnet.villeRetour?.nom}
+                    onNomAffiche={(nom) => update("villeRetour", { ...carnet.villeRetour!, nom })}
+                    onSelect={(lieu) => update("villeRetour", { ...lieu, nom: carnet.villeRetour?.nom || lieu.nom })}
+                  />
+                </div>
               </div>
 
               <div style={sectionWrap}>
@@ -464,6 +494,48 @@ export default function NouveauCarnetPage() {
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
                   Sélectionne parmi tes fiches destination existantes.
                 </p>
+
+                {carnet.destinations.length > 0 && (
+                  <div style={{ marginBottom: 20 }}>
+                    <label style={microLabel}>Ordre dans le carnet (glisse pour réordonner)</label>
+                    {carnet.destinations.map((ref, i) => {
+                      const d = destinationsDispo.find((x) => x.id === ref.destinationId);
+                      return (
+                        <div
+                          key={ref.destinationId}
+                          onDragOver={(e) => e.preventDefault()}
+                          onDrop={() => deposerDestination(i)}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 8,
+                            padding: "8px 10px",
+                            marginBottom: 6,
+                            border: "1px solid #f0ebe4",
+                            borderRadius: 4,
+                            opacity: dragIndexDest === i ? 0.4 : 1,
+                            background: dragIndexDest !== null && dragIndexDest !== i ? "#faf7f2" : "#fff",
+                            transition: "opacity .15s, background .15s",
+                          }}
+                        >
+                          <span
+                            draggable
+                            onDragStart={() => setDragIndexDest(i)}
+                            onDragEnd={() => setDragIndexDest(null)}
+                            style={{ cursor: "grab", color: "#c8c2b6", fontSize: 16, userSelect: "none", lineHeight: 1 }}
+                            title="Glisser pour réordonner"
+                          >
+                            ⠿
+                          </span>
+                          <span style={{ fontFamily: "Inter, sans-serif", fontSize: 14 }}>
+                            {i + 1}. {d?.nom ?? ref.destinationId}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+
                 {destinationsDispo.length === 0 && (
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888" }}>Aucune fiche destination pour l&apos;instant.</p>
                 )}
@@ -514,7 +586,30 @@ export default function NouveauCarnetPage() {
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Conseils MamZelles</div>
                 {carnet.conseils.map((c, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                  <div
+                    key={i}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerConseil(i)}
+                    style={{
+                      display: "flex",
+                      gap: 8,
+                      marginBottom: 10,
+                      alignItems: "center",
+                      opacity: dragIndexConseil === i ? 0.4 : 1,
+                      background: dragIndexConseil !== null && dragIndexConseil !== i ? "#faf7f2" : "transparent",
+                      borderRadius: 4,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <span
+                      draggable
+                      onDragStart={() => setDragIndexConseil(i)}
+                      onDragEnd={() => setDragIndexConseil(null)}
+                      style={{ cursor: "grab", color: "#c8c2b6", fontSize: 16, userSelect: "none", lineHeight: 1, flexShrink: 0 }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </span>
                     <select
                       style={{ ...adminStyles.input, width: 160 }}
                       value={c.type}
@@ -527,9 +622,10 @@ export default function NouveauCarnetPage() {
                       <option value="conseil">Notre conseil</option>
                       <option value="coup-de-coeur">Coup de cœur</option>
                       <option value="a-eviter">À éviter</option>
+                      <option value="bon-a-savoir">Bon à savoir</option>
                     </select>
                     <input
-                      style={adminStyles.input}
+                      style={{ ...adminStyles.input, flex: 1 }}
                       value={c.texte}
                       onChange={(e) => {
                         const copy = [...carnet.conseils];
@@ -537,6 +633,13 @@ export default function NouveauCarnetPage() {
                         update("conseils", copy);
                       }}
                     />
+                    <button
+                      onClick={() => update("conseils", carnet.conseils.filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                      title="Supprimer ce conseil"
+                    >
+                      ✕
+                    </button>
                   </div>
                 ))}
                 <button onClick={ajouterConseil} style={smallLink}>+ Ajouter un conseil</button>
@@ -545,7 +648,30 @@ export default function NouveauCarnetPage() {
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Budget</div>
                 {carnet.budget.map((b, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                  <div
+                    key={i}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerBudget(i)}
+                    style={{
+                      display: "flex",
+                      gap: 8,
+                      marginBottom: 10,
+                      alignItems: "center",
+                      opacity: dragIndexBudget === i ? 0.4 : 1,
+                      background: dragIndexBudget !== null && dragIndexBudget !== i ? "#faf7f2" : "transparent",
+                      borderRadius: 4,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <span
+                      draggable
+                      onDragStart={() => setDragIndexBudget(i)}
+                      onDragEnd={() => setDragIndexBudget(null)}
+                      style={{ cursor: "grab", color: "#c8c2b6", fontSize: 16, userSelect: "none", lineHeight: 1, flexShrink: 0 }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </span>
                     <input
                       style={adminStyles.input}
                       placeholder="Poste (ex : Vols)"
@@ -567,6 +693,13 @@ export default function NouveauCarnetPage() {
                         update("budget", copy);
                       }}
                     />
+                    <button
+                      onClick={() => update("budget", carnet.budget.filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                      title="Supprimer cette ligne"
+                    >
+                      ✕
+                    </button>
                   </div>
                 ))}
                 <button onClick={ajouterBudgetLigne} style={smallLink}>+ Ajouter une ligne</button>
