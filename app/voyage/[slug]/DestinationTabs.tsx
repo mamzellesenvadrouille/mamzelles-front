@@ -437,7 +437,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: 13.5, fontWeight: 400, color: "#1a1512", fontFamily: "Inter, sans-serif", lineHeight: 1.4 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -462,7 +462,7 @@ export default function DestinationTabs({
                 </div>
               ))}
             {categorieOuverte === "hebergements" ? (
-              <div style={{ marginTop: 10, maxWidth: 320 }}>
+              <div style={{ marginTop: 20, maxWidth: 320 }}>
                 <LieuSearchField
                   placeholder="Rechercher un hôtel..."
                   onSelect={(lieu) => ajouterLieu(dest.id, "hebergements", lieu)}
@@ -475,7 +475,7 @@ export default function DestinationTabs({
                 </button>
               </div>
             ) : (
-              <button onClick={() => setCategorieOuverte("hebergements")} style={{ ...smallLinkPublic, marginTop: 10 }}>
+              <button onClick={() => setCategorieOuverte("hebergements")} style={{ ...smallLinkPublic, marginTop: 20 }}>
                 + Ajouter un hébergement
               </button>
             )}
@@ -590,7 +590,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: 13.5, fontWeight: 400, color: "#1a1512", fontFamily: "Inter, sans-serif", lineHeight: 1.4 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -615,7 +615,7 @@ export default function DestinationTabs({
                 </div>
               ))}
             {categorieOuverte === "activites" ? (
-              <div style={{ marginTop: 10, maxWidth: 320 }}>
+              <div style={{ marginTop: 20, maxWidth: 320 }}>
                 <LieuSearchField
                   placeholder="Rechercher un site ou une activité..."
                   onSelect={(lieu) => ajouterLieu(dest.id, "activites", lieu)}
@@ -625,7 +625,7 @@ export default function DestinationTabs({
                 </button>
               </div>
             ) : (
-              <button onClick={() => setCategorieOuverte("activites")} style={{ ...smallLinkPublic, marginTop: 10 }}>
+              <button onClick={() => setCategorieOuverte("activites")} style={{ ...smallLinkPublic, marginTop: 20 }}>
                 + Ajouter un site ou une activité
               </button>
             )}
@@ -718,7 +718,7 @@ export default function DestinationTabs({
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: 13.5, fontWeight: 400, color: "#1a1512", fontFamily: "Inter, sans-serif", lineHeight: 1.4 }}>{l.nom}</div>
+                    <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25 }}>{l.nom}</div>
                     <div style={{ fontSize: 12, color: "#c8956c", fontStyle: "italic", marginTop: 2, fontFamily: "Inter, sans-serif" }}>Ajouté par vous</div>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -743,7 +743,7 @@ export default function DestinationTabs({
                 </div>
               ))}
             {categorieOuverte === "restaurants" ? (
-              <div style={{ marginTop: 10, maxWidth: 320 }}>
+              <div style={{ marginTop: 20, maxWidth: 320 }}>
                 <LieuSearchField
                   placeholder="Rechercher un restaurant..."
                   onSelect={(lieu) => ajouterLieu(dest.id, "restaurants", lieu)}
@@ -753,7 +753,7 @@ export default function DestinationTabs({
                 </button>
               </div>
             ) : (
-              <button onClick={() => setCategorieOuverte("restaurants")} style={{ ...smallLinkPublic, marginTop: 10 }}>
+              <button onClick={() => setCategorieOuverte("restaurants")} style={{ ...smallLinkPublic, marginTop: 20 }}>
                 + Ajouter un restaurant
               </button>
             )}
