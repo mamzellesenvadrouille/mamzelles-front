@@ -14,6 +14,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { MapPin } from "lucide-react";
 import { Map as MapLibreMap, Marker, NavigationControl, setWorkerUrl } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -158,6 +159,7 @@ export default function LieuSearchField({
 
   return (
     <div ref={wrapRef} style={{ position: "relative", marginBottom: 10 }}>
+      <style>{`.lieu-search-input::placeholder { color: #8a8074; opacity: 1; }`}</style>
       {onNomAffiche && lieuChoisi && (
         <div style={{ marginBottom: 10 }}>
           <label style={{ display: "block", fontSize: 10.5, textTransform: "uppercase", letterSpacing: "0.06em", color: "#8a8074", marginBottom: 4, fontFamily: "Inter, sans-serif" }}>
@@ -183,11 +185,18 @@ export default function LieuSearchField({
         </div>
       )}
       <div style={{ position: "relative" }}>
+        <MapPin
+          size={15}
+          strokeWidth={2}
+          color="#c8956c"
+          style={{ position: "absolute", left: 10, top: "50%", transform: "translateY(-50%)", pointerEvents: "none" }}
+        />
         <input
+          className="lieu-search-input"
           style={{
             width: "100%",
             height: 36,
-            padding: "0 12px",
+            padding: "0 12px 0 32px",
             fontSize: 13,
             borderRadius: 4,
             fontFamily: "Inter, sans-serif",
@@ -196,7 +205,7 @@ export default function LieuSearchField({
             background: "#fff",
             boxSizing: "border-box",
           }}
-          placeholder="📍 Position sur la carte"
+          placeholder="Entrer le nom du lieu..."
           value={saisie}
           onChange={(e) => handleChange(e.target.value)}
           onFocus={() => resultats.length > 0 && setOuvert(true)}
