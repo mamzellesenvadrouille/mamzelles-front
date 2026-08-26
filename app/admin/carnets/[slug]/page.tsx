@@ -629,6 +629,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                       <option value="conseil">Notre conseil</option>
                       <option value="coup-de-coeur">Coup de cœur</option>
                       <option value="a-eviter">À éviter</option>
+                      <option value="bon-a-savoir">Bon à savoir</option>
                     </select>
                     <input
                       style={{ ...adminStyles.input, flex: 1 }}
