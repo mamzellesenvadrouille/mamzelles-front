@@ -37,6 +37,7 @@ export default function LieuSearchField({
   lng,
   nomAffiche,
   onNomAffiche,
+  afficherCarte = true,
 }: {
   onSelect: (lieu: Resultat) => void;
   placeholder?: string;
@@ -47,6 +48,10 @@ export default function LieuSearchField({
   // renvoyée par Google Places, sans toucher aux coordonnées.
   nomAffiche?: string;
   onNomAffiche?: (nom: string) => void;
+  // Carte de vérification affichée par défaut (utile dans l'admin pour
+  // ajuster précisément) — désactivable pour un usage plus léger (ex :
+  // ajout de lieu par le client sur le carnet public).
+  afficherCarte?: boolean;
 }) {
   const [saisie, setSaisie] = useState("");
   const [resultats, setResultats] = useState<Resultat[]>([]);
@@ -75,7 +80,7 @@ export default function LieuSearchField({
 
   // Initialise la petite carte de vérification dès qu'un lieu est choisi
   useEffect(() => {
-    if (!lieuChoisi || !mapRef.current) return;
+    if (!afficherCarte || !lieuChoisi || !mapRef.current) return;
 
     const map = new MapLibreMap({
       container: mapRef.current,
@@ -242,7 +247,7 @@ export default function LieuSearchField({
         </div>
       )}
       </div>
-      {lieuChoisi && (
+      {afficherCarte && lieuChoisi && (
         <div style={{ marginTop: 8 }}>
           <div
             ref={mapRef}

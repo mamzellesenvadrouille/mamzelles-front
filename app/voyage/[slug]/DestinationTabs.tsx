@@ -448,12 +448,13 @@ export default function DestinationTabs({
                 </div>
               ))}
             <div style={{ marginTop: 20, maxWidth: 320 }}>
-              <div style={{ fontSize: 12.5, color: "#8a8074", marginBottom: 6, fontFamily: "Inter, sans-serif" }}>
+              <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25, marginBottom: 6 }}>
                 Ajouter un hébergement à votre carnet
               </div>
               <LieuSearchField
                 placeholder="Rechercher un hôtel..."
                 onSelect={(lieu) => ajouterLieu(dest.id, "hebergements", lieu)}
+                afficherCarte={false}
               />
             </div>
           </>
@@ -592,12 +593,13 @@ export default function DestinationTabs({
                 </div>
               ))}
             <div style={{ marginTop: 20, maxWidth: 320 }}>
-              <div style={{ fontSize: 12.5, color: "#8a8074", marginBottom: 6, fontFamily: "Inter, sans-serif" }}>
+              <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25, marginBottom: 6 }}>
                 Ajouter un site ou une activité à votre carnet
               </div>
               <LieuSearchField
                 placeholder="Rechercher un site ou une activité..."
                 onSelect={(lieu) => ajouterLieu(dest.id, "activites", lieu)}
+                afficherCarte={false}
               />
             </div>
           </>
@@ -714,12 +716,13 @@ export default function DestinationTabs({
                 </div>
               ))}
             <div style={{ marginTop: 20, maxWidth: 320 }}>
-              <div style={{ fontSize: 12.5, color: "#8a8074", marginBottom: 6, fontFamily: "Inter, sans-serif" }}>
+              <div style={{ fontFamily: "var(--font-cormorant, 'Cormorant Garamond', serif)", fontWeight: 500, fontSize: 19, color: "#1a1512", lineHeight: 1.25, marginBottom: 6 }}>
                 Ajouter un restaurant à votre carnet
               </div>
               <LieuSearchField
                 placeholder="Rechercher un restaurant..."
                 onSelect={(lieu) => ajouterLieu(dest.id, "restaurants", lieu)}
+                afficherCarte={false}
               />
             </div>
           </>
