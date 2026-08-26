@@ -611,6 +611,16 @@ export default function NouveauCarnetPage() {
               </div>
 
               <div style={sectionWrap}>
+                <div style={sectionTitle}>Indispensables</div>
+                {(["visa", "passeport", "vaccins", "assurance", "monnaie"] as const).map((champ) => (
+                  <div style={adminStyles.field} key={champ}>
+                    <label style={adminStyles.label}>{champ}</label>
+                    <input style={adminStyles.input} value={carnet.indispensables[champ]} onChange={(e) => updateNested("indispensables", champ, e.target.value)} />
+                  </div>
+                ))}
+              </div>
+
+              <div style={sectionWrap}>
                 <div style={sectionTitle}>Checklist valise</div>
                 {carnet.checklistValise.map((item, i) => (
                   <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
@@ -659,16 +669,6 @@ export default function NouveauCarnetPage() {
                   </div>
                 ))}
                 <button onClick={() => ajouterCheckItem("checklistVoyage")} style={smallLink}>+ Ajouter</button>
-              </div>
-
-              <div style={sectionWrap}>
-                <div style={sectionTitle}>Indispensables</div>
-                {(["visa", "passeport", "vaccins", "assurance", "monnaie"] as const).map((champ) => (
-                  <div style={adminStyles.field} key={champ}>
-                    <label style={adminStyles.label}>{champ}</label>
-                    <input style={adminStyles.input} value={carnet.indispensables[champ]} onChange={(e) => updateNested("indispensables", champ, e.target.value)} />
-                  </div>
-                ))}
               </div>
 
               <div style={sectionWrap}>
