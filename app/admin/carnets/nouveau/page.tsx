@@ -247,7 +247,7 @@ export default function NouveauCarnetPage() {
     const nomsRestaurants = d.restaurants.map((r) => r.nom);
     const nomsActivites = d.activites.map((a) => a.nom);
     return (
-      <div key={d.id} style={{ borderBottom: "1px solid #f0ebe4", padding: "10px 0" }}>
+      <div key={d.id} style={{ padding: "10px 0" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12, fontFamily: "Inter, sans-serif", fontSize: 14 }}>
           <input type="checkbox" checked={!!ref} onChange={() => toggleDestination(d.id)} />
           <span style={{ flex: 1, fontWeight: 500 }}>{d.nom}</span>
