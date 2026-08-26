@@ -241,7 +241,7 @@ button.routeStep:hover { border-color: var(--gold); }
 .practicalBox { background: #fff; border-radius: 3px; padding: var(--s3); margin-top: var(--s2); }
 .practicalItem { padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--line); }
 .practicalItem:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: none; }
-.practicalLabel { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold-deep); font-weight: 600; margin-bottom: 4px; }
+.practicalLabel { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--dark); font-weight: 600; margin-bottom: 4px; }
 .practicalBox p { font-size: 14px; color: var(--muted); margin: 0 0 8px; }
 .practicalBox p:last-child { margin-bottom: 0; }
 .practicalBox strong { color: var(--dark); font-weight: 500; }
