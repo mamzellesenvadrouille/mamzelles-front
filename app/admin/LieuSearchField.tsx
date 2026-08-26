@@ -150,7 +150,7 @@ export default function LieuSearchField({
 
   function choisir(r: Resultat) {
     onSelect(r);
-    setSaisie(r.nom);
+    setSaisie("");
     setLieuChoisi(r);
     setResultats([]);
     setOuvert(false);
