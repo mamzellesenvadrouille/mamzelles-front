@@ -125,6 +125,8 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
   const [dragIndexDest, setDragIndexDest] = useState<number | null>(null);
+  const [dragIndexConseil, setDragIndexConseil] = useState<number | null>(null);
+  const [dragIndexBudget, setDragIndexBudget] = useState<number | null>(null);
 
   function deposerDestination(i: number) {
     if (dragIndexDest === null || dragIndexDest === i) {
@@ -136,6 +138,30 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
     copy.splice(i, 0, ref);
     update("destinations", copy);
     setDragIndexDest(null);
+  }
+
+  function deposerConseil(i: number) {
+    if (dragIndexConseil === null || dragIndexConseil === i) {
+      setDragIndexConseil(null);
+      return;
+    }
+    const copy = [...carnet.conseils];
+    const [c] = copy.splice(dragIndexConseil, 1);
+    copy.splice(i, 0, c);
+    update("conseils", copy);
+    setDragIndexConseil(null);
+  }
+
+  function deposerBudget(i: number) {
+    if (dragIndexBudget === null || dragIndexBudget === i) {
+      setDragIndexBudget(null);
+      return;
+    }
+    const copy = [...carnet.budget];
+    const [b] = copy.splice(dragIndexBudget, 1);
+    copy.splice(i, 0, b);
+    update("budget", copy);
+    setDragIndexBudget(null);
   }
 
   function chargerDonnees() {
@@ -567,7 +593,30 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Conseils MamZelles</div>
                 {carnet.conseils.map((c, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                  <div
+                    key={i}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerConseil(i)}
+                    style={{
+                      display: "flex",
+                      gap: 8,
+                      marginBottom: 10,
+                      alignItems: "center",
+                      opacity: dragIndexConseil === i ? 0.4 : 1,
+                      background: dragIndexConseil !== null && dragIndexConseil !== i ? "#faf7f2" : "transparent",
+                      borderRadius: 4,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <span
+                      draggable
+                      onDragStart={() => setDragIndexConseil(i)}
+                      onDragEnd={() => setDragIndexConseil(null)}
+                      style={{ cursor: "grab", color: "#c8c2b6", fontSize: 16, userSelect: "none", lineHeight: 1, flexShrink: 0 }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </span>
                     <select
                       style={{ ...adminStyles.input, width: 160 }}
                       value={c.type}
@@ -582,7 +631,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                       <option value="a-eviter">À éviter</option>
                     </select>
                     <input
-                      style={adminStyles.input}
+                      style={{ ...adminStyles.input, flex: 1 }}
                       value={c.texte}
                       onChange={(e) => {
                         const copy = [...carnet.conseils];
@@ -590,6 +639,13 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                         update("conseils", copy);
                       }}
                     />
+                    <button
+                      onClick={() => update("conseils", carnet.conseils.filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                      title="Supprimer ce conseil"
+                    >
+                      ✕
+                    </button>
                   </div>
                 ))}
                 <button onClick={ajouterConseil} style={smallLink}>+ Ajouter un conseil</button>
@@ -598,7 +654,30 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Budget</div>
                 {carnet.budget.map((b, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+                  <div
+                    key={i}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={() => deposerBudget(i)}
+                    style={{
+                      display: "flex",
+                      gap: 8,
+                      marginBottom: 10,
+                      alignItems: "center",
+                      opacity: dragIndexBudget === i ? 0.4 : 1,
+                      background: dragIndexBudget !== null && dragIndexBudget !== i ? "#faf7f2" : "transparent",
+                      borderRadius: 4,
+                      transition: "opacity .15s, background .15s",
+                    }}
+                  >
+                    <span
+                      draggable
+                      onDragStart={() => setDragIndexBudget(i)}
+                      onDragEnd={() => setDragIndexBudget(null)}
+                      style={{ cursor: "grab", color: "#c8c2b6", fontSize: 16, userSelect: "none", lineHeight: 1, flexShrink: 0 }}
+                      title="Glisser pour réordonner"
+                    >
+                      ⠿
+                    </span>
                     <input
                       style={adminStyles.input}
                       placeholder="Poste (ex : Vols)"
@@ -620,6 +699,13 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                         update("budget", copy);
                       }}
                     />
+                    <button
+                      onClick={() => update("budget", carnet.budget.filter((_, idx) => idx !== i))}
+                      style={adminStyles.btnDelete}
+                      title="Supprimer cette ligne"
+                    >
+                      ✕
+                    </button>
                   </div>
                 ))}
                 <button onClick={ajouterBudgetLigne} style={smallLink}>+ Ajouter une ligne</button>
