@@ -2,14 +2,20 @@
 // Service Worker : met en cache les tuiles Google Maps et les pages de carnet
 // déjà visitées, pour qu'elles restent consultables sans connexion réseau.
 
-const CACHE_NAME = "mamzelles-carnet-cache-v4";
+const CACHE_NAME = "mamzelles-carnet-cache-v5";
 
-// Domaines Google Maps dont on veut garder les tuiles/scripts en cache
+// Domaines de cartes dont on veut garder les tuiles/scripts en cache.
+// MapTiler est le fournisseur réellement utilisé par la carte du carnet
+// (via Leaflet) — sans lui dans cette liste, les tuiles de la carte
+// n'étaient en réalité jamais interceptées ni mises en cache de façon
+// fiable par ce Service Worker, seulement par le cache HTTP classique du
+// navigateur, qui peut être vidé à tout moment (notamment sur Safari iOS).
 const DOMAINES_MAPS = [
   "maps.googleapis.com",
   "maps.gstatic.com",
   "fonts.googleapis.com",
   "fonts.gstatic.com",
+  "api.maptiler.com",
 ];
 
 self.addEventListener("install", (event) => {
