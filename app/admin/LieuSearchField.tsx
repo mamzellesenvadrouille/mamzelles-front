@@ -14,7 +14,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { MapPin } from "lucide-react";
 import { Map as MapLibreMap, Marker, NavigationControl, setWorkerUrl } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -185,13 +184,15 @@ export default function LieuSearchField({
         </div>
       )}
       <div style={{ position: "relative" }}>
-        <MapPin
-          size={16}
-          strokeWidth={1.5}
-          color="#c8956c"
-          fill="#c8956c"
+        <svg
+          width="16"
+          height="20"
+          viewBox="0 0 32 32"
           style={{ position: "absolute", left: 10, top: "50%", transform: "translateY(-50%)", pointerEvents: "none" }}
-        />
+        >
+          <circle cx="16" cy="11" r="7" fill="#c8956c" />
+          <line x1="16" y1="18" x2="16" y2="28" stroke="#c8956c" strokeWidth="2.5" strokeLinecap="round" />
+        </svg>
         <input
           className="lieu-search-input"
           style={{
