@@ -43,7 +43,7 @@ function escapeHtml(texte: string): string {
 // Une position est valide si c'est un vrai nombre, pas NaN, et dans les
 // bornes géographiques réelles. typeof NaN === "number", donc on doit
 // exclure NaN explicitement.
-function positionValide(l: Lieu): l is { nom: string; lat: number; lng: number; infosPratiques?: string } {
+function positionValide(l: Lieu & { estAjoutee?: boolean }): l is { nom: string; lat: number; lng: number; infosPratiques?: string; estAjoutee?: boolean } {
   return (
     typeof l.lat === "number" &&
     typeof l.lng === "number" &&
@@ -87,12 +87,12 @@ function precacherTuiles(centre: { lat: number; lng: number }) {
   });
 }
 
-function creerIconePin(L: typeof import("leaflet"), Icon: typeof Bed, color: string) {
+function creerIconePin(L: typeof import("leaflet"), Icon: typeof Bed, color: string, estAjoutee?: boolean) {
   const container = document.createElement("div");
   container.style.cssText = "width:30px;height:39px;";
   container.innerHTML = `
     <svg width="30" height="39" viewBox="0 0 30 39" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));">
-      <path d="M15 1C7.8 1 2 6.8 2 14c0 10.5 13 24 13 24s13-13.5 13-24C28 6.8 22.2 1 15 1z" fill="${color}" stroke="#fff" stroke-width="2"/>
+      <path d="M15 1C7.8 1 2 6.8 2 14c0 10.5 13 24 13 24s13-13.5 13-24C28 6.8 22.2 1 15 1z" fill="${color}" stroke="${estAjoutee ? "#1a1512" : "#fff"}" stroke-width="2" ${estAjoutee ? 'stroke-dasharray="3,2"' : ""}/>
     </svg>
   `;
   const iconSlot = document.createElement("div");
@@ -112,8 +112,15 @@ function creerIconePin(L: typeof import("leaflet"), Icon: typeof Bed, color: str
   });
 }
 
-const DestinationMap = forwardRef<DestinationMapHandle, { destination: DestinationResolue; apiKey?: string }>(
-  function DestinationMap({ destination }, ref) {
+const DestinationMap = forwardRef<
+  DestinationMapHandle,
+  {
+    destination: DestinationResolue;
+    apiKey?: string;
+    lieuxAjoutes?: { categorie: Categorie; nom: string; lat: number; lng: number }[];
+  }
+>(
+  function DestinationMap({ destination, lieuxAjoutes }, ref) {
     const wrapRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<HTMLDivElement>(null);
     const mapInstance = useRef<import("leaflet").Map | null>(null);
@@ -128,10 +135,22 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
     // filtre, laisser les nouveaux pins se dessiner, puis voler dessus.
     const cibleEnAttenteRef = useRef<{ lat: number; lng: number } | null>(null);
 
-    const lieuxParCategorie: Record<Categorie, Lieu[]> = {
-      hebergements: destination.hebergements ?? [],
-      restaurants: destination.restaurants ?? [],
-      activites: destination.activites ?? [],
+    // Les lieux ajoutés par le client viennent s'ajouter à ceux définis
+    // dans l'admin, catégorie par catégorie — même pin, même comportement,
+    // seule la bulle indique "Ajouté par vous".
+    const lieuxParCategorie: Record<Categorie, (Lieu & { estAjoutee?: boolean })[]> = {
+      hebergements: [
+        ...(destination.hebergements ?? []),
+        ...(lieuxAjoutes ?? []).filter((l) => l.categorie === "hebergements").map((l) => ({ ...l, estAjoutee: true })),
+      ],
+      restaurants: [
+        ...(destination.restaurants ?? []),
+        ...(lieuxAjoutes ?? []).filter((l) => l.categorie === "restaurants").map((l) => ({ ...l, estAjoutee: true })),
+      ],
+      activites: [
+        ...(destination.activites ?? []),
+        ...(lieuxAjoutes ?? []).filter((l) => l.categorie === "activites").map((l) => ({ ...l, estAjoutee: true })),
+      ],
     };
 
     const aDesCoordonnees = Object.values(lieuxParCategorie).some((liste) => liste.some(positionValide));
@@ -308,12 +327,16 @@ const DestinationMap = forwardRef<DestinationMapHandle, { destination: Destinati
             key === "activites" && lieu.infosPratiques
               ? `<div style="font-size:12.5px;color:#5a5248;margin-bottom:8px;line-height:1.5;white-space:pre-line;">${escapeHtml(lieu.infosPratiques)}</div>`
               : "";
+          const ajouteHtml = lieu.estAjoutee
+            ? `<div style="font-size:11px;color:#c8956c;font-style:italic;margin-bottom:6px;">Ajouté par vous</div>`
+            : "";
 
-          const marker = L.marker([lat, lng], { icon: creerIconePin(L, Icon, color) })
+          const marker = L.marker([lat, lng], { icon: creerIconePin(L, Icon, color, lieu.estAjoutee) })
             .addTo(map)
             .bindPopup(
               `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
                 <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
+                ${ajouteHtml}
                 ${infosHtml}
                 <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
               </div>`

@@ -266,6 +266,7 @@ export interface CarnetProgress {
   contactsCustom: { label: string; valeur: string }[]; // contacts d'urgence ajoutés par le client lui-même
   derouleCustom: (DeroulePoint & { destinationId: string })[]; // notes/mémento ajoutés par le client, rattachées à une destination précise
   budgetCustom: BudgetLigne[]; // lignes de budget ajoutées par le client lui-même (ex: ses propres restaurants estimés)
+  lieuxAjoutes: { destinationId: string; categorie: "hebergements" | "restaurants" | "activites"; nom: string; lat: number; lng: number }[]; // hébergements/activités/restaurants ajoutés par le client lui-même, rattachés à une destination précise
   notesLibres: string; // zone de notes libres du client, privée (jamais vue côté admin)
 }
 
@@ -277,6 +278,7 @@ function progressVide(): CarnetProgress {
     contactsCustom: [],
     derouleCustom: [],
     budgetCustom: [],
+    lieuxAjoutes: [],
     notesLibres: "",
   };
 }
@@ -312,6 +314,13 @@ export async function saveCarnetProgress(slug: string, progress: CarnetProgress)
     budgetCustom: (progress.budgetCustom ?? []).slice(0, 30).map((b) => ({
       poste: String(b.poste ?? "").slice(0, 60),
       montant: Math.max(0, Math.min(1000000, Number(b.montant) || 0)),
+    })),
+    lieuxAjoutes: (progress.lieuxAjoutes ?? []).slice(0, 50).map((l) => ({
+      destinationId: String(l.destinationId ?? "").slice(0, 100),
+      categorie: (["hebergements", "restaurants", "activites"] as const).includes(l.categorie) ? l.categorie : "activites",
+      nom: String(l.nom ?? "").slice(0, 150),
+      lat: Math.max(-90, Math.min(90, Number(l.lat) || 0)),
+      lng: Math.max(-180, Math.min(180, Number(l.lng) || 0)),
     })),
     notesLibres: String(progress.notesLibres ?? "").slice(0, 5000),
   };

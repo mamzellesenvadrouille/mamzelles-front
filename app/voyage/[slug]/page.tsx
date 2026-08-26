@@ -198,6 +198,7 @@ export default async function CarnetPage({
           tauxParDestination={tauxParDestination}
           slug={carnet.slug}
           derouleCustomInitial={progress.derouleCustom}
+          lieuxAjoutesInitial={progress.lieuxAjoutes ?? []}
           dateDebutVoyage={carnet.dates.debut}
         />
       </section>

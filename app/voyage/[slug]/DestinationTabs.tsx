@@ -10,6 +10,7 @@ import styles from "./carnet.module.css";
 import DestinationMap, { type DestinationMapHandle } from "./DestinationMap";
 import ConvertisseurDevise from "./ConvertisseurDevise";
 import { deviseDepuisPays } from "@/lib/carnets";
+import LieuSearchField from "../../admin/LieuSearchField";
 
 async function sauvegarderDerouleCustom(slug: string, derouleCustom: (DeroulePoint & { destinationId: string })[]) {
   try {
@@ -17,6 +18,21 @@ async function sauvegarderDerouleCustom(slug: string, derouleCustom: (DeroulePoi
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ slug, progress: { derouleCustom } }),
+    });
+  } catch {
+    // pas grave si la sauvegarde échoue ponctuellement
+  }
+}
+
+type CategorieLieu = "hebergements" | "activites" | "restaurants";
+type LieuAjoute = { destinationId: string; categorie: CategorieLieu; nom: string; lat: number; lng: number };
+
+async function sauvegarderLieuxAjoutes(slug: string, lieuxAjoutes: LieuAjoute[]) {
+  try {
+    await fetch("/api/carnet-progress", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ slug, progress: { lieuxAjoutes } }),
     });
   } catch {
     // pas grave si la sauvegarde échoue ponctuellement
@@ -102,6 +118,18 @@ const boutonMemento: React.CSSProperties = {
   fontFamily: "Inter, sans-serif",
 };
 
+const smallLinkPublic: React.CSSProperties = {
+  fontSize: 12.5,
+  color: "#a8734c",
+  background: "none",
+  border: "none",
+  cursor: "pointer",
+  padding: 0,
+  fontFamily: "Inter, sans-serif",
+  textDecoration: "underline",
+  display: "block",
+};
+
 export default function DestinationTabs({
   destinations,
   googleMapsApiKey,
@@ -109,6 +137,7 @@ export default function DestinationTabs({
   tauxParDestination,
   slug,
   derouleCustomInitial,
+  lieuxAjoutesInitial,
   dateDebutVoyage,
 }: {
   destinations: DestinationResolue[];
@@ -117,15 +146,31 @@ export default function DestinationTabs({
   tauxParDestination?: (number | null)[];
   slug: string;
   derouleCustomInitial: (DeroulePoint & { destinationId: string })[];
+  lieuxAjoutesInitial: LieuAjoute[];
   dateDebutVoyage?: string;
 }) {
   const [actif, setActif] = useState(0);
   const mapHandleRef = useRef<DestinationMapHandle>(null);
   const [derouleCustom, setDerouleCustom] = useState(derouleCustomInitial);
+  const [lieuxAjoutes, setLieuxAjoutes] = useState(lieuxAjoutesInitial);
+  const [categorieOuverte, setCategorieOuverte] = useState<CategorieLieu | null>(null);
   const [nJour, setNJour] = useState("");
   const [nHeure, setNHeure] = useState("");
   const [nTitre, setNTitre] = useState("");
   const [nNote, setNNote] = useState("");
+
+  function ajouterLieu(destinationId: string, categorie: CategorieLieu, lieu: { nom: string; lat: number; lng: number }) {
+    const next = [...lieuxAjoutes, { destinationId, categorie, ...lieu }];
+    setLieuxAjoutes(next);
+    sauvegarderLieuxAjoutes(slug, next);
+    setCategorieOuverte(null);
+  }
+
+  function supprimerLieu(index: number) {
+    const next = lieuxAjoutes.filter((_, i) => i !== index);
+    setLieuxAjoutes(next);
+    sauvegarderLieuxAjoutes(slug, next);
+  }
 
   const datesParDestination = (() => {
     if (!dateDebutVoyage) return [];
@@ -315,7 +360,7 @@ export default function DestinationTabs({
           );
         })()}
 
-        {(dest.hebergements ?? []).length > 0 && (
+        {((dest.hebergements ?? []).length > 0 || lieuxAjoutes.some((l) => l.destinationId === dest.id && l.categorie === "hebergements")) && (
           <>
             <div className={styles.sectionLabelBig}>
               Votre <em style={{ fontStyle: "italic" }}>hébergement</em>
@@ -372,11 +417,59 @@ export default function DestinationTabs({
                   </div>
                 );
               })}
+              {lieuxAjoutes
+                .map((l, idx) => ({ l, idx }))
+                .filter(({ l }) => l.destinationId === dest.id && l.categorie === "hebergements")
+                .map(({ l, idx }) => (
+                  <div key={`ajoute-${idx}`} className={styles.miniCard} style={{ position: "relative" }}>
+                    <div className={styles.miniCardPlaceholder} />
+                    <h4>{l.nom}</h4>
+                    <div style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic", marginTop: 2 }}>Ajouté par vous</div>
+                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 4 }}>
+                      <span
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
+                        onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "hebergements")}
+                        className={styles.mapsLink}
+                        style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer" }}
+                      >
+                        <MapPin size={12} color="#c8956c" strokeWidth={2} />
+                        Voir sur la carte
+                      </span>
+                      <button
+                        onClick={() => supprimerLieu(idx)}
+                        style={{ background: "none", border: "none", color: "#c0392b", cursor: "pointer", fontSize: 12 }}
+                        title="Retirer"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  </div>
+                ))}
             </div>
+            {categorieOuverte === "hebergements" ? (
+              <div style={{ marginTop: 10, maxWidth: 320 }}>
+                <LieuSearchField
+                  placeholder="Rechercher un hôtel..."
+                  onSelect={(lieu) => ajouterLieu(dest.id, "hebergements", lieu)}
+                />
+                <button
+                  onClick={() => setCategorieOuverte(null)}
+                  style={{ ...smallLinkPublic, marginTop: 4 }}
+                >
+                  Annuler
+                </button>
+              </div>
+            ) : (
+              <button onClick={() => setCategorieOuverte("hebergements")} style={{ ...smallLinkPublic, marginTop: 10 }}>
+                + Ajouter un hébergement
+              </button>
+            )}
           </>
         )}
 
-        {dest.activites.length > 0 && (
+        {(dest.activites.length > 0 || lieuxAjoutes.some((l) => l.destinationId === dest.id && l.categorie === "activites")) && (
           <>
             <div className={styles.sectionLabelBig}>
               {dest.activites.length} site{dest.activites.length > 1 ? "s" : ""} & <em style={{ fontStyle: "italic" }}>activité{dest.activites.length > 1 ? "s" : ""}</em>
@@ -464,11 +557,56 @@ export default function DestinationTabs({
                   </div>
                 );
               })}
+              {lieuxAjoutes
+                .map((l, idx) => ({ l, idx }))
+                .filter(({ l }) => l.destinationId === dest.id && l.categorie === "activites")
+                .map(({ l, idx }) => (
+                  <div key={`ajoute-${idx}`} className={styles.miniCard} style={{ position: "relative" }}>
+                    <div className={styles.miniCardPlaceholder} />
+                    <h4>{l.nom}</h4>
+                    <div style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic", marginTop: 2 }}>Ajouté par vous</div>
+                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 4 }}>
+                      <span
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
+                        onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "activites")}
+                        className={styles.mapsLink}
+                        style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer" }}
+                      >
+                        <MapPin size={12} color="#c8956c" strokeWidth={2} />
+                        Voir sur la carte
+                      </span>
+                      <button
+                        onClick={() => supprimerLieu(idx)}
+                        style={{ background: "none", border: "none", color: "#c0392b", cursor: "pointer", fontSize: 12 }}
+                        title="Retirer"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  </div>
+                ))}
             </div>
+            {categorieOuverte === "activites" ? (
+              <div style={{ marginTop: 10, maxWidth: 320 }}>
+                <LieuSearchField
+                  placeholder="Rechercher un site ou une activité..."
+                  onSelect={(lieu) => ajouterLieu(dest.id, "activites", lieu)}
+                />
+                <button onClick={() => setCategorieOuverte(null)} style={{ ...smallLinkPublic, marginTop: 4 }}>
+                  Annuler
+                </button>
+              </div>
+            ) : (
+              <button onClick={() => setCategorieOuverte("activites")} style={{ ...smallLinkPublic, marginTop: 10 }}>
+                + Ajouter un site ou une activité
+              </button>
+            )}
           </>
         )}
 
-        {dest.restaurants.length > 0 && (
+        {(dest.restaurants.length > 0 || lieuxAjoutes.some((l) => l.destinationId === dest.id && l.categorie === "restaurants")) && (
           <>
             <div className={styles.sectionLabelBig}>
               {dest.restaurants.length} restaurant{dest.restaurants.length > 1 ? "s" : ""} <em style={{ fontStyle: "italic" }}>recommandé{dest.restaurants.length > 1 ? "s" : ""}</em>
@@ -534,11 +672,62 @@ export default function DestinationTabs({
                   </div>
                 );
               })}
+              {lieuxAjoutes
+                .map((l, idx) => ({ l, idx }))
+                .filter(({ l }) => l.destinationId === dest.id && l.categorie === "restaurants")
+                .map(({ l, idx }) => (
+                  <div key={`ajoute-${idx}`} className={styles.miniCard} style={{ position: "relative" }}>
+                    <div className={styles.miniCardPlaceholder} />
+                    <h4>{l.nom}</h4>
+                    <div style={{ fontSize: 10.5, color: "#c8956c", fontStyle: "italic", marginTop: 2 }}>Ajouté par vous</div>
+                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 4 }}>
+                      <span
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
+                        onKeyDown={(e) => e.key === "Enter" && centrerSurLeLieu(l.lat, l.lng, l.nom, "restaurants")}
+                        className={styles.mapsLink}
+                        style={{ display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer" }}
+                      >
+                        <MapPin size={12} color="#c8956c" strokeWidth={2} />
+                        Voir sur la carte
+                      </span>
+                      <button
+                        onClick={() => supprimerLieu(idx)}
+                        style={{ background: "none", border: "none", color: "#c0392b", cursor: "pointer", fontSize: 12 }}
+                        title="Retirer"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  </div>
+                ))}
             </div>
+            {categorieOuverte === "restaurants" ? (
+              <div style={{ marginTop: 10, maxWidth: 320 }}>
+                <LieuSearchField
+                  placeholder="Rechercher un restaurant..."
+                  onSelect={(lieu) => ajouterLieu(dest.id, "restaurants", lieu)}
+                />
+                <button onClick={() => setCategorieOuverte(null)} style={{ ...smallLinkPublic, marginTop: 4 }}>
+                  Annuler
+                </button>
+              </div>
+            ) : (
+              <button onClick={() => setCategorieOuverte("restaurants")} style={{ ...smallLinkPublic, marginTop: 10 }}>
+                + Ajouter un restaurant
+              </button>
+            )}
           </>
         )}
 
-        <DestinationMap key={dest.id} ref={mapHandleRef} destination={dest} apiKey={googleMapsApiKey} />
+        <DestinationMap
+          key={dest.id}
+          ref={mapHandleRef}
+          destination={dest}
+          apiKey={googleMapsApiKey}
+          lieuxAjoutes={lieuxAjoutes.filter((l) => l.destinationId === dest.id)}
+        />
       </div>
     </div>
   );
