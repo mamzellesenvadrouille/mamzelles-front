@@ -168,7 +168,7 @@ export default function LieuSearchField({
               fontFamily: "Inter, sans-serif",
               border: "1px solid #d8cdbc",
               outline: "none",
-              background: "#fffaf3",
+              background: "#fff",
               boxSizing: "border-box",
             }}
             placeholder="ex : Paris"
@@ -188,7 +188,7 @@ export default function LieuSearchField({
             fontFamily: "Inter, sans-serif",
             border: "1px solid #d8cdbc",
             outline: "none",
-            background: "#fffaf3",
+            background: "#fff",
             boxSizing: "border-box",
           }}
           placeholder="📍 Position sur la carte"

@@ -118,18 +118,6 @@ const boutonMemento: React.CSSProperties = {
   fontFamily: "Inter, sans-serif",
 };
 
-const smallLinkPublic: React.CSSProperties = {
-  fontSize: 12.5,
-  color: "#a8734c",
-  background: "none",
-  border: "none",
-  cursor: "pointer",
-  padding: 0,
-  fontFamily: "Inter, sans-serif",
-  textDecoration: "underline",
-  display: "block",
-};
-
 export default function DestinationTabs({
   destinations,
   googleMapsApiKey,
@@ -153,7 +141,6 @@ export default function DestinationTabs({
   const mapHandleRef = useRef<DestinationMapHandle>(null);
   const [derouleCustom, setDerouleCustom] = useState(derouleCustomInitial);
   const [lieuxAjoutes, setLieuxAjoutes] = useState(lieuxAjoutesInitial);
-  const [categorieOuverte, setCategorieOuverte] = useState<CategorieLieu | null>(null);
   const [nJour, setNJour] = useState("");
   const [nHeure, setNHeure] = useState("");
   const [nTitre, setNTitre] = useState("");
@@ -163,7 +150,6 @@ export default function DestinationTabs({
     const next = [...lieuxAjoutes, { destinationId, categorie, ...lieu }];
     setLieuxAjoutes(next);
     sauvegarderLieuxAjoutes(slug, next);
-    setCategorieOuverte(null);
   }
 
   function supprimerLieu(index: number) {
@@ -461,24 +447,15 @@ export default function DestinationTabs({
                   </div>
                 </div>
               ))}
-            {categorieOuverte === "hebergements" ? (
-              <div style={{ marginTop: 20, maxWidth: 320 }}>
-                <LieuSearchField
-                  placeholder="Rechercher un hôtel..."
-                  onSelect={(lieu) => ajouterLieu(dest.id, "hebergements", lieu)}
-                />
-                <button
-                  onClick={() => setCategorieOuverte(null)}
-                  style={{ ...smallLinkPublic, marginTop: 4 }}
-                >
-                  Annuler
-                </button>
+            <div style={{ marginTop: 20, maxWidth: 320 }}>
+              <div style={{ fontSize: 12.5, color: "#8a8074", marginBottom: 6, fontFamily: "Inter, sans-serif" }}>
+                Ajouter un hébergement à votre carnet
               </div>
-            ) : (
-              <button onClick={() => setCategorieOuverte("hebergements")} style={{ ...smallLinkPublic, marginTop: 20 }}>
-                + Ajouter un hébergement
-              </button>
-            )}
+              <LieuSearchField
+                placeholder="Rechercher un hôtel..."
+                onSelect={(lieu) => ajouterLieu(dest.id, "hebergements", lieu)}
+              />
+            </div>
           </>
         )}
 
@@ -614,21 +591,15 @@ export default function DestinationTabs({
                   </div>
                 </div>
               ))}
-            {categorieOuverte === "activites" ? (
-              <div style={{ marginTop: 20, maxWidth: 320 }}>
-                <LieuSearchField
-                  placeholder="Rechercher un site ou une activité..."
-                  onSelect={(lieu) => ajouterLieu(dest.id, "activites", lieu)}
-                />
-                <button onClick={() => setCategorieOuverte(null)} style={{ ...smallLinkPublic, marginTop: 4 }}>
-                  Annuler
-                </button>
+            <div style={{ marginTop: 20, maxWidth: 320 }}>
+              <div style={{ fontSize: 12.5, color: "#8a8074", marginBottom: 6, fontFamily: "Inter, sans-serif" }}>
+                Ajouter un site ou une activité à votre carnet
               </div>
-            ) : (
-              <button onClick={() => setCategorieOuverte("activites")} style={{ ...smallLinkPublic, marginTop: 20 }}>
-                + Ajouter un site ou une activité
-              </button>
-            )}
+              <LieuSearchField
+                placeholder="Rechercher un site ou une activité..."
+                onSelect={(lieu) => ajouterLieu(dest.id, "activites", lieu)}
+              />
+            </div>
           </>
         )}
 
@@ -742,21 +713,15 @@ export default function DestinationTabs({
                   </div>
                 </div>
               ))}
-            {categorieOuverte === "restaurants" ? (
-              <div style={{ marginTop: 20, maxWidth: 320 }}>
-                <LieuSearchField
-                  placeholder="Rechercher un restaurant..."
-                  onSelect={(lieu) => ajouterLieu(dest.id, "restaurants", lieu)}
-                />
-                <button onClick={() => setCategorieOuverte(null)} style={{ ...smallLinkPublic, marginTop: 4 }}>
-                  Annuler
-                </button>
+            <div style={{ marginTop: 20, maxWidth: 320 }}>
+              <div style={{ fontSize: 12.5, color: "#8a8074", marginBottom: 6, fontFamily: "Inter, sans-serif" }}>
+                Ajouter un restaurant à votre carnet
               </div>
-            ) : (
-              <button onClick={() => setCategorieOuverte("restaurants")} style={{ ...smallLinkPublic, marginTop: 20 }}>
-                + Ajouter un restaurant
-              </button>
-            )}
+              <LieuSearchField
+                placeholder="Rechercher un restaurant..."
+                onSelect={(lieu) => ajouterLieu(dest.id, "restaurants", lieu)}
+              />
+            </div>
           </>
         )}
 

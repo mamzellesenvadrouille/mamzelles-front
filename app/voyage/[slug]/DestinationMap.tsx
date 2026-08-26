@@ -87,12 +87,12 @@ function precacherTuiles(centre: { lat: number; lng: number }) {
   });
 }
 
-function creerIconePin(L: typeof import("leaflet"), Icon: typeof Bed, color: string, estAjoutee?: boolean) {
+function creerIconePin(L: typeof import("leaflet"), Icon: typeof Bed, color: string) {
   const container = document.createElement("div");
   container.style.cssText = "width:30px;height:39px;";
   container.innerHTML = `
     <svg width="30" height="39" viewBox="0 0 30 39" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));">
-      <path d="M15 1C7.8 1 2 6.8 2 14c0 10.5 13 24 13 24s13-13.5 13-24C28 6.8 22.2 1 15 1z" fill="${color}" stroke="${estAjoutee ? "#1a1512" : "#fff"}" stroke-width="2" ${estAjoutee ? 'stroke-dasharray="3,2"' : ""}/>
+      <path d="M15 1C7.8 1 2 6.8 2 14c0 10.5 13 24 13 24s13-13.5 13-24C28 6.8 22.2 1 15 1z" fill="${color}" stroke="#fff" stroke-width="2"/>
     </svg>
   `;
   const iconSlot = document.createElement("div");
@@ -331,7 +331,7 @@ const DestinationMap = forwardRef<
             ? `<div style="font-size:11px;color:#c8956c;font-style:italic;margin-bottom:6px;">Ajouté par vous</div>`
             : "";
 
-          const marker = L.marker([lat, lng], { icon: creerIconePin(L, Icon, color, lieu.estAjoutee) })
+          const marker = L.marker([lat, lng], { icon: creerIconePin(L, Icon, color) })
             .addTo(map)
             .bindPopup(
               `<div style="font-family:Inter,sans-serif;font-size:13px;padding:2px 4px;min-width:160px;max-width:240px;">
