@@ -68,16 +68,32 @@ function latLngVersTuile(lat: number, lng: number, zoom: number) {
   return { x, y };
 }
 
-function precacherTuiles(centre: { lat: number; lng: number }) {
-  const zooms = [11, 12, 13, 14, 15];
-  const rayonTuiles = 2;
+// Pré-charge les tuiles hors-ligne pour TOUTE la zone englobant les lieux de
+// la destination (pas juste un petit carré autour d'un seul point) — avec une
+// marge tout autour, pour que la carte reste utilisable même si le visiteur
+// se balade un peu en dehors des pins exacts (rue voisine, chemin de plage...).
+function precacherTuiles(points: { lat: number; lng: number }[]) {
+  if (points.length === 0) return;
+  const zooms = [12, 13, 14, 15, 16];
+
+  const lats = points.map((p) => p.lat);
+  const lngs = points.map((p) => p.lng);
+  const latMin = Math.min(...lats);
+  const latMax = Math.max(...lats);
+  const lngMin = Math.min(...lngs);
+  const lngMax = Math.max(...lngs);
+
+  // Marge tout autour de la zone (environ 20% de son étendue, avec un
+  // minimum pour les destinations où tous les points sont très proches).
+  const margeLat = Math.max((latMax - latMin) * 0.25, 0.01);
+  const margeLng = Math.max((lngMax - lngMin) * 0.25, 0.01);
 
   zooms.forEach((zoom) => {
-    const { x: cx, y: cy } = latLngVersTuile(centre.lat, centre.lng, zoom);
-    for (let dx = -rayonTuiles; dx <= rayonTuiles; dx++) {
-      for (let dy = -rayonTuiles; dy <= rayonTuiles; dy++) {
-        const x = cx + dx;
-        const y = cy + dy;
+    const { x: xMin, y: yMax } = latLngVersTuile(latMin - margeLat, lngMin - margeLng, zoom);
+    const { x: xMax, y: yMin } = latLngVersTuile(latMax + margeLat, lngMax + margeLng, zoom);
+
+    for (let x = xMin; x <= xMax; x++) {
+      for (let y = yMin; y <= yMax; y++) {
         const url = TILE_URL_TEMPLATE.replace("{z}", String(zoom))
           .replace("{x}", String(x))
           .replace("{y}", String(y));
@@ -238,7 +254,7 @@ const DestinationMap = forwardRef<
             keepBuffer: 4,
           }).addTo(map);
 
-          precacherTuiles(centre);
+          precacherTuiles(tousLesPoints);
           mapInstance.current = map;
           setPret(true);
         })
@@ -358,25 +374,41 @@ const DestinationMap = forwardRef<
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, filtreActif, destination.id]);
 
-    // Localise le visiteur (avec sa permission) et affiche un point bleu sur la carte
+    // Localise le visiteur (avec sa permission) et affiche un point bleu sur
+    // la carte, qui se déplace en direct pendant qu'il se balade (watchPosition
+    // au lieu d'un simple relevé unique) — utile pour suivre sa position
+    // pendant une excursion, pas juste au chargement de la page.
     useEffect(() => {
-      if (!pret || !mapInstance.current || !navigator.geolocation) return;
+      if (!pret || !mapInstance.current || !leafletRef.current || !navigator.geolocation) return;
+      const L = leafletRef.current;
+      const map = mapInstance.current;
+      let markerPosition: import("leaflet").Marker | null = null;
 
-      navigator.geolocation.getCurrentPosition(
+      const idSuivi = navigator.geolocation.watchPosition(
         (position) => {
-          if (!mapInstance.current || !leafletRef.current) return;
-          const L = leafletRef.current;
-          const icone = L.divIcon({
-            html: `<div style="width:16px;height:16px;border-radius:50%;background:#4285F4;border:2px solid #fff;box-shadow:0 0 0 4px rgba(66,133,244,0.25),0 1px 4px rgba(0,0,0,.3);"></div>`,
-            className: "",
-            iconSize: [16, 16],
-            iconAnchor: [8, 8],
-          });
-          L.marker([position.coords.latitude, position.coords.longitude], { icon: icone }).addTo(mapInstance.current);
+          if (!mapInstance.current) return;
+          const { latitude, longitude } = position.coords;
+
+          if (markerPosition) {
+            markerPosition.setLatLng([latitude, longitude]);
+          } else {
+            const icone = L.divIcon({
+              html: `<div style="width:16px;height:16px;border-radius:50%;background:#4285F4;border:2px solid #fff;box-shadow:0 0 0 4px rgba(66,133,244,0.25),0 1px 4px rgba(0,0,0,.3);"></div>`,
+              className: "",
+              iconSize: [16, 16],
+              iconAnchor: [8, 8],
+            });
+            markerPosition = L.marker([latitude, longitude], { icon: icone }).addTo(map);
+          }
         },
         () => {},
         { enableHighAccuracy: true, timeout: 8000 }
       );
+
+      return () => {
+        navigator.geolocation.clearWatch(idSuivi);
+        markerPosition?.remove();
+      };
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pret, destination.id]);
 
