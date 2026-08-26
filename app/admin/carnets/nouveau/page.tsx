@@ -247,10 +247,10 @@ export default function NouveauCarnetPage() {
     const nomsRestaurants = d.restaurants.map((r) => r.nom);
     const nomsActivites = d.activites.map((a) => a.nom);
     return (
-      <div key={d.id} style={{ padding: "10px 0" }}>
+      <div key={d.id} style={{ padding: "4px 0" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12, fontFamily: "Inter, sans-serif", fontSize: 14 }}>
           <input type="checkbox" checked={!!ref} onChange={() => toggleDestination(d.id)} />
-          <span style={{ flex: 1, fontWeight: 500 }}>{d.nom}</span>
+          <span style={{ flex: 1 }}>{d.nom}</span>
           {ref && (
             <input
               type="number"
@@ -562,12 +562,12 @@ export default function NouveauCarnetPage() {
                     const entete = (afficherContinent || afficherPays) && (
                       <div key={`entete-${continent}-${pays}`}>
                         {afficherContinent && (
-                          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, fontStyle: "italic", color: "#1a1512", marginTop: 20, marginBottom: 6 }}>
+                          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, fontWeight: 700, fontStyle: "italic", color: "#1a1512", marginTop: 20, marginBottom: 6 }}>
                             {continent}
                           </div>
                         )}
                         {afficherPays && (
-                          <div style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em", color: "#a8734c", marginBottom: 6 }}>
+                          <div style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em", color: "#a8734c", marginTop: 18, marginBottom: 6 }}>
                             {pays}
                           </div>
                         )}
