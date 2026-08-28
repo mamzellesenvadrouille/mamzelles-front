@@ -50,25 +50,25 @@ export default function Formules() {
           '@type': 'Offer',
           name: "L'Escale",
           priceCurrency: 'EUR',
-          price: '179',
+          price: '149',
         },
         {
           '@type': 'Offer',
           name: 'La Vadrouille',
           priceCurrency: 'EUR',
-          price: '329',
+          price: '279',
         },
         {
           '@type': 'Offer',
           name: 'La Grande Vadrouille',
           priceCurrency: 'EUR',
-          price: '499',
+          price: '449',
         },
         {
           '@type': 'Offer',
           name: 'Sur-mesure',
           priceCurrency: 'EUR',
-          price: '549',
+          price: '649',
         },
       ],
     },
@@ -157,7 +157,7 @@ export default function Formules() {
               <div className="fcard-name">L&apos;Escale</div>
               <div className="fcard-days">2 à 4 jours</div>
             </div>
-            <div className="fcard-price"><span>À partir de</span><strong>179 €</strong></div>
+            <div className="fcard-price"><span>À partir de</span><strong>149 €</strong></div>
             <div className="fcard-arrow-wrap">
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 5 sites & activités, 5 restaurants</p></div>
@@ -171,7 +171,7 @@ export default function Formules() {
               <div className="fcard-name">La Vadrouille</div>
               <div className="fcard-days">5 à 8 jours</div>
             </div>
-            <div className="fcard-price"><span>À partir de</span><strong>329 €</strong></div>
+            <div className="fcard-price"><span>À partir de</span><strong>279 €</strong></div>
             <div className="fcard-arrow-wrap">
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               <div className="fcard-tooltip"><p><strong>1 destination incluse</strong></p><p>Suggestions : 5 sites & activités, 5 restaurants</p></div>
@@ -184,7 +184,7 @@ export default function Formules() {
               <div className="fcard-name">La Grande Vadrouille</div>
               <div className="fcard-days">9 à 14 jours</div>
             </div>
-            <div className="fcard-price"><span>À partir de</span><strong>499 €</strong></div>
+            <div className="fcard-price"><span>À partir de</span><strong>449 €</strong></div>
             <div className="fcard-arrow-wrap">
               <svg width="16" height="16" className="fcard-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               <div className="fcard-tooltip"><p><strong>2 destinations incluses</strong></p><p>Suggestions : 5 sites & activités, 5 restaurants par destination</p></div>
@@ -219,7 +219,7 @@ export default function Formules() {
             <div className="frcard-divider" />
             <div className="form-right-price-block">
               <p className="form-right-price-label">À partir de</p>
-              <p className="form-right-price">549 €</p>
+              <p className="form-right-price">649 €</p>
             </div>
             <a href="#formulaire" className="btn-dark form-right-cta">Demander un devis gratuit</a>
           </div>

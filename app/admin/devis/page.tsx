@@ -2,10 +2,10 @@
 import { useState, useEffect } from 'react';
 
 const FORMULES = [
-  { label: "L'Escale", prix: 179 },
-  { label: 'La Vadrouille', prix: 329 },
-  { label: 'La Grande Vadrouille', prix: 499 },
-  { label: 'Sur-mesure', prix: 549 },
+  { label: "L'Escale", prix: 149 },
+  { label: 'La Vadrouille', prix: 279 },
+  { label: 'La Grande Vadrouille', prix: 449 },
+  { label: 'Sur-mesure', prix: 649 },
 ];
 
 const OPTIONS = [
@@ -55,7 +55,7 @@ export default function AdminDevis() {
   const [clientEmail, setClientEmail] = useState('');
   const [dateVoyage, setDateVoyage] = useState('');
   const [formuleIndex, setFormuleIndex] = useState(0);
-  const [prixSurMesure, setPrixSurMesure] = useState(549);
+  const [prixSurMesure, setPrixSurMesure] = useState(649);
   const [selectedOptions, setSelectedOptions] = useState<{ index: number; qty: number }[]>([]);
   const [remise, setRemise] = useState(0);
   const [noteClient, setNoteClient] = useState('');
@@ -410,7 +410,7 @@ export default function AdminDevis() {
     setClientEmail('');
     setDateVoyage('');
     setFormuleIndex(0);
-    setPrixSurMesure(549);
+    setPrixSurMesure(649);
     setSelectedOptions([]);
     setRemise(0);
     setNoteClient('');
@@ -536,13 +536,13 @@ export default function AdminDevis() {
                 <label style={styles.label}>Prix sur-mesure (€)</label>
                 <input
                   type="number"
-                  min={549}
+                  min={649}
                   value={prixSurMesure || ''}
-                  onChange={e => setPrixSurMesure(parseInt(e.target.value) || 549)}
-                  placeholder="549"
+                  onChange={e => setPrixSurMesure(parseInt(e.target.value) || 649)}
+                  placeholder="649"
                   style={{ ...styles.input, width: 160 }}
                 />
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#888', marginTop: 6 }}>À partir de 549 € — ajuste selon le projet</div>
+                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#888', marginTop: 6 }}>À partir de 649 € — ajuste selon le projet</div>
               </div>
             )}
 

@@ -36,9 +36,9 @@ export default function CGV() {
         <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '20px', fontWeight: '600', marginBottom: '10px', marginTop: '40px', letterSpacing: '0.5px' }}>Article 2 — Formules et tarifs</h2>
         <p style={{ marginBottom: '8px' }}>MamZelles en Vadrouille propose les formules de base suivantes :</p>
         <ul style={{ paddingLeft: '18px', margin: '0' }}>
-          <li><strong>L&rsquo;Escale</strong> (2 à 4 jours) — 179 €</li>
-          <li><strong>La Vadrouille</strong> (5 à 8 jours) — 329 €</li>
-          <li><strong>La Grande Vadrouille</strong> (9 à 14 jours) — 499 €</li>
+          <li><strong>L&rsquo;Escale</strong> (2 à 4 jours) — 149 €</li>
+          <li><strong>La Vadrouille</strong> (5 à 8 jours) — 279 €</li>
+          <li><strong>La Grande Vadrouille</strong> (9 à 14 jours) — 449 €</li>
           <li><strong>Sur-mesure</strong> — tarif établi sur devis selon la demande</li>
         </ul>
         <p style={{ marginTop: '8px' }}>Les tarifs sont indiqués en euros. En tant qu&rsquo;auto-entrepreneuse, MamZelles en Vadrouille n&rsquo;est pas assujettie à la TVA (art. 293 B du Code général des impôts).</p>
