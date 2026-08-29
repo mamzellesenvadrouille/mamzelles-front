@@ -11,10 +11,6 @@ import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 
 const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
-// Même fond de carte MapTiler qu'avant (mêmes couleurs, même style) — seul
-// le moteur qui positionne les pins change (Leaflet au lieu de MapLibre),
-// pour corriger un bug de repositionnement reconnu et non résolu côté
-// MapLibre (issues GitHub #2190 et #6925).
 const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`;
 
 type Categorie = "hebergements" | "restaurants" | "activites";
@@ -265,18 +261,14 @@ const DestinationMap = forwardRef<
           // positionnement par défaut de Leaflet est en haut à gauche).
           L.control.zoom({ position: "topright" }).addTo(map);
 
-          // Sur les écrans Retina/HiDPI (Mac, iPhone récents...), une tuile
-          // normale est affichée agrandie par le système, donc légèrement
-          // floue. MapTiler fournit des tuiles "@2x" en haute résolution
-          // spécialement conçues pour ces écrans — Leaflet sait détecter
-          // automatiquement ce type d'écran via L.Browser.retina.
-          const suffixeRetina = L.Browser.retina ? "@2x" : "";
-          L.tileLayer(TILE_URL_TEMPLATE.replace("{z}/{x}/{y}.png", `{z}/{x}/{y}${suffixeRetina}.png`), {
+          // ⚠️ Solution d'urgence temporaire (voir note en haut du fichier) :
+          // OpenStreetMap ne propose pas de tuiles haute résolution "@2x"
+          // comme MapTiler — la carte sera donc un peu moins nette sur les
+          // écrans Retina en attendant de revenir à MapTiler.
+          L.tileLayer(TILE_URL_TEMPLATE, {
             maxZoom: 19,
-            tileSize: 512,
-            zoomOffset: -1,
+            tileSize: 256,
             crossOrigin: true,
-            detectRetina: false, // on gère nous-mêmes le suffixe @2x ci-dessus
             // Valeur standard Leaflet (2) plutôt que 4 — un buffer trop
             // large multiplie le nombre de tuiles chargées à CHAQUE zoom ou
             // déplacement normal de la carte (pas juste le préchargement),
@@ -318,12 +310,12 @@ const DestinationMap = forwardRef<
       };
     }, []);
 
-    // Recadre la carte sur l'ensemble des pins visibles : zoom serré si un
-    // seul lieu, vue élargie englobant tous les points sinon. "tous" prend en
-    // compte les 3 catégories à la fois. Séparée de la création des pins
-    // pour pouvoir être appelée directement au clic sur un bouton de filtre
-    // déjà actif (qui ne redéclenche pas le useEffect ci-dessous, puisque la
-    // valeur de filtreActif ne change pas).
+    // Recadre la carte sur l'ensemble des pins visibles de la catégorie
+    // active : zoom serré si un seul lieu, vue élargie englobant tous les
+    // points sinon. Séparée de la création des pins pour pouvoir être
+    // appelée directement au clic sur un bouton de filtre déjà actif (qui
+    // ne redéclenche pas le useEffect ci-dessous, puisque la valeur de
+    // filtreActif ne change pas).
     function recadrerSurCategorie(filtre: FiltreCarte) {
       const map = mapInstance.current;
       const L = leafletRef.current;
@@ -344,9 +336,7 @@ const DestinationMap = forwardRef<
 
     // (re)dessine les pins de la catégorie active (ou des 3 à la fois en
     // mode "tous"), et recadre la carte pour bien les montrer dans leur
-    // ensemble : zoom serré si un seul lieu (ex : l'hébergement), vue
-    // élargie englobant tous les points s'il y en a plusieurs (ex : les
-    // activités éparpillées sur plusieurs îles).
+    // ensemble.
     useEffect(() => {
       if (!pret || !mapInstance.current || !leafletRef.current) return;
       const map = mapInstance.current;
@@ -514,11 +504,9 @@ const DestinationMap = forwardRef<
             title="Vue générale (hôtels, activités et restaurants)"
             style={{
               position: "absolute",
-              // Juste sous les boutons +/- de zoom (en haut à droite), pour
-              // regrouper tous les contrôles de la carte au même endroit.
               top: 88,
               right: 10,
-              zIndex: 400, // au-dessus des tuiles Leaflet, sous les popups
+              zIndex: 400,
               width: 34,
               height: 34,
               borderRadius: 4,
