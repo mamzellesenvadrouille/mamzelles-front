@@ -1156,18 +1156,18 @@
 .article-resto-name {
   font-family: "Cormorant Garamond", serif;
   font-size: 24px !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   color: var(--dark);
   margin: 0 0 4px !important;
 }
 
 .article-resto-name a {
-  color: var(--gold) !important;
-  text-decoration: underline !important;
+  color: var(--dark) !important;
+  text-decoration: none !important;
 }
 
 .article-resto-name a:hover {
-  color: var(--gold2, var(--gold)) !important;
+  color: var(--gold) !important;
 }
 
 .article-resto-sub {

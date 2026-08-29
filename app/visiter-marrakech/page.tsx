@@ -321,7 +321,7 @@ export default function MarrakechPage() {
                   <div className="article-resto-body">
                     <p className="article-resto-name"><a href="https://gyg.me/NTn9QTrM" target="_blank" rel="noopener noreferrer">Billet pour le Jardin Majorelle</a></p>
                     <p className="article-resto-sub">À partir de 17 €</p>
-                    <p>Réservez votre <a href="https://gyg.me/NTn9QTrM" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", fontWeight: 600 }}>créneau à l'avance</a> pour être sûr d'avoir de la disponibilité, surtout en haute saison.</p>
+                    <p>Réservez votre <a href="https://gyg.me/NTn9QTrM" target="_blank" rel="noopener noreferrer" className="article-link">créneau à l'avance</a> pour être sûr d'avoir de la disponibilité, surtout en haute saison.</p>
                   </div>
                 </div>
               </div>
@@ -340,7 +340,7 @@ export default function MarrakechPage() {
                   <div className="article-resto-body">
                     <p className="article-resto-name"><a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer">Billet pour le Palais de la Bahia</a></p>
                     <p className="article-resto-sub">À partir de 10 € · Tous les jours de 9 h à 17 h</p>
-                    <p>Réservez votre <a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", fontWeight: 600 }}>billet à l'avance</a> pour éviter la file d'attente sur place.</p>
+                    <p>Réservez votre <a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer" className="article-link">billet à l'avance</a> pour éviter la file d'attente sur place.</p>
                   </div>
                 </div>
               </div>
