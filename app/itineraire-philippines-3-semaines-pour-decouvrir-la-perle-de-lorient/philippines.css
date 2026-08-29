@@ -1001,3 +1001,14 @@
 
 /* Bloc itinÃ©raire â€” sans ampoule, largeur rÃ©duite */
 .philippines-itin-tip { max-width: 400px; }
+/* Style spécifique au bloc "Pour réserver" affilié à l'intérieur de la
+   section pratique — même règle que Marrakech (fond blanc, bordure
+   gauche dorée fine), adaptée à l'id réel de cette section ici. */
+.article-philippines #pratique .article-tip,
+.article-philippines #pratique .article-avis {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 18px 24px 18px 22px;
+}
