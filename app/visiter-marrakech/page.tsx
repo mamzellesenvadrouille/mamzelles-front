@@ -344,7 +344,7 @@ export default function MarrakechPage() {
                   <div className="article-resto-body">
                     <p className="article-resto-name"><a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer">Billet pour le Palais de la Bahia</a></p>
                     <p className="article-resto-sub">À partir de 10 € · Tous les jours de 9 h à 17 h</p>
-                    <p>Réservez votre <a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer" className="article-link">billet à l'avance</a> pour éviter la file d'attente sur place.</p>
+                    <p>Réservez votre <a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer" className="article-link">billet à l'avance</a> pour éviter la longue file d'attente sur place.</p>
                   </div>
                 </div>
               </div>
