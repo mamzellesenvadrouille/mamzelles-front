@@ -932,6 +932,43 @@ export default function PhilippinesPage() {
                           <span className="pratique-dash"></span>
                           <p><strong>Prenez une assurance maladie et rapatriement avant de partir</strong> (<strong><a href="https://www.chapkadirect.fr" target="_blank" rel="noopener noreferrer" className="article-link">Chapka</a></strong>, <strong><a href="https://www.yupwego.com/fr" target="_blank" rel="noopener noreferrer" className="article-link">Yupwego</a></strong>...). Si ce n&apos;est pas le cas, tous les frais seront à votre charge, y compris en cas d&apos;urgence vitale.</p>
                         </div>
+                        <div
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: 16,
+                            marginTop: 4,
+                            marginBottom: 20,
+                          }}
+                        >
+                          <div>
+                            <div style={{ fontSize: 13.5, fontWeight: 600, color: '#1a1512', marginBottom: 3 }}>
+                              Assurance voyage - Chapka
+                            </div>
+                            <div style={{ fontSize: 12.5, color: '#8a8074' }}>
+                              -5% via <strong style={{ color: '#c8956c' }}>NOTRE LIEN</strong>
+                            </div>
+                          </div>
+                          <a
+                            href="https://www.chapkadirect.fr/index.php?action=produit&id=924&app=Mamzellesenvadrouille"
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
+                            style={{
+                              flexShrink: 0,
+                              background: '#c8956c',
+                              color: '#fff',
+                              fontSize: 11.5,
+                              fontWeight: 600,
+                              padding: '6px 12px',
+                              borderRadius: 18,
+                              textDecoration: 'none',
+                              whiteSpace: 'nowrap',
+                            }}
+                          >
+                            En profiter
+                          </a>
+                        </div>
                         <div className="pratique-item">
                           <span className="pratique-dash"></span>
                           <p><strong>Protégez-vous contre les moustiques</strong> qui peuvent être porteurs de maladies telles que le paludisme et la dengue. Envisagez de prendre un traitement de fond ou procurez-vous un répulsif efficace.</p>
@@ -998,6 +1035,47 @@ export default function PhilippinesPage() {
                         <div className="pratique-item">
                           <span className="pratique-dash"></span>
                           <p><strong>En arrivant à l&apos;aéroport de Manille, nous avons acheté une puce Globe.</strong> Pour 80 Go de connexion internet sur 30 jours, comptez <strong>1750 Php (29,80 €)</strong>. Les appels ne sont pas inclus. Sinon, vous trouverez du Wifi un peu partout mais <strong>le réseau n&apos;est vraiment pas top aux Philippines.</strong></p>
+                        </div>
+                        <div className="pratique-item">
+                          <span className="pratique-dash"></span>
+                          <p>Autre option plus simple : activer une <a href="https://holafly.sjv.io/jR2Ezn" target="_blank" rel="noopener noreferrer sponsored" className="article-link">eSIM Holafly</a> avant le départ, pour avoir du réseau dès la sortie de l'avion sans chercher de boutique sur place.</p>
+                        </div>
+                        <div
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: 16,
+                            marginTop: 4,
+                            marginBottom: 20,
+                          }}
+                        >
+                          <div>
+                            <div style={{ fontSize: 13.5, fontWeight: 600, color: '#1a1512', marginBottom: 3 }}>
+                              Connexion (eSIM) - Holafly
+                            </div>
+                            <div style={{ fontSize: 12.5, color: '#8a8074' }}>
+                              -5% avec le code <strong style={{ color: '#c8956c' }}>MAMZELLES</strong>
+                            </div>
+                          </div>
+                          <a
+                            href="https://holafly.sjv.io/jR2Ezn"
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
+                            style={{
+                              flexShrink: 0,
+                              background: '#c8956c',
+                              color: '#fff',
+                              fontSize: 11.5,
+                              fontWeight: 600,
+                              padding: '6px 12px',
+                              borderRadius: 18,
+                              textDecoration: 'none',
+                              whiteSpace: 'nowrap',
+                            }}
+                          >
+                            En profiter
+                          </a>
                         </div>
                         <div className="pratique-item">
                           <span className="pratique-dash"></span>
