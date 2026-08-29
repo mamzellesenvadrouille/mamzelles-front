@@ -699,6 +699,57 @@ export default function MarrakechPage() {
                     ),
                   },
                   {
+                    id: 'telephone-internet',
+                    label: 'Téléphone / Internet',
+                    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>,
+                    content: (
+                      <>
+                        <p>Le forfait data de votre opérateur habituel est souvent hors de prix à l'étranger. Une eSIM permet de rester connecté dès l'atterrissage, sans changer de carte physique.</p>
+                        <div
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: 16,
+                            background: '#fff',
+                            border: '1px solid #e8e0d6',
+                            borderRadius: 10,
+                            padding: '16px 20px',
+                            marginTop: 12,
+                          }}
+                        >
+                          <div>
+                            <div style={{ fontSize: 13.5, fontWeight: 600, color: '#1a1512', marginBottom: 3 }}>
+                              Connexion (eSIM) - Holafly
+                            </div>
+                            <div style={{ fontSize: 12.5, color: '#8a8074' }}>
+                              -5% avec le code <strong style={{ color: '#c8956c' }}>MAMZELLES</strong>
+                            </div>
+                          </div>
+                          <a
+                            href="https://holafly.sjv.io/jR2Ezn"
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
+                            style={{
+                              flexShrink: 0,
+                              background: '#c8956c',
+                              color: '#fff',
+                              fontSize: 11.5,
+                              fontWeight: 600,
+                              padding: '6px 12px',
+                              borderRadius: 18,
+                              textDecoration: 'none',
+                              whiteSpace: 'nowrap',
+                            }}
+                          >
+                            En profiter
+                          </a>
+                        </div>
+                        <p>Activez votre <a href="https://holafly.sjv.io/jR2Ezn" target="_blank" rel="noopener noreferrer sponsored" className="article-link">eSIM Holafly</a> avant le départ pour avoir du réseau dès la sortie de l'avion.</p>
+                      </>
+                    ),
+                  },
+                  {
                     id: 'dress-code',
                     label: 'Dress code',
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M19.5 12.572l-7.5 7.428-7.5-7.428a5 5 0 1 1 7.5-6.566a5 5 0 1 1 7.5 6.572"/></svg>,
