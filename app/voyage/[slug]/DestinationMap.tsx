@@ -218,23 +218,23 @@ const DestinationMap = forwardRef<
       }
 
       // @ts-expect-error — pas de types TypeScript officiels fiables pour ce plugin
-      const routing = await import("leaflet-routing-machine");
+      await import("leaflet-routing-machine");
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const LAvecRouting = L as any;
 
-      itineraireRef.current = routing.default
-        .control({
-          waypoints: [L.latLng(depart.lat, depart.lng), L.latLng(lat, lng)],
-          router: routing.default.osrmv1({
-            serviceUrl: "https://router.project-osrm.org/route/v1",
-            profile: "foot",
-          }),
-          lineOptions: { styles: [{ color: "#c8956c", weight: 5, opacity: 0.85 }] },
-          show: false, // pas de panneau d'instructions détaillées, juste le tracé
-          addWaypoints: false,
-          draggableWaypoints: false,
-          fitSelectedRoutes: true,
-          createMarker: () => null, // on garde nos propres pins, pas ceux du plugin
-        })
-        .addTo(map);
+      itineraireRef.current = LAvecRouting.Routing.control({
+        waypoints: [L.latLng(depart.lat, depart.lng), L.latLng(lat, lng)],
+        router: LAvecRouting.Routing.osrmv1({
+          serviceUrl: "https://router.project-osrm.org/route/v1",
+          profile: "foot",
+        }),
+        lineOptions: { styles: [{ color: "#c8956c", weight: 5, opacity: 0.85 }] },
+        show: false, // pas de panneau d'instructions détaillées, juste le tracé
+        addWaypoints: false,
+        draggableWaypoints: false,
+        fitSelectedRoutes: true,
+        createMarker: () => null, // on garde nos propres pins, pas ceux du plugin
+      }).addTo(map);
     }
 
     useEffect(() => {
