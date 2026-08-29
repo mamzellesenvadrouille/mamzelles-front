@@ -72,9 +72,21 @@ function latLngVersTuile(lat: number, lng: number, zoom: number) {
 // la destination (pas juste un petit carré autour d'un seul point) — avec une
 // marge tout autour, pour que la carte reste utilisable même si le visiteur
 // se balade un peu en dehors des pins exacts (rue voisine, chemin de plage...).
+// Pré-charge les tuiles hors-ligne pour la zone englobant les lieux de la
+// destination, avec deux garde-fous importants (ajoutés après un incident
+// où des centaines de requêtes partaient d'un coup et déclenchaient un
+// blocage anti-abus côté MapTiler, cassant l'affichage de la carte) :
+// - un plafond strict sur le nombre total de tuiles téléchargées
+// - un envoi étalé par petits paquets, jamais tout en une seule rafale
 function precacherTuiles(points: { lat: number; lng: number }[]) {
   if (points.length === 0) return;
-  const zooms = [12, 13, 14, 15, 16];
+  // Zoom 16 retiré : pour une zone large (plusieurs îles par exemple), le
+  // nombre de tuiles nécessaires à ce niveau de détail explose (des
+  // centaines, voire plus), ce qui a déjà cassé la carte une fois.
+  const zooms = [12, 13, 14, 15];
+  const PLAFOND_TUILES = 150;
+  const TAILLE_PAQUET = 6;
+  const DELAI_ENTRE_PAQUETS_MS = 250;
 
   const lats = points.map((p) => p.lat);
   const lngs = points.map((p) => p.lng);
@@ -88,19 +100,35 @@ function precacherTuiles(points: { lat: number; lng: number }[]) {
   const margeLat = Math.max((latMax - latMin) * 0.25, 0.01);
   const margeLng = Math.max((lngMax - lngMin) * 0.25, 0.01);
 
-  zooms.forEach((zoom) => {
+  const urls: string[] = [];
+  for (const zoom of zooms) {
+    if (urls.length >= PLAFOND_TUILES) break;
     const { x: xMin, y: yMax } = latLngVersTuile(latMin - margeLat, lngMin - margeLng, zoom);
     const { x: xMax, y: yMin } = latLngVersTuile(latMax + margeLat, lngMax + margeLng, zoom);
 
-    for (let x = xMin; x <= xMax; x++) {
-      for (let y = yMin; y <= yMax; y++) {
-        const url = TILE_URL_TEMPLATE.replace("{z}", String(zoom))
-          .replace("{x}", String(x))
-          .replace("{y}", String(y));
-        fetch(url, { mode: "cors" }).catch(() => {});
+    for (let x = xMin; x <= xMax && urls.length < PLAFOND_TUILES; x++) {
+      for (let y = yMin; y <= yMax && urls.length < PLAFOND_TUILES; y++) {
+        urls.push(
+          TILE_URL_TEMPLATE.replace("{z}", String(zoom)).replace("{x}", String(x)).replace("{y}", String(y))
+        );
       }
     }
-  });
+  }
+
+  // Envoi par petits paquets espacés dans le temps, jamais toutes les
+  // requêtes en même temps.
+  let i = 0;
+  function envoyerProchainPaquet() {
+    const paquet = urls.slice(i, i + TAILLE_PAQUET);
+    i += TAILLE_PAQUET;
+    paquet.forEach((url) => {
+      fetch(url, { mode: "cors" }).catch(() => {});
+    });
+    if (i < urls.length) {
+      setTimeout(envoyerProchainPaquet, DELAI_ENTRE_PAQUETS_MS);
+    }
+  }
+  envoyerProchainPaquet();
 }
 
 function creerIconePin(L: typeof import("leaflet"), Icon: typeof Bed, color: string) {
@@ -249,9 +277,11 @@ const DestinationMap = forwardRef<
             zoomOffset: -1,
             crossOrigin: true,
             detectRetina: false, // on gère nous-mêmes le suffixe @2x ci-dessus
-            // Garde plus de tuiles voisines en mémoire pendant le zoom,
-            // pour réduire les zones vides/floues pendant le chargement.
-            keepBuffer: 4,
+            // Valeur standard Leaflet (2) plutôt que 4 — un buffer trop
+            // large multiplie le nombre de tuiles chargées à CHAQUE zoom ou
+            // déplacement normal de la carte (pas juste le préchargement),
+            // ce qui a contribué à un pic de consommation excessif.
+            keepBuffer: 2,
           }).addTo(map);
 
           precacherTuiles(tousLesPoints);
