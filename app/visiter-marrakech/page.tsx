@@ -332,7 +332,6 @@ export default function MarrakechPage() {
               <p>Vous pourrez admirer l'architecture marocaine dans toute sa splendeur. Les peintures, les sculptures, les mosaïques, et les vitraux que l’on y trouve sont magnifiques et mettent en valeur tout le savoir faire des artisans.</p>
               <p>Le palais est composé de plus de 150 pièces, de différentes cours et de jardins avec des fontaines. Le tout est très grand, mais surtout très beau !</p>
               <p>Pour la petite histoire « Bahia » signifie « la belle, la brillante ». C’est en fait l’ancien harem du Grand Vizir Bou Ahmed, qui vivait ici avec ses 4 épouses et ses 24 concubines.</p>
-              <p><strong>Le palais est ouvert tous les jours de 9 h à 17 h. Pour le visiter, l’entrée est payante : 100 Dh (10 €) pour les adultes et 30 Dh (3 €) pour les enfants. </strong></p>
               <div className="article-book">
                 <div className="article-resto-item">
                   <div className="article-resto-head">
@@ -340,7 +339,7 @@ export default function MarrakechPage() {
                   </div>
                   <div className="article-resto-body">
                     <p className="article-resto-name"><a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer">Billet pour le Palais de la Bahia</a></p>
-                    <p className="article-resto-sub">À partir de 10 €</p>
+                    <p className="article-resto-sub">Tous les jours de 9 h à 17 h · À partir de 10 €</p>
                     <p>Réservez votre <a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", fontWeight: 600 }}>billet à l'avance</a> pour éviter la file d'attente sur place.</p>
                   </div>
                 </div>
