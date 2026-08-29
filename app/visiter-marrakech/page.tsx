@@ -312,7 +312,7 @@ export default function MarrakechPage() {
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_6751-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
                 <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_5851-1024x768.jpg" alt="Jardin Majorelle Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
-              <p><strong>Le jardin se visite tous les jours de 8 h à 17 h 30. L’entrée est au tarif de 170 Dh (17 €) et est gratuite pour les enfants de moins de 10 ans.</strong> Les billets s’achètent <strong>en ligne</strong> sur leur <a href="https://tickets.jardinmajorelle.com/Visite" target="_blank" rel="noopener noreferrer" className="article-link">site officiel</a> — pensez à réserver votre créneau à l’avance. Votre billet donne accès au jardin, à une galerie d’affiches d’Yves Saint Laurent et à la boutique. Pour le musée berbère, comptez <strong>330 Dh</strong> pour le billet combiné.</p>
+              <p><strong>Le jardin se visite tous les jours de 8 h à 17 h 30. L’entrée est au tarif de 170 Dh (17 €) et est gratuite pour les enfants de moins de 10 ans.</strong> Votre billet donne accès au jardin, à une galerie d’affiches d’Yves Saint Laurent et à la boutique. Pour le musée berbère, comptez <strong>330 Dh</strong> pour le billet combiné.</p>
               <div className="article-book">
                 <div className="article-resto-item">
                   <div className="article-resto-head">
@@ -321,7 +321,7 @@ export default function MarrakechPage() {
                   <div className="article-resto-body">
                     <p className="article-resto-name"><a href="https://gyg.me/NTn9QTrM" target="_blank" rel="noopener noreferrer">Billet pour le Jardin Majorelle</a></p>
                     <p className="article-resto-sub">À partir de 17 €</p>
-                    <p>Réservez votre <a href="https://gyg.me/NTn9QTrM" target="_blank" rel="noopener noreferrer">créneau à l'avance</a> pour être sûr d'avoir de la disponibilité, surtout en haute saison.</p>
+                    <p>Réservez votre <a href="https://gyg.me/NTn9QTrM" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", fontWeight: 600 }}>créneau à l'avance</a> pour être sûr d'avoir de la disponibilité, surtout en haute saison.</p>
                   </div>
                 </div>
               </div>
@@ -341,7 +341,7 @@ export default function MarrakechPage() {
                   <div className="article-resto-body">
                     <p className="article-resto-name"><a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer">Billet pour le Palais de la Bahia</a></p>
                     <p className="article-resto-sub">À partir de 10 €</p>
-                    <p>Réservez votre <a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer">billet à l'avance</a> pour éviter la file d'attente sur place.</p>
+                    <p>Réservez votre <a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", fontWeight: 600 }}>billet à l'avance</a> pour éviter la file d'attente sur place.</p>
                   </div>
                 </div>
               </div>
