@@ -6,7 +6,6 @@ import { useEffect, useImperativeHandle, useRef, useState, forwardRef } from "re
 import { createRoot } from "react-dom/client";
 import type L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 import { Bed, Utensils, Camera, Compass } from "lucide-react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
@@ -143,15 +142,6 @@ const DestinationMap = forwardRef<
     const mapInstance = useRef<import("leaflet").Map | null>(null);
     const markersParCle = useRef<Map<string, import("leaflet").Marker>>(new Map());
     const leafletRef = useRef<typeof import("leaflet") | null>(null);
-    // Dernière position GPS connue du visiteur, mise à jour en continu par
-    // watchPosition — nécessaire pour calculer un itinéraire depuis "là où
-    // il se trouve" au moment où il clique sur "Itinéraire" dans une bulle.
-    const positionUtilisateurRef = useRef<{ lat: number; lng: number } | null>(null);
-    // Un seul itinéraire affiché à la fois — on retire l'ancien avant d'en
-    // dessiner un nouveau. Pas de types TypeScript officiels fiables pour ce
-    // plugin, d'où le any assumé ici.
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const itineraireRef = useRef<any>(null);
     const [pret, setPret] = useState(false);
     const [erreur, setErreur] = useState(false);
     const [filtreActif, setFiltreActif] = useState<FiltreCarte>("hebergements");
@@ -195,57 +185,6 @@ const DestinationMap = forwardRef<
       map.flyTo([lat, lng], 16);
       marker.openPopup();
     }
-
-    // Calcule et dessine l'itinéraire à pied entre la position actuelle du
-    // visiteur (point bleu) et le lieu cliqué dans une bulle. Exposée sur
-    // window car les bulles Leaflet sont du HTML brut (pas de vrais
-    // composants React dedans) — c'est la façon standard de rendre une
-    // popup Leaflet interactive.
-    async function afficherItineraire(lat: number, lng: number) {
-      const map = mapInstance.current;
-      const L = leafletRef.current;
-      const depart = positionUtilisateurRef.current;
-      if (!map || !L) return;
-
-      if (!depart) {
-        alert("Ta position n'est pas encore disponible — vérifie que la géolocalisation est activée.");
-        return;
-      }
-
-      if (itineraireRef.current) {
-        map.removeControl(itineraireRef.current);
-        itineraireRef.current = null;
-      }
-
-      // @ts-expect-error — pas de types TypeScript officiels fiables pour ce plugin
-      await import("leaflet-routing-machine");
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const LAvecRouting = L as any;
-
-      itineraireRef.current = LAvecRouting.Routing.control({
-        waypoints: [L.latLng(depart.lat, depart.lng), L.latLng(lat, lng)],
-        router: LAvecRouting.Routing.osrmv1({
-          serviceUrl: "https://router.project-osrm.org/route/v1",
-          profile: "foot",
-        }),
-        lineOptions: { styles: [{ color: "#c8956c", weight: 5, opacity: 0.85 }] },
-        show: false, // pas de panneau d'instructions détaillées, juste le tracé
-        addWaypoints: false,
-        draggableWaypoints: false,
-        fitSelectedRoutes: true,
-        createMarker: () => null, // on garde nos propres pins, pas ceux du plugin
-      }).addTo(map);
-    }
-
-    useEffect(() => {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).__afficherItineraireCarnet = afficherItineraire;
-      return () => {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        delete (window as any).__afficherItineraireCarnet;
-      };
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
 
     useImperativeHandle(ref, () => ({
       centrerSur(lat: number, lng: number, _nom?: string, categorie?: Categorie) {
@@ -415,8 +354,7 @@ const DestinationMap = forwardRef<
                 <div style="font-weight:600;font-size:14px;margin-bottom:6px;">${escapeHtml(lieu.nom)}</div>
                 ${ajouteHtml}
                 ${infosHtml}
-                <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;display:block;margin-bottom:4px;">Voir sur Google Maps</a>
-                <a href="#" onclick="window.__afficherItineraireCarnet && window.__afficherItineraireCarnet(${lat},${lng}); return false;" style="color:#c8956c;text-decoration:none;font-weight:600;">📍 Itinéraire à pied</a>
+                <a href="${lienMaps}" target="_blank" rel="noopener noreferrer" style="color:#1a73e8;text-decoration:none;">Voir sur Google Maps</a>
               </div>`
             );
 
@@ -462,7 +400,6 @@ const DestinationMap = forwardRef<
             });
             markerPosition = L.marker([latitude, longitude], { icon: icone }).addTo(map);
           }
-          positionUtilisateurRef.current = { lat: latitude, lng: longitude };
         },
         () => {},
         { enableHighAccuracy: true, timeout: 8000 }
