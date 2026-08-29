@@ -321,7 +321,7 @@ export default function MarrakechPage() {
                   <div className="article-resto-body">
                     <p className="article-resto-name"><a href="https://gyg.me/NTn9QTrM" target="_blank" rel="noopener noreferrer">Billet pour le Jardin Majorelle</a></p>
                     <p className="article-resto-sub">À partir de 17 €</p>
-                    <p>Réservez votre <a href="https://gyg.me/NTn9QTrM" target="_blank" rel="noopener noreferrer" className="article-link">créneau à l'avance</a> pour être sûr d'avoir de la disponibilité, surtout en haute saison.</p>
+                    <p>Les billets ne se vendent qu'en ligne, pensez à réserver votre <a href="https://gyg.me/NTn9QTrM" target="_blank" rel="noopener noreferrer" className="article-link">créneau à l'avance</a>, surtout en haute saison.</p>
                   </div>
                 </div>
               </div>
@@ -332,6 +332,10 @@ export default function MarrakechPage() {
               <p>Vous pourrez admirer l'architecture marocaine dans toute sa splendeur. Les peintures, les sculptures, les mosaïques, et les vitraux que l’on y trouve sont magnifiques et mettent en valeur tout le savoir faire des artisans.</p>
               <p>Le palais est composé de plus de 150 pièces, de différentes cours et de jardins avec des fontaines. Le tout est très grand, mais surtout très beau !</p>
               <p>Pour la petite histoire « Bahia » signifie « la belle, la brillante ». C’est en fait l’ancien harem du Grand Vizir Bou Ahmed, qui vivait ici avec ses 4 épouses et ses 24 concubines.</p>
+              <div className="article-gallery-2">
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8154-1.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8184.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
+              </div>
               <div className="article-book">
                 <div className="article-resto-item">
                   <div className="article-resto-head">
@@ -343,10 +347,6 @@ export default function MarrakechPage() {
                     <p>Réservez votre <a href="https://gyg.me/dyLeNI5B" target="_blank" rel="noopener noreferrer" className="article-link">billet à l'avance</a> pour éviter la file d'attente sur place.</p>
                   </div>
                 </div>
-              </div>
-              <div className="article-gallery-2">
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8154-1.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
-                <img src="https://blog.mamzellesenvadrouille.com/wp-content/uploads/2022/12/IMG_8184.jpg" alt="Palais de la Bahia Marrakech" loading="lazy" style={{flex: '1.333', minWidth: 0}} />
               </div>
               <div className="article-day-header article-day-header-tight">
                 <h3>Le Musée de la Photographie</h3>
