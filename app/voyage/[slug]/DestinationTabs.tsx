@@ -287,8 +287,8 @@ export default function DestinationTabs({
                   >
                     <div className={styles.time}>
                       <span style={nouveauJour ? { fontWeight: 700 } : undefined}>{point.jour}</span>
-                      {point.jour && point.heure ? " · " : ""}
-                      <span style={nouveauJour ? { fontWeight: 700 } : undefined}>{point.heure}</span>
+                      {point.jour && point.heure ? <span className={styles.timeSep}> · </span> : ""}
+                      <span className={styles.timeHeure} style={nouveauJour ? { fontWeight: 700 } : undefined}>{point.heure}</span>
                     </div>
                     <div className={styles.desc} style={{ flex: 1 }}>
                       <strong>{point.titre}</strong>
