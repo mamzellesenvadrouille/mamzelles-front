@@ -5,10 +5,11 @@
 // Pour créer un nouveau carnet, va sur /admin/carnets/nouveau
 "use client";
 
-import { useState, use } from "react";
+import { useState, useEffect, useRef, use } from "react";
 import { useRouter } from "next/navigation";
 import type { Carnet, Destination, CarnetDestinationRef, ConseilMamZelles, BudgetLigne, ChecklistItem, ContactUrgence } from "@/lib/carnets";
 import { normaliserSlug, normaliserSlugEnDirect } from "@/lib/carnets";
+import tzlookup from "tz-lookup";
 import AdminAuthGate from "../../AdminAuthGate";
 import adminStyles from "../../adminStyles";
 import LieuSearchField from "../../LieuSearchField";
@@ -83,6 +84,40 @@ const carnetVide: Carnet = {
   createdAt: "",
   updatedAt: "",
 };
+
+// Calcule le décalage horaire réel entre la ville de départ et la première
+// destination du carnet, à la date de début du voyage — ce qui permet de
+// tenir compte automatiquement de l'heure d'été/hiver (le décalage n'est
+// pas le même en été et en hiver pour beaucoup de destinations).
+function decalageEnHeures(date: Date, fuseau: string): number {
+  const enUTC = new Date(date.toLocaleString("en-US", { timeZone: "UTC" }));
+  const enFuseau = new Date(date.toLocaleString("en-US", { timeZone: fuseau }));
+  return (enFuseau.getTime() - enUTC.getTime()) / 3600000;
+}
+
+function calculerDecalageHoraire(carnet: Carnet, destinationsDispo: Destination[]): string | null {
+  const depart = carnet.villeDepart;
+  if (!depart || typeof depart.lat !== "number" || typeof depart.lng !== "number") return null;
+
+  const premiereRef = carnet.destinations[0];
+  if (!premiereRef) return null;
+  const destination = destinationsDispo.find((d) => d.id === premiereRef.destinationId);
+  if (!destination || typeof destination.lat !== "number" || typeof destination.lng !== "number") return null;
+
+  if (!carnet.dates?.debut) return null;
+  const dateVoyage = new Date(carnet.dates.debut);
+  if (Number.isNaN(dateVoyage.getTime())) return null;
+
+  try {
+    const fuseauDepart = tzlookup(depart.lat, depart.lng);
+    const fuseauDestination = tzlookup(destination.lat, destination.lng);
+    const diff = decalageEnHeures(dateVoyage, fuseauDestination) - decalageEnHeures(dateVoyage, fuseauDepart);
+    const arrondi = Math.round(diff);
+    return arrondi >= 0 ? `+${arrondi}h` : `${arrondi}h`;
+  } catch {
+    return null;
+  }
+}
 
 const sectionTitle: React.CSSProperties = {
   fontFamily: "Cormorant Garamond, serif",
@@ -213,6 +248,26 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   function updateNested<P extends keyof Carnet>(parent: P, key: string, value: unknown) {
     setCarnet((prev) => ({ ...prev, [parent]: { ...(prev[parent] as object), [key]: value } }));
   }
+
+  // Remplit automatiquement "Budget prévu" et "Décalage horaire" dès que
+  // les données sont chargées, mais UNE SEULE FOIS et SEULEMENT si le champ
+  // est encore vide — pour ne jamais écraser une valeur déjà ajustée à la
+  // main, ni recalculer sans cesse à chaque frappe.
+  const autoRempliRef = useRef(false);
+  useEffect(() => {
+    if (autoRempliRef.current || loading || destinationsDispo.length === 0) return;
+
+    if (!carnet.overview.budget && carnet.budget.length > 0) {
+      const somme = carnet.budget.reduce((s, l) => s + (l.montant || 0), 0);
+      if (somme > 0) updateNested("overview", "budget", somme);
+    }
+    if (!carnet.overview.decalage) {
+      const decalage = calculerDecalageHoraire(carnet, destinationsDispo);
+      if (decalage) updateNested("overview", "decalage", decalage);
+    }
+    autoRempliRef.current = true;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loading, destinationsDispo, carnet.villeDepart, carnet.destinations, carnet.budget]);
 
   async function enregistrer() {
     if (!carnet.slug) {
@@ -443,11 +498,40 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
                   <div style={adminStyles.field}>
                     <label style={adminStyles.label}>Budget prévu (€)</label>
-                    <input type="number" style={adminStyles.input} value={carnet.overview.budget} onChange={(e) => updateNested("overview", "budget", Number(e.target.value))} />
+                    <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+                      <input type="number" style={{ ...adminStyles.input, flex: 1 }} value={carnet.overview.budget} onChange={(e) => updateNested("overview", "budget", Number(e.target.value))} />
+                      <button
+                        type="button"
+                        onClick={() => updateNested("overview", "budget", carnet.budget.reduce((somme, ligne) => somme + (ligne.montant || 0), 0))}
+                        style={{ ...adminStyles.btnLinks, whiteSpace: "nowrap", padding: "0 10px" }}
+                        title="Reprendre la somme des lignes de budget détaillées plus bas"
+                      >
+                        = Somme
+                      </button>
+                    </div>
+                    {carnet.budget.length > 0 && (
+                      <div style={{ fontFamily: "Inter, sans-serif", fontSize: 11.5, color: "#888", marginTop: 4 }}>
+                        Somme actuelle des lignes détaillées : {carnet.budget.reduce((s, l) => s + (l.montant || 0), 0)} €
+                      </div>
+                    )}
                   </div>
                   <div style={adminStyles.field}>
                     <label style={adminStyles.label}>Décalage horaire</label>
-                    <input style={adminStyles.input} value={carnet.overview.decalage} onChange={(e) => updateNested("overview", "decalage", e.target.value)} />
+                    <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+                      <input style={{ ...adminStyles.input, flex: 1 }} value={carnet.overview.decalage} onChange={(e) => updateNested("overview", "decalage", e.target.value)} />
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const decalage = calculerDecalageHoraire(carnet, destinationsDispo);
+                          if (decalage) updateNested("overview", "decalage", decalage);
+                          else alert("Impossible de calculer : il faut la ville de départ ET au moins une destination avec des coordonnées, ainsi qu'une date de début de voyage.");
+                        }}
+                        style={{ ...adminStyles.btnLinks, whiteSpace: "nowrap", padding: "0 10px" }}
+                        title="Calculer à partir de la ville de départ, la première destination, et la date du voyage (heure d'été/hiver prise en compte)"
+                      >
+                        ⟳ Calculer
+                      </button>
+                    </div>
                   </div>
                   <div style={adminStyles.field}>
                     <label style={adminStyles.label}>Durée (jours)</label>
