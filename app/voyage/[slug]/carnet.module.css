@@ -208,7 +208,7 @@ button.routeStep:hover { border-color: var(--gold); }
 .time { font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-size: 19px; color: var(--gold); font-style: italic; min-width: 68px; flex-shrink: 0; }
 @media (max-width: 480px) {
   .dayItem { align-items: flex-start; }
-  .time { display: flex; flex-direction: column; line-height: 1.15; margin-top: 3px; }
+  .time { display: flex; flex-direction: column; line-height: 1.15; }
   .timeSep { display: none; }
 }
 .desc strong { display: block; font-size: 14px; font-weight: 500; margin-bottom: 2px; }
