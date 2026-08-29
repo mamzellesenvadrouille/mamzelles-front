@@ -1108,3 +1108,104 @@
 }
 
 .article-marrakech .article-day-header h2::before { content: '\276F\276F'; color: var(--gold); font-size: 22px; margin-right: 10px; vertical-align: middle; letter-spacing: -2px; }
+/* Bloc "Pour réserver" (GetYourGuide) — règles manquantes, adaptées depuis
+   berlin.css (sans le préfixe .article-berlin, ce fichier n'utilisant pas
+   de scope par article). */
+.article-resto-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.article-resto-item:last-child {
+  margin-bottom: 0;
+}
+
+.article-resto-head {
+  background: var(--dark);
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.article-resto-head-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px !important;
+  font-style: italic;
+}
+
+.article-resto-head-label svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--gold);
+  flex-shrink: 0;
+}
+
+.article-resto-body {
+  padding: 20px 22px;
+}
+
+.article-resto-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: var(--dark);
+  margin: 0 0 4px !important;
+}
+
+.article-resto-name a {
+  color: var(--dark) !important;
+  text-decoration: none !important;
+}
+
+.article-resto-name a:hover {
+  color: var(--gold) !important;
+}
+
+.article-resto-sub {
+  font-family: "Inter", sans-serif;
+  font-size: 12px !important;
+  font-style: italic;
+  color: var(--gold);
+  margin-bottom: 14px !important;
+}
+
+.article-resto-body p:not(.article-resto-name) {
+  font-size: 14px !important;
+  line-height: 1.65;
+  color: #3a342e;
+  margin: 0 0 12px !important;
+}
+
+.article-resto-body p:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+.article-book {
+  margin: 24px 0;
+}
+
+.article-book .article-resto-item {
+  border: 1px solid var(--gold);
+}
+
+.article-book .article-resto-head {
+  background: var(--gold);
+}
+
+.article-book .article-resto-head-label {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.article-book .article-resto-head-label svg {
+  stroke: var(--dark);
+}
