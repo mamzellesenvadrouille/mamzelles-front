@@ -705,6 +705,7 @@ export default function MarrakechPage() {
                     content: (
                       <>
                         <p>Le forfait data de votre opérateur habituel est souvent hors de prix à l'étranger. Une eSIM permet de rester connecté dès l'atterrissage, sans changer de carte physique.</p>
+                        <p>Activez votre <a href="https://holafly.sjv.io/jR2Ezn" target="_blank" rel="noopener noreferrer sponsored" className="article-link">eSIM Holafly</a> avant le départ pour avoir du réseau dès la sortie de l'avion.</p>
                         <div
                           style={{
                             display: 'flex',
@@ -741,7 +742,6 @@ export default function MarrakechPage() {
                             En profiter
                           </a>
                         </div>
-                        <p>Activez votre <a href="https://holafly.sjv.io/jR2Ezn" target="_blank" rel="noopener noreferrer sponsored" className="article-link">eSIM Holafly</a> avant le départ pour avoir du réseau dès la sortie de l'avion.</p>
                       </>
                     ),
                   },
