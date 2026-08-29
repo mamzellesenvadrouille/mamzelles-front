@@ -705,8 +705,41 @@ export default function MarrakechPage() {
                     content: (
                       <>
                         <p>Le forfait data de votre opérateur habituel est souvent hors de prix à l'étranger. Une eSIM permet de rester connecté dès l'atterrissage, sans changer de carte physique.</p>
-                        <div className="article-tip">
-                          <div><strong>Connexion (eSIM) - Holafly</strong><p>-5% avec le code MAMZELLES</p><p><a href="https://holafly.sjv.io/jR2Ezn" target="_blank" rel="noopener noreferrer sponsored" className="article-link">En profiter</a></p></div>
+                        <div
+                          className="article-tip"
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: 16,
+                          }}
+                        >
+                          <div>
+                            <div style={{ fontSize: 13.5, fontWeight: 600, color: '#1a1512', marginBottom: 3 }}>
+                              Connexion (eSIM) - Holafly
+                            </div>
+                            <div style={{ fontSize: 12.5, color: '#8a8074' }}>
+                              -5% avec le code <strong style={{ color: '#c8956c' }}>MAMZELLES</strong>
+                            </div>
+                          </div>
+                          <a
+                            href="https://holafly.sjv.io/jR2Ezn"
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
+                            style={{
+                              flexShrink: 0,
+                              background: '#c8956c',
+                              color: '#fff',
+                              fontSize: 11.5,
+                              fontWeight: 600,
+                              padding: '6px 12px',
+                              borderRadius: 18,
+                              textDecoration: 'none',
+                              whiteSpace: 'nowrap',
+                            }}
+                          >
+                            En profiter
+                          </a>
                         </div>
                       </>
                     ),
