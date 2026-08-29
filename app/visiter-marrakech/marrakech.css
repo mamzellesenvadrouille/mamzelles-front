@@ -1185,6 +1185,10 @@
   margin: 0 0 12px !important;
 }
 
+.article-resto-body p:not(.article-resto-name) a {
+  font-weight: 600;
+}
+
 .article-resto-body p:last-of-type {
   margin-bottom: 0 !important;
 }
