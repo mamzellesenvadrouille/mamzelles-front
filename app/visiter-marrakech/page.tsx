@@ -711,10 +711,6 @@ export default function MarrakechPage() {
                             alignItems: 'center',
                             justifyContent: 'space-between',
                             gap: 16,
-                            background: '#fff',
-                            border: '1px solid #e8e0d6',
-                            borderRadius: 10,
-                            padding: '16px 20px',
                             marginTop: 12,
                           }}
                         >
