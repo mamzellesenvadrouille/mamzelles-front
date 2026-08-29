@@ -719,7 +719,7 @@ export default function MarrakechPage() {
                               Connexion (eSIM) - Holafly
                             </div>
                             <div style={{ fontSize: 12.5, color: '#8a8074' }}>
-                              -5% avec le code <strong style={{ color: '#c8956c' }}>MAMZELLES</strong>
+                              -5% avec le code <span style={{ color: '#c8956c', fontWeight: 700 }}>MAMZELLES</span>
                             </div>
                           </div>
                           <a
