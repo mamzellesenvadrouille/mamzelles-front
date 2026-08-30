@@ -435,7 +435,7 @@ export default function NouveauCarnetPage() {
                       <div
                         style={{
                           width: 160,
-                          height: 294, // ratio réel du hero mobile (85vh sur un écran ~390x844)
+                          height: 280,
                           borderRadius: 8,
                           flexShrink: 0,
                           backgroundImage: `url('${carnet.hero.photo}')`,
