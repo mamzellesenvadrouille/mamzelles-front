@@ -86,7 +86,7 @@
 }
 @media (max-width: 480px) {
   .hero {
-    background-position: var(--hero-pos-x, 50%) var(--hero-pos-y, 50%);
+    background-position: var(--hero-pos-x, 50%) center;
   }
 }
 .hero::after {
