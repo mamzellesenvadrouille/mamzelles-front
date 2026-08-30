@@ -1,6 +1,7 @@
 // app/voyage/[slug]/page.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/page.tsx
 import { notFound } from "next/navigation";
+import type { CSSProperties } from "react";
 import { Lightbulb, Plane, Heart, AlertTriangle } from "lucide-react";
 import { getCarnetComplet, getMeteoActuelle, getCarnetProgress, getTauxDevise, deviseDepuisPays } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
@@ -86,7 +87,14 @@ export default async function CarnetPage({
 
   return (
     <main className={styles.body}>
-      <div className={styles.hero} style={{ backgroundImage: `url('${carnet.hero.photo}')` }}>
+      <div
+        className={styles.hero}
+        style={{
+          backgroundImage: `url('${carnet.hero.photo}')`,
+          ["--hero-pos-x" as string]: `${carnet.hero.photoPositionXMobile ?? 50}%`,
+          ["--hero-pos-y" as string]: `${carnet.hero.photoPositionMobile ?? 50}%`,
+        } as CSSProperties}
+      >
         <div className={styles.heroContent}>
           <span className={styles.eyebrow}>{carnet.client.typeVoyage}</span>
           <h1 className={styles.display1}>{carnet.client.prenoms}</h1>

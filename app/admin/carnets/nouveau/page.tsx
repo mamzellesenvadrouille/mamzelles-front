@@ -425,6 +425,53 @@ export default function NouveauCarnetPage() {
                   <input style={adminStyles.input} value={carnet.hero.photo} onChange={(e) => updateNested("hero", "photo", e.target.value)} />
                 </div>
 
+                {carnet.hero.photo && (
+                  <div style={adminStyles.field}>
+                    <label style={adminStyles.label}>Cadrage mobile de la photo hero</label>
+                    <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12.5, color: "#888", marginTop: -6, marginBottom: 12 }}>
+                      Sur ordinateur, la photo reste toujours centrée. Ce réglage n&apos;affecte que l&apos;affichage sur téléphone (écrans étroits).
+                    </p>
+                    <div style={{ display: "flex", gap: 20, alignItems: "flex-start" }}>
+                      <div
+                        style={{
+                          width: 160,
+                          height: 280,
+                          borderRadius: 8,
+                          flexShrink: 0,
+                          backgroundImage: `url('${carnet.hero.photo}')`,
+                          backgroundSize: "cover",
+                          backgroundPosition: `${carnet.hero.photoPositionXMobile ?? 50}% ${carnet.hero.photoPositionMobile ?? 50}%`,
+                          border: "1px solid #e8e0d6",
+                        }}
+                      />
+                      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 14 }}>
+                        <div>
+                          <label style={{ ...adminStyles.label, fontSize: 10.5 }}>Position horizontale ({carnet.hero.photoPositionXMobile ?? 50}%)</label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={carnet.hero.photoPositionXMobile ?? 50}
+                            onChange={(e) => updateNested("hero", "photoPositionXMobile", Number(e.target.value))}
+                            style={{ width: "100%" }}
+                          />
+                        </div>
+                        <div>
+                          <label style={{ ...adminStyles.label, fontSize: 10.5 }}>Position verticale ({carnet.hero.photoPositionMobile ?? 50}%)</label>
+                          <input
+                            type="range"
+                            min={0}
+                            max={100}
+                            value={carnet.hero.photoPositionMobile ?? 50}
+                            onChange={(e) => updateNested("hero", "photoPositionMobile", Number(e.target.value))}
+                            style={{ width: "100%" }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 <div style={adminStyles.field}>
                   <label style={adminStyles.label}>Message de bienvenue</label>
                   <textarea style={{ ...adminStyles.textarea, minHeight: 80 }} value={carnet.bienvenue.message} onChange={(e) => updateNested("bienvenue", "message", e.target.value)} />
