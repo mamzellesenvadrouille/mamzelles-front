@@ -91,7 +91,7 @@ export default async function CarnetPage({
         className={styles.hero}
         style={{
           backgroundImage: `url('${carnet.hero.photo}')`,
-          ["--hero-pos-x" as string]: `${carnet.hero.photoPositionXMobile ?? 50}%`,
+          ["--hero-pos-y" as string]: `${carnet.hero.photoPositionMobile ?? 50}%`,
         } as CSSProperties}
       >
         <div className={styles.heroContent}>

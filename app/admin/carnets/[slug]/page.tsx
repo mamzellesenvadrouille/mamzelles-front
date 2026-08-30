@@ -496,24 +496,24 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     <div style={{ display: "flex", gap: 20, alignItems: "flex-start" }}>
                       <div
                         style={{
-                          width: 220,
-                          height: 130,
+                          width: 160,
+                          height: 280,
                           borderRadius: 8,
                           flexShrink: 0,
                           backgroundImage: `url('${carnet.hero.photo}')`,
                           backgroundSize: "cover",
-                          backgroundPosition: `${carnet.hero.photoPositionXMobile ?? 50}% center`,
+                          backgroundPosition: `center ${carnet.hero.photoPositionMobile ?? 50}%`,
                           border: "1px solid #e8e0d6",
                         }}
                       />
                       <div style={{ flex: 1 }}>
-                        <label style={{ ...adminStyles.label, fontSize: 10.5 }}>Position horizontale ({carnet.hero.photoPositionXMobile ?? 50}%)</label>
+                        <label style={{ ...adminStyles.label, fontSize: 10.5 }}>Position verticale ({carnet.hero.photoPositionMobile ?? 50}%)</label>
                         <input
                           type="range"
                           min={0}
                           max={100}
-                          value={carnet.hero.photoPositionXMobile ?? 50}
-                          onChange={(e) => updateNested("hero", "photoPositionXMobile", Number(e.target.value))}
+                          value={carnet.hero.photoPositionMobile ?? 50}
+                          onChange={(e) => updateNested("hero", "photoPositionMobile", Number(e.target.value))}
                           style={{ width: "100%" }}
                         />
                       </div>
