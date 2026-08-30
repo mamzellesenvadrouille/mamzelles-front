@@ -497,7 +497,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                       <div
                         style={{
                           width: 160,
-                          height: 280,
+                          height: 294, // ratio réel du hero mobile (85vh sur un écran ~390x844)
                           borderRadius: 8,
                           flexShrink: 0,
                           backgroundImage: `url('${carnet.hero.photo}')`,
