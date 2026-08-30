@@ -10,8 +10,19 @@ import { Bed, Utensils, Camera, Compass } from "lucide-react";
 import type { DestinationResolue } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 
-const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
-const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`;
+// ⚠️⚠️⚠️ SOLUTION TEMPORAIRE — REVENIR À MAPTILER APRÈS LE 12 SEPTEMBRE 2026 ⚠️⚠️⚠️
+// Clé MapTiler invalidée par leur équipe (quota gratuit dépassé), jusqu'au
+// 12/09/2026. En attendant, on utilise OpenStreetMap standard (gratuit,
+// sans clé, mais moins adapté à un usage intensif long terme — voir notes
+// dans le fichier sw.js et DestinationMap.tsx plus bas).
+//
+// POUR REVENIR À MAPTILER, changer CES 2 LIGNES SEULEMENT :
+// const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
+// const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`;
+// ET plus bas dans ce fichier, chercher "SOLUTION D'URGENCE" (2 autres
+// endroits à ajuster : tileSize/zoomOffset, et le préchargement hors-ligne).
+const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn"; // gardée en mémoire, prête pour le retour
+const TILE_URL_TEMPLATE = `https://tile.openstreetmap.org/{z}/{x}/{y}.png`;
 
 type Categorie = "hebergements" | "restaurants" | "activites";
 type FiltreCarte = Categorie | "tous";
@@ -265,6 +276,10 @@ const DestinationMap = forwardRef<
           // OpenStreetMap ne propose pas de tuiles haute résolution "@2x"
           // comme MapTiler — la carte sera donc un peu moins nette sur les
           // écrans Retina en attendant de revenir à MapTiler.
+          // ⚠️ SOLUTION D'URGENCE (voir note en haut du fichier) — pour
+          // revenir à MapTiler après le 12/09, remettre :
+          // tileSize: 512, zoomOffset: -1, et le suffixe "@2x" pour Retina
+          // (voir versions précédentes du fichier ou demander à Claude).
           L.tileLayer(TILE_URL_TEMPLATE, {
             maxZoom: 19,
             tileSize: 256,
@@ -276,7 +291,11 @@ const DestinationMap = forwardRef<
             keepBuffer: 2,
           }).addTo(map);
 
-          precacherTuiles(tousLesPoints);
+          // ⚠️ SOLUTION D'URGENCE — préchargement désactivé pendant l'usage
+          // d'OpenStreetMap (leur politique interdit explicitement le
+          // téléchargement en masse/hors-ligne). Décommenter la ligne
+          // ci-dessous après le retour à MapTiler le 12/09.
+          // precacherTuiles(tousLesPoints);
           mapInstance.current = map;
           setPret(true);
         })
