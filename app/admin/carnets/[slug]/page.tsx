@@ -491,7 +491,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   <div style={adminStyles.field}>
                     <label style={adminStyles.label}>Cadrage mobile de la photo hero</label>
                     <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12.5, color: "#888", marginTop: -6, marginBottom: 12 }}>
-                      Sur ordinateur, la photo reste toujours centrée. Ce réglage n&apos;affecte que l&apos;affichage sur téléphone (écrans étroits).
+                      Sur ordinateur, la photo reste toujours centrée. Ce réglage n&apos;affecte que l&apos;affichage sur téléphone (écrans étroits) — l’aperçu ci-dessous simule un écran de téléphone.
                     </p>
                     <div style={{ display: "flex", gap: 20, alignItems: "flex-start" }}>
                       <div
@@ -502,18 +502,18 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                           flexShrink: 0,
                           backgroundImage: `url('${carnet.hero.photo}')`,
                           backgroundSize: "cover",
-                          backgroundPosition: `center ${carnet.hero.photoPositionMobile ?? 50}%`,
+                          backgroundPosition: `${carnet.hero.photoPositionXMobile ?? 50}% center`,
                           border: "1px solid #e8e0d6",
                         }}
                       />
                       <div style={{ flex: 1 }}>
-                        <label style={{ ...adminStyles.label, fontSize: 10.5 }}>Position verticale ({carnet.hero.photoPositionMobile ?? 50}%)</label>
+                        <label style={{ ...adminStyles.label, fontSize: 10.5 }}>Position horizontale ({carnet.hero.photoPositionXMobile ?? 50}%)</label>
                         <input
                           type="range"
                           min={0}
                           max={100}
-                          value={carnet.hero.photoPositionMobile ?? 50}
-                          onChange={(e) => updateNested("hero", "photoPositionMobile", Number(e.target.value))}
+                          value={carnet.hero.photoPositionXMobile ?? 50}
+                          onChange={(e) => updateNested("hero", "photoPositionXMobile", Number(e.target.value))}
                           style={{ width: "100%" }}
                         />
                       </div>
