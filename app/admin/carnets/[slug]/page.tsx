@@ -532,12 +532,12 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
                   <div style={adminStyles.field}>
                     <label style={adminStyles.label}>Budget prévu (€)</label>
-                    <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-                      <input type="number" style={{ ...adminStyles.input, flex: 1 }} value={carnet.overview.budget} onChange={(e) => updateNested("overview", "budget", Number(e.target.value))} />
+                    <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                      <input type="number" style={adminStyles.input} value={carnet.overview.budget} onChange={(e) => updateNested("overview", "budget", Number(e.target.value))} />
                       <button
                         type="button"
                         onClick={() => updateNested("overview", "budget", carnet.budget.reduce((somme, ligne) => somme + (ligne.montant || 0), 0))}
-                        style={{ ...adminStyles.btnLinks, whiteSpace: "nowrap", padding: "0 10px" }}
+                        style={{ ...adminStyles.btnLinks, alignSelf: "flex-start" }}
                         title="Reprendre la somme des lignes de budget détaillées plus bas"
                       >
                         = Somme
@@ -551,8 +551,8 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   </div>
                   <div style={adminStyles.field}>
                     <label style={adminStyles.label}>Décalage horaire</label>
-                    <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-                      <input style={{ ...adminStyles.input, flex: 1 }} value={carnet.overview.decalage} onChange={(e) => updateNested("overview", "decalage", e.target.value)} />
+                    <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                      <input style={adminStyles.input} value={carnet.overview.decalage} onChange={(e) => updateNested("overview", "decalage", e.target.value)} />
                       <button
                         type="button"
                         onClick={() => {
@@ -560,7 +560,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                           if (decalage) updateNested("overview", "decalage", decalage);
                           else alert("Impossible de calculer : il faut la ville de départ ET au moins une destination avec des coordonnées, ainsi qu'une date de début de voyage.");
                         }}
-                        style={{ ...adminStyles.btnLinks, whiteSpace: "nowrap", padding: "0 10px" }}
+                        style={{ ...adminStyles.btnLinks, alignSelf: "flex-start" }}
                         title="Calculer à partir de la ville de départ, la première destination, et la date du voyage (heure d'été/hiver prise en compte)"
                       >
                         ⟳ Calculer
