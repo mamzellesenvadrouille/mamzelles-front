@@ -722,7 +722,7 @@ export default function AdminDevis() {
                   title={d.mailEnvoyeLe ? 'Mail déjà marqué comme envoyé' : "Cliquer une fois le mail envoyé à la cliente"}
                   style={{
                     display: 'flex', alignItems: 'center', gap: 6,
-                    padding: '6px 12px', fontSize: 11, width: 100,
+                    padding: '6px 12px', fontSize: 11, width: 128, whiteSpace: 'nowrap',
                     borderRadius: 20, cursor: 'pointer',
                     background: d.mailEnvoyeLe ? '#eef6ee' : '#fff',
                     border: `1px solid ${d.mailEnvoyeLe ? '#8fbf8f' : '#e8e0d6'}`,
