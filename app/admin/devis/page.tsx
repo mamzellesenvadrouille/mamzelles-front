@@ -109,6 +109,23 @@ export default function AdminDevis() {
     loadDemandes();
   }
 
+  async function annulerDevisEnvoye(id: string) {
+    if (!confirm('Annuler le statut "Devis envoyé" pour cette demande ? Le lien déjà généré ne sera plus rattaché ici (mais reste valable si tu l\'as déjà envoyé).')) return;
+    await Promise.all([
+      fetch('/api/contact', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, field: 'devisEnvoyeLe', value: null }),
+      }),
+      fetch('/api/contact', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, field: 'devisLienUrl', value: null }),
+      }),
+    ]);
+    loadDemandes();
+  }
+
   async function marquerTraitee(id: string, traitee: boolean) {
     await fetch('/api/contact', {
       method: 'PATCH',
@@ -686,36 +703,6 @@ export default function AdminDevis() {
               <div className="demande-actions" style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0, flexBasis: 'auto' }}>
                 {/* Statuts : ressemblent à des badges d'état (pastille + libellé), pas à des
                     boutons d'action classiques — la couleur/forme change une fois l'étape faite. */}
-                {d.devisLienUrl ? (
-                  <button
-                    type="button"
-                    onClick={() => navigator.clipboard.writeText(d.devisLienUrl)}
-                    title="Cliquer pour copier le lien du devis déjà envoyé"
-                    style={{
-                      display: 'flex', alignItems: 'center', gap: 7,
-                      padding: '8px 16px', fontSize: 12.5, width: 130,
-                      borderRadius: 22, cursor: 'pointer',
-                      background: '#fbf1e7', border: '1px solid #c8956c', color: '#a8734c',
-                    }}
-                  >
-                    <span style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: '#c8956c' }} />
-                    Devis envoyé
-                  </button>
-                ) : (
-                  <button
-                    type="button"
-                    onClick={() => remplirDepuisDemande(d)}
-                    style={{
-                      display: 'flex', alignItems: 'center', gap: 7,
-                      padding: '8px 16px', fontSize: 12.5, width: 130,
-                      borderRadius: 22, cursor: 'pointer',
-                      background: '#fff', border: '1px solid #e8e0d6', color: '#8a8074',
-                    }}
-                  >
-                    <span style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: '#c8c2b6' }} />
-                    Créer le devis
-                  </button>
-                )}
                 <button
                   type="button"
                   onClick={() => marquerMailEnvoye(d.id, !!d.mailEnvoyeLe)}
@@ -732,6 +719,50 @@ export default function AdminDevis() {
                   <span style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: d.mailEnvoyeLe ? '#c8956c' : '#c8c2b6' }} />
                   Mail {d.mailEnvoyeLe ? 'envoyé' : 'de contact'}
                 </button>
+                {d.devisLienUrl ? (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                    <button
+                      type="button"
+                      onClick={() => navigator.clipboard.writeText(d.devisLienUrl)}
+                      title="Cliquer pour copier le lien du devis déjà envoyé"
+                      style={{
+                        display: 'flex', alignItems: 'center', gap: 7,
+                        padding: '8px 16px', fontSize: 12.5, width: 130,
+                        borderRadius: 22, cursor: 'pointer',
+                        background: '#fbf1e7', border: '1px solid #c8956c', color: '#a8734c',
+                      }}
+                    >
+                      <span style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: '#c8956c' }} />
+                      Devis envoyé
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => annulerDevisEnvoye(d.id)}
+                      title="Annuler le statut Devis envoyé (si tu t'es trompée)"
+                      style={{
+                        width: 26, height: 26, borderRadius: '50%', flexShrink: 0,
+                        border: '1px solid #e0d5d0', background: '#fff', color: '#a8756a',
+                        cursor: 'pointer', fontSize: 13, lineHeight: 1, padding: 0,
+                      }}
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => remplirDepuisDemande(d)}
+                    style={{
+                      display: 'flex', alignItems: 'center', gap: 7,
+                      padding: '8px 16px', fontSize: 12.5, width: 130,
+                      borderRadius: 22, cursor: 'pointer',
+                      background: '#fff', border: '1px solid #e8e0d6', color: '#8a8074',
+                    }}
+                  >
+                    <span style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: '#c8c2b6' }} />
+                    Créer le devis
+                  </button>
+                )}
 
                 {/* Séparateur visuel discret entre statuts et actions */}
                 <div style={{ width: 1, height: 24, background: '#e8e0d6', margin: '0 4px' }} />
