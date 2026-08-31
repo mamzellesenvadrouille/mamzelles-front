@@ -686,22 +686,6 @@ export default function AdminDevis() {
               <div className="demande-actions" style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0, flexBasis: 'auto' }}>
                 {/* Statuts : ressemblent à des badges d'état (pastille + libellé), pas à des
                     boutons d'action classiques — la couleur/forme change une fois l'étape faite. */}
-                <button
-                  type="button"
-                  onClick={() => marquerMailEnvoye(d.id, !!d.mailEnvoyeLe)}
-                  title={d.mailEnvoyeLe ? 'Mail déjà marqué comme envoyé' : "Cliquer une fois le mail envoyé à la cliente"}
-                  style={{
-                    display: 'flex', alignItems: 'center', gap: 6,
-                    padding: '6px 12px', fontSize: 11, width: 100,
-                    borderRadius: 20, cursor: 'pointer',
-                    background: d.mailEnvoyeLe ? '#eef6ee' : '#fff',
-                    border: `1px solid ${d.mailEnvoyeLe ? '#8fbf8f' : '#e8e0d6'}`,
-                    color: d.mailEnvoyeLe ? '#3a7a3a' : '#8a8074',
-                  }}
-                >
-                  <span style={{ width: 6, height: 6, borderRadius: '50%', flexShrink: 0, background: d.mailEnvoyeLe ? '#3a7a3a' : '#c8c2b6' }} />
-                  Mail {d.mailEnvoyeLe ? 'envoyé' : 'à envoyer'}
-                </button>
                 {d.devisLienUrl ? (
                   <button
                     type="button"
@@ -732,6 +716,22 @@ export default function AdminDevis() {
                     Créer le devis
                   </button>
                 )}
+                <button
+                  type="button"
+                  onClick={() => marquerMailEnvoye(d.id, !!d.mailEnvoyeLe)}
+                  title={d.mailEnvoyeLe ? 'Mail déjà marqué comme envoyé' : "Cliquer une fois le mail envoyé à la cliente"}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 6,
+                    padding: '6px 12px', fontSize: 11, width: 100,
+                    borderRadius: 20, cursor: 'pointer',
+                    background: d.mailEnvoyeLe ? '#eef6ee' : '#fff',
+                    border: `1px solid ${d.mailEnvoyeLe ? '#8fbf8f' : '#e8e0d6'}`,
+                    color: d.mailEnvoyeLe ? '#3a7a3a' : '#8a8074',
+                  }}
+                >
+                  <span style={{ width: 6, height: 6, borderRadius: '50%', flexShrink: 0, background: d.mailEnvoyeLe ? '#3a7a3a' : '#c8c2b6' }} />
+                  Mail {d.mailEnvoyeLe ? 'envoyé' : 'de contact'}
+                </button>
 
                 {/* Séparateur visuel discret entre statuts et actions */}
                 <div style={{ width: 1, height: 20, background: '#e8e0d6', margin: '0 2px' }} />
