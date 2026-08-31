@@ -108,8 +108,14 @@ export async function PATCH(req: NextRequest) {
     if (!data) return NextResponse.json({ error: 'Demande introuvable' }, { status: 404 });
     const demande = typeof data === 'string' ? JSON.parse(data) : data;
 
-    if ('field' in body) {
-      // Mise à jour générique (ex: devisEnvoyeLe, devisLienUrl)
+    if ('fields' in body && typeof body.fields === 'object' && body.fields !== null) {
+      // Mise à jour de plusieurs champs à la fois, en une seule lecture/écriture —
+      // évite tout risque de conflit entre deux PATCH envoyés en parallèle qui
+      // écraseraient chacun le travail de l'autre (ex: annuler devisEnvoyeLe ET
+      // devisLienUrl en même temps).
+      Object.assign(demande, body.fields);
+    } else if ('field' in body) {
+      // Mise à jour générique d'un seul champ (ex: devisEnvoyeLe, devisLienUrl)
       demande[body.field] = body.value;
     } else if ('traitee' in body) {
       // Compatibilité avec l'ancien format

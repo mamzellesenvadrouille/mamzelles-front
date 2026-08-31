@@ -111,18 +111,11 @@ export default function AdminDevis() {
 
   async function annulerDevisEnvoye(id: string) {
     if (!confirm('Annuler le statut "Devis envoyé" pour cette demande ? Le lien déjà généré ne sera plus rattaché ici (mais reste valable si tu l\'as déjà envoyé).')) return;
-    await Promise.all([
-      fetch('/api/contact', {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id, field: 'devisEnvoyeLe', value: null }),
-      }),
-      fetch('/api/contact', {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id, field: 'devisLienUrl', value: null }),
-      }),
-    ]);
+    await fetch('/api/contact', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, fields: { devisEnvoyeLe: null, devisLienUrl: null } }),
+    });
     loadDemandes();
   }
 
