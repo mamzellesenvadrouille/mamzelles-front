@@ -689,10 +689,10 @@ export default function AdminDevis() {
                   <button
                     type="button"
                     onClick={() => navigator.clipboard.writeText(d.devisLienUrl)}
-                    style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7, width: 90, background: '#f8f4ef' }}
+                    style={{ padding: '6px 10px', fontSize: 11, width: 90, background: '#c8956c', color: '#fff', border: '1px solid #c8956c', borderRadius: 4, cursor: 'pointer' }}
                     title="Cliquer pour copier le lien du devis déjà envoyé"
                   >
-                    Devis envoyé
+                    ✓ Devis envoyé
                   </button>
                 ) : (
                   <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, width: 90 }}>Créer le devis</button>
