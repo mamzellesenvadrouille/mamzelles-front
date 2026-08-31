@@ -692,13 +692,13 @@ export default function AdminDevis() {
                     onClick={() => navigator.clipboard.writeText(d.devisLienUrl)}
                     title="Cliquer pour copier le lien du devis déjà envoyé"
                     style={{
-                      display: 'flex', alignItems: 'center', gap: 6,
-                      padding: '6px 12px', fontSize: 11, width: 110,
-                      borderRadius: 20, cursor: 'pointer',
+                      display: 'flex', alignItems: 'center', gap: 7,
+                      padding: '8px 16px', fontSize: 12.5, width: 130,
+                      borderRadius: 22, cursor: 'pointer',
                       background: '#fbf1e7', border: '1px solid #c8956c', color: '#a8734c',
                     }}
                   >
-                    <span style={{ width: 6, height: 6, borderRadius: '50%', flexShrink: 0, background: '#c8956c' }} />
+                    <span style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: '#c8956c' }} />
                     Devis envoyé
                   </button>
                 ) : (
@@ -706,13 +706,13 @@ export default function AdminDevis() {
                     type="button"
                     onClick={() => remplirDepuisDemande(d)}
                     style={{
-                      display: 'flex', alignItems: 'center', gap: 6,
-                      padding: '6px 12px', fontSize: 11, width: 110,
-                      borderRadius: 20, cursor: 'pointer',
+                      display: 'flex', alignItems: 'center', gap: 7,
+                      padding: '8px 16px', fontSize: 12.5, width: 130,
+                      borderRadius: 22, cursor: 'pointer',
                       background: '#fff', border: '1px solid #e8e0d6', color: '#8a8074',
                     }}
                   >
-                    <span style={{ width: 6, height: 6, borderRadius: '50%', flexShrink: 0, background: '#c8c2b6' }} />
+                    <span style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: '#c8c2b6' }} />
                     Créer le devis
                   </button>
                 )}
@@ -721,22 +721,32 @@ export default function AdminDevis() {
                   onClick={() => marquerMailEnvoye(d.id, !!d.mailEnvoyeLe)}
                   title={d.mailEnvoyeLe ? 'Mail déjà marqué comme envoyé' : "Cliquer une fois le mail envoyé à la cliente"}
                   style={{
-                    display: 'flex', alignItems: 'center', gap: 6,
-                    padding: '6px 12px', fontSize: 11, width: 128, whiteSpace: 'nowrap',
-                    borderRadius: 20, cursor: 'pointer',
-                    background: d.mailEnvoyeLe ? '#eef6ee' : '#fff',
-                    border: `1px solid ${d.mailEnvoyeLe ? '#8fbf8f' : '#e8e0d6'}`,
-                    color: d.mailEnvoyeLe ? '#3a7a3a' : '#8a8074',
+                    display: 'flex', alignItems: 'center', gap: 7,
+                    padding: '8px 16px', fontSize: 12.5, width: 150, whiteSpace: 'nowrap',
+                    borderRadius: 22, cursor: 'pointer',
+                    background: d.mailEnvoyeLe ? '#fbf1e7' : '#fff',
+                    border: `1px solid ${d.mailEnvoyeLe ? '#c8956c' : '#e8e0d6'}`,
+                    color: d.mailEnvoyeLe ? '#a8734c' : '#8a8074',
                   }}
                 >
-                  <span style={{ width: 6, height: 6, borderRadius: '50%', flexShrink: 0, background: d.mailEnvoyeLe ? '#3a7a3a' : '#c8c2b6' }} />
+                  <span style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: d.mailEnvoyeLe ? '#c8956c' : '#c8c2b6' }} />
                   Mail {d.mailEnvoyeLe ? 'envoyé' : 'de contact'}
                 </button>
 
                 {/* Séparateur visuel discret entre statuts et actions */}
-                <div style={{ width: 1, height: 20, background: '#e8e0d6', margin: '0 2px' }} />
+                <div style={{ width: 1, height: 24, background: '#e8e0d6', margin: '0 4px' }} />
 
-                <button type="button" onClick={() => supprimerDemande(d.id)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.5, width: 90 }}>Supprimer</button>
+                <button
+                  type="button"
+                  onClick={() => supprimerDemande(d.id)}
+                  style={{
+                    padding: '8px 16px', fontSize: 12.5, width: 110,
+                    borderRadius: 22, cursor: 'pointer',
+                    background: '#fff', border: '1px solid #e0d5d0', color: '#a8756a',
+                  }}
+                >
+                  Supprimer
+                </button>
               </div>
             </div>
           ))}
