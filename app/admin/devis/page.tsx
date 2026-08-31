@@ -685,7 +685,18 @@ export default function AdminDevis() {
               </div>
               <div className="demande-actions" style={{ display: 'flex', gap: 6, flexShrink: 0, flexBasis: 'auto' }}>
                 <button type="button" onClick={() => marquerMailEnvoye(d.id)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7, width: 90 }}>Mail envoyé</button>
-                <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, width: 90 }}>Créer le devis</button>
+                {d.devisLienUrl ? (
+                  <button
+                    type="button"
+                    onClick={() => navigator.clipboard.writeText(d.devisLienUrl)}
+                    style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7, width: 90, background: '#f8f4ef' }}
+                    title="Cliquer pour copier le lien du devis déjà envoyé"
+                  >
+                    Devis envoyé
+                  </button>
+                ) : (
+                  <button type="button" onClick={() => remplirDepuisDemande(d)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, width: 90 }}>Créer le devis</button>
+                )}
                 <button type="button" onClick={() => marquerTraitee(d.id, !d.traitee)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.7, width: 90 }}>{d.traitee ? 'Non traitée' : 'Traitée'}</button>
                 <button type="button" onClick={() => supprimerDemande(d.id)} style={{ ...styles.btnOutline, padding: '6px 10px', fontSize: 11, opacity: 0.5, width: 90 }}>Supprimer</button>
               </div>
