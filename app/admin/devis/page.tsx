@@ -621,7 +621,7 @@ export default function AdminDevis() {
             {error && <div style={styles.error}>{error}</div>}
 
             <button type="button" onClick={handleGenerateProposition} style={{ ...styles.btnGold, marginBottom: 12 }} disabled={loadingProposition}>
-              {loadingProposition ? 'Génération...' : 'Envoyer une proposition'}
+              {loadingProposition ? 'Génération...' : 'Générer le devis'}
             </button>
 
             {propositionUrl && (
@@ -746,7 +746,7 @@ export default function AdminDevis() {
       {/* Historique des devis */}
       <div style={{ ...styles.card, marginTop: 24, maxWidth: 1400 }}>
         <div style={{ ...styles.header, marginBottom: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 12 }}>
-          <div style={styles.title}>Historique des devis</div>
+          <div style={styles.title}>Historique des paiements</div>
           <div style={{ display: 'flex', gap: 8 }}>
             {(['tous', 'attente', 'regle'] as const).map(f => (
               <button key={f} onClick={() => setFiltreStatut(f)} style={{
