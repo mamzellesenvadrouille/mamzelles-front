@@ -118,15 +118,6 @@ export default function AdminDevis() {
     loadDemandes();
   }
 
-  async function marquerMailEnvoye(id: string) {
-    await fetch('/api/contact', {
-      method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id, field: 'mailEnvoyeLe', value: new Date().toISOString() }),
-    });
-    loadDemandes();
-  }
-
   function remplirDepuisDemande(d: any) {
     setSelectedDemandeId(d.id);
     setClientName(d.prenom || '');
@@ -658,15 +649,6 @@ export default function AdminDevis() {
                   <strong>{d.duree}</strong> · {d.destination} · {d.adultes}{d.enfants && d.enfants !== '0 enfant' ? `, ${d.enfants}` : ''} · Budget : {d.budget}
                 </div>
                 {d.message && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: '#555', marginTop: 6, fontStyle: 'italic', maxWidth: 600 }}>&laquo; {d.message} &raquo;</div>}
-                {d.mailEnvoyeLe && (() => {
-                  const jours = Math.floor((Date.now() - new Date(d.mailEnvoyeLe).getTime()) / 86400000);
-                  const aRelancer = jours >= 7;
-                  return (
-                    <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, marginTop: 4, color: aRelancer ? '#c0392b' : '#888' }}>
-                      {aRelancer ? '⏰ ' : ''}Mail envoyé le {new Date(d.mailEnvoyeLe).toLocaleDateString('fr-FR')} ({jours === 0 ? "aujourd'hui" : `il y a ${jours} jour${jours > 1 ? 's' : ''}`}){aRelancer ? ' — à relancer' : ''}
-                    </div>
-                  );
-                })()}
                 {d.devisEnvoyeLe && (() => {
                   const jours = Math.floor((Date.now() - new Date(d.devisEnvoyeLe).getTime()) / 86400000);
                   const aRelancer = jours >= 7;
@@ -686,23 +668,6 @@ export default function AdminDevis() {
               <div className="demande-actions" style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0, flexBasis: 'auto' }}>
                 {/* Statuts : ressemblent à des badges d'état (pastille + libellé), pas à des
                     boutons d'action classiques — la couleur/forme change une fois l'étape faite. */}
-                <button
-                  type="button"
-                  onClick={() => marquerMailEnvoye(d.id)}
-                  title={d.mailEnvoyeLe ? 'Mail déjà marqué comme envoyé' : "Cliquer une fois le mail envoyé à la cliente"}
-                  style={{
-                    display: 'flex', alignItems: 'center', gap: 6,
-                    padding: '6px 12px', fontSize: 11, width: 100,
-                    borderRadius: 20, cursor: 'pointer',
-                    background: d.mailEnvoyeLe ? '#eef6ee' : '#fff',
-                    border: `1px solid ${d.mailEnvoyeLe ? '#8fbf8f' : '#e8e0d6'}`,
-                    color: d.mailEnvoyeLe ? '#3a7a3a' : '#8a8074',
-                  }}
-                >
-                  <span style={{ width: 6, height: 6, borderRadius: '50%', flexShrink: 0, background: d.mailEnvoyeLe ? '#3a7a3a' : '#c8c2b6' }} />
-                  Mail {d.mailEnvoyeLe ? 'envoyé' : 'à envoyer'}
-                </button>
-
                 {d.devisLienUrl ? (
                   <button
                     type="button"
