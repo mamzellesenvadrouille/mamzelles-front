@@ -100,11 +100,11 @@ export default function AdminDevis() {
     setLoadingDemandes(false);
   }
 
-  async function marquerMailEnvoye(id: string) {
+  async function marquerMailEnvoye(id: string, dejaEnvoye: boolean) {
     await fetch('/api/contact', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id, field: 'mailEnvoyeLe', value: new Date().toISOString() }),
+      body: JSON.stringify({ id, field: 'mailEnvoyeLe', value: dejaEnvoye ? null : new Date().toISOString() }),
     });
     loadDemandes();
   }
@@ -688,7 +688,7 @@ export default function AdminDevis() {
                     boutons d'action classiques — la couleur/forme change une fois l'étape faite. */}
                 <button
                   type="button"
-                  onClick={() => marquerMailEnvoye(d.id)}
+                  onClick={() => marquerMailEnvoye(d.id, !!d.mailEnvoyeLe)}
                   title={d.mailEnvoyeLe ? 'Mail déjà marqué comme envoyé' : "Cliquer une fois le mail envoyé à la cliente"}
                   style={{
                     display: 'flex', alignItems: 'center', gap: 6,
