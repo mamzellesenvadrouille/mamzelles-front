@@ -548,6 +548,32 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   <input style={adminStyles.input} placeholder="ex : Maldives" value={carnet.destination} onChange={(e) => update("destination", e.target.value)} />
                 </div>
 
+              </div>
+
+              <div style={sectionWrap}>
+                <div style={sectionTitle}>Liste de Voyage</div>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
+                  Uniquement pour les voyages de noces. Le lien de cagnotte (OnParticipe ou équivalent) que les invités utiliseront pour participer, quel que soit l&apos;élément qu&apos;ils choisissent.
+                </p>
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Lien de la cagnotte</label>
+                  <input
+                    style={adminStyles.input}
+                    placeholder="https://www.onparticipe.fr/..."
+                    value={carnet.onParticipeUrl ?? ""}
+                    onChange={(e) => update("onParticipeUrl", e.target.value)}
+                  />
+                </div>
+                {carnet.onParticipeUrl && (
+                  <a
+                    href={`/voyage/${carnet.slug}/liste-de-voyage`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#c8956c", fontWeight: 600 }}
+                  >
+                    Voir la Liste de Voyage →
+                  </a>
+                )}
                 <div style={{ display: "flex", gap: 16 }}>
                   <div style={{ ...adminStyles.field, flex: 1 }}>
                     <label style={adminStyles.label}>Date de début</label>

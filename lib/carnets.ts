@@ -163,6 +163,8 @@ export interface Carnet {
   documents?: DocumentVoyage[];
   indispensables: { visa?: string; passeport?: string; vaccins?: string; assurance?: string; monnaie?: string; telephone?: string };
   contactsUrgence?: ContactUrgence[];
+  // Liste de Voyage : lien unique vers la cagnotte OnParticipe (ou équivalent) du couple
+  onParticipeUrl?: string;
   // Gel automatique : une fois le voyage terminé, le contenu des destinations
   // est figé pour toujours, même si les fiches destination évoluent ensuite.
   destinationsSnapshot?: DestinationResolue[];
@@ -478,4 +480,73 @@ export async function listDestinations(): Promise<Destination[]> {
   if (ids.length === 0) return [];
   const destinations = await Promise.all(ids.map((id) => getDestination(id)));
   return destinations.filter((d): d is Destination => d !== null);
+}
+
+// ─────────────────────────────────────────────
+// LISTE DE VOYAGE
+// ─────────────────────────────────────────────
+
+export interface ElementListeDeVoyage {
+  id: string; // clé stable (label ou nom, préfixée par catégorie)
+  nom: string;
+  description?: string;
+  photo?: string;
+  prixIndicatif?: number;
+  url?: string;
+  categorie: "transport" | "hebergement" | "activite";
+}
+
+// Rassemble tous les éléments cochés "offrable" d'un carnet (réservations,
+// hébergements, activités) en une seule liste, prête à afficher sur la
+// page publique de la Liste de Voyage. Ne modifie rien, lecture seule.
+export function getElementsListeDeVoyage(
+  carnet: Carnet,
+  destinationsCompletes: DestinationResolue[]
+): ElementListeDeVoyage[] {
+  const elements: ElementListeDeVoyage[] = [];
+
+  for (const item of carnet.reservations) {
+    if (!item.offrable) continue;
+    elements.push({
+      id: `transport-${item.label}`,
+      nom: item.label,
+      prixIndicatif: item.prixIndicatif,
+      url: item.url,
+      categorie: "transport",
+    });
+  }
+
+  for (const ref of carnet.destinations) {
+    const destination = destinationsCompletes.find((d) => d.id === ref.destinationId);
+    if (!destination) continue;
+
+    for (const [nom, info] of Object.entries(ref.listeVoyageHebergements ?? {})) {
+      if (!info.offrable) continue;
+      const hebergement = destination.hebergements?.find((h) => h.nom === nom);
+      elements.push({
+        id: `hebergement-${destination.id}-${nom}`,
+        nom,
+        description: hebergement?.description,
+        photo: hebergement?.photo,
+        prixIndicatif: info.prixIndicatif,
+        categorie: "hebergement",
+      });
+    }
+
+    for (const [nom, info] of Object.entries(ref.listeVoyageActivites ?? {})) {
+      if (!info.offrable) continue;
+      const activite = destination.activites.find((a) => a.nom === nom);
+      elements.push({
+        id: `activite-${destination.id}-${nom}`,
+        nom,
+        description: activite?.description,
+        photo: activite?.photo,
+        prixIndicatif: info.prixIndicatif,
+        url: activite?.lienReservation,
+        categorie: "activite",
+      });
+    }
+  }
+
+  return elements;
 }
