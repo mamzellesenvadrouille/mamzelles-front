@@ -7,7 +7,7 @@
 // visible depuis l'admin. Le client peut aussi ajouter ses propres lignes.
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { ChecklistItem } from "@/lib/carnets";
 import styles from "./carnet.module.css";
 
@@ -51,6 +51,20 @@ export default function ReservationList({
   const [confirmationsCustom, setConfirmationsCustom] = useState<string[]>(custom.map(() => ""));
   const [champFocus, setChampFocus] = useState<string | null>(null);
   const [editionForcee, setEditionForcee] = useState<Set<string>>(new Set());
+  const inputsRef = useRef<Map<string, HTMLInputElement>>(new Map());
+
+  function ouvrirEdition(cleFocus: string) {
+    setEditionForcee((prev) => new Set(prev).add(cleFocus));
+    // le champ vient d'apparaître dans le DOM, on lui donne le focus
+    // au prochain tick pour qu'un clic ailleurs déclenche bien la sauvegarde
+    requestAnimationFrame(() => {
+      const el = inputsRef.current.get(cleFocus);
+      if (el) {
+        el.focus();
+        el.select();
+      }
+    });
+  }
 
   useEffect(() => {
     try {
@@ -215,7 +229,7 @@ export default function ReservationList({
         </div>
         {!enEdition ? (
           <div
-            onClick={() => setEditionForcee((prev) => new Set(prev).add(cleFocus))}
+            onClick={() => ouvrirEdition(cleFocus)}
             style={{ fontSize: 11.5, color: "#7a9e7e", fontWeight: 600, cursor: "pointer" }}
             title="Cliquer pour modifier"
           >
@@ -223,8 +237,12 @@ export default function ReservationList({
           </div>
         ) : (
           <input
+            ref={(el) => {
+              if (el) inputsRef.current.set(cleFocus, el);
+              else inputsRef.current.delete(cleFocus);
+            }}
             type="text"
-            placeholder="Numéro de confirmation"
+            placeholder="Numéro de réservation / Notes"
             value={valeurConfirmation}
             onChange={(e) => onChangeConfirmation(e.target.value)}
             onFocus={() => setChampFocus(cleFocus)}
