@@ -173,8 +173,22 @@ export default function ReservationList({
             </a>
           )}
           {url && reserve && (
-            <a href={url} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: "#a8a29a", whiteSpace: "nowrap" }}>
-              Revoir le site →
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontSize: 11.5,
+                fontWeight: 600,
+                color: "#fff",
+                background: "#c8956c",
+                padding: "6px 12px",
+                borderRadius: 3,
+                whiteSpace: "nowrap",
+                textDecoration: "none",
+              }}
+            >
+              Lien de réservation →
             </a>
           )}
           {onSupprimer && (
