@@ -159,12 +159,12 @@ export default function ReservationList({
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                fontSize: 12,
+                fontSize: 10.5,
                 fontWeight: 600,
                 color: "#fff",
                 background: "#c8956c",
-                padding: "8px 16px",
-                borderRadius: 20,
+                padding: "6px 12px",
+                borderRadius: 16,
                 whiteSpace: "nowrap",
                 textDecoration: "none",
                 flexShrink: 0,
@@ -179,12 +179,12 @@ export default function ReservationList({
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                fontSize: 12,
+                fontSize: 10.5,
                 fontWeight: 600,
                 color: "#fff",
                 background: "#c8956c",
-                padding: "8px 16px",
-                borderRadius: 20,
+                padding: "6px 12px",
+                borderRadius: 16,
                 whiteSpace: "nowrap",
                 textDecoration: "none",
                 flexShrink: 0,
