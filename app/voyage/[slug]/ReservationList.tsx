@@ -149,8 +149,8 @@ export default function ReservationList({
           border: "none",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: reserve ? 0 : 8 }}>
-          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600, fontSize: 19, color: "#1a1512", flex: 1 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 14, marginBottom: reserve ? 0 : 8, flexWrap: "wrap" }}>
+          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600, fontSize: 19, color: "#1a1512", flex: 1, minWidth: 140 }}>
             {label}
           </div>
           {url && !reserve && (
@@ -159,14 +159,15 @@ export default function ReservationList({
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                fontSize: 11.5,
+                fontSize: 12,
                 fontWeight: 600,
                 color: "#fff",
                 background: "#c8956c",
-                padding: "6px 12px",
-                borderRadius: 3,
+                padding: "8px 16px",
+                borderRadius: 20,
                 whiteSpace: "nowrap",
                 textDecoration: "none",
+                flexShrink: 0,
               }}
             >
               Réserver →
@@ -178,14 +179,15 @@ export default function ReservationList({
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                fontSize: 11.5,
+                fontSize: 12,
                 fontWeight: 600,
                 color: "#fff",
                 background: "#c8956c",
-                padding: "6px 12px",
-                borderRadius: 3,
+                padding: "8px 16px",
+                borderRadius: 20,
                 whiteSpace: "nowrap",
                 textDecoration: "none",
+                flexShrink: 0,
               }}
             >
               Lien de réservation →
