@@ -92,6 +92,11 @@ export interface CarnetDestinationRef {
   hebergementsChoisis?: string[]; // noms des hébergements sélectionnés
   restaurantsChoisis?: string[]; // noms des restaurants sélectionnés
   activitesChoisies?: string[]; // noms des activités sélectionnées
+  // Statut "offrable" (Liste de Voyage) et prix indicatif, propres à CE carnet
+  // — jamais stockés sur la fiche destination partagée, sinon ça s'appliquerait
+  // à tous les autres clients qui utilisent la même destination.
+  listeVoyageHebergements?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number } };
+  listeVoyageActivites?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number } };
 }
 
 // Une destination une fois résolue pour un carnet précis (avec son nombre de nuits pour CE voyage)
@@ -111,6 +116,8 @@ export interface ChecklistItem {
   label: string;
   coche: boolean;
   url?: string; // lien de réservation cliquable (pour "Vos réservations" surtout)
+  offrable?: boolean; // affiché dans la Liste de Voyage (cagnotte invités)
+  prixIndicatif?: number; // montant affiché comme objectif dans la Liste de Voyage
 }
 
 export interface ContactUrgence {

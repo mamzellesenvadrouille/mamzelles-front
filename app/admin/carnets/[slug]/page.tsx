@@ -329,6 +329,39 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
     );
   }
 
+  function toggleOffrable(
+    destinationId: string,
+    champ: "listeVoyageHebergements" | "listeVoyageActivites",
+    nom: string
+  ) {
+    update(
+      "destinations",
+      carnet.destinations.map((d) => {
+        if (d.destinationId !== destinationId) return d;
+        const actuel = d[champ] ?? {};
+        const entree = actuel[nom] ?? {};
+        return { ...d, [champ]: { ...actuel, [nom]: { ...entree, offrable: !entree.offrable } } };
+      })
+    );
+  }
+
+  function updatePrixOffrable(
+    destinationId: string,
+    champ: "listeVoyageHebergements" | "listeVoyageActivites",
+    nom: string,
+    prix: number
+  ) {
+    update(
+      "destinations",
+      carnet.destinations.map((d) => {
+        if (d.destinationId !== destinationId) return d;
+        const actuel = d[champ] ?? {};
+        const entree = actuel[nom] ?? {};
+        return { ...d, [champ]: { ...actuel, [nom]: { ...entree, prixIndicatif: prix } } };
+      })
+    );
+  }
+
   function ligneDestination(d: Destination) {
     const ref = carnet.destinations.find((r) => r.destinationId === d.id);
     const nomsHebergements = (d.hebergements ?? []).map((h) => h.nom);
@@ -359,15 +392,37 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 </div>
                 {nomsHebergements.map((nom) => {
                   const coche = (ref.hebergementsChoisis ?? nomsHebergements).includes(nom);
+                  const offrableInfo = ref.listeVoyageHebergements?.[nom];
                   return (
-                    <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
-                      <input
-                        type="checkbox"
-                        checked={coche}
-                        onChange={() => toggleItemChoisi(d.id, "hebergementsChoisis", nom, nomsHebergements)}
-                      />
-                      {nom}
-                    </label>
+                    <div key={nom} style={{ marginBottom: 4 }}>
+                      <label style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, cursor: "pointer" }}>
+                        <input
+                          type="checkbox"
+                          checked={coche}
+                          onChange={() => toggleItemChoisi(d.id, "hebergementsChoisis", nom, nomsHebergements)}
+                        />
+                        {nom}
+                      </label>
+                      {coche && (
+                        <label style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 11.5, color: "#a08d6c", marginLeft: 24, marginTop: 3, cursor: "pointer" }}>
+                          <input
+                            type="checkbox"
+                            checked={!!offrableInfo?.offrable}
+                            onChange={() => toggleOffrable(d.id, "listeVoyageHebergements", nom)}
+                          />
+                          Offrable (Liste de Voyage)
+                          {offrableInfo?.offrable && (
+                            <input
+                              type="number"
+                              placeholder="Prix indicatif €"
+                              style={{ ...adminStyles.input, width: 120 }}
+                              value={offrableInfo?.prixIndicatif ?? ""}
+                              onChange={(e) => updatePrixOffrable(d.id, "listeVoyageHebergements", nom, Number(e.target.value))}
+                            />
+                          )}
+                        </label>
+                      )}
+                    </div>
                   );
                 })}
               </div>
@@ -401,15 +456,37 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 </div>
                 {nomsActivites.map((nom) => {
                   const coche = (ref.activitesChoisies ?? nomsActivites).includes(nom);
+                  const offrableInfo = ref.listeVoyageActivites?.[nom];
                   return (
-                    <label key={nom} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 4, cursor: "pointer" }}>
-                      <input
-                        type="checkbox"
-                        checked={coche}
-                        onChange={() => toggleItemChoisi(d.id, "activitesChoisies", nom, nomsActivites)}
-                      />
-                      {nom}
-                    </label>
+                    <div key={nom} style={{ marginBottom: 4 }}>
+                      <label style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, cursor: "pointer" }}>
+                        <input
+                          type="checkbox"
+                          checked={coche}
+                          onChange={() => toggleItemChoisi(d.id, "activitesChoisies", nom, nomsActivites)}
+                        />
+                        {nom}
+                      </label>
+                      {coche && (
+                        <label style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 11.5, color: "#a08d6c", marginLeft: 24, marginTop: 3, cursor: "pointer" }}>
+                          <input
+                            type="checkbox"
+                            checked={!!offrableInfo?.offrable}
+                            onChange={() => toggleOffrable(d.id, "listeVoyageActivites", nom)}
+                          />
+                          Offrable (Liste de Voyage)
+                          {offrableInfo?.offrable && (
+                            <input
+                              type="number"
+                              placeholder="Prix indicatif €"
+                              style={{ ...adminStyles.input, width: 120 }}
+                              value={offrableInfo?.prixIndicatif ?? ""}
+                              onChange={(e) => updatePrixOffrable(d.id, "listeVoyageActivites", nom, Number(e.target.value))}
+                            />
+                          )}
+                        </label>
+                      )}
+                    </div>
                   );
                 })}
               </div>
@@ -862,33 +939,60 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   Un lien de réservation par ligne (Skyscanner, Booking.com, site de l&apos;hôtel...). Le client coche automatiquement en cliquant dessus.
                 </p>
                 {carnet.reservations.map((item, i) => (
-                  <div key={i} style={{ display: "flex", gap: 8, marginBottom: 10 }}>
-                    <input
-                      style={{ ...adminStyles.input, flex: 1 }}
-                      placeholder="ex : Vol aller Paris → Malé"
-                      value={item.label}
-                      onChange={(e) => {
-                        const copy = [...carnet.reservations];
-                        copy[i] = { ...copy[i], label: e.target.value };
-                        update("reservations", copy);
-                      }}
-                    />
-                    <input
-                      style={{ ...adminStyles.input, flex: 1 }}
-                      placeholder="Lien de réservation (optionnel)"
-                      value={item.url ?? ""}
-                      onChange={(e) => {
-                        const copy = [...carnet.reservations];
-                        copy[i] = { ...copy[i], url: e.target.value };
-                        update("reservations", copy);
-                      }}
-                    />
-                    <button
-                      onClick={() => update("reservations", carnet.reservations.filter((_, idx) => idx !== i))}
-                      style={adminStyles.btnDelete}
-                    >
-                      ✕
-                    </button>
+                  <div key={i} style={{ display: "flex", flexDirection: "column", gap: 6, marginBottom: 14, paddingBottom: 14, borderBottom: "1px solid #f0ebe3" }}>
+                    <div style={{ display: "flex", gap: 8 }}>
+                      <input
+                        style={{ ...adminStyles.input, flex: 1 }}
+                        placeholder="ex : Vol aller Paris → Malé"
+                        value={item.label}
+                        onChange={(e) => {
+                          const copy = [...carnet.reservations];
+                          copy[i] = { ...copy[i], label: e.target.value };
+                          update("reservations", copy);
+                        }}
+                      />
+                      <input
+                        style={{ ...adminStyles.input, flex: 1 }}
+                        placeholder="Lien de réservation (optionnel)"
+                        value={item.url ?? ""}
+                        onChange={(e) => {
+                          const copy = [...carnet.reservations];
+                          copy[i] = { ...copy[i], url: e.target.value };
+                          update("reservations", copy);
+                        }}
+                      />
+                      <button
+                        onClick={() => update("reservations", carnet.reservations.filter((_, idx) => idx !== i))}
+                        style={adminStyles.btnDelete}
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    <label style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12.5, fontFamily: "Inter, sans-serif", color: "#666", cursor: "pointer" }}>
+                      <input
+                        type="checkbox"
+                        checked={!!item.offrable}
+                        onChange={(e) => {
+                          const copy = [...carnet.reservations];
+                          copy[i] = { ...copy[i], offrable: e.target.checked };
+                          update("reservations", copy);
+                        }}
+                      />
+                      Offrable (Liste de Voyage)
+                      {item.offrable && (
+                        <input
+                          type="number"
+                          placeholder="Prix indicatif €"
+                          style={{ ...adminStyles.input, width: 130, marginLeft: 4 }}
+                          value={item.prixIndicatif ?? ""}
+                          onChange={(e) => {
+                            const copy = [...carnet.reservations];
+                            copy[i] = { ...copy[i], prixIndicatif: Number(e.target.value) };
+                            update("reservations", copy);
+                          }}
+                        />
+                      )}
+                    </label>
                   </div>
                 ))}
                 <button onClick={() => ajouterCheckItem("reservations")} style={smallLink}>+ Ajouter</button>
