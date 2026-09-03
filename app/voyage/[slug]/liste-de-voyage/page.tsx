@@ -32,7 +32,7 @@ const IconCadeau = () => (
 );
 
 const IconEtoile = () => (
-  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" style={{ verticalAlign: -4, marginRight: 5 }}>
+  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" style={{ verticalAlign: -4, marginRight: 2 }}>
     <path
       d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"
       stroke={GOLD}
