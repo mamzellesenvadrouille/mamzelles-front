@@ -98,7 +98,7 @@ export default function ListeDeVoyageCarte({
           {item.description && <div style={{ fontSize: 14, color: "#8a7f74" }}>{item.description}</div>}
         </div>
         {item.prixIndicatif != null && (
-          <div style={{ fontSize: 14, fontWeight: 600, color: DARK, whiteSpace: "nowrap", textAlign: "right" }}>
+          <div style={{ fontSize: 14, fontWeight: 600, color: DARK, whiteSpace: "nowrap", textAlign: "right", marginTop: item.categorie === "transport" ? 0 : 5 }}>
             {item.prixIndicatif} €
             {item.categorie === "transport" && (
               <span style={{ display: "block", fontSize: 11.5, fontWeight: 400, color: "#a89a8c" }}>prix indicatif</span>
