@@ -16,7 +16,7 @@ const LINE = "#e6ddd1";
 const FUNDED = "#8a9a7e";
 
 const IconCadeau = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+  <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
     <path
       d="M20 12V22H4V12M22 7H2V12H22V7ZM12 22V7M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7ZM12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z"
       stroke="#fff"
@@ -156,16 +156,16 @@ export default function ListeDeVoyageCarte({
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: 8,
+                gap: 6,
                 fontFamily: "Inter, sans-serif",
-                fontSize: 13,
+                fontSize: 12,
                 fontWeight: 600,
                 letterSpacing: "0.01em",
                 background: GOLD,
                 color: "#fff",
                 border: "none",
-                padding: "9px 18px 9px 14px",
-                borderRadius: 24,
+                padding: "7px 14px 7px 11px",
+                borderRadius: 20,
                 whiteSpace: "nowrap",
                 cursor: "pointer",
                 boxShadow: "0 3px 10px rgba(200, 149, 108, 0.3)",
