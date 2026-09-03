@@ -110,9 +110,12 @@ export default async function ListeDeVoyagePage({
 
       {/* Bandeau cagnotte */}
       <div style={{ maxWidth: 560, margin: "28px auto 0", padding: "0 24px" }}>
-        <div style={{ background: DARK, borderRadius: 8, padding: "22px 24px", textAlign: "center" }}>
-          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500, lineHeight: 1.05, color: "#fff" }}>
-            <span style={{ color: "#e4c9ae" }}>{totalReuni} €</span> déjà réunis pour notre voyage
+        <div style={{ background: DARK, borderRadius: 8, padding: "28px 24px", textAlign: "center" }}>
+          <div style={{ fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", color: "#a89a8c", marginBottom: 10 }}>
+            Déjà réuni pour notre voyage
+          </div>
+          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 500, color: "#e4c9ae" }}>
+            {totalReuni} €
           </div>
         </div>
       </div>
