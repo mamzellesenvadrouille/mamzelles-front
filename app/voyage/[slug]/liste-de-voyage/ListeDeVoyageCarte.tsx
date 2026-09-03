@@ -157,7 +157,7 @@ export default function ListeDeVoyageCarte({
           <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8 }}>
             <input
               type="text"
-              placeholder="Prénom / Nom"
+              placeholder="Prénom / Nom *"
               value={prenom}
               onChange={(e) => setPrenom(e.target.value)}
               style={{
@@ -167,9 +167,9 @@ export default function ListeDeVoyageCarte({
                 fontFamily: "Inter, sans-serif",
                 fontSize: 13,
                 padding: "0 12px",
-                border: `1px solid ${LINE}`,
+                border: `1.5px solid ${GOLD}`,
                 borderRadius: 4,
-                background: "#f8f4ef",
+                background: "#fdf6ee",
                 color: DARK,
                 outline: "none",
               }}
@@ -197,7 +197,7 @@ export default function ListeDeVoyageCarte({
             />
             <button
               onClick={participer}
-              disabled={enCours || !prenom.trim()}
+              disabled={enCours}
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -215,9 +215,9 @@ export default function ListeDeVoyageCarte({
                 padding: "0 14px 0 11px",
                 borderRadius: 20,
                 whiteSpace: "nowrap",
-                cursor: prenom.trim() ? "pointer" : "not-allowed",
+                cursor: "pointer",
                 boxShadow: "0 3px 10px rgba(200, 149, 108, 0.3)",
-                opacity: enCours || !prenom.trim() ? 0.5 : 1,
+                opacity: enCours ? 0.7 : 1,
               }}
             >
               <IconCadeau />
