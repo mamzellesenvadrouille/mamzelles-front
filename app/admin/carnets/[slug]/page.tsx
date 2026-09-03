@@ -862,7 +862,17 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   Un lien de réservation par ligne (Skyscanner, Booking.com, site de l&apos;hôtel...). Le client coche automatiquement en cliquant dessus.
                 </p>
                 {carnet.reservations.map((item, i) => (
-                  <div key={i} style={{ display: "flex", flexDirection: "column", gap: 6, marginBottom: 14, paddingBottom: 14, borderBottom: "1px solid #f0ebe3" }}>
+                  <div
+                    key={i}
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 6,
+                      marginBottom: 14,
+                      paddingBottom: 14,
+                      borderBottom: i < carnet.reservations.length - 1 ? "1px solid #f0ebe3" : "none",
+                    }}
+                  >
                     <div style={{ display: "flex", gap: 8 }}>
                       <input
                         style={{ ...adminStyles.input, flex: 1 }}
