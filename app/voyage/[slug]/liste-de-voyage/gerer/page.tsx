@@ -7,11 +7,12 @@ import CopierLien from "./CopierLien";
 
 export const dynamic = "force-dynamic";
 
-const CATEGORIES: { key: "transport" | "hebergement" | "activite"; titre: string }[] = [
-  { key: "transport", titre: "Transports" },
-  { key: "hebergement", titre: "Hébergements" },
-  { key: "activite", titre: "Activités" },
-];
+const GOLD = "#c8956c";
+const DARK = "#1a1512";
+const CREAM = "#f8f4ef";
+const LINE = "#e6ddd1";
+
+const CATEGORIES: { key: "transport"; titre: string }[] = [{ key: "transport", titre: "Transports" }];
 
 export default async function GererListeDeVoyagePage({
   params,
@@ -19,43 +20,44 @@ export default async function GererListeDeVoyagePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const complet = await getCarnetComplet(slug);
-  if (!complet) notFound();
-
-  const carnet = complet;
+  const carnet = await getCarnetComplet(slug);
+  if (!carnet) notFound();
   if (!carnet.onParticipeUrl) notFound();
 
   const elements = getElementsListeDeVoyage(carnet);
   const lienPublic = `https://mamzellesenvadrouille.com/voyage/${slug}/liste-de-voyage`;
 
   return (
-    <div style={{ background: "#f8f4ef", minHeight: "100vh", padding: "48px 24px 80px" }}>
+    <div style={{ background: CREAM, minHeight: "100vh", padding: "48px 24px 80px", fontFamily: "Inter, sans-serif", color: DARK }}>
       <div style={{ maxWidth: 620, margin: "0 auto" }}>
         <div style={{ fontSize: 14, color: "#a89a8c", marginBottom: 6 }}>Carnet de voyage, {carnet.destination}</div>
-        <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 30, fontWeight: 500, marginBottom: 28, color: "#1a1512" }}>
-          Gérez votre Liste de Voyage
+        <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 30, fontWeight: 500, marginBottom: 28 }}>
+          Gérez votre voyage
         </h1>
 
-        <div style={{ background: "#fffdfa", border: "1px solid #e6ddd1", borderRadius: 6, overflow: "hidden" }}>
-          <div style={{ padding: "24px 26px 20px", borderBottom: "1px solid #e6ddd1" }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 500, marginBottom: 6, color: "#1a1512" }}>
-              Partagez votre liste
+        <div style={{ background: "#fffdfa", border: `1px solid ${LINE}`, borderRadius: 6, overflow: "hidden" }}>
+          <div style={{ padding: "24px 26px 20px", borderBottom: `1px solid ${LINE}` }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 500, marginBottom: 6 }}>
+              La Liste de Voyage
             </h2>
-            <p style={{ fontSize: 14, color: "#6b6158", lineHeight: 1.5 }}>
-              Un seul lien à envoyer à vos proches. Ils y retrouvent tout ce que vous avez choisi de partager.
+            <p style={{ fontSize: 14.5, color: "#6b6158", lineHeight: 1.6 }}>
+              Une seule cagnotte OnParticipe pour tout le voyage. Partagez le lien avec vos proches.
             </p>
-            <CopierLien lien={lienPublic} />
 
-            <div style={{ display: "flex", alignItems: "center", gap: 18, marginTop: 20, paddingTop: 18, borderTop: "1px dashed #e6ddd1" }}>
+            <div style={{ marginTop: 18 }}>
+              <CopierLien lien={lienPublic} />
+            </div>
+
+            <div style={{ display: "flex", alignItems: "center", gap: 18, marginTop: 16, paddingTop: 18, borderTop: `1px dashed ${LINE}` }}>
               <img
                 src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&color=1a1512&bgcolor=fffdfa&data=${encodeURIComponent(lienPublic)}`}
                 alt="QR code de la Liste de Voyage"
                 width={80}
                 height={80}
-                style={{ borderRadius: 6, border: "1px solid #e6ddd1", flexShrink: 0 }}
+                style={{ borderRadius: 6, border: `1px solid ${LINE}`, flexShrink: 0 }}
               />
               <div>
-                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 17, fontWeight: 500, marginBottom: 3, color: "#1a1512" }}>
+                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18.5, fontWeight: 500, marginBottom: 3 }}>
                   À afficher le jour J
                 </p>
                 <p style={{ fontSize: 13, color: "#6b6158", lineHeight: 1.5 }}>
@@ -65,28 +67,48 @@ export default async function GererListeDeVoyagePage({
             </div>
           </div>
 
-          <div style={{ padding: "20px 24px" }}>
+          <div style={{ padding: "8px 14px 20px" }}>
             {CATEGORIES.map(({ key, titre }) => {
               const items = elements.filter((el) => el.categorie === key);
               if (items.length === 0) return null;
               return (
-                <div key={key} style={{ marginBottom: 20 }}>
-                  <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18, color: "#a89a8c", marginBottom: 8 }}>{titre}</div>
+                <div key={key}>
+                  <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
+                    {titre}
+                  </div>
                   {items.map((item) => (
-                    <div key={item.id} style={{ display: "flex", justifyContent: "space-between", padding: "8px 4px", fontSize: 14 }}>
-                      <span style={{ color: "#1a1512" }}>{item.nom}</span>
-                      <span style={{ color: "#6b6158" }}>{item.prixIndicatif != null ? `${item.prixIndicatif} €` : ""}</span>
+                    <div key={item.id} style={{ padding: "12px 14px", borderRadius: 4 }}>
+                      <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }}>
+                        <div>
+                          <div style={{ fontSize: 15, fontWeight: 500 }}>{item.nom}</div>
+                          {item.description && <div style={{ fontSize: 13, color: "#8a7f74", marginTop: 2 }}>{item.description}.</div>}
+                        </div>
+                        <div style={{ fontSize: 13.5, color: "#6b6158", flexShrink: 0, whiteSpace: "nowrap" }}>
+                          {item.prixIndicatif != null ? `${item.prixIndicatif} €` : ""}
+                        </div>
+                      </div>
                     </div>
                   ))}
                 </div>
               );
             })}
-            <p style={{ fontSize: 12.5, color: "#a89a8c", lineHeight: 1.5, marginTop: 4 }}>
+            <p style={{ fontSize: 12.5, color: "#a89a8c", lineHeight: 1.5, padding: "10px 14px 0" }}>
               Cette partie est préparée par MamZelles depuis votre carnet. Pour en modifier le contenu, contactez-nous.
             </p>
           </div>
 
           <GererCadeaux slug={slug} cadeauxInitiaux={carnet.listeVoyageCadeaux ?? []} />
+
+          <div style={{ padding: "16px 26px 22px", borderTop: `1px solid ${LINE}` }}>
+            <a
+              href={lienPublic}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ fontSize: 13, color: GOLD, fontWeight: 500, textDecoration: "none" }}
+            >
+              Voir ma Liste de Voyage côté invités →
+            </a>
+          </div>
         </div>
       </div>
     </div>
