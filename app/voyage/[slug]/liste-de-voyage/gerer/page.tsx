@@ -1,6 +1,7 @@
 // app/voyage/[slug]/liste-de-voyage/gerer/page.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/liste-de-voyage/gerer/page.tsx
 import { notFound } from "next/navigation";
+import QRCode from "qrcode";
 import { getCarnetComplet, getElementsListeDeVoyage, type ElementListeDeVoyage } from "@/lib/carnets";
 import GererCadeaux from "./GererCadeaux";
 import CopierLien from "./CopierLien";
@@ -64,6 +65,19 @@ export default async function GererListeDeVoyagePage({
   const elements = getElementsListeDeVoyage(carnet, carnet.destinationsCompletes);
   const lienPublic = `https://mamzellesenvadrouille.com/voyage/${slug}/liste-de-voyage`;
 
+  // QR code généré en local, à chaque affichage : aucune dépendance à un
+  // service externe (pas de risque de panne le jour du mariage).
+  const qrAffichage = await QRCode.toDataURL(lienPublic, {
+    width: 200,
+    margin: 1,
+    color: { dark: "#1a1512", light: "#ffffff" },
+  });
+  const qrImpression = await QRCode.toDataURL(lienPublic, {
+    width: 1000,
+    margin: 2,
+    color: { dark: "#1a1512", light: "#ffffff" },
+  });
+
   const transports = elements.filter((el) => el.categorie === "transport");
   const hebergements = elements.filter((el) => el.categorie === "hebergement");
   const activites = elements.filter((el) => el.categorie === "activite");
@@ -80,36 +94,50 @@ export default async function GererListeDeVoyagePage({
         </h1>
 
         <div style={{ background: "#fffdfa", border: `1px solid ${LINE}`, borderRadius: 6, overflow: "hidden" }}>
-          <div style={{ padding: "24px 26px 20px", borderBottom: `1px solid ${LINE}` }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 500, marginBottom: 6 }}>
-              La Liste de Voyage
+          <div style={{ padding: "32px 28px", borderBottom: `1px solid ${LINE}`, textAlign: "center" }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 600, marginBottom: 24 }}>
+              Partagez votre Liste de Voyage
             </h2>
-            <p style={{ fontSize: 14.5, color: "#6b6158", lineHeight: 1.6 }}>
-              Partagez ce lien avec vos proches : ils choisissent ce qu'ils souhaitent vous offrir, tout part ensuite
-              dans la même cagnotte.
+
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <div style={{ display: "inline-block", padding: 10, background: "#fff", border: `1px solid ${LINE}`, borderRadius: 10, marginBottom: 12 }}>
+                <img
+                  src={qrAffichage}
+                  alt="QR code de la Liste de Voyage"
+                  width={100}
+                  height={100}
+                  style={{ display: "block", borderRadius: 4 }}
+                />
+              </div>
+              <a
+                href={qrImpression}
+                download="qr-code-liste-de-voyage.png"
+                style={{
+                  fontSize: 12.5,
+                  fontWeight: 500,
+                  color: GOLD,
+                  textDecoration: "underline",
+                  textUnderlineOffset: "3px",
+                  marginBottom: 14,
+                }}
+              >
+                Télécharger le QR code
+              </a>
+            </div>
+            <p style={{ fontSize: 13, color: "#8a7f74", lineHeight: 1.5, maxWidth: 260, margin: "0 auto" }}>
+              À afficher le jour J : vos proches scannent, et arrivent directement sur la liste.
             </p>
 
-            <div style={{ marginTop: 18 }}>
-              <CopierLien lien={lienPublic} />
-            </div>
+            <div style={{ height: 1, background: LINE, margin: "22px 0" }} />
 
-            <div style={{ display: "flex", alignItems: "center", gap: 18, marginTop: 16, paddingTop: 18, borderTop: `1px dashed ${LINE}` }}>
-              <img
-                src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&color=1a1512&bgcolor=fffdfa&data=${encodeURIComponent(lienPublic)}`}
-                alt="QR code de la Liste de Voyage"
-                width={80}
-                height={80}
-                style={{ borderRadius: 6, border: `1px solid ${LINE}`, flexShrink: 0 }}
-              />
-              <div>
-                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18.5, fontWeight: 500, marginBottom: 3 }}>
-                  À afficher le jour J
-                </p>
-                <p style={{ fontSize: 13, color: "#6b6158", lineHeight: 1.5 }}>
-                  Un QR code prêt à imprimer, pour que vos invités découvrent la Liste de Voyage directement au mariage.
-                </p>
-              </div>
+            <div style={{ fontSize: 11.5, color: "#a89a8c", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 11 }}>
+              Ou envoyez-leur simplement ce lien :
             </div>
+            <CopierLien lien={lienPublic} />
+
+            <p style={{ fontSize: 13, color: "#6b6158", lineHeight: 1.6, marginTop: 22, textAlign: "left" }}>
+              Vos proches choisissent ce qu'ils souhaitent vous offrir, tout part ensuite dans la même cagnotte.
+            </p>
           </div>
 
           <div style={{ padding: "8px 14px 4px" }}>

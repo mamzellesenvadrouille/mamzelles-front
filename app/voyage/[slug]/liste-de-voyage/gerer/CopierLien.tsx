@@ -18,19 +18,31 @@ export default function CopierLien({ lien }: { lien: string }) {
   }
 
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 18, background: "#f8f4ef", border: "1px solid #e6ddd1", borderRadius: 4, padding: "12px 14px" }}>
-      <div style={{ flex: 1, fontSize: 13, color: "#6b6158", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{lien}</div>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: 8,
+        background: "#f8f4ef",
+        border: "1px solid #e6ddd1",
+        borderRadius: 24,
+        padding: "6px 6px 6px 18px",
+      }}
+    >
+      <div style={{ flex: 1, fontSize: 13, color: "#8a7f74", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", textAlign: "left" }}>
+        {lien}
+      </div>
       <button
         onClick={copier}
         style={{
           fontFamily: "Inter, sans-serif",
           fontSize: 13,
-          fontWeight: 500,
-          background: "#c8956c",
+          fontWeight: 600,
+          background: "#1a1512",
           color: "#fff",
           border: "none",
-          padding: "8px 14px",
-          borderRadius: 4,
+          padding: "10px 18px",
+          borderRadius: 20,
           cursor: "pointer",
           whiteSpace: "nowrap",
         }}
