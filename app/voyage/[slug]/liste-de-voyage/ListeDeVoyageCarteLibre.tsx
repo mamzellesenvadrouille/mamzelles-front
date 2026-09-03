@@ -54,7 +54,9 @@ export default function ListeDeVoyageCarteLibre({
   }
 
   return (
-    <div
+    <>
+      <style>{`.champ-requis::placeholder { color: #1a1512; opacity: 1; }`}</style>
+      <div
       style={{
         background: "linear-gradient(135deg, #fff 0%, #f8f4ef 100%)",
         border: `1px solid ${LINE}`,
@@ -81,6 +83,7 @@ export default function ListeDeVoyageCarteLibre({
             setPrenom(e.target.value);
             if (prenomManquant) setPrenomManquant(false);
           }}
+          className={prenomManquant ? "champ-requis" : undefined}
           style={{
             flex: 1,
             height: 36,
@@ -90,7 +93,7 @@ export default function ListeDeVoyageCarteLibre({
             padding: "0 12px",
             border: prenomManquant ? `1.5px solid ${GOLD}` : `1px solid ${LINE}`,
             borderRadius: 4,
-            background: prenomManquant ? "#fdf6ee" : "#f8f4ef",
+            background: "#f8f4ef",
             color: DARK,
             outline: "none",
           }}
@@ -154,6 +157,7 @@ export default function ListeDeVoyageCarteLibre({
           {enCours ? "..." : "Participer"}
         </button>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

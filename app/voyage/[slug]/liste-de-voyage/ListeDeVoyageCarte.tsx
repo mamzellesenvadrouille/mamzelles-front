@@ -88,7 +88,9 @@ export default function ListeDeVoyageCarte({
   }
 
   return (
-    <div
+    <>
+      <style>{`.champ-requis::placeholder { color: #1a1512; opacity: 1; }`}</style>
+      <div
       style={{
         background: financee ? "#f5f1e9" : "#fffdfa",
         border: `1px solid ${LINE}`,
@@ -167,6 +169,7 @@ export default function ListeDeVoyageCarte({
                 setPrenom(e.target.value);
                 if (prenomManquant) setPrenomManquant(false);
               }}
+              className={prenomManquant ? "champ-requis" : undefined}
               style={{
                 flex: 1,
                 height: 36,
@@ -176,7 +179,7 @@ export default function ListeDeVoyageCarte({
                 padding: "0 12px",
                 border: prenomManquant ? `1.5px solid ${GOLD}` : `1px solid ${LINE}`,
                 borderRadius: 4,
-                background: prenomManquant ? "#fdf6ee" : "#f8f4ef",
+                background: "#f8f4ef",
                 color: DARK,
                 outline: "none",
               }}
@@ -233,6 +236,7 @@ export default function ListeDeVoyageCarte({
           </div>
         </>
       )}
-    </div>
+      </div>
+    </>
   );
 }
