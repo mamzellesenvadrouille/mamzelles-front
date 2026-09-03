@@ -193,7 +193,7 @@ export default function ListeDeVoyageCarte({
                 height: 36,
                 boxSizing: "border-box",
                 fontFamily: "Inter, sans-serif",
-                fontSize: 14,
+                fontSize: 13,
                 padding: "0 12px",
                 border: `1px solid ${LINE}`,
                 borderRadius: 4,
