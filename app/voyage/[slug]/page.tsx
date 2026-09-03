@@ -12,6 +12,7 @@ import ReservationList from "./ReservationList";
 import ContactsUrgence from "./ContactsUrgence";
 import NotesSection from "./NotesSection";
 import ScrollToTop from "./ScrollToTop";
+import ListeDeVoyageBanner from "./ListeDeVoyageBanner";
 import styles from "./carnet.module.css";
 
 // Sans ça, Next.js génère cette page une seule fois au build et la sert
@@ -209,6 +210,8 @@ export default async function CarnetPage({
           dateDebutVoyage={carnet.dates.debut}
         />
       </section>
+
+      <ListeDeVoyageBanner slug={carnet.slug} actif={!!carnet.onParticipeUrl} />
 
       {carnet.reservations.length > 0 && (
         <section className={styles.wrap}>
