@@ -124,7 +124,7 @@ export default async function GererListeDeVoyagePage({
                 Télécharger le QR code
               </a>
             </div>
-            <p style={{ fontSize: 13, color: "#8a7f74", lineHeight: 1.5, maxWidth: 260, margin: "0 auto" }}>
+            <p style={{ fontSize: 13, color: "#8a7f74", lineHeight: 1.5, maxWidth: 320, margin: "0 auto" }}>
               À afficher le jour J : vos proches scannent, et arrivent directement sur la liste.
             </p>
 
@@ -135,7 +135,7 @@ export default async function GererListeDeVoyagePage({
             </div>
             <CopierLien lien={lienPublic} />
 
-            <p style={{ fontSize: 13, color: "#6b6158", lineHeight: 1.6, marginTop: 22, textAlign: "left" }}>
+            <p style={{ fontSize: 13, color: "#6b6158", lineHeight: 1.6, marginTop: 22, maxWidth: 320, marginLeft: "auto", marginRight: "auto" }}>
               Vos proches choisissent ce qu'ils souhaitent vous offrir, tout part ensuite dans la même cagnotte.
             </p>
           </div>
