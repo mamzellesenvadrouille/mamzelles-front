@@ -1,7 +1,7 @@
 // app/voyage/[slug]/liste-de-voyage/gerer/page.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/liste-de-voyage/gerer/page.tsx
 import { notFound } from "next/navigation";
-import { getCarnetComplet, getElementsListeDeVoyage } from "@/lib/carnets";
+import { getCarnetComplet, getElementsListeDeVoyage, type ElementListeDeVoyage } from "@/lib/carnets";
 import GererCadeaux from "./GererCadeaux";
 import CopierLien from "./CopierLien";
 
@@ -11,8 +11,40 @@ const GOLD = "#c8956c";
 const DARK = "#1a1512";
 const CREAM = "#f8f4ef";
 const LINE = "#e6ddd1";
+const FUNDED = "#8a9a7e";
 
-const CATEGORIES: { key: "transport"; titre: string }[] = [{ key: "transport", titre: "Transports" }];
+function LigneElement({ item }: { item: ElementListeDeVoyage }) {
+  const reuni = item.montantReuni ?? 0;
+  const prix = item.prixIndicatif;
+  const financee = prix != null && reuni >= prix;
+  const pourcentage = prix && prix > 0 ? Math.min(100, Math.round((reuni / prix) * 100)) : 0;
+
+  let meta: string;
+  if (financee) meta = "Financé";
+  else if (reuni === 0) meta = "Pas encore de participation";
+  else meta = `${reuni} € réunis`;
+
+  return (
+    <div style={{ marginBottom: 10 }}>
+      <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12, marginBottom: 8 }}>
+        <div>
+          <div style={{ fontSize: 15, fontWeight: 500 }}>{item.nom}</div>
+          <div style={{ fontSize: 12.5, color: financee ? FUNDED : "#8a7f74", marginTop: 2 }}>{meta}</div>
+        </div>
+        {prix != null && (
+          <div style={{ fontSize: 13.5, color: "#6b6158", flexShrink: 0, whiteSpace: "nowrap" }}>
+            {reuni} € / {prix} €
+          </div>
+        )}
+      </div>
+      {prix != null && (
+        <div style={{ height: 5, background: LINE, borderRadius: 3, overflow: "hidden" }}>
+          <div style={{ height: "100%", width: `${pourcentage}%`, background: financee ? FUNDED : GOLD, borderRadius: 3 }} />
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default async function GererListeDeVoyagePage({
   params,
@@ -24,8 +56,15 @@ export default async function GererListeDeVoyagePage({
   if (!carnet) notFound();
   if (!carnet.onParticipeUrl) notFound();
 
-  const elements = getElementsListeDeVoyage(carnet);
+  const elements = getElementsListeDeVoyage(carnet, carnet.destinationsCompletes);
   const lienPublic = `https://mamzellesenvadrouille.com/voyage/${slug}/liste-de-voyage`;
+
+  const transports = elements.filter((el) => el.categorie === "transport");
+  const hebergements = elements.filter((el) => el.categorie === "hebergement");
+  const activites = elements.filter((el) => el.categorie === "activite");
+
+  const totalReuni = elements.reduce((s, el) => s + (el.montantReuni ?? 0), 0) + (carnet.contributionLibreReunie ?? 0);
+  const totalParticipations = elements.filter((el) => (el.montantReuni ?? 0) > 0).length;
 
   return (
     <div style={{ background: CREAM, minHeight: "100vh", padding: "48px 24px 80px", fontFamily: "Inter, sans-serif", color: DARK }}>
@@ -67,76 +106,80 @@ export default async function GererListeDeVoyagePage({
             </div>
           </div>
 
-          <div style={{ padding: "8px 14px 20px" }}>
-            {CATEGORIES.map(({ key, titre }) => {
-              const items = elements.filter((el) => el.categorie === key);
-              if (items.length === 0) return null;
-              return (
-                <div key={key}>
-                  <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
-                    {titre}
-                  </div>
-                  {items.map((item) => {
-                    const reuni = item.montantReuni ?? 0;
-                    const pourcentage = item.prixIndicatif && item.prixIndicatif > 0 ? Math.min(100, Math.round((reuni / item.prixIndicatif) * 100)) : 0;
-                    return (
-                      <div key={item.id} style={{ padding: "12px 14px", borderRadius: 4 }}>
-                        <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12, marginBottom: item.prixIndicatif != null ? 8 : 0 }}>
-                          <div>
-                            <div style={{ fontSize: 15, fontWeight: 500 }}>{item.nom}</div>
-                            {item.description && <div style={{ fontSize: 13, color: "#8a7f74", marginTop: 2 }}>{item.description}.</div>}
-                          </div>
-                          <div style={{ fontSize: 13.5, color: "#6b6158", flexShrink: 0, whiteSpace: "nowrap" }}>
-                            {item.prixIndicatif != null ? `${reuni} € / ${item.prixIndicatif} €` : ""}
-                          </div>
-                        </div>
-                        {item.prixIndicatif != null && (
-                          <div style={{ height: 5, background: LINE, borderRadius: 3, overflow: "hidden" }}>
-                            <div style={{ height: "100%", width: `${pourcentage}%`, background: GOLD, borderRadius: 3 }} />
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
+          <div style={{ padding: "8px 14px 4px" }}>
+            {transports.length > 0 && (
+              <>
+                <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
+                  Transports
                 </div>
-              );
-            })}
-            <p style={{ fontSize: 12.5, color: "#a89a8c", lineHeight: 1.5, padding: "10px 14px 0" }}>
-              Cette partie est préparée par MamZelles depuis votre carnet. Pour en modifier le contenu, contactez-nous.
-            </p>
-          </div>
+                {transports.map((item) => (
+                  <LigneElement key={item.id} item={item} />
+                ))}
+              </>
+            )}
 
-          <div style={{ padding: "18px 24px 0" }}>
-            <div style={{ fontSize: 13.5, color: "#a89a8c" }}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" style={{ verticalAlign: -1, marginRight: 4 }}>
-                <path
-                  d="M20 12V22H4V12M22 7H2V12H22V7ZM12 22V7M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7ZM12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z"
-                  stroke={GOLD}
-                  strokeWidth={1.6}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              Pour préparer notre voyage
+            {hebergements.length > 0 && (
+              <>
+                <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
+                  Hébergements
+                </div>
+                {hebergements.map((item) => (
+                  <LigneElement key={item.id} item={item} />
+                ))}
+              </>
+            )}
+
+            {activites.length > 0 && (
+              <>
+                <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
+                  Activités
+                </div>
+                {activites.map((item) => (
+                  <LigneElement key={item.id} item={item} />
+                ))}
+              </>
+            )}
+
+            <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
+              Essentiels du voyage
             </div>
           </div>
 
           <GererCadeaux slug={slug} cadeauxInitiaux={carnet.listeVoyageCadeaux ?? []} />
 
-          <div style={{ padding: "16px 26px 22px", borderTop: `1px solid ${LINE}`, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10 }}>
-            <div style={{ fontSize: 13.5, color: "#6b6158" }}>
-              <strong style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 17, color: DARK }}>
-                {elements.reduce((s, el) => s + (el.montantReuni ?? 0), 0) + (carnet.contributionLibreReunie ?? 0)} €
-              </strong>{" "}
-              réunis au total{carnet.contributionLibreReunie ? ` (dont ${carnet.contributionLibreReunie} € libres)` : ""}
+          <div style={{ padding: "14px 24px 4px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <div style={{ fontSize: 15, fontWeight: 500 }}>Un montant libre</div>
+              <div style={{ fontSize: 13.5, color: "#6b6158" }}>{carnet.contributionLibreReunie ?? 0} € réunis</div>
+            </div>
+            <div style={{ fontSize: 12.5, color: "#8a7f74", marginTop: 2, paddingBottom: 18 }}>
+              Contributions libres, sans élément précis.
+            </div>
+          </div>
+
+          <div
+            style={{
+              padding: "20px 26px 24px",
+              borderTop: `1px solid ${LINE}`,
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              flexWrap: "wrap",
+              gap: 10,
+              background: CREAM,
+            }}
+          >
+            <div style={{ fontSize: 13.5, color: "#6b6158", lineHeight: 1.5 }}>
+              <strong style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 17, color: DARK }}>{totalReuni} €</strong>{" "}
+              réunis · {totalParticipations} élément{totalParticipations > 1 ? "s" : ""} avec participation
             </div>
             <a
               href={lienPublic}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ fontSize: 13, color: GOLD, fontWeight: 500, textDecoration: "none" }}
+              style={{ fontSize: 13, color: GOLD, border: `1px solid #e4c9ae`, padding: "8px 16px", borderRadius: 20, textDecoration: "none", fontWeight: 500, whiteSpace: "nowrap" }}
             >
-              Voir ma Liste de Voyage côté invités →
+              Voir côté invités →
             </a>
           </div>
         </div>

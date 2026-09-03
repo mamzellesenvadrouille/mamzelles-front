@@ -92,6 +92,11 @@ export interface CarnetDestinationRef {
   hebergementsChoisis?: string[]; // noms des hébergements sélectionnés
   restaurantsChoisis?: string[]; // noms des restaurants sélectionnés
   activitesChoisies?: string[]; // noms des activités sélectionnées
+  // Statut "offrable" (Liste de Voyage), prix indicatif et montant réuni,
+  // propres à CE carnet — jamais stockés sur la fiche destination partagée,
+  // sinon ça s'appliquerait à tous les autres clients qui utilisent la même destination.
+  listeVoyageHebergements?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number; montantReuni?: number } };
+  listeVoyageActivites?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number; montantReuni?: number } };
 }
 
 // Une destination une fois résolue pour un carnet précis (avec son nombre de nuits pour CE voyage)
@@ -494,7 +499,7 @@ export interface ElementListeDeVoyage {
   prixIndicatif?: number;
   montantReuni?: number;
   url?: string;
-  categorie: "transport" | "cadeau";
+  categorie: "transport" | "hebergement" | "activite" | "cadeau";
 }
 
 // Idée de cadeau ajoutée librement par les mariés eux-mêmes (pas depuis
@@ -509,15 +514,18 @@ export interface ElementCadeauCustom {
 }
 
 // Rassemble tous les éléments cochés "offrable" d'un carnet (réservations,
-// et les idées de cadeaux ajoutées par les mariés) en une seule liste, prête
-// à afficher sur la page publique de la Liste de Voyage. Ne modifie rien, lecture seule.
-export function getElementsListeDeVoyage(carnet: Carnet): ElementListeDeVoyage[] {
+// hébergements, activités, et les idées de cadeaux ajoutées par les mariés)
+// en une seule liste, prête à afficher sur la Liste de Voyage. Lecture seule.
+export function getElementsListeDeVoyage(
+  carnet: Carnet,
+  destinationsCompletes: DestinationResolue[]
+): ElementListeDeVoyage[] {
   const elements: ElementListeDeVoyage[] = [];
 
   for (const item of carnet.reservations) {
     if (!item.offrable) continue;
     elements.push({
-      id: `transport-${item.label}`,
+      id: `transport::${item.label}`,
       nom: item.label,
       prixIndicatif: item.prixIndicatif,
       montantReuni: item.montantReuni,
@@ -526,9 +534,43 @@ export function getElementsListeDeVoyage(carnet: Carnet): ElementListeDeVoyage[]
     });
   }
 
+  for (const ref of carnet.destinations) {
+    const destination = destinationsCompletes.find((d) => d.id === ref.destinationId);
+    if (!destination) continue;
+
+    for (const [nom, info] of Object.entries(ref.listeVoyageHebergements ?? {})) {
+      if (!info.offrable) continue;
+      const hebergement = destination.hebergements?.find((h) => h.nom === nom);
+      elements.push({
+        id: `hebergement::${destination.id}::${nom}`,
+        nom,
+        description: hebergement?.description,
+        photo: hebergement?.photo,
+        prixIndicatif: info.prixIndicatif,
+        montantReuni: info.montantReuni,
+        categorie: "hebergement",
+      });
+    }
+
+    for (const [nom, info] of Object.entries(ref.listeVoyageActivites ?? {})) {
+      if (!info.offrable) continue;
+      const activite = destination.activites.find((a) => a.nom === nom);
+      elements.push({
+        id: `activite::${destination.id}::${nom}`,
+        nom,
+        description: activite?.description,
+        photo: activite?.photo,
+        prixIndicatif: info.prixIndicatif,
+        montantReuni: info.montantReuni,
+        url: activite?.lienReservation,
+        categorie: "activite",
+      });
+    }
+  }
+
   for (const cadeau of carnet.listeVoyageCadeaux ?? []) {
     elements.push({
-      id: `cadeau-${cadeau.id}`,
+      id: `cadeau::${cadeau.id}`,
       nom: cadeau.nom,
       description: cadeau.description,
       prixIndicatif: cadeau.prixIndicatif,
@@ -574,16 +616,27 @@ export async function ajouterContributionListeDeVoyage(
   const carnet = await getCarnet(slug);
   if (!carnet) return null;
 
+  const [type, ...reste] = elementId.split("::");
   let misAJour: Carnet;
 
-  if (elementId.startsWith("transport-")) {
-    const label = elementId.slice("transport-".length);
+  if (type === "transport") {
+    const label = reste.join("::");
     const reservations = carnet.reservations.map((r) =>
       r.label === label ? { ...r, montantReuni: (r.montantReuni ?? 0) + montant } : r
     );
     misAJour = { ...carnet, reservations };
-  } else if (elementId.startsWith("cadeau-")) {
-    const id = elementId.slice("cadeau-".length);
+  } else if (type === "hebergement" || type === "activite") {
+    const [destinationId, nom] = reste;
+    const champ = type === "hebergement" ? "listeVoyageHebergements" : "listeVoyageActivites";
+    const destinations = carnet.destinations.map((d) => {
+      if (d.destinationId !== destinationId) return d;
+      const actuel = d[champ] ?? {};
+      const entree = actuel[nom] ?? {};
+      return { ...d, [champ]: { ...actuel, [nom]: { ...entree, montantReuni: (entree.montantReuni ?? 0) + montant } } };
+    });
+    misAJour = { ...carnet, destinations };
+  } else if (type === "cadeau") {
+    const id = reste.join("::");
     const listeVoyageCadeaux = (carnet.listeVoyageCadeaux ?? []).map((c) =>
       c.id === id ? { ...c, montantReuni: (c.montantReuni ?? 0) + montant } : c
     );

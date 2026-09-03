@@ -10,7 +10,6 @@ export const dynamic = "force-dynamic";
 const GOLD = "#c8956c";
 const DARK = "#1a1512";
 const CREAM = "#f8f4ef";
-const WHITE = "#fffdfa";
 const LINE = "#e6ddd1";
 
 const IconAvion = () => (
@@ -54,11 +53,6 @@ const IconCoeur = () => (
   </svg>
 );
 
-const CATEGORIES: { key: "transport" | "cadeau"; titre: string; eyebrow: string; icone: () => React.JSX.Element }[] = [
-  { key: "transport", titre: "Transports", eyebrow: "Pour vivre notre voyage", icone: IconAvion },
-  { key: "cadeau", titre: "Essentiels du voyage", eyebrow: "Pour préparer notre voyage", icone: IconCadeau },
-];
-
 export default async function ListeDeVoyagePage({
   params,
 }: {
@@ -68,11 +62,16 @@ export default async function ListeDeVoyagePage({
   const carnet = await getCarnetComplet(slug);
   if (!carnet) notFound();
 
-  const elements = getElementsListeDeVoyage(carnet);
-  const totalReuni = elements.reduce((somme, el) => somme + (el.montantReuni ?? 0), 0) + (carnet.contributionLibreReunie ?? 0);
+  const elements = getElementsListeDeVoyage(carnet, carnet.destinationsCompletes);
   if (!carnet.onParticipeUrl || elements.length === 0) notFound();
 
+  const totalReuni = elements.reduce((s, el) => s + (el.montantReuni ?? 0), 0) + (carnet.contributionLibreReunie ?? 0);
   const prenoms = carnet.client.prenoms;
+
+  const transports = elements.filter((el) => el.categorie === "transport");
+  const hebergements = elements.filter((el) => el.categorie === "hebergement");
+  const activites = elements.filter((el) => el.categorie === "activite");
+  const equipement = elements.filter((el) => el.categorie === "cadeau");
 
   return (
     <div style={{ background: CREAM, minHeight: "100vh", fontFamily: "Inter, sans-serif", color: DARK }}>
@@ -142,33 +141,87 @@ export default async function ListeDeVoyagePage({
 
       {/* Catégories */}
       <div style={{ maxWidth: 560, margin: "0 auto", padding: "44px 24px 8px" }}>
-        {CATEGORIES.map(({ key, titre, eyebrow, icone: Icone }) => {
-          const items = elements.filter((el) => el.categorie === key);
-          if (items.length === 0) return null;
-          return (
-            <div key={key} style={{ marginBottom: 44 }}>
-              <div style={{ fontSize: 14.5, color: "#a89a8c", marginBottom: 10 }}>
-                <Icone />
-                {eyebrow}
-              </div>
+        {(transports.length > 0 || hebergements.length > 0 || activites.length > 0) && (
+          <div style={{ fontSize: 14.5, color: "#a89a8c", marginBottom: 10 }}>
+            <IconAvion />
+            Pour vivre notre voyage
+          </div>
+        )}
+
+        {transports.length > 0 && (
+          <div style={{ marginBottom: 44 }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 18 }}>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500 }}>Transports</h2>
+              <span style={{ fontSize: 14, color: "#a89a8c" }}>
+                {transports.length} élément{transports.length > 1 ? "s" : ""}
+              </span>
+            </div>
+            {transports.map((item) => (
+              <ListeDeVoyageCarte key={item.id} slug={slug} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
+            ))}
+          </div>
+        )}
+
+        {hebergements.length > 0 && (
+          <div style={{ marginBottom: 44 }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 18 }}>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500 }}>Hébergements</h2>
+              <span style={{ fontSize: 14, color: "#a89a8c" }}>
+                {hebergements.length} élément{hebergements.length > 1 ? "s" : ""}
+              </span>
+            </div>
+            {hebergements.map((item) => (
+              <ListeDeVoyageCarte key={item.id} slug={slug} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
+            ))}
+          </div>
+        )}
+
+        {activites.length > 0 && (
+          <div style={{ marginBottom: 44 }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 18 }}>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500 }}>Activités</h2>
+              <span style={{ fontSize: 14, color: "#a89a8c" }}>
+                {activites.length} élément{activites.length > 1 ? "s" : ""}
+              </span>
+            </div>
+            {activites.map((item) => (
+              <ListeDeVoyageCarte key={item.id} slug={slug} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
+            ))}
+          </div>
+        )}
+
+        {equipement.length > 0 && (
+          <>
+            <div style={{ fontSize: 14.5, color: "#a89a8c", marginBottom: 10 }}>
+              <IconCadeau />
+              Pour préparer notre voyage
+            </div>
+            <div style={{ marginBottom: 44 }}>
               <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 18 }}>
-                <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500 }}>{titre}</h2>
+                <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500 }}>Équipement</h2>
                 <span style={{ fontSize: 14, color: "#a89a8c" }}>
-                  {items.length} élément{items.length > 1 ? "s" : ""}
+                  {equipement.length} élément{equipement.length > 1 ? "s" : ""}
                 </span>
               </div>
-              {items.map((item) => (
+              <p style={{ fontSize: 14.5, color: "#6b6158", lineHeight: 1.6, margin: "-8px 0 18px" }}>
+                Quelques indispensables qui nous accompagneront pendant notre lune de miel.
+              </p>
+              {equipement.map((item) => (
                 <ListeDeVoyageCarte key={item.id} slug={slug} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
               ))}
             </div>
-          );
-        })}
+          </>
+        )}
 
+        <div style={{ fontSize: 14.5, color: "#a89a8c", marginBottom: 10 }}>
+          <IconEtoile />
+          Une petite folie pour le voyage
+        </div>
         <div style={{ marginBottom: 44 }}>
-          <div style={{ fontSize: 14.5, color: "#a89a8c", marginBottom: 10 }}>
-            <IconEtoile />À vous de choisir
+          <div style={{ marginBottom: 18 }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500 }}>À vous de choisir</h2>
           </div>
-          <ListeDeVoyageCarteLibre slug={slug} onParticipeUrl={carnet.onParticipeUrl!} />
+          <ListeDeVoyageCarteLibre slug={slug} onParticipeUrl={carnet.onParticipeUrl} montantReuniInitial={carnet.contributionLibreReunie ?? 0} />
         </div>
       </div>
 

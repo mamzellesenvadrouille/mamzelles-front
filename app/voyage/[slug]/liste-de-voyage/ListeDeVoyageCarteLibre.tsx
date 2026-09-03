@@ -8,8 +8,17 @@ const GOLD = "#c8956c";
 const DARK = "#1a1512";
 const LINE = "#e6ddd1";
 
-export default function ListeDeVoyageCarteLibre({ slug, onParticipeUrl }: { slug: string; onParticipeUrl: string }) {
+export default function ListeDeVoyageCarteLibre({
+  slug,
+  onParticipeUrl,
+  montantReuniInitial,
+}: {
+  slug: string;
+  onParticipeUrl: string;
+  montantReuniInitial: number;
+}) {
   const [montant, setMontant] = useState("");
+  const [montantReuni, setMontantReuni] = useState(montantReuniInitial);
   const [enCours, setEnCours] = useState(false);
 
   async function participer() {
@@ -24,6 +33,7 @@ export default function ListeDeVoyageCarteLibre({ slug, onParticipeUrl }: { slug
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ slug, elementId: "libre", montant: valeur }),
         });
+        setMontantReuni((prev) => prev + valeur);
         setMontant("");
       } catch {
         // pas grave
@@ -50,6 +60,10 @@ export default function ListeDeVoyageCarteLibre({ slug, onParticipeUrl }: { slug
         Un montant libre
       </h3>
       <div style={{ fontSize: 14, color: "#8a7f74", marginBottom: 14 }}>Pour rendre notre voyage encore plus beau.</div>
+
+      <div style={{ fontSize: 13.5, color: DARK, marginBottom: 12 }}>
+        <strong>{montantReuni} €</strong> déjà réunis
+      </div>
 
       <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
         <input
