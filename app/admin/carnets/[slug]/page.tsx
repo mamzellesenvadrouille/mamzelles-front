@@ -159,6 +159,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   const [destinationsDispo, setDestinationsDispo] = useState<Destination[]>([]);
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
+  const [reinitialisation, setReinitialisation] = useState(false);
   const [dragIndexDest, setDragIndexDest] = useState<number | null>(null);
   const [dragIndexConseil, setDragIndexConseil] = useState<number | null>(null);
   const [dragIndexBudget, setDragIndexBudget] = useState<number | null>(null);
@@ -285,6 +286,23 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
       router.push("/admin/carnets");
     } else {
       alert("Erreur lors de l'enregistrement.");
+    }
+  }
+
+  async function reinitialiserParticipations() {
+    if (!carnet.slug) return;
+    if (!confirm("Remettre à zéro toutes les participations (montants et prénoms) de la Liste de Voyage ?")) return;
+    setReinitialisation(true);
+    const res = await fetch("/api/liste-de-voyage-reset", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ slug: carnet.slug }),
+    });
+    setReinitialisation(false);
+    if (res.ok) {
+      alert("Participations réinitialisées. Recharge la page pour voir le résultat.");
+    } else {
+      alert("Erreur lors de la réinitialisation.");
     }
   }
 
@@ -1023,14 +1041,32 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                   />
                 </div>
                 {carnet.onParticipeUrl && (
-                  <a
-                    href={`/voyage/${carnet.slug}/liste-de-voyage`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#c8956c", fontWeight: 600 }}
-                  >
-                    Voir la Liste de Voyage →
-                  </a>
+                  <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
+                    <a
+                      href={`/voyage/${carnet.slug}/liste-de-voyage`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#c8956c", fontWeight: 600 }}
+                    >
+                      Voir la Liste de Voyage →
+                    </a>
+                    <button
+                      onClick={reinitialiserParticipations}
+                      disabled={reinitialisation}
+                      style={{
+                        fontFamily: "Inter, sans-serif",
+                        fontSize: 12.5,
+                        color: "#b0554a",
+                        background: "none",
+                        border: "1px solid #e3c4bd",
+                        borderRadius: 4,
+                        padding: "6px 12px",
+                        cursor: "pointer",
+                      }}
+                    >
+                      {reinitialisation ? "..." : "Réinitialiser les participations (test)"}
+                    </button>
+                  </div>
                 )}
               </div>
 

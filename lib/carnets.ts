@@ -684,3 +684,45 @@ export async function ajouterContributionListeDeVoyage(
   await saveCarnet(misAJour);
   return misAJour;
 }
+
+// Remet à zéro toutes les participations de la Liste de Voyage d'un carnet
+// (montants et prénoms), sans toucher aux prix indicatifs ni au statut
+// "offrable". Utile pour tester/faire une démo sans laisser de fausses données.
+export async function reinitialiserParticipationsListeDeVoyage(slug: string): Promise<Carnet | null> {
+  const carnet = await getCarnet(slug);
+  if (!carnet) return null;
+
+  const reservations = carnet.reservations.map((r) =>
+    r.offrable ? { ...r, montantReuni: 0, contributions: [] } : r
+  );
+
+  const destinations = carnet.destinations.map((d) => {
+    const viderChamp = (champ?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number; montantReuni?: number; contributions?: Contribution[] } }) => {
+      if (!champ) return champ;
+      const copie: typeof champ = {};
+      for (const [nom, info] of Object.entries(champ)) {
+        copie[nom] = info.offrable ? { ...info, montantReuni: 0, contributions: [] } : info;
+      }
+      return copie;
+    };
+    return {
+      ...d,
+      listeVoyageHebergements: viderChamp(d.listeVoyageHebergements),
+      listeVoyageActivites: viderChamp(d.listeVoyageActivites),
+    };
+  });
+
+  const listeVoyageCadeaux = (carnet.listeVoyageCadeaux ?? []).map((c) => ({ ...c, montantReuni: 0, contributions: [] }));
+
+  const misAJour: Carnet = {
+    ...carnet,
+    reservations,
+    destinations,
+    listeVoyageCadeaux,
+    contributionLibreReunie: 0,
+    contributionsLibres: [],
+  };
+
+  await saveCarnet(misAJour);
+  return misAJour;
+}
