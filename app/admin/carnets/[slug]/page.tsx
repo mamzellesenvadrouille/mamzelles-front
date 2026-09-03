@@ -430,13 +430,16 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                           />
                           Offrable (Liste de Voyage)
                           {offrableInfo?.offrable && (
-                            <input
-                              type="number"
-                              placeholder="Prix indicatif €"
-                              style={{ ...adminStyles.input, width: 120 }}
-                              value={offrableInfo?.prixIndicatif ?? ""}
-                              onChange={(e) => updatePrixOffrable(d.id, "listeVoyageHebergements", nom, Number(e.target.value))}
-                            />
+                            <span style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
+                              <input
+                                type="number"
+                                placeholder="Prix indicatif"
+                                style={{ ...adminStyles.input, width: 100 }}
+                                value={offrableInfo?.prixIndicatif ?? ""}
+                                onChange={(e) => updatePrixOffrable(d.id, "listeVoyageHebergements", nom, Number(e.target.value))}
+                              />
+                              €
+                            </span>
                           )}
                         </label>
                       )}
@@ -494,13 +497,16 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                           />
                           Offrable (Liste de Voyage)
                           {offrableInfo?.offrable && (
-                            <input
-                              type="number"
-                              placeholder="Prix indicatif €"
-                              style={{ ...adminStyles.input, width: 120 }}
-                              value={offrableInfo?.prixIndicatif ?? ""}
-                              onChange={(e) => updatePrixOffrable(d.id, "listeVoyageActivites", nom, Number(e.target.value))}
-                            />
+                            <span style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
+                              <input
+                                type="number"
+                                placeholder="Prix indicatif"
+                                style={{ ...adminStyles.input, width: 100 }}
+                                value={offrableInfo?.prixIndicatif ?? ""}
+                                onChange={(e) => updatePrixOffrable(d.id, "listeVoyageActivites", nom, Number(e.target.value))}
+                              />
+                              €
+                            </span>
                           )}
                         </label>
                       )}
@@ -1008,17 +1014,20 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                       />
                       Offrable (Liste de Voyage)
                       {item.offrable && (
-                        <input
-                          type="number"
-                          placeholder="Prix indicatif €"
-                          style={{ ...adminStyles.input, width: 130, marginLeft: 4 }}
-                          value={item.prixIndicatif ?? ""}
-                          onChange={(e) => {
-                            const copy = [...carnet.reservations];
-                            copy[i] = { ...copy[i], prixIndicatif: Number(e.target.value) };
-                            update("reservations", copy);
-                          }}
-                        />
+                        <span style={{ display: "inline-flex", alignItems: "center", gap: 4, marginLeft: 4 }}>
+                          <input
+                            type="number"
+                            placeholder="Prix indicatif"
+                            style={{ ...adminStyles.input, width: 110 }}
+                            value={item.prixIndicatif ?? ""}
+                            onChange={(e) => {
+                              const copy = [...carnet.reservations];
+                              copy[i] = { ...copy[i], prixIndicatif: Number(e.target.value) };
+                              update("reservations", copy);
+                            }}
+                          />
+                          €
+                        </span>
                       )}
                     </label>
                   </div>
