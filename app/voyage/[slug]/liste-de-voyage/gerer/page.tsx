@@ -42,6 +42,11 @@ function LigneElement({ item }: { item: ElementListeDeVoyage }) {
           <div style={{ height: "100%", width: `${pourcentage}%`, background: financee ? FUNDED : GOLD, borderRadius: 3 }} />
         </div>
       )}
+      {item.contributions && item.contributions.length > 0 && (
+        <div style={{ fontSize: 12, color: "#a89a8c", marginTop: 6 }}>
+          Offert par {item.contributions.map((c) => c.prenom || "Anonyme").join(", ")}
+        </div>
+      )}
     </div>
   );
 }
@@ -147,14 +152,17 @@ export default async function GererListeDeVoyagePage({
 
           <GererCadeaux slug={slug} cadeauxInitiaux={carnet.listeVoyageCadeaux ?? []} />
 
-          <div style={{ padding: "14px 24px 4px" }}>
+          <div style={{ padding: "14px 24px 18px" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <div style={{ fontSize: 15, fontWeight: 500 }}>Un montant libre</div>
               <div style={{ fontSize: 13.5, color: "#6b6158" }}>{carnet.contributionLibreReunie ?? 0} € réunis</div>
             </div>
-            <div style={{ fontSize: 12.5, color: "#8a7f74", marginTop: 2, paddingBottom: 18 }}>
-              Contributions libres, sans élément précis.
-            </div>
+            <div style={{ fontSize: 12.5, color: "#8a7f74", marginTop: 2 }}>Contributions libres, sans élément précis.</div>
+            {carnet.contributionsLibres && carnet.contributionsLibres.length > 0 && (
+              <div style={{ fontSize: 12, color: "#a89a8c", marginTop: 6, paddingBottom: 18 }}>
+                Offert par {carnet.contributionsLibres.map((c) => c.prenom || "Anonyme").join(", ")}
+              </div>
+            )}
           </div>
 
           <div

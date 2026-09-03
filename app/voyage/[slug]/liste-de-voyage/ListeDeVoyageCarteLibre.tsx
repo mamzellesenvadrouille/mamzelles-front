@@ -18,6 +18,7 @@ export default function ListeDeVoyageCarteLibre({
   montantReuniInitial: number;
 }) {
   const [montant, setMontant] = useState("");
+  const [prenom, setPrenom] = useState("");
   const [montantReuni, setMontantReuni] = useState(montantReuniInitial);
   const [enCours, setEnCours] = useState(false);
 
@@ -31,10 +32,11 @@ export default function ListeDeVoyageCarteLibre({
         await fetch("/api/liste-de-voyage-contribution", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ slug, elementId: "libre", montant: valeur }),
+          body: JSON.stringify({ slug, elementId: "libre", montant: valeur, prenom: prenom.trim() || undefined }),
         });
         setMontantReuni((prev) => prev + valeur);
         setMontant("");
+        setPrenom("");
       } catch {
         // pas grave
       } finally {
@@ -63,6 +65,28 @@ export default function ListeDeVoyageCarteLibre({
 
       <div style={{ fontSize: 13.5, color: DARK, marginBottom: 12 }}>
         <strong>{montantReuni} €</strong> déjà réunis
+      </div>
+
+      <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8 }}>
+        <input
+          type="text"
+          placeholder="Votre prénom (optionnel)"
+          value={prenom}
+          onChange={(e) => setPrenom(e.target.value)}
+          style={{
+            flex: 1,
+            height: 34,
+            boxSizing: "border-box",
+            fontFamily: "Inter, sans-serif",
+            fontSize: 13,
+            padding: "0 12px",
+            border: `1px solid ${LINE}`,
+            borderRadius: 4,
+            background: "#f8f4ef",
+            color: DARK,
+            outline: "none",
+          }}
+        />
       </div>
 
       <div style={{ display: "flex", gap: 8, alignItems: "center" }}>

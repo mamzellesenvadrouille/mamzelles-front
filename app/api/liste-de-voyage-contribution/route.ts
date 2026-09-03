@@ -6,13 +6,13 @@ import { ajouterContributionListeDeVoyage } from "@/lib/carnets";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { slug, elementId, montant } = body;
+    const { slug, elementId, montant, prenom } = body;
 
     if (!slug || !elementId || typeof montant !== "number" || montant <= 0) {
       return NextResponse.json({ error: "slug, elementId et un montant positif sont requis" }, { status: 400 });
     }
 
-    const carnet = await ajouterContributionListeDeVoyage(slug, elementId, montant);
+    const carnet = await ajouterContributionListeDeVoyage(slug, elementId, montant, prenom);
     if (!carnet) {
       return NextResponse.json({ error: "Carnet ou élément introuvable" }, { status: 404 });
     }

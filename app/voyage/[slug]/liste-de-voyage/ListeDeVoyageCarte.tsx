@@ -48,6 +48,7 @@ export default function ListeDeVoyageCarte({
   onParticipeUrl: string;
 }) {
   const [montant, setMontant] = useState("");
+  const [prenom, setPrenom] = useState("");
   const [montantReuni, setMontantReuni] = useState(item.montantReuni ?? 0);
   const [enCours, setEnCours] = useState(false);
 
@@ -65,10 +66,11 @@ export default function ListeDeVoyageCarte({
         await fetch("/api/liste-de-voyage-contribution", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ slug, elementId: item.id, montant: valeur }),
+          body: JSON.stringify({ slug, elementId: item.id, montant: valeur, prenom: prenom.trim() || undefined }),
         });
         setMontantReuni((prev) => prev + valeur);
         setMontant("");
+        setPrenom("");
       } catch {
         // pas grave, on laisse quand même l'invité rejoindre OnParticipe
       } finally {
@@ -150,6 +152,27 @@ export default function ListeDeVoyageCarte({
         <>
           <div style={{ fontSize: 13.5, color: DARK, marginBottom: 12 }}>
             <strong>{montantReuni} €</strong> réuni{montantReuni > 1 ? "s" : ""}
+          </div>
+          <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8 }}>
+            <input
+              type="text"
+              placeholder="Votre prénom (optionnel)"
+              value={prenom}
+              onChange={(e) => setPrenom(e.target.value)}
+              style={{
+                flex: 1,
+                height: 34,
+                boxSizing: "border-box",
+                fontFamily: "Inter, sans-serif",
+                fontSize: 13,
+                padding: "0 12px",
+                border: `1px solid ${LINE}`,
+                borderRadius: 4,
+                background: "#f8f4ef",
+                color: DARK,
+                outline: "none",
+              }}
+            />
           </div>
           <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
             <input

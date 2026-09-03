@@ -95,8 +95,8 @@ export interface CarnetDestinationRef {
   // Statut "offrable" (Liste de Voyage), prix indicatif et montant réuni,
   // propres à CE carnet — jamais stockés sur la fiche destination partagée,
   // sinon ça s'appliquerait à tous les autres clients qui utilisent la même destination.
-  listeVoyageHebergements?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number; montantReuni?: number } };
-  listeVoyageActivites?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number; montantReuni?: number } };
+  listeVoyageHebergements?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number; montantReuni?: number; contributions?: Contribution[] } };
+  listeVoyageActivites?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number; montantReuni?: number; contributions?: Contribution[] } };
 }
 
 // Une destination une fois résolue pour un carnet précis (avec son nombre de nuits pour CE voyage)
@@ -112,6 +112,12 @@ export interface BudgetLigne {
   montant: number;
 }
 
+// Une participation déclarée par un invité, avec son prénom optionnel.
+export interface Contribution {
+  prenom?: string;
+  montant: number;
+}
+
 export interface ChecklistItem {
   label: string;
   coche: boolean;
@@ -119,6 +125,7 @@ export interface ChecklistItem {
   offrable?: boolean; // affiché dans la Liste de Voyage (cagnotte invités)
   prixIndicatif?: number; // montant affiché comme objectif dans la Liste de Voyage
   montantReuni?: number; // somme des participations déclarées par les invités (déclaratif, pas un vrai paiement suivi)
+  contributions?: Contribution[]; // détail de chaque participation (prénom + montant)
 }
 
 export interface ContactUrgence {
@@ -168,6 +175,7 @@ export interface Carnet {
   onParticipeUrl?: string;
   // Contributions libres, sans élément précis (carte "Un montant libre")
   contributionLibreReunie?: number;
+  contributionsLibres?: Contribution[];
   // Idées de cadeaux ajoutées par les mariés eux-mêmes (page /liste-de-voyage/gerer)
   listeVoyageCadeaux?: ElementCadeauCustom[];
   // Gel automatique : une fois le voyage terminé, le contenu des destinations
@@ -498,6 +506,7 @@ export interface ElementListeDeVoyage {
   photo?: string;
   prixIndicatif?: number;
   montantReuni?: number;
+  contributions?: Contribution[];
   url?: string;
   categorie: "transport" | "hebergement" | "activite" | "cadeau";
 }
@@ -511,6 +520,7 @@ export interface ElementCadeauCustom {
   prixIndicatif?: number;
   url?: string;
   montantReuni?: number; // somme des participations déclarées par les invités
+  contributions?: Contribution[];
 }
 
 // Rassemble tous les éléments cochés "offrable" d'un carnet (réservations,
@@ -529,6 +539,7 @@ export function getElementsListeDeVoyage(
       nom: item.label,
       prixIndicatif: item.prixIndicatif,
       montantReuni: item.montantReuni,
+      contributions: item.contributions,
       url: item.url,
       categorie: "transport",
     });
@@ -548,6 +559,7 @@ export function getElementsListeDeVoyage(
         photo: hebergement?.photo,
         prixIndicatif: info.prixIndicatif,
         montantReuni: info.montantReuni,
+        contributions: info.contributions,
         categorie: "hebergement",
       });
     }
@@ -562,6 +574,7 @@ export function getElementsListeDeVoyage(
         photo: activite?.photo,
         prixIndicatif: info.prixIndicatif,
         montantReuni: info.montantReuni,
+        contributions: info.contributions,
         url: activite?.lienReservation,
         categorie: "activite",
       });
@@ -575,6 +588,7 @@ export function getElementsListeDeVoyage(
       description: cadeau.description,
       prixIndicatif: cadeau.prixIndicatif,
       montantReuni: cadeau.montantReuni,
+      contributions: cadeau.contributions,
       url: cadeau.url,
       categorie: "cadeau",
     });
@@ -611,18 +625,22 @@ export async function supprimerCadeauListeDeVoyage(slug: string, id: string): Pr
 export async function ajouterContributionListeDeVoyage(
   slug: string,
   elementId: string,
-  montant: number
+  montant: number,
+  prenom?: string
 ): Promise<Carnet | null> {
   const carnet = await getCarnet(slug);
   if (!carnet) return null;
 
+  const nouvelleContribution: Contribution = prenom ? { prenom, montant } : { montant };
   const [type, ...reste] = elementId.split("::");
   let misAJour: Carnet;
 
   if (type === "transport") {
     const label = reste.join("::");
     const reservations = carnet.reservations.map((r) =>
-      r.label === label ? { ...r, montantReuni: (r.montantReuni ?? 0) + montant } : r
+      r.label === label
+        ? { ...r, montantReuni: (r.montantReuni ?? 0) + montant, contributions: [...(r.contributions ?? []), nouvelleContribution] }
+        : r
     );
     misAJour = { ...carnet, reservations };
   } else if (type === "hebergement" || type === "activite") {
@@ -632,17 +650,33 @@ export async function ajouterContributionListeDeVoyage(
       if (d.destinationId !== destinationId) return d;
       const actuel = d[champ] ?? {};
       const entree = actuel[nom] ?? {};
-      return { ...d, [champ]: { ...actuel, [nom]: { ...entree, montantReuni: (entree.montantReuni ?? 0) + montant } } };
+      return {
+        ...d,
+        [champ]: {
+          ...actuel,
+          [nom]: {
+            ...entree,
+            montantReuni: (entree.montantReuni ?? 0) + montant,
+            contributions: [...(entree.contributions ?? []), nouvelleContribution],
+          },
+        },
+      };
     });
     misAJour = { ...carnet, destinations };
   } else if (type === "cadeau") {
     const id = reste.join("::");
     const listeVoyageCadeaux = (carnet.listeVoyageCadeaux ?? []).map((c) =>
-      c.id === id ? { ...c, montantReuni: (c.montantReuni ?? 0) + montant } : c
+      c.id === id
+        ? { ...c, montantReuni: (c.montantReuni ?? 0) + montant, contributions: [...(c.contributions ?? []), nouvelleContribution] }
+        : c
     );
     misAJour = { ...carnet, listeVoyageCadeaux };
   } else if (elementId === "libre") {
-    misAJour = { ...carnet, contributionLibreReunie: (carnet.contributionLibreReunie ?? 0) + montant };
+    misAJour = {
+      ...carnet,
+      contributionLibreReunie: (carnet.contributionLibreReunie ?? 0) + montant,
+      contributionsLibres: [...(carnet.contributionsLibres ?? []), nouvelleContribution],
+    };
   } else {
     return null;
   }
