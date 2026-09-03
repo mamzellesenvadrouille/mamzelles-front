@@ -856,7 +856,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 <button onClick={ajouterBudgetLigne} style={smallLink}>+ Ajouter une ligne</button>
               </div>
 
-              <div style={{ ...sectionWrap, marginBottom: 16 }}>
+              <div style={sectionWrap}>
                 <div style={sectionTitle}>Vos réservations</div>
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
                   Un lien de réservation par ligne (Skyscanner, Booking.com, site de l&apos;hôtel...). Le client coche automatiquement en cliquant dessus.
@@ -868,9 +868,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                       display: "flex",
                       flexDirection: "column",
                       gap: 6,
-                      marginBottom: 14,
-                      paddingBottom: 14,
-                      borderBottom: i < carnet.reservations.length - 1 ? "1px solid #f0ebe3" : "none",
+                      marginBottom: 10,
                     }}
                   >
                     <div style={{ display: "flex", gap: 8 }}>
