@@ -8,8 +8,8 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { slug, elementId, montant, prenom } = body;
 
-    if (!slug || !elementId || typeof montant !== "number" || montant <= 0) {
-      return NextResponse.json({ error: "slug, elementId et un montant positif sont requis" }, { status: 400 });
+    if (!slug || !elementId || typeof montant !== "number" || montant <= 0 || !prenom || !prenom.trim()) {
+      return NextResponse.json({ error: "slug, elementId, un montant positif et un prénom sont requis" }, { status: 400 });
     }
 
     const carnet = await ajouterContributionListeDeVoyage(slug, elementId, montant, prenom);

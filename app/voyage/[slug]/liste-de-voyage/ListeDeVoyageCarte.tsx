@@ -57,6 +57,7 @@ export default function ListeDeVoyageCarte({
     item.prixIndicatif && item.prixIndicatif > 0 ? Math.min(100, Math.round((montantReuni / item.prixIndicatif) * 100)) : 0;
 
   async function participer() {
+    if (!prenom.trim()) return;
     const valeur = Number(montant);
     const nouvelOnglet = window.open("", "_blank", "noopener,noreferrer");
 
@@ -156,12 +157,12 @@ export default function ListeDeVoyageCarte({
           <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8 }}>
             <input
               type="text"
-              placeholder="Votre prénom (optionnel)"
+              placeholder="Prénom / Nom"
               value={prenom}
               onChange={(e) => setPrenom(e.target.value)}
               style={{
                 flex: 1,
-                height: 34,
+                height: 36,
                 boxSizing: "border-box",
                 fontFamily: "Inter, sans-serif",
                 fontSize: 13,
@@ -196,7 +197,7 @@ export default function ListeDeVoyageCarte({
             />
             <button
               onClick={participer}
-              disabled={enCours}
+              disabled={enCours || !prenom.trim()}
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -214,9 +215,9 @@ export default function ListeDeVoyageCarte({
                 padding: "0 14px 0 11px",
                 borderRadius: 20,
                 whiteSpace: "nowrap",
-                cursor: "pointer",
+                cursor: prenom.trim() ? "pointer" : "not-allowed",
                 boxShadow: "0 3px 10px rgba(200, 149, 108, 0.3)",
-                opacity: enCours ? 0.7 : 1,
+                opacity: enCours || !prenom.trim() ? 0.5 : 1,
               }}
             >
               <IconCadeau />
