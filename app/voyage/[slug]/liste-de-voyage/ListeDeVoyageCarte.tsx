@@ -95,7 +95,7 @@ export default function ListeDeVoyageCarte({
           <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500, color: DARK, marginBottom: 4 }}>
             {item.nom}
           </h3>
-          {item.description && <div style={{ fontSize: 14, color: "#8a7f74" }}>{item.description}.</div>}
+          {item.description && <div style={{ fontSize: 14, color: "#8a7f74" }}>{item.description}</div>}
         </div>
         {item.prixIndicatif != null && (
           <div style={{ fontSize: 14, fontWeight: 600, color: DARK, whiteSpace: "nowrap", textAlign: "right" }}>
