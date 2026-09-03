@@ -207,8 +207,16 @@ export default async function ListeDeVoyagePage({
       </div>
 
       {/* Footer */}
-      <div style={{ textAlign: "center", padding: "32px 28px 44px", background: DARK }}>
-        <p style={{ fontSize: 13, color: "#cfc4b8", lineHeight: 1.9, maxWidth: 480, margin: "0 auto" }}>
+      <div style={{ textAlign: "center", padding: "38px 28px", background: DARK }}>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ marginBottom: 16 }}>
+          <path
+            d="M12 21s-7.5-4.6-10-9.3C.4 8.3 2 4.5 5.7 4c2.2-.3 4.2.9 6.3 3 2.1-2.1 4.1-3.3 6.3-3 3.7.5 5.3 4.3 3.7 7.7C19.5 16.4 12 21 12 21Z"
+            stroke={GOLD}
+            strokeWidth={1.5}
+            strokeLinejoin="round"
+          />
+        </svg>
+        <p style={{ fontSize: 13, color: "#cfc4b8", lineHeight: 1.9, maxWidth: 480, margin: "0 auto", textAlign: "center" }}>
           Merci du fond du cœur d&apos;être présents dans notre vie.
           <br />
           Chaque participation nous touche profondément et nous aidera à faire de ce voyage de noces un véritable
