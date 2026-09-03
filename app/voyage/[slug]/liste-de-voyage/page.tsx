@@ -179,7 +179,7 @@ export default async function ListeDeVoyagePage({
             </div>
             <div style={{ marginBottom: 44 }}>
               <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 18 }}>
-                <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500 }}>Équipement</h2>
+                <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500 }}>Équipements</h2>
                 <span style={{ fontSize: 14, color: "#a89a8c", fontStyle: "italic" }}>
                   {equipement.length} élément{equipement.length > 1 ? "s" : ""}
                 </span>
@@ -215,8 +215,15 @@ export default async function ListeDeVoyagePage({
           conte de fées.
           <br />
           Choisissez le moment ou le cadeau qui vous parle, et nous nous chargerons du reste… avec tout notre amour.
-          🫶🏼
         </p>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ marginTop: 16 }}>
+          <path
+            d="M12 21s-7.5-4.6-10-9.3C.4 8.3 2 4.5 5.7 4c2.2-.3 4.2.9 6.3 3 2.1-2.1 4.1-3.3 6.3-3 3.7.5 5.3 4.3 3.7 7.7C19.5 16.4 12 21 12 21Z"
+            stroke={GOLD}
+            strokeWidth={1.5}
+            strokeLinejoin="round"
+          />
+        </svg>
       </div>
     </div>
   );
