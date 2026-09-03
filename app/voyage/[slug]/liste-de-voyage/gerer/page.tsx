@@ -141,7 +141,7 @@ export default async function GererListeDeVoyagePage({
             )}
 
             <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
-              Essentiels du voyage
+              Équipements
             </div>
           </div>
 
