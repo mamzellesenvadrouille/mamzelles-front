@@ -110,31 +110,12 @@ export default async function ListeDeVoyagePage({
 
       {/* Bandeau cagnotte */}
       <div style={{ maxWidth: 560, margin: "28px auto 0", padding: "0 24px" }}>
-        <div style={{ background: DARK, borderRadius: 8, padding: "22px 24px", textAlign: "center" }}>
-          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500, lineHeight: 1.05, color: "#fff" }}>
-            <span style={{ color: "#e4c9ae" }}>{totalReuni} €</span> déjà réunis pour notre voyage
+        <div style={{ background: DARK, borderRadius: 8, padding: "30px 24px", textAlign: "center" }}>
+          <div style={{ fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", color: "#a89a8c", marginBottom: 10 }}>
+            Déjà réuni pour notre voyage
           </div>
-          <a
-            href={carnet.onParticipeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "inline-block",
-              marginTop: 22,
-              fontSize: 12,
-              fontWeight: 600,
-              background: GOLD,
-              color: "#fff",
-              padding: "8px 18px",
-              borderRadius: 24,
-              textDecoration: "none",
-            }}
-          >
-            Participer via OnParticipe
-          </a>
-          <div style={{ fontSize: 11.5, color: "#a89a8c", marginTop: 18, lineHeight: 1.5 }}>
-            Un seul et même lien pour tous les éléments ci-dessous. Indiquez simplement, si vous le souhaitez, à quoi
-            correspond votre participation.
+          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 44, fontWeight: 500, lineHeight: 1, color: "#e4c9ae" }}>
+            {totalReuni} €
           </div>
         </div>
       </div>
