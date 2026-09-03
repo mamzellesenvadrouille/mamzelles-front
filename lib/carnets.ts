@@ -113,6 +113,7 @@ export interface ChecklistItem {
   url?: string; // lien de réservation cliquable (pour "Vos réservations" surtout)
   offrable?: boolean; // affiché dans la Liste de Voyage (cagnotte invités)
   prixIndicatif?: number; // montant affiché comme objectif dans la Liste de Voyage
+  montantReuni?: number; // somme des participations déclarées par les invités (déclaratif, pas un vrai paiement suivi)
 }
 
 export interface ContactUrgence {
@@ -489,6 +490,7 @@ export interface ElementListeDeVoyage {
   description?: string;
   photo?: string;
   prixIndicatif?: number;
+  montantReuni?: number;
   url?: string;
   categorie: "transport" | "cadeau";
 }
@@ -501,6 +503,7 @@ export interface ElementCadeauCustom {
   description?: string;
   prixIndicatif?: number;
   url?: string;
+  montantReuni?: number; // somme des participations déclarées par les invités
 }
 
 // Rassemble tous les éléments cochés "offrable" d'un carnet (réservations,
@@ -515,6 +518,7 @@ export function getElementsListeDeVoyage(carnet: Carnet): ElementListeDeVoyage[]
       id: `transport-${item.label}`,
       nom: item.label,
       prixIndicatif: item.prixIndicatif,
+      montantReuni: item.montantReuni,
       url: item.url,
       categorie: "transport",
     });
@@ -526,6 +530,7 @@ export function getElementsListeDeVoyage(carnet: Carnet): ElementListeDeVoyage[]
       nom: cadeau.nom,
       description: cadeau.description,
       prixIndicatif: cadeau.prixIndicatif,
+      montantReuni: cadeau.montantReuni,
       url: cadeau.url,
       categorie: "cadeau",
     });
@@ -551,6 +556,40 @@ export async function supprimerCadeauListeDeVoyage(slug: string, id: string): Pr
   if (!carnet) return null;
   const listeVoyageCadeaux = (carnet.listeVoyageCadeaux ?? []).filter((c) => c.id !== id);
   const misAJour = { ...carnet, listeVoyageCadeaux };
+  await saveCarnet(misAJour);
+  return misAJour;
+}
+
+// Enregistre une participation déclarée par un invité sur un élément de la
+// Liste de Voyage (transport ou cadeau). C'est purement déclaratif : aucune
+// vérification de paiement réel, l'invité indique juste ce qu'il compte
+// donner avant d'être redirigé vers OnParticipe.
+export async function ajouterContributionListeDeVoyage(
+  slug: string,
+  elementId: string,
+  montant: number
+): Promise<Carnet | null> {
+  const carnet = await getCarnet(slug);
+  if (!carnet) return null;
+
+  let misAJour: Carnet;
+
+  if (elementId.startsWith("transport-")) {
+    const label = elementId.slice("transport-".length);
+    const reservations = carnet.reservations.map((r) =>
+      r.label === label ? { ...r, montantReuni: (r.montantReuni ?? 0) + montant } : r
+    );
+    misAJour = { ...carnet, reservations };
+  } else if (elementId.startsWith("cadeau-")) {
+    const id = elementId.slice("cadeau-".length);
+    const listeVoyageCadeaux = (carnet.listeVoyageCadeaux ?? []).map((c) =>
+      c.id === id ? { ...c, montantReuni: (c.montantReuni ?? 0) + montant } : c
+    );
+    misAJour = { ...carnet, listeVoyageCadeaux };
+  } else {
+    return null;
+  }
+
   await saveCarnet(misAJour);
   return misAJour;
 }

@@ -76,19 +76,28 @@ export default async function GererListeDeVoyagePage({
                   <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
                     {titre}
                   </div>
-                  {items.map((item) => (
-                    <div key={item.id} style={{ padding: "12px 14px", borderRadius: 4 }}>
-                      <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }}>
-                        <div>
-                          <div style={{ fontSize: 15, fontWeight: 500 }}>{item.nom}</div>
-                          {item.description && <div style={{ fontSize: 13, color: "#8a7f74", marginTop: 2 }}>{item.description}.</div>}
+                  {items.map((item) => {
+                    const reuni = item.montantReuni ?? 0;
+                    const pourcentage = item.prixIndicatif && item.prixIndicatif > 0 ? Math.min(100, Math.round((reuni / item.prixIndicatif) * 100)) : 0;
+                    return (
+                      <div key={item.id} style={{ padding: "12px 14px", borderRadius: 4 }}>
+                        <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12, marginBottom: item.prixIndicatif != null ? 8 : 0 }}>
+                          <div>
+                            <div style={{ fontSize: 15, fontWeight: 500 }}>{item.nom}</div>
+                            {item.description && <div style={{ fontSize: 13, color: "#8a7f74", marginTop: 2 }}>{item.description}.</div>}
+                          </div>
+                          <div style={{ fontSize: 13.5, color: "#6b6158", flexShrink: 0, whiteSpace: "nowrap" }}>
+                            {item.prixIndicatif != null ? `${reuni} € / ${item.prixIndicatif} €` : ""}
+                          </div>
                         </div>
-                        <div style={{ fontSize: 13.5, color: "#6b6158", flexShrink: 0, whiteSpace: "nowrap" }}>
-                          {item.prixIndicatif != null ? `${item.prixIndicatif} €` : ""}
-                        </div>
+                        {item.prixIndicatif != null && (
+                          <div style={{ height: 5, background: LINE, borderRadius: 3, overflow: "hidden" }}>
+                            <div style={{ height: "100%", width: `${pourcentage}%`, background: GOLD, borderRadius: 3 }} />
+                          </div>
+                        )}
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               );
             })}

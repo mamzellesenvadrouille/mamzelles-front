@@ -1,9 +1,10 @@
 // app/voyage/[slug]/liste-de-voyage/ListeDeVoyageCarte.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/liste-de-voyage/ListeDeVoyageCarte.tsx
 //
-// Le montant tapé ici n'est jamais envoyé nulle part : c'est juste un repère
-// pour l'invité avant qu'il clique. Le vrai paiement se fait entièrement sur
-// OnParticipe, MamZelles n'a aucune connexion technique avec cette plateforme.
+// Le montant tapé est enregistré (déclaratif : l'invité indique ce qu'il
+// compte donner) puis il est redirigé vers OnParticipe pour payer réellement.
+// MamZelles n'a aucune connexion technique avec OnParticipe, donc ce montant
+// n'est jamais vérifié ni confirmé automatiquement.
 "use client";
 
 import { useState } from "react";
@@ -14,13 +15,41 @@ const DARK = "#1a1512";
 const LINE = "#e6ddd1";
 
 export default function ListeDeVoyageCarte({
+  slug,
   item,
   onParticipeUrl,
 }: {
+  slug: string;
   item: ElementListeDeVoyage;
   onParticipeUrl: string;
 }) {
   const [montant, setMontant] = useState("");
+  const [montantReuni, setMontantReuni] = useState(item.montantReuni ?? 0);
+  const [enCours, setEnCours] = useState(false);
+
+  const pourcentage =
+    item.prixIndicatif && item.prixIndicatif > 0 ? Math.min(100, Math.round((montantReuni / item.prixIndicatif) * 100)) : 0;
+
+  async function participer() {
+    const valeur = Number(montant);
+    if (valeur > 0) {
+      setEnCours(true);
+      try {
+        await fetch("/api/liste-de-voyage-contribution", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ slug, elementId: item.id, montant: valeur }),
+        });
+        setMontantReuni((prev) => prev + valeur);
+        setMontant("");
+      } catch {
+        // pas grave, on laisse quand même l'invité rejoindre OnParticipe
+      } finally {
+        setEnCours(false);
+      }
+    }
+    window.open(onParticipeUrl, "_blank", "noopener,noreferrer");
+  }
 
   return (
     <div
@@ -46,6 +75,17 @@ export default function ListeDeVoyageCarte({
         )}
       </div>
 
+      {item.prixIndicatif != null && (
+        <>
+          <div style={{ height: 6, background: LINE, borderRadius: 3, overflow: "hidden", marginBottom: 13 }}>
+            <div style={{ height: "100%", width: `${pourcentage}%`, background: GOLD, borderRadius: 3, transition: "width .3s" }} />
+          </div>
+          <div style={{ fontSize: 13.5, color: DARK, marginBottom: 12 }}>
+            <strong>{montantReuni} €</strong> réunis
+          </div>
+        </>
+      )}
+
       <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
         <input
           type="number"
@@ -64,10 +104,9 @@ export default function ListeDeVoyageCarte({
             outline: "none",
           }}
         />
-        <a
-          href={onParticipeUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={participer}
+          disabled={enCours}
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -78,11 +117,13 @@ export default function ListeDeVoyageCarte({
             letterSpacing: "0.01em",
             background: GOLD,
             color: "#fff",
+            border: "none",
             padding: "9px 18px 9px 14px",
             borderRadius: 24,
             whiteSpace: "nowrap",
-            textDecoration: "none",
+            cursor: "pointer",
             boxShadow: "0 3px 10px rgba(200, 149, 108, 0.3)",
+            opacity: enCours ? 0.7 : 1,
           }}
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
@@ -94,8 +135,8 @@ export default function ListeDeVoyageCarte({
               strokeLinejoin="round"
             />
           </svg>
-          Participer
-        </a>
+          {enCours ? "..." : "Participer"}
+        </button>
       </div>
     </div>
   );

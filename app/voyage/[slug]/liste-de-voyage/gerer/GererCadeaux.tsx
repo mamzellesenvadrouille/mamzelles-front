@@ -80,7 +80,9 @@ export default function GererCadeaux({
             {c.description && <div style={{ fontSize: 12.5, color: "#8a7f74" }}>{c.description}</div>}
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ color: "#6b6158" }}>{c.prixIndicatif != null ? `${c.prixIndicatif} €` : ""}</span>
+            <span style={{ color: "#6b6158" }}>
+              {c.prixIndicatif != null ? `${c.montantReuni ?? 0} € / ${c.prixIndicatif} €` : ""}
+            </span>
             <button
               onClick={() => supprimer(c.id)}
               aria-label="Supprimer"

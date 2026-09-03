@@ -142,7 +142,7 @@ export default async function ListeDeVoyagePage({
                 </span>
               </div>
               {items.map((item) => (
-                <ListeDeVoyageCarte key={item.id} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
+                <ListeDeVoyageCarte key={item.id} slug={slug} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
               ))}
             </div>
           );
