@@ -110,7 +110,7 @@ export default async function ListeDeVoyagePage({
 
       {/* Bandeau cagnotte */}
       <div style={{ maxWidth: 560, margin: "28px auto 0", padding: "0 24px" }}>
-        <div style={{ background: DARK, borderRadius: 8, padding: "28px 24px", textAlign: "center" }}>
+        <div style={{ background: DARK, borderRadius: 8, padding: "18px 24px", textAlign: "center" }}>
           <div style={{ fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", color: GOLD, marginBottom: 10 }}>
             Déjà réuni pour notre voyage
           </div>
