@@ -99,7 +99,10 @@ export default function ListeDeVoyageCarte({
         </div>
         {item.prixIndicatif != null && (
           <div style={{ fontSize: 14, fontWeight: 600, color: DARK, whiteSpace: "nowrap", textAlign: "right" }}>
-            {item.prixIndicatif} €<span style={{ display: "block", fontSize: 11.5, fontWeight: 400, color: "#a89a8c" }}>prix indicatif</span>
+            {item.prixIndicatif} €
+            {item.categorie === "transport" && (
+              <span style={{ display: "block", fontSize: 11.5, fontWeight: 400, color: "#a89a8c" }}>prix indicatif</span>
+            )}
           </div>
         )}
       </div>
