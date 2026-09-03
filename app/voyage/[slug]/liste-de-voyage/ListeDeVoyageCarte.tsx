@@ -135,6 +135,7 @@ export default function ListeDeVoyageCarte({
               fontWeight: 600,
               color: FUNDED,
               background: "#eaf0e5",
+              border: `1px solid ${FUNDED}`,
               padding: "0 14px",
               borderRadius: 20,
             }}
