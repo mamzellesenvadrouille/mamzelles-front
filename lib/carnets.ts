@@ -92,11 +92,6 @@ export interface CarnetDestinationRef {
   hebergementsChoisis?: string[]; // noms des hébergements sélectionnés
   restaurantsChoisis?: string[]; // noms des restaurants sélectionnés
   activitesChoisies?: string[]; // noms des activités sélectionnées
-  // Statut "offrable" (Liste de Voyage) et prix indicatif, propres à CE carnet
-  // — jamais stockés sur la fiche destination partagée, sinon ça s'appliquerait
-  // à tous les autres clients qui utilisent la même destination.
-  listeVoyageHebergements?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number } };
-  listeVoyageActivites?: { [nom: string]: { offrable?: boolean; prixIndicatif?: number } };
 }
 
 // Une destination une fois résolue pour un carnet précis (avec son nombre de nuits pour CE voyage)
@@ -495,7 +490,7 @@ export interface ElementListeDeVoyage {
   photo?: string;
   prixIndicatif?: number;
   url?: string;
-  categorie: "transport" | "hebergement" | "activite" | "cadeau";
+  categorie: "transport" | "cadeau";
 }
 
 // Idée de cadeau ajoutée librement par les mariés eux-mêmes (pas depuis
@@ -509,12 +504,9 @@ export interface ElementCadeauCustom {
 }
 
 // Rassemble tous les éléments cochés "offrable" d'un carnet (réservations,
-// hébergements, activités) en une seule liste, prête à afficher sur la
-// page publique de la Liste de Voyage. Ne modifie rien, lecture seule.
-export function getElementsListeDeVoyage(
-  carnet: Carnet,
-  destinationsCompletes: DestinationResolue[]
-): ElementListeDeVoyage[] {
+// et les idées de cadeaux ajoutées par les mariés) en une seule liste, prête
+// à afficher sur la page publique de la Liste de Voyage. Ne modifie rien, lecture seule.
+export function getElementsListeDeVoyage(carnet: Carnet): ElementListeDeVoyage[] {
   const elements: ElementListeDeVoyage[] = [];
 
   for (const item of carnet.reservations) {
@@ -526,38 +518,6 @@ export function getElementsListeDeVoyage(
       url: item.url,
       categorie: "transport",
     });
-  }
-
-  for (const ref of carnet.destinations) {
-    const destination = destinationsCompletes.find((d) => d.id === ref.destinationId);
-    if (!destination) continue;
-
-    for (const [nom, info] of Object.entries(ref.listeVoyageHebergements ?? {})) {
-      if (!info.offrable) continue;
-      const hebergement = destination.hebergements?.find((h) => h.nom === nom);
-      elements.push({
-        id: `hebergement-${destination.id}-${nom}`,
-        nom,
-        description: hebergement?.description,
-        photo: hebergement?.photo,
-        prixIndicatif: info.prixIndicatif,
-        categorie: "hebergement",
-      });
-    }
-
-    for (const [nom, info] of Object.entries(ref.listeVoyageActivites ?? {})) {
-      if (!info.offrable) continue;
-      const activite = destination.activites.find((a) => a.nom === nom);
-      elements.push({
-        id: `activite-${destination.id}-${nom}`,
-        nom,
-        description: activite?.description,
-        photo: activite?.photo,
-        prixIndicatif: info.prixIndicatif,
-        url: activite?.lienReservation,
-        categorie: "activite",
-      });
-    }
   }
 
   for (const cadeau of carnet.listeVoyageCadeaux ?? []) {

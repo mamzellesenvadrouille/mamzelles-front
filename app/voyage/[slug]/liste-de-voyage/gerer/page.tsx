@@ -22,10 +22,10 @@ export default async function GererListeDeVoyagePage({
   const complet = await getCarnetComplet(slug);
   if (!complet) notFound();
 
-  const { destinationsCompletes, ...carnet } = complet;
+  const carnet = complet;
   if (!carnet.onParticipeUrl) notFound();
 
-  const elements = getElementsListeDeVoyage(carnet, destinationsCompletes);
+  const elements = getElementsListeDeVoyage(carnet);
   const lienPublic = `https://mamzellesenvadrouille.com/voyage/${slug}/liste-de-voyage`;
 
   return (

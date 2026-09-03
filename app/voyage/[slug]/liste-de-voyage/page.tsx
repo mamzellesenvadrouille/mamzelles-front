@@ -7,10 +7,8 @@ import ListeDeVoyageCarte from "./ListeDeVoyageCarte";
 // Comme le reste du carnet : jamais mis en cache, recalculé à chaque visite.
 export const dynamic = "force-dynamic";
 
-const CATEGORIES: { key: "transport" | "hebergement" | "activite" | "cadeau"; titre: string }[] = [
+const CATEGORIES: { key: "transport" | "cadeau"; titre: string }[] = [
   { key: "transport", titre: "Transports" },
-  { key: "hebergement", titre: "Hébergements" },
-  { key: "activite", titre: "Activités" },
   { key: "cadeau", titre: "Essentiels du voyage" },
 ];
 
@@ -23,8 +21,8 @@ export default async function ListeDeVoyagePage({
   const complet = await getCarnetComplet(slug);
   if (!complet) notFound();
 
-  const { destinationsCompletes, ...carnet } = complet;
-  const elements = getElementsListeDeVoyage(carnet, destinationsCompletes);
+  const carnet = complet;
+  const elements = getElementsListeDeVoyage(carnet);
 
   // Pas de lien de cagnotte renseigné = la fonctionnalité n'est pas activée pour ce carnet.
   if (!carnet.onParticipeUrl || elements.length === 0) notFound();
