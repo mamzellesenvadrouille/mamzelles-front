@@ -45,6 +45,24 @@ export default async function GererListeDeVoyagePage({
               Un seul lien à envoyer à vos proches. Ils y retrouvent tout ce que vous avez choisi de partager.
             </p>
             <CopierLien lien={lienPublic} />
+
+            <div style={{ display: "flex", alignItems: "center", gap: 18, marginTop: 20, paddingTop: 18, borderTop: "1px dashed #e6ddd1" }}>
+              <img
+                src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&color=1a1512&bgcolor=fffdfa&data=${encodeURIComponent(lienPublic)}`}
+                alt="QR code de la Liste de Voyage"
+                width={80}
+                height={80}
+                style={{ borderRadius: 6, border: "1px solid #e6ddd1", flexShrink: 0 }}
+              />
+              <div>
+                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 17, fontWeight: 500, marginBottom: 3, color: "#1a1512" }}>
+                  À afficher le jour J
+                </p>
+                <p style={{ fontSize: 13, color: "#6b6158", lineHeight: 1.5 }}>
+                  Un QR code prêt à imprimer, pour que vos invités découvrent la Liste de Voyage directement au mariage.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div style={{ padding: "20px 24px" }}>
