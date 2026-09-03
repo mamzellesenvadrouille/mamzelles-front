@@ -123,7 +123,22 @@ export default function ListeDeVoyageCarte({
           <div style={{ fontSize: 13.5, color: DARK }}>
             <strong>{montantReuni} €</strong> réunis
           </div>
-          <span style={{ display: "inline-flex", alignItems: "center", gap: 5, fontSize: 12, fontWeight: 500, color: FUNDED }}>
+          <span
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              height: 36,
+              boxSizing: "border-box",
+              gap: 5,
+              fontSize: 12,
+              fontWeight: 600,
+              color: FUNDED,
+              background: "#eaf0e5",
+              padding: "0 14px",
+              borderRadius: 20,
+            }}
+          >
             <IconCoeur /> Financé
           </span>
         </div>
@@ -140,9 +155,11 @@ export default function ListeDeVoyageCarte({
               onChange={(e) => setMontant(e.target.value)}
               style={{
                 flex: 1,
+                height: 36,
+                boxSizing: "border-box",
                 fontFamily: "Inter, sans-serif",
                 fontSize: 14,
-                padding: "9px 12px",
+                padding: "0 12px",
                 border: `1px solid ${LINE}`,
                 borderRadius: 4,
                 background: "#f8f4ef",
@@ -156,7 +173,10 @@ export default function ListeDeVoyageCarte({
               style={{
                 display: "inline-flex",
                 alignItems: "center",
+                justifyContent: "center",
                 gap: 6,
+                height: 36,
+                boxSizing: "border-box",
                 fontFamily: "Inter, sans-serif",
                 fontSize: 12,
                 fontWeight: 600,
@@ -164,7 +184,7 @@ export default function ListeDeVoyageCarte({
                 background: GOLD,
                 color: "#fff",
                 border: "none",
-                padding: "7px 14px 7px 11px",
+                padding: "0 14px 0 11px",
                 borderRadius: 20,
                 whiteSpace: "nowrap",
                 cursor: "pointer",
