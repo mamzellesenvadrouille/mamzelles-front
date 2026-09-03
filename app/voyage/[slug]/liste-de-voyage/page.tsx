@@ -7,10 +7,11 @@ import ListeDeVoyageCarte from "./ListeDeVoyageCarte";
 // Comme le reste du carnet : jamais mis en cache, recalculé à chaque visite.
 export const dynamic = "force-dynamic";
 
-const CATEGORIES: { key: "transport" | "hebergement" | "activite"; titre: string }[] = [
+const CATEGORIES: { key: "transport" | "hebergement" | "activite" | "cadeau"; titre: string }[] = [
   { key: "transport", titre: "Transports" },
   { key: "hebergement", titre: "Hébergements" },
   { key: "activite", titre: "Activités" },
+  { key: "cadeau", titre: "Essentiels du voyage" },
 ];
 
 export default async function ListeDeVoyagePage({

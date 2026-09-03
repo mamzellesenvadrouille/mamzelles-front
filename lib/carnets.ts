@@ -165,6 +165,8 @@ export interface Carnet {
   contactsUrgence?: ContactUrgence[];
   // Liste de Voyage : lien unique vers la cagnotte OnParticipe (ou équivalent) du couple
   onParticipeUrl?: string;
+  // Idées de cadeaux ajoutées par les mariés eux-mêmes (page /liste-de-voyage/gerer)
+  listeVoyageCadeaux?: ElementCadeauCustom[];
   // Gel automatique : une fois le voyage terminé, le contenu des destinations
   // est figé pour toujours, même si les fiches destination évoluent ensuite.
   destinationsSnapshot?: DestinationResolue[];
@@ -493,7 +495,17 @@ export interface ElementListeDeVoyage {
   photo?: string;
   prixIndicatif?: number;
   url?: string;
-  categorie: "transport" | "hebergement" | "activite";
+  categorie: "transport" | "hebergement" | "activite" | "cadeau";
+}
+
+// Idée de cadeau ajoutée librement par les mariés eux-mêmes (pas depuis
+// l'admin MamZelles), depuis la page /liste-de-voyage/gerer.
+export interface ElementCadeauCustom {
+  id: string;
+  nom: string;
+  description?: string;
+  prixIndicatif?: number;
+  url?: string;
 }
 
 // Rassemble tous les éléments cochés "offrable" d'un carnet (réservations,
@@ -548,5 +560,37 @@ export function getElementsListeDeVoyage(
     }
   }
 
+  for (const cadeau of carnet.listeVoyageCadeaux ?? []) {
+    elements.push({
+      id: `cadeau-${cadeau.id}`,
+      nom: cadeau.nom,
+      description: cadeau.description,
+      prixIndicatif: cadeau.prixIndicatif,
+      url: cadeau.url,
+      categorie: "cadeau",
+    });
+  }
+
   return elements;
+}
+
+// Ajoute une idée de cadeau (par les mariés, depuis /liste-de-voyage/gerer).
+export async function ajouterCadeauListeDeVoyage(slug: string, cadeau: Omit<ElementCadeauCustom, "id">): Promise<Carnet | null> {
+  const carnet = await getCarnet(slug);
+  if (!carnet) return null;
+  const nouveau: ElementCadeauCustom = { ...cadeau, id: crypto.randomUUID() };
+  const listeVoyageCadeaux = [...(carnet.listeVoyageCadeaux ?? []), nouveau];
+  const misAJour = { ...carnet, listeVoyageCadeaux };
+  await saveCarnet(misAJour);
+  return misAJour;
+}
+
+// Retire une idée de cadeau (par les mariés).
+export async function supprimerCadeauListeDeVoyage(slug: string, id: string): Promise<Carnet | null> {
+  const carnet = await getCarnet(slug);
+  if (!carnet) return null;
+  const listeVoyageCadeaux = (carnet.listeVoyageCadeaux ?? []).filter((c) => c.id !== id);
+  const misAJour = { ...carnet, listeVoyageCadeaux };
+  await saveCarnet(misAJour);
+  return misAJour;
 }
