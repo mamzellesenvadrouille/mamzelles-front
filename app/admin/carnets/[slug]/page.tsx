@@ -946,6 +946,8 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                       flexDirection: "column",
                       gap: 6,
                       marginBottom: 10,
+                      paddingBottom: i < carnet.reservations.length - 1 ? 10 : 0,
+                      borderBottom: i < carnet.reservations.length - 1 ? "1px solid #f0ebe3" : "none",
                     }}
                   >
                     <div style={{ display: "flex", gap: 8 }}>
