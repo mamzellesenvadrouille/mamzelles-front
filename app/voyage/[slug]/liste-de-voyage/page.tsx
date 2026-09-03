@@ -80,7 +80,7 @@ export default async function ListeDeVoyagePage({
         style={{
           padding: "56px 24px 36px",
           textAlign: "center",
-          background: `linear-gradient(180deg, #f8f5f0 0%, #ece6dc 100%)`,
+          background: `linear-gradient(180deg, #fff 0%, ${CREAM} 100%)`,
           borderBottom: `1px solid ${LINE}`,
         }}
       >
