@@ -128,16 +128,12 @@ export default async function GererListeDeVoyagePage({
               À afficher le jour J : vos proches scannent, et arrivent directement sur la liste.
             </p>
 
-            <div style={{ height: 1, background: LINE, margin: "22px 0" }} />
+            <div style={{ borderTop: `1px dashed ${LINE}`, margin: "22px 0" }} />
 
             <div style={{ fontSize: 11.5, color: "#a89a8c", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 11 }}>
               Ou envoyez-leur simplement ce lien :
             </div>
             <CopierLien lien={lienPublic} />
-
-            <p style={{ fontSize: 13, color: "#6b6158", lineHeight: 1.6, marginTop: 22, maxWidth: 320, marginLeft: "auto", marginRight: "auto" }}>
-              Vos proches choisissent ce qu'ils souhaitent vous offrir, tout part ensuite dans la même cagnotte.
-            </p>
           </div>
 
           <div style={{ padding: "8px 14px 4px" }}>
