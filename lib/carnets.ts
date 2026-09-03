@@ -161,6 +161,8 @@ export interface Carnet {
   contactsUrgence?: ContactUrgence[];
   // Liste de Voyage : lien unique vers la cagnotte OnParticipe (ou équivalent) du couple
   onParticipeUrl?: string;
+  // Contributions libres, sans élément précis (carte "Un montant libre")
+  contributionLibreReunie?: number;
   // Idées de cadeaux ajoutées par les mariés eux-mêmes (page /liste-de-voyage/gerer)
   listeVoyageCadeaux?: ElementCadeauCustom[];
   // Gel automatique : une fois le voyage terminé, le contenu des destinations
@@ -586,6 +588,8 @@ export async function ajouterContributionListeDeVoyage(
       c.id === id ? { ...c, montantReuni: (c.montantReuni ?? 0) + montant } : c
     );
     misAJour = { ...carnet, listeVoyageCadeaux };
+  } else if (elementId === "libre") {
+    misAJour = { ...carnet, contributionLibreReunie: (carnet.contributionLibreReunie ?? 0) + montant };
   } else {
     return null;
   }

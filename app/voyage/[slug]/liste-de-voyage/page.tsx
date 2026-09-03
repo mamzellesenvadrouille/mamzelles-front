@@ -3,6 +3,7 @@
 import { notFound } from "next/navigation";
 import { getCarnetComplet, getElementsListeDeVoyage } from "@/lib/carnets";
 import ListeDeVoyageCarte from "./ListeDeVoyageCarte";
+import ListeDeVoyageCarteLibre from "./ListeDeVoyageCarteLibre";
 
 export const dynamic = "force-dynamic";
 
@@ -27,6 +28,17 @@ const IconCadeau = () => (
       strokeWidth={1.6}
       strokeLinecap="round"
       strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const IconEtoile = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ verticalAlign: -1.5, marginRight: 4 }}>
+    <path
+      d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"
+      stroke={GOLD}
+      strokeWidth={1.6}
+      strokeLinecap="round"
     />
   </svg>
 );
@@ -57,6 +69,7 @@ export default async function ListeDeVoyagePage({
   if (!carnet) notFound();
 
   const elements = getElementsListeDeVoyage(carnet);
+  const totalReuni = elements.reduce((somme, el) => somme + (el.montantReuni ?? 0), 0) + (carnet.contributionLibreReunie ?? 0);
   if (!carnet.onParticipeUrl || elements.length === 0) notFound();
 
   const prenoms = carnet.client.prenoms;
@@ -99,18 +112,21 @@ export default async function ListeDeVoyagePage({
       {/* Bandeau cagnotte */}
       <div style={{ maxWidth: 560, margin: "28px auto 0", padding: "0 24px" }}>
         <div style={{ background: DARK, borderRadius: 8, padding: "22px 24px", textAlign: "center" }}>
+          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500, lineHeight: 1.05, color: "#fff" }}>
+            <span style={{ color: "#e4c9ae" }}>{totalReuni} €</span> déjà réunis pour notre voyage
+          </div>
           <a
             href={carnet.onParticipeUrl}
             target="_blank"
             rel="noopener noreferrer"
             style={{
               display: "inline-block",
-              marginTop: 4,
-              fontSize: 13,
+              marginTop: 22,
+              fontSize: 12,
               fontWeight: 600,
               background: GOLD,
               color: "#fff",
-              padding: "10px 22px",
+              padding: "8px 18px",
               borderRadius: 24,
               textDecoration: "none",
             }}
@@ -147,6 +163,13 @@ export default async function ListeDeVoyagePage({
             </div>
           );
         })}
+
+        <div style={{ marginBottom: 44 }}>
+          <div style={{ fontSize: 14.5, color: "#a89a8c", marginBottom: 10 }}>
+            <IconEtoile />À vous de choisir
+          </div>
+          <ListeDeVoyageCarteLibre slug={slug} onParticipeUrl={carnet.onParticipeUrl!} />
+        </div>
       </div>
 
       {/* Footer */}
