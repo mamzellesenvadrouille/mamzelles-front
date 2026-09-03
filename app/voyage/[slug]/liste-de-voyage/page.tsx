@@ -208,10 +208,14 @@ export default async function ListeDeVoyagePage({
 
       {/* Footer */}
       <div style={{ textAlign: "center", padding: "32px 28px 44px", background: DARK }}>
-        <p style={{ fontSize: 13, color: "#cfc4b8", lineHeight: 1.7, maxWidth: 480, margin: "0 auto" }}>
-          Toutes les participations sont réunies dans une seule cagnotte pour notre voyage. Vous choisissez le moment
-          ou le cadeau que vous souhaitez soutenir, nous utiliserons ensuite les fonds pour réserver et profiter de
-          notre voyage.
+        <p style={{ fontSize: 13, color: "#cfc4b8", lineHeight: 1.9, maxWidth: 480, margin: "0 auto" }}>
+          Merci du fond du cœur d&apos;être présents dans notre vie.
+          <br />
+          Chaque participation nous touche profondément et nous aidera à faire de ce voyage de noces un véritable
+          conte de fées.
+          <br />
+          Choisissez le moment ou le cadeau qui vous parle, et nous nous chargerons du reste… avec tout notre amour.
+          🫶🏼
         </p>
       </div>
     </div>
