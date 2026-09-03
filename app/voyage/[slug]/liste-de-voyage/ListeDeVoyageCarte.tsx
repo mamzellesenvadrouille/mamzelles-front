@@ -49,6 +49,7 @@ export default function ListeDeVoyageCarte({
 }) {
   const [montant, setMontant] = useState("");
   const [prenom, setPrenom] = useState("");
+  const [prenomManquant, setPrenomManquant] = useState(false);
   const [montantReuni, setMontantReuni] = useState(item.montantReuni ?? 0);
   const [enCours, setEnCours] = useState(false);
 
@@ -57,7 +58,10 @@ export default function ListeDeVoyageCarte({
     item.prixIndicatif && item.prixIndicatif > 0 ? Math.min(100, Math.round((montantReuni / item.prixIndicatif) * 100)) : 0;
 
   async function participer() {
-    if (!prenom.trim()) return;
+    if (!prenom.trim()) {
+      setPrenomManquant(true);
+      return;
+    }
     const valeur = Number(montant);
     const nouvelOnglet = window.open("", "_blank", "noopener,noreferrer");
 
@@ -157,9 +161,12 @@ export default function ListeDeVoyageCarte({
           <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8 }}>
             <input
               type="text"
-              placeholder="Prénom / Nom *"
+              placeholder="Prénom / Nom"
               value={prenom}
-              onChange={(e) => setPrenom(e.target.value)}
+              onChange={(e) => {
+                setPrenom(e.target.value);
+                if (prenomManquant) setPrenomManquant(false);
+              }}
               style={{
                 flex: 1,
                 height: 36,
@@ -167,9 +174,9 @@ export default function ListeDeVoyageCarte({
                 fontFamily: "Inter, sans-serif",
                 fontSize: 13,
                 padding: "0 12px",
-                border: `1.5px solid ${GOLD}`,
+                border: prenomManquant ? `1.5px solid ${GOLD}` : `1px solid ${LINE}`,
                 borderRadius: 4,
-                background: "#fdf6ee",
+                background: prenomManquant ? "#fdf6ee" : "#f8f4ef",
                 color: DARK,
                 outline: "none",
               }}

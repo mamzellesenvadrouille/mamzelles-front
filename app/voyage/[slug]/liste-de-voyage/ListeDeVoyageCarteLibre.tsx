@@ -19,11 +19,15 @@ export default function ListeDeVoyageCarteLibre({
 }) {
   const [montant, setMontant] = useState("");
   const [prenom, setPrenom] = useState("");
+  const [prenomManquant, setPrenomManquant] = useState(false);
   const [montantReuni, setMontantReuni] = useState(montantReuniInitial);
   const [enCours, setEnCours] = useState(false);
 
   async function participer() {
-    if (!prenom.trim()) return;
+    if (!prenom.trim()) {
+      setPrenomManquant(true);
+      return;
+    }
     const valeur = Number(montant);
     const nouvelOnglet = window.open("", "_blank", "noopener,noreferrer");
 
@@ -73,7 +77,10 @@ export default function ListeDeVoyageCarteLibre({
           type="text"
           placeholder="Prénom / Nom"
           value={prenom}
-          onChange={(e) => setPrenom(e.target.value)}
+          onChange={(e) => {
+            setPrenom(e.target.value);
+            if (prenomManquant) setPrenomManquant(false);
+          }}
           style={{
             flex: 1,
             height: 36,
@@ -81,9 +88,9 @@ export default function ListeDeVoyageCarteLibre({
             fontFamily: "Inter, sans-serif",
             fontSize: 13,
             padding: "0 12px",
-            border: `1px solid ${LINE}`,
+            border: prenomManquant ? `1.5px solid ${GOLD}` : `1px solid ${LINE}`,
             borderRadius: 4,
-            background: "#f8f4ef",
+            background: prenomManquant ? "#fdf6ee" : "#f8f4ef",
             color: DARK,
             outline: "none",
           }}
@@ -112,7 +119,7 @@ export default function ListeDeVoyageCarteLibre({
         />
         <button
           onClick={participer}
-          disabled={enCours || !prenom.trim()}
+          disabled={enCours}
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -130,9 +137,9 @@ export default function ListeDeVoyageCarteLibre({
             padding: "0 14px 0 11px",
             borderRadius: 20,
             whiteSpace: "nowrap",
-            cursor: prenom.trim() ? "pointer" : "not-allowed",
+            cursor: "pointer",
             boxShadow: "0 3px 10px rgba(200, 149, 108, 0.3)",
-            opacity: enCours || !prenom.trim() ? 0.5 : 1,
+            opacity: enCours ? 0.7 : 1,
           }}
         >
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
