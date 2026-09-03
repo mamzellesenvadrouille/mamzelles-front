@@ -84,7 +84,7 @@ export default async function ListeDeVoyagePage({
           borderBottom: `1px solid ${LINE}`,
         }}
       >
-        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: 16, color: GOLD, marginBottom: 14 }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: 20, color: GOLD, marginBottom: 14 }}>
           La Liste de Voyage
         </div>
         <h1
