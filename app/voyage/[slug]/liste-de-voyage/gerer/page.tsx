@@ -85,8 +85,8 @@ export default async function GererListeDeVoyagePage({
               La Liste de Voyage
             </h2>
             <p style={{ fontSize: 14.5, color: "#6b6158", lineHeight: 1.6 }}>
-              Partagez ce lien avec vos proches : ils choisissent un moment de votre voyage à offrir, tout part dans
-              la même cagnotte.
+              Partagez ce lien avec vos proches : ils choisissent ce qu'ils souhaitent vous offrir, tout part ensuite
+              dans la même cagnotte.
             </p>
 
             <div style={{ marginTop: 18 }}>
