@@ -119,8 +119,13 @@ export default function ListeDeVoyageCarte({
       )}
 
       {financee ? (
-        <div style={{ fontSize: 13.5, color: DARK }}>
-          <strong>{montantReuni} €</strong> réunis <IconCoeur /> <span style={{ color: FUNDED, fontWeight: 500 }}>Financé</span>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ fontSize: 13.5, color: DARK }}>
+            <strong>{montantReuni} €</strong> réunis
+          </div>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: 5, fontSize: 12, fontWeight: 500, color: FUNDED }}>
+            <IconCoeur /> Financé
+          </span>
         </div>
       ) : (
         <>
