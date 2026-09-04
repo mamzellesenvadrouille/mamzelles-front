@@ -95,7 +95,7 @@ export default async function GererListeDeVoyagePage({
 
         <div style={{ background: "#fffdfa", border: `1px solid ${LINE}`, borderRadius: 6, overflow: "hidden" }}>
           <div style={{ padding: "32px 28px", borderBottom: `1px solid ${LINE}`, textAlign: "center" }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 600, marginBottom: 24 }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 600, marginBottom: 24 }}>
               Partagez votre Liste de Voyage
             </h2>
 
@@ -128,7 +128,7 @@ export default async function GererListeDeVoyagePage({
               À afficher le jour J : vos proches scannent, et arrivent directement sur la liste.
             </p>
 
-            <div style={{ borderTop: `1px dashed ${LINE}`, margin: "22px 0" }} />
+            <div style={{ borderTop: `1px dashed ${LINE}`, margin: "22px auto", width: 120 }} />
 
             <div style={{ fontSize: 11.5, color: "#a89a8c", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 11 }}>
               Ou envoyez-leur simplement ce lien :
