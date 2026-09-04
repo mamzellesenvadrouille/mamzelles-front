@@ -161,10 +161,13 @@ export default async function GererListeDeVoyagePage({
               </p>
 
               <div style={{ display: "flex", justifyContent: "center", margin: "22px 0" }}>
-                <svg width="66" height="15" viewBox="0 0 110 24" fill="none">
-                  <circle cx="6" cy="12" r="2" fill={GOLD} />
-                  <path d="M18 12c12-9 25-9 37 0s25 9 37 0" stroke={GOLD} strokeWidth={1.5} strokeLinecap="round" />
-                  <circle cx="104" cy="12" r="2" fill={GOLD} />
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 21s-7.5-4.6-10-9.3C.4 8.3 2 4.5 5.7 4c2.2-.3 4.2.9 6.3 3 2.1-2.1 4.1-3.3 6.3-3 3.7.5 5.3 4.3 3.7 7.7C19.5 16.4 12 21 12 21Z"
+                    stroke={GOLD}
+                    strokeWidth={1.5}
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </div>
 
