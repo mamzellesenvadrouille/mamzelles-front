@@ -2,7 +2,6 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/liste-de-voyage/gerer/page.tsx
 import { notFound } from "next/navigation";
 import QRCode from "qrcode";
-import sharp from "sharp";
 import { getCarnetComplet, getElementsListeDeVoyage, type ElementListeDeVoyage } from "@/lib/carnets";
 import GererCadeaux from "./GererCadeaux";
 import CopierLien from "./CopierLien";
@@ -94,8 +93,8 @@ export default async function GererListeDeVoyagePage({
       <path d="M450 1070 s-22 -13 -30 -28 c-6 -12 3 -25 15 -27 c7 -1 12 3 15 8 c3 -5 8 -9 15 -8 c12 2 21 15 15 27 c-8 15 -30 28 -30 28 Z" fill="none" stroke="#c8956c" stroke-width="2"/>
     </svg>
   `.trim();
-  const bufferImpression = await sharp(Buffer.from(svgCarte)).png().toBuffer();
-  const qrImpression = `data:image/png;base64,${bufferImpression.toString("base64")}`;
+  const bufferImpression = Buffer.from(svgCarte, "utf-8");
+  const qrImpression = `data:image/svg+xml;base64,${bufferImpression.toString("base64")}`;
 
   const transports = elements.filter((el) => el.categorie === "transport");
   const hebergements = elements.filter((el) => el.categorie === "hebergement");
@@ -130,7 +129,7 @@ export default async function GererListeDeVoyagePage({
               </div>
               <a
                 href={qrImpression}
-                download="qr-code-liste-de-voyage.png"
+                download="qr-code-liste-de-voyage.svg"
                 style={{
                   fontSize: 12.5,
                   fontWeight: 500,
