@@ -90,9 +90,9 @@ export default async function GererListeDeVoyagePage({
       <rect x="36" y="36" width="828" height="1128" fill="#fffdfa" stroke="#c8956c" stroke-width="1.5"/>
       <rect x="52" y="52" width="796" height="1096" fill="none" stroke="#e6ddd1" stroke-width="1"/>
       <text x="450" y="150" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="#c8956c">La Liste de Voyage</text>
-      <text x="450" y="230" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#1a1512">${echapperXml(carnet.client.prenoms)}</text>
-      <text x="450" y="270" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#c8956c">${echapperXml(carnet.destination)}</text>
-      <image x="170" y="320" width="560" height="560" href="${qrBrut}"/>
+      <text x="450" y="245" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#1a1512">${echapperXml(carnet.client.prenoms)}</text>
+      <text x="450" y="288" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="1" fill="#8a7f74">${echapperXml(carnet.destination)}</text>
+      <image x="170" y="340" width="560" height="560" href="${qrBrut}"/>
       <text x="450" y="960" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#1a1512">Scannez pour découvrir notre Liste de Voyage</text>
       <text x="450" y="1005" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8a7f74">et participer à notre lune de miel</text>
       <g transform="translate(434, 1055) scale(1.25)">
@@ -161,17 +161,14 @@ export default async function GererListeDeVoyagePage({
               </p>
 
               <div style={{ display: "flex", justifyContent: "center", margin: "22px 0" }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 21s-7.5-4.6-10-9.3C.4 8.3 2 4.5 5.7 4c2.2-.3 4.2.9 6.3 3 2.1-2.1 4.1-3.3 6.3-3 3.7.5 5.3 4.3 3.7 7.7C19.5 16.4 12 21 12 21Z"
-                    stroke={GOLD}
-                    strokeWidth={1.5}
-                    strokeLinejoin="round"
-                  />
+                <svg width="110" height="24" viewBox="0 0 110 24" fill="none">
+                  <circle cx="6" cy="12" r="2" fill={GOLD} />
+                  <path d="M18 12c12-9 25-9 37 0s25 9 37 0" stroke={GOLD} strokeWidth={1.5} strokeLinecap="round" />
+                  <circle cx="104" cy="12" r="2" fill={GOLD} />
                 </svg>
               </div>
 
-              <div style={{ fontSize: 11.5, color: "#a89a8c", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 11 }}>
+              <div style={{ fontSize: 11.5, color: "#8a7f74", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 11 }}>
                 Ou envoyez-leur simplement ce lien :
               </div>
               <CopierLien lien={lienPublic} />
