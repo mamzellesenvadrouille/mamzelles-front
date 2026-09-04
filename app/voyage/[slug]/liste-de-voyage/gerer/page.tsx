@@ -94,7 +94,7 @@ export default async function GererListeDeVoyagePage({
       <image x="170" y="300" width="560" height="560" href="${qrBrut}"/>
       <text x="450" y="960" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#1a1512">Scannez pour découvrir notre Liste de Voyage</text>
       <text x="450" y="1005" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8a7f74">et choisir un moment de notre voyage à nous offrir</text>
-      <g transform="translate(438, 1060) scale(1)">
+      <g transform="translate(434, 1055) scale(1.25)">
         <path
           d="M12 21s-7.5-4.6-10-9.3C.4 8.3 2 4.5 5.7 4c2.2-.3 4.2.9 6.3 3 2.1-2.1 4.1-3.3 6.3-3 3.7.5 5.3 4.3 3.7 7.7C19.5 16.4 12 21 12 21Z"
           fill="none"
@@ -129,41 +129,43 @@ export default async function GererListeDeVoyagePage({
               Partagez votre Liste de Voyage
             </h2>
 
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <div style={{ display: "inline-block", padding: 10, background: "#fff", border: `1px solid ${LINE}`, borderRadius: 10, marginBottom: 12 }}>
-                <img
-                  src={qrAffichage}
-                  alt="QR code de la Liste de Voyage"
-                  width={100}
-                  height={100}
-                  style={{ display: "block", borderRadius: 4 }}
-                />
+            <div style={{ background: CREAM, border: `1px solid ${LINE}`, borderRadius: 8, padding: "24px 20px" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <div style={{ display: "inline-block", padding: 10, background: "#fff", border: `1px solid ${LINE}`, borderRadius: 10, marginBottom: 12 }}>
+                  <img
+                    src={qrAffichage}
+                    alt="QR code de la Liste de Voyage"
+                    width={100}
+                    height={100}
+                    style={{ display: "block", borderRadius: 4 }}
+                  />
+                </div>
+                <a
+                  href={qrImpression}
+                  download="qr-code-liste-de-voyage.svg"
+                  style={{
+                    fontSize: 12.5,
+                    fontWeight: 500,
+                    color: GOLD,
+                    textDecoration: "underline",
+                    textUnderlineOffset: "3px",
+                    marginBottom: 14,
+                  }}
+                >
+                  Télécharger le QR code
+                </a>
               </div>
-              <a
-                href={qrImpression}
-                download="qr-code-liste-de-voyage.svg"
-                style={{
-                  fontSize: 12.5,
-                  fontWeight: 500,
-                  color: GOLD,
-                  textDecoration: "underline",
-                  textUnderlineOffset: "3px",
-                  marginBottom: 14,
-                }}
-              >
-                Télécharger le QR code
-              </a>
-            </div>
-            <p style={{ fontSize: 13, color: "#8a7f74", lineHeight: 1.5, maxWidth: 320, margin: "0 auto" }}>
-              À afficher le jour J : vos proches scannent, et arrivent directement sur la liste.
-            </p>
+              <p style={{ fontSize: 13, color: "#8a7f74", lineHeight: 1.5, maxWidth: 320, margin: "0 auto" }}>
+                À afficher le jour J : vos proches scannent, et arrivent directement sur la liste.
+              </p>
 
-            <div style={{ borderTop: `1px dashed ${LINE}`, margin: "22px auto", width: 120 }} />
+              <div style={{ borderTop: `1px dashed ${LINE}`, margin: "22px auto", width: 120 }} />
 
-            <div style={{ fontSize: 11.5, color: "#a89a8c", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 11 }}>
-              Ou envoyez-leur simplement ce lien :
+              <div style={{ fontSize: 11.5, color: "#a89a8c", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 11 }}>
+                Ou envoyez-leur simplement ce lien :
+              </div>
+              <CopierLien lien={lienPublic} />
             </div>
-            <CopierLien lien={lienPublic} />
           </div>
 
           <div style={{ padding: "8px 14px 4px" }}>
