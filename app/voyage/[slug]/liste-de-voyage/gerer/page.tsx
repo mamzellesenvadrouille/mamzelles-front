@@ -91,7 +91,7 @@ export default async function GererListeDeVoyagePage({
       <rect x="52" y="52" width="796" height="1096" fill="none" stroke="#e6ddd1" stroke-width="1"/>
       <text x="450" y="150" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="#c8956c">La Liste de Voyage</text>
       <text x="450" y="245" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#1a1512">${echapperXml(carnet.client.prenoms)}</text>
-      <text x="450" y="288" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="1" fill="#8a7f74">${echapperXml(carnet.destination)}</text>
+      <text x="450" y="288" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="1" fill="#c8956c">${echapperXml(carnet.destination)}</text>
       <image x="170" y="340" width="560" height="560" href="${qrBrut}"/>
       <text x="450" y="960" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#1a1512">Scannez pour découvrir notre Liste de Voyage</text>
       <text x="450" y="1005" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8a7f74">et participer à notre lune de miel</text>
@@ -161,7 +161,7 @@ export default async function GererListeDeVoyagePage({
               </p>
 
               <div style={{ display: "flex", justifyContent: "center", margin: "22px 0" }}>
-                <svg width="110" height="24" viewBox="0 0 110 24" fill="none">
+                <svg width="66" height="15" viewBox="0 0 110 24" fill="none">
                   <circle cx="6" cy="12" r="2" fill={GOLD} />
                   <path d="M18 12c12-9 25-9 37 0s25 9 37 0" stroke={GOLD} strokeWidth={1.5} strokeLinecap="round" />
                   <circle cx="104" cy="12" r="2" fill={GOLD} />
