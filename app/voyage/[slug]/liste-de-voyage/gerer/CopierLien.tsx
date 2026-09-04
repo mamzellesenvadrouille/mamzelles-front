@@ -24,7 +24,7 @@ export default function CopierLien({ lien }: { lien: string }) {
         alignItems: "center",
         gap: 8,
         background: "#f8f4ef",
-        border: "1px solid #e6ddd1",
+        border: "1px solid #c8956c",
         borderRadius: 24,
         padding: "4px 4px 4px 16px",
       }}
@@ -41,7 +41,7 @@ export default function CopierLien({ lien }: { lien: string }) {
           background: "#1a1512",
           color: "#fff",
           border: "none",
-          padding: "8px 16px",
+          padding: "6px 14px",
           borderRadius: 20,
           cursor: "pointer",
           whiteSpace: "nowrap",
