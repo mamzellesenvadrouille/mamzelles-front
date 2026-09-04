@@ -2,6 +2,7 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/liste-de-voyage/gerer/page.tsx
 import { notFound } from "next/navigation";
 import QRCode from "qrcode";
+import sharp from "sharp";
 import { getCarnetComplet, getElementsListeDeVoyage, type ElementListeDeVoyage } from "@/lib/carnets";
 import GererCadeaux from "./GererCadeaux";
 import CopierLien from "./CopierLien";
@@ -65,18 +66,36 @@ export default async function GererListeDeVoyagePage({
   const elements = getElementsListeDeVoyage(carnet, carnet.destinationsCompletes);
   const lienPublic = `https://mamzellesenvadrouille.com/voyage/${slug}/liste-de-voyage`;
 
-  // QR code généré en local, à chaque affichage : aucune dépendance à un
+  // QR code générés en local, à chaque affichage : aucune dépendance à un
   // service externe (pas de risque de panne le jour du mariage).
   const qrAffichage = await QRCode.toDataURL(lienPublic, {
     width: 200,
     margin: 1,
     color: { dark: "#1a1512", light: "#ffffff" },
   });
-  const qrImpression = await QRCode.toDataURL(lienPublic, {
-    width: 1000,
-    margin: 2,
+
+  // Version imprimable : le QR code brut habillé dans une vraie carte
+  // (prénoms, cadre, phrase d'accroche), composée puis rasterisée en PNG.
+  const qrBrut = await QRCode.toDataURL(lienPublic, {
+    width: 560,
+    margin: 0,
     color: { dark: "#1a1512", light: "#ffffff" },
   });
+  const svgCarte = `
+    <svg width="900" height="1200" viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="1200" fill="#f8f4ef"/>
+      <rect x="36" y="36" width="828" height="1128" fill="#fffdfa" stroke="#c8956c" stroke-width="1.5"/>
+      <rect x="52" y="52" width="796" height="1096" fill="none" stroke="#e6ddd1" stroke-width="1"/>
+      <text x="450" y="150" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="#c8956c">La Liste de Voyage</text>
+      <text x="450" y="230" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#1a1512">${carnet.client.prenoms}</text>
+      <image x="170" y="300" width="560" height="560" href="${qrBrut}"/>
+      <text x="450" y="960" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#1a1512">Scannez pour découvrir notre Liste de Voyage</text>
+      <text x="450" y="1005" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8a7f74">et choisir un moment de notre voyage à nous offrir</text>
+      <path d="M450 1070 s-22 -13 -30 -28 c-6 -12 3 -25 15 -27 c7 -1 12 3 15 8 c3 -5 8 -9 15 -8 c12 2 21 15 15 27 c-8 15 -30 28 -30 28 Z" fill="none" stroke="#c8956c" stroke-width="2"/>
+    </svg>
+  `.trim();
+  const bufferImpression = await sharp(Buffer.from(svgCarte)).png().toBuffer();
+  const qrImpression = `data:image/png;base64,${bufferImpression.toString("base64")}`;
 
   const transports = elements.filter((el) => el.categorie === "transport");
   const hebergements = elements.filter((el) => el.categorie === "hebergement");
