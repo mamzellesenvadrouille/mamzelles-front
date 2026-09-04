@@ -94,7 +94,15 @@ export default async function GererListeDeVoyagePage({
       <image x="170" y="300" width="560" height="560" href="${qrBrut}"/>
       <text x="450" y="960" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#1a1512">Scannez pour découvrir notre Liste de Voyage</text>
       <text x="450" y="1005" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8a7f74">et choisir un moment de notre voyage à nous offrir</text>
-      <path d="M450 1070 s-22 -13 -30 -28 c-6 -12 3 -25 15 -27 c7 -1 12 3 15 8 c3 -5 8 -9 15 -8 c12 2 21 15 15 27 c-8 15 -30 28 -30 28 Z" fill="none" stroke="#c8956c" stroke-width="2"/>
+      <g transform="translate(438, 1060) scale(1)">
+        <path
+          d="M12 21s-7.5-4.6-10-9.3C.4 8.3 2 4.5 5.7 4c2.2-.3 4.2.9 6.3 3 2.1-2.1 4.1-3.3 6.3-3 3.7.5 5.3 4.3 3.7 7.7C19.5 16.4 12 21 12 21Z"
+          fill="none"
+          stroke="#c8956c"
+          stroke-width="1.5"
+          stroke-linejoin="round"
+        />
+      </g>
     </svg>
   `.trim();
   const bufferImpression = Buffer.from(svgCarte, "utf-8");
