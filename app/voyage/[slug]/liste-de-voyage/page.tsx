@@ -109,7 +109,7 @@ export default async function ListeDeVoyagePage({
       </div>
 
       {/* Bandeau cagnotte */}
-      <div style={{ maxWidth: 560, margin: "28px auto 0", padding: "0 24px" }}>
+      <div style={{ maxWidth: 620, margin: "28px auto 0", padding: "0 24px" }}>
         <div style={{ background: DARK, borderRadius: 8, padding: "24px 24px", textAlign: "center" }}>
           <div style={{ fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", color: GOLD, marginBottom: 2 }}>
             Déjà réuni pour notre voyage
@@ -121,7 +121,7 @@ export default async function ListeDeVoyagePage({
       </div>
 
       {/* Catégories */}
-      <div style={{ maxWidth: 560, margin: "0 auto", padding: "44px 24px 8px" }}>
+      <div style={{ maxWidth: 620, margin: "0 auto", padding: "44px 24px 8px" }}>
         {(transports.length > 0 || hebergements.length > 0 || activites.length > 0) && (
           <div style={{ fontSize: 14.5, color: "#a89a8c", marginBottom: 10 }}>
             <IconAvion />
