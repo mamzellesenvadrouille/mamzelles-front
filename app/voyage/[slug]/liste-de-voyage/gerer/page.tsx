@@ -158,18 +158,20 @@ export default async function GererListeDeVoyagePage({
               </div>
               <p style={{ fontSize: 13, color: "#8a7f74", lineHeight: 1.5, maxWidth: 320, margin: "0 auto" }}>
                 <span style={{ textTransform: "uppercase", letterSpacing: "0.04em", fontWeight: 600, color: "#1a1512" }}>
-                  À afficher le jour J
+                  À afficher le jour J&nbsp;:
                 </span>{" "}
-                : vos proches scannent, et arrivent directement sur la liste.
+                vos proches scannent, et arrivent directement sur la liste.
               </p>
 
               <div style={{ display: "flex", justifyContent: "center", margin: "22px 0" }}>
                 <span style={{ fontSize: 13, fontWeight: 700, letterSpacing: "0.08em", color: GOLD }}>OU</span>
               </div>
 
-              <div style={{ fontSize: 11.5, color: "#8a7f74", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 11 }}>
-                Envoyez-leur ce lien :
-              </div>
+              <p style={{ fontSize: 13, marginBottom: 11 }}>
+                <span style={{ textTransform: "uppercase", letterSpacing: "0.04em", fontWeight: 600, color: "#1a1512" }}>
+                  Envoyez-leur ce lien&nbsp;:
+                </span>
+              </p>
               <CopierLien lien={lienPublic} />
             </div>
           </div>
