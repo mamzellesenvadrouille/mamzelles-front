@@ -107,18 +107,18 @@
   color: #fff;
   padding: 0 24px;
 }
-.heroContent .eyebrow { color: #ecd7c4; font-size: 13px; letter-spacing: .18em; }
+.heroContent .eyebrow { color: #ecd7c4; font-size: 14px; letter-spacing: .18em; }
 .heroContent .display1 { font-size: 72px; margin: 22px 0 14px; }
-.place { font-size: 19px; letter-spacing: .1em; text-transform: uppercase; opacity: .9; font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-style: italic; font-weight: 700; }
+.place { font-size: 22px; letter-spacing: .1em; text-transform: uppercase; opacity: .9; font-family: var(--font-cormorant, "Cormorant Garamond", serif); font-style: italic; font-weight: 700; }
 .dates {
   margin-top: var(--s3);
-  font-size: 15px;
+  font-size: 16px;
   opacity: .8;
 }
 @media (max-width: 640px) {
   .heroContent .display1 { font-size: 48px; }
-  .place { font-size: 15px; }
-  .dates { font-size: 13px; }
+  .place { font-size: 17px; }
+  .dates { font-size: 14px; }
 }
 
 /* Bande du compte à rebours, sous le hero */
