@@ -82,11 +82,11 @@
   height: 85vh;
   min-height: 560px;
   background-size: cover;
-  background-position: center;
+  background-position: center var(--hero-pos-y, 50%);
 }
 @media (max-width: 480px) {
   .hero {
-    background-position: var(--hero-pos-x, 50%) center;
+    background-position: var(--hero-pos-x, 50%) var(--hero-pos-y, 50%);
   }
 }
 .hero::after {

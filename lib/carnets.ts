@@ -152,7 +152,7 @@ export interface Carnet {
   };
   destination: string; // libellé général, ex: "Maldives"
   dates: { debut: string; fin: string };
-  hero: { photo: string; photoPositionXMobile?: number };
+  hero: { photo: string; photoPosition?: number; photoPositionXMobile?: number };
   bienvenue: { message: string };
   overview: { meteo: string; budget: number; decalage: string; dureeJours: number };
   meteoLat?: number; // coordonnées pour la météo en temps réel (Open-Meteo, sans clé API)
