@@ -14,6 +14,36 @@ const CREAM = "#f8f4ef";
 const LINE = "#e6ddd1";
 const FUNDED = "#8a9a7e";
 
+const IconAvion = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ verticalAlign: -1, marginRight: 4 }}>
+    <path d="m22 2-7 20-4-9-9-4Z" stroke={GOLD} strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M22 2 11 13" stroke={GOLD} strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const IconCadeau = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ verticalAlign: -1, marginRight: 4 }}>
+    <path
+      d="M20 12V22H4V12M22 7H2V12H22V7ZM12 22V7M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7ZM12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z"
+      stroke={GOLD}
+      strokeWidth={1.6}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const IconEtoile = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ verticalAlign: -3, marginRight: 3 }}>
+    <path
+      d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"
+      stroke={GOLD}
+      strokeWidth={1.6}
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
 function LigneElement({ item }: { item: ElementListeDeVoyage }) {
   const reuni = item.montantReuni ?? 0;
   const prix = item.prixIndicatif;
@@ -176,7 +206,13 @@ export default async function GererListeDeVoyagePage({
             </div>
           </div>
 
-          <div style={{ padding: "8px 14px 4px" }}>
+          <div style={{ padding: "22px 14px 4px" }}>
+            {(transports.length > 0 || hebergements.length > 0 || activites.length > 0) && (
+              <div style={{ fontSize: 13.5, color: "#a89a8c", padding: "0 4px 8px" }}>
+                <IconAvion />
+                Pour vivre notre voyage
+              </div>
+            )}
             {transports.length > 0 && (
               <>
                 <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
@@ -210,7 +246,11 @@ export default async function GererListeDeVoyagePage({
               </>
             )}
 
-            <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
+            <div style={{ fontSize: 13.5, color: "#a89a8c", padding: "10px 4px 8px" }}>
+              <IconCadeau />
+              Pour préparer notre voyage
+            </div>
+            <div style={{ padding: "0 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
               Équipements
             </div>
           </div>
@@ -218,7 +258,11 @@ export default async function GererListeDeVoyagePage({
           <GererCadeaux slug={slug} cadeauxInitiaux={carnet.listeVoyageCadeaux ?? []} />
 
           <div style={{ padding: "8px 14px 18px" }}>
-            <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
+            <div style={{ fontSize: 13.5, color: "#a89a8c", padding: "10px 4px 8px" }}>
+              <IconEtoile />
+              Une petite folie pour le voyage
+            </div>
+            <div style={{ padding: "0 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
               À vous de choisir
             </div>
             <div style={{ background: "#fffdfa", border: `1px solid ${LINE}`, borderRadius: 4, padding: "16px 18px" }}>
