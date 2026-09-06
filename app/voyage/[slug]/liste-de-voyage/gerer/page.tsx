@@ -89,13 +89,13 @@ export default async function GererListeDeVoyagePage({
       <rect width="900" height="1200" fill="#f8f4ef"/>
       <rect x="36" y="36" width="828" height="1128" fill="#fffdfa" stroke="#c8956c" stroke-width="1.5"/>
       <rect x="52" y="52" width="796" height="1096" fill="none" stroke="#e6ddd1" stroke-width="1"/>
-      <text x="450" y="150" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="#c8956c">La Liste de Voyage</text>
-      <text x="450" y="245" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#1a1512">${echapperXml(carnet.client.prenoms)}</text>
-      <text x="450" y="288" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="1" fill="#c8956c">${echapperXml(carnet.destination)}</text>
-      <image x="170" y="340" width="560" height="560" href="${qrBrut}"/>
-      <text x="450" y="960" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#1a1512">Scannez pour découvrir notre Liste de Voyage</text>
-      <text x="450" y="1005" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8a7f74">et participer à notre lune de miel</text>
-      <g transform="translate(434, 1055) scale(1.25)">
+      <text x="450" y="135" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="#c8956c">La Liste de Voyage</text>
+      <text x="450" y="220" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#1a1512">${echapperXml(carnet.client.prenoms)}</text>
+      <text x="450" y="258" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="1" fill="#c8956c">${echapperXml(carnet.destination)}</text>
+      <image x="170" y="310" width="560" height="560" href="${qrBrut}"/>
+      <text x="450" y="1010" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#1a1512">Scannez pour découvrir notre Liste de Voyage</text>
+      <text x="450" y="1050" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8a7f74">et participer à notre lune de miel</text>
+      <g transform="translate(434, 1065) scale(1.25)">
         <path
           d="M12 21s-7.5-4.6-10-9.3C.4 8.3 2 4.5 5.7 4c2.2-.3 4.2.9 6.3 3 2.1-2.1 4.1-3.3 6.3-3 3.7.5 5.3 4.3 3.7 7.7C19.5 16.4 12 21 12 21Z"
           fill="none"
