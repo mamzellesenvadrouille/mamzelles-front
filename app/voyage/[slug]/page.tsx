@@ -101,7 +101,7 @@ export default async function CarnetPage({
           <div className={styles.place}>{carnet.destination}</div>
           <div className={styles.dates}>
             {new Date(carnet.dates.debut).toLocaleDateString("fr-FR", { day: "numeric", month: "long" })}
-            {" au "}
+            {" - "}
             {new Date(carnet.dates.fin).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
           </div>
         </div>
