@@ -68,8 +68,8 @@ export default function GererCadeaux({
   }
 
   return (
-    <div style={{ padding: "8px 14px 22px" }}>
-      <div style={{ padding: "14px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500, color: "#1a1512" }}>
+    <div style={{ padding: "0 14px 22px" }}>
+      <div style={{ padding: "0 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500, color: "#1a1512" }}>
         Vos idées de cadeaux
       </div>
 

@@ -262,15 +262,11 @@ export default async function GererListeDeVoyagePage({
               <IconEtoile />
               Une petite folie pour le voyage
             </div>
-            <div style={{ padding: "0 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
-              À vous de choisir
-            </div>
             <div style={{ background: "#fffdfa", border: `1px solid ${LINE}`, borderRadius: 4, padding: "16px 18px" }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 19, fontWeight: 500 }}>Un montant libre</div>
+                <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 19, fontWeight: 500 }}>Montant libre</div>
                 <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512" }}>{carnet.contributionLibreReunie ?? 0} €</div>
               </div>
-              <div style={{ fontSize: 12.5, color: "#8a7f74", marginTop: 2 }}>Contributions libres, sans élément précis.</div>
               {carnet.contributionsLibres && carnet.contributionsLibres.length > 0 && (
                 <div style={{ fontSize: 12, color: "#a89a8c", marginTop: 8 }}>
                   Offert par {carnet.contributionsLibres.map((c) => c.prenom || "Anonyme").join(", ")}
