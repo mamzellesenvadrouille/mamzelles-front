@@ -68,19 +68,19 @@ export default function GererCadeaux({
   }
 
   return (
-    <div style={{ padding: "16px 24px 22px", borderTop: "1px solid #e6ddd1" }}>
-      <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18, color: "#a89a8c", marginBottom: 8 }}>
+    <div style={{ padding: "8px 14px 22px", borderTop: `1px solid #e6ddd1` }}>
+      <div style={{ padding: "14px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500, color: "#1a1512" }}>
         Vos idées de cadeaux
       </div>
 
       {cadeaux.map((c) => (
-        <div key={c.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 4px", fontSize: 14 }}>
+        <div key={c.id} style={{ background: "#fffdfa", border: "1px solid #e6ddd1", borderRadius: 4, padding: "16px 18px", marginBottom: 10, display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12 }}>
           <div>
-            <div style={{ color: "#1a1512" }}>{c.nom}</div>
-            {c.description && <div style={{ fontSize: 12.5, color: "#8a7f74" }}>{c.description}</div>}
+            <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 19, fontWeight: 500, color: "#1a1512" }}>{c.nom}</div>
+            {c.description && <div style={{ fontSize: 12.5, color: "#8a7f74", marginTop: 2 }}>{c.description}</div>}
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ color: "#6b6158" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
+            <span style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", whiteSpace: "nowrap" }}>
               {c.prixIndicatif != null ? `${c.montantReuni ?? 0} € / ${c.prixIndicatif} €` : ""}
             </span>
             <button

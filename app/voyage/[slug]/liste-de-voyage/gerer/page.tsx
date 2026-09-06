@@ -26,14 +26,14 @@ function LigneElement({ item }: { item: ElementListeDeVoyage }) {
   else meta = `${reuni} € réunis`;
 
   return (
-    <div style={{ marginBottom: 10 }}>
+    <div style={{ background: "#fffdfa", border: `1px solid ${LINE}`, borderRadius: 4, padding: "16px 18px", marginBottom: 10 }}>
       <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12, marginBottom: 8 }}>
         <div>
-          <div style={{ fontSize: 15, fontWeight: 500 }}>{item.nom}</div>
+          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 19, fontWeight: 500 }}>{item.nom}</div>
           <div style={{ fontSize: 12.5, color: financee ? FUNDED : "#8a7f74", marginTop: 2 }}>{meta}</div>
         </div>
         {prix != null && (
-          <div style={{ fontSize: 13.5, color: "#6b6158", flexShrink: 0, whiteSpace: "nowrap" }}>
+          <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512", flexShrink: 0, whiteSpace: "nowrap" }}>
             {reuni} € / {prix} €
           </div>
         )}
@@ -44,7 +44,7 @@ function LigneElement({ item }: { item: ElementListeDeVoyage }) {
         </div>
       )}
       {item.contributions && item.contributions.length > 0 && (
-        <div style={{ fontSize: 12, color: "#a89a8c", marginTop: 6 }}>
+        <div style={{ fontSize: 12, color: "#a89a8c", marginTop: 8 }}>
           Offert par {item.contributions.map((c) => c.prenom || "Anonyme").join(", ")}
         </div>
       )}
@@ -91,7 +91,7 @@ export default async function GererListeDeVoyagePage({
       <rect x="52" y="52" width="796" height="1096" fill="none" stroke="#e6ddd1" stroke-width="1"/>
       <text x="450" y="135" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="24" fill="#c8956c">La Liste de Voyage</text>
       <text x="450" y="220" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#1a1512">${echapperXml(carnet.client.prenoms)}</text>
-      <text x="450" y="270" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="1" fill="#c8956c">${echapperXml(carnet.destination)}</text>
+      <text x="450" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="1" fill="#c8956c">${echapperXml(carnet.destination)}</text>
       <image x="170" y="310" width="560" height="560" href="${qrBrut}"/>
       <text x="450" y="960" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#1a1512">Scannez pour découvrir notre Liste de Voyage</text>
       <text x="450" y="1000" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8a7f74">et participer à notre lune de miel</text>
@@ -217,17 +217,22 @@ export default async function GererListeDeVoyagePage({
 
           <GererCadeaux slug={slug} cadeauxInitiaux={carnet.listeVoyageCadeaux ?? []} />
 
-          <div style={{ padding: "14px 24px 18px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <div style={{ fontSize: 15, fontWeight: 500 }}>Un montant libre</div>
-              <div style={{ fontSize: 13.5, color: "#6b6158" }}>{carnet.contributionLibreReunie ?? 0} € réunis</div>
+          <div style={{ padding: "8px 14px 18px" }}>
+            <div style={{ padding: "22px 4px 12px", fontFamily: "'Cormorant Garamond', serif", fontSize: 21, fontWeight: 500 }}>
+              À vous de choisir
             </div>
-            <div style={{ fontSize: 12.5, color: "#8a7f74", marginTop: 2 }}>Contributions libres, sans élément précis.</div>
-            {carnet.contributionsLibres && carnet.contributionsLibres.length > 0 && (
-              <div style={{ fontSize: 12, color: "#a89a8c", marginTop: 6, paddingBottom: 18 }}>
-                Offert par {carnet.contributionsLibres.map((c) => c.prenom || "Anonyme").join(", ")}
+            <div style={{ background: "#fffdfa", border: `1px solid ${LINE}`, borderRadius: 4, padding: "16px 18px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 19, fontWeight: 500 }}>Un montant libre</div>
+                <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512" }}>{carnet.contributionLibreReunie ?? 0} €</div>
               </div>
-            )}
+              <div style={{ fontSize: 12.5, color: "#8a7f74", marginTop: 2 }}>Contributions libres, sans élément précis.</div>
+              {carnet.contributionsLibres && carnet.contributionsLibres.length > 0 && (
+                <div style={{ fontSize: 12, color: "#a89a8c", marginTop: 8 }}>
+                  Offert par {carnet.contributionsLibres.map((c) => c.prenom || "Anonyme").join(", ")}
+                </div>
+              )}
+            </div>
           </div>
 
           <div
