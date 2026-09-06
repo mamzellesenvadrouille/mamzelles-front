@@ -594,32 +594,28 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12.5, color: "#888", marginTop: -6, marginBottom: 12 }}>
                       Sur ordinateur, la photo occupe toute la largeur de l&apos;écran : ce réglage permet de remonter ou descendre le cadrage vertical (utile si un visage ou un élément important est coupé).
                     </p>
-                    <div style={{ display: "flex", gap: 20, alignItems: "flex-start" }}>
-                      <div
-                        style={{
-                          width: 280,
-                          height: 160,
-                          borderRadius: 8,
-                          flexShrink: 0,
-                          backgroundImage: `url('${carnet.hero.photo}')`,
-                          backgroundSize: "cover",
-                          backgroundPosition: `center ${carnet.hero.photoPosition ?? 50}%`,
-                          border: "1px solid #e8e0d6",
-                        }}
-                      />
-                      <div style={{ flex: 1 }}>
-                        <label style={{ ...adminStyles.label, fontSize: 10.5 }}>Position verticale ({carnet.hero.photoPosition ?? 50}%)</label>
-                        <input
-                          type="range"
-                          min={0}
-                          max={100}
-                          value={carnet.hero.photoPosition ?? 50}
-                          onChange={(e) => updateNested("hero", "photoPosition", Number(e.target.value))}
-                          style={{ width: "100%" }}
-                        />
-                        <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: "#aaa", marginTop: 4 }}>0 = cadré en haut · 100 = cadré en bas</p>
-                      </div>
-                    </div>
+                    <div
+                      style={{
+                        width: "100%",
+                        height: 240,
+                        borderRadius: 8,
+                        backgroundImage: `url('${carnet.hero.photo}')`,
+                        backgroundSize: "cover",
+                        backgroundPosition: `center ${carnet.hero.photoPosition ?? 50}%`,
+                        border: "1px solid #e8e0d6",
+                        marginBottom: 14,
+                      }}
+                    />
+                    <label style={{ ...adminStyles.label, fontSize: 10.5 }}>Position verticale ({carnet.hero.photoPosition ?? 50}%)</label>
+                    <input
+                      type="range"
+                      min={0}
+                      max={100}
+                      value={carnet.hero.photoPosition ?? 50}
+                      onChange={(e) => updateNested("hero", "photoPosition", Number(e.target.value))}
+                      style={{ width: "100%" }}
+                    />
+                    <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: "#aaa", marginTop: 4 }}>0 = cadré en haut · 100 = cadré en bas</p>
                   </div>
                 )}
 
