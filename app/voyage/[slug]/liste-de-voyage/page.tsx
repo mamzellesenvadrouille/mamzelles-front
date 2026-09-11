@@ -8,6 +8,7 @@ import ListeDeVoyageCarteLibre from "./ListeDeVoyageCarteLibre";
 export const dynamic = "force-dynamic";
 
 const GOLD = "#c8956c";
+const GOLD_DEEP = "#a8734c";
 const DARK = "#1a1512";
 const CREAM = "#f8f4ef";
 const LINE = "#e6ddd1";
@@ -80,11 +81,11 @@ export default async function ListeDeVoyagePage({
         style={{
           padding: "56px 24px 36px",
           textAlign: "center",
-          background: `linear-gradient(180deg, #fff 0%, ${CREAM} 100%)`,
+          background: `linear-gradient(180deg, #efe6d8 0%, #ded0b8 100%)`,
           borderBottom: `1px solid ${LINE}`,
         }}
       >
-        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, color: GOLD, marginBottom: 14 }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, color: GOLD_DEEP, marginBottom: 14 }}>
           La Liste de Voyage
         </div>
         <h1
@@ -95,15 +96,16 @@ export default async function ListeDeVoyagePage({
             lineHeight: 1.35,
             maxWidth: 480,
             margin: "0 auto 18px",
+            color: "#3a2f24",
           }}
         >
-          Participez à un voyage <em style={{ fontStyle: "italic", color: GOLD }}>inoubliable</em> <IconCoeur />
+          Participez à un voyage <em style={{ fontStyle: "italic", color: GOLD_DEEP }}>inoubliable</em> <IconCoeur />
         </h1>
-        <p style={{ maxWidth: 420, margin: "0 auto", fontSize: 15, lineHeight: 1.6, color: "#4a423c" }}>
+        <p style={{ maxWidth: 420, margin: "0 auto", fontSize: 15, lineHeight: 1.6, color: "#6b5e4f" }}>
           Parce que les plus beaux cadeaux sont ceux qui deviennent des souvenirs, nous vous invitons à participer à
           notre voyage de noces et à écrire avec nous une petite part de cette belle aventure.
         </p>
-        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, marginTop: 20 }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: 20, marginTop: 20, color: GOLD_DEEP }}>
           {prenoms}
         </div>
       </div>
