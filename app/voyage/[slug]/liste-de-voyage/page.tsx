@@ -105,7 +105,7 @@ export default async function ListeDeVoyagePage({
           Parce que les plus beaux cadeaux sont ceux qui deviennent des souvenirs, nous vous invitons à participer à
           notre voyage de noces et à écrire avec nous une petite part de cette belle aventure.
         </p>
-        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: 20, marginTop: 20, color: GOLD_DEEP }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 600, fontSize: 20, marginTop: 20, color: GOLD_DEEP }}>
           {prenoms}
         </div>
       </div>
