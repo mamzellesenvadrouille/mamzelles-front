@@ -17,31 +17,9 @@ if (typeof window !== "undefined") {
   setWorkerUrl("/maplibre-gl-worker.mjs");
 }
 
-// ⚠️⚠️⚠️ SOLUTION TEMPORAIRE — REVENIR À MAPTILER APRÈS LE 12 SEPTEMBRE 2026 ⚠️⚠️⚠️
-// Clé MapTiler invalidée par leur équipe (quota gratuit dépassé), jusqu'au
-// 12/09/2026. En attendant, on construit un style MapLibre "maison" avec
-// des tuiles OpenStreetMap standard (gratuit, sans clé), au lieu du vrai
-// style vectoriel MapTiler.
-//
-// POUR REVENIR À MAPTILER, remplacer STYLE_URL_OU_OBJET par :
-// const STYLE_URL = `https://api.maptiler.com/maps/streets-v2/style.json?key=${MAPTILER_KEY}`;
-// (et utiliser `style: STYLE_URL` au lieu de `style: STYLE_URL_OU_OBJET`
-// dans le new MapLibreMap plus bas). Chercher aussi "SOLUTION D'URGENCE"
-// pour le préchargement hors-ligne, désactivé plus bas dans ce fichier.
-const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn"; // gardée en mémoire, prête pour le retour
-const STYLE_URL_OU_OBJET = {
-  version: 8 as const,
-  sources: {
-    osm: {
-      type: "raster" as const,
-      tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-      tileSize: 256,
-      attribution: "&copy; OpenStreetMap contributors",
-    },
-  },
-  layers: [{ id: "osm", type: "raster" as const, source: "osm" }],
-};
-const TILE_URL_TEMPLATE = `https://tile.openstreetmap.org/{z}/{x}/{y}.png`;
+const MAPTILER_KEY = "5Qqxke6FycyTCZ05TNMn";
+const STYLE_URL = `https://api.maptiler.com/maps/streets-v2/style.json?key=${MAPTILER_KEY}`;
+const TILE_URL_TEMPLATE = `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`;
 
 function distanceKm(a: EtapeParcours, b: EtapeParcours): number {
   const R = 6371;
@@ -153,7 +131,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
       try {
         const map = new MapLibreMap({
           container: mapRef.current,
-          style: STYLE_URL_OU_OBJET,
+          style: STYLE_URL,
           center: [etapes[0].lng, etapes[0].lat],
           zoom: 3,
           attributionControl: false,
@@ -212,11 +190,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
           });
 
           setPret(true);
-          // ⚠️ SOLUTION D'URGENCE — préchargement désactivé pendant l'usage
-          // d'OpenStreetMap (leur politique interdit explicitement le
-          // téléchargement en masse/hors-ligne). Décommenter la ligne
-          // ci-dessous après le retour à MapTiler le 12/09.
-          // precacherTuiles(etapes);
+          precacherTuiles(etapes);
         });
 
         map.on("error", () => setErreur(true));
@@ -252,7 +226,7 @@ const ParcoursMap = forwardRef<ParcoursMapHandle, { etapes: EtapeParcours[]; api
           <div style={{ display: "flex", flexDirection: "column", gap: 6, marginTop: 32 }}>
             {segments.map((s, i) => (
               <div key={i} className={styles.meta} style={{ fontSize: 12.5 }}>
-                {s.de} → {s.a} · environ {s.km.toLocaleString("fr-FR")}{"\u00A0"}km à vol d&apos;oiseau
+                {s.de} → {s.a} · environ {s.km.toLocaleString("fr-FR")}{" "}km à vol d&apos;oiseau
               </div>
             ))}
           </div>
