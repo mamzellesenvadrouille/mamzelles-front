@@ -2756,3 +2756,60 @@ html { overflow-x: hidden !important; }
   .hero-confidentialite h1 { font-size: 24px !important; }
   .hero-confidentialite .hero-bg { object-position: center 50%; }
 }
+
+/* ============ LA LISTE DE VOYAGE (page Formules) ============ */
+.liste { background: var(--bg); padding: 64px 52px; border-top: 1px solid var(--line); }
+.liste-inner { max-width: 1100px; margin: 0 auto; }
+.liste-top { display: grid; grid-template-columns: 1fr 440px; gap: 64px; align-items: start; }
+.liste-intro .form-h2 { margin-bottom: 18px; }
+.liste-tagline { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 24px; line-height: 1.3; color: var(--gold2); margin-bottom: 22px; }
+.liste-intro p.liste-txt { font-size: 14px; line-height: 1.75; color: #3d332c; margin-bottom: 14px; }
+.liste-box { background: #fff; border: 1px solid var(--gold); border-radius: 4px; padding: 30px 30px 26px; }
+.liste-box-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 16px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
+.liste-box-title { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--dark); }
+.liste-box-price { font-variant-numeric: lining-nums; font-family: "Cormorant Garamond", serif; font-size: 38px; line-height: 1; color: var(--gold); white-space: nowrap; }
+.liste-incl { list-style: none; display: flex; flex-direction: column; gap: 13px; }
+.liste-incl li { display: grid; grid-template-columns: 18px 1fr; gap: 12px; font-size: 13px; line-height: 1.6; color: #3d332c; }
+.liste-incl svg { margin-top: 3px; color: var(--gold); }
+.liste-steps-wrap { margin-top: 56px; padding-top: 44px; border-top: 1px solid var(--line); }
+.liste-steps-title { font-family: "Cormorant Garamond", serif; font-size: 30px; font-weight: 400; line-height: 1.1; text-align: center; margin-bottom: 32px; }
+.liste-steps-title em { color: var(--gold); font-style: italic; }
+.liste-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; counter-reset: liste; }
+.liste-step { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+.liste-step-num { font-variant-numeric: lining-nums; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; font-family: "Cormorant Garamond", serif; font-size: 20px; color: var(--gold); background: #fff; }
+.liste-step p { font-size: 13px; line-height: 1.6; color: #3d332c; max-width: 230px; }
+.liste-outro { margin-top: 48px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+.liste-sign { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 26px; line-height: 1.25; color: var(--dark); }
+.liste-note { font-size: 12px; color: var(--muted); }
+.liste-outro .btn-gold { align-self: center; margin-top: 14px; }
+
+/* Case à cocher du formulaire */
+.form-check { display: flex; align-items: flex-start; gap: 12px; margin: 0 0 18px; cursor: pointer; color: rgba(255,255,255,0.88); font-size: 13px; line-height: 1.55; }
+.form-check input { appearance: none; -webkit-appearance: none; flex: none; width: 18px; height: 18px; margin-top: 1px; border: 1.5px solid var(--gold); border-radius: 3px; background: transparent; cursor: pointer; display: grid; place-content: center; transition: background .2s; }
+.form-check input::after { content: ""; width: 9px; height: 5px; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(-45deg) translate(1px, -1px); opacity: 0; }
+.form-check input:checked { background: var(--gold); }
+.form-check input:checked::after { opacity: 1; }
+.form-check input:focus-visible { box-shadow: 0 0 0 3px rgba(200,149,108,0.3); outline: none; }
+.form-check strong { color: #fff; font-weight: 600; }
+.form-check em { color: var(--gold); font-style: normal; }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .liste { padding: 48px 40px; }
+  .liste-top { grid-template-columns: 1fr; gap: 36px; }
+  .liste-steps { grid-template-columns: 1fr 1fr; gap: 28px 24px; }
+}
+@media (max-width: 768px) {
+  .liste { padding: 40px 24px; }
+  .liste-top { grid-template-columns: 1fr; gap: 28px; }
+  .liste-tagline { font-size: 21px; margin-bottom: 16px; }
+  .liste-box { padding: 24px 20px 20px; }
+  .liste-box-price { font-size: 32px; }
+  .liste-steps-wrap { margin-top: 40px; padding-top: 32px; }
+  .liste-steps-title { font-size: 26px; margin-bottom: 24px; }
+  .liste-steps { grid-template-columns: 1fr; gap: 20px; }
+  .liste-step { flex-direction: row; text-align: left; align-items: flex-start; gap: 14px; }
+  .liste-step-num { flex: none; width: 34px; height: 34px; font-size: 18px; }
+  .liste-step p { max-width: none; margin-top: 6px; }
+  .liste-outro { margin-top: 36px; }
+  .liste-sign { font-size: 22px; }
+}

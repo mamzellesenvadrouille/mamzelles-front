@@ -9,11 +9,12 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const { prenom, email, telephone, duree, destination, adultes, enfants, budget, message } = body;
+    const listeDeVoyage = body.listeDeVoyage === 'oui';
 
     const id = `demande:${Date.now()}`;
     await redis.set(id, {
       id,
-      prenom, email, telephone, duree, destination, adultes, enfants, budget, message,
+      prenom, email, telephone, duree, destination, adultes, enfants, budget, message, listeDeVoyage,
       date: new Date().toISOString(),
       traitee: false,
     });
@@ -62,7 +63,11 @@ export async function POST(req: NextRequest) {
               </tr>
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #e8e0d4; font-size: 13px; color: #5a5048;">Budget</td>
-                <td style="padding: 10px 0; font-size: 14px;">${budget || '—'}</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #e8e0d4; font-size: 14px;">${budget || '—'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; font-size: 13px; color: #5a5048;">La Liste de Voyage</td>
+                <td style="padding: 10px 0; font-size: 14px;${listeDeVoyage ? ' font-weight: bold; color: #c8a96e;' : ''}">${listeDeVoyage ? 'Oui (99 €)' : 'Non'}</td>
               </tr>
             </table>
             <div style="margin-top: 24px;">

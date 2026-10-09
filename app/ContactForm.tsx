@@ -1,10 +1,29 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errors, setErrors] = useState<string[]>([]);
   const [fieldErrors, setFieldErrors] = useState<Set<string>>(new Set());
+  const [listeDeVoyage, setListeDeVoyage] = useState(false);
+
+  // Bouton « Créer ma Liste de Voyage » (lien #formulaire-liste) : on coche la case et on descend au formulaire
+  useEffect(() => {
+    function ouvrirAvecListe() {
+      setListeDeVoyage(true);
+      document.getElementById('formulaire')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', '#formulaire');
+    }
+    if (window.location.hash === '#formulaire-liste') ouvrirAvecListe();
+    function onClick(e: MouseEvent) {
+      const lien = (e.target as HTMLElement | null)?.closest('a[href="#formulaire-liste"]');
+      if (!lien) return;
+      e.preventDefault();
+      ouvrirAvecListe();
+    }
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -45,6 +64,7 @@ export default function ContactForm() {
       if (res.ok) {
         setStatus('success');
         form.reset();
+        setListeDeVoyage(false);
         form.querySelectorAll('select').forEach((el) => {
           const select = el as HTMLSelectElement;
           select.style.color = '';
@@ -115,6 +135,11 @@ export default function ContactForm() {
           </div>
 
           <textarea name="message" placeholder="Dites-nous tout sur votre projet de voyage !" className={`ft ${fieldErrors.has('message') ? 'field-error' : ''}`} rows={4} onInput={() => clearFieldError('message')} />
+
+          <label className="form-check">
+            <input type="checkbox" name="listeDeVoyage" value="oui" checked={listeDeVoyage} onChange={e => setListeDeVoyage(e.target.checked)} />
+            <span>Nous aimerions ajouter <strong>La Liste de Voyage</strong> à notre lune de miel <em>(99&nbsp;€)</em></span>
+          </label>
 
           {errors.length > 0 && (
             <p className="form-error">Merci de remplir tous les champs obligatoires.</p>

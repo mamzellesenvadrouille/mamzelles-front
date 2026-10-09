@@ -70,6 +70,13 @@ export default function Formules() {
           priceCurrency: 'EUR',
           price: '649',
         },
+        {
+          '@type': 'Offer',
+          name: 'La Liste de Voyage',
+          description: 'Liste de voyage de noces créée à partir de votre itinéraire',
+          priceCurrency: 'EUR',
+          price: '99',
+        },
       ],
     },
   };
@@ -259,6 +266,49 @@ export default function Formules() {
               <div className="opt-card-sub">&nbsp;</div>
               <div className="opt-card-price"><em>sur devis</em></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LA LISTE DE VOYAGE */}
+      <section className="liste" id="liste-de-voyage">
+        <div className="liste-inner">
+          <div className="liste-top">
+            <div className="liste-intro">
+              <p className="eyebrow-dark">Pour les voyages de noces</p>
+              <h2 className="form-h2">La Liste de <em>Voyage</em></h2>
+              <p className="liste-tagline">Le plus beau des cadeaux&nbsp;: votre lune de miel.</p>
+              <p className="liste-txt">Et si, plutôt que des cadeaux traditionnels, vos proches contribuaient aux expériences qui rendront votre lune de miel inoubliable&nbsp;?</p>
+              <p className="liste-txt">Nous créons une liste de voyage personnalisée à partir de votre itinéraire, pour permettre à vos invités de participer à votre aventure&nbsp;: une nuit dans un hébergement de charme, une excursion, un dîner les pieds dans le sable ou une activité qui vous fait rêver.</p>
+            </div>
+            <div className="liste-box">
+              <div className="liste-box-head">
+                <span className="liste-box-title">Ce qui est inclus</span>
+                <span className="liste-box-price">99 €</span>
+              </div>
+              <ul className="liste-incl">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Votre liste personnalisée, créée à partir de votre itinéraire, avec jusqu&apos;à 15 idées de cadeaux.</span></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Les liens de réservation associés à chaque cadeau, recherchés et intégrés par nos soins.</span></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Votre QR code personnalisé, avec vos prénoms et votre destination, à glisser dans vos faire-part ou à afficher le jour du mariage.</span></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Votre espace de suivi privé, pour retrouver les cadeaux offerts et suivre l&apos;avancement de votre liste.</span></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Une demande de modifications groupée après la mise en ligne, pour ajuster votre sélection.</span></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Une vérification des liens un mois avant le mariage, pour partager une liste à jour.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div className="liste-steps-wrap">
+            <h3 className="liste-steps-title">Comment ça <em>marche&nbsp;?</em></h3>
+            <div className="liste-steps">
+              <div className="liste-step"><div className="liste-step-num">1</div><p>Nous créons votre liste à partir de l&apos;itinéraire de votre voyage.</p></div>
+              <div className="liste-step"><div className="liste-step-num">2</div><p>Vous la partagez avec vos invités grâce à votre lien ou à votre QR code personnalisé.</p></div>
+              <div className="liste-step"><div className="liste-step-num">3</div><p>Vos proches réservent les expériences de leur choix ou contribuent à vos plus beaux projets.</p></div>
+              <div className="liste-step"><div className="liste-step-num">4</div><p>Vous suivez votre liste depuis votre espace privé, et vous n&apos;avez plus qu&apos;à profiter de votre voyage&nbsp;!</p></div>
+            </div>
+          </div>
+          <div className="liste-outro">
+            <p className="liste-sign">Une liste qui vous ressemble, pour embarquer vos proches dans votre aventure.</p>
+            <p className="liste-note">La Liste de Voyage s&apos;ajoute à l&apos;une de nos formules.</p>
+            <a href="#formulaire-liste" className="btn-gold">Créer ma Liste de Voyage</a>
           </div>
         </div>
       </section>
