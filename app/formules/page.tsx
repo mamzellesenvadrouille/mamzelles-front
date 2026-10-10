@@ -272,8 +272,12 @@ export default function Formules() {
 
       {/* LA LISTE DE VOYAGE */}
       <section className="liste" id="liste-de-voyage">
-        <div className="liste-inner">
-          <div className="liste-top">
+        <div className="liste-top">
+          <div className="liste-visual" aria-hidden="true">
+            <img src="/liste-voyage.webp" alt="" className="liste-visual-img" />
+            <div className="liste-visual-overlay" />
+          </div>
+          <div className="liste-left">
             <div className="liste-intro">
               <p className="eyebrow-dark">Pour les voyages de noces</p>
               <h2 className="form-h2">La Liste de <em>Voyage</em></h2>
@@ -296,6 +300,8 @@ export default function Formules() {
               </ul>
             </div>
           </div>
+        </div>
+        <div className="liste-inner">
           <div className="liste-steps-wrap">
             <h3 className="liste-steps-title">Comment ça <em>marche&nbsp;?</em></h3>
             <div className="liste-steps">
