@@ -275,7 +275,6 @@ export default function Formules() {
         <div className="liste-top">
           <div className="liste-visual" aria-hidden="true">
             <img src="/liste-voyage.webp" alt="" className="liste-visual-img" />
-            <div className="liste-visual-overlay" />
           </div>
           <div className="liste-left">
             <div className="liste-intro">
