@@ -2758,7 +2758,7 @@ html { overflow-x: hidden !important; }
 }
 
 /* ============ LA LISTE DE VOYAGE (page Formules) ============ */
-.liste { background: var(--bg); border-top: 1px solid var(--line); }
+.liste { background: var(--bg); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .liste-top { position: relative; display: block; }
 .liste-visual { grid-column: 1; grid-row: 1; }
 .liste-left { grid-column: 2; grid-row: 1; }
