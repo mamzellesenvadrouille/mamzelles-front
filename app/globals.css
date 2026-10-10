@@ -2762,7 +2762,7 @@ html { overflow-x: hidden !important; }
 .liste-top { position: relative; display: block; }
 .liste-visual { grid-column: 1; grid-row: 1; }
 .liste-left { grid-column: 2; grid-row: 1; }
-.liste-left { position: relative; z-index: 1; margin-left: 36%; padding: 64px 64px 64px 0; display: flex; flex-direction: column; gap: 32px; }
+.liste-left { position: relative; z-index: 1; margin-left: 33%; padding: 64px 64px 64px 0; display: flex; flex-direction: column; gap: 32px; }
 .liste-intro .form-h2 { margin-bottom: 18px; }
 .liste-tagline { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 24px; line-height: 1.3; color: var(--gold2); margin-bottom: 22px; }
 .liste-intro p.liste-txt { font-size: 14px; line-height: 1.75; color: #3d332c; margin-bottom: 14px; }
