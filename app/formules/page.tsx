@@ -277,6 +277,7 @@ export default function Formules() {
             <img src="/liste-voyage.webp" alt="" className="liste-visual-img" />
           </div>
           <div className="liste-left">
+            <div className="liste-row">
             <div className="liste-intro">
               <p className="eyebrow-dark">Pour les voyages de noces</p>
               <h2 className="form-h2">La Liste de <em>Voyage</em></h2>
@@ -297,6 +298,7 @@ export default function Formules() {
                 <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Une demande de modifications groupée après la mise en ligne, pour ajuster votre sélection.</span></li>
                 <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Une vérification des liens un mois avant le mariage, pour partager une liste à jour.</span></li>
               </ul>
+            </div>
             </div>
           </div>
         </div>
