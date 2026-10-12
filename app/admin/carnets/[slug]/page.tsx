@@ -160,6 +160,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
   const [reinitialisation, setReinitialisation] = useState(false);
+  const [retourCode, setRetourCode] = useState<"genere" | "copie" | null>(null);
   const [dragIndexDest, setDragIndexDest] = useState<number | null>(null);
   const [dragIndexConseil, setDragIndexConseil] = useState<number | null>(null);
   const [dragIndexBudget, setDragIndexBudget] = useState<number | null>(null);
@@ -573,17 +574,28 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                         const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
                         const hasard = crypto.getRandomValues(new Uint32Array(6));
                         update("codeAcces", Array.from(hasard, (n) => alphabet[n % alphabet.length]).join(""));
+                        setRetourCode("genere");
+                        setTimeout(() => setRetourCode(null), 1800);
                       }}
-                      style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, color: "#c8956c", background: "none", border: "1px solid #e3cdb7", borderRadius: 14, padding: "6px 12px", cursor: "pointer", whiteSpace: "nowrap" }}
+                      style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, color: retourCode === "genere" ? "#fff" : "#c8956c", background: retourCode === "genere" ? "#c8956c" : "none", border: `1px solid ${retourCode === "genere" ? "#c8956c" : "#e3cdb7"}`, borderRadius: 14, padding: "6px 12px", cursor: "pointer", whiteSpace: "nowrap", transition: "all .2s" }}
                     >
-                      Générer
+                      {retourCode === "genere" ? "✓ Généré" : "Générer"}
                     </button>
                     <button
                       type="button"
-                      onClick={() => carnet.codeAcces && navigator.clipboard.writeText(carnet.codeAcces)}
-                      style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, color: "#c8956c", background: "none", border: "1px solid #e3cdb7", borderRadius: 14, padding: "6px 12px", cursor: "pointer", whiteSpace: "nowrap" }}
+                      onClick={async () => {
+                        if (!carnet.codeAcces) return;
+                        try {
+                          await navigator.clipboard.writeText(carnet.codeAcces);
+                          setRetourCode("copie");
+                          setTimeout(() => setRetourCode(null), 1800);
+                        } catch {
+                          // presse-papiers indisponible
+                        }
+                      }}
+                      style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, color: retourCode === "copie" ? "#fff" : "#c8956c", background: retourCode === "copie" ? "#c8956c" : "none", border: `1px solid ${retourCode === "copie" ? "#c8956c" : "#e3cdb7"}`, borderRadius: 14, padding: "6px 12px", cursor: "pointer", whiteSpace: "nowrap", transition: "all .2s" }}
                     >
-                      Copier
+                      {retourCode === "copie" ? "✓ Copié" : "Copier"}
                     </button>
                   </div>
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12.5, color: "#888", marginTop: 6 }}>
