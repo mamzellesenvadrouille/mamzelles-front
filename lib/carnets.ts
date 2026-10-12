@@ -116,6 +116,8 @@ export interface BudgetLigne {
 export interface Contribution {
   prenom?: string;
   montant: number;
+  date?: string; // date de la déclaration (ISO), absente sur les anciennes participations
+  recu?: boolean; // coché par les mariés quand l'argent est bien arrivé sur leur compte
 }
 
 export interface ChecklistItem {
@@ -171,8 +173,14 @@ export interface Carnet {
   documents?: DocumentVoyage[];
   indispensables: { visa?: string; passeport?: string; vaccins?: string; assurance?: string; monnaie?: string; telephone?: string };
   contactsUrgence?: ContactUrgence[];
-  // Liste de Voyage : lien unique vers la cagnotte OnParticipe (ou équivalent) du couple
+  // Liste de Voyage : lien unique vers la cagnotte OnParticipe (ou équivalent) du couple (facultatif)
   onParticipeUrl?: string;
+  // Liste de Voyage : coordonnées pour que les invités paient directement les mariés
+  paiementTitulaire?: string; // titulaire du compte bancaire
+  paiementIban?: string;
+  paiementWero?: string; // numéro de téléphone Wero
+  // Code d'accès au carnet et à la page "Gérer" de la Liste de Voyage (vide = accès libre)
+  codeAcces?: string;
   // Contributions libres, sans élément précis (carte "Un montant libre")
   contributionLibreReunie?: number;
   contributionsLibres?: Contribution[];
@@ -597,6 +605,29 @@ export function getElementsListeDeVoyage(
   return elements;
 }
 
+// Moyens de paiement proposés aux invités sur la Liste de Voyage.
+export interface InfosPaiementListe {
+  titulaire?: string;
+  iban?: string;
+  wero?: string;
+  cagnotteUrl?: string;
+}
+
+export function getInfosPaiementListe(carnet: Carnet): InfosPaiementListe {
+  return {
+    titulaire: carnet.paiementTitulaire?.trim() || undefined,
+    iban: carnet.paiementIban?.trim() || undefined,
+    wero: carnet.paiementWero?.trim() || undefined,
+    cagnotteUrl: carnet.onParticipeUrl?.trim() || undefined,
+  };
+}
+
+// La Liste de Voyage est active dès qu'au moins un moyen de paiement est renseigné.
+export function listeDeVoyageActive(carnet: Carnet): boolean {
+  const p = getInfosPaiementListe(carnet);
+  return !!(p.iban || p.wero || p.cagnotteUrl);
+}
+
 // Ajoute une idée de cadeau (par les mariés, depuis /liste-de-voyage/gerer).
 export async function ajouterCadeauListeDeVoyage(slug: string, cadeau: Omit<ElementCadeauCustom, "id">): Promise<Carnet | null> {
   const carnet = await getCarnet(slug);
@@ -619,9 +650,9 @@ export async function supprimerCadeauListeDeVoyage(slug: string, id: string): Pr
 }
 
 // Enregistre une participation déclarée par un invité sur un élément de la
-// Liste de Voyage (transport ou cadeau). C'est purement déclaratif : aucune
-// vérification de paiement réel, l'invité indique juste ce qu'il compte
-// donner avant d'être redirigé vers OnParticipe.
+// Liste de Voyage. C'est purement déclaratif : l'invité indique ce qu'il a
+// envoyé (virement, Wero ou cagnotte), et les mariés cochent ensuite "reçu"
+// quand l'argent est arrivé sur leur compte.
 export async function ajouterContributionListeDeVoyage(
   slug: string,
   elementId: string,
@@ -631,7 +662,8 @@ export async function ajouterContributionListeDeVoyage(
   const carnet = await getCarnet(slug);
   if (!carnet) return null;
 
-  const nouvelleContribution: Contribution = prenom ? { prenom, montant } : { montant };
+  const date = new Date().toISOString();
+  const nouvelleContribution: Contribution = prenom ? { prenom, montant, date } : { montant, date };
   const [type, ...reste] = elementId.split("::");
   let misAJour: Carnet;
 
@@ -681,6 +713,95 @@ export async function ajouterContributionListeDeVoyage(
     return null;
   }
 
+  await saveCarnet(misAJour);
+  return misAJour;
+}
+
+// Modification d'une participation par les mariés (page /liste-de-voyage/gerer) :
+// cocher/décocher "reçu", ou corriger le montant. Un montant à 0 retire la participation.
+export interface ModificationContribution {
+  montant?: number;
+  recu?: boolean;
+}
+
+type EntreeAvecContributions = { montantReuni?: number; contributions?: Contribution[] };
+
+function appliquerModification<T extends EntreeAvecContributions>(entree: T, index: number, modif: ModificationContribution): T | null {
+  const contributions = [...(entree.contributions ?? [])];
+  const actuelle = contributions[index];
+  if (!actuelle) return null;
+
+  let modifiee: Contribution = { ...actuelle };
+  if (modif.recu !== undefined) modifiee = { ...modifiee, recu: modif.recu };
+
+  let delta = 0;
+  if (modif.montant !== undefined) {
+    delta = modif.montant - actuelle.montant;
+    modifiee = { ...modifiee, montant: modif.montant };
+  }
+
+  if (modifiee.montant <= 0) contributions.splice(index, 1);
+  else contributions[index] = modifiee;
+
+  return { ...entree, montantReuni: Math.max(0, (entree.montantReuni ?? 0) + delta), contributions };
+}
+
+export async function modifierContributionListeDeVoyage(
+  slug: string,
+  elementId: string,
+  index: number,
+  modif: ModificationContribution
+): Promise<Carnet | null> {
+  const carnet = await getCarnet(slug);
+  if (!carnet) return null;
+
+  const [type, ...reste] = elementId.split("::");
+  let misAJour: Carnet | null = null;
+
+  if (type === "transport") {
+    const label = reste.join("::");
+    const i = carnet.reservations.findIndex((r) => r.label === label);
+    if (i === -1) return null;
+    const entree = appliquerModification(carnet.reservations[i], index, modif);
+    if (!entree) return null;
+    const reservations = [...carnet.reservations];
+    reservations[i] = entree;
+    misAJour = { ...carnet, reservations };
+  } else if (type === "hebergement" || type === "activite") {
+    const [destinationId, nom] = reste;
+    const champ = type === "hebergement" ? "listeVoyageHebergements" : "listeVoyageActivites";
+    let trouve = false;
+    const destinations = carnet.destinations.map((d) => {
+      if (d.destinationId !== destinationId) return d;
+      const actuel = d[champ] ?? {};
+      if (!actuel[nom]) return d;
+      const entree = appliquerModification(actuel[nom], index, modif);
+      if (!entree) return d;
+      trouve = true;
+      return { ...d, [champ]: { ...actuel, [nom]: entree } };
+    });
+    if (!trouve) return null;
+    misAJour = { ...carnet, destinations };
+  } else if (type === "cadeau") {
+    const id = reste.join("::");
+    const i = (carnet.listeVoyageCadeaux ?? []).findIndex((c) => c.id === id);
+    if (i === -1) return null;
+    const entree = appliquerModification(carnet.listeVoyageCadeaux![i], index, modif);
+    if (!entree) return null;
+    const listeVoyageCadeaux = [...carnet.listeVoyageCadeaux!];
+    listeVoyageCadeaux[i] = entree;
+    misAJour = { ...carnet, listeVoyageCadeaux };
+  } else if (elementId === "libre") {
+    const entree = appliquerModification(
+      { montantReuni: carnet.contributionLibreReunie, contributions: carnet.contributionsLibres },
+      index,
+      modif
+    );
+    if (!entree) return null;
+    misAJour = { ...carnet, contributionLibreReunie: entree.montantReuni, contributionsLibres: entree.contributions };
+  }
+
+  if (!misAJour) return null;
   await saveCarnet(misAJour);
   return misAJour;
 }

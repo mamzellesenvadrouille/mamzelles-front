@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import type { CSSProperties } from "react";
 import { Lightbulb, Plane, Heart, AlertTriangle } from "lucide-react";
-import { getCarnetComplet, getMeteoActuelle, getCarnetProgress, getTauxDevise, deviseDepuisPays } from "@/lib/carnets";
+import { getCarnetComplet, getMeteoActuelle, getCarnetProgress, getTauxDevise, deviseDepuisPays, listeDeVoyageActive } from "@/lib/carnets";
 import DestinationTabs from "./DestinationTabs";
 import ParcoursSection from "./ParcoursSection";
 import BudgetSection from "./BudgetSection";
@@ -13,6 +13,8 @@ import ContactsUrgence from "./ContactsUrgence";
 import NotesSection from "./NotesSection";
 import ScrollToTop from "./ScrollToTop";
 import ListeDeVoyageBanner from "./ListeDeVoyageBanner";
+import CodeAcces from "./CodeAcces";
+import { accesCarnetAutorise } from "@/lib/acces-carnet";
 import styles from "./carnet.module.css";
 
 // Sans ça, Next.js génère cette page une seule fois au build et la sert
@@ -33,6 +35,11 @@ export default async function CarnetPage({
   const carnet = await getCarnetComplet(slug);
 
   if (!carnet) notFound();
+
+  // Carnet protégé par un code : on affiche l'écran de code tant qu'il n'a pas été entré sur cet appareil
+  if (!(await accesCarnetAutorise(carnet))) {
+    return <CodeAcces slug={slug} prenoms={carnet.client.prenoms} variante="carnet" />;
+  }
 
   const progress = await getCarnetProgress(slug);
 
@@ -212,7 +219,7 @@ export default async function CarnetPage({
         />
       </section>
 
-      <ListeDeVoyageBanner slug={carnet.slug} actif={!!carnet.onParticipeUrl} />
+      <ListeDeVoyageBanner slug={carnet.slug} actif={listeDeVoyageActive(carnet)} />
 
       {carnet.reservations.length > 0 && (
         <section className={styles.wrap}>

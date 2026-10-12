@@ -1,7 +1,7 @@
 // app/voyage/[slug]/liste-de-voyage/page.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/liste-de-voyage/page.tsx
 import { notFound } from "next/navigation";
-import { getCarnetComplet, getElementsListeDeVoyage } from "@/lib/carnets";
+import { getCarnetComplet, getElementsListeDeVoyage, getInfosPaiementListe, listeDeVoyageActive } from "@/lib/carnets";
 import ListeDeVoyageCarte from "./ListeDeVoyageCarte";
 import ListeDeVoyageCarteLibre from "./ListeDeVoyageCarteLibre";
 
@@ -64,7 +64,8 @@ export default async function ListeDeVoyagePage({
   if (!carnet) notFound();
 
   const elements = getElementsListeDeVoyage(carnet, carnet.destinationsCompletes);
-  if (!carnet.onParticipeUrl || elements.length === 0) notFound();
+  if (!listeDeVoyageActive(carnet) || elements.length === 0) notFound();
+  const paiement = getInfosPaiementListe(carnet);
 
   const totalReuni = elements.reduce((s, el) => s + (el.montantReuni ?? 0), 0) + (carnet.contributionLibreReunie ?? 0);
   const prenoms = carnet.client.prenoms;
@@ -140,7 +141,7 @@ export default async function ListeDeVoyagePage({
               </span>
             </div>
             {transports.map((item) => (
-              <ListeDeVoyageCarte key={item.id} slug={slug} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
+              <ListeDeVoyageCarte key={item.id} slug={slug} item={item} paiement={paiement} />
             ))}
           </div>
         )}
@@ -154,7 +155,7 @@ export default async function ListeDeVoyagePage({
               </span>
             </div>
             {hebergements.map((item) => (
-              <ListeDeVoyageCarte key={item.id} slug={slug} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
+              <ListeDeVoyageCarte key={item.id} slug={slug} item={item} paiement={paiement} />
             ))}
           </div>
         )}
@@ -168,7 +169,7 @@ export default async function ListeDeVoyagePage({
               </span>
             </div>
             {activites.map((item) => (
-              <ListeDeVoyageCarte key={item.id} slug={slug} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
+              <ListeDeVoyageCarte key={item.id} slug={slug} item={item} paiement={paiement} />
             ))}
           </div>
         )}
@@ -190,7 +191,7 @@ export default async function ListeDeVoyagePage({
                 Quelques indispensables qui nous accompagneront pendant notre lune de miel.
               </p>
               {equipement.map((item) => (
-                <ListeDeVoyageCarte key={item.id} slug={slug} item={item} onParticipeUrl={carnet.onParticipeUrl!} />
+                <ListeDeVoyageCarte key={item.id} slug={slug} item={item} paiement={paiement} />
               ))}
             </div>
           </>
@@ -204,7 +205,7 @@ export default async function ListeDeVoyagePage({
           <div style={{ marginBottom: 18 }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 500 }}>À vous de choisir</h2>
           </div>
-          <ListeDeVoyageCarteLibre slug={slug} onParticipeUrl={carnet.onParticipeUrl} montantReuniInitial={carnet.contributionLibreReunie ?? 0} />
+          <ListeDeVoyageCarteLibre slug={slug} paiement={paiement} montantReuniInitial={carnet.contributionLibreReunie ?? 0} />
         </div>
       </div>
 

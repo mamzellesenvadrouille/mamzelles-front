@@ -1,7 +1,14 @@
 // app/api/liste-de-voyage-cadeaux/route.ts
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/api/liste-de-voyage-cadeaux/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { ajouterCadeauListeDeVoyage, supprimerCadeauListeDeVoyage } from "@/lib/carnets";
+import { ajouterCadeauListeDeVoyage, supprimerCadeauListeDeVoyage, getCarnet } from "@/lib/carnets";
+import { accesCarnetAutorise } from "@/lib/acces-carnet";
+
+// Réservé aux mariés : même code d'accès que le carnet
+async function autorise(slug: string) {
+  const carnet = await getCarnet(slug);
+  return !!carnet && (await accesCarnetAutorise(carnet));
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -10,6 +17,9 @@ export async function POST(req: NextRequest) {
 
     if (!slug || !nom) {
       return NextResponse.json({ error: "slug et nom sont requis" }, { status: 400 });
+    }
+    if (!(await autorise(slug))) {
+      return NextResponse.json({ error: "Non autorisé" }, { status: 401 });
     }
 
     const carnet = await ajouterCadeauListeDeVoyage(slug, { nom, description, prixIndicatif, url });
@@ -30,6 +40,9 @@ export async function DELETE(req: NextRequest) {
 
     if (!slug || !id) {
       return NextResponse.json({ error: "slug et id sont requis" }, { status: 400 });
+    }
+    if (!(await autorise(slug))) {
+      return NextResponse.json({ error: "Non autorisé" }, { status: 401 });
     }
 
     const carnet = await supprimerCadeauListeDeVoyage(slug, id);

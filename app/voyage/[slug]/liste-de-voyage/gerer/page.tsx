@@ -2,9 +2,12 @@
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/liste-de-voyage/gerer/page.tsx
 import { notFound } from "next/navigation";
 import QRCode from "qrcode";
-import { getCarnetComplet, getElementsListeDeVoyage, type ElementListeDeVoyage } from "@/lib/carnets";
+import { getCarnetComplet, getElementsListeDeVoyage, listeDeVoyageActive, type ElementListeDeVoyage } from "@/lib/carnets";
 import GererCadeaux from "./GererCadeaux";
 import CopierLien from "./CopierLien";
+import SuiviParticipations, { type GroupeParticipations } from "./SuiviParticipations";
+import CodeAcces from "../../CodeAcces";
+import { accesCarnetAutorise } from "@/lib/acces-carnet";
 
 export const dynamic = "force-dynamic";
 
@@ -90,7 +93,12 @@ export default async function GererListeDeVoyagePage({
   const { slug } = await params;
   const carnet = await getCarnetComplet(slug);
   if (!carnet) notFound();
-  if (!carnet.onParticipeUrl) notFound();
+  if (!listeDeVoyageActive(carnet)) notFound();
+
+  // Même code que le carnet : écran de code tant qu'il n'a pas été entré sur cet appareil
+  if (!(await accesCarnetAutorise(carnet))) {
+    return <CodeAcces slug={slug} prenoms={carnet.client.prenoms} variante="liste" />;
+  }
 
   const elements = getElementsListeDeVoyage(carnet, carnet.destinationsCompletes);
   const lienPublic = `https://mamzellesenvadrouille.com/voyage/${slug}/liste-de-voyage`;
@@ -145,6 +153,23 @@ export default async function GererListeDeVoyagePage({
 
   const totalReuni = elements.reduce((s, el) => s + (el.montantReuni ?? 0), 0) + (carnet.contributionLibreReunie ?? 0);
   const totalParticipations = elements.filter((el) => (el.montantReuni ?? 0) > 0).length;
+
+  // Participations regroupées par cadeau, dans l'ordre du carnet, montant libre en dernier
+  const groupesParticipations: GroupeParticipations[] = [
+    ...elements.map((el) => ({
+      elementId: el.id,
+      nom: el.nom,
+      prixIndicatif: el.prixIndicatif,
+      montantReuni: el.montantReuni ?? 0,
+      contributions: el.contributions ?? [],
+    })),
+    {
+      elementId: "libre",
+      nom: "Montant libre",
+      montantReuni: carnet.contributionLibreReunie ?? 0,
+      contributions: carnet.contributionsLibres ?? [],
+    },
+  ];
 
   return (
     <div style={{ background: CREAM, minHeight: "100vh", padding: "48px 24px 80px", fontFamily: "Inter, sans-serif", color: DARK }}>
@@ -274,6 +299,8 @@ export default async function GererListeDeVoyagePage({
               )}
             </div>
           </div>
+
+          <SuiviParticipations slug={slug} groupesInitiaux={groupesParticipations} />
 
           <div
             style={{

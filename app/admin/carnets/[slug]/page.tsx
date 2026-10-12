@@ -558,6 +558,40 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                 </div>
 
                 <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Code d&apos;accès</label>
+                  <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+                    <input
+                      style={{ ...adminStyles.input, flex: 1, letterSpacing: "0.2em" }}
+                      placeholder="Vide = carnet ouvert sans code"
+                      value={carnet.codeAcces ?? ""}
+                      onChange={(e) => update("codeAcces", e.target.value.toUpperCase())}
+                    />
+                    <button
+                      type="button"
+                      onClick={() => {
+                        // Sans I, O, 0 ni 1 pour éviter les confusions
+                        const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+                        const hasard = crypto.getRandomValues(new Uint32Array(6));
+                        update("codeAcces", Array.from(hasard, (n) => alphabet[n % alphabet.length]).join(""));
+                      }}
+                      style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, color: "#c8956c", background: "none", border: "1px solid #e3cdb7", borderRadius: 14, padding: "6px 12px", cursor: "pointer", whiteSpace: "nowrap" }}
+                    >
+                      Générer
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => carnet.codeAcces && navigator.clipboard.writeText(carnet.codeAcces)}
+                      style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, color: "#c8956c", background: "none", border: "1px solid #e3cdb7", borderRadius: 14, padding: "6px 12px", cursor: "pointer", whiteSpace: "nowrap" }}
+                    >
+                      Copier
+                    </button>
+                  </div>
+                  <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12.5, color: "#888", marginTop: 6 }}>
+                    Protège le carnet et la page « Gérer » de la Liste de Voyage. Laissé vide : le carnet reste ouvert sans code.
+                  </p>
+                </div>
+
+                <div style={adminStyles.field}>
                   <label style={adminStyles.label}>Prénoms du client</label>
                   <input style={adminStyles.input} value={carnet.client.prenoms} onChange={(e) => updateNested("client", "prenoms", e.target.value)} />
                 </div>
@@ -1069,10 +1103,37 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
               <div style={sectionWrap}>
                 <div style={sectionTitle}>Liste de Voyage</div>
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, color: "#888", marginTop: -8, marginBottom: 16 }}>
-                  Uniquement pour les voyages de noces. Le lien de cagnotte (OnParticipe ou équivalent) que les invités utiliseront pour participer, quel que soit l&apos;élément qu&apos;ils choisissent.
+                  Uniquement pour les voyages de noces. Les coordonnées des mariés, affichées aux invités quand ils cliquent sur « Participer ». Un champ laissé vide n&apos;est pas proposé. La liste s&apos;active dès qu&apos;un IBAN, un numéro Wero ou un lien de cagnotte est renseigné.
                 </p>
                 <div style={adminStyles.field}>
-                  <label style={adminStyles.label}>Lien de la cagnotte</label>
+                  <label style={adminStyles.label}>Titulaire du compte</label>
+                  <input
+                    style={adminStyles.input}
+                    placeholder="Julie Morel & Thomas Petit"
+                    value={carnet.paiementTitulaire ?? ""}
+                    onChange={(e) => update("paiementTitulaire", e.target.value)}
+                  />
+                </div>
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>IBAN</label>
+                  <input
+                    style={adminStyles.input}
+                    placeholder="FR76 ..."
+                    value={carnet.paiementIban ?? ""}
+                    onChange={(e) => update("paiementIban", e.target.value)}
+                  />
+                </div>
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Numéro Wero</label>
+                  <input
+                    style={adminStyles.input}
+                    placeholder="06 12 34 56 78"
+                    value={carnet.paiementWero ?? ""}
+                    onChange={(e) => update("paiementWero", e.target.value)}
+                  />
+                </div>
+                <div style={adminStyles.field}>
+                  <label style={adminStyles.label}>Lien de cagnotte en ligne (facultatif)</label>
                   <input
                     style={adminStyles.input}
                     placeholder="https://www.onparticipe.fr/..."
@@ -1080,7 +1141,7 @@ export default function EditCarnetPage({ params }: { params: Promise<{ slug: str
                     onChange={(e) => update("onParticipeUrl", e.target.value)}
                   />
                 </div>
-                {carnet.onParticipeUrl && (
+                {(carnet.onParticipeUrl || carnet.paiementIban || carnet.paiementWero) && (
                   <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
                     <a
                       href={`/voyage/${carnet.slug}/liste-de-voyage`}

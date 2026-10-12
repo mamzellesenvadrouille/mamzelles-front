@@ -7,6 +7,7 @@
 // envoyé ici — il reste uniquement dans le navigateur du client.
 import { NextRequest, NextResponse } from "next/server";
 import { getCarnet, getCarnetProgress, saveCarnetProgress, type CarnetProgress } from "@/lib/carnets";
+import { accesCarnetAutorise } from "@/lib/acces-carnet";
 
 export async function POST(req: NextRequest) {
   try {
@@ -19,6 +20,9 @@ export async function POST(req: NextRequest) {
     const carnet = await getCarnet(slug);
     if (!carnet) {
       return NextResponse.json({ error: "Carnet introuvable" }, { status: 404 });
+    }
+    if (!(await accesCarnetAutorise(carnet))) {
+      return NextResponse.json({ error: "Non autorisé" }, { status: 401 });
     }
     if (!progress || typeof progress !== "object") {
       return NextResponse.json({ error: "Progression invalide" }, { status: 400 });

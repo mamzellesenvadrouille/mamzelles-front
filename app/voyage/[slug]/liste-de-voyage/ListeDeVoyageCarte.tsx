@@ -1,14 +1,16 @@
 // app/voyage/[slug]/liste-de-voyage/ListeDeVoyageCarte.tsx
 // À placer dans : /Users/lauriemelaye/Desktop/mamzelles-front/app/voyage/[slug]/liste-de-voyage/ListeDeVoyageCarte.tsx
 //
-// Le montant tapé est enregistré (déclaratif : l'invité indique ce qu'il
-// compte donner) puis il est redirigé vers OnParticipe pour payer réellement.
+// L'invité tape son prénom et son montant, puis "Participer" ouvre la fenêtre
+// de paiement (virement, Wero, cagnotte). Son clic sur "J'ai fait mon virement"
+// enregistre la participation (déclaratif) et la barre monte tout de suite.
 // Une fois l'objectif atteint (montantReuni >= prixIndicatif), l'élément se
 // ferme : plus personne ne peut participer dessus.
 "use client";
 
-import { useState } from "react";
-import type { ElementListeDeVoyage } from "@/lib/carnets";
+import { useCallback, useState } from "react";
+import type { ElementListeDeVoyage, InfosPaiementListe } from "@/lib/carnets";
+import FenetrePaiement from "./FenetrePaiement";
 
 const GOLD = "#c8956c";
 const DARK = "#1a1512";
@@ -41,50 +43,59 @@ const IconCoeur = () => (
 export default function ListeDeVoyageCarte({
   slug,
   item,
-  onParticipeUrl,
+  paiement,
 }: {
   slug: string;
   item: ElementListeDeVoyage;
-  onParticipeUrl: string;
+  paiement: InfosPaiementListe;
 }) {
   const [montant, setMontant] = useState("");
   const [prenom, setPrenom] = useState("");
   const [prenomManquant, setPrenomManquant] = useState(false);
+  const [montantManquant, setMontantManquant] = useState(false);
   const [montantReuni, setMontantReuni] = useState(item.montantReuni ?? 0);
   const [enCours, setEnCours] = useState(false);
+  const [fenetreOuverte, setFenetreOuverte] = useState(false);
+  const [merci, setMerci] = useState<string | null>(null);
+  const fermerFenetre = useCallback(() => setFenetreOuverte(false), []);
 
   const financee = item.prixIndicatif != null && montantReuni >= item.prixIndicatif;
   const pourcentage =
     item.prixIndicatif && item.prixIndicatif > 0 ? Math.min(100, Math.round((montantReuni / item.prixIndicatif) * 100)) : 0;
 
-  async function participer() {
-    if (!prenom.trim()) {
-      setPrenomManquant(true);
-      return;
-    }
+  function participer() {
     const valeur = Number(montant);
-    const nouvelOnglet = window.open("", "_blank", "noopener,noreferrer");
+    const prenomOk = !!prenom.trim();
+    const montantOk = Number.isFinite(valeur) && valeur > 0;
+    setPrenomManquant(!prenomOk);
+    setMontantManquant(!montantOk);
+    if (!prenomOk || !montantOk) return;
+    setMerci(null);
+    setFenetreOuverte(true);
+  }
 
-    if (valeur > 0) {
-      setEnCours(true);
-      try {
-        await fetch("/api/liste-de-voyage-contribution", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ slug, elementId: item.id, montant: valeur, prenom: prenom.trim() || undefined }),
-        });
+  async function confirmer() {
+    const valeur = Number(montant);
+    const nom = prenom.trim();
+    setEnCours(true);
+    try {
+      const res = await fetch("/api/liste-de-voyage-contribution", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ slug, elementId: item.id, montant: valeur, prenom: nom }),
+      });
+      if (res.ok) {
         setMontantReuni((prev) => prev + valeur);
         setMontant("");
         setPrenom("");
-      } catch {
-        // pas grave, on laisse quand même l'invité rejoindre OnParticipe
-      } finally {
-        setEnCours(false);
+        setMerci(nom);
+        setFenetreOuverte(false);
       }
+    } catch {
+      // réseau indisponible : la fenêtre reste ouverte, l'invité peut recliquer
+    } finally {
+      setEnCours(false);
     }
-
-    if (nouvelOnglet) nouvelOnglet.location.href = onParticipeUrl;
-    else window.open(onParticipeUrl, "_blank", "noopener,noreferrer");
   }
 
   return (
@@ -190,7 +201,11 @@ export default function ListeDeVoyageCarte({
               type="number"
               placeholder="Montant (€)"
               value={montant}
-              onChange={(e) => setMontant(e.target.value)}
+              onChange={(e) => {
+                setMontant(e.target.value);
+                if (montantManquant) setMontantManquant(false);
+              }}
+              className={montantManquant ? "champ-requis" : undefined}
               style={{
                 flex: 1,
                 height: 36,
@@ -198,7 +213,7 @@ export default function ListeDeVoyageCarte({
                 fontFamily: "Inter, sans-serif",
                 fontSize: 13,
                 padding: "0 12px",
-                border: `1px solid ${LINE}`,
+                border: montantManquant ? `1.5px solid ${GOLD}` : `1px solid ${LINE}`,
                 borderRadius: 4,
                 background: "#f8f4ef",
                 color: DARK,
@@ -236,7 +251,33 @@ export default function ListeDeVoyageCarte({
           </div>
         </>
       )}
+      {merci && (
+        <div
+          style={{
+            marginTop: 12,
+            background: "#f6ece2",
+            border: "1px solid #e3cdb7",
+            borderRadius: 4,
+            padding: "10px 12px",
+            fontSize: 13.5,
+            color: "#8a5f3d",
+            textAlign: "center",
+          }}
+        >
+          Merci {merci} ♡
+        </div>
+      )}
       </div>
+      {fenetreOuverte && (
+        <FenetrePaiement
+          montant={Number(montant)}
+          nomCadeau={item.nom}
+          paiement={paiement}
+          enCours={enCours}
+          onConfirme={confirmer}
+          onFermer={fermerFenetre}
+        />
+      )}
     </>
   );
 }
