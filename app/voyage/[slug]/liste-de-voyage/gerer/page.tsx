@@ -76,11 +76,6 @@ function LigneElement({ item }: { item: ElementListeDeVoyage }) {
           <div style={{ height: "100%", width: `${pourcentage}%`, background: financee ? FUNDED : GOLD, borderRadius: 3 }} />
         </div>
       )}
-      {item.contributions && item.contributions.length > 0 && (
-        <div style={{ fontSize: 12, color: "#a89a8c", marginTop: 8 }}>
-          Offert par {item.contributions.map((c) => c.prenom || "Anonyme").join(", ")}
-        </div>
-      )}
     </div>
   );
 }
@@ -292,11 +287,6 @@ export default async function GererListeDeVoyagePage({
                 <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 19, fontWeight: 500 }}>Montant libre</div>
                 <div style={{ fontSize: 13.5, fontWeight: 600, color: "#1a1512" }}>{carnet.contributionLibreReunie ?? 0} €</div>
               </div>
-              {carnet.contributionsLibres && carnet.contributionsLibres.length > 0 && (
-                <div style={{ fontSize: 12, color: "#a89a8c", marginTop: 8 }}>
-                  Offert par {carnet.contributionsLibres.map((c) => c.prenom || "Anonyme").join(", ")}
-                </div>
-              )}
             </div>
           </div>
 

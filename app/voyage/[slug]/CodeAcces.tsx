@@ -89,7 +89,7 @@ export default function CodeAcces({
         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400, fontSize: 34, lineHeight: 1.1, marginBottom: 6 }}>
           {t.titre} <em style={{ color: GOLD }}>{t.titreAccent}</em>
         </h1>
-        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: 20, color: "#a8764f", marginBottom: 26 }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, color: "#a8764f", marginBottom: 26 }}>
           {prenoms}
         </div>
         <p style={{ fontSize: 13.5, color: "#6b5a4c", lineHeight: 1.55, margin: "0 auto 22px", maxWidth: 300 }}>{t.consigne}</p>

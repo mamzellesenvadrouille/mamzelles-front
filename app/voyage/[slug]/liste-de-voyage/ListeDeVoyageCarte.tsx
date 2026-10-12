@@ -40,6 +40,12 @@ const IconCoeur = () => (
   </svg>
 );
 
+// "Sophie Martin" → "Sophie" ; un couple ("Marc & Léa", "Marc et Léa") est gardé en entier
+function prenomPourMerci(nom: string) {
+  if (/\s(&|et)\s/i.test(nom)) return nom;
+  return nom.split(/\s+/)[0];
+}
+
 export default function ListeDeVoyageCarte({
   slug,
   item,
@@ -88,7 +94,7 @@ export default function ListeDeVoyageCarte({
         setMontantReuni((prev) => prev + valeur);
         setMontant("");
         setPrenom("");
-        setMerci(nom);
+        setMerci(prenomPourMerci(nom));
         setFenetreOuverte(false);
       }
     } catch {

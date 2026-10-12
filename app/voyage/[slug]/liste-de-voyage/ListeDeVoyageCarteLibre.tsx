@@ -10,6 +10,12 @@ const GOLD = "#c8956c";
 const DARK = "#1a1512";
 const LINE = "#e6ddd1";
 
+// "Sophie Martin" → "Sophie" ; un couple ("Marc & Léa", "Marc et Léa") est gardé en entier
+function prenomPourMerci(nom: string) {
+  if (/\s(&|et)\s/i.test(nom)) return nom;
+  return nom.split(/\s+/)[0];
+}
+
 export default function ListeDeVoyageCarteLibre({
   slug,
   paiement,
@@ -54,7 +60,7 @@ export default function ListeDeVoyageCarteLibre({
         setMontantReuni((prev) => prev + valeur);
         setMontant("");
         setPrenom("");
-        setMerci(nom);
+        setMerci(prenomPourMerci(nom));
         setFenetreOuverte(false);
       }
     } catch {
