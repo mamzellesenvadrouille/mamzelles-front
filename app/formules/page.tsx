@@ -284,6 +284,7 @@ export default function Formules() {
               <p className="liste-tagline">Le plus beau des cadeaux&nbsp;: votre lune de miel</p>
               <p className="liste-txt">Et si votre liste de mariage vous emmenait au bout du monde&nbsp;?</p>
               <p className="liste-txt">Nous créons une liste personnalisée à partir de votre carnet de voyage, pour permettre à vos proches de contribuer à votre lune de miel en vous offrant ce qui la rendra unique&nbsp;: un vol, une nuit dans un hébergement de charme, une excursion, un dîner les pieds dans le sable…</p>
+              <a href="#formulaire-liste" className="btn-gold liste-cta">Créer ma Liste de Voyage</a>
             </div>
             <div className="liste-box">
               <div className="liste-box-head">
@@ -300,22 +301,6 @@ export default function Formules() {
               </ul>
             </div>
             </div>
-          </div>
-        </div>
-        <div className="liste-inner">
-          <div className="liste-steps-wrap">
-            <h3 className="liste-steps-title">Comment ça <em>marche&nbsp;?</em></h3>
-            <div className="liste-steps">
-              <div className="liste-step"><div className="liste-step-num">1</div><p>Nous créons votre liste à partir de l&apos;itinéraire de votre voyage.</p></div>
-              <div className="liste-step"><div className="liste-step-num">2</div><p>Vous la partagez avec vos invités grâce à votre lien ou à votre QR code personnalisé.</p></div>
-              <div className="liste-step"><div className="liste-step-num">3</div><p>Vos proches réservent les expériences de leur choix ou contribuent à vos plus beaux projets.</p></div>
-              <div className="liste-step"><div className="liste-step-num">4</div><p>Vous suivez votre liste depuis votre espace privé, et vous n&apos;avez plus qu&apos;à profiter de votre voyage&nbsp;!</p></div>
-            </div>
-          </div>
-          <div className="liste-outro">
-            <p className="liste-sign">Une liste qui vous ressemble, pour embarquer vos proches dans votre aventure.</p>
-            <p className="liste-note">Une option à ajouter à votre formule de voyage.</p>
-            <a href="#formulaire-liste" className="btn-gold">Créer ma Liste de Voyage</a>
           </div>
         </div>
       </section>
