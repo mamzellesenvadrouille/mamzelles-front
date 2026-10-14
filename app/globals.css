@@ -1478,7 +1478,7 @@ html body .form-right-card h2.form-right-h2 {
 .form-right-h2 { font-size: 26px !important; font-weight: 600 !important; }
 
   
-.form-right-card { width: fit-content !important; margin: 177px 0 0 24px !important; padding: 28px 28px 19px 28px !important; min-height: 524px !important; align-self: flex-start !important; }
+.form-right-card { width: fit-content !important; margin: 177px 0 0 24px !important; padding: 28px 28px 20px 28px !important; min-height: 525px !important; align-self: flex-start !important; }
 
   
 .form-right-price-block { margin-top: 53px !important; margin-bottom: 8px !important; }
@@ -2796,7 +2796,7 @@ html { overflow-x: hidden !important; }
   .mosaic-call { grid-template-columns: 60% 40%; }
   .mosaic-col { order: 2; }
   .call-col { padding-left: max(52px, calc(100% - 52px - 640px)); }
-  .form-right-card { padding-bottom: 31px; min-height: 534px; }
+  .form-right-card { padding-bottom: 32px; min-height: 535px; }
 }
 
 /* Case à cocher du formulaire */
