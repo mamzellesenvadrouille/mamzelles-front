@@ -138,7 +138,7 @@ export default function ContactForm() {
 
           <label className="form-check">
             <input type="checkbox" name="listeDeVoyage" value="oui" checked={listeDeVoyage} onChange={e => setListeDeVoyage(e.target.checked)} />
-            <span>Nous aimerions ajouter <strong>La Liste de Voyage</strong> à notre lune de miel <em>(99&nbsp;€)</em></span>
+            <span>Nous aimerions ajouter <strong>La Liste de voyage</strong> à notre lune de miel <em>(99&nbsp;€)</em></span>
           </label>
 
           {errors.length > 0 && (
