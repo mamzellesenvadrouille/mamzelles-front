@@ -282,6 +282,7 @@ export default function Formules() {
               <p className="eyebrow-dark">Pour les voyages de noces</p>
               <h2 className="form-h2">La Liste de <em>voyage</em></h2>
               <p className="liste-tagline">Le plus beau des cadeaux&nbsp;: votre lune de miel</p>
+              <p className="liste-txt">Et si votre liste de mariage vous emmenait au bout du monde&nbsp;?</p>
               <p className="liste-txt">Nous créons une liste personnalisée à partir de votre carnet de voyage, pour permettre à vos proches de contribuer à votre lune de miel en vous offrant ce qui la rendra unique&nbsp;: un vol, une nuit dans un hébergement de charme, une excursion, un dîner les pieds dans le sable…</p>
             </div>
             <div className="liste-box">
