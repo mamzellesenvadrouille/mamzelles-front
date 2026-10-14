@@ -56,7 +56,7 @@ a { text-decoration: none; color: inherit; }
 .ess-grid { display: grid; grid-template-columns: repeat(6, 1fr); max-width: 1200px; margin: 0 auto; }
 .ess-card { text-align: center; padding: 0 12px; border-right: 1px solid var(--line); }
 .ess-card:last-child { border-right: none; }
-.ess-icon { margin: 0 auto 18px; color: var(--gold); display: block; }
+.ess-icon { margin: 0 auto 14px; color: var(--gold); display: block; }
 .ess-card h3 { font-family: "Cormorant Garamond", serif; font-size: 20px; font-weight: 700; line-height: 1.15; margin-bottom: 8px; }
 .ess-card p { font-size: 13px; line-height: 1.7; color: #666; font-weight: 300; }
 
@@ -80,7 +80,7 @@ a { text-decoration: none; color: inherit; }
 .fcard-price strong { font-family: "Cormorant Garamond", serif; font-size: 40px; color: var(--gold); font-weight: 500; letter-spacing: 0; line-height: 1; display: block; margin-top: -6px; }
 .fcard-arrow { display: none; }
 .fcard-arrow-wrap { position: relative; flex-shrink: 0; flex-basis: 100%; border-top: 1px solid var(--line); margin-top: 6px; padding-top: 4px; }
-.fcard-tooltip { display: block; position: static; background: transparent; color: var(--muted); padding: 8px 0 0; margin: 0; border-radius: 0; font-size: 12px; line-height: 1.7; white-space: normal; text-align: left; }
+.fcard-tooltip { display: block; position: static; background: transparent; color: #555; font-weight: 300; padding: 8px 0 0; margin: 0; border-radius: 0; font-size: 13px; line-height: 1.7; white-space: normal; text-align: left; }
 .fcard-tooltip strong { color: #555; display: block; margin-bottom: 4px; font-size: 13px; font-weight: 300; }
 
 /* FORMULES DROITE */
@@ -2829,6 +2829,9 @@ html { overflow-x: hidden !important; }
   .liste-box { padding: 24px 16px 20px; }
   .liste-incl li { grid-template-columns: 14px 1fr; gap: 8px; }
   .liste-incl svg { width: 14px; height: 14px; }
+  .opt-card { gap: 6px; }
+  .opt-card-icon { margin-bottom: 8px; }
+  .opt-card-sub { margin-top: -2px; }
   .liste-box-price { font-size: 32px; }
   .liste-incl { grid-template-columns: 1fr; gap: 13px; }
   .liste-visual { height: 180px; min-height: 0; }
