@@ -57,7 +57,7 @@ a { text-decoration: none; color: inherit; }
 .ess-card { text-align: center; padding: 0 12px; border-right: 1px solid var(--line); }
 .ess-card:last-child { border-right: none; }
 .ess-icon { margin: 0 auto 18px; color: var(--gold); display: block; }
-.ess-card h3 { font-family: "Cormorant Garamond", serif; font-size: 18px; font-weight: 700; line-height: 1.15; margin-bottom: 8px; }
+.ess-card h3 { font-family: "Cormorant Garamond", serif; font-size: 20px; font-weight: 700; line-height: 1.15; margin-bottom: 8px; }
 .ess-card p { font-size: 13px; line-height: 1.7; color: #666; font-weight: 300; }
 
 /* FORMULES */
@@ -1566,7 +1566,7 @@ html body .form-right-card h2.form-right-h2 {
 .step-num { font-size: 12px !important; }
 
   
-.process-step h3 { font-size: 18px !important; }
+.process-step h3 { font-size: 20px !important; }
 
   
 .process-step p { font-size: 13px !important; line-height: 1.7 !important; }
@@ -2823,10 +2823,12 @@ html { overflow-x: hidden !important; }
   .liste-top { grid-template-columns: 1fr; }
   .liste-visual, .liste-left { grid-column: 1; grid-row: auto; }
   .liste-visual { position: relative; width: 100%; }
-  .liste-left { margin-left: 0; max-width: none; padding: 0 24px 32px; margin-top: -40px; gap: 28px; }
+  .liste-left { margin-left: 0; max-width: none; padding: 0 24px 32px; margin-top: -30px; gap: 28px; }
   .liste-row { grid-template-columns: 1fr; gap: 28px; }
   .liste-tagline { font-size: 21px; margin-bottom: 16px; }
-  .liste-box { padding: 24px 20px 20px; }
+  .liste-box { padding: 24px 16px 20px; }
+  .liste-incl li { grid-template-columns: 14px 1fr; gap: 8px; }
+  .liste-incl svg { width: 14px; height: 14px; }
   .liste-box-price { font-size: 32px; }
   .liste-incl { grid-template-columns: 1fr; gap: 13px; }
   .liste-visual { height: 180px; min-height: 0; }
