@@ -283,7 +283,7 @@ export default function Formules() {
               <h2 className="form-h2">La Liste de <em>voyage</em></h2>
               <p className="liste-tagline">Le plus beau des cadeaux&nbsp;: votre lune de miel</p>
               <p className="liste-txt">Et si votre liste de mariage vous emmenait au bout du monde&nbsp;?</p>
-              <p className="liste-txt">Nous créons une liste personnalisée à partir de votre carnet de voyage, pour permettre à vos proches de contribuer à votre lune de miel en vous offrant ce qui la rendra unique&nbsp;: un vol, une nuit dans un hébergement de charme, une excursion, un dîner les pieds dans le sable…</p>
+              <p className="liste-txt">Nous créons une liste personnalisée à partir de votre carnet de voyage, pour permettre à vos proches de contribuer à votre lune de miel en vous offrant ce qui la rendra unique&nbsp;: un vol, une nuit dans un lieu d&apos;exception, une excursion, un massage à deux, un dîner les pieds dans le sable…</p>
               <a href="#formulaire-liste" className="btn-gold liste-cta">Créer ma Liste de Voyage</a>
             </div>
             <div className="liste-box">
@@ -293,10 +293,10 @@ export default function Formules() {
               </div>
               <ul className="liste-incl">
                 <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Jusqu&apos;à 15 idées de cadeaux, sélectionnées par nos soins à partir de votre itinéraire.</span></li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>La possibilité d&apos;ajouter vos propres idées de cadeaux, à tout moment, depuis votre espace.</span></li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Les liens de réservation associés à chaque cadeau, recherchés et intégrés par nos soins.</span></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>La possibilité d&apos;ajouter vos propres idées, à tout moment, depuis votre espace.</span></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Les liens de réservation associés à chaque cadeau, recherchés et intégrés pour vous.</span></li>
                 <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Votre QR code personnalisé, avec vos prénoms et votre destination, à glisser dans vos faire-part ou à afficher le jour du mariage.</span></li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Votre espace de suivi privé, pour retrouver les cadeaux offerts et suivre l&apos;avancement de votre liste.</span></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Votre espace de suivi privé, pour découvrir qui a participé et suivre l&apos;avancement de votre liste.</span></li>
                 <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg><span>Une vérification des liens un mois avant le mariage, pour partager une liste à jour.</span></li>
               </ul>
             </div>
