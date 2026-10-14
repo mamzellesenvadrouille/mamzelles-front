@@ -2823,14 +2823,15 @@ html { overflow-x: hidden !important; }
   .liste-top { grid-template-columns: 1fr; }
   .liste-visual, .liste-left { grid-column: 1; grid-row: auto; }
   .liste-visual { position: relative; width: 100%; }
-  .liste-left { margin-left: 0; max-width: none; padding: 28px 24px 28px; gap: 28px; }
+  .liste-left { margin-left: 0; max-width: none; padding: 0 24px 28px; margin-top: -72px; gap: 28px; }
   .liste-row { grid-template-columns: 1fr; gap: 28px; }
   .liste-tagline { font-size: 21px; margin-bottom: 16px; }
   .liste-box { padding: 24px 20px 20px; }
   .liste-box-price { font-size: 32px; }
   .liste-incl { grid-template-columns: 1fr; gap: 13px; }
-  .liste-visual { height: 240px; min-height: 0; }
-  .liste-visual::after { background: linear-gradient(to bottom, rgba(248,244,239,0) 40%, rgba(248,244,239,0.6) 75%, rgba(248,244,239,1) 100%); }
+  .liste-visual { height: 210px; min-height: 0; }
+  .liste-visual-img { inset: auto 0 0 0; height: auto; }
+  .liste-visual::after { background: linear-gradient(to bottom, rgba(248,244,239,0) 25%, rgba(248,244,239,0.55) 55%, rgba(248,244,239,0.92) 80%, rgba(248,244,239,1) 100%); }
   .liste-inner { padding: 36px 24px 40px; }
   .liste-steps-title { font-size: 26px; margin-bottom: 24px; }
   .liste-steps { grid-template-columns: 1fr; gap: 20px; }
