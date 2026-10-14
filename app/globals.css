@@ -58,7 +58,7 @@ a { text-decoration: none; color: inherit; }
 .ess-card:last-child { border-right: none; }
 .ess-icon { margin: 0 auto 18px; color: var(--gold); display: block; }
 .ess-card h3 { font-family: "Cormorant Garamond", serif; font-size: 18px; font-weight: 700; line-height: 1.15; margin-bottom: 8px; }
-.ess-card p { font-size: 12px; line-height: 1.7; color: var(--muted); }
+.ess-card p { font-size: 13px; line-height: 1.7; color: #666; font-weight: 300; }
 
 /* FORMULES */
 .formules { display: grid; grid-template-columns: 42% 58%; width: 100%; background: var(--bg); }
@@ -160,7 +160,7 @@ a { text-decoration: none; color: inherit; }
 .step-num { position: absolute; bottom: -4px; right: 4px; font-size: 13px; letter-spacing: 2px; color: var(--gold); font-weight: 500; background: #fff; padding: 0 3px; }
 .step-ornament { color: var(--gold); font-size: 12px; margin: 8px 0; }
 .process-step h3 { font-family: "Cormorant Garamond", serif; font-size: 20px; font-weight: 700; margin-bottom: 8px; line-height: 1.2; }
-.process-step p { font-size: 13px; color: var(--muted); line-height: 1.7; font-weight: 300; }
+.process-step p { font-size: 13px; color: #666; line-height: 1.7; font-weight: 300; }
 .tb-break { display: none; }
 
 /* FORMULAIRE CONTACT */
@@ -1569,7 +1569,7 @@ html body .form-right-card h2.form-right-h2 {
 .process-step h3 { font-size: 18px !important; }
 
   
-.process-step p { font-size: 12px !important; line-height: 1.6 !important; }
+.process-step p { font-size: 13px !important; line-height: 1.7 !important; }
 
   
 .tb-break { display: block !important; }
@@ -2772,7 +2772,7 @@ html { overflow-x: hidden !important; }
 .liste-box-title { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--dark); }
 .liste-box-price { font-variant-numeric: lining-nums; font-family: "Cormorant Garamond", serif; font-size: 38px; line-height: 1; color: var(--gold); white-space: nowrap; }
 .liste-incl { list-style: none; display: grid; grid-template-columns: 1fr; gap: 13px; }
-.liste-incl li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; font-size: 12px; line-height: 1.7; color: var(--muted); }
+.liste-incl li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; font-size: 13px; line-height: 1.7; color: #666; font-weight: 300; }
 .liste-incl svg { margin-top: 3px; color: var(--gold); }
 .liste-visual { position: absolute; top: 0; bottom: 0; left: 0; width: 54%; overflow: hidden; }
 .liste-row { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: start; }
