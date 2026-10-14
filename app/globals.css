@@ -2795,7 +2795,7 @@ html { overflow-x: hidden !important; }
 @media (min-width: 1025px) {
   .mosaic-call { grid-template-columns: 60% 40%; }
   .mosaic-col { order: 2; }
-  .call-col { padding-left: max(52px, calc(100% - 52px - 560px)); }
+  .call-col { padding-left: max(52px, calc(100% - 52px - 640px)); }
 }
 
 /* Case à cocher du formulaire */

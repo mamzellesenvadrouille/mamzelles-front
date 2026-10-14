@@ -314,7 +314,7 @@ export default function Formules() {
         </div>
         <div className="call-col">
           <p className="eyebrow-dark">Parlons de votre voyage</p>
-          <h2>Réservez un appel<br />découverte <em>gratuit</em></h2>
+          <h2>Réservez un appel découverte <em>gratuit</em></h2>
           <div className="call-rule" />
           <p className="call-desc">20 minutes pour échanger sur vos envies et commencer à imaginer votre voyage.</p>
           <a href="https://calendly.com/contact-mamzellesenvadrouille/appel-decouverte-mamzelles-en-vadrouille" target="_blank" rel="noopener noreferrer" className="btn-dark-full">
