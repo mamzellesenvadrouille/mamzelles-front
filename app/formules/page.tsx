@@ -314,7 +314,7 @@ export default function Formules() {
           </div>
           <div className="liste-outro">
             <p className="liste-sign">Une liste qui vous ressemble, pour embarquer vos proches dans votre aventure.</p>
-            <p className="liste-note">La Liste de Voyage s&apos;ajoute à l&apos;une de nos formules.</p>
+            <p className="liste-note">Une option à ajouter à votre formule de voyage.</p>
             <a href="#formulaire-liste" className="btn-gold">Créer ma Liste de Voyage</a>
           </div>
         </div>
